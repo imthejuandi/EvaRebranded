@@ -1,0 +1,607 @@
+[
+  {
+    "purpose": "Acceder a una cuenta existente y conservar el destino solicitado.",
+    "states": [
+      "idle",
+      "submitting",
+      "invalid credentials",
+      "magic link sent",
+      "auth error"
+    ],
+    "data": [
+      "email",
+      "password",
+      "mode:password|magic",
+      "redirect",
+      "intent:quarterly|full_panel"
+    ],
+    "backendTouchpoints": [
+      "Supabase auth.signInWithPassword",
+      "Supabase auth.signInWithOtp",
+      "profiles.onboarding_completed read",
+      "lib/links/results authenticationDestination/safe result redirects"
+    ],
+    "connections": [
+      "signup",
+      "forgot-password",
+      "callback",
+      "onboarding",
+      "dashboard",
+      "labs/:id",
+      "checkout-resume"
+    ]
+  },
+  {
+    "purpose": "Crear cuenta y recoger consentimientos explícitos independientes.",
+    "states": [
+      "idle",
+      "invalid email",
+      "password mismatch",
+      "required consent missing",
+      "submitting",
+      "confirmation email sent",
+      "existing account/error"
+    ],
+    "data": [
+      "email",
+      "password",
+      "confirmPassword",
+      "termsConsent",
+      "healthConsent",
+      "ageConfirm",
+      "marketingOptIn",
+      "intent"
+    ],
+    "backendTouchpoints": [
+      "Supabase auth.signUp / signInWithOtp; consent metadata and redirect options",
+      "profiles creation/consent persistence via auth flow"
+    ],
+    "connections": [
+      "login",
+      "legal/terms",
+      "legal/privacy",
+      "callback",
+      "onboarding",
+      "checkout-resume"
+    ]
+  },
+  {
+    "purpose": "Solicitar enlace de recuperación.",
+    "states": [
+      "idle",
+      "submitting",
+      "sent",
+      "error"
+    ],
+    "data": [
+      "email"
+    ],
+    "backendTouchpoints": [
+      "Supabase auth.resetPasswordForEmail; callback next=/:locale/reset-password"
+    ],
+    "connections": [
+      "login",
+      "callback",
+      "reset-password"
+    ]
+  },
+  {
+    "purpose": "Definir nueva contraseña con sesión válida de recuperación.",
+    "states": [
+      "checking session",
+      "expired/invalid link",
+      "validation",
+      "submitting",
+      "success",
+      "error"
+    ],
+    "data": [
+      "password",
+      "confirmPassword",
+      "recovery session"
+    ],
+    "backendTouchpoints": [
+      "Supabase auth.getSession / exchange recovery / updateUser"
+    ],
+    "connections": [
+      "forgot-password",
+      "dashboard"
+    ]
+  },
+  {
+    "purpose": "Canjear código de autenticación y continuar la navegación segura.",
+    "states": [
+      "exchanging",
+      "success redirect",
+      "failure login"
+    ],
+    "data": [
+      "code",
+      "next",
+      "locale"
+    ],
+    "backendTouchpoints": [
+      "Supabase auth.exchangeCodeForSession",
+      "profiles.onboarding_completed",
+      "Set-Cookie on redirect"
+    ],
+    "connections": [
+      "login",
+      "reset-password",
+      "onboarding",
+      "dashboard",
+      "checkout-resume",
+      "labs/:id"
+    ]
+  },
+  {
+    "purpose": "Personalizar contexto básico y elegir primera acción.",
+    "states": [
+      "step0 welcome",
+      "step1 identity",
+      "step2 knowledge",
+      "step3 start",
+      "invalid DOB/required fields",
+      "saving",
+      "checkout failure"
+    ],
+    "data": [
+      "Profile basic fields",
+      "health_knowledge",
+      "onboarding_completed",
+      "safe redirect"
+    ],
+    "backendTouchpoints": [
+      "Supabase profiles.upsert; identity/locale/onboarding",
+      "POST /api/stripe/checkout {locale,plan} for paid entry"
+    ],
+    "connections": [
+      "upload",
+      "book",
+      "dashboard",
+      "Stripe hosted checkout",
+      "labs/:id"
+    ]
+  },
+  {
+    "purpose": "Entender panorama actual, hallazgos y próximos pasos.",
+    "states": [
+      "loading skeleton",
+      "data available",
+      "no results",
+      "scores unavailable/null",
+      "no wearable",
+      "no action steps",
+      "no kit scheduled",
+      "global error"
+    ],
+    "data": [
+      "Profile",
+      "LabResult latest ready",
+      "BiomarkerValue[]",
+      "WearableData[]",
+      "ActionStep[]",
+      "BookedTest[]"
+    ],
+    "backendTouchpoints": [
+      "server getDashboardData(user.id,supabase) in src/lib/queries/dashboard.ts",
+      "reads owned profile/results/biomarkers/wearables/actions/bookings"
+    ],
+    "connections": [
+      "labs",
+      "biomarker/:key",
+      "metodologia",
+      "book"
+    ]
+  },
+  {
+    "purpose": "Explorar un informe interpretado y su inventario de biomarcadores.",
+    "states": [
+      "loading skeleton",
+      "no ready result + upload/kit CTAs",
+      "ready",
+      "no search matches",
+      "null scores",
+      "error"
+    ],
+    "data": [
+      "LabResult",
+      "BiomarkerValue[]",
+      "ActionStep[]",
+      "LabHistoryItem[]"
+    ],
+    "backendTouchpoints": [
+      "server getUserProfile/getLatestLabResult/getBiomarkerValues/getActionSteps",
+      "lab_results history filtered status=ready",
+      "CAUTION existing history changes ?result= but server page does not read searchParams; redesign must make selection work"
+    ],
+    "connections": [
+      "labs/:id",
+      "biomarker/:key",
+      "labs/manage",
+      "upload",
+      "book"
+    ]
+  },
+  {
+    "purpose": "Abrir exactamente el informe enlazado desde notificación o historial.",
+    "states": [
+      "unauthenticated -> login preserve target",
+      "not-owned/missing ->404",
+      "pending_context ->context",
+      "not ready ->in preparation",
+      "ready ->full report"
+    ],
+    "data": [
+      "Owned LabResult",
+      "BiomarkerValue[]",
+      "ActionStep[]"
+    ],
+    "backendTouchpoints": [
+      "server ownedWebResult(client,user.id,id)",
+      "resultDestination UUID validation",
+      "same own-data query boundaries"
+    ],
+    "connections": [
+      "login?redirect",
+      "onboarding?redirect",
+      "labs/:id/context",
+      "biomarker/:key"
+    ]
+  },
+  {
+    "purpose": "Entender un marcador específico y su evolución.",
+    "states": [
+      "loading skeleton",
+      "no readings",
+      "single reading(no trend)",
+      "multiple readings",
+      "null/unclassified ranges",
+      "editing",
+      "saving",
+      "invalid value/error",
+      "genetic alternative footer",
+      "wearable connected/empty"
+    ],
+    "data": [
+      "HistoricalValue[] incl.lab date/source",
+      "BiomarkerReference: names,notes,optimal/normal ranges,category,is_genetic",
+      "WearableData[]",
+      "Profile.sex"
+    ],
+    "backendTouchpoints": [
+      "server biomarker_values joined owned lab_results, status=ready",
+      "biomarker_references bykey/profile",
+      "PATCH /api/biomarker-values/:id {value,unit}"
+    ],
+    "connections": [
+      "labs",
+      "profile",
+      "book"
+    ]
+  },
+  {
+    "purpose": "Gestionar informes y corregir datos extraídos.",
+    "states": [
+      "empty",
+      "list",
+      "selected report",
+      "editing date",
+      "editing row",
+      "saving/error",
+      "delete confirmation",
+      "deleting/error"
+    ],
+    "data": [
+      "LabSummary[]",
+      "selected LabResult",
+      "BiomarkerValueRow[]"
+    ],
+    "backendTouchpoints": [
+      "server owned lab_results and values reads",
+      "PATCH /api/lab-results/:id {collection_date}",
+      "PATCH /api/biomarker-values/:id {value,unit}",
+      "DELETE /api/lab-results/:id"
+    ],
+    "connections": [
+      "labs",
+      "upload",
+      "labs/manage?lab="
+    ]
+  },
+  {
+    "purpose": "Convertir informe externo en datos revisados e interpretación.",
+    "states": [
+      "empty",
+      "queued files",
+      "extracting",
+      "queued_extract",
+      "retry_wait",
+      "preview ready",
+      "fuzzy/unmatched/implausible/invalid marker",
+      "review blocked",
+      "context required",
+      "saving",
+      "free limit5",
+      "network/extract/server validation error",
+      "poll timeout saved",
+      "success"
+    ],
+    "data": [
+      "File[] PDF/JPG/PNG/HEIC<=10MB each",
+      "ExtractedBiomarker[]",
+      "BiomarkerReference[]",
+      "collectionDate",
+      "contextVersionId",
+      "TransientContext",
+      "quota/access"
+    ],
+    "backendTouchpoints": [
+      "GET /api/biomarker-references",
+      "POST /api/lab-results/extract multipart files + Idempotency-Key",
+      "202 ->GET /api/v1/uploads/:jobId (bounded polling)",
+      "POST /api/lab-results/confirm {labResultId,biomarkers,collectionDate,contextVersionId,transientContext}",
+      "shared patient-context GET/POST"
+    ],
+    "connections": [
+      "dashboard",
+      "labs",
+      "pricing"
+    ]
+  },
+  {
+    "purpose": "Confirmar contexto relevante para interpretar un informe recibido.",
+    "states": [
+      "loading",
+      "never saved",
+      "stale>3months",
+      "summary",
+      "editing",
+      "submitting",
+      "error",
+      "not pending ->result",
+      "missing profile ->onboarding"
+    ],
+    "data": [
+      "DurableContextSnapshot",
+      "VersionPayload",
+      "TransientContext",
+      "Profile.sex",
+      "LabResult.status"
+    ],
+    "backendTouchpoints": [
+      "GET /api/patient-context",
+      "POST /api/patient-context {snapshot}",
+      "POST /api/lab-results/:id/context {contextVersionId,transientContext}",
+      "server verifies ownlab status=pending_context"
+    ],
+    "connections": [
+      "labs/:id",
+      "labs",
+      "onboarding"
+    ]
+  },
+  {
+    "purpose": "Elegir servicio, seguir kit y administrar plan.",
+    "states": [
+      "free",
+      "active",
+      "past_due",
+      "cancelled",
+      "no kit",
+      "scheduled",
+      "kit_sent",
+      "sample_received",
+      "processing",
+      "completed",
+      "checkout pending/error"
+    ],
+    "data": [
+      "Profile access and renewal",
+      "BookedTest[]",
+      "PanelDefinition[]"
+    ],
+    "backendTouchpoints": [
+      "POST /api/stripe/checkout {locale,plan:quarterly|full_panel}",
+      "POST /api/stripe/portal {locale}",
+      "server getBookedTests/getUserProfile"
+    ],
+    "connections": [
+      "pricing#panel",
+      "dashboard",
+      "Stripe hosted checkout",
+      "Stripe portal"
+    ]
+  },
+  {
+    "purpose": "Consultar explicaciones educativas sobre datos existentes.",
+    "states": [
+      "paid_only",
+      "consent/account denied",
+      "empty conversation",
+      "history",
+      "streaming",
+      "pending interrupted request",
+      "error",
+      "retry",
+      "authchanged clears messages"
+    ],
+    "data": [
+      "ChatMessage[]",
+      "cursor",
+      "requestId",
+      "pendingId",
+      "owner",
+      "paid access + consent"
+    ],
+    "backendTouchpoints": [
+      "server authorizeChat(user.id,client) + chatDependencies.store().history",
+      "POST /api/v1/chat/messages {requestId,message?} SSE accepted/delta/complete/error",
+      "GET /api/v1/chat/messages?cursor=",
+      "GET /api/v1/chat/messages?requestId=",
+      "Supabase auth change subscription"
+    ],
+    "connections": [
+      "pricing",
+      "dashboard"
+    ]
+  },
+  {
+    "purpose": "Administrar identidad, preferencias, integraciones y cuenta.",
+    "states": [
+      "loaded",
+      "saving/saved/error persection",
+      "free/paidwearables",
+      "import consent missing",
+      "replacement confirmation",
+      "importing/success/retry",
+      "withdraw pending/confirmed",
+      "free/active/past_due/cancelled",
+      "delete modal/pending/error"
+    ],
+    "data": [
+      "Profile",
+      "Preferences{resultsEnabled,kitEnabled}",
+      "AppleHealth import attempt",
+      "DeletionReceipt"
+    ],
+    "backendTouchpoints": [
+      "Supabase profiles.upsert identity; update health_knowledge/locale/marketing",
+      "POST /api/lab-results/regenerate-summary",
+      "PATCH /api/profile/address",
+      "POST /api/stripe/checkout; POST /api/stripe/portal",
+      "GET /api/v1/wearables/status",
+      "PUT /api/v1/wearables/consent {granted,version,expected_revision?}",
+      "POST /api/v1/wearables/apple-health/authority {device_id,replace_existing:true}",
+      "POST /api/wearables/import multipart ZIP/XML<=100MB +source,timezone,device_id,batch_id,generation,sequence,replace_all",
+      "GET/PATCH /api/v1/notifications/preferences",
+      "GET /api/gdpr/export",
+      "POST /api/v1/privacy/deletion {confirmation:DELETE_MY_ACCOUNT}",
+      "Supabase auth.signOut"
+    ],
+    "connections": [
+      "dashboard",
+      "pricing",
+      "eva-ai",
+      "contact",
+      "pricing#faq",
+      "privacy/deletion"
+    ]
+  },
+  {
+    "purpose": "Consultar la eliminación asíncrona con un recibo.",
+    "states": [
+      "no receipt",
+      "invalid/expired receipt",
+      "busy",
+      "pending",
+      "complete",
+      "manual_review",
+      "networkerror"
+    ],
+    "data": [
+      "DeletionReceipt{operationId,receipt,savedAt}",
+      "DeletionOperation{id,status,attempts,nextAttemptAt,completedAt}"
+    ],
+    "backendTouchpoints": [
+      "POST /api/v1/privacy/deletion/status {operationId,receipt}",
+      "sessionStorage receipt only; valid30days"
+    ],
+    "connections": [
+      "profile origin",
+      "contact/support"
+    ]
+  },
+  {
+    "purpose": "Continuar una compra después del acceso.",
+    "states": [
+      "preparing",
+      "invalid intent ->dashboard",
+      "401 ->login retainsintent",
+      "redirect",
+      "error"
+    ],
+    "data": [
+      "intent:quarterly|full_panel",
+      "locale"
+    ],
+    "backendTouchpoints": [
+      "POST /api/stripe/checkout {locale,plan}"
+    ],
+    "connections": [
+      "login?intent",
+      "dashboard",
+      "pricing",
+      "Stripe hosted checkout"
+    ]
+  },
+  {
+    "purpose": "Acceso previo al lanzamiento y lista de espera.",
+    "states": [
+      "idle",
+      "waitlist sending/success/error",
+      "access checking/success/invalid"
+    ],
+    "data": [
+      "email",
+      "password",
+      "next path"
+    ],
+    "backendTouchpoints": [
+      "POST /api/beta-subscribe",
+      "POST /api/beta-access"
+    ],
+    "connections": [
+      "marketing home",
+      "requested next route"
+    ]
+  },
+  {
+    "purpose": "Operar reservas, entrada de resultados y procesamiento.",
+    "states": [
+      "role/MFAdenied",
+      "empty tables",
+      "tab states",
+      "submitting/success/error",
+      "processing/ready/error"
+    ],
+    "data": [
+      "AdminUser summary",
+      "Booking[]",
+      "LabResultRow[]",
+      "manual marker values"
+    ],
+    "backendTouchpoints": [
+      "server requireAdmin + owned role check/MFA gate",
+      "PATCH /api/admin/bookings {bookingId,status}",
+      "POST /api/admin/enter-results {userId,biomarkers,locale}",
+      "POST /api/admin/reprocess {labResultId}"
+    ],
+    "connections": [
+      "dashboard fallback"
+    ]
+  },
+  {
+    "purpose": "Recuperar navegación tras ruta inexistente/no disponible.",
+    "states": [
+      "not found"
+    ],
+    "data": [],
+    "backendTouchpoints": [],
+    "connections": [
+      "home"
+    ]
+  },
+  {
+    "purpose": "Recuperar una pantalla que no pudo cargar.",
+    "states": [
+      "error",
+      "retrying"
+    ],
+    "data": [],
+    "backendTouchpoints": [],
+    "connections": [
+      "home"
+    ]
+  }
+]

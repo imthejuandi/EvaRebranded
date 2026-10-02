@@ -1,0 +1,21 @@
+{
+  "iteration": "03.20",
+  "date": "2026-09-11",
+  "previousReview": "/review/03-19-results.json",
+  "changes": [
+    "Approved natural-skin Solar Glow still replaces the four-second pouch video.",
+    "Integrated logo and upper/lower halftone print retained.",
+    "Responsive WebP55KB/145KB; no video or controls in the home step."
+  ],
+  "checks": [
+    "600px delivery image visually reviewed against approved v2.",
+    "03.19source restored exactly from03.18plus its23-file overlay.",
+    "Method contracts passed:15graph states, four service steps, selected-only artwork, responsive still under both motion preferences and no video controls.",
+    "TypeScript passed."
+  ],
+  "validationStatus": "media-history-and-component-checks-passed",
+  "provenance": "/review/method-unboxing-provenance.json",
+  "limits": [
+    "Generative editorial image and packaging concept, not a photograph of the delivered kit."
+  ]
+}

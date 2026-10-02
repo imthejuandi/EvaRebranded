@@ -1,0 +1,194 @@
+{
+  "art": {
+    "provider": "Higgsfield",
+    "model": "Nano Banana Pro",
+    "newImages": [
+      "runner.jpg",
+      "stretch.jpg"
+    ],
+    "references": [
+      "SAVEE 06",
+      "SAVEE 08",
+      "SAVEE 09"
+    ],
+    "estimatedCredits": 4,
+    "treatments": "Optical defocus, analog grain, amber/blue/lilac false color and directional motion smear"
+  },
+  "board": [
+    {
+      "id": "06",
+      "url": "https://savee.com/i/_a3PZvq/"
+    },
+    {
+      "id": "08",
+      "url": "https://savee.com/i/Yb1CVRQ/"
+    },
+    {
+      "id": "09",
+      "url": "https://savee.com/i/YC6VZQI/"
+    }
+  ],
+  "product": {
+    "provider": "Higgsfield",
+    "model": "Kling 3.0 standard",
+    "job": "1f4a8e7a-b54f-43c4-84cb-c0f003d50b82",
+    "source": "https://www.tassoinc.com/tasso-plus",
+    "frames": 60,
+    "fps": 12,
+    "dimensions": [
+      640,
+      640
+    ],
+    "extraction": "Only frame extraction, proportional resize and JPEG encoding. Exact manifest at /art/product/manifest.json.",
+    "archived": true,
+    "activeIn03_3": false
+  },
+  "motion": {
+    "runtime": "Remotion 4.0.522",
+    "frames": 841,
+    "fps": 30,
+    "driver": "Native scroll to paused Player.seekTo(integer frame)",
+    "ambient": "Independent native runner loop; scene geometry still scroll-controlled."
+  },
+  "twentyFirst": [
+    {
+      "id": 5967,
+      "name": "Zoom Parallax",
+      "author": "efferd",
+      "url": "https://21st.dev/@efferd/components/zoom-parallax"
+    },
+    {
+      "id": 20139,
+      "name": "Horizontal Scroll Gallery",
+      "author": "pulkitxm",
+      "url": "https://21st.dev/@pulkitxm/components/horizontal-scroll-gallery"
+    }
+  ],
+  "referenceSites": [
+    "https://www.sofihealth.com",
+    "https://www.clearwater.london"
+  ],
+  "content": "Core EVA offering retained from https://evahealth.es/; no new device-use or clinical claims added.",
+  "runnerRefinement": {
+    "details": "/review/runner-03-1-provenance.json",
+    "stillModel": "nano_banana_2",
+    "videoModel": "kling3_0",
+    "estimatedCredits": 9.5,
+    "component": "GlowMotion",
+    "poster": "/art/runner-athletic.jpg",
+    "video": "/art/runner-athletic-loop.mp4"
+  },
+  "analogSignal": {
+    "iteration": "03.2",
+    "typographyReference": "User-supplied SAY LESS image, retained at /art/reference-analog-letters.png",
+    "motionReference": "https://savee.com/i/uBs8ZE0/",
+    "attribution": "Satto Studio",
+    "originalSource": "https://x.com/Satto_studio/status/2094148642168832020",
+    "referenceMedia": "https://dm.savee-cdn.com/asset-video/original/6a948b2b3c9caf3ef0244a0a.mp4",
+    "observation": "Fixed black circular grid on a white field; discrete glyph changes, no traveling particles.",
+    "adaptation": "Original EVA implementation. Serif character cells in hero; scroll-controlled fixed-grid 15 / 90 / TÚ passage with eight stepped cell changes per transition. Reference video itself is not redistributed.",
+    "components": [
+      "AnalogType",
+      "SignalFilm",
+      "SignalPassage",
+      "AnalogSpecimen"
+    ],
+    "previousSource": "/archive/eva-03-1-glow-motion.zip"
+  },
+  "refinement03_3": {
+    "hero": "Removed all three floral image layers; original accepted runner preserved; rightward scroll exit",
+    "product": {
+      "source": "https://www.tassoinc.com/tasso-plus",
+      "asset": "/art/tasso-plus-product.jpg",
+      "animation": "Smooth monotonic in-plane -22 to +22 degree rotation around 50% 50%, then full-height upward scene movement at constant product size",
+      "background": "Official photo outer 30px boundary is exact RGB255. White cancels under multiply on paper. No image edit or brightness filter.",
+      "priorVideoDiagnosis": "640px clip device center varies vertically36.5px; outer backgrounds245–253. Source frames preserved for history."
+    },
+    "type": {
+      "logoWeight": 300,
+      "display": "Staggered calculator grid with 624 fixed lamps, 216/280/216 lit dots (2x previous pass, 8x initial03.2), discrete circles with original eight-step scattered on/off switching"
+    },
+    "lifestyle": {
+      "asset": "/art/post-run-coast.png",
+      "provider": "Built-in image_gen",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "style": "User reference: violet/indigo, coral, luminous figures, dense analog grain",
+      "subject": "Two athletic adults enjoying a post-run coastal walk",
+      "prompt": "/review/solar-grain-provenance.md",
+      "motionDetails": "/review/solar-motion-provenance.json",
+      "motion": "A9.208333-second cut of the revised generated walk, starting with both people already on the path; natural gaze variation, rightward exit, source-authored glow; one play and manual replay."
+    },
+    "previousSource": "/archive/eva-03-2-analog-signal.zip"
+  },
+  "contentImport": {
+    "revision": "03.4",
+    "date": "2026-09-10",
+    "source": "https://www.evahealth.es/es",
+    "crossChecks": [
+      "https://www.evahealth.es/es/pricing",
+      "https://www.evahealth.es/es/science"
+    ],
+    "record": "/review/content-import.md",
+    "sourceSnapshotSha256": "1f111e909a951c4ef86c6a766061208271e3e4be6d3c04b3f3a7398f47b8c40c",
+    "newImages": false,
+    "priorSource": "/archive/eva-03-3-movement.zip"
+  },
+  "refinement03_6": {
+    "halftone": "Full-size fixed 58×42 grid with rounded glyph coverage and optically varied dot radii; original eight-step lamp switching retained. Legacy calculator component remains in the system.",
+    "product": "/review/tasso-glow-provenance.json",
+    "previousSource": "/archive/eva-03-5-body-signal.zip",
+    "symbols": "Decorative Unicode pictographs removed; functional arrow controls use consistent stroke SVG."
+  },
+  "refinement03_7": {
+    "direction": "Unframed full-viewport organic light, soft quiet areas around copy, angular 5x7 analog glyphs and individually weighted phosphor lamps.",
+    "previousSource": "/archive/eva-03-6-halftone-glow.zip",
+    "newMedia": false,
+    "preserved": "Tasso Glow, removal of Unicode pictographs, business content, Soft Glass, runner and lifestyle art."
+  },
+  "refinement03_8": {
+    "direction": "One persistent lamp model, uninterrupted clock, and shared renderer for both field and numerals. Glyph masks bias existing lamp energy; no size target or material handoff.",
+    "mobile": "Visible minimum dot radius and brightness across the viewport, including behind copy; soft brightness veil and local text shadow maintain legibility.",
+    "previousSource": "/archive/eva-03-7-living-display.zip",
+    "newMedia": false
+  },
+  "refinement03_9": {
+    "direction": "Opening full-screen field resolves into only the glyph lamps. Seeded per-lamp retirement clears the peripheral field, counters and gaps without changing lamp positions, radius, clock or renderer.",
+    "mobile": "Opening still fills the screen behind readable text; resolved numerals have an entirely clear surrounding field.",
+    "previousSource": "/archive/eva-03-8-continuous-field.zip",
+    "newMedia": false
+  },
+  "refinement03_10": {
+    "direction": "Restored the03.8 continuous surrounding field; numbers emerge over225 frames with a gentle spatial delay and one easing curve per lamp.",
+    "pacing": "450svh scroll section yields1.05 viewport heights for emergence versus0.50 previously. Text eases over100 frames;32 brightness levels reduce visible stepping.",
+    "previousSource": "/archive/eva-03-9-numeral-centerpiece.zip",
+    "newMedia": false
+  },
+  "refinement03_11": {
+    "direction": "Warm paper and a chalk console replace the surrounding lilac background. Original amber, lilac, coral and green widget surfaces remain, alongside existing colorful photography.",
+    "capsules": "Centered marker, bounded dot numeral and in-flow unit/reading metadata. Responsive spacing checked down to320px.",
+    "previousSource": "/archive/eva-03-10-soft-emergence.zip",
+    "newMedia": false
+  },
+  "method0314": {
+    "guide": "/review/method-journey.md",
+    "newPhoto": "/art/method-home-ritual-1000.jpg",
+    "newGraphs": [
+      "15 luminous filaments",
+      "context bands and a single reading",
+      "nonmonotonic quarterly trace"
+    ],
+    "existingArtworkReused": false,
+    "previousSource": "/archive/eva-03-13-continuous-story.zip"
+  },
+  "method0315": {
+    "guide": "/review/method-journey.md",
+    "asset": "/art/method-home-solar-1000.jpg",
+    "editTarget": "/art/method-home-ritual-1000.jpg",
+    "styleReference": "/art/post-run-coast.png",
+    "treatment": "Solarized coral glow, violet shadows, visible optical grain",
+    "previousSource": "/archive/eva-03-14-original-method.zip"
+  }
+}

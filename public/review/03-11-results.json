@@ -1,0 +1,18 @@
+{
+  "iteration": "03.11",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-10-results.json",
+  "changes": [
+    "Neutral warm-paper section and chalk console replace the surrounding lilac background; original colored glass widgets are preserved.",
+    "Biomarker names, values and metadata now share a centered composition with comfortable insets."
+  ],
+  "observations": {
+    "responsive": "Live inspections at1440,901,390 and320px; zero horizontal center offset for all five numeral boxes.",
+    "spacing": "Widest12.5 reading retains21px equal side insets at320px and metadata has24px bottom clearance. The901px two-column layout also retains at least25px side clearance.",
+    "interaction": "Selected markers, reading changes, range view and focused-reading view inspected. No mobile page overflow.",
+    "preservation": "03.10 source and palette archived; colorful photography, dot-field motion and source biomarker data retained."
+  },
+  "limits": [
+    "Targeted visual and geometry checks are not a full accessibility audit."
+  ]
+}

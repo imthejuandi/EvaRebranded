@@ -1,0 +1,28 @@
+{
+  "iteration": "03.1",
+  "date": "2026-09-09",
+  "previousReview": "/review/03-original-results.json",
+  "changes": [
+    "Athletic runner with visible singlet, shorts and shoes",
+    "Five-second forward running loop with optical defocus and grain restored",
+    "Reusable GlowMotion component, specimen and usage rules",
+    "Original accepted 03.0 source archive retained"
+  ],
+  "observations": {
+    "image": "Poster and 24 temporal samples reviewed against the accepted optical treatment. Runner remains centered; forward stride and fixed camera. Softness varies slightly within the loop.",
+    "phone": "390x844; runner, title and pause control visible; horizontal overflow 0px.",
+    "ambientClock": "Remotion frame 0 and scale 1 stayed fixed across separate observations while video time advanced and looped. Native video reports 864x1080, duration 5s, muted=true, loop=true.",
+    "pause": "Visible pause control sets video.paused=true; time held at 5.000 across separate observations. Resume returned video.paused=false and an advancing clock.",
+    "offscreen": "At chapter 2/frame 325, video was paused at 3.090146 seconds.",
+    "reducedMotion": "Footer switch removes the video and pinned story; static hero uses runner-athletic.jpg; overflow remains 0px.",
+    "recovery": "ZIP integrity passed; original runner bytes match the accepted 03.0 artwork; archived EvaFilm predates GlowMotion.",
+    "component": "Standalone Glow Motion specimen rendered at 1440x900; its switch pauses native video independently, while the timeline inspector stays paused. Horizontal overflow 0px.",
+    "integrationFix": "Standalone specimen uses a native image; Remotion Img is limited to composition context. System route verified HTTP 200 after this correction."
+  },
+  "limits": [
+    "Physical-device and assistive-technology audit not performed.",
+    "OS preference was not changed; the visible reduced-motion alternative was tested.",
+    "Autoplay-blocked fallback was code-reviewed but not forced in this browser.",
+    "Generation is intentionally stylized; exact blur intensity differs slightly across frames."
+  ]
+}

@@ -1,0 +1,15 @@
+.page-deletion .deletion-receipt,.page-deletion .deletion-empty{margin-top:22px;border:1px solid #cbd0c3;border-radius:15px;padding:29px 32px;box-shadow:none;background:#f9f7f1;max-width:850px}
+.page-deletion .deletion-receipt-top .eva-kicker{font-size:11px;color:#505b49;letter-spacing:.035em}
+.page-deletion .deletion-reference{margin:13px 0 26px;font-size:12px;color:#505b49}
+.page-deletion .deletion-state-label{font-size:12px;border:1px solid #78886866;border-radius:15px;padding:7px 11px;color:#405638}
+.page-deletion .deletion-receipt h2,.page-deletion .deletion-empty h2{font-size:32px;line-height:1.15;letter-spacing:-.035em;max-width:none;margin-bottom:16px}
+.page-deletion .deletion-receipt>p:not(.eva-kicker):not(.deletion-reference):not(.profile-small-note),.page-deletion .deletion-empty>p{font-size:14px;color:#505b49}
+.page-deletion .deletion-receipt-facts{margin:26px 0;border-block:1px solid #65725b2c;padding:4px 0}
+.page-deletion .deletion-receipt-facts>div{display:grid;grid-template-columns:180px minmax(0,1fr);gap:22px;padding:14px 0;border-bottom:1px solid #65725b1a;font-size:12px;line-height:1.6}
+.page-deletion .deletion-receipt-facts>div:last-child{border:0}
+.page-deletion .deletion-receipt-facts dt{color:#56614e}
+.page-deletion .deletion-receipt-facts dd{margin:0;color:#283a27;font-variant-numeric:tabular-nums}
+.page-deletion .deletion-demo-controls{margin-top:25px}
+.page-deletion .deletion-demo-controls summary{min-height:44px!important;font-size:12px}
+.page-deletion .deletion-footer{padding-top:21px}
+@media(max-width:600px){.page-deletion .deletion-receipt,.page-deletion .deletion-empty{padding:24px 21px;border-radius:13px}.page-deletion .deletion-receipt h2,.page-deletion .deletion-empty h2{font-size:28px}.page-deletion .deletion-receipt-facts>div{grid-template-columns:1fr;gap:5px;padding:13px 0}.page-deletion .deletion-receipt-top{align-items:flex-start;gap:12px}.page-deletion .deletion-state-label{font-size:10px;white-space:nowrap}.page-deletion .deletion-receipt-top .eva-kicker{font-size:10px}}

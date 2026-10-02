@@ -1,0 +1,22 @@
+{
+  "iteration": "03.7",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-6-results.json",
+  "changes": [
+    "Full-viewport organic field without a square boundary or uniform inactive dot grid.",
+    "Angular 5x7 analog glyphs with varying lamp weights and a subtle phosphor pulse.",
+    "Soft quiet areas around copy preserve contrast while light extends beyond the viewport."
+  ],
+  "observations": {
+    "motion": "631 deterministic reversible frames; fixed screen positions, asynchronous resolution and original individual-lamp step switching. No word fade or moving frame.",
+    "typography": "675/875/670 lit sites in15/90/TÚ; angular shoulders, counters, slashed zero and accent retained. Lamp size variation does not remove essential strokes.",
+    "reviewLoop": "Initial full-screen render revealed dots behind text. Enlarged the soft quiet areas, then slowed organic variation to satisfy the continuous-light bound.",
+    "reducedMotion": "Static analog halftone15 and core content retained.",
+    "preservation": "03.6 source and assets saved separately. Tasso Glow and all existing business and lifestyle components retained."
+  },
+  "limits": [
+    "Animations remain controlled by scroll frames.",
+    "No live UI interaction or assistive-technology verification while the Mac was locked. Desktop and phone composition renders provide visual checks.",
+    "Pre-existing Remotion transitive Zod version warning remains; used APIs render successfully."
+  ]
+}

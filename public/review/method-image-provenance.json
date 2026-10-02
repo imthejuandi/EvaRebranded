@@ -1,0 +1,17 @@
+{
+  "revision": "03.15",
+  "date": "2026-09-10",
+  "tool": "image_gen.imagegen built-in",
+  "intent": "style-transfer edit",
+  "editTarget": "/art/method-home-ritual-1000.jpg",
+  "styleReference": "/art/post-run-coast.png",
+  "exactPrompt": "Use case: style-transfer.\nAsset type: replacement editorial image for EVA's En casa method chapter.\nInput image 1 is the EDIT TARGET: the cropped person opening a small unbranded box next to a glass of water. Input image 2 is STYLE ONLY: the accepted EVA coastal walking artwork.\nPrimary request: apply the unmistakable solarized coral-and-violet analog treatment of image 2 to image 1. Match the actual reference strongly; a normal warm photograph or a subtle color grade is not enough.\nPreserve the entire composition and all geometry from image 1: same cropped torso, same one anatomically natural hand, same lid lifted by the fingers, same box, table, glass, crop and camera perspective. Keep the cardboard box unbranded with no visible contents. Do not insert any person, device or scenery from image 2.\nStyle and palette: turn the cream top into a softly luminous peach/coral-white surface with noticeable warm halation spilling beyond the shoulder and torso edges, as the walkers' clothes glow in image 2. Apply warm copper/coral to the hand and skin, with subtle shadow detail. Turn the table and deep background into muted violet/periwinkle and wine-purple shadow tones, with coral light spilling naturally across the table around the hand and box. Give the box a warm peach face with violet side shadows. Preserve enough local contrast to read the hand and box lid clearly.\nOptics: strong yet soft lens bloom, diffused edge light, slight photographic defocus and fine visible analog film grain throughout, like the walking reference. The image should feel like another frame from that same film. Glowing edges are optical spill, not neon outlines or drawn borders. Keep tangible photographic structure beneath the solarized colors. The glass remains identifiable, reflecting the coral/violet environment. Do not keep beige/sepia as the overall palette.\nConstraints: edit color, light and photographic texture only. Keep the pose, objects, proportions, square aspect and scene unchanged. No flowers, foliage, palm trees, landscape, running subjects, text, logos, numbers, devices, blood or needles. No duplicated hands, fingers, objects, electrical trails or sci-fi graphics. No frame or border. Output one final square image.\n",
+  "generationCount": 1,
+  "originalSha256": "fc9ca25214e141968586efe76b6aafe9195dd38cae5cbef19a8c88564da50487",
+  "delivery": {
+    "desktop": "/art/method-home-solar-1000.jpg",
+    "mobile": "/art/method-home-solar-600.jpg",
+    "processing": "Native sips JPEG encoding and proportional resizing only"
+  },
+  "review": "Coral-violet separation, attached optical glow, tactile grain and preserved scene geometry passed."
+}

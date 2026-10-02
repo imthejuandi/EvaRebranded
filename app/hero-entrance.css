@@ -1,0 +1,23 @@
+/* A single entrance, separate from the reversible scroll composition.
+   The runner's final tracked label cues the rest; opacity/transform only. */
+.hero-entrance[data-hero-entrance="pending"] [data-hero-reveal],
+.hero-entrance[data-hero-entrance="watching"] [data-hero-reveal]{opacity:0}
+.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal],
+.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal] *{pointer-events:none!important}
+.hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal]{animation:eva-hero-arrive .85s cubic-bezier(.22,1,.36,1) both}
+.hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal="action"]{animation-delay:.1s}
+.hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal="navigation"]{animation-delay:.16s}
+.hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal="controls"]{animation-delay:.22s}
+.hero-entrance[data-hero-entrance="skip"] [data-hero-reveal],
+.hero-entrance [data-hero-reveal]:focus-within{opacity:1;transform:none;animation:none;pointer-events:auto!important}
+.hero-entrance:has(:focus-visible) [data-hero-reveal]{opacity:1;transform:none;animation:none;pointer-events:auto!important}
+.hero-entrance:has(:focus-visible) [data-hero-reveal] *{pointer-events:auto!important}
+@keyframes eva-hero-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){
+ .hero-entrance [data-hero-reveal]{opacity:1!important;transform:none!important;animation:none!important;pointer-events:auto!important}
+ .hero-entrance [data-hero-reveal] *{pointer-events:auto!important}
+}
+
+/* Start with ink during hydration; a scroll or keyboard skip reveals native media immediately. */
+.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) .hero-runner-static{opacity:0}
+.hero-entrance[data-hero-entrance="skip"] [data-runner-arrival-layer]{display:none}

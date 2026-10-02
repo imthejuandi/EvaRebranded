@@ -1,0 +1,88 @@
+{
+  "version": "03.23",
+  "pass": true,
+  "desktop": {
+    "sizes": [
+      "14px",
+      "14px",
+      "14px",
+      "14px"
+    ],
+    "radius": "0px",
+    "height": 50
+  },
+  "mobile": {
+    "sizes": [
+      "15px",
+      "15px",
+      "15px",
+      "15px"
+    ],
+    "fonts": [
+      "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace",
+      "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace",
+      "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace",
+      "SFMono-Regular, Consolas, \"Liberation Mono\", Menlo, monospace"
+    ],
+    "radius": "0px",
+    "width": 245,
+    "height": 190,
+    "rows": [
+      44,
+      44,
+      44,
+      44
+    ]
+  },
+  "narrow": {
+    "x": 17.5,
+    "width": 245,
+    "right": 262.5,
+    "overflow": false
+  },
+  "content": {
+    "titles": [
+      "C\u00f3mo funciona",
+      "Ciencia",
+      "Precios",
+      "Nosotros"
+    ],
+    "centered": true,
+    "heading": false,
+    "index": false,
+    "languageInMenu": false,
+    "headerLanguage": "https://www.evahealth.es/en"
+  },
+  "header": {
+    "width": 320,
+    "right": 296,
+    "items": [
+      {
+        "left": 24,
+        "right": 82.375
+      },
+      {
+        "left": 102.046875,
+        "right": 177.765625
+      },
+      {
+        "left": 197.421875,
+        "right": 296
+      }
+    ]
+  },
+  "checks": [
+    "square corners",
+    "compact desktop bar",
+    "245px dropdown",
+    "44px category rows",
+    "four equal monospace titles",
+    "320px containment",
+    "centered titles without numbers",
+    "language in page header only"
+  ],
+  "motion": "Existing 03.21 animation code unchanged",
+  "build": true,
+  "deliveryContracts": true,
+  "history": "/archive/eva-03-22-square-menu.zip"
+}

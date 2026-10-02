@@ -1,0 +1,59 @@
+{
+  "version": "03.22",
+  "pass": true,
+  "desktop": {
+    "sizes": [
+      "14px",
+      "14px",
+      "14px",
+      "14px",
+      "14px"
+    ],
+    "radius": "0px",
+    "height": 50
+  },
+  "mobile": {
+    "sizes": [
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px"
+    ],
+    "fonts": [
+      "Georgia, \"Times New Roman\", serif",
+      "Georgia, \"Times New Roman\", serif",
+      "Georgia, \"Times New Roman\", serif",
+      "Georgia, \"Times New Roman\", serif",
+      "Georgia, \"Times New Roman\", serif"
+    ],
+    "radius": "0px",
+    "width": 300,
+    "height": 326,
+    "rows": [
+      52,
+      52,
+      52,
+      52,
+      52
+    ]
+  },
+  "narrow": {
+    "x": 16,
+    "width": 288,
+    "right": 304,
+    "overflow": false
+  },
+  "checks": [
+    "square corners",
+    "compact desktop bar",
+    "300px dropdown",
+    "52px category rows",
+    "matching type size including EN and English",
+    "320px containment"
+  ],
+  "motion": "Existing 03.21 animation code unchanged",
+  "build": true,
+  "deliveryContracts": true,
+  "history": "/archive/eva-03-21-frost-navigation.zip"
+}

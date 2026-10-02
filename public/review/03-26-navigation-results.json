@@ -1,0 +1,34 @@
+{
+  "version": "03.26",
+  "scope": "Narrower dropdown",
+  "review": "Local in-app browser",
+  "checks": {
+    "phoneWidths": [
+      320,
+      390
+    ],
+    "panel": [
+      180,
+      190
+    ],
+    "longestLabelWidth": 117.40625,
+    "allLabelsSingleLine": true,
+    "labelFontPx": 15,
+    "labelFontWeight": 700,
+    "viewport320Bounds": [
+      50,
+      230
+    ],
+    "keyboardFocus": true,
+    "escapeCloses": true
+  },
+  "preserved": [
+    "Frost material",
+    "Dot morph",
+    "Centered titles",
+    "44px touch targets"
+  ],
+  "limitations": [
+    "Desktop navigation unchanged; no repeat desktop check"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "03.25",
+  "scope": "More opaque frosted dropdown and bold menu labels",
+  "review": "Local in-app browser",
+  "checks": {
+    "mobileWidths": [
+      320,
+      390
+    ],
+    "desktopWidth": 1440,
+    "panel": [
+      245,
+      190
+    ],
+    "phoneLabelFontPx": 15,
+    "desktopLabelFontPx": 14,
+    "allCategoryWeights": 700,
+    "backdropBlurPx": 40,
+    "backdropSaturation": 0.45,
+    "gradientOpacity": [
+      0.95,
+      0.91,
+      0.94
+    ],
+    "dotMorphSettlesAt": 1,
+    "dotAnimationStops": true,
+    "keyboardFocus": true,
+    "escapeCloses": true,
+    "narrowPanelContained": true,
+    "narrowHeaderControlsSeparated": true
+  },
+  "limitations": [
+    "No physical-device performance measurement"
+  ]
+}

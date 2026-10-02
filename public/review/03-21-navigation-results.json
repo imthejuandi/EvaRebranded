@@ -1,0 +1,44 @@
+{
+  "version": "03.21",
+  "change": "Frost navigation and reversible Analog Ink lettering",
+  "browser": {
+    "pass": true,
+    "checks": [
+      "desktop partial morph",
+      "mid-animation reversal",
+      "same geometry",
+      "idle animation stops",
+      "mobile glass containment",
+      "Escape and return focus",
+      "outside dismissal",
+      "320px width",
+      "reduced motion",
+      "one-tap immediate link",
+      "keyboard dot focus",
+      "200% text containment"
+    ],
+    "partial": {
+      "value": 0.514,
+      "animating": "true",
+      "rendering": "true"
+    },
+    "reverse": {
+      "value": 0.202,
+      "animating": "true",
+      "rendering": "true"
+    },
+    "full": {
+      "value": 1,
+      "animating": "false",
+      "rendering": "true"
+    },
+    "errors": []
+  },
+  "scope": "Existing navigation only; current artwork and destinations retained.",
+  "history": {
+    "archive": "/archive/eva-03-20-solar-still.zip",
+    "restoreVerified": true,
+    "verifiedSourceFiles": 234
+  },
+  "reviewLimit": "Local Chrome checks; no physical-phone FPS measurement."
+}

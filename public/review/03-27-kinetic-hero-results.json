@@ -1,0 +1,68 @@
+{
+  "version": "03.27",
+  "scope": [
+    "Official EVA wordmark",
+    "Supplied Sterling Gate kinetic menu",
+    "Conoce tu salud hero with analog salud"
+  ],
+  "review": "Local in-app browser and source checks",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      740
+    ],
+    [
+      812,
+      375
+    ]
+  ],
+  "checks": {
+    "officialArtworkMatchesAttachment": true,
+    "officialAspectRatio": 2.6997041420118344,
+    "mobileWordmarkWidth": 78,
+    "desktopWordmarkWidth": 100,
+    "mobileHeaderNoOverlap": true,
+    "noHorizontalOverflow": true,
+    "heroAnalogWord": "salud.",
+    "mobileAnalogCells": 992,
+    "desktopPanelWidth": 720,
+    "narrowPanelWidth": 320,
+    "mobileCategoryFontPx": 30,
+    "mobileLinkMinHeight": 65,
+    "fourBusinessDestinationsPreserved": true,
+    "menuOpensAndCloses": true,
+    "layeredMotionVisible": true,
+    "keyboardFocusContained": true,
+    "escapeDismisses": true,
+    "focusRestoredToTrigger": true,
+    "bodyScrollLockRestored": true,
+    "focusedLettersBecomeDots": true,
+    "blurredLettersReturnToText": true,
+    "dotAnimationStopsAtEndpoint": true,
+    "landscapeLinksVisible": true,
+    "landscapePanelScrollsInternally": true,
+    "reducedMotionPathSourceReviewed": true,
+    "typecheck": true,
+    "focusedLint": true,
+    "productionBuild": true,
+    "deliveryScript": true
+  },
+  "preserved": [
+    "Existing business content and real URLs",
+    "Approved images, runner video and scroll story",
+    "Previous 03.26 source archive"
+  ],
+  "limitations": [
+    "Browser viewport emulation; no physical phone test",
+    "Reduced motion source reviewed; no OS preference emulation run",
+    "External 21st review was blocked by automatic approval; review completed locally"
+  ]
+}

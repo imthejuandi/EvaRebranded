@@ -1,0 +1,26 @@
+.biomarker-history{color:inherit;margin-top:20px;min-width:0;font-size:14px;text-align:left}
+.biomarker-history-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.biomarker-history h4{font-family:inherit;font-size:16px;font-weight:500;line-height:1.4;margin:0}.biomarker-history-heading>span{font-size:12px;opacity:.8}
+.biomarker-history-chart{height:165px;position:relative;margin-top:12px;isolation:isolate}
+.biomarker-history-chart>svg{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.history-grid{stroke:currentColor;stroke-opacity:.14;vector-effect:non-scaling-stroke;stroke-width:1;stroke-dasharray:2 5}
+.history-path{fill:none;stroke:currentColor;stroke-width:1.5;stroke-opacity:.65;vector-effect:non-scaling-stroke}
+.history-point{position:absolute;display:grid;place-items:center;width:44px;height:44px;transform:translate(-50%,-50%);background:transparent;border:0;border-radius:50%;color:inherit;cursor:pointer;padding:0}
+.history-point>span{display:block;width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 5px currentColor;transition:transform .2s ease}
+.history-point[aria-pressed=true]>span{transform:scale(1.5);outline:1px solid currentColor;outline-offset:4px}
+.history-point:focus-visible{outline:2px solid currentColor;outline-offset:0}
+.history-axis{display:flex;justify-content:space-between;gap:16px;font-size:12px;line-height:1.5;margin-top:-14px;padding:0 1px}
+.history-selected{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:18px 0;padding:12px 0;border-block:1px solid #ffffff30;font-size:14px}
+.history-selected>span>small{display:block;font-size:12px;opacity:.75;margin-top:4px}
+.history-selected strong{font-size:22px;font-weight:400;font-variant-numeric:tabular-nums;white-space:nowrap}.history-selected strong small{font-size:12px}
+.history-direction{display:flex;justify-content:space-between;align-items:baseline;gap:16px;font-size:14px}.history-direction strong{font-weight:500;white-space:nowrap}.history-direction small{font-weight:400;font-size:12px}
+.biomarker-history .history-period-note{font-size:12px;line-height:1.55;opacity:.8;margin:7px 0 16px}
+.history-table{border-bottom:1px solid #ffffff30}.history-table summary{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;font-size:13px;list-style:none}.history-table summary::-webkit-details-marker{display:none}.history-table[open] summary>span{transform:rotate(45deg)}
+.history-table>div{overflow:auto}.history-table table{border-collapse:collapse;width:100%;font-size:12px;text-align:left}.history-table th,.history-table td{padding:10px 8px 10px 0;border-top:1px solid #ffffff20;white-space:nowrap}.history-table th{font-weight:500}
+.history-meaning{margin-top:22px;padding-top:20px;border-top:1px solid #ffffff30}.biomarker-history .history-meaning p{font-size:14px;line-height:1.7;margin:12px 0;max-width:65ch}
+.biomarker-history .history-caveat{font-size:12px;line-height:1.6;opacity:.75;margin:17px 0}.biomarker-history .history-empty{font-size:14px;line-height:1.6;margin:18px 0}
+.labs-focus-capsule .biomarker-history{background:#2624343b;padding:20px 18px 3px;border:1px solid #ffffff26;border-radius:20px;margin-bottom:20px}
+.page-labs .labs-history-open{min-height:44px;border:0;background:transparent;color:inherit;display:inline-flex;align-items:center;gap:10px;padding:10px 0;font:inherit;font-size:13px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.page-labs .labs-history-overview{margin:28px 0;padding:25px 0;border-block:1px solid var(--labs-line)}.labs-history-overview>h3{font-size:20px;font-weight:500;letter-spacing:-.02em;margin:0 0 10px}.labs-history-overview>p{font-size:14px;line-height:1.65;max-width:72ch}.labs-history-overview-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.labs-history-overview-grid>button{display:flex;align-items:center;gap:12px;min-height:44px;border:1px solid #a6b19d66;background:#edf0e6;border-radius:10px;padding:10px 14px;cursor:pointer;color:#354331;font:inherit;font-size:13px}.labs-history-overview-grid small{opacity:.8}.labs-history-overview-grid strong{font-weight:500}
+@media(max-width:700px){.labs-focus-capsule .biomarker-history{margin-inline:-10px;padding:18px 13px 3px}.biomarker-history-chart{height:155px}.history-direction{flex-wrap:wrap;gap:7px}.history-axis{font-size:11px}.labs-history-overview-grid>button{flex:1 1 auto}}
+@media(prefers-reduced-motion:reduce){.history-point>span{transition:none}}

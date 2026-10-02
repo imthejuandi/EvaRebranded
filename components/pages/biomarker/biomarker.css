@@ -1,0 +1,191 @@
+.page-biomarker { --biomarker-rule: #171b1828; --biomarker-muted: #62685f; }
+.page-biomarker .biomarker-back { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; min-height: 44px; margin-bottom: 23px; color: var(--biomarker-muted); }
+.page-biomarker .biomarker-back:hover { color: #171b18; }
+.page-biomarker .eva-app-page-header { margin-bottom: 32px; }
+.page-biomarker .eva-app-page-header h1 { font-size: clamp(42px, 5vw, 66px); letter-spacing: -.05em; }
+.page-biomarker .biomarker-report-toolbar { display: flex; align-items: center; gap: 22px; padding: 20px 0; border-top: 1px solid var(--biomarker-rule); margin-bottom: 20px; }
+.page-biomarker .biomarker-report-toolbar > label { font-size: 12px; color: var(--biomarker-muted); white-space: nowrap; }
+.page-biomarker .biomarker-report-select { position: relative; flex: 1; max-width: 610px; }
+.page-biomarker .biomarker-report-select select { appearance: none; width: 100%; background: transparent; font-size: 13px; min-height: 44px; border: 1px solid var(--biomarker-rule); padding: 11px 38px 11px 14px; border-radius: 3px; color: #171b18; }
+.page-biomarker .biomarker-report-select > svg { position: absolute; right: 14px; top: calc(50% - 8px); pointer-events: none; }
+.page-biomarker .biomarker-report-toolbar .eva-source-tag { margin-left: auto; white-space: nowrap; }
+.page-biomarker .biomarker-save-notice { display: flex; gap: 10px; align-items: center; background: #dce1d0; border: 1px solid #66745c3d; padding: 13px 18px; font-size: 13px; margin-bottom: 20px; }
+.page-biomarker .biomarker-instrument { position: relative; isolation: isolate; overflow: hidden; color: #fffdf6; background: #53505b; padding: 34px 40px 28px; border: 1px solid #fffdf6b3; --eva-glass-radius:52px;border-radius:var(--eva-glass-radius); box-shadow: inset 0 0 3px 2px #fffdf6b3, inset 0 0 30px 14px #f8f6f0ad, 0 4px 10px #62586720; text-shadow: 0 1px 6px #15242655; }
+.page-biomarker .biomarker-instrument::before { content: ''; position: absolute; z-index: -2; inset: -20px; filter: blur(15px); background: radial-gradient(ellipse at 26% 107%, #ecd0a2 0, #d39170 15%, transparent 55%), radial-gradient(ellipse at 92% 75%, #ada4d1 0, #89749f 26%, transparent 64%), radial-gradient(ellipse at 47% 15%, #242e32 0, #3b364b 43%, #9d8896 85%); }
+.page-biomarker .biomarker-instrument::after { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; box-shadow: inset 0 0 4px 3px #fffdf6b3, inset 0 0 30px 12px #f8f6f099; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 170 170' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' opacity='.13' filter='url(%23g)' d='M0 0h170v170H0z'/%3E%3C/svg%3E"); pointer-events: none; }
+.page-biomarker .biomarker-instrument .eva-status i { border: 1px solid #fff9; width: 7px; height: 7px; }
+.page-biomarker .biomarker-instrument-meta { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.page-biomarker .biomarker-instrument-meta .eva-kicker { margin-bottom: 0!important; font-size: 10px; }
+.page-biomarker .biomarker-instrument-meta > span { color: #eeece4; font-size: 12px; }
+.page-biomarker .biomarker-readout { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-top: 35px; }
+.page-biomarker .biomarker-readout > div { display: flex; align-items: baseline; gap: 16px; min-width: 0; }
+.page-biomarker .biomarker-readout strong { font-size: clamp(62px, 8vw, 112px); font-weight: 400; line-height: .95; letter-spacing: -.075em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.page-biomarker .biomarker-readout > div > span { font-size: 15px; color: #eeece4; white-space: nowrap; }
+.page-biomarker .biomarker-readout .eva-status { font-size: 12px; padding-bottom: 7px; max-width: 220px; flex-shrink: 0; }
+.page-biomarker .biomarker-instrument-plot { margin: 24px -5% 4px; }
+.page-biomarker .biomarker-instrument-plot > svg { width: 100%; height: auto; display: block; }
+.page-biomarker .biomarker-instrument-bottom { display: grid; grid-template-columns: 1fr .8fr; gap: 30px; border-top: 1px solid #fff4; padding-top: 18px; align-items: start; }
+.page-biomarker .biomarker-instrument-bottom > div { display: grid; grid-template-columns: 13px 1fr; gap: 6px 10px; font-size: 11px; color: #f0eee6; }
+.page-biomarker .biomarker-range-key { display: block; width: 13px; height: 13px; background-image: radial-gradient(#fffdf6 1.1px, transparent 1.5px); background-size: 4px 4px; margin-top: 2px; }
+.page-biomarker .biomarker-instrument-bottom strong { grid-column: 2; color: #fffdf6; font-size: 13px; font-weight: 600; }
+.page-biomarker .biomarker-instrument-bottom p { font-size: 11px; line-height: 1.6; color: #f0eee6; }
+.page-biomarker .biomarker-history { margin-top: 64px; }
+.page-biomarker .biomarker-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 36px; }
+.page-biomarker .biomarker-section-heading h2 { margin-bottom: 0; font-size: 31px; }
+.page-biomarker .biomarker-section-heading .eva-kicker { margin-bottom: 13px!important; }
+.page-biomarker .biomarker-section-heading > p { max-width: 330px; font-size: 13px; color: var(--biomarker-muted); }
+.page-biomarker .biomarker-history-chart { position: relative; width: 100%; max-width: 100%; aspect-ratio: 900 / 260; margin: 28px 0 40px; }
+.page-biomarker .biomarker-history-chart > svg { display: block; width: 100%; height: 100%; }
+.page-biomarker .biomarker-history-point { position: absolute; width: 44px; height: 44px; padding: 0; transform: translate(-50%, -50%); background: transparent; border: 0; border-radius: 50%; display: grid; place-items: center; cursor: pointer; }
+.page-biomarker .biomarker-history-point > span { width: 10px; height: 10px; border: 1.5px solid #52664a; background: #f3f0e8; border-radius: 50%; transition: background .16s, box-shadow .16s; }
+.page-biomarker .biomarker-history-point:hover > span { box-shadow: 0 0 0 7px #6879531c; }
+.page-biomarker .biomarker-history-point[aria-pressed='true'] > span { background: #52664a; box-shadow: 0 0 0 5px #52664a20; }
+.page-biomarker .biomarker-chart-dates { position: absolute; top: 100%; left: 7.2%; right: 7.2%; display: flex; justify-content: space-between; gap: 18px; font-size: 11px; color: var(--biomarker-muted); }
+.page-biomarker .biomarker-history-note { font-size: 11px; color: var(--biomarker-muted); margin-top: 28px; line-height: 1.6; }
+.page-biomarker .biomarker-history-note strong { font-weight: 600; white-space: nowrap; }
+.page-biomarker .biomarker-table-wrap { position: relative; overflow-x: auto; margin-top: 25px; }
+.page-biomarker .biomarker-table-wrap table { min-width: 580px; }
+.page-biomarker .biomarker-table-wrap thead { border-top: 1px solid var(--biomarker-rule); }
+.page-biomarker .biomarker-table-wrap thead th { font-size: 10px; }
+.page-biomarker .biomarker-table-wrap tbody th { font-family: inherit; letter-spacing: 0; text-transform: none; font-size: 13px; color: #171b18; font-weight: 400; }
+.page-biomarker .biomarker-table-wrap tbody th > button { display: flex; gap: 12px; align-items: center; min-height: 44px; padding: 3px 8px 3px 0; background: transparent; border: 0; color: inherit; text-align: left; cursor: pointer; }
+.page-biomarker .biomarker-table-wrap tr[data-selected='true'] { background: #cbd2bd20; }
+.page-biomarker .biomarker-table-wrap td { font-size: 12px; }
+.page-biomarker .biomarker-table-wrap td > strong { font-size: 17px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.page-biomarker .biomarker-table-wrap td > span { display: inline-block; padding-left: 8px; font-size: 10px; color: var(--biomarker-muted); }
+.page-biomarker .biomarker-table-wrap th:last-child, .page-biomarker .biomarker-table-wrap td:last-child { text-align: right; }
+.page-biomarker .biomarker-edit-row { display: inline-flex; gap: 10px; align-items: center; min-height: 44px; padding: 8px 0 8px 8px; background: transparent; border: 0; cursor: pointer; color: #536049; font-size: 11px; }
+.page-biomarker .biomarker-edit-row:hover { text-decoration: underline; text-underline-offset: 4px; }
+.page-biomarker .biomarker-understanding { padding: 60px 0 42px; border-top: 1px solid var(--biomarker-rule); margin-top: 56px; }
+.page-biomarker .biomarker-reading-level { display: flex; flex-wrap: wrap; border: 1px solid var(--biomarker-rule); padding: 3px; border-radius: 3px; }
+.page-biomarker .biomarker-reading-level button { min-height: 40px; border: 0; border-radius: 2px; background: transparent; color: var(--biomarker-muted); padding: 8px 13px; font-size: 11px; cursor: pointer; }
+.page-biomarker .biomarker-reading-level button[aria-pressed='true'] { background: #d8ddca; color: #2b3526; }
+.page-biomarker .biomarker-explanation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; margin-top: 36px; }
+.page-biomarker .biomarker-explanation-grid > article { padding-top: 22px; border-top: 1px solid var(--biomarker-rule); }
+.page-biomarker .biomarker-section-index { display: block; font: 10px monospace; color: #58654f; margin-bottom: 24px; }
+.page-biomarker .biomarker-explanation-grid h3 { font-size: 24px; margin-bottom: 18px; }
+.page-biomarker .biomarker-explanation-grid p { font-size: 15px; color: #434c3e; }
+.page-biomarker .biomarker-extra-copy { font-size: 12px!important; line-height: 1.7; color: var(--biomarker-muted)!important; margin-top: 18px; }
+.page-biomarker .biomarker-provenance { display: grid; grid-template-columns: .85fr 1.2fr; gap: 72px; padding: 36px; margin-top: 12px; border: 1px solid #fff8; background: #e8e5da; border-radius: 28px; }
+.page-biomarker .biomarker-provenance h2 { font-size: 27px; margin-bottom: 18px; max-width: 280px; }
+.page-biomarker .biomarker-provenance .eva-kicker { margin-bottom: 20px!important; }
+.page-biomarker .biomarker-provenance p { color: var(--biomarker-muted); font-size: 12px; line-height: 1.7; }
+.page-biomarker .biomarker-provenance dl { margin: 0; }
+.page-biomarker .biomarker-provenance dl > div { display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; padding: 12px 0; border-bottom: 1px solid var(--biomarker-rule); font-size: 12px; line-height: 1.5; }
+.page-biomarker .biomarker-provenance dt { color: var(--biomarker-muted); }
+.page-biomarker .biomarker-provenance dd { margin: 0; }
+.page-biomarker .biomarker-provenance-links { display: flex; flex-wrap: wrap; gap: 8px 26px; margin-top: 18px; }
+.page-biomarker .biomarker-provenance-links a { min-height: 44px; display: inline-flex; align-items: center; gap: 12px; font-size: 11px; }
+.page-biomarker .biomarker-provenance-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.page-biomarker .biomarker-next-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; padding-top: 52px; }
+.page-biomarker .biomarker-next-grid article { padding-top: 26px; border-top: 1px solid var(--biomarker-rule); }
+.page-biomarker .biomarker-next-grid .eva-kicker { margin-bottom: 20px!important; }
+.page-biomarker .biomarker-next-grid h2 { max-width: 340px; font-size: 28px; margin-bottom: 18px; }
+.page-biomarker .biomarker-next-grid p:not(.eva-kicker) { font-size: 14px; color: var(--biomarker-muted); }
+.page-biomarker .biomarker-next-grid .eva-text-link { margin-top: 24px; font-size: 12px; }
+.page-biomarker .biomarker-empty-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.page-biomarker .biomarker-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.page-biomarker .biomarker-edit-dialog { width: min(540px, calc(100vw - 40px)); max-height: calc(100svh - 48px); margin: auto; padding: 32px; border: 1px solid #fff9; border-radius: 4px; background: #f3f0e8; color: #171b18; overflow-y: auto; box-shadow: 0 24px 80px #0003; }
+.page-biomarker .biomarker-edit-dialog::backdrop { background: #0b1010b3; }
+.page-biomarker .biomarker-modal-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+.page-biomarker .biomarker-modal-top .eva-kicker { margin-bottom: 0!important; font-size: 10px; }
+.page-biomarker .biomarker-modal-top button { min-width: 44px; min-height: 44px; display: grid; place-items: center; background: transparent; border: 0; cursor: pointer; color: #171b18; }
+.page-biomarker .biomarker-edit-dialog h2 { font-size: 32px; margin-bottom: 16px; }
+.page-biomarker .biomarker-edit-dialog form > p { font-size: 14px; color: var(--biomarker-muted); }
+.page-biomarker .biomarker-edit-context { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding: 20px 0; margin: 22px 0; border-top: 1px solid var(--biomarker-rule); border-bottom: 1px solid var(--biomarker-rule); }
+.page-biomarker .biomarker-edit-context strong { font-size: 19px; font-weight: 400; }
+.page-biomarker .biomarker-edit-context span { font-size: 11px; color: var(--biomarker-muted); }
+.page-biomarker .biomarker-edit-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.page-biomarker .biomarker-edit-fields input { min-width: 0; }
+.page-biomarker .biomarker-input-hint { font-size: 11px!important; margin-top: 14px; line-height: 1.6; }
+.page-biomarker .biomarker-edit-dialog .eva-form-error { color: #923a29; font-size: 13px; margin-top: 18px; }
+.page-biomarker .biomarker-edit-actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.page-biomarker .biomarker-edit-actions .eva-button { font-size: 12px; padding: 13px 17px; }
+
+@media (max-width: 1100px) {
+  .page-biomarker .biomarker-report-toolbar { gap: 14px; flex-wrap: wrap; }
+  .page-biomarker .biomarker-report-toolbar > label { width: 100%; }
+  .page-biomarker .biomarker-instrument { padding: 26px; }
+  .page-biomarker .biomarker-section-heading { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .page-biomarker .biomarker-section-heading > p { max-width: 520px; }
+  .page-biomarker .biomarker-provenance { gap: 36px; padding: 28px; }
+  .page-biomarker .biomarker-explanation-grid, .page-biomarker .biomarker-next-grid { gap: 32px; }
+}
+
+@media (max-width: 650px) {
+  .page-biomarker .biomarker-back { margin-bottom: 16px; }
+  .page-biomarker .eva-app-page-header h1 { font-size: 45px; }
+  .page-biomarker .biomarker-report-toolbar { margin-bottom: 14px; gap: 10px; }
+  .page-biomarker .biomarker-report-toolbar .eva-source-tag { margin-left: 0; }
+  .page-biomarker .biomarker-report-select { flex: 1 1 100%; }
+  .page-biomarker .biomarker-report-select select { font-size: 12px; }
+  .page-biomarker .biomarker-instrument { padding: 28px 25px; --eva-glass-radius:38px;border-radius:var(--eva-glass-radius); }
+  .page-biomarker .biomarker-instrument-meta { align-items: flex-start; gap: 12px; }
+  .page-biomarker .biomarker-instrument-meta .eva-kicker { font-size: 8px; max-width: 100px; }
+  .page-biomarker .biomarker-instrument-meta > span { font-size: 10px; text-align: right; }
+  .page-biomarker .biomarker-readout { align-items: flex-start; flex-direction: column; gap: 15px; margin-top: 28px; }
+  .page-biomarker .biomarker-readout strong { font-size: 79px; }
+  .page-biomarker .biomarker-readout > div > span { font-size: 13px; }
+  .page-biomarker .biomarker-readout .eva-status { font-size: 11px; }
+  .page-biomarker .biomarker-instrument-plot { margin-top: 20px; margin-bottom: 16px; }
+  .page-biomarker .biomarker-instrument-plot svg text { font-size: 25px; }
+  .page-biomarker .biomarker-instrument-bottom { grid-template-columns: 1fr; gap: 14px; padding-top: 16px; }
+  .page-biomarker .biomarker-instrument-bottom p { font-size: 10px; }
+  .page-biomarker .biomarker-history { margin-top: 44px; }
+  .page-biomarker .biomarker-section-heading h2 { font-size: 28px; }
+  .page-biomarker .biomarker-history-chart { margin-top: 24px; min-height: 175px; }
+  .page-biomarker .biomarker-history-chart svg text { display: none; }
+  .page-biomarker .biomarker-chart-dates { left: 5%; right: 5%; font-size: 9px; }
+  .page-biomarker .biomarker-history-note { font-size: 10px; }
+  .page-biomarker .biomarker-table-wrap table { min-width: 505px; }
+  .page-biomarker .biomarker-table-wrap td { font-size: 11px; }
+  .page-biomarker .biomarker-edit-row > span { display: none; }
+  .page-biomarker .biomarker-edit-row { min-width: 44px; justify-content: center; padding-left: 0; }
+  .page-biomarker .biomarker-understanding { margin-top: 38px; padding-top: 36px; padding-bottom: 30px; }
+  .page-biomarker .biomarker-reading-level { width: 100%; justify-content: space-between; }
+  .page-biomarker .biomarker-reading-level button { flex: 1; min-height: 44px; padding-left: 9px; padding-right: 9px; }
+  .page-biomarker .biomarker-explanation-grid { grid-template-columns: 1fr; gap: 30px; }
+  .page-biomarker .biomarker-section-index { margin-bottom: 18px; }
+  .page-biomarker .biomarker-provenance { grid-template-columns: 1fr; gap: 22px; padding: 24px 20px; }
+  .page-biomarker .biomarker-provenance dl > div { gap: 20px; font-size: 11px; }
+  .page-biomarker .biomarker-next-grid { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; }
+  .page-biomarker .biomarker-next-grid h2 { max-width: 310px; font-size: 27px; }
+  .page-biomarker .biomarker-empty-actions { flex-direction: column; }
+  .page-biomarker .biomarker-edit-dialog { padding: 24px; }
+  .page-biomarker .biomarker-edit-dialog h2 { font-size: 28px; }
+  .page-biomarker .biomarker-edit-context { flex-direction: column; gap: 8px; }
+  .page-biomarker .biomarker-edit-actions { flex-direction: column-reverse; }
+  .page-biomarker .biomarker-edit-actions .eva-button { width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-biomarker .biomarker-history-point > span { transition: none; }
+}
+
+/* Keep the dated instrument close to the report controls. */
+.page-biomarker{min-width:0}
+.page-biomarker [id]{scroll-margin-top:26px}
+.page-biomarker .biomarker-back{margin-bottom:10px}
+.page-biomarker .eva-app-page-header{margin-bottom:20px}
+.page-biomarker .eva-app-page-header h1{font-size:clamp(34px,4vw,54px);line-height:1.08;margin-bottom:11px;overflow-wrap:anywhere}
+.page-biomarker .eva-app-page-header p{font-size:14px}
+.page-biomarker .biomarker-report-toolbar{padding:14px 0;margin-bottom:0;gap:15px;flex-wrap:wrap}
+.page-biomarker .biomarker-report-select{min-width:0}
+.page-biomarker .biomarker-report-select select{background:#faf8f2;border-radius:8px;font-size:12px}
+.page-biomarker .biomarker-section-nav{display:flex;flex-wrap:wrap;gap:28px;margin-bottom:21px;border-bottom:1px solid var(--biomarker-rule)}
+.page-biomarker .biomarker-section-nav a{display:flex;align-items:center;min-height:44px;font-size:12px;border-bottom:1px solid transparent}
+.page-biomarker .biomarker-section-nav a:hover{border-color:currentColor}
+.page-biomarker .biomarker-instrument{max-width:900px;--eva-glass-radius:44px;border-radius:var(--eva-glass-radius);padding:30px 35px 24px}
+.page-biomarker .biomarker-instrument:before{--eva-glass-bleed:0px;inset:0;filter:none}
+.page-biomarker .biomarker-instrument:after{background-image:none}
+.page-biomarker .biomarker-readout{margin-top:27px}
+.page-biomarker .biomarker-readout strong{font-size:clamp(60px,7vw,92px)}
+.page-biomarker .biomarker-instrument-plot{margin-top:20px}
+.page-biomarker .biomarker-instrument-bottom p{padding:9px 11px;background:#30273880;border-radius:8px;color:#fffdf6;margin:0;font-size:11px}
+.page-biomarker .biomarker-history{margin-top:44px}
+.page-biomarker .biomarker-table-wrap{max-width:100%;overscroll-behavior-inline:contain}
+.page-biomarker .biomarker-table-wrap:focus-visible{outline:2px solid #745635;outline-offset:5px}
+.page-biomarker .biomarker-provenance{background:#eeece2;border:1px solid var(--biomarker-rule);border-radius:16px}
+.page-biomarker .biomarker-edit-dialog{border-radius:22px}
+@media(max-width:700px){.page-biomarker .biomarker-back{margin-bottom:7px}.page-biomarker .eva-app-page-header h1{font-size:35px}.page-biomarker .eva-app-page-header p{font-size:13px}.page-biomarker .biomarker-report-toolbar{gap:10px;padding:13px 0}.page-biomarker .biomarker-report-select{max-width:none;width:100%;flex-basis:100%}.page-biomarker .biomarker-report-toolbar .eva-source-tag{margin:0}.page-biomarker .biomarker-report-select select{font-size:13px}.page-biomarker .biomarker-section-nav{gap:24px;margin-bottom:17px}.page-biomarker .biomarker-instrument{--eva-glass-radius:36px;border-radius:var(--eva-glass-radius);padding:27px 24px 22px}.page-biomarker .biomarker-instrument-meta{gap:10px;flex-wrap:wrap}.page-biomarker .biomarker-instrument-meta>span{font-size:11px}.page-biomarker .biomarker-instrument-bottom{grid-template-columns:1fr;gap:15px}.page-biomarker .biomarker-readout strong{font-size:68px}.page-biomarker .biomarker-readout{gap:16px;margin-top:24px}.page-biomarker .biomarker-instrument-bottom p{font-size:11px}.page-biomarker .biomarker-provenance{padding:24px 20px}}
+@media(prefers-reduced-motion:reduce){.page-biomarker *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

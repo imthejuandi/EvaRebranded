@@ -1,0 +1,22 @@
+{
+  "iteration": "03.8",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-7-results.json",
+  "changes": [
+    "One living-lamp radius, clock and visual material throughout the entire passage.",
+    "Existing lamps form numerals through brightness guidance, with the organic current continuing inside and outside the glyphs.",
+    "Mobile field covers the entire screen, including behind the letters, with readable text."
+  ],
+  "observations": {
+    "motion": "All631 frames preserve exact lamp coordinates and their shared radius function. The269/270 boundary has no material or clock reset.",
+    "mobile": "Every lamp remains above0.7px radius and0.14 source opacity at320×568. Text-area intensity is bounded while the field stays visible.",
+    "legibility": "Glyph brightness is separated from broad copy dimming so complete number strokes remain clear. Desktop, compact mobile and mid-emergence stills reviewed. An independent review identified a faint lower5 on320px; the common radius minimum was raised for the whole field.",
+    "rendering": "One shared halo filter and16 intensity paths replace independent filtered layers; compact path coordinates limit SVG data.",
+    "preservation": "03.7 source and review retained. Tasso Glow, runner, lifestyle imagery, business information and emoji removal preserved."
+  },
+  "limits": [
+    "Animations remain controlled by scroll frames.",
+    "Frame renders and automated checks do not constitute assistive-technology or live interaction testing.",
+    "Pre-existing Remotion transitive Zod warning remains; used APIs render successfully."
+  ]
+}

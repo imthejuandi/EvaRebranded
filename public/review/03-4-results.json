@@ -1,0 +1,30 @@
+{
+  "iteration": "03.4",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-3-results.json",
+  "source": "https://www.evahealth.es/es",
+  "changes": [
+    "Editorial reference-range context and quarterly annual rhythm",
+    "Five illustrative specimen comparisons with numerical readings, units and both source ranges",
+    "Complete four-step method",
+    "Biological-age example 34/29/−5 with estimate qualification and separate longevity score",
+    "Full founder quote, quarterly offer, free-upload and complete business navigation",
+    "Reusable DotNumber with registered eight-step lamp entry; accepted images and scene transitions retained",
+    "Reference-led Soft Glass console: five biomarker tiles, four illustrative readings, chart/ranges/dot views and expandable source table"
+  ],
+  "observations": {
+    "coverage": "Independent source audit confirms all substantive landing sections under the explicit treatment of the two uncited statistics. Carousel labels, five specimens,15/60/90-day cadence,€99,cancel,upload/no-card,ageexample,score,quoteandnavigation accounted for. See content-import.md for each source section and exception.",
+    "desktop": "1440x900: reference-led glass material and all five selections reviewed. Selection changes chart title/value/point together. Previous quarter updates all five mini readouts. All source intervals verified in the expandable table. Keyboard Enter changes views.",
+    "phone": "320x568: chart, range view and coarse dot widgets readable; no page overflow. Range table scrolls within its own region. First/last reading navigation is bounded. At768px the console now stacks below the intro to keep widgets legible.",
+    "reducedMotion": "Visible reduced-motion setting removes videos (0), keeps all imported sections and settles all9DotNumber readouts atstep8 in Lectura view. Chart entry animation is none. No browser console errors captured.",
+    "preservation": "EvaFilm,story-motion,SignalFilm,analog-motion,SolarMotion andimageassets are unchanged. The original624-lamp display and upward scene transitions remain. Previous03.3 source archive is linked in history.",
+    "sources": "Main landing retrieved as HTML plus independent hydrated-browser review; linked pricing and science used only to clarify existing content, not expand scope.",
+    "glass": "One material correction moved the inset luminous rim above the background layer. One responsive correction stacks the768px console. Native controls and state reviewed independently; source values and intervals all unchanged."
+  },
+  "limits": [
+    "95% deficiency and€1.1T WHO2024claims were not supported by citations on the inspected site; retained in review notes, not presented as verified.",
+    "Landing165+ expanded-panel count conflicts with pricing40+; no€499 price imported or associated with165+.",
+    "Specimen reference/longgevity ranges are source illustrations, not independently validated clinical thresholds.",
+    "No physical-device or assistive-technology audit."
+  ]
+}

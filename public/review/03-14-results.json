@@ -1,0 +1,29 @@
+{
+  "iteration": "03.14",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-13-results.json",
+  "changes": [
+    "Four new method compositions: one original home photograph and three original animated vector graphics.",
+    "SAVEE optical language expressed through new filaments, context bands and quarterly trace geometry.",
+    "Finite entrances, explicit replay, visibility pause and complete reduced-motion alternatives.",
+    "Responsive artwork framing with larger compact labels and 44px replay controls."
+  ],
+  "observations": {
+    "novelty": "No existing landing photographs, Tasso artwork, numeral masks or widget charts used by the method.",
+    "method": "Four service steps and static copy retained; selected-only artwork, tab keyboard navigation and bounded paging.",
+    "responsive": "320px,390px and1440px layouts checked for readable artwork, label/control clearance and horizontal overflow.",
+    "history": "03.13 source reconstructed byte-for-byte from the03.12 archive plus its compact overlay; complete standalone backups remain in the project workspace."
+  },
+  "validationStatus": "passed",
+  "limits": [
+    "No physical-phone frame-rate measurement.",
+    "Source/SSR animation contracts and targeted browser checks are not a complete accessibility or hardware performance audit."
+  ],
+  "checks": [
+    "Production static build",
+    "TypeScript and targeted lint",
+    "15 graph playback-state render checks and original asset audit",
+    "Content and delivery checks",
+    "Desktop and compact-mobile visual and keyboard review"
+  ]
+}

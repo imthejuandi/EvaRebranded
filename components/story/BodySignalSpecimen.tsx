@@ -1,0 +1,11 @@
+'use client';
+import {Player,type PlayerRef} from '@remotion/player';
+import {useRef,useState} from 'react';
+import {BodySignalFilm} from './BodySignalFilm';
+import {Slider} from '@/components/ui/slider';
+import {BODY_SIGNAL_DURATION,bodySignalStops,bodySignalLabels} from '@/lib/body-signal';
+export function BodySignalSpecimen(){
+ const player=useRef<PlayerRef>(null),[frame,setFrame]=useState(0);
+ const seek=(value:number)=>{const f=Math.round(Math.max(0,Math.min(BODY_SIGNAL_DURATION-1,value)));player.current?.seekTo(f);setFrame(f)};
+ return <section id="body-signal" className="body-signal-specimen"><h2>01d / Body Signal — del cuerpo a los datos</h2><div className="analog-specimen-intro"><div><h3>Lo que tu cuerpo<br/><em>tiene que contar.</em></h3><p>Una sola trama de puntos habita toda la pantalla, incluso detrás de las palabras. Las cifras aparecen poco a poco: la luz recorre sus formas y gana intensidad con suavidad. El campo sigue vivo alrededor, con el mismo movimiento y textura. Cada cifra permanece un poco más para dejarte leer y observar.</p></div><p>El desplazamiento controla todo el recorrido. Al volver atrás, las cifras regresan al campo de luz. La matriz es un recurso visual abstracto, no una representación de datos de una persona.</p></div><div className="lab-player"><Player ref={player} component={BodySignalFilm} compositionWidth={1440} compositionHeight={900} durationInFrames={BODY_SIGNAL_DURATION} fps={30} controls={false} autoPlay={false} clickToPlay={false} spaceKeyToPlayOrPause={false} doubleClickToFullscreen={false} allowFullscreen={false} style={{width:'100%'}}/></div><div className="timeline"><label id="body-signal-timeline-label">Señal {String(frame).padStart(3,'0')} / {BODY_SIGNAL_DURATION-1}</label><Slider aria-labelledby="body-signal-timeline-label" value={[frame]} onValueChange={v=>seek(Array.isArray(v)?v[0]:v)} min={0} max={BODY_SIGNAL_DURATION-1} step={1}/></div><div className="scene-buttons">{bodySignalLabels.map((label,i)=><button key={label} onClick={()=>seek(bodySignalStops[i])}>{label}</button>)}</div><div className="analog-reference-links"><a href="/art/reference-body-signal.mp4">Vídeo de referencia</a><a href="/review/body-signal.md">Uso del componente</a><a href="/#una-senal">Ver en la experiencia</a></div></section>;
+}

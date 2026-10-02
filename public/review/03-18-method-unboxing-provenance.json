@@ -1,0 +1,105 @@
+{
+  "revision": "03.18",
+  "date": "2026-09-10",
+  "scope": "Registered official product placement and natural unboxing",
+  "priorVersion": "/archive/eva-03-17-continuous-unboxing.zip",
+  "priorFilm": "/art/method-unboxing-continuous-720.mp4",
+  "product": {
+    "source": "https://www.tassoinc.com/tasso-plus",
+    "officialImage": "https://images.squarespace-cdn.com/content/v1/60da6eca05215e687a479088/8c5b0cc5-87dc-47dc-93aa-6aa535213ce5/Tasso%2B_large.jpg",
+    "registeredProductId": "f1497ceb-f046-49f6-b7d1-a53b467760a2",
+    "mediaId": "3879db69-a499-45e4-a043-7a857c1de845",
+    "features": [
+      "Ivory teardrop shell",
+      "Large coral-red button",
+      "Curved embossed Tasso emblem",
+      "Short centered bottom connector"
+    ],
+    "configuration": "Bare device without an attached collection tube, as shown in the reference photograph.",
+    "accuracy": "Recognizable generative interpretation, with slightly taller/narrower housing than the official photograph. Not exact CAD or filmed product footage."
+  },
+  "generation": {
+    "jobId": "d054ea31-bcb1-429b-87ed-e3784eccd33b",
+    "params": {
+      "model": "marketing_studio_video",
+      "mode": "ugc_unboxing",
+      "duration": 12,
+      "count": 1,
+      "resolution": "1080p",
+      "aspect_ratio": "1:1",
+      "generate_audio": false,
+      "product_ids": [
+        "f1497ceb-f046-49f6-b7d1-a53b467760a2"
+      ],
+      "avatar_ids": [
+        "daf4bf2e-c19e-4879-805b-bcfa6eda61f2"
+      ],
+      "medias": [
+        {
+          "role": "image",
+          "value": "https://eva-system-03.jdlagop.chatgpt.site/art/method-home-solar-1000.jpg"
+        }
+      ],
+      "prompt": "A believable, quietly energetic home unboxing with the registered Tasso+ product as the hero. Product placement must preserve the EXACT supplied official product photograph: compact palm-sized off-white teardrop shell; broad round top tapering to a narrow bottom; a LARGE raised coral-red circular button occupying most of the upper front, with its shallow curved Tasso emblem; wide off-white rim especially below the button; tiny bottom connector. DEVICE ALONE, AS PHOTOGRAPHED: no attached long tube or vial, no lights or screen, no shiny generic gadget redesign. This is a real small object about two finger-widths wide, not a palm-filling puck. Respect its precise button-to-shell proportions and emblem in every view. The additional scene image is ONLY the color/soft-glow reference, never a product reference. REIMAGINE THE SCENE: an adult woman in a plain ivory exercise top at a lived-in pale wooden table after a morning walk. Frame cropped collarbone to hands; no talking face or lip-sync. One modest off-white cardboard box with simple pale paper insert, one glass of water, linen cloth. Natural imperfect skin, creased fabric, paper fibers and tactile matte plastic. A single continuous handheld photographic take, elevated three-quarter view looking into the box; normal real-time movement and tiny human camera corrections. 0–2 seconds: one hand steadies the box while the other opens its lid fully in one fluid everyday gesture, immediately revealing the reference Tasso+ lying face up. 2–4 seconds: fingers grasp its WHITE SIDES without pressing the red button, lift it out naturally. 4–7 seconds: she brings it a little toward the camera, front clearly visible and bottom connector downward, wrist turns only about15degrees, the large red button and embossed emblem stay plainly readable. The camera follows her hand smoothly with a modest lean forward, not a slow cinematic crawl. 7–10 seconds: she returns the same rigid device face-up into its insert naturally. 10–12 seconds: her hand leaves the open box and reaches casually toward the glass as the camera settles on the revealed product. No action stretched into slow motion, no frozen hand hovering, no time ramp, no hard cut or invented object. Keep the approved rich CORAL-PEACH light bloom along pale clothing/skin and VIOLET shadows/reflections, fine analog film grain and gentle optical softness. Skin and cardboard still feel photographic and tactile; the device retains clear contours and actual red/ivory identity beneath the same lighting. Background subtly defocused, product sharp enough to recognize, no heavy blur hiding mistakes. The optical treatment should resemble the supplied reference throughout, without melting skin, white clipping or neon plasma. Silent video for a webpage. No subtitles, captions, CTA, voiceover, product use on skin, button press, needle, blood or added logos."
+    },
+    "sourceUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260910_145640_d054ea31-bcb1-429b-87ed-e3784eccd33b.mp4",
+    "candidates": 1,
+    "corrections": 0,
+    "workflow": "Higgsfield Marketing Studio Unboxing with registered product reference; no old3Dmodel input."
+  },
+  "assembly": {
+    "filterGraph": "setpts=(PTS-STARTPTS)*0.8,scale=792:792:flags=lanczos,crop=720:792,setsar=1,fps=30,format=yuv420p",
+    "trimSeconds": 6.4,
+    "speed": 1.25,
+    "crf": 21,
+    "codec": "H264",
+    "pixelFormat": "yuv420p",
+    "fps": 30,
+    "faststart": true,
+    "audio": false,
+    "sourceDuration": 12.098,
+    "sourceFrames": 289,
+    "sourceDimensions": [
+      1440,
+      1440
+    ],
+    "sourceAudioRemoved": true,
+    "fullWebEditUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/4252f087-47e2-41cd-b85f-70140ab66f75.mp4",
+    "reason": "The initial9.633-second edit included a return to the box; the final web cut ends on the clear front-facing product for stronger recognition and quicker pacing.",
+    "effects": "Generated source retains coral-peach bloom, violet shadows, optical softness and grain from the approved style reference. No additional glow or blur applied in assembly.",
+    "posterSourceSeconds": 6.8,
+    "posterSizes": [
+      600,
+      1000
+    ]
+  },
+  "historicalModel": {
+    "download": "/review/tasso-plus-model.zip",
+    "status": "Preserved historical study, not an identity input for03.18"
+  },
+  "review": {
+    "identity": "Compared directly to the official packshot, not our old approximate3Dmodel.",
+    "findings": [
+      "Large coral actuator, curved emblem and short connector recognizable.",
+      "Opening, pickup and grip coherent across sampled frames.",
+      "No obvious floating object or geometry collapse.",
+      "Final crop keeps hands and front-facing product visible."
+    ],
+    "limits": [
+      "Generated housing is somewhat taller/narrower than the packshot.",
+      "Editorial box, not exact delivered packaging.",
+      "No physical-phone hardware FPS measurement."
+    ]
+  },
+  "delivery": {
+    "path": "/art/method-product-placement-720.mp4",
+    "bytes": 1037137,
+    "sha256": "bbd0df445c251bc4ae3d7060f999c126bfd6a74ad2c8705dc18c43ea4ff14f07",
+    "durationSeconds": 6.4,
+    "frames": 192,
+    "fps": 30,
+    "width": 720,
+    "height": 792,
+    "audioStreams": 0
+  }
+}

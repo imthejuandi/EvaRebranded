@@ -1,0 +1,71 @@
+{
+  "revision": "03.17",
+  "date": "2026-09-10",
+  "scope": "Continuous photographic unboxing with modeled Tasso+ reference",
+  "priorVersion": "/archive/eva-03-16-context-unboxing.zip",
+  "priorFilm": "/art/method-unboxing-720.mp4",
+  "generation": {
+    "jobId": "4b06f58f-127e-4b15-b7b7-7c55bcdcd52a",
+    "model": "hf_mult_replace_object",
+    "sourceVideoJob": "a1dbdcd0-e6cf-4736-ba16-eabf49feae95",
+    "referenceImageId": "0924ec04-df80-4f5b-83ab-f39c62406817",
+    "reference3DProject": "990d9e7f-a92b-4dde-9589-c93438dd4a3b",
+    "reference3DRevision": 2,
+    "referenceArtifact": "e0180131491a3ea08aaf7e88674dc5bf",
+    "prompt": "Edit the supplied six-second home unboxing footage into ONE continuous photographic shot. The video is the primary source for the same woman, her one visible hand and fingers, small plain hinged cardboard box, water glass, table and entire coral/violet visual treatment. The reference image is ONLY the identity of one Tasso+ device, rendered from our 3D model: a satin white rounded teardrop housing, a raised coral-red circular actuator on its broad end, and a narrow attached transparent collection vial and white connector at its pointed end. Change the EMPTY INTERIOR of her original box to contain exactly this ONE device resting flat in a fitted pale insert. The device is already inside from the first frame, mostly concealed by the lid. As her fingers gradually lift the lid higher, the lid progressively uncovers the device with physically correct occlusion. Keep its body and vial rigid, correctly proportioned and immobile relative to the bottom of the box, with a soft contact shadow. Make it fit comfortably within the interior; the vial lies along the longer interior diagonal, never through a wall. The device does not float, pop into existence, slide, rotate independently, or change shape. Preserve her natural hand motion, and let the lid open a little further toward the end so the coral button and attached vial are both recognizable. The camera gently advances and tilts slightly downward with the lid opening, smoothly revealing the contents from her original scene, then eases into a readable final view. Her hand and original box remain in the SAME photographic scene throughout. Maintain exactly the existing warm luminous coral-peach highlights, rich violet table/shadows, soft optical bloom around skin and pale surfaces, gentle photographic defocus and fine film grain on every frame including the device. The product must share her scene's lighting and texture, with no sharp pasted edge or clean CGI material patch. No cut, no dissolve, no morph to another box or background, no separate product shot, no expanded tray, no source reference background, no extra hands or devices, no labels/text/logos, no button press or device-use action.",
+    "sourceUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260910_105141_4b06f58f-127e-4b15-b7b7-7c55bcdcd52a.mp4",
+    "candidates": 1,
+    "corrections": 0,
+    "method": "Generative object integration into the original home video, using a neutral render of the native mesh model; not native rendering of every delivered frame."
+  },
+  "assembly": {
+    "filterGraph": "scale=792:792:flags=lanczos,crop=720:792,setsar=1,fps=24,format=yuv420p",
+    "delivery": {
+      "codec": "H264",
+      "pixelFormat": "yuv420p",
+      "fps": 24,
+      "crf": 23,
+      "faststart": true,
+      "audio": false
+    },
+    "effects": "Source coral-peach highlights, violet shadows, optical softness and film grain preserved in the generated footage. No additional glow filter, cuts, morphs or artificial zoom applied in assembly.",
+    "poster": "Still sampled at 5.75 seconds from the completed reveal, at 600/1000 pixels."
+  },
+  "review": {
+    "status": "visual-candidate-passed",
+    "framesReviewed": "12 sequential half-second samples, original 6-frame sheet, and mobile playback",
+    "findings": [
+      "Same original woman, box, hand, glass and table throughout.",
+      "Device stays seated and is progressively revealed by lid occlusion.",
+      "Coral button, white housing and attached vial recognizable at webpage size.",
+      "Subtle uninterrupted camera advance; continuous scene and consistent optical treatment.",
+      "Centered portrait crop preserves hand and product."
+    ],
+    "caveats": [
+      "Box front naturally occludes part of the vial; readable final reveal persists for more than one second and holds after playback.",
+      "Exterior device reconstruction and unbranded packaging are illustrative, not manufacturing CAD or exact delivered kit."
+    ]
+  },
+  "model": {
+    "authoring": "Blender5.2 via Higgsfield3D Jutsu",
+    "productMeshCount": 11,
+    "productImageTextures": 0,
+    "assembly": "Separate shell, unpressed button, seam, connector, collar and attached empty vial",
+    "accuracy": "Approximate exterior visual reconstruction from official product photographs; not manufacturing CAD",
+    "packaging": "Unbranded editorial concept; not exact delivered kit",
+    "download": "/review/tasso-plus-model.zip",
+    "downloadSha256": "1c570403b9aa0a97dfec00748c9722aa1c3ffcbdbe2cf92b1f3e2d9e7e27071f"
+  },
+  "delivery": {
+    "path": "/art/method-unboxing-continuous-720.mp4",
+    "bytes": 390172,
+    "sha256": "f5871b6f1fad2be39cae272deb5aa21256815f1ba1541257736abf1754b2554a",
+    "durationSeconds": 6.041666666666667,
+    "frames": 145,
+    "fps": 24,
+    "width": 720,
+    "height": 792,
+    "codec": "H264",
+    "audioStreams": 0
+  }
+}

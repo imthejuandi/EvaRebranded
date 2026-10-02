@@ -1,0 +1,55 @@
+{
+  "version": "03.30",
+  "scope": [
+    "Compact hero CTA",
+    "Hero hierarchy review"
+  ],
+  "skillsApplied": [
+    "Design Critique",
+    "Emil Design Engineering"
+  ],
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      568
+    ]
+  ],
+  "checks": {
+    "buttonSizePx": [
+      200,
+      44
+    ],
+    "areaRelativeToPriorDesktop": 0.2643,
+    "primarySizePx": 14,
+    "detailSizePx": 11,
+    "primaryWeight": 600,
+    "detailWeight": 400,
+    "allRequestedButtonTextRetained": true,
+    "keyboardFocusAndOutline": true,
+    "noTextOverlap": true,
+    "noHorizontalOverflow": true,
+    "reducedMotionGeometry": true,
+    "primaryContrast": 15.29,
+    "detailContrast": 7.18,
+    "supportContrast": 11.75
+  },
+  "preserved": [
+    "Main diagonal headline scale",
+    "Fine analog letter treatment",
+    "Runner",
+    "Signup destination",
+    "Scroll fade behavior",
+    "Previous 03.29 source archive"
+  ],
+  "limitations": [
+    "Emulated viewport sizes, not physical phone testing"
+  ]
+}

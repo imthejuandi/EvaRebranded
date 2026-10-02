@@ -1,0 +1,53 @@
+{
+  "version": "03.29",
+  "scope": [
+    "Hero kit CTA",
+    "Diagonal hero headline layout"
+  ],
+  "review": "Local in-app browser and TypeScript check",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      568
+    ]
+  ],
+  "checks": {
+    "ctaPrimary": "Desbloquea tu salud",
+    "ctaSecondary": "pide tu primer kit",
+    "ctaPrice": "99€ por Kit",
+    "ctaPrimaryWeight": 600,
+    "ctaDetailsWeight": 400,
+    "realSignupNavigationVerified": true,
+    "ctaOutsideHiddenFilm": true,
+    "ctaHitTargetVerified": true,
+    "ctaHiddenAfterLeavingHero": true,
+    "ctaRestoredOnReverse": true,
+    "heroLeadWeight": 400,
+    "heroLeadDesktopPx": 106.56,
+    "heroLead390Px": 48.75,
+    "heroDesktopWordWidth": 518.4,
+    "hero390WordWidth": 241.8,
+    "minimumMobileCtaHeightPx": 84,
+    "noHorizontalOverflow": true,
+    "reducedMotionLayoutVisuallyReviewed": true,
+    "typecheck": true
+  },
+  "preserved": [
+    "Fine menu dot grid",
+    "Official logo",
+    "Runner and all other approved imagery",
+    "Other scene transitions",
+    "Previous 03.28 source archive"
+  ],
+  "limitations": [
+    "Viewport emulation, not a physical phone test"
+  ]
+}

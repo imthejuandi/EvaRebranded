@@ -1,0 +1,36 @@
+{
+  "version": "03.27",
+  "scope": "Official EVA logo spacing and proportions",
+  "review": "Local in-app browser",
+  "checks": {
+    "artworkMatchesUserFile": true,
+    "phoneWidths": [
+      320,
+      390
+    ],
+    "desktopWidth": 1440,
+    "mobileArtworkSize": [
+      78,
+      28.890625
+    ],
+    "desktopArtworkSize": [
+      100,
+      37.0390625
+    ],
+    "linkMinimumHeight": 44,
+    "narrowHeaderNoOverlap": true,
+    "noHorizontalOverflow": true,
+    "mobileMenuOpens": true,
+    "escapeCloses": true,
+    "accessibleHomeLinkName": "EVA, inicio"
+  },
+  "preserved": [
+    "Official letter shapes, spacing and registered mark",
+    "Current header and footer colors",
+    "Approved images and animations",
+    "Narrow frosted menu"
+  ],
+  "limitations": [
+    "Desktop browser viewport emulation; no physical phone test"
+  ]
+}

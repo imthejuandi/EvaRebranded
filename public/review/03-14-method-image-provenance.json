@@ -1,0 +1,19 @@
+{
+  "created_date": "2026-09-10",
+  "tool": "image_gen.imagegen (built-in default mode)",
+  "intent": "New text-only photorealistic-natural image; not an edit, not a depiction of device operation",
+  "references": [],
+  "generation_count": 1,
+  "targeted_retry_count": 0,
+  "exact_prompt": "Use case: photorealistic-natural.\nAsset type: original editorial photograph for EVA's “En casa” preparation section. Generate ONE new image entirely from this text; do not refer to or reuse any previous images or subjects.\nPrimary request: an intimate healthy-lifestyle morning at home. A cropped athletic adult torso in a simple cream sleeveless linen-cotton top; only ONE natural hand is visible, gently lifting the lid of a small unbranded warm-white cardboard sample-kit box on a pale stone table. A clear simple glass of water rests nearby, slightly out of focus. The face can be outside the upper crop. This is a quiet preparation ritual, not a medical use instruction.\nComposition: square, approximately 1024 × 1024. Close intimate tabletop editorial framing, realistic body proportions, box and hand readable in the lower-middle, torso behind. The other hand is entirely outside the image. The box is mostly closed, lid just beginning to open, so no contents are visible.\nStyle: sophisticated tactile analog photography, natural unposed gesture. Strong optical soft glow and lens halation, warm amber/coral side light on the skin, pale lilac-blue bloom in the shadows, fine visible film grain, deliberate slight analog defocus. A tiny photographic camera echo on the moving hand only; preserve one clear anatomically plausible hand, five natural fingers without duplicated fingers. Dim warm-black background fading softly behind the torso; warm paper-colored pale stone tabletop. Linen weave, cardboard edge and glass refraction remain recognizable.\nAvoid: text, logos, labels, barcodes, any actual medical device, Tasso device, invented device geometry, blood, needle, instrument, flowers, plants, palms, athletic running, stretching or coastal subjects, beauty pose, extra people, extra hands, extra fingers, plastic CGI surfaces. No clinical claims or instructional arrows.",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "bytes": 2004006,
+  "sha256": "2a24622efa7d1d374d6c592ad976a282038dfc7d65e81144372ee1b3b68da482",
+  "delivery": {
+    "mobile": "/art/method-home-ritual-600.jpg",
+    "desktop": "/art/method-home-ritual-1000.jpg",
+    "processing": "Native sips JPEG encoding and proportional resizing only; original artwork preserved in workspace."
+  }
+}

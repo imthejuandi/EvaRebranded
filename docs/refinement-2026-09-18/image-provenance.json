@@ -1,0 +1,133 @@
+{
+  "createdAt": "2026-09-18",
+  "provider": "Higgsfield",
+  "model": "gpt_image_2_5",
+  "reference": "https://eva-system-03.jdlagop.chatgpt.site/art/reference-solar-grain.jpg",
+  "estimatedCreditsPerImage": 1,
+  "assets": [
+    {
+      "index": 1,
+      "slug": "method-morning-table",
+      "prompt": "Create a new candid editorial photograph for EVA, a preventive-health lifestyle brand. Match the reference only in tactile 35mm film grain, muted coral highlights, dusty violet shadows, natural depth and very restrained halation. Rich physical textures, imperfect framing, genuine available light, premium European editorial photography, subtle analogue softness but clearly legible objects, no glossy CGI, no beauty retouch, no exaggerated outer glow. Not a recreation of the reference subjects. No text, no invented logos, no medical claims, no looking at the camera. Scene: intimate diagonal overhead crop at a sunlit apartment kitchen table after a morning run. An athletic adult woman in a cream ribbed workout top is seen only from shoulder to hands, seated at the far right edge. One natural hand gently holds a plain ivory resealable standing pouch open, the other rests beside it; the pouch is already open, no awkward staged unboxing. On the table a folded paper instruction sheet with blank indistinct lines, water glass, soft linen and a dark plum sports bag out of focus. Do not depict an invented medical device or needles. Hands anatomically natural, fingers relaxed. Main still life in middle third, ample tabletop left. Landscape 3:2.",
+      "job_id": "11f7b5b2-771e-4eec-af18-d2af124a3960",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260918_074207_11f7b5b2-771e-4eec-af18-d2af124a3960.png",
+      "reviewStatus": "visually-reviewed-selected",
+      "originalSha256": "d96b46927745902fa6578dcb33b5c753249af956ef3e0301ee219a52ebb02852",
+      "derivatives": [
+        {
+          "sourcePath": "public/art/editorial/method-morning-table-640.webp",
+          "publicUrl": "/art/editorial/method-morning-table-640.webp",
+          "width": 640,
+          "height": 430,
+          "bytes": 39286,
+          "sha256": "1c3d949fad83611eecede1ad8ebafecc39b76ccbcdbed0e4dd0dfb81ced69846"
+        },
+        {
+          "sourcePath": "public/art/editorial/method-morning-table-1200.webp",
+          "publicUrl": "/art/editorial/method-morning-table-1200.webp",
+          "width": 1024,
+          "height": 688,
+          "bytes": 92978,
+          "sha256": "35088b54d4a9b174f2cfc97eb9b2b62f0b92dda62bae423e99222781106b7f2b"
+        }
+      ],
+      "reviewNotes": "Viewed original output: physically plausible editorial composition, visible grain, restrained coral/violet color treatment; no invented device or logo. Conceptual editorial illustration, not commercial kit or EVA staff."
+    },
+    {
+      "index": 2,
+      "slug": "pricing-service-still",
+      "prompt": "Create a new candid editorial photograph for EVA, a preventive-health lifestyle brand. Match the reference only in tactile 35mm film grain, muted coral highlights, dusty violet shadows, natural depth and very restrained halation. Rich physical textures, imperfect framing, genuine available light, premium European editorial photography, subtle analogue softness but clearly legible objects, no glossy CGI, no beauty retouch, no exaggerated outer glow. Not a recreation of the reference subjects. No text, no invented logos, no medical claims, no looking at the camera. Scene: an elegant tangible service still life, landscape 3:2, on cream warm stone. A small plain ivory stand-up resealable pouch at left, folded blank off-white report paper in middle, a small translucent charcoal glass tray and pale linen at right. Strong low afternoon coral light produces long organic soft shadows across the stone, violet shaded region at top; crop feels like a luxury design magazine photographed on film. No invented device, no specimen tubes, no needles, no text or labels. Objects modest scale occupying center half with generous space. Physically plausible paper and packaging, deliberate asymmetry. This is conceptual packaging art, not a commercial product photo.",
+      "job_id": "1f7750c4-2fa0-48a8-a7c3-bc8a187b069b",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260918_074207_1f7750c4-2fa0-48a8-a7c3-bc8a187b069b.png",
+      "reviewStatus": "visually-reviewed-selected",
+      "originalSha256": "0ce0255d62ae9d425cc3d2e46b9d0e4e49161269e164aa41c62b5a45569ae1f4",
+      "derivatives": [
+        {
+          "sourcePath": "public/art/editorial/pricing-service-still-640.webp",
+          "publicUrl": "/art/editorial/pricing-service-still-640.webp",
+          "width": 640,
+          "height": 430,
+          "bytes": 39148,
+          "sha256": "064766ec96ddef37ab894ad38ae4ba858aa2fb74c501c3ede5394ae743430ce8"
+        },
+        {
+          "sourcePath": "public/art/editorial/pricing-service-still-1200.webp",
+          "publicUrl": "/art/editorial/pricing-service-still-1200.webp",
+          "width": 1024,
+          "height": 688,
+          "bytes": 89492,
+          "sha256": "b2b4b7048ff3863cecf6885928804579477325a177ef849fb108e72892d15494"
+        }
+      ],
+      "reviewNotes": "Viewed original output: physically plausible editorial composition, visible grain, restrained coral/violet color treatment; no invented device or logo. Conceptual editorial illustration, not commercial kit or EVA staff."
+    },
+    {
+      "index": 3,
+      "slug": "about-everyday-notes",
+      "prompt": "Create a new candid editorial photograph for EVA, a preventive-health lifestyle brand. Match the reference only in tactile 35mm film grain, muted coral highlights, dusty violet shadows, natural depth and very restrained halation. Rich physical textures, imperfect framing, genuine available light, premium European editorial photography, subtle analogue softness but clearly legible objects, no glossy CGI, no beauty retouch, no exaggerated outer glow. Not a recreation of the reference subjects. No text, no invented logos, no medical claims, no looking at the camera. Scene: top-down fragment of real everyday life on an oak breakfast table, portrait 4:5 composition. A worn cream notebook open to two nearly blank pages with faint abstract pencil marks but no legible text; a pencil, single ceramic espresso cup, creased linen napkin and a running shoe barely visible at bottom edge. Natural window shadow cuts across the left page. A cropped adult hand rests near the notebook without writing. The story is finding room to understand your health in ordinary life, no laboratory, no stock smile. Tight tactile imperfect editorial composition, beautiful balance of warm sunlight and dusty violet shadow.",
+      "job_id": "c561b201-89c4-4e72-b310-737e4f684be1",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260918_074207_c561b201-89c4-4e72-b310-737e4f684be1.png",
+      "reviewStatus": "visually-reviewed-selected",
+      "originalSha256": "78f26703d2e15fbc734dc0138556fd882c1a64e233d57c002b7b670d72a416cb",
+      "derivatives": [
+        {
+          "sourcePath": "public/art/editorial/about-everyday-notes-640.webp",
+          "publicUrl": "/art/editorial/about-everyday-notes-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 91336,
+          "sha256": "4e3fae8fd92d76b0579cff0ec6f6c9f8b43c92b3d5d7aed4e0887cd4f4f869e1"
+        },
+        {
+          "sourcePath": "public/art/editorial/about-everyday-notes-1200.webp",
+          "publicUrl": "/art/editorial/about-everyday-notes-1200.webp",
+          "width": 896,
+          "height": 1120,
+          "bytes": 172748,
+          "sha256": "3de1c37038d5cae78d973060c42c367867279aa1a328d4fcbc8ad44e6a901f75"
+        }
+      ],
+      "reviewNotes": "Viewed original output: physically plausible editorial composition, visible grain, restrained coral/violet color treatment; no invented device or logo. Conceptual editorial illustration, not commercial kit or EVA staff."
+    },
+    {
+      "index": 4,
+      "slug": "contact-correspondence",
+      "prompt": "Create a new candid editorial photograph for EVA, a preventive-health lifestyle brand. Match the reference only in tactile 35mm film grain, muted coral highlights, dusty violet shadows, natural depth and very restrained halation. Rich physical textures, imperfect framing, genuine available light, premium European editorial photography, subtle analogue softness but clearly legible objects, no glossy CGI, no beauty retouch, no exaggerated outer glow. Not a recreation of the reference subjects. No text, no invented logos, no medical claims, no looking at the camera. Scene: close crop of a human hand sliding a plain ivory envelope across a small home desk beside a thick cream note card and smoked glass tumbler, no text. Person remains outside frame. Slight motion trace at fingertip but paper in focus. Landscape 3:2. Coral late-afternoon light with soft blue-violet shadows, tactile paper grain and linen. Deliberately unpolished cinematic still, quiet simple gesture, clear uncluttered composition. This is an editorial metaphor for communication, not fake staff.",
+      "job_id": "11b59845-d5c5-4147-84c3-886ea11a24ed",
+      "status": "completed",
+      "type": "image",
+      "model": "gpt_image_2_5",
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260918_074207_11b59845-d5c5-4147-84c3-886ea11a24ed.png",
+      "reviewStatus": "visually-reviewed-selected",
+      "originalSha256": "a08dd604b907d8e7ad7c5e1d8121f7000ac79f243beefbe44c97dabed51788f7",
+      "derivatives": [
+        {
+          "sourcePath": "public/art/editorial/contact-correspondence-640.webp",
+          "publicUrl": "/art/editorial/contact-correspondence-640.webp",
+          "width": 640,
+          "height": 430,
+          "bytes": 38802,
+          "sha256": "d328aee5e2ab46cbd1893ac0942d99aa63462293432cebc3058aaad080b0faa9"
+        },
+        {
+          "sourcePath": "public/art/editorial/contact-correspondence-1200.webp",
+          "publicUrl": "/art/editorial/contact-correspondence-1200.webp",
+          "width": 1024,
+          "height": 688,
+          "bytes": 93428,
+          "sha256": "e8dddf4ad28728370a99aa23f20e1dc3a1884936f83a9f59b52ac23dbe116d92"
+        }
+      ],
+      "reviewNotes": "Viewed original output: physically plausible editorial composition, visible grain, restrained coral/violet color treatment; no invented device or logo. Conceptual editorial illustration, not commercial kit or EVA staff."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+import type {Metadata} from 'next';
+import './globals.css';
+import './hero-entrance.css';
+import './signal-autoplay.css';
+import '@/components/pages/profile/profile.css';
+import '@/components/pages/about/about.css';
+import '@/components/pages/upload/upload.css';
+import '@/components/pages/assistant/assistant.css';
+import './site-preview.css';
+import './app-preview.css';
+import '@/components/pages/book/book.css';
+import '@/components/pages/biomarker/biomarker.css';
+import './operations-preview.css';
+import '@/components/pages/dashboard/dashboard.css';
+import './onboarding-preview.css';
+import '@/components/pages/labs/labs.css';
+import './editorial-preview.css';
+import '@/components/pages/method/method.css';
+import './document-preview.css';
+import '@/components/pages/science/science.css';
+import './access-preview.css';
+import '@/components/pages/pricing/pricing.css';
+export const metadata:Metadata={title:'EVA — Conoce tu salud.',description:'15 biomarcadores cada 90 días. Recogida de muestra en casa, análisis en laboratorio acreditado. Entiende tus resultados y sigue tu evolución con EVA.'};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="es"><head><link rel="preload" href="/fonts/hanken-grotesk-regular.woff" as="font" type="font/woff" crossOrigin="anonymous"/></head><body>{children}</body></html>}

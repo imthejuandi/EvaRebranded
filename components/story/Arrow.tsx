@@ -1,0 +1,3 @@
+import type {CSSProperties} from 'react';
+/** Text-independent stroke arrows keep controls consistent across platforms. */
+export function Arrow({direction='right',style}:{direction?:'right'|'left'|'up-left'|'down';style?:CSSProperties}){const angle={right:0,left:180,'up-left':225,down:90}[direction];return <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="1em" height="1em" style={{display:'inline-block',verticalAlign:'middle',transform:`rotate(${angle}deg)`,...style}} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>}

@@ -1,0 +1,58 @@
+{
+  "version": "03.31",
+  "scope": [
+    "Equal headline width and letter height",
+    "Runner head clearance"
+  ],
+  "userClarification": "Both overall width and letter height",
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      568
+    ]
+  ],
+  "checks": {
+    "matchingFrameDimensions": true,
+    "inkBoundsMatchedUsingFontMetrics": true,
+    "introIsCondensedSansSerif": true,
+    "desktopFramePx": [
+      460.796875,
+      184.3125
+    ],
+    "mobile390FramePx": [
+      241.796875,
+      96.71875
+    ],
+    "mobile320FramePx": [
+      198.3984375,
+      79.359375
+    ],
+    "runnerHeadClearInReviewedFrames": true,
+    "normalAndReducedMotionShortPhoneReviewed": true,
+    "staticRunnerMatchesMotionFrame": true,
+    "noHorizontalOverflow": true,
+    "ctaSizeUnchangedPx": [
+      200,
+      44
+    ]
+  },
+  "preserved": [
+    "Original analog effect",
+    "Approved runner assets",
+    "Opposing text and runner exits",
+    "Compact CTA and destination",
+    "Previous 03.30 source archive"
+  ],
+  "limitations": [
+    "Visual checks used emulated viewport sizes",
+    "Different glyph shapes retain their own stroke weight despite matching visual bounds"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "iteration": "03.15",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-14-results.json",
+  "changes": [
+    "Home scene restyled with the accepted walk’s coral halation, violet shadows, optical softness and grain.",
+    "Original composition, finite motion and lightweight responsive delivery retained."
+  ],
+  "validationStatus": "passed",
+  "checks": [
+    "Independent visual comparison against accepted walk artwork",
+    "Desktop and mobile caption/replay legibility",
+    "Production build and delivery checks",
+    "Previous03.14 source restored byte-for-byte from archived base and overlay"
+  ],
+  "limits": [
+    "This focused image update does not introduce a new hardware frame-rate measurement."
+  ]
+}

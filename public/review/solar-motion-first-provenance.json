@@ -1,0 +1,20 @@
+{
+  "provider": "Higgsfield",
+  "model": "Seedance 2.5",
+  "job": "883a36a5-f3ad-4eef-abf5-aa2a26a6a370",
+  "sourceImage": "/art/post-run-coast.png",
+  "asset": "/art/post-run-coast-walk.mp4",
+  "estimatedCredits": 78,
+  "requestedDurationSeconds": 12,
+  "prompt": "Animate this exact approved EVA lifestyle photograph as a 12-second living analog photograph. Preserve the two same athletic adults, their faces, outfits, proportions, coastal location, framing, violet sky, coral landscape, photographic film grain, and soft peach glowing bodies. Locked stationary camera throughout, no pan, no zoom, no reframing. One uninterrupted natural walking action: begin with the empty coastal path; the same two people enter naturally from the left edge along the path in the first 2 seconds, stroll diagonally toward the foreground and right while chatting and smiling at each other from seconds 2-9, then walk fully out through the right edge by second 11. At the middle of the shot they resemble the source photograph in pose and scale. Keep believable foot contact, alternating steps, hip and shoulder movement, relaxed arm swing, stable faces and consistent anatomy. The peach/coral long-exposure light trails must be attached to their moving bodies and shoes, flowing just behind their actual walking direction with a soft delayed decay; each trace fades gently over less than a second. No static glowing silhouettes left behind. Preserve the analog halation and grain, no neon, no lasers, no streaks across faces. Final second returns to the same empty coast and stationary landscape as the beginning, with the last glow dissipated, so the scene can repeat naturally. Exactly two people total, no extra people, no teleporting, no backwards walking, no dissolving bodies, no floating or foot sliding, no jumping, no cuts or transitions, no titles or logos. Keep the source's quiet warm healthy-lifestyle mood and painterly photographic color treatment.",
+  "durationSeconds": 12.041667,
+  "dimensions": [
+    834,
+    1112
+  ],
+  "fps": 24,
+  "codec": "H264",
+  "bytes": 4678880,
+  "audio": false,
+  "processing": "Source video copied unchanged; website displays with object-fit cover in the existing portrait panel."
+}

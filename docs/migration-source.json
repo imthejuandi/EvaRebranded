@@ -1,0 +1,14 @@
+{
+  "source_title": "EVA \u2014 Website & App Review",
+  "source_url": "https://eva-system-04.jdlagop.chatgpt.site",
+  "source_version": 6,
+  "source_commit": "f0d2bfef004a1d5f2d3225fa3772afa326f69368",
+  "scope": "Separate rebranding workspace; no production frontend or backend cutover.",
+  "imported_content": "Website source, media, design archives, and existing checks.",
+  "migration_changes": [
+    "New repository identity",
+    "Node 24 Codespaces development setup",
+    "Development instructions",
+    "Removed original Sites deployment binding"
+  ]
+}

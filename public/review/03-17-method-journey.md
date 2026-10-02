@@ -1,0 +1,18 @@
+# El método — four original visual studies
+
+Revision 03.17 retains the four-step service explanation and introduces a new composition for each step. Warm paper remains the section canvas. Amber and lilac light, optical grain and varied-size specks connect the artwork to EVA’s visual language.
+
+1. **En casa:** a silent continuous home unboxing shot. The woman raises the lid of her original box while the Tasso+ stays seated inside, progressively revealed by the lid. The camera gently advances through the same photographic scene. Higgsfield Genjutsu integrates the product using a neutral render of the existing native Blender model as its geometry reference; the finished video is generative, not a frame-by-frame native render. The white shell, coral button and attached vial share the scene's coral light, violet shadows, softness and grain. The exterior reconstruction and unbranded box remain approximate editorial concepts, not manufacturing CAD or a promise of exact delivered packaging. A still from the completed reveal provides the responsive loading, error and reduced-motion fallback. The prior two-shot film and editable model remain available in History.
+2. **Resultados:** fifteen new luminous filaments connect a dispersed sample-side composition to individual reading points. The paths draw once, followed by the arrival of their points.
+3. **Contexto:** one reading stays at the same horizontal position across two substantial halftone range strips. The strips reveal in sequence and are explicitly labeled “Intervalo de referencia” and “Rangos de EVA”, finishing with “El mismo valor. Más contexto.” The diagram shows the meaning of comparison rather than an unlabeled line. No clinical scale, threshold, patient value or normal/abnormal judgment is represented.
+4. **Evolución:** four quarterly points build a new nonmonotonic trace. It represents a history accumulating, without promising improvement.
+
+The diagrams are original SVG geometry. They do not reuse the runner, stretch, coastal walk, Tasso Glow, numeral masks or biomarker-widget charts. SAVEE references inspected for material and optical language: [MWRC](https://savee.com/i/N9DVbyn/) and [optical healthcare interface](https://savee.com/i/vod3XjT/). No downloaded reference artwork is embedded in these graphs.
+
+Only the selected artwork mounts. Graph animations run once, settle in at most 4.2 seconds, and offer an explicit replay. The unboxing film also plays once, holds its final frame and exposes pause/resume/replay controls. It loads only near the viewport; selecting another chapter unmounts it. A reduced-motion toggle starts a fresh playback lifecycle, avoiding stale error/control state. Intersection and document visibility pause work outside the viewport. Reduced motion presents the complete artwork with no entrance. Graphs use static gradients and texture, with no filter stacks, canvas loop, video or animation timer.
+
+Tabs support Left/Right, Home/End and visible focus. Previous/next controls are bounded. All four steps remain in static HTML. The compact figure keeps a 10:11 ratio with larger labels and a 44px replay target. Illustrative status appears visibly below each figure.
+
+The 03.13 method is preserved in the history restore download, applied over the adjacent03.12 source package and its original guide remains at `/review/03-13-method-journey.md`.
+
+The 03.15 still-image version and earlier Contexto graphic are preserved as an exact source overlay on the03.12 base. Device modeling scripts and editable exports are retained alongside the generation prompt and assembly provenance.

@@ -1,0 +1,22 @@
+{
+  "iteration": "03.9",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-8-results.json",
+  "changes": [
+    "The full-screen opening field resolves into only the numeral lamps.",
+    "Individually offset retirement clears all peripheral dots, counters and character gaps.",
+    "The same lamp positions, halftone radius, clock and renderer continue throughout."
+  ],
+  "observations": {
+    "motion": "All 631 frames preserve lamp identity and shared radius. Every non-glyph lamp has exactly zero opacity once the reveal settles; reverse reconstruction is deterministic.",
+    "endpoints": "15 / 90 / TÚ have exactly 675 / 875 / 670 visible lamps at desktop, mobile and compact mobile sizes.",
+    "mobile": "Opening field still reaches all edges and remains visible behind readable text. Settled numbers keep the shared dot texture against a clear background.",
+    "visualReview": "Desktop opening, midpoint and settled frames plus a 320×568 settled frame reviewed. No residual background grid remains.",
+    "preservation": "03.8 source and review retained. No new media or business content changes."
+  },
+  "limits": [
+    "Animations remain controlled by scroll frames.",
+    "Frame renders and automated checks do not constitute assistive-technology or live interaction testing.",
+    "Pre-existing Remotion transitive Zod warning remains; used APIs render successfully."
+  ]
+}

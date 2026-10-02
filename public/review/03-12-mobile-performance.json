@@ -1,0 +1,179 @@
+{
+  "kind": "read-only local Node benchmark",
+  "date": "2026-09-10T05:12:01.642Z",
+  "baseline_commit": "03e05a6f78dbe4ec2c2e76e2be827b18df914d9c",
+  "baseline_version": "0.3.11",
+  "node": "v24.19.0",
+  "samples_per_viewport": 200,
+  "warmup_samples": 40,
+  "frame_range": [
+    180,
+    379
+  ],
+  "notes": [
+    "Model and SVG serialization only; excludes React/browser parsing, paint, GPU and canvas draw.",
+    "Current model is working tree; baseline extracted from HEAD to temporary directory.",
+    "Node runs on attached Mac; measurements are not physical-phone timings.",
+    "Current numeral hold timings intentionally differ after390."
+  ],
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "lamps": 7700,
+      "opening_points_bitwise_equal": true,
+      "baseline_model": {
+        "median_ms": 2.617,
+        "p95_ms": 5.668
+      },
+      "current_model": {
+        "median_ms": 1.766,
+        "p95_ms": 4.424
+      },
+      "model_median_reduction_percent": 32.5,
+      "removed_svg_serialization": {
+        "median_ms": 4.971,
+        "p95_ms": 9.715
+      },
+      "removed_svg_attribute_chars_per_frame": 933040
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lamps": 9174,
+      "opening_points_bitwise_equal": true,
+      "baseline_model": {
+        "median_ms": 2.944,
+        "p95_ms": 6.632
+      },
+      "current_model": {
+        "median_ms": 1.996,
+        "p95_ms": 3.995
+      },
+      "model_median_reduction_percent": 32.2,
+      "removed_svg_serialization": {
+        "median_ms": 6.424,
+        "p95_ms": 10.808
+      },
+      "removed_svg_attribute_chars_per_frame": 1094658
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "lamps": 14220,
+      "opening_points_bitwise_equal": true,
+      "baseline_model": {
+        "median_ms": 4.964,
+        "p95_ms": 9.291
+      },
+      "current_model": {
+        "median_ms": 3.151,
+        "p95_ms": 7.901
+      },
+      "model_median_reduction_percent": 36.5,
+      "removed_svg_serialization": {
+        "median_ms": 10.663,
+        "p95_ms": 18.014
+      },
+      "removed_svg_attribute_chars_per_frame": 1690388
+    }
+  ],
+  "browserObservations": {
+    "environment": "Codex in-app browser on Mac, mobile viewport emulation; not a physical phone",
+    "warmCanvasDrawMilliseconds": {
+      "390x844": 7.1,
+      "320x568": 3.6
+    },
+    "initialLoad": "No body-field canvas mounted at the hero; coastal video source is absent and paused. Hero video plays.",
+    "responsive": "320x568,390x844 and1440x900 inspected. The full field remains behind readable text. Method controls support keyboard selection and one active panel.",
+    "renderVerification": "Remotion portrait still rendered successfully using the same canvas composition.",
+    "reducedMotion": "Motion switch removes all video elements and the field canvas; static readings and all method content remain. Restored motion afterward."
+  },
+  "artworkBytes": {
+    "tassoGlowOriginal": 1172626,
+    "tassoGlowWebP": 23576,
+    "tassoInUseMobileWebP": 49350
+  },
+  "finalIntegerLatticeCache": {
+    "date": "2026-09-10T05:25:21.028Z",
+    "scope": "Outside-checkout model-only Node benchmark; no browser draw or phone timing",
+    "samples_per_variant_and_viewport": 400,
+    "warmup": 50,
+    "benchmark_frames": [
+      180,
+      379
+    ],
+    "variants_memory_bytes": {
+      "eager": 131072,
+      "lazy": 147456
+    },
+    "fastest": "lazy",
+    "bitwise_equal": {
+      "frames": 2553,
+      "lamps_compared": 26460994,
+      "fields": [
+        "x",
+        "y",
+        "r",
+        "opacity",
+        "on"
+      ]
+    },
+    "results": [
+      {
+        "width": 1440,
+        "height": 900,
+        "baseline": {
+          "median_ms": 1.8304,
+          "p95_ms": 5.1802
+        },
+        "eager": {
+          "median_ms": 0.842,
+          "p95_ms": 2.8734
+        },
+        "lazy": {
+          "median_ms": 0.7298,
+          "p95_ms": 2.1487
+        },
+        "eager_improvement_percent": 54,
+        "lazy_improvement_percent": 60.1
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "baseline": {
+          "median_ms": 1.933,
+          "p95_ms": 4.2936
+        },
+        "eager": {
+          "median_ms": 0.8197,
+          "p95_ms": 2.3051
+        },
+        "lazy": {
+          "median_ms": 0.7858,
+          "p95_ms": 2.0196
+        },
+        "eager_improvement_percent": 57.6,
+        "lazy_improvement_percent": 59.3
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "baseline": {
+          "median_ms": 3.5077,
+          "p95_ms": 7.6489
+        },
+        "eager": {
+          "median_ms": 1.3568,
+          "p95_ms": 4.1039
+        },
+        "lazy": {
+          "median_ms": 1.3573,
+          "p95_ms": 3.4563
+        },
+        "eager_improvement_percent": 61.3,
+        "lazy_improvement_percent": 61.3
+      }
+    ]
+  }
+}

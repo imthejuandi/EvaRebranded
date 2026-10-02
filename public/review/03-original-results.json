@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-09",
+  "status": "reviewed after two focused correction passes",
+  "visualReview": {
+    "connectedScenes": "Observed at frames 171, 225, 400, 480, 680 and 755: same-image zoom, product aperture, button expansion, measured horizontal track, final horizontal opening.",
+    "artDirection": "Actual runner and stretch outputs visually compared with SAVEE 06/08/09. Optical defocus, grain and amber/lilac/blue light are in the generated assets.",
+    "desktop": "1440 x 900 reviewed",
+    "phone": "390 x 844: all four chapters reviewed; page horizontal overflow 0px",
+    "product": "Frame 400 loads pose 47 at 640px; reverse seek from 755 returns frame 400, pose 47 and the same asset. Visible white rectangle corrected.",
+    "idle": "Frame 400 and pose 47 unchanged across separate browser observations more than two seconds apart.",
+    "nativeScroll": "Native PageDown produced frame 171 at scrollY 1279 and frame 341 at scrollY 2558 on desktop. At phone chapter 2, scrollY 2286 mapped to frame 325.",
+    "unpinning": "Phone scrollY 6898: frame remained 840, stage top -990px, following method content visible; no loop to zero.",
+    "reducedMotion": "Visible switch tested: no pinned section, no Remotion frame layer; product, method, optional panel, price, cancellation and free upload retained. Phone page height 3850px.",
+    "readingHold": "Second results panel stationary during frames 635 through 715 before final opening. Measured landscape horizontal overflow 1392px; end translation -1392px."
+  },
+  "toolContracts": {
+    "read_eva_story": "Returned actual frame, scrollY and motion mode",
+    "navigate_eva_chapter": "Valid chapter 2 returned frame 325; chapter 5 rejected",
+    "set_eva_design_frame": "Valid frames visually rendered; frame 841 rejected",
+    "timelineKeyboard": "Native range input End seeks to frame 840; pointer track sizing corrected after browser inspection."
+  },
+  "limits": [
+    "Visual approval remains subjective and belongs to the user.",
+    "OS reduced-motion preference was not changed; the same rendered alternative was tested with the visible switch.",
+    "No physical-device or full assistive-technology audit; responsive review used browser viewport emulation.",
+    "The product turn is generated from an official reference, not a CAD simulation or usage guide."
+  ]
+}
