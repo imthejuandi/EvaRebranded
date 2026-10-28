@@ -87,7 +87,7 @@ function fallbackPainter(canvas:HTMLCanvasElement):Painter{
  },dispose(){}};
 }
 
-export function BodySignalCanvas({state,ambient=false,active=true}:{state:SignalState;ambient?:boolean;active?:boolean}){
+export function BodySignalCanvas({state,ambient=false,active=true,language='es'}:{state:SignalState;ambient?:boolean;active?:boolean;language?:'es'|'en'}){
  const canvas=useRef<HTMLCanvasElement>(null),painter=useRef<Painter|null>(null);
  const [accelerated,setAccelerated]=useState(true),fallbackReason=useRef<string|undefined>(undefined);
  const ambientFrame=useRef(state.materialFrame);
@@ -113,7 +113,7 @@ export function BodySignalCanvas({state,ambient=false,active=true}:{state:Signal
   const interval=1000/30;
   const draw=()=>{
    const started=performance.now();
-   painter.current?.draw(bodySignalState(state.frame,state.layout.width,state.layout.height,{orb:state.orb,materialFrame:ambientFrame.current}));
+   painter.current?.draw(bodySignalState(state.frame,state.layout.width,state.layout.height,{orb:state.orb,materialFrame:ambientFrame.current,language}));
    if(canvas.current){canvas.current.dataset.ambientFrame=ambientFrame.current.toFixed(2);canvas.current.dataset.updateMs=(performance.now()-started).toFixed(2);}
   };
   const tick=(now:number)=>{
@@ -125,6 +125,6 @@ export function BodySignalCanvas({state,ambient=false,active=true}:{state:Signal
   const sync=()=>{cancelAnimationFrame(raf);raf=0;clock=performance.now();nextPaint=clock+interval;if(active&&!document.hidden)raf=requestAnimationFrame(tick)};
   draw();sync();document.addEventListener('visibilitychange',sync);
   return()=>{cancelAnimationFrame(raf);document.removeEventListener('visibilitychange',sync)};
- },[ambient,active,state,accelerated]);
+ },[ambient,active,state,accelerated,language]);
  return <canvas key={accelerated?'gpu':'fallback'} ref={canvas} data-body-field="full-bleed" data-lamp-material="continuous-halftone" data-renderer={accelerated?'gpu-points':'canvas-fallback'} data-fallback-reason={fallbackReason.current} data-lamp-count={state.points.length} aria-hidden="true" style={{position:'absolute',inset:0,width:'100%',height:'100%',zIndex:0}}/>;
 }

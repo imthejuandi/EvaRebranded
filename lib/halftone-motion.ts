@@ -10,15 +10,23 @@ export const halftoneMasks=['15','90','TÚ'].map(word=>sites.map((_,i)=>{
  if(row<6)return word[letterIndex]==='Ú'&&row>=1&&row<=4&&local>=15&&local<20;
  return analogGlyphs[word[letterIndex]][Math.floor((row-6)/5)]?.[Math.floor(local/5)]==='1';
 }));
+// Three English letters share the existing fixed field; Spanish masks are unchanged.
+const englishYouMask=sites.map((_,i)=>{
+ const col=i%HALFTONE_COLS,row=Math.floor(i/HALFTONE_COLS);
+ const x=col-2,letterIndex=Math.floor(x/18),local=x-letterIndex*18;
+ if(x<0||letterIndex>2||local>=15||row<6)return false;
+ return analogGlyphs['YOU'[letterIndex]][Math.floor((row-6)/5)]?.[Math.floor(local/3)]==='1';
+});
 /** Glyph membership is independent of the living lamp material. */
 export function halftonePhase(frame:number){
  const f=Math.max(0,Math.min(360,frame));
  return f<160?clamp((f-55)/80):1+clamp((f-215)/80);
 }
-export function halftoneMaskAt(phase:number,index:number){
+export function halftoneMaskAt(phase:number,index:number,language:'es'|'en'='es'){
  const from=Math.min(1,Math.floor(phase)),to=Math.min(2,from+1),step=Math.floor((phase-from)*8)/8;
  const switched=step>=1||step>((index*7)%17)/16;
- return halftoneMasks[switched?to:from][index];
+ const mask=switched?to:from;
+ return language==='en'&&mask===2?englishYouMask[index]:halftoneMasks[mask][index];
 }
 export function halftoneState(frame:number){
  const f=Math.max(0,Math.min(360,frame)),phase=halftonePhase(f);
