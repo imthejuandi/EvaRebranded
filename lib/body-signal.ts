@@ -51,7 +51,7 @@ function screen(width:number,height:number){
  if(cache.size>5)cache.clear();const result={layout,sites};cache.set(key,result);return result;
 }
 /** Gradual light guidance reveals numerals inside the continuous living field. */
-export function bodySignalState(frame:number,width=1440,height=900,options:{materialFrame?:number;orb?:number}={}){
+export function bodySignalState(frame:number,width=1440,height=900,options:{materialFrame?:number;orb?:number;language?:'es'|'en'}={}){
  const f=Math.max(0,Math.min(BODY_SIGNAL_DURATION-1,frame));
  const materialFrame=options.materialFrame??f,orb=clamp(options.orb??0);
  const progress=clamp((f-BODY_RESOLVE_START)/(BODY_RESOLVE_END-BODY_RESOLVE_START)),resolve=smooth(progress);
@@ -59,7 +59,7 @@ export function bodySignalState(frame:number,width=1440,height=900,options:{mate
  const phase=bodyNumberPhase(f);
  const points=sites.map(p=>{
   const lamp=livingLamp(p.col,p.row,materialFrame,p.seed);
-  const on=p.maskIndex>=0&&halftoneMaskAt(phase,p.maskIndex);
+  const on=p.maskIndex>=0&&halftoneMaskAt(phase,p.maskIndex,options.language);
   // A soft downward drift with fine lamp variation; one easing curve per lamp.
   const local=smooth((progress-p.delay)/(1-p.delay));
   // Glyphs are an energy bias inside this field, not a second image or radius target.

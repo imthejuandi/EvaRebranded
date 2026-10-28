@@ -1,9 +1,21 @@
-# English rollout preparation
+# English public website
 
-This preview launches in Spanish. No partially translated English route is exposed.
+The public website is available in Spanish and English. English routes cover `/en`, `/en/how-it-works`, `/en/science`, `/en/pricing`, `/en/about`, `/en/blog`, and `/en/contact`.
 
-Page packages keep Spanish copy in named `*.es` dictionaries. `lib/preview/locale.ts` provides typed locales, shared English/Spanish controls, UTC date/number formatters and explicit Spanish fallback. Run `node scripts/prepare-locale-catalog.mjs` to refresh the stable-key source inventory, source-line references and empty English translation template in `lib/site-content/locales/`.
+The page structure, images, animation timing, biomarker symbols, clinical values, euro prices, and service conditions are retained. The English copy uses British English. `lib/site-content/locales/public.en.json` contains the authored public-site translations, including controls, image descriptions, status messages, and animated captions.
 
-The inventory covers text nodes and authored multiword strings in new page modules, shared UI, data fixtures and landing content. It intentionally retains source references for inline strings so the English pass can migrate them to reviewed keys. It is a preparation artifact, not a claim that every existing landing component has already been migrated to runtime localization. Legal document HTML remains separately source-owned and needs its complete approved English counterpart.
+`SiteLanguageProvider` selects language from the document layout. Separate route-group layouts produce the correct server-rendered `html lang` without a client-side language flash. Public routes include reciprocal language metadata, and the EN/ES links preserve the current public page, query string, and fragment. Public navigation stays in the selected language.
 
-Before enabling English: translate the pending catalog and remaining inline landing strings; wire page copy selection and locale routes; verify all validation/status/aria labels, units, dates and plan cadence; preserve report/plan/return-to query state across language switching; test longer English labels and menus at 320px; replace disabled language affordances only after complete copy and route review. Keep official logos and clinical marker symbols unchanged. Do not mechanically translate source legal text without review.
+The account/app preview remains Spanish, as requested for this first pass. Its existing plan, report, and return-path parameters are preserved. The existing Spanish legal and methodology documents remain the source documents; English links label that boundary explicitly. No automatic legal translation or new service/clinical claims are introduced.
+
+Run:
+
+```sh
+npm run build
+npm run check:english
+npm run check:preview
+```
+
+`check:english` verifies the seven exported English pages, rendered copy and accessibility labels, reciprocal language links, correct document languages, query/fragment preservation, Spanish-only boundaries, and clinical symbols/decimal notation. The broader preview check covers the public and app route graph.
+
+The legacy application locale preparation in `lib/preview/locale.ts` still enables Spanish only. This is intentional: adding English to the app preview is separate work. Its source inventory and pending English catalogue remain available under `lib/site-content/locales/`.

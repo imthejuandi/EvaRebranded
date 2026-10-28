@@ -18,7 +18,8 @@
     "check:body-signal": "node scripts/check-body-signal.mjs",
     "check:method": "node scripts/check-method.mjs",
     "check:preview": "node scripts/check-preview.mjs",
-    "check:history": "python3 scripts/check-history.py"
+    "check:history": "python3 scripts/check-history.py",
+    "check:english": "node scripts/check-english.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
