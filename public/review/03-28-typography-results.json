@@ -1,0 +1,48 @@
+{
+  "version": "03.28",
+  "scope": [
+    "Hero type hierarchy and spacing",
+    "Menu dot legibility"
+  ],
+  "review": "Local in-app browser and TypeScript check",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      740
+    ]
+  ],
+  "checks": {
+    "heroLeadWeight": 400,
+    "heroLeadDesktopPx": 120,
+    "heroLead390Px": 56.55,
+    "heroTrackingEm": -0.035,
+    "heroDesktopWordWidth": 720,
+    "hero390WordWidth": 327.59375,
+    "menuGridSamplesPerEm": 18,
+    "coverageSizedEdgeDots": true,
+    "desktopAndMobileWordsVisuallyReviewed": true,
+    "keyboardFocusMorph": true,
+    "blurRestoresNativeText": true,
+    "finiteAnimationEnds": true,
+    "noHorizontalOverflow": true,
+    "typecheck": true
+  },
+  "preserved": [
+    "Hero dotted treatment",
+    "Official logo",
+    "Kinetic menu opening and closing",
+    "Approved imagery and business content",
+    "Previous 03.27 source archive"
+  ],
+  "limitations": [
+    "Viewport emulation, not a physical phone test"
+  ]
+}

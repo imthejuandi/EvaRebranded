@@ -1,0 +1,33 @@
+{
+  "iteration": "03.13",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-12-results.json",
+  "changes": [
+    "Continuous opening motion without whole-frame snapping; cached analog lettering and accelerated point rendering.",
+    "Longer final life scene and complete-number holds, with the accepted slow initial emergence retained.",
+    "Photographic method chapters reuse EVA glow, grain and halftone artwork and precede the detailed biomarker demonstration.",
+    "Original coastal walk restored; product-placement variant remains in history.",
+    "Full Spanish storyline clarified using business context, with matching accessible and reduced-motion copy."
+  ],
+  "observations": {
+    "motion": "Fractional frames observed in both live passages; runner video plays and offscreen coastal video pauses. GPU initialization and full-density fallback observed.",
+    "responsive": "390×844 and 320×568 mobile layouts plus 1440×900 desktop reviewed; no horizontal overflow.",
+    "method": "All four images reviewed; End keyboard navigation selects the last step and disables next.",
+    "content": "Home sample collection and accredited laboratory analysis appear at the first product scene; subscription and extended-panel option distinguished.",
+    "history": "03.12 source, review and media variant preserved."
+  },
+  "validationStatus": "passed",
+  "limits": [
+    "No physical-phone frame-rate measurement.",
+    "Targeted interaction checks are not a complete accessibility audit."
+  ],
+  "videoStatus": "original accepted walk restored",
+  "checks": [
+    "Build: four routes, zero skipped",
+    "TypeScript: passed",
+    "Continuous field: all 1,221 frames plus fractional-frame audit",
+    "Content and delivery: passed",
+    "Desktop and compact-mobile visual checks",
+    "Method keyboard navigation and reduced-motion alternative"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "revision": "03.6",
+  "provider": "Built-in image_gen",
+  "editTarget": "/art/tasso-plus-product.jpg",
+  "styleReference": "/art/runner-athletic.jpg",
+  "asset": "/art/tasso-plus-glow-v1.png",
+  "prompts": [
+    "Use case: style-transfer product photo edit for EVA's health website. Image 1 is the edit target: the official front-facing Tasso+ device on white. Image 2 is ONLY a color and optical style reference (the glowing athlete). Preserve the exact product silhouette, oval off-white housing, coral-red circular button, embossed four-armed mark, bottom clear connector, proportions, orientation and construction of Image 1. Restyle this same still with the refined photographic softness and optical bloom of Image 2: warm apricot/coral light, faint lilac rim light, creamy diffuse highlights, softly glowing edges, a little analog atmospheric softness. Keep product recognizable, dimensional, and readable; the embossed mark stays physically correct. Center upright in a square canvas with generous margins. Isolate on a genuinely transparent background including a very subtle soft translucent peach/lilac optical halo that fades to full transparency well before every image edge. This will float over paper cream #f3f0e8. No floor or opaque backdrop, no hard shadow, no plants, flowers, person, text, additional objects, UI, or frame. Do not rotate the product or change its viewpoint. A single still product cutout, not a montage.",
+    "Edit this product image only. Keep the glowing Tasso+ device EXACTLY as shown, with its shape, upright view, embossed mark and beautiful coral/apricot/lilac optical lighting. Replace ALL of the checkerboard background with a perfectly smooth, uniform, solid paper-cream background color #f3f0e8. There must be NO checkerboard, pattern, texture, grid, floor or visible boundary anywhere. Preserve the subtle optical halo around the device, fading smoothly to the plain cream background far from the edges. All four image edges must be flat paper cream. Keep the same square framing and product scale. Do not attempt transparency: deliver an opaque cream-background photographic image."
+  ],
+  "background": "Opaque paper cream with a feathered CSS mask; no claim of alpha transparency.",
+  "invariants": "Original front-facing oval housing, circular coral button, embossed mark and bottom connector retained; generated styling is illustrative.",
+  "motion": "Remotion frame-driven vertical hover, amplitude 8px, period 150 frames at 30fps; no rotation or horizontal movement."
+}

@@ -1,0 +1,94 @@
+{
+  "revision": "03.19",
+  "date": "2026-09-11",
+  "scope": "Candid removal-only scene, official black EVA artwork and optical bloom",
+  "priorVersion": "/archive/eva-03-18-product-placement.zip",
+  "priorFilm": "/art/method-product-placement-720.mp4",
+  "product": {
+    "source": "https://www.tassoinc.com/tasso-plus",
+    "officialImage": "https://images.squarespace-cdn.com/content/v1/60da6eca05215e687a479088/8c5b0cc5-87dc-47dc-93aa-6aa535213ce5/Tasso%2B_large.jpg",
+    "registeredProductId": "f1497ceb-f046-49f6-b7d1-a53b467760a2",
+    "mediaId": "3879db69-a499-45e4-a043-7a857c1de845",
+    "features": [
+      "Ivory teardrop shell",
+      "Large coral-red button",
+      "Curved embossed Tasso emblem",
+      "Short centered bottom connector"
+    ],
+    "configuration": "Bare device without an attached collection tube, as shown in the reference photograph.",
+    "accuracy": "Recognizable generative interpretation, with slightly taller/narrower housing than the official photograph. Not exact CAD or filmed product footage."
+  },
+  "logo": {
+    "source": "User-supplied EVA Logo.png",
+    "mediaId": "fe4ace17-0a0a-4eae-80f6-24303e917e06",
+    "localAsset": "/art/eva-official-logo.png",
+    "application": "Original PNG alpha, recolored black and tracked onto the pouch; no replacement font",
+    "tagline": null
+  },
+  "generation": {
+    "initialJob": "5a9ee72b-38bc-48eb-9bea-7e285ca929f4",
+    "motionSourceJob": "72e4962c-1d09-4c24-ac3f-bdb552ef2ca7",
+    "model": "minimax_h3",
+    "sourceUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260911_082135_72e4962c-1d09-4c24-ac3f-bdb552ef2ca7.mp4",
+    "sourceSHA256": "e1f36c4fcd994da14f7ce4dbbd4e9b3ad6c37f308ac7e8a6e9d337d3495c9497",
+    "rejectedBrandingJob": "1db0fa8d-d4f0-4140-b208-628d53c7f10d",
+    "rejection": "Wrong letterforms and pink cast; excluded from active scene."
+  },
+  "assembly": {
+    "workflow": "Higgsfield remote sandbox: trim, crop, OpenCV tracked logo replacement, RGB highlight bloom, H264 encoding",
+    "sourceRangeSeconds": [
+      4,
+      8
+    ],
+    "speed": 1,
+    "crop": "Centered 720x792 from scaled square source",
+    "tracking": "Reference-to-frame optical flow with RANSAC homography; 96 frames, minimum 143 inliers",
+    "printRemoval": "Local text mask, dilated 3x3; Telea inpainting radius4",
+    "logoReferencePosition": [
+      185,
+      538
+    ],
+    "logoReferenceSize": [
+      94,
+      33
+    ],
+    "effects": "RGB highlight extraction .45, Gaussian sigma14, screen opacity .40, diffusion .7 mixed16%",
+    "codec": "H264",
+    "crf": 20,
+    "pixelFormat": "yuv420p",
+    "faststart": true,
+    "audio": false,
+    "posterSizes": [
+      600,
+      1000
+    ],
+    "posterNote": "Responsive stills derived from the final720px video;1000px is an upscaled display derivative."
+  },
+  "review": {
+    "findings": [
+      "Twelve evenly spaced final frames inspected for motion continuity, logo tracking and print removal.",
+      "Source range contains only reach/removal from the already-open pouch; no opening, closing or reverse playback.",
+      "Official sans-serif letterforms remain black and attached to the white pouch.",
+      "No tagline remains; lower halftone clouds retained.",
+      "Final device remains small with coral actuator, ivory shell and short connector; scene stays warm with soft optical bloom."
+    ],
+    "limits": [
+      "Generated editorial scene and proposed packaging; not filmed product footage or exact CAD.",
+      "The device interpretation remains slightly narrower than the official packshot.",
+      "No physical-phone hardware FPS measurement."
+    ]
+  },
+  "delivery": {
+    "path": "/art/method-lifestyle-pouch-720.mp4",
+    "mediaId": "60b4420c-a651-4d74-a367-96465789e734",
+    "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/60b4420c-a651-4d74-a367-96465789e734.mp4",
+    "bytes": 571350,
+    "sha256": "7f42474da923b03bda2dffe00a77232b07ddb12e981596fc9fc6b566d5b6ae0a",
+    "durationSeconds": 4,
+    "frames": 96,
+    "fps": 24,
+    "width": 720,
+    "height": 792,
+    "audioStreams": 0
+  }
+}

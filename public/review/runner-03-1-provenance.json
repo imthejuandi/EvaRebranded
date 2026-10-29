@@ -1,0 +1,92 @@
+{
+  "iteration": "03.1",
+  "sourceReference": {
+    "jobId": "12bbafb3-e516-4e86-9026-4b36e44775d3",
+    "originalFile": "work/eva-03-human-runner.png",
+    "provenance": "Original EVA 03 runner generated using SAVEE 06/08/09 as optical style references. Full original provenance in work/eva-03-human-art.json."
+  },
+  "artTreatment": {
+    "background": "#0B1010",
+    "colors": [
+      "amber",
+      "lilac",
+      "blue"
+    ],
+    "effects": [
+      "optical defocus",
+      "translucent bloom",
+      "analogue grain",
+      "leftward movement smear"
+    ]
+  },
+  "still": {
+    "jobId": "6c7b0d67-c05e-49bb-8128-586273bb6ebb",
+    "requestedModel": "nano_banana_pro",
+    "reportedModel": "nano_banana_2",
+    "creditsEstimated": 2,
+    "sourceUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260909_085002_6c7b0d67-c05e-49bb-8128-586273bb6ebb.png",
+    "posterDimensions": {
+      "width": 1450,
+      "height": 1800
+    },
+    "qa": {
+      "visuallyInspected": true,
+      "findings": [
+        "Lean adult runner with plausible proportions and a relaxed stride.",
+        "Separate singlet and shorts, shoes on both feet are visible.",
+        "Fine grain, soft luminous amber torso and lilac-blue edges remain present.",
+        "A little more clothing definition than the original was intentionally required by the brief."
+      ]
+    }
+  },
+  "video": {
+    "jobId": "8c476530-69f0-42b7-97e0-99b603d13d70",
+    "model": "kling3_0",
+    "mode": "pro",
+    "creditsEstimated": 7.5,
+    "sourceUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260909_085332_8c476530-69f0-42b7-97e0-99b603d13d70.mp4",
+    "source": {
+      "width": 1440,
+      "height": 1440,
+      "durationSeconds": 5.042,
+      "frames": 121,
+      "fps": 24,
+      "bytes": 7509167
+    },
+    "output": {
+      "file": "runner-loop.mp4",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/a3170d1a-e9e9-46e6-8be9-7c37be195674.mp4",
+      "width": 864,
+      "height": 1080,
+      "aspectRatio": "4:5",
+      "durationSeconds": 5,
+      "frames": 120,
+      "fps": 24,
+      "bytes": 909659,
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true
+    },
+    "qa": {
+      "visuallyInspected": true,
+      "method": "Inspected 16 source temporal samples and 8 processed samples with actual pixels, including first and last playable frames. Parent checks live browser playback.",
+      "findings": [
+        "Natural alternating forward strides, reciprocal arm/leg action visible across sampled frames.",
+        "Full body retained and framing centered; no observed camera pan or zoom.",
+        "Background stays deep charcoal, with no new floor/environment.",
+        "Functional singlet, running shorts, shoes and amber/lilac color treatment persist.",
+        "Corrective optical defocus/grain removes the sharply resolved face/clothing produced by the video model in its middle frames.",
+        "The boundary returns to a closely matching stride and composition; no crossfade was required based on sampled frames."
+      ],
+      "technicalSeamEvidence": {
+        "meanFirstLastPixelDifferenceAt320": 6.9883151041666665,
+        "note": "A technical comparison only; it is not a guarantee of perceptual seam invisibility."
+      },
+      "limitations": [
+        "The baked blur is consistent in application; the starting still is inherently softer than the synthesized middle, so softness is not pixel-identical across frames.",
+        "The optical movement trail is visible behind the primary runner."
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "revision": "03.13",
+  "scope": "Code-level continuity checks and live browser inspection on a Mac at desktop and mobile viewport sizes; not measured on a physical phone.",
+  "changes": [
+    "Fractional Remotion scroll frames replace whole-frame rounding in both passages.",
+    "Runner exit uses composited translation instead of changing left.",
+    "Analog cell lettering is cached between letter changes.",
+    "GPU point drawing replaces the full-field Canvas blur and bitmap copies; full-density Canvas fallback remains available."
+  ],
+  "evidence": {
+    "previousQuantization": "On a 390\u00d7844 viewport, whole-frame scene travel jumped approximately 5.6\u20139.4 CSS pixels; fractional positions now reach the Player unchanged.",
+    "liveHeroFrame": 41.82926829268293,
+    "liveSignalFrame": 36.75413404079951,
+    "mobileLampCount390": 9174,
+    "rendererObserved": "gpu-points",
+    "fallbackObserved": "Canvas fallback displayed the same full field when accelerated setup initially failed; shader compatibility was corrected and GPU initialization verified.",
+    "analogLetterRasterization": "18 letter-layer rebuilds instead of 161 across integer frames 0\u2013160; ordinary frames use cached layers.",
+    "drawingCaveat": "data-draw-ms measures command submission, not GPU completion; no device FPS improvement is claimed."
+  },
+  "rhythm": {
+    "heroFrames": 981,
+    "heroScrollSvh": 920,
+    "closingFullyVisibleFrames": 180,
+    "previousClosingFullyVisibleFrames": 40,
+    "signalFrames": 1221,
+    "signalScrollSvh": 675,
+    "numberHolds": [
+      200,
+      230,
+      180
+    ],
+    "previousNumberHolds": [
+      95,
+      120,
+      85
+    ],
+    "numberChanges": 110,
+    "previousNumberChanges": 80,
+    "initialReveal": 225
+  }
+}

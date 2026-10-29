@@ -1,0 +1,24 @@
+{
+  "iteration": "03.16",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-15-results.json",
+  "changes": [
+    "Contexto now shows one fixed reading against two labeled halftone ranges.",
+    "En casa combines a generated home unboxing opener with54native frames of a mesh-modeled Tasso+ reveal, followed by a stationary product hold.",
+    "Editable model/scene and prior03.15source preserved."
+  ],
+  "validationStatus": "visual-and-interaction-checks-passed",
+  "checks": [
+    "Same-value comparison readable at1440px and320px, no horizontal overflow.",
+    "Final180-frame7.5-secondH264 film reviewed across opening, cut, lid clearance and product hold.",
+    "Actual11-mesh product model contains no images or texture cutouts.",
+    "Pause, resume, replay, offscreen suspension, reduced-motion still and final-frame hold verified in browser.",
+    "Final mobile film720×792,589062bytes; selected-only deferred playback.",
+    "Prior03.15source restored byte-for-byte from03.12base plus overlay."
+  ],
+  "limits": [
+    "Exterior geometry and packaging are editorial reconstructions, not manufacturing CAD or a promise of exact delivered packaging.",
+    "No physical-phone hardware FPS measurement."
+  ],
+  "provenance": "/review/method-unboxing-provenance.json"
+}

@@ -1,0 +1,57 @@
+{
+  "revision": "03.20",
+  "date": "2026-09-11",
+  "scope": "Approved natural-skin still replaces the pouch video",
+  "priorVersion": "/archive/eva-03-19-official-pouch.zip",
+  "priorFilm": "/art/method-lifestyle-pouch-720.mp4",
+  "selection": "Solar Glow proposal v2, approved before the halftone-skin experiments; integrated logo and upper/lower pouch dots.",
+  "source": {
+    "filename": "eva-pouch-solar-glow-still-v2.png",
+    "sha256": "1bb8274f2a0fdc6aeb4fccbf9f81062a64a4e99f4a50e461fceedde2185482a6",
+    "tool": "built-in image_gen",
+    "prompt": "Edit this supplied EVA still photograph. Make ONLY these two refinements to the POUCH PRINT, keeping the rest of the image and its strong peach/violet solarized glow, analog film grain, woman, pose, hands, small Tasso+, kitchen, crop and composition unchanged.\n\n1. Integrate the existing black lowercase \"eva\" logo physically into the matte flexible pouch. Preserve the actual smooth sans-serif letterforms, size, placement and tiny registered mark exactly; no dotted letters and no tagline. It must look like black ink printed directly into the material and then photographed: subtle conformance to the pouch's curvature and shallow folds, paper texture and fine film grain visible through the printed strokes, natural uneven illumination shared with the surrounding pouch, gentle warm reflected light and the same optical softness as the pouch. Black ink should photograph as a deep warm near-black with small tonal variation, rather than a perfectly flat pure-black digital vector. No sticker, label patch, embossing, drop shadow, outlining, altered font or blurred illegibility.\n\n2. Extend the existing coral/peach and muted violet variable-size HALFTONE DOT print into the UPPER portion of the pouch too. Add restrained irregular clouds of dots drifting inward from the top-left and top-right front edges just beneath the resealable seam, fading toward the open central whitespace above the logo. Echo the bottom print's actual dot character and perspective with a lighter, more sparse density at the top. Keep the zip seam mostly clear and a generous clean area around the logo. Retain the bottom halftone print. Upper and lower dots should feel part of one elegant minimal packaging design, naturally printed into the same material with matching grain, shading and optical softness.\n\nOutput ONE finished edited photograph only. Do not restyle, crop or change anything beyond the printed logo's material integration and the added upper halftone print.",
+    "styleReference": "User-supplied6a8f85283c9caf3ed19d0348.jpg",
+    "photographicTreatment": [
+      "Natural skin texture",
+      "Peach luminous clothing and soft halation",
+      "Violet shadows",
+      "Organic film grain",
+      "Printed logo follows pouch material"
+    ]
+  },
+  "delivery": [
+    {
+      "path": "/art/method-pouch-still-600.webp",
+      "bytes": 55170,
+      "sha256": "05fbb551539e8c21d7ea7c75ac5d574d367caef6cf84e77f3611e7a482d332e6",
+      "width": 600,
+      "height": 659
+    },
+    {
+      "path": "/art/method-pouch-still-1000.webp",
+      "bytes": 145358,
+      "sha256": "148554ece43da89478d5b7a51856e815d2025157f0aef831884bba35f2245253",
+      "width": 1000,
+      "height": 1099
+    }
+  ],
+  "behavior": {
+    "video": false,
+    "playbackControls": false,
+    "imageMotion": false,
+    "loading": "lazy",
+    "decoding": "async",
+    "responsiveSizes": [
+      600,
+      1000
+    ]
+  },
+  "preservation": {
+    "previousSourceCommit": "aa3f748de03d7e6a74abbdc636b2bb2ad271b2d2",
+    "previousOverlay": "/archive/eva-03-19-official-pouch.zip",
+    "experiments": "Preserved as separate workspace proposals; none used on the site."
+  },
+  "limits": [
+    "Generative editorial image and packaging concept, not a photograph of the delivered kit."
+  ]
+}

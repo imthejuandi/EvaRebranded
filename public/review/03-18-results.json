@@ -1,0 +1,27 @@
+{
+  "iteration": "03.18",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-17-results.json",
+  "changes": [
+    "Registered the official Tasso+ product photograph in Higgsfield Marketing Studio and generated with the Unboxing format.",
+    "Full box opening, coherent pickup and clear front-facing product view replace the prolonged lid lift.",
+    "Source pace increased1.25× and cut to6.4seconds, ending on the visible product. Coral/violet glow and grain retained.",
+    "1037137-byte silent H264 clip,192frames at30fps, with600/1000px responsive stills."
+  ],
+  "validationStatus": "visual-and-interaction-checks-passed-with-noted-variation",
+  "checks": [
+    "Official packshot comparison: recognizable ivory teardrop, large coral button, curved embossed emblem and short connector.",
+    "Twelve source frames and ten edit frames reviewed for grip, occlusion and continuous identity.",
+    "390px mobile framing and1440px overflow checks passed.",
+    "Pause time remained fixed, resume advanced from it, replay restarted, and6.4-second final-frame hold verified.",
+    "Reduced motion removed video and controls and displayed the product still.",
+    "TypeScript, component lint and method contracts passed.",
+    "Prior03.17source restored byte-for-byte from03.12base plus overlay."
+  ],
+  "limits": [
+    "Generated housing is slightly taller/narrower than the official product photograph; this is not exact CAD or filmed product footage.",
+    "Unbranded box is editorial packaging.",
+    "No physical-phone hardware FPS measurement."
+  ],
+  "provenance": "/review/method-unboxing-provenance.json"
+}

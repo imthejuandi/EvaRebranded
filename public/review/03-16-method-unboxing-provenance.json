@@ -1,0 +1,117 @@
+{
+  "revision": "03.16",
+  "date": "2026-09-10",
+  "scope": "Context comparison and modeled unboxing",
+  "model": {
+    "authoring": "Blender5.2 via Higgsfield3D Jutsu",
+    "productMeshCount": 11,
+    "productImageTextures": 0,
+    "assembly": "Separate shell, unpressed button, seam, connector, collar and attached empty vial",
+    "accuracy": "Approximate exterior visual reconstruction from official product photographs; not manufacturing CAD",
+    "packaging": "Unbranded editorial concept; not exact delivered kit",
+    "download": "/review/tasso-plus-model.zip",
+    "downloadSha256": "1c570403b9aa0a97dfec00748c9722aa1c3ffcbdbe2cf92b1f3e2d9e7e27071f"
+  },
+  "opener": {
+    "jobId": "a1dbdcd0-e6cf-4736-ba16-eabf49feae95",
+    "params": {
+      "model": "seedance_2_5",
+      "prompt": "Animate this exact editorial photograph as one quiet natural unboxing moment. Preserve the same woman, cropped composition, box, glass, tabletop and all styling. Her hands gently lift the plain warm-white box lid upwards, slowly and realistically, showing the beginning of opening a home health kit. The lid moves naturally in her fingers, the box base remains on the table. Do not show the contents inside the box yet: camera stays above the lid edge and the product reveal will occur in a separate shot. Very subtle camera push toward the box. Preserve the exact strong coral-pink solarized highlights, deep violet shadows, dreamy soft light bloom trailing the hands slightly, photographic grain and optical softness from the source image, like a film photograph moving. No text, no logos, no flowers, no invented medical device, no added objects, no additional limbs, no morphing. Silent elegant cinematic footage, one continuous shot.",
+      "duration": 6,
+      "aspect_ratio": "1:1",
+      "count": 1,
+      "resolution": "720p",
+      "generate_audio": false,
+      "medias": [
+        {
+          "role": "start_image",
+          "value": "https://eva-system-03.jdlagop.chatgpt.site/art/method-home-solar-1000.jpg"
+        }
+      ],
+      "mode": "omni_reference"
+    },
+    "sourceUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_32T91RZ0OoECK8muroAblQ9W1VR/hf_20260910_080253_a1dbdcd0-e6cf-4736-ba16-eabf49feae95.mp4",
+    "review": "One generated opener. Six sampled frames show the same hand lifting the lid naturally; no new product geometry. Product reveal supplied by native mesh rendering."
+  },
+  "context": {
+    "meaning": "One fixed reading across an interval of reference and the EVA range",
+    "labels": [
+      "Tu resultado",
+      "Intervalo de referencia",
+      "Rangos de EVA",
+      "El mismo valor. Más contexto."
+    ],
+    "clinicalValues": false
+  },
+  "priorVersion": "/archive/eva-03-15-solar-home.zip",
+  "assembly": {
+    "openingSeconds": 3,
+    "nativeTimelineFrames": [
+      13,
+      66
+    ],
+    "nativeFrames": 54,
+    "nativeFps": 24,
+    "productHoldSeconds": 2.25,
+    "expectedDuration": 7.5,
+    "cut": "Direct editorial cut; no dissolve or product morph",
+    "filterGraph": "[0:v]trim=duration=3,setpts=PTS-STARTPTS,scale=792:792,crop=720:792,setsar=1,fps=24,format=yuv420p[opening];[1:v]setpts=PTS-STARTPTS,hqdn3d=1:1:1.5:1.5,scale=720:792:flags=lanczos,setsar=1,fps=24,format=gbrp,split=2[base][light];[light]lutrgb=r='max(val-150,0)*2.5':g='max(val-150,0)*2.5':b='max(val-150,0)*2.5',gblur=sigma=9[glow];[base][glow]blend=all_mode=screen:all_opacity=0.16,gblur=sigma=0.3,tpad=stop_mode=clone:stop_duration=2.25,format=yuv420p,noise=alls=3:allf=t[product];[opening][product]concat=n=2:v=1:a=0[film]",
+    "delivery": {
+      "codec": "H264",
+      "pixelFormat": "yuv420p",
+      "width": 720,
+      "height": 792,
+      "fps": 24,
+      "crf": 21,
+      "faststart": true,
+      "audio": false
+    },
+    "composition": "3s generated home opening, then54 native Blender frames and a2.25s stationary hold. Subtle localized highlight bloom and grain are baked into product footage.",
+    "renderer": "Blender Cycles CPU,8samples,denoising"
+  },
+  "delivery": {
+    "path": "/art/method-unboxing-720.mp4",
+    "bytes": 589062,
+    "sha256": "f1944ac97162c96449f84cde096011f3500f62919a1007259f0e111cbb848732",
+    "durationSeconds": 7.5,
+    "frames": 180,
+    "fps": 24,
+    "width": 720,
+    "height": 792,
+    "codec": "H264",
+    "audioStreams": 0
+  },
+  "nativeSegments": [
+    {
+      "frames": [
+        13,
+        36
+      ],
+      "artifactId": "6feeda8e1d3c8e538d0dbc3fa00aeaad",
+      "sourceRevision": 2,
+      "sha256": "516be3522123038f445c78007736ef99442ae4c65f1b8ba59a61c3b057b22d43"
+    },
+    {
+      "frames": [
+        37,
+        60
+      ],
+      "artifactId": "e0eccae717ed1860bda84cbf9818a4d4",
+      "sourceRevision": 2,
+      "sha256": "57a16bf732553e115d36326fd5c187ad90486e3189edcb150d644bf679bca4cc"
+    },
+    {
+      "frames": [
+        61,
+        66
+      ],
+      "artifactId": "ae1c75550d1423d09e669fdafed98866",
+      "sourceRevision": 2,
+      "sha256": "ee49ff043de0522924f2be34362528090424eb08bbc30132fe39243b7dd217da"
+    }
+  ],
+  "officialReferences": [
+    "https://www.tassoinc.com/tasso-plus",
+    "https://www.tassoinc.com/s/Tasso_ProductBrochure.pdf"
+  ]
+}

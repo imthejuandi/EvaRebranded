@@ -1,0 +1,22 @@
+{
+  "iteration": "03.10",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-9-results.json",
+  "changes": [
+    "Restored the persistent surrounding field from03.8.",
+    "Extended initial numeral emergence from105 to225 frames, with gentle spatial staggering and a single easing curve per lamp.",
+    "Expanded scroll passage to450svh, giving the reveal1.05 viewport heights versus0.50 previously.",
+    "Used32 brightness levels and a100-frame eased text movement."
+  ],
+  "observations": {
+    "motion": "751 reversible frames retain the same lamp positions, radius function and uninterrupted clock. Glyph guidance increases gradually without reversal or abrupt boundary.",
+    "mobile": "The field remains visible across the entire screen, including behind readable text and around established numbers.",
+    "preservation": "Both03.8 and the03.9 isolated-number alternative remain recoverable. No new media or business content changes.",
+    "review": "Early, midpoint and settled desktop frames plus compact-mobile transition renders reviewed. Text clipping identified and corrected with small vertical travel and sequential fades of complete lines. Independent dot-progression review passed."
+  },
+  "limits": [
+    "Motion remains controlled by scroll frames.",
+    "Targeted renders and UI checks do not constitute assistive-technology testing.",
+    "Pre-existing Remotion transitive Zod warning remains; used APIs render successfully."
+  ]
+}

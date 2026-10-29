@@ -1,0 +1,24 @@
+{
+  "iteration": "03.12",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-11-results.json",
+  "changes": [
+    "Completed15 and90readings hold longer, retaining the accepted225-frame initial reveal and continuous surrounding field.",
+    "Canvas rendering, cached site constants, isolated chapter updates and deferred media reduce phone rendering/loading work.",
+    "El método becomes four original illustrated chapters inspired by SAVEE references, with exact existing business information.",
+    "Real Tasso+ product cutouts follow both upper arms in the accepted coastal walking footage; natural movement and glow are preserved."
+  ],
+  "observations": {
+    "responsive": "320x568,390x844 and1440x900 inspected; no horizontal overflow. Mobile dots fill the viewport behind readable text.",
+    "interaction": "Method arrow keys and End selection, one active panel, final-step disabled next, hero navigation and numeral navigation inspected. Reduced-motion switch removes video and animated field while keeping content.",
+    "animation": "All851frames pass fixed lamp identity, shared radius/clock, reverse reconstruction, continuous reveal and brightness gates. Legacy361-frame analog checks pass. Remotion portrait render passes.",
+    "performance": "Cached noise calculation reduces model work further, with bitwise identity across all851frames at three viewports. See /review/mobile-performance.json for local benchmark scope and initial-load checks.",
+    "history": "03.11source archived. Existing colored widgets, warm paper background, core data and former artwork remain preserved.",
+    "video": "Full221-frame decode and quarter-second tracking checks pass.720×1280,24fps,9.208s,silent,fast-start,2.91MB. Two defective generative edits were rejected; the controlled composite preserves the accepted source movement."
+  },
+  "limits": [
+    "Responsive and performance checks used browser emulation on a Mac, not the user’s physical phone.",
+    "Targeted interaction and visual checks are not a full accessibility audit."
+  ],
+  "videoStatus": "accepted controlled composite"
+}

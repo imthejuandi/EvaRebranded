@@ -1,0 +1,25 @@
+{
+  "iteration": "03.17",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-16-results.json",
+  "changes": [
+    "One continuous home unboxing shot replaces the two-shot film.",
+    "The original lid progressively reveals Tasso+ in the same box, with a gentle camera advance and consistent coral/violet softness and grain.",
+    "390172-byte silent web video and responsive stills; prior film and editable 3D model preserved."
+  ],
+  "validationStatus": "visual-and-interaction-checks-passed",
+  "checks": [
+    "Twelve sequential half-second samples reviewed for stable product placement, lid occlusion, continuous scene and visual treatment.",
+    "390px and1440px browser views: readable product, no horizontal overflow.",
+    "Pause holds current time; resume advances from it; replay and final-frame hold verified.",
+    "Reduced motion uses the responsive completed-reveal still with no video or controls.",
+    "TypeScript and method contract checks passed; source component lint clean.",
+    "Prior03.16source restored byte-for-byte from03.12base plus overlay."
+  ],
+  "limits": [
+    "Generative video edit guided by the native mesh model; not a native render of every frame.",
+    "Approximate exterior geometry and editorial packaging; front wall naturally occludes part of the vial.",
+    "No physical-phone hardware FPS measurement."
+  ],
+  "provenance": "/review/method-unboxing-provenance.json"
+}

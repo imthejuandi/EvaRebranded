@@ -1,0 +1,44 @@
+import {openBrowser} from '@remotion/renderer';
+import {writeFileSync,mkdirSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const out='/private/tmp/eva-navigation-review';mkdirSync(out,{recursive:true});
+const browser=await openBrowser('chrome',{browserExecutable:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',logLevel:'error'});
+const page=await browser.newPage({context:()=>null,logLevel:'error',indent:false,pageIndex:0,onBrowserLog:null,onLog:()=>{}});
+const cdp=page._client(),errors=[];page.on('error',e=>errors.push(String(e)));
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
+const rect=selector=>page.evaluate(s=>{const b=document.querySelector(s).getBoundingClientRect();return {x:b.x,y:b.y,width:b.width,height:b.height}},selector);
+const move=async(x,y)=>cdp.send('Input.dispatchMouseEvent',{type:'mouseMoved',x,y});
+const click=async selector=>{const b=await rect(selector),x=b.x+b.width/2,y=b.y+b.height/2;await move(x,y);await cdp.send('Input.dispatchMouseEvent',{type:'mousePressed',x,y,button:'left',clickCount:1});await cdp.send('Input.dispatchMouseEvent',{type:'mouseReleased',x,y,button:'left',clickCount:1})};
+const key=async k=>{await cdp.send('Input.dispatchKeyEvent',{type:'keyDown',key:k,code:k,windowsVirtualKeyCode:k==='Escape'?27:9});await cdp.send('Input.dispatchKeyEvent',{type:'keyUp',key:k,code:k,windowsVirtualKeyCode:k==='Escape'?27:9})};
+const shot=async name=>{const r=await cdp.send('Page.captureScreenshot',{format:'png'});writeFileSync(`${out}/${name}.png`,Buffer.from(r.value.data,'base64'))};
+const state=selector=>page.evaluate(s=>{const e=document.querySelector(s);return {value:+(e.dataset.morph||0),animating:e.dataset.animating,rendering:e.dataset.rendering}},selector);
+try{
+ await page.setViewport({width:1440,height:900,deviceScaleFactor:2,isMobile:false,hasTouch:false});
+ await page.goto({url:'http://localhost:3017/',timeout:60000});await delay(1800);
+ const first='.business-nav a:first-child',label=first+' .dot-morph',before=await rect(first);
+ await shot('desktop-rest');await move(before.x+before.width/2,before.y+before.height/2);await delay(180);const partial=await state(label);assert(partial.value>0&&partial.value<1,'A partial hover should be visible');
+ await move(15,170);await delay(95);const reverse=await state(label);assert(reverse.value<partial.value,'Hover reverses from the current progress');await delay(400);assert.equal((await state(label)).value,0);
+ await move(before.x+before.width/2,before.y+before.height/2);await delay(520);const full=await state(label);assert.equal(full.value,1);assert.equal(full.animating,'false');assert.deepEqual(await rect(first),before);await shot('desktop-dots');
+ await move(15,170);await delay(400);
+ await page.setViewport({width:390,height:844,deviceScaleFactor:2,isMobile:false,hasTouch:false});await delay(400);await click('.frost-trigger');await delay(350);
+ assert.equal(await page.evaluate(()=>document.querySelector('.frost-trigger').getAttribute('aria-expanded')),'true');
+ const popup=await rect('.frost-menu');assert(popup.x>=0&&popup.x+popup.width<=391);await shot('mobile-glass');
+ const item=await rect('.frost-menu nav a:first-child');await move(item.x+90,item.y+item.height/2);await delay(520);await shot('mobile-dots');assert.equal((await state('.frost-menu nav a:first-child .dot-morph')).value,1);
+ await key('Escape');await delay(350);assert.equal(await page.evaluate(()=>document.querySelector('.frost-trigger').getAttribute('aria-expanded')),'false');assert(await page.evaluate(()=>document.activeElement===document.querySelector('.frost-trigger')));
+ await click('.frost-trigger');await delay(350);await click('.wordmark');await delay(450);assert(!await page.evaluate(()=>Boolean(document.querySelector('.frost-menu'))),'Outside activation dismisses menu');
+ // Reopen after outside navigation and validate 320px containment.
+ await page.setViewport({width:320,height:740,deviceScaleFactor:2,isMobile:false,hasTouch:false});await delay(500);await click('.frost-trigger');await delay(350);const narrow=await rect('.frost-menu');assert(narrow.x>=0&&narrow.x+narrow.width<=321);await shot('narrow-glass');
+ await cdp.send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await delay(300);
+ const n=await rect('.frost-menu nav a:first-child');await move(n.x+80,n.y+n.height/2);await delay(100);assert.equal((await state('.frost-menu nav a:first-child .dot-morph')).value,0);await shot('reduced-motion');
+ await cdp.send('Emulation.setEmulatedMedia',{features:[]});await key('Escape');await delay(300);
+ await click('.frost-trigger');await delay(350);await move(5,650);await key('Tab');await key('Tab');await delay(500);assert(await page.evaluate(()=>document.activeElement.closest('.frost-menu nav')!==null),'Keyboard reaches navigation');assert.equal(await page.evaluate(()=>document.activeElement.querySelector('.dot-morph')?.dataset.morph),'1.000');
+ await page.evaluate(()=>document.documentElement.style.fontSize='32px');await delay(450);await shot('enlarged-text');assert(await page.evaluate(()=>{const p=document.querySelector('.frost-menu');return p.scrollWidth<=p.clientWidth+1}),'Enlarged text stays within glass');
+ await page.evaluate(()=>document.documentElement.style.fontSize='');await key('Escape');await delay(300);
+ await page.setViewport({width:390,height:844,deviceScaleFactor:2,isMobile:true,hasTouch:true});await delay(500);
+ const tap=async selector=>{const b=await rect(selector),touchPoints=[{x:b.x+b.width/2,y:b.y+b.height/2}];await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]})};
+ await tap('.frost-trigger');await delay(350);
+ await page.evaluate(()=>{window.__nav=[];document.addEventListener('click',e=>{const a=e.target.closest('.frost-menu a');if(a){window.__nav.push({href:a.href,prevented:e.defaultPrevented});e.preventDefault()}},{once:true})});
+ await tap('.frost-menu nav a:first-child');await delay(200);const taps=await page.evaluate(()=>window.__nav);assert.equal(taps.length,1);assert.equal(taps[0].prevented,false);assert(taps[0].href.endsWith('/es/how-it-works'));
+ assert.equal(errors.length,0,errors.join('\n'));
+ const report={pass:true,checks:['desktop partial morph','mid-animation reversal','same geometry','idle animation stops','mobile glass containment','Escape and return focus','outside dismissal','320px width','reduced motion','one-tap immediate link','keyboard dot focus','200% text containment'],partial,reverse,full,errors};writeFileSync(`${out}/results.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+}finally{await browser.close({silent:true})}

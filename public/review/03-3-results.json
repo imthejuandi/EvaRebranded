@@ -1,0 +1,33 @@
+{
+  "iteration": "03.3",
+  "date": "2026-09-09",
+  "previousReview": "/review/03-2-results.json",
+  "changes": [
+    "Removed three floral hero layers",
+    "Runner leaves rightwards with gentle scale change",
+    "Official device photograph turns around a fixed center and blends into cream",
+    "Original individual-dot switching with 624 fixed lamps and twice the previous density",
+    "Lighter EVA wordmark",
+    "Solar Grain lifestyle photograph plus walking motion component",
+    "Movement-only scene changes: joined upward panels, constant-size device, background-aware navigation"
+  ],
+  "observations": {
+    "hero": "Desktop1440x900 and phone390x844: hero image list contains only runner-athletic.jpg; runner video plays, logo computed weight300, horizontal overflow0.",
+    "runnerExit": "At frame100, center is1293.52px in a1440px composition (opening center720px). Visual review shows motion to the right, preserving the trail behind her.",
+    "product": "Frame300 turn−20.685° and frame400 turn17.129° share center827.3556,432.9750 in the scaled inspector, difference<0.001px. Official photo source and multiply blend verified. No rectangle visible in desktop or390px phone scene.",
+    "sourceAudit": "Official1500px image outer30px borders allRGB255; previous640px video frames had36.5px vertical center variation and noisy245–253 borders.",
+    "display": "Density doubled from 108/140/108 to 216/280/216 lit points on a staggered 624-lamp board. Desktop 1440x900 shows 216 lit dots for 15; short phone 320x568 shows 280 for 90, with visibly separate circles and no horizontal overflow. All 361 frames pass scattered direct on/off switching, fixed registration, bounded inputs, holds and reverse determinism.",
+    "lifestyle": "Generated1122x1402 image loads. Desktop editorial layout reviewed. Phone390px image342x427.5, full figures visible, copy stacks below; overflow0.",
+    "reducedMotion": "Visible setting tested after Solar Motion integration: calm hero true,0 video elements, original lifestyle poster retained, no inactive walk controls and horizontal overflow0.",
+    "review": "Independent review supports the natural gaze variation and rightward exit in the selected cut; no physical entrance is claimed. Two generated corrections are preserved in local media history; the first introduced a dissolve and the video edit retained staring. The delivered cut removes the dissolve. Board checks cover all 361 frames with 216/280/216 lit dots. TypeScript passes.",
+    "recovery": "03.2 ZIP integrity passed; archived EvaFilm exactly matches the accepted982f4c2 source.",
+    "solarMotion": "Final9.208333-second silent cut starts2.8s into source531a599d, after a rejected body dissolve. Walkers are already on the paved path. Gaze is forward at source3–4.5s, turns briefly at6–7.5s, then faces ahead before the rightward exit. Foot glow trails and dissipates. The component plays once and holds the empty coast; manual replay prevents a visible automatic loop jump. Native readyState4; ended9.208333s exposes Volver a ver; replay resets and pause holds0.262616s. Horizontal overflow0.",
+    "transitions": "Desktop 1440x900 and portrait inspector: midpoints 205/510/758 show straight joined moving panels; all scene clip paths are none, opacity is 1, and product scale is none. Reverse seek to 205 is identical. Native short-phone scrolling gives frame 140 with light navigation on the remaining dark field and frame 260 with dark navigation on cream; frame 325 has readable product content and frame 810 has light navigation on dark. No horizontal overflow. Independent geometry review covers all 841 frames at seven viewport heights: every sampled position is covered and lightAt agrees with its background. The 700px chrome breakpoint was aligned with CSS after review."
+  },
+  "limits": [
+    "No physical-device or assistive-technology audit.",
+    "OS preference unchanged; visible reduced-motion setting tested.",
+    "The device is an accurate front photograph with in-plane rotation; no new3D model is claimed.",
+    "The walking cut starts with the people already on the path; it does not show them physically entering the full frame."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "iteration": "03.19",
+  "date": "2026-09-11",
+  "previousReview": "/review/03-18-results.json",
+  "changes": [
+    "Four-second natural-speed removal-only cut from the accepted cinematic scene.",
+    "Actual supplied EVA logo composited in black; previous wording removed.",
+    "Optical bloom and diffusion baked into the media, preserving the lower halftone print.",
+    "571350-byte silent H264 clip,96frames at24fps, with responsive stills."
+  ],
+  "validationStatus": "media-review-and-component-contracts-passed; live deployment checks recorded separately",
+  "checks": [
+    "Twelve final frames reviewed for take-out action, consistent logo placement, print removal and glow.",
+    "All96frames tracked with at least143homography inliers.",
+    "TypeScript and component lint passed.",
+    "Method contracts passed:15rendered states, finite playback, deferred media, reduced-motion stills and four service steps.",
+    "Previous03.18source restored byte-for-byte from03.12base plus overlay."
+  ],
+  "limits": [
+    "Generated editorial scene and proposed packaging; not filmed product footage or exact CAD.",
+    "The device interpretation remains slightly narrower than the official packshot.",
+    "No physical-phone hardware FPS measurement."
+  ],
+  "provenance": "/review/method-unboxing-provenance.json"
+}

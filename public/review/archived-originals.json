@@ -1,0 +1,17 @@
+{
+  "note": "Original masters are kept in source-assets and the downloadable history archives. The landing uses responsive derivatives. Historical provenance paths describe their original location.",
+  "files": [
+    {
+      "originalPath": "/art/post-run-coast.png",
+      "sourcePath": "source-assets/post-run-coast.png",
+      "download": "/archive/eva-03-12-time-and-life.zip",
+      "archiveEntry": "public/art/post-run-coast.png"
+    },
+    {
+      "originalPath": "/review/method-lifestyle-contact.jpg",
+      "sourcePath": "source-assets/method-lifestyle-contact.jpg",
+      "download": "/archive/eva-03-19-official-pouch.zip",
+      "archiveEntry": "public/review/method-lifestyle-contact.jpg"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "version": "03.34",
+  "scope": [
+    "Center runner in both axes",
+    "Lower salud and the CTA near the bottom controls"
+  ],
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      478,
+      814
+    ],
+    [
+      320,
+      568
+    ]
+  ],
+  "checks": {
+    "desktopRunnerCenterPx": [
+      640,
+      360
+    ],
+    "defaultRunnerCenterPx": [
+      239,
+      407
+    ],
+    "smallPhoneRunnerCenterPx": [
+      160,
+      284
+    ],
+    "mobileCtaToControlsGapPx": 12,
+    "mobileSaludFrameToCtaGapPx": 16,
+    "desktopCtaToChapterGapPx": 30,
+    "smallPhoneStillAndFilmGeometryMatch": true,
+    "headClearInReviewedViews": true,
+    "noHorizontalOverflow": true,
+    "ctaSizePx": [
+      200,
+      44
+    ],
+    "naturalGlyphProportionsUnchanged": true
+  },
+  "preserved": [
+    "Headline type sizes and fonts",
+    "Official logo",
+    "Original runner video and rightward exit",
+    "Analog lettering",
+    "Compact CTA content and destination",
+    "Earlier source versions including 03.33"
+  ],
+  "limitations": [
+    "Centered frame remains stationary while natural running poses move within it",
+    "Checks use browser viewport emulation"
+  ]
+}

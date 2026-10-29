@@ -1,0 +1,24 @@
+{
+  "iteration": "03.6",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-5-results.json",
+  "changes": [
+    "Opening light field fills the number screen from the first frame.",
+    "Rounded halftone numerals use varied dots and individual eight-step lamp switching.",
+    "Tasso+ has soft coral, apricot and lilac glow with a gentle vertical hover.",
+    "Decorative Unicode pictographs removed; essential arrows use stroke SVG."
+  ],
+  "observations": {
+    "renderedFrames": "Inspected1440×900 field,15,TÚ and Tasso;390×844 mobile15 and Tasso;320×568 opening. Type remains legible, dots separated, and product edges blend into paper.",
+    "motion": "All631 frames checked for fixed coordinates, smooth resolution and reversal. Product hover is bounded to8px, with no rotation.",
+    "reducedMotion": "Settled halftone15 uses the same mask. Static experience retained.",
+    "independentReview": "Read-only source and desktop-still review found no blocking issue. Corrected the remaining Unicode age arrow.",
+    "preservation": "Complete03.5 archive and previous review retained. Legacy calculator, runner, lifestyle footage, content and Soft Glass preserved."
+  },
+  "limits": [
+    "Generated product styling is illustrative; no new clinical claims or data.",
+    "Product hover follows scroll frames and pauses when scrolling stops.",
+    "Live UI interaction checks unavailable while the Mac was locked. No assistive-technology verification.",
+    "Remotion reports a pre-existing transitive Zod warning; used APIs and still renders succeed."
+  ]
+}

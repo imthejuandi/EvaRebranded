@@ -1,0 +1,40 @@
+{
+  "version": "03.24",
+  "scope": "Navigation material and moving selection highlight",
+  "references": [
+    "https://savee.com/i/giyIFqU/",
+    "https://21st.dev/@koustubhayadiyala36/components/fluid-dropdown"
+  ],
+  "review": "Local in-app browser",
+  "checks": {
+    "typecheck": "passed",
+    "phoneWidths": [
+      320,
+      390
+    ],
+    "desktopWidth": 1440,
+    "normalPanel": [
+      245,
+      190
+    ],
+    "destinationRowHeight": 44,
+    "destinationFontPx": 15,
+    "centerErrorPx": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "squareCorners": true,
+    "noDividers": true,
+    "keyboardHighlightFollowsFocus": true,
+    "dotMorphAndReversalObserved": true,
+    "escapeCloses": true,
+    "outsideCloses": true,
+    "destinationsUnchanged": true
+  },
+  "limitations": [
+    "No physical-device FPS measurement",
+    "Reduced-motion and forced-colors fallbacks reviewed in source; not emulated in this pass"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "iteration": "03.5",
+  "date": "2026-09-10",
+  "previousReview": "/review/03-4-results.json",
+  "changes": [
+    "Reference-led organic lamp animation beside Interpretamos las señales de tu cuerpo",
+    "Continuous resolution into the existing 15, 90 and TÚ dot sequence",
+    "Reusable Body Signal component, frame slider, supplied reference and prior 03.4 archive"
+  ],
+  "observations": {
+    "reference": "Uploaded 8-second 720×924 video inspected at all eight one-second stages. Core behavior is fixed lamps with coherent swelling radii and optical bloom.",
+    "codeReview": "Independent review confirmed deterministic reversal, preserved original data frames and chapter stop alignment. Corrected mobile title clipping and the detached accent field. Lamps remain circular as the board changes proportion.",
+    "renderedFrames": "Remotion stills inspected at 1440×900, 390×844 and 320×568: opening, midpoint and settled15. Refined optical blur and maximum radius to preserve visible dot structure.",
+    "motion": "631 bounded deterministic frames. All361 original calculator frames are preserved after frame270, including216/280/216 lit counts. No independent animation clock or autoplay in the passage.",
+    "reducedMotion": "Static interpretation text and settled dotted15 replace the scroll composition.",
+    "browser": "Live interaction checks unavailable because the Mac was locked. No claim of browser verification for this revision.",
+    "preservation": "Original SignalFilm and AnalogSpecimen retained, existing hero/product/lifestyle code untouched, all business content and Soft Glass retained. Prior03.4 source and assets linked from history."
+  },
+  "limits": [
+    "This is a programmed recreation of the reference effect, not a pixel-identical copy of its motion.",
+    "Visual content is illustrative, not measurements from a person.",
+    "No live browser interaction or assistive-technology test for this revision; Mac was locked.",
+    "Remotion CLI reports a pre-existing transitive Zod version warning; still rendering and used non-schema APIs succeeded."
+  ]
+}

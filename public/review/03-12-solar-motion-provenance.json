@@ -1,0 +1,39 @@
+{
+  "iteration": "03.12",
+  "asset": "/art/post-run-coast-tasso-walk-v1.mp4",
+  "sourceVideo": "/art/post-run-coast-walk-cut.mp4",
+  "sourceProvider": "Higgsfield",
+  "sourceModel": "Seedance 2.5",
+  "sourceJob": "531a599d-6564-4940-8422-b0ab1c95f6cf",
+  "treatment": "A real Tasso+ product cutout is composited on each outer upper arm. Hand-reviewed anchors are refined by bounded optical flow; scale, rotation and warm color match the accepted footage. Original walking frames, gaze, coastline and glow remain unchanged before encoding.",
+  "productReference": "/art/tasso-plus-product.jpg",
+  "placementReference": "/art/tasso-plus-in-use.png",
+  "reusableSource": "/review/tasso-walk-composite.py",
+  "tracking": "/review/tasso-walk-tracking.json",
+  "technical": {
+    "frames": 221,
+    "fps": 24,
+    "durationSeconds": 9.208333333333334,
+    "width": 720,
+    "height": 1280,
+    "codec": "H.264",
+    "audio": false,
+    "bytes": 2905074,
+    "sha256": "045972e94bb95f41f4bf811d143574e690f525bf0b6d9943698ae7326cd90aac"
+  },
+  "rejectedEdits": [
+    {
+      "job": "600371cf-b119-41f8-8b7d-f9b5c47409d0",
+      "model": "Kling3.0 Omni Edit",
+      "reason": "Devices too large and flat."
+    },
+    {
+      "job": "4b87ca23-610e-4b6b-b797-15d1ce8c9e37",
+      "model": "Kling3.0 Omni Edit",
+      "reason": "One device disappeared during the early walk; oversized treatment remained."
+    }
+  ],
+  "scope": "Lifestyle design study and product placement illustration.",
+  "behavior": "Starts with both people already walking on the path. Plays once, follows them toward the right edge, holds the empty coast after they leave, and offers manual replay. No artificial physical entrance is claimed.",
+  "previousProvenance": "/review/03-11-solar-motion-provenance.json"
+}

@@ -1,0 +1,33 @@
+{
+  "provider": "Higgsfield",
+  "model": "Seedance 2.5",
+  "sourceJob": "531a599d-6564-4940-8422-b0ab1c95f6cf",
+  "sourceImage": "/art/post-run-coast.png",
+  "asset": "/art/post-run-coast-walk-cut.mp4",
+  "prompt": "Create a refined 12-second living photograph from this approved EVA image. Keep exactly the same two athletic adults, outfits, faces, violet/coral film-grain palette, coastal path, soft peach halation, stationary camera, and relaxed healthy lifestyle mood. Correct the walking route and the gaze so this looks candid and physically natural. ROUTE: the people approach from ALONG THE EXISTING PAVED PATH in the center-left distance, rounding its bend. Their first appearance is on the visible path in the midground, beyond the near palm and stone wall. They never enter through the vegetation, never step out of the woods, never cross the stone wall. Both feet remain on the path throughout. They walk side by side toward the foreground, following the pavement's curve, then pass out through the lower-right frame edge by the end. GAZE: each person looks forward along the path for almost the entire walk, checking where they are walking. They share ONLY ONE brief, casual glance lasting less than one second around the middle, then each looks ahead again. They do not sustain eye contact and do not pose for the camera. Natural small head turns, relaxed neutral or slight smiles, normal alternating steps, gentle arm swing, believable weight transfer and grounded feet. GLOW: preserve the beautiful soft peach/coral traces attached behind their moving legs and bodies; light follows the direction they have just moved, gently dissipates, and never leaves a static ghost. Empty coast for a short moment before their arrival and after their exit, so the shot can repeat. Keep the image's artistic grain and luminous warmth throughout. Absolutely fixed camera, no zoom, no cuts, no backwards playback, no extra people, no text. The only creative changes from the existing direction are a credible entrance along the path and casual mostly-forward gaze.",
+  "edit": "Removed the first2.8seconds containing a generated body dissolve. H264 re-encode; no retiming, reversal or spatial alteration. CSS fits the clip into the existing portrait panel.",
+  "behavior": "Starts with both people already walking on the path. Plays once, follows them toward the right edge, holds the empty coast after they leave, and offers manual replay. No artificial physical entrance is claimed.",
+  "rejectedPasses": [
+    {
+      "job": "883a36a5-f3ad-4eef-abf5-aa2a26a6a370",
+      "asset": "/art/post-run-coast-walk.mp4",
+      "reason": "First take preserved for history: user found the entrance and constant mutual gaze unnatural.",
+      "estimatedCredits": 78
+    },
+    {
+      "job": "aeb7a919-f5da-4b69-a892-104a55304f59",
+      "reason": "Video edit did not fix sustained mutual gaze; retained outside public delivery.",
+      "estimatedCredits": 78.27
+    }
+  ],
+  "sourcePassEstimatedCredits": 78,
+  "durationSeconds": 9.208333,
+  "dimensions": [
+    720,
+    1280
+  ],
+  "fps": 24,
+  "codec": "H264",
+  "bytes": 3320725,
+  "audio": false
+}

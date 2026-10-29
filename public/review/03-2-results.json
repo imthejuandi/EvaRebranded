@@ -1,0 +1,31 @@
+{
+  "iteration": "03.2",
+  "date": "2026-09-09",
+  "previousReview": "/review/03-1-results.json",
+  "changes": [
+    "Cell-built serif vida. in the accepted hero",
+    "Fixed dot-grid 15 / 90 / TÚ scroll passage",
+    "Analog Signal specimen with shared timeline and reference links",
+    "Complete accepted 03.1 source archive retained"
+  ],
+  "observations": {
+    "hero": "Viewed at 1440x900 and 390x844: cream serif contour remains legible, runner loops behind it, no horizontal overflow. Canvas samples 955 and 957 lit cells respectively.",
+    "reference": "SAVEE clip reviewed separately from attached typography image; fixed registration and discrete swaps reproduced as reader-paced steps.",
+    "scroll": "Native PageDown reached frame 78 / phase 0.287, displaying an intermediate pattern. Chapter controls reached 0 / 160 / 340. Frame 160 and phase 1.000 held across separate idle observations.",
+    "mobile": "320x568 final TÚ state: copy bottom 462px, control region top 499px, 37px separation, horizontal overflow 0.",
+    "reducedMotion": "Visible setting removes pinned story and new passage, renders static signal text, and leaves zero videos. Overflow 0px.",
+    "component": "Standalone Analog Signal visible on /system. Its Cada 90 días button set both type frame and signal frame to 160. Overflow 0px.",
+    "motionChecks": "All 361 frames checked: centers remain fixed, finite radius/positions, complete 15/90/TÚ forms, bounded inputs, reverse traversal identical to forward.",
+    "recovery": "03.1 ZIP integrity passed and archived EvaFilm exactly matches accepted source commit. New AnalogType is absent from the archive, confirming separate history."
+  },
+  "corrections": [
+    "Added a readable server/initial fallback for the new passage",
+    "Reserved space above mobile navigation on short phones",
+    "Stopped invisible hero canvas updates and avoided unnecessary backing-store reallocation"
+  ],
+  "limits": [
+    "No physical-device or assistive-technology audit.",
+    "OS preference was not changed; the visible reduced-motion setting was tested.",
+    "The reference film is linked for attribution; the landing contains an original EVA adaptation."
+  ]
+}
