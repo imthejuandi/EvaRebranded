@@ -1,0 +1,13 @@
+{
+  "signup_choices_persist": true,
+  "oauth_specific_copy": true,
+  "recovery_reset_then_login": true,
+  "full_panel_specific_completion": true,
+  "ArchivePage_consent_gate": true,
+  "ReportEditor_consent_gate": true,
+  "admin_spanish_status_map": true,
+  "pricing_no_unlimited": true,
+  "profile_preserves_other": true,
+  "labs_unknown_report_missing": true,
+  "contact_spanish_panel_prefill": true
+}

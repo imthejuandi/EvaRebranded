@@ -1,0 +1,23 @@
+node_modules/
+dist/
+out/
+.next/
+.vinext/
+.wrangler/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+components/ui/*
+!components/ui/slider.tsx
+!components/ui/switch.tsx
+!components/ui/tabs.tsx
+
+!components/ui/sterling-gate-kinetic-navigation.tsx
+
+# Local tooling and credentials
+.sites-runtime/
+.openai/
+.env
+.env.*
+*.log
+.DS_Store

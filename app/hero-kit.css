@@ -1,0 +1,30 @@
+@font-face{font-family:'EVA Hanken';src:url('/fonts/hanken-grotesk-regular.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'EVA Hanken';src:url('/fonts/hanken-grotesk-semibold.woff') format('woff');font-style:normal;font-weight:600;font-display:swap}
+/* One headline, an open image corridor, and a grouped invitation. */
+.stage,.poster,.calm-hero{--hero-intro-size:clamp(50.4px,7.47vw,129.6px);--hero-intro-top:calc(clamp(108px,19svh,204px) - 24px);--hero-intro-height:calc(var(--hero-intro-size)*1.08);--hero-salud-width:clamp(220px,29vw,520px);--hero-salud-top:calc(100svh - 109px - var(--hero-salud-width)*.4);--hero-runner-top:9svh;--hero-runner-width:31vw;--hero-runner-height:82svh;--hero-support-top:calc(100svh - 216px);--hero-action-top:calc(100svh - 148px)}
+.hero-intro{font-family:'EVA Hanken',Arial,sans-serif;font-weight:400;line-height:1.08;letter-spacing:-.045em;white-space:nowrap;font-kerning:normal}
+.hero-support{font-family:'EVA Hanken',Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;color:#c8ccc3;width:240px}
+.poster .hero-static-support,.calm-hero .hero-static-support{position:absolute;left:var(--gutter);top:var(--hero-support-top);font-size:16px;line-height:1.5}
+.hero-kit-slot{position:absolute;left:var(--gutter);top:var(--hero-action-top);z-index:2;will-change:opacity,transform}
+.hero-kit-cta{font-family:'EVA Hanken',Arial,sans-serif;display:grid;grid-template-columns:minmax(0,1fr) .75rem;align-items:center;gap:.625rem;width:12.5rem;max-width:calc(100vw - var(--gutter)*2);min-height:2.75rem;padding:.3125rem .75rem;border:1px solid transparent;border-radius:0;background:#f3f0e8;color:#171b18;transition:background-color .16s,transform .16s cubic-bezier(.23,1,.32,1)}
+.hero-kit-copy{display:block;min-width:0}
+.hero-kit-title{display:block;font-size:.875rem;font-weight:600;line-height:1.15;letter-spacing:-.015em}
+.hero-kit-details{display:flex;align-items:baseline;justify-content:space-between;gap:.375rem;margin-top:.125rem;font-size:.6875rem;font-weight:400;line-height:1.2;color:#4b5147}
+.hero-kit-price{font-size:inherit;white-space:nowrap;font-variant-numeric:tabular-nums}
+.hero-kit-cta>svg{font-size:.75rem;transition:transform .16s cubic-bezier(.23,1,.32,1)}
+@media(hover:hover) and (pointer:fine){.hero-kit-cta:hover{background:#fffdf6}.hero-kit-cta:hover>svg{transform:translateX(2px)}}
+.hero-kit-cta:active:not(:focus-visible){transform:scale(.98)}
+.hero-kit-cta:focus-visible{outline:2px solid var(--amber);outline-offset:5px}
+.calm-hero .hero-kit-cta{position:absolute;left:var(--gutter);top:var(--hero-action-top);bottom:auto}
+.calm-hero{overflow:hidden}
+.poster .hero-static-title,.calm-hero .hero-static-title{position:static;width:auto;margin:0}
+.poster>img.hero-runner-static,.calm-hero>img.hero-runner-static{position:absolute;inset:auto;left:50%;top:var(--hero-runner-top);width:var(--hero-runner-width);height:var(--hero-runner-height);object-fit:cover;transform:translateX(-50%);mask-image:radial-gradient(ellipse,black 36%,transparent 73%)}
+.poster .hero-static-title>[data-analog-type],.calm-hero .hero-static-title>[data-analog-type]{margin:0}
+.hero-cta-specimen{padding:24px 0 0}
+@media(max-width:700px){
+ .stage,.poster,.calm-hero{--hero-intro-size:clamp(39.6px,14.4vw,75.6px);--hero-intro-top:calc(max(96px,13.5svh) - 12px);--hero-salud-width:60vw;--hero-salud-top:calc(100svh - 191px - 24vw);--hero-runner-height:clamp(48svh,calc((50svh - max(96px,13.5svh) - clamp(44px,16vw,84px)*1.08 - 16px)/.38),72svh);--hero-runner-top:calc((100svh - var(--hero-runner-height))*.5);--hero-runner-width:min(90vw,calc(var(--hero-runner-height)*.805555556));--hero-action-top:calc(100svh - 175px)}
+ .hero-kit-slot,.calm-hero .hero-kit-cta{left:auto;right:var(--gutter);top:var(--hero-action-top);bottom:auto}
+ .hero-static-support{display:none}
+}
+@media(prefers-reduced-motion:reduce){.hero-kit-cta,.hero-kit-cta>svg{transition:none}.hero-kit-cta:active,.hero-kit-cta:hover>svg{transform:none}}
+@media(forced-colors:active){.hero-kit-cta{background:ButtonFace;color:ButtonText;border-color:ButtonText}.hero-kit-details{color:ButtonText}}

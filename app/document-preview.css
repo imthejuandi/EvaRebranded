@@ -1,0 +1,118 @@
+/* A source document stays a document: readable measure, explicit provenance, usable tables. */
+.eva-document { --document-muted: #5e655f; --document-line: #171b1828; padding: 48px 48px 70px; background: #f3f0e8; color: #171b18; }
+.eva-document .eva-inner { width: 100%; max-width: 1344px; }
+.eva-document :focus-visible { outline: 2px solid #405044; outline-offset: 5px; }
+.eva-document-intro { border-bottom: 1px solid var(--document-line); padding-bottom: 33px; }
+.eva-document-topline { display: flex; justify-content: space-between; align-items: baseline; gap: 30px; margin-bottom: 34px; }
+.eva-document-topline > p { font-size: 13px; }
+.eva-document-topline > span { color: var(--document-muted); font-size: 11px; }
+.eva-document .eva-document-intro h1 { font-size: clamp(45px, 5.2vw, 74px); line-height: 1.075; letter-spacing: -.045em; font-weight: 400; max-width: 1040px; margin: 0 0 22px; text-wrap: balance; }
+.eva-document-intro-copy { max-width: 570px; font-size: 17px; line-height: 1.6; color: var(--document-muted); }
+.eva-document-read-link { display: inline-flex; align-items: center; gap: 13px; min-height: 44px; font-size: 13px; margin-top: 12px; }
+.eva-document-review-note { display: flex; gap: 20px; align-items: start; padding: 23px 0; border-bottom: 1px solid var(--document-line); }
+.eva-document-review-note > svg { flex: none; margin-top: 2px; color: #687064; }
+.eva-document .eva-document-review-note h2 { font-size: 18px; margin: 0 0 8px; letter-spacing: -.02em; }
+.eva-document-review-note p { color: var(--document-muted); font-size: 13px; max-width: 800px; line-height: 1.65; }
+.eva-method-guide { padding-block: 32px 38px; }
+.eva-method-guide-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 25px; margin-bottom: 27px; }
+.eva-document .eva-method-guide-heading h2 { font-size: 28px; margin: 0; }
+.eva-method-guide-heading > p { color: var(--document-muted); font-size: 12px; }
+.eva-method-guide ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; margin: 0; padding: 0; list-style: none; }
+.eva-method-guide li { border-top: 1px solid var(--document-line); padding-top: 16px; min-width: 0; }
+.eva-method-guide-step { display: flex; justify-content: space-between; gap: 20px; align-items: center; color: var(--document-muted); font-size: 11px; margin-bottom: 15px; }
+.eva-method-guide li:last-child .eva-method-guide-step > svg { visibility: hidden; }
+.eva-document .eva-method-guide h3 { font-size: 25px; margin: 0 0 13px; }
+.eva-method-guide li > p { color: var(--document-muted); font-size: 14px; max-width: 350px; }
+.eva-method-guide li > a { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; font-size: 12px; margin-top: 10px; }
+.eva-document-quick-links { display: flex; align-items: center; gap: 15px 30px; flex-wrap: wrap; margin-top: 20px; }
+.eva-document-quick-links > a { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; font-size: 12px; }
+.eva-document-layout { display: grid; grid-template-columns: 245px minmax(0, 790px); gap: 75px; justify-content: space-between; padding-top: 42px; scroll-margin-top: 28px; }
+.eva-document-index { position: sticky; align-self: start; top: 30px; max-height: calc(100svh - 60px); overflow-y: auto; padding-right: 12px; }
+.eva-document-index p { font-size: 12px; margin: 0; }
+.eva-document-index nav { display: flex; flex-direction: column; gap: 3px; margin-top: 20px; font-size: 12px; line-height: 1.5; }
+.eva-document-index nav a { padding-block: 10px; min-height: 40px; display: flex; align-items: center; }
+.eva-document-index nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.eva-document-source { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; border-top: 1px solid var(--document-line); padding-top: 20px; margin-top: 22px; font-size: 11px; min-height: 44px; }
+.eva-document-source > span { width: 100%; color: var(--document-muted); font-size: 10px; }
+.eva-document-index .eva-document-source-note { color: var(--document-muted); margin-top: 22px; font-size: 11px; line-height: 1.6; }
+.eva-document-mobile-index { display: none; }
+.eva-document-body { min-width: 0; font-size: 16px; line-height: 1.85; overflow-wrap: anywhere; }
+.eva-document .eva-document-body h2 { font-size: 32px; line-height: 1.2; font-weight: 400; letter-spacing: -.03em; margin: 48px 0 22px; scroll-margin-top: 28px; max-width: 740px; }
+.eva-document .eva-document-body h3 { font-size: 23px; line-height: 1.3; font-weight: 400; letter-spacing: -.02em; margin: 30px 0 15px; }
+.eva-document .eva-document-body h4 { font-size: 18px; font-weight: 600; margin-block: 25px 13px; }
+.eva-document-body p { margin: 16px 0; line-height: 1.8; }
+.eva-document-body ul, .eva-document-body ol { padding-left: 25px; margin-block: 20px; }
+.eva-document-body li { margin-bottom: 11px; }
+.eva-document-body li > span:first-child { margin-right: 12px; color: var(--document-muted); font-size: 12px; }
+.eva-document-body a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.eva-document-body strong { font-weight: 600; }
+.eva-document-body nav { border-block: 1px solid var(--document-line); padding: 8px 18px; margin-block: 25px; font-size: 13px; }
+.eva-document-body nav > p { font-size: 12px; }
+.eva-document-body nav ol { margin-block: 12px; }
+.eva-document-body nav a { min-height: 36px; display: inline-flex; align-items: center; }
+.eva-document-body nav a > span { margin-right: 10px; }
+.eva-document-body nav li { margin-bottom: 2px; }
+.eva-document-table-scroll { width: 100%; max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; margin: 26px 0; border-block: 1px solid var(--document-line); scrollbar-width: thin; }
+.eva-document-body table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 12px; line-height: 1.55; margin: 0; }
+.eva-document-body td, .eva-document-body th { border-bottom: 1px solid var(--document-line); padding: 15px 13px; text-align: left; min-width: 100px; vertical-align: top; }
+.eva-document-body th { font-size: 11px; font-weight: 600; background: #eae8df; }
+.eva-document-body tr:last-child td { border-bottom: 0; }
+.eva-document-body pre { max-width: 100%; overflow-x: auto; background: #e9e6dd; padding: 22px; font-size: 12px; line-height: 1.8; border: 1px solid var(--document-line); }
+.eva-document-body code { font-size: .85em; }
+.eva-document-body section + section { margin-top: 38px; }
+.eva-document-anchor { display: block; scroll-margin-top: 28px; }
+.eva-document-bottom { margin-top: 60px; border-top: 1px solid var(--document-line); padding-top: 25px; display: flex; gap: 16px 35px; flex-wrap: wrap; align-items: start; }
+.eva-document-bottom p { color: var(--document-muted); font-size: 11px; line-height: 1.65; max-width: 490px; margin-right: auto; }
+.eva-document-bottom a { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; min-height: 44px; }
+@media (max-width: 1050px) {
+  .eva-document-layout { grid-template-columns: 200px minmax(0, 1fr); gap: 40px; }
+  .eva-method-guide ol { gap: 24px; }
+}
+@media (max-width: 820px) {
+  .eva-document { padding: 35px 24px 60px; }
+  .eva-document-layout { grid-template-columns: 1fr; padding-top: 30px; gap: 26px; }
+  .eva-document-index { position: static; max-height: none; overflow: visible; padding: 0; }
+  .eva-document-desktop-index { display: none; }
+  .eva-document-mobile-index { display: block; border-block: 1px solid var(--document-line); }
+  .eva-document-mobile-index summary { min-height: 48px; padding-block: 13px; font-size: 14px; cursor: pointer; }
+  .eva-document-mobile-index nav { margin: 0 0 15px; }
+  .eva-document-index nav a { min-height: 44px; font-size: 13px; }
+  .eva-document-source { margin-top: 16px; border: 0; padding-top: 0; }
+  .eva-document-source > span { width: auto; margin-left: 7px; }
+  .eva-document-index .eva-document-source-note { margin-top: 12px; }
+  .eva-document .eva-document-body h2 { font-size: 30px; }
+  .eva-method-guide-heading { display: block; }
+  .eva-method-guide-heading > p { margin-top: 10px; }
+}
+@media (max-width: 600px) {
+  .eva-document { padding: 28px 20px 48px; }
+  .eva-document-topline { display: block; margin-bottom: 25px; }
+  .eva-document-topline > p { font-size: 12px; }
+  .eva-document-topline > span { display: block; margin-top: 10px; font-size: 10px; }
+  .eva-document .eva-document-intro h1 { font-size: clamp(38px, 10.6vw, 54px); line-height: 1.1; }
+  .eva-document-intro-copy { font-size: 16px; }
+  .eva-document-intro { padding-bottom: 23px; }
+  .eva-document-review-note { gap: 13px; padding-block: 20px; }
+  .eva-document-review-note > svg { width: 19px; }
+  .eva-document .eva-document-review-note h2 { font-size: 18px; }
+  .eva-document-review-note p { font-size: 12px; }
+  .eva-method-guide { padding-block: 26px 10px; }
+  .eva-document .eva-method-guide-heading h2 { font-size: 27px; }
+  .eva-method-guide ol { grid-template-columns: 1fr; gap: 20px; }
+  .eva-method-guide li { display: grid; grid-template-columns: 34px 1fr; gap: 10px 12px; padding-top: 20px; }
+  .eva-method-guide-step { grid-row: 1 / 4; display: flex; flex-direction: column; justify-content: start; gap: 15px; padding-top: 6px; }
+  .eva-method-guide-step > svg { transform: rotate(90deg); }
+  .eva-document .eva-method-guide h3 { font-size: 25px; margin: 0; }
+  .eva-method-guide li > p { grid-column: 2; font-size: 14px; }
+  .eva-method-guide li > a { grid-column: 2; margin-top: 0; font-size: 12px; }
+  .eva-document-body { font-size: 16px; line-height: 1.75; }
+  .eva-document .eva-document-body h2 { font-size: 28px; margin-top: 36px; }
+  .eva-document .eva-document-body h3 { font-size: 23px; }
+  .eva-document-body nav { padding-inline: 12px; }
+  .eva-document-body td, .eva-document-body th { min-width: 110px; padding: 13px 10px; }
+  .eva-document-bottom { margin-top: 40px; display: flex; flex-direction: column; gap: 13px; }
+  .eva-document-bottom p { margin: 0 0 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .eva-document *, .eva-document *::before, .eva-document *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

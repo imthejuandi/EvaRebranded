@@ -1,0 +1,107 @@
+/* EVA 03.14: distinct home photography and original optical data graphics. */
+.method-journey { background: var(--paper); color: var(--ink); padding: 65px var(--gutter) 110px; }
+.method-heading { display: grid; grid-template-columns: 1.13fr 1fr; align-items: end; gap: 8vw; margin: 76px 0 62px; }
+.method-heading h2 { margin: 0; font-size: clamp(46px, 5.8vw, 88px); line-height: 1.02; font-weight: 400; letter-spacing: -.055em; }
+.method-heading > p { max-width: 410px; font-size: 17px; line-height: 1.65; color: #4c5048; padding-bottom: 4px; }
+.method-chapters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; margin-bottom: 34px; }
+.method-chapters > button { position: relative; display: flex; gap: 20px; align-items: center; text-align: left; min-width: 0; min-height: 70px; padding: 16px 0 22px; font-size: 15px; color: #666a60; border-bottom: 1px solid #0b101033; }
+.method-chapter-index { font-size: 11px; letter-spacing: .06em; }
+.method-chapters > button > i { position: absolute; bottom: -1px; left: 0; height: 2px; width: 100%; transform: scaleX(0); transform-origin: left; background: currentColor; transition: transform 180ms ease; }
+.method-chapters > button[aria-selected="true"] { color: var(--ink); }
+.method-chapters > button[aria-selected="true"] > i { transform: scaleX(1); }
+.method-chapters > button:hover { color: var(--ink); }
+.method-chapters > button:focus-visible, .method-paging button:focus-visible, .method-detail-link:focus-visible { outline: 2px solid #6a4b34; outline-offset: 5px; }
+.method-panel { display: grid; grid-template-columns: 1.13fr 1fr; gap: 8vw; align-items: start; min-width: 0; }
+.method-panel[hidden] { display: none; }
+.method-panel:focus-visible { outline: 2px solid #6a4b34; outline-offset: 8px; }
+.method-figure { margin: 0; min-width: 0; position: sticky; top: 24px; }
+.method-figure-stage { position: relative; aspect-ratio: 520 / 570; overflow: hidden; background: var(--ink); border-radius: 3px; }
+.method-figure-0 .method-figure-stage { background: #433529; }
+.method-figure figcaption { display: flex; justify-content: space-between; gap: 16px; padding-top: 17px; font-size: 10px; letter-spacing: .1em; line-height: 1.5; color: #5c5f55; }
+.method-figure figcaption > span:last-child { text-align: right; }
+
+/* New, independently authored images and diagrams share only the optical language. */
+.method-new-art { position: absolute; inset: 0; }
+.method-art-window { position: absolute; inset: 0; overflow: hidden; }
+.method-home-art { position: absolute; inset: 0; background: #433529; }
+.method-home-art img { width: 100%; height: 100%; object-fit: cover; display: block; animation: method-home-arrive 4.2s cubic-bezier(.16,.55,.35,1) both; }
+.method-home-line { position: absolute; left: 30px; bottom: 62px; color: #fff9ee; font-family: Georgia,serif; font-style: italic; font-size: clamp(21px,2.2vw,32px); text-shadow: 0 1px 12px #241305a0; }
+.method-home-art::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent,#301f104a); pointer-events: none; }
+.method-home-line { z-index: 1; }
+.method-replay { position: absolute; z-index: 3; right: 22px; bottom: 8px; display: inline-flex; align-items: center; gap: 14px; color: #f3f0e8; font-size: 11px; letter-spacing: .035em; min-height: 44px; opacity: .9; }
+.method-illustration-note { margin: 9px 0 0; color: #74766c; font-size: 11px; line-height: 1.4; }
+.method-replay svg { width: 17px; height: 17px; }
+.method-replay:hover { opacity: 1; }
+.method-replay:focus-visible { outline: 2px solid #e9a067; outline-offset: 4px; }
+@keyframes method-home-arrive { from { transform: scale(1.055) translateY(5px); } to { transform: scale(1) translateY(0); } }
+.method-home-art.is-calm img { animation: none; }
+.method-pouch-still img { animation: none; object-position: right center; }
+.method-pouch-still .method-home-line { bottom: 26px; }
+.method-video-control { position: absolute; right: 18px; bottom: 12px; z-index: 3; display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 44px; padding: 0 15px; border: 1px solid #f3f0e866; border-radius: 2px; background: #292432e8; color: #fff9ee; font-size: 11px; letter-spacing: .025em; }
+.method-video-control:hover { background: #40334f; }
+.method-video-control:focus-visible { outline: 2px solid #fff9ee; outline-offset: 3px; }
+
+.method-chapter-copy { min-width: 0; display: flex; flex-direction: column; padding: 30px 0 0; }
+.method-page-number { display: flex; align-items: end; gap: 16px; margin: 0 0 39px; color: #485248; }
+.method-page-number .method-ordinal { font-size: 62px; font-weight: 300; line-height: .9; letter-spacing: -.065em; color: #85877c; padding: 0; }
+.method-page-number > span { font-size: 11px; letter-spacing: .06em; color: #6a6c61; padding-bottom: 11px; }
+.method-chapter-body { min-height: 245px; }
+.method-chapter-body h3 { max-width: 460px; font-size: clamp(30px, 3.05vw, 46px); font-weight: 400; line-height: 1.13; letter-spacing: -.04em; margin: 0 0 24px; }
+.method-chapter-body > p { max-width: 430px; font-size: 17px; line-height: 1.65; color: #4c5048; }
+.method-paging { display: flex; justify-content: space-between; gap: 20px; margin-top: 34px; border-top: 1px solid #0b101033; border-bottom: 1px solid #0b101033; }
+.method-paging button { display: flex; align-items: center; gap: 13px; min-height: 64px; font-size: 13px; }
+.method-paging button:disabled { color: #93978c; cursor: default; }
+.method-paging button:hover:not(:disabled) { color: #965c36; }
+.method-detail-link { align-self: flex-start; display: inline-flex; gap: 22px; align-items: center; padding: 17px 0 10px; min-height: 48px; margin-top: 14px; font-size: 13px; border-bottom: 1px solid currentColor; }
+
+/* Text responds briefly; artwork owns its finite entrance and replay. */
+.method-has-changed .method-panel:not([hidden]) .method-chapter-body { animation: method-copy-in 260ms ease-out both; }
+@keyframes method-copy-in { from { opacity: .55; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+.method-journey-calm .method-chapter-body { animation: none !important; }
+.method-journey-calm .method-chapters > button > i { transition: none; }
+
+@media (min-width: 1500px) {
+  .method-panel { grid-template-columns: minmax(0, 660px) minmax(0, 1fr); }
+  .method-chapter-copy { max-width: 520px; padding-top: 56px; }
+}
+@media (max-width: 1000px) {
+  .method-heading, .method-panel { gap: 5vw; grid-template-columns: 1fr 1fr; }
+  .method-chapters { gap: 22px; }
+  .method-chapters > button { gap: 13px; }
+  .method-chapter-copy { padding-top: 14px; }
+  .method-page-number { margin-bottom: 30px; }
+  .method-page-number .method-ordinal { font-size: 55px; }
+  .method-chapter-body > p { font-size: 16px; }
+  .method-chapter-body { min-height: 250px; }
+  .method-paging { margin-top: 25px; }
+}
+@media (max-width: 700px) {
+  .method-journey { padding-top: 40px; padding-bottom: 65px; }
+  .method-heading { display: block; margin: 52px 0 32px; }
+  .method-heading h2 { font-size: clamp(42px, 12vw, 68px); }
+  .method-heading > p { font-size: 16px; margin-top: 27px; max-width: 440px; padding: 0; }
+  .method-chapters { gap: 14px; margin-bottom: 24px; }
+  .method-chapters > button { flex-direction: column; align-items: flex-start; gap: 11px; font-size: 12px; min-height: 72px; padding: 9px 0 16px; white-space: nowrap; }
+  .method-chapter-index { font-size: 10px; }
+  .method-panel { display: flex; flex-direction: column; gap: 0; }
+  .method-panel[hidden] { display: none; }
+  .method-figure { position: static; width: 100%; }
+  .method-figure-stage { aspect-ratio: 10 / 11; max-height: 520px; }
+  .method-home-line { left: 22px; bottom: 63px; font-size: 23px; }
+  .method-replay { right: 18px; bottom: 6px; }
+  .method-figure figcaption { padding-top: 12px; font-size: 9px; gap: 12px; }
+  .method-chapter-copy { padding-top: 31px; width: 100%; }
+  .method-page-number { margin-bottom: 24px; gap: 12px; }
+  .method-page-number .method-ordinal { font-size: 46px; }
+  .method-page-number > span { font-size: 10px; padding-bottom: 7px; }
+  .method-chapter-body { min-height: 195px; }
+  .method-chapter-body h3 { font-size: clamp(28px, 8.4vw, 40px); margin-bottom: 18px; max-width: 430px; }
+  .method-chapter-body > p { font-size: 16px; line-height: 1.6; max-width: 470px; }
+  .method-paging { margin-top: 28px; }
+  .method-paging button { min-height: 59px; font-size: 12px; }
+  .method-detail-link { font-size: 13px; margin-top: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .method-has-changed .method-chapter-body, .method-home-art img { animation: none !important; }
+  .method-chapters > button > i { transition: none; }
+}

@@ -1,0 +1,5 @@
+.site-language-switch{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;width:fit-content;font-size:14px;line-height:1;text-decoration:none;border-bottom:1px solid currentColor}
+.site-language-note{display:block;max-width:46rem;margin-top:12px;font-size:14px;line-height:1.5;opacity:.78}
+.business-footer>.site-language-note{grid-column:1/-1}
+.header-language{font-size:14px}
+@media(max-width:360px){.eva-site-header{gap:10px;padding-left:20px;padding-right:20px}.eva-header-actions{gap:10px;font-size:14px}}

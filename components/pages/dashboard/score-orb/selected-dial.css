@@ -1,0 +1,91 @@
+.selected-dial{position:absolute;left:23%;top:23%;width:54%;aspect-ratio:1;container-type:inline-size;color:#28352d;z-index:2}
+.selected-dial-face{position:absolute;inset:12.5%;border-radius:50%;background:#f4f4e9;box-shadow:inset 0 0 0 1px #fff,0 10px 30px -20px #49614640}
+.selected-dial-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.dial-boundary{fill:none;stroke:#536449;stroke-opacity:.2;stroke-width:.6}.dial-ticks{stroke:#607058;stroke-opacity:.75;stroke-width:1.3}
+.dial-track{fill:none;stroke:#707365;stroke-opacity:.15;stroke-width:3}.dial-score-arc{fill:none;stroke:#394f3d;stroke-width:3;stroke-linecap:round}.dial-inner-line{fill:none;stroke:#fffffff0;stroke-width:1}.dial-score-tip{fill:#f8f6ed;stroke:#637160;stroke-width:2}
+.dial-age{position:absolute;top:23%;left:20%;width:60%;min-height:44px;padding:0;border:0;background:transparent;color:inherit;cursor:pointer;text-align:center}
+.dial-age>span{display:block;font-size:max(9px,3cqi);line-height:1.3}.dial-age>span>small{display:block;font-size:max(8px,2.4cqi);color:#5b6556}.dial-age>strong{display:block;font-size:27cqi;font-weight:400;line-height:1;letter-spacing:-.065em;margin-top:1.3cqi;font-variant-numeric:tabular-nums}.dial-age>small{display:block;font-size:max(9px,2.8cqi);line-height:1.2;margin-top:1cqi;color:#586250}
+.dial-score{position:absolute;left:50%;top:65.5%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0 2cqi;min-height:44px;width:53%;padding:1.7cqi;border:1px solid #9aa78e55;border-radius:5px;background:#fafbf4;color:inherit;box-shadow:inset 0 1px 1px #fff;cursor:pointer}.dial-score>span{font-size:max(9px,3cqi)}.dial-score>strong{font-size:8cqi;font-weight:400;letter-spacing:-.03em;line-height:1.1;font-variant-numeric:tabular-nums}.dial-score>small{font-size:max(8px,2.4cqi)}
+.selected-dial button:hover{color:#112e21}.selected-dial button:focus-visible{outline:2px solid #3c654d;outline-offset:4px;border-radius:5px}
+
+/* Reserve separate readout and touch regions inside the compact dial. */
+@container(max-width:240px){.dial-age{top:17%}.dial-age>strong{font-size:24cqi;margin-top:.5cqi}.dial-age>small{margin-top:.5cqi}}
+
+/* B / a raised, edge-lit glass lens; readout geometry stays independent. */
+.score-orb-stage .selected-dial--glass{left:21%;top:21cqw;width:58%;isolation:isolate;color:#fffdf6;text-shadow:0 1px 4px #102e3b8c}
+.dial-button-plinth{position:absolute;z-index:0;inset:5%;border-radius:50%;transform:translateY(1.7cqi);background:linear-gradient(145deg,#e4eee6 8%,#a6bdb75c 42%,#4a665fd9 75%,#afc7b6 91%,#edf6e4 100%);box-shadow:0 1px 1px #172d3866,0 3px 3px #243d3445,0 10px 15px -5px #31493666,0 22px 28px -13px #31493647;pointer-events:none}
+.selected-dial--glass .selected-dial-face{z-index:1;-webkit-clip-path:circle(50%);clip-path:circle(50%);inset:5%;isolation:isolate;overflow:hidden;border:1px solid #edf9edf2;background:#3a575a94;-webkit-backdrop-filter:blur(14px) saturate(1.25);backdrop-filter:blur(14px) saturate(1.25);box-shadow:inset 0 1px 1px #fffef7,inset 2px 3px 4px #fffef7a6,inset -2px -4px 6px #1d39418c,inset 0 -2px 1px #dcebd79e}
+.selected-dial--glass .selected-dial-face:before{content:'';position:absolute;z-index:-2;inset:-3%;filter:blur(clamp(5px,2.5cqi,10px));background:radial-gradient(ellipse at 49% 35%,#203d42ed 8%,#2c4a479e 38%,transparent 71%),radial-gradient(ellipse at 7% 94%,#e3e4b9eb 0,#b7d2b8b3 18%,transparent 56%),radial-gradient(ellipse at 98% 83%,#9dabad99 0,#839c9959 20%,transparent 55%),linear-gradient(155deg,#739087 5%,#395651 51%,#729f8b 100%)}
+.selected-dial--glass .selected-dial-face:after{content:'';position:absolute;inset:0;z-index:0;border-radius:inherit;box-shadow:inset 0 0 3px 1px #fffef7e6,inset 4px 5px clamp(8px,5cqi,19px) 1px #edf9e8b3,inset -4px -8px clamp(8px,4cqi,15px) #143d4261;background:radial-gradient(ellipse at 50% 42%,#183b3b36 0,transparent 66%),radial-gradient(ellipse at 26% 8%,#fcfff249 0,transparent 45%),radial-gradient(ellipse at 45% 104%,#e8f6c3b3 0,#d2ebcf33 21%,transparent 45%);pointer-events:none}
+/* Explicit shape clipping contains WebKit composited blur/transform layers. */
+/* Slow fluid stays below a fixed center veil and the frosted rim. */
+.dial-fluid{position:absolute;-webkit-clip-path:circle(50%);clip-path:circle(50%);inset:0;z-index:-1;overflow:hidden;border-radius:inherit;pointer-events:none}
+.dial-fluid>i{position:absolute;inset:-18%;border-radius:50%;filter:blur(clamp(7px,4cqi,15px));animation-play-state:paused;transform-origin:50% 50%;will-change:transform}
+.dial-fluid-a{background:radial-gradient(ellipse at 28% 76%,#dce6bdbf 0,#b5d5b87a 23%,transparent 55%),radial-gradient(ellipse at 82% 25%,#5f999285 0,transparent 44%);opacity:.54;animation:dial-fluid-warm 24.347826s ease-in-out infinite;animation-delay:-8s}
+.dial-fluid-b{background:radial-gradient(ellipse at 73% 76%,#a3b8cf99 0,#639ca17a 22%,transparent 57%),radial-gradient(ellipse at 22% 23%,#25414f94 0,transparent 48%);opacity:.42;animation:dial-fluid-cool 32.173913s ease-in-out infinite;animation-delay:-17s}
+.dial-fluid[data-motion=running]>i{animation-play-state:running}
+.dial-fluid[data-motion=paused]>i{will-change:auto}
+@keyframes dial-fluid-warm{0%,100%{transform:translate3d(-5%,7%,0) rotate(-14deg) scale(1.04)}36%{transform:translate3d(7%,-4%,0) rotate(13deg) scale(1.12)}70%{transform:translate3d(-3%,-7%,0) rotate(-3deg) scale(1.05)}}
+@keyframes dial-fluid-cool{0%,100%{transform:translate3d(5%,-4%,0) rotate(12deg) scale(1.08)}40%{transform:translate3d(-7%,5%,0) rotate(-16deg) scale(1.02)}73%{transform:translate3d(4%,8%,0) rotate(7deg) scale(1.13)}}
+/* A narrow optical annulus diffuses only the light near the curved cover edge. */
+.dial-edge-optics{position:absolute;z-index:6;inset:5%;border-radius:50%;pointer-events:none;-webkit-backdrop-filter:blur(.45px) saturate(1.14);backdrop-filter:blur(.45px) saturate(1.14);-webkit-mask-image:radial-gradient(closest-side,transparent 77%,#0002 83%,#000b 94%,#000 100%);mask-image:radial-gradient(closest-side,transparent 77%,#0002 83%,#000b 94%,#000 100%);background:radial-gradient(ellipse at 5% 17%,#efffc957 0,transparent 37%),radial-gradient(ellipse at 95% 89%,#cce9f347 0,transparent 32%);box-shadow:inset 1px 0 1px #d8f7d747,inset -1px 0 1px #cfddf747}
+/* Reflections sit above the readouts, as light on a domed cover, never as a hit target. */
+.dial-glass-coating{position:absolute;z-index:5;inset:5%;border-radius:50%;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse 88% 51% at 38% -5%,#fffff475 0,#f4fff326 49%,transparent 70%);box-shadow:inset 1px 1px 0 #fffff4e6,inset -1px -1px 0 #efffe778;transition:opacity .24s ease}
+.dial-glass-coating:before{content:'';position:absolute;left:6%;right:10%;top:3%;height:42%;border-radius:50%;transform:rotate(-13deg);border-top:clamp(1px,.65cqi,2.5px) solid #fffff4c7;background:linear-gradient(180deg,#f6fff633 0,#f5fff315 39%,transparent 84%);filter:blur(.4px);opacity:.85}
+.dial-glass-coating:after{content:'';position:absolute;inset:2%;border-radius:50%;background:conic-gradient(from 0deg,#faffee26 0deg,transparent 55deg,#d9ede326 117deg,#f4ffdba1 165deg,#e5f5ce3b 215deg,transparent 246deg,#ffffeecf 305deg,#ffffee26 360deg);-webkit-mask-image:radial-gradient(closest-side,transparent 86%,#0009 94%,#000 99%);mask-image:radial-gradient(closest-side,transparent 86%,#0009 94%,#000 99%);opacity:.8}
+.selected-dial--glass .selected-dial-svg{z-index:3}
+.selected-dial--glass .dial-content-boundary{z-index:4}
+@media(hover:hover){.selected-dial--glass:has(button:hover) .dial-glass-coating{opacity:.84}}
+@media(prefers-reduced-motion:reduce){.dial-glass-coating{transition:none}}
+.selected-dial--glass .dial-boundary{stroke:#fffdf6;stroke-opacity:.4}
+.selected-dial--glass .dial-ticks{stroke:#4b6047;stroke-opacity:.8}
+.selected-dial--glass .dial-ticks line{vector-effect:non-scaling-stroke;stroke-width:.75px}
+.selected-dial--glass .dial-ticks line:nth-child(5n+1){stroke-width:1.15px;stroke-opacity:1}
+.selected-dial--glass .dial-track{stroke:#183c40;stroke-opacity:.48;stroke-width:1.2px;vector-effect:non-scaling-stroke}
+.selected-dial--glass .dial-score-shadow{fill:none;stroke:#163c40;stroke-width:3.5px;stroke-opacity:.6;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.selected-dial--glass .dial-score-arc{stroke:#f4ffe6;stroke-width:1.7px;stroke-opacity:1;vector-effect:non-scaling-stroke}
+.selected-dial--glass .dial-score-tip{fill:#fffde9;stroke:#64765c;stroke-width:1.5}
+.selected-dial--glass .dial-inner-line{stroke:#fffdf6;stroke-opacity:.06}
+/* Three calm zones: age label/readout, comparison, then score.
+   Keep the score divider-free and its readout inside its own touch region.
+   Text uses inset chord widths; the circular boundary is only a final guard. */
+.dial-content-boundary{position:absolute;inset:0;clip-path:circle(42% at 50% 50%)}
+.dial-fit-box{position:relative;display:block;width:100%;height:100%;min-width:0}
+.dial-fit-line{position:absolute;left:50%;top:50%;display:flex;align-items:center;justify-content:center;gap:1.5cqi;width:max-content;max-width:none;white-space:nowrap;transform-origin:center}
+.selected-dial--glass .dial-age{top:22%;left:18%;width:64%;display:grid;justify-items:center;gap:3cqi}
+.selected-dial--glass .dial-age>span{width:90%;height:4.5cqi;font-size:max(10px,3cqi);font-weight:400;line-height:1.25;letter-spacing:.01em}
+.selected-dial--glass .dial-age>strong{font-size:22cqi;line-height:1;margin:0;letter-spacing:0;width:84%;min-width:0;height:22cqi;display:grid;place-items:center}
+.selected-dial--glass .dial-age .dot-number{display:block;width:100%;height:22cqi;margin:auto}
+.selected-dial--glass .dot-number{color:#fffdf6;overflow:visible;filter:drop-shadow(0 0 .8px #fffdf6d9) drop-shadow(0 0 3px #f4ffd380)}
+.selected-dial--glass .dial-age>small{margin:0;width:100%;height:5cqi;font-size:max(10px,2.8cqi);line-height:1.4;color:#fffdf6;letter-spacing:0}
+.dial-age-comparison .dial-fit-line>span{color:#edf3e5}.dial-age-comparison i{font-style:normal;opacity:.5}.dial-age-comparison b{font-weight:500}
+.selected-dial--glass .dial-score{top:67%;left:50%;width:52%;min-height:44px;padding:1.5cqi 0;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;border:0;border-radius:0;background:transparent;color:inherit;box-shadow:none}
+.selected-dial--glass .dial-score>.dial-score-readout{display:block;width:100%;height:9cqi;min-width:0}
+.selected-dial--glass .dial-score-label{font-weight:400;text-shadow:0 1px 2px #102b39b3;font-size:max(10px,3cqi);line-height:1.2;white-space:nowrap}
+.selected-dial--glass .dial-score-value{display:block;font-size:9cqi;line-height:1;letter-spacing:0;font-weight:400}
+.selected-dial--glass .dial-score .dot-number{display:block;height:9cqi;width:auto}
+.selected-dial--glass .dial-score-unit{font-size:max(8px,2.3cqi);line-height:1.2;margin-left:-.5cqi;color:#edf3e5}
+.selected-dial--glass button:hover{color:#fff}
+.selected-dial--glass button:focus-visible{outline:2px solid #fffdf6;outline-offset:-2px;border-radius:8px}
+@container(max-width:240px){
+ .selected-dial--glass .dial-age{top:22%;gap:2.5cqi}
+ .selected-dial--glass .dial-age>span{height:7cqi}
+ .selected-dial--glass .dial-age>small{height:7.5cqi}
+ .selected-dial--glass .dial-age>strong{height:20cqi}.selected-dial--glass .dial-age .dot-number{height:20cqi}
+ .selected-dial--glass .dial-score{top:67%;width:56%;padding:0}
+ .selected-dial--glass .dial-score>.dial-score-readout{height:11cqi}
+ .selected-dial--glass .dial-score .dot-number{height:11cqi}
+ .selected-dial--glass .dot-number{filter:drop-shadow(0 0 .65px #fffdf6cc) drop-shadow(0 0 2px #f4ffd373)}
+}
+@container(max-width:170px){
+ .selected-dial--glass .dial-age{top:17%;gap:2cqi}
+ .selected-dial--glass .dial-age>span{height:8cqi;font-size:9px}
+ .selected-dial--glass .dial-age>small{height:9cqi;font-size:9px}
+ .selected-dial--glass .dial-age>strong{height:20cqi}.selected-dial--glass .dial-age .dot-number{height:20cqi}
+ .selected-dial--glass .dial-score{top:61%;width:55%}
+ .selected-dial--glass .dial-score-label{font-weight:400;text-shadow:0 1px 2px #102b39b3;font-size:9px}
+ .selected-dial--glass .dial-age-comparison{font-size:9px}
+}
+
+@container(max-width:240px){.dial-edge-optics{-webkit-backdrop-filter:blur(.25px) saturate(1.08);backdrop-filter:blur(.25px) saturate(1.08)}.selected-dial--glass .dial-score-arc{stroke-width:1.5px}.selected-dial--glass .dial-score-shadow{stroke-width:3px}}
+@media(prefers-reduced-motion:reduce){.dial-fluid>i{animation:none;will-change:auto}.dial-fluid-a{transform:translate3d(-3%,3%,0)}.dial-fluid-b{transform:translate3d(4%,-2%,0)}}

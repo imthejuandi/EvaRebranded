@@ -1,0 +1,8 @@
+/* Enhancement only: no opacity:0, hidden content, or pre-hydration transform. */
+.editorial-reveal{min-width:0}
+.editorial-reveal [data-editorial-photo]{transform-origin:center;overflow:hidden}
+.editorial-reveal [data-editorial-photo]>img{display:block}
+.editorial-reveal [data-editorial-line]{transform-origin:left center}
+@media(prefers-reduced-motion:reduce){
+ .editorial-reveal,.editorial-reveal [data-editorial-reveal],.editorial-reveal [data-editorial-photo]{animation:none!important;transition:none!important}
+}

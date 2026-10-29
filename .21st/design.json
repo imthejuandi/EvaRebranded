@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "project": {
+    "name": "eva-system-03",
+    "productType": "Spanish-first preventative health website and customer dashboard preview; backend-ready for frontend migration",
+    "stack": [
+      "react",
+      "tailwind-v4",
+      "vite"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "app/globals.css"
+    ],
+    "components": [
+      "components/ui"
+    ],
+    "assets": [],
+    "instructions": []
+  },
+  "design": {
+    "colorMode": "mixed",
+    "colors": {
+      "ink": "#0b1010",
+      "paper": "#f3f0e8",
+      "amber": "#e9a067",
+      "sage": "#bdcbaa",
+      "lilac": "#d1bdd6",
+      "peach": "#e8bda9",
+      "glassInk": "#183c40",
+      "glassReadout": "#fffdf6",
+      "glassArc": "#f4ffe6"
+    },
+    "typography": {
+      "body": "Hanken Grotesk, self-hosted; preserve official EVA artwork and existing analog lettering",
+      "technical": "SFMono-Regular / Consolas",
+      "wordmark": "Official EVA artwork",
+      "analog": "Serif silhouette with illuminated cells"
+    },
+    "spacing": {
+      "--gutter": {
+        "value": "48px",
+        "source": "app/globals.css"
+      }
+    },
+    "radius": {
+      "dashboardLens": {
+        "value": "50%",
+        "source": "../../outputs/dashboard-score-dots-2026-09-21/preview/src/selected-dial.css"
+      }
+    },
+    "shadows": {
+      "dashboardReadoutGlow": {
+        "value": "drop-shadow(0 0 .8px #fffdf6d9) drop-shadow(0 0 3px #f4ffd380)",
+        "source": "../../outputs/dashboard-score-dots-2026-09-21/preview/src/selected-dial.css"
+      }
+    },
+    "motion": {
+      "dashboard": "Bounded arrivals and purposeful state changes; stable measurement values; reduced-motion and offscreen pause",
+      "actionables": "Data-responsive Campo shapes with finite morph transitions; show source values on hover, focus or tap",
+      "dashboardFluidWarm": {
+        "value": "24.347826s ease-in-out infinite",
+        "source": "../../outputs/dashboard-score-dots-2026-09-21/preview/src/selected-dial.css"
+      },
+      "dashboardFluidCool": {
+        "value": "32.173913s ease-in-out infinite",
+        "source": "../../outputs/dashboard-score-dots-2026-09-21/preview/src/selected-dial.css"
+      }
+    },
+    "density": "Editorial public pages; focused overview with progressive disclosure in the dashboard"
+  },
+  "components": {
+    "installed": [
+      "slider",
+      "switch"
+    ],
+    "preferredPrimitives": [
+      "@base-ui/react"
+    ],
+    "patterns": [
+      "Selected: B / Anillo ring with raised glass dome, coarse glowing dot readings, explicit exact-score arc and report-bound marker detail.",
+      "Selected: full paper executive narrative with source paragraph structure, preserved caveats and conservative verified exact-name emphasis.",
+      "Selected: C / Campo actionables with supplied range-direction folds, exact value disclosure and variable title/count navigation.",
+      "Studies retained: score-dot A / Constelación, C / Pétalos and D / Topografía. Actionable C / Campo is distinct from score-dot C."
+    ]
+  },
+  "constraints": {
+    "must": [
+      "Preserve approved artwork and existing destination links",
+      "Accessible keyboard navigation and reduced motion",
+      "Use the supplied official logo at original aspect ratio",
+      "Preserve consent, processing, missing-data and independent estimate provenance states",
+      "Keep unselected score-dot studies separate from the integrated dashboard",
+      "Fit full orb labels/readouts uniformly into chord-safe mobile slots; keep independent 44px control regions and accessible exact metric text.",
+      "Use explicit EVA Score arc paths from 12 o’clock to the exact score endpoint, two half-arcs at 100 and no arc for unavailable values.",
+      "Pause glass fluid motion offscreen and in hidden tabs; reduced motion resolves to still material. Fluid periods are 24.347826s and 32.173913s.",
+      "Compare biological age with completed chronological years only from valid DOB and the verified estimate reference date; otherwise comparison is unavailable.",
+      "Bind EVA Score, summary, ring and actions to one selected available report; keep biological age independently scoped as a rolling profile estimate with its own source and reference date. Preserve consent, ownership, source and missing-state guards.",
+      "Retain complete narrative paragraphs and caveats; exact biomarker-name emphasis at most two per paragraph and six total; action navigation supports zero, one and arbitrary counts.",
+      "Distinguish approved design, local integration, prepared backend readers, live patient connection and verified public deployment."
+    ],
+    "avoid": [
+      "New stock imagery for this navigation",
+      "Global GSAP defaults",
+      "Treating selected Anillo as pending; promoting score-dot A/C/D studies without a further selection.",
+      "Inferring clinical severity, score contribution or weights from marker size, area, density, glow or report membership.",
+      "Normalized-circle score dashes combined with non-scaling strokes; verify the visible arc endpoint and remaining gap at mobile and desktop sizes.",
+      "Claiming reference video playback, imported 21st code, or source retrieval when evidence is only a still, metadata or quota rejection."
+    ]
+  },
+  "decisions": [
+    {
+      "date": "2026-09-12",
+      "decision": "User selected supplied Sterling Gate kinetic navigation: three layers entering from the right, staggered links, rotating close icon and ambient shapes; adapt to EVA paper, ink and amber with existing DotMorphLabel."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "Hero reads Conoce tu salud, with salud in the existing AnalogType effect."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "Hero hierarchy: regular 400 lead-in at 8.33vw desktop / 14.5vw mobile, tracking -0.035em, closer to the dominant analog salud. Menu dot grid uses 18 samples per em with coverage-sized edge dots to preserve recognizable glyphs."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "03.29 supersedes the earlier hero balance: Conoce tu moves to the upper left at 7.4vw desktop / 12.5vw mobile, weight 400. Analog salud is smaller at 36vw desktop / 62vw mobile, lower right. Preserve the open center for the runner. Replace the supporting hero paragraph with a paper CTA emphasizing Desbloquea tu salud, with lighter pide tu primer kit and 99€ por Kit, linking to the existing signup destination."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "03.30: at the user’s request, compact the CTA to about one quarter of its prior visual area: 200 × 44px at the default root size, or 26.4% of 370 × 90px. Keep a 14px semibold primary label and 11px regular invitation and price inside. Do not expand to full mobile width. Quiet the desktop supporting sentence to 18px regular with muted contrast. Keep the diagonal main headline scale, with lower placement for salud on short phones using the space released by the smaller button."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "03.31: user clarified that Conoce tu and salud must match both overall width and letter height. HeroIntro fits the longer sans-serif phrase into the analog word’s measured ink bounds, using a condensed presentation. Both share the same responsive frame. Keep the upper phrase high-left and salud lower-right. On mobile reserve space below the introduction for the runner’s head; align still-image crop and placement with the animated composition."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "03.32: the user clarified that both headline parts should have equal overall visual weight, not identical dimensions. Restore the natural Arial letter proportions. Set the solid phrase at 24% of the analog frame width, regular 400 with -0.035em tracking. No textLength or nonuniform scaling. Preserve the dotted salud and runner clearance."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "03.33: user explicitly requests Impeccable, superseding the old restriction. Recompose the hero using optical hierarchy and grouping: Hanken Grotesk solid heading high-left, smaller original analog serif lower-right, an unobstructed central runner, supporting line and compact CTA grouped with the left heading on desktop. On mobile, right-align the CTA below salud. Use normal glyph proportions, self-hosted fonts, 24/32px grouping spaces and consistent animated/poster/calm layouts."
+    },
+    {
+      "date": "2026-09-12",
+      "decision": "03.34: user requests centered runner and lower salud/action. Center the image frame in both axes. Scale only on compact phones as needed to keep the head clear. Bottom-anchor salud and CTA near the existing controls with explicit non-overlap gaps. Move desktop support copy with its CTA. Preserve typography, dimensions, effects and transitions."
+    },
+    {
+      "date": "2026-09-21",
+      "decision": "JD selected B / Precisión for the dashboard: central biological age, thin sage-green 1–100 EVA Score arc, immediate opaque values, matte ivory face, 800ms arrival only. Read existing profile/report fields with independent provenance. Keep authenticated backend reader ready for frontend migration; current design preview stays on explicit synthetic data. Summary is a separate proposal until selected."
+    },
+    {
+      "date": "2026-09-21",
+      "decision": "JD approved integrating the paper executive summary and C / Campo actionables alongside selected B / Precisión. Campo retains current title, position/total, side arrows and dropdown for variable counts. Persist these as current dashboard language. New Constelación, Anillo and Pétalos score-dot directions remain proposals until selected. Report biomarker membership is not proof of participation in a particular score calculation."
+    },
+    {
+      "date": "2026-09-21",
+      "decision": "JD explicitly selected B / Anillo ring and raised glass orb, the paper executive summary and C / Campo actionables for dashboard integration and reusable branding. This supersedes prior B study-only and pending score-dot language while preserving those entries as history. Keep score-dot A / Constelación, C / Pétalos and D / Topografía separate. Preserve raised dome/plinth, rim light and restrained refraction approximation, coarse glowing dot digits, mobile text fitting, exact explicit score-arc geometry and the final 24.347826s / 32.173913s fluid periods (15% speed increase). Actual-age comparison requires valid DOB and verified reference date. Marker status is not contribution weighting. Scope remains local synthetic preview plus prepared backend integration; public deployment is a separate verified action. EVA Score/ring/summary/actions are selected-report-bound; biological age remains an independently scoped rolling profile estimate with its own source and reference date."
+    }
+  ],
+  "evidence": [
+    {
+      "fact": "components.installed",
+      "source": "components/ui"
+    },
+    {
+      "fact": "design.colorMode:light",
+      "source": "app/globals.css"
+    },
+    {
+      "fact": "design.tokens",
+      "source": "app/globals.css"
+    },
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:tailwind-v4",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:vite",
+      "source": "package.json"
+    },
+    {
+      "fact": "dashboard.currentSelection",
+      "source": "docs/dashboard-language-2026-09-21.md"
+    },
+    {
+      "fact": "dashboard.materialTokens",
+      "source": "../../outputs/dashboard-score-dots-2026-09-21/preview/src/selected-dial.css"
+    },
+    {
+      "fact": "dashboard.explicitArcAndFluidPace",
+      "source": "../../outputs/dashboard-score-dots-2026-09-21/iteration-11-score-arc/REVIEW.md"
+    },
+    {
+      "fact": "dashboard.referenceProvenance",
+      "source": "../../outputs/dashboard-product-consolidation-2026-09-21/BRANDING.md"
+    }
+  ],
+  "generatedAt": "2026-09-12T04:06:38.701Z"
+}
