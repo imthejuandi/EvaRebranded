@@ -10,7 +10,7 @@ import { AnalogType } from './AnalogType';
 import { HeroIntro } from './HeroIntro';
 import { heroLayout } from '@/lib/hero-layout';
 import { storyMotion } from '@/lib/story-motion';
-import { productHover } from '@/lib/product-motion';
+import {TassoProcess} from './TassoProcess';
 export const DURATION = 981;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
 const range = (f: number, a: number, b: number, x: number, y: number) => interpolate(f, [a, b], [x, y], clamp);
@@ -44,7 +44,6 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
     const [overflow, setOverflow] = useState(w);
     useEffect(() => { const el = track.current; if (!el)
         return; const measure = () => setOverflow(Math.max(0, el.scrollWidth - (w - pad * 2))); measure(); const ro = new ResizeObserver(measure); ro.observe(el); return () => ro.disconnect(); }, [w, pad]);
-    const hover = productHover(f);
     const hero = heroLayout(w, h);
     useLayoutEffect(() => {
         if (!nativeScroll || !root.current)
@@ -83,9 +82,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
    {__site.t(!mobile && <p className="hero-support" data-hero-support style={{ position: 'absolute', left: pad, top: hero.supportTop, opacity: range(f, 20, 100, 1, 0) }}>{__site.t("Para lo que disfrutas.")}<br />{__site.t("Y lo que est\u00E1 por venir.")}</p>)}</div>
   </AbsoluteFill>
   <AbsoluteFill data-layer="product-scene" style={{ background: '#f3f0e8', color: '#171b18', overflow: 'hidden', translate: `0 ${motion.productY * h}px`, visibility: Math.abs(motion.productY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.productY) < 1 ? 'translate' : 'auto' }}>
-   <div data-layer="product" data-hover={hover.toFixed(3)} style={{ position: 'absolute', left: mobile ? '50%' : '58%', top: '48%', width: mobile ? Math.min(w * .96, h * .48) : Math.min(w * .53, h * .85), aspectRatio: '1', transform: `translate(-50%, calc(-50% + ${hover}px))` }}><Img data-motion-preload="product" src={staticFile("art/tasso-plus-glow-v1.webp")} loading="eager" decoding="async" style={{ width: '100%', height: '100%', objectFit: 'contain', maskImage: 'radial-gradient(ellipse closest-side, black 76%, transparent 100%)' }}/></div>
-   <div style={{ position: 'absolute', zIndex: 1, top: mobile ? '15%' : '17%', left: pad, fontSize: mobile ? Math.min(w * .11, 48) : w * .073, lineHeight: .94, letterSpacing: '-.06em' }}>{__site.t("Un peque\u00F1o")}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic', fontWeight: 400 }}>{__site.t("gesto.")}</span></div>
-   <div style={{ position: 'absolute', right: pad, bottom: mobile ? 135 : 110, width: mobile ? w - 48 : 250 }}><p style={{ fontSize: 11, letterSpacing: '.13em', marginBottom: 10 }}>{__site.t("01 / RECOGIDA CON TASSO+")}</p><p style={{ fontSize: mobile ? 18 : 22, lineHeight: 1.3 }}>{__site.t("Recogida de muestra en casa, an\u00E1lisis en laboratorio acreditado.")}</p></div>
+   <TassoProcess frame={f} scrollDriver={nativeScroll}/>
   </AbsoluteFill>
   <AbsoluteFill data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
    <div style={{ position: 'absolute', top: mobile ? '19%' : '16%', left: pad, fontSize: mobile ? 51 : w * .072, letterSpacing: '-.065em', lineHeight: .98 }}>{__site.t("Tus datos.")}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{__site.t("Con contexto.")}</span></div>
