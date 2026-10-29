@@ -1,0 +1,114 @@
+{
+  "framesPerScene": 60,
+  "fps": 12,
+  "frameWidth": 1200,
+  "frameHeight": 675,
+  "columns": 3,
+  "rows": 4,
+  "scenes": [
+    {
+      "option": "original",
+      "scene": "collect",
+      "atlases": [
+        "/art/tasso-scroll/original-collect-01.webp",
+        "/art/tasso-scroll/original-collect-02.webp",
+        "/art/tasso-scroll/original-collect-03.webp",
+        "/art/tasso-scroll/original-collect-04.webp",
+        "/art/tasso-scroll/original-collect-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/original-collect.jpg",
+      "bytes": 1567998
+    },
+    {
+      "option": "original",
+      "scene": "return",
+      "atlases": [
+        "/art/tasso-scroll/original-return-01.webp",
+        "/art/tasso-scroll/original-return-02.webp",
+        "/art/tasso-scroll/original-return-03.webp",
+        "/art/tasso-scroll/original-return-04.webp",
+        "/art/tasso-scroll/original-return-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/original-return.jpg",
+      "bytes": 904808
+    },
+    {
+      "option": "studio",
+      "scene": "collect",
+      "atlases": [
+        "/art/tasso-scroll/studio-collect-01.webp",
+        "/art/tasso-scroll/studio-collect-02.webp",
+        "/art/tasso-scroll/studio-collect-03.webp",
+        "/art/tasso-scroll/studio-collect-04.webp",
+        "/art/tasso-scroll/studio-collect-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/studio-collect.jpg",
+      "bytes": 1728784
+    },
+    {
+      "option": "studio",
+      "scene": "return",
+      "atlases": [
+        "/art/tasso-scroll/studio-return-01.webp",
+        "/art/tasso-scroll/studio-return-02.webp",
+        "/art/tasso-scroll/studio-return-03.webp",
+        "/art/tasso-scroll/studio-return-04.webp",
+        "/art/tasso-scroll/studio-return-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/studio-return.jpg",
+      "bytes": 1023090
+    },
+    {
+      "option": "morning",
+      "scene": "collect",
+      "atlases": [
+        "/art/tasso-scroll/morning-collect-01.webp",
+        "/art/tasso-scroll/morning-collect-02.webp",
+        "/art/tasso-scroll/morning-collect-03.webp",
+        "/art/tasso-scroll/morning-collect-04.webp",
+        "/art/tasso-scroll/morning-collect-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/morning-collect.jpg",
+      "bytes": 2929804
+    },
+    {
+      "option": "morning",
+      "scene": "return",
+      "atlases": [
+        "/art/tasso-scroll/morning-return-01.webp",
+        "/art/tasso-scroll/morning-return-02.webp",
+        "/art/tasso-scroll/morning-return-03.webp",
+        "/art/tasso-scroll/morning-return-04.webp",
+        "/art/tasso-scroll/morning-return-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/morning-return.jpg",
+      "bytes": 3007628
+    },
+    {
+      "option": "light",
+      "scene": "collect",
+      "atlases": [
+        "/art/tasso-scroll/light-collect-01.webp",
+        "/art/tasso-scroll/light-collect-02.webp",
+        "/art/tasso-scroll/light-collect-03.webp",
+        "/art/tasso-scroll/light-collect-04.webp",
+        "/art/tasso-scroll/light-collect-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/light-collect.jpg",
+      "bytes": 1688460
+    },
+    {
+      "option": "light",
+      "scene": "return",
+      "atlases": [
+        "/art/tasso-scroll/light-return-01.webp",
+        "/art/tasso-scroll/light-return-02.webp",
+        "/art/tasso-scroll/light-return-03.webp",
+        "/art/tasso-scroll/light-return-04.webp",
+        "/art/tasso-scroll/light-return-05.webp"
+      ],
+      "poster": "/art/tasso-scroll/light-return.jpg",
+      "bytes": 1546568
+    }
+  ]
+}
