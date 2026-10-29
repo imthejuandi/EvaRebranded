@@ -1,30 +1,51 @@
-# Tasso film comparison page
+# Tasso scroll comparison implementation
 
-This page compares the retained original with three new rendered image-to-video directions. It does not replace the current homepage or present CSS animation as generated film.
+This revision replaces every native player with a deterministic native-page-scroll sequence. It retains the original plus Studio Precision, Morning at Home and Light into Insight. No new media generation is required. Existing rendered material supplies image-frame atlases for collection and return; every results step uses the same actual EVA dashboard screenshot.
 
-## Routes and files
+## Dashboard first
 
-- `/en/review/tasso-options` and `/es/review/tasso-options` use `TassoFilmOptions.tsx` inside the existing public SiteShell.
-- `tasso-film-options.css` scopes the responsive editorial player/comparison layout.
-- `lib/site-language.ts` preserves the comparison route, query and fragment when switching languages.
-- `lib/site-content/tasso-film-options.json` is the source of actual video/poster readiness. The root agent owns asset generation, validation, manifest updates and publication.
+Before implementing the third-step framing, the executor inspected the real `/es/dashboard` reference capture, including its Spanish heading, green circular biomarker field, `Ejemplo` badge and existing example values. The final root-approved crop is `/art/tasso-scroll/eva-dashboard.jpg`, 1296×780. The image is displayed unchanged with `object-fit: contain`, its genuine colors and aspect ratio, and an adjacent EN/ES example-data/Spanish-interface caption. Scroll reveals it from 98% to 100% scale, then holds it. There is no generated tablet, replacement report, invented result, repainted UI or changing score. A link opens the real app preview.
 
-## Asset contract
+## Files and asset contract
 
-The manifest has four options with IDs `original`, `studio`, `morning`, and `light`. Each has three scene entries (`collect`, `return`, `insight`). Every scene specifies `ready`, `video`, `poster`, and optional numeric `start`/`end` segment bounds (null means full clip).
+- EN/ES routes remain `/review/tasso-options` and preserve their location when language switches.
+- `TassoFilmOptions.tsx` owns semantic layout, step shortcuts, reduced-motion rendering and a single page-scoped native scroll subscription.
+- `tasso-film-options.css` scopes the sticky/responsive comparison layout; `tasso-scroll-copy.ts` holds bilingual copy.
+- `lib/tasso-scroll-atlas.ts` owns the two-entry bitmap cache and pure scroll/atlas mappings.
+- `lib/site-content/tasso-scroll-options.json` is manifest version 2. Root owns the real frame extraction, screenshot capture and readiness values.
 
-New-direction paths default to `/art/tasso-films/{studio|morning|light}-{collect|return|insight}.mp4` with matching JPG posters. The root agent can change the actual local paths. Original entries point to the same retained original film and can use supplied segment bounds. Original playback therefore remains actual existing footage, not a reconstructed substitute.
+Each of four options has two scene records (`collect`, `return`) with `ready`, `poster`, `frameWidth`, `frameHeight`, `fps`, `frameCount`, `columns`, `rows`, `framesPerSheet` and `atlases`. The agreed format is 1200×675 frames, sampled at 12fps, 60 frames per scene, arranged in five 3×4 WebP sheets. The shared `dashboard` record supplies `ready`, `src`, `width` and `height`. The old video manifest is not read by the page.
 
-Readiness defaults to false. A pending scene shows a plain preparation state and cannot be played. A failed load shows an error and retry while retaining readable process copy. A direction receives a ready label only when all three scene entries are marked ready and have video/poster paths. Files still require independent validation before that flag is enabled; the UI flag alone is not proof of film quality.
+## Choreography
 
-## Playback and access
+Each option occupies 380svh, within the requested 350–400svh range, with one sticky viewport. Native progress is `(scrollY - sectionTop) / (sectionHeight - stickyHeight)`, clamped to 0–1. No wheel interception, scrolling lock, autoplay timer, media clock or video/audio element is used.
 
-There is no page-load autoplay, including reduced motion. Native video controls support keyboard, seeking, volume and fullscreen. A separate explicit play control starts the three-scene sequence. Scene selectors pause playback and select the requested shot. Original segment bounds are honored; when the same source film is reused between segments it can continue without fetching a second copy. Starting one option pauses the other comparison players.
+- 0–.33: collection frames advance, then hold.
+- .33–.39: whole-image dissolve to return; collection's last frame remains occupied.
+- .39–.64: return frames advance, then hold.
+- .64–.72: dissolve to the actual dashboard image.
+- .72–.82: dashboard scale settles from 98% to 100%; .82–1 holds it sharp and still.
 
-The videos are not captioned with generated text. Sharp EN/ES website captions sit outside the media and update with the selected scene. The two-working-day statement includes laboratory receipt in the same sentence. Each option also has an expandable complete three-step process transcript and the actual manufacturer's full-instructions link. Sound is optional and no essential explanation relies on it.
+Only one sharp caption is shown at a time, switching at .36/.68 rather than superimposing paragraphs during the image dissolve. Step buttons jump to .20/.52/.86 with native instant scroll. Reverse scrolling uses exactly the same mapping. Stopped scroll produces no frame advancement.
 
-## Visual approach
+## Loading and memory
 
-One large 16:9 film stage per direction preserves the full generated frame with `object-fit: contain`. Three scene selectors and an active caption sit beneath each player. The page uses EVA paper, ink, restrained type and spacing; it does not recolor one film to pretend there are three directions. Root-produced, separately generated photographic motion is the comparison's content. No placeholder illustration claims to be completed film.
+Only the closest visible sticky option requests atlas bitmaps. Near options use native lazy posters. One page-scoped LRU retains at most two decoded sheets globally, closes evicted ImageBitmaps, serializes fetch/decode work and aborts stale requests. At phone widths the atlas is resized during decode to 600px per frame: retained sheets are approximately 9.72MB each, rather than full-resolution 38.88MB each. The cache and requests are disposed on unmount or reduced-motion change. A viewport-mode change also releases the old cache.
 
-The unchanged original homepage remains the baseline until an explicit direction is chosen and approved. Build, browser playback, real-media/provenance checks and the judge's production decision remain root/judge responsibilities.
+If a requested sheet has not decoded, the last complete canvas frame remains visible; a native poster occupies a canvas that has not yet drawn. The page does not clear to a blank frame while loading. A missing/unready asset remains an honest preparation state. The dashboard screenshot is independent of the sprite cache.
+
+## Semantics and reduced motion
+
+All captions are HTML outside the canvas. Each option has three native keyboard-operable step buttons and a semantic ordered-list transcript. The complete process and manufacturer's actual full-instructions link are available below the comparison. The two-working-day statement is always paired with laboratory receipt.
+
+Reduced motion mounts twelve plain static states: collection and return stills plus the real dashboard for each option. It does not create atlas requests, sticky scroll tunnels, zooms, dissolves or player controls. Essential content does not depend on successful drawing.
+
+## Judge hooks
+
+- Option: `[data-film-option]`; sticky viewport: `[data-tasso-scroll-stage]`.
+- Canvas: `[data-tasso-atlas-canvas]`; `data-rendered-frame`, `data-rendered-scene` and `data-atlas-src` are assigned only after the actual draw.
+- Caption: `[data-tasso-scroll-caption]`; shortcuts: `[data-tasso-jump]` with `aria-pressed`/`aria-current`.
+- Screenshot: `img[data-tasso-dashboard]`; static states: `[data-tasso-static-step]` inside `[data-tasso-reduced]`.
+- Root diagnostics expose retained bitmap count/bytes without product-visible debug UI.
+
+Root owns builds, browser checks, GitHub and publication. The judge should validate real canvas pixels for forward/reverse/stopped behavior, the actual screenshot source and displayed content, compact layouts and the complete reduced-motion alternative. Diagnostic attributes alone do not prove visual acceptance.

@@ -25,7 +25,9 @@
     "site:source": "node scripts/sync-site-source.mjs",
     "media:fetch": "python scripts/fetch-film-media.py",
     "check:film-options": "python scripts/check-film-options.py",
-    "review:serve": "python scripts/serve-review.py"
+    "review:serve": "python scripts/serve-review.py",
+    "capture:dashboard": "python scripts/capture-dashboard.py",
+    "media:scroll": "python scripts/prepare-scroll-assets.py"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
