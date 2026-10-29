@@ -20,7 +20,9 @@
     "check:preview": "node scripts/check-preview.mjs",
     "check:history": "python3 scripts/check-history.py",
     "check:english": "node scripts/check-english.mjs",
-    "check:parity": "node scripts/check-parity.mjs"
+    "check:parity": "node scripts/check-parity.mjs",
+    "check:tasso": "python scripts/check-tasso-process.py",
+    "site:source": "node scripts/sync-site-source.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",
