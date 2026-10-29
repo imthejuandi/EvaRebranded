@@ -1,4 +1,5 @@
 'use client';
+import {FounderStory} from '@/components/site/RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { ArrowDown, ArrowUpRight, Plus } from 'lucide-react';
 import { ActionLink } from '@/components/site/Primitives';
@@ -69,6 +70,7 @@ export default function AboutPage() {
       <div className="about-essay-margin"><p>{__site.t(copy.purpose.label)}</p><figure className="about-everyday-notes" data-testid="everyday-notes"><div data-editorial-photo><img src="/art/editorial/about-everyday-notes-1200.webp" srcSet="/art/editorial/about-everyday-notes-640.webp 640w, /art/editorial/about-everyday-notes-1200.webp 896w" sizes="(max-width: 760px) 90vw, 34vw" width="896" height="1120" loading="lazy" decoding="async" alt={__site.t("Un cuaderno abierto, una taza y una mano sobre una mesa de casa, con luz c\u00E1lida y textura de pel\u00EDcula.")}/></div><figcaption>{__site.t("Hacerle un sitio a lo que importa.")}</figcaption></figure><div className="about-founder-credit"><span>{__site.t(copy.purpose.founder)}</span><span>{__site.t(copy.purpose.role)}</span></div></div>
       <div className="about-essay"><h2 data-editorial-reveal id="about-purpose-heading">{__site.t(copy.purpose.title)}</h2><p className="about-essay-lead" data-editorial-reveal>{__site.t(copy.purpose.lead)}</p><p data-editorial-reveal>{__site.t(copy.purpose.body)}</p><p data-editorial-reveal>{__site.t(copy.purpose.close)}</p></div>
     </EditorialReveal>
+    <FounderStory />
     <EditorialReveal as="section" className="about-principles" aria-labelledby="about-principles-heading"><div className="eva-inner">
       <div className="about-section-heading"><h2 data-editorial-reveal id="about-principles-heading">{__site.t(copy.principles.title)}</h2><p data-editorial-reveal>{__site.t(copy.principles.intro)}</p></div>
       <div className="about-principle-list">{__site.t(copy.principles.items.map(item => <EditorialReveal as="article" className="about-principle" key={item.id}>

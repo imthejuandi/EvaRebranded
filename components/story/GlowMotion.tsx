@@ -18,6 +18,7 @@ type GlowMotionProps={
  video?:string;
  mobileVideo?:string;
  mobileInkEdges?:boolean;
+ featherSides?:boolean;
  alt?:string;
  enabled?:boolean;
  active?:boolean;
@@ -33,7 +34,7 @@ type GlowMotionProps={
 };
 
 /** Source-led optical artwork. Scroll controls its parent; only the living texture follows time. */
-export function GlowMotion({poster,posterSrcSet,priority=false,video,mobileVideo,mobileInkEdges=false,alt='',enabled=true,active=true,inComposition=false,className,style,mask=glowMotionStyle.mask,onPlaybackBlocked,onMediaError,loop=true,replayKey=0,onEnded}:GlowMotionProps){
+export function GlowMotion({poster,posterSrcSet,priority=false,video,mobileVideo,mobileInkEdges=false,featherSides=false,alt='',enabled=true,active=true,inComposition=false,className,style,mask=glowMotionStyle.mask,onPlaybackBlocked,onMediaError,loop=true,replayKey=0,onEnded}:GlowMotionProps){
  const environment=useRemotionEnvironment();
  const timedComposition=environment.isStudio||environment.isRendering;
  const native=!timedComposition&&!environment.isClientSideRendering;
@@ -53,10 +54,13 @@ export function GlowMotion({poster,posterSrcSet,priority=false,video,mobileVideo
  useEffect(()=>{const el=media.current;if(!el)return;let cancelled=false;if(shouldPlay){void el.play().catch((error:unknown)=>{if(cancelled||(error instanceof DOMException&&error.name==='AbortError'))return;setPlaying(false);blockedCallback.current?.()})}else el.pause();return()=>{cancelled=true;el.pause()}},[shouldPlay,selectedVideo,replayKey]);
  const fill:CSSProperties={position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'};
  const inkEdges=mobileInkEdges&&mobile&&native&&mask===RUNNER_MASK;
- return <div ref={container} className={className} data-glow-motion data-glow-state={failed?'fallback':playing?'playing':'paused'} data-edge-composite={inkEdges?'opaque-overlay':'alpha-mask'} style={{position:'relative',width:'100%',height:'100%',overflow:'hidden',maskImage:inkEdges?'none':mask,...style}}>
+ // Feather the visible crop, rather than only the uncropped source image.
+ // Keep the 14% side ramps aligned with RunnerArrival's canvas mask.
+ const visibleMask=featherSides?`${mask},linear-gradient(to right,transparent,black 14%,black 86%,transparent)`:mask;
+ return <div ref={container} className={className} data-glow-motion data-glow-state={failed?'fallback':playing?'playing':'paused'} data-edge-composite={inkEdges?'opaque-overlay':'alpha-mask'} style={{position:'relative',width:'100%',height:'100%',overflow:'hidden',maskImage:inkEdges?'none':visibleMask,maskComposite:featherSides?'intersect':undefined,...style}}>
   {timedComposition&&inComposition?<Img src={poster.startsWith('/')?staticFile(poster):poster} alt={alt} style={fill}/>:<img src={poster} srcSet={posterSrcSet} sizes={priority?"(max-width: 700px) 90vw, 31vw":"(max-width: 700px) 100vw, 50vw"} loading={priority?"eager":"lazy"} decoding="async" fetchPriority={priority?"high":"auto"} alt={alt} style={{...fill,visibility:inkEdges&&ready&&!reduced&&!failed?'hidden':'visible'}}/>}
   {video&&timedComposition&&enabled&&active&&<Html5Video src={video.startsWith('/')?staticFile(video):video} muted loop={loop} style={fill}/>}
-  {video&&native&&<video key={replayKey} ref={media} src={sourceReady?selectedVideo:undefined} muted loop={loop} playsInline preload={sourceReady?"auto":"none"} aria-hidden="true" disablePictureInPicture onPlaying={()=>{setReady(true);setPlaying(true)}} onPause={()=>setPlaying(false)} onEnded={()=>{setPlaying(false);onEnded?.()}} onError={()=>{setFailed(true);setReady(false);onMediaError?.()}} style={{...fill,opacity:ready&&!reduced?1:0}}/>}
+  {video&&native&&<video key={replayKey} ref={media} src={sourceReady?selectedVideo:undefined} muted loop={loop} playsInline preload={sourceReady?"auto":"none"} aria-hidden="true" disablePictureInPicture onPlaying={()=>{setReady(true);setPlaying(true)}} onPause={()=>setPlaying(false)} onEnded={()=>{setPlaying(false);onEnded?.()}} onError={()=>{setFailed(true);setReady(false);onMediaError?.()}} style={{...fill,opacity:ready&&!reduced&&!failed?1:0,transition:featherSides&&!reduced?'opacity 450ms ease-out':undefined}}/>}
   {inkEdges&&<div data-runner-ink-overlay aria-hidden="true" style={{position:'absolute',inset:0,background:RUNNER_INK_OVERLAY,pointerEvents:'none'}}/>}
  </div>
 }

@@ -1,4 +1,5 @@
 'use client';
+import {OfferUnderstanding} from '@/components/site/RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useState } from 'react';
 import { EditorialReveal } from '@/components/engagement/EditorialReveal';
@@ -145,6 +146,7 @@ export default function PricingPage() {
       <ServiceContents plan={plan}/>
     </EditorialReveal>
 
+    <OfferUnderstanding />
     <RhythmTheatre plan={plan}/><section className="pricing-rhythm-section eva-inner" aria-labelledby="pricing-rhythm-heading"><div className="pricing-rhythm-copy"><p className="eva-kicker">{__site.t("A TU RITMO")}</p><h2 id="pricing-rhythm-heading">{__site.t(c.rhythm.title)}</h2><p>{__site.t(c.rhythm.description)}</p></div><ServiceCalendar key={plan} plan={plan} quarter={quarter} onQuarterChange={setQuarter} markers={pricingMarkers}/></section>
 
     <EditorialReveal as="section" className="pricing-section eva-inner" id="comparar-planes" aria-labelledby="pricing-comparison-heading"><div className="pricing-section-head"><p className="eva-kicker">{__site.t(c.comparison.eyebrow)}</p><div><h2 data-editorial-reveal id="pricing-comparison-heading">{__site.t(c.comparison.title)}</h2><p>{__site.t(c.comparison.description)}</p></div></div><p className="pricing-table-hint">{__site.t("Desliza la tabla para comparar las tres opciones.")}</p><div className="pricing-table-scroll" tabIndex={0} role="region" aria-label={__site.t(c.ui.comparison)}><table className="pricing-comparison"><caption className="pricing-sr-only">{__site.t(c.comparison.title)}</caption><thead><tr><th scope="col"><span className="pricing-sr-only">{__site.t("Incluye")}</span></th>{__site.t(comparisonHeadings.map((text, i) => <th scope="col" key={text} className={c.plans[i].id === plan ? 'pricing-featured-col' : ''}>{__site.t(text)}<span>{__site.t(comparisonPrices[i])}</span></th>))}</tr></thead>{__site.t(c.comparison.groups.map(group => <tbody key={group.title}><tr className="pricing-table-group"><th colSpan={4} scope="rowgroup">{__site.t(group.title)}</th></tr>{__site.t(group.rows.map(row => <tr key={row.label}><th scope="row">{__site.t(row.label)}</th>{__site.t(row.cells.map((cell, i) => <td key={i} className={c.plans[i].id === plan ? 'pricing-featured-col' : ''}>{__site.t(typeof cell === 'boolean' ? <><span aria-hidden="true" className={cell ? 'pricing-check' : 'pricing-dash'}>{__site.t(cell ? '✓' : '—')}</span><span className="pricing-sr-only">{__site.t(cell ? c.comparison.included : c.comparison.unavailable)}</span></> : cell)}</td>))}</tr>))}</tbody>))}</table></div><p className="pricing-note">{__site.t(c.comparison.note)}</p></EditorialReveal>

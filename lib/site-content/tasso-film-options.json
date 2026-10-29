@@ -1,0 +1,121 @@
+{
+  "version": 2,
+  "options": [
+    {
+      "id": "original",
+      "scenes": [
+        {
+          "id": "collect",
+          "ready": true,
+          "video": "/art/tasso-films/original.mp4",
+          "poster": "/art/tasso-films/original.jpg",
+          "start": 0,
+          "end": 7.08
+        },
+        {
+          "id": "return",
+          "ready": true,
+          "video": "/art/tasso-films/original.mp4",
+          "poster": "/art/tasso-films/original.jpg",
+          "start": 7.08,
+          "end": 14.16
+        },
+        {
+          "id": "insight",
+          "ready": true,
+          "video": "/art/tasso-films/original.mp4",
+          "poster": "/art/tasso-films/original.jpg",
+          "start": 14.16,
+          "end": 20.2
+        }
+      ]
+    },
+    {
+      "id": "studio",
+      "scenes": [
+        {
+          "id": "collect",
+          "ready": true,
+          "video": "/art/tasso-films/studio-collect.mp4",
+          "poster": "/art/tasso-films/studio-collect.jpg",
+          "start": null,
+          "end": null
+        },
+        {
+          "id": "return",
+          "ready": true,
+          "video": "/art/tasso-films/studio-return.mp4",
+          "poster": "/art/tasso-films/studio-return.jpg",
+          "start": null,
+          "end": null
+        },
+        {
+          "id": "insight",
+          "ready": true,
+          "video": "/art/tasso-films/studio-insight.mp4",
+          "poster": "/art/tasso-films/studio-insight.jpg",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "morning",
+      "scenes": [
+        {
+          "id": "collect",
+          "ready": true,
+          "video": "/art/tasso-films/morning-collect.mp4",
+          "poster": "/art/tasso-films/morning-collect.jpg",
+          "start": null,
+          "end": null
+        },
+        {
+          "id": "return",
+          "ready": true,
+          "video": "/art/tasso-films/morning-return.mp4",
+          "poster": "/art/tasso-films/morning-return.jpg",
+          "start": null,
+          "end": null
+        },
+        {
+          "id": "insight",
+          "ready": true,
+          "video": "/art/tasso-films/morning-insight.mp4",
+          "poster": "/art/tasso-films/morning-insight.jpg",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "scenes": [
+        {
+          "id": "collect",
+          "ready": true,
+          "video": "/art/tasso-films/light-collect.mp4",
+          "poster": "/art/tasso-films/light-collect.jpg",
+          "start": null,
+          "end": null
+        },
+        {
+          "id": "return",
+          "ready": true,
+          "video": "/art/tasso-films/light-return.mp4",
+          "poster": "/art/tasso-films/light-return.jpg",
+          "start": null,
+          "end": null
+        },
+        {
+          "id": "insight",
+          "ready": true,
+          "video": "/art/tasso-films/light-insight.mp4",
+          "poster": "/art/tasso-films/light-insight.jpg",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  ]
+}

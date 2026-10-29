@@ -20,10 +20,12 @@ import '@/components/pages/science/science.css';
 import '@/app/access-preview.css';
 import '@/components/pages/pricing/pricing.css';
 import '@/app/site-language.css';
+import '@/app/content-parity.css';
+import {ReviewDock} from './ReviewHub';
 import type {ReactNode} from 'react';
 import {SiteLanguageProvider} from './SiteLanguage';
 import type {SiteLocale} from '@/lib/site-language';
 
 export function SiteDocument({locale,children}:{locale:SiteLocale;children:ReactNode}) {
- return <html lang={locale}><head><link rel="preload" href="/fonts/hanken-grotesk-regular.woff" as="font" type="font/woff" crossOrigin="anonymous"/></head><body><SiteLanguageProvider locale={locale}>{children}</SiteLanguageProvider></body></html>;
+ return <html lang={locale}><head><meta name="robots" content="noindex, nofollow"/><link rel="preload" href="/fonts/hanken-grotesk-regular.woff" as="font" type="font/woff" crossOrigin="anonymous"/></head><body><SiteLanguageProvider locale={locale}>{children}<ReviewDock/></SiteLanguageProvider></body></html>;
 }

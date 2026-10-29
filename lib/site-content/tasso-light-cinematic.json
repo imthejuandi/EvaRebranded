@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "carrier": {
+    "ready": true,
+    "src": "/art/tasso-light/paper-envelope.png",
+    "width": 1254,
+    "height": 1254,
+    "opaqueInset": {
+      "left": 0.08,
+      "top": 0.08,
+      "right": 0.08,
+      "bottom": 0.08
+    },
+    "backingColor": "#c3ad91"
+  },
+  "scenes": [
+    {
+      "id": "collect",
+      "ready": true,
+      "poster": "/art/tasso-scroll/light-collect.jpg",
+      "frameWidth": 1200,
+      "frameHeight": 675,
+      "fps": 12,
+      "frameCount": 60,
+      "columns": 3,
+      "rows": 4,
+      "framesPerSheet": 12,
+      "atlases": [
+        "/art/tasso-scroll/light-collect-01.webp",
+        "/art/tasso-scroll/light-collect-02.webp",
+        "/art/tasso-scroll/light-collect-03.webp",
+        "/art/tasso-scroll/light-collect-04.webp",
+        "/art/tasso-scroll/light-collect-05.webp"
+      ]
+    },
+    {
+      "id": "return",
+      "ready": true,
+      "poster": "/art/tasso-scroll/light-return.jpg",
+      "frameWidth": 1200,
+      "frameHeight": 675,
+      "fps": 12,
+      "frameCount": 60,
+      "columns": 3,
+      "rows": 4,
+      "framesPerSheet": 12,
+      "atlases": [
+        "/art/tasso-scroll/light-return-01.webp",
+        "/art/tasso-scroll/light-return-02.webp",
+        "/art/tasso-scroll/light-return-03.webp",
+        "/art/tasso-scroll/light-return-04.webp",
+        "/art/tasso-scroll/light-return-05.webp"
+      ]
+    },
+    {
+      "id": "insight",
+      "ready": true,
+      "poster": "/art/tasso-light/insight.jpg",
+      "frameWidth": 1200,
+      "frameHeight": 1000,
+      "fps": 24,
+      "frameCount": 192,
+      "columns": 4,
+      "rows": 2,
+      "framesPerSheet": 8,
+      "atlases": [
+        "/art/tasso-light/insight-01.webp",
+        "/art/tasso-light/insight-02.webp",
+        "/art/tasso-light/insight-03.webp",
+        "/art/tasso-light/insight-04.webp",
+        "/art/tasso-light/insight-05.webp",
+        "/art/tasso-light/insight-06.webp",
+        "/art/tasso-light/insight-07.webp",
+        "/art/tasso-light/insight-08.webp",
+        "/art/tasso-light/insight-09.webp",
+        "/art/tasso-light/insight-10.webp",
+        "/art/tasso-light/insight-11.webp",
+        "/art/tasso-light/insight-12.webp",
+        "/art/tasso-light/insight-13.webp",
+        "/art/tasso-light/insight-14.webp",
+        "/art/tasso-light/insight-15.webp",
+        "/art/tasso-light/insight-16.webp",
+        "/art/tasso-light/insight-17.webp",
+        "/art/tasso-light/insight-18.webp",
+        "/art/tasso-light/insight-19.webp",
+        "/art/tasso-light/insight-20.webp",
+        "/art/tasso-light/insight-21.webp",
+        "/art/tasso-light/insight-22.webp",
+        "/art/tasso-light/insight-23.webp",
+        "/art/tasso-light/insight-24.webp"
+      ],
+      "states": [
+        {
+          "id": "signature",
+          "frame": 12
+        },
+        {
+          "id": "apob",
+          "frame": 56
+        },
+        {
+          "id": "hscrp",
+          "frame": 124
+        },
+        {
+          "id": "closed",
+          "frame": 184
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "es": {
+    "legal/privacy": {
+      "title": "Politica de Privacidad",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "Responsable del Tratamiento"
+        },
+        {
+          "id": "section-1",
+          "title": "Que Datos Recopilamos"
+        },
+        {
+          "id": "section-2",
+          "title": "Base Legal del Tratamiento"
+        },
+        {
+          "id": "section-3",
+          "title": "Consentimiento para Datos de Salud"
+        },
+        {
+          "id": "section-4",
+          "title": "Como Almacenamos Tus Datos"
+        },
+        {
+          "id": "section-5",
+          "title": "Encargados del Tratamiento"
+        },
+        {
+          "id": "section-6",
+          "title": "Retencion de Datos"
+        },
+        {
+          "id": "section-7",
+          "title": "Tus Derechos"
+        },
+        {
+          "id": "section-8",
+          "title": "Contacto"
+        }
+      ],
+      "html": "<div><section><div><div><span><span><span></span><span></span></span>Legal</span><p>Ultima actualizacion: Marzo 2026</p></div><div><div><h2 id=\"section-0\">Responsable del Tratamiento</h2><div><p>EVA Health S.L., con sede en Madrid, España, es el responsable del tratamiento de tus datos personales. Puedes contactarnos en hello@evahealth.es.</p></div></div><div><h2 id=\"section-1\">Que Datos Recopilamos</h2><div><p><strong>Informacion de cuenta:</strong> Nombre, direccion de correo electronico y credenciales de autenticacion al crear una cuenta.</p><p><strong>Datos de biomarcadores de salud:</strong> Resultados de analisis de sangre, valores de biomarcadores y metricas de salud calculadas. Estos se clasifican como datos de categoria especial segun el Articulo 9 del RGPD y solo se procesan con tu consentimiento explicito.</p><p><strong>Datos de wearables:</strong> Si conectas un dispositivo wearable, recibimos variabilidad de frecuencia cardiaca, datos de sueño, frecuencia cardiaca en reposo, puntuaciones de recuperacion y metricas de actividad.</p><p><strong>Analitica de uso:</strong> Utilizamos Plausible Analytics, que respeta la privacidad y no usa cookies ni rastrea usuarios individuales. Solo recopilamos vistas de pagina agregadas y fuentes de trafico.</p></div></div><div><h2 id=\"section-2\">Base Legal del Tratamiento</h2><div><p><strong>Consentimiento explicito (RGPD Articulo 9(2)(a)):</strong> Requerido antes de procesar cualquier dato de salud o biomarcadores. Lo proporcionas durante el registro y puedes retirarlo en cualquier momento.</p><p><strong>Ejecucion de contrato (RGPD Articulo 6(1)(b)):</strong> Tratamiento necesario para proporcionar tu servicio de suscripcion, entregar resultados y gestionar tu cuenta.</p><p><strong>Interes legitimo (RGPD Articulo 6(1)(f)):</strong> Analitica agregada y anonimizada para mejorar nuestro servicio. No se involucran datos personales.</p></div></div><div><h2 id=\"section-3\">Consentimiento para Datos de Salud</h2><div><p>Tus datos de salud son datos de categoria especial bajo el RGPD. Nunca procesaremos tus resultados de biomarcadores, datos de wearables o cualquier informacion relacionada con la salud sin tu consentimiento explicito e informado. Este consentimiento se recoge por separado durante la creacion de la cuenta y puede retirarse en cualquier momento a traves de la configuracion de tu cuenta o contactandonos.</p></div></div><div><h2 id=\"section-4\">Como Almacenamos Tus Datos</h2><div><p>Tus datos se almacenan en infraestructura de Supabase dentro de la Union Europea, cifrados en reposo y en transito. Algunos tratamientos —en particular el analisis con IA por Google (Gemini)— pueden implicar la transferencia de tus datos fuera del EEE, realizada con las garantias adecuadas de transferencia de datos.</p></div></div><div><h2 id=\"section-5\">Encargados del Tratamiento</h2><div><p>Trabajamos con los siguientes encargados, todos vinculados por acuerdos de tratamiento de datos:</p><ul><li><strong>Supabase</strong>: Base de datos y autenticacion (region UE)</li><li><strong>Stripe</strong>: Procesamiento de pagos (cumple PCI DSS, no recibe datos de salud)</li><li><strong>Google (Gemini)</strong>: Analisis de salud con IA (procesa datos de biomarcadores para generar informacion; puede implicar transferencia fuera del EEE con las garantias adecuadas)</li><li><strong>Resend</strong>: Emails transaccionales (solo recibe direcciones de email)</li><li><strong>Plausible Analytics</strong>: Analitica web respetuosa con la privacidad (sin datos personales, sin cookies)</li></ul></div></div><div><h2 id=\"section-6\">Retencion de Datos</h2><div><p><strong>Cuentas activas:</strong> Tus datos se conservan mientras tu cuenta este activa.</p><p><strong>Tras eliminacion:</strong> Los datos de cuenta se eliminan permanentemente dentro de los 30 dias siguientes a la eliminacion de la cuenta. Los datos de salud se eliminan inmediatamente a peticion.</p><p><strong>Obligaciones legales:</strong> Podemos conservar ciertos datos segun lo requiera la legislacion fiscal y mercantil española.</p></div></div><div><h2 id=\"section-7\">Tus Derechos</h2><div><p>Bajo el RGPD, tienes derecho a:</p><ul><li><strong>Acceso</strong>: Solicitar una copia de todos los datos personales que tenemos sobre ti</li><li><strong>Rectificacion</strong>: Corregir cualquier dato personal inexacto</li><li><strong>Supresion</strong>: Solicitar la eliminacion de tus datos personales</li><li><strong>Portabilidad</strong>: Recibir tus datos en un formato estructurado y legible por maquina</li><li><strong>Retirar consentimiento</strong>: Retirar tu consentimiento para el procesamiento de datos de salud en cualquier momento</li><li><strong>Oposicion</strong>: Oponerte al tratamiento basado en interes legitimo</li><li><strong>Reclamacion</strong>: Presentar una reclamacion ante la Agencia Española de Proteccion de Datos (AEPD) en www.aepd.es</li></ul><p>Para ejercer cualquiera de estos derechos, contactanos en hello@evahealth.es.</p></div></div><div><h2 id=\"section-8\">Contacto</h2><div><p>Para cualquier consulta sobre privacidad o para ejercer tus derechos:<br><strong>EVA Health S.L.</strong><br>Madrid, España<br>hello@evahealth.es</p></div></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/es/legal/privacy",
+      "originalChars": 4066,
+      "importedChars": 4066
+    },
+    "legal/terms": {
+      "title": "Terminos del Servicio",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "Descripcion del Servicio"
+        },
+        {
+          "id": "section-1",
+          "title": "Elegibilidad"
+        },
+        {
+          "id": "section-2",
+          "title": "Tu Cuenta"
+        },
+        {
+          "id": "section-3",
+          "title": "Suscripcion"
+        },
+        {
+          "id": "section-4",
+          "title": "Tu Contenido"
+        },
+        {
+          "id": "section-5",
+          "title": "Uso Prohibido"
+        },
+        {
+          "id": "section-6",
+          "title": "Limitacion de Responsabilidad"
+        },
+        {
+          "id": "section-7",
+          "title": "Ley Aplicable"
+        },
+        {
+          "id": "section-8",
+          "title": "Cambios en Estos Terminos"
+        },
+        {
+          "id": "section-9",
+          "title": "Contacto"
+        }
+      ],
+      "html": "<div><section><div><div><span><span><span></span><span></span></span>Legal</span><p>Ultima actualizacion: Marzo 2026</p></div><div><div><h2 id=\"section-0\">Descripcion del Servicio</h2><div><p>EVA Health es una plataforma educativa de salud que te ayuda a entender tus datos de biomarcadores a traves de interpretacion personalizada e informacion accionable. EVA <strong>no</strong> es un proveedor medico. Nuestro servicio no sustituye el consejo medico profesional, el diagnostico ni el tratamiento. Consulta siempre a un profesional sanitario cualificado para decisiones medicas.</p></div></div><div><h2 id=\"section-1\">Elegibilidad</h2><div><p>Debes tener al menos 18 años para crear una cuenta y usar EVA Health. Al crear una cuenta, confirmas que cumples este requisito de edad.</p></div></div><div><h2 id=\"section-2\">Tu Cuenta</h2><div><p>Eres responsable de mantener la seguridad de las credenciales de tu cuenta. No compartas tu inicio de sesion con otros. Eres responsable de toda la actividad que ocurra bajo tu cuenta. Si sospechas de acceso no autorizado, contactanos inmediatamente en hello@evahealth.es.</p></div></div><div><h2 id=\"section-3\">Suscripcion</h2><div><p>EVA Health opera con un modelo de suscripcion trimestral a <strong>€99 por trimestre</strong>. Tu suscripcion se renueva automaticamente al final de cada trimestre a menos que la canceles. Puedes cancelar en cualquier momento a traves de la configuracion de tu cuenta; la cancelacion surte efecto al final del periodo de facturacion actual. No se proporcionan reembolsos parciales por el trimestre en curso.</p></div></div><div><h2 id=\"section-4\">Tu Contenido</h2><div><p>Los resultados de laboratorio, datos de salud y cualquier otra informacion que subas a EVA siguen siendo de tu propiedad. Al subir contenido, nos otorgas una licencia limitada para procesar estos datos unicamente para proporcionarte nuestro servicio. No vendemos, compartimos ni usamos tus datos de salud para ningun proposito mas alla de entregar tus informacion de salud personalizada.</p></div></div><div><h2 id=\"section-5\">Uso Prohibido</h2><div><p>Aceptas no:</p><ul><li>Compartir las credenciales de tu cuenta con otros ni permitir que multiples personas usen una sola cuenta</li><li>Usar herramientas automatizadas para extraer datos de la plataforma</li><li>Intentar aplicar ingenieria inversa, descompilar o desensamblar cualquier parte del servicio</li><li>Usar el servicio para cualquier proposito ilegal</li><li>Falsificar tu identidad o proporcionar informacion falsa</li></ul></div></div><div><h2 id=\"section-6\">Limitacion de Responsabilidad</h2><div><p>EVA Health proporciona educacion de salud e interpretacion de biomarcadores, no diagnostico ni tratamiento medico. No somos responsables de las decisiones de salud que tomes basandote en la informacion proporcionada a traves de nuestra plataforma. Nuestro servicio es de naturaleza informativa y educativa. Los resultados criticos de biomarcadores incluyen orientacion clara para buscar atencion medica inmediata, pero en ultima instancia, tus decisiones de salud son tuyas.</p><p>En la medida maxima permitida por la legislacion española, la responsabilidad total de EVA Health se limita al importe que hayas pagado por el servicio en los 12 meses anteriores a cualquier reclamacion.</p></div></div><div><h2 id=\"section-7\">Ley Aplicable</h2><div><p>Estos terminos se rigen por las leyes de España. Cualquier disputa derivada de estos terminos o tu uso del servicio se sometera a los tribunales de Madrid, España, sin perjuicio de las disposiciones imperativas de proteccion al consumidor que puedan ser aplicables en tu pais de residencia.</p></div></div><div><h2 id=\"section-8\">Cambios en Estos Terminos</h2><div><p>Podemos actualizar estos terminos periodicamente. Te notificaremos de cualquier cambio material con al menos 30 dias de antelacion a traves del correo electronico asociado a tu cuenta. El uso continuado del servicio despues de la fecha efectiva constituye aceptacion de los terminos actualizados.</p></div></div><div><h2 id=\"section-9\">Contacto</h2><div><p>Para consultas sobre estos terminos:<br><strong>EVA Health S.L.</strong><br>Madrid, España<br>hello@evahealth.es</p></div></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/es/legal/terms",
+      "originalChars": 3475,
+      "importedChars": 3475
+    },
+    "legal/cookies": {
+      "title": "Politica de Cookies",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "Nuestro Enfoque sobre Cookies"
+        },
+        {
+          "id": "section-1",
+          "title": "Cookies Esenciales"
+        },
+        {
+          "id": "section-2",
+          "title": "Analitica: Sin Cookies"
+        },
+        {
+          "id": "section-3",
+          "title": "Cookies Publicitarias de Terceros"
+        },
+        {
+          "id": "section-4",
+          "title": "Como Gestionar las Cookies"
+        },
+        {
+          "id": "section-5",
+          "title": "Contacto"
+        }
+      ],
+      "html": "<div><section><div><div><span><span><span></span><span></span></span>Legal</span><p>Ultima actualizacion: Marzo 2026</p></div><div><div><h2 id=\"section-0\">Nuestro Enfoque sobre Cookies</h2><div><p>EVA Health esta comprometida con tu privacidad. Usamos cookies minimas, solo lo que es tecnicamente necesario para que el sitio funcione. No usamos cookies publicitarias ni cookies de seguimiento de terceros de ningun tipo.</p></div></div><div><h2 id=\"section-1\">Cookies Esenciales</h2><div><p>Estas cookies son estrictamente necesarias para que el sitio web funcione y no se pueden desactivar.</p><div><table><thead><tr><th>Cookie</th><th>Proposito</th><th>Duracion</th></tr></thead><tbody><tr><td>sb-*</td><td>Sesion de autenticacion de Supabase</td><td>Sesion</td></tr><tr><td>eva-cookie-consent</td><td>Recuerda tu preferencia de cookies</td><td>1 año</td></tr></tbody></table></div></div></div><div><h2 id=\"section-2\">Analitica: Sin Cookies</h2><div><p>Utilizamos <strong>Plausible Analytics</strong> para entender como los visitantes usan nuestro sitio web. Plausible es una herramienta de analitica respetuosa con la privacidad que es fundamentalmente diferente de la analitica tradicional:</p><ul><li>Plausible <strong>no usa cookies</strong> en absoluto</li><li>No rastrea usuarios individuales entre sesiones</li><li>No recopila datos personales</li><li>Todos los datos son agregados: vemos conteos de vistas de pagina y fuentes de trafico, no comportamiento individual</li><li>Es totalmente compatible con RGPD, CCPA y PECR sin requerir consentimiento de cookies</li></ul><p>Esto significa que puedes navegar por EVA Health sabiendo que no se colocan cookies de analitica en tu dispositivo y no se recopilan datos personales con fines analiticos.</p></div></div><div><h2 id=\"section-3\">Cookies Publicitarias de Terceros</h2><div><p><strong>No usamos ninguna cookie publicitaria de terceros.</strong> EVA Health no muestra anuncios, no participa en redes publicitarias y no permite que ningun tercero coloque cookies publicitarias o de seguimiento en nuestro sitio web.</p></div></div><div><h2 id=\"section-4\">Como Gestionar las Cookies</h2><div><p>Dado que solo usamos cookies esenciales requeridas para la autenticacion, desactivarlas puede impedirte iniciar sesion en tu cuenta. Puedes gestionar las cookies a traves de la configuracion de tu navegador:</p><ul><li><strong>Chrome:</strong> Configuracion → Privacidad y Seguridad → Cookies</li><li><strong>Firefox:</strong> Configuracion → Privacidad y Seguridad → Cookies</li><li><strong>Safari:</strong> Preferencias → Privacidad → Cookies</li><li><strong>Edge:</strong> Configuracion → Privacidad → Cookies</li></ul></div></div><div><h2 id=\"section-5\">Contacto</h2><div><p>¿Preguntas sobre nuestras practicas de cookies? Contactanos en hello@evahealth.es.</p></div></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/es/legal/cookies",
+      "originalChars": 2031,
+      "importedChars": 2031
+    },
+    "metodologia": {
+      "title": "Cómo medimos tu edad biológica.",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "Cómo medimos tu edad biológica."
+        },
+        {
+          "id": "section-1",
+          "title": "Tres números que importan."
+        },
+        {
+          "id": "section-2",
+          "title": "Klemera-Doubal, recalibrado para España."
+        },
+        {
+          "id": "section-3",
+          "title": "Lo que el modelo sabe — y lo que no."
+        },
+        {
+          "id": "section-4",
+          "title": "Lee la metodología completa."
+        }
+      ],
+      "html": "<div><section><div><p>§ 01 · La pregunta</p><h2 id=\"section-0\">Cómo medimos tu <span>edad biológica.</span></h2><p>No es una opinión. No es un score genérico. Es una predicción de mortalidad validada en 18.570 personas — con un margen de incertidumbre que reconocemos abiertamente.</p></div></section><section><div><p>§ 02 · La evidencia</p><h2 id=\"section-1\">Tres números que importan.</h2><p>El algoritmo se valida contra mortalidad real, usando un protocolo de validación cruzada (5-fold) que separa los datos de entrenamiento de los de validación.</p><div><div><p>HAZARD RATIO</p><p>1.29</p><p>por desviación estándar</p><p>Cada desviación estándar de aceleración de edad biológica corresponde a un 29% más de riesgo relativo de mortalidad. Validación fuera de muestra (5-fold CV); intervalo de confianza 95% [1.20, 1.40].</p></div><div><p>C-STATISTIC</p><p>0.77</p><p>discriminación predictiva</p><p>Cuando comparamos dos personas, el modelo identifica correctamente cuál tiene mayor riesgo el 77% del tiempo. La versión Comprehensive (panel extendido) sube a 0.78 con HR/SD 1.49.</p></div><div><p>POBLACIÓN</p><p>18.570</p><p>adultos NHANES</p><p>Entrenado en datos del National Health and Nutrition Examination Survey (1999-2018), con seguimiento de mortalidad hasta 2019. Recalibrado para España con 11 de 14 marcadores del panel base.</p></div></div></div></section><section><div><p>§ 03 · El método</p><h2 id=\"section-2\">Klemera-Doubal, recalibrado para España.</h2><div><div><p>Tu edad biológica se calcula con el método de Klemera-Doubal (2006), un estimador estadístico que combina múltiples biomarcadores en un único número de años. Cada biomarcador contribuye proporcionalmente a lo bien que predice la edad cronológica en la población de referencia.</p><p>Para el mercado español hemos recalibrado los valores promedio de 11 de 14 marcadores del panel base usando cohortes españolas: PESA (Fernández-Friera 2015), ENRICA, Di@bet.es, Hortega, PREDIMED, EPIRCE, La Rioja y SEQC. Incluye recalibración por sexo para Creatinina, Ácido Úrico, GGT, HDL, Hemoglobina y Testosterona Total (corregido en mayo de 2026 tras detectar que estos valores no se estaban aplicando). Un español con valores típicos para su edad obtiene una edad biológica cercana a su edad real — no a la media estadounidense.</p></div><aside><p>Importante</p><p>La edad biológica responde a una pregunta diferente que el score de longevidad. La primera te dice cómo envejeces frente a la población; la segunda, qué tan cerca estás de lo óptimo.</p></aside></div></div></section><section><div><p>§ 04 · La transparencia</p><h2 id=\"section-3\">Lo que el modelo sabe — y lo que no.</h2><div><div><h3>Lo que el modelo capta:</h3><ul><li><span>01</span><span>Trayectoria de envejecimiento poblacional para 14 biomarcadores clave (riñón, hígado, inflamación, glicación, lípidos, nutrición).</span></li><li><span>02</span><span>Diferencias entre sexos en 19 marcadores con dimorfismo conocido.</span></li><li><span>03</span><span>Suplementación de creatina (ajuste automático del valor de creatinina, basado en literatura ISSN 2017).</span></li><li><span>04</span><span>Cistatina C cuando está disponible, en lugar de la creatinina (marcador renal no afectado por masa muscular).</span></li></ul></div><div><h3>Lo que el modelo no captura:</h3><ul><li><span>01</span><span>Variaciones agudas (deshidratación, ejercicio reciente, comida pre-analítica).</span></li><li><span>02</span><span>Composición corporal (masa muscular vs masa grasa) más allá de la suplementación de creatina.</span></li><li><span>03</span><span>Medicamentos que afectan biomarcadores (estatinas, ACE inhibidores, levotiroxina).</span></li><li><span>04</span><span>Genética, epigenética, telómeros — métodos válidos pero complementarios.</span></li></ul></div></div></div></section><section><div><div><h2 id=\"section-4\">Lee la metodología completa.</h2><p>El documento completo cubre los datos de entrenamiento, la calibración española, el método matemático, la validación contra mortalidad y nuestras limitaciones, con referencias a literatura primaria.</p><div><a href=\"/es/metodologia/completa\"><span>Ver metodología completa</span><span></span></a></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/es/metodologia",
+      "originalChars": 3260,
+      "importedChars": 3260
+    },
+    "metodologia/completa": {
+      "title": "KDM v2.2.1 — el documento de referencia.",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "KDM v2.2.1 — el documento de referencia."
+        },
+        {
+          "id": "section-1",
+          "title": "Resumen ejecutivo."
+        },
+        {
+          "id": "section-2",
+          "title": "¿Qué es la edad biológica?"
+        },
+        {
+          "id": "section-3",
+          "title": "Datos de entrenamiento."
+        },
+        {
+          "id": "section-4",
+          "title": "Calibración para población española."
+        },
+        {
+          "id": "section-5",
+          "title": "El método Klemera-Doubal."
+        },
+        {
+          "id": "section-6",
+          "title": "Validación contra mortalidad."
+        },
+        {
+          "id": "section-7",
+          "title": "Dos niveles de medición."
+        },
+        {
+          "id": "section-8",
+          "title": "Limitaciones y transparencia."
+        },
+        {
+          "id": "section-9",
+          "title": "¿Cómo lo seguimos mejorando?"
+        },
+        {
+          "id": "section-10",
+          "title": "Referencias."
+        }
+      ],
+      "html": "<div><section><div><p>Metodología completa</p><h2 id=\"section-0\">KDM v2.2.1 — el documento de referencia.</h2><p>Cómo entrenamos el modelo, qué datos usamos, cómo lo validamos contra mortalidad y dónde sabemos que tiene límites.</p><p>Contenido</p><ol><li><a href=\"#section-1\"><span>01</span>Resumen ejecutivo.</a></li><li><a href=\"#section-2\"><span>02</span>¿Qué es la edad biológica?</a></li><li><a href=\"#section-3\"><span>03</span>Datos de entrenamiento.</a></li><li><a href=\"#section-4\"><span>04</span>Calibración para población española.</a></li><li><a href=\"#section-5\"><span>05</span>El método Klemera-Doubal.</a></li><li><a href=\"#section-6\"><span>06</span>Validación contra mortalidad.</a></li><li><a href=\"#section-7\"><span>07</span>Dos niveles de medición.</a></li><li><a href=\"#section-8\"><span>08</span>Limitaciones y transparencia.</a></li><li><a href=\"#section-9\"><span>09</span>¿Cómo lo seguimos mejorando?</a></li><li><a href=\"#section-10\"><span>10</span>Referencias.</a></li></ol></div></section><section><div><div><p>§ 01 · Resumen</p><h2 id=\"section-1\">Resumen ejecutivo.</h2><div><p>EVA Health calcula tu edad biológica con el algoritmo <strong>KDM v2.2.1</strong>, una implementación del método Klemera-Doubal (2006) entrenada en 18.570 adultos del estudio NHANES (1999-2018) y recalibrada para la población española usando ocho cohortes nacionales (PESA, ENRICA, Di@bet.es, Hortega, PREDIMED, EPIRCE, La Rioja, SEQC).</p><p>El algoritmo predice mortalidad con un hazard ratio de <strong>1,41 por desviación estándar</strong> [IC 95% 1,32-1,50] y un C-statistic de <strong>0,77</strong> — superando el umbral de excelencia (≥ 0,75) en discriminación de riesgo. Los parámetros del modelo se actualizaron en mayo de 2026 (v2.2.1) tras un análisis post-implementación que identificó un sesgo de ponderación en dos marcadores; la nueva versión es <em>más</em> discriminativa que la original.</p></div></div></div></section><section><div><div><p>§ 02 · El concepto</p><h2 id=\"section-2\">¿Qué es la edad biológica?</h2><div><p>Tu edad cronológica cuenta los años desde tu nacimiento. Tu edad biológica describe el estado funcional acumulado de tus órganos y sistemas — un resumen cuantitativo de cuánto te has gastado, no cuánto has vivido.</p><p>Dos personas con la misma fecha de nacimiento pueden tener edades biológicas que difieren en una década o más. La diferencia refleja factores acumulativos: nutrición, ejercicio, sueño, estrés crónico, exposiciones ambientales, predisposición genética y suerte. La edad biológica es <em>modificable</em>; la cronológica no.</p><p>EVA calcula tu edad biológica combinando 14 biomarcadores sanguíneos clave en un único estimador estadístico, validado contra mortalidad real. No es un score de bienestar genérico. Es una predicción.</p></div></div></div></section><section><div><div><p>§ 03 · Los datos</p><h2 id=\"section-3\">Datos de entrenamiento.</h2><div><p>El modelo se entrenó en el <strong>National Health and Nutrition Examination Survey</strong> (NHANES) Continuous, un estudio epidemiológico estadounidense que ha medido biomarcadores y rastreado mortalidad en muestras representativas de la población desde 1999. Usamos los ciclos 1999-2018 (n = 18.570 adultos con panel completo y seguimiento de mortalidad hasta el 31 de diciembre de 2019).</p><p>Para cada biomarcador, ajustamos una regresión lineal contra la edad cronológica. Los parámetros resultantes (pendiente <em>k</em>, intercepto <em>q</em>, desviación estándar residual <em>s</em>) describen cómo cambia ese biomarcador a lo largo del envejecimiento poblacional. 19 de los 81 marcadores se estratifican por sexo cuando la diferencia es clínicamente relevante (creatinina, ferritina, hemoglobina, ácido úrico, GGT, ALT, testosterona, estradiol, entre otros).</p><p>El IGF-1, no medido en los ciclos continuos, se incorporó del legado NHANES III (1988-1994) tras una validación de continuidad inter-ciclos. La Fructosamina, no medida en NHANES, se deriva de la HbA1c mediante la fórmula de Cohen 2010 (Fructosamina µmol/L = 19,97 × HbA1c % − 39,4).</p></div></div></div></section><section><div><div><p>§ 04 · La calibración</p><h2 id=\"section-4\">Calibración para población española.</h2><div><p>Un usuario español con valores típicos para su edad <em>no</em> debería tener una edad biológica desplazada por las diferencias entre la población estadounidense y la española. Para corregir esto, recalibramos los valores promedio (intercepto <em>q</em>) de cada marcador usando datos de cohortes españolas publicadas.</p><p>La fórmula es directa: <code>q_spain = (mean_spain / mean_NHANES) × q_NHANES</code>. La pendiente <em>k</em> y la desviación residual <em>s</em> se preservan, asumiendo que el envejecimiento biológico ocurre a un ritmo similar — solo el nivel basal cambia entre poblaciones.</p><p>Las cohortes españolas que contribuyeron a la recalibración: <strong>PESA</strong> (Fernández-Friera 2015, n=4.066), <strong>ENRICA</strong> (Soriano-Maldonado 2016), <strong>Di@bet.es</strong> (Soriguer 2012), <strong>Hortega</strong>, <strong>PREDIMED</strong>, <strong>EPIRCE</strong>, <strong>La Rioja</strong> y la base de datos <strong>SEQC</strong> (Sociedad Española de Química Clínica). En la versión 2.2.1 hemos recalibrado con éxito 5 de los 14 marcadores del panel base con datos primarios españoles disponibles: Colesterol Total, Triglicéridos, PCR-hs, Vitamina D y TSH. Los nueve restantes usan referencias NHANES — un objetivo activo de versiones futuras.</p><p>Para validar la recalibración, comprobamos que cada valor recalibrado pase un control de plausibilidad (rango [0,25, 4,0] para marcadores log-distribuidos como hs-CRP que muestran diferencias poblacionales reales &gt;2x, [0,5, 2,0] para los demás). Cualquier marcador fuera de estos rangos se rechaza y mantiene su valor NHANES.</p></div></div></div></section><section><div><div><p>§ 05 · El método</p><h2 id=\"section-5\">El método Klemera-Doubal.</h2><div><p>El estimador conjunto de Klemera-Doubal (2006) combina <em>n</em> biomarcadores en una única estimación de edad biológica. Cada biomarcador <em>x<sub>i</sub></em> contribuye según la fórmula:</p><p></p><div>BA_E = Σ (x<sub>i</sub> − q<sub>i</sub>) · (k<sub>i</sub> / s<sub>i</sub>²) / Σ (k<sub>i</sub> / s<sub>i</sub>)²</div><p>Cada marcador se pondera por el inverso de su varianza residual (1/s²), de forma que los marcadores que predicen la edad con menos ruido pesen más. El resultado, <em>BA<sub>E</sub></em>, es la edad biológica \"cruda\" antes del anclaje a la edad cronológica.</p><p>El paso final aplica una contracción bayesiana hacia la edad cronológica (CA) usando la desviación de la población:</p><p></p><div>BA = (BA_E / s_BA² + CA / s_CA²) / (1 / s_BA² + 1 / s_CA²)</div><p>Esta contracción evita que valores extremos en un solo marcador dominen el resultado — la edad biológica final pondera el estimador conjunto contra el conocimiento previo de la edad cronológica.</p><p>Cinco marcadores en nuestro panel base se transforman logarítmicamente antes del ajuste (hs-CRP, GGT, Triglicéridos, Ferritina, Fructosamina) porque sus distribuciones son log-normales. La transformación se aplica internamente; los valores de entrada se introducen en su escala clínica natural (mg/L, µg/L, etc.).</p><p>El estimador requiere un panel mínimo de 8 de los 14 marcadores base, con Albúmina y Creatinina (o Cistatina C) obligatorios. Por debajo de ese umbral, EVA no reporta edad biológica — la incertidumbre es demasiado alta para ser clínicamente útil.</p></div></div></div></section><section><div><div><p>§ 06 · La validación</p><h2 id=\"section-6\">Validación contra mortalidad.</h2><div><p>El test definitivo de una edad biológica: ¿predice la mortalidad mejor que la edad cronológica? Lo respondimos ajustando un modelo de Cox de riesgos proporcionales en el subconjunto NHANES con seguimiento completo, ajustando por edad cronológica y sexo.</p><p>En la versión <strong>v2.2.1</strong> (mayo 2026, con parámetros corregidos para BUN y Fructosamine tras un análisis post-implementación):</p><p></p><ul><li><strong>Hazard Ratio por SD</strong>: 1,41 [IC 95% 1,32-1,50]. Cada año adicional de aceleración de edad biológica predice un 41% más de riesgo relativo de mortalidad.</li><li><strong>C-statistic</strong>: 0,77. Por encima del umbral de excelencia (≥ 0,75) usado en la literatura de bioage.</li><li><strong>Pendiente de calibración</strong>: 1,02. Dentro del rango ideal [0,9, 1,1], indicando que las predicciones son ni infladas ni infradimensionadas.</li></ul><p>Para contexto: la edad cronológica sola en este mismo modelo tiene C-statistic 0,79 (un techo natural — la mortalidad está fuertemente correlacionada con la edad). El KDM añade información incremental que captura aceleración o desaceleración respecto a esa trayectoria.</p></div></div></div></section><section><div><div><p>§ 07 · El doble nivel</p><h2 id=\"section-7\">Dos niveles de medición.</h2><div><p>EVA reporta dos versiones del mismo número:</p><p></p><ul><li><strong>Edad biológica de referencia (BA)</strong>: calculada con los 14 marcadores del panel base — los más validados, más universalmente disponibles. Es el número principal mostrado en el dashboard.</li><li><strong>Edad biológica completa (BA<sub>comprehensive</sub>)</strong>: calculada con el panel completo (hasta 81 marcadores entrenados) cuando el usuario sube un perfil extenso. Tiene menor varianza pero menor robustez clínica.</li></ul><p>Ambas usan el mismo método matemático; difieren en la amplitud de marcadores. La versión de referencia es la que validamos contra mortalidad y la que recomendamos confiar para decisiones longitudinales. La versión completa es un compañero opcional para usuarios con paneles extendidos.</p></div></div></div></section><section><div><div><p>§ 08 · Las limitaciones</p><h2 id=\"section-8\">Limitaciones y transparencia.</h2><div><p>KDM es un modelo poblacional. Esto significa que sus respuestas son menos precisas para individuos atípicos respecto a la población de entrenamiento. Tres limitaciones importantes:</p><p></p><ol><li><strong>NHANES no es una cohorte de \"envejecimiento saludable\"</strong>. Incluye personas con enfermedades crónicas (ERC, diabetes, hipertensión). El modelo aprende la trayectoria poblacional incluyendo la patología — lo que puede penalizar a personas atléticas con marcadores fuera del promedio por razones de estilo de vida (alta ingesta de proteína eleva BUN; suplementación de creatina eleva creatinina sin afectar función renal). En v2.2.1 ajustamos automáticamente la creatinina cuando el usuario reporta suplementación.</li><li><strong>Variaciones agudas no capturadas</strong>. Una analítica realizada tras un entrenamiento intenso, en deshidratación, o con una infección aguda dará valores que el modelo interpretará como envejecimiento poblacional, cuando son variaciones transitorias. Para tendencias fiables, repite la medición en condiciones estables.</li><li><strong>Medicamentos no modelados</strong>. Estatinas (bajan colesterol total), levotiroxina (suprime TSH), ACE inhibidores (elevan creatinina) y otros pueden distorsionar el cálculo. La interpretación clínica debe contextualizar.</li></ol></div></div></div></section><section><div><div><p>§ 09 · La mejora continua</p><h2 id=\"section-9\">¿Cómo lo seguimos mejorando?</h2><div><p>El algoritmo es una versión 2.2.1, no 1.0. Está bajo desarrollo activo. Las próximas iteraciones planificadas:</p><p></p><ul><li><strong>Recalibración española completa</strong> para los 9 marcadores restantes del panel base, conforme tengamos datos cohortales primarios.</li><li><strong>Reentrenamiento sin winsorización</strong> aplicado a todos los marcadores (en v2.2.1 lo aplicamos solo a BUN y Fructosamina como override).</li><li><strong>Modelo de ajuste por composición corporal</strong> (masa muscular, % grasa) usando datos de DEXA cuando estén disponibles.</li><li><strong>Integración con datos de wearables</strong> (VFC, sueño, FC en reposo) para componentes de aceleración del envejecimiento que el panel sanguíneo no captura.</li></ul></div></div></div></section><section><div><div><p>§ 10 · Referencias.</p><h2 id=\"section-10\">Referencias.</h2><ol><li><span>01</span><p>Klemera P, Doubal S. A new approach to the concept and computation of biological age. Mech Ageing Dev. 2006;127(3):240-248. <a href=\"https://pubmed.ncbi.nlm.nih.gov/16318865/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>02</span><p>Levine ME. Modeling the rate of senescence: can estimated biological age predict mortality more accurately than chronological age? J Gerontol A Biol Sci Med Sci. 2013;68(6):667-674. <a href=\"https://pubmed.ncbi.nlm.nih.gov/23213031/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>03</span><p>Levine ME, Lu AT, Quach A, et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY). 2018;10(4):573-591. <a href=\"https://pubmed.ncbi.nlm.nih.gov/29676998/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>04</span><p>Kwon D, Belsky DW. A toolkit for quantification of biological age from blood chemistry and organ system function data: BioAge R package. GeroScience. 2021;43(6):2795-2808. <a href=\"https://pubmed.ncbi.nlm.nih.gov/34725754/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>05</span><p>Fernández-Friera L, Peñalvo JL, Fernández-Ortiz A, et al. Prevalence, vascular distribution, and multiterritorial extent of subclinical atherosclerosis in a middle-aged cohort: the PESA (Progression of Early Subclinical Atherosclerosis) study. Circulation. 2015;131(24):2104-2113. <a href=\"https://pubmed.ncbi.nlm.nih.gov/26088847/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>06</span><p>Soriano-Maldonado A, Aparicio VA, Félix-Redondo FJ, Fernández-Bergés D. Prevalence of cardiovascular risk factors in Spain: the ENRICA study. Rev Esp Cardiol. 2016;69(6):572-578. <a href=\"https://pubmed.ncbi.nlm.nih.gov/26995708/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>07</span><p>Soriguer F, Goday A, Bosch-Comas A, et al. Prevalence of diabetes mellitus and impaired glucose regulation in Spain: the Di@bet.es Study. Diabetologia. 2012;55(1):88-93. <a href=\"https://pubmed.ncbi.nlm.nih.gov/21987347/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>08</span><p>Cohen RM, Holmes YR, Chenier TC, Joiner CH. Discordance between HbA1c and fructosamine: evidence for a glycosylation gap and its relation to diabetic nephropathy. Diabetes Care. 2003;26(1):163-167. <a href=\"https://pubmed.ncbi.nlm.nih.gov/12502674/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>09</span><p>Mayer JA, Mannion JE. Effect of dietary creatine on serum creatinine in athletes. Med Sci Sports Exerc. 1985;17(2):suppl. <a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=creatine+creatinine+supplementation\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>10</span><p>Kreider RB, Kalman DS, Antonio J, et al. International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine. J Int Soc Sports Nutr. 2017;14:18. <a href=\"https://pubmed.ncbi.nlm.nih.gov/28615996/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>11</span><p>Stevens LA, Schmid CH, Greene T, et al. Comparative performance of the CKD Epidemiology Collaboration (CKD-EPI) and the Modification of Diet in Renal Disease (MDRD) Study equations for estimating GFR levels above 60 mL/min/1.73 m². Am J Kidney Dis. 2010;56(3):486-495. <a href=\"https://pubmed.ncbi.nlm.nih.gov/20557989/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>12</span><p>Inker LA, Eneanya ND, Coresh J, et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med. 2021;385(19):1737-1749. <a href=\"https://pubmed.ncbi.nlm.nih.gov/34554658/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li></ol></div></div></section><section><div><div><h3>¿Quieres ver tu propia edad biológica?</h3><div><a href=\"/es/dashboard\"><span>Ir al dashboard</span><span></span></a><a href=\"/es/metodologia\"><span>Volver al resumen</span></a></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/es/metodologia/completa",
+      "originalChars": 12176,
+      "importedChars": 12176
+    }
+  },
+  "en": {
+    "legal/privacy": {
+      "title": "Privacy Policy",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "Data Controller"
+        },
+        {
+          "id": "section-1",
+          "title": "What We Collect"
+        },
+        {
+          "id": "section-2",
+          "title": "Legal Basis for Processing"
+        },
+        {
+          "id": "section-3",
+          "title": "Health Data Consent"
+        },
+        {
+          "id": "section-4",
+          "title": "How We Store Your Data"
+        },
+        {
+          "id": "section-5",
+          "title": "Third-Party Processors"
+        },
+        {
+          "id": "section-6",
+          "title": "Data Retention"
+        },
+        {
+          "id": "section-7",
+          "title": "Your Rights"
+        },
+        {
+          "id": "section-8",
+          "title": "Contact"
+        }
+      ],
+      "html": "<div><section><div><div><span><span><span></span><span></span></span>Legal</span><p>Last updated: March 2026</p></div><div><div><h2 id=\"section-0\">Data Controller</h2><div><p>EVA Health S.L., headquartered in Madrid, Spain, is the data controller responsible for your personal data. You can reach us at hello@evahealth.es.</p></div></div><div><h2 id=\"section-1\">What We Collect</h2><div><p><strong>Account information:</strong> Name, email address, and authentication credentials when you create an account.</p><p><strong>Health biomarker data:</strong> Blood test results, biomarker values, and calculated health metrics. This is classified as special category data under GDPR Article 9 and is only processed with your explicit consent.</p><p><strong>Wearable data:</strong> If you connect a wearable device, we receive heart rate variability, sleep data, resting heart rate, recovery scores, and activity metrics.</p><p><strong>Usage analytics:</strong> We use Plausible Analytics, which is privacy-friendly and does not use cookies or track individual users. We collect aggregate page views and traffic sources only.</p></div></div><div><h2 id=\"section-2\">Legal Basis for Processing</h2><div><p><strong>Explicit consent (GDPR Article 9(2)(a)):</strong> Required before we process any health or biomarker data. You provide this consent during signup and can withdraw it at any time.</p><p><strong>Contract performance (GDPR Article 6(1)(b)):</strong> Processing necessary to provide your subscription service, deliver results, and manage your account.</p><p><strong>Legitimate interest (GDPR Article 6(1)(f)):</strong> Aggregate, anonymised analytics to improve our service. No personal data is involved in this processing.</p></div></div><div><h2 id=\"section-3\">Health Data Consent</h2><div><p>Your health data is special category data under GDPR. We will never process your biomarker results, wearable data, or any health-related information without your explicit, informed consent. This consent is collected separately during account creation and can be withdrawn at any time through your account settings or by contacting us.</p></div></div><div><h2 id=\"section-4\">How We Store Your Data</h2><div><p>Your data is stored on Supabase infrastructure within the European Union, encrypted at rest and in transit. Some processing — notably AI-powered analysis by Google (Gemini) — may involve transferring your data outside the EEA, carried out under appropriate data-transfer safeguards.</p></div></div><div><h2 id=\"section-5\">Third-Party Processors</h2><div><p>We work with the following processors, all bound by data processing agreements:</p><ul><li><strong>Supabase</strong>: Database and authentication (EU region)</li><li><strong>Stripe</strong>: Payment processing (PCI DSS compliant, does not receive health data)</li><li><strong>Google (Gemini)</strong>: AI-powered health analysis (processes biomarker data to generate insights; may involve transfer outside the EEA under appropriate safeguards)</li><li><strong>Resend</strong>: Transactional emails (receives email addresses only)</li><li><strong>Plausible Analytics</strong>: Privacy-friendly web analytics (no personal data, no cookies)</li></ul></div></div><div><h2 id=\"section-6\">Data Retention</h2><div><p><strong>Active accounts:</strong> Your data is retained for as long as your account is active.</p><p><strong>After deletion:</strong> Account data is permanently deleted within 30 days of account deletion. Health data is deleted immediately upon request.</p><p><strong>Legal obligations:</strong> We may retain certain data as required by Spanish tax and commercial law.</p></div></div><div><h2 id=\"section-7\">Your Rights</h2><div><p>Under GDPR, you have the right to:</p><ul><li><strong>Access</strong>: Request a copy of all personal data we hold about you</li><li><strong>Rectification</strong>: Correct any inaccurate personal data</li><li><strong>Erasure</strong>: Request deletion of your personal data</li><li><strong>Portability</strong>: Receive your data in a structured, machine-readable format</li><li><strong>Withdraw consent</strong>: Withdraw your consent for health data processing at any time</li><li><strong>Object</strong>: Object to processing based on legitimate interest</li><li><strong>Lodge a complaint</strong>: File a complaint with the Agencia Española de Proteccion de Datos (AEPD), the Spanish Data Protection Authority, at www.aepd.es</li></ul><p>To exercise any of these rights, contact us at hello@evahealth.es.</p></div></div><div><h2 id=\"section-8\">Contact</h2><div><p>For any privacy-related questions or to exercise your rights:<br><strong>EVA Health S.L.</strong><br>Madrid, Spain<br>hello@evahealth.es</p></div></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/en/legal/privacy",
+      "originalChars": 3572,
+      "importedChars": 3572
+    },
+    "legal/terms": {
+      "title": "Terms of Service",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "Service Description"
+        },
+        {
+          "id": "section-1",
+          "title": "Eligibility"
+        },
+        {
+          "id": "section-2",
+          "title": "Your Account"
+        },
+        {
+          "id": "section-3",
+          "title": "Subscription"
+        },
+        {
+          "id": "section-4",
+          "title": "Your Content"
+        },
+        {
+          "id": "section-5",
+          "title": "Prohibited Use"
+        },
+        {
+          "id": "section-6",
+          "title": "Limitation of Liability"
+        },
+        {
+          "id": "section-7",
+          "title": "Governing Law"
+        },
+        {
+          "id": "section-8",
+          "title": "Changes to These Terms"
+        },
+        {
+          "id": "section-9",
+          "title": "Contact"
+        }
+      ],
+      "html": "<div><section><div><div><span><span><span></span><span></span></span>Legal</span><p>Last updated: March 2026</p></div><div><div><h2 id=\"section-0\">Service Description</h2><div><p>EVA Health is an educational health platform that helps you understand your biomarker data through personalised interpretation and actionable insights. EVA is <strong>not</strong> a medical provider. Our service is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional for medical decisions.</p></div></div><div><h2 id=\"section-1\">Eligibility</h2><div><p>You must be at least 18 years old to create an account and use EVA Health. By creating an account, you confirm that you meet this age requirement.</p></div></div><div><h2 id=\"section-2\">Your Account</h2><div><p>You are responsible for maintaining the security of your account credentials. Do not share your login with others. You are responsible for all activity that occurs under your account. If you suspect unauthorised access, contact us immediately at hello@evahealth.es.</p></div></div><div><h2 id=\"section-3\">Subscription</h2><div><p>EVA Health operates on a quarterly subscription model at <strong>€99 per quarter</strong>. Your subscription automatically renews at the end of each quarter unless cancelled. You can cancel at any time through your account settings; cancellation takes effect at the end of the current billing period. No partial refunds are provided for the current quarter.</p></div></div><div><h2 id=\"section-4\">Your Content</h2><div><p>Lab results, health data, and any other information you upload to EVA remain your property. By uploading content, you grant EVA a limited licence to process this data solely to provide you with our service. We do not sell, share, or use your health data for any purpose beyond delivering your personalised health insights.</p></div></div><div><h2 id=\"section-5\">Prohibited Use</h2><div><p>You agree not to:</p><ul><li>Share your account credentials with others or allow multiple people to use a single account</li><li>Use automated tools to scrape, crawl, or extract data from the platform</li><li>Attempt to reverse-engineer, decompile, or disassemble any part of the service</li><li>Use the service for any unlawful purpose</li><li>Misrepresent your identity or provide false information</li></ul></div></div><div><h2 id=\"section-6\">Limitation of Liability</h2><div><p>EVA Health provides health education and biomarker interpretation, not medical diagnosis or treatment. We are not liable for health decisions you make based on information provided through our platform. Our service is informational and educational in nature. Critical biomarker results include clear guidance to seek immediate medical attention, but ultimately your health decisions are your own.</p><p>To the maximum extent permitted by Spanish law, EVA Health’s total liability is limited to the amount you have paid for the service in the 12 months preceding any claim.</p></div></div><div><h2 id=\"section-7\">Governing Law</h2><div><p>These terms are governed by the laws of Spain. Any disputes arising from these terms or your use of the service shall be submitted to the courts of Madrid, Spain, without prejudice to any mandatory consumer protection provisions that may apply in your country of residence.</p></div></div><div><h2 id=\"section-8\">Changes to These Terms</h2><div><p>We may update these terms from time to time. We will notify you of any material changes at least 30 days in advance via the email address associated with your account. Continued use of the service after the effective date constitutes acceptance of the updated terms.</p></div></div><div><h2 id=\"section-9\">Contact</h2><div><p>For questions about these terms:<br><strong>EVA Health S.L.</strong><br>Madrid, Spain<br>hello@evahealth.es</p></div></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/en/legal/terms",
+      "originalChars": 3127,
+      "importedChars": 3127
+    },
+    "legal/cookies": {
+      "title": "Cookie Policy",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "Our Approach to Cookies"
+        },
+        {
+          "id": "section-1",
+          "title": "Essential Cookies"
+        },
+        {
+          "id": "section-2",
+          "title": "Analytics: No Cookies"
+        },
+        {
+          "id": "section-3",
+          "title": "Third-Party Advertising Cookies"
+        },
+        {
+          "id": "section-4",
+          "title": "How to Manage Cookies"
+        },
+        {
+          "id": "section-5",
+          "title": "Contact"
+        }
+      ],
+      "html": "<div><section><div><div><span><span><span></span><span></span></span>Legal</span><p>Last updated: March 2026</p></div><div><div><h2 id=\"section-0\">Our Approach to Cookies</h2><div><p>EVA Health is committed to your privacy. We use minimal cookies, only what is technically necessary for the site to function. We do not use advertising cookies or third-party tracking cookies of any kind.</p></div></div><div><h2 id=\"section-1\">Essential Cookies</h2><div><p>These cookies are strictly necessary for the website to function and cannot be disabled.</p><div><table><thead><tr><th>Cookie</th><th>Purpose</th><th>Duration</th></tr></thead><tbody><tr><td>sb-*</td><td>Supabase authentication session</td><td>Session</td></tr><tr><td>eva-cookie-consent</td><td>Remembers your cookie preference</td><td>1 year</td></tr></tbody></table></div></div></div><div><h2 id=\"section-2\">Analytics: No Cookies</h2><div><p>We use <strong>Plausible Analytics</strong> for understanding how visitors use our website. Plausible is a privacy-friendly analytics tool that is fundamentally different from traditional analytics:</p><ul><li>Plausible does <strong>not use cookies</strong> at all</li><li>It does not track individual users across sessions</li><li>It does not collect personal data</li><li>All data is aggregated: we see page view counts and traffic sources, not individual behaviour</li><li>It is fully compliant with GDPR, CCPA, and PECR without requiring cookie consent</li></ul><p>This means you can browse EVA Health knowing that no analytics cookies are placed on your device and no personal data is collected for analytics purposes.</p></div></div><div><h2 id=\"section-3\">Third-Party Advertising Cookies</h2><div><p><strong>We do not use any third-party advertising cookies.</strong> EVA Health does not serve ads, does not participate in ad networks, and does not allow any third party to place advertising or tracking cookies on our website.</p></div></div><div><h2 id=\"section-4\">How to Manage Cookies</h2><div><p>Since we only use essential cookies required for authentication, disabling them may prevent you from logging into your account. You can manage cookies through your browser settings:</p><ul><li><strong>Chrome:</strong> Settings → Privacy and Security → Cookies</li><li><strong>Firefox:</strong> Settings → Privacy &amp; Security → Cookies</li><li><strong>Safari:</strong> Preferences → Privacy → Cookies</li><li><strong>Edge:</strong> Settings → Privacy → Cookies</li></ul></div></div><div><h2 id=\"section-5\">Contact</h2><div><p>Questions about our cookie practices? Contact us at hello@evahealth.es.</p></div></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/en/legal/cookies",
+      "originalChars": 1820,
+      "importedChars": 1820
+    },
+    "metodologia": {
+      "title": "How we measure your biological age.",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "How we measure your biological age."
+        },
+        {
+          "id": "section-1",
+          "title": "Three numbers that matter."
+        },
+        {
+          "id": "section-2",
+          "title": "Klemera-Doubal, recalibrated for Spain."
+        },
+        {
+          "id": "section-3",
+          "title": "What the model knows — and what it doesn't."
+        },
+        {
+          "id": "section-4",
+          "title": "Read the full methodology."
+        }
+      ],
+      "html": "<div><section><div><p>§ 01 · The question</p><h2 id=\"section-0\">How we measure your <span>biological age.</span></h2><p>Not an opinion. Not a generic score. A mortality prediction validated in 18,570 people — with an uncertainty margin we acknowledge openly.</p></div></section><section><div><p>§ 02 · The evidence</p><h2 id=\"section-1\">Three numbers that matter.</h2><p>The algorithm is validated against real mortality using out-of-sample cross-validation (5-fold), so the numbers below reflect performance on held-out data, not the training set.</p><div><div><p>HAZARD RATIO</p><p>1.29</p><p>per standard deviation</p><p>Each standard deviation of biological age acceleration corresponds to a 29% higher relative mortality risk. Out-of-sample (5-fold CV); 95% CI [1.20, 1.40].</p></div><div><p>C-STATISTIC</p><p>0.77</p><p>predictive discrimination</p><p>When comparing two people, the model correctly identifies which one has higher risk 77% of the time. The Comprehensive version (extended panel) rises to 0.78 with HR/SD 1.49.</p></div><div><p>POPULATION</p><p>18,570</p><p>NHANES adults</p><p>Trained on the U.S. National Health and Nutrition Examination Survey (1999-2018), with mortality follow-up through 2019. Recalibrated for Spain on 11 of 14 base-panel markers.</p></div></div></div></section><section><div><p>§ 03 · The method</p><h2 id=\"section-2\">Klemera-Doubal, recalibrated for Spain.</h2><div><div><p>Your biological age is calculated with the Klemera-Doubal method (2006), a statistical estimator that combines multiple biomarkers into a single number of years. Each biomarker contributes proportionally to how well it predicts chronological age in the reference population.</p><p>For the Spanish market we recalibrated the population means of 11 of 14 base-panel markers using Spanish cohorts: PESA (Fernández-Friera 2015), ENRICA, Di@bet.es, Hortega, PREDIMED, EPIRCE, La Rioja, and SEQC. Includes per-sex recalibration for Creatinine, Uric Acid, GGT, HDL, Hemoglobin, and Total Testosterone (corrected in May 2026 after detecting these values weren't being applied). A Spanish person with typical values for their age gets a biological age close to their real age — not the U.S. average.</p></div><aside><p>Important</p><p>Biological age answers a different question than the longevity score. The first tells you how you're aging vs. the population; the second, how close you are to optimal.</p></aside></div></div></section><section><div><p>§ 04 · Transparency</p><h2 id=\"section-3\">What the model knows — and what it doesn't.</h2><div><div><h3>What the model captures:</h3><ul><li><span>01</span><span>Population aging trajectory for 14 key biomarkers (kidney, liver, inflammation, glycation, lipids, nutrition).</span></li><li><span>02</span><span>Sex differences across 19 markers with known dimorphism.</span></li><li><span>03</span><span>Creatine supplementation (automatic creatinine adjustment based on ISSN 2017 literature).</span></li><li><span>04</span><span>Cystatin C when available, in place of creatinine (kidney marker unaffected by muscle mass).</span></li></ul></div><div><h3>What the model doesn't capture:</h3><ul><li><span>01</span><span>Acute variations (dehydration, recent exercise, pre-analytical meals).</span></li><li><span>02</span><span>Body composition (muscle vs fat mass) beyond creatine supplementation.</span></li><li><span>03</span><span>Medications affecting biomarkers (statins, ACE inhibitors, levothyroxine).</span></li><li><span>04</span><span>Genetics, epigenetics, telomeres — valid but complementary methods.</span></li></ul></div></div></div></section><section><div><div><h2 id=\"section-4\">Read the full methodology.</h2><p>The full document covers training data, Spanish calibration, the mathematical method, mortality validation, and our limitations, with references to primary literature.</p><div><a href=\"/en/metodologia/completa\"><span>Read the full methodology</span><span></span></a></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/en/metodologia",
+      "originalChars": 3020,
+      "importedChars": 3020
+    },
+    "metodologia/completa": {
+      "title": "KDM v2.2.1 — the reference document.",
+      "toc": [
+        {
+          "id": "section-0",
+          "title": "KDM v2.2.1 — the reference document."
+        },
+        {
+          "id": "section-1",
+          "title": "Executive summary."
+        },
+        {
+          "id": "section-2",
+          "title": "What is biological age?"
+        },
+        {
+          "id": "section-3",
+          "title": "Training data."
+        },
+        {
+          "id": "section-4",
+          "title": "Calibration for the Spanish population."
+        },
+        {
+          "id": "section-5",
+          "title": "The Klemera-Doubal method."
+        },
+        {
+          "id": "section-6",
+          "title": "Mortality validation."
+        },
+        {
+          "id": "section-7",
+          "title": "Two levels of measurement."
+        },
+        {
+          "id": "section-8",
+          "title": "Limitations and transparency."
+        },
+        {
+          "id": "section-9",
+          "title": "How we keep improving it."
+        },
+        {
+          "id": "section-10",
+          "title": "References."
+        }
+      ],
+      "html": "<div><section><div><p>Full methodology</p><h2 id=\"section-0\">KDM v2.2.1 — the reference document.</h2><p>How we trained the model, what data we used, how we validated it against mortality, and where we know it has limits.</p><p>Contents</p><ol><li><a href=\"#section-1\"><span>01</span>Executive summary.</a></li><li><a href=\"#section-2\"><span>02</span>What is biological age?</a></li><li><a href=\"#section-3\"><span>03</span>Training data.</a></li><li><a href=\"#section-4\"><span>04</span>Calibration for the Spanish population.</a></li><li><a href=\"#section-5\"><span>05</span>The Klemera-Doubal method.</a></li><li><a href=\"#section-6\"><span>06</span>Mortality validation.</a></li><li><a href=\"#section-7\"><span>07</span>Two levels of measurement.</a></li><li><a href=\"#section-8\"><span>08</span>Limitations and transparency.</a></li><li><a href=\"#section-9\"><span>09</span>How we keep improving it.</a></li><li><a href=\"#section-10\"><span>10</span>References.</a></li></ol></div></section><section><div><div><p>§ 01 · Summary</p><h2 id=\"section-1\">Executive summary.</h2><div><p>EVA Health calculates your biological age with the <strong>KDM v2.2.1</strong> algorithm, an implementation of the Klemera-Doubal method (2006) trained on 18,570 adults from the U.S. NHANES study (1999-2018) and recalibrated for the Spanish population using eight national cohorts (PESA, ENRICA, Di@bet.es, Hortega, PREDIMED, EPIRCE, La Rioja, SEQC).</p><p>The algorithm predicts mortality with a hazard ratio of <strong>1.41 per standard deviation</strong> [95% CI 1.32-1.50] and a C-statistic of <strong>0.77</strong> — exceeding the excellence threshold (≥ 0.75) in risk discrimination. The model parameters were updated in May 2026 (v2.2.1) after a post-launch analysis identified a weighting bias in two markers; the new version is <em>more</em> discriminative than the original.</p></div></div></div></section><section><div><div><p>§ 02 · The concept</p><h2 id=\"section-2\">What is biological age?</h2><div><p>Your chronological age counts the years since you were born. Your biological age describes the cumulative functional state of your organs and systems — a quantitative summary of how much you've worn, not how much you've lived.</p><p>Two people with the same birthdate can have biological ages that differ by a decade or more. The difference reflects cumulative factors: nutrition, exercise, sleep, chronic stress, environmental exposures, genetic predisposition, and luck. Biological age is <em>modifiable</em>; chronological isn't.</p><p>EVA computes your biological age by combining 14 key blood biomarkers into a single statistical estimator, validated against real mortality. It's not a generic wellness score. It's a prediction.</p></div></div></div></section><section><div><div><p>§ 03 · The data</p><h2 id=\"section-3\">Training data.</h2><div><p>The model was trained on the <strong>National Health and Nutrition Examination Survey</strong> (NHANES) Continuous, a U.S. epidemiological study that has measured biomarkers and tracked mortality in nationally-representative samples since 1999. We used cycles 1999-2018 (n = 18,570 adults with complete panel and mortality follow-up through December 31, 2019).</p><p>For each biomarker, we fit a linear regression against chronological age. The resulting parameters (slope <em>k</em>, intercept <em>q</em>, residual SD <em>s</em>) describe how that biomarker changes through population aging. 19 of the 81 markers are sex-stratified when the difference is clinically relevant (creatinine, ferritin, hemoglobin, uric acid, GGT, ALT, testosterone, estradiol, among others).</p><p>IGF-1, not measured in the continuous cycles, was incorporated from NHANES III legacy data (1988-1994) after an inter-cycle continuity validation. Fructosamine, not measured in NHANES, is derived from HbA1c via the Cohen 2010 formula (Fructosamine µmol/L = 19.97 × HbA1c % − 39.4).</p></div></div></div></section><section><div><div><p>§ 04 · Calibration</p><h2 id=\"section-4\">Calibration for the Spanish population.</h2><div><p>A Spanish user with typical values for their age should <em>not</em> have a biological age skewed by differences between the U.S. and Spanish populations. To correct for this, we recalibrated each marker's population mean (intercept <em>q</em>) using published Spanish cohort data.</p><p>The formula is direct: <code>q_spain = (mean_spain / mean_NHANES) × q_NHANES</code>. The slope <em>k</em> and residual SD <em>s</em> are preserved, assuming biological aging proceeds at a similar rate — only the baseline level shifts between populations.</p><p>Spanish cohorts contributing to recalibration: <strong>PESA</strong> (Fernández-Friera 2015, n=4,066), <strong>ENRICA</strong> (Soriano-Maldonado 2016), <strong>Di@bet.es</strong> (Soriguer 2012), <strong>Hortega</strong>, <strong>PREDIMED</strong>, <strong>EPIRCE</strong>, <strong>La Rioja</strong>, and the <strong>SEQC</strong> (Spanish Society of Clinical Chemistry) database. In version 2.2.1 we successfully recalibrated 5 of the 14 base-panel markers with available primary Spanish data: Total Cholesterol, Triglycerides, hs-CRP, Vitamin D, and TSH. The remaining nine use NHANES references — an active target for future versions.</p><p>To validate the recalibration, each recalibrated value passes a plausibility check (range [0.25, 4.0] for log-distributed markers like hs-CRP that show real population differences &gt;2×, [0.5, 2.0] for others). Any marker outside these ranges is rejected and keeps its NHANES value.</p></div></div></div></section><section><div><div><p>§ 05 · The method</p><h2 id=\"section-5\">The Klemera-Doubal method.</h2><div><p>The Klemera-Doubal joint estimator (2006) combines <em>n</em> biomarkers into a single biological age estimate. Each biomarker <em>x<sub>i</sub></em> contributes per the formula:</p><p></p><div>BA_E = Σ (x<sub>i</sub> − q<sub>i</sub>) · (k<sub>i</sub> / s<sub>i</sub>²) / Σ (k<sub>i</sub> / s<sub>i</sub>)²</div><p>Each marker is weighted by the inverse of its residual variance (1/s²), so markers that predict age with less noise carry more weight. The result, <em>BA<sub>E</sub></em>, is the \"raw\" biological age before anchoring to chronological age.</p><p>The final step applies a Bayesian shrinkage toward chronological age (CA) using the population deviation:</p><p></p><div>BA = (BA_E / s_BA² + CA / s_CA²) / (1 / s_BA² + 1 / s_CA²)</div><p>This shrinkage prevents extreme values in any single marker from dominating the result — the final biological age weighs the joint estimator against the prior knowledge of chronological age.</p><p>Five markers in our base panel are log-transformed before fitting (hs-CRP, GGT, Triglycerides, Ferritin, Fructosamine) because their distributions are log-normal. The transformation is applied internally; input values are entered in their natural clinical scale (mg/L, µg/L, etc.).</p><p>The estimator requires a minimum panel of 8 of the 14 base markers, with Albumin and Creatinine (or Cystatin C) mandatory. Below that threshold, EVA does not report biological age — the uncertainty is too high to be clinically useful.</p></div></div></div></section><section><div><div><p>§ 06 · Validation</p><h2 id=\"section-6\">Mortality validation.</h2><div><p>The definitive test of a biological age: does it predict mortality better than chronological age? We answered this by fitting a Cox proportional hazards model on the NHANES subset with complete follow-up, adjusted for chronological age and sex.</p><p>In version <strong>v2.2.1</strong> (May 2026, with corrected parameters for BUN and Fructosamine after a post-launch analysis):</p><p></p><ul><li><strong>Hazard Ratio per SD</strong>: 1.41 [95% CI 1.32-1.50]. Each additional year of biological age acceleration predicts a 41% higher relative mortality risk.</li><li><strong>C-statistic</strong>: 0.77. Above the excellence threshold (≥ 0.75) used in the bio-age literature.</li><li><strong>Calibration slope</strong>: 1.02. Within the ideal range [0.9, 1.1], indicating predictions are neither inflated nor under-scaled.</li></ul><p>For context: chronological age alone in this same model has C-statistic 0.79 (a natural ceiling — mortality is strongly correlated with age). KDM adds incremental information that captures acceleration or deceleration relative to that trajectory.</p></div></div></div></section><section><div><div><p>§ 07 · Two tiers</p><h2 id=\"section-7\">Two levels of measurement.</h2><div><p>EVA reports two versions of the same number:</p><p></p><ul><li><strong>Reference Biological Age (BA)</strong>: calculated with the 14 base-panel markers — the most validated, most universally available. This is the headline number on the dashboard.</li><li><strong>Comprehensive Biological Age (BA<sub>comp</sub>)</strong>: calculated with the full panel (up to 81 trained markers) when the user uploads an extended profile. It has lower variance but lower clinical robustness.</li></ul><p>Both use the same mathematical method; they differ in marker breadth. The reference version is the one we validated against mortality and the one we recommend trusting for longitudinal decisions. The comprehensive version is an optional companion for users with extended panels.</p></div></div></div></section><section><div><div><p>§ 08 · Limits</p><h2 id=\"section-8\">Limitations and transparency.</h2><div><p>KDM is a population model. This means its answers are less precise for individuals atypical of the training population. Three important limitations:</p><p></p><ol><li><strong>NHANES is not a \"healthy aging\" cohort</strong>. It includes people with chronic conditions (CKD, diabetes, hypertension). The model learns the population trajectory including pathology — which can penalize athletic individuals with markers outside the population mean for lifestyle reasons (high protein intake elevates BUN; creatine supplementation elevates creatinine without affecting kidney function). In v2.2.1 we automatically adjust creatinine when the user reports supplementation.</li><li><strong>Acute variations not captured</strong>. A blood test taken after intense exercise, in dehydration, or during an acute infection will produce values the model interprets as population aging, when they're transient variations. For reliable trends, repeat measurement under stable conditions.</li><li><strong>Unmodeled medications</strong>. Statins (lower total cholesterol), levothyroxine (suppresses TSH), ACE inhibitors (elevate creatinine), and others can distort the calculation. Clinical interpretation should contextualize.</li></ol></div></div></div></section><section><div><div><p>§ 09 · Continuous improvement</p><h2 id=\"section-9\">How we keep improving it.</h2><div><p>The algorithm is version 2.2.1, not 1.0. It's under active development. Planned next iterations:</p><p></p><ul><li><strong>Full Spanish recalibration</strong> for the 9 remaining base-panel markers, as we obtain primary cohort data.</li><li><strong>Unwinsorized retraining</strong> applied across all markers (in v2.2.1 we applied it only to BUN and Fructosamine as an override).</li><li><strong>Body composition adjustment model</strong> (muscle mass, % fat) using DEXA data where available.</li><li><strong>Integration with wearables data</strong> (HRV, sleep, resting HR) for components of aging acceleration that the blood panel doesn't capture.</li></ul></div></div></div></section><section><div><div><p>§ 10 · References.</p><h2 id=\"section-10\">References.</h2><ol><li><span>01</span><p>Klemera P, Doubal S. A new approach to the concept and computation of biological age. Mech Ageing Dev. 2006;127(3):240-248. <a href=\"https://pubmed.ncbi.nlm.nih.gov/16318865/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>02</span><p>Levine ME. Modeling the rate of senescence: can estimated biological age predict mortality more accurately than chronological age? J Gerontol A Biol Sci Med Sci. 2013;68(6):667-674. <a href=\"https://pubmed.ncbi.nlm.nih.gov/23213031/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>03</span><p>Levine ME, Lu AT, Quach A, et al. An epigenetic biomarker of aging for lifespan and healthspan. Aging (Albany NY). 2018;10(4):573-591. <a href=\"https://pubmed.ncbi.nlm.nih.gov/29676998/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>04</span><p>Kwon D, Belsky DW. A toolkit for quantification of biological age from blood chemistry and organ system function data: BioAge R package. GeroScience. 2021;43(6):2795-2808. <a href=\"https://pubmed.ncbi.nlm.nih.gov/34725754/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>05</span><p>Fernández-Friera L, Peñalvo JL, Fernández-Ortiz A, et al. Prevalence, vascular distribution, and multiterritorial extent of subclinical atherosclerosis in a middle-aged cohort: the PESA (Progression of Early Subclinical Atherosclerosis) study. Circulation. 2015;131(24):2104-2113. <a href=\"https://pubmed.ncbi.nlm.nih.gov/26088847/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>06</span><p>Soriano-Maldonado A, Aparicio VA, Félix-Redondo FJ, Fernández-Bergés D. Prevalence of cardiovascular risk factors in Spain: the ENRICA study. Rev Esp Cardiol. 2016;69(6):572-578. <a href=\"https://pubmed.ncbi.nlm.nih.gov/26995708/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>07</span><p>Soriguer F, Goday A, Bosch-Comas A, et al. Prevalence of diabetes mellitus and impaired glucose regulation in Spain: the Di@bet.es Study. Diabetologia. 2012;55(1):88-93. <a href=\"https://pubmed.ncbi.nlm.nih.gov/21987347/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>08</span><p>Cohen RM, Holmes YR, Chenier TC, Joiner CH. Discordance between HbA1c and fructosamine: evidence for a glycosylation gap and its relation to diabetic nephropathy. Diabetes Care. 2003;26(1):163-167. <a href=\"https://pubmed.ncbi.nlm.nih.gov/12502674/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>09</span><p>Mayer JA, Mannion JE. Effect of dietary creatine on serum creatinine in athletes. Med Sci Sports Exerc. 1985;17(2):suppl. <a href=\"https://pubmed.ncbi.nlm.nih.gov/?term=creatine+creatinine+supplementation\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>10</span><p>Kreider RB, Kalman DS, Antonio J, et al. International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine. J Int Soc Sports Nutr. 2017;14:18. <a href=\"https://pubmed.ncbi.nlm.nih.gov/28615996/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>11</span><p>Stevens LA, Schmid CH, Greene T, et al. Comparative performance of the CKD Epidemiology Collaboration (CKD-EPI) and the Modification of Diet in Renal Disease (MDRD) Study equations for estimating GFR levels above 60 mL/min/1.73 m². Am J Kidney Dis. 2010;56(3):486-495. <a href=\"https://pubmed.ncbi.nlm.nih.gov/20557989/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li><li><span>12</span><p>Inker LA, Eneanya ND, Coresh J, et al. New creatinine- and cystatin C-based equations to estimate GFR without race. N Engl J Med. 2021;385(19):1737-1749. <a href=\"https://pubmed.ncbi.nlm.nih.gov/34554658/\" target=\"_blank\" rel=\"noreferrer\">PubMed</a></p></li></ol></div></div></section><section><div><div><h3>Want to see your own biological age?</h3><div><a href=\"/en/dashboard\"><span>Go to dashboard</span><span></span></a><a href=\"/en/metodologia\"><span>Back to summary</span></a></div></div></div></section></div>",
+      "source": "https://www.evahealth.es/en/metodologia/completa",
+      "originalChars": 11469,
+      "importedChars": 11469
+    }
+  }
+}

@@ -1,4 +1,5 @@
 'use client';
+import {MethodInterpretation} from '@/components/site/RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useState } from 'react';
 import { ArrowUpRight, ArrowRight, ArrowDown, FileText } from 'lucide-react';
@@ -81,6 +82,7 @@ export default function MethodPage() {
     <section className="eva-inner method-journey" aria-labelledby="method-journey-heading"><div className="method-section-heading"><h2 id="method-journey-heading">{__site.t(copy.stageTitle)}</h2><p>{__site.t(copy.stageIntro)}</p></div><SampleToRecord stages={copy.stages}/></section>
     <ReportExample />
     <CompareOverTime />
+    <MethodInterpretation />
     <section className="eva-inner method-final" aria-labelledby="method-final-heading">
       <figure className="method-final-image"><img src="/art/editorial/after-swim-1200.webp" srcSet="/art/editorial/after-swim-600.webp 600w, /art/editorial/after-swim-1200.webp 1200w" sizes="(max-width: 760px) calc(100vw - 40px), 48vw" alt={__site.t(copy.imageAlt)} loading="lazy" decoding="async" width="1200" height="1607"/><figcaption>{__site.t("La vida sigue. T\u00FA tambi\u00E9n.")}</figcaption></figure>
       <div className="method-final-copy"><h2 id="method-final-heading">{__site.t(copy.finalTitle)}</h2><p>{__site.t(copy.finalBody)}</p><ActionLink href={__site.href("/es/upload")}>{__site.t("Explorar con un informe")}</ActionLink><a className="eva-text-link" href={__site.href("/es/pricing")}>{__site.t("Prefiero empezar con un kit")}<ArrowUpRight size={17} aria-hidden="true"/></a><a className="method-specialty-link" href={__site.href("/es/pricing#pricing-specialty-heading")}>{__site.t("Explorar perfiles especializados")}<ArrowUpRight size={15} aria-hidden="true"/></a></div>

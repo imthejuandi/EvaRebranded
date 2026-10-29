@@ -1,4 +1,5 @@
 'use client';
+import {ScienceUnderstanding, ScientificCycle} from '@/components/site/RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { ActionLink, Note } from '@/components/site/Primitives';
 import { categories, derivedMetrics } from './science-content';
@@ -51,10 +52,12 @@ export default function SciencePage() {
     const __site = useSiteLanguage();
     return <div className="page-science">
     <DocumentReading />
+    <ScienceUnderstanding />
     <nav className="science-chapter-nav eva-inner" aria-label={__site.t("En esta p\u00E1gina")}><a href={__site.href("#catalogo")}>{__site.t("Biomarcadores ")}<span aria-hidden="true">{__site.t("\u2193")}</span></a><a href={__site.href("#science-evidence-title")}>{__site.t("M\u00E9todos y l\u00EDmites ")}<span aria-hidden="true">{__site.t("\u2193")}</span></a><a href={__site.href("/es/how-it-works")}>{__site.t("C\u00F3mo funciona EVA ")}<span aria-hidden="true">{__site.t("\u2197")}</span></a></nav>
     <ComparisonNotes />
     <Catalogue />
     <EvidenceNotes />
+    <ScientificCycle />
     <section className="science-context eva-inner" aria-labelledby="science-context-title"><p className="eva-kicker">{__site.t("ENTRE DOS MUESTRAS")}</p><div><h2 id="science-context-title">{__site.t("Tambi\u00E9n cuenta")}<br />{__site.t("lo que pasa entre ellas.")}</h2><div><p className="science-body">{__site.t("El descanso, la actividad y las condiciones de recogida pueden aportar informaci\u00F3n para conversar sobre tus resultados.")}</p><p className="science-body">{__site.t("Los registros de un dispositivo y los resultados de laboratorio son fuentes distintas. Verlos juntos no demuestra que una se\u00F1al cause otra.")}</p><p className="science-context-note">{__site.t("La demostraci\u00F3n de EVA permite explorar este contexto; no representa una conexi\u00F3n activa con tus dispositivos.")}</p></div></div></section>
     <section className="science-close" aria-labelledby="science-close-title"><div className="eva-inner"><p className="eva-kicker">{__site.t("DE LA EXPLICACI\u00D3N AL INFORME")}</p><h2 id="science-close-title">{__site.t("Saber m\u00E1s puede empezar")}<br />{__site.t("con una buena pregunta.")}</h2><p>{__site.t("Conoce c\u00F3mo se organiza un informe de EVA.")}</p><ActionLink href={__site.href("/es/labs/demo-junio")}>{__site.t("Ver un informe de ejemplo")}</ActionLink></div></section>
   </div>;

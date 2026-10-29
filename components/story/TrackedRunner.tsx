@@ -151,7 +151,7 @@ export function TrackedRunner({width,height,viewportWidth,viewportHeight,top,sal
  // The native playback loop survives scroll frames and pauses; no React render per frame.
  },[timed,timed?frame:0,fps,active]);
  return <div ref={container} data-tracked-runner data-arrival-state={!arrivalEnabled?'skipped':arrivalDone?'complete':'running'} style={{position:'relative',width:'100%',height:'100%'}}>
-  <GlowMotion {...glowRunner} inComposition priority mobileInkEdges enabled={enabled} active={active} onPlaybackBlocked={onPlaybackBlocked} onMediaError={onArrivalUnavailable}/>
+  <GlowMotion {...glowRunner} inComposition priority mobileInkEdges featherSides={!mobile} enabled={enabled} active={active} onPlaybackBlocked={onPlaybackBlocked} onMediaError={onArrivalUnavailable}/>
   {arrivalEnabled&&!timed&&!arrivalDone&&<div ref={arrivalLayer} data-runner-arrival-layer style={{position:'absolute',left:-planeLeft,top:-top,width:viewportWidth,height:viewportHeight,zIndex:1,pointerEvents:'none'}}>
    <RunnerArrival ref={arrival} width={viewportWidth} height={viewportHeight} mediaRect={{x:planeLeft,y:top,width,height}} onComplete={()=>setArrivalDone(true)} onError={onArrivalUnavailable}/>
   </div>}
