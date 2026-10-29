@@ -10,11 +10,11 @@ const {publicHref, alternatePublicHref, translatePublicText} = await import('dat
 
 assert.equal(publicHref('/es/pricing?plan=quarterly&report=demo-junio#comparar-planes', 'en'), '/en/pricing?plan=quarterly&report=demo-junio#comparar-planes');
 assert.equal(alternatePublicHref('/en/contact?panel=thyroid&category=general#message', 'en'), '/es/contact?panel=thyroid&category=general#message');
-assert.equal(publicHref('/es/signup?plan=quarterly&redirect=%2Fes%2Fdashboard', 'en'), '/es/signup?plan=quarterly&redirect=%2Fes%2Fdashboard');
-assert.equal(publicHref('/es/legal/privacy', 'en'), '/es/legal/privacy');
+assert.equal(publicHref('/es/signup?plan=quarterly&redirect=%2Fes%2Fdashboard', 'en'), '/en/signup?plan=quarterly&redirect=%2Fes%2Fdashboard');
+assert.equal(publicHref('/es/legal/privacy', 'en'), '/en/legal/privacy');
 assert.equal(publicHref('https://example.org/es/science', 'en'), 'https://example.org/es/science');
 assert.equal(alternatePublicHref('/__vinext_nonexistent_for_404__', 'es'), '/en');
-assert.equal(alternatePublicHref('/es/legal/privacy', 'es'), '/en');
+assert.equal(alternatePublicHref('/es/legal/privacy', 'es'), '/en/legal/privacy');
 assert.equal(translatePublicText('Paso 2, Resultados: Recibe tus resultados.', 'en'), 'Step 2, Results: Receive your results.');
 assert.equal(translatePublicText('  Volver a intentar  ', 'en'), '  Try again  ');
 assert.equal(translatePublicText('0,7–1,2 mg/dL', 'en'), '0.7–1.2 mg/dL');
@@ -44,4 +44,4 @@ for (const slug of slugs) {
   assert(spanish.includes(`href="/en${slug ? '/' + slug : ''}"`), `${relative}: reciprocal English switch`);
   records.push(relative);
 }
-console.log(JSON.stringify({passed: true, catalogMessages: Object.keys(catalog).length, englishRoutes: records, checks: ['localized HTML and metadata', 'rendered copy and accessibility labels', 'reciprocal language links', 'query and fragment preservation', 'Spanish-only app/legal boundaries', 'clinical symbols and decimal notation']}, null, 2));
+console.log(JSON.stringify({passed: true, catalogMessages: Object.keys(catalog).length, englishRoutes: records, checks: ['localized HTML and metadata', 'rendered copy and accessibility labels', 'reciprocal language links', 'query and fragment preservation', 'Spanish-only private-app boundary and localised documents', 'clinical symbols and decimal notation']}, null, 2));

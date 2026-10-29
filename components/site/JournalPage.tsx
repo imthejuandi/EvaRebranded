@@ -1,4 +1,5 @@
 'use client';
+import {JournalPurpose} from './RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useId, useState, type FormEvent } from 'react';
 import { ArrowUpRight } from 'lucide-react';
@@ -57,6 +58,7 @@ export default function JournalPage() {
         setSelected(item.id); }}><span className="journal-mobile-study"><ReadingIllustration topic={item.id}/></span><div className="journal-question-copy"><span className="journal-question-label">{__site.t(item.label)}</span><h3>{__site.t(item.question)}</h3><p>{__site.t(item.body)}</p><span className="journal-question-destination">{__site.t(item.destination)}<ArrowUpRight size={18} aria-hidden="true"/></span></div></a></li>))}</ul>
       </div>
     </section>
+    <JournalPurpose />
     <section className="journal-notice" aria-labelledby="journal-preview-heading"><div><p className="journal-notice-label">{__site.t("Un espacio que est\u00E1 por llegar")}</p><h2 id="journal-preview-heading">{__site.t(copy.formTitle)}</h2><p>{__site.t(copy.formIntro)}</p></div><form onSubmit={submit} className="journal-interest-form"><label className="eva-field">{__site.t(copy.email)}<input type="email" name="email" value={email} onChange={event => { setEmail(event.target.value); setSent(false); }} required placeholder={__site.t("alex@ejemplo.com")} autoComplete="off" aria-describedby="journal-preview-note"/></label><button className="eva-button" disabled={sent}>{__site.t(sent ? 'Ejemplo completado' : copy.action)}<ArrowUpRight size={16} aria-hidden="true"/></button><p className="editorial-form-note" id="journal-preview-note">{__site.t(copy.note)}</p>{__site.t(sent && <p role="status" className="journal-preview-result">{__site.t(copy.sent)}</p>)}</form></section>
   </div></div>;
 }

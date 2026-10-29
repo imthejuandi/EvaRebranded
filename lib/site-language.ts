@@ -1,7 +1,8 @@
 import english from './site-content/locales/public.en.json';
 
 export type SiteLocale = 'es' | 'en';
-const publicPages = new Set(['', '/', '/how-it-works', '/science', '/pricing', '/about', '/blog', '/contact']);
+const publicPages = new Set(['', '/', '/how-it-works', '/science', '/pricing', '/about', '/blog', '/contact', '/metodologia', '/metodologia/completa', '/legal/privacy', '/legal/terms', '/legal/cookies', '/signup', '/login', '/forgot-password', '/reset-password', '/callback', '/upload', '/review']);
+const localizedPath = (tail:string) => publicPages.has(tail) || tail.startsWith('/review/original/');
 const messages: Record<string, string> = english;
 const escapePattern = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const templates = Object.entries(messages).filter(([source]) => /\{\d+\}/.test(source)).map(([source, translated]) => ({
@@ -27,14 +28,14 @@ export function translatePublicText<T>(value: T, locale: SiteLocale): T {
   return value;
 }
 
-/** Translate public paths only; the account preview and source legal documents stay Spanish. */
+/** Localise public content, documents and entry screens; private app destinations keep their Spanish boundary. */
 export function publicHref(href: string, locale: SiteLocale): string {
   if (!href.startsWith('/') || href.startsWith('//')) return href;
   const boundary = href.search(/[?#]/);
   const path = (boundary < 0 ? href : href.slice(0, boundary)).replace(/\/$/, '') || '/';
   const suffix = boundary < 0 ? '' : href.slice(boundary);
   const tail = path === '/' ? '' : path.replace(/^\/(es|en)(?=\/|$)/, '');
-  if (!publicPages.has(tail) || (path !== '/' && !/^\/(es|en)(?:\/|$)/.test(path))) return href;
+  if (!localizedPath(tail) || (path !== '/' && !/^\/(es|en)(?:\/|$)/.test(path))) return href;
   return `/${locale}${tail === '/' ? '' : tail}${suffix}`;
 }
 
@@ -42,5 +43,5 @@ export function alternatePublicHref(href: string, locale: SiteLocale): string {
   const other = locale === 'es' ? 'en' : 'es';
   const translated = publicHref(href, other);
   const path = translated.split(/[?#]/)[0];
-  return path === `/${other}` || (path.startsWith(`/${other}/`) && publicPages.has(path.slice(other.length + 1))) ? translated : `/${other}`;
+  return path === `/${other}` || (path.startsWith(`/${other}/`) && localizedPath(path.slice(other.length + 1))) ? translated : `/${other}`;
 }

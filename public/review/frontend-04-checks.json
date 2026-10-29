@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-14T08:32:26.583Z",
+  "date": "2026-10-29T12:08:52.256Z",
   "checks": [
     "Coherent ready fixture",
     "Coherent new fixture",
@@ -10,10 +10,10 @@
     "Authentication return paths remain local",
     "Mock transport success/failure has no production side effects",
     "Backend boundary is documented",
-    "Internal links and anchors verified across 55 pages",
+    "Internal links and anchors verified across 107 pages",
     "All audited public and app route families exported",
     "Landing parity additions and qualified claims retained"
   ],
-  "routeCount": 55,
-  "htmlBytes": 1865565
+  "routeCount": 107,
+  "htmlBytes": 4104788
 }

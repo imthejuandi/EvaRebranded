@@ -1,4 +1,5 @@
 'use client';
+import {ContactChannels} from './RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { ArrowUpRight, Check, RotateCcw } from 'lucide-react';
@@ -93,5 +94,5 @@ export default function ContactPage() {
       <div className="contact-address-card"><span className="contact-address-label">{__site.t("Una conversaci\u00F3n sobre")}</span><div className="contact-address-content" key={selected.id}><h2>{__site.t(selected.label)}</h2><p>{__site.t(selected.detail)}</p><div className="contact-address-recipient"><span>{__site.t("Para EVA")}</span><a href={__site.href(`mailto:${selected.destination}`)}>{__site.t(selected.destination)}<ArrowUpRight size={16} aria-hidden="true"/></a></div></div><span className="contact-address-note">{__site.t("Elige el tema. Encuentra el canal.")}</span></div>
       <details className="contact-other-channels"><summary>{__site.t("Otros correos de EVA")}</summary><dl><div><dt>{__site.t("Colaboraciones")}</dt><dd><a href={__site.href("mailto:partners@evahealth.es")}>{__site.t("partners@evahealth.es")}</a></dd></div><div><dt>{__site.t("Inversi\u00F3n")}</dt><dd><a href={__site.href("mailto:investors@evahealth.es")}>{__site.t("investors@evahealth.es")}</a></dd></div></dl></details>
     </aside>
-  </div><div className="eva-inner contact-next"><p>{__site.t("Si est\u00E1s explorando c\u00F3mo empezar.")}</p><a href={__site.href("/es/how-it-works")}>{__site.t("Conoce el recorrido")}<ArrowUpRight size={16} aria-hidden="true"/></a><a href={__site.href("/es/upload")}>{__site.t("Explorar con un informe")}<ArrowUpRight size={16} aria-hidden="true"/></a><a href={__site.href("/es/signup?plan=quarterly")}>{__site.t("Empezar con un kit")}<ArrowUpRight size={16} aria-hidden="true"/></a></div></div>;
+  </div><div className="eva-inner contact-next"><p>{__site.t("Si est\u00E1s explorando c\u00F3mo empezar.")}</p><a href={__site.href("/es/how-it-works")}>{__site.t("Conoce el recorrido")}<ArrowUpRight size={16} aria-hidden="true"/></a><a href={__site.href("/es/upload")}>{__site.t("Explorar con un informe")}<ArrowUpRight size={16} aria-hidden="true"/></a><a href={__site.href("/es/signup?plan=quarterly")}>{__site.t("Empezar con un kit")}<ArrowUpRight size={16} aria-hidden="true"/></a></div><ContactChannels /></div>;
 }

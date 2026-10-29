@@ -85,6 +85,17 @@ export const RunnerArrival=forwardRef<RunnerArrivalHandle,Props>(function Runner
   const edge=vignetteCtx.createRadialGradient(width*.5,height*.5,height*.26,width*.5,height*.5,height*.68);
   edge.addColorStop(0,'#fff');edge.addColorStop(.7,'#fff');edge.addColorStop(1,'transparent');
   vignetteCtx.fillStyle=edge;vignetteCtx.fillRect(0,0,width,height);
+  // Desktop cover-cropping can cut through the runner's optical trails. Fade
+  // the actual displayed bounds, including the dots, before handing off to
+  // GlowMotion's matching side mask. Leave the mobile composition intact.
+  if(width>700){
+   const sides=vignetteCtx.createLinearGradient(mediaX,0,mediaX+mediaWidth,0);
+   sides.addColorStop(0,'transparent');sides.addColorStop(.14,'#fff');
+   sides.addColorStop(.86,'#fff');sides.addColorStop(1,'transparent');
+   vignetteCtx.globalCompositeOperation='destination-in';
+   vignetteCtx.fillStyle=sides;vignetteCtx.fillRect(0,0,width,height);
+   vignetteCtx.globalCompositeOperation='source-over';
+  }
   const alpha=Array.from({length:256},(_,peak)=>peak<58?smooth((peak-25)/33):1);
   let disposed=false,failed=false,cachedVideo:HTMLVideoElement|null=null,cachedTime=-1,rgb:Uint8ClampedArray<ArrayBufferLike>|null=null;
 

@@ -1,4 +1,5 @@
 'use client';
+import {HomeUnderstanding} from '@/components/site/RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { Arrow } from './Arrow';
 import { businessLinks } from '@/lib/landing-content';
@@ -16,6 +17,7 @@ export function HealthEditorial({ calm = false }: {
   <div className="context-grid"><h2 id="context-title">{__site.t("Tu salud tiene")}<br /><em>{__site.t("una historia.")}</em></h2><div className="context-copy"><p>{__site.t("Los biomarcadores son indicadores medibles de tu cuerpo. Una anal\u00EDtica muestra sus valores en un momento concreto.")}</p><p>{__site.t("Con EVA, los vuelves a medir cada 90 d\u00EDas. As\u00ED puedes comparar tus resultados y ponerlos en relaci\u00F3n con tus h\u00E1bitos y c\u00F3mo te encuentras.")}</p><a className="text-link" href={__site.href(businessLinks.science)}>{__site.t("C\u00F3mo interpreta EVA los resultados ")}</a></div></div>
   <div className="annual-reading"><div className="annual-number"><DotNumber value="60" calm={calm}/><p>{__site.t("resultados de biomarcadores al a\u00F1o")}</p></div><div className="annual-rhythm"><p><b>{__site.t("15 biomarcadores.")}</b><br />{__site.t("Cuatro lecturas al a\u00F1o.")}</p><div className="quarter-track" aria-label={__site.t("Cuatro lecturas, una cada tres meses")}>{__site.t(['01', '04', '07', '10'].map((m, i) => <div key={m}><span className="quarter-dots" aria-hidden="true">{__site.t(Array.from({ length: 15 }, (_, j) => <i key={j}/>))}</span><span>{__site.t("MES ")}{__site.t(m)}</span><small>{__site.t(i === 0 ? 'Tu punto de partida' : 'Tu siguiente lectura')}</small></div>))}</div></div></div>
  </section>
+ <HomeUnderstanding />
  <MethodJourney calm={calm}/>
  <BiomarkerGallery calm={calm}/>
  <section className="range-clarity" aria-label={__site.t("C\u00F3mo leer los rangos")}><p>{__site.t("Un intervalo de referencia describe los valores que usa el laboratorio. Los rangos de EVA aportan otra perspectiva para explorar tus resultados junto con su evoluci\u00F3n y tu contexto; no sustituyen una valoraci\u00F3n profesional.")}</p><a href={__site.href("/es/science")}>{__site.t("Entender los rangos de EVA")}</a></section>
