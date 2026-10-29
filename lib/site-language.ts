@@ -2,7 +2,7 @@ import english from './site-content/locales/public.en.json';
 
 export type SiteLocale = 'es' | 'en';
 const publicPages = new Set(['', '/', '/how-it-works', '/science', '/pricing', '/about', '/blog', '/contact', '/metodologia', '/metodologia/completa', '/legal/privacy', '/legal/terms', '/legal/cookies', '/signup', '/login', '/forgot-password', '/reset-password', '/callback', '/upload', '/review']);
-const localizedPath = (tail:string) => publicPages.has(tail) || tail.startsWith('/review/original/');
+const localizedPath = (tail:string) => publicPages.has(tail) || tail === '/review/tasso-options' || tail.startsWith('/review/original/');
 const messages: Record<string, string> = english;
 const escapePattern = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const templates = Object.entries(messages).filter(([source]) => /\{\d+\}/.test(source)).map(([source, translated]) => ({

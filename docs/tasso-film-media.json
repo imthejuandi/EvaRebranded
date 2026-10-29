@@ -1,0 +1,201 @@
+{
+  "provider": "Higgsfield",
+  "imageModel": "gpt_image_2_5",
+  "imageSettings": {
+    "quality": "high",
+    "resolution": "2k"
+  },
+  "videoModel": "kling3_0",
+  "videoSettings": {
+    "mode": "pro",
+    "sound": "off",
+    "duration": 5
+  },
+  "imageJobs": [
+    {
+      "index": 1,
+      "job_id": "78490ebc-8ac4-47dd-ac6b-4e4ac90a125c"
+    },
+    {
+      "index": 2,
+      "job_id": "e71e4ce3-ef6e-42e9-a18b-f7c110e00909"
+    },
+    {
+      "index": 5,
+      "job_id": "b17ade9a-0ee5-4318-b8b5-d96e1a06e284"
+    },
+    {
+      "index": 6,
+      "job_id": "c9f106fb-c8ec-4943-8267-2cfcd24fef1a"
+    },
+    {
+      "index": 3,
+      "job_id": "01ec6d99-b463-4a82-9a8f-9f748f606b8d"
+    },
+    {
+      "index": 4,
+      "job_id": "60e83061-d775-4f5a-b675-745b78bb1d13"
+    },
+    {
+      "index": 7,
+      "job_id": "1e2ac8a7-5cca-497d-aa9a-1c76c854d71e"
+    },
+    {
+      "index": 8,
+      "job_id": "11cd3035-0e2e-4275-ae01-fb21904c6f0b"
+    },
+    {
+      "index": 9,
+      "job_id": "2985a203-64aa-4838-8471-fe872c89fe11"
+    }
+  ],
+  "videoJobs": [
+    {
+      "index": 102,
+      "job_id": "c26404fe-dd34-41c6-a5ee-c75ca52bc7fe"
+    },
+    {
+      "index": 103,
+      "job_id": "32cba172-cb29-439b-99a6-52322b96a5f5"
+    },
+    {
+      "index": 104,
+      "job_id": "b5635073-50b8-440d-bd35-280f4d067472"
+    },
+    {
+      "index": 101,
+      "job_id": "87d94f42-3079-462c-8ad0-7123ce814892"
+    },
+    {
+      "index": 105,
+      "job_id": "e17a576e-af20-445f-9fd5-54869d891cea"
+    },
+    {
+      "index": 106,
+      "job_id": "611e2501-f76a-49bb-9121-a6464d9d6bf6",
+      "replaced_job_id": "dc8f6747-e608-4a61-b4d5-7c52ae2ff347"
+    },
+    {
+      "index": 107,
+      "job_id": "37329e14-d498-4e60-8d8f-ec34b7c86e76"
+    },
+    {
+      "index": 108,
+      "job_id": "f4095a09-d363-4fe7-8865-02e5ee49d563"
+    },
+    {
+      "index": 109,
+      "job_id": "98faa7e9-bc72-4392-949e-cbf1670db761"
+    }
+  ],
+  "reviewLoops": 2,
+  "estimatedInitialCredits": 92.25,
+  "repair": "One five-second Morning insight clip regenerated to eliminate spontaneous screen text.",
+  "sourceReferences": [
+    "https://www.tassoinc.com/s/Tasso_DeviceFamilyInstructions.pdf",
+    "https://www.tassoinc.com/tasso-plus"
+  ],
+  "assets": [
+    {
+      "path": "public/art/tasso-films/light-collect.jpg",
+      "sha256": "065f1671a272b1d097deddd21dabd25356efeb47f128b1f65795a9c3264df4ce",
+      "size": 206341
+    },
+    {
+      "path": "public/art/tasso-films/light-collect.mp4",
+      "sha256": "b6fe12251b680234cdf4fec668950f889dcc2f9b40b5aefaafd3f220072922f3",
+      "size": 2264597
+    },
+    {
+      "path": "public/art/tasso-films/light-insight.jpg",
+      "sha256": "4a0950ae7ee4f17888c0c938f208beb276e750186fb7b969a8330992cc2a27a8",
+      "size": 257990
+    },
+    {
+      "path": "public/art/tasso-films/light-insight.mp4",
+      "sha256": "e3289d880b66c29e2d7f4012c782b66ce00f8f05d7feb211fb9c454f67bcec4e",
+      "size": 2431757
+    },
+    {
+      "path": "public/art/tasso-films/light-return.jpg",
+      "sha256": "3e12839e200883fca5c93a4867f2350738334f0b21bd783d7620a28bd764831c",
+      "size": 228706
+    },
+    {
+      "path": "public/art/tasso-films/light-return.mp4",
+      "sha256": "435cb11e99aeb695c42e93b25011c4e8839e89ca6dcb8fb1f1acd8bc4098658c",
+      "size": 3551584
+    },
+    {
+      "path": "public/art/tasso-films/morning-collect.jpg",
+      "sha256": "a0165b755b2fa7062db137698ad1093f88a63d1cde162a31fdc7ec07c9b6eb41",
+      "size": 310998
+    },
+    {
+      "path": "public/art/tasso-films/morning-collect.mp4",
+      "sha256": "16ff4e424ad8c35b9f79c92025949bd567e523a7b769c3672482f5df4faed8f8",
+      "size": 3325989
+    },
+    {
+      "path": "public/art/tasso-films/morning-insight.jpg",
+      "sha256": "2cb354fda85ce966bd551c10afd964790560eb4571f220e1691a59255b56efde",
+      "size": 230219
+    },
+    {
+      "path": "public/art/tasso-films/morning-insight.mp4",
+      "sha256": "772c8f2745deac578d4f3ce45fc0d0dcec5e910f27705545dff6f5898bc53aea",
+      "size": 1003772
+    },
+    {
+      "path": "public/art/tasso-films/morning-return.jpg",
+      "sha256": "68572315d1f96f28ce109fe65322cd9f6cf91f4b846177411c04307a1a5a5d42",
+      "size": 314169
+    },
+    {
+      "path": "public/art/tasso-films/morning-return.mp4",
+      "sha256": "8a903a823126265639738e227c73a0ad184d8ebcf12c10a65b46e88b0d041533",
+      "size": 3408888
+    },
+    {
+      "path": "public/art/tasso-films/original.jpg",
+      "sha256": "eef5756117539e06f86b6f789fab7a73f18fec231e37287bcd32a5b6f7d38a93",
+      "size": 101187
+    },
+    {
+      "path": "public/art/tasso-films/original.mp4",
+      "sha256": "0befe2401fb1f99f383b650c0bcb64829d0dd0f9889ccc4176b578cd7f3198b6",
+      "size": 449139
+    },
+    {
+      "path": "public/art/tasso-films/studio-collect.jpg",
+      "sha256": "bb979c367fcd23407ef879543e50d9eff26c44f1db609eb79db2f5d8f48e29a1",
+      "size": 213576
+    },
+    {
+      "path": "public/art/tasso-films/studio-collect.mp4",
+      "sha256": "3c01837a45aef7982fb60065cb83add13bce317e97fbcb98af8d36af21ef0ebf",
+      "size": 2272934
+    },
+    {
+      "path": "public/art/tasso-films/studio-insight.jpg",
+      "sha256": "f315a092c764c735df04807fb6274cb1f772d934a854d163af2ec959919813b4",
+      "size": 126189
+    },
+    {
+      "path": "public/art/tasso-films/studio-insight.mp4",
+      "sha256": "3c17ea26c1b29628536727942157d4643e23397543c35243598319a9a8104556",
+      "size": 1918165
+    },
+    {
+      "path": "public/art/tasso-films/studio-return.jpg",
+      "sha256": "7335d40122407ad2941a6ca9527d83bbaf8e81408568e796359412a2fefc0472",
+      "size": 112944
+    },
+    {
+      "path": "public/art/tasso-films/studio-return.mp4",
+      "sha256": "139105872db221779754e2534e1f113cf354af2d6c6bc2d93ef46d161f582b1a",
+      "size": 2643105
+    }
+  ],
+  "estimatedCreditsIncludingRepair": 99.75
+}
