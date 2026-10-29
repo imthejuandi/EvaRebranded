@@ -39,3 +39,15 @@ For return, identify the sample and collection details according to the kit, pro
 `public/art/tasso-plus-in-use.png` and responsive WebP derivatives were visually inspected: they show upper-arm placement and an attached tube pointing down. Existing local provenance calls the PNG a placement reference but does not record its original URL. Its placement is consistent with manufacturer instructions; do not describe its online origin as newly verified. This distinction does not prevent use of the existing repository asset in this design review.
 
 `public/art/tasso-plus-glow-v1.webp` is a styled derivative of the product photograph. `public/review/tasso-glow-provenance.json` records its generative optical treatment. It is suitable for the established product presentation, but is not an authoritative instructional photograph. Older Tasso walking/composited placement studies were rejected or archived in existing design documentation and should not be repurposed as procedural demonstration footage.
+
+## Addendum: generated images and image-to-video options
+
+For each of the three new creative directions, approve the starting image and its animated result separately. A correct still does not establish that the video preserves device geometry, tube orientation, hand anatomy, or the collection sequence.
+
+The collection image should make the outer upper arm and downward attached tube readable. Keep the person seated and the collection arm relaxed. If a reliable single press-and-release cannot be shown, a quiet placement shot with a clear copy cue is preferable to a fabricated procedure. A short cinematic clip must not imply that a tube fills instantly.
+
+Review the beginning, middle, end, and any action transition for extra fingers, a changing button or shell, a missing or sideways tube, repeated pressing, and the device sliding or floating on skin. Keep the labeled and capped sample protected before it enters the prepaid envelope. Preserve the visible laboratory-receipt qualifier wherever the two-working-day result promise appears. Graphic labels and interface copy should be added in the website, rather than baked into generated footage where they may distort.
+
+These constraints apply equally to realistic photography, macro product treatments, and restrained graphic directions. Stylization changes the presentation, not the physical collection or return process.
+
+Factual review of the nine shot prompts in `tasso-film-directions.md` found two clarifications, both incorporated by the creative agent before generation: all collection shots specify a seated adult with a relaxed arm, and the inner protective carrier is closed/sealed before entering the return envelope. The remaining prompts follow the collection, protected-return, and laboratory-receipt timing boundaries above. This is prompt approval only; the resulting images and videos still require frame-by-frame visual review.
