@@ -1,0 +1,85 @@
+{
+  "source_route": "/es/dashboard",
+  "capture": {
+    "source": "Actual /es/dashboard lossless PNG browser screencast, fresh default fictional demo context",
+    "duration": 8.54,
+    "signature": {
+      "x": 264,
+      "y": 90,
+      "width": 1296,
+      "height": 1272.46875
+    },
+    "result": {
+      "x": 587,
+      "y": 1017.484375,
+      "width": 650,
+      "height": 137
+    },
+    "events": [
+      {
+        "state": "overview",
+        "time": 0.0
+      },
+      {
+        "state": "apob",
+        "time": 1.809
+      },
+      {
+        "state": "hscrp",
+        "time": 4.352
+      },
+      {
+        "state": "overview-return",
+        "time": 6.74
+      }
+    ],
+    "selectedResults": {
+      "apob": "Cardiovascular\nApoB\n\n78 mg/dL · Dentro del intervalo\n\nIntervalo del informe · 45–90 mg/dL",
+      "hscrp": "Inflamación\nhsCRP\n\n2,1 mg/L · Por encima del intervalo\n\nIntervalo del informe · 0–1 mg/L"
+    },
+    "viewport": {
+      "width": 1600,
+      "height": 1500
+    },
+    "errors": []
+  },
+  "capturedPngFrames": 227,
+  "video": "media/source/tasso-light/dashboard-live.mp4",
+  "sha256": "05ba819aa07a5e07e5cf7a55d9cf7f1696020861b4b2cf38b75c43db80ccec3c",
+  "frameCount": 192,
+  "fps": 24,
+  "dimensions": [
+    1200,
+    1000
+  ],
+  "atlases": [
+    "/art/tasso-light/insight-01.webp",
+    "/art/tasso-light/insight-02.webp",
+    "/art/tasso-light/insight-03.webp",
+    "/art/tasso-light/insight-04.webp",
+    "/art/tasso-light/insight-05.webp",
+    "/art/tasso-light/insight-06.webp",
+    "/art/tasso-light/insight-07.webp",
+    "/art/tasso-light/insight-08.webp",
+    "/art/tasso-light/insight-09.webp",
+    "/art/tasso-light/insight-10.webp",
+    "/art/tasso-light/insight-11.webp",
+    "/art/tasso-light/insight-12.webp",
+    "/art/tasso-light/insight-13.webp",
+    "/art/tasso-light/insight-14.webp",
+    "/art/tasso-light/insight-15.webp",
+    "/art/tasso-light/insight-16.webp",
+    "/art/tasso-light/insight-17.webp",
+    "/art/tasso-light/insight-18.webp",
+    "/art/tasso-light/insight-19.webp",
+    "/art/tasso-light/insight-20.webp",
+    "/art/tasso-light/insight-21.webp",
+    "/art/tasso-light/insight-22.webp",
+    "/art/tasso-light/insight-23.webp",
+    "/art/tasso-light/insight-24.webp"
+  ],
+  "carrier_source": "Generated photographic envelope cutout referenced to the existing Light return image; an unbranded creative packaging prop. Actual UI footage remains an unchanged lossless browser capture.",
+  "asset_bytes": 10169270,
+  "carrier_asset": "/art/tasso-light/paper-envelope.png",
+  "carrier_rendering": "Transparent photographic silhouette with an opaque inset backing; stage edits occur under the backed central paper face."
+}

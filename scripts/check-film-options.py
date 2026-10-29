@@ -1,4 +1,6 @@
-"""Acceptance for the current scroll-only Tasso comparison; root runs via npm.
+"""Acceptance for the three preserved scroll directions; root runs via npm.
+
+Light has its own stricter check-light-cinematic.py acceptance.
 
 Checks real canvas pixels, reverse/stopped scroll, the exact approved dashboard,
 keyboard jumps and static reduced-motion equivalents. No player tests remain.
@@ -12,7 +14,7 @@ from urllib.parse import urlparse
 from playwright.async_api import async_playwright
 
 ROOT=Path(__file__).resolve().parents[1]
-IDS=['original','studio','morning','light']
+IDS=['original','studio','morning']
 CASES=[('en-desktop','en',1440,900,False),('es-desktop','es',1440,900,False),('en-phone','en',390,844,False),('es-phone','es',390,844,False),('es-compact','es',320,640,False),('en-reduced','en',390,844,True),('es-reduced','es',390,844,True)]
 
 SNAPSHOT='''id=>{
@@ -76,7 +78,7 @@ async def run_case(browser,case,args,reference,out):
         assert await page.locator('video,audio').count()==0,'Scroll comparison contains media elements'
         assert await page.get_by_role('button',name=__import__('re').compile(r'\b(play|pause|replay|reproducir|pausar)\b',__import__('re').I)).count()==0,'Playback control remains'
         assert await page.locator('[data-film-option]').count()==4,'Expected original plus three directions'
-        assert await page.locator('.tasso-scroll-ready.is-ready').count()==4,'Some sequence is not ready'
+        assert await page.locator('.tasso-scroll-ready.is-ready').count()==3,'Some preserved sequence is not ready'
         if reduced:
             assert await page.locator('canvas').count()==0,'Reduced motion still mounts an animated canvas'
             for option in IDS:
@@ -87,7 +89,7 @@ async def run_case(browser,case,args,reference,out):
                 await image.evaluate('i=>i.decode()')
                 assert urlparse(await image.evaluate('i=>i.currentSrc')).path==reference['src'],'Static step3 uses a different dashboard'
                 await panel.locator('[data-tasso-static-step="2"]').screenshot(path=str(out/f'{name}-{option}-dashboard.png'))
-            report['staticSteps']=12
+            report['staticSteps']=9
         else:
             for option in IDS:
                 panel=page.locator(f'[data-film-option="{option}"]')

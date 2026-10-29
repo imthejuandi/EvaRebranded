@@ -1,0 +1,731 @@
+{
+  "scope": "Original, Studio Precision and Morning at Home must remain unchanged by the Light-only revision.",
+  "dashboard": {
+    "ready": true,
+    "src": "/art/tasso-scroll/eva-dashboard.jpg",
+    "width": 1296,
+    "height": 780
+  },
+  "options": [
+    {
+      "id": "original",
+      "scenes": [
+        {
+          "id": "collect",
+          "ready": true,
+          "poster": "/art/tasso-scroll/original-collect.jpg",
+          "frameWidth": 1200,
+          "frameHeight": 675,
+          "fps": 12,
+          "frameCount": 60,
+          "columns": 3,
+          "rows": 4,
+          "framesPerSheet": 12,
+          "atlases": [
+            "/art/tasso-scroll/original-collect-01.webp",
+            "/art/tasso-scroll/original-collect-02.webp",
+            "/art/tasso-scroll/original-collect-03.webp",
+            "/art/tasso-scroll/original-collect-04.webp",
+            "/art/tasso-scroll/original-collect-05.webp"
+          ]
+        },
+        {
+          "id": "return",
+          "ready": true,
+          "poster": "/art/tasso-scroll/original-return.jpg",
+          "frameWidth": 1200,
+          "frameHeight": 675,
+          "fps": 12,
+          "frameCount": 60,
+          "columns": 3,
+          "rows": 4,
+          "framesPerSheet": 12,
+          "atlases": [
+            "/art/tasso-scroll/original-return-01.webp",
+            "/art/tasso-scroll/original-return-02.webp",
+            "/art/tasso-scroll/original-return-03.webp",
+            "/art/tasso-scroll/original-return-04.webp",
+            "/art/tasso-scroll/original-return-05.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "studio",
+      "scenes": [
+        {
+          "id": "collect",
+          "ready": true,
+          "poster": "/art/tasso-scroll/studio-collect.jpg",
+          "frameWidth": 1200,
+          "frameHeight": 675,
+          "fps": 12,
+          "frameCount": 60,
+          "columns": 3,
+          "rows": 4,
+          "framesPerSheet": 12,
+          "atlases": [
+            "/art/tasso-scroll/studio-collect-01.webp",
+            "/art/tasso-scroll/studio-collect-02.webp",
+            "/art/tasso-scroll/studio-collect-03.webp",
+            "/art/tasso-scroll/studio-collect-04.webp",
+            "/art/tasso-scroll/studio-collect-05.webp"
+          ]
+        },
+        {
+          "id": "return",
+          "ready": true,
+          "poster": "/art/tasso-scroll/studio-return.jpg",
+          "frameWidth": 1200,
+          "frameHeight": 675,
+          "fps": 12,
+          "frameCount": 60,
+          "columns": 3,
+          "rows": 4,
+          "framesPerSheet": 12,
+          "atlases": [
+            "/art/tasso-scroll/studio-return-01.webp",
+            "/art/tasso-scroll/studio-return-02.webp",
+            "/art/tasso-scroll/studio-return-03.webp",
+            "/art/tasso-scroll/studio-return-04.webp",
+            "/art/tasso-scroll/studio-return-05.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "morning",
+      "scenes": [
+        {
+          "id": "collect",
+          "ready": true,
+          "poster": "/art/tasso-scroll/morning-collect.jpg",
+          "frameWidth": 1200,
+          "frameHeight": 675,
+          "fps": 12,
+          "frameCount": 60,
+          "columns": 3,
+          "rows": 4,
+          "framesPerSheet": 12,
+          "atlases": [
+            "/art/tasso-scroll/morning-collect-01.webp",
+            "/art/tasso-scroll/morning-collect-02.webp",
+            "/art/tasso-scroll/morning-collect-03.webp",
+            "/art/tasso-scroll/morning-collect-04.webp",
+            "/art/tasso-scroll/morning-collect-05.webp"
+          ]
+        },
+        {
+          "id": "return",
+          "ready": true,
+          "poster": "/art/tasso-scroll/morning-return.jpg",
+          "frameWidth": 1200,
+          "frameHeight": 675,
+          "fps": 12,
+          "frameCount": 60,
+          "columns": 3,
+          "rows": 4,
+          "framesPerSheet": 12,
+          "atlases": [
+            "/art/tasso-scroll/morning-return-01.webp",
+            "/art/tasso-scroll/morning-return-02.webp",
+            "/art/tasso-scroll/morning-return-03.webp",
+            "/art/tasso-scroll/morning-return-04.webp",
+            "/art/tasso-scroll/morning-return-05.webp"
+          ]
+        }
+      ]
+    }
+  ],
+  "files": {
+    "/art/tasso-scroll/eva-dashboard.jpg": "c8bf25730c37fb80957cb76096858e0e625b17bbadfe7b937eaa7ca40cce8fde",
+    "/art/tasso-scroll/morning-collect-01.webp": "97b9e6e6f41af7bb64a74af7a82fb9724e3a3ee7d570077797965c60d9156758",
+    "/art/tasso-scroll/morning-collect-02.webp": "b34497959d9153e58891826dbc9086acad5e40c207112791bd141d75a19d693c",
+    "/art/tasso-scroll/morning-collect-03.webp": "d5c5e07726e820767c02b811833a5ca5e050f944efce2a26b64c6ca51ddaa7f0",
+    "/art/tasso-scroll/morning-collect-04.webp": "c4fff5d65021ec79610bd46680ccaecfce09fcd4a75f3459a02c95bffde11813",
+    "/art/tasso-scroll/morning-collect-05.webp": "cb37fa894a5b7327444bf317666cbecbf76f3c1b2ce6a0e7d8fa085e9fcc015c",
+    "/art/tasso-scroll/morning-collect.jpg": "e8c49b5ca488575bf3119dc3b82f4be7b0b7633046f73ef4cf48fa10f2662ec6",
+    "/art/tasso-scroll/morning-return-01.webp": "b311097d4fa50b7daa2678eca77c8fc2c4f3033540aa3a7e98583ded84be252f",
+    "/art/tasso-scroll/morning-return-02.webp": "513e67d4e0125952085f3fc1d09fc22c7ebcb4785885e35294c26241a413018f",
+    "/art/tasso-scroll/morning-return-03.webp": "649485c748ef2bd31df351ab4068afd4e3f674d7d5e74e1c41800028913fc93d",
+    "/art/tasso-scroll/morning-return-04.webp": "5d1027cabf5495e984c785ac8fed26a616f61e016af2f3cd12219ef3d076782c",
+    "/art/tasso-scroll/morning-return-05.webp": "0218daa34edd8936175b200f5cfb8a0cea0147c7c48e34eeb6997425be91fa11",
+    "/art/tasso-scroll/morning-return.jpg": "cb0637f2fd11d650641ba896e3c6708767098d203511f4ade330da0d360b4e5e",
+    "/art/tasso-scroll/original-collect-01.webp": "51ab069d503a55048f680384d2ef1875f671b3757d4e51da2882d283606f70c4",
+    "/art/tasso-scroll/original-collect-02.webp": "ae098c3f6b296755fed1de895c5b497f5dd3ecf7e16fb01de438be6d948162f6",
+    "/art/tasso-scroll/original-collect-03.webp": "d78ad61ac9ccfe37104ebaac69ace967211bc0115cea9ece92613a33ea0792ac",
+    "/art/tasso-scroll/original-collect-04.webp": "d78ad61ac9ccfe37104ebaac69ace967211bc0115cea9ece92613a33ea0792ac",
+    "/art/tasso-scroll/original-collect-05.webp": "d78ad61ac9ccfe37104ebaac69ace967211bc0115cea9ece92613a33ea0792ac",
+    "/art/tasso-scroll/original-collect.jpg": "5f6059c4cfb1e2ae26076f7cbeb1a23eb2e2b981801a4467cbde85d81d0ccb19",
+    "/art/tasso-scroll/original-return-01.webp": "54095260d8c582991f21ff0cb9093526888cfcb1ecb84a2c31f1ed8677c2e9db",
+    "/art/tasso-scroll/original-return-02.webp": "b12130ce2f694811890ebc529ffe65573b5e6b970e47e452883084c7861eab04",
+    "/art/tasso-scroll/original-return-03.webp": "f461618d33bc461c14d7c7db26e4a76f11f7f5fbfde435bb09d7557d79630d9c",
+    "/art/tasso-scroll/original-return-04.webp": "72d5eca653dfd4664918ca40a03814f36c17f5850a24a5a60821a548c811c792",
+    "/art/tasso-scroll/original-return-05.webp": "5a4cc2e554ddd48b6a084708e18e8d87fc54937288b2858e74845622e0baa4c3",
+    "/art/tasso-scroll/original-return.jpg": "147aa41e98e725925c281cbd3d09b5db858415ec6700cdbad3ebce77ee796d1c",
+    "/art/tasso-scroll/studio-collect-01.webp": "fafd8d88ddaef04b0f9ffa0f75e88571af876c31ae72675f14f772aeef02d265",
+    "/art/tasso-scroll/studio-collect-02.webp": "948baa21368c13f4869f623bc5ffd4b668c04f3a18ef60004ec3ae6c4e6a4d9d",
+    "/art/tasso-scroll/studio-collect-03.webp": "97ac3e571dc1283630f39f7cae13ceb28e27fac05879ceafa847bd459335595e",
+    "/art/tasso-scroll/studio-collect-04.webp": "e81545d00f66aa3e2a618e8abbc848aaeed7b67362c8d694445edfd9d6604a8b",
+    "/art/tasso-scroll/studio-collect-05.webp": "5b2042b7caf6e645d3f8115f6ca9d676cc8a8c0fb3a4b37405c2030b7156c29a",
+    "/art/tasso-scroll/studio-collect.jpg": "4059e41a54b23302be3a8e33a7880d4ec26b40454808f90b766bdb885bc2a7ba",
+    "/art/tasso-scroll/studio-return-01.webp": "4874bbaba9cbd9d8abd756d5eaa5293f6b6de6864573a6b2fdabf2a5146bce79",
+    "/art/tasso-scroll/studio-return-02.webp": "83a7b66130b062de7e9329f47476d638ccfca2b452d4f667e47893d8af71b553",
+    "/art/tasso-scroll/studio-return-03.webp": "ac45c4e3686939e23c3d943b70e3d57bbefbdb85c9fb07708270498936c2a26b",
+    "/art/tasso-scroll/studio-return-04.webp": "e26a45500f2f8eca63713edecadbcf9ed3bba58d3c25a7bb771579f4270fd2e5",
+    "/art/tasso-scroll/studio-return-05.webp": "7e128318812cb0fba5d74a1ee5d27ce8e3a26fa994085f1aec2fda06f347a8e1",
+    "/art/tasso-scroll/studio-return.jpg": "de8a7d807ec13d098c36c5c18fb7694b264e7a3c7da74f334bd8485bf5daa811"
+  },
+  "renderedCases": {
+    "en-desktop": [
+      {
+        "option": "original",
+        "step": 0,
+        "caption": "01 / CollectCollect at home.Your kit comes to you. Prepare, apply, press once, release.Upper arm · up to 5 minutes",
+        "frame": "36",
+        "pixels": {
+          "hash": "2e4fde42",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 1,
+        "caption": "02 / ReturnSend your sample back.Protected sample. Prepaid return envelope.Return postage included.",
+        "frame": "31",
+        "pixels": {
+          "hash": "48102dab",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 2,
+        "caption": "03 / UnderstandUnderstand your results.2 working days from laboratory receipt.Biomarkers explained. A clearer picture over time.Actual dashboard · example data · Spanish interfaceOpen the actual dashboard",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "studio",
+        "step": 0,
+        "caption": "01 / CollectCollect at home.Your kit comes to you. Prepare, apply, press once, release.Upper arm · up to 5 minutes",
+        "frame": "36",
+        "pixels": {
+          "hash": "6641ba98",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 1,
+        "caption": "02 / ReturnSend your sample back.Protected sample. Prepaid return envelope.Return postage included.",
+        "frame": "31",
+        "pixels": {
+          "hash": "64ef45cd",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 2,
+        "caption": "03 / UnderstandUnderstand your results.2 working days from laboratory receipt.Biomarkers explained. A clearer picture over time.Actual dashboard · example data · Spanish interfaceOpen the actual dashboard",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "morning",
+        "step": 0,
+        "caption": "01 / CollectCollect at home.Your kit comes to you. Prepare, apply, press once, release.Upper arm · up to 5 minutes",
+        "frame": "36",
+        "pixels": {
+          "hash": "4f7580cd",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 1,
+        "caption": "02 / ReturnSend your sample back.Protected sample. Prepaid return envelope.Return postage included.",
+        "frame": "31",
+        "pixels": {
+          "hash": "d3b48cca",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 2,
+        "caption": "03 / UnderstandUnderstand your results.2 working days from laboratory receipt.Biomarkers explained. A clearer picture over time.Actual dashboard · example data · Spanish interfaceOpen the actual dashboard",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      }
+    ],
+    "es-desktop": [
+      {
+        "option": "original",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "2e4fde42",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "48102dab",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "studio",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "6641ba98",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "64ef45cd",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "morning",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "4f7580cd",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "d3b48cca",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      }
+    ],
+    "en-phone": [
+      {
+        "option": "original",
+        "step": 0,
+        "caption": "01 / CollectCollect at home.Your kit comes to you. Prepare, apply, press once, release.Upper arm · up to 5 minutes",
+        "frame": "36",
+        "pixels": {
+          "hash": "8d94c86d",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 1,
+        "caption": "02 / ReturnSend your sample back.Protected sample. Prepaid return envelope.Return postage included.",
+        "frame": "31",
+        "pixels": {
+          "hash": "1ecfa68b",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 2,
+        "caption": "03 / UnderstandUnderstand your results.2 working days from laboratory receipt.Biomarkers explained. A clearer picture over time.Actual dashboard · example data · Spanish interfaceOpen the actual dashboard",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "studio",
+        "step": 0,
+        "caption": "01 / CollectCollect at home.Your kit comes to you. Prepare, apply, press once, release.Upper arm · up to 5 minutes",
+        "frame": "36",
+        "pixels": {
+          "hash": "5904cb99",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 1,
+        "caption": "02 / ReturnSend your sample back.Protected sample. Prepaid return envelope.Return postage included.",
+        "frame": "31",
+        "pixels": {
+          "hash": "fb0c4160",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 2,
+        "caption": "03 / UnderstandUnderstand your results.2 working days from laboratory receipt.Biomarkers explained. A clearer picture over time.Actual dashboard · example data · Spanish interfaceOpen the actual dashboard",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "morning",
+        "step": 0,
+        "caption": "01 / CollectCollect at home.Your kit comes to you. Prepare, apply, press once, release.Upper arm · up to 5 minutes",
+        "frame": "36",
+        "pixels": {
+          "hash": "e441ab9a",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 1,
+        "caption": "02 / ReturnSend your sample back.Protected sample. Prepaid return envelope.Return postage included.",
+        "frame": "31",
+        "pixels": {
+          "hash": "8580592c",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 2,
+        "caption": "03 / UnderstandUnderstand your results.2 working days from laboratory receipt.Biomarkers explained. A clearer picture over time.Actual dashboard · example data · Spanish interfaceOpen the actual dashboard",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      }
+    ],
+    "es-phone": [
+      {
+        "option": "original",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "8d94c86d",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "1ecfa68b",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "studio",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "5904cb99",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "fb0c4160",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "morning",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "e441ab9a",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "8580592c",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      }
+    ],
+    "es-compact": [
+      {
+        "option": "original",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "8d94c86d",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "1ecfa68b",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "original",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "studio",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "5904cb99",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "fb0c4160",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "studio",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      },
+      {
+        "option": "morning",
+        "step": 0,
+        "caption": "01 / RecogeRecoge tu muestra en casa.El kit llega a ti. Prepara, coloca, pulsa una vez y suelta.Parte superior del brazo · hasta 5 minutos",
+        "frame": "36",
+        "pixels": {
+          "hash": "e441ab9a",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 1,
+        "caption": "02 / DevuelveDevuelve tu muestra.Muestra protegida. Sobre de devolución prepagado.Franqueo de devolución incluido.",
+        "frame": "31",
+        "pixels": {
+          "hash": "8580592c",
+          "opaque": 256
+        },
+        "dashboard": null
+      },
+      {
+        "option": "morning",
+        "step": 2,
+        "caption": "03 / ComprendeComprende tus resultados.2 días laborables desde la recepción en laboratorio.Biomarcadores explicados. Una visión más clara en el tiempo.Panel real · datos de ejemplo · interfaz en españolAbrir el panel real",
+        "frame": null,
+        "pixels": null,
+        "dashboard": {
+          "src": "http://127.0.0.1:4175/art/tasso-scroll/eva-dashboard.jpg",
+          "ready": true,
+          "width": 1296,
+          "height": 780,
+          "opacity": 1
+        }
+      }
+    ]
+  }
+}

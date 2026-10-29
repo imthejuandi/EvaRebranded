@@ -6,6 +6,7 @@ import {TassoAtlasCache, tassoAtlasRequest, tassoScrollPose, type TassoAtlasScen
 import {tassoScrollCopy, type TassoScrollCopy} from './tasso-scroll-copy';
 import {useSiteLanguage} from './SiteLanguage';
 import './tasso-film-options.css';
+import LightCinematic from './LightCinematic';
 
 const optionIds = ['original', 'studio', 'morning', 'light'] as const;
 type OptionId = typeof optionIds[number];
@@ -195,7 +196,7 @@ export default function TassoFilmOptions() {
 
   return <div ref={root} className="tasso-film-comparison" data-tasso-film-comparison data-scroll-only data-reduced-motion={reduced}>
     <header className="tasso-film-intro"><a className="tasso-film-back" href={href('/es/review')}>{text.back}<DirectionGlyph kind="back"/></a><p className="tasso-film-eyebrow">{text.eyebrow}</p><h1>{text.title[0]}<br/><em>{text.title[1]}</em></h1><p className="tasso-film-introduction">{text.intro}</p><nav className="tasso-film-jump-nav" aria-label={text.choose}>{optionIds.map((id, index) => <a key={id} href={`#film-${id}`}><span>{String(index).padStart(2, '0')}</span>{text.options[id].title}<span aria-hidden="true"><DirectionGlyph kind="down"/></span></a>)}</nav><p className="tasso-film-current-note">{text.noSelection}</p></header>
-    {optionIds.map((id, index) => <ScrollOption key={id} id={id} index={index} text={text} locale={locale} reduced={reduced}/>)}
+    {optionIds.map((id, index) => id === 'light' ? <LightCinematic key={id} locale={locale} reduced={reduced}/> : <ScrollOption key={id} id={id} index={index} text={text} locale={locale} reduced={reduced}/>)}
     <section className="tasso-scroll-process-notes" id="tasso-process-notes"><h2>{text.sameJourney}</h2><p>{text.sameBody}</p><ol>{text.scenes.map((scene, i) => <li key={scene.short}><span>{String(i + 1).padStart(2, '0')}</span><div><h3>{scene.title}</h3><p>{scene.long}</p></div></li>)}</ol><div className="tasso-scroll-instructions"><p>{text.instructions}</p><a href="https://www.tassoinc.com/tassoplus-video" target="_blank" rel="noreferrer">{text.fullInstructions}<DirectionGlyph kind="out"/></a></div><span>{text.silent}</span></section>
   </div>;
 }
