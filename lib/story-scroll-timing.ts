@@ -1,13 +1,13 @@
 const END = 980;
 const PRODUCT_START = 280;
 const PRODUCT_END = 465;
-const PRODUCT_WEIGHT = 2.1;
+const PRODUCT_WEIGHT = 1;
 const WEIGHTED_PRODUCT_END = PRODUCT_START + (PRODUCT_END - PRODUCT_START) * PRODUCT_WEIGHT;
 const WEIGHTED_END = END + (PRODUCT_END - PRODUCT_START) * (PRODUCT_WEIGHT - 1);
 
 const clamp = (value: number, maximum: number) => Math.max(0, Math.min(maximum, Number.isFinite(value) ? value : 0));
 
-/** More reading room for the sample story; the other scenes retain their travel. */
+/** The film plays in real time; no extra scroll distance is needed to scrub it. */
 export const STORY_SCROLL_HEIGHT_SVH = 100 + 820 * WEIGHTED_END / END;
 
 export function storyFrameAtProgress(progress: number): number {

@@ -14,7 +14,7 @@ import {TassoFilmProcess} from './TassoFilmProcess';
 export const DURATION = 981;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
 const range = (f: number, a: number, b: number, x: number, y: number) => interpolate(f, [a, b], [x, y], clamp);
-export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean' }: {
+export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean', externalTasso = false }: {
     ambientRunner?: boolean;
     onRunnerBlocked?: () => void;
     language?: SignalLanguage;
@@ -24,6 +24,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
     onArrivalUnavailable?: () => void;
     scrollDriver?: StoryScrollDriver;
     tassoVariant?: 'clean' | 'labelled';
+    externalTasso?: boolean;
 } = {}) {
     const __site = useSiteLanguage();
     const f = useCurrentFrame();
@@ -83,7 +84,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
    {__site.t(!mobile && <p className="hero-support" data-hero-support style={{ position: 'absolute', left: pad, top: hero.supportTop, opacity: range(f, 20, 100, 1, 0) }}>{__site.t("Para lo que disfrutas.")}<br />{__site.t("Y lo que est\u00E1 por venir.")}</p>)}</div>
   </AbsoluteFill>
   <AbsoluteFill data-layer="product-scene" style={{ background: '#f3f0e8', color: '#171b18', overflow: 'hidden', translate: `0 ${motion.productY * h}px`, visibility: Math.abs(motion.productY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.productY) < 1 ? 'translate' : 'auto' }}>
-   <TassoFilmProcess frame={f} scrollDriver={nativeScroll} variant={tassoVariant}/>
+   <>{!externalTasso ? <TassoFilmProcess frame={f} scrollDriver={nativeScroll} variant={tassoVariant}/> : null}</>
   </AbsoluteFill>
   <AbsoluteFill data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
    <div style={{ position: 'absolute', top: mobile ? '19%' : '16%', left: pad, fontSize: mobile ? 51 : w * .072, letterSpacing: '-.065em', lineHeight: .98 }}>{__site.t("Tus datos.")}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{__site.t("Con contexto.")}</span></div>

@@ -1,0 +1,58 @@
+.tasso-home-video{position:absolute;inset:0;z-index:1;will-change:transform;pointer-events:none}
+.tasso-home-video~.chapter-nav,.tasso-home-video~.stage-note{z-index:2}
+.tasso-video-process button{pointer-events:auto}
+.tasso-video-process .tasso-film-frame video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;background:#f3f0e8}
+.tasso-video-process .tasso-film-copy{pointer-events:auto}
+.tasso-video-process .tasso-film-footer{position:relative}
+.tasso-video-controls{min-width:0;max-width:420px}
+.tasso-video-steps{display:flex;gap:16px;border-bottom:1px solid #b9c2b2;margin-bottom:8px}
+.tasso-video-steps button{display:flex;align-items:center;gap:6px;flex:1;min-height:36px;font-size:12px;color:#5e6b57;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tasso-video-steps button>span:first-child{font-size:9px}
+.tasso-video-steps button[aria-current=step]{color:#20291f;border-color:#263f31}
+.tasso-video-actions{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.tasso-video-actions button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;min-width:44px;font-size:12px}
+.tasso-video-actions button:nth-child(2){border:1px solid #c0c7b8;border-radius:99px;padding:0 18px;min-width:86px}
+.tasso-video-actions button:disabled{opacity:.35;cursor:default}
+.tasso-video-progress{position:absolute;bottom:0;left:0;right:0;height:2px;background:#d7dbd1;pointer-events:none}
+.tasso-video-progress>div{height:100%;background:#36533f;transform:scaleX(0);transform-origin:left}
+.tasso-video-message{position:absolute;inset:0;background:#f3f0e8e6;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;font-size:13px;text-align:center}
+.tasso-video-message button{min-height:44px;text-decoration:underline}
+.tasso-video-loading{position:absolute;left:12px;bottom:12px;font-size:11px;padding:8px 12px;background:#f3f0e8eb;border-radius:99px}
+@media(max-width:700px){
+ .tasso-video-process{padding-bottom:95px;gap:12px}
+ .tasso-video-process .tasso-film-footer{display:block;max-width:none}
+ .tasso-video-process .tasso-film-copy-stack{min-height:214px}
+ .tasso-video-process[data-film-variant=labelled] .tasso-film-copy-stack{min-height:145px}
+ .tasso-video-actions button{font-size:12px}
+ .tasso-video-steps{gap:12px;margin-bottom:4px}
+ .tasso-video-steps button{font-size:11px;min-height:32px}
+ body:has(.hero-entrance[data-tasso-home-active=true]) .stage-note{visibility:hidden}
+}
+@media(max-width:700px) and (max-height:730px){
+ .tasso-video-process{padding-top:82px;padding-bottom:76px;gap:8px;grid-template-rows:auto minmax(0,1fr) auto auto}
+ .tasso-video-process .tasso-film-heading h2{font-size:26px}
+ .tasso-video-process .tasso-film-heading>p{margin-bottom:5px}
+ .tasso-video-process .tasso-film-copy-stack{min-height:136px}
+ .tasso-video-process .tasso-film-detail{display:none}
+ .tasso-video-process .tasso-film-eyebrow{display:none}
+ .tasso-video-process .tasso-film-copy h3{font-size:22px;line-height:1.05;margin-bottom:7px}
+ .tasso-video-process .tasso-film-body{font-size:12px;line-height:1.35}
+ .tasso-video-process .tasso-film-timing{margin-top:7px}
+ .tasso-video-process .tasso-film-timing strong{font-size:22px}
+ .tasso-video-process .tasso-film-timing p{font-size:9px;line-height:1.25;margin-top:3px}
+ .tasso-video-process .tasso-film-example{display:none}
+ .tasso-video-process[data-film-variant=labelled] .tasso-film-copy-stack{min-height:99px}
+ .tasso-video-process .tasso-film-label>strong{font-size:18px}
+ .tasso-video-steps button{min-height:28px}
+ .tasso-video-actions button{min-height:40px;font-size:11px}
+}
+@media(max-width:700px) and (max-height:620px){
+ .tasso-video-process .tasso-film-heading h2{font-size:20px}
+ .tasso-video-process .tasso-film-heading>p{font-size:8px;margin:0}
+ .tasso-video-process .tasso-film-copy-stack{min-height:120px}
+ .tasso-video-process .tasso-film-copy h3{font-size:20px}
+ .tasso-video-process[data-film-variant=labelled] .tasso-film-copy-stack{min-height:57px}
+ .tasso-video-process[data-film-variant=labelled] .tasso-film-body{display:none}
+ .tasso-video-process[data-film-variant=labelled] .tasso-film-timing{margin-top:0}
+ .tasso-video-process .tasso-film-label>span{font-size:9px}
+}

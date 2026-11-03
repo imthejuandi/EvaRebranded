@@ -20,6 +20,8 @@
 .tasso-review-after>a{font-size:14px;white-space:nowrap;border-bottom:1px solid;padding:15px 0}
 .tasso-review-calm{padding-top:90px}
 .tasso-review-film .tasso-film-step-index{visibility:hidden}
+.tasso-playback-review .tasso-review-stage{position:relative;height:max(100svh,650px);overflow:hidden}
+.tasso-playback-review .tasso-video-process{padding-bottom:36px}
 @media(max-width:700px){
  .tasso-review-header{padding:13px 18px;gap:12px;min-height:70px}
  .tasso-review-header .wordmark{width:65px}
@@ -33,6 +35,8 @@
  .tasso-review-after{padding:65px 24px;display:block}
  .tasso-review-after>a{display:inline-block;margin-top:24px}
  .tasso-review-calm{padding-top:80px}
+ .tasso-playback-review .tasso-review-stage{height:max(100svh,568px)}
+ .tasso-playback-review .tasso-video-process{padding-bottom:24px}
 }
 @media(max-width:360px){
  .tasso-review-header{padding-inline:14px;gap:8px}

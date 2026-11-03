@@ -1,0 +1,424 @@
+{
+  "status": "passed",
+  "supersedes": "tasso-home-scroll-review.json for homepage playback behavior",
+  "behavior": {
+    "clock": "Native HTML video, 1x playback, 24 source frames per second",
+    "autoPlay": "When the product section is visible; muted and inline",
+    "chapterStartsSeconds": [
+      0,
+      6.5,
+      14.5
+    ],
+    "controls": [
+      "Previous step",
+      "Next step",
+      "Direct step selection",
+      "Play/Pause",
+      "Replay after completion"
+    ],
+    "scroll": "Scene entry/exit only. No seeking and no atlas requests. Product scroll weight restored to 1.",
+    "offscreen": "Pause while away or tab hidden. Resume on return unless explicitly paused or ended.",
+    "labels": "Clean and original labels supported without remounting or resetting video time.",
+    "reducedMotion": "Readable three-step summary. No video or frame-atlas requests."
+  },
+  "media": {
+    "path": "/art/tasso-home-video/process-1x-v1.mp4",
+    "durationSeconds": 27,
+    "width": 1280,
+    "height": 720,
+    "bytes": 4322203,
+    "sha256": "649a147ca91065741f1cb88bb81fdabe222a0e5a04e9fcc582db2483d5d5d954",
+    "encoding": "H.264, yuv420p, faststart, silent",
+    "source": "The same approved 27-second combined film. No video regeneration or new synthetic content."
+  },
+  "validation": {
+    "productionBuild": "passed, 111 routes",
+    "typescript": "passed",
+    "existingPreviewChecks": "passed, 111-page links and anchors",
+    "browserChecks": [
+      {
+        "id": "home-1440",
+        "passed": true,
+        "normalSpeed": {
+          "elapsed": 1.411,
+          "film": 1.411295
+        },
+        "noAtlasRequests": true,
+        "controls": [
+          {
+            "text": "01Collect",
+            "disabled": false,
+            "rect": {
+              "x": 48,
+              "y": 800,
+              "width": 129.328125,
+              "height": 36,
+              "top": 800,
+              "right": 177.328125,
+              "bottom": 836,
+              "left": 48
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "02Return",
+            "disabled": false,
+            "rect": {
+              "x": 193.328125,
+              "y": 800,
+              "width": 129.34375,
+              "height": 36,
+              "top": 800,
+              "right": 322.671875,
+              "bottom": 836,
+              "left": 193.328125
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "03Understand",
+            "disabled": false,
+            "rect": {
+              "x": 338.671875,
+              "y": 800,
+              "width": 129.328125,
+              "height": 36,
+              "top": 800,
+              "right": 468,
+              "bottom": 836,
+              "left": 338.671875
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Previous",
+            "disabled": false,
+            "rect": {
+              "x": 48,
+              "y": 844,
+              "width": 66.65625,
+              "height": 44,
+              "top": 844,
+              "right": 114.65625,
+              "bottom": 888,
+              "left": 48
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Play",
+            "disabled": false,
+            "rect": {
+              "x": 225.40625,
+              "y": 844,
+              "width": 86,
+              "height": 44,
+              "top": 844,
+              "right": 311.40625,
+              "bottom": 888,
+              "left": 225.40625
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Next",
+            "disabled": false,
+            "rect": {
+              "x": 422.140625,
+              "y": 844,
+              "width": 45.859375,
+              "height": 44,
+              "top": 844,
+              "right": 468,
+              "bottom": 888,
+              "left": 422.140625
+            },
+            "hit": true,
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "id": "home-390",
+        "passed": true,
+        "normalSpeed": {
+          "elapsed": 1.414,
+          "film": 1.414915
+        },
+        "noAtlasRequests": true,
+        "controls": [
+          {
+            "text": "01Collect",
+            "disabled": false,
+            "rect": {
+              "x": 24,
+              "y": 669,
+              "width": 106,
+              "height": 32,
+              "top": 669,
+              "right": 130,
+              "bottom": 701,
+              "left": 24
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "02Return",
+            "disabled": false,
+            "rect": {
+              "x": 142,
+              "y": 669,
+              "width": 106,
+              "height": 32,
+              "top": 669,
+              "right": 248,
+              "bottom": 701,
+              "left": 142
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "03Understand",
+            "disabled": false,
+            "rect": {
+              "x": 260,
+              "y": 669,
+              "width": 106,
+              "height": 32,
+              "top": 669,
+              "right": 366,
+              "bottom": 701,
+              "left": 260
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Previous",
+            "disabled": false,
+            "rect": {
+              "x": 24,
+              "y": 705,
+              "width": 66.65625,
+              "height": 44,
+              "top": 705,
+              "right": 90.65625,
+              "bottom": 749,
+              "left": 24
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Play",
+            "disabled": false,
+            "rect": {
+              "x": 162.40625,
+              "y": 705,
+              "width": 86,
+              "height": 44,
+              "top": 705,
+              "right": 248.40625,
+              "bottom": 749,
+              "left": 162.40625
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Next",
+            "disabled": false,
+            "rect": {
+              "x": 320.140625,
+              "y": 705,
+              "width": 45.859375,
+              "height": 44,
+              "top": 705,
+              "right": 366,
+              "bottom": 749,
+              "left": 320.140625
+            },
+            "hit": true,
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "id": "home-320",
+        "passed": true,
+        "normalSpeed": {
+          "elapsed": 1.408,
+          "film": 1.408179
+        },
+        "noAtlasRequests": true,
+        "controls": [
+          {
+            "text": "01Recoge",
+            "disabled": false,
+            "rect": {
+              "x": 24,
+              "y": 420,
+              "width": 82.65625,
+              "height": 28,
+              "top": 420,
+              "right": 106.65625,
+              "bottom": 448,
+              "left": 24
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "02Devuelve",
+            "disabled": false,
+            "rect": {
+              "x": 118.65625,
+              "y": 420,
+              "width": 82.671875,
+              "height": 28,
+              "top": 420,
+              "right": 201.328125,
+              "bottom": 448,
+              "left": 118.65625
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "03Comprende",
+            "disabled": false,
+            "rect": {
+              "x": 213.328125,
+              "y": 420,
+              "width": 82.671875,
+              "height": 28,
+              "top": 420,
+              "right": 296,
+              "bottom": 448,
+              "left": 213.328125
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Anterior",
+            "disabled": false,
+            "rect": {
+              "x": 24,
+              "y": 452,
+              "width": 61.453125,
+              "height": 40,
+              "top": 452,
+              "right": 85.453125,
+              "bottom": 492,
+              "left": 24
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Reproducir",
+            "disabled": false,
+            "rect": {
+              "x": 111.796875,
+              "y": 452,
+              "width": 92.40625,
+              "height": 40,
+              "top": 452,
+              "right": 204.203125,
+              "bottom": 492,
+              "left": 111.796875
+            },
+            "hit": true,
+            "hidden": false
+          },
+          {
+            "text": "Siguiente",
+            "disabled": false,
+            "rect": {
+              "x": 230.546875,
+              "y": 452,
+              "width": 65.453125,
+              "height": 40,
+              "top": 452,
+              "right": 296,
+              "bottom": 492,
+              "left": 230.546875
+            },
+            "hit": true,
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "id": "review-1440",
+        "passed": true,
+        "labelSwitchDoesNotReset": true
+      },
+      {
+        "id": "review-390",
+        "passed": true,
+        "labelSwitchDoesNotReset": true
+      },
+      {
+        "id": "review-320",
+        "passed": true,
+        "labelSwitchDoesNotReset": true
+      },
+      {
+        "id": "reduced-/en",
+        "passed": true,
+        "noAnimationRequests": true
+      },
+      {
+        "id": "reduced-/es/review/tasso-scroll",
+        "passed": true,
+        "noAnimationRequests": true
+      },
+      {
+        "id": "final-home-1440",
+        "passed": true,
+        "chapterNavigationVisible": true,
+        "naturalChapterAdvance": true,
+        "offscreenPausesAndResumes": true,
+        "endAndReplay": true
+      },
+      {
+        "id": "final-home-320",
+        "passed": true,
+        "chapterNavigationVisible": true,
+        "naturalChapterAdvance": true,
+        "offscreenPausesAndResumes": true,
+        "endAndReplay": true
+      },
+      {
+        "id": "compact-review",
+        "passed": true,
+        "actions": {
+          "x": 24,
+          "y": 504,
+          "width": 272,
+          "height": 40
+        }
+      }
+    ],
+    "pageErrors": [],
+    "screenshotsReviewed": [
+      "home-en-1440-results",
+      "home-en-390-results",
+      "home-es-320-results",
+      "labels-390-results",
+      "labels-320-results",
+      "final-home-1440",
+      "final-labels-320"
+    ],
+    "limit": "Chromium desktop and mobile viewport emulation. Physical Safari hardware not tested."
+  }
+}
