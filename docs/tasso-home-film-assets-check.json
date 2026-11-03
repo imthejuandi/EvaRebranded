@@ -1,0 +1,130 @@
+{
+  "ready": true,
+  "frameCount": 648,
+  "fps": 24,
+  "sourceBoundsChecked": [
+    0,
+    48,
+    239,
+    240,
+    336,
+    372,
+    647
+  ],
+  "variants": {
+    "desktop": {
+      "atlases": 54,
+      "totalBytes": 12890242,
+      "firstPosterPlusTwoSheetsBytes": 542559,
+      "singleDecodedBitmapBytes": 24883200,
+      "sentinelFrameComparisons": [
+        {
+          "sourceFrame": 0,
+          "sheet": 0,
+          "tile": 0,
+          "meanAbsoluteRgbError": 2.9499,
+          "psnrDb": 36.371
+        },
+        {
+          "sourceFrame": 48,
+          "sheet": 4,
+          "tile": 0,
+          "meanAbsoluteRgbError": 2.87,
+          "psnrDb": 36.591
+        },
+        {
+          "sourceFrame": 239,
+          "sheet": 19,
+          "tile": 11,
+          "meanAbsoluteRgbError": 2.0931,
+          "psnrDb": 38.202
+        },
+        {
+          "sourceFrame": 240,
+          "sheet": 20,
+          "tile": 0,
+          "meanAbsoluteRgbError": 1.8469,
+          "psnrDb": 39.052
+        },
+        {
+          "sourceFrame": 336,
+          "sheet": 28,
+          "tile": 0,
+          "meanAbsoluteRgbError": 2.5827,
+          "psnrDb": 36.882
+        },
+        {
+          "sourceFrame": 372,
+          "sheet": 31,
+          "tile": 0,
+          "meanAbsoluteRgbError": 2.563,
+          "psnrDb": 37.061
+        },
+        {
+          "sourceFrame": 647,
+          "sheet": 53,
+          "tile": 11,
+          "meanAbsoluteRgbError": 1.3921,
+          "psnrDb": 39.609
+        }
+      ]
+    },
+    "mobile": {
+      "atlases": 54,
+      "totalBytes": 4516888,
+      "firstPosterPlusTwoSheetsBytes": 177713,
+      "singleDecodedBitmapBytes": 6220800,
+      "sentinelFrameComparisons": [
+        {
+          "sourceFrame": 0,
+          "sheet": 0,
+          "tile": 0,
+          "meanAbsoluteRgbError": 3.2033,
+          "psnrDb": 35.419
+        },
+        {
+          "sourceFrame": 48,
+          "sheet": 4,
+          "tile": 0,
+          "meanAbsoluteRgbError": 3.2068,
+          "psnrDb": 35.435
+        },
+        {
+          "sourceFrame": 239,
+          "sheet": 19,
+          "tile": 11,
+          "meanAbsoluteRgbError": 2.4236,
+          "psnrDb": 36.897
+        },
+        {
+          "sourceFrame": 240,
+          "sheet": 20,
+          "tile": 0,
+          "meanAbsoluteRgbError": 2.2135,
+          "psnrDb": 37.448
+        },
+        {
+          "sourceFrame": 336,
+          "sheet": 28,
+          "tile": 0,
+          "meanAbsoluteRgbError": 3.0678,
+          "psnrDb": 35.363
+        },
+        {
+          "sourceFrame": 372,
+          "sheet": 31,
+          "tile": 0,
+          "meanAbsoluteRgbError": 2.9555,
+          "psnrDb": 35.733
+        },
+        {
+          "sourceFrame": 647,
+          "sheet": 53,
+          "tile": 11,
+          "meanAbsoluteRgbError": 1.7443,
+          "psnrDb": 37.623
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "status": "APPROVED-FOR-PRIVATE-REVIEW-SITE-DEPLOYMENT",
+  "reviewRole": "independent-design-and-QA-judge",
+  "approvedForReviewSiteDeployment": true,
+  "sourceFilmProductionApproved": false,
+  "implementationRoot": "/workspace/eva-scroll-review",
+  "sourceEvidence": {
+    "continuousFilmFrames": 648,
+    "fps": 24,
+    "assetVersion": "81d580b1ef608977",
+    "actualAtlasesVisuallyInspected": [
+      "public/art/tasso-home-film/81d580b1ef608977/desktop/atlas-004.webp",
+      "public/art/tasso-home-film/81d580b1ef608977/desktop/atlas-021.webp",
+      "public/art/tasso-home-film/81d580b1ef608977/desktop/atlas-031.webp"
+    ],
+    "observed": "36 chronological source frames show physical Tasso press/release, protected return packing, and native dashboard29/EVA82. No three-photo montage or dashboard replacement is introduced by these assets."
+  },
+  "copyReview": {
+    "status": "PASS-readonly-source-check",
+    "labelSource": "Original components/story/TassoProcess.tsx wording",
+    "englishTitles": [
+      "Your sample. At home.",
+      "Back to the lab.",
+      "Your results. In context."
+    ],
+    "spanishTitles": [
+      "Tu muestra. En casa.",
+      "De vuelta al laboratorio.",
+      "Tus resultados. Con contexto."
+    ],
+    "timing": "2 working days /2 d\u00edas laborables, explicitly from laboratory receipt of sample",
+    "unsupportedPainlessOrDiagnosisClaimsObserved": false
+  },
+  "sourceClockReview": {
+    "status": "PASS structural mapping, reported endpoint checks and observed browser target/rendered equality",
+    "singlePhysicalFrameClock": true,
+    "sourceFrames0To647": true,
+    "globalFrames280To465": true,
+    "expectedKeyframes": [
+      {
+        "progress": 0.16,
+        "sourceFrame": 52,
+        "step": 0
+      },
+      {
+        "progress": 0.51,
+        "sourceFrame": 252,
+        "step": 1
+      },
+      {
+        "progress": 0.72,
+        "sourceFrame": 378,
+        "step": 2
+      },
+      {
+        "progress": 0.9,
+        "sourceFrame": 587,
+        "step": 2
+      }
+    ],
+    "noOldThreeLayerDissolve": true
+  },
+  "memoryReview": {
+    "status": "PASS structural budget and observed browser cache bounds/offscreen release",
+    "retainedAtlasCap": 2,
+    "decoderConcurrency": 1,
+    "preDecodeEvictionObserved": true,
+    "desktopDecodedAtlasBudgetBytes": 49766400,
+    "mobileDecodedAtlasBudgetBytes": 12441600,
+    "limitation": "These are raster cache budgets inferred from dimensions and code, not a measurement of complete browser/GPU RSS."
+  },
+  "accessibilityStructure": {
+    "status": "PASS observed semantic structure, keyboard navigation, reduced-motion fallback and corrected review controls",
+    "visualFilmAriaHidden": true,
+    "externalSemanticThreeStepTranscript": true,
+    "reducedMotionSummaryPresent": true,
+    "reviewKeyboardButtonsOutsideAriaHidden": true,
+    "originalTextLabelsAreDomNotBurnedIntoFilm": true
+  },
+  "pendingBrowserGates": [],
+  "knownFilmLimits": [
+    "Existing generated footage retains a paper/book morph through the later camera orbit.",
+    "Small native dashboard typography/date/ring details remain approximate.",
+    "This implementation changes scroll presentation; it does not claim to repair the source film."
+  ],
+  "browserExecution": {
+    "profile": "portable",
+    "selectedReference": "skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/references/preview/local.md",
+    "owner": "root",
+    "childNetworkOrEscalatedBrowserLaunches": false,
+    "physicalIosDeviceTested": false,
+    "reports": [
+      "/workspace/eva-scroll-qa/browser-report-initial.json",
+      "/workspace/eva-scroll-qa/browser-report-final.json",
+      "/workspace/eva-scroll-qa/home-dock-report.json"
+    ],
+    "successfulCheckCount": 14,
+    "uncaughtPageErrors": [],
+    "historicalInitialReportNote": "Initial report retains passed:false from an earlier waitForSelector(visible) on the intentionally offscreen homepage product. The final report uses attached-then-user-navigation and passes actual homepage interaction; this historical test condition is not an application failure.",
+    "finalScreenshotsIndependentlyInspected": [
+      "/workspace/eva-scroll-qa/screens/final-labels-320-results.png",
+      "/workspace/eva-scroll-qa/screens/final-labels-1440-results.png",
+      "/workspace/eva-scroll-qa/screens/final-homepage-1440.png",
+      "/workspace/eva-scroll-qa/screens/final-homepage-390.png",
+      "/workspace/eva-scroll-qa/screens/final-homepage-clear-390.png",
+      "/workspace/eva-scroll-qa/screens/final-homepage-clear-1440.png"
+    ]
+  },
+  "browserEvidence": {
+    "firstDesktopLabelledScreenshot": "/workspace/eva-scroll-qa/screens/first-desktop-labels.png",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "reportedHttpStatus": 200,
+    "reportedPageErrors": [],
+    "reportedSourceFrame": 52,
+    "reportedReady": true,
+    "reportedCacheCount": 2,
+    "reportedCacheBytes": 49766400,
+    "independentVisualFinding": "PASS: source frame52 matches inspected atlas004 tile4; physical Tasso and hand unobscured, title below film is original wording, body and details readable. Homepage link arrow shows known missing glyph pending root SVG fix."
+  },
+  "issues": [
+    {
+      "id": "inactive-review-step-contrast",
+      "severity": "medium-accessibility",
+      "status": "resolved-and-runtime-verified",
+      "evidence": "Actual desktop screenshot has very pale interactive Return/Understand controls; CSS opacity .42 gives low contrast against cream.",
+      "recommendation": "Use sufficiently dark inactive text (~.66 opacity or explicit foreground), retaining selected-state distinction."
+    },
+    {
+      "id": "reduced-motion-initial-atlas-request",
+      "severity": "medium-motion-performance",
+      "status": "resolved-and-runtime-verified",
+      "observed": "Initial reduced-motion context requested1atlas before parent calm state mounted summary.",
+      "fix": "Child media effect returns early when prefers-reduced-motion matches before scheduling/cache work."
+    },
+    {
+      "id": "private-review-dock-overlap-homephone",
+      "severity": "medium-visual-navigation",
+      "status": "resolved-and-runtime-verified",
+      "evidence": "/workspace/eva-scroll-qa/screens/final-homepage-390.png",
+      "observed": "The pre-existing private content-review dock overlaps lower chapter text for Discover/Understand/Continue during the Tasso scene. The action test passes but the labels are visually obscured.",
+      "recommendation": "Hide/collapse this private dock during the Tasso chapter using a coarse React scene attribute, restore it outside that chapter; avoid moving it over the mobile masthead/heading.",
+      "fix": "Coarse main[data-tasso-home-active] chapter flag hides the private review dock only during the Tasso scene; it remains visible before and after.",
+      "runtimeProof": "/workspace/eva-scroll-qa/home-dock-report.json",
+      "visualProof": "/workspace/eva-scroll-qa/screens/final-homepage-clear-390.png"
+    }
+  ],
+  "remainingBrowserGates": [],
+  "independentVisualReview": {
+    "status": "PASS for inspected compositions",
+    "screenshots": [
+      "/workspace/eva-scroll-qa/screens/first-desktop-labels.png",
+      "/workspace/eva-scroll-qa/screens/desktop-en-clean-0.16.png",
+      "/workspace/eva-scroll-qa/screens/desktop-en-clean-0.51.png",
+      "/workspace/eva-scroll-qa/screens/desktop-en-clean-0.72.png",
+      "/workspace/eva-scroll-qa/screens/desktop-en-labelled-0.51.png",
+      "/workspace/eva-scroll-qa/screens/desktop-en-labelled-0.72.png",
+      "/workspace/eva-scroll-qa/screens/phone-es-clean-0.16.png",
+      "/workspace/eva-scroll-qa/screens/phone-es-clean-0.51.png",
+      "/workspace/eva-scroll-qa/screens/phone-es-clean-0.72.png",
+      "/workspace/eva-scroll-qa/screens/phone-es-labelled-0.16.png",
+      "/workspace/eva-scroll-qa/screens/phone-es-labelled-0.51.png",
+      "/workspace/eva-scroll-qa/screens/phone-es-labelled-0.72.png",
+      "/workspace/eva-scroll-qa/screens/compact-es-clean-0.16.png",
+      "/workspace/eva-scroll-qa/screens/compact-es-clean-0.51.png",
+      "/workspace/eva-scroll-qa/screens/compact-es-clean-0.72.png",
+      "/workspace/eva-scroll-qa/screens/compact-es-labelled-0.16.png",
+      "/workspace/eva-scroll-qa/screens/compact-es-labelled-0.51.png",
+      "/workspace/eva-scroll-qa/screens/compact-es-labelled-0.72.png",
+      "/workspace/eva-scroll-qa/screens/shallow-en-clean-0.72.png",
+      "/workspace/eva-scroll-qa/screens/shallow-en-labelled-0.72.png",
+      "/workspace/eva-scroll-qa/screens/reduced-en.png"
+    ],
+    "findings": [
+      "Desktop clean and labelled versions preserve the complete physical film and correct three-step copy.",
+      "Phone390x844 andcompact320x568 Spanish screens show all three steps without focal crop or header/nav/copy collisions.",
+      "Long Spanish return label and result timing/receipt qualifier fit in the compact viewport.",
+      "Shallow1440x650 results views remain readable with full physical screen.",
+      "Reduced-motion English fullpage visibly exposes all three posters and full process copy without the pinned journey."
+    ],
+    "compactLimitation": "The complete16:9 film is naturally smaller on320x568; retaining its full frame and readable text takes priority over cropping the product."
+  },
+  "functionalEvidence": {
+    "report": "/workspace/eva-scroll-qa/browser-report-initial.json",
+    "reportedPassedViewportChecks": [
+      "desktop-en",
+      "phone-es",
+      "compact-es",
+      "shallow-en"
+    ],
+    "sourceFrameRounding": "Requested poses allow1frame of integer-scroll rounding; decoded target equals rendered frame exactly.",
+    "variantKeepsProgressReported": true,
+    "forwardReverseReported": true,
+    "cacheLimitReported": true,
+    "uncaughtPageErrorsReported": []
+  },
+  "animationFunctionalGatesPassed": true,
+  "finalGateResults": {
+    "forwardReverseAndTargetFrame": "PASS",
+    "sameProgressVariantSwitch": "PASS",
+    "fourResponsiveViewports": "PASS",
+    "originalBilingualLabels": "PASS",
+    "qualifiedResultTiming": "PASS",
+    "reducedMotionEnEsZeroAtlas": "PASS",
+    "htmlImageDecoderFallback": "PASS",
+    "atlasAbortAndRecovery": "PASS",
+    "boundedCacheAndOffscreenRelease": "PASS",
+    "homepageDesktopAndPhoneIntegration": "PASS",
+    "comparisonSvgContrastAndLanguageTargets": "PASS",
+    "homepagePhoneReviewDockOverlap": "PASS after bounded coarse-chapter hide/restore",
+    "privateDockRestoresOutsideProductChapter": "PASS desktop1440 and phone390"
+  },
+  "animationReadyForHomepageReview": true,
+  "allKnownImplementationIssuesResolved": true,
+  "approvalScope": "The scroll-based homepage implementation and clean/original-label comparison are approved for this existing private review Site. This is not approval that the previously supplied generated film is an exact clinical interface capture or has had its known film artifacts repaired.",
+  "openImplementationIssues": [],
+  "validationReportedByOwner": {
+    "productionBuildRoutes": 111,
+    "previewChecksPassed": 12,
+    "historicalArchivesPreserved": 11,
+    "historicalFilesLosslesslyPreserved": 1763
+  },
+  "finalIndependentJudgment": "Approve publishing the implementation to the existing private review Site. Actual desktop/phone screenshots preserve focal imagery and readable copy; clean and original-label modes share the physical frame sequence; reduced motion, loading failure/recovery, decoder fallback, bounded cache, homepage navigation and temporary dock hiding were verified. No further broad retesting or implementation changes are requested."
+}

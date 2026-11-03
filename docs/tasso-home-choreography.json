@@ -1,0 +1,77 @@
+{
+  "purpose": "Homepage creative direction for one continuous scroll-controlled Tasso film, plus an original-label review variant.",
+  "scope": "Replace the existing Tasso process presentation within EvaFilm's product scene. Preserve the runner, the other homepage chapters, brand type, palette and navigation.",
+  "sourcePlan": {
+    "collectionOpeningSeconds": [0, 10],
+    "continuation": "The existing 17-second packaging-to-results film requested by the user.",
+    "continuationJob": "bc37c071-a5d4-44e5-82c7-94ae07872936",
+    "completeFilmSeconds": 27,
+    "fps": 24,
+    "frames": 648,
+    "newMediaGenerationRequired": false,
+    "continuousVisualRule": "One film surface and one monotonic source-frame sequence. Do not dissolve between separate photographs, replace the results shot with a screenshot, or add a second playback clock."
+  },
+  "brand": {
+    "kicker": "THREE EASY STEPS / TRES PASOS SENCILLOS",
+    "heading": "One small step. / Un pequeño gesto.",
+    "visual": "Warm paper and ink around a deliberate 16:9 cinema window. Restrained Hanken text and the established italic serif emphasis.",
+    "composition": "A persistent common heading, one sharp active step, and a quiet three-part index. The genuine physical film supplies the motion; copy supplies the meaning."
+  },
+  "proposedTiming": {
+    "authoringFrameRange": [280, 465],
+    "normalizedProgressSourceFrameKeys": [
+      {"progress": 0, "sourceFrame": 0},
+      {"progress": 0.05, "sourceFrame": 5},
+      {"progress": 0.30, "sourceFrame": 113},
+      {"progress": 0.35, "sourceFrame": 156},
+      {"progress": 0.67, "sourceFrame": 348},
+      {"progress": 0.73, "sourceFrame": 384},
+      {"progress": 0.95, "sourceFrame": 647},
+      {"progress": 1, "sourceFrame": 647}
+    ],
+    "steps": [
+      {"id": "collect", "progress": [0, 0.35], "sourceSeconds": [0, 6.5], "intent": "Give the upper-arm collection enough scroll travel to register before the camera reaches the return materials."},
+      {"id": "return", "progress": [0.35, 0.67], "sourceSeconds": [6.5, 14.5], "intent": "Follow the protected sample into its return envelope. Explain prepaid shipping with copy; invent no markings on the filmed package."},
+      {"id": "understand", "progress": [0.67, 1], "sourceSeconds": [14.5, 26.9583333333], "intent": "Let the front-facing dashboard register, then continue the native orbit into the reader's quiet understanding and smile."}
+    ],
+    "captionTransition": "A short opacity/8px settle affects only the copy. Avoid two simultaneously legible paragraphs. Film frames remain continuous and fully opaque.",
+    "scrollTravelRecommendation": "Give the settled product segment approximately 3 viewport heights of native scroll travel, with the other authored chapters retaining their existing choreography. A piecewise scroll-to-author-frame mapping requires the same inverse mapping for chapter jumps.",
+    "timingStatus": "Creative recommendation; the motion engineer may adjust exact easing and hold lengths after testing actual media and responsive layouts."
+  },
+  "variants": {
+    "clean": "Customer-facing editorial composition: copy beside the film on desktop and below it on phone. No labels are burned into the source video.",
+    "labelled": "Same source frames, scroll mapping and factual copy. Add original animation labels in a safe HTML caption rail or letterbox area; keep the device, hands, face and dashboard unobstructed.",
+    "labelSource": "components/story/TassoProcess.tsx is the first homepage animation's caption source. remotion/tasso-film-first/TassoFilmFirst.tsx explicitly renders a text-free edit and supplies no burned labels.",
+    "originalEnglishTitles": ["Your sample. At home.", "Back to the lab.", "Your results. In context."],
+    "originalSpanishTitles": ["Tu muestra. En casa.", "De vuelta al laboratorio.", "Tus resultados. Con contexto."],
+    "reviewPlacement": "The clean/labelled comparison control belongs on the review route or review query, not as a technical selector in the main customer journey."
+  },
+  "responsiveAndAccessible": {
+    "phone": "Keep the entire 16:9 frame contained above copy. Do not crop to a portrait viewport: collection and tablet occupy different edges. Reduce media height before reducing essential text or hiding the timing qualifier.",
+    "shortPhone": "Use a compact common heading and sensible spacing. Preserve readable body copy and a clear area above the existing chapter controls.",
+    "reducedMotion": "Show the three steps as a readable ordered sequence with actual film stills. Include the full preparation paragraph, kit instructions, return protection, prepaid shipping and laboratory-receipt timing.",
+    "reducedMotionStillFrames": {"collect": 48, "return": 336, "understand": 372},
+    "loadingPosterFrame": 0,
+    "reverse": "Reverse scrolling traverses the same source frames. Keep the last complete canvas frame during cache misses; never reset to the first poster on reverse entry.",
+    "semantics": "Use one semantic ordered transcript outside any aria-hidden film/canvas. Original-label overlays are decorative duplicates of the same readable step content."
+  },
+  "factualCopyRules": [
+    "Display '2 working days' and 'From laboratory receipt of your sample.' together whenever timing appears.",
+    "State protected sample and prepaid return; do not suggest mailing the used collection device, an uncapped tube or loose blood.",
+    "Keep full warm/clean/dry preparation and press-once-and-release wording in the shared long transcript/reduced-motion path.",
+    "Do not imply instant full collection or results arriving immediately after sealing the envelope.",
+    "Public example-data wording can be discreet. Asset encoding, native small-text limitations and source geometry warnings belong in review notes rather than the customer flow."
+  ],
+  "inheritedMediaLimitations": [
+    "The native dashboard's main layout and 29/EVA 82 are recognizable; small labels/date/ring are approximate.",
+    "The retained native film contains paper-prop construction changes during the camera orbit. Scroll integration does not claim to correct those source-image defects."
+  ],
+  "reviewGates": [
+    "Collection, protected prepaid return and understanding are clear at stable stopped positions.",
+    "Forward and reverse input drive one continuous film surface without blank frames, photo dissolves or an independent autoplay clock.",
+    "Timing always includes laboratory receipt, including narrow phone and reduced-motion layouts.",
+    "Original-label variant uses exact retained labels without covering product, hands, face or dashboard.",
+    "A loading or decoding failure preserves readable content and the last complete frame.",
+    "The entire product segment enters/exits with the existing authored scene rather than becoming a disconnected second carousel."
+  ]
+}

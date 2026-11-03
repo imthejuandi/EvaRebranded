@@ -1,4 +1,5 @@
 import {storyScrollFrame} from './story-scroll-driver.ts';
+import {storyProgressAtFrame} from './story-scroll-timing.ts';
 
 const END=980;
 const stops=[0,20,45,90,100,130,160,190,280,465,555,590,635,710,715,735,800,840,END];
@@ -21,7 +22,7 @@ const definitions:Definition[]=[
 /** All interpolation breakpoints are explicit: no scroll-event sampling or easing lag. */
 export function storyCompositorKeyframes(width:number,height:number,overflow:number){
  return definitions.map(definition=>({...definition,keyframes:stops.map(frame=>({
-  offset:frame/END,[definition.property]:definition.value(storyScrollFrame(frame,width,height,overflow)),
+  offset:storyProgressAtFrame(frame),[definition.property]:definition.value(storyScrollFrame(frame,width,height,overflow)),
  }))}));
 }
 
@@ -69,7 +70,7 @@ export function installStoryScrollCompositor(root:HTMLElement,journey:HTMLElemen
    if(element)claim(element,definition.keyframes,definition.property);
   }
   const cta=journey.querySelector<HTMLElement>('.hero-kit-slot');
-  if(cta)claim(cta,[0,20,90,END].map(frame=>{const fade=Math.max(0,Math.min(1,(frame-20)/70));return{offset:frame/END,opacity:1-fade,transform:`translateY(${fade*14}px)`}}),'transform');
+  if(cta)claim(cta,[0,20,90,END].map(frame=>{const fade=Math.max(0,Math.min(1,(frame-20)/70));return{offset:storyProgressAtFrame(frame),opacity:1-fade,transform:`translateY(${fade*14}px)`}}),'transform');
   return{owned,dispose};
  }catch{dispose();return null}
 }

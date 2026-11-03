@@ -1,0 +1,41 @@
+.tasso-scroll-review{background:#f3f0e8;color:#171b18;min-height:100svh}
+.tasso-review-header{position:fixed;z-index:50;inset:0 0 auto;min-height:78px;padding:17px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(#f3f0e8 60%,rgba(243,240,232,.94));border-bottom:1px solid rgba(32,41,31,.10)}
+.tasso-review-header .wordmark{width:92px;flex:none}
+.tasso-review-header .wordmark-art{width:92px!important;height:39px!important}
+.tasso-review-treatments{display:flex;align-items:center;gap:4px;border:1px solid #c9cbbf;border-radius:99px;padding:4px}
+.tasso-review-treatments button{font-size:12px;line-height:1.1;padding:10px 17px;border-radius:99px;white-space:nowrap;min-height:36px}
+.tasso-review-treatments button[aria-pressed=true]{background:#24392f;color:#f3f0e8}
+.tasso-review-links{display:flex;align-items:center;gap:22px;font-size:12px}
+.tasso-review-links>a{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:36px;min-width:28px}
+.tasso-review-arrow{display:inline-block;flex:none;vertical-align:middle;margin-left:5px}
+.tasso-review-journey{height:425svh;position:relative}
+.tasso-review-stage{height:100svh;position:sticky;top:0;overflow:hidden}
+.tasso-review-film{position:absolute;inset:0}
+.tasso-review-step-nav{position:absolute;z-index:5;left:40px;right:40px;bottom:20px;display:flex;gap:30px;border-top:1px solid rgba(32,41,31,.15);padding-top:12px}
+.tasso-review-step-nav button{font-size:12px;min-height:40px;display:flex;align-items:center;gap:10px;opacity:.72}
+.tasso-review-step-nav button[aria-current=step]{opacity:1}
+.tasso-review-step-nav button>span{font-size:9px;letter-spacing:.1em}
+.tasso-review-after{padding:90px 40px 105px;display:flex;justify-content:space-between;align-items:center;gap:40px;border-top:1px solid #d4d6ca}
+.tasso-review-after>p{max-width:580px;font-size:clamp(30px,4vw,56px);line-height:1.05;letter-spacing:-.045em}
+.tasso-review-after>a{font-size:14px;white-space:nowrap;border-bottom:1px solid;padding:15px 0}
+.tasso-review-calm{padding-top:90px}
+.tasso-review-film .tasso-film-step-index{visibility:hidden}
+@media(max-width:700px){
+ .tasso-review-header{padding:13px 18px;gap:12px;min-height:70px}
+ .tasso-review-header .wordmark{width:65px}
+ .tasso-review-header .wordmark-art{width:65px!important;height:29px!important}
+ .tasso-review-treatments{gap:0;padding:3px}
+ .tasso-review-treatments button{font-size:11px;padding:10px 11px;min-height:36px}
+ .tasso-review-links{gap:0;font-size:10px}
+ .tasso-review-links .tasso-review-home{display:none}
+ .tasso-review-step-nav{left:24px;right:24px;bottom:13px;gap:22px;padding-top:8px}
+ .tasso-review-step-nav button{font-size:11px;gap:7px;min-height:36px}
+ .tasso-review-after{padding:65px 24px;display:block}
+ .tasso-review-after>a{display:inline-block;margin-top:24px}
+ .tasso-review-calm{padding-top:80px}
+}
+@media(max-width:360px){
+ .tasso-review-header{padding-inline:14px;gap:8px}
+ .tasso-review-header .wordmark{width:54px}
+ .tasso-review-header .wordmark-art{width:54px!important;height:25px!important}
+}

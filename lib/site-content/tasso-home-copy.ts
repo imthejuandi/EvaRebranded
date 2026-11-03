@@ -1,0 +1,113 @@
+/** Shared homepage copy for the continuous film and its original-label review variant. */
+export const tassoHomeCopy = {
+  en: {
+    kicker: 'THREE EASY STEPS',
+    heading: ['One small', 'step.'],
+    intro: 'Collect at home. Return your sample. Understand your health.',
+    instructions: 'Follow the instructions supplied with your kit.',
+    timing: '2 working days',
+    qualifier: 'From laboratory receipt of your sample.',
+    scrollCue: 'Scroll to explore',
+    illustrative: 'Example results',
+    steps: [
+      {
+        id: 'collect',
+        short: 'Collect',
+        label: '01 / AT HOME',
+        title: 'Your sample. At home.',
+        body: 'Your kit comes to you. Use Tasso+ to collect a small blood sample from your upper arm.',
+        detail: 'Press once and release. Allow up to 5 minutes.',
+        long: 'The kit comes to you. Warm, clean and dry your upper arm. Apply Tasso+, then press once and release. Relax your arm. Allow up to 5 minutes. Keep the attached tube pointing down.',
+        labelled: {
+          eyebrow: '01 / AT HOME',
+          title: 'Your sample. At home.',
+          detail: 'Upper arm. Tube pointing down.',
+        },
+      },
+      {
+        id: 'return',
+        short: 'Return',
+        label: '02 / PREPAID RETURN',
+        title: 'Back to the lab.',
+        body: 'Seal and protect your sample. Send it back in the prepaid return envelope.',
+        detail: 'Return postage included.',
+        long: 'Seal and label your sample as instructed. Pack it in the supplied protective packaging, then the prepaid return envelope. Return postage is included.',
+        labelled: {
+          eyebrow: '02 / PREPAID RETURN',
+          title: 'Back to the lab.',
+          detail: 'PROTECTED SAMPLE · PREPAID RETURN',
+        },
+      },
+      {
+        id: 'understand',
+        short: 'Understand',
+        label: '03 / UNDERSTAND',
+        title: 'Your results. In context.',
+        body: 'Your biomarkers, explained. A clearer picture of your health, ready to follow over time.',
+        detail: '',
+        long: 'Your biomarkers, explained. A clearer picture of your health, ready to follow over time. Results in 2 working days from laboratory receipt of your sample.',
+        labelled: {
+          eyebrow: '03 / UNDERSTAND',
+          title: 'Your results. In context.',
+          detail: 'YOUR HEALTH, IN CONTEXT',
+        },
+      },
+    ],
+  },
+  es: {
+    kicker: 'TRES PASOS SENCILLOS',
+    heading: ['Un pequeño', 'gesto.'],
+    intro: 'Recoge tu muestra en casa. Devuélvela. Comprende tu salud.',
+    instructions: 'Sigue las instrucciones incluidas en tu kit.',
+    timing: '2 días laborables',
+    qualifier: 'Desde la recepción de tu muestra en el laboratorio.',
+    scrollCue: 'Desliza para descubrir',
+    illustrative: 'Resultados de ejemplo',
+    steps: [
+      {
+        id: 'collect',
+        short: 'Recoge',
+        label: '01 / EN CASA',
+        title: 'Tu muestra. En casa.',
+        body: 'El kit llega a tu casa. Usa Tasso+ para recoger una pequeña muestra de sangre de la parte superior del brazo.',
+        detail: 'Pulsa una vez y suelta. La recogida puede durar hasta 5 minutos.',
+        long: 'El kit llega a tu casa. Calienta, limpia y seca la parte superior del brazo. Coloca Tasso+, pulsa una vez y suelta. Relaja el brazo. La recogida puede durar hasta 5 minutos. Mantén el tubo conectado hacia abajo.',
+        labelled: {
+          eyebrow: '01 / EN CASA',
+          title: 'Tu muestra. En casa.',
+          detail: 'Parte superior del brazo. Tubo hacia abajo.',
+        },
+      },
+      {
+        id: 'return',
+        short: 'Devuelve',
+        label: '02 / DEVOLUCIÓN PREPAGADA',
+        title: 'De vuelta al laboratorio.',
+        body: 'Sella y protege tu muestra. Devuélvela en el sobre de devolución prepagado.',
+        detail: 'Franqueo de devolución incluido.',
+        long: 'Sella e identifica tu muestra según las instrucciones. Colócala en el embalaje protector incluido y después en el sobre de devolución prepagado. El franqueo de devolución está incluido.',
+        labelled: {
+          eyebrow: '02 / DEVOLUCIÓN PREPAGADA',
+          title: 'De vuelta al laboratorio.',
+          detail: 'MUESTRA PROTEGIDA · DEVOLUCIÓN PREPAGADA',
+        },
+      },
+      {
+        id: 'understand',
+        short: 'Comprende',
+        label: '03 / COMPRENDE',
+        title: 'Tus resultados. Con contexto.',
+        body: 'Tus biomarcadores, explicados. Una visión más clara de tu salud para seguir su evolución en el tiempo.',
+        detail: '',
+        long: 'Tus biomarcadores, explicados. Una visión más clara de tu salud para seguir su evolución en el tiempo. Resultados en 2 días laborables desde la recepción de tu muestra en el laboratorio.',
+        labelled: {
+          eyebrow: '03 / COMPRENDE',
+          title: 'Tus resultados. Con contexto.',
+          detail: 'TU SALUD, CON CONTEXTO',
+        },
+      },
+    ],
+  },
+} as const;
+
+export type TassoHomeCopy = (typeof tassoHomeCopy)[keyof typeof tassoHomeCopy];
