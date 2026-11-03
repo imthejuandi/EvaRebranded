@@ -22,6 +22,13 @@
 .tasso-review-film .tasso-film-step-index{visibility:hidden}
 .tasso-playback-review .tasso-review-stage{position:relative;height:max(100svh,650px);overflow:hidden}
 .tasso-playback-review .tasso-video-process{padding-bottom:36px}
+.tasso-review-comparison{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.tasso-review-comparison>a{font-size:13px;padding:12px 0;border-bottom:1px solid;min-height:44px;line-height:1.3}
+.tasso-playback-review[data-review-edition=black]{background:#000;color:#f3f0e8}
+.tasso-playback-review[data-review-edition=black] .tasso-review-header{background:#000f;border-color:#343b32}
+.tasso-playback-review[data-review-edition=black] .tasso-review-treatments{border-color:#4c5347}
+.tasso-playback-review[data-review-edition=black] .tasso-review-treatments button[aria-pressed=true]{background:#f3f0e8;color:#171b18}
+.tasso-playback-review[data-review-edition=black] .tasso-review-after{border-color:#343b32}
 @media(max-width:700px){
  .tasso-review-header{padding:13px 18px;gap:12px;min-height:70px}
  .tasso-review-header .wordmark{width:65px}
@@ -43,3 +50,6 @@
  .tasso-review-header .wordmark{width:54px}
  .tasso-review-header .wordmark-art{width:54px!important;height:25px!important}
 }
+
+.tasso-review-after:has(.tasso-review-look-note){flex-wrap:wrap}
+.tasso-review-after>.tasso-review-look-note{flex-basis:100%;max-width:none;font-size:13px;line-height:1.5;letter-spacing:0;color:#abb3a6}

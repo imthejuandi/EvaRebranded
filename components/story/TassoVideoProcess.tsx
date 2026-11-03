@@ -6,18 +6,21 @@ import {tassoHomeCopy} from '@/lib/site-content/tasso-home-copy';
 import './tasso-film-process.css';
 import './tasso-video-process.css';
 
-const source = '/art/tasso-home-video/process-1x-v1.mp4';
+const editions = {
+  original: {source: '/art/tasso-home-video/process-1x-v1.mp4', poster: '/art/tasso-home-film/81d580b1ef608977/desktop/poster.jpg'},
+  black: {source: '/art/tasso-home-video/process-black-v1.mp4', poster: '/art/tasso-home-video/process-black-v1.jpg'},
+} as const;
 const starts = [0, 6.5, 14.5] as const;
-const poster = '/art/tasso-home-film/81d580b1ef608977/desktop/poster.jpg';
 
 function Chevron({back = false}: {back?: boolean}) {
   return <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.3" aria-hidden="true"><path d={back ? 'M10 3 5 8l5 5' : 'm6 3 5 5-5 5'}/></svg>;
 }
 
 /** Native playback owns time. Scrolling only decides whether this section is visible. */
-export function TassoVideoProcess({active = true, variant = 'clean'}: {active?: boolean; variant?: 'clean' | 'labelled'}) {
+export function TassoVideoProcess({active = true, variant = 'clean', edition = 'original', appearance = edition}: {active?: boolean; variant?: 'clean' | 'labelled'; edition?: 'black' | 'original'; appearance?: 'black' | 'original'}) {
   const {locale} = useSiteLanguage();
   const words = tassoHomeCopy[locale];
+  const {source, poster} = editions[edition];
   const heading = useId();
   const description = useId();
   const video = useRef<HTMLVideoElement>(null);
@@ -64,9 +67,10 @@ export function TassoVideoProcess({active = true, variant = 'clean'}: {active?: 
     if (active) setArmed(true);
     sync();
     const observer = new IntersectionObserver(([entry]) => {
-      visibleRef.current = entry.isIntersecting && entry.intersectionRatio > .25;
+      // Even the final visible strip must keep moving during the page transition.
+      visibleRef.current = entry.isIntersecting && entry.intersectionRatio > 0;
       sync();
-    }, {threshold: [0, .25]});
+    }, {threshold: [0]});
     if (media.parentElement) observer.observe(media.parentElement);
     document.addEventListener('visibilitychange', sync);
     return () => {observer.disconnect(); document.removeEventListener('visibilitychange', sync); media.pause();};
@@ -115,7 +119,7 @@ export function TassoVideoProcess({active = true, variant = 'clean'}: {active?: 
     play();
   };
 
-  return <section className="tasso-film-process tasso-video-process" data-tasso-video-process data-film-variant={variant}
+  return <section className="tasso-film-process tasso-video-process" data-tasso-video-process data-film-variant={variant} data-film-edition={edition} data-film-appearance={appearance}
     data-active={active} data-step={step + 1} data-playing={!paused} aria-labelledby={heading} aria-describedby={description}>
     <header className="tasso-film-heading"><p>{words.kicker}</p><h2 id={heading}>{words.heading[0]}<br/><em>{words.heading[1]}</em></h2><span>{words.intro}</span></header>
     <div className="tasso-film-visual">

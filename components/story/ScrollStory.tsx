@@ -88,7 +88,7 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
                     slot.inert = hidden;
                     slot.setAttribute('aria-hidden', String(hidden));
                 }
-                const m = storyMotion(f), h = size.height, small = size.width <= 700;
+                const m = storyMotion(f, true), h = size.height, small = size.width <= 700;
                 const chrome = [m.lightAt(50 / h), m.lightAt(1 - (small ? 45 : 50) / h), m.lightAt(1 - ((small ? 75 : 41) + (f < 200 ? 22 : 5)) / h), f < 200, f < 30, f < 230 ? 0 : f < 490 ? 1 : f < 715 ? 2 : 3].join('/');
                 if (chrome !== lastChrome) {
                     lastChrome = chrome;
@@ -107,7 +107,7 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
     }, [size, calm, scrollDriver]);
     const jump = (f: number) => { if (!section.current || !stage.current)
         return; window.scrollTo({ top: section.current.offsetTop + (section.current.offsetHeight - stage.current.clientHeight) * storyProgressAtFrame(f), behavior: 'instant' }); };
-    const motion = storyMotion(frame), height = size?.height ?? 900;
+    const motion = storyMotion(frame, true), height = size?.height ?? 900;
     const mobile = (size?.width ?? 1440) <= 700;
     const headerLight = motion.lightAt(50 / height), navLight = motion.lightAt(1 - (mobile ? 45 : 50) / height), noteLight = motion.lightAt(1 - ((mobile ? 75 : 41) + (frame < 200 ? 22 : 5)) / height);
     const chapter = frame < 230 ? 0 : frame < 490 ? 1 : frame < 715 ? 2 : 3;

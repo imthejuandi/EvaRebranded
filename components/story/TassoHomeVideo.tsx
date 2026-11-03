@@ -12,20 +12,26 @@ export function TassoHomeVideo({driver, variant}: {driver: StoryScrollDriver; va
   useEffect(() => {
     const element = root.current;
     if (!element) return;
-    let previous = false;
+    let previous = false, previousInteractive = false;
     const update = (frame: number) => {
       const y = storyMotion(frame).productY;
       element.style.transform = `translate3d(0,${y * 100}%,0)`;
       element.style.visibility = Math.abs(y) >= 1 ? 'hidden' : 'visible';
-      const next = frame >= 275 && frame <= 470;
-      element.inert = !next;
-      element.setAttribute('aria-hidden', String(!next));
+      // Keep real-time playback running throughout the visible scene transition.
+      // Keyboard controls stay inert while the section is partly out of view.
+      const next = Math.abs(y) < 1;
+      const interactive = frame >= 275 && frame <= 470;
+      if (interactive !== previousInteractive) {
+        previousInteractive = interactive;
+        element.inert = !interactive;
+        element.setAttribute('aria-hidden', String(!interactive));
+      }
       if (next !== previous) {previous = next; setActive(next);}
     };
     update(driver.current);
     return driver.subscribe(update);
   }, [driver]);
-  return <div ref={root} className="tasso-home-video" style={{visibility: 'hidden', transform: 'translate3d(0,100%,0)'}} inert={!active} aria-hidden={!active}>
-    <TassoVideoProcess active={active} variant={variant}/>
+  return <div ref={root} className="tasso-home-video" style={{visibility: 'hidden', transform: 'translate3d(0,100%,0)'}} inert aria-hidden="true">
+    <TassoVideoProcess active={active} variant={variant} edition="original" appearance="black"/>
   </div>;
 }

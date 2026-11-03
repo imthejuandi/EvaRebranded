@@ -11,11 +11,13 @@ import './tasso-film-process.css';
 const film: TassoFilmManifest = filmManifest;
 type Direction = 'clean' | 'labelled';
 
-function ChapterPoster({index, className, preload = false}: {index: number; className?: string; preload?: boolean}) {
+function ChapterPoster({index, className, preload = false, edition = 'original'}: {index: number; className?: string; preload?: boolean; edition?: 'black' | 'original'}) {
   const chapter = film.chapters[index];
+  const poster = edition === 'black' ? `/art/tasso-home-video/black-${chapter.id}.jpg` : chapter.poster;
+  const mobilePoster = edition === 'black' ? poster : chapter.mobilePoster;
   return <picture className={className}>
-    {chapter.mobilePoster ? <source media="(max-width: 700px)" srcSet={chapter.mobilePoster}/> : null}
-    <img data-tasso-chapter-poster={preload ? index : undefined} src={chapter.poster}
+    {mobilePoster ? <source media="(max-width: 700px)" srcSet={mobilePoster}/> : null}
+    <img data-tasso-chapter-poster={preload ? index : undefined} src={poster}
       width={chapter.posterWidth} height={chapter.posterHeight} alt="" loading={preload ? 'eager' : 'lazy'} decoding="async"/>
   </picture>;
 }
@@ -198,14 +200,14 @@ export function TassoFilmProcess({frame, scrollDriver, variant = 'clean'}: {fram
 }
 
 /** Readable full process for reduced motion; no atlas or player is loaded. */
-export function TassoFilmSummary({visible = true}: {visible?: boolean}) {
+export function TassoFilmSummary({visible = true, edition = 'original'}: {visible?: boolean; edition?: 'black' | 'original'}) {
   const {locale} = useSiteLanguage();
   const words = tassoHomeCopy[locale];
   const heading = useId();
-  return <section className={visible ? 'tasso-film-summary' : 'sr-only'} data-tasso-summary data-tasso-film-summary aria-labelledby={heading}>
+  return <section className={visible ? 'tasso-film-summary' : 'sr-only'} data-tasso-summary data-tasso-film-summary data-summary-edition={edition} aria-labelledby={heading}>
     <header><p>{words.kicker}</p><h2 id={heading}>{words.heading.join(' ')}</h2><span>{words.intro}</span></header>
     <ol>{words.steps.map((step, i) => <li key={step.id}>
-      {visible ? <ChapterPoster index={i} className="tasso-film-summary-art"/> : null}
+      {visible ? <ChapterPoster index={i} className="tasso-film-summary-art" edition={edition}/> : null}
       <div><p className="tasso-film-eyebrow">{step.label}</p><h3>{step.title}</h3><p>{i === 2 ? step.body : step.long}</p>{i === 2 ? <FilmTiming timing={words.timing} qualifier={words.qualifier}/> : null}</div>
     </li>)}</ol>
     <p className="tasso-film-summary-note">{words.instructions} <span>{words.illustrative}.</span></p>

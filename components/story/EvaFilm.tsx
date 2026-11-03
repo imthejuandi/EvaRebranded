@@ -83,7 +83,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
    <ScrollSalud scrollDriver={nativeScroll} text={__site.t("salud.")} frame={Math.min(f, 160)} width={hero.saludWidth} height={hero.saludHeight} style={{ position: 'absolute', right: pad, top: hero.saludTop, translate: `${range(f, 45, 160, 0, w * 1.05)}px 0` }}/>
    {__site.t(!mobile && <p className="hero-support" data-hero-support style={{ position: 'absolute', left: pad, top: hero.supportTop, opacity: range(f, 20, 100, 1, 0) }}>{__site.t("Para lo que disfrutas.")}<br />{__site.t("Y lo que est\u00E1 por venir.")}</p>)}</div>
   </AbsoluteFill>
-  <AbsoluteFill data-layer="product-scene" style={{ background: '#f3f0e8', color: '#171b18', overflow: 'hidden', translate: `0 ${motion.productY * h}px`, visibility: Math.abs(motion.productY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.productY) < 1 ? 'translate' : 'auto' }}>
+  <AbsoluteFill data-layer="product-scene" style={{ background: externalTasso ? '#000' : '#f3f0e8', color: '#171b18', overflow: 'hidden', translate: `0 ${motion.productY * h}px`, visibility: Math.abs(motion.productY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.productY) < 1 ? 'translate' : 'auto' }}>
    <>{!externalTasso ? <TassoFilmProcess frame={f} scrollDriver={nativeScroll} variant={tassoVariant}/> : null}</>
   </AbsoluteFill>
   <AbsoluteFill data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>

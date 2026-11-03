@@ -18,6 +18,23 @@
 .tasso-video-message{position:absolute;inset:0;background:#f3f0e8e6;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;font-size:13px;text-align:center}
 .tasso-video-message button{min-height:44px;text-decoration:underline}
 .tasso-video-loading{position:absolute;left:12px;bottom:12px;font-size:11px;padding:8px 12px;background:#f3f0e8eb;border-radius:99px}
+.tasso-video-process[data-film-appearance=black]{background:#000;color:#f3f0e8}
+.tasso-video-process[data-film-appearance=black] .tasso-film-frame,
+.tasso-video-process[data-film-appearance=black] .tasso-film-frame video{background:#000}
+.tasso-video-process[data-film-appearance=black] :is(.tasso-film-heading>span,.tasso-film-eyebrow,.tasso-film-detail,.tasso-film-timing p,.tasso-film-example,.tasso-film-label>p,.tasso-film-label>span){color:#abb3a6}
+.tasso-video-process[data-film-appearance=black] .tasso-film-labels{border-color:#343b32}
+.tasso-video-process[data-film-appearance=black] .tasso-video-steps{border-color:#343b32}
+.tasso-video-process[data-film-appearance=black] .tasso-video-steps button{color:#abb3a6}
+.tasso-video-process[data-film-appearance=black] .tasso-video-steps button[aria-current=step]{color:#f3f0e8;border-color:#d4b58b}
+.tasso-video-process[data-film-appearance=black] .tasso-video-actions button:nth-child(2){border-color:#4c5347}
+.tasso-video-process[data-film-appearance=black] .tasso-video-progress{background:#30352d}
+.tasso-video-process[data-film-appearance=black] .tasso-video-progress>div{background:#d4b58b}
+.tasso-video-process[data-film-appearance=black] .tasso-video-message{background:#000e;color:#f3f0e8}
+.tasso-video-process[data-film-appearance=black] .tasso-video-loading{background:#151a15ee;color:#f3f0e8}
+.tasso-film-summary[data-summary-edition=black]{background:#000;color:#f3f0e8}
+.tasso-film-summary[data-summary-edition=black] :is(li,.tasso-film-summary-note){border-color:#343b32}
+.tasso-film-summary[data-summary-edition=black] :is(.tasso-film-eyebrow,.tasso-film-timing p,.tasso-film-summary-note){color:#abb3a6}
+.tasso-film-summary[data-summary-edition=black] .tasso-film-summary-art{background:#000}
 @media(max-width:700px){
  .tasso-video-process{padding-bottom:95px;gap:12px}
  .tasso-video-process .tasso-film-footer{display:block;max-width:none}

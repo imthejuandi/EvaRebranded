@@ -1,0 +1,299 @@
+{
+  "status": "private-look-review-only",
+  "requested": [
+    "Black surround on the website",
+    "Black table/environment inside an alternate film",
+    "No paused video pixels while the scene is leaving the viewport"
+  ],
+  "homepage": {
+    "movie": "original, unchanged",
+    "appearance": "black",
+    "playback": "Native1x, keeps advancing until the video frame is entirely offscreen. User pause and hidden-tab pause retained.",
+    "interaction": "Controls remain inert while partially out of view.",
+    "sourceSha256": "649a147ca91065741f1cb88bb81fdabe222a0e5a04e9fcc582db2483d5d5d954"
+  },
+  "alternative": {
+    "routes": [
+      "/en/review/tasso-black",
+      "/es/review/tasso-black"
+    ],
+    "movie": "/art/tasso-home-video/process-black-v1.mp4",
+    "sha256": "27b24b2868574ff66fe0bed746dc389f832b5f0da1fcb3c91482a5225cb3d737",
+    "bytes": 3721672,
+    "durationSeconds": 27,
+    "fps": 24,
+    "frames": 648,
+    "width": 1280,
+    "height": 720,
+    "nativeEdits": [
+      "87865a0c-308a-4b8b-990a-860a7a0c05fe",
+      "9e061465-4b94-4d66-9c1c-9fde84c35d3c",
+      "ccdbab61-673c-42a3-8f9a-1e3a3ccf3934"
+    ],
+    "sourceUpload": "8b456871-2790-47c1-a584-93ba6e267bd2",
+    "nativeJoinsSeconds": [
+      9,
+      18
+    ],
+    "retiming": false,
+    "stillFramesInserted": 0,
+    "crossfades": 0,
+    "posterPolicy": "All fourblack posters extracted from the actual assembled movie.",
+    "knownLimit": "Visible native pose/packing discontinuity at9s and iPad framing/background/paper discontinuity at18s. Explicitly disclosed in EN/ES review pages. Not selected as the homepage movie.",
+    "productionReady": false
+  },
+  "originalComparison": [
+    "/en/review/tasso-scroll",
+    "/es/review/tasso-scroll"
+  ],
+  "review": {
+    "native": {
+      "version": 1,
+      "scope": "New user-authorized black website surround plus black table/environment inside actual raw2-based homepage film. Independent read-only native-media judge; not the prior native3 option.",
+      "movie": {
+        "path": "/workspace/eva-playback-review/public/art/tasso-home-video/process-black-v1.mp4",
+        "sha256": "27b24b2868574ff66fe0bed746dc389f832b5f0da1fcb3c91482a5225cb3d737",
+        "bytes": 3721672,
+        "width": 1280,
+        "height": 720,
+        "fps": 24,
+        "frames": 648,
+        "durationSeconds": 27
+      },
+      "decision": "APPROVED FOR CLEARLY LABELED PRIVATE BLACK-LOOK REVIEW ONLY; NOT A SEAMLESS FINISHED FILM",
+      "approvedForPrivateLookReview": true,
+      "productionReady": false,
+      "seamlessContinuousShot": false,
+      "allUserRequestedDetailsComplete": false,
+      "technicalScope": {
+        "metadataObserved": true,
+        "assemblyRecord": "/workspace/eva-black-qa/assembly.json",
+        "parts": [
+          "/workspace/eva-black-qa/part1-native.mp4",
+          "/workspace/eva-black-qa/part2-native.mp4",
+          "/workspace/eva-black-qa/part3-native.mp4"
+        ],
+        "nativeJoinsSeconds": [
+          9,
+          18
+        ],
+        "sourceHandles": "Each9.041667s native section truncated to9s; no speed change declared.",
+        "declaredStillFramesInserted": 0,
+        "declaredCrossfades": 0,
+        "completeDecodePerformedByJudge": false,
+        "limit": "Parent assembly metadata reports648decodedframes; judge independently inspectedmetadata and actual diagnosticimages, not a separate all-frame decode."
+      },
+      "actualVisualReview": {
+        "wholeFilm": "Actual2fps full27s contact sheet",
+        "joins": "Actual12 consecutiveframes around each9/18s boundary plus extracted exact adjacent full720pairs215/216and431/432",
+        "criticalNativeFramesSeconds": [
+          1,
+          8.8,
+          15,
+          25.5
+        ],
+        "armToKit": "Consecutiveframes96\u2013107(actual4.0\u20134.46s)",
+        "evidence": [
+          "/workspace/eva-black-qa/part1-contact.jpg",
+          "/workspace/eva-black-qa/part1-transition-12frames.jpg",
+          "/workspace/eva-black-qa/full-contact.jpg",
+          "/workspace/eva-black-qa/join-9.jpg",
+          "/workspace/eva-black-qa/join-18.jpg",
+          "/workspace/eva-black-qa/judge-exact-join9.png",
+          "/workspace/eva-black-qa/judge-exact-join18.png",
+          "/workspace/eva-black-qa/judge-full-dashboard.png",
+          "/workspace/eva-black-qa/judge-ending-smile.png"
+        ]
+      },
+      "criteria": {
+        "insideMovieBlackEnvironment": {
+          "decision": "PASS INTENT OBSERVED; MATERIAL MATCH PARTIAL",
+          "evidence": "Actual decoded movie shows black surroundings/table in arm\u2192kit\u2192tablet\u2192reader sequence, not merely a blackCSScontainer. First two sections crush table into nearly pure black; last section reveals a brighter charcoal table plane. That boundary shift prevents consistent material continuity."
+        },
+        "deviceFidelity": {
+          "decision": "PASS OBSERVED",
+          "evidence": "White teardrop body, coral circular button and short clear collectiontube retained versus original first-section frames. Hand press and camera movement remain; no new gross device/anatomy failure seen in reviewed samples."
+        },
+        "nativeMotion": {
+          "decision": "PASS OBSERVED WITH LIMITS",
+          "evidence": "Actual hand/camera/person movement exists through the contact sequence and consecutivearm\u2192kitframes; no still-image pan substitution apparent. This does not claim checking everyframe for freezes."
+        },
+        "dashboard": {
+          "decision": "PASS MAJOR LAYOUT; PARTIAL TEXT FIDELITY",
+          "evidence": "Cream/teal native dashboard remains inphysicalbezel with age29andEVA82 at15s and through sampled oblique view. Small labels/date/ring remain approximate from native source/edit. No pixel-exact UI or every-frame attachment guarantee."
+        },
+        "reader": {
+          "decision": "PASS OBSERVED",
+          "evidence": "Warm closed-mouth smile, same source-like actor/clothing and plausible frontside touch remain against black background at25.5s."
+        },
+        "join9": {
+          "decision": "FAIL SEAMLESS CONTINUITY",
+          "frames": [
+            215,
+            216
+          ],
+          "seconds": [
+            8.958333333333334,
+            9
+          ],
+          "evidence": "Lastpart1frame has closed flap with edge grip; nextpart2frame has raised flap and different hand/finger pose. Camera/packet relationship also changes. Edit skipped part of the flap-opening action."
+        },
+        "join18": {
+          "decision": "FAIL SEAMLESS CONTINUITY",
+          "frames": [
+            431,
+            432
+          ],
+          "seconds": [
+            17.958333333333332,
+            18
+          ],
+          "evidence": "iPad/hand framing and apparent geometry/position jump; table luminance changes abruptly from almostpureblack to visiblecharcoalplane. White paper prop visible before boundary disappears after. No source-time assumption overrides this actual adjacent-frame mismatch."
+        },
+        "websiteOutgoingPlayback": {
+          "decision": "NOT EXECUTED BY THIS READ-ONLY JUDGE",
+          "evidence": "Code review found original>.25IntersectionObservercutoffstillcouldpausevisiblefilm. Parent reportsfix to>0withthreshold[0] and browser test using20px-visible actualraster. Browser execution/result belongs to root; cannot infer native-file review proves webplayback."
+        }
+      },
+      "requiredPrivateReviewDisclosure": [
+        "This is a720p black-studio look option under review.",
+        "The film itself has black surroundings, not only the website surround.",
+        "Visible segment jumps remain at9s and18s; do not call it one seamless continuous shot.",
+        "Dashboard small text remains approximate. Black look approval is not an assurance that old raw2 source defects are all repaired."
+      ],
+      "sourceDistinction": "Do not attach the prior native3-specific20.500\u219220.542s flat-mailer pop finding to this raw2-based film without actual evidence. Current findings are independently observed9/18s joins.",
+      "prePublicationGates": [
+        "Actual browser confirms no unintendedpause while movie raster remainsvisible, pausesfullyoffscreen/tabhidden, respectsuserpause.",
+        "Blackmovie andposter/chapterposterassets exist, load andmatch eachother; sourcecomparisonroute remains accessible.",
+        "Any finished/seamless claim requires resolving or explicitlyre-scoping9/18s nativejoin defects."
+      ],
+      "judgeActions": {
+        "generation": 0,
+        "credits": 0,
+        "networkCalls": 0,
+        "sourceEdits": 0,
+        "publication": 0,
+        "diagnosticFramesOnly": true
+      }
+    },
+    "privatePublication": {
+      "scope": "Publication only of a disclosed private black-look review option; no seamless/finished-film/default-homepage movie approval.",
+      "decision": "PRIVATE REVIEW PUBLICATION APPROVED SUBJECT TO ROOT BROWSER CHECKS AND CLEAR HOMEPAGE LINK LABEL",
+      "approvedForPrivateReviewPublication": true,
+      "productionReady": false,
+      "seamlessNativeMovieApproved": false,
+      "allUserRequestedMediaDetailsComplete": false,
+      "reviewedMedia": {
+        "black": {
+          "path": "/workspace/eva-playback-review/public/art/tasso-home-video/process-black-v1.mp4",
+          "sha256": "27b24b2868574ff66fe0bed746dc389f832b5f0da1fcb3c91482a5225cb3d737",
+          "matchesNativeReview": true
+        },
+        "homepageOriginal": {
+          "path": "/workspace/eva-playback-review/public/art/tasso-home-video/process-1x-v1.mp4",
+          "sha256": "649a147ca91065741f1cb88bb81fdabe222a0e5a04e9fcc582db2483d5d5d954",
+          "matchesExistingPlaybackReviewManifest": true
+        }
+      },
+      "sourceSelectionVerified": {
+        "homepage": "TassoHomeVideo explicitly passes edition='original' appearance='black'. Source remains original while surround is black.",
+        "privateBlackRoutes": [
+          "/en/review/tasso-black",
+          "/es/review/tasso-black"
+        ],
+        "privateSource": "Black review passes edition='black'; source is native black27s720p movie.",
+        "originalComparison": "TassoScrollReview chooses tasso-scroll for black-page comparison and preserves variant/language selection.",
+        "robots": "Both EN/ES black review pages specify index:false,follow:false. This is not an assertion of password protection."
+      },
+      "visibleDisclosureVerified": {
+        "english": "Black-background look review. Editing joins at 0:09 and 0:18 still need refining.",
+        "spanish": "Prueba visual con fondo negro. Los empalmes de 0:09 y 0:18 a\u00fan necesitan ajustes.",
+        "location": "Visible paragraph in tasso-review-after; not sr-only or aria-hidden."
+      },
+      "playbackCodeVerified": "TassoHomeVideo active state lasts through any scene visibility, independent of controls' interactive range. TassoVideoProcess uses intersectionRatio>0 and threshold[0], preserving intendedplayback until fullyout. Root owns actual browser proof.",
+      "remainingReleaseChecks": [
+        "Root browser checks must pass for20px-visible movie advancement, full-offscreen pause, manualcontrols, original/source selection, contrast and reducedmotion.",
+        "Use neutral Homepage/Inicio link text on black review instead of 'See it on the homepage/Verlo en la p\u00e1gina de inicio', which implies the black movie is installed as default."
+      ],
+      "nativeReviewPreserved": "/workspace/eva-black-qa/native-review.json unchanged; visible9s/18s continuity defects remain NO-GO for a seamless finished movie.",
+      "noApprovalFor": [
+        "Additional generation or credits",
+        "Shipping rejected matte diagnostics",
+        "Replacing default homepage film with this discontinuous blackmovie",
+        "Calling the native film production ready or one seamless take"
+      ],
+      "judgeActions": {
+        "readOnlySourceInspection": true,
+        "network": 0,
+        "generation": 0,
+        "sourceEdits": 0,
+        "publication": 0
+      }
+    },
+    "browserChecks": [
+      {
+        "id": "home-black-1440",
+        "passed": true,
+        "transitionClockAdvances": true,
+        "fullFrameVisible": true,
+        "controlsHitTest": true
+      },
+      {
+        "id": "home-black-390",
+        "passed": true,
+        "transitionClockAdvances": true,
+        "fullFrameVisible": true,
+        "controlsHitTest": true
+      },
+      {
+        "id": "home-black-320",
+        "passed": true,
+        "transitionClockAdvances": true,
+        "fullFrameVisible": true,
+        "controlsHitTest": true
+      },
+      {
+        "id": "tasso-black",
+        "passed": true,
+        "originalPreserved": true,
+        "labelToggleDoesNotSeek": true
+      },
+      {
+        "id": "tasso-scroll",
+        "passed": true,
+        "originalPreserved": true,
+        "labelToggleDoesNotSeek": true
+      },
+      {
+        "id": "reduced-/en",
+        "passed": true
+      },
+      {
+        "id": "reduced-/es/review/tasso-black",
+        "passed": true
+      },
+      {
+        "id": "compact-spanish-black-and-disclosure",
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "productionBuild": "passed,113routes",
+    "typescript": "passed",
+    "existingPreviewChecks": "passed,113page internal links/anchors",
+    "motionGeometryChecks": 1961,
+    "browserLimit": "Chromium desktop and mobile viewport emulation. No claim of physical Safari testing."
+  },
+  "creditAccounting": {
+    "startingBalance": 49.5,
+    "endingBalance": 9,
+    "spent": 40.5,
+    "failedWhole27sJob": "27bfa9a7-149b-4e19-a84b-bc2f369f1d2c",
+    "failedWholeJobCharge": 0,
+    "singlePass27s720pQuote": 74.25,
+    "singlePassModel": "kling4_0",
+    "singlePassSubmitted": false,
+    "reason": "Quote exceeds the current available balance."
+  },
+  "rejectedDiagnostics": "Local guided-matte stills outside the repository showed cutout defects and were rejected. They are not in the movie or publishing archive."
+}
