@@ -1,0 +1,64 @@
+{
+  "status": "Approved transition integrated for review",
+  "source": "public/art/tasso-home-video/process-1x-v1.mp4",
+  "patchJobId": "6cfd879c-62fb-49ef-80e4-aa4120cb3e51",
+  "patchSourceMediaId": "75927d6b-6520-46ef-b43d-90c65e7171b9",
+  "patchRangeSeconds": [
+    16.5,
+    20.5
+  ],
+  "sourceOutsidePatchPreserved": true,
+  "transition": "Direct continuous splice at source-aligned frames; no crossfades or image overlays",
+  "fullFilm": {
+    "path": "public/art/tasso-home-video/process-continuity-v3.mp4",
+    "sha256": "7b2b0beb642172929a6dd40cbac071f4437e719ef602bee3dd375aafdfde28d0",
+    "durationSeconds": 27,
+    "fps": 24,
+    "frames": 648,
+    "resolution": [
+      1280,
+      720
+    ]
+  },
+  "background": "Approved original warm tabletop; black website surround retained",
+  "appliedTo": [
+    "homepage EN and ES",
+    "original film review EN and ES"
+  ],
+  "blackStudioVersionUnchanged": true,
+  "additionalGenerationCreditsSpentForPublication": 0,
+  "limits": [
+    "This publication uses the approved tabletop candidate; it does not claim a newly rendered black tabletop.",
+    "The film remains an illustration of the experience, not device instructions."
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "staticBuild": "113 routes exported",
+    "browser": [
+      {
+        "width": 1440,
+        "height": 1000,
+        "locale": "en",
+        "source": "process-continuity-v3.mp4",
+        "duration": 27,
+        "realTimePlaybackAcrossBothPatchBoundaries": true,
+        "previousNextPause": true,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "locale": "es",
+        "source": "process-continuity-v3.mp4",
+        "duration": 27,
+        "realTimePlaybackAcrossBothPatchBoundaries": true,
+        "previousNextPause": true,
+        "errors": []
+      },
+      {
+        "homepageNewSource": true
+      }
+    ],
+    "visualJoinReview": "Sampled opening and closing patch boundaries reviewed; camera position and tabletop continuity retained. No crossfade or dashboard overlay introduced."
+  }
+}

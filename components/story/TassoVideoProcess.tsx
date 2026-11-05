@@ -7,7 +7,7 @@ import './tasso-film-process.css';
 import './tasso-video-process.css';
 
 const editions = {
-  original: {source: '/art/tasso-home-video/process-1x-v1.mp4', poster: '/art/tasso-home-film/81d580b1ef608977/desktop/poster.jpg'},
+  original: {source: '/art/tasso-home-video/process-continuity-v3.mp4', poster: '/art/tasso-home-film/81d580b1ef608977/desktop/poster.jpg'},
   black: {source: '/art/tasso-home-video/process-black-smooth-v2.mp4', poster: '/art/tasso-home-video/process-black-smooth-v2.jpg'},
 } as const;
 const starts = [0, 6.5, 14.5] as const;
