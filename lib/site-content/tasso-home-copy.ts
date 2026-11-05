@@ -2,7 +2,7 @@
 export const tassoHomeCopy = {
   en: {
     kicker: 'THREE EASY STEPS',
-    heading: ['One small', 'step.'],
+    heading: ['3 easy', 'steps'],
     intro: 'Collect at home. Return your sample. Understand your health.',
     instructions: 'Follow the instructions supplied with your kit.',
     timing: '2 working days',
@@ -14,14 +14,14 @@ export const tassoHomeCopy = {
         id: 'collect',
         short: 'Collect',
         label: '01 / AT HOME',
-        title: 'Your sample. At home.',
-        body: 'Your kit comes to you. Use Tasso+ to collect a small blood sample from your upper arm.',
+        title: 'Virtually painless. At home.',
+        body: 'No needles to handle. Your kit comes to you. Use Tasso+ to collect a small blood sample from your upper arm.',
         detail: 'Press once and release. Allow up to 5 minutes.',
-        long: 'The kit comes to you. Warm, clean and dry your upper arm. Apply Tasso+, then press once and release. Relax your arm. Allow up to 5 minutes. Keep the attached tube pointing down.',
+        long: 'Virtually painless blood sampling, with no needles to handle. The kit comes to you. Warm, clean and dry your upper arm. Apply Tasso+, then press once and release. Relax your arm. Allow up to 5 minutes. Keep the attached tube pointing down.',
         labelled: {
           eyebrow: '01 / AT HOME',
-          title: 'Your sample. At home.',
-          detail: 'Upper arm. Tube pointing down.',
+          title: 'Virtually painless. At home.',
+          detail: 'No needles to handle. Upper arm. Tube pointing down.',
         },
       },
       {
@@ -56,7 +56,7 @@ export const tassoHomeCopy = {
   },
   es: {
     kicker: 'TRES PASOS SENCILLOS',
-    heading: ['Un pequeño', 'gesto.'],
+    heading: ['3 pasos', 'sencillos'],
     intro: 'Recoge tu muestra en casa. Devuélvela. Comprende tu salud.',
     instructions: 'Sigue las instrucciones incluidas en tu kit.',
     timing: '2 días laborables',
@@ -68,14 +68,14 @@ export const tassoHomeCopy = {
         id: 'collect',
         short: 'Recoge',
         label: '01 / EN CASA',
-        title: 'Tu muestra. En casa.',
-        body: 'El kit llega a tu casa. Usa Tasso+ para recoger una pequeña muestra de sangre de la parte superior del brazo.',
+        title: 'Casi sin dolor. En casa.',
+        body: 'Sin agujas que manipular. El kit llega a tu casa. Usa Tasso+ para recoger una pequeña muestra de sangre de la parte superior del brazo.',
         detail: 'Pulsa una vez y suelta. La recogida puede durar hasta 5 minutos.',
-        long: 'El kit llega a tu casa. Calienta, limpia y seca la parte superior del brazo. Coloca Tasso+, pulsa una vez y suelta. Relaja el brazo. La recogida puede durar hasta 5 minutos. Mantén el tubo conectado hacia abajo.',
+        long: 'Recogida de sangre casi sin dolor y sin agujas que manipular. El kit llega a tu casa. Calienta, limpia y seca la parte superior del brazo. Coloca Tasso+, pulsa una vez y suelta. Relaja el brazo. La recogida puede durar hasta 5 minutos. Mantén el tubo conectado hacia abajo.',
         labelled: {
           eyebrow: '01 / EN CASA',
-          title: 'Tu muestra. En casa.',
-          detail: 'Parte superior del brazo. Tubo hacia abajo.',
+          title: 'Casi sin dolor. En casa.',
+          detail: 'Sin agujas que manipular. Parte superior del brazo. Tubo hacia abajo.',
         },
       },
       {
