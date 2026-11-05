@@ -1,0 +1,166 @@
+{
+  "status": "approved-for-updated-private-review",
+  "completedOn": "2026-11-05",
+  "request": "User explicitly approved a local repair without spending generation credits.",
+  "movie": "/art/tasso-home-video/process-black-smooth-v2.mp4",
+  "render": {
+    "output": "/workspace/eva-free-transition-qa/process-black-smooth-v2.mp4",
+    "sourceSha256": "27b24b2868574ff66fe0bed746dc389f832b5f0da1fcb3c91482a5225cb3d737",
+    "sha256": "866441bd196bce886020efac42d3706bbfa337ad45846867d619993ebb5ad776",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "24/1",
+          "nb_read_frames": "648"
+        }
+      ],
+      "format": {
+        "duration": "27.000000",
+        "size": "3039736"
+      }
+    },
+    "seconds": 31.769489765167236,
+    "creditsSpent": 0,
+    "newGenerationJobs": 0,
+    "changedCameraWindowSeconds": [
+      17.5,
+      18.6666666667
+    ],
+    "supportRevealWindowSeconds": [
+      18,
+      18.3333333333
+    ],
+    "method": "Track the physical tablet quad, smooth its path with native entry/exit velocity, warp the whole moving tablet and its surrounding black region together; compress only deep shadows to match the black set; reveal the existing support over eight video frames instead of one abrupt frame.",
+    "preserved": [
+      "All648sourceframes in order",
+      "24fps and27s duration",
+      "Original video screen content bound to its physical bezel",
+      "Original film at its old asset path"
+    ],
+    "remainingKnownLimit": "The pre-existing envelope join at9s and left-paper/stand continuity around18s need a separate review; no new AI generation."
+  },
+  "nativeReview": {
+    "version": 1,
+    "scope": "User-authorized no-credit local repair of the18s iPad spatial jump only. This is not a new native generation or approval of a fully seamless film.",
+    "candidate": {
+      "path": "/workspace/eva-free-transition-qa/process-black-smooth-v2.mp4",
+      "sha256": "866441bd196bce886020efac42d3706bbfa337ad45846867d619993ebb5ad776",
+      "bytes": 3039736,
+      "width": 1280,
+      "height": 720,
+      "fps": 24,
+      "frames": 648,
+      "durationSeconds": 27
+    },
+    "source": {
+      "path": "/workspace/eva-playback-review/public/art/tasso-home-video/process-black-v1.mp4",
+      "sha256": "27b24b2868574ff66fe0bed746dc389f832b5f0da1fcb3c91482a5225cb3d737"
+    },
+    "decision": "GO FOR HONEST UPDATED PRIVATE REVIEW OF THE TARGETED18S IPAD REPAIR",
+    "approvedForUpdatedPrivateReview": true,
+    "targetedIpadMovementImproved": true,
+    "productionReady": false,
+    "wholeFilmSeamless": false,
+    "allUserRequestedDetailsComplete": false,
+    "actualReview": {
+      "method": "Viewed actual repaired426\u2013441 consecutive strip, exact candidate431/432 full720pair, every consecutiveframe416\u2013431(entry) and440\u2013455(exit), and sampled side-by-side transition contact derived from actual4scomparisonvideo. Read render metadata/method; no whole-site rerun.",
+      "evidence": [
+        "/workspace/eva-free-transition-qa/repaired-join-16frames.jpg",
+        "/workspace/eva-free-transition-qa/judge-candidate-exact-join18.png",
+        "/workspace/eva-free-transition-qa/judge-candidate-entry.jpg",
+        "/workspace/eva-free-transition-qa/judge-candidate-exit.jpg",
+        "/workspace/eva-free-transition-qa/judge-side-by-side-02.jpg",
+        "/workspace/eva-free-transition-qa/before-after-transition.mp4"
+      ],
+      "limits": "This is a targeted visual review of the repair window and its boundaries, not a frame-by-frame audit of all648frames or physical hardware browser playback. Sourceframe ordering/no temporalduplicates are declared by renderer, not inferred solely from file length."
+    },
+    "observed": {
+      "movement": "The large18s tablet position/scale jump is substantially reduced; case motion follows a visually smoother path through the former boundary.",
+      "screenAttachment": "Screen graphics remain attached to the moving physicalbezel in inspected frames; no separate white image-plane spill or independent UI slide observed.",
+      "deviceShape": "No new obviouscase tear, double tablet, clipped frontglass or boundary rebound observed in the reviewed window. Perspective is adjusted as a whole moving tablet, not just its dashboard.",
+      "blackSet": "Previous gray-floor flash is reduced by shadow compression. This improves tonal continuity in the reviewed samples.",
+      "stand": "Existing support is revealed over severalframes rather than appearing atfullbrightness inoneframe. This is a deliberate localeffect and does not establish fullphysicalstand/worldcontinuity."
+    },
+    "methodAcknowledged": {
+      "spatialWindowSeconds": [
+        17.5,
+        18.6666666667
+      ],
+      "supportRevealWindowSeconds": [
+        18,
+        18.3333333333
+      ],
+      "description": "Physicalscreenquad pathrepair and whole-tablet+bezel video-frame warp, with deep-shadow compression and support reveal. Existingmoving screen pixels stay with the same source object.",
+      "newGenerationJobs": 0,
+      "creditsSpent": 0,
+      "noNewScreenshotOverlay": true,
+      "notClaimedAsANewNativeTake": true
+    },
+    "remainingKnownLimits": [
+      "Existing9s envelope/flap hand-pose discontinuity remains.",
+      "Existing18s left-paper disappearance and hand/world discontinuity remain.",
+      "Full-scene/stand continuity is not certified by this tablet-only improvement.",
+      "Native small dashboard labels/date/ring details remain approximate."
+    ],
+    "requiredPrivateReviewWording": "Describe the18s tablet movement as smoother through a local no-credit correction, while stating that remaining scene joins need refinement. Do not claim a wholly seamless, physically reconstructed or production-ready one-take film.",
+    "judgeActions": {
+      "network": 0,
+      "generation": 0,
+      "credits": 0,
+      "sourceEdits": 0,
+      "publication": 0,
+      "diagnosticExtractionOnly": true
+    }
+  },
+  "browserChecks": {
+    "checks": [
+      {
+        "id": "repaired-video-1440",
+        "passed": true,
+        "timeAcrossRepair": 2.3883550000000007,
+        "clockAcrossRepair": 2.3883000000007453,
+        "controlsAndLabels": true
+      },
+      {
+        "id": "repaired-video-390",
+        "passed": true,
+        "timeAcrossRepair": 2.3891479999999987,
+        "clockAcrossRepair": 2.3892000000011175,
+        "controlsAndLabels": true
+      },
+      {
+        "id": "repaired-video-320",
+        "passed": true,
+        "timeAcrossRepair": 2.3942690000000013,
+        "clockAcrossRepair": 2.394300000000745,
+        "controlsAndLabels": true
+      },
+      {
+        "id": "reduced-motion-posters",
+        "passed": true
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "validation": {
+    "typescript": "passed",
+    "productionBuild": "passed,113routes",
+    "existingPreviewChecks": "passed,12checks across113pages",
+    "builtMediaAssetHashes": "all5match reviewedsource",
+    "browserEnvironment": "Chromium with desktop and mobile viewport emulation; localHTTP206range support matches standard video seeking.",
+    "physicalSafariHardwareTested": false
+  },
+  "publicationScope": "Update EN/ES black-film review page only; homepage originalmovie remains unchanged. Earlierblackv1asset retained.",
+  "newGenerationJobs": 0,
+  "creditsSpent": 0,
+  "knownLimits": [
+    "Envelope/hand jump around9s remains.",
+    "Leftpaper/hand world discontinuity near18s remains.",
+    "Fullfilm and standworld continuity are not production-certified."
+  ]
+}

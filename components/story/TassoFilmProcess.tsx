@@ -13,7 +13,7 @@ type Direction = 'clean' | 'labelled';
 
 function ChapterPoster({index, className, preload = false, edition = 'original'}: {index: number; className?: string; preload?: boolean; edition?: 'black' | 'original'}) {
   const chapter = film.chapters[index];
-  const poster = edition === 'black' ? `/art/tasso-home-video/black-${chapter.id}.jpg` : chapter.poster;
+  const poster = edition === 'black' ? `/art/tasso-home-video/black-smooth-v2-${chapter.id}.jpg` : chapter.poster;
   const mobilePoster = edition === 'black' ? poster : chapter.mobilePoster;
   return <picture className={className}>
     {mobilePoster ? <source media="(max-width: 700px)" srcSet={mobilePoster}/> : null}
