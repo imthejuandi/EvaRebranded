@@ -1,0 +1,283 @@
+{
+  "title": "EVA landing proposal design direction",
+  "scope": "Sections1–5 in a separate visual review route, preserving the existing main landing until approval",
+  "narrative": "Know → Collect → Understand → Explore the13 → Choose the next focus",
+  "business_constraints": {
+    "price": "€99 + VAT",
+    "vat_rate": "Not supplied; never invent a total",
+    "panel_count": 13,
+    "audiences": [
+      "I’m starting out",
+      "I already test"
+    ],
+    "ongoing": "Guided choice of future quarterly testing, not a claim that every panel is included or a fixed quarterly kit price",
+    "excluded_promises": [
+      "Guaranteed biological age or longevity score from this panel",
+      "All specialist panels included",
+      "Every marker fully customisable",
+      "Disease prediction or diagnosis",
+      "Every trend improves"
+    ]
+  },
+  "creative_principle": "One editorial journey with coherent light and typography. The kit is convenient; understanding and guided choice create value. Actual data interfaces carry proof, while imagery carries feeling.",
+  "design_tokens": {
+    "colors": {
+      "ink": "#0b1010",
+      "paper": "#f3f0e8",
+      "body_ink": "#171b18",
+      "amber": "#e9a067",
+      "sage": "#c8cdb9",
+      "lilac": "#cdc2d9",
+      "dashboard_ink": "#243125",
+      "dashboard_muted": "#65705f"
+    },
+    "type": {
+      "display": "EVA Hanken400, natural widths, tracking -0.055em to -0.065em, desktop80–116px hero and56–84px section headings; mobile42–56px hero and34–44px section headings",
+      "counterpoint": "Georgia italic for one human phrase per heading, not every line",
+      "body": "EVA Hanken400 at17–19px desktop,16px mobile, line-height1.5–1.6",
+      "labels": "10–11px letterspaced Hanken or existing mono; never use label size for essential price qualifiers",
+      "emphasis": "Hanken600 only for body lead-ins, selected controls and practical reassurance"
+    },
+    "spacing": {
+      "desktop_gutter": "48px at1440px, max-content1360px",
+      "tablet_gutter": "32px",
+      "mobile_gutter": "20–24px",
+      "section_top_bottom": "96–128px desktop,64–80px mobile",
+      "row_rules": "1px ink at16–22%opacity; limited use of large radii outside true dashboard instruments"
+    },
+    "motif": "A single dot becomes a short trace, then a result, then an open path. This is decorative continuity, never a scientific diagram or fake measurement."
+  },
+  "global_structure": {
+    "header": "Official EVA wordmark at left, understated proposal marker, five-section anchor progress at desktop, main-site return link. On phones, logo + simple section menu; do not squeeze five labels into a small bar.",
+    "audience_control": "One quiet two-option switch near the hero support copy; use real buttons/radiogroup with selected state and44px hit targets. Change explanatory support and onward choice language, not the kit, price, panel count or whole layout. Stable height avoids jumping.",
+    "navigation": "Natural document scroll with anchor shortcuts. No scrolljacking or trapping a user until video finishes.",
+    "price": "Show €99 and + VAT together as one price unit. The + VAT text must remain plainly legible, not a hidden footnote. Do not put /quarter after it unless the commercial schedule is confirmed.",
+    "estimated_length": "Approximately6–8 desktop viewport heights for five substantive sections, with content-driven mobile height."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "headline": "Know your health.",
+      "copy_job": "Identify the service and allow both audiences to recognise themselves before the cinematic journey begins.",
+      "background": "Ink",
+      "composition": "Asymmetric editorial split: text in left42%, existing athletic runner in right58% with generous feathered edges. Keep the runner silhouette as the visual bridge to the original landing. Headline reads as two large natural lines; the last word may take Georgia italic or current analog treatment if it stays legible.",
+      "hierarchy": [
+        "Small EVA descriptor",
+        "H1",
+        "Plain-language service deck ≤35words",
+        "Audience selector and one short tailored sentence",
+        "Primary action plus secondary text action",
+        "€99 + VAT with13-biomarker kit context"
+      ],
+      "assets": [
+        "/art/runner-athletic.jpg",
+        "/art/runner-athletic-loop.mp4",
+        "/art/runner-athletic-mobile.mp4"
+      ],
+      "motion": "Use the runner’s native ambient1x loop. Scroll may translate its complete plane rightward up to8% and lightly reduce opacity; do not seek the video from scroll. Reveal text on first paint or a short ≤300ms opacity transition. A13-dot line can settle once below the offer, then become the section progress cue.",
+      "mobile": "Keep H1 and service deck above a shorter cropped runner stage. Price and primary action must appear within or immediately after the first screen. Preserve the existing mobile video rather than resizing the desktop crop.",
+      "avoid": [
+        "Headline hidden until an animation completes",
+        "Needles or invented product shots in the hero",
+        "Different paid offers for the two audience tabs",
+        "Dense feature list"
+      ]
+    },
+    {
+      "id": "process",
+      "headline": "3 easy steps",
+      "copy_job": "Make effort and logistics feel clear and manageable, with the physical collection scene doing the explaining.",
+      "background": "Ink with a warm film inside the frame, preserving approved lighting",
+      "composition": "Full-width cinematic film stage with a lean top heading and a clearly separated step label zone. Keep a restrained side text column only on wide displays; avoid trapping all explanation in a narrow sidebar. Use the approved real film as a continuous piece with a16:9contain frame, never cover-crop away the table or envelope.",
+      "hierarchy": [
+        "Section index and title",
+        "Active step title",
+        "Film",
+        "Active step description and timing qualifier",
+        "Collect / Return / Understand controls plusPrevious / Pause / Next"
+      ],
+      "assets": [
+        "/art/tasso-home-video/process-continuity-v3.mp4",
+        "/art/tasso-home-film/81d580b1ef608977/desktop/poster.jpg",
+        "/art/tasso-home-film/81d580b1ef608977/mobile/collect.jpg",
+        "/art/tasso-home-film/81d580b1ef608977/mobile/return.jpg",
+        "/art/tasso-home-film/81d580b1ef608977/mobile/understand.jpg"
+      ],
+      "motion": "Film owns its native1xclock. Entering the section activates it; leaving pauses. Scrolling moves the section, not currentTime. Clicks navigate the existing0/6.5/14.5second steps. Keep caption changes in normal DOM with a light160ms opacity, without overlapping text.",
+      "mobile": "One column: title → film → current explanation → navigation. Retain16:9and enough vertical room for wrapping. Do not position essential copy absolutely over the picture.",
+      "copy_constraints": [
+        "Use virtually painless and no needles to handle, not a guarantee of zero sensation",
+        "Keep two working days qualified from laboratory receipt",
+        "Do not add a second four-step counter elsewhere in this proposal"
+      ],
+      "avoid": [
+        "Regenerating device visuals",
+        "Reintroducing scroll-seeking lag",
+        "Mixing the black studio footage with tabletop footage",
+        "Hidden controls on small phones"
+      ]
+    },
+    {
+      "id": "results",
+      "headline": "Your results. Clearly explained.",
+      "copy_job": "Turn the abstract word context into something concrete the customer can see and understand.",
+      "background": "Paper; the first clear change from the cinematic ink sequence",
+      "composition": "A broad results folio using the actual dashboard’s materials: paper frame, dark-green glass instrument, dotted traces, sober row index and solid typography. Use a thin line rather than a giant device bezel. One interactive selected marker is the focal point; supporting explanations sit beside it, never under a fake tablet screenshot.",
+      "hierarchy": [
+        "Section title and short deck",
+        "Persistent Example results label",
+        "Actual-style report header with13markers",
+        "Selected marker name and optional illustrative value",
+        "Readable explanation",
+        "Meaning / Range / Over time controls",
+        "Link to full dashboard preview"
+      ],
+      "dashboard_references": [
+        "components/pages/dashboard/DashboardPage.tsx",
+        "components/pages/dashboard/dashboard.css",
+        "components/pages/dashboard/ExecutiveReading.tsx"
+      ],
+      "important_asset_warning": "/art/tasso-scroll/eva-dashboard.jpg is a real earlier UI capture but shows15markers, biological age29 and score82. Do not use it as-is for the13-marker kit. Reuse the current UI structure with a clearly illustrative subset, or crop an actual13-marker readout after data correction.",
+      "motion": "At desktop a sticky folio stays in place for up to1.5viewport heights while two or three explanatory phrases progress. The selected result itself remains stable. Optional one-time line drawing lasts600ms; repeated scroll must not make values change. On mobile the folio is a normal flow block.",
+      "mobile": "Large enough text and controls to read without pinching. Present a focused single-marker instrument rather than a miniaturised full desktop dashboard. Tabs change a panel with stable minimum height.",
+      "avoid": [
+        "Unsupported age/score output",
+        "Generating new UI with an image model",
+        "Tiny text inside a photo",
+        "Improving every quarter by default",
+        "Charts implying the cause of a health change"
+      ]
+    },
+    {
+      "id": "panel",
+      "headline": "13 markers. A clearer starting point.",
+      "copy_job": "Give scope and educational value without making visitors memorise laboratory language.",
+      "background": "Warm paper with one subtle sage or lilac instrument accent",
+      "composition": "Specimen index, not a grid of thirteen identical cards. A large13at left anchors scope. Five ruled category rows sit to the right; expanding one reveals its exact marker names and plain-language purpose. Each marker may open a compact description underneath. Default-open one relatable category; never hide the full kit list behind several layers.",
+      "hierarchy": [
+        "13and kit scope label",
+        "Section heading",
+        "Brief promise of understanding, not comprehensive disease screening",
+        "Five group rows with counts",
+        "Selected group explanation and exact markers",
+        "Visible kit price context €99 + VAT"
+      ],
+      "groups": [
+        {
+          "name": "Heart & lipids",
+          "count": 4,
+          "markers": [
+            "Total cholesterol",
+            "LDL Cholesterol",
+            "HDL-Cholesterol",
+            "Triglycerides"
+          ]
+        },
+        {
+          "name": "Blood sugar",
+          "count": 1,
+          "markers": [
+            "Fructosamine"
+          ]
+        },
+        {
+          "name": "Inflammation",
+          "count": 1,
+          "markers": [
+            "hs-CRP"
+          ]
+        },
+        {
+          "name": "Liver & protein",
+          "count": 4,
+          "markers": [
+            "Albumin",
+            "ALP",
+            "ALT",
+            "GGT"
+          ]
+        },
+        {
+          "name": "Kidney-related markers",
+          "count": 3,
+          "markers": [
+            "Creatinine",
+            "Urea BUN",
+            "Uric acid"
+          ]
+        }
+      ],
+      "motion": "Scroll reveals ruled rows in40–60msstagger, each no more than8pxvertical travel. The numeral13may use current DotNumber or CSSmask, but the full text remains in DOM. Expansion uses standard document flow; no horizontal swipe requirement.",
+      "mobile": "Number13and headline above the five expandable rows. Show counts and+/-without relying onhover. Never display a wide table that requires sideways scrolling.",
+      "avoid": [
+        "Adding ApoB,HbA1c,fastinginsulin,TSH,ferritin,B12orVitaminD to the confirmed kit",
+        "Implying every marker belongs uniquely to one organ",
+        "Showing13as an established total-health score",
+        "Saying a focused panel checks everything"
+      ]
+    },
+    {
+      "id": "ongoing",
+      "headline": "Your next test. With a purpose.",
+      "copy_job": "Explain retention as useful understanding and guided agency, for both first-time and experienced testers.",
+      "background": "Amber editorial field flowing into an ink photographic closing strip",
+      "composition": "Three spacious stages connected by one thin trace: understand this reading → choose a focus → decide what to measure next. For beginners, emphasise a starting point and guidance. For experienced testers, emphasise bringing existing context and exploring useful next questions. A new coastal photograph sits as an expansive closing image, giving life beyond testing the last word.",
+      "hierarchy": [
+        "Section heading",
+        "Short audience-specific support",
+        "Three guided-choice stages",
+        "Optional focus exploration control labelled illustrative",
+        "Primary onward action",
+        "Secondary path for existing results",
+        "Coastal image and one human closing sentence"
+      ],
+      "motion": "The connecting trace fills gradually with scroll; all three labels remain readable. A stationary image may pan at most3%over section travel. No ticker of mandatory tests and no future results invented by scroll position.",
+      "mobile": "Stages become a vertical line; image belowcopy with4:3crop. Keep the onward action and price context in normal flow.",
+      "avoid": [
+        "Subscription treadmill language",
+        "Claiming every future panel is included in€99",
+        "Promising fully customisable marker selection without confirmation",
+        "Calling decorative quarterly dots real customer results"
+      ]
+    }
+  ],
+  "new_image_recommendation": {
+    "subject": "Wide coastal post-run life image extending the current photographic world",
+    "reference": "/workspace/eva-playback-review/public/art/post-run-coast-1000.webp",
+    "placement": "Section5ending, not another hero",
+    "prompt": "Use the supplied coastal post-run image as the visual and colour reference. Create a refined editorial photograph in a wide16:9composition. The same visual world: two adults walking along a coastal path after a run, framed further back and smaller in the landscape, with a generous dark-violet sky and calm sea. Warm amber/coral light catches the people and path, with restrained soft bloom and tactile35mmfilm grain. Keep their expressions natural and understated, no exaggerated happiness or promotional gestures. Leave the right half open and visually quiet so adjacent copy can breathe. Preserve believable anatomy, hands, clothing and shoreline. No text, logos, medical devices, health charts, fantasy particles or futuristic equipment. An atmospheric image about living your life, not a patient testimonial.",
+    "transparency": false,
+    "delivery": "Prefer1600–2000pxwide source; exportWebPdesktopandphonecrop after visualreview. Keep the text in HTML, never generated into the image.",
+    "generation_status": "Recommendation only; no credits spent or image generation started by design agent"
+  },
+  "motion_and_accessibility": {
+    "scroll": "UseCSSscroll-timeline where supported with IntersectionObserverorpassiveprogressfallback. AvoidrerenderingReactwholepageeveryframe. Only one decorative scroll layer active at a time.",
+    "text": "Essential content paints immediately; reveal effects enhance but never gate it. No canvas-onlyH1or price.",
+    "reduced_motion": "Static runner poster; three film posters/explanations accessible together; results folio static; no pinnedscroll narrative orparallax; timeline labels fullyvisible.",
+    "contrast": "Ink/paper copy and practical controls needWCAGAAcontrast; mutedcolors shouldnotcarryessentialprice/timingorstatusalone.",
+    "controls": "44pxminimumtargets, visiblefocus, keyboardselection, aria-expandedforrows, accessiblevideoPause/Play/Previous/Next, selectedaudienceannouncedwithoutstealingfocus.",
+    "performance": "Lazy-loadbelowfoldassets; preloadonlyheroposter, startfilmwhenvisible, preserveposterwhilebuffering, stopambientvideosoffscreen, reserveimageaspectratios."
+  },
+  "review_gates": [
+    "Hero service,13-marker scope,and€99+VAT visible without waiting for animation.",
+    "Both audiences understand their route; the selected path never changes kit scope or silentlychangesprice.",
+    "Film plays at1x withmanualstepnavigation, no scroll-seek stutter or cover-cropping.",
+    "Results demonstration usesrealEVAUIlanguage and onlyconfirmedkitmarkers; all data clearlyillustrative.",
+    "Panel index totals exactly13withno duplicates; category descriptions are contextual, notdiagnostic.",
+    "Ongoing section communicates guidedchoiceand ownership without unsupportedinclusions.",
+    "At320pxallessentialcopyandcontrolsfitwithnohorizontaloverflow; reduced-motionversionremainscomplete.",
+    "Noaddedscientificorcommercialclaimsarecarriedsolelybydecorativevisuals."
+  ],
+  "copy_coordination": {
+    "copy_agent": "/root/longevity_copy_expert",
+    "agreed_headlines": [
+      "Know your health.",
+      "3 easy steps",
+      "Your results. Clearly explained.",
+      "13 markers. A clearer starting point.",
+      "Your next test. With a purpose."
+    ],
+    "hierarchy_rule": "One display headline and≤35-wordmainexplanationpersectionbeforeoptionaldepth. Practicalcopyremainslegibleandclose to the matchingvisual.",
+    "final_copy_source": "/workspace/eva-transition-source/proposal-copy-en.json"
+  }
+}
