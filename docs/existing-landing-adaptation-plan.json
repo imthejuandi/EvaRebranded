@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Hero CTA title/subtitle refinement and Part 2 Tasso copy implemented and browser-verified; publication pending. Parts 3–5 queued.",
+  "status": "Parts 1–3 implemented and verified. Parts 4–5 queued. Publication state is tracked by the Sites deployment receipt.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -173,7 +173,42 @@
         "A beginner can understand one example, while an existing tester can see the value of comparison.",
         "The illustrated marker identities and any units/reference data are coherent and do not misrepresent kit inclusions."
       ],
-      "reviewMoment": "Review the existing mockup in its new position before altering the marker-animation chapter."
+      "reviewMoment": "Review the existing mockup in its new position before altering the marker-animation chapter.",
+      "implemented": {
+        "placement": "Moved existing gallery and adjacent range note to ScrollStory, after the opening story / reduced-motion Tasso summary and before SignalContent. Removed original render in HealthEditorial.",
+        "defaultMarker": "hs-CRP; existing demo values, units, ranges and history unchanged.",
+        "copy": "First-result starting point, reference ranges and comparison with earlier readings.",
+        "uploadAction": "Interpret your past labs / Start for free, preserving the existing free-signup and upload return intent.",
+        "demoScope": "Visible label distinguishes the wider illustrative report from the 13-marker kit.",
+        "design": "Existing heading, console, glass treatment and controls retained. The context link now points down to its later section.",
+        "performance": "Gallery remains behind a memo boundary after moving out of the memoized editorial parent."
+      },
+      "verification": {
+        "browserCases": [
+          "1440×1000 EN",
+          "1440×900 EN",
+          "1024×768 EN",
+          "390×844 EN",
+          "320×568 EN",
+          "390×844 ES",
+          "320×568 ES",
+          "EN/ES reduced motion"
+        ],
+        "results": "Passed: console appears once before SignalContent; adjacent range note and unique anchors retained; hs-CRP default; all five marker selections, three views, reading controls, table, free-signup/upload intent, reduced motion and downstream playback verified. No horizontal overflow, sticky-intro overflow or browser errors.",
+        "upstreamExpansion": "The table expands the page by 431.5px in the desktop check. A real wheel arrival aligns the next scene to its updated position within 0.11px. A focused lifecycle regression check verifies the old position cannot trigger capture after upstream expansion.",
+        "unchanged": [
+          "All specimen values, units, ranges and histories",
+          "Glass console CSS and typography",
+          "Opening story/media/timings",
+          "Tasso film and playback controls"
+        ],
+        "checks": [
+          "TypeScript",
+          "Static export",
+          "Signal-arrival lifecycle regression",
+          "Responsive browser and native arrival checks"
+        ]
+      }
     },
     {
       "part": 4,

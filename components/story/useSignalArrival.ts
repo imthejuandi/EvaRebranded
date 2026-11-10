@@ -109,6 +109,8 @@ export function installSignalArrival(element:HTMLElement,playhead:RefObject<numb
   window.removeEventListener('touchend',touchEnd);window.removeEventListener('touchcancel',touchEnd);window.removeEventListener('scroll',scroll);
  }
  const observer=new ResizeObserver(measure);observer.observe(element);
+ // Expanding the results table above this scene changes its scroll position.
+ if(element.parentElement)observer.observe(element.parentElement);
  // Passive listeners remember gestures that begin above this section. Scroll
  // remains compositor-driven everywhere except the bounded arrival itself.
  window.addEventListener('wheel',wheel,{passive:true});
