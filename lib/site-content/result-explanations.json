@@ -1,0 +1,62 @@
+{
+  "hs-CRP": {
+    "en": {
+      "simple": "hs-CRP is a signal of inflammation. Illness or hard exercise can affect it. Compare it with earlier results; the test cannot tell you the cause.",
+      "balanced": "hs-CRP measures a protein your liver makes in response to inflammation. Recent illness or intense exercise can affect the reading. Your earlier results help show whether it is changing, but the test does not identify the cause.",
+      "advanced": "hs-CRP quantifies C-reactive protein at low concentrations using a high-sensitivity assay. CRP is a nonspecific acute-phase protein produced by the liver in response to inflammation. Recent infection or strenuous exercise can alter the reading. Interpret alongside comparable previous measurements and clinical context; the assay alone cannot identify the cause."
+    },
+    "es": {
+      "simple": "hs-CRP es una señal de inflamación. Una enfermedad o un entrenamiento intenso pueden influir. Compárala con resultados anteriores: la prueba no puede decirte la causa.",
+      "balanced": "hs-CRP mide una proteína que produce el hígado como respuesta a la inflamación. Una enfermedad reciente o el ejercicio intenso pueden influir en el resultado. Compararlo con lecturas anteriores aporta contexto, pero la prueba no identifica la causa.",
+      "advanced": "La prueba de alta sensibilidad cuantifica concentraciones bajas de proteína C reactiva, una proteína de fase aguda producida por el hígado y un marcador inespecífico de inflamación. Una infección reciente o el ejercicio intenso pueden alterar el valor. Se interpreta junto con mediciones previas comparables y el contexto clínico; por sí sola, no identifica la causa."
+    }
+  },
+  "Vitamina D": {
+    "en": {
+      "simple": "Vitamin D helps your body use calcium. Sun exposure and supplements can affect this reading; the result alone does not measure bone strength.",
+      "balanced": "This test measures 25-OH vitamin D, the blood marker commonly used to assess vitamin D status. Sun exposure, diet and supplements can influence it. Read it with your health context; it does not directly measure bone strength.",
+      "advanced": "25-hydroxyvitamin D is the principal circulating form used to assess vitamin D status. It reflects vitamin D obtained through skin production and intake. Season, supplementation and laboratory methods can influence measurements. Interpret comparable readings within the clinical context; this concentration alone does not establish bone strength."
+    },
+    "es": {
+      "simple": "La vitamina D ayuda al cuerpo a utilizar el calcio. El sol y los suplementos pueden influir en este valor; por sí solo, no mide la resistencia de tus huesos.",
+      "balanced": "Esta prueba mide la vitamina D 25-OH, el marcador sanguíneo habitual para valorar el estado de vitamina D. El sol, la alimentación y los suplementos pueden influir. Se interpreta junto a tu situación personal; no mide directamente la resistencia ósea.",
+      "advanced": "La 25-hidroxivitamina D es la principal forma circulante utilizada para valorar el estado de vitamina D. Refleja el aporte por producción cutánea e ingesta. La estación, los suplementos y los métodos del laboratorio pueden influir. Se comparan mediciones compatibles dentro del contexto clínico; esta concentración por sí sola no determina la resistencia ósea."
+    }
+  },
+  "Insulina en ayunas": {
+    "en": {
+      "simple": "Insulin helps control blood sugar. Meals and some medicines can affect the result; a fasting insulin reading alone cannot diagnose insulin resistance.",
+      "balanced": "This test measures insulin in your blood after fasting. Insulin helps move glucose into cells. Fasting conditions and medicines matter; read it alongside glucose and your health history, not as a diagnosis of insulin resistance.",
+      "advanced": "Fasting insulin reflects circulating insulin under fasting conditions, influenced by pancreatic secretion and insulin clearance. Fasting duration, medications and the accompanying glucose value affect interpretation. It can contribute to an assessment of glucose metabolism, but an isolated result does not diagnose insulin resistance or diabetes."
+    },
+    "es": {
+      "simple": "La insulina ayuda a controlar el azúcar en sangre. Las comidas y algunos medicamentos pueden influir; una lectura en ayunas por sí sola no diagnostica resistencia a la insulina.",
+      "balanced": "Esta prueba mide la insulina en sangre después del ayuno. La insulina ayuda a que la glucosa entre en las células. El ayuno y los medicamentos importan; se interpreta junto con la glucosa y tu historial, no como diagnóstico de resistencia a la insulina.",
+      "advanced": "La insulina en ayunas refleja la concentración circulante durante el ayuno, influida por la secreción pancreática y la eliminación de insulina. La duración del ayuno, los medicamentos y la glucosa acompañante afectan su interpretación. Contribuye a valorar el metabolismo de la glucosa, pero un resultado aislado no diagnostica resistencia a la insulina ni diabetes."
+    }
+  },
+  "ApoB": {
+    "en": {
+      "simple": "ApoB helps estimate particles that can carry cholesterol into artery walls. Other results matter too; it cannot tell you whether an artery is blocked.",
+      "balanced": "ApoB is a protein on particles that carry cholesterol and can contribute to plaque in arteries. Its blood level helps estimate their number. Read it with the lipid profile and your health history; it does not measure an existing blockage.",
+      "advanced": "Atherogenic lipoprotein particles carry apolipoprotein B, making ApoB a useful proxy for their concentration. It can complement LDL cholesterol when cholesterol content and particle number differ. Interpretation considers the full lipid profile and cardiovascular context; ApoB alone neither measures existing arterial narrowing nor determines overall cardiovascular risk."
+    },
+    "es": {
+      "simple": "ApoB ayuda a estimar las partículas que pueden llevar colesterol a las paredes arteriales. Otros datos también importan; no muestra si una arteria está obstruida.",
+      "balanced": "ApoB es una proteína de las partículas que transportan colesterol y pueden contribuir a formar placa en las arterias. Su concentración ayuda a estimar cuántas hay. Se interpreta junto con los lípidos y tu historial; no mide una obstrucción existente.",
+      "advanced": "Las lipoproteínas aterogénicas contienen apolipoproteína B, por lo que ApoB sirve como indicador de su concentración. Complementa al colesterol LDL cuando la cantidad de colesterol y el número de partículas difieren. Se interpreta con el perfil lipídico y el contexto cardiovascular; por sí sola, no mide un estrechamiento arterial existente ni determina el riesgo cardiovascular global."
+    }
+  },
+  "Ferritina": {
+    "en": {
+      "simple": "Ferritin gives clues about stored iron. Inflammation can also raise it, so a higher reading does not always mean excess iron. Read it with other results.",
+      "balanced": "Ferritin is a protein that stores iron, so its blood level helps assess iron reserves. It can also rise during inflammation. Read it with other iron tests and your health context; a raised result does not automatically mean excess iron.",
+      "advanced": "Serum ferritin indicates iron stores and also behaves as an acute-phase reactant. Inflammation and liver conditions can increase it independently of excess iron. Interpretation may involve transferrin saturation, blood count and clinical context; the concentration alone does not establish why a result is raised."
+    },
+    "es": {
+      "simple": "La ferritina orienta sobre el hierro almacenado. La inflamación también puede elevarla: un resultado más alto no siempre significa exceso de hierro. Léelo junto a otros resultados.",
+      "balanced": "La ferritina es una proteína que almacena hierro, por lo que su concentración ayuda a valorar las reservas. También puede aumentar con la inflamación. Se interpreta junto con otras pruebas de hierro y tu situación personal; un valor elevado no significa automáticamente exceso de hierro.",
+      "advanced": "La ferritina sérica indica las reservas de hierro y también actúa como reactante de fase aguda. La inflamación y las alteraciones hepáticas pueden elevarla sin que exista exceso de hierro. Su interpretación puede incluir saturación de transferrina, hemograma y contexto clínico; esta concentración por sí sola no establece la causa de una elevación."
+    }
+  }
+}

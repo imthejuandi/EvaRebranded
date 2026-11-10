@@ -371,5 +371,143 @@
     "Normal scrolling, accessible copy, native-speed film controls and a complete reduced-motion route.",
     "No replacement page, new images, new animation system or unrequested changes to later sections."
   ],
-  "reviewMode": "User requested continued section-by-section implementation and one whole-page assessment afterward. Every handoff names the affected section and its new position."
+  "reviewMode": "User requested continued section-by-section implementation and one whole-page assessment afterward. Every handoff names the affected section and its new position.",
+  "explanationDepthRelease": {
+    "locations": {
+      "preview": "#kit-explanation-preview, an amber continuation directly after the 13-marker index.",
+      "fullDemo": "#biomarcadores > Reading, the existing results console."
+    },
+    "review": {
+      "medical": "AI medical-content review of general educational wording, not human clinician sign-off. hs-CRP reflects an inflammatory signal; the test cannot identify its cause. No reading is labelled safe, dangerous or attributable to a workout.",
+      "customer": "Heuristic reviews for a newcomer and an experienced tester, not observed customers. The first variants felt like synonym changes; the revised levels add genuine information.",
+      "progression": {
+        "Essential": "Familiar signal and useful comparison, with contextual cautions retained.",
+        "With context": "Mechanism, factors that influence the reading, and the role of history.",
+        "In detail": "Assay or biomarker science, comparable measurements and interpretation limits."
+      },
+      "hsCRPEnglishWords": {
+        "simple": 25,
+        "balanced": 37,
+        "advanced": 49
+      },
+      "sources": [
+        "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+        "https://medlineplus.gov/lab-tests/vitamin-d-test/",
+        "https://medlineplus.gov/lab-tests/insulin-in-blood/",
+        "https://medlineplus.gov/lab-tests/ferritin-blood-test/"
+      ],
+      "wordCounts": {
+        "hs-CRP": {
+          "en": {
+            "simple": 25,
+            "balanced": 37,
+            "advanced": 49
+          },
+          "es": {
+            "simple": 25,
+            "balanced": 38,
+            "advanced": 56
+          }
+        },
+        "Vitamina D": {
+          "en": {
+            "simple": 23,
+            "balanced": 37,
+            "advanced": 46
+          },
+          "es": {
+            "simple": 30,
+            "balanced": 40,
+            "advanced": 53
+          }
+        },
+        "Insulina en ayunas": {
+          "en": {
+            "simple": 22,
+            "balanced": 35,
+            "advanced": 45
+          },
+          "es": {
+            "simple": 29,
+            "balanced": 44,
+            "advanced": 54
+          }
+        },
+        "ApoB": {
+          "en": {
+            "simple": 24,
+            "balanced": 40,
+            "advanced": 47
+          },
+          "es": {
+            "simple": 25,
+            "balanced": 40,
+            "advanced": 56
+          }
+        },
+        "Ferritina": {
+          "en": {
+            "simple": 26,
+            "balanced": 40,
+            "advanced": 44
+          },
+          "es": {
+            "simple": 27,
+            "balanced": 45,
+            "advanced": 53
+          }
+        }
+      }
+    },
+    "copy": {
+      "previewHeadline": "Understand the essentials. Explore the detail.",
+      "previewBody": "These short explanations are a starting point. In your results, you choose how much detail to see.",
+      "fullHeadline": "Your results. Explained your way.",
+      "levels": [
+        "Essential",
+        "With context",
+        "In detail"
+      ]
+    },
+    "implementation": {
+      "initialState": "The public demonstration opens Reading / In detail on the existing hs-CRP example. It does not alter a member profile preference.",
+      "invariants": "Values, units, assay identity, readings, ranges and warnings are unaffected by explanation depth. Only authored explanatory text changes.",
+      "choice": "Gallery-level state preserves the choice across marker, reading and chart-view changes. Amber link reopens Reading without resetting the chosen level or biomarker.",
+      "motion": "Native CSS: 90ms out, 220ms in and a 300ms indicator. Maximum paragraph height is reserved across three levels. Reduced motion changes text directly; no autoplay or scroll scrubbing.",
+      "scope": "Public landing examples only. Current app preference storage and report-owned missing/stale/pending/error behavior are not changed.",
+      "examples": "All five existing selectable examples, with three reviewed levels in English and Spanish (30 authored variants)."
+    },
+    "purchaseRationale": "The intended benefit is confidence in understanding a lab result and knowing what to compare next. Existing Interpret your past labs / Start for free action remains the next step. No conversion uplift has been measured.",
+    "futureUserTest": {
+      "participants": "Eight people: four new to blood testing and four experienced testers.",
+      "tasks": [
+        "Describe what changed and whether the result changed.",
+        "Explain what hs-CRP can and cannot show.",
+        "Name one useful question prompted by the explanation.",
+        "Choose a preferred level and explain why.",
+        "Choose the next step after seeing the real free-upload and kit offer."
+      ],
+      "method": "Counterbalance the starting level. Record comprehension, relevance and intended next action separately; these interviews do not establish a sales increase."
+    },
+    "verification": {
+      "status": "Passed",
+      "cases": "8 responsive browser cases: 1440/1024 desktop, 390/320 English and Spanish, and EN/ES reduced motion.",
+      "coverage": [
+        "All 30 authored explanations across five selectable examples",
+        "Fixed value, unit, range text and result position during level changes",
+        "No layout jump between levels",
+        "Choice persists across marker, reading and chart-view changes",
+        "Amber bridge returns to Reading without resetting the choice",
+        "Keyboard activation, stable focus, selected states and 44px touch targets",
+        "No paragraph clipping, horizontal overflow or page errors",
+        "Existing free-signup/upload intent retained"
+      ],
+      "buildChecks": [
+        "TypeScript",
+        "Static export",
+        "English-route audit",
+        "Story section timing/window contract"
+      ]
+    }
+  }
 }

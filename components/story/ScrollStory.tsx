@@ -24,6 +24,7 @@ import {TassoFilmTranscript} from './TassoFilmTranscript';
 import { createStoryScrollDriver } from '@/lib/story-scroll-driver';
 import {OPENING_END_FRAME, OPENING_SCROLL_HEIGHT_SVH, openingFrameAtProgress, openingProgressAtFrame} from '@/lib/story-scroll-timing';
 import {StoryScenePassage} from './StoryScenePassage';
+import {KitExplanationPreview} from './KitExplanationPreview';
 const ResultsContent = memo(BiomarkerGallery), EditorialContent = memo(HealthEditorial), OfferContent = memo(BusinessOffer), SignalContent = memo(SignalPassage);
 function readStoryPosition() {
     const candidates = ['volver-a-la-vida', 'una-perspectiva', 'una-senal', 'kit-inicial', 'biomarcadores'];
@@ -151,6 +152,7 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
  <ResultsContent calm={calm}/>
  <section className="range-clarity" aria-label={__site.t("C\u00F3mo leer los rangos")}><p>{__site.t("Un intervalo de referencia describe los valores que usa el laboratorio. Los rangos de EVA aportan otra perspectiva para explorar tus resultados junto con su evoluci\u00F3n y tu contexto; no sustituyen una valoraci\u00F3n profesional.")}</p><a href={__site.href("/es/science")}>{__site.t("Entender los rangos de EVA")}</a></section>
  <StoryScenePassage kind="kit" calm={calm}/>
+ <KitExplanationPreview/>
  <SignalContent calm={calm}/>
  <EditorialContent calm={calm}/>
  <OfferContent />
