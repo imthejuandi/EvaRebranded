@@ -4,6 +4,9 @@ import { AbsoluteFill, Img, staticFile, interpolate, useCurrentFrame, useVideoCo
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { createStoryScrollPainter, type StoryScrollDriver } from '@/lib/story-scroll-driver';
 import { installStoryScrollCompositor } from '@/lib/story-scroll-compositor';
+import {createKitScrollPainter} from '@/lib/kit-scroll-painter';
+import {installKitScrollCompositor} from '@/lib/kit-scroll-compositor';
+import {kitScrollState} from '@/lib/kit-scroll-motion';
 import { TrackedRunner } from './TrackedRunner';
 import type { SignalLanguage } from '@/lib/runner-signals';
 import { AnalogType } from './AnalogType';
@@ -18,7 +21,7 @@ import './story-scene-passage.css';
 export const DURATION = 981;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
 const range = (f: number, a: number, b: number, x: number, y: number) => interpolate(f, [a, b], [x, y], clamp);
-export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean', externalTasso = false, sceneMode = 'all', scrollWindow, scrollGeometry }: {
+export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean', externalTasso = false, sceneMode = 'all', scrollWindow, scrollGeometry, kitLocalClock = false, onKitLayoutOverflow }: {
     ambientRunner?: boolean;
     onRunnerBlocked?: () => void;
     language?: SignalLanguage;
@@ -32,6 +35,8 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
     sceneMode?: 'all' | 'opening' | 'insight' | 'life';
     scrollWindow?: readonly [number, number];
     scrollGeometry?: {top: number; span: number};
+    kitLocalClock?: boolean;
+    onKitLayoutOverflow?: () => void;
 } = {}) {
     const __site = useSiteLanguage();
     const kit = kitInsightCopy[__site.locale];
@@ -45,18 +50,25 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
     const endProgress = storyProgressAtFrame(scrollWindow?.[1] ?? 980);
     const pad = mobile ? 24 : 48;
     const nativeScroll = scrollDriver && !still ? scrollDriver : undefined;
+    const localKit = kitLocalClock && sceneMode === 'insight';
+    const kitPose = localKit ? kitScrollState(nativeScroll?.current ?? f, w, 0) : null;
+    const poseFrame = kitPose?.poseFrame ?? f;
     const root = useRef<HTMLDivElement>(null), nativePainter = useRef<ReturnType<typeof createStoryScrollPainter> | null>(null);
-    const [runnerActive, setRunnerActive] = useState((nativeScroll?.current ?? f) < 200);
+    const [runnerActive, setRunnerActive] = useState(!localKit && (nativeScroll?.current ?? f) < 200);
     const renders = useRef(0);
     renders.current++;
     const travel = range(f, 45, 190, 0, 1);
     const runnerX = travel * w * 1.05;
-    const motion = storyMotion(f);
-    const scene = f < 230 ? 'Vivir' : f < 490 ? 'Conocer' : f < 715 ? 'Entender' : 'Seguir';
+    const motion = storyMotion(poseFrame);
+    const scene = localKit ? 'Entender' : f < 230 ? 'Vivir' : f < 490 ? 'Conocer' : f < 715 ? 'Entender' : 'Seguir';
     const track = useRef<HTMLDivElement>(null);
     const [overflow, setOverflow] = useState(w);
     useEffect(() => { const el = track.current; if (!el)
-        return; const measure = () => setOverflow(Math.max(0, el.scrollWidth - (w - pad * 2))); measure(); const ro = new ResizeObserver(measure); ro.observe(el); return () => ro.disconnect(); }, [w, pad]);
+        return; const markers = el.querySelector<HTMLElement>('[data-kit-panel="markers"]'); const measure = () => {
+          setOverflow(Math.max(0, el.scrollWidth - (w - pad * 2)));
+          // Measure the complete, reserved subtitle layout, including while it is hidden.
+          if (localKit && (el.offsetTop + el.offsetHeight > h - (mobile ? 24 : 32) || (markers && markers.scrollWidth > markers.clientWidth + 1))) onKitLayoutOverflow?.();
+        }; measure(); const ro = new ResizeObserver(measure); ro.observe(el); return () => ro.disconnect(); }, [w, h, pad, mobile, localKit, onKitLayoutOverflow]);
     const hero = heroLayout(w, h);
     useLayoutEffect(() => {
         if (!nativeScroll || !root.current)
@@ -65,12 +77,14 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         const localSpan = scrollGeometry?.span ?? (journey ? journey.offsetHeight - h : 0);
         const fullSpan = localSpan / (endProgress - startProgress);
         const localTop = scrollGeometry?.top ?? (journey ? journey.getBoundingClientRect().top + window.scrollY : 0);
-        const compositor = journey ? installStoryScrollCompositor(root.current, journey, { width: w, height: h, overflow, top: localTop - fullSpan * startProgress, span: fullSpan }) : null;
-        const paint = createStoryScrollPainter(root.current, compositor?.owned);
+        const compositor = journey ? localKit
+          ? installKitScrollCompositor(root.current, {width: w, overflow, top: localTop, span: localSpan})
+          : installStoryScrollCompositor(root.current, journey, { width: w, height: h, overflow, top: localTop - fullSpan * startProgress, span: fullSpan }) : null;
+        const paint = localKit ? createKitScrollPainter(root.current, compositor?.owned) : createStoryScrollPainter(root.current, compositor?.owned);
         nativePainter.current = paint;
         root.current.dataset.scrollEngine = compositor ? 'compositor-timeline' : 'native-transforms';
-        let heroActive = nativeScroll.current < 200;
-        const update = (value: number) => { paint(value, w, h, overflow); const next = value < 200; if (next !== heroActive) {
+        let heroActive = !localKit && nativeScroll.current < 200;
+        const update = (value: number) => { paint(value, w, h, overflow); const next = !localKit && value < 200; if (next !== heroActive) {
             heroActive = next;
             setRunnerActive(next);
         } };
@@ -78,7 +92,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         setRunnerActive(heroActive);
         const stop = nativeScroll.subscribe(update);
         return () => { stop(); compositor?.dispose(); nativePainter.current = null; };
-    }, [nativeScroll, w, h, overflow, startProgress, endProgress, scrollGeometry?.top, scrollGeometry?.span]);
+    }, [nativeScroll, localKit, w, h, overflow, startProgress, endProgress, scrollGeometry?.top, scrollGeometry?.span]);
     // Reapply the current pose after a coarse React state change or responsive resize.
     useLayoutEffect(() => { if (nativeScroll)
         nativePainter.current?.(nativeScroll.current, w, h, overflow); });
@@ -90,7 +104,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
             void image.decode().then(() => { image.dataset.decodeState = 'ready'; }).catch(() => { });
         }
     }, [still]);
-    return <AbsoluteFill ref={root} data-story-scene={sceneMode} data-film-renders={renders.current} data-scroll-engine={nativeScroll ? 'native-transforms' : 'remotion'} data-rendered-frame={f} data-scene={scene} style={{ background: '#0b1010', color: '#f3f0e8', fontFamily: 'Arial, Helvetica, sans-serif', overflow: 'hidden' }}>
+    return <AbsoluteFill ref={root} data-story-scene={sceneMode} data-film-renders={renders.current} data-scroll-engine={nativeScroll ? 'native-transforms' : 'remotion'} data-rendered-frame={poseFrame} data-kit-clock={kitPose?.clock} data-kit-phase={kitPose?.phase} data-scene={scene} style={{ background: '#0b1010', color: '#f3f0e8', fontFamily: 'Arial, Helvetica, sans-serif', overflow: 'hidden' }}>
   {(sceneMode === 'all' || sceneMode === 'opening') && <>
   <AbsoluteFill data-layer="human" style={{ overflow: 'hidden', translate: `0 ${motion.humanY * h}px`, visibility: Math.abs(motion.humanY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.humanY) < 1 ? 'translate' : 'auto' }}>
    <div data-layer="runner-plane" style={{ position: 'absolute', left: '50%', top: hero.runnerTop, width: hero.runnerWidth, height: hero.runnerHeight, translate: `calc(-50% + ${runnerX}px) 0`, scale: 1 + travel * .08, willChange: f < 200 ? 'translate, scale' : 'auto' }}><TrackedRunner width={hero.runnerWidth} height={hero.runnerHeight} viewportWidth={w} viewportHeight={h} top={hero.runnerTop} saludTop={hero.saludTop} enabled={ambientRunner} active={nativeScroll ? runnerActive : f < 200} language={__site.locale} onPlaybackBlocked={onRunnerBlocked} onSignalsReady={onSignalsReady} signalsImmediate={signalsImmediate} arrivalEnabled={arrivalEnabled} onArrivalUnavailable={onArrivalUnavailable}/></div>
@@ -104,9 +118,9 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
   </>}
   {(sceneMode === 'all' || sceneMode === 'insight') && <AbsoluteFill className="kit-insight-scene" data-kit-mobile={mobile} data-kit-compact={compact} data-kit-short={!mobile && h < 620} data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
    <div className="kit-scene-heading" style={{left: pad, right: pad}}><p className="kit-eyebrow">{kit.eyebrow}<span aria-hidden="true">01—13</span></p><h2 style={{fontSize: compact ? Math.min(43, w * .145) : mobile ? Math.min(54, w * .145) : Math.min(110, w * .075, h * .115)}}>{kit.heading[0]}<br /><em>{kit.heading[1]}</em></h2></div>
-   <div ref={track} data-layer="insight-track" data-overflow={overflow} className="kit-insight-track" style={{left: pad, gap: pad, translate: `${-range(f, 590, 635, 0, overflow)}px 0` }}>
+   <div ref={track} data-layer="insight-track" data-overflow={overflow} className="kit-insight-track" style={{left: pad, gap: pad, translate: `${-range(poseFrame, 590, 635, 0, overflow)}px 0` }}>
     <div data-kit-panel="count" className="kit-count-panel" style={{width: w - pad * 2}}><span className="kit-count-number" style={{fontSize: mobile ? Math.min(w * .43, 175) : Math.min(w * .25, 360, h * .4)}}>13</span><div className="kit-count-copy"><strong>{kit.countLabel[0]}</strong><p>{kit.countLabel.slice(1).join(' ')}</p><span className="kit-count-rule" aria-hidden="true"/></div></div>
-    <div data-kit-panel="markers" style={{width: w - pad * 2}}><KitMarkerIndex copy={kit}/></div>
+    <div data-kit-panel="markers" style={{width: w - pad * 2}}><KitMarkerIndex copy={kit} meaningProgress={kitPose?.context} meaningOffset={kitPose?.meaningY}/></div>
    </div>
   </AbsoluteFill>}
   {(sceneMode === 'all' || sceneMode === 'life') && <AbsoluteFill data-layer={sceneMode === 'life' ? 'life-passage' : 'return-to-life'} style={{ background: '#0b1010', overflow: 'hidden', translate: `0 ${sceneMode === 'life' ? 0 : motion.lifeY * h}px`, visibility: sceneMode === 'life' || Math.abs(motion.lifeY) < 1 ? 'visible' : 'hidden', willChange: Math.abs(motion.lifeY) < 1 ? 'translate' : 'auto' }}>

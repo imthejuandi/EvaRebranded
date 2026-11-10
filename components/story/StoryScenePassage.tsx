@@ -1,11 +1,12 @@
 'use client';
 
-import {useEffect, useMemo, useRef, useState} from 'react';
+import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {Player} from '@remotion/player';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {createStoryScrollDriver} from '@/lib/story-scroll-driver';
 import {KIT_SCENE_WINDOW, LIFE_SCENE_WINDOW, STORY_SCROLL_HEIGHT_SVH, storyFrameAtProgress, storyProgressAtFrame} from '@/lib/story-scroll-timing';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
+import {KIT_SCROLL_BEATS, KIT_SCROLL_HEIGHT_SVH} from '@/lib/kit-scroll-motion';
 import {EvaFilm, DURATION} from './EvaFilm';
 import {KitMarkerIndex} from './KitMarkerIndex';
 import './story-scene-passage.css';
@@ -18,12 +19,31 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
   const copy = kitInsightCopy[locale];
   const sceneWindow = kind === 'kit' ? KIT_SCENE_WINDOW : LIFE_SCENE_WINDOW;
   const start = storyProgressAtFrame(sceneWindow[0]), end = storyProgressAtFrame(sceneWindow[1]);
-  const driver = useMemo(() => createStoryScrollDriver(sceneWindow[0]), [sceneWindow]);
+  // Only this passage uses the longer kit clock; the original film/life clock stays intact.
+  const driver = useMemo(() => createStoryScrollDriver(kind === 'kit' ? 0 : sceneWindow[0]), [kind, sceneWindow]);
   const section = useRef<HTMLElement>(null), stage = useRef<HTMLDivElement>(null);
   const [geometry, setGeometry] = useState<Geometry | null>(null);
   const [shortViewport, setShortViewport] = useState(false);
-  const staticLayout = calm || (kind === 'kit' && shortViewport);
+  const [contentOverflow, setContentOverflow] = useState(false);
+  const [layoutRevision, setLayoutRevision] = useState(0);
+  const staticLayout = calm || (kind === 'kit' && (shortViewport || contentOverflow));
   const id = kind === 'kit' ? 'kit-inicial' : 'volver-a-la-vida';
+  const handleKitOverflow = useCallback(() => setContentOverflow(true), []);
+
+  useEffect(() => {
+    setContentOverflow(false);
+    if (kind !== 'kit') return;
+    const reset = () => {
+      // Mounted stages already have a ResizeObserver, including stable svh on phones.
+      if (stage.current) return;
+      // A resized flow fallback must remount against fresh dimensions, not its old film.
+      setGeometry(null);
+      setContentOverflow(false);
+      setLayoutRevision(revision => revision + 1);
+    };
+    window.addEventListener('resize', reset, {passive: true});
+    return () => window.removeEventListener('resize', reset);
+  }, [kind, locale]);
 
   useEffect(() => {
     if (kind !== 'kit' || calm) return;
@@ -42,7 +62,7 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
     const update = () => {
       raf = 0;
       const progress = Math.max(0, Math.min(1, (window.scrollY - top) / span));
-      driver.setFrame(storyFrameAtProgress(start + progress * (end - start)));
+      driver.setFrame(kind === 'kit' ? progress * KIT_SCROLL_BEATS.end : storyFrameAtProgress(start + progress * (end - start)));
     };
     const measure = () => {
       top = root.getBoundingClientRect().top + window.scrollY;
@@ -58,13 +78,13 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
     measure();
     window.addEventListener('scroll', schedule, {passive: true});
     return () => {observer.disconnect(); cancelAnimationFrame(raf); window.removeEventListener('scroll', schedule);};
-  }, [staticLayout, driver, start, end]);
+  }, [kind, locale, staticLayout, layoutRevision, driver, start, end]);
 
-  const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, driver, sceneWindow, geometry]);
+  const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, kitLocalClock: kind === 'kit', onKitLayoutOverflow: kind === 'kit' ? handleKitOverflow : undefined, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, handleKitOverflow, driver, sceneWindow, geometry]);
   const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><p className="kit-summary-intro">{copy.intro}</p><KitMarkerIndex copy={copy}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
   if (staticLayout) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} data-kit-layout={kind === 'kit' ? calm ? 'reduced' : 'flow' : undefined} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
 
-  return <section id={id} className={'scroll-journey story-scene-passage ' + kind} style={{height: `${100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
+  return <section id={id} className={'scroll-journey story-scene-passage ' + kind} data-kit-layout={kind === 'kit' ? 'animated' : undefined} style={{height: `${kind === 'kit' ? KIT_SCROLL_HEIGHT_SVH : 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
     <div className="stage" ref={stage}><div aria-hidden="true" className="film">{geometry && <Player component={EvaFilm} inputProps={inputProps} compositionWidth={geometry.width} compositionHeight={geometry.height} durationInFrames={DURATION} fps={30} autoPlay={false} controls={false} clickToPlay={false} spaceKeyToPlayOrPause={false} doubleClickToFullscreen={false} allowFullscreen={false} initiallyMuted style={{width: '100%', height: '100%', pointerEvents: 'none'}}/>}</div></div>
     <div className="sr-only">{narrative}</div>
   </section>;

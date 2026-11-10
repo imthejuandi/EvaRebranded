@@ -375,7 +375,7 @@
   "explanationDepthRelease": {
     "locations": {
       "preview": "#kit-explanation-preview, an amber continuation directly after the 13-marker index.",
-      "fullDemo": "#biomarcadores > Reading, the existing results console."
+      "fullDemo": "#alex-story, the guided fictional example inside #biomarcadores. The existing complete results console is available below through Explore sample dashboard."
     },
     "review": {
       "medical": "AI medical-content review of general educational wording, not human clinician sign-off. hs-CRP reflects an inflammatory signal; the test cannot identify its cause. No reading is labelled safe, dangerous or attributable to a workout.",
@@ -470,11 +470,11 @@
       ]
     },
     "implementation": {
-      "initialState": "The public demonstration opens Reading / In detail on the existing hs-CRP example. It does not alter a member profile preference.",
+      "initialState": "The primary fictional Alex story opens Essential on a fixed hs-CRP 2.1 mg/L illustrative result. The full sample dashboard starts closed and has an independent Essential choice. No member profile preference is changed.",
       "invariants": "Values, units, assay identity, readings, ranges and warnings are unaffected by explanation depth. Only authored explanatory text changes.",
-      "choice": "Gallery-level state preserves the choice across marker, reading and chart-view changes. Amber link reopens Reading without resetting the chosen level or biomarker.",
-      "motion": "Native CSS: 90ms out, 220ms in and a 300ms indicator. Maximum paragraph height is reserved across three levels. Reduced motion changes text directly; no autoplay or scroll scrubbing.",
-      "scope": "Public landing examples only. Current app preference storage and report-owned missing/stale/pending/error behavior are not changed.",
+      "choice": "One primary three-button control changes only Alex’s explanatory depth. The amber bridge targets #alex-story and preserves the selection. The secondary console preserves its own level across markers, readings and views.",
+      "motion": "Staged intersection entrance, one low-opacity reflection, a 380ms selection indicator, and delayed 300ms/420ms prose changes. Paragraph and history space is reserved to keep clinical evidence fixed. Context and detail trace a read-only illustrative history. Reduced-motion and calm modes change content directly.",
+      "scope": "Public landing examples only. The guided story is explicitly fictional; the latest result comes from the public EVA example and the earlier values are illustrative. No account preference, diagnosis, treatment recommendation or causal claim is added.",
       "examples": "All five existing selectable examples, with three reviewed levels in English and Spanish (30 authored variants)."
     },
     "purchaseRationale": "The intended benefit is confidence in understanding a lab result and knowing what to compare next. Existing Interpret your past labs / Start for free action remains the next step. No conversion uplift has been measured.",
@@ -491,8 +491,14 @@
     },
     "verification": {
       "status": "Passed",
-      "cases": "8 responsive browser cases: 1440/1024 desktop, 390/320 English and Spanish, and EN/ES reduced motion.",
-      "coverage": [
+      "cases": "Nine responsive browser cases, English and Spanish: desktop 1440×1000 and 1024×768, phones 390×844 / 430×932 / 320×568 / 375×812, short desktop 1440×600, and EN/ES reduced motion.",
+      "buildChecks": [
+        "TypeScript",
+        "Static export",
+        "English-route audit",
+        "Story section timing/window contract"
+      ],
+      "previousReleaseCoverage": [
         "All 30 authored explanations across five selectable examples",
         "Fixed value, unit, range text and result position during level changes",
         "No layout jump between levels",
@@ -502,12 +508,61 @@
         "No paragraph clipping, horizontal overflow or page errors",
         "Existing free-signup/upload intent retained"
       ],
-      "buildChecks": [
-        "TypeScript",
-        "Static export",
-        "English-route audit",
-        "Story section timing/window contract"
-      ]
+      "coverage": [
+        "Primary Essential default, three accessible choices, one active paragraph, stable evidence/value/position and reserved panel height",
+        "Keyboard activation, stable focus, 44px targets, fixed history values and explicit fictional source disclosure",
+        "Native Explore disclosure preserves the complete five-marker dashboard and its views, readings and ranges",
+        "Count → names-only hold → meaning subtitles, fixed name positions and DOM identity, half/full/reverse reveal checks",
+        "Animated desktop and phone compositor paths plus complete short-viewport and reduced-motion fallbacks",
+        "Amber bridge targets the guided story without resetting the choice; no overflow or page errors"
+      ],
+      "motionChecks": "5,427 kit painter/compositor samples; existing 15,852 story parity cases; section timing, English routes and signal-arrival lifecycle passed."
     }
+  },
+  "guidedStoryAndKitScrollRelease": {
+    "status": "Implemented and verified locally; publication receipt determines live release.",
+    "story": {
+      "entry": "Alex has one question. What does this result tell me?",
+      "latest": {
+        "marker": "hs-CRP",
+        "value": 2.1,
+        "unit": "mg/L",
+        "reading": "04"
+      },
+      "illustrativeHistory": [
+        2.8,
+        2.5,
+        2.7,
+        2.1
+      ],
+      "levels": [
+        "Essential",
+        "With context",
+        "In detail"
+      ],
+      "historyPresentation": "Visible for context and detail, neutral styling, no cause or health improvement inferred.",
+      "review": "UX heuristic review completed; With context now explicitly retains the inflammation meaning in both languages. Educational content review is not human clinician sign-off."
+    },
+    "amber": {
+      "location": "#kit-inicial",
+      "localClockEnd": 226,
+      "beats": {
+        "countEnd": 35,
+        "panEnd": 80,
+        "namesHoldEnd": 120,
+        "meaningRevealEnd": 146,
+        "exitEnd": 226
+      },
+      "sectionHeightSvh": 289.102,
+      "approach": "Preserve original physical count/pan pacing; hold the same names, then reveal meanings beneath them without shifting them. Reverse scroll unwinds the sequence. Desktop uses the existing frame painter; supported phones use a section-local compositor timeline with exact JS fallback.",
+      "fallback": "Measured content overflow, short viewports and reduced motion show a complete normal-flow index."
+    },
+    "preserved": [
+      "Runner, Tasso footage and controls",
+      "Life scene global timing",
+      "Existing full sample dashboard",
+      "13-biomarker kit and €99 + VAT",
+      "Approved free-lab interpretation actions"
+    ]
   }
 }

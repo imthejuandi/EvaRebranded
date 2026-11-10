@@ -1,9 +1,11 @@
 'use client';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { Arrow } from './Arrow';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import {GuidedResultStory} from './GuidedResultStory';
+import {alexStoryCopy} from '@/lib/site-content/alex-story-copy';
 import {ResultExplanation} from './ResultExplanation';
-import {resultExplanationCopy, RESULT_EXPLANATION_EVENT, type ExplanationLevel} from '@/lib/site-content/result-explanation-copy';
+import {resultExplanationCopy, type ExplanationLevel} from '@/lib/site-content/result-explanation-copy';
 import { businessLinks, specimens } from '@/lib/landing-content';
 import { flowHref } from '@/lib/preview/policy';
 import { DotNumber } from './DotNumber';
@@ -22,13 +24,9 @@ export function BiomarkerGallery({ calm = false }: {
 }) {
     const __site = useSiteLanguage();
     const [selected, setSelected] = useState(1), [reading, setReading] = useState(3), [view, setView] = useState<typeof views[number]>('Lectura'), [expanded, setExpanded] = useState(false);
-    const [level, setLevel] = useState<ExplanationLevel>('advanced');
+    const [level, setLevel] = useState<ExplanationLevel>('simple');
     const explanationCopy = resultExplanationCopy[__site.locale];
-    useEffect(() => {
-      const show = () => setView('Lectura');
-      window.addEventListener(RESULT_EXPLANATION_EVENT, show);
-      return () => window.removeEventListener(RESULT_EXPLANATION_EVENT, show);
-    }, []);
+    const storyCopy = alexStoryCopy[__site.locale];
     const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
     const item = specimens[selected], values = history[selected], value = values[reading], numbers = values.map(Number), low = Math.min(...numbers), high = Math.max(...numbers);
     const points = numbers.map((v, i) => ({ x: 32 + i * 145.3, y: 166 - (v - low) / (high - low || 1) * 106 })), point = points[reading];
@@ -37,6 +35,8 @@ export function BiomarkerGallery({ calm = false }: {
   <div className="section-kicker"><span>{__site.t("TUS RESULTADOS, EXPLICADOS")}</span><span>{__site.t("UNA LECTURA CON CONTEXTO")}</span></div>
   <div className="bio-layout">
    <header className="bio-intro"><h2 id="markers-title">{explanationCopy.headline[0]}<br/><em>{explanationCopy.headline[1]}</em></h2><div className="bio-intro-detail"><p>{explanationCopy.intro}</p><a className="text-link" href={__site.href(uploadHref)}><span>{__site.t("Interpreta tus análisis previos")}<br/><small>{__site.t("Empieza gratis")}</small></span><Arrow/></a></div></header>
+   <GuidedResultStory calm={calm}/>
+   <details className="sample-dashboard"><summary><span><strong>{storyCopy.explore}</strong><small>{storyCopy.exploreDetail}</small></span><Arrow direction="down"/></summary>
    <div className="bio-console" aria-label={__site.t("Demostraci\u00F3n de la interfaz de biomarcadores EVA")}>
     <div className="bio-console-head"><a href={__site.href("#una-perspectiva")} className="bio-round" aria-label={__site.t("Descubre cómo pone EVA tus resultados en contexto")}><Arrow direction="down"/></a><span>{__site.t("Tu salud, en perspectiva")}</span><details className="bio-info"><summary aria-label={__site.t("Acerca de esta demostraci\u00F3n")}>{__site.t("i")}</summary><p>{__site.t("Esta demostraci\u00F3n re\u00FAne cuatro lecturas trimestrales ilustrativas. No corresponde a una persona ni anticipa tus resultados.")}</p></details></div>
     <div className="bio-views" role="group" aria-label={__site.t("Vista del biomarcador")}>{__site.t(views.map(v => <button key={v} aria-pressed={view === v} onClick={() => setView(v)}>{__site.t(v)}</button>))}</div>
@@ -54,7 +54,8 @@ export function BiomarkerGallery({ calm = false }: {
     <div id="bio-range-index" hidden={!expanded} className="bio-range-index"><div className="bio-table-scroll" tabIndex={0} role="region" aria-label={__site.t("Tabla de intervalos de los cinco biomarcadores")}><table><caption>{__site.t("Lectura 04 \u00B7 Valores ilustrativos")}</caption><thead><tr><th scope="col">{__site.t("Biomarcador")}</th><th scope="col">{__site.t("Valor")}</th><th scope="col">{__site.t("Referencia")}</th><th scope="col">{__site.t("EVA")}</th></tr></thead><tbody>{__site.t(specimens.map(marker => <tr key={marker.name}><th scope="row">{__site.t(marker.name)}<small>{__site.t(marker.unit)}</small></th><td>{__site.t(marker.value)}</td><td>{__site.t(marker.standard.join('–'))}</td><td>{__site.t(marker.eva.join('–'))}</td></tr>))}</tbody></table></div></div>
     <div className="bio-console-foot"><span>{__site.t("eva")}</span><p>{__site.t("Tus resultados.")}<br />{__site.t("A lo largo del tiempo.")}</p></div>
    </div>
+   <div className="bio-report-caption"><span className="bio-demo-label"><i />{__site.t("Informe ilustrativo · Algunos marcadores no están en el kit de 13.")}</span><p className="illustration-note">{__site.t("Datos y recorrido ilustrativos. Los intervalos mostrados no son una recomendaci\u00F3n individual; su interpretaci\u00F3n depende del contexto de cada persona.")}</p></div>
+   </details>
   </div>
-  <div className="bio-report-caption"><span className="bio-demo-label"><i />{__site.t("Informe ilustrativo · Algunos marcadores no están en el kit de 13.")}</span><p className="illustration-note">{__site.t("Datos y recorrido ilustrativos. Los intervalos mostrados no son una recomendaci\u00F3n individual; su interpretaci\u00F3n depende del contexto de cada persona.")}</p></div>
  </section>;
 }
