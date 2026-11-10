@@ -163,7 +163,7 @@ export function TrackedRunner({width,height,viewportWidth,viewportHeight,top,sal
      <g data-anchor><circle r={9} fill={color} opacity={.045}/><circle r={5.2} fill={color} opacity={.13}/><circle r={mobile?2.5:3.2} fill="#f3f0e8"/></g>
      <g data-label style={{opacity:0,filter:'drop-shadow(0 2px 5px #0b1010)'}}>
       <text y={nameSize} fill="#b7bcb6" fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize={nameSize} letterSpacing=".06em">{copy.name}</text>
-      <text y={nameSize+fontSize+5} fill={color} fontSize={fontSize} letterSpacing="-.025em">{[...copy.status].map((letter,index)=><tspan key={index}>{letter}</tspan>)}</text>
+      <text y={nameSize+fontSize+5} fill={color} fontSize={mobile&&key==='head'?14:fontSize} letterSpacing="-.025em">{[...copy.status].map((letter,index)=><tspan key={index}>{letter}</tspan>)}</text>
      </g>
     </g>;
    })}

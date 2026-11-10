@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Part 1 hero source and browser verification complete; publication pending. Parts 2–5 queued.",
+  "status": "Part 1 free-upload refinement implemented and verified; publication pending. Parts 2–5 queued.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -55,13 +55,14 @@
         "Make the kit caption exactly13 biomarkers and €99 + VAT. Remove the unsupported per-quarter billing wording from the affected price label and title.",
         "Address the beginner and existing tester in one compact sentence or successive existing lines; do not add tabs.",
         "Keep the static poster, reduced-motion hero and accessible introduction consistent with the same hero facts.",
-        "Keep the three existing tracked callouts but use LDL / Blood fats, Fructosamine / Blood sugar, hs-CRP / Inflammation. No invented clinical status."
+        "Keep the three existing tracked callouts but use LDL / “Bad” cholesterol, Fructosamine / Blood sugar, hs-CRP / Inflammation. No invented clinical status."
       ],
       "copyDirection": {
         "headline": "Know your health.",
-        "support": "At-home blood testing. A clearer picture of you.",
+        "support": "Start free with your existing blood test results.",
         "audienceIntent": "A clear starting point—or more meaning from the testing you already do.",
-        "commercialLine": "Your at-home kit · 13 biomarkers · €99 + VAT"
+        "commercialLine": "Or order your first kit · 13 biomarkers · €99 + VAT",
+        "primaryAction": "Upload your labs · Start free"
       },
       "acceptanceGate": [
         "The first viewport explains the service and confirmed offer without waiting for an animation.",
@@ -78,17 +79,18 @@
           "390×844 EN",
           "320×568 EN",
           "390×844 ES",
+          "320×568 ES",
           "390×844 reduced motion"
         ],
-        "results": "Passed: no clipping or horizontal overflow; original compact CTA remains 44px; phone chapter buttons unobstructed; tracked labels fit; runner pause and resume work; existing Tasso handoff plays at 1×; no browser errors.",
+        "results": "Passed: entry links and price fit desktop and phones; no clipping or horizontal overflow; chapter and pause controls remain unobstructed. Free signup and login preserve plan=free and the upload return destination. Existing preview notice remains visible after access. No browser errors.",
         "existingChecks": [
           "TypeScript",
-          "113-route static export",
-          "runner arrival lifecycle",
-          "runner startup and visibility lifecycle"
+          "Static export (113 routes)",
+          "Responsive browser and account-intent checks"
         ],
-        "mediaAndMotion": "Original assets, tracking coordinates, runner crop and motion clocks are unchanged."
-      }
+        "mediaAndMotion": "Original assets, tracking coordinates, runner crop, media and motion clocks unchanged. Only the longer mobile LDL caption uses a smaller font to preserve its screen margin."
+      },
+      "refinement": "User requested free start using previous labs as the main action and a secondary kit path. Copy expert reviewed the wording. User selected “Bad” cholesterol for LDL. Free signup preserves plan=free and redirect=/es/upload through existing account preview."
     },
     {
       "part": 2,
