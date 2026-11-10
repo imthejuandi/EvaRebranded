@@ -3,9 +3,9 @@ import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
 type KitCopy = typeof kitInsightCopy[keyof typeof kitInsightCopy];
 
 /** An editorial index of the actual assays, shared by the film and reduced-motion view. */
-export function KitMarkerIndex({copy, meaningProgress, meaningOffset = 0}: {copy: KitCopy; meaningProgress?: number; meaningOffset?: number}) {
+export function KitMarkerIndex({copy, meaningProgress, meaningOffset = 0, showTitle = true}: {copy: KitCopy; meaningProgress?: number; meaningOffset?: number; showTitle?: boolean}) {
   return <div className="kit-marker-index">
-    <h3>{copy.title}</h3>
+    {showTitle && <h3>{copy.title}</h3>}
     <div className="kit-marker-groups">
       {copy.groups.map((group, index) => <section className="kit-marker-group" key={group.label}>
         <h4><span>{group.label}</span><span className="kit-group-number" aria-hidden="true">0{index + 1}</span></h4>

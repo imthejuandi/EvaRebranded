@@ -14,18 +14,20 @@ close(KIT_SCROLL_SPAN_SVH * 35 / KIT_SCROLL_BEATS.end, originalDistance(35), 'Or
 close(KIT_SCROLL_SPAN_SVH * 45 / KIT_SCROLL_BEATS.end, originalDistance(80) - originalDistance(35), 'Original pan physical distance');
 close(KIT_SCROLL_SPAN_SVH * 80 / KIT_SCROLL_BEATS.end, originalDistance(160) - originalDistance(80), 'Original final reading allowance');
 for (let k = 0; k <= 80; k += .125) {
-  close(kitScrollState(k, 390, 732).trackX, storyScrollFrame(555 + k, 390, 844, 366).insightX, `Original first pan pose at ${k}`);
+  close(kitScrollState(k, 390, 366).trackX, storyScrollFrame(555 + k, 390, 844, 366).insightX, `Original pan pose at ${k}`);
 }
-for (const k of [80, 90, 102.5, 115, 130, 145]) close(kitScrollState(k, 390, 732).trackX, -366, `Language scene stays centered at ${k}`);
-for (const k of [190, 215, 250, 270]) close(kitScrollState(k, 390, 732).trackX, -732, `Complete index stays centered at ${k}`);
-close(kitScrollState(90, 390, 732).language, 0, 'Explanation reveal begins after the language scene arrives');
-close(kitScrollState(102.5, 390, 732).language, .5, 'Plain-language reveal midpoint');
-close(kitScrollState(115, 390, 732).language, 1, 'Explanation complete before index transition');
-for (const k of [0, 90, 145, 190, 270]) assert.equal(kitScrollState(k, 390, 732).context, 1, 'Index always includes meanings');
-close(kitScrollState(270, 390, 732).poseFrame, 715, 'Legacy scene still ends at original frame');
-assert.equal(kitScrollState(-100, 390, 732).clock, 0);
-assert.equal(kitScrollState(Number.NaN, 390, 732).clock, 0);
-assert.equal(kitScrollState(999, 390, 732).clock, 270);
+for (const k of [80, 100, 139.99, 140, 155, 170, 210, 250]) close(kitScrollState(k, 390, 366).trackX, -366, `Same index position throughout names and meanings at ${k}`);
+for (const k of [80, 100, 139.99, 140]) assert.equal(kitScrollState(k, 390, 366).context, 0, 'Full names-only stage before meanings');
+close(kitScrollState(155, 390, 366).context, .5, 'Plain-language meanings reveal midpoint');
+close(kitScrollState(170, 390, 366).context, 1, 'Meanings complete before the final reading hold');
+assert.deepEqual(kitScrollState(0, 390, 366).titles.map(t => t.opacity), [1, 0, 0]);
+assert.deepEqual(kitScrollState(100, 390, 366).titles.map(t => t.opacity), [0, 1, 0]);
+assert.deepEqual(kitScrollState(180, 390, 366).titles.map(t => t.opacity), [0, 0, 1]);
+for (const k of [67.5, 150]) close(kitScrollState(k, 390, 366).titles.reduce((sum, title) => sum + title.opacity, 0), 1, `Title crossfade conserves visible weight at ${k}`);
+close(kitScrollState(250, 390, 366).poseFrame, 715, 'Legacy scene still ends at original frame');
+assert.equal(kitScrollState(-100, 390, 366).clock, 0);
+assert.equal(kitScrollState(Number.NaN, 390, 366).clock, 0);
+assert.equal(kitScrollState(999, 390, 366).clock, 250);
 
 const bezier = (position, easing) => {
   if (easing === 'linear' || !easing) return position;
@@ -52,13 +54,17 @@ const sample = (keyframes, progress, value) => {
 const transformNumbers = frame => frame.transform.match(/translate3d\(([-\d.]+)(?:px)?, ([-\d.]+)(?:px)?, 0\)/).slice(1).map(Number);
 let parityCases = 0;
 for (const width of [390, 430, 1440]) {
-  const overflow = 2 * (width - (width <= 700 ? 24 : 48));
+  const overflow = width - (width <= 700 ? 24 : 48);
   const frames = kitCompositorKeyframes(width, overflow);
   for (let k = 0; k <= KIT_SCROLL_BEATS.end; k += .125) {
     const state = kitScrollState(k, width, overflow), progress = k / KIT_SCROLL_BEATS.end;
     close(sample(frames.track, progress, frame => transformNumbers(frame)[0]), state.trackX, `Compositor pan at ${k}/${width}`);
-    close(sample(frames.language, progress, frame => frame.opacity), state.language, `Compositor opacity at ${k}/${width}`);
-    close(sample(frames.language, progress, frame => transformNumbers(frame)[1]), state.languageY, `Compositor settle at ${k}/${width}`);
+    close(sample(frames.meanings, progress, frame => frame.opacity), state.context, `Compositor meaning opacity at ${k}/${width}`);
+    close(sample(frames.meanings, progress, frame => transformNumbers(frame)[1]), state.meaningY, `Compositor meaning settle at ${k}/${width}`);
+    for (let index = 0; index < 3; index++) {
+      close(sample(frames.titles[index], progress, frame => frame.opacity), state.titles[index].opacity, `Compositor title${index} opacity at ${k}/${width}`);
+      close(sample(frames.titles[index], progress, frame => transformNumbers(frame)[1]), state.titles[index].y, `Compositor title${index} settle at ${k}/${width}`);
+    }
     parityCases++;
   }
 }
@@ -67,12 +73,12 @@ const element = () => ({dataset: {}, style: {translate: 'legacy', scale: 'legacy
   getBoundingClientRect() {throw new Error('Scroll paint must not read geometry');},
   get offsetHeight() {throw new Error('Scroll paint must not read layout');},
 });
-const scene = element(), track = element(), language = element(), number = element(), meanings = Array.from({length: 13}, element);
+const scene = element(), track = element(), number = element(), titles = Array.from({length: 3}, element), meanings = Array.from({length: 13}, element);
 let queryCount = 0;
-const root = {dataset: {}, querySelector(selector) {queryCount++; return selector.includes('insight-scene') ? scene : selector.includes('insight-track') ? track : selector.includes('language-reveal') ? language : number;}, querySelectorAll() {queryCount++; return meanings;}};
+const root = {dataset: {}, querySelector(selector) {queryCount++; return selector.includes('insight-scene') ? scene : selector.includes('insight-track') ? track : number;}, querySelectorAll(selector) {queryCount++; return selector.includes('kit-title') ? titles : meanings;}};
 const paint = createKitScrollPainter(root);
 assert.equal(queryCount, 5);
-const clocks = [0, 35, 57.5, 80, 90, 102.5, 115, 145, 167.5, 190, 230, 270];
+const clocks = [0, 35, 55, 67.5, 80, 100, 140, 150, 155, 160, 170, 210, 250];
 const forward = new Map();
 for (const clock of [...clocks, ...clocks.toReversed()]) {
   paint(clock, 390, 844, 366);
@@ -82,22 +88,24 @@ for (const clock of [...clocks, ...clocks.toReversed()]) {
     assert.equal(meaning.style.opacity, String(state.context));
     assert.equal(meaning.style.transform, `translate3d(0, ${state.meaningY}px, 0)`);
   }
-  assert.equal(language.style.opacity, String(state.language));
-  assert.equal(language.style.transform, `translate3d(0, ${state.languageY}px, 0)`);
+  titles.forEach((title, index) => {
+    assert.equal(title.style.opacity, String(state.titles[index].opacity));
+    assert.equal(title.style.transform, `translate3d(0, ${state.titles[index].y}px, 0)`);
+  });
   assert.equal(root.dataset.kitPhase, state.phase);
   assert.equal(root.dataset.renderedFrame, String(state.poseFrame));
-  const snapshot = JSON.stringify([track.style, language.style, number.textContent, meanings.map(meaning => meaning.style), root.dataset]);
+  const snapshot = JSON.stringify([track.style, titles.map(title => title.style), number.textContent, meanings.map(meaning => meaning.style), root.dataset]);
   if (forward.has(clock)) assert.equal(snapshot, forward.get(clock), `Exact reverse pose at ${clock}`);
   else forward.set(clock, snapshot);
 }
 assert.equal(queryCount, 5, 'No scroll-time DOM queries');
 paint.refresh();
 assert.equal(queryCount, 10);
-const owned = new Set([track, language]);
+const owned = new Set([track, ...titles, ...meanings]);
 const browserPaint = createKitScrollPainter(root, owned);
-const browserSnapshot = JSON.stringify([track.style, language.style]);
+const browserSnapshot = JSON.stringify([track.style, titles.map(title => title.style), meanings.map(meaning => meaning.style)]);
 browserPaint(133, 390, 844, 366);
-assert.equal(JSON.stringify([track.style, language.style]), browserSnapshot, 'Painter leaves compositor-owned properties untouched');
+assert.equal(JSON.stringify([track.style, titles.map(title => title.style), meanings.map(meaning => meaning.style)]), browserSnapshot, 'Painter leaves compositor-owned properties untouched');
 
 // A partial ScrollTimeline implementation must cancel every created animation.
 const globals = ['window', 'document', 'CSS', 'matchMedia'].map(key => [key, Object.getOwnPropertyDescriptor(globalThis, key)]);
@@ -108,7 +116,7 @@ try {
   globalThis.CSS = {supports: () => true};
   globalThis.matchMedia = () => ({matches: false});
   let failureAt = Infinity, created = [];
-  const animated = [track, language];
+  const animated = [track, ...titles, ...meanings];
   for (const item of animated) item.animate = (keyframes, options) => {
     const animation = {timeline: options.timeline, rangeStart: options.rangeStart, rangeEnd: options.rangeEnd, cancelled: false, cancel() {this.cancelled = true;}};
     if (created.length === failureAt) animation.timeline = null;
@@ -117,7 +125,7 @@ try {
   };
   const geometry = {width: 390, overflow: 366, top: 2500, span: 1596.02};
   const compositor = installKitScrollCompositor(root, geometry);
-  assert.equal(compositor.owned.size, 2, 'Only track and language reveal need compositor animations');
+  assert.equal(compositor.owned.size, 17, 'Track, three headline layers and thirteen subtitle leaves are owned');
   for (const animation of created) {
     assert.equal(animation.rangeStart, `${geometry.top}px`);
     assert.equal(animation.rangeEnd, `${geometry.top + geometry.span}px`);
@@ -126,9 +134,9 @@ try {
   assert(created.every(animation => animation.cancelled));
   assert(animated.every(item => item.dataset.scrollCompositor === undefined));
   const beforeFailure = JSON.stringify(animated.map(item => item.style));
-  created = []; failureAt = 1;
+  created = []; failureAt = 5;
   assert.equal(installKitScrollCompositor(root, geometry), null);
-  assert.equal(created.length, 2);
+  assert.equal(created.length, 6);
   assert(created.every(animation => animation.cancelled));
   assert.equal(JSON.stringify(animated.map(item => item.style)), beforeFailure, 'Failed enhancement restores styles for complete painter fallback');
   assert.equal(installKitScrollCompositor(root, {...geometry, width: 1440}), null, 'Desktop retains native-transform painter');
@@ -141,4 +149,4 @@ try {
   }
 }
 
-console.log(`Kit scroll passed: preserved count/pan distances, three complete scenes, ${parityCases} compositor/painter samples, exact reverse poses, cached bindings, ownership and complete partial-support cleanup. Browser layout still needs visual verification.`);
+console.log(`Kit scroll passed: preserved count/pan distances, fixed index, changing titles, ${parityCases} compositor/painter samples, exact reverse poses, cached bindings, ownership and complete partial-support cleanup. Browser layout still needs visual verification.`);

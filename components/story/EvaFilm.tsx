@@ -1,5 +1,4 @@
 'use client';
-import {KitLanguageExample} from './KitLanguageExample';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { AbsoluteFill, Img, staticFile, interpolate, useCurrentFrame, useVideoConfig, useRemotionEnvironment } from 'remotion';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
@@ -118,11 +117,10 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
   </AbsoluteFill>
   </>}
   {(sceneMode === 'all' || sceneMode === 'insight') && <AbsoluteFill className="kit-insight-scene" data-kit-mobile={mobile} data-kit-compact={compact} data-kit-short={!mobile && h < 740} data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
-   <div className="kit-scene-heading" style={{left: pad, right: pad}}><p className="kit-eyebrow">{kit.eyebrow}<span aria-hidden="true" data-kit-scene-number={localKit ? '' : undefined}>{localKit ? '01 / 03' : '01—13'}</span></p><h2 style={{fontSize: compact ? Math.min(43, w * .145) : mobile ? Math.min(54, w * .145) : Math.min(110, w * .075, h * .115)}}>{kit.heading[0]}<br /><em>{kit.heading[1]}</em></h2></div>
+   <div className="kit-scene-heading" style={{left: pad, right: pad}}><p className="kit-eyebrow">{kit.eyebrow}<span aria-hidden="true" data-kit-scene-number={localKit ? '' : undefined}>{localKit ? `0${kitPose?.stage ?? 1} / 03` : '01—13'}</span></p>{localKit ? <div className="kit-title-stack">{kit.stageHeadings.map((heading, index) => <h2 key={index} data-kit-title={index} style={{fontSize: compact ? Math.min(43, w * .145) : mobile ? Math.min(54, w * .145) : Math.min(110, w * .075, h * .115), opacity: kitPose?.titles[index].opacity, transform: `translate3d(0, ${kitPose?.titles[index].y ?? 0}px, 0)`}}>{heading[0]}<br/><em>{heading[1]}</em></h2>)}</div> : <h2 style={{fontSize: compact ? Math.min(43, w * .145) : mobile ? Math.min(54, w * .145) : Math.min(110, w * .075, h * .115)}}>{kit.heading[0]}<br/><em>{kit.heading[1]}</em></h2>}</div>
    <div ref={track} data-layer="insight-track" data-overflow={overflow} className="kit-insight-track" style={{left: pad, gap: pad, translate: `${-range(poseFrame, 590, 635, 0, overflow)}px 0` }}>
     <div data-kit-panel="count" className="kit-count-panel" style={{width: w - pad * 2}}><span className="kit-count-number" style={{fontSize: mobile ? Math.min(w * .43, 175) : Math.min(w * .25, 360, h * .4)}}>13</span><div className="kit-count-copy"><strong>{kit.countLabel[0]}</strong><p>{kit.countLabel.slice(1).join(' ')}</p><span className="kit-count-rule" aria-hidden="true"/></div></div>
-    {localKit && <div data-kit-panel="language" style={{width: w - pad * 2}}><KitLanguageExample copy={kit.language} reveal={kitPose?.language} offset={kitPose?.languageY} motion/></div>}
-    <div data-kit-panel="markers" style={{width: w - pad * 2}}><KitMarkerIndex copy={kit} meaningProgress={kitPose?.context} meaningOffset={kitPose?.meaningY}/></div>
+    <div data-kit-panel="markers" style={{width: w - pad * 2}}><KitMarkerIndex copy={kit} meaningProgress={kitPose?.context} meaningOffset={kitPose?.meaningY} showTitle={!localKit}/></div>
    </div>
   </AbsoluteFill>}
   {(sceneMode === 'all' || sceneMode === 'life') && <AbsoluteFill data-layer={sceneMode === 'life' ? 'life-passage' : 'return-to-life'} style={{ background: '#0b1010', overflow: 'hidden', translate: `0 ${sceneMode === 'life' ? 0 : motion.lifeY * h}px`, visibility: sceneMode === 'life' || Math.abs(motion.lifeY) < 1 ? 'visible' : 'hidden', willChange: Math.abs(motion.lifeY) < 1 ? 'translate' : 'auto' }}>

@@ -49,8 +49,8 @@ export function installKitScrollCompositor(root: HTMLElement, geometry: Geometry
     const keyframes = kitCompositorKeyframes(geometry.width, geometry.overflow);
     const track = root.querySelector<HTMLElement>('[data-layer="insight-track"]');
     if (track) claim(track, keyframes.track, 'transform');
-    const language = root.querySelector<HTMLElement>('[data-kit-language-reveal]');
-    if (language) claim(language, keyframes.language, 'transform, opacity');
+    Array.from(root.querySelectorAll<HTMLElement>('[data-kit-title]')).forEach((title, index) => claim(title, keyframes.titles[index], 'transform, opacity'));
+    for (const meaning of root.querySelectorAll<HTMLElement>('[data-kit-meaning]')) claim(meaning, keyframes.meanings, 'transform, opacity');
     return {owned, dispose};
   } catch {
     dispose();

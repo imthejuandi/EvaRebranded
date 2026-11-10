@@ -9,7 +9,6 @@ import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
 import {KIT_SCROLL_BEATS, KIT_SCROLL_HEIGHT_SVH} from '@/lib/kit-scroll-motion';
 import {EvaFilm, DURATION} from './EvaFilm';
 import {KitMarkerIndex} from './KitMarkerIndex';
-import {KitLanguageExample} from './KitLanguageExample';
 import './story-scene-passage.css';
 
 type Geometry = {width: number; height: number; top: number; span: number};
@@ -83,7 +82,7 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
   }, [kind, locale, staticLayout, layoutRevision, driver, start, end]);
 
   const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, kitLocalClock: kind === 'kit', onKitLayoutOverflow: kind === 'kit' ? handleKitOverflow : undefined, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, handleKitOverflow, driver, sceneWindow, geometry]);
-  const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><KitLanguageExample copy={copy.language}/><p className="kit-summary-intro">{copy.intro}</p><KitMarkerIndex copy={copy}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
+  const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><h3 className="kit-static-index-title">{copy.stageHeadings[1].join(' ')}</h3><p className="kit-summary-intro">{copy.intro}</p><p className="kit-static-clarity">{copy.stageHeadings[2].join(' ')}</p><KitMarkerIndex copy={copy} showTitle={false}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
   if (staticLayout) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} data-kit-layout={kind === 'kit' ? calm ? 'reduced' : 'flow' : undefined} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
 
   return <section id={id} className={'scroll-journey story-scene-passage ' + kind} data-kit-layout={kind === 'kit' ? 'animated' : undefined} style={{height: `${kind === 'kit' ? KIT_SCROLL_HEIGHT_SVH : 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>

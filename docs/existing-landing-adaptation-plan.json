@@ -472,7 +472,7 @@
     "implementation": {
       "initialState": "The primary fictional Alex story opens Beginner. The fixed hs-CRP result, four illustrative readings and self-reported blood-draw notes are visible at all three levels. The full sample dashboard starts closed with its own Beginner choice; member preferences are unchanged.",
       "invariants": "Values, units, assay identity, readings, ranges and warnings are unaffected by explanation depth. Only authored explanatory text changes.",
-      "choice": "One compact Your reading setting control shows only the selected preference. Its native picker exposes alternatives when opened. A short hint explains signup and Settings. The full sample dashboard uses the same control with its independent preserved state.",
+      "choice": "The preference preview lives outside the report glass in a clearly labelled, ruled station. Its native picker shows one selected value, an instruction to compare explanations, and signup/Settings guidance. The full sample dashboard also keeps its reading control outside the glass. Clinical evidence is unchanged by the choice.",
       "motion": "The explanation changes beneath a single selected-preference control. Result, context, history and reserved paragraph space remain fixed. The public demo previews a signup preference; it does not write to an account.",
       "scope": "Public landing examples only. The guided story is explicitly fictional; the latest result comes from the public EVA example and the earlier values are illustrative. No account preference, diagnosis, treatment recommendation or causal claim is added.",
       "examples": "All five existing selectable examples, with three reviewed levels in English and Spanish (30 authored variants)."
@@ -550,18 +550,17 @@
     },
     "amber": {
       "location": "#kit-inicial",
-      "localClockEnd": 270,
+      "localClockEnd": 250,
       "beats": {
         "countEnd": 35,
-        "languageArrival": 80,
-        "languageRevealStart": 90,
-        "languageRevealEnd": 115,
-        "languageHoldEnd": 145,
-        "indexArrival": 190,
-        "indexHoldEnd": 270
+        "panEnd": 80,
+        "namesOnlyEnd": 140,
+        "titleThreeEnd": 160,
+        "meaningRevealEnd": 170,
+        "fullHoldEnd": 250
       },
-      "sectionHeightSvh": 325.9183673469388,
-      "approach": "Three complete panels: 13 biomarkers → Complex names. Clear explanations. → What your kit measures. The middle panel demonstrates hs-CRP → Inflammation signal before the full index enters. All 13 names and their meanings arrive together in the final panel. Two pans preserve the original physical pan speed; explicit 01/03, 02/03, 03/03 labels make the stages distinct. Native phone animation owns only the track and one language reveal; desktop uses the equivalent cached painter.",
+      "sectionHeightSvh": 309.18367346938777,
+      "approach": "Exact requested progression: original count/statement → all 13 assay names → the same fixed index gains short meanings. Three reserved headline layers change the actual main title at each stage. Subtitles reserve space and fade/settle without moving the names. No standalone language example panel remains.",
       "fallback": "Measured content overflow, genuinely short viewports (mobile ≤600px high / desktop ≤480px high) and reduced motion show a complete normal-flow index. Ordinary short laptops try a measured compact composition first."
     },
     "preserved": [
@@ -585,9 +584,9 @@
     ],
     "preference": "The signup preference is represented as one selected value in a compact native picker, with a Chosen at signup / Change it in Settings hint. Alternatives appear only when the native picker opens. A selection immediately changes the authored explanation while retaining native keyboard focus. No account-preference persistence is added.",
     "sequence": [
-      "13 biomarkers in the starting kit",
-      "Complex names. Clear explanations. — hs-CRP becomes Inflammation signal, with exercise and illness context explained",
-      "The full 13-marker index, with meanings already visible"
+      "Your data. In context. — original statement and kit count",
+      "What we measure. — all 13 biomarker names, meanings not yet visible",
+      "Medical terms. Made clear. — the same names and positions, now with plain-language meaning subtitles"
     ],
     "accessibility": "Native labelled select with a descriptive signup/settings hint, ≥44px target, native keyboard behavior and focus retention. The operating-system picker handles dismissal and avoids clipping by the report glass. Reduced-motion and short-viewport flow are retained.",
     "unitVerification": "6,483 native-compositor/painter samples, reverse poses, physical pacing, cached bindings, partial-support cleanup, original global story section windows, TypeScript and English route audit.",
@@ -602,6 +601,47 @@
         "One-screen composition at normal laptop/phone sizes; measured and reduced-motion flow fallbacks",
         "Isolated panel boundaries and unclipped count label at small widths"
       ]
+    }
+  },
+  "retrofuturistReportRedesign": {
+    "status": "Implemented and designer-reviewed. Ten base browser cases plus four targeted final refinement cases passed; publication receipt determines live release.",
+    "designReview": "Dedicated designer agent specified the composition, implemented the amber sequence, then inspected actual desktop/phone screenshots. Its phone-rail and focus-ring findings were corrected.",
+    "references": {
+      "method": "Public Savee pages and a public data-UI image; no Savee plugin was available through the connected tool catalog. Savee art is used only as a local reference, not embedded in the website.",
+      "urls": [
+        "https://savee.com/i/bsOpHzA/",
+        "https://savee.com/i/-LoagDG/",
+        "https://savee.com/jamiesyke/boards/futuristic-ui-inspiration/"
+      ]
+    },
+    "composition": [
+      "Consolidated section headline; external preference station on paper with a ruled boundary and clear compare instruction",
+      "Existing analog glass palette/noise preserved; explanation precedes supporting evidence",
+      "Shared dashboard DotNumber coarse readout at large scale, with dotted historical values",
+      "Added a comma glyph so Spanish decimal displays do not fall back to a zero",
+      "Context/history form a quieter lower rail on desktop and stack at ≤430px; main report text remains ≥16px on phone",
+      "Native setting control has one whole-control focus ring; the full dashboard reading control is also outside its bubble"
+    ],
+    "responsiveDecision": "Amber scenes retain one-screen compositions. The detailed phone report uses readable normal flow rather than shrinking its type to force the entire feature into one viewport.",
+    "evidenceInvariants": "Alex’s result, units, self-reported notes, four readings and authored clinical caveats are retained across all three explanation levels. No member preference storage is changed.",
+    "verification": {
+      "baseBrowserCases": 10,
+      "unitMotionSamples": 6003,
+      "checks": [
+        "External setting position, readable main type and one primary heading",
+        "Fixed result/value positions while explanation changes",
+        "Dotted readout node remains stable and boot animation does not restart on level changes",
+        "Spanish comma rendering and correct numeric SVG width",
+        "Full sample dashboard views and setting control",
+        "Changing title layers, exact reverse reveal and the same 13 name nodes/positions in stages 2/3",
+        "Reduced motion, compact desktop, phone and natural-flow fallback cases",
+        "No browser errors or horizontal page overflow",
+        "At ≤430px the context and history stack at full width with18px dotted history values",
+        "Whole-control keyboard focus ring; no nested select outline",
+        "Chart stroke styling is restricted to the chart SVG so historical dot glyphs retain their filled-lamp appearance"
+      ],
+      "finalRefinementCases": 4,
+      "finalErrors": []
     }
   }
 }

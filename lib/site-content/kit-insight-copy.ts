@@ -2,8 +2,8 @@ export const kitInsightCopy = {
   en: {
     eyebrow: 'YOUR STARTING KIT',
     heading: ['Your data.', 'In context.'],
+    stageHeadings: [['Your data.', 'In context.'], ['What we', 'measure.'], ['Medical terms.', 'Made clear.']],
     countLabel: ['biomarkers.', 'In your', 'starting kit.'],
-    language: {kicker: 'IN PLAIN LANGUAGE', title: ['Complex names.', 'Clear explanations.'], intro: 'What it measures. Why it matters. What to discuss next.', marker: 'hs-CRP', meaning: 'Inflammation signal', explanation: 'A protein that rises in response to inflammation. Your exercise and illness notes help put the result in context.'},
     title: 'What your kit measures.',
     intro: 'Explore blood fats, recent blood sugar, inflammation, and markers related to your liver and kidneys.',
     markers: ['Albumin', 'ALP', 'hs-CRP', 'Creatinine', 'Urea BUN', 'Uric acid', 'Total cholesterol', 'LDL Cholesterol', 'HDL-Cholesterol', 'Triglycerides', 'ALT', 'GGT', 'Fructosamine'],
@@ -19,8 +19,8 @@ export const kitInsightCopy = {
   es: {
     eyebrow: 'TU KIT INICIAL',
     heading: ['Tus datos.', 'Con contexto.'],
+    stageHeadings: [['Tus datos.', 'Con contexto.'], ['Qué', 'medimos.'], ['Términos.', 'En claro.']],
     countLabel: ['biomarcadores.', 'En tu', 'kit inicial.'],
-    language: {kicker: 'EN PALABRAS CLARAS', title: ['Nombres complejos.', 'Explicaciones claras.'], intro: 'Qué mide. Por qué importa. Qué puedes consultar después.', marker: 'hs-CRP', meaning: 'Señal de inflamación', explanation: 'Una proteína que aumenta ante la inflamación. Los datos de ejercicio y enfermedad ayudan a poner el resultado en contexto.'},
     title: 'Qué mide tu kit.',
     intro: 'Explora grasas en sangre, inflamación, azúcar en sangre y marcadores relacionados con el hígado y los riñones.',
     markers: ['Albúmina', 'ALP', 'hs-CRP', 'Creatinina', 'Urea BUN', 'Ácido úrico', 'Colesterol total', 'Colesterol LDL', 'Colesterol HDL', 'Triglicéridos', 'ALT', 'GGT', 'Fructosamina'],

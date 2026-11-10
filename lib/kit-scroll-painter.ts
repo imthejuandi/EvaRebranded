@@ -1,13 +1,13 @@
 import {kitScrollState} from './kit-scroll-motion.ts';
 import type {StoryScrollPainter} from './story-scroll-driver.ts';
 
-/** Bind once. Only the track and subtitle leaves move; assay-name layout is fixed. */
+/** Bind once. Headline/subtitle leaves animate; the thirteen assay names never move. */
 export function createKitScrollPainter(root: HTMLElement, compositorOwned: ReadonlySet<HTMLElement> = new Set()): StoryScrollPainter {
   const bind = () => ({
     scene: root.querySelector<HTMLElement>('[data-layer="insight-scene"]'),
     track: root.querySelector<HTMLElement>('[data-layer="insight-track"]'),
-    language: root.querySelector<HTMLElement>('[data-kit-language-reveal]'),
     number: root.querySelector<HTMLElement>('[data-kit-scene-number]'),
+    titles: Array.from(root.querySelectorAll<HTMLElement>('[data-kit-title]')),
     meanings: Array.from(root.querySelectorAll<HTMLElement>('[data-kit-meaning]')),
   });
   let targets = bind();
@@ -23,25 +23,27 @@ export function createKitScrollPainter(root: HTMLElement, compositorOwned: Reado
     if (targets.track && !compositorOwned.has(targets.track)) {
       set(targets.track, 'translate', 'none');
       set(targets.track, 'transform', `translate3d(${state.trackX}px, 0, 0)`);
-      set(targets.track, 'willChange', state.phase.startsWith('to-') ? 'transform' : 'auto');
+      set(targets.track, 'willChange', state.phase === 'pan' ? 'transform' : 'auto');
     }
-    if (targets.language && !compositorOwned.has(targets.language)) {
-      set(targets.language, 'opacity', String(state.language));
-      set(targets.language, 'transform', `translate3d(0, ${state.languageY}px, 0)`);
-      set(targets.language, 'willChange', state.language > 0 && state.language < 1 ? 'transform, opacity' : 'auto');
-    }
-    const opacity = String(state.context), transform = `translate3d(0, ${state.meaningY}px, 0)`;
+    targets.titles.forEach((title, index) => {
+      if (compositorOwned.has(title)) return;
+      const pose = state.titles[index];
+      set(title, 'opacity', String(pose.opacity));
+      set(title, 'transform', `translate3d(0, ${pose.y}px, 0)`);
+      set(title, 'willChange', pose.opacity > 0 && pose.opacity < 1 ? 'transform, opacity' : 'auto');
+    });
     for (const meaning of targets.meanings) {
       if (compositorOwned.has(meaning)) continue;
-      set(meaning, 'opacity', opacity);
-      set(meaning, 'transform', transform);
-      set(meaning, 'willChange', 'auto');
+      set(meaning, 'opacity', String(state.context));
+      set(meaning, 'transform', `translate3d(0, ${state.meaningY}px, 0)`);
+      set(meaning, 'willChange', state.phase === 'reveal' ? 'transform, opacity' : 'auto');
     }
-    const number = state.clock < 57.5 ? '01 / 03' : state.clock < 167.5 ? '02 / 03' : '03 / 03';
+    const number = `0${state.stage} / 03`;
     if (targets.number && targets.number.textContent !== number) targets.number.textContent = number;
     root.dataset.renderedFrame = String(state.poseFrame);
     root.dataset.kitClock = String(state.clock);
     root.dataset.kitPhase = state.phase;
+    root.dataset.kitStage = String(state.stage);
     root.dataset.scene = 'Entender';
   };
   return Object.assign(paint, {refresh: () => {targets = bind();}});
