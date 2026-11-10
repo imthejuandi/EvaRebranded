@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Part 1 free-upload refinement implemented and verified; publication pending. Parts 2–5 queued.",
+  "status": "Hero CTA title/subtitle refinement and Part 2 Tasso copy implemented and browser-verified; publication pending. Parts 3–5 queued.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -62,7 +62,7 @@
         "support": "Start free with your existing blood test results.",
         "audienceIntent": "A clear starting point—or more meaning from the testing you already do.",
         "commercialLine": "Or order your first kit · 13 biomarkers · €99 + VAT",
-        "primaryAction": "Interpret your past labs for free"
+        "primaryAction": "Interpret your past labs — Start for free"
       },
       "acceptanceGate": [
         "The first viewport explains the service and confirmed offer without waiting for an animation.",
@@ -90,7 +90,7 @@
         ],
         "mediaAndMotion": "Original assets, tracking coordinates, runner crop, media and motion clocks unchanged. Only the longer mobile LDL caption uses a smaller font to preserve its screen margin."
       },
-      "refinement": "User requested free start using previous labs as the main action and a secondary kit path. Copy expert reviewed the wording. User selected “Bad” cholesterol for LDL. Free signup preserves plan=free and redirect=/es/upload through existing account preview. User selected the third reviewed CTA wording: Interpret your past labs for free. The separate Start free subtitle is removed because free is now explicit in the button label."
+      "refinement": "User requested free start using previous labs as the main action and a secondary kit path. Copy expert reviewed the wording. User selected “Bad” cholesterol for LDL. Free signup preserves plan=free and redirect=/es/upload through existing account preview. User selected the third reviewed CTA wording: Interpret your past labs for free. The separate Start free subtitle is removed because free is now explicit in the button label. Latest user direction moves free into the subtitle: Interpret your past labs / Start for free."
     },
     {
       "part": 2,
@@ -120,7 +120,32 @@
         "The copy does not become a substitute for supplied collection instructions.",
         "The original controls, media loading behavior and reduced-motion explanation still work."
       ],
-      "reviewMoment": "Review wording and the existing film-to-results handoff before reordering the next part."
+      "reviewMoment": "Review wording and the existing film-to-results handoff before reordering the next part.",
+      "implementedCopy": {
+        "intro": "Collect at home. Return your sample. Understand your results.",
+        "step1": "Virtually painless. At home. — unchanged, including No needles to handle.",
+        "step2": "Send it back. Prepaid.",
+        "step3": "Your results. Explained.",
+        "step3Body": "Open EVA to see what each biomarker measures and how your result compares with the laboratory range.",
+        "timing": "2 working days — From laboratory receipt of your sample.",
+        "labelledVersion": "VALUES · LAB RANGES",
+        "translations": "EN/ES shared copy updates also feed the transcript and reduced-motion summary."
+      },
+      "authorization": "User explicitly directed continuing to the next part after the hero subtitle change.",
+      "verification": {
+        "cases": [
+          "1440×900 EN",
+          "1024×768 EN",
+          "390×844 EN",
+          "320×568 EN",
+          "390×844 ES",
+          "320×568 ES",
+          "EN reduced motion",
+          "ES reduced motion"
+        ],
+        "result": "Passed all three steps: readable copy, no overlap with controls, video source unchanged, native 1× playback, Previous/Next/Pause work, laboratory-receipt timing qualifier and matching reduced-motion content retained. No browser errors.",
+        "sourceBoundary": "Only shared copy changed in the Tasso section. Film assets, timeline, media rendering, playback code and section styling remain unchanged."
+      }
     },
     {
       "part": 3,

@@ -35,7 +35,7 @@
  .hero-static-support{display:none}
 }
 @media(prefers-reduced-motion:reduce){.hero-kit-cta,.hero-kit-cta>svg{transition:none}.hero-kit-cta:active,.hero-kit-cta:hover>svg{transform:none}}
-@media(max-width:380px){.hero-kit-title{font-size:.8125rem}}
+@media(max-width:380px){.hero-kit-title{font-size:.75rem}}
 @media(forced-colors:active){.hero-kit-cta{background:ButtonFace;color:ButtonText;border-color:ButtonText}.hero-kit-details{color:ButtonText}}
 
 /* Keep the internal review badge clear of the phone chapter controls. */
