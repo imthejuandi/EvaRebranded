@@ -47,8 +47,9 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
 
   useEffect(() => {
     if (kind !== 'kit' || calm) return;
-    // Expanded descriptions must remain readable in short windows, without nested scrolling.
-    const query = matchMedia('(max-width: 375px), (max-width: 700px) and (max-height: 820px), (min-width: 701px) and (max-height: 620px)');
+    // Try the compact measured composition on ordinary laptop/phone sizes.
+    // Only genuinely short windows bypass the pinned sequence before measurement.
+    const query = matchMedia('(max-width: 700px) and (max-height: 600px), (min-width: 701px) and (max-height: 480px)');
     const update = () => setShortViewport(query.matches);
     update();
     query.addEventListener('change', update);

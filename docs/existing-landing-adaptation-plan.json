@@ -381,9 +381,9 @@
       "medical": "AI medical-content review of general educational wording, not human clinician sign-off. hs-CRP reflects an inflammatory signal; the test cannot identify its cause. No reading is labelled safe, dangerous or attributable to a workout.",
       "customer": "Heuristic reviews for a newcomer and an experienced tester, not observed customers. The first variants felt like synonym changes; the revised levels add genuine information.",
       "progression": {
-        "Essential": "Familiar signal and useful comparison, with contextual cautions retained.",
-        "With context": "Mechanism, factors that influence the reading, and the role of history.",
-        "In detail": "Assay or biomarker science, comparable measurements and interpretation limits."
+        "Beginner": "Plain-language meaning, reported workout context, uncertainty and a useful next step.",
+        "Intermediate": "Same case and next step, with liver response, numerical comparison and a temporary-versus-persistent distinction.",
+        "Advanced": "Same evidence plus acute-phase physiology, biological/assay variation and limits on baseline or cardiovascular-risk interpretation."
       },
       "hsCRPEnglishWords": {
         "simple": 25,
@@ -460,20 +460,20 @@
       }
     },
     "copy": {
-      "previewHeadline": "Understand the essentials. Explore the detail.",
-      "previewBody": "These short explanations are a starting point. In your results, you choose how much detail to see.",
+      "previewHeadline": "The same context. Your level of detail.",
+      "previewBody": "Your history and blood-draw notes stay in view. Switch between Beginner, Intermediate and Advanced to find your level.",
       "fullHeadline": "Your results. Explained your way.",
       "levels": [
-        "Essential",
-        "With context",
-        "In detail"
+        "Beginner",
+        "Intermediate",
+        "Advanced"
       ]
     },
     "implementation": {
-      "initialState": "The primary fictional Alex story opens Essential on a fixed hs-CRP 2.1 mg/L illustrative result. The full sample dashboard starts closed and has an independent Essential choice. No member profile preference is changed.",
+      "initialState": "The primary fictional Alex story opens Beginner. The fixed hs-CRP result, four illustrative readings and self-reported blood-draw notes are visible at all three levels. The full sample dashboard starts closed with its own Beginner choice; member preferences are unchanged.",
       "invariants": "Values, units, assay identity, readings, ranges and warnings are unaffected by explanation depth. Only authored explanatory text changes.",
       "choice": "One primary three-button control changes only Alex’s explanatory depth. The amber bridge targets #alex-story and preserves the selection. The secondary console preserves its own level across markers, readings and views.",
-      "motion": "Staged intersection entrance, one low-opacity reflection, a 380ms selection indicator, and delayed 300ms/420ms prose changes. Paragraph and history space is reserved to keep clinical evidence fixed. Context and detail trace a read-only illustrative history. Reduced-motion and calm modes change content directly.",
+      "motion": "One-screen teaching composition with staged entrance, light reflection, a read-only history trace and stable explanatory text transitions. All levels reserve the same space. Context and history never disappear when language changes. Short screens expand naturally rather than clip content.",
       "scope": "Public landing examples only. The guided story is explicitly fictional; the latest result comes from the public EVA example and the earlier values are illustrative. No account preference, diagnosis, treatment recommendation or causal claim is added.",
       "examples": "All five existing selectable examples, with three reviewed levels in English and Spanish (30 authored variants)."
     },
@@ -491,7 +491,7 @@
     },
     "verification": {
       "status": "Passed",
-      "cases": "Nine responsive browser cases, English and Spanish: desktop 1440×1000 and 1024×768, phones 390×844 / 430×932 / 320×568 / 375×812, short desktop 1440×600, and EN/ES reduced motion.",
+      "cases": "10 responsive English/Spanish cases: 1440×1000, 1366×650, 1280×720, 390×780, 430×932, 375×812, 320×568, 1440×600 and EN/ES reduced motion at 390×844.",
       "buildChecks": [
         "TypeScript",
         "Static export",
@@ -509,12 +509,11 @@
         "Existing free-signup/upload intent retained"
       ],
       "coverage": [
-        "Primary Essential default, three accessible choices, one active paragraph, stable evidence/value/position and reserved panel height",
-        "Keyboard activation, stable focus, 44px targets, fixed history values and explicit fictional source disclosure",
-        "Native Explore disclosure preserves the complete five-marker dashboard and its views, readings and ranges",
-        "Count → names-only hold → meaning subtitles, fixed name positions and DOM identity, half/full/reverse reveal checks",
-        "Animated desktop and phone compositor paths plus complete short-viewport and reduced-motion fallbacks",
-        "Amber bridge targets the guided story without resetting the choice; no overflow or page errors"
+        "Beginner / Intermediate / Advanced labels, exact self-reported notes and the same visible history at every depth",
+        "Fixed result and card geometry; keyboard activation, focus and complete dashboard disclosure",
+        "Guided scene fits one screen at all tested laptop and normal phone sizes; tiny 320×568 remains natural flow",
+        "Count, pan, names-only, half subtitle reveal, full reveal and reverse scroll; stable biomarker names and DOM identity",
+        "Animation now retained at 1366×650, 1440×600, 390×780 and 375×812; no horizontal overflow or browser errors"
       ],
       "motionChecks": "5,427 kit painter/compositor samples; existing 15,852 story parity cases; section timing, English routes and signal-arrival lifecycle passed."
     }
@@ -522,7 +521,7 @@
   "guidedStoryAndKitScrollRelease": {
     "status": "Implemented and verified locally; publication receipt determines live release.",
     "story": {
-      "entry": "Alex has one question. What does this result tell me?",
+      "entry": "Alex reports a hard workout within 24 hours before a higher hs-CRP reading, and no recent illness.",
       "latest": {
         "marker": "hs-CRP",
         "value": 2.1,
@@ -530,18 +529,23 @@
         "reading": "04"
       },
       "illustrativeHistory": [
-        2.8,
-        2.5,
-        2.7,
+        0.8,
+        0.9,
+        0.8,
         2.1
       ],
       "levels": [
-        "Essential",
-        "With context",
-        "In detail"
+        "Beginner",
+        "Intermediate",
+        "Advanced"
       ],
-      "historyPresentation": "Visible for context and detail, neutral styling, no cause or health improvement inferred.",
-      "review": "UX heuristic review completed; With context now explicitly retains the inflammation meaning in both languages. Educational content review is not human clinician sign-off."
+      "historyPresentation": "History and self-reported context stay visible at all levels. Timing is a possible influence, never proof of causation.",
+      "review": "Educational wording checked against MedlinePlus CRP and Mayo Clinic CRP / Mayo Clinic Laboratories hs-CRP information. No clinician sign-off or personal diagnosis is implied.",
+      "sourceLinks": [
+        "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+        "https://www.mayoclinic.org/tests-procedures/c-reactive-protein-test/about/pac-20385228",
+        "https://www.mayocliniclabs.com/test-catalog/Overview/800024"
+      ]
     },
     "amber": {
       "location": "#kit-inicial",
@@ -555,7 +559,7 @@
       },
       "sectionHeightSvh": 289.102,
       "approach": "Preserve original physical count/pan pacing; hold the same names, then reveal meanings beneath them without shifting them. Reverse scroll unwinds the sequence. Desktop uses the existing frame painter; supported phones use a section-local compositor timeline with exact JS fallback.",
-      "fallback": "Measured content overflow, short viewports and reduced motion show a complete normal-flow index."
+      "fallback": "Measured content overflow, genuinely short viewports (mobile ≤600px high / desktop ≤480px high) and reduced motion show a complete normal-flow index. Ordinary short laptops try a measured compact composition first."
     },
     "preserved": [
       "Runner, Tasso footage and controls",
@@ -563,6 +567,10 @@
       "Existing full sample dashboard",
       "13-biomarker kit and €99 + VAT",
       "Approved free-lab interpretation actions"
-    ]
+    ],
+    "screenFit": {
+      "approach": "One complete guided-story scene per screen where the authored content fits at readable sizes; all three paragraph heights are reserved. No internal scrolling, scroll trap or clipping is added.",
+      "bugFixed": "The previous blanket viewport conditions and uncompressed desktop layout silently replaced animation at 1366×650 and several phones. Compact desktop typography and measured phone fit now retain the scroll sequence on those common sizes."
+    }
   }
 }
