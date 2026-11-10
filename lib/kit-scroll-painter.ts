@@ -1,8 +1,9 @@
 import {kitScrollState} from './kit-scroll-motion.ts';
+import type {KitMeaningArrival} from './kit-meaning-arrival.ts';
 import type {StoryScrollPainter} from './story-scroll-driver.ts';
 
 /** Bind once. Headline/subtitle leaves animate; the thirteen assay names never move. */
-export function createKitScrollPainter(root: HTMLElement, compositorOwned: ReadonlySet<HTMLElement> = new Set()): StoryScrollPainter {
+export function createKitScrollPainter(root: HTMLElement, compositorOwned: ReadonlySet<HTMLElement> = new Set(), meaningArrival?: KitMeaningArrival | null): StoryScrollPainter {
   const bind = () => ({
     scene: root.querySelector<HTMLElement>('[data-layer="insight-scene"]'),
     track: root.querySelector<HTMLElement>('[data-layer="insight-track"]'),
@@ -20,8 +21,10 @@ export function createKitScrollPainter(root: HTMLElement, compositorOwned: Reado
     set(targets.scene, 'translate', 'none');
     set(targets.scene, 'transform', 'translate3d(0, 0, 0)');
     set(targets.scene, 'visibility', 'visible');
+    // The compositor owns transform, not the independent translate property.
+    // Neutralize a legacy React inline translate after any coarse rerender.
+    set(targets.track, 'translate', 'none');
     if (targets.track && !compositorOwned.has(targets.track)) {
-      set(targets.track, 'translate', 'none');
       set(targets.track, 'transform', `translate3d(${state.trackX}px, 0, 0)`);
       set(targets.track, 'willChange', state.phase === 'pan' ? 'transform' : 'auto');
     }
@@ -32,7 +35,9 @@ export function createKitScrollPainter(root: HTMLElement, compositorOwned: Reado
       set(title, 'transform', `translate3d(0, ${pose.y}px, 0)`);
       set(title, 'willChange', pose.opacity > 0 && pose.opacity < 1 ? 'transform, opacity' : 'auto');
     });
+    const dotsPainted = meaningArrival?.paint(state.arrival) ?? false;
     for (const meaning of targets.meanings) {
+      if (dotsPainted) continue;
       if (compositorOwned.has(meaning)) continue;
       set(meaning, 'opacity', String(state.context));
       set(meaning, 'transform', `translate3d(0, ${state.meaningY}px, 0)`);

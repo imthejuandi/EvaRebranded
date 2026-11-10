@@ -28,7 +28,7 @@
     "futureChoice": "Explain that the customer can explore available future panels with guidance. Do not imply that every panel or switch is included at €99."
   },
   "collaboration": {
-    "projectManager": "Keep one bounded change list per part, verify the offer and sequence, and request review before advancing to the next part.",
+    "projectManager": "Deliver each approved scoped set with concrete review links and an explicit account of what changed and where.",
     "copyExpert": "Write into the existing text slots. Explain one idea at a time, using supported measurements and practical value. Speak to both audiences through ordinary copy rather than a new segmentation interface.",
     "masterDesigner": "Fit the approved copy to the existing composition and motion. Adjust spacing and responsive type only where the new copy requires it.",
     "executor": "Modify the existing components, preserve interaction behavior, collect phone and desktop evidence, and publish the concrete part for review."
@@ -149,7 +149,7 @@
     },
     {
       "part": 3,
-      "name": "Bring the existing results mockup earlier",
+      "name": "Explain the results after the starting-kit sequence",
       "currentComponents": [
         "components/story/BiomarkerGallery.tsx",
         "components/story/HealthEditorial.tsx",
@@ -213,7 +213,8 @@
         "scope": "Compact heading and explanatory copy, wider dashboard, visible illustrative-report and kit-scope captions below the interface.",
         "verification": "Responsive browser checks cover all three report views, marker selection, reading navigation, keyboard activation, full-table expansion, free-signup/upload query intent and downstream scene geometry.",
         "verified": "Passed 9 browser cases: 1440×900, 1024×768, 768×1024, 390×844, 320×568 EN, 320×568 ES, 844×390 landscape, plus EN/ES reduced motion. Exact assay membership, grouped hierarchy, viewport bounds, reversible reveal, all dashboard views, marker/reading controls, keyboard activation, table expansion, free-upload intent and zero page errors. TypeScript, static export, story-window contracts and English-route audit pass."
-      }
+      },
+      "currentOrder": "The complete starting-kit sequence and its explanation preview precede the dashboard/results section."
     },
     {
       "part": 4,
@@ -357,7 +358,7 @@
     }
   ],
   "sequencingRules": [
-    "Only part1 is the immediate implementation scope. Do not implement the later parts as a surprise whole-page rewrite.",
+    "Current approved page order: runner and Tasso → starting-kit count/names/plain-language reveal → explanation-level preview → results/dashboard → range guidance and later sections.",
     "Each part receives copy review, design fit, browser checks and a concrete review link before the next part begins.",
     "Use the same core facts across animated, static, mobile and accessible versions of each affected section.",
     "Treat untouched historical15-marker,60-result and broader-panel copy as remaining work in the staged review. Clear those contradictions before presenting the completed landing to prospective customers as a final commercial offer.",
@@ -472,7 +473,7 @@
     "implementation": {
       "initialState": "The primary fictional Alex story opens Beginner. The fixed hs-CRP result, four illustrative readings and self-reported blood-draw notes are visible at all three levels. The full sample dashboard starts closed with its own Beginner choice; member preferences are unchanged.",
       "invariants": "Values, units, assay identity, readings, ranges and warnings are unaffected by explanation depth. Only authored explanatory text changes.",
-      "choice": "The preference preview lives outside the report glass in a clearly labelled, ruled station. Its native picker shows one selected value, an instruction to compare explanations, and signup/Settings guidance. The full sample dashboard also keeps its reading control outside the glass. Clinical evidence is unchanged by the choice.",
+      "choice": "A modern custom forest trigger shows the chosen level. A portalled floating listbox reveals the three options only when opened. The preview station remains outside the glass, with signup/Settings guidance and unchanged medical evidence. The full dashboard uses the same outside-glass control.",
       "motion": "The explanation changes beneath a single selected-preference control. Result, context, history and reserved paragraph space remain fixed. The public demo previews a signup preference; it does not write to an account.",
       "scope": "Public landing examples only. The guided story is explicitly fictional; the latest result comes from the public EVA example and the earlier values are illustrative. No account preference, diagnosis, treatment recommendation or causal claim is added.",
       "examples": "All five existing selectable examples, with three reviewed levels in English and Spanish (30 authored variants)."
@@ -550,17 +551,17 @@
     },
     "amber": {
       "location": "#kit-inicial",
-      "localClockEnd": 250,
+      "localClockEnd": 290,
       "beats": {
         "countEnd": 35,
         "panEnd": 80,
         "namesOnlyEnd": 140,
         "titleThreeEnd": 160,
-        "meaningRevealEnd": 170,
-        "fullHoldEnd": 250
+        "meaningRevealEnd": 210,
+        "fullHoldEnd": 290
       },
-      "sectionHeightSvh": 309.18367346938777,
-      "approach": "Exact requested progression: original count/statement → all 13 assay names → the same fixed index gains short meanings. Three reserved headline layers change the actual main title at each stage. Subtitles reserve space and fade/settle without moving the names. No standalone language example panel remains.",
+      "sectionHeightSvh": 342.6530612244898,
+      "approach": "Statement/count → same13 names → meanings develop from dots into clean text. The native assay names remain visible and fixed. The subtitle renderer calls the actual runnerArrivalState function with a cached glyph lattice, then hands off to the native text. Three main titles still change. The complete sequence now precedes the results dashboard.",
       "fallback": "Measured content overflow, genuinely short viewports (mobile ≤600px high / desktop ≤480px high) and reduced motion show a complete normal-flow index. Ordinary short laptops try a measured compact composition first."
     },
     "preserved": [
@@ -582,13 +583,13 @@
       "Expanded sample dashboard Reading view",
       "#kit-inicial"
     ],
-    "preference": "The signup preference is represented as one selected value in a compact native picker, with a Chosen at signup / Change it in Settings hint. Alternatives appear only when the native picker opens. A selection immediately changes the authored explanation while retaining native keyboard focus. No account-preference persistence is added.",
+    "preference": "A modern custom forest trigger shows the chosen level. A portalled floating listbox reveals the three options only when opened. The preview station remains outside the glass, with signup/Settings guidance and unchanged medical evidence. The full dashboard uses the same outside-glass control.",
     "sequence": [
       "Your data. In context. — original statement and kit count",
       "What we measure. — all 13 biomarker names, meanings not yet visible",
       "Medical terms. Made clear. — the same names and positions, now with plain-language meaning subtitles"
     ],
-    "accessibility": "Native labelled select with a descriptive signup/settings hint, ≥44px target, native keyboard behavior and focus retention. The operating-system picker handles dismissal and avoids clipping by the report glass. Reduced-motion and short-viewport flow are retained.",
+    "accessibility": "Labelled button/listbox/options with selected states, arrow/Home/End navigation, Enter/Space selection, Escape and outside dismissal, normal Tab/ShiftTab order, focus restoration and viewport-aware placement. Actual scrolling closes the menu; queued pre-open scroll events do not.",
     "unitVerification": "6,483 native-compositor/painter samples, reverse poses, physical pacing, cached bindings, partial-support cleanup, original global story section windows, TypeScript and English route audit.",
     "browserVerification": {
       "cases": 10,
@@ -642,6 +643,28 @@
       ],
       "finalRefinementCases": 4,
       "finalErrors": []
+    }
+  },
+  "modernSelectorAndRunnerDotRelease": {
+    "status": "Implemented and approved by the designer agent after actual desktop/phone visual review; publication receipt determines live release.",
+    "order": "Tasso → full starting-kit sequence → explanation preview → results/dashboard. Chapter destinations and story-position reporting follow this order.",
+    "selector": "Custom54px forest trigger with SVGchevron and selected-state lamp; floating paper/glass menu with three described options. No native select is rendered.",
+    "reveal": "Actual runner arrival timing drives sampled subtitle glyph dots, growing masks, developed letter fragments and a clean native-text handoff. One display canvas, cached source/mask buffers and deterministic points; no layout or pixel sampling during scroll. Native text fallback and reduced-motion flow retain all information.",
+    "fixedEvidence": "All13 biomarker name nodes/positions remain unchanged while their descriptions form beneath them. No blood-test result or account preference is modified.",
+    "verification": {
+      "browserCases": 10,
+      "errors": [],
+      "motionParitySamples": 6963,
+      "checks": [
+        "Kit and explanation preview physically precede dashboard in animated and reduced-motion DOM",
+        "All custom picker pointer/keyboard/focus/dismissal paths and full-dashboard integration",
+        "Queued scroll event fix; correct native Tab order from portalled options",
+        "Visible dot and developed-glyph frames, transparent canvas at clean handoff and native text visible",
+        "Fixed biomarker names/nodeidentity, exact reverse dot frame and unchanged mask-cache count during scrolling",
+        "Mobile native compositor neutralizes React legacy translate and does not compete with canvas subtitle opacity",
+        "English/Spanish, desktop/phone and reduced motion; no page errors/overflow",
+        "Original runner arrival, crop and lifecycle contracts; original opening physical timing retained"
+      ]
     }
   }
 }

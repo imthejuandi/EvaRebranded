@@ -1,7 +1,7 @@
 import {kitCompositorKeyframes} from './kit-scroll-motion.ts';
 import type {StoryCompositor} from './story-scroll-compositor.ts';
 
-type Geometry = {width: number; overflow: number; top: number; span: number};
+type Geometry = {width: number; overflow: number; top: number; span: number; meaningArrival?: boolean};
 type ScrollConstructor = new(options: {source: Element; axis: 'y'}) => AnimationTimeline;
 type ScrollOptions = KeyframeAnimationOptions & {rangeStart: string; rangeEnd: string};
 type ScrollAnimation = Animation & {rangeStart: unknown; rangeEnd: unknown};
@@ -50,7 +50,7 @@ export function installKitScrollCompositor(root: HTMLElement, geometry: Geometry
     const track = root.querySelector<HTMLElement>('[data-layer="insight-track"]');
     if (track) claim(track, keyframes.track, 'transform');
     Array.from(root.querySelectorAll<HTMLElement>('[data-kit-title]')).forEach((title, index) => claim(title, keyframes.titles[index], 'transform, opacity'));
-    for (const meaning of root.querySelectorAll<HTMLElement>('[data-kit-meaning]')) claim(meaning, keyframes.meanings, 'transform, opacity');
+    if (!geometry.meaningArrival) for (const meaning of root.querySelectorAll<HTMLElement>('[data-kit-meaning]')) claim(meaning, keyframes.meanings, 'transform, opacity');
     return {owned, dispose};
   } catch {
     dispose();

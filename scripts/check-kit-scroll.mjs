@@ -16,18 +16,18 @@ close(KIT_SCROLL_SPAN_SVH * 80 / KIT_SCROLL_BEATS.end, originalDistance(160) - o
 for (let k = 0; k <= 80; k += .125) {
   close(kitScrollState(k, 390, 366).trackX, storyScrollFrame(555 + k, 390, 844, 366).insightX, `Original pan pose at ${k}`);
 }
-for (const k of [80, 100, 139.99, 140, 155, 170, 210, 250]) close(kitScrollState(k, 390, 366).trackX, -366, `Same index position throughout names and meanings at ${k}`);
+for (const k of [80, 100, 139.99, 140, 155, 175, 210, 250, 290]) close(kitScrollState(k, 390, 366).trackX, -366, `Same index position throughout names and meanings at ${k}`);
 for (const k of [80, 100, 139.99, 140]) assert.equal(kitScrollState(k, 390, 366).context, 0, 'Full names-only stage before meanings');
-close(kitScrollState(155, 390, 366).context, .5, 'Plain-language meanings reveal midpoint');
-close(kitScrollState(170, 390, 366).context, 1, 'Meanings complete before the final reading hold');
+close(kitScrollState(175, 390, 366).context, .5, 'Plain-language meanings reveal midpoint');
+close(kitScrollState(210, 390, 366).context, 1, 'Meanings complete before the final reading hold');
 assert.deepEqual(kitScrollState(0, 390, 366).titles.map(t => t.opacity), [1, 0, 0]);
 assert.deepEqual(kitScrollState(100, 390, 366).titles.map(t => t.opacity), [0, 1, 0]);
 assert.deepEqual(kitScrollState(180, 390, 366).titles.map(t => t.opacity), [0, 0, 1]);
 for (const k of [67.5, 150]) close(kitScrollState(k, 390, 366).titles.reduce((sum, title) => sum + title.opacity, 0), 1, `Title crossfade conserves visible weight at ${k}`);
-close(kitScrollState(250, 390, 366).poseFrame, 715, 'Legacy scene still ends at original frame');
+close(kitScrollState(290, 390, 366).poseFrame, 715, 'Legacy scene still ends at original frame');
 assert.equal(kitScrollState(-100, 390, 366).clock, 0);
 assert.equal(kitScrollState(Number.NaN, 390, 366).clock, 0);
-assert.equal(kitScrollState(999, 390, 366).clock, 250);
+assert.equal(kitScrollState(999, 390, 366).clock, 290);
 
 const bezier = (position, easing) => {
   if (easing === 'linear' || !easing) return position;
@@ -104,7 +104,9 @@ assert.equal(queryCount, 10);
 const owned = new Set([track, ...titles, ...meanings]);
 const browserPaint = createKitScrollPainter(root, owned);
 const browserSnapshot = JSON.stringify([track.style, titles.map(title => title.style), meanings.map(meaning => meaning.style)]);
+track.style.translate = '-366px 0';
 browserPaint(133, 390, 844, 366);
+assert.equal(track.style.translate, 'none', 'Native compositor cannot compound a React inline translate');
 assert.equal(JSON.stringify([track.style, titles.map(title => title.style), meanings.map(meaning => meaning.style)]), browserSnapshot, 'Painter leaves compositor-owned properties untouched');
 
 // A partial ScrollTimeline implementation must cancel every created animation.
@@ -133,6 +135,11 @@ try {
   compositor.dispose();
   assert(created.every(animation => animation.cancelled));
   assert(animated.every(item => item.dataset.scrollCompositor === undefined));
+  created = [];
+  const dotCompositor = installKitScrollCompositor(root, {...geometry, meaningArrival: true});
+  assert.equal(dotCompositor.owned.size, 4, 'Canvas arrival owns subtitle appearance; compositor owns only track and titles');
+  assert(meanings.every(el => !dotCompositor.owned.has(el)), 'No competing native subtitle opacity animation');
+  dotCompositor.dispose();
   const beforeFailure = JSON.stringify(animated.map(item => item.style));
   created = []; failureAt = 5;
   assert.equal(installKitScrollCompositor(root, geometry), null);

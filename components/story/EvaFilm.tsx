@@ -7,6 +7,8 @@ import { installStoryScrollCompositor } from '@/lib/story-scroll-compositor';
 import {createKitScrollPainter} from '@/lib/kit-scroll-painter';
 import {installKitScrollCompositor} from '@/lib/kit-scroll-compositor';
 import {kitScrollState} from '@/lib/kit-scroll-motion';
+import {installKitMeaningArrival} from '@/lib/kit-meaning-arrival';
+import {runnerArrivalState} from './RunnerArrival';
 import { TrackedRunner } from './TrackedRunner';
 import type { SignalLanguage } from '@/lib/runner-signals';
 import { AnalogType } from './AnalogType';
@@ -77,10 +79,11 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         const localSpan = scrollGeometry?.span ?? (journey ? journey.offsetHeight - h : 0);
         const fullSpan = localSpan / (endProgress - startProgress);
         const localTop = scrollGeometry?.top ?? (journey ? journey.getBoundingClientRect().top + window.scrollY : 0);
+        const meaningArrival = localKit ? installKitMeaningArrival(root.current, runnerArrivalState) : null;
         const compositor = journey ? localKit
-          ? installKitScrollCompositor(root.current, {width: w, overflow, top: localTop, span: localSpan})
+          ? installKitScrollCompositor(root.current, {width: w, overflow, top: localTop, span: localSpan, meaningArrival: !!meaningArrival})
           : installStoryScrollCompositor(root.current, journey, { width: w, height: h, overflow, top: localTop - fullSpan * startProgress, span: fullSpan }) : null;
-        const paint = localKit ? createKitScrollPainter(root.current, compositor?.owned) : createStoryScrollPainter(root.current, compositor?.owned);
+        const paint = localKit ? createKitScrollPainter(root.current, compositor?.owned, meaningArrival) : createStoryScrollPainter(root.current, compositor?.owned);
         nativePainter.current = paint;
         root.current.dataset.scrollEngine = compositor ? 'compositor-timeline' : 'native-transforms';
         let heroActive = !localKit && nativeScroll.current < 200;
@@ -91,7 +94,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         update(nativeScroll.current);
         setRunnerActive(heroActive);
         const stop = nativeScroll.subscribe(update);
-        return () => { stop(); compositor?.dispose(); nativePainter.current = null; };
+        return () => { stop(); compositor?.dispose(); meaningArrival?.dispose(); nativePainter.current = null; };
     }, [nativeScroll, localKit, w, h, overflow, startProgress, endProgress, scrollGeometry?.top, scrollGeometry?.span]);
     // Reapply the current pose after a coarse React state change or responsive resize.
     useLayoutEffect(() => { if (nativeScroll)

@@ -1,14 +1,22 @@
-.explanation-setting{position:relative;width:max-content;max-width:100%;margin:16px 0;color:#2d382f}
-.explanation-setting-control{display:flex;position:relative;align-items:center;gap:12px;min-height:48px;padding-left:12px;border:1px solid #64705b70;border-radius:11px;background:#fffdf640}
-.explanation-setting-control label{display:flex;align-items:center;gap:8px;font-size:12px;line-height:1.3}
-.explanation-setting-control select{appearance:none;-webkit-appearance:none;display:block;min-height:48px;max-width:170px;padding:11px 32px 11px 3px;margin:0;font:inherit;font-size:14px;font-weight:500;line-height:1.3;border:0;border-radius:10px;background:transparent;color:inherit;cursor:pointer}
-.explanation-setting-control option{background:#f3f0e8;color:#171b18}
-.explanation-setting-control:focus-within{outline:2px solid #496046;outline-offset:3px}
-.explanation-setting-control select:focus-visible{outline:none}
-.explanation-setting-control>span{position:absolute;right:14px;top:50%;transform:translateY(-50%);pointer-events:none;font-size:17px;line-height:1}
-.explanation-setting>p{font-size:12px;line-height:1.45;margin:9px 0 0;color:#596451}
-.guided-preference .explanation-setting{width:252px;margin:17px 0 0}
-.guided-preference .explanation-setting-control{padding:0 16px;min-height:51px}
-.guided-preference .explanation-setting-control label{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-.guided-preference .explanation-setting-control select{max-width:none;width:100%;font-size:18px;font-weight:400;min-height:51px;padding:12px 25px 12px 0}
-@media(max-width:700px){.guided-preference .explanation-setting{width:min(100%,285px)}.explanation-setting-control label{font-size:11px;gap:6px}}
+.explanation-setting{position:relative;width:252px;max-width:100%;margin:16px 0;color:#2d382f}
+.explanation-setting-trigger{display:flex;align-items:center;gap:13px;width:100%;min-height:54px;padding:13px 17px;border:1px solid #f3f0e82b;border-radius:16px;background:#26352f;color:#f5f3eb;font:inherit;cursor:pointer;text-align:left;box-shadow:inset 0 1px 0 #fffdf60b,0 4px 12px #24382b12;transition:background 160ms,box-shadow 160ms}
+.explanation-setting-trigger:hover{background:#30453a;box-shadow:inset 0 1px 0 #fffdf610,0 6px 18px #24382b1c}
+.explanation-setting-trigger:focus-visible{outline:2px solid #617c52;outline-offset:4px}
+.explanation-setting-lamp{width:5px;height:5px;border-radius:50%;background:#ccdeb0;box-shadow:0 0 7px #c3dca241;flex:none}
+.explanation-setting-current{flex:1;min-width:0;font-size:18px;font-weight:400;line-height:1.3;letter-spacing:-.015em}
+.explanation-setting-chevron{flex:none;opacity:.8;transition:transform 180ms cubic-bezier(.22,1,.36,1)}
+.explanation-setting-trigger[aria-expanded=true] .explanation-setting-chevron{transform:rotate(180deg)}
+.explanation-setting>p{font-size:12px;line-height:1.45;margin:10px 0 0;color:#596451}
+.guided-preference .explanation-setting{margin:17px 0 0}
+.result-explanation .explanation-setting-trigger:focus-visible{outline-color:#fffdf6}
+.explanation-setting-menu{position:fixed;z-index:10000;box-sizing:border-box;display:grid;gap:2px;overflow:auto;padding:7px;border:1px solid #64705b35;border-radius:18px;background:#f7f6effa;color:#25352b;box-shadow:0 14px 35px #1a291e26,0 3px 8px #1a291e0c;backdrop-filter:blur(16px);animation:explanation-setting-menu-in 180ms cubic-bezier(.22,1,.36,1) both;text-shadow:none;font-family:'EVA Hanken',Arial,Helvetica,sans-serif}
+.explanation-setting-option{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:54px;width:100%;padding:8px 12px;border:0;border-radius:11px;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:background 120ms}
+.explanation-setting-option[data-active=true]{background:#e2e9d6}
+.explanation-setting-option:focus-visible{outline:2px solid #81966a;outline-offset:-2px}
+.explanation-setting-option strong{display:block;font-size:15px;line-height:1.2;font-weight:500}
+.explanation-setting-option small{display:block;font-size:11px;line-height:1.3;margin-top:3px;color:#62705b}
+.explanation-setting-option>svg{flex:none;color:#405a36}
+@keyframes explanation-setting-menu-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media(max-width:700px){.guided-preference .explanation-setting{width:min(100%,285px)}}
+@media(prefers-reduced-motion:reduce){.explanation-setting-menu{animation:none}.explanation-setting-trigger,.explanation-setting-chevron,.explanation-setting-option{transition:none}}
+.explanation-setting-menu[data-calm=true]{animation:none}

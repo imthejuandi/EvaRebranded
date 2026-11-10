@@ -7,8 +7,8 @@ export const KIT_SCROLL_BEATS = {
   panEnd: 80,
   namesEnd: 140,
   titleThreeEnd: 160,
-  contextEnd: 170,
-  end: 250,
+  contextEnd: 210,
+  end: 290,
 } as const;
 const originalSpan = KIT_SCENE_WINDOW[1] - KIT_SCENE_WINDOW[0];
 const originalScrollSpan = (STORY_SCROLL_HEIGHT_SVH - 100) * (storyProgressAtFrame(KIT_SCENE_WINDOW[1]) - storyProgressAtFrame(KIT_SCENE_WINDOW[0]));
@@ -26,26 +26,27 @@ export function kitScrollState(clock: number, width: number, overflow: number) {
   const titleTravel = width <= 700 ? 5 : 8;
   return {
     clock: k,
-    poseFrame: k <= 80 ? KIT_SCENE_WINDOW[0] + k : k <= 170 ? 635 : 635 + k - 170,
+    poseFrame: k <= 80 ? KIT_SCENE_WINDOW[0] + k : k <= 210 ? 635 : 635 + k - 210,
     trackX: -pan * Math.max(0, overflow),
     context,
-    meaningY: (width <= 700 ? 4 : 6) * (1 - context),
+    arrival: clamp((k - KIT_SCROLL_BEATS.namesEnd) / (KIT_SCROLL_BEATS.contextEnd - KIT_SCROLL_BEATS.namesEnd)),
+    meaningY: 0,
     titles: [
       {opacity: 1 - titleTwo, y: -titleTravel * titleTwo},
       {opacity: titleTwo - titleThree, y: titleTravel * (1 - titleTwo) - titleTravel * titleThree},
       {opacity: titleThree, y: titleTravel * (1 - titleThree)},
     ],
     stage: k < 67.5 ? 1 : k < 150 ? 2 : 3,
-    phase: k < 35 ? 'count' : k < 80 ? 'pan' : k < 140 ? 'names' : k < 170 ? 'reveal' : 'context',
+    phase: k < 35 ? 'count' : k < 80 ? 'pan' : k < 140 ? 'names' : k < 210 ? 'reveal' : 'context',
   };
 }
 export function kitCompositorKeyframes(width: number, overflow: number) {
-  const track = [0, 35, 80, 250].map(clock => ({offset: clock / KIT_SCROLL_BEATS.end, transform: `translate3d(${kitScrollState(clock, width, overflow).trackX}px, 0, 0)`}));
-  const meanings = [0, 140, 170, 250].map(clock => {
+  const track = [0, 35, 80, 290].map(clock => ({offset: clock / KIT_SCROLL_BEATS.end, transform: `translate3d(${kitScrollState(clock, width, overflow).trackX}px, 0, 0)`}));
+  const meanings = [0, 140, 210, 290].map(clock => {
     const state = kitScrollState(clock, width, overflow);
     return {offset: clock / KIT_SCROLL_BEATS.end, opacity: state.context, transform: `translate3d(0, ${state.meaningY}px, 0)`, easing: clock === 140 ? KIT_CONTEXT_EASING : 'linear'};
   });
-  const titles = [0, 1, 2].map(index => [0, 55, 80, 140, 160, 250].map(clock => {
+  const titles = [0, 1, 2].map(index => [0, 55, 80, 140, 160, 290].map(clock => {
     const title = kitScrollState(clock, width, overflow).titles[index];
     return {offset: clock / KIT_SCROLL_BEATS.end, opacity: title.opacity, transform: `translate3d(0, ${title.y}px, 0)`, easing: clock === 55 || clock === 140 ? KIT_CONTEXT_EASING : 'linear'};
   }));
