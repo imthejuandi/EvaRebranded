@@ -1,0 +1,229 @@
+{
+  "title": "Adapt the existing EVA landing page in place",
+  "status": "Part 1 hero source and browser verification complete; publication pending. Parts 2–5 queued.",
+  "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
+  "confirmedOffer": {
+    "kit": "13 biomarkers",
+    "price": "€99 + VAT",
+    "priceUnit": "At-home kit; do not invent a VAT rate, gross total, annual discount or recurring billing promise.",
+    "markers": [
+      "Albumin",
+      "ALP",
+      "hs-CRP",
+      "Creatinine",
+      "Urea BUN",
+      "Uric acid",
+      "Total cholesterol",
+      "LDL Cholesterol",
+      "HDL-Cholesterol",
+      "Triglycerides",
+      "ALT",
+      "GGT",
+      "Fructosamine"
+    ],
+    "audiences": {
+      "starting": "Explain the value of a first test and help the customer understand the results.",
+      "alreadyTesting": "Add context, comparable history and guided ownership of what to measure next."
+    },
+    "futureChoice": "Explain that the customer can explore available future panels with guidance. Do not imply that every panel or switch is included at €99."
+  },
+  "collaboration": {
+    "projectManager": "Keep one bounded change list per part, verify the offer and sequence, and request review before advancing to the next part.",
+    "copyExpert": "Write into the existing text slots. Explain one idea at a time, using supported measurements and practical value. Speak to both audiences through ordinary copy rather than a new segmentation interface.",
+    "masterDesigner": "Fit the approved copy to the existing composition and motion. Adjust spacing and responsive type only where the new copy requires it.",
+    "executor": "Modify the existing components, preserve interaction behavior, collect phone and desktop evidence, and publish the concrete part for review."
+  },
+  "parts": [
+    {
+      "part": 1,
+      "name": "Clarify the existing hero",
+      "currentComponents": [
+        "components/story/ScrollStory.tsx",
+        "components/story/EvaFilm.tsx",
+        "components/story/HeroKitCta.tsx",
+        "lib/site-content/locales/public.en.json",
+        "lib/runner-signals.ts"
+      ],
+      "unchanged": [
+        "Runner footage and existing feathered entrance",
+        "Know your health headline and analog typography",
+        "Established composition, colours, chapter navigation, CTA placement and scroll timing",
+        "Current CTA destination and account-preview behavior unless a later separately scoped action-flow change is approved"
+      ],
+      "copyChange": [
+        "Replace only the current poetic support with a short explanation of at-home testing, understandable results and a guided next step.",
+        "Make the kit caption exactly13 biomarkers and €99 + VAT. Remove the unsupported per-quarter billing wording from the affected price label and title.",
+        "Address the beginner and existing tester in one compact sentence or successive existing lines; do not add tabs.",
+        "Keep the static poster, reduced-motion hero and accessible introduction consistent with the same hero facts.",
+        "Keep the three existing tracked callouts but use LDL / Blood fats, Fructosamine / Blood sugar, hs-CRP / Inflammation. No invented clinical status."
+      ],
+      "copyDirection": {
+        "headline": "Know your health.",
+        "support": "At-home blood testing. A clearer picture of you.",
+        "audienceIntent": "A clear starting point—or more meaning from the testing you already do.",
+        "commercialLine": "Your at-home kit · 13 biomarkers · €99 + VAT"
+      },
+      "acceptanceGate": [
+        "The first viewport explains the service and confirmed offer without waiting for an animation.",
+        "The runner, typography, scene timing, navigation and first-scroll transition look like the existing landing.",
+        "The same facts are available to screen readers and reduced-motion users.",
+        "No clipping or overlap at desktop and phone widths; CTA still works as before."
+      ],
+      "reviewMoment": "Show the updated existing hero before changing part2.",
+      "reviewOverlayFix": "The internal review badge is hidden during the phone hero so it does not cover chapter controls.",
+      "verification": {
+        "browserCases": [
+          "1440×1000 EN",
+          "1024×800 EN",
+          "390×844 EN",
+          "320×568 EN",
+          "390×844 ES",
+          "390×844 reduced motion"
+        ],
+        "results": "Passed: no clipping or horizontal overflow; original compact CTA remains 44px; phone chapter buttons unobstructed; tracked labels fit; runner pause and resume work; existing Tasso handoff plays at 1×; no browser errors.",
+        "existingChecks": [
+          "TypeScript",
+          "113-route static export",
+          "runner arrival lifecycle",
+          "runner startup and visibility lifecycle"
+        ],
+        "mediaAndMotion": "Original assets, tracking coordinates, runner crop and motion clocks are unchanged."
+      }
+    },
+    {
+      "part": 2,
+      "name": "Refine the approved Tasso section",
+      "currentComponents": [
+        "components/story/TassoHomeVideo.tsx",
+        "components/story/TassoVideoProcess.tsx",
+        "components/story/TassoFilmTranscript.tsx",
+        "components/story/TassoFilmProcess.tsx",
+        "lib/site-content/tasso-home-copy.ts"
+      ],
+      "unchanged": [
+        "Approved continuous film and accurate Tasso imagery",
+        "3 easy steps heading",
+        "Normal-speed playback, Previous, Next and Pause",
+        "Existing scroll entry, frame proportions, section background and dashboard ending"
+      ],
+      "copyChange": [
+        "Keep collection, prepaid return and explained results as the three logistics steps.",
+        "Keep Virtually painless and No needles to handle prominent in the first step.",
+        "Use the third step to hand off to the existing results mockup, rather than repeat the whole business proposition.",
+        "Keep any results-time promise qualified from laboratory receipt and aligned with the confirmed operational wording."
+      ],
+      "acceptanceGate": [
+        "No regenerated footage, new collage or scroll-seeking playback is introduced.",
+        "All three steps remain understandable without watching the full film.",
+        "The copy does not become a substitute for supplied collection instructions.",
+        "The original controls, media loading behavior and reduced-motion explanation still work."
+      ],
+      "reviewMoment": "Review wording and the existing film-to-results handoff before reordering the next part."
+    },
+    {
+      "part": 3,
+      "name": "Bring the existing results mockup earlier",
+      "currentComponents": [
+        "components/story/BiomarkerGallery.tsx",
+        "components/story/HealthEditorial.tsx",
+        "components/story/ScrollStory.tsx",
+        "lib/landing-content.ts"
+      ],
+      "unchanged": [
+        "The existing EVA results-console design, glass instruments, charts and interaction language",
+        "Existing range/history/reading controls and accessible behavior",
+        "Existing fonts, colours and responsive layout"
+      ],
+      "copyChange": [
+        "Move the existing results/gallery block to the first sensible point after the Tasso experience and before repeated abstract explanations.",
+        "Lead with what the customer receives: a measurement, its explanation and comparable history.",
+        "Use only confirmed kit markers when presenting core-kit examples. Do not substitute ApoB, HbA1c, insulin, vitamin D or ferritin for the supplied13.",
+        "Keep sample values/history visibly illustrative. Do not invent new laboratory thresholds, guaranteed improvements or supported biological-age outputs."
+      ],
+      "acceptanceGate": [
+        "This is the same recognizable mockup, not a rebuilt dashboard or new product metaphor.",
+        "The results section appears once, earlier in the existing page sequence.",
+        "A beginner can understand one example, while an existing tester can see the value of comparison.",
+        "The illustrated marker identities and any units/reference data are coherent and do not misrepresent kit inclusions."
+      ],
+      "reviewMoment": "Review the existing mockup in its new position before altering the marker-animation chapter."
+    },
+    {
+      "part": 4,
+      "name": "Use the existing marker and halftone animation to explain the13-marker kit",
+      "currentComponents": [
+        "components/story/SignalPassage.tsx",
+        "components/story/BodySignalFilm.tsx",
+        "components/story/HalftoneNumber.tsx",
+        "components/story/EvaFilm.tsx",
+        "lib/analog-motion.ts",
+        "lib/body-signal.ts",
+        "components/story/MethodGraphs.tsx"
+      ],
+      "unchanged": [
+        "Existing particles, luminous material, halftone aesthetic and scroll composition",
+        "Existing narrative stops, performance strategy and reduced-motion presentation",
+        "Current interaction controls; no new filtering tabs or card grid"
+      ],
+      "copyChange": [
+        "Change the conceptual count from15 to13 in the displayed numeral, text, aria labels and static fallbacks.",
+        "Reuse the current reveal to explain what the kit includes, with short plain-language group descriptions and the exact13 names in an existing readable text area.",
+        "Use existing visual emphasis to connect blood fats, recent blood sugar, inflammation and liver/kidney-related measurements with understandable questions.",
+        "Remove the blanket60-results-per-year claim; future panel choice means the same set of markers is not promised every quarter."
+      ],
+      "acceptanceGate": [
+        "The visible halftone/particle number and all text alternatives agree at13.",
+        "The supplied marker list is exact and discoverable without waiting for animation.",
+        "Copy explains what a marker measures without diagnosing a condition or promising an outcome.",
+        "Digit-mask updates preserve the existing material and choreography; no replacement animation or generated asset is needed."
+      ],
+      "reviewMoment": "Review clarity and count accuracy within the familiar animation before revising ongoing value."
+    },
+    {
+      "part": 5,
+      "name": "Explain ongoing guided choice within the existing timeline and lifestyle passage",
+      "currentComponents": [
+        "components/story/HealthEditorial.tsx",
+        "components/story/MethodJourney.tsx",
+        "components/story/LifestylePassage.tsx",
+        "components/story/EvaFilm.tsx",
+        "components/site/RestoredContent.tsx",
+        "lib/landing-content.ts"
+      ],
+      "unchanged": [
+        "Existing quarterly/timeline composition and transition back to everyday life",
+        "Current lifestyle footage and photographs",
+        "Established editorial layout and links; no new purchase configurator or audience switcher"
+      ],
+      "copyChange": [
+        "For a beginner, explain baseline → understanding → a guided next question.",
+        "For an existing tester, explain comparable history → review → choosing the next available focus with guidance.",
+        "Present quarterly review as an opportunity to decide what to measure, rather than automatically repeating the same13 for everyone.",
+        "Consolidate repeated 90-day explanations and frame lifestyle as the reason understanding matters, without claiming that testing itself improves health.",
+        "Keep future panel availability, inclusions and price distinct from the €99 + VAT starting kit."
+      ],
+      "acceptanceGate": [
+        "Both audiences recognize their ongoing value without a new segmented interface.",
+        "The existing timeline explains the next decision and is not another competing numbered collection process.",
+        "No automatic inclusive panel-swap, unlimited testing, prescribed retest or health-outcome claim is made.",
+        "Existing scroll continuity and lifestyle atmosphere remain intact."
+      ],
+      "reviewMoment": "Review the five adapted parts together, then scope sections6–9 separately."
+    }
+  ],
+  "sequencingRules": [
+    "Only part1 is the immediate implementation scope. Do not implement the later parts as a surprise whole-page rewrite.",
+    "Each part receives copy review, design fit, browser checks and a concrete review link before the next part begins.",
+    "Use the same core facts across animated, static, mobile and accessible versions of each affected section.",
+    "Treat untouched historical15-marker,60-result and broader-panel copy as remaining work in the staged review. Clear those contradictions before presenting the completed landing to prospective customers as a final commercial offer.",
+    "Preserve detailed original information on supporting pages; the current task is to improve sequence and explanation rather than restore every historical sentence to the homepage."
+  ],
+  "finalAcceptance": [
+    "A single recognizable EVA landing with its accepted animations and assets.",
+    "A clear progression: service → easy collection → useful results → exact kit → guided next step.",
+    "Exactly13 confirmed kit markers and €99 + VAT, with no invented tax total or future-panel inclusion.",
+    "Useful copy for both beginners and existing testers, without tabs or duplicated narratives.",
+    "Normal scrolling, accessible copy, native-speed film controls and a complete reduced-motion route.",
+    "No replacement page, new images, new animation system or unrequested changes to later sections."
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "date": "2026-11-10",
+  "status": "Copy direction for the existing landing page; first pass limited to hero support and kit detail",
+  "approach": {
+    "keep": "The existing landing page, its section order, runner tracking, scroll choreography, microletter headlines, native film, typography, and component geometry.",
+    "changeNow": "Only the short hero support, the kit CTA’s existing small detail/price/tooltip, and three educational tracked-runner callout substitutions.",
+    "doNotAdd": [
+      "Replacement landing page",
+      "New header",
+      "Audience tabs",
+      "New card system",
+      "New visual storyline",
+      "New purchase flow",
+      "New media generation"
+    ],
+    "sharedAudienceLogic": "Speak to both audiences through one story: make the first test understandable; make later tests more useful. Continue to use the existing report-upload route for people already testing, without adding a new audience selector."
+  },
+  "confirmedOffer": {
+    "priceEnglish": "€99 + VAT",
+    "priceSpanish": "99 € + IVA",
+    "context": "13-biomarker at-home kit",
+    "markers": [
+      "Albumin",
+      "ALP",
+      "hs-CRP",
+      "Creatinine",
+      "Urea BUN",
+      "Uric acid",
+      "Total cholesterol",
+      "LDL Cholesterol",
+      "HDL-Cholesterol",
+      "Triglycerides",
+      "ALT",
+      "GGT",
+      "Fructosamine"
+    ],
+    "commercialLimits": [
+      "No invented VAT rate or VAT-inclusive total",
+      "No claim that every future panel is included",
+      "Do not label the confirmed kit price as a recurring quarterly charge without confirmation"
+    ]
+  },
+  "firstHeroPass": {
+    "preserveHeadline": {
+      "en": "Know your health.",
+      "es": "Conoce tu salud."
+    },
+    "recommendedVariant": "A",
+    "variants": [
+      {
+        "id": "A",
+        "recommendation": "Recommended: identifies the service and gives it an emotional benefit in two short lines.",
+        "en": [
+          "At-home blood testing.",
+          "A clearer picture of you."
+        ],
+        "es": [
+          "Analítica en casa.",
+          "Una visión más clara de ti."
+        ],
+        "role": "The first line answers what EVA provides. The second connects the test with understanding, without a diagnosis or longevity-outcome promise."
+      },
+      {
+        "id": "B",
+        "recommendation": "Alternative: stronger emphasis on interpretation and guided choice; less explicit about at-home testing in the support itself.",
+        "en": [
+          "Your results, explained.",
+          "Your next step, clearer."
+        ],
+        "es": [
+          "Tus resultados, explicados.",
+          "Tu próximo paso, más claro."
+        ],
+        "role": "Works especially well for existing testers while still giving beginners a clear benefit."
+      }
+    ],
+    "existingCta": {
+      "detail": {
+        "en": "13 biomarkers",
+        "es": "13 biomarcadores"
+      },
+      "price": {
+        "en": "€99 + VAT",
+        "es": "99 € + IVA"
+      },
+      "tooltip": {
+        "en": "13-biomarker at-home kit · €99 + VAT",
+        "es": "Kit de 13 biomarcadores en casa · 99 € + IVA"
+      },
+      "scopeNote": "Use a compact factual title and detail in the original slots so the button retains its 44px height at desktop and phone widths.",
+      "title": {
+        "en": "Your at-home kit",
+        "es": "Tu kit en casa"
+      }
+    },
+    "componentMapping": [
+      {
+        "component": "components/story/EvaFilm.tsx",
+        "slot": "hero-support within the existing runner layer",
+        "instruction": "Replace the two current lifestyle support strings with the chosen two-line variant. Preserve position, opacity timing, desktop condition, line break, and font rules."
+      },
+      {
+        "component": "components/story/ScrollStory.tsx",
+        "slot": "poster and calm-hero hero-support copies",
+        "instruction": "Use the exact same chosen support text in the loading/poster and reduced-motion render paths. Preserve the existing wrappers and line break."
+      },
+      {
+        "component": "components/story/HeroKitCta.tsx",
+        "slot": "hero-kit-title, hero-kit-details, hero-kit-price, title attribute",
+        "instruction": "Preserve the arrow, layout and original 44px button height. Use Your at-home kit / 13 biomarkers / €99 + VAT, with Spanish equivalents. Update the tooltip; leave the existing preview destination for its later action-flow review."
+      },
+      {
+        "component": "lib/site-content/locales/public.en.json and existing Spanish source strings",
+        "slot": "translation mappings for these exact small-copy replacements",
+        "instruction": "Update English and Spanish together. Preserve the actual animated headline text and the microletter rendering."
+      }
+    ],
+    "outOfScopeForFirstPass": [
+      "Changing scroll heights or scene timing",
+      "Changing the runner video, arrival effect or masks",
+      "Reflowing the header or adding secondary buttons",
+      "Remapping clinical gallery values",
+      "Rewriting all other landing sections",
+      "Changing the existing checkout flow"
+    ],
+    "acceptance": [
+      "The animated Know your health headline and tracked runner retain their existing choreography.",
+      "The same two-line support appears in the animated, loading/poster and reduced-motion versions.",
+      "13biomarkers and€99plusVAT appear in the existing kit CTA with VAT adjacent to the price.",
+      "No /quarter wording remains in the hero CTA tooltip or price unless specifically confirmed.",
+      "Desktop and320px/390px phone views retain the existing composition without clipped support, price or CTA.",
+      "The chosen copy remains legible before scrolling and does not depend on waiting for an animation.",
+      "Only this small pass is published for review before continuing to the next part.",
+      "Tracked callouts use confirmed-kit markers only: LDL,Fructosamine andhs-CRP.",
+      "Callout second lines are educational categories, with no clinical status or invented result.",
+      "Longer Fructosamine/Fructosamina labels remain readable within existing callout geometry."
+    ],
+    "trackedRunnerCallouts": {
+      "instruction": "Replace only the text in the three existing tracked callout slots. Keep the current tracked positions, SVG geometry, colors, animation timing and runner footage.",
+      "slots": [
+        {
+          "replaces": "ApoB / clinical status",
+          "en": {
+            "name": "LDL",
+            "category": "Blood fats"
+          },
+          "es": {
+            "name": "LDL",
+            "category": "Grasas"
+          }
+        },
+        {
+          "replaces": "HbA1c / clinical status",
+          "en": {
+            "name": "Fructosamine",
+            "category": "Blood sugar"
+          },
+          "es": {
+            "name": "Fructosamina",
+            "category": "Glucosa"
+          }
+        },
+        {
+          "replaces": "hs-CRP / clinical status",
+          "en": {
+            "name": "hs-CRP",
+            "category": "Inflammation"
+          },
+          "es": {
+            "name": "hs-CRP",
+            "category": "Inflamación"
+          }
+        }
+      ],
+      "semantics": "These are educational categories describing the marker, not a person’s test result or status.",
+      "guards": [
+        "Remove all Optimal/Out-of-range status wording from these slots.",
+        "Do not invent numeric results or thresholds.",
+        "Keep Fructosamine/Fructosamina as the assay name; Blood sugar/Glucosa is only the category, not a direct glucose-test label.",
+        "Check the longer Fructosamine label in its existing slot at desktop and phone sizes."
+      ]
+    }
+  },
+  "subsequentPasses": [
+    {
+      "order": 2,
+      "area": "Collection film",
+      "components": [
+        "components/story/TassoHomeVideo.tsx",
+        "components/story/TassoVideoProcess.tsx",
+        "lib/site-content/tasso-home-copy.ts"
+      ],
+      "keep": "Approved film, three-step title, Previous/Next/Pause controls, native1×playback and existing stage layout.",
+      "copyIntent": "Turn initial curiosity into confidence: the kit arrives, collection is virtually painless, return is prepaid, and results are explained.",
+      "proposedSlots": {
+        "heading": {
+          "en": [
+            "3 easy",
+            "steps"
+          ],
+          "es": [
+            "3 pasos",
+            "sencillos"
+          ]
+        },
+        "intro": {
+          "en": "Collect at home. Send it back. Understand your results.",
+          "es": "Recoge tu muestra en casa. Devuélvela. Entiende tus resultados."
+        },
+        "step1Title": {
+          "en": "Virtually painless. At home.",
+          "es": "Casi sin dolor. En casa."
+        },
+        "step1Body": {
+          "en": "Your kit comes to you. Collect a small blood sample with Tasso+. No needles to handle.",
+          "es": "El kit llega a tu casa. Recoge una pequeña muestra de sangre con Tasso+. Sin agujas que manipular."
+        },
+        "step2Title": {
+          "en": "Send it back. Prepaid.",
+          "es": "Devuélvela. Franqueo incluido."
+        },
+        "step3Title": {
+          "en": "Your results. Explained.",
+          "es": "Tus resultados. Explicados."
+        },
+        "timing": {
+          "en": "2 working days from laboratory receipt of your sample.",
+          "es": "2 días laborables desde la recepción de tu muestra en el laboratorio."
+        }
+      },
+      "guard": "Keep the existing supplied-device instructions link and timing qualifier. Do not add a second process or new callout boxes."
+    },
+    {
+      "order": 3,
+      "area": "Existing results gallery",
+      "components": [
+        "components/story/BiomarkerGallery.tsx",
+        "lib/landing-content.ts"
+      ],
+      "keep": "The existing interactive capsules, marker selection, reading/range/history views and specimen style.",
+      "copyIntent": "Show how understanding is useful for a first result and for an existing testing history.",
+      "proposedSlots": {
+        "support": {
+          "en": "See how EVA explains an example blood report. Explore the readings and compare them over time.",
+          "es": "Descubre cómo explica EVA una analítica de ejemplo. Explora las lecturas y compáralas en el tiempo."
+        },
+        "exampleLabel": {
+          "en": "Illustrative report · May include markers outside the13-marker kit.",
+          "es": "Analítica ilustrativa · Puede incluir marcadores ajenos al kit de13."
+        },
+        "existingReportLink": {
+          "en": "Already have a blood test? Explore your results.",
+          "es": "¿Ya tienes una analítica? Explora tus resultados."
+        }
+      },
+      "dataRule": "The current gallery includes wider uploaded-report examples such as vitaminD,ApoB,insulin and ferritin. They may remain as clearly labelled broad report examples. Do not claim they are included in the13-marker kit and do not relabel their values, units or thresholds as different biomarkers.",
+      "laterDataWork": "A kit-specific gallery requires proper13-marker fixtures, compatible units and laboratory ranges. Treat that as a separate data pass; do not invent clinical thresholds to make the visuals fit.",
+      "guard": "Use the existing upload link/path and existing text slots. No new results dashboard design or extra audience interface."
+    },
+    {
+      "order": 4,
+      "area": "Existing signal animation",
+      "components": [
+        "components/story/BodySignalFilm.tsx",
+        "components/story/SignalPassage.tsx",
+        "components/story/SignalTimeline.tsx",
+        "lib/analog-motion.ts",
+        "lib/body-signal.ts"
+      ],
+      "keep": "The current body/particle animation, typographic effects, playback timeline and scene transitions.",
+      "copyIntent": "Move from13starting measurements to understanding changes and choosing a useful next question.",
+      "proposedSequence": [
+        {
+          "chapter": "Your body",
+          "copy": {
+            "en": "A starting point for understanding your health.",
+            "es": "Un punto de partida para entender tu salud."
+          }
+        },
+        {
+          "chapter": "13 biomarkers",
+          "copy": {
+            "en": "Your starting kit. Explained, marker by marker.",
+            "es": "Tu kit inicial. Explicado, marcador a marcador."
+          }
+        },
+        {
+          "chapter": "Over time",
+          "copy": {
+            "en": "Compare your readings and review what to explore next.",
+            "es": "Compara tus lecturas y revisa qué quieres explorar después."
+          }
+        },
+        {
+          "chapter": "Your life, in context",
+          "copy": {
+            "en": "Choose your next focus with EVA's guidance.",
+            "es": "Elige tu próximo enfoque con la orientación de EVA."
+          }
+        }
+      ],
+      "countRule": "Update factual15-marker labels and any numeric animation inputs to13 in a separately verified pass. Keep quarterly review as an opportunity for guided choice, rather than implying everyone automatically receives the same panel on a fixed schedule.",
+      "guard": "Do not change only the visible number while leaving an inconsistent accessible transcript or fallback. Preserve each animation's existing shape and timing."
+    },
+    {
+      "order": 5,
+      "area": "Existing educational and ongoing-value sections",
+      "components": [
+        "components/story/HealthEditorial.tsx",
+        "components/site/RestoredContent.tsx",
+        "components/story/MethodJourney.tsx",
+        "components/story/BusinessOffer.tsx"
+      ],
+      "keep": "Existing editorial headings, dot-number treatments, quarter timeline and visual hierarchy. Review one component at a time.",
+      "copyIntent": "Make continuity valuable without repeating the process: understand the first result, compare later readings, and make informed choices about available panels.",
+      "proposedSharedParagraphs": {
+        "en": [
+          "Your first result is a starting point. Later comparable readings help you see a pattern.",
+          "Keep your results together, understand what the markers measure, and choose what to explore next with EVA's guidance."
+        ],
+        "es": [
+          "Tu primer resultado es un punto de partida. Las lecturas posteriores que sean comparables te ayudan a ver un patrón.",
+          "Reúne tus resultados, entiende qué mide cada marcador y elige qué explorar después con la orientación de EVA."
+        ]
+      },
+      "annualNumberRule": "Do not automatically replace60annual results with52. Four identical13-marker kits have not been confirmed as the only customer path, and the user wants guided panel choices. Reuse the existing number treatment to explain the13-marker starting panel, or use a confirmed cadence statement, without inventing an annual entitlement.",
+      "broaderFeatureRule": "The existing biological-age and longevity-score block needs a later eligibility review. Do not imply these outputs come with the13-marker kit. This is outside the narrow hero pass.",
+      "currentOfferRule": "Bring the later offer copy into agreement with13markers and€99plusVAT in a subsequent reviewed pass. Do not change future-panel prices or inclusions by assumption."
+    }
+  ],
+  "reviewOrder": [
+    "Hero support and kit detail",
+    "Three-step film wording",
+    "Existing results-gallery explanation",
+    "Signal-animation wording and factual counts",
+    "Existing ongoing-value and offer copy"
+  ],
+  "finalEditorialChecks": [
+    "Shared copy serves both approved audiences without new tabs or dedicated audience sections.",
+    "The kit is always described as13biomarkers; wider sample reports are labelled separately.",
+    "VAT stays adjacent to€99; no VAT rate or all-in total is invented.",
+    "No unsupported biological-age, score, physician-review or all-panels-included promise.",
+    "No factual copy remains inconsistent between animation, static fallback and screen-reader transcript.",
+    "Each pass keeps the current design and animation system and is reviewed before expanding the next part."
+  ]
+}

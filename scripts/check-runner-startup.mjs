@@ -14,7 +14,7 @@ function find(tree,predicate){
  const found=[];const visit=node=>{if(predicate(node))found.push(node);ts.forEachChild(node,visit)};visit(tree);return found;
 }
 function effect(tree,marker){
- const matches=find(tree,node=>ts.isCallExpression(node)&&node.expression.getText(tree)==='useEffect'&&node.arguments[0]?.getText(tree).includes(marker));
+ const matches=find(tree,node=>ts.isCallExpression(node)&&node.expression.getText(tree)==='useEffect'&&node.arguments[0]?.getText(tree).replace(/\s+/g,'').includes(marker.replace(/\s+/g,'')));
  assert.equal(matches.length,1,`Exactly one production effect contains ${marker}`);
  return matches[0].arguments[0].getText(tree);
 }

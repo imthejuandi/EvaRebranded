@@ -1,0 +1,288 @@
+{
+  "title": "Adapt the existing EVA landing through message changes",
+  "direction": "Keep the current landing and its animation system. Change messages in existing slots, then move existing components only when the next review pass needs a clearer sequence.",
+  "explicit_exclusions": [
+    "LandingProposal.tsx and landing-proposal.css are not the implementation base",
+    "No new hero layout or visual system",
+    "No generated imagery",
+    "No audience selector",
+    "No new card grid",
+    "No replacement dashboard",
+    "No new scroll framework or video scrubbing"
+  ],
+  "source_reviewed": "/workspace/eva-playback-review/components/story",
+  "existing_scene_inventory": [
+    {
+      "order": 1,
+      "scene": "Opening runner and split animated headline",
+      "owner": [
+        "ScrollStory.tsx",
+        "EvaFilm.tsx",
+        "HeroIntro.tsx",
+        "AnalogType.tsx",
+        "TrackedRunner.tsx",
+        "RunnerArrival.tsx"
+      ],
+      "current_visual": "Existing ink scene, tracked amber/lilac runner, natural first headline and analog health word. Leader labels unfold around the athlete.",
+      "current_message": "Know your health; for what you love and what lies ahead; compact first-kit CTA.",
+      "preserve": "Runner source assets, tracking points, entrance reveal, headline typography, frame timing, native video clock, pause control and chapter navigation."
+    },
+    {
+      "order": 2,
+      "scene": "Three-step Tasso film inside the original sticky story",
+      "owner": [
+        "TassoHomeVideo.tsx",
+        "TassoVideoProcess.tsx",
+        "TassoFilmTranscript.tsx",
+        "lib/site-content/tasso-home-copy.ts"
+      ],
+      "current_visual": "Approved complete tabletop film with normal-speed playback, collect/return/understand steps and Previous/Pause/Next controls.",
+      "current_message": "3 easy steps; virtually painless at home; prepaid return; results in context.",
+      "preserve": "Native1x playback, step starts0/6.5/14.5, film source, poster handling and existing frame within scroll story."
+    },
+    {
+      "order": 3,
+      "scene": "Amber insight scene",
+      "owner": [
+        "EvaFilm.tsx",
+        "lib/story-motion.ts",
+        "lib/story-scroll-compositor.ts"
+      ],
+      "current_visual": "Large15 figure and short lines travel horizontally as the original full-height panels move together.",
+      "current_message": "Your data in context;15biomarkers every90days; results explained.",
+      "future_message_fit": "13 markers in the current kit; results that become understandable. Do not imply the same13 must be ordered every quarter."
+    },
+    {
+      "order": 4,
+      "scene": "Return to life stretch image",
+      "owner": [
+        "EvaFilm.tsx"
+      ],
+      "current_visual": "Existing stretch.jpg, feathered optical image, large return-to-life statement.",
+      "current_message": "Make room for the life you enjoy.",
+      "future_message_fit": "Retain as an emotional pause after the service explanation; no new lifestyle image is needed."
+    },
+    {
+      "order": 5,
+      "scene": "Body signal film",
+      "owner": [
+        "SignalPassage.tsx",
+        "BodySignalFilm.tsx",
+        "BodySignalCanvas.tsx",
+        "SignalTimeline.tsx",
+        "lib/body-signal-playback.ts"
+      ],
+      "current_visual": "Existing body-to-data animation with chapter progress and native playback, below the sticky opening story.",
+      "current_message": "Your body;15biomarkers; every90days; life in context.",
+      "future_message_fit": "Explain the connection from a reading to a useful next question. Preserve the animation, update the labels once its pass is approved."
+    },
+    {
+      "order": 6,
+      "scene": "Health story and quarterly reading track",
+      "owner": [
+        "HealthEditorial.tsx",
+        "DotNumber.tsx"
+      ],
+      "current_visual": "Ruled editorial split, large60 dot numeral and four quarter columns.",
+      "current_message": "15markers four times per year; health as a history.",
+      "future_message_fit": "The first13-marker kit establishes a starting point; later testing follows a focus chosen with guidance. Do not automatically change60 to52 because later panels may differ."
+    },
+    {
+      "order": 7,
+      "scene": "Restored understanding explanation",
+      "owner": [
+        "components/site/RestoredContent.tsx",
+        "HomeUnderstanding export"
+      ],
+      "current_visual": "Existing editorial text composition and three concise explanatory items.",
+      "current_message": "Trendlines not snapshots; interpretation; next-panel options.",
+      "future_message_fit": "Clarify why beginners benefit from explanation and existing testers benefit from comparison and more purposeful next choices, without splitting into separate layouts."
+    },
+    {
+      "order": 8,
+      "scene": "Four-part method artwork",
+      "owner": [
+        "MethodJourney.tsx",
+        "MethodGraphs.tsx",
+        "MethodPouchStill.tsx",
+        "lib/landing-content.ts"
+      ],
+      "current_visual": "Existing staged home ritual and three animated visual studies, chosen through its current tabs/Previous/Next.",
+      "current_message": "Collect; receive; understand; compare every90days.",
+      "future_message_fit": "Detailed membership/interpretation explanation. It can move after the results demonstration without changing its visuals."
+    },
+    {
+      "order": 9,
+      "scene": "Existing interactive results mockup",
+      "owner": [
+        "BiomarkerGallery.tsx",
+        "lib/landing-content.ts",
+        "app/biomarker-glass.css"
+      ],
+      "current_visual": "Existing paper/lilac results console, a selected glass reading, curve/range/reading tabs, five marker capsules, dot numbers and an expandable index.",
+      "current_message": "Know yourself and see change; currently uses VitaminD, hs-CRP, insulin, ApoB and ferritin examples.",
+      "verified_dashboard_status": "This is the interactive results/dashboard-style demonstration on the actual landing. The separate full app dashboard is components/pages/dashboard/DashboardPage.tsx, and is not needed for this adaptation.",
+      "future_message_fit": "Keep this exact gallery and its interactions. Replace out-of-kit examples with confirmed-kit marker names in a dedicated later pass; do not rebuild the interface."
+    },
+    {
+      "order": 10,
+      "scene": "Range note, lifestyle, age example, founder, offer and footer",
+      "owner": [
+        "HealthEditorial.tsx",
+        "LifestylePassage.tsx",
+        "BusinessOffer.tsx",
+        "BusinessFooter.tsx"
+      ],
+      "current_visual": "Existing range explanation, coastal footage,34/29 dot readout, founder quotation, price block and upload option.",
+      "future_message_fit": "Refine later, section by section. Existing age/score claims and€99per-quarter wording require correction before they describe the confirmed13-marker kit."
+    }
+  ],
+  "original_scroll_choreography": {
+    "owner": "lib/story-motion.ts and lib/story-scroll-timing.ts",
+    "duration_frames": 981,
+    "scroll_height_svh": 920,
+    "stages": [
+      {
+        "name": "Runner to product transition",
+        "frames": [
+          130,
+          280
+        ]
+      },
+      {
+        "name": "Product holds",
+        "frames": [
+          280,
+          465
+        ]
+      },
+      {
+        "name": "Product to amber insight",
+        "frames": [
+          465,
+          555
+        ]
+      },
+      {
+        "name": "Insight to return-to-life",
+        "frames": [
+          715,
+          800
+        ]
+      }
+    ],
+    "headline_and_runner_exit": "Existing headline starts leaving at frame45; runner travels right over45–190; preserve those independent transforms.",
+    "hero_support_and_cta": "Hero support fades during20–100; CTA fades during20–90. Do not lengthen the story or change these timings just to fit copy.",
+    "warning": "Gallery is a normal document-flow component, not a Remotion layer. Do not insert it into EvaFilm or try to make it a video frame."
+  },
+  "message_to_component_map": [
+    {
+      "customer_question": "What is EVA?",
+      "existing_slot": "Hero support + HeroKitCta",
+      "objective": "13-marker at-home kit, understandable results, guidance for what comes next.",
+      "pass": 1
+    },
+    {
+      "customer_question": "How easy is collection?",
+      "existing_slot": "TassoHomeVideo/TassoVideoProcess shared copy",
+      "objective": "At home, virtually painless, no needles to handle, prepaid return, lab-receipt-qualified timing.",
+      "pass": 2
+    },
+    {
+      "customer_question": "What do I get back?",
+      "existing_slot": "BiomarkerGallery",
+      "objective": "Explain a selected result, its reference context and comparison across readings using the existing gallery.",
+      "pass": 3
+    },
+    {
+      "customer_question": "What is included?",
+      "existing_slot": "Amber figure scene + existing gallery expanded index",
+      "objective": "Confirmed13-marker scope and exact marker list. Preserve the existing numeric/ruled visual vocabulary.",
+      "pass": 4
+    },
+    {
+      "customer_question": "Why return, and how do I choose next?",
+      "existing_slot": "HealthEditorial quarterly track + SignalPassage/MethodJourney copy",
+      "objective": "A starting point for new testers and guided ownership of future test focus for experienced testers.",
+      "pass": 5
+    }
+  ],
+  "moving_existing_results_earlier": {
+    "first_minimal_option": "Inside HealthEditorial, move the existing <BiomarkerGallery calm={calm}/> and its immediately adjacent range-clarity section ahead of <MethodJourney calm={calm}/>. This is a local JSX reorder; no replacement component or CSS is needed.",
+    "stronger_option_for_later_review": "To show results immediately after the complete opening scroll story, lift the existing BiomarkerGallery import/render into ScrollStory after the calm Tasso summary block and before SignalContent. Remove its original render from HealthEditorial and move the existing range note with it. Keep the gallery code, props, state and CSS intact.",
+    "practical_checks": [
+      "Ensure only one #biomarcadores and one #bio-range-index remain.",
+      "Keep calm={calm} so reduced-motion behaviour survives the move.",
+      "Review the gallery console link to #una-perspectiva: if its target now follows the gallery, update its label/direction rather than adding a new component.",
+      "Renumber editorial kickers only after the final order is approved.",
+      "Do not duplicate the gallery simply to show it sooner."
+    ],
+    "not_in_first_pass": "Do not reorder every scene during the hero review. Approve the narrow hero change first."
+  },
+  "first_narrow_hero_pass": {
+    "unchanged": [
+      "HeroIntro headline text and typography",
+      "AnalogType health word and microletter effect",
+      "TrackedRunner and RunnerArrival visuals",
+      "Runner source video/poster",
+      "Tracking coordinates and leader geometry",
+      "heroLayout dimensions and frame transitions",
+      "Native scroll compositor and chapter positions",
+      "Masthead/navigation/pause placement",
+      "All existing CSS layout directions"
+    ],
+    "message_slots": [
+      {
+        "file": "components/story/EvaFilm.tsx",
+        "slot": "Existing !mobile hero-support paragraph",
+        "budget": "Two short lines within240px at16px/1.5; about45–60characters total.",
+        "fit": "At-home13-marker sampling + explained results/next-step guidance. Do not add a new large paragraph."
+      },
+      {
+        "file": "components/story/ScrollStory.tsx",
+        "slot": "Existing poster fallback and calm-hero hero-static-support",
+        "budget": "Same exact message and deliberate line breaks as the live desktop slot.",
+        "fit": "Keep static/reduced-motion and animated copy consistent. Existing mobile CSS hides this slot."
+      },
+      {
+        "file": "components/story/HeroKitCta.tsx",
+        "slot": "hero-kit-title / hero-kit-details / hero-kit-price",
+        "budget": "Current200px compact CTA. Use a short first-kit title, then13markers and€99+VAT in existing detail slots.",
+        "fit": "This is the concrete service explanation visible on mobile without moving the runner. Suggested fitting form: Your first kit /13markers /€99+VAT; Spanish equivalent can fit Tu primer kit /13marcadores /99€+IVA."
+      },
+      {
+        "file": "lib/runner-signals.ts",
+        "slot": "Existing runnerSignalCopy names/status text only",
+        "budget": "Keep label widths/positions/fonts unchanged. LDL Cholesterol,Fructosamine,hs-CRP fit the current name labels.",
+        "fit": "Remove ApoB/HbA1c as claimed kit examples; replace with confirmed markers. Use clear illustrative status language rather than asserting a personal optimal/out-of-range outcome."
+      },
+      {
+        "file": "components/story/ScrollStory.tsx",
+        "slot": "Existing sr-only hero narration",
+        "budget": "One concise sentence preserving accessibility.",
+        "fit": "Update15 and the ApoB/HbA1c example narration to match the visible confirmed-kit message."
+      },
+      {
+        "file": "lib/site-content/locales/public.en.json and the existing translation path",
+        "slot": "Translations of newly changed Spanish copy",
+        "budget": "Equivalent meaning and similar visual length.",
+        "fit": "No half-translated visible hero or stale quarterly tooltip."
+      }
+    ],
+    "price_and_action_checks": [
+      "The current HeroKitCta tooltip says quarterly subscription and its visible price says€99/quarter. Remove both unsupported billing claims when presenting the confirmedkit.",
+      "The existing CTA opens the simulated account-preview flow. Preserve that behavior in this hero-only pass; review commercial checkout and any plan preselection when the actual kit purchase flow is scoped.",
+      "Keep+VATin the visible price string; do not infer a rate or consumer-total.",
+      "The rest of the landing still contains old15-marker/quarterly/age claims. Identify those as subsequent part-by-part passes rather than silently promising that a hero-only edit resolves them."
+    ],
+    "out_of_scope": "No new audience buttons, cards, generated images, new dashboard mockup, additional sticky section or global styling changes.",
+    "visual_acceptance": [
+      "Before/after screenshots show the same headline/runner/CTA geometry, with only copy changing.",
+      "EN and ES at1440desktop,390phone and320phone preserve legibility and avoid overlap.",
+      "Static/reduced-motion and live desktop variants use the same message.",
+      "Mobile compact CTA states13markersand€99+VATwithout expanding into or covering the analog headline.",
+      "Opening runner, pause, labels and scroll exit still use the existing clocks and transitions."
+    ]
+  },
+  "implementedHeroFit": "Your at-home kit / 13 biomarkers / €99 + VAT retains the original 44px CTA height across the checked desktop and phone widths. Internal review badge is hidden during the phone hero to leave chapter navigation usable."
+}

@@ -28,3 +28,6 @@
 }
 @media(prefers-reduced-motion:reduce){.hero-kit-cta,.hero-kit-cta>svg{transition:none}.hero-kit-cta:active,.hero-kit-cta:hover>svg{transform:none}}
 @media(forced-colors:active){.hero-kit-cta{background:ButtonFace;color:ButtonText;border-color:ButtonText}.hero-kit-details{color:ButtonText}}
+
+/* Keep the internal review badge clear of the phone chapter controls. */
+@media(max-width:700px){body:has(.hero-entrance[data-story-chapter="1"]) .content-review-dock{visibility:hidden;pointer-events:none}}

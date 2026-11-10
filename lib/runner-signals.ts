@@ -7,8 +7,8 @@ export const signalStart = {head: 36, stomach: 50, knee: 64};
 // The final label and leader have finished unfolding at this point.
 export const signalsSettledAt = (signalStart.knee + 23) / 24;
 export const runnerSignalCopy = {
- es: {head: {name:'ApoB',status:'Óptimo'}, stomach:{name:'HbA1c',status:'Óptimo'}, knee:{name:'HsCRP',status:'Fuera de rango'}},
- en: {head: {name:'ApoB',status:'Optimal'}, stomach:{name:'HbA1c',status:'Optimal'}, knee:{name:'HsCRP',status:'Out of range'}},
+ es: {head: {name:'LDL',status:'Grasas'}, stomach:{name:'Fructosamina',status:'Glucosa'}, knee:{name:'hs-CRP',status:'Inflamación'}},
+ en: {head: {name:'LDL',status:'Blood fats'}, stomach:{name:'Fructosamine',status:'Blood sugar'}, knee:{name:'hs-CRP',status:'Inflammation'}},
 } as const;
 
 /** Reviewed source points, mapped through the video's actual object-fit: cover. */
