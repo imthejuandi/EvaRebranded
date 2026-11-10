@@ -21,11 +21,23 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
   const driver = useMemo(() => createStoryScrollDriver(sceneWindow[0]), [sceneWindow]);
   const section = useRef<HTMLElement>(null), stage = useRef<HTMLDivElement>(null);
   const [geometry, setGeometry] = useState<Geometry | null>(null);
+  const [shortViewport, setShortViewport] = useState(false);
+  const staticLayout = calm || (kind === 'kit' && shortViewport);
   const id = kind === 'kit' ? 'kit-inicial' : 'volver-a-la-vida';
 
   useEffect(() => {
+    if (kind !== 'kit' || calm) return;
+    // Expanded descriptions must remain readable in short windows, without nested scrolling.
+    const query = matchMedia('(max-width: 375px), (max-width: 700px) and (max-height: 820px), (min-width: 701px) and (max-height: 620px)');
+    const update = () => setShortViewport(query.matches);
+    update();
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+  }, [kind, calm]);
+
+  useEffect(() => {
     const root = section.current, surface = stage.current;
-    if (calm || !root || !surface) return;
+    if (staticLayout || !root || !surface) return;
     let top = 0, span = 1, raf = 0;
     const update = () => {
       raf = 0;
@@ -46,11 +58,11 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
     measure();
     window.addEventListener('scroll', schedule, {passive: true});
     return () => {observer.disconnect(); cancelAnimationFrame(raf); window.removeEventListener('scroll', schedule);};
-  }, [calm, driver, start, end]);
+  }, [staticLayout, driver, start, end]);
 
   const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, driver, sceneWindow, geometry]);
   const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><p className="kit-summary-intro">{copy.intro}</p><KitMarkerIndex copy={copy}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
-  if (calm) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
+  if (staticLayout) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} data-kit-layout={kind === 'kit' ? calm ? 'reduced' : 'flow' : undefined} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
 
   return <section id={id} className={'scroll-journey story-scene-passage ' + kind} style={{height: `${100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
     <div className="stage" ref={stage}><div aria-hidden="true" className="film">{geometry && <Player component={EvaFilm} inputProps={inputProps} compositionWidth={geometry.width} compositionHeight={geometry.height} durationInFrames={DURATION} fps={30} autoPlay={false} controls={false} clickToPlay={false} spaceKeyToPlayOrPause={false} doubleClickToFullscreen={false} allowFullscreen={false} initiallyMuted style={{width: '100%', height: '100%', pointerEvents: 'none'}}/>}</div></div>

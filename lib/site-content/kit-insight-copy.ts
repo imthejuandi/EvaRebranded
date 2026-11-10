@@ -6,6 +6,7 @@ export const kitInsightCopy = {
     title: 'What your kit measures.',
     intro: 'Explore blood fats, recent blood sugar, inflammation, and markers related to your liver and kidneys.',
     markers: ['Albumin', 'ALP', 'hs-CRP', 'Creatinine', 'Urea BUN', 'Uric acid', 'Total cholesterol', 'LDL Cholesterol', 'HDL-Cholesterol', 'Triglycerides', 'ALT', 'GGT', 'Fructosamine'],
+    meanings: ['Fluid balance', 'Liver and bones', 'Inflammation signal', 'Kidney filtration', 'Protein waste clearance', 'Gout risk signal', 'Overall cholesterol', 'Artery buildup risk', 'Cholesterol transport', 'Energy storage fats', 'Liver cell stress', 'Bile duct stress', 'Recent sugar average'],
     groups: [
       {label: 'Heart & cholesterol', markers: [6, 7, 8, 9]},
       {label: 'Liver & proteins', markers: [0, 1, 10, 11]},
@@ -21,6 +22,7 @@ export const kitInsightCopy = {
     title: 'Qué mide tu kit.',
     intro: 'Explora grasas en sangre, inflamación, azúcar en sangre y marcadores relacionados con el hígado y los riñones.',
     markers: ['Albúmina', 'ALP', 'hs-CRP', 'Creatinina', 'Urea BUN', 'Ácido úrico', 'Colesterol total', 'Colesterol LDL', 'Colesterol HDL', 'Triglicéridos', 'ALT', 'GGT', 'Fructosamina'],
+    meanings: ['Equilibrio de líquidos', 'Hígado y huesos', 'Señal de inflamación', 'Filtración renal', 'Desechos de proteínas', 'Riesgo de gota', 'Cantidad total', 'Acumulación en arterias', 'Transporte de colesterol', 'Reserva de energía', 'Estrés del hígado', 'Hígado y bilis', 'Promedio de glucosa'],
     groups: [
       {label: 'Corazón y colesterol', markers: [6, 7, 8, 9]},
       {label: 'Hígado y proteínas', markers: [0, 1, 10, 11]},
