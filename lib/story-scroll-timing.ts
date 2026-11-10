@@ -25,3 +25,12 @@ export function storyProgressAtFrame(frame: number): number {
     : WEIGHTED_PRODUCT_END + bounded - PRODUCT_END;
   return position / WEIGHTED_END;
 }
+
+/** Retain authored scroll distances while placing scenes around the results. */
+export const OPENING_END_FRAME = PRODUCT_END;
+export const OPENING_PROGRESS = storyProgressAtFrame(OPENING_END_FRAME);
+export const OPENING_SCROLL_HEIGHT_SVH = 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * OPENING_PROGRESS;
+export const KIT_SCENE_WINDOW = [555, 715] as const;
+export const LIFE_SCENE_WINDOW = [715, 900] as const;
+export const openingFrameAtProgress = (progress: number) => storyFrameAtProgress(clamp(progress, 1) * OPENING_PROGRESS);
+export const openingProgressAtFrame = (frame: number) => Math.min(1, storyProgressAtFrame(frame) / OPENING_PROGRESS);

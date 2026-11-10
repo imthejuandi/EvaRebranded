@@ -12,3 +12,7 @@
 .masthead{gap:16px}.masthead .wordmark,.masthead .join{flex-shrink:0;white-space:nowrap}
 
 .range-clarity{padding:0 var(--gutter) 70px;background:var(--paper);color:var(--ink);display:flex;align-items:flex-start;gap:50px;justify-content:space-between}.range-clarity p{font-size:14px;line-height:1.7;max-width:690px;color:#60675e}.range-clarity a{font-size:13px;min-height:44px;border-bottom:1px solid;white-space:nowrap}@media(max-width:700px){.range-clarity{flex-direction:column;gap:16px;padding-bottom:50px}.range-clarity p{font-size:13px}}
+
+/* One review point per quarter; future panels can contain different markers. */
+.quarter-track .quarter-dots{min-height:28px}
+@media(max-width:700px){.quarter-track .quarter-dots{min-height:23px}}

@@ -105,3 +105,5 @@
   .method-has-changed .method-chapter-body, .method-home-art img { animation: none !important; }
   .method-chapters > button > i { transition: none; }
 }
+/* Guided-choice labels can wrap on compact phones. */
+@media(max-width:700px){.method-chapters>button{white-space:normal}}

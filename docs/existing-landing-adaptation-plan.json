@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Parts 1–3 implemented and verified. Parts 4–5 queued. Publication state is tracked by the Sites deployment receipt.",
+  "status": "Parts 1–5 implemented and verified; publication state is tracked by the Sites deployment receipt.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -239,7 +239,31 @@
         "Copy explains what a marker measures without diagnosing a condition or promising an outcome.",
         "Digit-mask updates preserve the existing material and choreography; no replacement animation or generated asset is needed."
       ],
-      "reviewMoment": "Review clarity and count accuracy within the familiar animation before revising ongoing value."
+      "reviewMoment": "Review clarity and count accuracy within the familiar animation before revising ongoing value.",
+      "implemented": {
+        "location": "#kit-inicial, directly after the results console and its range explanation.",
+        "order": "Opening now ends on the fully visible Tasso section at original frame 465. Results follow directly; the original amber scene is reused at frames 555–715 after the console.",
+        "copy": "13 biomarkers in the starting kit; exact 13-marker list and short measurement-category explanation in the existing horizontal panels.",
+        "counts": "Actual analog/halftone glyphs, static equivalents, body-signal captions and method filaments all use 13. The 90 morph is a guided review opportunity.",
+        "motion": "Existing native painter, authored physical scroll distances, material, runner and Tasso footage retained. New scene windows track upstream layout changes.",
+        "navigation": "The third and fourth opening controls navigate to results and kit anchors; current-section reporting follows document position. Offscreen Tasso controls become inert."
+      },
+      "verification": {
+        "result": "Pass: desktop/laptop/390px/320px layouts in English and Spanish; direct Tasso→results order; 13-marker list and exact membership; authored scroll timing; reversible horizontal reveal; original life asset relocated; updated chapter jumps; offscreen video controls inert; reduced-motion glyph and full marker list.",
+        "automated": [
+          "TypeScript",
+          "static export",
+          "authored section-window mapping",
+          "runner startup lifecycle",
+          "compositor transform and disposal parity",
+          "signal arrival lifecycle",
+          "analog and body mask contracts",
+          "method graph count and behavior",
+          "English public-route audit",
+          "responsive browser checks"
+        ],
+        "media": "No new images or videos generated. Original Tasso footage, runner and lifestyle asset preserved."
+      }
     },
     {
       "part": 5,
@@ -270,7 +294,28 @@
         "No automatic inclusive panel-swap, unlimited testing, prescribed retest or health-outcome claim is made.",
         "Existing scroll continuity and lifestyle atmosphere remain intact."
       ],
-      "reviewMoment": "Review the five adapted parts together, then scope sections6–9 separately."
+      "reviewMoment": "Review the five adapted parts together, then scope sections6–9 separately.",
+      "implemented": {
+        "locations": [
+          "#una-perspectiva",
+          "#revision-trimestral",
+          "#por-que-eva",
+          "#el-metodo",
+          "#volver-a-la-vida",
+          "#empezar"
+        ],
+        "reviewRhythm": "Large 60 annual-result count is replaced by 90 days, a chance to review. Four timeline points represent Start, Review, Choose and Revisit—not quantities of future biomarkers.",
+        "ongoingValue": "Compatible history, personal context and guided ownership of the next available panel. No automatic identical quarterly panels or annual result entitlement.",
+        "offer": "13-marker first at-home kit, €99 + VAT. Future panel scope and price are separate. Existing interactive-preview access routes remain.",
+        "life": "Original return-to-life imagery and motion now close the next-steps passage, after MethodJourney. Existing coastal imagery appears later, after the age example.",
+        "copyReview": "Dedicated copy expert and design director reviewed the changes. No new image/video generation or replacement visual system."
+      },
+      "verification": {
+        "result": "Pass: six desktop/phone/locale cases and EN/ES reduced motion. Large number is90, four timeline decision points, all method tabs and Home/End keyboard navigation, actual13 filaments, VAT visible with99, correct existing preview entry links, no horizontal overflow.",
+        "smallScreenFix": "Allow the existing method tab labels to wrap in compact layouts.",
+        "reviewAnchor": "#revision-trimestral jumps directly to the revised large number.",
+        "landingFacts": "No15-marker kit,60annual-results, fixedfour-kit entitlement orquarterly99price claims remain in the affected landing sections."
+      }
     }
   ],
   "sequencingRules": [
@@ -287,5 +332,6 @@
     "Useful copy for both beginners and existing testers, without tabs or duplicated narratives.",
     "Normal scrolling, accessible copy, native-speed film controls and a complete reduced-motion route.",
     "No replacement page, new images, new animation system or unrequested changes to later sections."
-  ]
+  ],
+  "reviewMode": "User requested continued section-by-section implementation and one whole-page assessment afterward. Every handoff names the affected section and its new position."
 }

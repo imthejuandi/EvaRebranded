@@ -1,8 +1,10 @@
 export const SIGNAL_DURATION=361;
 export const signalStops=[0,160,340];
-export const signalLabels=['15 biomarcadores','Cada 90 días','Tu vida, con contexto'];
+export const signalLabels=['Tu kit inicial de 13 marcadores.','Una revisión a los 90 días.','Tu próximo enfoque, con orientación.'];
+export const signalDescriptions=['Tu kit inicial establece una referencia con 13 marcadores.','Revisa tus resultados y elige qué medir después con orientación.','Consulta los paneles disponibles y elige según tu próximo enfoque.'];
 export const analogGlyphs:Record<string,string[]>={
  '1':['00100','01100','00100','00100','00100','00100','01110'],
+ '3':['11110','00001','00001','01110','00001','00001','11110'],
  '5':['11111','10000','10000','11110','00001','00001','11110'],
  '9':['01110','10001','10001','01111','00001','00001','01110'],
  '0':['01110','10001','10011','10101','11001','10001','01110'],
@@ -12,7 +14,7 @@ export const analogGlyphs:Record<string,string[]>={
  'T':['11111','00100','00100','00100','00100','00100','00100'],
  'Ú':['10001','10001','10001','10001','10001','10001','01110'],
 };
-export const signalWords=['15','90','TÚ'];
+export const signalWords=['13','90','TÚ'];
 type DotPosition={x:number;y:number};
 // Subdivide the original cells while preserving their readable glyph footprint.
 const pair=({x,y}:DotPosition):DotPosition[]=>[{x:x-.25,y},{x:x+.25,y}];

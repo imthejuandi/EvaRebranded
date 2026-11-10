@@ -1,10 +1,10 @@
 import {livingLamp} from './living-lamp.ts';
-import {analogGlyphs} from './analog-motion.ts';
+import {analogGlyphs,signalWords} from './analog-motion.ts';
 export const HALFTONE_COLS=55,HALFTONE_ROWS=41,HALFTONE_PITCH=.2;
 export const HALFTONE_VIEWBOX='-.22 -.22 11.24 8.44';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
 const sites=Array.from({length:HALFTONE_COLS*HALFTONE_ROWS},(_,i)=>({x:(i%HALFTONE_COLS)*HALFTONE_PITCH,y:Math.floor(i/HALFTONE_COLS)*HALFTONE_PITCH}));
-export const halftoneMasks=['15','90','TÚ'].map(word=>sites.map((_,i)=>{
+export const halftoneMasks=signalWords.map(word=>sites.map((_,i)=>{
  const col=i%HALFTONE_COLS,row=Math.floor(i/HALFTONE_COLS),letterIndex=Math.floor(col/30),local=col-letterIndex*30;
  if(letterIndex>1||local>=25)return false;
  if(row<6)return word[letterIndex]==='Ú'&&row>=1&&row<=4&&local>=15&&local<20;

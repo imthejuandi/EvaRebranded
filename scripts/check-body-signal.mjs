@@ -39,7 +39,13 @@ for(const [w,h] of [[1440,900],[390,844],[320,568]])for(const f of [75,260,BODY_
 }
 const before=bodySignalState(BODY_RESOLVE_END-1),after=bodySignalState(BODY_RESOLVE_END);
 assert(after.points.every((p,i)=>Math.abs(p.opacity-before.points[i].opacity)<.05),'No visual handoff at the reveal boundary');
-assert.deepEqual(halftoneMasks.map(mask=>mask.filter(Boolean).length),[675,875,670]);
+assert.deepEqual(halftoneMasks.map(mask=>mask.filter(Boolean).length),[625,875,670]);
+// Inspect every dot in the second digit: changing only a caption must not pass.
+const three=['11110','00001','00001','01110','00001','00001','11110'];
+for(let row=0;row<35;row++)for(let col=0;col<25;col++){
+ const index=(row+6)*HALFTONE_COLS+col+30;
+ assert.equal(halftoneMasks[0][index],three[Math.floor(row/5)][Math.floor(col/5)]==='1','The halftone opening mask must draw 3, not 5');
+}
 assert(BODY_RESOLVE_END-BODY_RESOLVE_START>=210,'Give the initial emergence at least twice the original frame span');
 for(let col=0;col<HALFTONE_COLS;col++)for(let row=0;row<HALFTONE_ROWS;row++){
  let previous=0;

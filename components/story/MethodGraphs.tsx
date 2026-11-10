@@ -13,7 +13,7 @@ type MethodGraphsProps = {
     className?: string;
 };
 const descriptions = {
-    results: ['Quince biomarcadores, una lectura', 'Quince filamentos luminosos se ordenan en señales individuales. Una representación artística de la lectura de biomarcadores, sin valores clínicos.'],
+    results: ['Trece biomarcadores, una lectura', 'Trece filamentos luminosos se ordenan en señales individuales. Una representación artística de la lectura de biomarcadores, sin valores clínicos.'],
     context: ['El mismo resultado, dos marcos de referencia', 'El mismo punto se alinea con dos franjas: intervalo de referencia y rangos de EVA. Las franjas muestran cómo se añade contexto a un valor; no representan umbrales clínicos ni evalúan el resultado de una persona.'],
     evolution: ['Un historial que se construye', 'Cuatro lecturas trimestrales forman un recorrido que sube y baja. Representación ilustrativa del seguimiento, sin datos de una persona ni una predicción de mejora.'],
 };
@@ -23,16 +23,18 @@ const circlePath = (x: number, y: number, r: number) => {
     return `M${n(x - r)} ${n(y)}a${n(r)} ${n(r)} 0 1 0 ${n(r * 2)} 0a${n(r)} ${n(r)} 0 1 0 ${n(-r * 2)} 0`;
 };
 // Original forms: no imported chart, numeral mask, photograph, or previous artwork.
-const filaments = Array.from({ length: 15 }, (_, i) => {
-    const start = 164 + i * 20 + Math.sin(i * 2.1) * 24;
-    const end = 155 + i * 21;
-    const middle = 299 + (i - 7) * 7.5;
+const filaments = Array.from({ length: 13 }, (_, i) => {
+    // Sample the original full span and reveal window with thirteen signals.
+    const position = i * 14 / 12;
+    const start = 164 + position * 20 + Math.sin(position * 2.1) * 24;
+    const end = 155 + position * 21;
+    const middle = 299 + (position - 7) * 7.5;
     const d = `M72 ${start.toFixed(2)} C166 ${(start - 31).toFixed(2)} 204 ${middle.toFixed(2)} 300 ${middle.toFixed(2)} S430 ${(end + 25).toFixed(2)} 494 ${end}`;
-    return { d, start, end, weight: .64 + (Math.sin(i * 1.83) + 1) * .23 };
+    return { d, start, end, position, weight: .64 + (Math.sin(position * 1.83) + 1) * .23 };
 });
-const filamentDust = filaments.map(({ start }, i) => Array.from({ length: 9 }, (_, j) => {
+const filamentDust = filaments.map(({ start, position }, i) => Array.from({ length: 9 }, (_, j) => {
     const x = 63 + j * 18.7;
-    const y = start + Math.sin(j * .52 + i * .3) * (21 - j * 1.6);
+    const y = start + Math.sin(j * .52 + position * .3) * (21 - j * 1.6);
     return circlePath(x, y, .45 + ((i * 5 + j * 7) % 9) / 13);
 }).join('')).join('');
 const contextRanges = [
@@ -84,15 +86,15 @@ function ResultsGraph({ id }: {
     return <>
     <text className="mg-kicker" x="48" y="64">{__site.t("RESULTADOS")}</text>
     <path d={filamentDust} fill="#f1dbc4" opacity=".29"/>
-    {__site.t(filaments.map(({ d, start, end, weight }, i) => <g key={i} style={delay(190 + i * 64)}>
+    {__site.t(filaments.map(({ d, start, end, weight, position }, i) => <g key={i} style={delay(190 + position * 64)}>
       <path d={d} fill="none" stroke={`url(#${id}-thread)`} strokeWidth="13" opacity=".025"/>
       <path d={d} fill="none" stroke={`url(#${id}-thread)`} strokeWidth="4" opacity=".075"/>
       <path className="mg-draw mg-filament" d={d} pathLength="1" fill="none" stroke={`url(#${id}-thread)`} strokeWidth={weight} strokeLinecap="round"/>
       <circle cx="72" cy={start} r="1.45" fill="#d1bed7" opacity=".65"/>
-      <g className="mg-arrive" style={delay(1320 + i * 64)}><circle cx="494" cy={end} r="13" fill={`url(#${id}-pearl)`}/><circle cx="494" cy={end} r={1.6 + i % 3 * .25} fill="#ffe6c8"/></g>
+      <g className="mg-arrive" style={delay(1320 + position * 64)}><circle cx="494" cy={end} r="13" fill={`url(#${id}-pearl)`}/><circle cx="494" cy={end} r={1.6 + i % 3 * .25} fill="#ffe6c8"/></g>
     </g>))}
     <text className="mg-label" x="61" y="479">{__site.t("Muestra")}</text><text className="mg-label" x="380" y="479">{__site.t("Lecturas")}</text>
-    <text className="mg-summary" x="48" y="527">{__site.t("Quince biomarcadores.")}</text>
+    <text className="mg-summary" x="48" y="527">{__site.t("Trece biomarcadores.")}</text>
   </>;
 }
 function ContextGraph({ id }: {

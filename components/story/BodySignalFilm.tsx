@@ -2,10 +2,9 @@
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from 'remotion';
 import { bodySignalState, bodyTitleTravel } from '@/lib/body-signal';
-import { signalLabels } from '@/lib/analog-motion';
+import { signalLabels, signalDescriptions } from '@/lib/analog-motion';
 import { BodySignalCanvas } from './BodySignalCanvas';
 import { bodyPlayback, BODY_PLAYBACK_DURATION } from '@/lib/body-signal-playback';
-const descriptions = ['Tu punto de partida para comparar futuras lecturas.', 'Repite la recogida y compara tus resultados con los anteriores.', 'Observa tu evolución junto a tus hábitos y cómo te encuentras.'];
 const ease = (n: number) => { const t = Math.max(0, Math.min(1, n)); return t * t * (3 - 2 * t); };
 export function BodySignalFilm({ autoplaySequence = false, ambientActive = false, sequenceComplete = false }: {
     autoplaySequence?: boolean;
@@ -30,7 +29,7 @@ export function BodySignalFilm({ autoplaySequence = false, ambientActive = false
   <BodySignalCanvas language={__site.locale} state={state} ambient={autoplaySequence && frame >= BODY_PLAYBACK_DURATION - 1} active={ambientActive}/>
   <div style={{ position: 'absolute', zIndex: 1, textShadow, left: pad, top: mobile ? undefined : '64%', bottom: mobile ? (autoplaySequence ? 158 : 106) : undefined, maxWidth: mobile ? width - 48 : 310 }}>
    <p style={{ fontSize: mobile ? 23 : 28, letterSpacing: '-.03em', marginBottom: 13 }}>{__site.t(state.phase === 'data' ? signalLabels[numberChapter] : 'Tu cuerpo cambia.')}</p>
-   <p style={{ fontSize: 16, lineHeight: 1.5, maxWidth: 300, color: '#bec4bb' }}>{__site.t(state.phase === 'data' ? descriptions[numberChapter] : 'Tus biomarcadores ayudan a observar esos cambios.')}</p>
+   <p style={{ fontSize: 16, lineHeight: 1.5, maxWidth: 300, color: '#bec4bb' }}>{__site.t(state.phase === 'data' ? signalDescriptions[numberChapter] : 'Tus biomarcadores ayudan a observar esos cambios.')}</p>
   </div>
  </AbsoluteFill>;
 }

@@ -18,8 +18,20 @@ export const businessLinks={
 };
 
 export const methodSteps=[
- {title:'Recoge tu muestra en casa.',copy:'La recogida se realiza con Tasso+. Después, tu muestra se analiza en un laboratorio.'},
- {title:'Recibe tus resultados.',copy:'El laboratorio analiza 15 biomarcadores. Sus resultados serán tu punto de partida para las siguientes lecturas.'},
- {title:'Entiende tus resultados.',copy:'Consulta tus valores junto a los rangos de EVA, tu edad biológica estimada y tu puntuación de longevidad.'},
- {title:'Compara cada 90 días.',copy:'Repite tu panel cada 90 días o consulta las opciones de paneles especializados y del panel completo. Cada lectura amplía tu historial.'},
+  {
+    "title": "Empieza en casa.",
+    "copy": "Recoge tu muestra con Tasso+. Tu primer kit incluye el análisis de 13 biomarcadores en laboratorio."
+  },
+  {
+    "title": "Entiende tus resultados iniciales.",
+    "copy": "Descubre qué mide cada marcador y cómo se compara tu valor con el intervalo del laboratorio."
+  },
+  {
+    "title": "Compara tu propio historial.",
+    "copy": "Reúne lecturas compatibles y considéralas junto a tu situación personal."
+  },
+  {
+    "title": "Elige tu próximo enfoque.",
+    "copy": "Cada trimestre, revisa lo que has aprendido y explora los paneles disponibles con la orientación de EVA."
+  }
 ];

@@ -18,6 +18,7 @@ function load(relative) {
   const file = ['', '.tsx', '.ts'].map(extension => base + extension).find(existsSync);
   assert(file, `Missing source: ${relative}`);
   if (modules.has(file)) return modules.get(file).exports;
+  if (file.endsWith('.json')) return JSON.parse(readFileSync(file, 'utf8'));
   const source = readFileSync(file, 'utf8');
   sources.set(file, source);
   const module = {exports: {}};
@@ -26,7 +27,7 @@ function load(relative) {
     module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022,
     jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true,
   }}).outputText;
-  const localRequire = name => name.startsWith('@/') ? load(name.slice(2))
+  const localRequire = name => name === 'next/navigation' ? {usePathname: () => '/es'} : name.startsWith('@/') ? load(name.slice(2))
     : name.startsWith('.') ? load(path.resolve(path.dirname(file), name)) : require(name);
   new Function('require', 'module', 'exports', output)(localRequire, module, module.exports);
   return module.exports;
@@ -58,6 +59,10 @@ for (const kind of ['results', 'context', 'evolution']) {
   artwork.add(baseline);
 }
 assert.equal(artwork.size, 3, 'Each graph chapter needs distinct artwork');
+const results = render(MethodGraphs, {kind:'results', active:false, visible:false});
+assert.equal((results.match(/class="mg-draw mg-filament"/g) || []).length, 13, 'Results artwork must contain thirteen actual signal filaments');
+for (const label of ['Trece biomarcadores, una lectura', 'Trece filamentos luminosos', 'Trece biomarcadores.']) assert(results.includes(label), `Results artwork describes its thirteen signals: ${label}`);
+assert(!/Quince/.test(results), 'Results artwork must not retain the old fifteen-marker wording');
 const home = render(MethodJourney, {}), calm = render(MethodJourney, {calm: true});
 assert.equal((home.match(/role="tab"/g) || []).length, 4);
 assert.equal((home.match(/role="tabpanel"/g) || []).length, 4);
@@ -70,7 +75,8 @@ for(const name of ['method-home-c-640.webp','method-home-c-1200.webp'])assert(ho
 const context = render(MethodGraphs, {kind:'context', active:false, visible:false});
 for (const label of ['Tu resultado', 'Intervalo de referencia', 'Rangos de EVA', 'El mismo valor.', 'Más contexto.']) assert(context.includes(label), `Contexto communicates its comparison: ${label}`);
 assert.equal(methodSteps.length, 4);
-const semanticChecks = [/casa[\s\S]*laboratorio/i, /15\s+biomarcador/i, /rangos|context|interpre/i, /90\s+d[ií]as/i];
+const semanticChecks = [/casa[\s\S]*laboratorio/i, /marcador[\s\S]*laboratorio/i, /historial|compatibles/i, /trimestre/i];
+assert(/13\s+biomarcadores/.test(methodSteps[0].copy), 'The first kit has exactly thirteen biomarkers');
 methodSteps.forEach((step, i) => {
   assert(semanticChecks[i].test(`${step.title} ${step.copy}`), `Step ${i + 1}: required service meaning`);
   assert(home.includes(step.title) && home.includes(step.copy), 'All method information remains in static HTML');

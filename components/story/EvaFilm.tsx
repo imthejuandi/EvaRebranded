@@ -11,10 +11,12 @@ import { HeroIntro } from './HeroIntro';
 import { heroLayout } from '@/lib/hero-layout';
 import { storyMotion } from '@/lib/story-motion';
 import {TassoFilmProcess} from './TassoFilmProcess';
+import {storyProgressAtFrame} from '@/lib/story-scroll-timing';
+import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
 export const DURATION = 981;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
 const range = (f: number, a: number, b: number, x: number, y: number) => interpolate(f, [a, b], [x, y], clamp);
-export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean', externalTasso = false }: {
+export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean', externalTasso = false, sceneMode = 'all', scrollWindow, scrollGeometry }: {
     ambientRunner?: boolean;
     onRunnerBlocked?: () => void;
     language?: SignalLanguage;
@@ -25,13 +27,20 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
     scrollDriver?: StoryScrollDriver;
     tassoVariant?: 'clean' | 'labelled';
     externalTasso?: boolean;
+    sceneMode?: 'all' | 'opening' | 'insight' | 'life';
+    scrollWindow?: readonly [number, number];
+    scrollGeometry?: {top: number; span: number};
 } = {}) {
     const __site = useSiteLanguage();
+    const kit = kitInsightCopy[__site.locale];
     const f = useCurrentFrame();
     const { width: w, height: h } = useVideoConfig();
     const environment = useRemotionEnvironment();
     const still = environment.isRendering || environment.isStudio;
     const mobile = w <= 700;
+    const compact = mobile && h <= 620;
+    const startProgress = storyProgressAtFrame(scrollWindow?.[0] ?? 0);
+    const endProgress = storyProgressAtFrame(scrollWindow?.[1] ?? 980);
     const pad = mobile ? 24 : 48;
     const nativeScroll = scrollDriver && !still ? scrollDriver : undefined;
     const root = useRef<HTMLDivElement>(null), nativePainter = useRef<ReturnType<typeof createStoryScrollPainter> | null>(null);
@@ -51,7 +60,10 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         if (!nativeScroll || !root.current)
             return;
         const journey = root.current.closest<HTMLElement>('.scroll-journey');
-        const compositor = journey ? installStoryScrollCompositor(root.current, journey, { width: w, height: h, overflow, top: journey.getBoundingClientRect().top + window.scrollY, span: journey.offsetHeight - h }) : null;
+        const localSpan = scrollGeometry?.span ?? (journey ? journey.offsetHeight - h : 0);
+        const fullSpan = localSpan / (endProgress - startProgress);
+        const localTop = scrollGeometry?.top ?? (journey ? journey.getBoundingClientRect().top + window.scrollY : 0);
+        const compositor = journey ? installStoryScrollCompositor(root.current, journey, { width: w, height: h, overflow, top: localTop - fullSpan * startProgress, span: fullSpan }) : null;
         const paint = createStoryScrollPainter(root.current, compositor?.owned);
         nativePainter.current = paint;
         root.current.dataset.scrollEngine = compositor ? 'compositor-timeline' : 'native-transforms';
@@ -64,7 +76,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         setRunnerActive(heroActive);
         const stop = nativeScroll.subscribe(update);
         return () => { stop(); compositor?.dispose(); nativePainter.current = null; };
-    }, [nativeScroll, w, h, overflow]);
+    }, [nativeScroll, w, h, overflow, startProgress, endProgress, scrollGeometry?.top, scrollGeometry?.span]);
     // Reapply the current pose after a coarse React state change or responsive resize.
     useLayoutEffect(() => { if (nativeScroll)
         nativePainter.current?.(nativeScroll.current, w, h, overflow); });
@@ -76,7 +88,8 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
             void image.decode().then(() => { image.dataset.decodeState = 'ready'; }).catch(() => { });
         }
     }, [still]);
-    return <AbsoluteFill ref={root} data-film-renders={renders.current} data-scroll-engine={nativeScroll ? 'native-transforms' : 'remotion'} data-rendered-frame={f} data-scene={scene} style={{ background: '#0b1010', color: '#f3f0e8', fontFamily: 'Arial, Helvetica, sans-serif', overflow: 'hidden' }}>
+    return <AbsoluteFill ref={root} data-story-scene={sceneMode} data-film-renders={renders.current} data-scroll-engine={nativeScroll ? 'native-transforms' : 'remotion'} data-rendered-frame={f} data-scene={scene} style={{ background: '#0b1010', color: '#f3f0e8', fontFamily: 'Arial, Helvetica, sans-serif', overflow: 'hidden' }}>
+  {(sceneMode === 'all' || sceneMode === 'opening') && <>
   <AbsoluteFill data-layer="human" style={{ overflow: 'hidden', translate: `0 ${motion.humanY * h}px`, visibility: Math.abs(motion.humanY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.humanY) < 1 ? 'translate' : 'auto' }}>
    <div data-layer="runner-plane" style={{ position: 'absolute', left: '50%', top: hero.runnerTop, width: hero.runnerWidth, height: hero.runnerHeight, translate: `calc(-50% + ${runnerX}px) 0`, scale: 1 + travel * .08, willChange: f < 200 ? 'translate, scale' : 'auto' }}><TrackedRunner width={hero.runnerWidth} height={hero.runnerHeight} viewportWidth={w} viewportHeight={h} top={hero.runnerTop} saludTop={hero.saludTop} enabled={ambientRunner} active={nativeScroll ? runnerActive : f < 200} language={__site.locale} onPlaybackBlocked={onRunnerBlocked} onSignalsReady={onSignalsReady} signalsImmediate={signalsImmediate} arrivalEnabled={arrivalEnabled} onArrivalUnavailable={onArrivalUnavailable}/></div>
    <div data-hero-reveal="headline" style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}><HeroIntro width={hero.introWidth} height={hero.introHeight} style={{ position: 'absolute', left: pad, top: hero.introTop, translate: `${range(f, 45, 160, 0, -w * 1.05)}px 0` }}/>
@@ -86,18 +99,19 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
   <AbsoluteFill data-layer="product-scene" style={{ background: externalTasso ? '#000' : '#f3f0e8', color: '#171b18', overflow: 'hidden', translate: `0 ${motion.productY * h}px`, visibility: Math.abs(motion.productY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.productY) < 1 ? 'translate' : 'auto' }}>
    <>{!externalTasso ? <TassoFilmProcess frame={f} scrollDriver={nativeScroll} variant={tassoVariant}/> : null}</>
   </AbsoluteFill>
-  <AbsoluteFill data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
-   <div style={{ position: 'absolute', top: mobile ? '19%' : '16%', left: pad, fontSize: mobile ? 51 : w * .072, letterSpacing: '-.065em', lineHeight: .98 }}>{__site.t("Tus datos.")}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{__site.t("Con contexto.")}</span></div>
+  </>}
+  {(sceneMode === 'all' || sceneMode === 'insight') && <AbsoluteFill data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
+   <div style={{ position: 'absolute', top: mobile ? '19%' : '16%', left: pad, fontSize: mobile ? Math.min(51, w * .145) : w * .072, letterSpacing: '-.065em', lineHeight: .98 }}>{kit.heading[0]}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{kit.heading[1]}</span></div>
    <div ref={track} data-layer="insight-track" data-overflow={overflow} style={{ position: 'absolute', left: pad, top: mobile ? '46%' : '47%', display: 'flex', gap: pad, width: 'max-content', translate: `${-range(f, 590, 635, 0, overflow)}px 0` }}>
-    <div style={{ width: w - pad * 2, display: 'flex', alignItems: 'center', gap: mobile ? 22 : 55 }}><span style={{ fontSize: mobile ? Math.min(w * .37, 155) : w * .22, letterSpacing: '-.08em', lineHeight: .8 }}>{__site.t("15")}</span><span style={{ fontSize: mobile ? 22 : 35, maxWidth: 240, lineHeight: 1.05 }}>{__site.t("biomarcadores.")}<br />{__site.t("Cada")}<br />{__site.t("90 d\u00EDas.")}</span></div>
-    <div style={{ width: w - pad * 2, fontSize: mobile ? 25 : 42, lineHeight: 1.12 }}>{__site.t("Tus resultados, explicados.")}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{__site.t("Tu evoluci\u00F3n, en perspectiva.")}</span><p style={{ fontSize: mobile ? 16 : 18, lineHeight: 1.4, maxWidth: 420, marginTop: 25 }}>{__site.t("Compara tus lecturas a lo largo del tiempo y observa c\u00F3mo cambian tus biomarcadores.")}</p></div>
+    <div data-kit-panel="count" style={{ width: w - pad * 2, display: 'flex', alignItems: 'center', gap: mobile ? 22 : 55 }}><span style={{ fontSize: mobile ? Math.min(w * .37, 155) : w * .22, letterSpacing: '-.08em', lineHeight: .8 }}>13</span><span style={{ fontSize: mobile ? 22 : 35, maxWidth: 240, lineHeight: 1.05 }}>{kit.countLabel.map((line, index) => <span key={line}>{index > 0 && <br/>}{line}</span>)}</span></div>
+    <div data-kit-panel="markers" style={{ width: w - pad * 2, fontSize: compact ? 22 : mobile ? 25 : 42, lineHeight: 1.12 }}><span>{kit.title}</span><p style={{ fontSize: compact ? 13 : mobile ? 16 : 18, lineHeight: 1.4, maxWidth: 620, marginTop: compact ? 12 : 25 }}>{kit.intro}</p><ul style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', columnGap: 16, rowGap: compact ? 3 : 6, fontSize: compact ? 12 : mobile ? 14 : 18, lineHeight: 1.2, maxWidth: 620, margin: `${compact ? 10 : 18}px 0 0`, padding: 0, listStyle: 'none' }}>{kit.markers.map(marker => <li key={marker}>{marker}</li>)}</ul></div>
    </div>
-  </AbsoluteFill>
-  <AbsoluteFill data-layer="return-to-life" style={{ background: '#0b1010', overflow: 'hidden', translate: `0 ${motion.lifeY * h}px`, visibility: Math.abs(motion.lifeY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.lifeY) < 1 ? 'translate' : 'auto' }}>
+  </AbsoluteFill>}
+  {(sceneMode === 'all' || sceneMode === 'life') && <AbsoluteFill data-layer={sceneMode === 'life' ? 'life-passage' : 'return-to-life'} style={{ background: '#0b1010', overflow: 'hidden', translate: `0 ${sceneMode === 'life' ? 0 : motion.lifeY * h}px`, visibility: sceneMode === 'life' || Math.abs(motion.lifeY) < 1 ? 'visible' : 'hidden', willChange: Math.abs(motion.lifeY) < 1 ? 'translate' : 'auto' }}>
    <Img data-motion="return-image" data-motion-preload="return" src={staticFile("art/stretch.jpg")} loading="eager" decoding="async" style={{ position: 'absolute', height: '100%', width: mobile ? '100%' : '60%', left: mobile ? '0' : '22%', objectFit: 'cover', maskImage: 'radial-gradient(ellipse,black 15%,transparent 74%)', scale: range(f, 710, 840, 1.18, 1) }}/>
    <div data-motion="return-title" style={{ position: 'absolute', left: pad, top: mobile ? '27%' : '26%', fontSize: mobile ? w * .18 : w * .115, letterSpacing: '-.07em', lineHeight: .97, translate: `0 ${range(f, 735, 800, 60, 0)}px` }}>{__site.t("Y volver")}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{__site.t("a la vida.")}</span></div>
    <p style={{ position: 'absolute', right: pad, bottom: mobile ? 135 : 110, fontSize: mobile ? 18 : 23, lineHeight: 1.3, maxWidth: mobile ? 230 : 310 }}>{__site.t("Cuidarte tambi\u00E9n es hacer")}<br />{__site.t("espacio para lo que disfrutas.")}</p>
-  </AbsoluteFill>
+  </AbsoluteFill>}
  </AbsoluteFill>;
 }
 /** Keep the analog microletters alive without rerendering all four scenes on each scroll tick. */

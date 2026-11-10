@@ -5,12 +5,12 @@ import { businessLinks, methodSteps } from '@/lib/landing-content';
 import { MethodGraphs } from './MethodGraphs';
 import { MethodPouchStill } from './MethodPouchStill';
 // Dedicated method artwork: a new home ritual photograph and three original visual studies.
-const chapters = ['En casa', 'Resultados', 'Contexto', 'Evolución'];
+const chapters = ['En casa', 'Resultados', 'Contexto', 'Próximo enfoque'];
 const captions = [
     ['EN CASA', 'TU PRIMER PASO'],
-    ['15 BIOMARCADORES', 'TU PUNTO DE PARTIDA'],
+    ['13 BIOMARCADORES', 'TU PUNTO DE PARTIDA'],
     ['TU LECTURA', 'EN PERSPECTIVA'],
-    ['CADA 90 DÍAS', 'COMPARA TUS LECTURAS'],
+    ['TU PRÓXIMO ENFOQUE', 'ELIGE CON ORIENTACIÓN'],
 ];
 function JourneyArrow({ back = false }: {
     back?: boolean;
@@ -77,8 +77,8 @@ export function MethodJourney({ calm = false }: {
     return <section className={'method-journey' + (calm ? ' method-journey-calm' : '') + (hasChanged ? ' method-has-changed' : '')} id="el-metodo" aria-labelledby="routine-title">
     <div className="section-kicker"><span>{__site.t("02 / EL M\u00C9TODO")}</span><span>{__site.t("UN MOMENTO PARA TI.")}</span></div>
     <div className="method-heading">
-      <h2 id="routine-title">{__site.t("Cuatro pasos.")}<br /><em>{__site.t("A tu ritmo.")}</em></h2>
-      <p>{__site.t("Recogida de muestra en casa, an\u00E1lisis en laboratorio acreditado. De tu primera muestra al seguimiento cada 90 d\u00EDas.")}</p>
+      <h2 id="routine-title">{__site.t("Tus próximos pasos.")}<br /><em>{__site.t("A tu ritmo.")}</em></h2>
+      <p>{__site.t("De tu primera muestra a elegir qué explorar después, con orientación.")}</p>
     </div>
 
     <div className="method-chapters" role="tablist" aria-label={__site.t("Los cuatro pasos de EVA")} aria-orientation="horizontal">

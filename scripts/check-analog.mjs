@@ -2,11 +2,17 @@ import assert from 'node:assert/strict';
 import {signalState,signalStops,signalWords,SIGNAL_DURATION} from '../lib/analog-motion.ts';
 const lit=state=>state.points.filter(p=>p.r>0);
 const mask=state=>state.points.map(p=>p.r>0);
-const originalCounts=[27,35,27],previousCounts=[108,140,108];
+const glyphCellCounts=[25,35,27];
+assert.deepEqual(signalWords,['13','90','TÚ']);
+// Check the rendered second digit, including cells that distinguish 3 from 5.
+const three=['11110','00001','00001','01110','00001','00001','11110'];
+for(let row=0;row<7;row++)for(let col=0;col<5;col++){
+ const on=lit(signalState(0)).some(p=>Math.abs(p.x-(col+6))<.5&&Math.abs(p.y-(row+1))<.5);
+ assert.equal(on,three[row][col]==='1','The opening board must visibly draw the authored 3, not the old 5');
+}
 for(let i=0;i<3;i++){
  const count=lit(signalState(signalStops[i])).length;
- assert.equal(count,previousCounts[i]*2,`${signalWords[i]} must have exactly twice the previous board's lit dots`);
- assert.equal(count,originalCounts[i]*8,`${signalWords[i]} must have exactly eight times the initial 03.2 lit dots`);
+ assert.equal(count,glyphCellCounts[i]*8,`${signalWords[i]} must retain eight fixed lamps per authored glyph cell`);
 }
 const coordinates=signalState(0).points.map(({x,y})=>({x,y}));
 assert.equal(coordinates.length,624,'The 78 original lamp positions must each have eight fixed lamps');
@@ -46,4 +52,4 @@ for(const [start,end] of [[55,135],[215,295]]){
 assert.deepEqual(signalState(-50),signalState(0));assert.deepEqual(signalState(999),signalState(360));
 assert.deepEqual(signalState(0),signalState(55),'Opening state must have a readable hold');
 assert.deepEqual(signalState(160),signalState(215),'Middle state must have a readable hold');
-console.log('Analog board passed: doubled current endpoints (216/280/216), 624 fixed lamps on a staggered grid plus accent, separated circles, scattered individual on/off steps, readable holds, bounded and reversible across 361 frames.');
+console.log('Analog board passed: authored 13/90/TÚ endpoints (200/280/216), 624 fixed lamps on a staggered grid plus accent, separated circles, scattered individual on/off steps, readable holds, bounded and reversible across 361 frames.');
