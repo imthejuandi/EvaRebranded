@@ -1,9 +1,10 @@
 'use client';
 
-import {useEffect, useId, useRef, useState, type CSSProperties} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {alexStoryCopy, alexStoryReadings} from '@/lib/site-content/alex-story-copy';
 import {explanationLevels, resultExplanationCopy, type ExplanationLevel} from '@/lib/site-content/result-explanation-copy';
+import {ExplanationSetting} from './ExplanationSetting';
 import './guided-result-story.css';
 
 const readings = alexStoryReadings;
@@ -16,7 +17,7 @@ export function GuidedResultStory({calm = false}: {calm?: boolean}) {
   const [level, setLevel] = useState<ExplanationLevel>('simple');
   const [entered, setEntered] = useState(false), [motionReady, setMotionReady] = useState(false);
   const [announcement, setAnnouncement] = useState('');
-  const root = useRef<HTMLDivElement>(null), id = useId();
+  const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (calm || matchMedia('(prefers-reduced-motion: reduce)').matches) {setEntered(true); return;}
@@ -57,10 +58,7 @@ export function GuidedResultStory({calm = false}: {calm?: boolean}) {
           <svg viewBox="0 0 480 70" role="img" aria-label={c.historyLabel} preserveAspectRatio="none"><path d={historyPath} pathLength="1"/>{historyPoints.map((point, index) => <circle key={index} cx={point.x} cy={point.y} r={index === 3 ? 4 : 3}/>)}</svg>
           <div className="guided-history-values">{readings.map((value, index) => <span key={index}>{locale === 'en' ? value.toFixed(1) : value.toFixed(1).replace('.', ',')}</span>)}</div>
         </div>
-        <p className="guided-control-label" id={id}>{labels.label}</p>
-        <div className="guided-depth-control" role="group" aria-labelledby={id} style={{'--depth-index': explanationLevels.indexOf(level)} as CSSProperties}>
-          {explanationLevels.map(depth => <button type="button" key={depth} aria-pressed={level === depth} onClick={() => choose(depth)}><span>{labels.levels[depth]}</span><small>{c.purposes[depth]}</small></button>)}
-        </div>
+        <ExplanationSetting level={level} onLevel={choose}/>
         <div className="guided-prose-stack">{explanationLevels.map(depth => <p key={depth} data-active={depth === level} aria-hidden={depth !== level}>{c.paragraphs[depth]}</p>)}</div>
         <p className="guided-causal-limit">{c.limit}</p>
         <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</span>
