@@ -38,6 +38,7 @@
 .guided-history-values{display:flex;justify-content:space-between;gap:3px;margin-top:9px}
 .guided-history-values>span{display:block;width:32px}
 .guided-history-values .dot-number{display:block;height:16px;width:auto;max-width:32px;color:#fffdf6}
+.guided-history-values .dot-number>path:last-child{stroke:currentColor;stroke-width:.16}
 .guided-causal-limit{font-size:11px;line-height:1.5;opacity:.9;margin:23px 0 0}
 .guided-disclosure{font-size:11px;line-height:1.5;color:#596057;margin:16px 18px 0;max-width:690px}
 .guided-light{position:absolute;inset:-30% -70%;pointer-events:none;opacity:0;background:linear-gradient(110deg,transparent 43%,#fffdf624 49%,transparent 55%);transform:translateX(-35%)}
