@@ -177,10 +177,10 @@
       "implemented": {
         "placement": "Moved existing gallery and adjacent range note to ScrollStory, after the opening story / reduced-motion Tasso summary and before SignalContent. Removed original render in HealthEditorial.",
         "defaultMarker": "hs-CRP; existing demo values, units, ranges and history unchanged.",
-        "copy": "First-result starting point, reference ranges and comparison with earlier readings.",
+        "copy": "Concise headline: Know yourself. See what changes. One supporting sentence explains interpretation and change over time.",
         "uploadAction": "Interpret your past labs / Start for free, preserving the existing free-signup and upload return intent.",
         "demoScope": "Visible label distinguishes the wider illustrative report from the 13-marker kit.",
-        "design": "Existing heading, console, glass treatment and controls retained. The context link now points down to its later section.",
+        "design": "Copy moves above the report. A full-width landscape console places the main chart beside the existing five marker tiles on desktop; phones keep the stacked interface. Existing glass material, specimen values, controls and free-start intent retained.",
         "performance": "Gallery remains behind a memo boundary after moving out of the memoized editorial parent."
       },
       "verification": {
@@ -198,7 +198,6 @@
         "upstreamExpansion": "The table expands the page by 431.5px in the desktop check. A real wheel arrival aligns the next scene to its updated position within 0.11px. A focused lifecycle regression check verifies the old position cannot trigger capture after upstream expansion.",
         "unchanged": [
           "All specimen values, units, ranges and histories",
-          "Glass console CSS and typography",
           "Opening story/media/timings",
           "Tasso film and playback controls"
         ],
@@ -208,6 +207,12 @@
           "Signal-arrival lifecycle regression",
           "Responsive browser and native arrival checks"
         ]
+      },
+      "visualRefinement": {
+        "location": "#biomarcadores, directly after the three-step Tasso film.",
+        "scope": "Compact heading and explanatory copy, wider dashboard, visible illustrative-report and kit-scope captions below the interface.",
+        "verification": "Responsive browser checks cover all three report views, marker selection, reading navigation, keyboard activation, full-table expansion, free-signup/upload query intent and downstream scene geometry.",
+        "verified": "Passed 9 browser cases: 1440×900, 1024×768, 768×1024, 390×844, 320×568 EN, 320×568 ES, 844×390 landscape, plus EN/ES reduced motion. Exact assay membership, grouped hierarchy, viewport bounds, reversible reveal, all dashboard views, marker/reading controls, keyboard activation, table expansion, free-upload intent and zero page errors. TypeScript, static export, story-window contracts and English-route audit pass."
       }
     },
     {
@@ -243,7 +248,7 @@
       "implemented": {
         "location": "#kit-inicial, directly after the results console and its range explanation.",
         "order": "Opening now ends on the fully visible Tasso section at original frame 465. Results follow directly; the original amber scene is reused at frames 555–715 after the console.",
-        "copy": "13 biomarkers in the starting kit; exact 13-marker list and short measurement-category explanation in the existing horizontal panels.",
+        "copy": "Exact 13 assays grouped into Heart & cholesterol, Liver & proteins, Kidneys & metabolism, Inflammation, and Recent blood sugar. Visible title: What your kit measures.",
         "counts": "Actual analog/halftone glyphs, static equivalents, body-signal captions and method filaments all use 13. The 90 morph is a guided review opportunity.",
         "motion": "Existing native painter, authored physical scroll distances, material, runner and Tasso footage retained. New scene windows track upstream layout changes.",
         "navigation": "The third and fourth opening controls navigate to results and kit anchors; current-section reporting follows document position. Offscreen Tasso controls become inert."
@@ -263,6 +268,13 @@
           "responsive browser checks"
         ],
         "media": "No new images or videos generated. Original Tasso footage, runner and lifestyle asset preserved."
+      },
+      "visualRefinement": {
+        "location": "#kit-inicial, the amber scene after the results console and range explanation.",
+        "direction": "Oversized 13, stronger display/body weight contrast, ruled category index, compact italic group numbers, and meaningful reading order. Existing amber palette, serif contrast and reversible horizontal scroll retained.",
+        "referenceSource": "Savee public showcase at https://savee.com/; inspected typography references https://m.savee-cdn.com/img/new-home/grid/030.avif, /031.avif, /040.avif and /056.avif. Search redirects to sign-in; no private saved collections were accessed.",
+        "accessibility": "Shared grouped index in the visible reduced-motion layout and screen-reader narrative, with every assay present once.",
+        "verified": "Passed 9 browser cases: 1440×900, 1024×768, 768×1024, 390×844, 320×568 EN, 320×568 ES, 844×390 landscape, plus EN/ES reduced motion. Exact assay membership, grouped hierarchy, viewport bounds, reversible reveal, all dashboard views, marker/reading controls, keyboard activation, table expansion, free-upload intent and zero page errors. TypeScript, static export, story-window contracts and English-route audit pass."
       }
     },
     {

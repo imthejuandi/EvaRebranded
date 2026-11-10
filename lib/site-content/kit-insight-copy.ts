@@ -1,16 +1,32 @@
 export const kitInsightCopy = {
   en: {
+    eyebrow: 'YOUR STARTING KIT',
     heading: ['Your data.', 'In context.'],
     countLabel: ['biomarkers.', 'In your', 'starting kit.'],
-    title: 'Know what you’re measuring.',
+    title: 'What your kit measures.',
     intro: 'Explore blood fats, recent blood sugar, inflammation, and markers related to your liver and kidneys.',
     markers: ['Albumin', 'ALP', 'hs-CRP', 'Creatinine', 'Urea BUN', 'Uric acid', 'Total cholesterol', 'LDL Cholesterol', 'HDL-Cholesterol', 'Triglycerides', 'ALT', 'GGT', 'Fructosamine'],
+    groups: [
+      {label: 'Heart & cholesterol', markers: [6, 7, 8, 9]},
+      {label: 'Liver & proteins', markers: [0, 1, 10, 11]},
+      {label: 'Kidneys & metabolism', markers: [3, 4, 5]},
+      {label: 'Inflammation', markers: [2]},
+      {label: 'Recent blood sugar', markers: [12]},
+    ],
   },
   es: {
+    eyebrow: 'TU KIT INICIAL',
     heading: ['Tus datos.', 'Con contexto.'],
     countLabel: ['biomarcadores.', 'En tu', 'kit inicial.'],
-    title: 'Entiende qué estás midiendo.',
+    title: 'Qué mide tu kit.',
     intro: 'Explora grasas en sangre, inflamación, azúcar en sangre y marcadores relacionados con el hígado y los riñones.',
     markers: ['Albúmina', 'ALP', 'hs-CRP', 'Creatinina', 'Urea BUN', 'Ácido úrico', 'Colesterol total', 'Colesterol LDL', 'Colesterol HDL', 'Triglicéridos', 'ALT', 'GGT', 'Fructosamina'],
+    groups: [
+      {label: 'Corazón y colesterol', markers: [6, 7, 8, 9]},
+      {label: 'Hígado y proteínas', markers: [0, 1, 10, 11]},
+      {label: 'Riñones y metabolismo', markers: [3, 4, 5]},
+      {label: 'Inflamación', markers: [2]},
+      {label: 'Azúcar en sangre reciente', markers: [12]},
+    ],
   },
 } as const;

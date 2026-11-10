@@ -7,6 +7,7 @@ import {createStoryScrollDriver} from '@/lib/story-scroll-driver';
 import {KIT_SCENE_WINDOW, LIFE_SCENE_WINDOW, STORY_SCROLL_HEIGHT_SVH, storyFrameAtProgress, storyProgressAtFrame} from '@/lib/story-scroll-timing';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
 import {EvaFilm, DURATION} from './EvaFilm';
+import {KitMarkerIndex} from './KitMarkerIndex';
 import './story-scene-passage.css';
 
 type Geometry = {width: number; height: number; top: number; span: number};
@@ -48,7 +49,7 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
   }, [calm, driver, start, end]);
 
   const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, driver, sceneWindow, geometry]);
-  const narrative = kind === 'kit' ? <><h2 id={id + '-title'}>{copy.heading.join(' ')}</h2><p>13 {copy.countLabel.join(' ')}</p><h3>{copy.title}</h3><p>{copy.intro}</p><ul>{copy.markers.map(marker => <li key={marker}>{marker}</li>)}</ul></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
+  const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><p className="kit-summary-intro">{copy.intro}</p><KitMarkerIndex copy={copy}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
   if (calm) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
 
   return <section id={id} className={'scroll-journey story-scene-passage ' + kind} style={{height: `${100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>

@@ -13,6 +13,8 @@ import { storyMotion } from '@/lib/story-motion';
 import {TassoFilmProcess} from './TassoFilmProcess';
 import {storyProgressAtFrame} from '@/lib/story-scroll-timing';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
+import {KitMarkerIndex} from './KitMarkerIndex';
+import './story-scene-passage.css';
 export const DURATION = 981;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
 const range = (f: number, a: number, b: number, x: number, y: number) => interpolate(f, [a, b], [x, y], clamp);
@@ -100,11 +102,11 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
    <>{!externalTasso ? <TassoFilmProcess frame={f} scrollDriver={nativeScroll} variant={tassoVariant}/> : null}</>
   </AbsoluteFill>
   </>}
-  {(sceneMode === 'all' || sceneMode === 'insight') && <AbsoluteFill data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
-   <div style={{ position: 'absolute', top: mobile ? '19%' : '16%', left: pad, fontSize: mobile ? Math.min(51, w * .145) : w * .072, letterSpacing: '-.065em', lineHeight: .98 }}>{kit.heading[0]}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{kit.heading[1]}</span></div>
-   <div ref={track} data-layer="insight-track" data-overflow={overflow} style={{ position: 'absolute', left: pad, top: mobile ? '46%' : '47%', display: 'flex', gap: pad, width: 'max-content', translate: `${-range(f, 590, 635, 0, overflow)}px 0` }}>
-    <div data-kit-panel="count" style={{ width: w - pad * 2, display: 'flex', alignItems: 'center', gap: mobile ? 22 : 55 }}><span style={{ fontSize: mobile ? Math.min(w * .37, 155) : w * .22, letterSpacing: '-.08em', lineHeight: .8 }}>13</span><span style={{ fontSize: mobile ? 22 : 35, maxWidth: 240, lineHeight: 1.05 }}>{kit.countLabel.map((line, index) => <span key={line}>{index > 0 && <br/>}{line}</span>)}</span></div>
-    <div data-kit-panel="markers" style={{ width: w - pad * 2, fontSize: compact ? 22 : mobile ? 25 : 42, lineHeight: 1.12 }}><span>{kit.title}</span><p style={{ fontSize: compact ? 13 : mobile ? 16 : 18, lineHeight: 1.4, maxWidth: 620, marginTop: compact ? 12 : 25 }}>{kit.intro}</p><ul style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', columnGap: 16, rowGap: compact ? 3 : 6, fontSize: compact ? 12 : mobile ? 14 : 18, lineHeight: 1.2, maxWidth: 620, margin: `${compact ? 10 : 18}px 0 0`, padding: 0, listStyle: 'none' }}>{kit.markers.map(marker => <li key={marker}>{marker}</li>)}</ul></div>
+  {(sceneMode === 'all' || sceneMode === 'insight') && <AbsoluteFill className="kit-insight-scene" data-kit-mobile={mobile} data-kit-compact={compact} data-kit-short={!mobile && h < 620} data-layer="insight-scene" style={{ background: '#e9a067', color: '#22271f', overflow: 'hidden', translate: `0 ${motion.insightY * h}px`, visibility: Math.abs(motion.insightY) >= 1 ? 'hidden' : 'visible', willChange: Math.abs(motion.insightY) < 1 ? 'translate' : 'auto' }}>
+   <div className="kit-scene-heading" style={{left: pad, right: pad}}><p className="kit-eyebrow">{kit.eyebrow}<span aria-hidden="true">01—13</span></p><h2 style={{fontSize: compact ? Math.min(43, w * .145) : mobile ? Math.min(54, w * .145) : Math.min(110, w * .075, h * .115)}}>{kit.heading[0]}<br /><em>{kit.heading[1]}</em></h2></div>
+   <div ref={track} data-layer="insight-track" data-overflow={overflow} className="kit-insight-track" style={{left: pad, gap: pad, translate: `${-range(f, 590, 635, 0, overflow)}px 0` }}>
+    <div data-kit-panel="count" className="kit-count-panel" style={{width: w - pad * 2}}><span className="kit-count-number" style={{fontSize: mobile ? Math.min(w * .43, 175) : Math.min(w * .25, 360, h * .4)}}>13</span><div className="kit-count-copy"><strong>{kit.countLabel[0]}</strong><p>{kit.countLabel.slice(1).join(' ')}</p><span className="kit-count-rule" aria-hidden="true"/></div></div>
+    <div data-kit-panel="markers" style={{width: w - pad * 2}}><KitMarkerIndex copy={kit}/></div>
    </div>
   </AbsoluteFill>}
   {(sceneMode === 'all' || sceneMode === 'life') && <AbsoluteFill data-layer={sceneMode === 'life' ? 'life-passage' : 'return-to-life'} style={{ background: '#0b1010', overflow: 'hidden', translate: `0 ${sceneMode === 'life' ? 0 : motion.lifeY * h}px`, visibility: sceneMode === 'life' || Math.abs(motion.lifeY) < 1 ? 'visible' : 'hidden', willChange: Math.abs(motion.lifeY) < 1 ? 'translate' : 'auto' }}>

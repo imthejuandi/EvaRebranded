@@ -27,7 +27,7 @@ export function BiomarkerGallery({ calm = false }: {
     return <section id="biomarcadores" className={'biomarker-lab' + (calm ? ' bio-calm' : '')} aria-labelledby="markers-title" data-biomarker-view={view}>
   <div className="section-kicker"><span>{__site.t("TUS RESULTADOS, EXPLICADOS")}</span><span>{__site.t("UNA LECTURA CON CONTEXTO")}</span></div>
   <div className="bio-layout">
-   <div className="bio-intro"><p className="eyebrow">{__site.t("TUS CIFRAS, CON OTRA PERSPECTIVA")}</p><h2 id="markers-title">{__site.t("Conocerte.")}<br />{__site.t("Y ver c\u00F3mo")}<br /><em>{__site.t("cambias.")}</em></h2><p>{__site.t("Tu primer resultado es un punto de partida.")}</p><p>{__site.t("Consulta un resultado junto a sus intervalos de referencia y compáralo con lecturas anteriores. Tu propio historial ayuda a poner cada nueva analítica en contexto.")}</p><a className="text-link" href={__site.href(uploadHref)}><span>{__site.t("Interpreta tus análisis previos")}<br/><small>{__site.t("Empieza gratis")}</small></span><Arrow/></a><span className="bio-demo-label"><i />{__site.t("Informe ilustrativo · Algunos marcadores no están en el kit de 13.")}</span></div>
+   <header className="bio-intro"><h2 id="markers-title">{__site.t("Conocerte.")}<br/><em>{__site.t("Ver cómo cambias.")}</em></h2><div className="bio-intro-detail"><p>{__site.t("Entiende tus resultados en contexto. Sigue tus cambios a lo largo del tiempo.")}</p><a className="text-link" href={__site.href(uploadHref)}><span>{__site.t("Interpreta tus análisis previos")}<br/><small>{__site.t("Empieza gratis")}</small></span><Arrow/></a></div></header>
    <div className="bio-console" aria-label={__site.t("Demostraci\u00F3n de la interfaz de biomarcadores EVA")}>
     <div className="bio-console-head"><a href={__site.href("#una-perspectiva")} className="bio-round" aria-label={__site.t("Descubre cómo pone EVA tus resultados en contexto")}><Arrow direction="down"/></a><span>{__site.t("Tu salud, en perspectiva")}</span><details className="bio-info"><summary aria-label={__site.t("Acerca de esta demostraci\u00F3n")}>{__site.t("i")}</summary><p>{__site.t("Esta demostraci\u00F3n re\u00FAne cuatro lecturas trimestrales ilustrativas. No corresponde a una persona ni anticipa tus resultados.")}</p></details></div>
     <div className="bio-views" role="group" aria-label={__site.t("Vista del biomarcador")}>{__site.t(views.map(v => <button key={v} aria-pressed={view === v} onClick={() => setView(v)}>{__site.t(v)}</button>))}</div>
@@ -46,6 +46,6 @@ export function BiomarkerGallery({ calm = false }: {
     <div className="bio-console-foot"><span>{__site.t("eva")}</span><p>{__site.t("Tus resultados.")}<br />{__site.t("A lo largo del tiempo.")}</p></div>
    </div>
   </div>
-  <p className="illustration-note">{__site.t("Datos y recorrido ilustrativos. Los intervalos mostrados no son una recomendaci\u00F3n individual; su interpretaci\u00F3n depende del contexto de cada persona.")}</p>
+  <div className="bio-report-caption"><span className="bio-demo-label"><i />{__site.t("Informe ilustrativo · Algunos marcadores no están en el kit de 13.")}</span><p className="illustration-note">{__site.t("Datos y recorrido ilustrativos. Los intervalos mostrados no son una recomendaci\u00F3n individual; su interpretaci\u00F3n depende del contexto de cada persona.")}</p></div>
  </section>;
 }
