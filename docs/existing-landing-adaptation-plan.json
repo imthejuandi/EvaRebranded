@@ -62,7 +62,7 @@
         "support": "Start free with your existing blood test results.",
         "audienceIntent": "A clear starting point—or more meaning from the testing you already do.",
         "commercialLine": "Or order your first kit · 13 biomarkers · €99 + VAT",
-        "primaryAction": "Upload your labs · Start free"
+        "primaryAction": "Interpret your past labs for free"
       },
       "acceptanceGate": [
         "The first viewport explains the service and confirmed offer without waiting for an animation.",
@@ -90,7 +90,7 @@
         ],
         "mediaAndMotion": "Original assets, tracking coordinates, runner crop, media and motion clocks unchanged. Only the longer mobile LDL caption uses a smaller font to preserve its screen margin."
       },
-      "refinement": "User requested free start using previous labs as the main action and a secondary kit path. Copy expert reviewed the wording. User selected “Bad” cholesterol for LDL. Free signup preserves plan=free and redirect=/es/upload through existing account preview."
+      "refinement": "User requested free start using previous labs as the main action and a secondary kit path. Copy expert reviewed the wording. User selected “Bad” cholesterol for LDL. Free signup preserves plan=free and redirect=/es/upload through existing account preview. User selected the third reviewed CTA wording: Interpret your past labs for free. The separate Start free subtitle is removed because free is now explicit in the button label."
     },
     {
       "part": 2,
