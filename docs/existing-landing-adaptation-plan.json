@@ -1260,5 +1260,22 @@
     "scope": "All planned landing sections plus whole-page narrative/content coherence",
     "verification_record": "docs/closing-journey-qa.json",
     "browser_verification": "Pending recorded environment blocker; no computed-layout or physical-device claim."
+  },
+  "finalBrowserQARefinement": {
+    "status": "Actual browser QA in progress; discovered fixes implemented and built, pending live retest.",
+    "runtime": "Installed Playwright + system Chromium successfully exercise the published Site; shared interactive CUA still fails before launch. No preview server or browser installation required.",
+    "baseline_version": 37,
+    "baseline_results": [
+      "Seven EN/ES desktop/phone layout cases passed with no clipping or page errors",
+      "Three method/life/lifestyle/reduced-motion cases passed",
+      "Four browser-local free/kit signup flows passed functionally, no real account/upload/purchase or mutating network requests"
+    ],
+    "fixes": [
+      "Move Content review shortcut into normal document flow so it cannot cover copy or the footer switch",
+      "Align first-kit access, onboarding and checkout copy with13biomarkers€99+VAT; remove automatic recurring language for this path",
+      "Show free/first-kit onboarding paths by default, preserve older explicit incoming intents without presenting them as current offers"
+    ],
+    "preserved": "Internal plan IDs, auth callbacks, preview request/update behavior, accepted landing narrative, imagery and motion remain unchanged.",
+    "verification": "Fresh TypeScript/build/English checks passed. Final live browser rerun and visual review will determine completed QA."
   }
 }

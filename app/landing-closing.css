@@ -55,3 +55,6 @@
  .business-footer .footer-base{align-items:flex-start;gap:18px}
  .business-footer .footer-design-links{gap:4px 24px}
 }
+
+/* The review shortcut stays available without covering product copy or controls. */
+.content-review-dock{position:static;inset:auto;z-index:auto;width:fit-content;max-width:calc(100% - 48px);margin:24px var(--gutter) 24px auto}
