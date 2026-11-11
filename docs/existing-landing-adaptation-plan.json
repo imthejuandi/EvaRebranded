@@ -1129,8 +1129,8 @@
       ],
       "latestReading": "2.1 remains fixed in the readout and plot; no invented dates, risk bands or testing cadence."
     },
-    "copy": "History reveals a rise, but does not establish persistence or prove the reported workout caused it. Is this rise temporary, or does it persist?",
-    "design": "One forest-green analog history instrument on the existing paper background, amber dotted latest value, shared zero-to-three axis and compact native replay buttons. No new media or pinned scroll tail.",
+    "copy": "One reading explains what the isolated result and reported workout cannot establish, then asks how it compares with earlier readings. Show history reveals the rise from three earlier readings, then asks whether it is temporary or persistent. Both views keep the same result, draw-day notes and causal qualification.",
+    "design": "Reuse the actual earlier Alex report dashboard: shared guided-instrument/bio-glass material, mixed amber/lavender frosted edges and grain, white coarse dotted readout, and pearl bio-views controls above the panel. Preserve chart geometry and the fixed latest reading.",
     "motion": "Scroll entry reveals earlier points and the history trace over 500ms. Latest point stays fixed. One reading / Show history controls replay both views. OS reduced motion and the footer calm preference show complete history and instant controls.",
     "verification": {
       "status": "Passed",
@@ -1147,10 +1147,15 @@
         "Zero-to-three axis and actual point/path geometry",
         "Phone and desktop layout without clipping or overlap",
         "OS reduced motion and independent footer calm choice",
-        "Localized science destination and comparison anchor"
+        "Localized science destination and comparison anchor",
+        "Both mode-specific explanations and questions, with only the selected copy visible and accessible",
+        "Glass material, grain, blur, shadow and dotted-number color match the actual earlier dashboard",
+        "Switching views preserves latest result, chart position, interpretation area and panel dimensions",
+        "Manual keyboard/pointer selections announce only the selected interpretation; automatic calm resolution clears stale announcements"
       ],
-      "visualReview": "Actual desktop and phone instrument screenshots reviewed; full trace meets the latest point after removing the SVG dash-scaling defect."
+      "visualReview": "Actual desktop and phone screenshots reviewed in both modes. The earlier dashboard glass is reused; no new visual system or assets. All seven fresh-build cases passed without browser errors."
     },
-    "nextPart": "#el-metodo — Your next steps. At your pace."
+    "nextPart": "#el-metodo — Your next steps. At your pace.",
+    "latestRefinement": "User requested the same design as the actual earlier dashboard and mode-specific interpretation. Implemented and verified; publication receipt determines the live version."
   }
 }

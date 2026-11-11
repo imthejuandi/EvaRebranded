@@ -7,9 +7,11 @@ import {trendStoryCopy} from '@/lib/site-content/trend-story-copy';
 import {businessLinks} from '@/lib/landing-content';
 import {Arrow} from './Arrow';
 import {DotNumber} from './DotNumber';
+import './guided-result-story.css';
 import './trend-story-section.css';
 
 type TrendMode='latest'|'history';
+const modes=['latest','history'] as const;
 const TRANSITION_MS=500;
 const points=alexStoryReadings.map((value,index)=>({x:56+index*224,y:236-value/3*204,value}));
 const historyPath=points.map((point,index)=>`${index?'L':'M'}${point.x} ${point.y}`).join(' ');
@@ -19,6 +21,7 @@ const latest=points[points.length-1];
 export function TrendStorySection({calm=false}: {calm?:boolean}) {
   const {locale,href}=useSiteLanguage(), c=trendStoryCopy[locale], alex=alexStoryCopy[locale];
   const [mode,setMode]=useState<TrendMode>('history'),[motionReady,setMotionReady]=useState(false),[phase,setPhase]=useState('complete');
+  const [announcement,setAnnouncement]=useState('');
   const plot=useRef<HTMLDivElement>(null), observer=useRef<IntersectionObserver|null>(null);
   const currentMode=useRef<TrendMode>('history'), reduced=useRef(false), autoPending=useRef(true), completion=useRef(0);
   const number=(value:number)=>value.toFixed(1).replace('.',locale==='es'?',':'.');
@@ -40,10 +43,12 @@ export function TrendStorySection({calm=false}: {calm?:boolean}) {
       observer.current?.disconnect();
       autoPending.current=false;
       clearTimeout(completion.current);
+      setAnnouncement('');
       changeMode('history',false);
       setPhase('complete');
     };
     if(calm||preference.matches||!('IntersectionObserver' in window)){revealComplete();return;}
+    setAnnouncement('');
     autoPending.current=true;
     changeMode('latest',false);
     setMotionReady(true);
@@ -59,19 +64,26 @@ export function TrendStorySection({calm=false}: {calm?:boolean}) {
     return()=>{enter.disconnect();observer.current=null;clearTimeout(completion.current);preference.removeEventListener('change',preferenceChanged);};
   },[changeMode,calm]);
 
-  const choose=(next:TrendMode)=>{autoPending.current=false;observer.current?.disconnect();changeMode(next);};
+  const choose=(next:TrendMode)=>{
+    autoPending.current=false;
+    observer.current?.disconnect();
+    if(next===currentMode.current)return;
+    changeMode(next);
+    const interpretation=c.interpretations[next];
+    setAnnouncement(`${interpretation.label}. ${interpretation.explanation} ${interpretation.question}`);
+  };
   const historyVisible=mode==='history';
   return <section className="trend-story" id="por-que-eva" aria-labelledby="por-que-eva-title" data-trend-story data-trend-mode={mode} data-trend-motion-ready={motionReady} data-trend-calm={calm} data-trend-reveal-state={phase} data-trend-transition-ms={TRANSITION_MS}>
     <div className="section-kicker"><span>{c.kicker}</span><span>{alex.eyebrow}</span></div>
     <header className="trend-story-heading"><h2 id="por-que-eva-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2><p>{c.lead}</p></header>
-    <div className="trend-instrument">
+    <div className="trend-view-controls bio-views" role="group" aria-label={c.historyLabel}>
+      <button type="button" aria-pressed={!historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('latest')} data-trend-control="latest">{c.controls.latest}</button>
+      <button type="button" aria-pressed={historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('history')} data-trend-control="history">{c.controls.history}</button>
+    </div>
+    <div className="trend-instrument guided-instrument bio-glass">
       <div className="trend-instrument-head">
         <div><p className="trend-instrument-kicker">{historyVisible?c.historyLabel:c.latestLabel}</p><h3>hs-CRP</h3><p className="trend-current-reading">{c.latestLabel} · {c.readingLabel} 04</p></div>
-        <p className="trend-latest-value" data-trend-latest-value="2.1"><span className="sr-only">{number(latest.value)} mg/L</span><span aria-hidden="true"><DotNumber value={number(latest.value)} density="coarse" calm active={false}/><small>mg/L</small></span></p>
-      </div>
-      <div className="trend-view-controls" role="group" aria-label={c.historyLabel}>
-        <button type="button" aria-pressed={!historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('latest')} data-trend-control="latest">{c.controls.latest}</button>
-        <button type="button" aria-pressed={historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('history')} data-trend-control="history">{c.controls.history}</button>
+        <p className="trend-latest-value guided-value" data-trend-latest-value="2.1"><span className="sr-only">{number(latest.value)} mg/L</span><span aria-hidden="true"><DotNumber value={number(latest.value)} density="coarse" calm active={false}/><small>mg/L</small></span></p>
       </div>
       <div className="trend-evidence-grid">
         <div className="trend-chart-block">
@@ -96,7 +108,17 @@ export function TrendStorySection({calm=false}: {calm?:boolean}) {
           <p className="trend-context-limit" data-trend-limit>{alex.limit}</p>
         </aside>
       </div>
-      <div className="trend-insight"><p>{c.explanation}</p><h3>{c.question}</h3></div>
+      <div className="trend-insight" id="trend-story-interpretation">
+        {modes.map(view=>{
+          const interpretation=c.interpretations[view];
+          return <div key={view} className="trend-interpretation" data-trend-interpretation={view} data-active={view===mode} aria-hidden={view!==mode}>
+            <p className="trend-interpretation-label">{interpretation.label}</p>
+            <p className="trend-interpretation-copy">{interpretation.explanation}</p>
+            <h3 className="trend-interpretation-question">{interpretation.question}</h3>
+          </div>;
+        })}
+      </div>
+      <span className="sr-only" role="status" aria-live="polite" aria-atomic="true" data-trend-announcement>{announcement}</span>
     </div>
     <div className="trend-story-foot"><p data-trend-disclosure>{c.disclosure}</p><a href={href(`${businessLinks.science}#science-comparison-title`)} data-trend-method>{c.methodLink}<Arrow/></a></div>
   </section>;
