@@ -810,7 +810,7 @@
       {
         "anchor": "#tu-evolucion",
         "section": "Your age tells part of the story.",
-        "status": "User approved version 26; preserve while reviewing the earlier sections"
+        "status": "Approved content preserved; user-approved relocation before method published in version 36."
       },
       {
         "anchor": "#el-metodo",
@@ -1211,7 +1211,7 @@
     "verification": "TypeScript, production build, English audit, EN/ES generated HTML and normal/calm SSR parity passed. Browser playback/layout unverified under the existing startup blocker."
   },
   "editorialNarrativeOrder": {
-    "status": "User-approved reorder implemented; native receipt determines published version.",
+    "status": "Published in version 36; native succeeded receipt in SESSION_HANDOFF.json. EN/ES generated order and unchanged visible text verified against version 35.",
     "reason": "Finish technical interpretation before practical next steps, then keep the return-to-life and coastal lifestyle passages together.",
     "order": [
       "#por-que-eva",

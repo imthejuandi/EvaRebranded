@@ -1,6 +1,6 @@
 # EVA landing refinement
 
-Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 35 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#nuestra-historia`; preserve all accepted earlier chapters. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
+Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 36 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#nuestra-historia`; preserve all accepted earlier chapters. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
 
 ## Cross-session coordination
 
@@ -46,6 +46,8 @@ The range-proof chapter uses the same 2.1 mg/L result against an illustrative la
 Preserve both accepted Trendlines refinements: reuse the actual earlier Alex glass through `guided-instrument`, `bio-glass` and `guided-value`, with the white dotted readout and external pearl `bio-views` controls; and change the interpretation plus next question between One reading and Show history. Keep the latest value, history, notes and layout fixed. Only manual changes make the polite interpretation announcement. The focused Trendlines browser checks passed seven local cases; they do not resolve the separate version 32 method chapter's unverified browser QA.
 
 Keep signal, health-history and suggested-review copy consistent across English, Spanish, animated, static and reduced-motion forms.
+
+Preserve the user-approved version 36 narrative order in `HealthEditorial`: Trendlines → biological age/EVA score → MethodJourney → return-to-life → lifestyle → founder. The age component moved before MethodJourney; its approved content and visuals remain unchanged.
 
 The handoff identifies the current return-to-life release and next section. Its animated, screen-reader and calm forms share `lib/site-content/life-passage-copy.ts`. The lifestyle narrative uses `lib/site-content/lifestyle-copy.ts` in both normal and calm modes. Verify the method and life passages in the browser when access is restored, then continue at `#nuestra-historia` unless the user steers elsewhere. Do not restart discovery or redo approved earlier sections.
 

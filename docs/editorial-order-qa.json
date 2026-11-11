@@ -1,0 +1,56 @@
+{
+  "scope": "User-approved narrative reorder",
+  "expected_order": [
+    "por-que-eva",
+    "tu-evolucion",
+    "el-metodo",
+    "volver-a-la-vida",
+    "lo-que-te-mueve",
+    "nuestra-historia"
+  ],
+  "cases": [
+    {
+      "locale": "en",
+      "order_passed": true,
+      "unique_anchors": true,
+      "unchanged_section_text": [
+        "por-que-eva",
+        "tu-evolucion",
+        "el-metodo",
+        "volver-a-la-vida",
+        "lo-que-te-mueve",
+        "nuestra-historia"
+      ]
+    },
+    {
+      "locale": "es",
+      "order_passed": true,
+      "unique_anchors": true,
+      "unchanged_section_text": [
+        "por-que-eva",
+        "tu-evolucion",
+        "el-metodo",
+        "volver-a-la-vida",
+        "lo-que-te-mueve",
+        "nuestra-historia"
+      ]
+    }
+  ],
+  "browser": {
+    "status": "unverified",
+    "blocker": "Existing shared browser startup sandbox error remains unresolved; no new browser run."
+  },
+  "baseline_archive": "/workspace/eva-publication/eva-lifestyle.tar.gz",
+  "baseline_version": 35,
+  "checks": {
+    "typescript": "passed",
+    "production_build": "passed (113 routes)",
+    "story_sections": "passed (existing timing/navigation contracts)",
+    "english_public_routes": "passed (1178 messages)",
+    "artifact_comparison": "EN/ES visible section text matches version 35 archive across all six reordered/concluding chapters",
+    "source_review": "Named anchors unchanged; life stage measures its own top/span; composition order applies identically to calm mode",
+    "diff_whitespace": "passed"
+  },
+  "source_commit": "c842b5c052b3d392265a82d1f10ab091355a4219",
+  "scope_limit": "Source and generated-artifact checks only; actual browser layout, transitions, focus and playback remain unverified under the recorded shared-browser startup blocker."
+}

@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 35,
-    "deployed_ui_commit": "4d4b25556356ff929903435293ab5fa2b697e76e",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f0ce2997bd6881919894f2a995cb16aa",
-    "deployment_id": "appgdep_6af4c8aa892481918bbb7eb08942f214",
+    "live_version": 36,
+    "deployed_ui_commit": "c842b5c052b3d392265a82d1f10ab091355a4219",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9de5830ee4948191b7f999a79035c1bf",
+    "deployment_id": "appgdep_6af4cab08cf08191a2aea68b2d4f7b2c",
     "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=35#lo-que-te-mueve"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=36#por-que-eva"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -55,18 +55,23 @@
       "origin": "Primary continuation chat, version 35",
       "status": "Published, accepted title/media/captions/controls preserved",
       "qa": "Static/generated HTML and EN/ES normal/calm SSR checks passed. Browser wrapping/playback unverified. See docs/lifestyle-refinement-qa.json."
+    },
+    {
+      "section": "Editorial sequence from #por-que-eva through #nuestra-historia",
+      "source_commit": "c842b5c052b3d392265a82d1f10ab091355a4219",
+      "origin": "Primary continuation chat, version 36, explicitly approved by user",
+      "status": "Published: moved age/score before method, kept life passages adjacent",
+      "qa": "EN/ES generated anchor order and visible-copy parity against version 35 passed; TypeScript/build/English/story-section checks passed. Browser unverified."
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "User-approved narrative reorder: group age/score explanation with interpretation, before MethodJourney, then keep return-to-life and lifestyle together.",
+      "status": "Version 36 narrative reorder published; no implementation in progress or app files reserved.",
       "next_section": "#nuestra-historia",
       "pending_verification": "Method, return-to-life and lifestyle browser checks remain pending the recorded shared browser startup blocker.",
-      "section": "#tu-evolucion → #el-metodo → #volver-a-la-vida → #lo-que-te-mueve",
-      "files": [
-        "components/story/HealthEditorial.tsx"
-      ]
+      "section": null,
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
@@ -77,7 +82,8 @@
     "The approved #tu-evolucion biological-age chapter",
     "Current runner, Tasso footage, 500ms kit reveal, confirmed13-marker offer and free interpretation entry",
     "The version 34 return-to-life shared EN/ES narrative and accepted original image/motion",
-    "The version 35 concrete lifestyle narrative and accepted coastal media/title/controls"
+    "The version 35 concrete lifestyle narrative and accepted coastal media/title/controls",
+    "Version 36 user-approved order: Trendlines → age/score → method → return-to-life → lifestyle → founder"
   ],
   "coordination_workflow": [
     "Read AGENTS.md, docs/SESSION_HANDOFF.json and this note after refreshing current main; preserve dirty work before attempting a refresh.",

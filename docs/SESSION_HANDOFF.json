@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
-  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V35_PUBLICATION_WITH_BROWSER_LIMIT",
-  "immediate_instruction": "Version 35 is published. The #lo-que-te-mueve copy now develops everyday movement and connection with passing static/SSR checks; accepted media, title, captions and controls are preserved. Preserve all prior refinements and approved biological age. Browser verification remains blocked by the recorded environment error. Continue next at #nuestra-historia.",
+  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V36_PUBLICATION_WITH_BROWSER_LIMIT",
+  "immediate_instruction": "Version 36 is published with the user-approved narrative order: Trendlines, age/score, method, return-to-life, lifestyle, founder. Preserve the approved age content and all earlier refinements. Static checks verify the EN/ES anchor order and identical visible copy versus version 35. Browser verification remains blocked by the recorded environment issue. Next content section is #nuestra-historia.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -33,53 +33,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 34,
-      "source_commit": "2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9d8cc374e70c81919b07d14564545651",
-      "deployment_id": "appgdep_6af4c6c75f188191ad1bc2c19929527c",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=34#volver-a-la-vida",
-      "native_updated_at": "2026-11-11T19:49:41.377269+00:00",
-      "behavior": "Return-to-life passage bridges guided choice into everyday life: Context for your next step. Space for what you enjoy. One shared EN/ES copy source feeds animated, screen-reader and calm forms. Supporting text wraps naturally. Title, photograph, masking, layout, scroll scene window and motion remain unchanged.",
-      "source_files": [
-        "components/story/EvaFilm.tsx",
-        "components/story/StoryScenePassage.tsx",
-        "lib/site-content/life-passage-copy.ts",
-        "docs/existing-landing-adaptation-plan.json",
-        "docs/SESSION_COORDINATION.json"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-life-passage.tar.gz",
-        "local_gzip_sha256": "20d8bf8b2de32aea3fe80f429bf78c85b08775a51918d404b310e86e6198945f",
-        "local_gzip_size_bytes": 163049846,
-        "saved_tar_content_hash": "sha256:740595097f2b80502ff8b1fa840eb3b8121062a5d3a3cedf48aa7c89ddb5b9a0",
-        "saved_tar_size_bytes": 171868160,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "static_checks_passed_browser_unverified",
-        "record": "docs/life-passage-refinement-qa.json",
-        "checks": {
-          "typescript": "passed",
-          "production_build": "passed (113 routes)",
-          "english_public_route_audit": "passed (1178 catalog messages)",
-          "story_sections": "passed (section order, original physical timing and relocated scene windows)",
-          "built_narrative": "passed (EN/ES title, support, heading association and method/life/age/lifestyle order)",
-          "preservation": "Verified source diff leaves image, timing, driver, compositor, CSS, dashboard, method and biological-age components unchanged",
-          "review": "Copy and design source reviews completed; shared copy used by animated, screen-reader and calm paths; no new effect, listener or animation clock",
-          "diff_whitespace": "passed"
-        },
-        "browser": {
-          "status": "unverified",
-          "error": "the gaas-browser node_repl sandbox cannot be disabled",
-          "screenshots": false,
-          "interaction_tests": false
-        },
-        "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser interaction suite was run."
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 35,
       "source_commit": "4d4b25556356ff929903435293ab5fa2b697e76e",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f0ce2997bd6881919894f2a995cb16aa",
@@ -125,17 +78,59 @@
         "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI is version 35 commit 4d4b25556356ff929903435293ab5fa2b697e76e. A following documentation-only commit records the receipt, QA scope and next section without changing live UI.",
+    "latest_verified_ui_release": {
+      "version_number": 36,
+      "source_commit": "c842b5c052b3d392265a82d1f10ab091355a4219",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9de5830ee4948191b7f999a79035c1bf",
+      "deployment_id": "appgdep_6af4cab08cf08191a2aea68b2d4f7b2c",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-11T20:06:20.051580+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=36#por-que-eva",
+      "behavior": "User-approved narrative reorder: Trendlines → biological age and EVA score → MethodJourney → return-to-life image → coastal lifestyle → founder. Only the existing BiologicalAgeSection call moved, from after the return-to-life passage to before MethodJourney. Approved text, qualifications, visuals, interactions, anchors and motion stay unchanged.",
+      "source_files": [
+        "components/story/HealthEditorial.tsx",
+        "docs/SESSION_COORDINATION.json",
+        "docs/existing-landing-adaptation-plan.json"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-editorial-order.tar.gz",
+        "local_gzip_sha256": "9c7d54c410b02476f7b98d52a6a7611fe4ae3076ef01adc320f072cd920ce665",
+        "local_gzip_size_bytes": 163049531,
+        "saved_tar_content_hash": "sha256:76f0e35dbb230ea3a71b69a09e0fd6224df4b993dcf1cb8090100e159d05c0e8",
+        "saved_tar_size_bytes": 171868160,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "static_checks_passed_browser_unverified",
+        "record": "docs/editorial-order-qa.json",
+        "checks": {
+          "typescript": "passed",
+          "production_build": "passed (113 routes)",
+          "story_sections": "passed (existing timing/navigation contracts)",
+          "english_public_routes": "passed (1178 messages)",
+          "artifact_comparison": "EN/ES visible section text matches version 35 archive across all six reordered/concluding chapters",
+          "source_review": "Named anchors unchanged; life stage measures its own top/span; composition order applies identically to calm mode",
+          "diff_whitespace": "passed"
+        },
+        "browser": {
+          "status": "unverified",
+          "blocker": "Existing shared browser startup sandbox error remains unresolved; no new browser run."
+        },
+        "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
+      }
+    },
+    "latest_verified_ui_release_note": "Deployed UI is version 36 commit c842b5c052b3d392265a82d1f10ab091355a4219. A following documentation-only commit records the receipt and revised narrative order.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "Documentation-only followup to deployed source 4d4b25556356ff929903435293ab5fa2b697e76e",
+      "relation": "Documentation-only followup to deployed source c842b5c052b3d392265a82d1f10ab091355a4219",
       "files": [
         "AGENTS.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
         "docs/existing-landing-adaptation-plan.json",
-        "docs/lifestyle-refinement-qa.json"
+        "docs/editorial-order-qa.json"
       ],
       "lookup_command": "git log -1 --format=%H -- docs/SESSION_HANDOFF.json",
       "ui_redeployment_required": false
@@ -171,6 +166,14 @@
         "source_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
         "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_99f63ea3b5148191b0dd9092f1a57fa4",
         "deployment_id": "appgdep_6af4b4c357308191a4d5e4c632caea47",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site"
+      },
+      {
+        "version_number": 34,
+        "source_commit": "2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9d8cc374e70c81919b07d14564545651",
+        "deployment_id": "appgdep_6af4c6c75f188191ad1bc2c19929527c",
         "status": "succeeded",
         "url": "https://eva-content-review.jdlagop.chatgpt.site"
       }
@@ -341,7 +344,22 @@
     "health_history": "HealthStorySection explains personal history and draw-day context. Its 90-day timeline has Start followed by Review + choose at months 04, 07 and 10.",
     "editorial": "Continue the established readable editorial reveal and ruled-entry treatment. Important explanations must not depend on waiting for long animations.",
     "accessibility": "Preserve phone layout, keyboard navigation, focus behavior, adequate touch targets, readable body text and complete reduced-motion alternatives.",
-    "retrofuturist_details": "Forest, warm paper and amber; quiet glass/analog instruments; italic display hierarchy; dotted old-screen numerical readouts. Modern compact controls with visible focus, no generic feature-card grids."
+    "retrofuturist_details": "Forest, warm paper and amber; quiet glass/analog instruments; italic display hierarchy; dotted old-screen numerical readouts. Modern compact controls with visible focus, no generic feature-card grids.",
+    "editorial_narrative_order": {
+      "user_approved": true,
+      "published_version": 36,
+      "order": [
+        "por-que-eva",
+        "tu-evolucion",
+        "el-metodo",
+        "volver-a-la-vida",
+        "lo-que-te-mueve",
+        "nuestra-historia"
+      ],
+      "reason": "Finish interpretation and summaries before practical next steps; then keep the two life passages together.",
+      "preserve": "Keep the approved age/score content, qualifications and assets; do not restore the earlier method → return-to-life → age → lifestyle order.",
+      "numbering": "Legacy kicker numbering remains a whole-page consistency task; no partial renumbering was made."
+    }
   },
   "approved_clinical_and_example_boundaries": {
     "general": "Educational interpretation is not a diagnosis, a promise of prevention, a guaranteed health improvement, or a replacement for professional assessment.",
@@ -460,6 +478,12 @@
       "status": "Published in version 33 with shared actual dashboard styling and mode-specific interpretations; preserve."
     },
     {
+      "component": "BiologicalAgeSection",
+      "id": "tu-evolucion",
+      "purpose": "Existing qualified biological-age explanation",
+      "status": "Content approved in version 26, preserved unchanged; user approved moving this block before MethodJourney in version 36."
+    },
+    {
       "component": "MethodJourney",
       "id": "el-metodo",
       "purpose": "Free previous-report or optional kit entry, understand, compare with context, and guided choice",
@@ -470,12 +494,6 @@
       "purpose": "Brief bridge from guided choice to everyday life, with one shared bilingual narrative",
       "id": "volver-a-la-vida",
       "status": "Published in version 34; static checks passed, browser verification blocked by environment startup error."
-    },
-    {
-      "component": "BiologicalAgeSection",
-      "id": "tu-evolucion",
-      "purpose": "Existing qualified biological-age explanation",
-      "status": "User approved version 26; preserve except later whole-page coherence review."
     },
     {
       "component": "LifestylePassage",
@@ -501,7 +519,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json; inspect source and native Site state. The continuation chat has acknowledged the combined version 33 baseline; update current work status before any future concurrent edits.",
-    "The deployed baseline is version 35, source 4d4b25556356ff929903435293ab5fa2b697e76e. A following documentation-only commit does not require republishing.",
+    "The deployed baseline is version 36, source c842b5c052b3d392265a82d1f10ab091355a4219. A following documentation-only commit does not require republishing.",
     "Preserve uncommitted work. Use the Site source repository, not historical GitHub.",
     "When browser access works, verify pending method/life/lifestyle layouts at desktop and 320/375/390px, method focus/replay, life forward/reverse scroll, coastal pause/resume/replay, OS reduced motion and footer calm. Static/SSR checks do not establish browser behavior.",
     "Continue at #nuestra-historia unless the user steers elsewhere, then refine offer/footer and assess the full landing journey. Preserve the approved biological-age chapter and all accepted earlier refinements.",
@@ -598,7 +616,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 35 is published; next #nuestra-historia. Preserve approved earlier work. Method/life/lifestyle browser checks remain pending the environment blocker. Routine edits, checks, commits, pushes and existing review-site publication remain authorized.",
+  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 36 is published: preserve Trendlines → age/score → method → return-to-life → lifestyle → founder. Continue #nuestra-historia. Routine edits, checks, commits, pushes and existing review-site publication remain authorized.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -611,7 +629,7 @@
     "date": "2026-11-11",
     "user_direction": "Pull the latest other-chat Site change into this session for a full switch.",
     "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
-    "live_version": 35,
-    "status": "Version 35 lifestyle refinement published; no app files reserved. Next founder story."
+    "live_version": 36,
+    "status": "Version 36 user-approved narrative reorder published. Next founder story."
   }
 }
