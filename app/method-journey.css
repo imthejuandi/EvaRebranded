@@ -11,7 +11,8 @@
 .method-chapters > button[aria-selected="true"] > i { transform: scaleX(1); }
 .method-chapters > button:hover { color: var(--ink); }
 .method-chapters > button:focus-visible, .method-paging button:focus-visible, .method-detail-link:focus-visible { outline: 2px solid #6a4b34; outline-offset: 5px; }
-.method-panel { display: grid; grid-template-columns: 1.13fr 1fr; grid-template-areas: 'art number' 'art body' 'art paging' 'art detail'; grid-template-rows: max-content 1fr max-content max-content; column-gap: 8vw; row-gap: 0; align-items: start; min-width: 0; }
+/* Keep the reading and its controls together; the photo's spare height ends below them. */
+.method-panel { display: grid; grid-template-columns: 1.13fr 1fr; grid-template-areas: 'art number' 'art body' 'art paging' 'art detail' 'art .'; grid-template-rows: repeat(4, max-content) 1fr; column-gap: 8vw; row-gap: 0; align-items: start; min-width: 0; }
 .method-panel[hidden] { display: none; }
 .method-panel:focus-visible { outline: 2px solid #6a4b34; outline-offset: 8px; }
 .method-figure { grid-area: art; margin: 0; min-width: 0; position: sticky; top: 24px; }
@@ -44,7 +45,7 @@
 .method-page-number { grid-area: number; display: flex; align-items: end; gap: 16px; min-width: 0; padding-top: 30px; margin: 0 0 39px; color: #485248; }
 .method-page-number .method-ordinal { font-size: 62px; font-weight: 300; line-height: .9; letter-spacing: -.065em; color: #85877c; padding: 0; }
 .method-page-number > span { font-size: 11px; letter-spacing: .06em; color: #6a6c61; padding-bottom: 11px; }
-.method-chapter-body { grid-area: body; min-width: 0; min-height: 245px; }
+.method-chapter-body { grid-area: body; min-width: 0; }
 .method-chapter-body h3 { max-width: 460px; font-size: clamp(30px, 3.05vw, 46px); font-weight: 400; line-height: 1.13; letter-spacing: -.04em; margin: 0 0 24px; }
 .method-chapter-body > p { max-width: 430px; font-size: 17px; line-height: 1.65; color: #4c5048; }
 .method-chapter-body h3:focus-visible { outline: 2px solid #6a4b34; outline-offset: 6px; }
@@ -79,7 +80,6 @@
   .method-page-number { padding-top: 14px; margin-bottom: 30px; }
   .method-page-number .method-ordinal { font-size: 55px; }
   .method-chapter-body > p { font-size: 16px; }
-  .method-chapter-body { min-height: 250px; }
   .method-paging { margin-top: 25px; }
 }
 @media (max-width: 700px) {
