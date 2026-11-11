@@ -4,7 +4,7 @@ Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this
 
 ## Cross-session coordination
 
-Read [docs/SESSION_COORDINATION.json](docs/SESSION_COORDINATION.json) alongside the handoff before editing. Version33 already includes the other session's v32 MethodJourney work and this session's dashboard/interpretation refinements. The shared note is awaiting the other chat's acknowledgment; do not claim direct communication or receipt. Record any newer work and the bounded section/files being edited, reconcile overlapping changes before publication, and preserve both sessions' work. This creates no new approval requirement.
+Read [docs/SESSION_COORDINATION.json](docs/SESSION_COORDINATION.json) alongside the handoff before editing. Version 33 includes both the v32 MethodJourney work and the v33 dashboard/interpretation refinements. The user requested full continuation in chat `6af4821e-7ab0-8191-a284-1767aa9110e7`; that chat pulled the combined baseline and acknowledged the repository note. This does not claim direct communication with or receipt by the prior chat. Record any newer work and the bounded section/files being edited, reconcile overlapping changes before publication, and preserve both sessions' work. This creates no new approval requirement.
 
 ## Project identity
 

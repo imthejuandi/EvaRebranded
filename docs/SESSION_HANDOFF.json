@@ -525,7 +525,7 @@
     }
   ],
   "next_session_start": [
-    "Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json; inspect source and native Site state, then acknowledge the shared coordination note and record any newer work.",
+    "Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json; inspect source and native Site state. The continuation chat has acknowledged the combined version 33 baseline; update current work status before any future concurrent edits.",
     "The deployed baseline is version 33, source d8ceac544d62510ff47c0dc7e35e11879da05003. A following documentation-only commit does not require republishing.",
     "Preserve uncommitted work. Use the Site source repository, not historical GitHub.",
     "When browser access works, first verify #el-metodo at desktop and 320/375/390px, all four steps, tab keys, paging heading focus, replay, OS reduced motion and footer calm. Do not present static checks as browser QA.",
@@ -630,5 +630,13 @@
     "acknowledgment_status": "awaiting_other_session",
     "baseline": "Version33 includes both sessions’ published application changes.",
     "next_content_section": "#volver-a-la-vida"
+  },
+  "active_continuation": {
+    "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
+    "date": "2026-11-11",
+    "user_direction": "Pull the latest other-chat Site change into this session for a full switch.",
+    "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
+    "live_version": 33,
+    "status": "Combined source pulled without conflicts; coordination note acknowledged. No additional UI change or deployment."
   }
 }
