@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Parts 1–5 implemented and verified; publication state is tracked by the Sites deployment receipt.",
+  "status": "Parts 1–5 previously implemented and verified. The longer starting-kit reveal and scoped biological-age refinement passed unit verification and 10 responsive English/Spanish browser cases; publication is pending.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -521,7 +521,7 @@
     }
   },
   "guidedStoryAndKitScrollRelease": {
-    "status": "Implemented and verified locally; publication receipt determines live release.",
+    "status": "Existing guided report retained. The current longer amber reveal passed unit verification and 10 responsive English/Spanish browser cases; publication receipt determines live release.",
     "story": {
       "entry": "Alex reports a hard workout within 24 hours before a higher hs-CRP reading, and no recent illness.",
       "latest": {
@@ -551,17 +551,20 @@
     },
     "amber": {
       "location": "#kit-inicial",
-      "localClockEnd": 290,
+      "localClockEnd": 380,
       "beats": {
         "countEnd": 35,
         "panEnd": 80,
         "namesOnlyEnd": 140,
         "titleThreeEnd": 160,
-        "meaningRevealEnd": 210,
-        "fullHoldEnd": 290
+        "dotFormationEnd": 170,
+        "dotHoldEnd": 205,
+        "dotDevelopmentEnd": 270,
+        "meaningRevealEnd": 300,
+        "fullHoldEnd": 380
       },
-      "sectionHeightSvh": 342.6530612244898,
-      "approach": "Statement/count → same13 names → meanings develop from dots into clean text. The native assay names remain visible and fixed. The subtitle renderer calls the actual runnerArrivalState function with a cached glyph lattice, then hands off to the native text. Three main titles still change. The complete sequence now precedes the results dashboard.",
+      "sectionHeightSvh": 417.9591836734694,
+      "approach": "Statement/count → the same 13 names → meanings develop from dots into clean text. The extended meaning reveal occupies clock 140–300: dots form at 140–170, hold at 170–205 at the actual runner arrival time of 1.2 seconds, develop at 205–270 and hand off at 270–300. Clean native text remains through 300–380. These are scroll beats, not an autoplay delay. The original count/pan physical pace, fixed assay names, three changing titles and kit-before-dashboard order remain intact.",
       "fallback": "Measured content overflow, genuinely short viewports (mobile ≤600px high / desktop ≤480px high) and reduced motion show a complete normal-flow index. Ordinary short laptops try a measured compact composition first."
     },
     "preserved": [
@@ -666,5 +669,97 @@
         "Original runner arrival, crop and lifecycle contracts; original opening physical timing retained"
       ]
     }
+  },
+  "extendedKitRevealAndAgeRelease": {
+    "status": "Implemented and verified locally: unit checks and all 10 responsive English/Spanish browser cases passed. Publication is pending.",
+    "authorization": "User approved the current design, requested a longer third-stage starting-kit animation so it is visible during normal scrolling, and directed continuing the remaining landing-page plan.",
+    "kit": {
+      "location": "#kit-inicial",
+      "localClockEnd": 380,
+      "sectionHeightSvh": 417.9591836734694,
+      "meaningReveal": [140, 300],
+      "dotFormation": [140, 170],
+      "fullyDottedPlateau": {
+        "clock": [170, 205],
+        "runnerArrivalTimeSeconds": 1.2,
+        "meaning": "The actual runner-arrival renderer stays at a clearly dotted state over a dedicated scroll interval."
+      },
+      "dotDevelopment": [205, 270],
+      "nativeTextHandoff": [270, 300],
+      "cleanHold": [300, 380],
+      "preserved": [
+        "Original count and horizontal-pan physical pace",
+        "All 13 biomarker name nodes and positions",
+        "Actual runner-arrival renderer and reversible cached glyph masks",
+        "Approved three-stage headlines and kit-before-dashboard sequence",
+        "Reduced-motion and measured-overflow fallbacks"
+      ]
+    },
+    "age": {
+      "location": "#tu-evolucion, after the return-to-life passage and before the coastal lifestyle section",
+      "components": [
+        "components/story/HealthEditorial.tsx",
+        "components/story/BiologicalAgeSection.tsx",
+        "components/story/biological-age-section.css",
+        "lib/site-content/biological-age-copy.ts"
+      ],
+      "languages": ["en", "es"],
+      "copy": "Two ruled definitions distinguish estimated biological age, a biomarker-pattern comparison with a reference population, from the longevity score, a comparison with the targets used by EVA’s method.",
+      "availability": "The former new-reading-every-quarter strapline is replaced by a required-data qualifier. Availability is not promised automatically for the current 13-marker kit.",
+      "design": "Original amber material, headline and animated dotted 34→29 example retained. The −5 figure is reduced to supporting illustrative arithmetic. Definitions, introduction and disclosure use readable body type with 16px phone minimums; no new card grid or generated assets.",
+      "illustration": "The figures remain explicitly illustrative, not a prediction of a customer’s result.",
+      "methodLink": {
+        "en": "/en/science#dos-lecturas",
+        "es": "/es/science#dos-lecturas"
+      },
+      "sources": {
+        "internal": [
+          "components/site/RestoredContent.tsx — ScienceUnderstanding, reference-population and method-target distinction; required inputs",
+          "components/pages/science/SciencePage.tsx — evidence notes, estimation limits and missing-data treatment",
+          "lib/site-content/original-content.json — archived /en/metodologia/completa, requiring 8 of 14 base inputs including albumin and creatinine or cystatin C"
+        ],
+        "primaryResearch": "https://pubmed.ncbi.nlm.nih.gov/16318865/",
+        "scope": "The primary paper supports the biological-age estimation concept. It is not evidence that EVA’s specific implementation, validation claims or current 13-marker kit eligibility have been verified."
+      }
+    },
+    "verification": {
+      "status": "Unit checks and responsive browser QA passed locally",
+      "motionParitySamples": 9123,
+      "passed": [
+        "TypeScript",
+        "Kit painter/compositor parity and extended timing contracts",
+        "Story section and preserved physical pacing checks",
+        "English route audit"
+      ],
+      "browser": {
+        "status": "Passed locally",
+        "cases": 10,
+        "errors": [],
+        "matrix": [
+          "1440×1000 EN",
+          "1366×650 EN",
+          "1280×720 ES",
+          "390×780 EN",
+          "430×932 ES",
+          "375×812 ES",
+          "320×568 EN",
+          "1440×600 EN",
+          "390×844 EN reduced motion",
+          "390×844 ES reduced motion"
+        ],
+        "checks": [
+          "Longer dot reveal and clearly dotted plateau during scrolling",
+          "Three changing titles, the same fixed biomarker names, cached masks and exact reverse reveal",
+          "Native transforms and mobile compositor timeline, with normal-flow and reduced-motion alternatives",
+          "Existing custom picker, fixed report evidence and full sample dashboard retained",
+          "Two age definitions, required-data qualifier, illustrative −5 arithmetic and unchanged dotted 34/29 figures",
+          "Localized science anchors and their destination in English and Spanish",
+          "At least 16px age-section body type and no horizontal overflow"
+        ],
+        "report": "/workspace/eva-in-place-qa/long-reveal-age-report.json"
+      },
+      "publication": "Pending Sites deployment receipt"
+    },
+    "nextPart": "Refine the founder-to-offer handoff, preserving the approved founder attribution, free past-lab interpretation action, secondary kit path, 13-marker scope and €99 + VAT."
   }
 }

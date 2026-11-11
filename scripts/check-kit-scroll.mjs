@@ -16,18 +16,32 @@ close(KIT_SCROLL_SPAN_SVH * 80 / KIT_SCROLL_BEATS.end, originalDistance(160) - o
 for (let k = 0; k <= 80; k += .125) {
   close(kitScrollState(k, 390, 366).trackX, storyScrollFrame(555 + k, 390, 844, 366).insightX, `Original pan pose at ${k}`);
 }
-for (const k of [80, 100, 139.99, 140, 155, 175, 210, 250, 290]) close(kitScrollState(k, 390, 366).trackX, -366, `Same index position throughout names and meanings at ${k}`);
+for (const k of [80, 100, 139.99, 140, 170, 190, 205, 220, 270, 300, 340, 380]) close(kitScrollState(k, 390, 366).trackX, -366, `Same index position throughout names and meanings at ${k}`);
 for (const k of [80, 100, 139.99, 140]) assert.equal(kitScrollState(k, 390, 366).context, 0, 'Full names-only stage before meanings');
-close(kitScrollState(175, 390, 366).context, .5, 'Plain-language meanings reveal midpoint');
-close(kitScrollState(210, 390, 366).context, 1, 'Meanings complete before the final reading hold');
+close(kitScrollState(220, 390, 366).context, .5, 'Plain-language meanings reveal midpoint');
+close(kitScrollState(300, 390, 366).context, 1, 'Meanings complete before the final reading hold');
 assert.deepEqual(kitScrollState(0, 390, 366).titles.map(t => t.opacity), [1, 0, 0]);
 assert.deepEqual(kitScrollState(100, 390, 366).titles.map(t => t.opacity), [0, 1, 0]);
 assert.deepEqual(kitScrollState(180, 390, 366).titles.map(t => t.opacity), [0, 0, 1]);
 for (const k of [67.5, 150]) close(kitScrollState(k, 390, 366).titles.reduce((sum, title) => sum + title.opacity, 0), 1, `Title crossfade conserves visible weight at ${k}`);
-close(kitScrollState(290, 390, 366).poseFrame, 715, 'Legacy scene still ends at original frame');
+close(kitScrollState(380, 390, 366).poseFrame, 715, 'Legacy scene still ends at original frame');
 assert.equal(kitScrollState(-100, 390, 366).clock, 0);
 assert.equal(kitScrollState(Number.NaN, 390, 366).clock, 0);
-assert.equal(kitScrollState(999, 390, 366).clock, 290);
+assert.equal(kitScrollState(999, 390, 366).clock, 380);
+
+// A visibly dotted plateau is a real scroll interval, not a delayed animation.
+for (const clock of [170, 175, 190, 200, 205]) close(kitScrollState(clock, 390, 366).arrival * 3.5, 1.2, `Fully dotted runner-time hold at ${clock}`);
+for (const [clock, seconds] of [[140, 0], [155, .6], [170, 1.2], [205, 1.2], [237.5, 2.175], [270, 3.15], [285, 3.325], [300, 3.5], [380, 3.5]]) close(kitScrollState(clock, 390, 366).arrival * 3.5, seconds, `Mapped runner arrival time at ${clock}`);
+assert.equal(KIT_SCROLL_BEATS.end - KIT_SCROLL_BEATS.contextEnd, 80, 'Fully resolved reading hold retains its original physical duration');
+const plateauDistance = KIT_SCROLL_SPAN_SVH * (KIT_SCROLL_BEATS.dotHoldEnd - KIT_SCROLL_BEATS.dotFormationEnd) / KIT_SCROLL_BEATS.end;
+assert(plateauDistance >= 25, `Pure-dot hold must last at least a quarter viewport of scrolling: ${plateauDistance}`);
+close(KIT_SCROLL_SPAN_SVH * (KIT_SCROLL_BEATS.contextEnd - KIT_SCROLL_BEATS.namesEnd) / KIT_SCROLL_BEATS.end, originalDistance(160), 'Longer reveal spans the original full160-frame physical distance');
+let previousArrival = 0;
+for (let clock = 0; clock <= KIT_SCROLL_BEATS.end; clock += .125) {
+  const arrival = kitScrollState(clock, 390, 366).arrival;
+  assert(arrival >= previousArrival && arrival >= 0 && arrival <= 1, `Arrival progression is bounded and monotonic at ${clock}`);
+  previousArrival = arrival;
+}
 
 const bezier = (position, easing) => {
   if (easing === 'linear' || !easing) return position;
@@ -78,7 +92,7 @@ let queryCount = 0;
 const root = {dataset: {}, querySelector(selector) {queryCount++; return selector.includes('insight-scene') ? scene : selector.includes('insight-track') ? track : number;}, querySelectorAll(selector) {queryCount++; return selector.includes('kit-title') ? titles : meanings;}};
 const paint = createKitScrollPainter(root);
 assert.equal(queryCount, 5);
-const clocks = [0, 35, 55, 67.5, 80, 100, 140, 150, 155, 160, 170, 210, 250];
+const clocks = [0, 35, 55, 67.5, 80, 100, 140, 150, 155, 160, 170, 190, 205, 237.5, 270, 285, 300, 340, 380];
 const forward = new Map();
 for (const clock of [...clocks, ...clocks.toReversed()]) {
   paint(clock, 390, 844, 366);
@@ -94,7 +108,7 @@ for (const clock of [...clocks, ...clocks.toReversed()]) {
   });
   assert.equal(root.dataset.kitPhase, state.phase);
   assert.equal(root.dataset.renderedFrame, String(state.poseFrame));
-  const snapshot = JSON.stringify([track.style, titles.map(title => title.style), number.textContent, meanings.map(meaning => meaning.style), root.dataset]);
+  const snapshot = JSON.stringify([track.style, titles.map(title => title.style), number.textContent, meanings.map(meaning => meaning.style), root.dataset, state.arrival]);
   if (forward.has(clock)) assert.equal(snapshot, forward.get(clock), `Exact reverse pose at ${clock}`);
   else forward.set(clock, snapshot);
 }
@@ -108,6 +122,12 @@ track.style.translate = '-366px 0';
 browserPaint(133, 390, 844, 366);
 assert.equal(track.style.translate, 'none', 'Native compositor cannot compound a React inline translate');
 assert.equal(JSON.stringify([track.style, titles.map(title => title.style), meanings.map(meaning => meaning.style)]), browserSnapshot, 'Painter leaves compositor-owned properties untouched');
+
+// The canvas receives a constant frame through the pure-dot hold, including reverse scroll.
+const arrivalFrames = [];
+const dotPainter = createKitScrollPainter(root, new Set(), {paint(progress) {arrivalFrames.push(progress); return true;}, dispose() {}});
+for (const clock of [170, 190, 205, 190, 170]) dotPainter(clock, 390, 844, 366);
+assert(arrivalFrames.every(progress => progress === 1.2 / 3.5), 'Dotted plateau reuses an identical cached canvas frame in both directions');
 
 // A partial ScrollTimeline implementation must cancel every created animation.
 const globals = ['window', 'document', 'CSS', 'matchMedia'].map(key => [key, Object.getOwnPropertyDescriptor(globalThis, key)]);

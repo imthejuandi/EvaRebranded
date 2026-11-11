@@ -1,0 +1,61 @@
+/* The existing amber illustration gains a ruled reading key, with no new visual material. */
+.age-story .age-heading{align-items:start;gap:clamp(40px,7vw,112px);margin-top:64px}
+.age-story .age-heading h2{max-width:650px;text-wrap:balance}
+.age-story .age-story-copy{max-width:500px;min-width:0;padding-top:3px}
+.age-story .age-story-intro{font-size:18px;line-height:1.55;max-width:40ch;margin:0;color:#4b3e32}
+.age-story .age-definitions{margin:28px 0 0}
+.age-story .age-definitions>div{border-top:1px solid #171b1840;padding:18px 0 20px}
+.age-story .age-definitions>div:last-child{padding-bottom:0}
+.age-story .age-definitions dt{font-size:14px;font-weight:600;line-height:1.4;letter-spacing:.01em}
+.age-story .age-definitions dd{font-size:17px;line-height:1.55;margin:8px 0 0;max-width:42ch;color:#4b3e32}
+.age-story .age-method-link{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:44px;max-width:330px;margin-top:23px;padding-block:10px;border-bottom:1px solid #171b1870;font-size:15px;line-height:1.4}
+.age-story .age-method-link svg{width:20px;height:20px;flex-shrink:0}
+.age-story .age-method-link:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
+.age-story .age-method-link:hover{border-bottom-color:var(--ink)}
+.age-story .age-availability{max-width:300px;text-align:right}
+.age-story .age-readings{margin-top:64px}
+.age-story .age-readings>div:not(.age-connector)>p{text-transform:uppercase;line-height:1.45;margin:0;min-height:37px}
+.age-story .age-readings .dot-number{max-height:235px}
+.age-story .age-foot{align-items:start;gap:50px;margin-top:44px;padding-top:26px}
+.age-story .age-example-difference{display:flex;align-items:baseline;gap:18px;max-width:440px;font-size:16px;line-height:1.5;margin:0}
+.age-story .age-example-difference>span{flex-shrink:0;white-space:nowrap;font-size:26px;line-height:1.1;font-weight:400;letter-spacing:-.04em;vertical-align:baseline;margin:0}
+.age-story .age-example-difference small{font-size:14px;font-weight:400;letter-spacing:0}
+.age-story .age-foot .illustration-note{font-size:16px;line-height:1.5;max-width:440px;margin:0}
+
+@media(max-width:1050px) and (min-width:701px){
+  .age-story .age-heading{gap:40px;grid-template-columns:1fr 1fr}
+  .age-story .age-heading h2{font-size:clamp(46px,6.6vw,70px)}
+  .age-story .age-story-intro{font-size:17px}
+  .age-story .age-definitions dd{font-size:16px}
+  .age-story .age-foot{gap:36px}
+}
+
+@media(max-width:700px){
+  .age-story .age-heading{grid-template-columns:1fr;gap:25px;margin-top:42px}
+  .age-story .age-heading h2{font-size:clamp(40px,10.8vw,70px);max-width:13ch}
+  .age-story .age-availability{max-width:175px;font-size:10px;line-height:1.5;letter-spacing:.06em}
+  .age-story .age-story-copy{padding-top:0;max-width:none}
+  .age-story .age-story-intro{font-size:16px;line-height:1.55;max-width:42ch}
+  .age-story .age-definitions{margin-top:24px}
+  .age-story .age-definitions>div{padding:17px 0 18px}
+  .age-story .age-definitions dt{font-size:14px}
+  .age-story .age-definitions dd{font-size:16px;line-height:1.55;margin-top:7px;max-width:44ch}
+  .age-story .age-method-link{max-width:none;margin-top:18px;font-size:16px}
+  .age-story .age-readings{grid-template-columns:1fr 24px 1fr;gap:12px;margin-top:42px}
+  .age-story .age-readings>div:not(.age-connector)>p{font-size:11px;min-height:49px;letter-spacing:.025em;padding-bottom:12px}
+  .age-story .age-readings .dot-number{margin-top:18px;max-height:170px}
+  .age-story .age-readings>div>span{font-size:14px}
+  .age-story .age-connector svg{width:24px;height:24px}
+  .age-story .age-foot{display:grid;gap:22px;margin-top:30px;padding-top:22px}
+  .age-story .age-example-difference{font-size:16px;gap:16px;max-width:32ch}
+  .age-story .age-example-difference>span{font-size:24px}
+  .age-story .age-foot .illustration-note{font-size:16px;line-height:1.5;max-width:43ch;margin:0}
+}
+
+@media(max-width:360px){
+  .age-story .section-kicker{gap:16px}
+  .age-story .age-availability{max-width:140px}
+  .age-story .age-readings{gap:8px;grid-template-columns:1fr 20px 1fr}
+  .age-story .age-readings>div:not(.age-connector)>p{font-size:10px;letter-spacing:0}
+  .age-story .age-connector svg{width:20px;height:20px}
+}
