@@ -1,0 +1,148 @@
+{
+  "version": 38,
+  "scope": "Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend",
+  "cases": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "checks": [
+        {
+          "name": "hero",
+          "passed": true,
+          "freePrimary": true,
+          "kit13Secondary": true,
+          "keyboardFocus": true
+        },
+        {
+          "name": "tasso",
+          "passed": true,
+          "nativeRate": 1,
+          "previousNextAndDirectSteps": true,
+          "pausePlayKeyboard": true
+        },
+        {
+          "name": "kit",
+          "passed": true,
+          "actualMarkers": 13,
+          "forwardRevealElapsedMs": 543,
+          "reverse": true,
+          "sameMarkerNames": true
+        },
+        {
+          "name": "range",
+          "passed": true,
+          "same2_1Value": true,
+          "repeatQualificationVisible": true,
+          "sources": 2
+        },
+        {
+          "name": "explanation",
+          "passed": true,
+          "keyboardLevels": [
+            "advanced",
+            "balanced",
+            "simple"
+          ],
+          "fixedValueHistoryContext": true
+        },
+        {
+          "name": "signal",
+          "passed": true,
+          "fourChapters": true,
+          "pauseResumeKeyboard": true
+        },
+        {
+          "name": "trend",
+          "passed": true,
+          "distinctQuestions": [
+            "How does it compare with his earlier readings?",
+            "Is this rise temporary, or does it persist?"
+          ],
+          "fixedLatestAndContext": true,
+          "canonicalReadings": true,
+          "manualAnnouncement": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 375,
+      "height": 812,
+      "checks": [
+        {
+          "name": "hero",
+          "passed": true,
+          "freePrimary": true,
+          "kit13Secondary": true,
+          "keyboardFocus": true
+        },
+        {
+          "name": "tasso",
+          "passed": true,
+          "nativeRate": 1,
+          "previousNextAndDirectSteps": true,
+          "pausePlayKeyboard": true
+        },
+        {
+          "name": "kit",
+          "passed": true,
+          "actualMarkers": 13,
+          "forwardRevealElapsedMs": 525,
+          "reverse": true,
+          "sameMarkerNames": true
+        },
+        {
+          "name": "range",
+          "passed": true,
+          "same2_1Value": true,
+          "repeatQualificationVisible": true,
+          "sources": 2
+        },
+        {
+          "name": "explanation",
+          "passed": true,
+          "keyboardLevels": [
+            "advanced",
+            "balanced",
+            "simple"
+          ],
+          "fixedValueHistoryContext": true
+        },
+        {
+          "name": "signal",
+          "passed": true,
+          "fourChapters": true,
+          "pauseResumeKeyboard": true
+        },
+        {
+          "name": "trend",
+          "passed": true,
+          "distinctQuestions": [
+            "¿Cómo se compara con sus lecturas anteriores?",
+            "¿Es una subida temporal o persiste?"
+          ],
+          "fixedLatestAndContext": true,
+          "canonicalReadings": true,
+          "manualAnnouncement": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "viewportEmulation": true,
+  "physicalDevice": false,
+  "passed": true,
+  "visualReview": {
+    "reviewed": [
+      "core-v38-tasso-en.png",
+      "core-v38-trend-en.png",
+      "core-v38-tasso-es.png",
+      "core-v38-trend-es.png"
+    ],
+    "reviewer": "core_browser_qa",
+    "note": "Actual desktop and phone screenshots inspected; title/body, controls, chart readings/context and disclosures remain visible without an observed overlap. Emulated viewports, not physical-device performance."
+  }
+}

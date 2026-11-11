@@ -1,0 +1,149 @@
+{
+  "version": "38",
+  "cases": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "flowBefore": {
+        "footer": {
+          "left": 0,
+          "top": 21087.890625,
+          "right": 1440,
+          "bottom": 21804.671875,
+          "width": 1440,
+          "height": 716.78125
+        },
+        "dock": {
+          "left": 1144.578125,
+          "top": 21828.671875,
+          "right": 1392,
+          "bottom": 21866.265625,
+          "width": 247.421875,
+          "height": 37.59375
+        },
+        "dockPosition": "static"
+      },
+      "hit": {
+        "center": {
+          "x": 1362.984375,
+          "y": 762.6640625
+        },
+        "switch": {
+          "x": 1346.984375,
+          "y": 753.46875,
+          "width": 32,
+          "height": 18.390625,
+          "top": 753.46875,
+          "right": 1378.984375,
+          "bottom": 771.859375,
+          "left": 1346.984375
+        },
+        "hit": true,
+        "top": {
+          "tag": "SPAN",
+          "class": "peer group/switch relative inline-flex shrink-0 items-center rounded-full border border-transparent transition-all outline-none group-has-[:focus-visible]/field-label:border-transparent group-has-[:focus-visible]/field-label:ring-0 after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-[size=default]:h-[18.4px] data-[size=default]:w-[32px] data-[size=sm]:h-[14px] data-[size=sm]:w-[24px] dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-checked:bg-primary data-unchecked:bg-input dark:data-unchecked:bg-input/80 data-disabled:cursor-not-allowed data-disabled:opacity-50"
+        },
+        "hitarea": {
+          "width": 56,
+          "height": 44
+        }
+      },
+      "rawCenterClick": true,
+      "flowCalm": {
+        "footer": {
+          "left": 0,
+          "top": 15552.21875,
+          "right": 1440,
+          "bottom": 16269,
+          "width": 1440,
+          "height": 716.78125
+        },
+        "dock": {
+          "left": 1144.578125,
+          "top": 16293,
+          "right": 1392,
+          "bottom": 16330.59375,
+          "width": 247.421875,
+          "height": 37.59375
+        },
+        "dockPosition": "static"
+      },
+      "keyboardRestore": true,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 375,
+      "height": 812,
+      "flowBefore": {
+        "footer": {
+          "left": 0,
+          "top": 22476.328125,
+          "right": 375,
+          "bottom": 23519.890625,
+          "width": 375,
+          "height": 1043.5625
+        },
+        "dock": {
+          "left": 85.6875,
+          "top": 23543.890625,
+          "right": 351,
+          "bottom": 23580.1875,
+          "width": 265.3125,
+          "height": 36.296875
+        },
+        "dockPosition": "static"
+      },
+      "hit": {
+        "center": {
+          "x": 160.046875,
+          "y": 675.8828125
+        },
+        "switch": {
+          "x": 144.046875,
+          "y": 666.6875,
+          "width": 32,
+          "height": 18.390625,
+          "top": 666.6875,
+          "right": 176.046875,
+          "bottom": 685.078125,
+          "left": 144.046875
+        },
+        "hit": true,
+        "top": {
+          "tag": "SPAN",
+          "class": "peer group/switch relative inline-flex shrink-0 items-center rounded-full border border-transparent transition-all outline-none group-has-[:focus-visible]/field-label:border-transparent group-has-[:focus-visible]/field-label:ring-0 after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-[size=default]:h-[18.4px] data-[size=default]:w-[32px] data-[size=sm]:h-[14px] data-[size=sm]:w-[24px] dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-checked:bg-primary data-unchecked:bg-input dark:data-unchecked:bg-input/80 data-disabled:cursor-not-allowed data-disabled:opacity-50"
+        },
+        "hitarea": {
+          "width": 56,
+          "height": 44
+        }
+      },
+      "rawCenterClick": true,
+      "flowCalm": {
+        "footer": {
+          "left": 0,
+          "top": 18908.828125,
+          "right": 375,
+          "bottom": 19952.390625,
+          "width": 375,
+          "height": 1043.5625
+        },
+        "dock": {
+          "left": 85.6875,
+          "top": 19976.390625,
+          "right": 351,
+          "bottom": 20012.6875,
+          "width": 265.3125,
+          "height": 36.296875
+        },
+        "dockPosition": "static"
+      },
+      "keyboardRestore": true,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

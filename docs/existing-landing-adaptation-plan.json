@@ -785,62 +785,73 @@
   },
   "inOrderLandingReview": {
     "direction": "Follow the visible page order. A previous implementation-complete label is not user approval of its design or copy.",
-    "current": "Planned chapter/content review complete through footer; follow user feedback and finish browser QA when available.",
+    "current": "Complete through footer, including actual browser QA. Follow user feedback.",
     "queue": [
       {
         "anchor": "#una-senal",
         "section": "A signal to know yourself / From data. To your life.",
-        "status": "Refined and locally verified in this release; publication receipt determines live state."
+        "status": "Refined and locally verified in this release; publication receipt determines live state.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#una-perspectiva",
         "section": "Your health has a story.",
-        "status": "Implemented and verified for review; publication is tracked by the Sites receipt."
+        "status": "Implemented and verified for review; publication is tracked by the Sites receipt.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#revision-trimestral",
         "section": "90 days. A chance to review.",
-        "status": "Implemented and verified for review; publication is tracked by the Sites receipt."
+        "status": "Implemented and verified for review; publication is tracked by the Sites receipt.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#por-que-eva",
         "section": "Trendlines, not snapshots.",
-        "status": "Implemented for review; the publication receipt identifies the live release."
+        "status": "Implemented for review; the publication receipt identifies the live release.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#tu-evolucion",
         "section": "Your age tells part of the story.",
-        "status": "Approved content preserved; user-approved relocation before method published in version 36."
+        "status": "Approved content preserved; user-approved relocation before method published in version 36.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#el-metodo",
         "section": "Your next steps. At your pace.",
-        "status": "Published in version 32 and preserved in later releases; browser verification remains pending."
+        "status": "Published in version 32 and preserved in later releases; browser verification remains pending.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#volver-a-la-vida",
         "section": "And get back to life.",
-        "status": "Published in version 34 with shared bilingual bridge copy; browser verification remains pending."
+        "status": "Published in version 34 with shared bilingual bridge copy; browser verification remains pending.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#lo-que-te-mueve",
         "section": "What moves you. And who you share it with.",
-        "status": "Published in version 35; static/SSR passed, browser verification pending."
+        "status": "Published in version 35; static/SSR passed, browser verification pending.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#nuestra-historia",
         "section": "Founder story",
-        "status": "Completed and published in version 37; static/SSR/pure-policy checks passed, browser QA pending."
+        "status": "Completed and published in version 37; static/SSR/pure-policy checks passed, browser QA pending.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#empezar",
         "section": "Offer",
-        "status": "Completed and published in version 37; static/SSR/pure-policy checks passed, browser QA pending."
+        "status": "Completed and published in version 37; static/SSR/pure-policy checks passed, browser QA pending.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       },
       {
         "anchor": "#site-footer",
         "section": "Footer",
-        "status": "Completed and published in version 37; accessible names, state markup and destinations verified; actual browser interaction pending."
+        "status": "Completed and published in version 37; accessible names, state markup and destinations verified; actual browser interaction pending.",
+        "browser_qa": "Passed on version 38 within docs/final-browser-qa.json scope."
       }
     ],
     "priorState": "Version 26 changed the kit reveal and age chapter. The intervening chapters had earlier copy/offer edits but were not newly refined or approved in that release."
@@ -1242,7 +1253,7 @@
     "offer": "Free previous-report interpretation first in DOM and visual hierarchy through the existing free-account/upload intent. Optional 13-marker €99 + VAT kit second with its existing internal signup intent. Other-panel scope and price are separate.",
     "footer": "Localized public/support/legal/language links retained; private Spanish app preview labelled and hrefLang corrected; design/archive links grouped;44px targets/focus declared; exposed motion switch has explicit localized accessible name.",
     "numbering": "Removed only decorative ordinal prefixes from health/age/method/founder/offer kickers; process steps, readings, timeline months and biomarker counts remain intact.",
-    "narrative_conclusion": "Approved version 36order remains coherent. Earlier clinical/commercial qualifications and all accepted media/motion are preserved.",
+    "narrative_conclusion": "Approved version 36 order remains coherent. Earlier clinical/commercial qualifications and all accepted media/motion are preserved.",
     "verification": [
       "TypeScript",
       "Production build 113 routes",
@@ -1253,16 +1264,17 @@
       "Pure account intent policy resolves free route to upload",
       "Whole-landing links, anchors, order and clinical/offer consistency source audit"
     ],
-    "browser_limit": "Shared browser startup sandbox error unresolved. Static/SSR and declared CSS rules do not establish computed layout, actual focus, motion or physical-device behavior."
+    "browser_limit": "Shared browser startup sandbox error unresolved. Static/SSR and declared CSS rules do not establish computed layout, actual focus, motion or physical-device behavior.",
+    "browser_verification": "Completed on version 38; see docs/final-browser-qa.json."
   },
   "completion": {
-    "version": 37,
-    "scope": "All planned landing sections plus whole-page narrative/content coherence",
-    "verification_record": "docs/closing-journey-qa.json",
-    "browser_verification": "Pending recorded environment blocker; no computed-layout or physical-device claim."
+    "version": 38,
+    "scope": "All planned landing content/narrative refinement and final review-site browser QA",
+    "verification_record": "docs/final-browser-qa.json",
+    "browser_verification": "Complete for live version 38,18 scenarios across desktop and emulated phone viewports. No physical-device performance or real production-backend claim."
   },
   "finalBrowserQARefinement": {
-    "status": "Actual browser QA in progress; discovered fixes implemented and built, pending live retest.",
+    "status": "Completed and published in version 38; all18 actual browser scenarios passed.",
     "runtime": "Installed Playwright + system Chromium successfully exercise the published Site; shared interactive CUA still fails before launch. No preview server or browser installation required.",
     "baseline_version": 37,
     "baseline_results": [
@@ -1276,6 +1288,8 @@
       "Show free/first-kit onboarding paths by default, preserve older explicit incoming intents without presenting them as current offers"
     ],
     "preserved": "Internal plan IDs, auth callbacks, preview request/update behavior, accepted landing narrative, imagery and motion remain unchanged.",
-    "verification": "Fresh TypeScript/build/English checks passed. Final live browser rerun and visual review will determine completed QA."
+    "verification": "Live Chromium layout, core controls, sections, raw footer pointer targets and browser-local entry flows passed in EN/ES. Screenshots reviewed; no page errors or mutating requests.",
+    "verification_record": "docs/final-browser-qa.json",
+    "final_scenarios": 18
   }
 }

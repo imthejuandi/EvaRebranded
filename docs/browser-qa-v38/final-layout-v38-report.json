@@ -1,0 +1,3197 @@
+{
+  "version": 38,
+  "cases": [
+    {
+      "w": 1440,
+      "h": 900,
+      "l": "en",
+      "sections": [
+        {
+          "id": "una-perspectiva",
+          "rect": {
+            "x": 0,
+            "y": 19.90625,
+            "width": 1440,
+            "height": 1266.390625,
+            "top": 19.90625,
+            "right": 1440,
+            "bottom": 1286.296875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 24.48,
+              "text": "Your past results and the day of your test help explain what a ne"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "A result can sit inside a lab’s range and still differ from your "
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Exercise or illness around a blood draw can influence a result. Y"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "days. A suggested review rhythm."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Review your history. Decide whether to test again and which avail"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 01StartFirst results or previous labs."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 01"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "First results or previous labs."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 04Review + chooseWhat changed?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What changed?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 07Review + chooseWhat matters now?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 07"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What matters now?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 10Review + chooseWhat will you follow?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 10"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What will you follow?"
+            }
+          ]
+        },
+        {
+          "id": "por-que-eva",
+          "rect": {
+            "x": 0,
+            "y": 20.296875,
+            "width": 1440,
+            "height": 1260.484375,
+            "top": 20.296875,
+            "right": 1440,
+            "bottom": 1280.78125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 26,
+              "text": "One reading gives you a value. Four readings reveal a change."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Four readings"
+            },
+            {
+              "tag": "P",
+              "size": 13,
+              "text": "Latest result · Reading 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "2.1 mg/Lmg/L"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 010.8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 020.9"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 030.8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 042.1"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "hs-CRP · mg/L"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Blood-draw notesSelf-reported"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Hard workout · previous 24 hours"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "No recent illness reported"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Context informs the interpretation. It does not prove the cause."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "With history"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Alex’s latest reading is higher than the three before it. His his"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Alex and these readings are fictional."
+            }
+          ]
+        },
+        {
+          "id": "tu-evolucion",
+          "rect": {
+            "x": 0,
+            "y": 19.78125,
+            "width": 1440,
+            "height": 1174.421875,
+            "top": 19.78125,
+            "right": 1440,
+            "bottom": 1194.203125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Individual values tell you one part. These two measures bring the"
+            },
+            {
+              "tag": "DD",
+              "size": 17,
+              "text": "An estimate of the age your biomarker pattern resembles in a refe"
+            },
+            {
+              "tag": "DD",
+              "size": 17,
+              "text": "How close your values are to the targets used by EVA’s method."
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Chronological age"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Estimated biological age"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "−5 yearsDifference between the two ages in this example."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Illustrative ages, not a prediction of your result. Availability "
+            }
+          ]
+        },
+        {
+          "id": "el-metodo",
+          "rect": {
+            "x": 0,
+            "y": 20.203125,
+            "width": 1440,
+            "height": 1397.296875,
+            "top": 20.203125,
+            "right": 1440,
+            "bottom": 1417.5,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Start with previous lab results or your first kit. Understand you"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Upload your previous lab results for free interpretation. Or star"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Editorial scene of the kit option."
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-el-metodo-en-1440x900.png"
+        },
+        {
+          "id": "volver-a-la-vida",
+          "rect": {
+            "x": 0,
+            "y": 19.5,
+            "width": 1440,
+            "height": 2293.15625,
+            "top": 19.5,
+            "right": 1440,
+            "bottom": 2312.65625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "lo-que-te-mueve",
+          "rect": {
+            "x": 0,
+            "y": 19.65625,
+            "width": 1440,
+            "height": 1020.671875,
+            "top": 19.65625,
+            "right": 1440,
+            "bottom": 1040.328125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "WHAT MATTERS EVERY DAY"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "A run for the pleasure of it. A longer walk to keep the conversat"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Sharing a meal and stories from the day. Looking after yourself i"
+            }
+          ]
+        },
+        {
+          "id": "nuestra-historia",
+          "rect": {
+            "x": 0,
+            "y": 20.328125,
+            "width": 1440,
+            "height": 770.203125,
+            "top": 20.328125,
+            "right": 1440,
+            "bottom": 790.53125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-nuestra-historia-en-1440x900.png"
+        },
+        {
+          "id": "empezar",
+          "rect": {
+            "x": 0,
+            "y": 19.53125,
+            "width": 1440,
+            "height": 1261.359375,
+            "top": 19.53125,
+            "right": 1440,
+            "bottom": 1280.890625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "CHOOSE HOW TO START"
+            },
+            {
+              "tag": "P",
+              "size": 22,
+              "text": "With previous lab results or your first kit."
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Upload your previous report and explore your results in context."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "With your account and consent. No credit card required."
+            },
+            {
+              "tag": "P",
+              "size": 22,
+              "text": "Your first at-home kit.13 biomarkers, explained."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Collect at home with Tasso+."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Laboratory testing of 13 biomarkers."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Your results, explained with laboratory reference ranges."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "A starting point for comparing compatible results over time."
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "BEFORE YOU CHOOSE"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Other panels have their own scope and pricing. Check the details "
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-empezar-en-1440x900.png"
+        },
+        {
+          "id": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 97.890625,
+            "width": 1440,
+            "height": 716.78125,
+            "top": 97.890625,
+            "right": 1440,
+            "bottom": 814.671875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Know your body.Live at your pace."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "The private app preview and design archives are currently in Span"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Copyright 2026 EVA Health · Madrid"
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-site-footer-en-1440x900.png"
+        }
+      ],
+      "failures": [],
+      "http": 200,
+      "documentOverflow": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "reviewDockPosition": "static",
+      "passed": true
+    },
+    {
+      "w": 1366,
+      "h": 650,
+      "l": "en",
+      "sections": [
+        {
+          "id": "una-perspectiva",
+          "rect": {
+            "x": 0,
+            "y": 19.875,
+            "width": 1366,
+            "height": 1262.703125,
+            "top": 19.875,
+            "right": 1366,
+            "bottom": 1282.578125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 23.222,
+              "text": "Your past results and the day of your test help explain what a ne"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "A result can sit inside a lab’s range and still differ from your "
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Exercise or illness around a blood draw can influence a result. Y"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "days. A suggested review rhythm."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Review your history. Decide whether to test again and which avail"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 01StartFirst results or previous labs."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 01"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "First results or previous labs."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 04Review + chooseWhat changed?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What changed?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 07Review + chooseWhat matters now?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 07"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What matters now?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 10Review + chooseWhat will you follow?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 10"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What will you follow?"
+            }
+          ]
+        },
+        {
+          "id": "por-que-eva",
+          "rect": {
+            "x": 0,
+            "y": 19.578125,
+            "width": 1366,
+            "height": 1250.796875,
+            "top": 19.578125,
+            "right": 1366,
+            "bottom": 1270.375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 25.271,
+              "text": "One reading gives you a value. Four readings reveal a change."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Latest result"
+            },
+            {
+              "tag": "P",
+              "size": 13,
+              "text": "Latest result · Reading 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "2.1 mg/Lmg/L"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 042.1"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "hs-CRP · mg/L"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Blood-draw notesSelf-reported"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Hard workout · previous 24 hours"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "No recent illness reported"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Context informs the interpretation. It does not prove the cause."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "With one reading"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "hs-CRP can signal inflammation, but cannot tell us its cause. Ale"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Alex and these readings are fictional."
+            }
+          ]
+        },
+        {
+          "id": "tu-evolucion",
+          "rect": {
+            "x": 0,
+            "y": 20.375,
+            "width": 1366,
+            "height": 1174.421875,
+            "top": 20.375,
+            "right": 1366,
+            "bottom": 1194.796875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Individual values tell you one part. These two measures bring the"
+            },
+            {
+              "tag": "DD",
+              "size": 17,
+              "text": "An estimate of the age your biomarker pattern resembles in a refe"
+            },
+            {
+              "tag": "DD",
+              "size": 17,
+              "text": "How close your values are to the targets used by EVA’s method."
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Chronological age"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Estimated biological age"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "−5 yearsDifference between the two ages in this example."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Illustrative ages, not a prediction of your result. Availability "
+            }
+          ]
+        },
+        {
+          "id": "el-metodo",
+          "rect": {
+            "x": 0,
+            "y": 19.796875,
+            "width": 1366,
+            "height": 1348,
+            "top": 19.796875,
+            "right": 1366,
+            "bottom": 1367.796875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Start with previous lab results or your first kit. Understand you"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Upload your previous lab results for free interpretation. Or star"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Editorial scene of the kit option."
+            }
+          ]
+        },
+        {
+          "id": "volver-a-la-vida",
+          "rect": {
+            "x": 0,
+            "y": 19.796875,
+            "width": 1366,
+            "height": 1656.171875,
+            "top": 19.796875,
+            "right": 1366,
+            "bottom": 1675.96875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "lo-que-te-mueve",
+          "rect": {
+            "x": 0,
+            "y": 19.96875,
+            "width": 1366,
+            "height": 976.703125,
+            "top": 19.96875,
+            "right": 1366,
+            "bottom": 996.671875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "WHAT MATTERS EVERY DAY"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "A run for the pleasure of it. A longer walk to keep the conversat"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Sharing a meal and stories from the day. Looking after yourself i"
+            }
+          ]
+        },
+        {
+          "id": "nuestra-historia",
+          "rect": {
+            "x": 0,
+            "y": 19.671875,
+            "width": 1366,
+            "height": 682.765625,
+            "top": 19.671875,
+            "right": 1366,
+            "bottom": 702.4375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "empezar",
+          "rect": {
+            "x": 0,
+            "y": 20.4375,
+            "width": 1366,
+            "height": 1244.375,
+            "top": 20.4375,
+            "right": 1366,
+            "bottom": 1264.8125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "CHOOSE HOW TO START"
+            },
+            {
+              "tag": "P",
+              "size": 22,
+              "text": "With previous lab results or your first kit."
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Upload your previous report and explore your results in context."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "With your account and consent. No credit card required."
+            },
+            {
+              "tag": "P",
+              "size": 22,
+              "text": "Your first at-home kit.13 biomarkers, explained."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Collect at home with Tasso+."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Laboratory testing of 13 biomarkers."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Your results, explained with laboratory reference ranges."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "A starting point for comparing compatible results over time."
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "BEFORE YOU CHOOSE"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Other panels have their own scope and pricing. Check the details "
+            }
+          ]
+        },
+        {
+          "id": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 19.8125,
+            "width": 1366,
+            "height": 716.78125,
+            "top": 19.8125,
+            "right": 1366,
+            "bottom": 736.59375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Know your body.Live at your pace."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "The private app preview and design archives are currently in Span"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Copyright 2026 EVA Health · Madrid"
+            }
+          ]
+        }
+      ],
+      "failures": [],
+      "http": 200,
+      "documentOverflow": {
+        "scroll": 1366,
+        "client": 1366
+      },
+      "reviewDockPosition": "static",
+      "passed": true
+    },
+    {
+      "w": 1280,
+      "h": 720,
+      "l": "es",
+      "sections": [
+        {
+          "id": "una-perspectiva",
+          "rect": {
+            "x": 0,
+            "y": 20.125,
+            "width": 1280,
+            "height": 1391.515625,
+            "top": 20.125,
+            "right": 1280,
+            "bottom": 1411.640625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 21.76,
+              "text": "Tus resultados anteriores y el día de la prueba ayudan a entender"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Un resultado puede estar dentro del intervalo del laboratorio y s"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "El ejercicio o una enfermedad cerca de la extracción pueden influ"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "días. Un ritmo orientativo de revisión."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Revisa tu historial. Con la orientación de EVA, decide si hacer o"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 01EmpiezaPrimeros resultados o analíticas anteriores."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 01"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Primeros resultados o analíticas anteriores."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 04Revisa y elige¿Qué cambió?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué cambió?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 07Revisa y elige¿Qué te importa ahora?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 07"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué te importa ahora?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 10Revisa y elige¿Qué quieres seguir midiendo?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 10"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué quieres seguir midiendo?"
+            }
+          ]
+        },
+        {
+          "id": "por-que-eva",
+          "rect": {
+            "x": 0,
+            "y": 19.640625,
+            "width": 1280,
+            "height": 1241.515625,
+            "top": 19.640625,
+            "right": 1280,
+            "bottom": 1261.15625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 23.68,
+              "text": "Una lectura te da una cifra. Cuatro permiten ver un cambio."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Último resultado"
+            },
+            {
+              "tag": "P",
+              "size": 13,
+              "text": "Último resultado · Lectura 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "2,1 mg/Lmg/L"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 042,1"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "hs-CRP · mg/L"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Datos de la extracciónDeclarados por Alex"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Ejercicio intenso · últimas 24 horas"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Sin enfermedad reciente declarada"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "El contexto orienta la interpretación. No demuestra la causa."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Con una lectura"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "La hs-CRP puede señalar inflamación, pero no identifica su causa."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Alex y estas lecturas son ficticios."
+            }
+          ]
+        },
+        {
+          "id": "tu-evolucion",
+          "rect": {
+            "x": 0,
+            "y": 20.15625,
+            "width": 1280,
+            "height": 1172.875,
+            "top": 20.15625,
+            "right": 1280,
+            "bottom": 1193.03125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Cada valor cuenta una parte. Estas dos medidas los reúnen desde p"
+            },
+            {
+              "tag": "DD",
+              "size": 17,
+              "text": "Una estimación de la edad a la que se parece tu patrón de biomarc"
+            },
+            {
+              "tag": "DD",
+              "size": 17,
+              "text": "Hasta qué punto tus valores se acercan a los objetivos del método"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Edad cronológica"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Edad biológica estimada"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "−5 añosDiferencia entre las dos edades de este ejemplo."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Edades ilustrativas, no una predicción de tu resultado. La dispon"
+            }
+          ]
+        },
+        {
+          "id": "el-metodo",
+          "rect": {
+            "x": 0,
+            "y": 20.03125,
+            "width": 1280,
+            "height": 1368.515625,
+            "top": 20.03125,
+            "right": 1280,
+            "bottom": 1388.546875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Empieza con una analítica previa o con tu primer kit. Entiende tu"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Sube tus analíticas anteriores para interpretarlas gratis. O empi"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Escena editorial de la opción del kit."
+            }
+          ]
+        },
+        {
+          "id": "volver-a-la-vida",
+          "rect": {
+            "x": 0,
+            "y": 19.546875,
+            "width": 1280,
+            "height": 1834.515625,
+            "top": 19.546875,
+            "right": 1280,
+            "bottom": 1854.0625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "lo-que-te-mueve",
+          "rect": {
+            "x": 0,
+            "y": 20.0625,
+            "width": 1280,
+            "height": 925.59375,
+            "top": 20.0625,
+            "right": 1280,
+            "bottom": 945.65625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "LO QUE CUENTA CADA DÍA"
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Salir a correr por gusto. Alargar el paseo para seguir hablando."
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Compartir la mesa y las historias del día. Cuidarte también forma"
+            }
+          ]
+        },
+        {
+          "id": "nuestra-historia",
+          "rect": {
+            "x": 0,
+            "y": 19.65625,
+            "width": 1280,
+            "height": 666.390625,
+            "top": 19.65625,
+            "right": 1280,
+            "bottom": 686.046875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "empezar",
+          "rect": {
+            "x": 0,
+            "y": 20.046875,
+            "width": 1280,
+            "height": 1232.953125,
+            "top": 20.046875,
+            "right": 1280,
+            "bottom": 1253,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "ELIGE CÓMO EMPEZAR"
+            },
+            {
+              "tag": "P",
+              "size": 22,
+              "text": "Con una analítica previa o con tu primer kit."
+            },
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Sube tu informe anterior y consulta tus resultados con contexto."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Con tu cuenta y consentimiento. Sin tarjeta de crédito."
+            },
+            {
+              "tag": "P",
+              "size": 22,
+              "text": "Tu primer kit en casa.13 biomarcadores, explicados."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Recogida en casa con Tasso+."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Análisis de 13 biomarcadores en laboratorio."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Tus resultados, explicados junto a los intervalos del laboratorio"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Un punto de partida para comparar resultados compatibles con el t"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "ANTES DE ELEGIR"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Otros paneles tienen su propio alcance y precio. Consulta los det"
+            }
+          ]
+        },
+        {
+          "id": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 20,
+            "width": 1280,
+            "height": 716.78125,
+            "top": 20,
+            "right": 1280,
+            "bottom": 736.78125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Conoce tu cuerpo.Vive a tu ritmo."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "La vista previa del área privada y los archivos de diseño están e"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Copyright 2026 EVA Health · Madrid"
+            }
+          ]
+        }
+      ],
+      "failures": [],
+      "http": 200,
+      "documentOverflow": {
+        "scroll": 1280,
+        "client": 1280
+      },
+      "reviewDockPosition": "static",
+      "passed": true
+    },
+    {
+      "w": 390,
+      "h": 780,
+      "l": "en",
+      "sections": [
+        {
+          "id": "una-perspectiva",
+          "rect": {
+            "x": 0,
+            "y": 20.203125,
+            "width": 390,
+            "height": 1702.890625,
+            "top": 20.203125,
+            "right": 390,
+            "bottom": 1723.09375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Your past results and the day of your test help explain what a ne"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "A result can sit inside a lab’s range and still differ from your "
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Exercise or illness around a blood draw can influence a result. Y"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "days. A suggested review rhythm."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Review your history. Decide whether to test again and which avail"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 01StartFirst results or previous labs."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 01"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "First results or previous labs."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 04Review + chooseWhat changed?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What changed?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 07Review + chooseWhat matters now?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 07"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What matters now?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 10Review + chooseWhat will you follow?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 10"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What will you follow?"
+            }
+          ]
+        },
+        {
+          "id": "por-que-eva",
+          "rect": {
+            "x": 0,
+            "y": 20.09375,
+            "width": 390,
+            "height": 1479.171875,
+            "top": 20.09375,
+            "right": 390,
+            "bottom": 1499.265625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "One reading gives you a value. Four readings reveal a change."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Four readings"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Latest result · Reading 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "2.1 mg/Lmg/L"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 010.8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 020.9"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 030.8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 042.1"
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "hs-CRP · mg/L"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Blood-draw notesSelf-reported"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Hard workout · previous 24 hours"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "No recent illness reported"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Context informs the interpretation. It does not prove the cause."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "With history"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Alex’s latest reading is higher than the three before it. His his"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Alex and these readings are fictional."
+            }
+          ]
+        },
+        {
+          "id": "tu-evolucion",
+          "rect": {
+            "x": 0,
+            "y": 20.265625,
+            "width": 390,
+            "height": 1068.5,
+            "top": 20.265625,
+            "right": 390,
+            "bottom": 1088.765625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Individual values tell you one part. These two measures bring the"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "An estimate of the age your biomarker pattern resembles in a refe"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "How close your values are to the targets used by EVA’s method."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Chronological age"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Estimated biological age"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "−5 yearsDifference between the two ages in this example."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Illustrative ages, not a prediction of your result. Availability "
+            }
+          ]
+        },
+        {
+          "id": "el-metodo",
+          "rect": {
+            "x": 0,
+            "y": 19.765625,
+            "width": 390,
+            "height": 1405,
+            "top": 19.765625,
+            "right": 390,
+            "bottom": 1424.765625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Start with previous lab results or your first kit. Understand you"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Upload your previous lab results for free interpretation. Or star"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Editorial scene of the kit option."
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-el-metodo-en-390x780.png"
+        },
+        {
+          "id": "volver-a-la-vida",
+          "rect": {
+            "x": 0,
+            "y": 19.765625,
+            "width": 390,
+            "height": 1987.40625,
+            "top": 19.765625,
+            "right": 390,
+            "bottom": 2007.171875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "lo-que-te-mueve",
+          "rect": {
+            "x": 0,
+            "y": 20.171875,
+            "width": 390,
+            "height": 1238.0625,
+            "top": 20.171875,
+            "right": 390,
+            "bottom": 1258.234375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "WHAT MATTERS EVERY DAY"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "A run for the pleasure of it. A longer walk to keep the conversat"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Sharing a meal and stories from the day. Looking after yourself i"
+            }
+          ]
+        },
+        {
+          "id": "nuestra-historia",
+          "rect": {
+            "x": 0,
+            "y": 20.234375,
+            "width": 390,
+            "height": 582.09375,
+            "top": 20.234375,
+            "right": 390,
+            "bottom": 602.328125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-nuestra-historia-en-390x780.png"
+        },
+        {
+          "id": "empezar",
+          "rect": {
+            "x": 0,
+            "y": 20.328125,
+            "width": 390,
+            "height": 1794.21875,
+            "top": 20.328125,
+            "right": 390,
+            "bottom": 1814.546875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "CHOOSE HOW TO START"
+            },
+            {
+              "tag": "P",
+              "size": 19,
+              "text": "With previous lab results or your first kit."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Upload your previous report and explore your results in context."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "With your account and consent. No credit card required."
+            },
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Your first at-home kit.13 biomarkers, explained."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Collect at home with Tasso+."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Laboratory testing of 13 biomarkers."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Your results, explained with laboratory reference ranges."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "A starting point for comparing compatible results over time."
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "BEFORE YOU CHOOSE"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Other panels have their own scope and pricing. Check the details "
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-empezar-en-390x780.png"
+        },
+        {
+          "id": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 19.546875,
+            "width": 390,
+            "height": 1021.171875,
+            "top": 19.546875,
+            "right": 390,
+            "bottom": 1040.71875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Know your body.Live at your pace."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "The private app preview and design archives are currently in Span"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Copyright 2026 EVA Health · Madrid"
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-site-footer-en-390x780.png"
+        }
+      ],
+      "failures": [],
+      "http": 200,
+      "documentOverflow": {
+        "scroll": 390,
+        "client": 390
+      },
+      "reviewDockPosition": "static",
+      "passed": true
+    },
+    {
+      "w": 375,
+      "h": 812,
+      "l": "es",
+      "sections": [
+        {
+          "id": "una-perspectiva",
+          "rect": {
+            "x": 0,
+            "y": 19.59375,
+            "width": 375,
+            "height": 1738.234375,
+            "top": 19.59375,
+            "right": 375,
+            "bottom": 1757.828125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Tus resultados anteriores y el día de la prueba ayudan a entender"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Un resultado puede estar dentro del intervalo del laboratorio y s"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "El ejercicio o una enfermedad cerca de la extracción pueden influ"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "días. Un ritmo orientativo de revisión."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Revisa tu historial. Con la orientación de EVA, decide si hacer o"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 01EmpiezaPrimeros resultados o analíticas anteriores."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 01"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Primeros resultados o analíticas anteriores."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 04Revisa y elige¿Qué cambió?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué cambió?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 07Revisa y elige¿Qué te importa ahora?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 07"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué te importa ahora?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 10Revisa y elige¿Qué quieres seguir midiendo?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 10"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué quieres seguir midiendo?"
+            }
+          ]
+        },
+        {
+          "id": "por-que-eva",
+          "rect": {
+            "x": 0,
+            "y": 19.828125,
+            "width": 375,
+            "height": 1502.125,
+            "top": 19.828125,
+            "right": 375,
+            "bottom": 1521.953125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Una lectura te da una cifra. Cuatro permiten ver un cambio."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Cuatro lecturas"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Último resultado · Lectura 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "2,1 mg/Lmg/L"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 010,8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 020,9"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 030,8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 042,1"
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "hs-CRP · mg/L"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Datos de la extracciónDeclarados por Alex"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Ejercicio intenso · últimas 24 horas"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Sin enfermedad reciente declarada"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "El contexto orienta la interpretación. No demuestra la causa."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Con su historial"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "La última lectura de Alex es más alta que las tres anteriores. Su"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Alex y estas lecturas son ficticios."
+            }
+          ]
+        },
+        {
+          "id": "tu-evolucion",
+          "rect": {
+            "x": 0,
+            "y": 19.953125,
+            "width": 375,
+            "height": 1109.375,
+            "top": 19.953125,
+            "right": 375,
+            "bottom": 1129.328125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Cada valor cuenta una parte. Estas dos medidas los reúnen desde p"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "Una estimación de la edad a la que se parece tu patrón de biomarc"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "Hasta qué punto tus valores se acercan a los objetivos del método"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Edad cronológica"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Edad biológica estimada"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "−5 añosDiferencia entre las dos edades de este ejemplo."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Edades ilustrativas, no una predicción de tu resultado. La dispon"
+            }
+          ]
+        },
+        {
+          "id": "el-metodo",
+          "rect": {
+            "x": 0,
+            "y": 20.328125,
+            "width": 375,
+            "height": 1454.484375,
+            "top": 20.328125,
+            "right": 375,
+            "bottom": 1474.8125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Empieza con una analítica previa o con tu primer kit. Entiende tu"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Sube tus analíticas anteriores para interpretarlas gratis. O empi"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Escena editorial de la opción del kit."
+            }
+          ]
+        },
+        {
+          "id": "volver-a-la-vida",
+          "rect": {
+            "x": 0,
+            "y": 19.8125,
+            "width": 375,
+            "height": 2068.9375,
+            "top": 19.8125,
+            "right": 375,
+            "bottom": 2088.75,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "lo-que-te-mueve",
+          "rect": {
+            "x": 0,
+            "y": 19.75,
+            "width": 375,
+            "height": 1152.0625,
+            "top": 19.75,
+            "right": 375,
+            "bottom": 1171.8125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "LO QUE CUENTA CADA DÍA"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Salir a correr por gusto. Alargar el paseo para seguir hablando."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Compartir la mesa y las historias del día. Cuidarte también forma"
+            }
+          ]
+        },
+        {
+          "id": "nuestra-historia",
+          "rect": {
+            "x": 0,
+            "y": 19.8125,
+            "width": 375,
+            "height": 604.9375,
+            "top": 19.8125,
+            "right": 375,
+            "bottom": 624.75,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "empezar",
+          "rect": {
+            "x": 0,
+            "y": 19.75,
+            "width": 375,
+            "height": 1786.578125,
+            "top": 19.75,
+            "right": 375,
+            "bottom": 1806.328125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "ELIGE CÓMO EMPEZAR"
+            },
+            {
+              "tag": "P",
+              "size": 19,
+              "text": "Con una analítica previa o con tu primer kit."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Sube tu informe anterior y consulta tus resultados con contexto."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Con tu cuenta y consentimiento. Sin tarjeta de crédito."
+            },
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Tu primer kit en casa.13 biomarcadores, explicados."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Recogida en casa con Tasso+."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Análisis de 13 biomarcadores en laboratorio."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Tus resultados, explicados junto a los intervalos del laboratorio"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Un punto de partida para comparar resultados compatibles con el t"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "ANTES DE ELEGIR"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Otros paneles tienen su propio alcance y precio. Consulta los det"
+            }
+          ]
+        },
+        {
+          "id": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 20.328125,
+            "width": 375,
+            "height": 1043.5625,
+            "top": 20.328125,
+            "right": 375,
+            "bottom": 1063.890625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Conoce tu cuerpo.Vive a tu ritmo."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "La vista previa del área privada y los archivos de diseño están e"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Copyright 2026 EVA Health · Madrid"
+            }
+          ]
+        }
+      ],
+      "failures": [],
+      "http": 200,
+      "documentOverflow": {
+        "scroll": 375,
+        "client": 375
+      },
+      "reviewDockPosition": "static",
+      "passed": true
+    },
+    {
+      "w": 320,
+      "h": 568,
+      "l": "en",
+      "sections": [
+        {
+          "id": "una-perspectiva",
+          "rect": {
+            "x": 0,
+            "y": 19.5625,
+            "width": 320,
+            "height": 1742.484375,
+            "top": 19.5625,
+            "right": 320,
+            "bottom": 1762.046875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Your past results and the day of your test help explain what a ne"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "A result can sit inside a lab’s range and still differ from your "
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Exercise or illness around a blood draw can influence a result. Y"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "days. A suggested review rhythm."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Review your history. Decide whether to test again and which avail"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 01StartFirst results or previous labs."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 01"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "First results or previous labs."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 04Review + chooseWhat changed?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What changed?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 07Review + chooseWhat matters now?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 07"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What matters now?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MONTH 10Review + chooseWhat will you follow?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MONTH 10"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "What will you follow?"
+            }
+          ]
+        },
+        {
+          "id": "por-que-eva",
+          "rect": {
+            "x": 0,
+            "y": 20.046875,
+            "width": 320,
+            "height": 1535.328125,
+            "top": 20.046875,
+            "right": 320,
+            "bottom": 1555.375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "One reading gives you a value. Four readings reveal a change."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Four readings"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Latest result · Reading 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "2.1 mg/Lmg/L"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 010.8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 020.9"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 030.8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Reading 042.1"
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "hs-CRP · mg/L"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Blood-draw notesSelf-reported"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Hard workout · previous 24 hours"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "No recent illness reported"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Context informs the interpretation. It does not prove the cause."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "With history"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Alex’s latest reading is higher than the three before it. His his"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Alex and these readings are fictional."
+            }
+          ]
+        },
+        {
+          "id": "tu-evolucion",
+          "rect": {
+            "x": 0,
+            "y": 20.375,
+            "width": 320,
+            "height": 1099.140625,
+            "top": 20.375,
+            "right": 320,
+            "bottom": 1119.515625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Individual values tell you one part. These two measures bring the"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "An estimate of the age your biomarker pattern resembles in a refe"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "How close your values are to the targets used by EVA’s method."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Chronological age"
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Estimated biological age"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "−5 yearsDifference between the two ages in this example."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Illustrative ages, not a prediction of your result. Availability "
+            }
+          ]
+        },
+        {
+          "id": "el-metodo",
+          "rect": {
+            "x": 0,
+            "y": 19.515625,
+            "width": 320,
+            "height": 1359.421875,
+            "top": 19.515625,
+            "right": 320,
+            "bottom": 1378.9375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Start with previous lab results or your first kit. Understand you"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Upload your previous lab results for free interpretation. Or star"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Editorial scene of the kit option."
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-el-metodo-en-320x568.png"
+        },
+        {
+          "id": "volver-a-la-vida",
+          "rect": {
+            "x": 0,
+            "y": 19.9375,
+            "width": 320,
+            "height": 1447.234375,
+            "top": 19.9375,
+            "right": 320,
+            "bottom": 1467.171875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "lo-que-te-mueve",
+          "rect": {
+            "x": 0,
+            "y": 20.171875,
+            "width": 320,
+            "height": 1132.9375,
+            "top": 20.171875,
+            "right": 320,
+            "bottom": 1153.109375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "WHAT MATTERS EVERY DAY"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "A run for the pleasure of it. A longer walk to keep the conversat"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Sharing a meal and stories from the day. Looking after yourself i"
+            }
+          ]
+        },
+        {
+          "id": "nuestra-historia",
+          "rect": {
+            "x": 0,
+            "y": 20.109375,
+            "width": 320,
+            "height": 532.84375,
+            "top": 20.109375,
+            "right": 320,
+            "bottom": 552.953125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-nuestra-historia-en-320x568.png"
+        },
+        {
+          "id": "empezar",
+          "rect": {
+            "x": 0,
+            "y": 19.953125,
+            "width": 320,
+            "height": 1873.84375,
+            "top": 19.953125,
+            "right": 320,
+            "bottom": 1893.796875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "CHOOSE HOW TO START"
+            },
+            {
+              "tag": "P",
+              "size": 19,
+              "text": "With previous lab results or your first kit."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Upload your previous report and explore your results in context."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "With your account and consent. No credit card required."
+            },
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Your first at-home kit.13 biomarkers, explained."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Collect at home with Tasso+."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Laboratory testing of 13 biomarkers."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Your results, explained with laboratory reference ranges."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "A starting point for comparing compatible results over time."
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "BEFORE YOU CHOOSE"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Other panels have their own scope and pricing. Check the details "
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-empezar-en-320x568.png"
+        },
+        {
+          "id": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 19.796875,
+            "width": 320,
+            "height": 1043.5625,
+            "top": 19.796875,
+            "right": 320,
+            "bottom": 1063.359375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Know your body.Live at your pace."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "The private app preview and design archives are currently in Span"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Copyright 2026 EVA Health · Madrid"
+            }
+          ],
+          "screenshot": "/workspace/eva-in-place-qa/qa38-site-footer-en-320x568.png"
+        }
+      ],
+      "failures": [],
+      "http": 200,
+      "documentOverflow": {
+        "scroll": 320,
+        "client": 320
+      },
+      "reviewDockPosition": "static",
+      "passed": true
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "l": "es",
+      "reduced": true,
+      "sections": [
+        {
+          "id": "una-perspectiva",
+          "rect": {
+            "x": 0,
+            "y": 20.390625,
+            "width": 390,
+            "height": 1737.484375,
+            "top": 20.390625,
+            "right": 390,
+            "bottom": 1757.875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Tus resultados anteriores y el día de la prueba ayudan a entender"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Un resultado puede estar dentro del intervalo del laboratorio y s"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "El ejercicio o una enfermedad cerca de la extracción pueden influ"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "días. Un ritmo orientativo de revisión."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Revisa tu historial. Con la orientación de EVA, decide si hacer o"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 01EmpiezaPrimeros resultados o analíticas anteriores."
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 01"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Primeros resultados o analíticas anteriores."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 04Revisa y elige¿Qué cambió?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué cambió?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 07Revisa y elige¿Qué te importa ahora?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 07"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué te importa ahora?"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "MES 10Revisa y elige¿Qué quieres seguir midiendo?"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "MES 10"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "¿Qué quieres seguir midiendo?"
+            }
+          ]
+        },
+        {
+          "id": "por-que-eva",
+          "rect": {
+            "x": 0,
+            "y": 19.875,
+            "width": 390,
+            "height": 1503.96875,
+            "top": 19.875,
+            "right": 390,
+            "bottom": 1523.84375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Una lectura te da una cifra. Cuatro permiten ver un cambio."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Cuatro lecturas"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Último resultado · Lectura 04"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "2,1 mg/Lmg/L"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 010,8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 020,9"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 030,8"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Lectura 042,1"
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "hs-CRP · mg/L"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Datos de la extracciónDeclarados por Alex"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Ejercicio intenso · últimas 24 horas"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Sin enfermedad reciente declarada"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "El contexto orienta la interpretación. No demuestra la causa."
+            },
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "Con su historial"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "La última lectura de Alex es más alta que las tres anteriores. Su"
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Alex y estas lecturas son ficticios."
+            }
+          ]
+        },
+        {
+          "id": "tu-evolucion",
+          "rect": {
+            "x": 0,
+            "y": 19.84375,
+            "width": 390,
+            "height": 1117.296875,
+            "top": 19.84375,
+            "right": 390,
+            "bottom": 1137.140625,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Cada valor cuenta una parte. Estas dos medidas los reúnen desde p"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "Una estimación de la edad a la que se parece tu patrón de biomarc"
+            },
+            {
+              "tag": "DD",
+              "size": 16,
+              "text": "Hasta qué punto tus valores se acercan a los objetivos del método"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Edad cronológica"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Edad biológica estimada"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "−5 añosDiferencia entre las dos edades de este ejemplo."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Edades ilustrativas, no una predicción de tu resultado. La dispon"
+            }
+          ]
+        },
+        {
+          "id": "el-metodo",
+          "rect": {
+            "x": 0,
+            "y": 20.140625,
+            "width": 390,
+            "height": 1441.296875,
+            "top": 20.140625,
+            "right": 390,
+            "bottom": 1461.4375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Empieza con una analítica previa o con tu primer kit. Entiende tu"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Sube tus analíticas anteriores para interpretarlas gratis. O empi"
+            },
+            {
+              "tag": "P",
+              "size": 11,
+              "text": "Escena editorial de la opción del kit."
+            }
+          ]
+        },
+        {
+          "id": "volver-a-la-vida",
+          "rect": {
+            "x": 0,
+            "y": 20.4375,
+            "width": 390,
+            "height": 844,
+            "top": 20.4375,
+            "right": 390,
+            "bottom": 864.4375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 18,
+              "text": "Contexto para tu próximo paso. Espacio para lo que disfrutas."
+            }
+          ]
+        },
+        {
+          "id": "lo-que-te-mueve",
+          "rect": {
+            "x": 0,
+            "y": 20.4375,
+            "width": 390,
+            "height": 1178.5625,
+            "top": 20.4375,
+            "right": 390,
+            "bottom": 1199,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 10,
+              "text": "LO QUE CUENTA CADA DÍA"
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Salir a correr por gusto. Alargar el paseo para seguir hablando."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Compartir la mesa y las historias del día. Cuidarte también forma"
+            }
+          ]
+        },
+        {
+          "id": "nuestra-historia",
+          "rect": {
+            "x": 0,
+            "y": 20,
+            "width": 390,
+            "height": 617.03125,
+            "top": 20,
+            "right": 390,
+            "bottom": 637.03125,
+            "left": 0
+          },
+          "clipped": [],
+          "body": []
+        },
+        {
+          "id": "empezar",
+          "rect": {
+            "x": 0,
+            "y": 20.03125,
+            "width": 390,
+            "height": 1792.828125,
+            "top": 20.03125,
+            "right": 390,
+            "bottom": 1812.859375,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "ELIGE CÓMO EMPEZAR"
+            },
+            {
+              "tag": "P",
+              "size": 19,
+              "text": "Con una analítica previa o con tu primer kit."
+            },
+            {
+              "tag": "P",
+              "size": 17,
+              "text": "Sube tu informe anterior y consulta tus resultados con contexto."
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Con tu cuenta y consentimiento. Sin tarjeta de crédito."
+            },
+            {
+              "tag": "P",
+              "size": 20,
+              "text": "Tu primer kit en casa.13 biomarcadores, explicados."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Recogida en casa con Tasso+."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Análisis de 13 biomarcadores en laboratorio."
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Tus resultados, explicados junto a los intervalos del laboratorio"
+            },
+            {
+              "tag": "LI",
+              "size": 16,
+              "text": "Un punto de partida para comparar resultados compatibles con el t"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "ANTES DE ELEGIR"
+            },
+            {
+              "tag": "P",
+              "size": 16,
+              "text": "Otros paneles tienen su propio alcance y precio. Consulta los det"
+            }
+          ]
+        },
+        {
+          "id": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 19.859375,
+            "width": 390,
+            "height": 1043.5625,
+            "top": 19.859375,
+            "right": 390,
+            "bottom": 1063.421875,
+            "left": 0
+          },
+          "clipped": [],
+          "body": [
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "Conoce tu cuerpo.Vive a tu ritmo."
+            },
+            {
+              "tag": "P",
+              "size": 14,
+              "text": "La vista previa del área privada y los archivos de diseño están e"
+            },
+            {
+              "tag": "P",
+              "size": 12,
+              "text": "Copyright 2026 EVA Health · Madrid"
+            }
+          ]
+        }
+      ],
+      "failures": [],
+      "http": 200,
+      "documentOverflow": {
+        "scroll": 390,
+        "client": 390
+      },
+      "reviewDockPosition": "static",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "viewportEmulation": true,
+  "physicalDevice": false,
+  "passed": true
+}

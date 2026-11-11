@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 37,
-    "deployed_ui_commit": "b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77798631b5d48191898d67c2d6ea9d52",
-    "deployment_id": "appgdep_6af4ce75255c81919a1b1a5912eb46d7",
+    "live_version": 38,
+    "deployed_ui_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ea8fff43641c8191aaf10a9b7db5ae6e",
+    "deployment_id": "appgdep_6af4d82a07988191a965a7cdb74141c4",
     "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=37#nuestra-historia"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=38"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -69,22 +69,23 @@
       "origin": "Primary continuation chat, version 37",
       "status": "All remaining planned chapter content completed and published",
       "qa": "TypeScript/build/English/method/story checks, EN/ES generated artifacts and founder/offer/footer SSR/pure-flow policy passed. Browser unverified. See docs/closing-journey-qa.json."
+    },
+    {
+      "section": "Final actual browser QA and discovered fixes",
+      "source_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
+      "origin": "Primary continuation chat, version 38",
+      "status": "Published and verified; review shortcut no longer overlays controls, first-kit entry facts aligned throughout signup/onboarding/checkout",
+      "qa": "All 18 actual browser scenarios passed; no page errors or mutating network requests. Evidence and reusable runners tracked."
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Running actual final browser QA with installed Playwright/Chromium against live Site. Shared interactive CUA still fails. Fixing real review-dock overlay and stale first-kit entry/checkout copy found by browser tests.",
+      "status": "Version 38 published; all planned content and review-site browser QA complete. No implementation in progress or app files reserved.",
       "next_section": null,
-      "pending_verification": "Complete actual desktop/phone layout, focus, media and interactive-flow QA after shared browser startup recovers.",
-      "section": "Final browser QA and discovered fixes",
-      "files": [
-        "app/landing-closing.css",
-        "components/preview/AccessPage.tsx",
-        "components/preview/OnboardingPage.tsx",
-        "components/preview/CheckoutPage.tsx",
-        "lib/site-content/locales/public.en.json"
-      ]
+      "pending_verification": null,
+      "section": null,
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
@@ -97,7 +98,8 @@
     "The version 34 return-to-life shared EN/ES narrative and accepted original image/motion",
     "The version 35 concrete lifestyle narrative and accepted coastal media/title/controls",
     "Version 36 user-approved order: Trendlines → age/score → method → return-to-life → lifestyle → founder",
-    "Version 37 founder quote verbatim, free-first closing, optional 13-marker €99 + VAT kit, accessible footer and unnumbered editorial kickers"
+    "Version 37 founder quote verbatim, free-first closing, optional 13-marker €99 + VAT kit, accessible footer and unnumbered editorial kickers",
+    "Version 38 normal-flow review shortcut and13-marker €99 + VAT first-kit signup/onboarding/checkout with no automatic recurring claim"
   ],
   "coordination_workflow": [
     "Read AGENTS.md, docs/SESSION_HANDOFF.json and this note after refreshing current main; preserve dirty work before attempting a refresh.",
@@ -106,5 +108,6 @@
     "Before publication, verify the exact pushed commit includes both sessions’ changes and that its build matches. Reuse existing saved/deployed versions after uncertain outcomes.",
     "Update the handoff and this note with the actual release receipt and verification scope. Keep documentation-only commits distinct from UI releases. Routine work remains authorized; do not introduce another confirmation loop."
   ],
-  "forward_to_other_chat": "The user requested full continuation in chat 6af4821e-7ab0-8191-a284-1767aa9110e7. That chat has pulled the combined version 33 baseline and acknowledged this note. Preserve both accepted refinements and reconcile any further concurrent work before pushing."
+  "forward_to_other_chat": "The user requested full continuation in chat 6af4821e-7ab0-8191-a284-1767aa9110e7. That chat has pulled the combined version 33 baseline and acknowledged this note. Preserve both accepted refinements and reconcile any further concurrent work before pushing.",
+  "review_complete": true
 }

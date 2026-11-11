@@ -1,0 +1,222 @@
+{
+  "version": 38,
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "cases": [
+    {
+      "locale": "en",
+      "plan": "free",
+      "passed": true,
+      "publicLinks": [
+        {
+          "href": "/en/how-it-works",
+          "status": 200
+        },
+        {
+          "href": "/en/science",
+          "status": 200
+        },
+        {
+          "href": "/en/pricing",
+          "status": 200
+        },
+        {
+          "href": "/en/about",
+          "status": 200
+        },
+        {
+          "href": "/en/blog",
+          "status": 200
+        },
+        {
+          "href": "/en/contact",
+          "status": 200
+        },
+        {
+          "href": "/en/legal/privacy",
+          "status": 200
+        },
+        {
+          "href": "/en/legal/terms",
+          "status": 200
+        },
+        {
+          "href": "/en/legal/cookies",
+          "status": 200
+        }
+      ],
+      "switchKeyboardFocus": true,
+      "switchNameAndState": true,
+      "languageSwitchClicked": {
+        "from": "en",
+        "to": "es",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site/es?review=38#empezar"
+      },
+      "entryTarget": {
+        "x": 48,
+        "y": 703.0625,
+        "width": 490,
+        "height": 59.1875
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=free&redirect=%2Fes%2Fupload",
+      "preselectedChoice": "Una analítica que ya tengo Súbela gratis y explora sus resultados.",
+      "onboardingChoices": "Una analítica que ya tengo Súbela gratis y explora sus resultados. Mi primer kit Kit inicial · 13 biomarcadores · 99 € + IVA. Revisa los detalles antes de continuar con el ejemplo.",
+      "onboardingApprovedKitCopy": true,
+      "archivalOptionsQualified": true,
+      "completedAt": "upload",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v38-free-en-upload.png",
+      "previewState": {
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    },
+    {
+      "locale": "en",
+      "plan": "quarterly",
+      "passed": true,
+      "entryTarget": {
+        "x": 902,
+        "y": 424.4375,
+        "width": 490,
+        "height": 50.796875
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/en/signup?plan=quarterly",
+      "signupIntentText": "Your choice: Starting kit · 13 biomarkers · €99 + VAT. Review the kit details before continuing with the example.",
+      "signupApprovedKitCopy": true,
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=quarterly&redirect=%2Fes%2Fdashboard",
+      "preselectedChoice": "Mi primer kit Kit inicial · 13 biomarcadores · 99 € + IVA. Revisa los detalles antes de continuar con el ejemplo.",
+      "onboardingChoices": "Una analítica que ya tengo Súbela gratis y explora sus resultados. Mi primer kit Kit inicial · 13 biomarcadores · 99 € + IVA. Revisa los detalles antes de continuar con el ejemplo.",
+      "onboardingApprovedKitCopy": true,
+      "archivalOptionsQualified": true,
+      "checkoutApprovedKitCopy": true,
+      "completedAt": "checkout, before confirmation",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v38-quarterly-en-checkout.png",
+      "checkoutSummary": "KIT INICIAL Tu kit inicial de 13 biomarcadores. 99€ + IVA Revisa los detalles del kit antes de continuar con el ejemplo. Recogida de muestra en casa con Tasso+. Análisis de 13 biomarcadores en laboratorio. Resultados explicados junto a los valores, unidades e intervalos del laboratorio. Un punto de partida para comparar resultados compatibles con el tiempo. Revisa el alcance del kit y sus condiciones antes de continuar con el ejemplo.",
+      "previewState": {
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    },
+    {
+      "locale": "es",
+      "plan": "free",
+      "passed": true,
+      "publicLinks": [
+        {
+          "href": "/es/how-it-works",
+          "status": 200
+        },
+        {
+          "href": "/es/science",
+          "status": 200
+        },
+        {
+          "href": "/es/pricing",
+          "status": 200
+        },
+        {
+          "href": "/es/about",
+          "status": 200
+        },
+        {
+          "href": "/es/blog",
+          "status": 200
+        },
+        {
+          "href": "/es/contact",
+          "status": 200
+        },
+        {
+          "href": "/es/legal/privacy",
+          "status": 200
+        },
+        {
+          "href": "/es/legal/terms",
+          "status": 200
+        },
+        {
+          "href": "/es/legal/cookies",
+          "status": 200
+        }
+      ],
+      "switchKeyboardFocus": true,
+      "switchNameAndState": true,
+      "languageSwitchClicked": {
+        "from": "es",
+        "to": "en",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=38#empezar"
+      },
+      "entryTarget": {
+        "x": 24,
+        "y": 378.265625,
+        "width": 327,
+        "height": 56
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=free&redirect=%2Fes%2Fupload",
+      "preselectedChoice": "Una analítica que ya tengo Súbela gratis y explora sus resultados.",
+      "onboardingChoices": "Una analítica que ya tengo Súbela gratis y explora sus resultados. Mi primer kit Kit inicial · 13 biomarcadores · 99 € + IVA. Revisa los detalles antes de continuar con el ejemplo.",
+      "onboardingApprovedKitCopy": true,
+      "archivalOptionsQualified": true,
+      "completedAt": "upload",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v38-free-es-upload.png",
+      "previewState": {
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    },
+    {
+      "locale": "es",
+      "plan": "quarterly",
+      "passed": true,
+      "entryTarget": {
+        "x": 24,
+        "y": 381.046875,
+        "width": 327,
+        "height": 50.796875
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/signup?plan=quarterly",
+      "signupIntentText": "Tu elección: Kit inicial · 13 biomarcadores · 99 € + IVA. Revisa los detalles del kit antes de continuar con el ejemplo.",
+      "signupApprovedKitCopy": true,
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=quarterly&redirect=%2Fes%2Fdashboard",
+      "preselectedChoice": "Mi primer kit Kit inicial · 13 biomarcadores · 99 € + IVA. Revisa los detalles antes de continuar con el ejemplo.",
+      "onboardingChoices": "Una analítica que ya tengo Súbela gratis y explora sus resultados. Mi primer kit Kit inicial · 13 biomarcadores · 99 € + IVA. Revisa los detalles antes de continuar con el ejemplo.",
+      "onboardingApprovedKitCopy": true,
+      "archivalOptionsQualified": true,
+      "checkoutApprovedKitCopy": true,
+      "completedAt": "checkout, before confirmation",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v38-quarterly-es-checkout.png",
+      "checkoutSummary": "KIT INICIAL Tu kit inicial de 13 biomarcadores. 99€ + IVA Revisa los detalles del kit antes de continuar con el ejemplo. Recogida de muestra en casa con Tasso+. Análisis de 13 biomarcadores en laboratorio. Resultados explicados junto a los valores, unidades e intervalos del laboratorio. Un punto de partida para comparar resultados compatibles con el tiempo. Revisa el alcance del kit y sus condiciones antes de continuar con el ejemplo.",
+      "previewState": {
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    }
+  ],
+  "findings": [],
+  "errors": [],
+  "networkWrites": [],
+  "browserVerified": true,
+  "passed": true,
+  "status": "passed"
+}

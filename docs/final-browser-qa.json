@@ -1,0 +1,151 @@
+{
+  "status": "passed",
+  "published_version": 38,
+  "deployed_ui_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
+  "native_deployment": {
+    "version_number": 38,
+    "source_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ea8fff43641c8191aaf10a9b7db5ae6e",
+    "deployment_id": "appgdep_6af4d82a07988191a965a7cdb74141c4",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-11T21:03:54.679321+00:00",
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000053b0822fbbbf8718f35e58e0",
+      "content_hash": "sha256:b9d734c8e09bf033e1da08f4b448894a2393a28b40a7e73d4a12407180a2849e",
+      "size_bytes": 171878400,
+      "file_count": 787
+    }
+  },
+  "runtime": "Actual headless system Chromium via the installed Playwright runner, inherited Cloud proxy and normal TLS trust. The separate interactive CUA runtime still fails before launch; it did not prevent these browser tests.",
+  "cases_passed": 18,
+  "run_reports": [
+    {
+      "report": "docs/browser-qa-v38/final-layout-v38-report.json",
+      "cases": 7,
+      "passed": true,
+      "sha256": "b33e7a5fb7f5d43679a5e7f9b7ffd98a278fce8826ff45d2ea00f06d01b54ec8"
+    },
+    {
+      "report": "docs/browser-qa-v38/sections-browser-v38-report.json",
+      "cases": 3,
+      "passed": true,
+      "sha256": "364165a652018887239fd4e69bc9fc668223ffc14901b6d2644e3d6490cdf367"
+    },
+    {
+      "report": "docs/browser-qa-v38/footer-flow-v38-report.json",
+      "cases": 2,
+      "passed": true,
+      "sha256": "a1aebfabf63898b5369eab9096de55b8594e5870f4e1f9702267735d6d8b0fbc"
+    },
+    {
+      "report": "docs/browser-qa-v38/entry-flow-report-v38.json",
+      "cases": 4,
+      "passed": true,
+      "sha256": "5478630b8933f9f392cade9911f00d8442ff69b812034df2f5667367dbae4f73"
+    },
+    {
+      "report": "docs/browser-qa-v38/core-browser-v38-report.json",
+      "cases": 2,
+      "passed": true,
+      "sha256": "13b20aa7dffd5d6fee3d0b435741cb5b477ec4b5edb6305d61176bdab7f84847"
+    }
+  ],
+  "screenshots_reviewed": [
+    {
+      "path": "docs/browser-qa-v38/qa38-site-footer-en-1440x900.png",
+      "sha256": "5d65aee67615889dd7090741ebe18d80159d5381e5e5f8e8ddcd8992fdb25c14",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v38/footer-flow-v38-es-375x812-normal.png",
+      "sha256": "709971be71438b00cef336ea6bcd29c9695b374b4f62a80923b829048e2b7377",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v38/qa38-empezar-en-390x780.png",
+      "sha256": "dfe71f362dda23541fd82238714bb915e7034caef3f156db4108c0a43edfb8bd",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v38/entry-v38-quarterly-es-checkout.png",
+      "sha256": "16d2f1cb47766509214eb6f3e3c2e769e0aa179d97861c9f1d08968da3018559",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v38/qa38-el-metodo-en-320x568.png",
+      "sha256": "ac4e4f6c833c03a7a80be4150af004c8d6a5b9fc2588b072c83d8e000a148528",
+      "reviewed": true
+    }
+  ],
+  "layout_viewports": [
+    "EN1440x900",
+    "EN1366x650",
+    "ES1280x720",
+    "EN390x780",
+    "ES375x812",
+    "EN320x568",
+    "ES390x844 reduced motion"
+  ],
+  "coverage": [
+    "Whole landing order, readable desktop/phone layouts and no horizontal clipping",
+    "Hero free-primary/kit-secondary actions and keyboard focus",
+    "Actual Tasso native 1x playback, pause/play, Previous/Next and all 3 steps",
+    "13-marker kit reveal/reverse and declared 500 ms transition",
+    "Fixed 2.1 range example, repeat confirmation and sources",
+    "All 3 explanation levels by keyboard with result/history/context preserved",
+    "All 4 signal chapters and pause/resume",
+    "Trend latest/history changes questions and announcements while value/context remain fixed",
+    "All 4 method tabs, arrow/Home/End keys, paging focus and replay",
+    "Reversible life passage, coastal playback/pause/offscreen/end/replay",
+    "OS reduced motion and independent manual footer calm",
+    "18 public/legal HTTP 200 checks, actual language switches and named keyboard-focusable footer switch",
+    "Browser-local free signup/onboarding reaches upload without selecting a file",
+    "Browser-local kit signup/onboarding reaches corrected 13-marker €99 + VAT checkout, before confirmation",
+    "Actual pointer hit-tests verify footer controls uncovered and review shortcut in normal document flow"
+  ],
+  "resolved_findings": [
+    {
+      "finding": "Fixed review shortcut overlaid desktop footer switch and phone closing copy",
+      "fix": "Move shortcut into normal document flow after footer",
+      "verified": "Desktop 1440x900 and phone 375x812 raw pointer center pluskeyboard Space, normal and manual calm"
+    },
+    {
+      "finding": "First-kit signup/onboarding/checkout still advertised 15 markers and €99 per quarter",
+      "fix": "Align the existing first-kit intent with 13 markers, €99 + VAT and no automatic recurring claim; free path first; retain only specifically incoming archival choices",
+      "verified": "Four actual EN/ES free/kit flows and positive/negative copy assertions"
+    }
+  ],
+  "errors": [],
+  "mutating_network_requests": [],
+  "verification_limits": [
+    "Viewports are emulated, not physical-device performance measurements.",
+    "Account/profile state in flow tests is fictional and browser-local. No real account, email, health-data upload, purchase or reservation was performed.",
+    "Kit test stops before checkout confirmation; production authentication, payments and medical processing were outside the review-site QA scope.",
+    "Review query is a cache-busting label, not a deployment pin; native Site metadata confirmed version 38 at final test completion."
+  ],
+  "review_complete": true,
+  "runner_snapshots": [
+    {
+      "path": "scripts/browser-qa/core-landing.cjs",
+      "sha256": "a61f61eca9332009db0d84ec3a56f61bf68caf47c263194385834c9756e9c040"
+    },
+    {
+      "path": "scripts/browser-qa/entry-flows.cjs",
+      "sha256": "852c174fc275ee5fb634a91aefcbfce2f534d093b39550cdc5c7ef2fd282b33d"
+    },
+    {
+      "path": "scripts/browser-qa/footer-hit-targets.cjs",
+      "sha256": "d076a5a0dd7fcec87f22fc70abfb10d45367c99bb3307a688250cd3e689001ff"
+    },
+    {
+      "path": "scripts/browser-qa/layout.cjs",
+      "sha256": "33f03598052dfed10f23eeb1c35e9001559ef715e4c29746bf9556915e52aeac"
+    },
+    {
+      "path": "scripts/browser-qa/story-sections.cjs",
+      "sha256": "d221841c9f4e45cbfe76fc8858a53d6bca0a558e06072f06642ec33fca2c954b"
+    }
+  ]
+}
