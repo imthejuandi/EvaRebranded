@@ -1,4 +1,40 @@
 'use client';
+
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
-import { businessLinks } from '@/lib/landing-content';
-export function BusinessOffer() { const __site = useSiteLanguage(); return <section id="empezar" className="invitation full-offer" aria-labelledby="offer-title"><p className="eyebrow">{__site.t("06 / EMPIEZA CON EVA")}</p><div className="offer-heading"><h2 id="offer-title">{__site.t("Hay mucho")}<br />{__site.t("por ")}<em>{__site.t("vivir.")}</em></h2><p>{__site.t("Empieza con 13 biomarcadores.")}<br />{__site.t("Elige tu próximo paso con orientación.")}</p></div><div className="offer"><div className="offer-price"><span>{__site.t("99")}</span><div>{__site.t("\u20AC")}<small>{__site.t("+ IVA")}</small></div></div><p>{__site.t("Tu primer kit en casa.")}<br />{__site.t("13 biomarcadores, explicados.")}</p><ul><li>{__site.t("Recogida en casa con Tasso+.")}</li><li>{__site.t("Análisis de 13 biomarcadores en laboratorio.")}</li><li>{__site.t("Tus resultados, explicados junto a los intervalos del laboratorio.")}</li><li>{__site.t("Un punto de partida para comparar resultados compatibles con el tiempo.")}</li></ul><p className="offer-option">{__site.t("¿Quieres explorar otro enfoque?")}<br />{__site.t("Revisa los paneles disponibles con la orientación de EVA. El alcance y el precio dependen del panel que elijas.")}</p><a className="primary" href={__site.href(businessLinks.signup + '?plan=quarterly')}>{__site.t("Pide tu primer kit")}</a><p className="cancel-note">{__site.t("Consulta el alcance y el precio de cada opción antes de elegir.")}</p><a className="text-link" href={__site.href(businessLinks.pricing)}>{__site.t("Ver planes y detalles ")}</a></div><div className="upload-offer"><div><p className="eyebrow">{__site.t("UN PRIMER PASO, HOY")}</p><h3>{__site.t("\u00BFYa tienes una anal\u00EDtica?")}</h3><p>{__site.t("Interpreta tus análisis previos")}</p></div><div><a href={__site.href(businessLinks.upload)}>{__site.t("Empieza gratis")}</a><p>{__site.t("Sin tarjeta de cr\u00E9dito. Con tu cuenta y consentimiento.")}</p></div></div></section>; }
+import {businessLinks} from '@/lib/landing-content';
+import {flowHref} from '@/lib/preview/policy';
+import {closingCopy} from '@/lib/site-content/closing-copy';
+import {Arrow} from './Arrow';
+
+export function BusinessOffer() {
+  const {locale, href} = useSiteLanguage();
+  const c = closingCopy[locale].offer;
+  const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
+
+  return <section id="empezar" className="invitation full-offer" aria-labelledby="offer-title">
+    <p className="eyebrow">{c.kicker}</p>
+    <div className="offer-heading">
+      <h2 id="offer-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2>
+      <p>{c.lead}</p>
+      <div className="offer-report-entry" data-offer-free>
+        <h3>{c.free.heading}</h3>
+        <p className="offer-free-body">{c.free.body}</p>
+        <a className="primary" href={href(uploadHref)} data-offer-upload>{c.free.action}<Arrow/></a>
+        <p className="offer-account-note">{c.free.note}</p>
+      </div>
+    </div>
+    <div className="offer" data-offer-kit>
+      <h3 className="offer-kit-heading">{c.kit.heading}</h3>
+      <div className="offer-price" role="group" aria-label={locale === 'en' ? '€99 + VAT' : '99 € + IVA'} data-offer-price>
+        <span>99</span><div>€<small>{locale === 'en' ? '+ VAT' : '+ IVA'}</small></div>
+      </div>
+      <p>{c.kit.summary[0]}<br/>{c.kit.summary[1]}</p>
+      <ul>{c.kit.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>
+      <a className="text-link offer-kit-action" href={href(businessLinks.signup + '?plan=quarterly')} data-offer-kit-action>{c.kit.action}<Arrow/></a>
+    </div>
+    <div className="upload-offer offer-panel-details">
+      <div><p className="eyebrow">{c.details.kicker}</p><h3>{c.details.heading}</h3><p>{c.details.body}</p></div>
+      <div><a href={href(businessLinks.pricing)} data-offer-details>{c.details.action}<Arrow/></a></div>
+    </div>
+  </section>;
+}

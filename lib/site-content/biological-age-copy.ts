@@ -1,7 +1,7 @@
 /** Public educational example; availability is not an inclusion promise for the starting kit. */
 export const biologicalAgeCopy = {
   en: {
-    kicker: '04 / YOUR EVOLUTION',
+    kicker: 'YOUR EVOLUTION',
     availability: 'WHEN THE REQUIRED DATA ARE AVAILABLE',
     headline: ['Your age tells', 'part of the story.'],
     intro: 'Individual values tell you one part. These two measures bring them together from different perspectives.',
@@ -26,7 +26,7 @@ export const biologicalAgeCopy = {
     link: 'How these measures work',
   },
   es: {
-    kicker: '04 / TU EVOLUCIÓN',
+    kicker: 'TU EVOLUCIÓN',
     availability: 'CUANDO ESTÁN LOS DATOS NECESARIOS',
     headline: ['Tu edad cuenta', 'una parte.'],
     intro: 'Cada valor cuenta una parte. Estas dos medidas los reúnen desde perspectivas distintas.',

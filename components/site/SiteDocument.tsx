@@ -21,6 +21,7 @@ import '@/app/access-preview.css';
 import '@/components/pages/pricing/pricing.css';
 import '@/app/site-language.css';
 import '@/app/content-parity.css';
+import '@/app/landing-closing.css';
 import {ReviewDock} from './ReviewHub';
 import type {ReactNode} from 'react';
 import {SiteLanguageProvider} from './SiteLanguage';

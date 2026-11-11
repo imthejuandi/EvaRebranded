@@ -85,7 +85,7 @@ export function MethodJourney({ calm = false }: {
         selectStep(next, 'tab');
     }
     return <section className={'method-journey' + (calm ? ' method-journey-calm' : '') + (hasChanged ? ' method-has-changed' : '')} id="el-metodo" aria-labelledby="routine-title">
-    <div className="section-kicker"><span>{__site.t("02 / EL M\u00C9TODO")}</span><span>{__site.t("UN MOMENTO PARA TI.")}</span></div>
+    <div className="section-kicker"><span>{__site.t("EL MÉTODO")}</span><span>{__site.t("UN MOMENTO PARA TI.")}</span></div>
     <div className="method-heading">
       <h2 id="routine-title">{__site.t("Tus próximos pasos.")}<br /><em>{__site.t("A tu ritmo.")}</em></h2>
       <p>{__site.t("Empieza con una analítica previa o con tu primer kit. Entiende tus resultados y decide qué explorar después, con orientación.")}</p>

@@ -1,7 +1,7 @@
 /** This chapter explains personal history, draw-day context and guided review choices. */
 export const healthStoryCopy = {
   en: {
-    kicker: '01 / A BROADER PERSPECTIVE',
+    kicker: 'A BROADER PERSPECTIVE',
     scienceLabel: 'THE SCIENCE BEHIND EVA',
     heading: ['Your health has', 'a story.'],
     lead: 'Your past results and the day of your test help explain what a new reading may mean.',
@@ -31,7 +31,7 @@ export const healthStoryCopy = {
     },
   },
   es: {
-    kicker: '01 / UNA MIRADA MÁS AMPLIA',
+    kicker: 'UNA MIRADA MÁS AMPLIA',
     scienceLabel: 'LA CIENCIA DE EVA',
     heading: ['Tu salud tiene', 'una historia.'],
     lead: 'Tus resultados anteriores y el día de la prueba ayudan a entender qué puede significar una nueva lectura.',

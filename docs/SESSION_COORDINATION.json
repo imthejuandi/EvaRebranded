@@ -67,11 +67,23 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version 36 narrative reorder published; no implementation in progress or app files reserved.",
+      "status": "Finishing founder, free-first closing offer and footer; complete landing narrative/content review. Preserve version36order and all accepted media/motion.",
       "next_section": "#nuestra-historia",
       "pending_verification": "Method, return-to-life and lifestyle browser checks remain pending the recorded shared browser startup blocker.",
-      "section": null,
-      "files": []
+      "section": "#nuestra-historia → #empezar → footer",
+      "files": [
+        "components/story/FounderStory.tsx",
+        "components/story/HealthEditorial.tsx",
+        "components/story/BusinessOffer.tsx",
+        "components/story/BusinessFooter.tsx",
+        "lib/site-content/closing-copy.ts",
+        "app/landing-closing.css",
+        "components/site/SiteDocument.tsx",
+        "lib/site-content/health-story-copy.ts",
+        "lib/site-content/biological-age-copy.ts",
+        "components/story/MethodJourney.tsx",
+        "lib/site-content/locales/public.en.json"
+      ]
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },

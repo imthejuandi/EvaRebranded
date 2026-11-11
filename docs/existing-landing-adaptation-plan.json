@@ -1222,7 +1222,32 @@
       "#nuestra-historia"
     ],
     "scope": "Move the existing BiologicalAgeSection before MethodJourney in HealthEditorial. Preserve approved copy, visuals, qualifications, interactions and anchors.",
-    "numbering": "Legacy visible kicker numbers are a later whole-page consistency task; no partial renumbering in this bounded reorder.",
+    "numbering": "Decorative editorial prefixes removed in the closing/full-page refinement; meaningful process steps, reading labels and timeline months preserved.",
     "next_section": "#nuestra-historia"
+  },
+  "closingAndWholeLandingRefinement": {
+    "status": "Implemented and static/SSR verified; native receipt determines publication.",
+    "scope": [
+      "#nuestra-historia",
+      "#empezar",
+      "footer",
+      "whole-landing narrative and decorative kicker consistency"
+    ],
+    "founder": "Preserved attributed quote, emphasis, name and role verbatim; added section heading association and dedicated shared copy.",
+    "offer": "Free previous-report interpretation first in DOM and visual hierarchy through the existing free-account/upload intent. Optional13-marker€99+VAT kit second with its existing internal signup intent. Other-panel scope and price are separate.",
+    "footer": "Localized public/support/legal/language links retained; private Spanish app preview labelled and hrefLang corrected; design/archive links grouped;44px targets/focus declared; exposed motion switch has explicit localized accessible name.",
+    "numbering": "Removed only decorative ordinal prefixes from health/age/method/founder/offer kickers; process steps, readings, timeline months and biomarker counts remain intact.",
+    "narrative_conclusion": "Approved version36order remains coherent. Earlier clinical/commercial qualifications and all accepted media/motion are preserved.",
+    "verification": [
+      "TypeScript",
+      "Production build113routes",
+      "English public-route audit1179messages",
+      "Existing method source/SSR and story-section timing checks",
+      "EN/ES generated HTML and founder quote comparison against version36",
+      "EN/ES founder/offer/footer SSR with both calm states",
+      "Pure account intent policy resolves free route to upload",
+      "Whole-landing links, anchors, order and clinical/offer consistency source audit"
+    ],
+    "browser_limit": "Shared browser startup sandbox error unresolved. Static/SSR and declared CSS rules do not establish computed layout, actual focus, motion or physical-device behavior."
   }
 }

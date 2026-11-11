@@ -1,0 +1,57 @@
+/* Closing chapters keep the landing's paper, forest and ruled typography. */
+.full-founder h2.eyebrow{font-weight:400;line-height:1.5;margin:0}
+.full-founder .text-link{min-height:44px;min-width:44px}
+
+.full-offer{align-items:start;column-gap:clamp(32px,7vw,112px)}
+.full-offer .offer-heading,.full-offer .offer{min-width:0}
+.full-offer .offer-heading>p{max-width:36ch}
+.full-offer .offer{align-self:start;padding-top:30px}
+.full-offer .offer-report-entry{margin-top:38px;padding-top:27px;border-top:1px solid #171b1840;max-width:490px}
+.full-offer .offer-report-entry h3,.full-offer .offer-kit-heading{font-size:clamp(26px,2.5vw,36px);font-weight:400;line-height:1.15;letter-spacing:-.035em;margin:0}
+.full-offer .offer-free-body{font-size:18px;line-height:1.6;color:#4c5048;max-width:39ch;margin-top:18px}
+.full-offer .offer-report-entry>.primary{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:56px;margin-top:27px;padding:16px 20px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-size:18px;line-height:1.4}
+.full-offer .offer-report-entry>.primary>span{font-size:inherit;min-width:0}
+.full-offer .offer-report-entry>.primary svg{width:22px;height:22px;flex-shrink:0}
+.full-offer .offer-report-entry>.primary:hover{background:#25352c}
+.full-offer .offer-account-note{font-size:16px;line-height:1.55;color:#50584d;margin-top:17px;max-width:42ch}
+.full-offer .offer-kit-heading{margin-bottom:30px}
+.full-offer .offer>.offer-kit-action{min-height:48px;margin-top:22px;padding-block:13px;font-size:17px;line-height:1.4}
+.full-offer .offer>.offer-kit-action svg{width:21px;height:21px;flex-shrink:0}
+.full-offer .offer-panel-details{align-items:center}
+.full-offer .offer-panel-details>div:first-child{max-width:620px;min-width:0}
+.full-offer .offer-panel-details h3{font-size:clamp(25px,2.5vw,36px);line-height:1.2;margin:18px 0 16px}
+.full-offer .offer-panel-details p:not(.eyebrow){font-size:16px;line-height:1.6;max-width:62ch}
+.full-offer .offer-panel-details a{align-items:center;min-height:48px;padding-block:12px;font-size:17px;line-height:1.4}
+.full-offer .offer-panel-details a svg{width:21px;height:21px;flex-shrink:0}
+.full-offer a:focus-visible,.full-founder .text-link:focus-visible{outline:2px solid #6a4b34;outline-offset:5px}
+
+.business-footer{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);column-gap:clamp(32px,5vw,70px);row-gap:40px}
+.business-footer>nav,.business-footer>div{min-width:0}
+.business-footer>nav{gap:4px}
+.business-footer>nav>a,.business-footer .footer-brand>a:last-child,.business-footer .footer-design-links>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px;max-width:100%;padding-block:8px;line-height:1.5;overflow-wrap:anywhere}
+.business-footer .footer-brand>a:last-child{font-size:14px}
+.business-footer .footer-design-links{display:flex;flex-wrap:wrap;gap:4px 24px}
+.business-footer>.footer-private-note{grid-column:1/-1;width:auto;max-width:76ch;margin:0;padding-top:20px;border-top:1px solid var(--line);font-size:14px;line-height:1.6;color:#b6bfb7;opacity:1}
+.business-footer .footer-base{min-width:0;gap:18px 28px}
+.business-footer .footer-base>p{font-size:12px;line-height:1.5}
+.business-footer .motion-choice{align-items:center;min-height:44px;gap:14px;padding-right:13px}
+.business-footer .motion-choice>label{display:inline-flex;align-items:center;min-height:44px;line-height:1.5;cursor:pointer}
+/* Preserve the small visible switch while reserving a full touch target. */
+.business-footer .motion-choice [data-slot="switch"]::after{content:"";position:absolute;inset:50% auto auto 50%;width:56px;height:44px;transform:translate(-50%,-50%)}
+.business-footer a:focus-visible,.business-footer .motion-choice [data-slot="switch"]:focus-visible{outline:2px solid var(--amber);outline-offset:5px}
+
+@media(max-width:700px){
+ .full-offer{grid-template-columns:minmax(0,1fr);gap:26px}
+ .full-offer .offer{margin-top:18px;padding-top:30px;border-top:1px solid #171b1840;justify-self:stretch}
+ .full-offer .offer-report-entry{max-width:none;margin-top:29px;padding-top:24px}
+ .full-offer .offer-free-body{font-size:17px}
+ .full-offer .offer-report-entry>.primary{font-size:17px;padding:15px 16px}
+ .full-offer .offer-account-note{font-size:16px}
+ .full-offer .offer-kit-heading{font-size:28px;margin-bottom:25px}
+ .full-offer .offer-panel-details{margin-top:20px;padding-top:30px}
+ .full-offer .offer-panel-details>div:last-child{min-width:0;margin-top:20px}
+ .business-footer{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:22px;row-gap:30px}
+ .business-footer>nav{gap:4px;font-size:14px}
+ .business-footer .footer-base{align-items:flex-start;gap:18px}
+ .business-footer .footer-design-links{gap:4px 24px}
+}
