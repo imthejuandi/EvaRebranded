@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Health story and quarterly rhythm implemented and verified in visible page order. Next: Trendlines, not snapshots. Publication is tracked by the Sites receipt.",
+  "status": "Pivotal past-lab reinterpretation focus implemented and verified in the landing sequence. Publication is tracked by the Sites receipt.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -1089,5 +1089,30 @@
       "visualReview": "Actual phone intro and short-desktop rhythm screenshots reviewed; original paper, italic display, dotted numerals and ruled hierarchy are retained."
     },
     "nextPart": "#por-que-eva — Trendlines, not snapshots."
+  },
+  "rangeInterpretationFocusRelease": {
+    "status": "Implemented, clinically reviewed and responsive QA passed. Publication is tracked by the Sites receipt.",
+    "location": "#otra-lectura, after starting kit and before explanation preview and results.",
+    "businessGoal": "Make the free reinterpretation of previous laboratory reports a central, concrete value proposition.",
+    "evidence": "docs/range-interpretation-evidence.json",
+    "design": "One unchanged dotted 2.1 readout, one fixed marker on a shared axis, an illustrative lab interval and qualified prevention threshold. Existing analog glass palette; quick scroll-entry with normal flow and complete reduced-motion content.",
+    "surroundingCopy": "The later health-story comparison entry now teaches personal-history value instead of the obvious laboratory-method message.",
+    "preserved": "Approved hero/Tasso, 500ms scroll-controlled kit transition, dashboard, ongoing review rhythm and age chapter.",
+    "verification": {
+      "status": "Passed",
+      "browserCases": 8,
+      "errors": [],
+      "checks": [
+        "TypeScript",
+        "Production build",
+        "English route audit",
+        "Five-role review: original positioning, clinical evidence, conversion copy, design/execution, independent customer/QA",
+        "Same numeric result and marker through entry and reentry",
+        "Visible repeat-confirmation condition and example-lab qualification",
+        "Source links, localized science navigation, free upload intent and secondary kit path",
+        "Readable desktop/phone/reduced-motion layouts with no clipping or overlap"
+      ],
+      "visual": "Independent actual-screenshot review passed."
+    }
   }
 }

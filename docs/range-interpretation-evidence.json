@@ -1,0 +1,174 @@
+{
+  "purpose": "Restore the original EVA business emphasis: interpret an existing report through a prevention lens before requiring a new kit.",
+  "originalSources": {
+    "archive": "lib/site-content/original-content.json",
+    "urls": [
+      "https://www.evahealth.es/en",
+      "https://www.evahealth.es/en/how-it-works",
+      "https://www.evahealth.es/en/science",
+      "https://www.evahealth.es/en/metodologia/completa"
+    ],
+    "access": "Current original URLs were inaccessible through the web reader. The complete archived original content was reviewed.",
+    "retainedIntent": [
+      "Free interpretation of reports the visitor already has",
+      "Understanding beyond a laboratory flag",
+      "A history to revisit before choosing new tests"
+    ],
+    "notCarriedForward": [
+      {
+        "claim": "95% of normal lab results hide a deficiency",
+        "reason": "No substantiating study or validated dataset was supplied."
+      },
+      {
+        "claim": "Normal ranges are built from sick people",
+        "reason": "The blanket statement conflicts with how reference populations and intervals are generally defined."
+      },
+      {
+        "claim": "Universal optimal intervals or a deficiency diagnosis whenever outside an EVA target",
+        "reason": "Clinical interpretation depends on the biomarker, the evidence and the person. A risk threshold is not a deficiency diagnosis or a universal treatment target."
+      }
+    ]
+  },
+  "workedExample": {
+    "biomarker": "hs-CRP",
+    "value": 2.1,
+    "unit": "mg/L",
+    "illustrative": true,
+    "labReference": {
+      "display": "<5 mg/L",
+      "meaning": "Within this illustrative interval; laboratories may use different limits.",
+      "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+      "location": "PDF pages 8 and 10, adult serum reference range."
+    },
+    "prevention": {
+      "display": "≥2 mg/L on repeat testing",
+      "meaning": "Worth discussing cardiovascular risk, if confirmed.",
+      "source": "https://tools.acc.org/LDL/",
+      "location": "2026 ACC/AHA dyslipidemia guideline Table 13, risk-enhancing factors: hsCRP ≥2 mg/L on more than one occasion."
+    },
+    "context": "Illness, injury and other inflammation can raise hs-CRP. A single reading does not diagnose cardiovascular disease.",
+    "contextSource": "https://www.heart.org/en/health-topics/cholesterol/how-to-get-your-cholesterol-tested/high-sensitivity-c-reactive-protein",
+    "referenceIntervalSource": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/"
+  },
+  "roles": [
+    {
+      "role": "Original-site and positioning researcher",
+      "agent": "document_source_research"
+    },
+    {
+      "role": "Clinical evidence reviewer",
+      "agent": "optimal_range_clinical_review"
+    },
+    {
+      "role": "Conversion copy specialist",
+      "agent": "language_copy_director"
+    },
+    {
+      "role": "UX designer and implementer",
+      "agent": "retrofuturist_design_review"
+    },
+    {
+      "role": "Independent customer and quality reviewer",
+      "agent": "combined_screen_executor"
+    }
+  ],
+  "sequence": {
+    "order": [
+      "Full starting-kit sequence",
+      "New #otra-lectura range-interpretation proof",
+      "Language explanation preview",
+      "Alex and sample dashboard",
+      "Signal and ongoing-history chapters"
+    ],
+    "rationale": "WHAT is measured → WHY reinterpreting an existing result matters → HOW EVA explains it. The preview stays adjacent to its promised dashboard demonstration.",
+    "removed": "The previous small range-clarity paragraph after the dashboard is replaced by this focus chapter."
+  },
+  "content": {
+    "languages": [
+      "en",
+      "es"
+    ],
+    "copy": "lib/site-content/range-proof-copy.ts",
+    "primary": "Interpret your past labs / Start for free; existing free-signup and upload-return intent.",
+    "secondary": "Existing first-kit signup path; 13 biomarkers, €99 + VAT.",
+    "surroundingChange": "Replace the criticized comparison-method entry in health-story-copy.ts with a distinct personal-history insight; preserve context and quarterly rhythm."
+  },
+  "review": {
+    "clinical": "Final saved English and Spanish copy passed clinical evidence review.",
+    "customer": "The same-value teaching example, prominent free action and adjacent repeat-confirmation condition passed the initial customer review.",
+    "browser": {
+      "status": "Passed",
+      "cases": 8,
+      "errors": [],
+      "viewports": [
+        {
+          "locale": "en",
+          "width": 1440,
+          "height": 900,
+          "reduced": false,
+          "deviceScaleFactor": 1
+        },
+        {
+          "locale": "en",
+          "width": 1366,
+          "height": 650,
+          "reduced": false,
+          "deviceScaleFactor": 1
+        },
+        {
+          "locale": "es",
+          "width": 1280,
+          "height": 720,
+          "reduced": false,
+          "deviceScaleFactor": 1
+        },
+        {
+          "locale": "en",
+          "width": 390,
+          "height": 780,
+          "reduced": false,
+          "deviceScaleFactor": 2
+        },
+        {
+          "locale": "es",
+          "width": 375,
+          "height": 812,
+          "reduced": false,
+          "deviceScaleFactor": 1
+        },
+        {
+          "locale": "en",
+          "width": 320,
+          "height": 568,
+          "reduced": false,
+          "deviceScaleFactor": 1
+        },
+        {
+          "locale": "en",
+          "width": 390,
+          "height": 844,
+          "reduced": true,
+          "deviceScaleFactor": 1
+        },
+        {
+          "locale": "es",
+          "width": 390,
+          "height": 844,
+          "reduced": true,
+          "deviceScaleFactor": 1
+        }
+      ],
+      "coverage": [
+        "Exact approved EN/ES copy and sequence",
+        "One unchanged value and marker, shared 0–5 axis, 42% value and 40% threshold positions",
+        "Lab variation and repeat confirmation visible next to interpretations",
+        "Free signup and upload-return intent preserved through login; separate existing kit flow",
+        "Clinical sources and localized science link",
+        "16px phone body, 44px targets, no clipping/overlap/page overflow",
+        "Quick scroll entry, reverse/reentry stability, full reduced-motion content",
+        "Rejected comparison wording replaced in the later history section"
+      ]
+    },
+    "visual": "Independent customer/quality reviewer inspected actual desktop and phone screenshots. The same-value teaching example, repeat qualifier and proof-to-free-action sequence are publishable; no material density issue."
+  }
+}

@@ -1,15 +1,15 @@
-/** This chapter explains fair comparisons and repeated choices, without promising a testing schedule. */
+/** This chapter explains personal history, draw-day context and guided review choices. */
 export const healthStoryCopy = {
   en: {
     kicker: '01 / A BROADER PERSPECTIVE',
     scienceLabel: 'THE SCIENCE BEHIND EVA',
     heading: ['Your health has', 'a story.'],
-    lead: 'A change in a number needs a fair comparison and the context around it.',
+    lead: 'Your past results and the day of your test help explain what a new reading may mean.',
     insights: [
       {
         id: 'comparison',
-        title: 'Compare like with like.',
-        body: 'The same biomarker, compatible units and comparable lab methods make changes easier to interpret.',
+        title: 'Know what’s usual for you.',
+        body: 'A result can sit inside a lab’s range and still differ from your usual pattern. Past results help show whether a shift is new or recurring.',
       },
       {
         id: 'context',
@@ -17,7 +17,7 @@ export const healthStoryCopy = {
         body: 'Exercise or illness around a blood draw can influence a result. Your notes help put changes in context.',
       },
     ],
-    methodLink: 'What makes results comparable',
+    methodLink: 'How to read your history',
     rhythm: {
       numberLabel: 'days. A suggested review rhythm.',
       heading: ['Let your next question', 'guide your next test.'],
@@ -34,12 +34,12 @@ export const healthStoryCopy = {
     kicker: '01 / UNA MIRADA MÁS AMPLIA',
     scienceLabel: 'LA CIENCIA DE EVA',
     heading: ['Tu salud tiene', 'una historia.'],
-    lead: 'Para entender un cambio, importan tanto la comparación como el contexto de la prueba.',
+    lead: 'Tus resultados anteriores y el día de la prueba ayudan a entender qué puede significar una nueva lectura.',
     insights: [
       {
         id: 'comparison',
-        title: 'Compara lo comparable.',
-        body: 'Comparar el mismo biomarcador, con unidades y métodos de laboratorio compatibles, ayuda a interpretar mejor los cambios.',
+        title: 'Conoce tu propio patrón.',
+        body: 'Un resultado puede estar dentro del intervalo del laboratorio y ser distinto a tu patrón habitual. Tus análisis anteriores ayudan a ver si el cambio es nuevo o se repite.',
       },
       {
         id: 'context',
@@ -47,7 +47,7 @@ export const healthStoryCopy = {
         body: 'El ejercicio o una enfermedad cerca de la extracción pueden influir en un resultado. Tus notas ponen los cambios en contexto.',
       },
     ],
-    methodLink: 'Qué permite comparar dos resultados',
+    methodLink: 'Cómo leer tu historial',
     rhythm: {
       numberLabel: 'días. Un ritmo orientativo de revisión.',
       heading: ['Tu próxima pregunta', 'guía tu próxima prueba.'],
