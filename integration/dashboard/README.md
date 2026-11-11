@@ -21,7 +21,7 @@ The September handoff reverified source against `imthejuandi/eva-health` commit 
 For a later authorized integration only; the current workspace remains a static preview.
 
 1. Reuse EVA's existing authenticated server client/provider where possible. The standalone factory is the reference implementation, not a reason to replace working authentication.
-2. Mount `app/es/dashboard/page.tsx` from this folder in the real application, and use the actual shared shell. Its dynamic/no-store declarations are required for per-user health results. The current preview's `output: 'export'` must remain intact until a server-capable migration target is selected.
+2. Mount `app/es/dashboard/page.tsx` from this folder in the real application, and use the actual shared shell. Its dynamic/no-store declarations are required for per-user health results. Keep the current review build static until a server-capable migration target is selected.
 3. Merge this folder's `proxy.ts` behavior into the host's existing auth proxy; do not overwrite unrelated routing. Preserve refreshed cookies, private/no-store responses and RLS. On a host using the older `middleware` convention, adapt only the convention to that framework version.
 4. Supply the existing public project URL and publishable/legacy anon key through the host's environment. The factory rejects service-role/secret keys. Never put credentials in source, fixtures or design artifacts.
 5. Retain existing login/onboarding/consent/billing destinations. The reference view does not introduce a second login system. Its unavailable states contain no sample fallback.

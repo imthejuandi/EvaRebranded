@@ -748,8 +748,11 @@
     "github_previous_main": "e9c0a2a3c9ea41f10f7a45cbf565a88e3c20755c",
     "approved_ui_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
     "review_evidence_commit": "6b2e60c6f002cfc957cc763bccf1ac4b8344a941",
-    "history_join_commit": "7cc77f1",
+    "history_join_commit": "7cc77f12fc05a33a9f90702a5517e039fd5bd9fe",
     "source_change": "Documentation and Git ancestry only; approved runtime source/assets preserved.",
-    "production_cutover": "On hold; no evahealth.es, DNS, production hosting or backend changes."
+    "production_cutover": "On hold; no evahealth.es, DNS, production hosting or backend changes.",
+    "checked_out_source_verified": "2a1b542516938cb6735e21a27948cd5aa83e3c2c",
+    "verification_record": "docs/github-workspace-verification.json",
+    "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version39 evidence baseline."
   }
 }

@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-11",
+  "repository": "https://github.com/imthejuandi/EvaRebranded",
+  "branch": "main",
+  "purpose": "Consolidated source for completing EVA’s rebranded website; evahealth.es cutover on hold.",
+  "github_previous_main": "e9c0a2a3c9ea41f10f7a45cbf565a88e3c20755c",
+  "history_join_commit": "7cc77f12fc05a33a9f90702a5517e039fd5bd9fe",
+  "fresh_checkout_verified_commit": "2a1b542516938cb6735e21a27948cd5aa83e3c2c",
+  "approved_review_version": 39,
+  "deployed_ui_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+  "checks": {
+    "fresh_tracked_checkout_build": "passed:113 exported routes; reused locked installed dependencies, no ignored project source copied",
+    "typescript": "passed",
+    "english_public_routes": "passed:1181 catalog messages",
+    "method_contracts": "passed",
+    "approved_runtime_and_assets": "git diff against6b2e60c is empty for app,components,lib,public,package.json,package-lock.json,.openai,vite.config.ts",
+    "git_diff_whitespace": "passed"
+  },
+  "deployment_observations": {
+    "github_workflows": "none in complete tree",
+    "github_pages": "not enabled (404)",
+    "github_deployments": "empty",
+    "connected_vercel_projects": "EvaRebranded is not listed as a Git-linked project; existing EVA projects use separate repositories",
+    "webhook_settings": "read unavailable to the integration; no settings changed"
+  },
+  "actions_not_performed": [
+    "No new hosting/deployment connection",
+    "No review-site UI redeployment",
+    "No evahealth.es or DNS change",
+    "No production backend activation"
+  ],
+  "launch_handoff": "docs/LAUNCH_HANDOFF.md",
+  "note": "Following verification/documentation commits do not change the approved application or asset tree."
+}

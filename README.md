@@ -2,7 +2,7 @@
 
 The working source for EVA’s rebranded website lives in [imthejuandi/EvaRebranded](https://github.com/imthejuandi/EvaRebranded), on `main`. It includes the bilingual landing, approved media, application preview, design history, integration references and browser QA evidence.
 
-The approved landing baseline is **review version 39**, UI commit `991dd5310f6e1efc1819e76d37db40016adb3cdb`. Later documentation and GitHub synchronization commits preserve that interface.
+The approved landing baseline is **review version 39**, UI commit `991dd5310f6e1efc1819e76d37db40016adb3cdb`. Later documentation and GitHub synchronization commits preserve that interface. [Fresh-checkout verification](docs/github-workspace-verification.json) records the consolidated source checks.
 
 - Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=39) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=39).
 - Continue the remaining work: [Launch handoff](docs/LAUNCH_HANDOFF.md).
