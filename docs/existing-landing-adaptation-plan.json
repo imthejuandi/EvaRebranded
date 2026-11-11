@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Scroll-controlled kit stages and the half-second reveal are implemented and locally verified. There is no reading timer. Publication is tracked by the Sites receipt.",
+  "status": "Health story and quarterly rhythm implemented and verified in visible page order. Next: Trendlines, not snapshots. Publication is tracked by the Sites receipt.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -795,17 +795,17 @@
       {
         "anchor": "#una-perspectiva",
         "section": "Your health has a story.",
-        "status": "Next"
+        "status": "Implemented and verified for review; publication is tracked by the Sites receipt."
       },
       {
         "anchor": "#revision-trimestral",
         "section": "90 days. A chance to review.",
-        "status": "Review with the preceding section"
+        "status": "Implemented and verified for review; publication is tracked by the Sites receipt."
       },
       {
         "anchor": "#por-que-eva",
         "section": "Trendlines, not snapshots.",
-        "status": "Pending ordered review"
+        "status": "Next bounded refinement."
       },
       {
         "anchor": "#el-metodo",
@@ -941,7 +941,7 @@
     "publication": "Pending Sites receipt."
   },
   "scrollTriggeredKitRevealRelease": {
-    "status": "Implemented and verified locally; publication receipt determines live state.",
+    "status": "Published as version 28 and approved by the user. Preserve this transition during the next content refinements.",
     "location": "#kit-inicial, stage2 to3",
     "direction": "The user replaced timed autoplay with scroll-controlled stages and a half-second scroll-triggered reveal.",
     "behavior": {
@@ -1003,5 +1003,91 @@
       ]
     },
     "publication": "Pending Sites receipt."
+  },
+  "healthStoryAndReviewRhythmRelease": {
+    "status": "Implemented and verified locally. Publication is tracked by the Sites receipt.",
+    "locations": [
+      "#una-perspectiva — Your health has a story.",
+      "#revision-trimestral — quarterly review rhythm"
+    ],
+    "copy": {
+      "lead": "Explain what makes a change in a number interpretable, without repeating the following chapter’s moment/history wording.",
+      "comparison": "The same biomarker, compatible units and comparable laboratory methods make changes easier to interpret.",
+      "context": "Exercise or illness around a blood draw may influence a result. Self-reported notes add context; no cause is diagnosed.",
+      "choice": "Review history, decide whether to test again and choose from available panels with EVA’s guidance.",
+      "rhythm": "90 days is a suggested review rhythm. Months 01/04/07/10 are an example of repeated check-ins, not four included kits or a mandatory testing schedule."
+    },
+    "design": [
+      "Preserve the original paper spread, split italic headline and dotted 90",
+      "Short lead and two ruled insight entries with clear heading/body hierarchy",
+      "Dotted90 and the next-question heading above a full-width connected four-point timeline",
+      "Repeat Review + choose at each later check-in, with distinct reflective prompts",
+      "Use a readable vertical timeline on phone; body copy at least 16px",
+      "Gentle existing EditorialReveal entry motion, no pinned scroll tail or new imagery"
+    ],
+    "scope": "Only replace the existing health-story/quarterly subtree. Signal, kit transition, results, trend chapter, method, life passage and age remain intact.",
+    "verification": {
+      "status": "Passed",
+      "browserCases": 7,
+      "errors": [],
+      "viewports": [
+        {
+          "locale": "en",
+          "width": 1440,
+          "height": 900,
+          "reduced": false
+        },
+        {
+          "locale": "en",
+          "width": 1366,
+          "height": 650,
+          "reduced": false
+        },
+        {
+          "locale": "es",
+          "width": 1280,
+          "height": 720,
+          "reduced": false
+        },
+        {
+          "locale": "en",
+          "width": 390,
+          "height": 780,
+          "reduced": false
+        },
+        {
+          "locale": "es",
+          "width": 375,
+          "height": 812,
+          "reduced": false
+        },
+        {
+          "locale": "en",
+          "width": 320,
+          "height": 568,
+          "reduced": false
+        },
+        {
+          "locale": "es",
+          "width": 390,
+          "height": 844,
+          "reduced": true
+        }
+      ],
+      "checks": [
+        "TypeScript",
+        "Production build",
+        "English route audit",
+        "Shared English/Spanish copy renders correctly",
+        "Two insight entries, dotted 90 and four repeated quarterly check-ins",
+        "Body copy at least 16px, no overlap/clipping/horizontal overflow",
+        "Horizontal desktop and vertical phone timeline with aligned connectors",
+        "Localized science links and comparison anchor open successfully",
+        "Reduced-motion content remains complete",
+        "Signal → health story/rhythm → trend section order unchanged"
+      ],
+      "visualReview": "Actual phone intro and short-desktop rhythm screenshots reviewed; original paper, italic display, dotted numerals and ruled hierarchy are retained."
+    },
+    "nextPart": "#por-que-eva — Trendlines, not snapshots."
   }
 }
