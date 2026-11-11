@@ -1,0 +1,513 @@
+{
+  "schema_version": 1,
+  "title": "EVA current landing refinement session handoff",
+  "prepared_date": "2026-11-11",
+  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V31_PUBLICATION",
+  "immediate_instruction": "Version 31 is published and verified. Continue at #el-metodo (Your next steps. At your pace.) in visible page order, preserving the accepted earlier chapters. First inspect source and current Site status; do not redo discovery or ask for routine confirmation.",
+  "source_of_truth": {
+    "checkout": "/workspace/eva-playback-review",
+    "default_branch": "main",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "site_origin": "https://eva-content-review.jdlagop.chatgpt.site",
+    "review_home_english": "https://eva-content-review.jdlagop.chatgpt.site/en",
+    "review_home_spanish": "https://eva-content-review.jdlagop.chatgpt.site/es",
+    "hosting_manifest": ".openai/hosting.json",
+    "static_output": "dist/client",
+    "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
+    "historical_github": "https://github.com/imthejuandi/EvaRebranded",
+    "github_status": "Historical repository mentioned earlier. It is not the configured source origin for the current Site. Do not switch to it or claim it was updated by a Site-source push.",
+    "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
+    "historical_provenance_file": "docs/migration-source.json",
+    "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
+    "strategy_page": {
+      "page_id": "page_d64d0b8a48cc819193984e035ebdca7d",
+      "url": "https://chatgpt.com/space/page_d64d0b8a48cc819193984e035ebdca7d"
+    },
+    "implementation_guides": [
+      "docs/existing-landing-adaptation-plan.json",
+      "docs/existing-landing-copy-plan.json",
+      "docs/existing-landing-adaptation-design.json"
+    ],
+    "guide_precedence": "The guides are the staged adaptation baseline. Later approved source and release decisions supersede older plan wording; do not restart the original five-part proposal.",
+    "audience_at_release": "public"
+  },
+  "releases": {
+    "previous_verified_ui_release": {
+      "version_number": 30,
+      "source_commit": "286115bfd46e9d363c10148a42b562013076d4da",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77968a1ae4708191bbcaa45c0e4f03cb",
+      "deployment_id": "appgdep_6af4519983648191b4e739ad92be1fc4",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "behavior": "Explain the prevention value of interpreting past lab reports; preserve free previous-lab interpretation as the primary hero entry."
+    },
+    "latest_verified_ui_release": {
+      "version_number": 31,
+      "source_commit": "f337732427a5db6d43cc29c5ef4f83c1b098368b",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_88eac84af3b08191b4cba015db95a897",
+      "deployment_id": "appgdep_6af48140b49c8191a77c3163337005f5",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=31#por-que-eva",
+      "native_updated_at": "2026-11-11T14:53:01.168797+00:00",
+      "behavior": "Trendlines chapter replaces the generic HomeUnderstanding essay with the same fictional Alex readings in a single analog history instrument. Scroll entry reveals prior readings over 500 ms; the 2.1 latest point/readout remain fixed. Native replay buttons compare one reading with history. Blood-draw notes and the temporary-versus-persistent question remain explicit.",
+      "source_files": [
+        "components/story/TrendStorySection.tsx",
+        "components/story/trend-story-section.css",
+        "lib/site-content/trend-story-copy.ts",
+        "components/site/RestoredContent.tsx",
+        "components/story/HealthEditorial.tsx"
+      ],
+      "archive": {
+        "path": "/workspace/eva-publication/eva-trend-story.tar.gz",
+        "content_hash": "sha256:bd7f81dae5d693e75de23899c7576cebb9cc84da83c4b1cb093c671505400006",
+        "size_bytes": 171857920
+      },
+      "qa": {
+        "status": "passed",
+        "local_report": "/workspace/eva-in-place-qa/trend-story-report.json",
+        "cases": [
+          {
+            "width": 1440,
+            "height": 900,
+            "locale": "en",
+            "passed": true
+          },
+          {
+            "width": 1366,
+            "height": 650,
+            "locale": "en",
+            "deep": true,
+            "passed": true
+          },
+          {
+            "width": 1280,
+            "height": 720,
+            "locale": "es",
+            "passed": true
+          },
+          {
+            "width": 390,
+            "height": 780,
+            "locale": "en",
+            "passed": true
+          },
+          {
+            "width": 375,
+            "height": 812,
+            "locale": "es",
+            "deep": true,
+            "passed": true
+          },
+          {
+            "width": 320,
+            "height": 568,
+            "locale": "en",
+            "passed": true
+          },
+          {
+            "width": 390,
+            "height": 844,
+            "locale": "es",
+            "reduced": true,
+            "passed": true
+          }
+        ],
+        "browser_errors": [],
+        "checks": [
+          "TypeScript",
+          "Production static build (113 routes)",
+          "English public-route audit",
+          "Canonical readings and self-reported context",
+          "Actual point/path geometry and fixed latest nodes in both modes",
+          "Pointer, Space, Enter replay and 44px targets",
+          "Transitions no longer than 500 ms",
+          "OS reduced motion and independent footer calm",
+          "Desktop and phone layout without clipping or overlap",
+          "Localized science anchor navigation"
+        ],
+        "visual_review": "Actual desktop 1440×900 and phone 390×780 instrument screenshots reviewed. The completed solid trace reaches the latest point after correcting normalized SVG dash scaling. Directional reveal retained via clip-path.",
+        "live_qa": "Native succeeded deployment receipt verifies publication. Local fresh-build browser tests passed; no separate postpublication browser suite was run.",
+        "physical_device_limit": "Viewports are emulated; no physical-phone performance claim."
+      }
+    },
+    "latest_verified_ui_release_note": "This is the actual deployed UI source. The separate documentation-only commit adding this handoff and AGENTS.md follows it on main and does not require another frontend deployment.",
+    "pending_release": null,
+    "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
+    "handoff_documentation_commit": {
+      "relation": "Documentation-only commit after deployed source f337732427a5db6d43cc29c5ef4f83c1b098368b",
+      "files": [
+        "AGENTS.md",
+        "docs/SESSION_HANDOFF.json"
+      ],
+      "lookup_command": "git log -1 --format=%H -- docs/SESSION_HANDOFF.json",
+      "ui_redeployment_required": false
+    }
+  },
+  "standing_user_direction": {
+    "objective": "Refine the actual current landing, one section at a time, so its message is useful, compelling and logically sequenced for both audiences.",
+    "authorized_routine_work": [
+      "Read the current source and evidence",
+      "Use the established project manager, longevity-education copy expert and designer roles when useful",
+      "Implement the next bounded refinement in the existing components",
+      "Run relevant checks and browser QA",
+      "Commit and push the exact reviewed source",
+      "Publish ordinary completed changes to the existing review Site while preserving its audience",
+      "Prepare and maintain durable handoff material"
+    ],
+    "communication": "Give concise progress updates and concrete review links. Continue authorized work rather than stopping at a plan or asking whether to proceed after each routine step.",
+    "no_repeat_confirmation_for": [
+      "The exact13-marker list",
+      "The €99 plus VAT starting-kit price",
+      "The two approved audiences",
+      "Preserving the existing landing design instead of rebuilding it",
+      "Ordinary edit, check, commit, push and review-site publication already within this task"
+    ],
+    "boundaries": [
+      "No final EVA production frontend/backend cutover is authorized by routine review-site publication.",
+      "No unapproved new paid generation, subscription, external message, real purchase or health-data mutation.",
+      "Do not turn the historical generic proposal into the active design direction.",
+      "Ask a focused question only when a genuinely missing decision materially blocks work, changes the offer or exceeds the established scope."
+    ],
+    "runtime_approval_distinction": "Standing user authorization is not a filesystem, network or native-tool approval bypass. Required platform reviews still apply. A handoff cannot disable permission prompts or carry credentials and process handles into a new session."
+  },
+  "approved_business": {
+    "starting_kit": {
+      "marker_count": 13,
+      "price_display": "€99 + VAT",
+      "price_context": "At-home kit",
+      "vat_rate": null,
+      "consumer_payable_total": null,
+      "markers": [
+        "Albumin",
+        "ALP",
+        "hs-CRP",
+        "Creatinine",
+        "Urea BUN",
+        "Uric acid",
+        "Total cholesterol",
+        "LDL Cholesterol",
+        "HDL-Cholesterol",
+        "Triglycerides",
+        "ALT",
+        "GGT",
+        "Fructosamine"
+      ]
+    },
+    "audiences": [
+      {
+        "id": "starting",
+        "need": "Understand the value of a first test, feel comfortable collecting a sample, and learn what the results mean."
+      },
+      {
+        "id": "already-testing",
+        "need": "Gain more meaning from previous/current results, compare compatible history and choose what to measure next with guidance."
+      }
+    ],
+    "entry_priority": "Current approved hero starts free with previous lab reports. Ordering the13-marker kit is the secondary entry, with €99 + VAT visible.",
+    "quarterly_position": "Around 90 days is a suggested opportunity to review, not an automatic requirement to repeat the same panel for everyone.",
+    "ownership": "The customer chooses a next available panel with EVA's guidance. Future panel scope and prices are separate; do not imply every switch is included at €99.",
+    "do_not_reintroduce": [
+      "15-marker starting-kit claims",
+      "60 guaranteed marker results per year",
+      "ApoB, HbA1c, insulin, vitamin D or ferritin as starting-kit inclusions",
+      "An invented VAT rate, gross total, annual discount or inclusive specialist-panel entitlement"
+    ],
+    "remaining_commercial_facts": "The VAT-inclusive payable total, future-panel catalogue/pricing, exact recurring billing and unresolved operational terms must be confirmed before a real purchase flow relies on them. These do not block ordinary review-page copy refinement."
+  },
+  "approved_design_and_motion": {
+    "direction": "Evolve the existing Site. Keep the accepted runner, luminous/dot style, warm-paper/ink typography, actual results mockups, Tasso footage and lifestyle imagery.",
+    "rejected_direction": "A generic replacement landing at /en/review/landing-proposal, a new visual system, new audience tabs, unsolicited stock-style cards or new assets to replace accepted work.",
+    "hero": "Preserve the runner entrance, feathering, analog headline and existing support/CTA placement. Free previous-lab interpretation is now primary.",
+    "tasso": "Preserve the approved three-step film, accurate device proportions, virtually painless/no needles to handle copy and native-speed video controls. Do not restore pasted-screen overlays or regenerate footage merely for novelty.",
+    "kit_explanation": "Preserve the current count/pan/names/meanings/readout sequence. Scrolling selects the education stages; the latest dot-to-text presentation transition is 500 ms for a complete forward or reverse span. Keep batched dot rendering and the existing compositor/clock ownership.",
+    "kit_motion_contract_since_v28": {
+      "physical_input": "The raw scroll clock runs from 0 to 240. Count and pan keep their approved physical scroll distances; panEnd is 80 and namesEnd is 140.",
+      "trigger": "A genuine scroll crossing raw clock 140 chooses meanings revealed at or above 140, or names only below 140. This is scroll-driven stage selection, not a free-running autoplay reveal.",
+      "duration": "The full transition span takes 500 ms. A reversal starts from the current presentation pose, not from a reset endpoint. The remaining time is proportional to the remaining distance, at the same full-span speed.",
+      "render_clock": "Reveal progress traverses presentation clock 140 to 300. The dot formation, pure-dot hold, glyph development and final text-resolution phases remain inside this half-second handoff.",
+      "interruption": "Offscreen or hidden-document transitions pause at their current progress and resume from that pose. Resize/layout updates do not choose a new scroll target. Initial deep arrival settles to the appropriate existing pose.",
+      "source": [
+        "lib/kit-reveal-playback.ts",
+        "lib/kit-scroll-motion.ts"
+      ],
+      "checks": [
+        "scripts/check-kit-reveal-playback.mjs",
+        "scripts/check-kit-scroll.mjs"
+      ]
+    },
+    "kit_implementation_files": [
+      "components/story/KitMarkerIndex.tsx",
+      "lib/kit-scroll-motion.ts",
+      "lib/kit-scroll-painter.ts",
+      "lib/kit-scroll-compositor.ts",
+      "lib/kit-reveal-playback.ts",
+      "lib/kit-meaning-arrival.ts"
+    ],
+    "results": "The existing results mockup now comes before the signal/editorial passages. Preserve its explanation-depth controls, fictional Alex case, consistent evidence and keyboard behavior.",
+    "explanation_depth_contract": {
+      "source": "lib/site-content/result-explanation-copy.ts",
+      "internal_ids": [
+        "simple",
+        "balanced",
+        "advanced"
+      ],
+      "english_names": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ],
+      "spanish_names": [
+        "Principiante",
+        "Intermedio",
+        "Avanzado"
+      ],
+      "meaning": "One reading preference is chosen at signup and adjustable in Settings. The landing previews it through the existing accessible picker, not three competing audience tabs.",
+      "invariants": "Changing detail preserves the result, the history, the blood-draw notes and clinical meaning. Do not relabel these levels as Simple/Context/Full or alter evidence to make the explanation more reassuring."
+    },
+    "signal": "Preserve the complete four chapters: your body, starting point, review, guided choice. Static/reduced-motion users receive the same substantive narrative.",
+    "health_history": "HealthStorySection explains personal history and draw-day context. Its 90-day timeline has Start followed by Review + choose at months 04, 07 and 10.",
+    "editorial": "Continue the established readable editorial reveal and ruled-entry treatment. Important explanations must not depend on waiting for long animations.",
+    "accessibility": "Preserve phone layout, keyboard navigation, focus behavior, adequate touch targets, readable body text and complete reduced-motion alternatives.",
+    "retrofuturist_details": "Forest, warm paper and amber; quiet glass/analog instruments; italic display hierarchy; dotted old-screen numerical readouts. Modern compact controls with visible focus, no generic feature-card grids."
+  },
+  "approved_clinical_and_example_boundaries": {
+    "general": "Educational interpretation is not a diagnosis, a promise of prevention, a guaranteed health improvement, or a replacement for professional assessment.",
+    "device": "Use virtually painless and no needles to handle rather than an absolute pain or no-lancet guarantee. Supplied device instructions remain authoritative.",
+    "turnaround": "If using the approved two-working-day wording, retain from laboratory receipt; do not imply doorstep-to-results in two days.",
+    "lab_vs_prevention": "The range-proof example rereads the same fixed hs-CRP measurement 2.1 mg/L from different reference perspectives. EVA does not change the laboratory measurement. Its illustrative laboratory reference is <5 mg/L, with laboratory variation explicit. The prevention threshold is >=2 mg/L on repeat testing, not a universal optimal interval or a diagnosis.",
+    "range_interpretation_evidence": {
+      "record": "docs/range-interpretation-evidence.json",
+      "copy": "lib/site-content/range-proof-copy.ts",
+      "laboratory_reference": {
+        "display": "<5 mg/L",
+        "qualification": "Within this illustrative reference interval. Laboratories may use different limits.",
+        "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+        "source_location": "Adult serum reference range on PDF pages 8 and 10."
+      },
+      "prevention_threshold": {
+        "display": "≥2 mg/L on repeat testing",
+        "qualification": "A risk-enhancing factor worth discussing if confirmed on more than one occasion, with wider cardiovascular and inflammatory context. It is not a universal optimal range, deficiency diagnosis or treatment target.",
+        "source": "https://tools.acc.org/LDL/",
+        "source_location": "2026 ACC/AHA dyslipidemia guideline Table 13, risk-enhancing factors."
+      },
+      "context_source": "https://www.heart.org/en/health-topics/cholesterol/how-to-get-your-cholesterol-tested/high-sensitivity-c-reactive-protein",
+      "reference_interval_source": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
+      "preserve": "Keep repeat confirmation adjacent to the prevention interpretation, source links visible, and the single-reading limitation intact. Do not restore the former blanket 0–1 EVA-optimal interpretation in this proof chapter."
+    },
+    "history": "A change in results does not by itself establish its cause, persistence or the right treatment. Compare compatible units, tests and context.",
+    "current_alex_case": {
+      "fictional": true,
+      "marker": "hs-CRP",
+      "unit": "mg/L",
+      "source": "lib/site-content/alex-story-copy.ts",
+      "canonical_export": "alexStoryReadings",
+      "blood_draw_notes_source": "Self-reported",
+      "blood_draw_notes_english": [
+        "Hard workout · previous 24 hours",
+        "No recent illness reported"
+      ],
+      "blood_draw_notes_spanish": [
+        "Ejercicio intenso · últimas 24 horas",
+        "Sin enfermedad reciente declarada"
+      ],
+      "readings": [
+        0.8,
+        0.9,
+        0.8,
+        2.1
+      ],
+      "point": "The latest result is higher than the earlier pattern. History shows the change; it does not tell whether the rise will persist.",
+      "cause_limit": "The reported workout may contribute but is not a proven cause. Draw-day notes, the full fictional history and uncertainty remain the same at all three explanation levels."
+    },
+    "expanded_sample_dashboard": {
+      "source": "components/story/BiomarkerGallery.tsx",
+      "hs_crp_history": [
+        2.8,
+        2.5,
+        2.7,
+        2.1
+      ],
+      "distinction": "This is a separate illustrative sample-dashboard trajectory. It is not Alex's canonical history [0.8, 0.9, 0.8, 2.1]. Do not merge or overwrite either dataset to make the other match.",
+      "scope": "The optional expanded dashboard also demonstrates broader-library markers. Preserve the caption that some markers are not in the 13-marker kit; their presence is not a kit-inclusion claim."
+    },
+    "scores": "Preserve biological-age and longevity-score input/availability qualifications. Do not claim that the 13-marker list alone guarantees every model output.",
+    "source_material": "Historical original transcripts and methodology copy remain comparison material, not newly verified clinical evidence or current panel specifications.",
+    "rejected_original_claims": [
+      "95% of normal lab results hide deficiencies",
+      "Reference ranges universally represent sick people",
+      "One universal optimal target for everyone",
+      "Unsupported starting-kit inclusions or annual entitlement"
+    ]
+  },
+  "current_page_order": [
+    {
+      "component": "ScrollStory / EvaFilm opening",
+      "purpose": "Runner, free previous-report entry, secondary kit entry and approved Tasso process"
+    },
+    {
+      "component": "StoryScenePassage kind=kit",
+      "purpose": "Scroll-driven starting-kit education"
+    },
+    {
+      "component": "RangeProofSection",
+      "id": "otra-lectura",
+      "purpose": "Why interpreting an existing result adds a prevention perspective"
+    },
+    {
+      "component": "KitExplanationPreview",
+      "id": "kit-explanation-preview",
+      "purpose": "Link explanation levels to the results demonstration"
+    },
+    {
+      "component": "BiomarkerGallery / ResultsContent",
+      "id": "biomarcadores",
+      "purpose": "Existing results mockup and fictional Alex experience"
+    },
+    {
+      "component": "SignalPassage",
+      "id": "una-senal",
+      "purpose": "Body → starting point → review → guided choice"
+    },
+    {
+      "component": "HealthStorySection",
+      "id": "una-perspectiva",
+      "purpose": "Personal history, draw-day context and a suggested review rhythm"
+    },
+    {
+      "component": "TrendStorySection replacing HomeUnderstanding",
+      "id": "por-que-eva",
+      "purpose": "One reading versus the same reading with Alex's prior history",
+      "status": "Published in version 31; preserve."
+    },
+    {
+      "component": "MethodJourney",
+      "id": "el-metodo",
+      "purpose": "Next section to refine after the Trendlines release"
+    },
+    {
+      "component": "StoryScenePassage kind=life",
+      "purpose": "Existing transition back to life"
+    },
+    {
+      "component": "BiologicalAgeSection",
+      "id": "tu-evolucion",
+      "purpose": "Existing qualified biological-age explanation",
+      "status": "User approved version 26; preserve except later whole-page coherence review."
+    },
+    {
+      "component": "LifestylePassage",
+      "id": "lo-que-te-mueve",
+      "purpose": "Existing everyday-life passage"
+    },
+    {
+      "component": "Founder story",
+      "id": "nuestra-historia",
+      "purpose": "Existing founder voice"
+    },
+    {
+      "component": "BusinessOffer",
+      "id": "empezar",
+      "purpose": "Offer and existing-report alternative"
+    },
+    {
+      "component": "BusinessFooter",
+      "purpose": "Company, support, legal and language links"
+    }
+  ],
+  "next_session_start": [
+    "Read AGENTS.md and this handoff, then inspect git status, manifest, actual source and current native Site state.",
+    "The verified baseline is deployed version 31 with the exact receipt above. Git HEAD may include the following documentation-only handoff commit; that alone does not call for republishing.",
+    "Preserve uncommitted work. Do not run a destructive reset, switch to the historical GitHub checkout or recreate the Site.",
+    "Continue at #el-metodo unless the user gives new steering. Use a project manager, longevity-education copy expert and designer for bounded parallel review where useful.",
+    "Then review #volver-a-la-vida, preserve the approved age chapter, continue lifestyle/founder/offer/footer, and finally assess the complete landing as a coherent customer journey.",
+    "Use current source and latest receipts over older plans. Publish completed review-site refinements with relevant verification and state exactly what changed and where. Routine continuation is already authorized."
+  ],
+  "engineering_workflow": {
+    "runtime": "Node24; Vinext/React static export. Existing dependencies are already linked.",
+    "dependency_link": "/workspace/eva-playback-review/node_modules -> /workspace/eva-rebranding/node_modules",
+    "baseline_checks": [
+      "node node_modules/typescript/bin/tsc --noEmit",
+      "npm run build"
+    ],
+    "relevant_logic_checks": [
+      "node scripts/check-kit-scroll.mjs",
+      "node scripts/check-kit-reveal-playback.mjs",
+      "node scripts/check-story-sections.mjs"
+    ],
+    "check_scope": "Run checks appropriate to the changed section. Do not run lint unless requested or repeat unrelated broad suites after successful unchanged checks.",
+    "browser_root": "/workspace/eva-in-place-qa",
+    "range_aware_server": "/workspace/eva-free-transition-qa/serve.py",
+    "local_origin": "http://127.0.0.1:4185",
+    "browser_commands": {
+      "modern_kit_local": "node /workspace/eva-in-place-qa/check-modern-kit.cjs",
+      "modern_kit_live": "node /workspace/eva-in-place-qa/check-modern-kit.cjs <actual_review_version_number>",
+      "trend_local": "node /workspace/eva-in-place-qa/check-modern-kit.cjs --trend-story",
+      "trend_live": "node /workspace/eva-in-place-qa/check-modern-kit.cjs --trend-story <actual_review_version_number>",
+      "health_story_local": "node /workspace/eva-in-place-qa/check-modern-kit.cjs --health-story",
+      "health_story_live": "node /workspace/eva-in-place-qa/check-modern-kit.cjs --health-story <actual_review_version_number>",
+      "range_proof_local": "node /workspace/eva-in-place-qa/check-modern-kit.cjs --range-proof",
+      "range_proof_live": "node /workspace/eva-in-place-qa/check-modern-kit.cjs --range-proof <actual_review_version_number>",
+      "free_entry": "node /workspace/eva-in-place-qa/check-free-start.cjs"
+    },
+    "browser_command_paths_checked": "All listed browser entrypoints existed at this handoff review. The modern-kit harness dispatches --trend-story to fixtures/trend-story.cjs, --range-proof to fixtures/range-proof.cjs and --health-story to check-health-story.cjs.",
+    "qa_recovery": "The /workspace/eva-in-place-qa scripts, fixtures, reports and screenshots, and /workspace/eva-free-transition-qa/serve.py are outside the Site Git repository. They may be retained in the current environment but absent in a newly created one. Recover them from the retained workspace or recreate focused checks from the tracked source/contracts when necessary. Do not claim old or missing reports are fresh validation. The tracked scripts/check-*.mjs checks remain available from the repository.",
+    "browser_rules": [
+      "Build the matching source before running browser checks.",
+      "Use the existing range-aware server for seekable media; a plain server without HTTP206 can falsely suggest video failures.",
+      "Inspect representative screenshots as well as assertions.",
+      "Report viewport emulation honestly; it does not establish physical-phone frame rate.",
+      "Stop owned test servers and browser processes after checks."
+    ],
+    "source_open_helper": "node /workspace/eva-source-refresh.mjs",
+    "source_push_helper": "node scripts/sync-site-source.mjs",
+    "helper_input": "Fresh credential, checkout and exact project_id as one newline-terminated JSON object through hidden PTY stdin. Never put tokens in shell arguments, environment dumps, persistent files or this handoff.",
+    "helper_cautions": [
+      "The open helper refuses a dirty checkout: preserve and reconcile local changes first.",
+      "The push helper verifies the hosting project and Git remote. Use the selected credential's branch unchanged.",
+      "For work_proxy auth, let the runtime provide authentication; do not invent a token."
+    ],
+    "publication": [
+      "Read the Sites skill and refresh current Site access when publishing.",
+      "Obtain a fresh short-lived source credential only when needed.",
+      "Build from the exact source to be pushed, commit and push it, and package the matching dist/client plus .openai/hosting.json.",
+      "For the currently public/shared Site, save_site_version then deploy_site_version is the established flow. Preserve the audience returned by fresh access checks; never change sharing to get a deployment through.",
+      "Reuse a saved version and pending deployment after uncertain outcomes; do not blindly save or deploy duplicates.",
+      "Poll only pending/building/publishing states. Record the succeeded native receipt and literal URL."
+    ],
+    "local_archives_directory": "/workspace/eva-publication",
+    "archive_rule": "The archive must match the pushed UI commit used for the saved version. Do not reuse an old tarball merely because its filename looks recent.",
+    "established_build_command": "npm run build > /workspace/eva-in-place-qa/auto-kit-signal-build.log 2>&1",
+    "credential_timing": "Launch the hidden-stdin helper and clear its runtime review before minting a short-lived credential. Wait for Ready, mint through native Sites, then feed stdin promptly; reviews can outlast token expiry.",
+    "publication_archive_example": "tar -czf /workspace/eva-publication/eva-trend-story.tar.gz .openai/hosting.json dist/client (use a fresh correctly named archive for future changes; immutable until saving succeeds).",
+    "orchestration": "Use direct exec_command calls inside functions.exec. If the outer call yields a cell ID, collect it until it returns a unified session_id, then poll that command with write_stdin. Avoid yielding before initiating the command or leaving unawaited tool promises."
+  },
+  "permissions_and_security": {
+    "writable_roots": [
+      "/workspace",
+      "/tmp"
+    ],
+    "network": "Restricted agent sandbox; inherited Cloud proxy and current runtime policy still govern actual requests.",
+    "startup_policy_observed": {
+      "http_policy": "unrestricted",
+      "vpn_configured": false,
+      "http_proxy_host": "proxy:8080"
+    },
+    "resumption": "Read the current cloud runtime skill, inspect environment_status and /etc/codex/network-policy.json when network/credential work is needed. Old readiness is not current readiness.",
+    "approval_rule": "Use the active tool schema and runtime permission policy. Prefer scoped additional network/filesystem permission when supported; use full escalation only when necessary. Do not bypass proxy policy or suppress native approvals.",
+    "unavailable_guarantees": [
+      "A new session may require platform approval for Git, network access, loopback build servers or native deployment.",
+      "Previously saved command-prefix approvals must not be assumed to transfer to every new environment.",
+      "A Page or repository handoff does not confer a broader tool grant."
+    ],
+    "secrets": "Never persist credential values, signed upload URLs, bypass bearer tokens or runtime secrets. Credentials from a previous session expire; request fresh native credentials when needed.",
+    "processes": "PTY/session IDs and browser/server handles are transient. Inspect live state instead of reusing old process handles.",
+    "paid_media": "Do not assume the old Higgsfield balance or approve new spending from this handoff. Reuse accepted media unless the user explicitly scopes another generation."
+  },
+  "original_content_reference": {
+    "current_original_domain": "https://evahealth.es",
+    "archive": "lib/site-content/original-content.json",
+    "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
+  },
+  "new_session_prompt": "Continue the EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json first. Version 31 is published; continue at #el-metodo. Routine edits, relevant checks, commits, pushes and publication to the existing review Site remain authorized. Preserve accepted visuals and explain each finished change with its review link."
+}
