@@ -1,0 +1,39 @@
+{
+  "scope": "#volver-a-la-vida copy refinement",
+  "static_checks": "passed",
+  "browser": {
+    "status": "unverified",
+    "error": "the gaas-browser node_repl sandbox cannot be disabled",
+    "screenshots": false,
+    "interaction_tests": false
+  },
+  "locales": [
+    {
+      "locale": "en",
+      "narrative_copy": "Context for your next step. Space for what you enjoy.",
+      "title_preserved": true,
+      "label_association": true,
+      "page_order": true
+    },
+    {
+      "locale": "es",
+      "narrative_copy": "Contexto para tu próximo paso. Espacio para lo que disfrutas.",
+      "title_preserved": true,
+      "label_association": true,
+      "page_order": true
+    }
+  ],
+  "image_sha256": "8f7ed8720a58ec96f1d5c3a784576dab7dce7da6e6aba85d1fdd54c825b6ae41",
+  "source_commit": "2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
+  "checks": {
+    "typescript": "passed",
+    "production_build": "passed (113 routes)",
+    "english_public_route_audit": "passed (1178 catalog messages)",
+    "story_sections": "passed (section order, original physical timing and relocated scene windows)",
+    "built_narrative": "passed (EN/ES title, support, heading association and method/life/age/lifestyle order)",
+    "preservation": "Verified source diff leaves image, timing, driver, compositor, CSS, dashboard, method and biological-age components unchanged",
+    "review": "Copy and design source reviews completed; shared copy used by animated, screen-reader and calm paths; no new effect, listener or animation clock",
+    "diff_whitespace": "passed"
+  },
+  "scope_limit": "Static artifact/source checks only. Actual text wrapping, contrast, scrolling, reduced-motion and footer-calm behavior were not exercised in a browser. No physical-device performance claim."
+}

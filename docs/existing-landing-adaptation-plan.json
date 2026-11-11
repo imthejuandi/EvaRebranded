@@ -785,7 +785,7 @@
   },
   "inOrderLandingReview": {
     "direction": "Follow the visible page order. A previous implementation-complete label is not user approval of its design or copy.",
-    "current": "#una-senal — A signal to know yourself",
+    "current": "#lo-que-te-mueve — lifestyle; preserve the approved biological-age chapter before it.",
     "queue": [
       {
         "anchor": "#una-senal",
@@ -810,12 +810,12 @@
       {
         "anchor": "#el-metodo",
         "section": "Your next steps. At your pace.",
-        "status": "Pending ordered review"
+        "status": "Published in version 32 and preserved in later releases; browser verification remains pending."
       },
       {
         "anchor": "#volver-a-la-vida",
         "section": "And get back to life.",
-        "status": "Pending ordered review"
+        "status": "Published in version 34 with shared bilingual bridge copy; browser verification remains pending."
       },
       {
         "anchor": "#tu-evolucion",
@@ -1160,7 +1160,7 @@
   },
   "lifePassageRefinement": {
     "anchor": "#volver-a-la-vida",
-    "status": "Implemented with passing static checks; native release receipt determines published state.",
+    "status": "Published in version 34; native succeeded receipt in SESSION_HANDOFF.json. Static checks passed; browser QA remains unverified.",
     "purpose": "Bridge guided choice into everyday life while retaining the brief visual breathing space.",
     "copy": {
       "en": "Context for your next step. Space for what you enjoy.",

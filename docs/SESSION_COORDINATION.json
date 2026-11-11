@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 33,
-    "deployed_ui_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_99f63ea3b5148191b0dd9092f1a57fa4",
-    "deployment_id": "appgdep_6af4b4c357308191a4d5e4c632caea47",
+    "live_version": 34,
+    "deployed_ui_commit": "2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9d8cc374e70c81919b07d14564545651",
+    "deployment_id": "appgdep_6af4c6c75f188191ad1bc2c19929527c",
     "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=33#por-que-eva"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=34#volver-a-la-vida"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -41,29 +41,33 @@
       "origin": "This dashboard/Trendlines session, version33",
       "status": "Published and reviewed",
       "qa": "Seven EN/ES desktop/phone/reduced-motion browser cases passed, including both interpretations, fixed layout, shared dashboard styles and keyboard/calm behavior."
+    },
+    {
+      "section": "#volver-a-la-vida",
+      "source_commit": "2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
+      "origin": "Primary continuation chat, version 34",
+      "status": "Published, accepted existing image/motion preserved",
+      "qa": "Static checks and source review passed; browser startup blocked. See docs/life-passage-refinement-qa.json."
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Refining #volver-a-la-vida: shared bilingual narrative, natural support wrapping; accepted image, timing and layout preserved.",
-      "next_section": "#volver-a-la-vida",
-      "pending_verification": "Version 32 MethodJourney browser verification remains pending.",
-      "section": "#volver-a-la-vida",
-      "files": [
-        "components/story/StoryScenePassage.tsx",
-        "components/story/EvaFilm.tsx",
-        "lib/site-content/life-passage-copy.ts"
-      ]
+      "status": "Version 34 published. No implementation in progress or app files reserved.",
+      "next_section": "#lo-que-te-mueve",
+      "pending_verification": "MethodJourney and return-to-life browser checks remain pending because shared browser startup failed.",
+      "section": null,
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
-  "next_content_section": "#volver-a-la-vida",
+  "next_content_section": "#lo-que-te-mueve",
   "preserve": [
     "The v32 MethodJourney improvements",
     "The v33 shared dashboard styling and per-view interpretation",
     "The approved #tu-evolucion biological-age chapter",
-    "Current runner, Tasso footage, 500ms kit reveal, confirmed13-marker offer and free interpretation entry"
+    "Current runner, Tasso footage, 500ms kit reveal, confirmed13-marker offer and free interpretation entry",
+    "The version 34 return-to-life shared EN/ES narrative and accepted original image/motion"
   ],
   "coordination_workflow": [
     "Read AGENTS.md, docs/SESSION_HANDOFF.json and this note after refreshing current main; preserve dirty work before attempting a refresh.",
