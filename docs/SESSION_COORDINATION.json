@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 38,
-    "deployed_ui_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ea8fff43641c8191aaf10a9b7db5ae6e",
-    "deployment_id": "appgdep_6af4d82a07988191a965a7cdb74141c4",
+    "live_version": 39,
+    "deployed_ui_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_81296be5eaac8191b29f8d4902c6fc98",
+    "deployment_id": "appgdep_6af4e0a4a0b88191a5811cd604b1ab4d",
     "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=38"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=39#el-metodo"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -76,20 +76,23 @@
       "origin": "Primary continuation chat, version 38",
       "status": "Published and verified; review shortcut no longer overlays controls, first-kit entry facts aligned throughout signup/onboarding/checkout",
       "qa": "All 18 actual browser scenarios passed; no page errors or mutating network requests. Evidence and reusable runners tracked."
+    },
+    {
+      "section": "Landing format and spacing",
+      "source_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+      "origin": "Primary continuation chat, user-approved .impeccable.md review findings",
+      "status": "Version 39 published and verified",
+      "qa": "10 local layout cases,7 tablet guards plus picker checks,3 live layout cases and3 live section/media/keyboard/calm cases passed. See docs/format-spacing-qa.json."
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Implementing the four user-approved format/spacing findings from the version38 review.",
+      "status": "Version 39 published; all four format/spacing findings implemented and focused browser QA passed. No app files reserved.",
       "next_section": null,
-      "pending_verification": "Fresh responsive browser checks and matching build before review-site publication.",
-      "section": "Method, guided-results tablet layout, founder wrapping and phone offer/footer seam",
-      "files": [
-        "app/method-journey.css",
-        "components/story/guided-result-story.css",
-        "app/landing-closing.css"
-      ]
+      "pending_verification": null,
+      "section": null,
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },

@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "published_version": 39,
+  "deployed_ui_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+  "design_context": ".impeccable.md",
+  "native_deployment": {
+    "version_number": 39,
+    "source_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_81296be5eaac8191b29f8d4902c6fc98",
+    "deployment_id": "appgdep_6af4e0a4a0b88191a5811cd604b1ab4d",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-11T21:40:05.785556+00:00",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=39#el-metodo",
+    "behavior": "Implemented the four user-approved format/spacing findings: Method paging follows its copy, guided-results stacks at 701–1050px, phone offer bottom padding is72px, and founder quote wrapping is balanced. Approved text, typography families, imagery, motion and entry flows are preserved.",
+    "source_files": [
+      "app/method-journey.css",
+      "components/story/guided-result-story.css",
+      "app/landing-closing.css",
+      "docs/SESSION_COORDINATION.json"
+    ],
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-format-spacing-v39.tar.gz",
+      "local_gzip_sha256": "97e4dab612a9da70e35b8eb066fd5b35dd6c1c3308d8856fa4860c88ed8f99ed",
+      "local_gzip_size_bytes": 163053222,
+      "saved_tar_content_hash": "sha256:acbdd40d0a70de0b3376739097f185ff42cf9dcf1bd499ad9d8a95aea2c620fe",
+      "saved_tar_size_bytes": 171878400,
+      "file_count": 787
+    },
+    "qa": {
+      "status": "passed_actual_browser",
+      "record": "docs/format-spacing-qa.json",
+      "evidence_directory": "docs/browser-qa-v39",
+      "local_layout_cases": 10,
+      "local_tablet_cases": 7,
+      "live_layout_cases": 3,
+      "live_section_cases": 3,
+      "page_errors": [],
+      "scope": "Focused format, responsive layout and interaction verification for the three changed CSS files. Prior complete content/flow QA remains separately recorded for version 38."
+    }
+  },
+  "changes": [
+    {
+      "section": "el-metodo",
+      "result": "All 4 desktop chapter copy-to-pager gaps now34px (25px below 1000px), previously188.8px on the first1440px panel. Photo dimensions and phone order preserved."
+    },
+    {
+      "section": "biomarcadores",
+      "result": "At ES820px, heading width 221.5→680px,4→2lines; kicker gap 242.6→about53.5px. At701–1050px the setting and free CTA group above the full-width instrument. <=700 and >1050 retain their prior layouts."
+    },
+    {
+      "section": "empezar / site-footer",
+      "result": "Phone offer bottom padding 130→72px; combined offer/footer padding 190→132px. Desktop padding remains130px."
+    },
+    {
+      "section": "nuestra-historia",
+      "result": "Balanced desktop quote wrapping removes isolated short tail. Exact quote, font family, size and line height preserved; Chromium keeps longer phone quotes unchanged."
+    }
+  ],
+  "static_checks": [
+    "TypeScript --noEmit passed",
+    "Production build passed (113 routes)",
+    "Method contracts passed",
+    "English public routes passed (1181 catalog messages)",
+    "git diff --check passed"
+  ],
+  "browser_reports": [
+    {
+      "path": "docs/browser-qa-v39/format-refinements-39-local-report.json",
+      "passed": true,
+      "cases": 10,
+      "sha256": "c2c9ee63af7e667b910af1277f5e5c97593003404065201e534de05dd9674860"
+    },
+    {
+      "path": "docs/browser-qa-v39/format-refinements-39-report.json",
+      "passed": true,
+      "cases": 3,
+      "sha256": "580d47399dda2e949222b0d5db4dd60b9d4b3613818bebe82f0a9a2ada30edda"
+    },
+    {
+      "path": "docs/browser-qa-v39/guided-tablet-refinement-report.json",
+      "passed": true,
+      "cases": 7,
+      "sha256": "6ce45a3644fab443592fa10cf1cd5b5de768d110ccf7118cc803c3bb0da46d83"
+    },
+    {
+      "path": "docs/browser-qa-v39/guided-tablet-picker-report.json",
+      "passed": true,
+      "cases": 2,
+      "sha256": "1c932499718d348f8a38744cc26d4fc74f72ba26b3b983992fdf140b35080062"
+    },
+    {
+      "path": "docs/browser-qa-v39/sections-browser-v39-report.json",
+      "passed": true,
+      "cases": 3,
+      "sha256": "ed8b9fe47a388dcfb791b1acfb8328770828e1d300d3bb3f41e07adfddf1ce00"
+    }
+  ],
+  "screenshots_reviewed": [
+    {
+      "path": "docs/browser-qa-v39/format-39-en-1440-method.png",
+      "sha256": "d4f10b07d7f3b7901c0d8edf6f21582e7bf0d842d8c9f208cfce939f26a751fb",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v39/format-39-es-820-results.png",
+      "sha256": "f287b3bb4490294491ee10a88124d48d06e4e8795e6a5b990a377a57c621bfa2",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v39/format-39-en-1440-founder.png",
+      "sha256": "37b58cf41cb82f3dbdb741f8e01480461e73dd6946b1a16393573adb895bf310",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v39/format-39-es-375-offer-footer.png",
+      "sha256": "ca9eb952f1d86977b1690587f68824b087d16e41e81aff827f5fe8b19d0fb317",
+      "reviewed": true
+    }
+  ],
+  "runtime": "Installed Playwright + system Chromium, normal TLS trust, inherited proxy for liveSite; static matching production build served locally for prepublication checks.",
+  "browser_scope": [
+    "10 local layout cases EN/ES at 1440,1366,1280,1051,1024,820,701,390,375,320 widths including a reduced-motion phone",
+    "7 focused local tablet/desktop/phone guards plus 4 picker click/keyboard cases",
+    "3 actual live layout cases EN1440, ES820, ES375",
+    "3 actual live sections cases EN1366x650, ES375x812, EN390x844 reduced: all Method tabs/keys/paging/replay, life/lifestyle media/calm, closing controls and footer switch"
+  ],
+  "page_errors": [],
+  "verification_limits": [
+    "Viewport emulation; physical-device performance not measured.",
+    "No accounts, health uploads, purchases or backend behavior changed or exercised by this style pass.",
+    "Review query is a label, not a deployment pin. Native Site metadata confirmed39 and public audience after testing."
+  ],
+  "documentation_note": "This evidence/handoff commit follows deployed UI 991dd53 and does not require another UI publication."
+}

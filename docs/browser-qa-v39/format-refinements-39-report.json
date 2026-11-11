@@ -1,0 +1,124 @@
+{
+  "version": "39",
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "cases": [
+    {
+      "l": "en",
+      "w": 1440,
+      "h": 900,
+      "methodGaps": [
+        34,
+        34,
+        34,
+        34
+      ],
+      "results": {
+        "headingWidth": 383.625,
+        "headingHeight": 106.0625,
+        "kickerGap": 154.7486572265625,
+        "columns": "387.625px 747.578px",
+        "minHeight": "730px"
+      },
+      "quote": {
+        "width": 1220,
+        "lineWidths": [
+          868.671875,
+          900.40625,
+          959.546875,
+          1047.0625,
+          938.5625
+        ],
+        "textWrap": "balance"
+      },
+      "offer": {
+        "padding": 130,
+        "footerPadding": 80
+      },
+      "document": {
+        "width": 1440,
+        "scroll": 1440
+      },
+      "clipped": [],
+      "passed": true
+    },
+    {
+      "l": "es",
+      "w": 820,
+      "h": 1180,
+      "methodGaps": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "results": {
+        "headingWidth": 680,
+        "headingHeight": 90.74998474121094,
+        "kickerGap": 53.46855163574219,
+        "columns": "724px",
+        "minHeight": "0px"
+      },
+      "quote": {
+        "width": 724,
+        "lineWidths": [
+          697.296875,
+          714.84375,
+          674.015625,
+          702.78125
+        ],
+        "textWrap": "balance"
+      },
+      "offer": {
+        "padding": 130,
+        "footerPadding": 80
+      },
+      "document": {
+        "width": 820,
+        "scroll": 820
+      },
+      "clipped": [],
+      "passed": true
+    },
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "methodGaps": [],
+      "results": {
+        "headingWidth": 327,
+        "headingHeight": 128.484375,
+        "kickerGap": 30,
+        "columns": "343px",
+        "minHeight": "0px"
+      },
+      "quote": {
+        "width": 327,
+        "lineWidths": [
+          285.359375,
+          274.59375,
+          233.0625,
+          200.46875,
+          278.84375,
+          319.5,
+          256.25,
+          274.203125,
+          111.03125
+        ],
+        "textWrap": "balance"
+      },
+      "offer": {
+        "padding": 72,
+        "footerPadding": 60
+      },
+      "document": {
+        "width": 375,
+        "scroll": 375
+      },
+      "clipped": [],
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "viewportEmulation": true,
+  "passed": true
+}

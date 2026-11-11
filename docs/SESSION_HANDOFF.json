@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
-  "handoff_status": "CONTENT_AND_REVIEW_SITE_BROWSER_QA_COMPLETE_V38",
-  "immediate_instruction": "Version 38 is published. The landing content/narrative review and final actual browser QA are complete. Eighteen scenarios passed on live EN/ES desktop and emulated phone viewports, including signup/upload intent, kit checkout copy, keyboard/media/reduced-motion controls and pointer hit targets. Preserve the approved order and content; follow user feedback. Interactive CUA remains broken, but installed Playwright/Chromium works and was used successfully. Do not reopen the old browser blocker or claim production-backend/physical-device validation.",
+  "handoff_status": "CONTENT_FORMAT_AND_REVIEW_SITE_QA_COMPLETE_V39",
+  "immediate_instruction": "Version 39 is published. The four user-approved Impeccable format/spacing findings are implemented and actual browser-verified across desktop/tablet/phone: Method controls grouped with copy, guided-results tablet stacking, phone offer spacing, founder quote balance. Read docs/format-spacing-qa.json for fresh focused evidence. Preserve accepted content, design and motion. The earlier full 18-scenario content/flow QA remains recorded for version 38; do not claim it was rerun wholesale for 39.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -33,60 +33,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 37,
-      "source_commit": "b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77798631b5d48191898d67c2d6ea9d52",
-      "deployment_id": "appgdep_6af4ce75255c81919a1b1a5912eb46d7",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-11T20:22:28.232704+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=37#nuestra-historia",
-      "behavior": "Completed remaining founder/offer/footer chapters and whole-page narrative/content review. Founder quote and attribution remain verbatim in a named semantic section. Free previous-report interpretation leads the closing offer through the established free signup/upload flow; optional 13-marker €99 + VAT kit remains secondary with separate other-panel scope/pricing. Footer preserves destinations, explicitly identifies the Spanish private preview, adds declared 44px targets/focus, and names the exposed motion switch. Decorative editorial ordinal prefixes removed; real steps/readings/months unchanged. Approved version 36 order and earlier content/media/motion preserved.",
-      "source_files": [
-        "components/story/FounderStory.tsx",
-        "components/story/BusinessOffer.tsx",
-        "components/story/BusinessFooter.tsx",
-        "components/story/HealthEditorial.tsx",
-        "components/story/MethodJourney.tsx",
-        "components/site/SiteDocument.tsx",
-        "app/landing-closing.css",
-        "lib/site-content/closing-copy.ts",
-        "lib/site-content/health-story-copy.ts",
-        "lib/site-content/biological-age-copy.ts",
-        "lib/site-content/locales/public.en.json",
-        "docs/SESSION_COORDINATION.json",
-        "docs/existing-landing-adaptation-plan.json"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-closing-journey.tar.gz",
-        "local_gzip_sha256": "f5d73cf397fc55ce404a3002264ea6640bb8d9047119097c98fd6770086d97af",
-        "local_gzip_size_bytes": 163052551,
-        "saved_tar_content_hash": "sha256:680396040aa3354582f9e158ad093c22e630f2d987c54d92e0dc5310b60d3767",
-        "saved_tar_size_bytes": 171878400,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "static_SSR_and_pure_policy_checks_passed_browser_unverified",
-        "record": "docs/closing-journey-qa.json",
-        "checks": {
-          "typescript": "passed",
-          "production_build": "passed (113 routes)",
-          "english_public_routes": "passed (1179 catalog messages, 7 public routes)",
-          "existing_method_contracts": "passed",
-          "existing_story_sections": "passed",
-          "whole_landing_generated_artifacts": "EN/ES order, unique anchors, preserved approved chapter text vs version 36, exact founder quote, free/kit intent, footer links/language and accessible motion switch passed",
-          "SSR_and_flow_policy": "EN/ES founder/offer/footer plus calm false/true states passed; real pure policy functions preserve free upload return intent",
-          "source_and_design_review": "Independent copy, narrative, React/accessibility and CSS reviews completed; declared 44px targets and focus styles, no computed-layout claim",
-          "diff_whitespace": "passed"
-        },
-        "browser": {
-          "status": "unverified",
-          "blocker": "Shared browser startup remains blocked by the recorded sandbox error. No new browser run, screenshots or physical-device test."
-        },
-        "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 38,
       "source_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ea8fff43641c8191aaf10a9b7db5ae6e",
@@ -135,21 +81,54 @@
         "scope": "Actual Chromium browser on published version 38, EN/ES desktop and emulated phone layouts, interactions and local preview flows. Physical-device speed and real production accounts/health uploads/purchases are outside this verification."
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI is version 38 commit 9f43e90a244750365537ee3a70246846f24bcfc8. A following evidence/documentation/test-harness commit records completed browser QA and is not another UI deployment.",
+    "latest_verified_ui_release": {
+      "version_number": 39,
+      "source_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_81296be5eaac8191b29f8d4902c6fc98",
+      "deployment_id": "appgdep_6af4e0a4a0b88191a5811cd604b1ab4d",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-11T21:40:05.785556+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=39#el-metodo",
+      "behavior": "Implemented the four user-approved format/spacing findings: Method paging follows its copy, guided-results stacks at 701–1050px, phone offer bottom padding is72px, and founder quote wrapping is balanced. Approved text, typography families, imagery, motion and entry flows are preserved.",
+      "source_files": [
+        "app/method-journey.css",
+        "components/story/guided-result-story.css",
+        "app/landing-closing.css",
+        "docs/SESSION_COORDINATION.json"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-format-spacing-v39.tar.gz",
+        "local_gzip_sha256": "97e4dab612a9da70e35b8eb066fd5b35dd6c1c3308d8856fa4860c88ed8f99ed",
+        "local_gzip_size_bytes": 163053222,
+        "saved_tar_content_hash": "sha256:acbdd40d0a70de0b3376739097f185ff42cf9dcf1bd499ad9d8a95aea2c620fe",
+        "saved_tar_size_bytes": 171878400,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/format-spacing-qa.json",
+        "evidence_directory": "docs/browser-qa-v39",
+        "local_layout_cases": 10,
+        "local_tablet_cases": 7,
+        "live_layout_cases": 3,
+        "live_section_cases": 3,
+        "page_errors": [],
+        "scope": "Focused format, responsive layout and interaction verification for the three changed CSS files. Prior complete content/flow QA remains separately recorded for version 38."
+      }
+    },
+    "latest_verified_ui_release_note": "Deployed UI is version 39 commit 991dd5310f6e1efc1819e76d37db40016adb3cdb. Later evidence/documentation-only commits do not change deployed UI.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "Evidence/docs/test-harness followup to deployed source 9f43e90a244750365537ee3a70246846f24bcfc8",
+      "relation": "Evidence/docs followup to deployed source 991dd5310f6e1efc1819e76d37db40016adb3cdb",
       "files": [
         "AGENTS.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/existing-landing-adaptation-plan.json",
-        "docs/final-browser-qa.json",
-        "docs/browser-qa-v38",
-        "scripts/browser-qa"
+        "docs/format-spacing-qa.json",
+        "docs/browser-qa-v39"
       ],
-      "lookup_command": "git log -1 --format=%H -- docs/SESSION_HANDOFF.json",
       "ui_redeployment_required": false
     },
     "earlier_verified_ui_release": {
@@ -209,6 +188,60 @@
         "deployment_id": "appgdep_6af4cab08cf08191a2aea68b2d4f7b2c",
         "status": "succeeded",
         "url": "https://eva-content-review.jdlagop.chatgpt.site"
+      },
+      {
+        "version_number": 37,
+        "source_commit": "b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77798631b5d48191898d67c2d6ea9d52",
+        "deployment_id": "appgdep_6af4ce75255c81919a1b1a5912eb46d7",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-11T20:22:28.232704+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=37#nuestra-historia",
+        "behavior": "Completed remaining founder/offer/footer chapters and whole-page narrative/content review. Founder quote and attribution remain verbatim in a named semantic section. Free previous-report interpretation leads the closing offer through the established free signup/upload flow; optional 13-marker €99 + VAT kit remains secondary with separate other-panel scope/pricing. Footer preserves destinations, explicitly identifies the Spanish private preview, adds declared 44px targets/focus, and names the exposed motion switch. Decorative editorial ordinal prefixes removed; real steps/readings/months unchanged. Approved version 36 order and earlier content/media/motion preserved.",
+        "source_files": [
+          "components/story/FounderStory.tsx",
+          "components/story/BusinessOffer.tsx",
+          "components/story/BusinessFooter.tsx",
+          "components/story/HealthEditorial.tsx",
+          "components/story/MethodJourney.tsx",
+          "components/site/SiteDocument.tsx",
+          "app/landing-closing.css",
+          "lib/site-content/closing-copy.ts",
+          "lib/site-content/health-story-copy.ts",
+          "lib/site-content/biological-age-copy.ts",
+          "lib/site-content/locales/public.en.json",
+          "docs/SESSION_COORDINATION.json",
+          "docs/existing-landing-adaptation-plan.json"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-closing-journey.tar.gz",
+          "local_gzip_sha256": "f5d73cf397fc55ce404a3002264ea6640bb8d9047119097c98fd6770086d97af",
+          "local_gzip_size_bytes": 163052551,
+          "saved_tar_content_hash": "sha256:680396040aa3354582f9e158ad093c22e630f2d987c54d92e0dc5310b60d3767",
+          "saved_tar_size_bytes": 171878400,
+          "file_count": 787
+        },
+        "qa": {
+          "status": "static_SSR_and_pure_policy_checks_passed_browser_unverified",
+          "record": "docs/closing-journey-qa.json",
+          "checks": {
+            "typescript": "passed",
+            "production_build": "passed (113 routes)",
+            "english_public_routes": "passed (1179 catalog messages, 7 public routes)",
+            "existing_method_contracts": "passed",
+            "existing_story_sections": "passed",
+            "whole_landing_generated_artifacts": "EN/ES order, unique anchors, preserved approved chapter text vs version 36, exact founder quote, free/kit intent, footer links/language and accessible motion switch passed",
+            "SSR_and_flow_policy": "EN/ES founder/offer/footer plus calm false/true states passed; real pure policy functions preserve free upload return intent",
+            "source_and_design_review": "Independent copy, narrative, React/accessibility and CSS reviews completed; declared 44px targets and focus styles, no computed-layout claim",
+            "diff_whitespace": "passed"
+          },
+          "browser": {
+            "status": "unverified",
+            "blocker": "Shared browser startup remains blocked by the recorded sandbox error. No new browser run, screenshots or physical-device test."
+          },
+          "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
+        }
       }
     ]
   },

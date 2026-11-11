@@ -1,0 +1,178 @@
+{
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "version": "39",
+  "cases": [
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 650,
+      "method": {
+        "tabKeys": true,
+        "panels": [
+          {
+            "index": 0,
+            "noClipping": true,
+            "phoneCopyFirst": false,
+            "replay": "not applicable"
+          },
+          {
+            "index": 1,
+            "noClipping": true,
+            "phoneCopyFirst": false,
+            "replay": "passed"
+          },
+          {
+            "index": 2,
+            "noClipping": true,
+            "phoneCopyFirst": false,
+            "replay": "passed"
+          },
+          {
+            "index": 3,
+            "noClipping": true,
+            "phoneCopyFirst": false,
+            "replay": "passed"
+          }
+        ],
+        "pagingFocus": true
+      },
+      "life": {
+        "forwardReverseFrames": [
+          737.288845054672,
+          848.1785070825049,
+          737.288845054672
+        ],
+        "visualSupportParity": true
+      },
+      "lifestyle": {
+        "playPauseKeyboardResume": true,
+        "offscreenPauseResume": true,
+        "endReplay": true,
+        "finiteVideo": true
+      },
+      "closing": {
+        "freeEntryFirst": true,
+        "allFooterLinks44px": true,
+        "calmSwitchRoleAndHitarea": {
+          "width": 56,
+          "height": 44
+        },
+        "manualCalmIndependent": true
+      },
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 375,
+      "height": 812,
+      "method": {
+        "tabKeys": true,
+        "panels": [
+          {
+            "index": 0,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "not applicable"
+          },
+          {
+            "index": 1,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "passed"
+          },
+          {
+            "index": 2,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "passed"
+          },
+          {
+            "index": 3,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "passed"
+          }
+        ],
+        "pagingFocus": true
+      },
+      "life": {
+        "forwardReverseFrames": [
+          737.1913534208434,
+          848.1619182577565,
+          737.1913534208434
+        ],
+        "visualSupportParity": true
+      },
+      "lifestyle": {
+        "playPauseKeyboardResume": true,
+        "offscreenPauseResume": true,
+        "endReplay": true,
+        "finiteVideo": true
+      },
+      "closing": {
+        "freeEntryFirst": true,
+        "allFooterLinks44px": true,
+        "calmSwitchRoleAndHitarea": {
+          "width": 56,
+          "height": 44
+        },
+        "manualCalmIndependent": true
+      },
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "method": {
+        "tabKeys": true,
+        "panels": [
+          {
+            "index": 0,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "calm"
+          },
+          {
+            "index": 1,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "calm"
+          },
+          {
+            "index": 2,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "calm"
+          },
+          {
+            "index": 3,
+            "noClipping": true,
+            "phoneCopyFirst": true,
+            "replay": "calm"
+          }
+        ],
+        "pagingFocus": true
+      },
+      "life": {
+        "calmNarrative": true
+      },
+      "lifestyle": {
+        "calmPoster": true
+      },
+      "closing": {
+        "freeEntryFirst": true,
+        "allFooterLinks44px": true,
+        "calmSwitchRoleAndHitarea": {
+          "width": 56,
+          "height": 44
+        }
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "physicalDevicePerformance": "Not measured; Chromium viewport emulation.",
+  "passed": true
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "w": 701,
+      "h": 900,
+      "l": "es",
+      "box": {
+        "x": 48,
+        "y": 502.5690612792969,
+        "width": 280,
+        "height": 182.00003051757812
+      },
+      "actual": "Tu nivel de lectura: Avanzado",
+      "active": "La hs-CRP mide proteína C reactiva, una proteína hepática de fase aguda. El cambio de 0,8 a 2,1 mg/L sigue al ejercicio intenso declarado en las últimas 24 horas, sin enfermedad declarada. Es una posible influencia, no una causa confirmada. La variación biológica y analítica también importa. Conviene revisar mediciones comparables en condiciones clínicamente estables con un profesional antes de valorar inflamación basal o riesgo cardiovascular.",
+      "focused": true,
+      "passed": true
+    },
+    {
+      "w": 1024,
+      "h": 768,
+      "l": "en",
+      "box": {
+        "x": 48,
+        "y": 502.4315490722656,
+        "width": 280,
+        "height": 181.99996948242188
+      },
+      "actual": "Your reading setting: Advanced",
+      "active": "hs-CRP measures C-reactive protein, a hepatic acute-phase protein. Alex’s 0.8 → 2.1 mg/L change follows reported strenuous exercise within 24 hours, without reported illness. Exercise may contribute; causality is unproven. Biological and assay variation also matter. Review comparable repeat measurements with a clinician when clinically stable before assessing baseline inflammation or cardiovascular risk.",
+      "focused": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # EVA landing refinement
 
-Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) and [docs/final-browser-qa.json](docs/final-browser-qa.json) before changing this project. Version 38 is published. All planned landing content/narrative refinement and final actual browser QA are complete:18 scenarios passed on EN/ES desktop and emulated phone viewports. Follow user feedback and preserve approved work. A later evidence/docs/test-harness commit does not change deployed UI. Historical per-release static-only limitations were resolved by the version 38 browser run.
+Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json), [docs/format-spacing-qa.json](docs/format-spacing-qa.json) and [docs/final-browser-qa.json](docs/final-browser-qa.json) before changing this project. Version 39 is published: the four user-approved Impeccable format/spacing findings are implemented. Fresh focused desktop/tablet/phone browser checks passed. Preserve Method controls grouped with their copy, guided-results tablet stacking at 701–1050px,72px phone offer bottom padding and balanced founder quote wrapping. The earlier complete 18-scenario content/flow QA belongs to version 38 and is preserved separately. Later evidence/docs commits do not change deployed UI.
 
 ## Cross-session coordination
 
