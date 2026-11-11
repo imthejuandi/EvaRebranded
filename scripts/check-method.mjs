@@ -34,6 +34,7 @@ function load(relative) {
 }
 const {MethodGraphs} = load('components/story/MethodGraphs');
 const {MethodJourney} = load('components/story/MethodJourney');
+const {SiteLanguageProvider} = load('components/site/SiteLanguage');
 const {methodSteps} = load('lib/landing-content');
 const render = (component, props) => renderToStaticMarkup(React.createElement(component, props));
 const states = [
@@ -64,6 +65,7 @@ assert.equal((results.match(/class="mg-draw mg-filament"/g) || []).length, 13, '
 for (const label of ['Trece biomarcadores, una lectura', 'Trece filamentos luminosos', 'Trece biomarcadores.']) assert(results.includes(label), `Results artwork describes its thirteen signals: ${label}`);
 assert(!/Quince/.test(results), 'Results artwork must not retain the old fifteen-marker wording');
 const home = render(MethodJourney, {}), calm = render(MethodJourney, {calm: true});
+const english = renderToStaticMarkup(React.createElement(SiteLanguageProvider, {locale:'en'}, React.createElement(MethodJourney)));
 assert.equal((home.match(/role="tab"/g) || []).length, 4);
 assert.equal((home.match(/role="tabpanel"/g) || []).length, 4);
 assert.equal((home.match(/data-method-artwork=/g) || []).length, 1, 'Only the selected artwork mounts');
@@ -73,14 +75,46 @@ assert(!home.includes('<video') && !home.includes('method-video-control'), 'The 
 assert(!calm.includes('<video') && !calm.includes('method-video-control'), 'Calm mode retains the same responsive still');
 for(const name of ['method-home-c-640.webp','method-home-c-1200.webp'])assert(home.includes(name)&&calm.includes(name),'Both motion preferences use the selected responsive candid home photograph');
 const context = render(MethodGraphs, {kind:'context', active:false, visible:false});
-for (const label of ['Tu resultado', 'Intervalo de referencia', 'Rangos de EVA', 'El mismo valor.', 'Más contexto.']) assert(context.includes(label), `Contexto communicates its comparison: ${label}`);
+for (const label of ['Tu resultado', 'Informe de laboratorio', 'Historial y contexto', 'El mismo valor.', 'Más contexto.']) assert(context.includes(label), `Contexto communicates its sources: ${label}`);
+assert(/franjas simbólicas/.test(context) && /No son intervalos clínicos/.test(context), 'Context bands identify symbolic sources, not clinical thresholds');
+assert(!context.includes('Rangos de EVA'), 'Context artwork must not imply an unqualified EVA clinical range');
+const evolution = render(MethodGraphs, {kind:'evolution', active:false, visible:false});
+assert(evolution.includes('LECTURAS EN EL TIEMPO') && /sin fijar cuándo repetir/.test(evolution), 'History artwork does not prescribe a repeat-test cadence');
+assert(!/trimestral/i.test(evolution) && !evolution.includes('M523 303'), 'History artwork has no quarterly label or extrapolated future tail');
 assert.equal(methodSteps.length, 4);
-const semanticChecks = [/casa[\s\S]*laboratorio/i, /marcador[\s\S]*laboratorio/i, /historial|compatibles/i, /trimestre/i];
+const semanticChecks = [
+  [/analíticas anteriores[\s\S]*gratis/i, /kit[\s\S]*casa[\s\S]*Tasso\+/i],
+  [/biomarcador/i, /valor y unidad/i, /intervalo del laboratorio/i, /fecha/i, /informe de origen/i],
+  [/compatibles/i, /muestra/i, /cambio[\s\S]*causa/i],
+  [/90 días[\s\S]*puede/i, /paneles disponibles/i, /según tu situación/i],
+];
 assert(/13\s+biomarcadores/.test(methodSteps[0].copy), 'The first kit has exactly thirteen biomarkers');
+assert(methodSteps[0].copy.indexOf('analíticas anteriores') < methodSteps[0].copy.indexOf('kit'), 'Existing-report interpretation is the primary starting point');
+assert(!/cada trimestre|cada 90 días/i.test(methodSteps.map(step => step.copy).join(' ')), 'Review timing is an opportunity, not automatic repeat testing');
 methodSteps.forEach((step, i) => {
-  assert(semanticChecks[i].test(`${step.title} ${step.copy}`), `Step ${i + 1}: required service meaning`);
+  for (const meaning of semanticChecks[i]) assert(meaning.test(`${step.title} ${step.copy}`), `Step ${i + 1}: required service meaning ${meaning}`);
   assert(home.includes(step.title) && home.includes(step.copy), 'All method information remains in static HTML');
 });
+const entries = home.match(/<div class="method-entry-actions">([\s\S]*?)<\/div>/)?.[1];
+assert(entries, 'Starting step exposes both entry options');
+const entryLinks = [...entries.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map(([, href]) => new URL(href.replaceAll('&amp;', '&'), 'https://eva.example'));
+assert.equal(entryLinks.length, 2, 'Starting step has one free-report and one kit entry');
+assert.equal(entryLinks[0].pathname, '/es/signup');
+assert.equal(entryLinks[0].searchParams.get('plan'), 'free', 'Primary entry preserves the free plan');
+assert.equal(entryLinks[0].searchParams.get('redirect'), '/es/upload', 'Primary entry returns to upload after signup');
+assert.equal(entryLinks[1].pathname, '/es/signup', 'Kit entry opens the existing signup flow');
+assert.equal(entryLinks[1].searchParams.get('plan'), 'quarterly', 'Kit entry preserves the existing offer intent');
+assert(/99 € \+ IVA/.test(entries), 'Kit entry keeps the approved tax qualification visible');
+for (const label of ['Choose your starting point.', 'Understand each result.', 'Compare with context.', 'Choose your next focus.', '€99 + VAT']) assert(english.includes(label), `English method retains localized service meaning: ${label}`);
+assert(!english.includes('Elige por dónde empezar.') && !english.includes('A tu ritmo.'), 'English method does not fall back to Spanish');
+const englishEntries = english.match(/<div class="method-entry-actions">([\s\S]*?)<\/div>/)?.[1];
+assert(englishEntries, 'English method exposes the same entry options');
+const englishLinks = [...englishEntries.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map(([, href]) => new URL(href.replaceAll('&amp;', '&'), 'https://eva.example'));
+assert.equal(englishLinks[0].pathname, '/en/signup');
+assert.equal(englishLinks[0].searchParams.get('plan'), 'free');
+assert.equal(englishLinks[0].searchParams.get('redirect'), '/es/upload', 'English entry preserves the existing account-flow upload return intent');
+assert.equal(englishLinks[1].pathname, '/en/signup');
+assert.equal(englishLinks[1].searchParams.get('plan'), 'quarterly');
 
 const css = ['app/method-journey.css', 'app/method-graphs.css'].map(file => readFileSync(path.join(root, file), 'utf8')).join('\n');
 const ast = postcss.parse(css);

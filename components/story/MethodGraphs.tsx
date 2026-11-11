@@ -14,8 +14,8 @@ type MethodGraphsProps = {
 };
 const descriptions = {
     results: ['Trece biomarcadores, una lectura', 'Trece filamentos luminosos se ordenan en señales individuales. Una representación artística de la lectura de biomarcadores, sin valores clínicos.'],
-    context: ['El mismo resultado, dos marcos de referencia', 'El mismo punto se alinea con dos franjas: intervalo de referencia y rangos de EVA. Las franjas muestran cómo se añade contexto a un valor; no representan umbrales clínicos ni evalúan el resultado de una persona.'],
-    evolution: ['Un historial que se construye', 'Cuatro lecturas trimestrales forman un recorrido que sube y baja. Representación ilustrativa del seguimiento, sin datos de una persona ni una predicción de mejora.'],
+    context: ['Informe e historial, dos fuentes de contexto', 'El mismo punto conecta dos franjas simbólicas: el informe del laboratorio y el historial con su contexto. No son intervalos clínicos ni evalúan resultados personales.'],
+    evolution: ['Un historial que se construye', 'Cuatro lecturas forman un recorrido que sube y baja, sin fijar cuándo repetir una prueba. Representación ilustrativa, sin datos personales ni predicción de mejora.'],
 };
 const delay = (milliseconds: number): CSSProperties => ({ '--mg-delay': `${milliseconds}ms` } as CSSProperties);
 const circlePath = (x: number, y: number, r: number) => {
@@ -38,8 +38,8 @@ const filamentDust = filaments.map(({ start, position }, i) => Array.from({ leng
     return circlePath(x, y, .45 + ((i * 5 + j * 7) % 9) / 13);
 }).join('')).join('');
 const contextRanges = [
-    { label: 'Intervalo de referencia', x: 106, width: 364, y: 267, tone: 'reference' },
-    { label: 'Rangos de EVA', x: 171, width: 299, y: 405, tone: 'eva' },
+    { label: 'Informe de laboratorio', x: 106, width: 364, y: 267, tone: 'reference' },
+    { label: 'Historial y contexto', x: 106, width: 364, y: 405, tone: 'eva' },
 ].map(range => ({ ...range, dots: Array.from({ length: Math.floor(range.width / 8) * 5 }, (_, i) => {
         const columns = Math.floor(range.width / 8), column = i % columns, row = Math.floor(i / columns);
         const edge = Math.min(1, (column + 1) / 4, (columns - column) / 4);
@@ -121,7 +121,6 @@ function ContextGraph({ id }: {
         <rect x={x - 14} y={y - 39} width={width + 28} height="78" rx="39" fill={`url(#${id}-context-${tone})`}/>
         <rect className="mg-context-range-line" x={x} y={y - 24} width={width} height="48" rx="24" fill="none" strokeWidth=".8"/>
         <path className="mg-context-range-dots" d={dots}/>
-        <path className="mg-context-range-bound" d={`M${x} ${y - 10}V${y + 10}M${x + width} ${y - 10}V${y + 10}`} fill="none" strokeWidth="1.1"/>
       </g>
       <g className="mg-arrive" style={delay(950 + i * 1110)}>
         <circle cx="353" cy={y} r="35" fill={`url(#${id}-pearl)`}/>
@@ -141,7 +140,7 @@ function EvolutionGraph({ id }: {
     const __site = useSiteLanguage();
     const full = traceSegments.join(' ');
     return <>
-    <text className="mg-kicker" x="48" y="64">{__site.t("LECTURAS TRIMESTRALES")}</text>
+    <text className="mg-kicker" x="48" y="64">{__site.t("LECTURAS EN EL TIEMPO")}</text>
     <path d={traceDust} fill="#dcc6dd" opacity=".22"/>
     <path d={full} fill="none" stroke={`url(#${id}-thread)`} strokeWidth="28" opacity=".032"/>
     <path d={full} fill="none" stroke={`url(#${id}-thread)`} strokeWidth="10" opacity=".075"/>
@@ -152,7 +151,6 @@ function EvolutionGraph({ id }: {
       <g className="mg-arrive" style={delay(i === 0 ? 260 : 1080 + (i - 1) * 800)}><circle cx={x} cy={y} r="35" fill={`url(#${id}-pearl)`}/><circle cx={x} cy={y} r="3.2" fill="#ffebd4"/></g>
       <text className="mg-quarter" x={x} y="479" textAnchor="middle">{__site.t("0")}{__site.t(i + 1)}</text>
     </g>))}
-    <path className="mg-arrive" d="M523 303c15 3 27 6 42 5" fill="none" stroke="#efd2ba" strokeWidth="1" strokeDasharray="1 7" opacity=".45" style={delay(3050)}/>
     <text className="mg-summary" x="48" y="527">{__site.t("Cada lectura suma historia.")}</text>
   </>;
 }

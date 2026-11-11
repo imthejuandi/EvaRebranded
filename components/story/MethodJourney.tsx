@@ -2,20 +2,20 @@
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import { businessLinks, methodSteps } from '@/lib/landing-content';
+import { flowHref } from '@/lib/preview/policy';
 import { MethodGraphs } from './MethodGraphs';
 import { MethodPouchStill } from './MethodPouchStill';
-// Dedicated method artwork: a new home ritual photograph and three original visual studies.
-const chapters = ['En casa', 'Resultados', 'Contexto', 'Próximo enfoque'];
+// Retain the accepted home photograph and optical studies as illustrative material.
+const chapters = ['Empieza', 'Entiende', 'Compara', 'Elige'];
 const captions = [
-    ['EN CASA', 'TU PRIMER PASO'],
-    ['13 BIOMARCADORES', 'TU PUNTO DE PARTIDA'],
-    ['TU LECTURA', 'EN PERSPECTIVA'],
+    ['OPCIÓN DEL KIT', 'RECOGIDA EN CASA'],
+    ['EJEMPLO DEL KIT', '13 BIOMARCADORES'],
+    ['INFORME E HISTORIAL', 'AÑADE TU CONTEXTO'],
     ['TU PRÓXIMO ENFOQUE', 'ELIGE CON ORIENTACIÓN'],
 ];
 function JourneyArrow({ back = false }: {
     back?: boolean;
 }) {
-    const __site = useSiteLanguage();
     return <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true" focusable="false" style={back ? { transform: 'rotate(180deg)' } : undefined}><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="1.35"/></svg>;
 }
 function MethodArtwork({ step, calm }: {
@@ -36,7 +36,7 @@ function MethodArtwork({ step, calm }: {
         document.addEventListener('visibilitychange', sync);
         return () => { observer.disconnect(); document.removeEventListener('visibilitychange', sync); };
     }, []);
-    return <div ref={stage} className="method-new-art" data-method-artwork={step === 0 ? 'home-ritual' : ['', 'signal-strands', 'context-lens', 'quarterly-trace'][step]}>
+    return <div ref={stage} className="method-new-art" data-method-artwork={step === 0 ? 'home-ritual' : ['', 'signal-strands', 'context-lens', 'history-trace'][step]}>
     <div className="method-art-window">
       {__site.t(step === 0 ? <MethodPouchStill calm={calm}/> : <MethodGraphs kind={step === 1 ? 'results' : step === 2 ? 'context' : 'evolution'} active visible={visible} calm={calm} cycle={cycle}/>)}
     </div>
@@ -50,13 +50,23 @@ export function MethodJourney({ calm = false }: {
     const [active, setActive] = useState(0);
     const [hasChanged, setHasChanged] = useState(false);
     const tabs = useRef<Array<HTMLButtonElement | null>>([]);
-    function selectStep(index: number, focus = false) {
+    const headings = useRef<Array<HTMLHeadingElement | null>>([]);
+    const focusHeading = useRef(false);
+    const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
+    useEffect(() => {
+        if (focusHeading.current) {
+            focusHeading.current = false;
+            headings.current[active]?.focus();
+        }
+    }, [active]);
+    function selectStep(index: number, focus: 'tab' | 'heading' | false = false) {
         const next = Math.max(0, Math.min(methodSteps.length - 1, index));
         if (next !== active) {
+            focusHeading.current = focus === 'heading';
             setHasChanged(true);
             setActive(next);
         }
-        if (focus)
+        if (focus === 'tab')
             tabs.current[next]?.focus();
     }
     function handleKey(event: KeyboardEvent<HTMLButtonElement>, index: number) {
@@ -72,13 +82,13 @@ export function MethodJourney({ calm = false }: {
         else
             return;
         event.preventDefault();
-        selectStep(next, true);
+        selectStep(next, 'tab');
     }
     return <section className={'method-journey' + (calm ? ' method-journey-calm' : '') + (hasChanged ? ' method-has-changed' : '')} id="el-metodo" aria-labelledby="routine-title">
     <div className="section-kicker"><span>{__site.t("02 / EL M\u00C9TODO")}</span><span>{__site.t("UN MOMENTO PARA TI.")}</span></div>
     <div className="method-heading">
       <h2 id="routine-title">{__site.t("Tus próximos pasos.")}<br /><em>{__site.t("A tu ritmo.")}</em></h2>
-      <p>{__site.t("De tu primera muestra a elegir qué explorar después, con orientación.")}</p>
+      <p>{__site.t("Empieza con una analítica previa o con tu primer kit. Entiende tus resultados y decide qué explorar después, con orientación.")}</p>
     </div>
 
     <div className="method-chapters" role="tablist" aria-label={__site.t("Los cuatro pasos de EVA")} aria-orientation="horizontal">
@@ -86,20 +96,23 @@ export function MethodJourney({ calm = false }: {
     </div>
 
     {__site.t(methodSteps.map((step, index) => <div key={index} className="method-panel" id={`method-panel-${index}`} role="tabpanel" aria-labelledby={`method-tab-${index}`} hidden={active !== index} tabIndex={0}>
+        <div className="method-page-number" aria-hidden="true"><span className="method-ordinal">{__site.t("0")}{__site.t(index + 1)}</span><span>{__site.t("/ 04")}</span></div>
+        <div className="method-chapter-body"><h3 ref={node => { headings.current[index] = node; }} tabIndex={-1}>{__site.t(step.title)}</h3><p>{__site.t(step.copy)}</p>
+          {index === 0 && <div className="method-entry-actions">
+            <a href={__site.href(uploadHref)} data-method-upload>{__site.t("Interpretar mis analíticas gratis")}<JourneyArrow/></a>
+            <a href={__site.href(businessLinks.signup + '?plan=quarterly')} data-method-kit>{__site.t("Kit de 13 biomarcadores · 99 € + IVA")}<JourneyArrow/></a>
+          </div>}
+        </div>
       <figure className={`method-figure method-figure-${index}`}>
         <div className="method-figure-stage">{__site.t(active === index && <MethodArtwork step={index} calm={calm}/>)}</div>
         <figcaption><span>{__site.t(captions[index][0])}</span><span>{__site.t(captions[index][1])}</span></figcaption>
-        <p className="method-illustration-note">{__site.t(index === 0 ? 'Escena editorial.' : 'Representación ilustrativa.')}</p>
+        <p className="method-illustration-note">{__site.t(index === 0 ? 'Escena editorial de la opción del kit.' : index === 2 ? 'Esquema ilustrativo, sin umbrales clínicos.' : 'Representación ilustrativa.')}</p>
       </figure>
-      <div className="method-chapter-copy">
-        <div className="method-page-number" aria-hidden="true"><span className="method-ordinal">{__site.t("0")}{__site.t(index + 1)}</span><span>{__site.t("/ 04")}</span></div>
-        <div className="method-chapter-body"><h3>{__site.t(step.title)}</h3><p>{__site.t(step.copy)}</p></div>
         <div className="method-paging" role="group" aria-label={__site.t("Recorrer los pasos")}>
-          <button type="button" aria-label={__site.t("Paso anterior")} disabled={index === 0} onClick={() => selectStep(index - 1, true)}><JourneyArrow back/><span>{__site.t("Anterior")}</span></button>
-          <button type="button" aria-label={__site.t("Siguiente paso")} disabled={index === methodSteps.length - 1} onClick={() => selectStep(index + 1, true)}><span>{__site.t("Siguiente")}</span><JourneyArrow /></button>
+          <button type="button" aria-label={__site.t("Paso anterior")} disabled={index === 0} onClick={() => selectStep(index - 1, 'heading')}><JourneyArrow back/><span>{__site.t("Anterior")}</span></button>
+          <button type="button" aria-label={__site.t("Siguiente paso")} disabled={index === methodSteps.length - 1} onClick={() => selectStep(index + 1, 'heading')}><span>{__site.t("Siguiente")}</span><JourneyArrow /></button>
         </div>
         <a className="method-detail-link" href={__site.href(businessLinks.method)}>{__site.t("As\u00ED funciona EVA ")}<JourneyArrow /></a>
-      </div>
     </div>))}
   </section>;
 }

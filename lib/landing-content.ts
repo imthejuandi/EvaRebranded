@@ -19,19 +19,19 @@ export const businessLinks={
 
 export const methodSteps=[
   {
-    "title": "Empieza en casa.",
-    "copy": "Recoge tu muestra con Tasso+. Tu primer kit incluye el análisis de 13 biomarcadores en laboratorio."
+    "title": "Elige por dónde empezar.",
+    "copy": "Sube tus analíticas anteriores para interpretarlas gratis. O empieza con el kit de 13 biomarcadores, con recogida en casa mediante Tasso+."
   },
   {
-    "title": "Entiende tus resultados iniciales.",
-    "copy": "Descubre qué mide cada marcador y cómo se compara tu valor con el intervalo del laboratorio."
+    "title": "Entiende cada resultado.",
+    "copy": "Revisa qué mide cada biomarcador, su valor y unidad junto al intervalo del laboratorio. La fecha y el informe de origen ayudan a situarlo."
   },
   {
-    "title": "Compara tu propio historial.",
-    "copy": "Reúne lecturas compatibles y considéralas junto a tu situación personal."
+    "title": "Compara con contexto.",
+    "copy": "Si tienes varias lecturas compatibles, compáralas junto a lo que ocurría alrededor de cada muestra. Un cambio no explica por sí solo su causa."
   },
   {
     "title": "Elige tu próximo enfoque.",
-    "copy": "Cada trimestre, revisa lo que has aprendido y explora los paneles disponibles con la orientación de EVA."
+    "copy": "Alrededor de los 90 días puede ser un buen momento para revisar lo aprendido. Explora los paneles disponibles con EVA y decide qué medir después según tu situación."
   }
 ];
