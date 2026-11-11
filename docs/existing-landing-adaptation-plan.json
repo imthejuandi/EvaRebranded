@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Pivotal past-lab reinterpretation focus implemented and verified in the landing sequence. Publication is tracked by the Sites receipt.",
+  "status": "Past-lab reinterpretation and the next trend-history chapter are implemented. Final publication is tracked by the Sites receipt and docs/SESSION_HANDOFF.json.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -805,7 +805,7 @@
       {
         "anchor": "#por-que-eva",
         "section": "Trendlines, not snapshots.",
-        "status": "Next bounded refinement."
+        "status": "Implemented for review; the publication receipt identifies the live release."
       },
       {
         "anchor": "#el-metodo",
@@ -1114,5 +1114,43 @@
       ],
       "visual": "Independent actual-screenshot review passed."
     }
+  },
+  "trendHistoryRelease": {
+    "status": "Implemented and verified in seven responsive cases. Publication is tracked by the Sites receipt and docs/SESSION_HANDOFF.json.",
+    "location": "#por-que-eva, after the health-story/review rhythm and before #el-metodo.",
+    "purpose": "Show what personal history adds to a single reading using the same fictional Alex case as the results demonstration.",
+    "data": {
+      "source": "lib/site-content/alex-story-copy.ts",
+      "hsCRPReadingsMgL": [
+        0.8,
+        0.9,
+        0.8,
+        2.1
+      ],
+      "latestReading": "2.1 remains fixed in the readout and plot; no invented dates, risk bands or testing cadence."
+    },
+    "copy": "History reveals a rise, but does not establish persistence or prove the reported workout caused it. Is this rise temporary, or does it persist?",
+    "design": "One forest-green analog history instrument on the existing paper background, amber dotted latest value, shared zero-to-three axis and compact native replay buttons. No new media or pinned scroll tail.",
+    "motion": "Scroll entry reveals earlier points and the history trace over 500ms. Latest point stays fixed. One reading / Show history controls replay both views. OS reduced motion and the footer calm preference show complete history and instant controls.",
+    "verification": {
+      "status": "Passed",
+      "report": "/workspace/eva-in-place-qa/trend-story-report.json",
+      "browserCases": 7,
+      "errors": [],
+      "checks": [
+        "TypeScript",
+        "Production build (113 routes)",
+        "English route audit",
+        "Canonical Alex data and self-reported context",
+        "Fixed latest readout and point in both views",
+        "Five-hundred-millisecond entry and pointer/keyboard replay",
+        "Zero-to-three axis and actual point/path geometry",
+        "Phone and desktop layout without clipping or overlap",
+        "OS reduced motion and independent footer calm choice",
+        "Localized science destination and comparison anchor"
+      ],
+      "visualReview": "Actual desktop and phone instrument screenshots reviewed; full trace meets the latest point after removing the SVG dash-scaling defect."
+    },
+    "nextPart": "#el-metodo — Your next steps. At your pace."
   }
 }

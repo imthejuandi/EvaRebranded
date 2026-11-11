@@ -2,6 +2,7 @@
 
 import type {ReactNode} from 'react';
 import {useSiteLanguage} from './SiteLanguage';
+import {TrendStorySection} from '@/components/story/TrendStorySection';
 
 function useWords() {
   const {locale, href} = useSiteLanguage();
@@ -10,12 +11,8 @@ function useWords() {
 function Chapter({id,kicker,title,children,dark=false}:{id:string;kicker:string;title:string;children:ReactNode;dark?:boolean}) {
  return <section id={id} className={`restored-chapter${dark?' restored-dark':''}`} aria-labelledby={`${id}-title`}><div className="restored-inner"><p className="restored-kicker">{kicker}</p><h2 id={`${id}-title`}>{title}</h2>{children}</div></section>;
 }
-export function HomeUnderstanding() {
- const {w,href}=useWords();
- return <Chapter id="por-que-eva" kicker={w('LA DIFERENCIA ESTÁ EN ENTENDER','THE DIFFERENCE IS UNDERSTANDING')} title={w('Trayectorias, no fotos.','Trendlines, not snapshots.')}>
-  <div className="restored-essay"><p className="restored-lead">{w('Un análisis es un momento. Entender cómo cambia tu cuerpo es una historia.','A blood test captures a moment. Understanding how your body changes tells a story.')}</p><div><p>{w('Tu primer kit de 13 marcadores ofrece un punto de partida. Reúne resultados comparables con el tiempo para crear un historial al que volver.','Your first 13-marker kit provides a starting point. Bring comparable results together over time to build a history you can return to.')}</p><p>{w('Con nuestra orientación, decide si quieres comparar un marcador conocido o explorar otro panel disponible. El alcance y el precio dependen del panel que elijas.','With our guidance, decide whether to compare a familiar marker or explore a different available panel. Scope and prices depend on the panel you choose.')}</p><a className="restored-link" href={href('/es/science')}>{w('Conoce la ciencia de EVA','Explore the science behind EVA')} ↗</a></div></div>
-  <div className="restored-three"><article><span>01</span><h3>{w('Una base para conocerte.','A baseline for understanding yourself.')}</h3><p>{w('13 marcadores en tu primer kit.','13 markers in your first kit.')}</p></article><article><span>02</span><h3>{w('Lo que significan tus cifras.','What your numbers mean.')}</h3><p>{w('Valores, unidades, referencias, contexto y una explicación a la que volver.','Values, units, references, context, and an explanation you can revisit.')}</p></article><article><span>03</span><h3>{w('Tú eliges qué sigue.','You choose what comes next.')}</h3><p>{w('Revisa los paneles disponibles con nuestra orientación y elige qué medir después.','Review available panels with our guidance and choose what to measure next.')}</p><a href={href('/es/pricing')}>{w('Ver opciones','See your options')} ↗</a></article></div>
- </Chapter>;
+export function HomeUnderstanding({calm=false}: {calm?:boolean}={}) {
+ return <TrendStorySection calm={calm}/>;
 }
 export function ScienceUnderstanding() {
  const {w,href}=useWords();

@@ -13,7 +13,7 @@ export function HealthEditorial({ calm = false }: {
     const __site = useSiteLanguage();
     return <>
  <HealthStorySection calm={calm}/>
- <HomeUnderstanding />
+ <HomeUnderstanding calm={calm}/>
  <MethodJourney calm={calm}/>
  <StoryScenePassage kind="life" calm={calm}/>
  <BiologicalAgeSection calm={calm}/>
