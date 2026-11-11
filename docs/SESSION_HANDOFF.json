@@ -525,7 +525,7 @@
     }
   ],
   "next_session_start": [
-    "Read AGENTS.md and this handoff, then inspect git status, actual source, hosting manifest and native Site state.",
+    "Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json; inspect source and native Site state, then acknowledge the shared coordination note and record any newer work.",
     "The deployed baseline is version 33, source d8ceac544d62510ff47c0dc7e35e11879da05003. A following documentation-only commit does not require republishing.",
     "Preserve uncommitted work. Use the Site source repository, not historical GitHub.",
     "When browser access works, first verify #el-metodo at desktop and 320/375/390px, all four steps, tab keys, paging heading focus, replay, OS reduced motion and footer calm. Do not present static checks as browser QA.",
@@ -594,7 +594,7 @@
     "source_open_helper_note": "The clean-checkout refresh helper now fetches enough history (--deepen 50) before fast-forwarding. A depth-one fetch of a newer remote commit can hide ancestry and report unrelated histories; deepen before merging, never reset or allow unrelated histories to force it.",
     "method_focused_check": "node scripts/check-method.mjs",
     "method_qa_record": "docs/method-refinement-qa.json",
-    "browser_environment_limit": "mcp__cua_repl.js first browser call failed: the gaas-browser node_repl sandbox cannot be disabled. No preview/test server was started and no alternative browser path was used. Actual browser checks are unverified."
+    "browser_environment_limit": "This limit applies to the OTHER session’s v32 MethodJourney browser attempt: shared browser startup failed with the gaas-browser node_repl sandbox error. MethodJourney browser QA remains pending in docs/method-refinement-qa.json. It does not apply to v33 Trendlines, whose seven fresh-build Chromium cases passed in this session."
   },
   "permissions_and_security": {
     "writable_roots": [
@@ -623,5 +623,12 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json first. Version 33 is published. Preserve accepted dashboard styling and the two evidence-specific interpretations. Continue at #volver-a-la-vida, retaining the separate MethodJourney browser QA follow-up. Routine edits, relevant checks, commits, pushes and review-Site publication remain authorized."
+  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json first. Version 33 is published. Preserve accepted dashboard styling and the two evidence-specific interpretations. Continue at #volver-a-la-vida, retaining the separate MethodJourney browser QA follow-up. Routine edits, relevant checks, commits, pushes and review-Site publication remain authorized.",
+  "coordination": {
+    "note": "docs/SESSION_COORDINATION.json",
+    "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
+    "acknowledgment_status": "awaiting_other_session",
+    "baseline": "Version33 includes both sessions’ published application changes.",
+    "next_content_section": "#volver-a-la-vida"
+  }
 }

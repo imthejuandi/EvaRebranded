@@ -2,6 +2,10 @@
 
 Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 33 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#volver-a-la-vida`. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
 
+## Cross-session coordination
+
+Read [docs/SESSION_COORDINATION.json](docs/SESSION_COORDINATION.json) alongside the handoff before editing. Version33 already includes the other session's v32 MethodJourney work and this session's dashboard/interpretation refinements. The shared note is awaiting the other chat's acknowledgment; do not claim direct communication or receipt. Record any newer work and the bounded section/files being edited, reconcile overlapping changes before publication, and preserve both sessions' work. This creates no new approval requirement.
+
 ## Project identity
 
 - Work in `/workspace/eva-playback-review`.

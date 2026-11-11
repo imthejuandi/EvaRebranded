@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "purpose": "Keep the two EVA Codex conversations aligned through the same source repository.",
+  "prepared_date": "2026-11-11",
+  "delivery_status": "Shared repository note; no direct cross-chat message or recipient acknowledgment is available.",
+  "recipient": "The other EVA session that refined MethodJourney, and any session continuing this landing.",
+  "acknowledgment_status": "awaiting_other_session",
+  "acknowledgments": [],
+  "baseline": {
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "site": "https://eva-content-review.jdlagop.chatgpt.site",
+    "live_version": 33,
+    "deployed_ui_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_99f63ea3b5148191b0dd9092f1a57fa4",
+    "deployment_id": "appgdep_6af4b4c357308191a4d5e4c632caea47",
+    "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=33#por-que-eva"
+  },
+  "message_to_other_session": "Your version32 MethodJourney changes were pulled and preserved before version33 was built. Version33 adds the two user-requested Trendlines refinements: the actual earlier dashboard glass/white dotted readout, and a different interpretation plus next question for One reading versus Show history. Both changes are published. Keep your MethodJourney improvements and preserve the accepted earlier sections. Read docs/SESSION_HANDOFF.json for the exact receipts and verified scope. Please acknowledge this note and record any newer work or bounded section you are editing before another implementation or publication.",
+  "reconciled_work": [
+    {
+      "section": "#el-metodo",
+      "source_commit": "361b4149589a364293e04a894f7d683641e5fea7",
+      "origin": "Other EVA session, version32",
+      "status": "Preserved unchanged in current source and deployed version33",
+      "qa": "Static checks passed in its own release; its browser interaction/layout verification is still pending. See docs/method-refinement-qa.json."
+    },
+    {
+      "section": "#por-que-eva",
+      "source_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
+      "origin": "This dashboard/Trendlines session, version33",
+      "status": "Published and reviewed",
+      "qa": "Seven EN/ES desktop/phone/reduced-motion browser cases passed, including both interpretations, fixed layout, shared dashboard styles and keyboard/calm behavior."
+    }
+  ],
+  "work_status": {
+    "this_session": "Implementation complete; no app files reserved. This coordination update changes documentation only.",
+    "other_session": "No current unpushed work or active reservation is visible from this conversation. Awaiting acknowledgment; do not assume there is none."
+  },
+  "next_content_section": "#volver-a-la-vida",
+  "preserve": [
+    "The v32 MethodJourney improvements",
+    "The v33 shared dashboard styling and per-view interpretation",
+    "The approved #tu-evolucion biological-age chapter",
+    "Current runner, Tasso footage, 500ms kit reveal, confirmed13-marker offer and free interpretation entry"
+  ],
+  "coordination_workflow": [
+    "Read AGENTS.md, docs/SESSION_HANDOFF.json and this note after refreshing current main; preserve dirty work before attempting a refresh.",
+    "Record the section and files being worked on, plus status, in this shared note. This is an advisory coordination record, not a runtime lock or proof that another chat has read it.",
+    "If another session has changed the same files, reconcile the source before editing or publishing. Never reset or force-push away the other work.",
+    "Before publication, verify the exact pushed commit includes both sessions’ changes and that its build matches. Reuse existing saved/deployed versions after uncertain outcomes.",
+    "Update the handoff and this note with the actual release receipt and verification scope. Keep documentation-only commits distinct from UI releases. Routine work remains authorized; do not introduce another confirmation loop."
+  ],
+  "forward_to_other_chat": "Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json from the latest EVA main branch. Version33 includes your MethodJourney changes and the dashboard/interpretation refinements. Acknowledge the coordination note, record any newer work or current section, and preserve both sets of changes."
+}
