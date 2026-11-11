@@ -88,11 +88,19 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version 39 published; all four format/spacing findings implemented and focused browser QA passed. No app files reserved.",
+      "status": "Preparing the approved version39 source and launch handoff for canonical GitHub main. Runtime source unchanged; evahealth.es cutover on hold.",
       "next_section": null,
-      "pending_verification": null,
-      "section": null,
-      "files": []
+      "pending_verification": "Fresh checked-out source build and GitHub main SHA verification.",
+      "section": "GitHub source consolidation and launch documentation",
+      "files": [
+        "README.md",
+        "AGENTS.md",
+        "docs/LAUNCH_HANDOFF.md",
+        "docs/SESSION_HANDOFF.json",
+        "docs/SESSION_COORDINATION.json",
+        "docs/backend-connection.md",
+        "integration/dashboard/README.md"
+      ]
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
@@ -116,5 +124,10 @@
     "Update the handoff and this note with the actual release receipt and verification scope. Keep documentation-only commits distinct from UI releases. Routine work remains authorized; do not introduce another confirmation loop."
   ],
   "forward_to_other_chat": "The user requested full continuation in chat 6af4821e-7ab0-8191-a284-1767aa9110e7. That chat has pulled the combined version 33 baseline and acknowledged this note. Preserve both accepted refinements and reconcile any further concurrent work before pushing.",
-  "review_complete": true
+  "review_complete": true,
+  "canonical_github": {
+    "url": "https://github.com/imthejuandi/EvaRebranded",
+    "branch": "main",
+    "role": "Consolidated rebrand workspace; production cutover on hold."
+  }
 }

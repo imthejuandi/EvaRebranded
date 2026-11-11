@@ -8,10 +8,11 @@ Read [docs/SESSION_COORDINATION.json](docs/SESSION_COORDINATION.json) alongside 
 
 ## Project identity
 
-- Work in `/workspace/eva-playback-review`.
+- The managed review checkout is `/workspace/eva-playback-review`. In a GitHub/Codespaces clone, work in that repository’s own root and preserve the same project identity.
 - Preserve `.openai/hosting.json` project `appgprj_6ae2409926cc819180f1453af398551d`.
 - Review Site: `https://eva-content-review.jdlagop.chatgpt.site/en`; Spanish: `/es`.
-- The current source origin is the Site's `git.chatgpt-team.site` repository. The historical GitHub `imthejuandi/EvaRebranded` and `docs/migration-source.json` are not the active deployment identity.
+- GitHub `imthejuandi/EvaRebranded`, branch `main`, is now the consolidated rebrand workspace at the user’s request. Read [docs/LAUNCH_HANDOFF.md](docs/LAUNCH_HANDOFF.md) for remaining details and the explicit hold on `evahealth.es`.
+- In the managed review checkout, `origin` remains the review Site’s `git.chatgpt-team.site` publication repository and `github` is the GitHub repository. A fresh GitHub clone instead uses its GitHub URL as `origin`; inspect remotes before publishing. Preserve both histories and keep completed source synchronized. GitHub commits do not themselves prove a new review-site deployment. `docs/migration-source.json` remains historical provenance.
 - Static output is `dist/client`. Reuse the existing dependencies; do not reinstall routinely.
 - Preserve dirty or untracked work. Never reset it or switch repositories merely to make a helper run.
 

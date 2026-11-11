@@ -1,22 +1,20 @@
-# EVA Rebranding
+# EVA Rebranded Website
 
-Independent workspace for the EVA website rebrand, imported from **EVA — Website & App Review, version 6**. The existing EVA website and application continue to run separately. This repository has no production deployment connection.
+The working source for EVA’s rebranded website lives in [imthejuandi/EvaRebranded](https://github.com/imthejuandi/EvaRebranded), on `main`. It includes the bilingual landing, approved media, application preview, design history, integration references and browser QA evidence.
 
-## Work online
+The approved landing baseline is **review version 39**, UI commit `991dd5310f6e1efc1819e76d37db40016adb3cdb`. Later documentation and GitHub synchronization commits preserve that interface.
 
-Open this repository in [GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1401130727). The development container installs the locked dependencies with Node 24.
+- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=39) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=39).
+- Continue the remaining work: [Launch handoff](docs/LAUNCH_HANDOFF.md).
+- Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [version 39 QA](docs/format-spacing-qa.json).
 
-In its terminal, run:
+**Production cutover is on hold.** This source synchronization does not connect the rebrand to `evahealth.es`, change DNS or activate production services. Application screens use browser-local fictional data. Commercial, legal and integration details remain before launch.
 
-```sh
-npm run dev -- --port 3000
-```
+## Work online or locally
 
-Open the forwarded **3000** port to see the website and preview changes. The preview port starts private. Commit and push changes to save them on GitHub.
+Open [GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1401130727). The development container uses Node 24 and installs the locked dependencies. Run `npm run dev -- --port 3000` and open the forwarded **3000** port; its initial visibility is private.
 
-For Codex, enable `imthejuandi/EvaRebranded` in the connected GitHub repository access, then select it in a Codex environment. If the repository does not appear on mobile, finish that setup in the web version of Codex first.
-
-## Develop locally
+For local development:
 
 ```sh
 nvm use
@@ -24,24 +22,25 @@ npm ci
 npm run dev -- --port 3000
 ```
 
-The site uses React 19, Vinext, Tailwind CSS, and Remotion. Dependencies and versions are preserved from the design preview. Public pages and the interactive app preview use synthetic data; no production secrets are needed to work on the design.
+The project uses React 19, Vinext, Tailwind CSS and Remotion. `package-lock.json` pins dependencies. No production secrets are needed for the static review.
 
-## Verify changes
+## Build and verify
 
 ```sh
+node node_modules/typescript/bin/tsc --noEmit
 npm run build
-npm run check:preview
-python3 scripts/check-history.py public/archive
+node scripts/check-english.mjs
+node scripts/check-method.mjs
 ```
 
-The static build is written to `dist/client`. The preview check validates internal links and the preview contract across 55 exported pages; the history check validates preserved archives. Both passed during import. Additional motion checks remain under `scripts/`.
+The build exports 113 routes to `dist/client`. Run `python3 scripts/serve-review.py` and open `http://127.0.0.1:4175/en` or `/es` to inspect that output.
 
-The inherited `check:delivery` and `check:content` commands currently fail on cancellation-copy expectations in the imported landing page. The application source was preserved unchanged during migration. See [docs/migration-validation.md](docs/migration-validation.md) before using these older checks as release gates.
+[Browser QA instructions](scripts/browser-qa/README.md) accompany the evidence for [version 38’s complete landing/preview-flow checks](docs/final-browser-qa.json) and [version 39’s focused format checks](docs/format-spacing-qa.json). Older `check:content`, `check:delivery` and import-era expectations include superseded copy; consult the handoff and relevant section checks before using them as release gates.
 
-## Final frontend switch
+## Source and publishing
 
-Work and review changes here before connecting this design to the existing application. Preserve the real authentication, payment, and health-data services during the eventual integration. The connection boundaries are documented in [docs/backend-connection.md](docs/backend-connection.md) and [integration/dashboard/README.md](integration/dashboard/README.md).
+GitHub `main` is the consolidated rebrand workspace. The existing [review Site](https://eva-content-review.jdlagop.chatgpt.site) retains its own source repository and publication receipts. `.openai/hosting.json` identifies that review project; it is not a binding to `evahealth.es`. A Git push saves source; review-site publication uses the separate Sites save/deploy workflow.
 
-The original Sites deployment binding was removed from this workspace, so it does not target the current design site. Publishing or changing production hosting is a separate step after review.
+Keep GitHub and the review source synchronized. Preserve the review-project identity and record the deployed UI commit separately from documentation commits. Do not introduce production deployment automation or a custom-domain cutover while the launch hold remains in place.
 
-See [docs/migration-source.json](docs/migration-source.json) for the imported source commit and [docs/design-history.md](docs/design-history.md) for the original design notes.
+The original version 6 import is preserved in [migration-source.json](docs/migration-source.json) and [migration-validation.md](docs/migration-validation.md). These describe historical provenance; the current handoff and native release receipts identify the approved version.

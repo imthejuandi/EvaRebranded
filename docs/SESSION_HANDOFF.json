@@ -3,7 +3,7 @@
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
   "handoff_status": "CONTENT_FORMAT_AND_REVIEW_SITE_QA_COMPLETE_V39",
-  "immediate_instruction": "Version 39 is published. The four user-approved Impeccable format/spacing findings are implemented and actual browser-verified across desktop/tablet/phone: Method controls grouped with copy, guided-results tablet stacking, phone offer spacing, founder quote balance. Read docs/format-spacing-qa.json for fresh focused evidence. Preserve accepted content, design and motion. The earlier full 18-scenario content/flow QA remains recorded for version 38; do not claim it was rerun wholesale for 39.",
+  "immediate_instruction": "The user requested consolidating the approved version39 rebranded website in GitHub imthejuandi/EvaRebranded, main, with remaining details in docs/LAUNCH_HANDOFF.md. Keep evahealth.es and production services unchanged until a later explicit launch request. Version39 remains the published review UI; later GitHub/documentation commits do not change its deployment. Preserve all accepted work and follow specific user feedback.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Historical repository mentioned earlier. It is not the configured source origin for the current Site. Do not switch to it or claim it was updated by a Site-source push.",
+    "github_status": "Consolidated rebrand workspace at the user’s request on 11 November 2026. Contains the approved version39 source/assets, history, QA and launch handoff. The local origin remote retains the separate review Site publication role; github is the GitHub remote. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -29,7 +29,10 @@
       "docs/existing-landing-adaptation-design.json"
     ],
     "guide_precedence": "The guides are the staged adaptation baseline. Later approved source and release decisions supersede older plan wording; do not restart the original five-part proposal.",
-    "audience_at_release": "public"
+    "audience_at_release": "public",
+    "canonical_github": "https://github.com/imthejuandi/EvaRebranded",
+    "canonical_github_branch": "main",
+    "launch_handoff": "docs/LAUNCH_HANDOFF.md"
   },
   "releases": {
     "previous_verified_ui_release": {
@@ -737,5 +740,16 @@
     "record": "docs/final-browser-qa.json",
     "resolves": "Earlier method/life/lifestyle/closing and sequence browser-QA limitations. Historical per-release reports retain their as-of-release status.",
     "runner": "Installed Playwright + system Chromium against live Site. Interactive CUA startup failure is separate and does not block this runner."
+  },
+  "github_preparation": {
+    "date": "2026-11-11",
+    "repository": "https://github.com/imthejuandi/EvaRebranded",
+    "branch": "main",
+    "github_previous_main": "e9c0a2a3c9ea41f10f7a45cbf565a88e3c20755c",
+    "approved_ui_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+    "review_evidence_commit": "6b2e60c6f002cfc957cc763bccf1ac4b8344a941",
+    "history_join_commit": "7cc77f1",
+    "source_change": "Documentation and Git ancestry only; approved runtime source/assets preserved.",
+    "production_cutover": "On hold; no evahealth.es, DNS, production hosting or backend changes."
   }
 }

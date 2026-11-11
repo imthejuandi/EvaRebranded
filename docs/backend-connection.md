@@ -2,7 +2,9 @@
 
 This delivery is an interactive frontend with synthetic data. It is not connected to production and does not create accounts, send email, process health documents, charge cards or delete a real account.
 
-Functional reference: EVA app commit `f68f955` plus the existing working state audited on 12 September 2026. The original public site was captured separately. The original design was not imported.
+Historical functional reference: EVA app commit `f68f955` plus the working state audited on 12 September 2026. The original public site was captured separately. These references do not establish compatibility with the current production revision.
+
+The approved version 39 landing and its entry flow offer free interpretation of previous reports first, with an optional 13-marker starting kit at **€99 + VAT**. The internal `quarterly` intent identifies that kit in the preview; it is not a confirmed recurring offer. Other commercial pages still need reconciliation before launch. The published review Site and GitHub workspace do not activate production services or switch `evahealth.es`.
 
 ## Boundaries already prepared
 
@@ -12,6 +14,8 @@ Functional reference: EVA app commit `f68f955` plus the existing working state a
 - Each page package's handoff records source states, payloads, validation and eventual endpoints. The operation inventory is retained in `docs/backend-route-map.json`.
 
 ## Connection sequence
+
+This sequence is preparation for a later authorized integration, not authorization to activate it. Recheck the existing production revision, schema and service contracts before connecting any real account, health document or payment.
 
 1. Replace preview identity with authenticated server session and owned queries. Route guards must preserve a validated local return path, onboarding state and intended plan. Keep credentials out of browser persistence.
 2. Normalize source profile literacy (`beginner/familiar/optimizer`) to presentation (`simple/balanced/advanced`), notification field names, exact source units, nullable estimates and status. Use server entitlements, never the sample plan flag, for paid features.
@@ -25,8 +29,9 @@ Functional reference: EVA app commit `f68f955` plus the existing working state a
 
 ## Decisions to resolve before production
 
-- Public copy says unlimited free uploads; the audited app has a five-upload quota. The preview explains its app limit; align the commercial policy before connecting it.
-- Full-panel counts differ across original pages. The preview preserves €499 and the broader-panel offering without claiming an unconfirmed exact included count.
+- The September audit recorded unlimited-free-upload wording in the original public policy alongside a five-upload app quota. The current preview models five lifetime free uploads in `UPLOAD_LIMITS.freeLifetime`; confirm the final policy and align public copy with server enforcement before connecting it.
+- Current pricing examples still describe a 15-marker quarterly offer, annual billing and a €499 broader panel. Reconcile them with the approved 13-marker €99 + VAT starting kit; future-panel scope, pricing and billing remain separate decisions. Historical full-panel counts also differ across original pages and are not a confirmed current specification.
+- Confirm the VAT-inclusive payable total and kit terms before a real purchase flow relies on them. Do not infer a VAT rate, subscription, annual discount or included specialist-panel swaps from preview IDs or historical copy.
 - Historical range policy must come from each result/reference version, including profile context. The sample intervals are illustrative and do not replace clinical rules.
 - No production notification, payment, health-data upload, AI inference or account deletion has been exercised by this design preview.
 
