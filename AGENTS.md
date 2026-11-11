@@ -1,6 +1,6 @@
 # EVA landing refinement
 
-Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 31 is published. Check the receipt against `git status`, current native Site state and the actual source before continuing at `#el-metodo`. The following handoff commit changes documentation only.
+Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 32 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#volver-a-la-vida`. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
 
 ## Project identity
 
@@ -41,7 +41,7 @@ The range-proof chapter uses the same 2.1 mg/L result against an illustrative la
 
 Keep signal, health-history and suggested-review copy consistent across English, Spanish, animated, static and reduced-motion forms.
 
-The handoff identifies the current Trendlines release and the next section. After that release is verified, continue at `#el-metodo` unless the user steers elsewhere. Do not restart discovery or redo approved earlier sections.
+The handoff identifies the current method release and next section. Verify the method chapter in the browser when access is restored, then continue at `#volver-a-la-vida` unless the user steers elsewhere. Do not restart discovery or redo approved earlier sections.
 
 ## Checks and publication
 

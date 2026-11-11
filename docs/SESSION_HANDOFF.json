@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
-  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V31_PUBLICATION",
-  "immediate_instruction": "Version 31 is published and verified. Continue at #el-metodo (Your next steps. At your pace.) in visible page order, preserving the accepted earlier chapters. First inspect source and current Site status; do not redo discovery or ask for routine confirmation.",
+  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V32_PUBLICATION_WITH_BROWSER_LIMIT",
+  "immediate_instruction": "Version 32 is published. #el-metodo refinement is complete with passing TypeScript/build/source/SSR/English/built-artifact checks. Shared browser startup failed, so verify its actual phone/desktop layout, paging focus, replay, OS reduced motion and manual calm when browser access is restored. The next content section is #volver-a-la-vida; preserve the accepted biological-age chapter.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -33,15 +33,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 30,
-      "source_commit": "286115bfd46e9d363c10148a42b562013076d4da",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77968a1ae4708191bbcaa45c0e4f03cb",
-      "deployment_id": "appgdep_6af4519983648191b4e739ad92be1fc4",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "behavior": "Explain the prevention value of interpreting past lab reports; preserve free previous-lab interpretation as the primary hero entry."
-    },
-    "latest_verified_ui_release": {
       "version_number": 31,
       "source_commit": "f337732427a5db6d43cc29c5ef4f83c1b098368b",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_88eac84af3b08191b4cba015db95a897",
@@ -131,17 +122,73 @@
         "physical_device_limit": "Viewports are emulated; no physical-phone performance claim."
       }
     },
-    "latest_verified_ui_release_note": "This is the actual deployed UI source. The separate documentation-only commit adding this handoff and AGENTS.md follows it on main and does not require another frontend deployment.",
+    "latest_verified_ui_release": {
+      "version_number": 32,
+      "source_commit": "361b4149589a364293e04a894f7d683641e5fea7",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c0cd8fa0c0848191b58574b8d87ec1ff",
+      "deployment_id": "appgdep_6af484d4f4848191b45ee5534d322724",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=32#el-metodo",
+      "native_updated_at": "2026-11-11T15:08:17.361419+00:00",
+      "behavior": "Method chapter connects free interpretation of previous reports and the optional 13-marker kit to understanding, compatible comparisons and a guided next choice. First-panel actions preserve existing account-flow intent and the €99 + VAT kit price. Around 90 days is an optional review opportunity. Accepted artwork is retained with explicit kit/symbolic labels; automatic quarterly wording and the projected future tail are removed. Phone explanation appears before artwork in DOM and visual order. Paging focuses the new heading; tab-arrow/Home/End focus remains on tabs.",
+      "source_files": [
+        "components/story/MethodJourney.tsx",
+        "components/story/MethodGraphs.tsx",
+        "app/method-journey.css",
+        "lib/landing-content.ts",
+        "lib/site-content/locales/public.en.json",
+        "scripts/check-method.mjs"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-method-journey.tar.gz",
+        "local_gzip_sha256": "b18c6075d3e66ba28e2c31581fc4a21841ac3c35587f1493f807042c494d2307",
+        "local_gzip_size_bytes": 163049270,
+        "saved_tar_content_hash": "sha256:5d76a78ef2cabebfacf59f03b26713912af1702ec3762d2ecc6f9d579af357ec",
+        "saved_tar_size_bytes": 171868160,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "static_checks_passed_browser_unverified",
+        "record": "docs/method-refinement-qa.json",
+        "checks": {
+          "typescript": "passed",
+          "production_build": "passed (113 routes)",
+          "method_source_and_SSR": "passed (15 graph playback-state renders, ES/EN copy, free upload intent, kit price, symbolic graph labels, finite/calm/reduced-motion rules)",
+          "english_public_routes": "passed (1178 catalog messages)",
+          "built_artifacts": "passed (ES and EN cases below)",
+          "diff_whitespace": "passed"
+        },
+        "browser": {
+          "status": "unverified",
+          "blocker": "Shared browser startup failed: the gaas-browser node_repl sandbox cannot be disabled",
+          "screenshots": false,
+          "interaction_tests": false
+        },
+        "live_verification": "Native succeeded publication receipt verifies deployment. No live browser interaction suite was run."
+      }
+    },
+    "latest_verified_ui_release_note": "Version 32 deployed UI source is 361b4149589a364293e04a894f7d683641e5fea7. A later documentation-only commit records its receipt and QA limitation; it does not change the deployed UI.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "Documentation-only commit after deployed source f337732427a5db6d43cc29c5ef4f83c1b098368b",
+      "relation": "Documentation-only commit after deployed source 361b4149589a364293e04a894f7d683641e5fea7",
       "files": [
         "AGENTS.md",
-        "docs/SESSION_HANDOFF.json"
+        "docs/SESSION_HANDOFF.json",
+        "docs/method-refinement-qa.json"
       ],
       "lookup_command": "git log -1 --format=%H -- docs/SESSION_HANDOFF.json",
       "ui_redeployment_required": false
+    },
+    "earlier_verified_ui_release": {
+      "version_number": 30,
+      "source_commit": "286115bfd46e9d363c10148a42b562013076d4da",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77968a1ae4708191bbcaa45c0e4f03cb",
+      "deployment_id": "appgdep_6af4519983648191b4e739ad92be1fc4",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "behavior": "Explain the prevention value of interpreting past lab reports; preserve free previous-lab interpretation as the primary hero entry."
     }
   },
   "standing_user_direction": {
@@ -383,11 +430,14 @@
     {
       "component": "MethodJourney",
       "id": "el-metodo",
-      "purpose": "Next section to refine after the Trendlines release"
+      "purpose": "Free previous-report or optional kit entry, understand, compare with context, and guided choice",
+      "status": "Published in version 32. Browser review still needed because of environment startup failure."
     },
     {
       "component": "StoryScenePassage kind=life",
-      "purpose": "Existing transition back to life"
+      "purpose": "Existing transition back to life",
+      "id": "volver-a-la-vida",
+      "status": "Next section to refine."
     },
     {
       "component": "BiologicalAgeSection",
@@ -416,16 +466,16 @@
     }
   ],
   "next_session_start": [
-    "Read AGENTS.md and this handoff, then inspect git status, manifest, actual source and current native Site state.",
-    "The verified baseline is deployed version 31 with the exact receipt above. Git HEAD may include the following documentation-only handoff commit; that alone does not call for republishing.",
-    "Preserve uncommitted work. Do not run a destructive reset, switch to the historical GitHub checkout or recreate the Site.",
-    "Continue at #el-metodo unless the user gives new steering. Use a project manager, longevity-education copy expert and designer for bounded parallel review where useful.",
-    "Then review #volver-a-la-vida, preserve the approved age chapter, continue lifestyle/founder/offer/footer, and finally assess the complete landing as a coherent customer journey.",
-    "Use current source and latest receipts over older plans. Publish completed review-site refinements with relevant verification and state exactly what changed and where. Routine continuation is already authorized."
+    "Read AGENTS.md and this handoff, then inspect git status, actual source, hosting manifest and native Site state.",
+    "The deployed baseline is version 32, source 361b4149589a364293e04a894f7d683641e5fea7. A following documentation commit alone does not require republishing.",
+    "Preserve uncommitted work. Use the Site source repository, not historical GitHub.",
+    "When browser access works, first verify #el-metodo at desktop and 320/375/390px, all four steps, tab keys, paging heading focus, replay, OS reduced motion and footer calm. Do not present static checks as browser QA.",
+    "Continue content refinement at #volver-a-la-vida unless the user steers elsewhere. Preserve the accepted #tu-evolucion chapter, then continue lifestyle/founder/offer/footer and assess the full landing journey.",
+    "Routine bounded edits, relevant checks, commits, source pushes and existing review-Site publication remain authorized. Do not repeat discovery or routine confirmation."
   ],
   "engineering_workflow": {
-    "runtime": "Node24; Vinext/React static export. Existing dependencies are already linked.",
-    "dependency_link": "/workspace/eva-playback-review/node_modules -> /workspace/eva-rebranding/node_modules",
+    "runtime": "Node 24; Vinext/React static export. This new environment had no checkout/dependencies; current source was cloned from the existing Site remote and npm ci completed from the unchanged lockfile.",
+    "dependency_link": null,
     "baseline_checks": [
       "node node_modules/typescript/bin/tsc --noEmit",
       "npm run build"
@@ -480,7 +530,12 @@
     "established_build_command": "npm run build > /workspace/eva-in-place-qa/auto-kit-signal-build.log 2>&1",
     "credential_timing": "Launch the hidden-stdin helper and clear its runtime review before minting a short-lived credential. Wait for Ready, mint through native Sites, then feed stdin promptly; reviews can outlast token expiry.",
     "publication_archive_example": "tar -czf /workspace/eva-publication/eva-trend-story.tar.gz .openai/hosting.json dist/client (use a fresh correctly named archive for future changes; immutable until saving succeeds).",
-    "orchestration": "Use direct exec_command calls inside functions.exec. If the outer call yields a cell ID, collect it until it returns a unified session_id, then poll that command with write_stdin. Avoid yielding before initiating the command or leaving unawaited tool promises."
+    "orchestration": "Use direct exec_command calls inside functions.exec. If the outer call yields a cell ID, collect it until it returns a unified session_id, then poll that command with write_stdin. Avoid yielding before initiating the command or leaving unawaited tool promises.",
+    "dependency_location": "/workspace/eva-playback-review/node_modules",
+    "source_open_helper_note": "Old /workspace/eva-source-refresh.mjs was absent in this environment. Source was recovered using a hidden-stdin credential wrapper and ordinary authenticated Git; no credentials persisted. Tracked scripts/sync-site-source.mjs was used for publication push.",
+    "method_focused_check": "node scripts/check-method.mjs",
+    "method_qa_record": "docs/method-refinement-qa.json",
+    "browser_environment_limit": "mcp__cua_repl.js first browser call failed: the gaas-browser node_repl sandbox cannot be disabled. No preview/test server was started and no alternative browser path was used. Actual browser checks are unverified."
   },
   "permissions_and_security": {
     "writable_roots": [
@@ -509,5 +564,5 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue the EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json first. Version 31 is published; continue at #el-metodo. Routine edits, relevant checks, commits, pushes and publication to the existing review Site remain authorized. Preserve accepted visuals and explain each finished change with its review link."
+  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Version 32 is published. Verify #el-metodo browser behavior when browser access is restored, then continue at #volver-a-la-vida. Routine edits, checks, commits, pushes and review-site publication remain authorized."
 }

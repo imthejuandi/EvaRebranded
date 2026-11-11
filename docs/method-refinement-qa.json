@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "locale": "es",
+      "tabs_and_panels": 4,
+      "free_upload_return_intent": true,
+      "kit_price_and_intent": true,
+      "explanation_before_art_in_document": true,
+      "previous_and_next_sections_preserved": true
+    },
+    {
+      "locale": "en",
+      "tabs_and_panels": 4,
+      "free_upload_return_intent": true,
+      "kit_price_and_intent": true,
+      "explanation_before_art_in_document": true,
+      "previous_and_next_sections_preserved": true
+    }
+  ],
+  "browser": {
+    "status": "unverified",
+    "blocker": "Shared browser startup failed: the gaas-browser node_repl sandbox cannot be disabled",
+    "screenshots": false,
+    "interaction_tests": false
+  },
+  "source_commit": "361b4149589a364293e04a894f7d683641e5fea7",
+  "scope": "MethodJourney section #el-metodo only",
+  "checks": {
+    "typescript": "passed",
+    "production_build": "passed (113 routes)",
+    "method_source_and_SSR": "passed (15 graph playback-state renders, ES/EN copy, free upload intent, kit price, symbolic graph labels, finite/calm/reduced-motion rules)",
+    "english_public_routes": "passed (1178 catalog messages)",
+    "built_artifacts": "passed (ES and EN cases below)",
+    "diff_whitespace": "passed"
+  },
+  "review": "React/accessibility and independent designer source reviews completed. DOM and phone visual order agree; paging focuses the newly selected heading. Actual layout, focus dispatch and animation playback were not exercised in a browser.",
+  "physical_device_performance": "Not tested"
+}
