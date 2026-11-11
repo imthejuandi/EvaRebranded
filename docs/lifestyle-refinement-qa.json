@@ -1,0 +1,48 @@
+{
+  "scope": "#lo-que-te-mueve lifestyle copy",
+  "static_checks": "passed",
+  "cases": [
+    {
+      "locale": "en",
+      "copy_and_title": true,
+      "two_natural_paragraphs": true,
+      "heading_association": true,
+      "pause_control_and_target": true,
+      "descriptive_lazy_poster": true,
+      "age_lifestyle_founder_order": true
+    },
+    {
+      "locale": "es",
+      "copy_and_title": true,
+      "two_natural_paragraphs": true,
+      "heading_association": true,
+      "pause_control_and_target": true,
+      "descriptive_lazy_poster": true,
+      "age_lifestyle_founder_order": true
+    }
+  ],
+  "browser": {
+    "status": "unverified",
+    "blocker": "Shared browser startup remains blocked by the previously observed gaas-browser node_repl sandbox error; no recovery evidence or new browser run.",
+    "screenshots": false,
+    "interaction_tests": false
+  },
+  "asset_sha256": {
+    "post-run-coast-600.webp": "a5e3c786bc64ed56dfbdaf7cb68df921736d614af59788a3ebcbb5132fb5f992",
+    "post-run-coast-1000.webp": "be7e3f5d95ba5218a559cb561f273565243afc335290f0386b3b596605df67a8",
+    "post-run-coast-walk-cut.mp4": "16b8cb5e9737e312ff3b05ffad89e3e747c1245dad784f6429c93e610010db5e",
+    "post-run-coast-walk-mobile.mp4": "0b780f4361f28cac4ec81fe42259fbf9680a7e26b60d015a5689b4ba263750c0"
+  },
+  "source_commit": "4d4b25556356ff929903435293ab5fa2b697e76e",
+  "checks": {
+    "typescript": "passed",
+    "production_build": "passed (113 routes)",
+    "english_public_routes": "passed (1178 catalog messages)",
+    "generated_html": "passed (EN/ES copy, title, paragraphs, heading association, pause target, descriptive lazy poster, age/lifestyle/founder order)",
+    "SSR_normal_calm": "passed (EN/ES identical narrative, exact accepted title/captions, poster/srcset/alt; calm omits video and pause control)",
+    "preservation": "Verified CSS, SolarMotion, GlowMotion, coastal assets, biological-age, method and dashboard files unchanged",
+    "source_review": "Independent copy and React/accessibility review completed; no new state, effect or animation clock",
+    "diff_whitespace": "passed"
+  },
+  "scope_limit": "SSR and generated markup checks do not establish browser wrapping, actual playback, interactive controls or physical-device performance. Browser verification retains the existing environment startup blocker."
+}

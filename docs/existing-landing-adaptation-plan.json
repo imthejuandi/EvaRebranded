@@ -785,7 +785,7 @@
   },
   "inOrderLandingReview": {
     "direction": "Follow the visible page order. A previous implementation-complete label is not user approval of its design or copy.",
-    "current": "#lo-que-te-mueve — lifestyle; preserve the approved biological-age chapter before it.",
+    "current": "#nuestra-historia — founder story",
     "queue": [
       {
         "anchor": "#una-senal",
@@ -821,6 +821,21 @@
         "anchor": "#tu-evolucion",
         "section": "Your age tells part of the story.",
         "status": "User approved version 26; preserve while reviewing the earlier sections"
+      },
+      {
+        "anchor": "#lo-que-te-mueve",
+        "section": "What moves you. And who you share it with.",
+        "status": "Published in version 35; static/SSR passed, browser verification pending."
+      },
+      {
+        "anchor": "#nuestra-historia",
+        "section": "Founder story",
+        "status": "Next ordered refinement"
+      },
+      {
+        "anchor": "#empezar",
+        "section": "Offer",
+        "status": "Pending ordered refinement"
       }
     ],
     "priorState": "Version 26 changed the kit reveal and age chapter. The intervening chapters had earlier copy/offer edits but were not newly refined or approved in that release."
@@ -1181,7 +1196,7 @@
   },
   "lifestyleRefinement": {
     "anchor": "#lo-que-te-mueve",
-    "status": "Implemented; native release receipt determines publication.",
+    "status": "Published in version 35; native succeeded receipt in SESSION_HANDOFF.json.",
     "purpose": "Develop the emotional reason for care through ordinary movement, conversation and shared time, after the brief return-to-life transition.",
     "copy_source": "lib/site-content/lifestyle-copy.ts",
     "preserved": [
@@ -1192,6 +1207,7 @@
       "Approved biological-age chapter before this section"
     ],
     "copy_direction": "Concrete everyday examples, complete localized paragraphs with natural wrapping, no claims that testing produces these experiences or health outcomes.",
-    "next_section": "#nuestra-historia — founder story"
+    "next_section": "#nuestra-historia — founder story",
+    "verification": "TypeScript, production build, English audit, EN/ES generated HTML and normal/calm SSR parity passed. Browser playback/layout unverified under the existing startup blocker."
   }
 }

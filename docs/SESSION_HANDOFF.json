@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
-  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V34_PUBLICATION_WITH_BROWSER_LIMIT",
-  "immediate_instruction": "Version 34 is published. The #volver-a-la-vida transition has shared EN/ES bridge copy with passing static checks. Preserve accepted imagery/motion and all version 32/33 work. Browser startup still fails, so actual method/life layout and interaction checks remain pending. Preserve the approved #tu-evolucion chapter and continue next at #lo-que-te-mueve.",
+  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V35_PUBLICATION_WITH_BROWSER_LIMIT",
+  "immediate_instruction": "Version 35 is published. The #lo-que-te-mueve copy now develops everyday movement and connection with passing static/SSR checks; accepted media, title, captions and controls are preserved. Preserve all prior refinements and approved biological age. Browser verification remains blocked by the recorded environment error. Continue next at #nuestra-historia.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -33,99 +33,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 33,
-      "source_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_99f63ea3b5148191b0dd9092f1a57fa4",
-      "deployment_id": "appgdep_6af4b4c357308191a4d5e4c632caea47",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=33#por-que-eva",
-      "native_updated_at": "2026-11-11T18:32:52.357875+00:00",
-      "behavior": "Trendlines now reuses the earlier actual Alex dashboard material, frosted amber/lavender glass, grain, white dotted readout and external pearl controls. One reading and Show history select different explanations and next questions. Canonical values, notes, latest point, panel dimensions, chart geometry and 500 ms reveal remain stable. Manual selections announce the selected interpretation; automatic calm/reduced resolution clears stale announcements.",
-      "source_files": [
-        "components/story/TrendStorySection.tsx",
-        "components/story/trend-story-section.css",
-        "lib/site-content/trend-story-copy.ts",
-        "docs/existing-landing-adaptation-plan.json"
-      ],
-      "archive": {
-        "path": "/workspace/eva-publication/eva-trend-dashboard.tar.gz",
-        "content_hash": "sha256:25fe2854a3f362c9f1c51aad5b75b6c3f3aba84ecd2ad43c803fe5cee7516606",
-        "size_bytes": 171868160,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "passed",
-        "local_report": "/workspace/eva-in-place-qa/trend-story-report.json",
-        "cases": [
-          {
-            "width": 1440,
-            "height": 900,
-            "locale": "en",
-            "passed": true
-          },
-          {
-            "width": 1366,
-            "height": 650,
-            "locale": "en",
-            "deep": true,
-            "passed": true
-          },
-          {
-            "width": 1280,
-            "height": 720,
-            "locale": "es",
-            "passed": true
-          },
-          {
-            "width": 390,
-            "height": 780,
-            "locale": "en",
-            "passed": true
-          },
-          {
-            "width": 375,
-            "height": 812,
-            "locale": "es",
-            "deep": true,
-            "passed": true
-          },
-          {
-            "width": 320,
-            "height": 568,
-            "locale": "en",
-            "passed": true
-          },
-          {
-            "width": 390,
-            "height": 844,
-            "locale": "es",
-            "reduced": true,
-            "passed": true
-          }
-        ],
-        "browser_errors": [],
-        "checks": [
-          "TypeScript",
-          "Production build (113 routes)",
-          "English public-route audit (1178 messages)",
-          "Seven actual headless Chromium viewport cases in EN/ES",
-          "Exact active interpretation and question in each mode; inactive copy hidden from sight and assistive technology",
-          "Glass gradients, blur, shadow, grain and white dotted-number styling match the earlier #alex-story dashboard",
-          "Panel dimensions, chart and latest nodes stay fixed through both mode selections",
-          "Native pointer, Space and Enter controls with manual-only polite announcements",
-          "OS reduced motion and independent footer calm",
-          "Canonical readings, actual plotted geometry, unchanged context, no invented dates or risk bands",
-          "Localized science anchor navigation",
-          "No content clipping or overlap"
-        ],
-        "visual_review": "Actual 1440px desktop screenshots in both modes and 390px phone screenshot reviewed. Shared dashboard glass and stable two-view narrative confirmed.",
-        "live_verification": "Native succeeded publication receipt verifies deployment; no redundant postpublication browser suite was run.",
-        "scope_limit": "These seven browser cases verify the trend refinement. The previous v32 MethodJourney browser QA limitation remains recorded in its separate receipt and docs/method-refinement-qa.json.",
-        "physical_device_limit": "Viewports were emulated; no physical-phone frame-rate claim."
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 34,
       "source_commit": "2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9d8cc374e70c81919b07d14564545651",
@@ -172,17 +79,63 @@
         "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser interaction suite was run."
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI source is version 34 commit 2bbbb81e60f7385dcba3cb4c25059be91b99f0c6. The following documentation-only commit records the receipt, QA scope and next section without changing the live UI.",
+    "latest_verified_ui_release": {
+      "version_number": 35,
+      "source_commit": "4d4b25556356ff929903435293ab5fa2b697e76e",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f0ce2997bd6881919894f2a995cb16aa",
+      "deployment_id": "appgdep_6af4c8aa892481918bbb7eb08942f214",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-11T19:57:42.504352+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=35#lo-que-te-mueve",
+      "behavior": "Lifestyle chapter develops everyday movement and connection through a run for pleasure, a longer walk to keep talking, and sharing a meal and stories. Complete localized paragraphs wrap naturally. Accepted title, captions, coastal scene, controls, layout and preceding biological-age chapter are preserved.",
+      "source_files": [
+        "components/story/LifestylePassage.tsx",
+        "lib/site-content/lifestyle-copy.ts",
+        "docs/existing-landing-adaptation-plan.json",
+        "docs/SESSION_COORDINATION.json"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-lifestyle.tar.gz",
+        "local_gzip_sha256": "d526c988571464af173fb6d583a83b4f65358e402e303eb39304ff25e7e84f29",
+        "local_gzip_size_bytes": 163049986,
+        "saved_tar_content_hash": "sha256:709ce84c00fe5b510ab54a1fabcbe89833a7be0ed3c0037b95704149b0e80a13",
+        "saved_tar_size_bytes": 171868160,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "static_and_SSR_checks_passed_browser_unverified",
+        "record": "docs/lifestyle-refinement-qa.json",
+        "checks": {
+          "typescript": "passed",
+          "production_build": "passed (113 routes)",
+          "english_public_routes": "passed (1178 catalog messages)",
+          "generated_html": "passed (EN/ES copy, title, paragraphs, heading association, pause target, descriptive lazy poster, age/lifestyle/founder order)",
+          "SSR_normal_calm": "passed (EN/ES identical narrative, exact accepted title/captions, poster/srcset/alt; calm omits video and pause control)",
+          "preservation": "Verified CSS, SolarMotion, GlowMotion, coastal assets, biological-age, method and dashboard files unchanged",
+          "source_review": "Independent copy and React/accessibility review completed; no new state, effect or animation clock",
+          "diff_whitespace": "passed"
+        },
+        "browser": {
+          "status": "unverified",
+          "blocker": "Shared browser startup remains blocked by the previously observed gaas-browser node_repl sandbox error; no recovery evidence or new browser run.",
+          "screenshots": false,
+          "interaction_tests": false
+        },
+        "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
+      }
+    },
+    "latest_verified_ui_release_note": "Deployed UI is version 35 commit 4d4b25556356ff929903435293ab5fa2b697e76e. A following documentation-only commit records the receipt, QA scope and next section without changing live UI.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "Documentation-only followup to deployed source 2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
+      "relation": "Documentation-only followup to deployed source 4d4b25556356ff929903435293ab5fa2b697e76e",
       "files": [
         "AGENTS.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
         "docs/existing-landing-adaptation-plan.json",
-        "docs/life-passage-refinement-qa.json"
+        "docs/lifestyle-refinement-qa.json"
       ],
       "lookup_command": "git log -1 --format=%H -- docs/SESSION_HANDOFF.json",
       "ui_redeployment_required": false
@@ -210,6 +163,14 @@
         "source_commit": "361b4149589a364293e04a894f7d683641e5fea7",
         "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c0cd8fa0c0848191b58574b8d87ec1ff",
         "deployment_id": "appgdep_6af484d4f4848191b45ee5534d322724",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site"
+      },
+      {
+        "version_number": 33,
+        "source_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_99f63ea3b5148191b0dd9092f1a57fa4",
+        "deployment_id": "appgdep_6af4b4c357308191a4d5e4c632caea47",
         "status": "succeeded",
         "url": "https://eva-content-review.jdlagop.chatgpt.site"
       }
@@ -519,13 +480,14 @@
     {
       "component": "LifestylePassage",
       "id": "lo-que-te-mueve",
-      "purpose": "Existing everyday-life passage",
-      "status": "Next content section to refine; preserve the approved biological-age chapter before it."
+      "purpose": "Everyday movement, conversation and shared time as the human reason for care",
+      "status": "Published in version 35; static and normal/calm SSR passed. Browser wrapping/playback unverified."
     },
     {
       "component": "Founder story",
       "id": "nuestra-historia",
-      "purpose": "Existing founder voice"
+      "purpose": "Existing founder voice",
+      "status": "Next content section to refine."
     },
     {
       "component": "BusinessOffer",
@@ -539,10 +501,10 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json; inspect source and native Site state. The continuation chat has acknowledged the combined version 33 baseline; update current work status before any future concurrent edits.",
-    "The deployed baseline is version 34, source 2bbbb81e60f7385dcba3cb4c25059be91b99f0c6. A following documentation-only commit does not require republishing.",
+    "The deployed baseline is version 35, source 4d4b25556356ff929903435293ab5fa2b697e76e. A following documentation-only commit does not require republishing.",
     "Preserve uncommitted work. Use the Site source repository, not historical GitHub.",
-    "When browser access works, verify #el-metodo and #volver-a-la-vida at desktop and 320/375/390px: text layout, all method steps, keyboard/paging focus, replay, life forward/reverse scroll, OS reduced motion and footer calm. Static checks do not establish browser behavior.",
-    "Continue at #lo-que-te-mueve unless the user steers elsewhere. Preserve approved #tu-evolucion, then refine founder/offer/footer and assess the full landing journey.",
+    "When browser access works, verify pending method/life/lifestyle layouts at desktop and 320/375/390px, method focus/replay, life forward/reverse scroll, coastal pause/resume/replay, OS reduced motion and footer calm. Static/SSR checks do not establish browser behavior.",
+    "Continue at #nuestra-historia unless the user steers elsewhere, then refine offer/footer and assess the full landing journey. Preserve the approved biological-age chapter and all accepted earlier refinements.",
     "Routine bounded edits, relevant checks, commits, source pushes and existing review-Site publication remain authorized. Do not repeat discovery or routine confirmation."
   ],
   "engineering_workflow": {
@@ -636,7 +598,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 34 is published; next #lo-que-te-mueve, preserving approved #tu-evolucion. Verify method/life browser behavior when shared browser access works. Routine edits, checks, commits, pushes and existing review-site publication remain authorized.",
+  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 35 is published; next #nuestra-historia. Preserve approved earlier work. Method/life/lifestyle browser checks remain pending the environment blocker. Routine edits, checks, commits, pushes and existing review-site publication remain authorized.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -649,7 +611,7 @@
     "date": "2026-11-11",
     "user_direction": "Pull the latest other-chat Site change into this session for a full switch.",
     "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
-    "live_version": 34,
-    "status": "Version 34 return-to-life refinement published; no implementation in progress. Next #lo-que-te-mueve."
+    "live_version": 35,
+    "status": "Version 35 lifestyle refinement published; no app files reserved. Next founder story."
   }
 }

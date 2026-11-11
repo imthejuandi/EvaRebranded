@@ -1,6 +1,6 @@
 # EVA landing refinement
 
-Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 34 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#lo-que-te-mueve`; preserve the approved `#tu-evolucion` chapter before it. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
+Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 35 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#nuestra-historia`; preserve all accepted earlier chapters. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
 
 ## Cross-session coordination
 
@@ -47,7 +47,7 @@ Preserve both accepted Trendlines refinements: reuse the actual earlier Alex gla
 
 Keep signal, health-history and suggested-review copy consistent across English, Spanish, animated, static and reduced-motion forms.
 
-The handoff identifies the current return-to-life release and next section. Its animated, screen-reader and calm forms share `lib/site-content/life-passage-copy.ts`. Verify the method and life passages in the browser when access is restored, then continue at `#lo-que-te-mueve` unless the user steers elsewhere. Do not restart discovery or redo approved earlier sections.
+The handoff identifies the current return-to-life release and next section. Its animated, screen-reader and calm forms share `lib/site-content/life-passage-copy.ts`. The lifestyle narrative uses `lib/site-content/lifestyle-copy.ts` in both normal and calm modes. Verify the method and life passages in the browser when access is restored, then continue at `#nuestra-historia` unless the user steers elsewhere. Do not restart discovery or redo approved earlier sections.
 
 ## Checks and publication
 
