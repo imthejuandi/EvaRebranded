@@ -808,6 +808,11 @@
         "status": "Implemented for review; the publication receipt identifies the live release."
       },
       {
+        "anchor": "#tu-evolucion",
+        "section": "Your age tells part of the story.",
+        "status": "User approved version 26; preserve while reviewing the earlier sections"
+      },
+      {
         "anchor": "#el-metodo",
         "section": "Your next steps. At your pace.",
         "status": "Published in version 32 and preserved in later releases; browser verification remains pending."
@@ -816,11 +821,6 @@
         "anchor": "#volver-a-la-vida",
         "section": "And get back to life.",
         "status": "Published in version 34 with shared bilingual bridge copy; browser verification remains pending."
-      },
-      {
-        "anchor": "#tu-evolucion",
-        "section": "Your age tells part of the story.",
-        "status": "User approved version 26; preserve while reviewing the earlier sections"
       },
       {
         "anchor": "#lo-que-te-mueve",
@@ -1209,5 +1209,20 @@
     "copy_direction": "Concrete everyday examples, complete localized paragraphs with natural wrapping, no claims that testing produces these experiences or health outcomes.",
     "next_section": "#nuestra-historia — founder story",
     "verification": "TypeScript, production build, English audit, EN/ES generated HTML and normal/calm SSR parity passed. Browser playback/layout unverified under the existing startup blocker."
+  },
+  "editorialNarrativeOrder": {
+    "status": "User-approved reorder implemented; native receipt determines published version.",
+    "reason": "Finish technical interpretation before practical next steps, then keep the return-to-life and coastal lifestyle passages together.",
+    "order": [
+      "#por-que-eva",
+      "#tu-evolucion",
+      "#el-metodo",
+      "#volver-a-la-vida",
+      "#lo-que-te-mueve",
+      "#nuestra-historia"
+    ],
+    "scope": "Move the existing BiologicalAgeSection before MethodJourney in HealthEditorial. Preserve approved copy, visuals, qualifications, interactions and anchors.",
+    "numbering": "Legacy visible kicker numbers are a later whole-page consistency task; no partial renumbering in this bounded reorder.",
+    "next_section": "#nuestra-historia"
   }
 }
