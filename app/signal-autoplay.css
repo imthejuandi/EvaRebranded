@@ -22,3 +22,30 @@
 @keyframes signal-cue-drift{0%,100%{translate:0 0}50%{translate:0 4px}}
 @media(max-width:700px){.signal-playback-actions{bottom:94px;gap:18px}.signal-playback-actions>button{font-size:11px}.signal-continue{font-size:12px;gap:10px}.body-signal-passage .signal-controls.signal-timeline{gap:12px;bottom:16px}.body-signal-passage .signal-timeline button{gap:9px;min-height:59px}.body-signal-passage .signal-timeline .signal-timeline-caption{display:flex;flex-direction:column;gap:3px;font-size:10px;line-height:1.35}.body-signal-passage .signal-timeline .signal-timeline-number{font-size:9px}.body-signal-passage .signal-timeline .signal-timeline-label{text-wrap:initial}}
 @media(prefers-reduced-motion:reduce){.signal-continue,.signal-continue svg{animation:none}}
+
+/* Compact chapter labels leave the existing film its full reading surface. */
+body:has(#una-senal[data-signal-in-view="true"]) .content-review-dock{visibility:hidden;pointer-events:none}
+.signal-story .signal-timeline .signal-timeline-label{font-size:13px;line-height:1.4}
+.signal-story .signal-timeline .signal-timeline-caption{gap:12px}
+.signal-story-film .signal-film-caption{font-family:'EVA Hanken',Arial,sans-serif}
+.signal-story-film .signal-film-caption-title{font-weight:500;line-height:1.18;text-wrap:balance}
+.signal-story-film .signal-film-caption-body{font-weight:400;text-wrap:pretty;letter-spacing:0}
+.signal-story-summary .signal-summary-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:8vw;align-items:start;margin-top:52px}
+.signal-story-summary .signal-summary-number{max-width:430px;padding-top:5px}
+.signal-narrative{list-style:none;margin:0;padding:0}
+.signal-narrative li{display:flex;gap:22px;padding:19px 0 22px;border-top:1px solid #f3f0e835}
+.signal-narrative .signal-narrative-index{font-size:11px;line-height:1.6;letter-spacing:.08em;color:#8f9b91;padding-top:4px}
+.signal-narrative li>div{min-width:0}
+.signal-narrative h3{font-size:24px;font-weight:400;line-height:1.2;letter-spacing:-.03em;margin:0}
+.signal-narrative p{font-size:17px;line-height:1.55;max-width:38ch;margin:10px 0 0;color:#bec4bb}
+
+@media(max-width:700px){
+  .signal-story .signal-timeline button{min-height:64px}
+  .signal-story .signal-timeline .signal-timeline-caption{gap:4px}
+  .signal-story .signal-timeline .signal-timeline-label{font-size:11px;line-height:1.4}
+  .signal-story-summary .signal-summary-layout{grid-template-columns:1fr;gap:30px;margin-top:34px}
+  .signal-story-summary .signal-summary-number{max-width:240px;width:75%;padding-top:0}
+  .signal-story-summary .signal-narrative li{gap:17px;padding:18px 0 20px}
+  .signal-story-summary .signal-narrative h3{font-size:22px}
+  .signal-story-summary .signal-narrative p{font-size:16px;line-height:1.55;margin-top:8px}
+}

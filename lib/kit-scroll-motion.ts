@@ -13,9 +13,11 @@ export const KIT_SCROLL_BEATS = {
   contextEnd: 300,
   end: 380,
 } as const;
+// Scroll distance is independent of the timed presentation clock.
+export const KIT_SCROLL_INPUT_END = 240;
 const originalSpan = KIT_SCENE_WINDOW[1] - KIT_SCENE_WINDOW[0];
 const originalScrollSpan = (STORY_SCROLL_HEIGHT_SVH - 100) * (storyProgressAtFrame(KIT_SCENE_WINDOW[1]) - storyProgressAtFrame(KIT_SCENE_WINDOW[0]));
-export const KIT_SCROLL_SPAN_SVH = originalScrollSpan * KIT_SCROLL_BEATS.end / originalSpan;
+export const KIT_SCROLL_SPAN_SVH = originalScrollSpan * KIT_SCROLL_INPUT_END / originalSpan;
 export const KIT_SCROLL_HEIGHT_SVH = 100 + KIT_SCROLL_SPAN_SVH;
 export const KIT_CONTEXT_EASING = 'cubic-bezier(0.3333333333333333, 0, 0.6666666666666666, 1)';
 const clamp = (value: number, maximum = 1) => Math.max(0, Math.min(maximum, Number.isFinite(value) ? value : 0));
@@ -51,8 +53,8 @@ export function kitScrollState(clock: number, width: number, overflow: number) {
     phase: k < 35 ? 'count' : k < 80 ? 'pan' : k < 140 ? 'names' : k < KIT_SCROLL_BEATS.contextEnd ? 'reveal' : 'context',
   };
 }
-export function kitCompositorKeyframes(width: number, overflow: number) {
-  const track = [0, KIT_SCROLL_BEATS.countEnd, KIT_SCROLL_BEATS.panEnd, KIT_SCROLL_BEATS.end].map(clock => ({offset: clock / KIT_SCROLL_BEATS.end, transform: `translate3d(${kitScrollState(clock, width, overflow).trackX}px, 0, 0)`}));
+export function kitCompositorKeyframes(width: number, overflow: number, trackInputEnd: number = KIT_SCROLL_BEATS.end) {
+  const track = [0, KIT_SCROLL_BEATS.countEnd, KIT_SCROLL_BEATS.panEnd, trackInputEnd].map(clock => ({offset: clock / trackInputEnd, transform: `translate3d(${kitScrollState(clock, width, overflow).trackX}px, 0, 0)`}));
   const meanings = [0, KIT_SCROLL_BEATS.namesEnd, KIT_SCROLL_BEATS.contextEnd, KIT_SCROLL_BEATS.end].map(clock => {
     const state = kitScrollState(clock, width, overflow);
     return {offset: clock / KIT_SCROLL_BEATS.end, opacity: state.context, transform: `translate3d(0, ${state.meaningY}px, 0)`, easing: clock === 140 ? KIT_CONTEXT_EASING : 'linear'};

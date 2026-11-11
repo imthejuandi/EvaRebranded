@@ -6,7 +6,8 @@ import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {createStoryScrollDriver} from '@/lib/story-scroll-driver';
 import {KIT_SCENE_WINDOW, LIFE_SCENE_WINDOW, STORY_SCROLL_HEIGHT_SVH, storyFrameAtProgress, storyProgressAtFrame} from '@/lib/story-scroll-timing';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
-import {KIT_SCROLL_BEATS, KIT_SCROLL_HEIGHT_SVH} from '@/lib/kit-scroll-motion';
+import {KIT_SCROLL_INPUT_END, KIT_SCROLL_HEIGHT_SVH} from '@/lib/kit-scroll-motion';
+import {createKitRevealPlayback, type KitRevealInput} from '@/lib/kit-reveal-playback';
 import {EvaFilm, DURATION} from './EvaFilm';
 import {KitMarkerIndex} from './KitMarkerIndex';
 import './story-scene-passage.css';
@@ -29,6 +30,57 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
   const staticLayout = calm || (kind === 'kit' && (shortViewport || contentOverflow));
   const id = kind === 'kit' ? 'kit-inicial' : 'volver-a-la-vida';
   const handleKitOverflow = useCallback(() => setContentOverflow(true), []);
+  const playbackFrame = useRef(0);
+  const playback = useMemo(() => kind === 'kit' ? createKitRevealPlayback({
+    render: clock => driver.setFrame(clock),
+    observe: state => {
+      const element = section.current;
+      if (!element) return;
+      const values = {
+        kitScrollClock: state.rawClock.toFixed(3), kitPresentationClock: state.presentationClock.toFixed(3),
+        kitRevealState: state.phase, kitRevealPausedFrom: state.pausedFrom,
+        kitReadMs: state.readMs.toFixed(1), kitRevealMs: state.revealMs.toFixed(1),
+        kitRevealActive: String(state.active),
+      };
+      for (const [key, value] of Object.entries(values)) if (element.dataset[key] !== value) element.dataset[key] = value;
+    },
+  }) : null, [kind, driver]);
+  const wakePlayback = useCallback(() => {
+    if (!playback?.needsFrame) {cancelAnimationFrame(playbackFrame.current); playbackFrame.current = 0; return;}
+    if (playbackFrame.current) return;
+    const tick = (now: number) => {
+      playbackFrame.current = 0;
+      playback.tick(now);
+      if (playback.needsFrame) playbackFrame.current = requestAnimationFrame(tick);
+    };
+    playbackFrame.current = requestAnimationFrame(tick);
+  }, [playback]);
+  const syncPlayback = useCallback((input: Partial<KitRevealInput>, allowReset = true) => {
+    playback?.update(input, performance.now(), allowReset);
+    wakePlayback();
+  }, [playback, wakePlayback]);
+
+  useEffect(() => {
+    if (!playback) return;
+    const surface = stage.current;
+    if (staticLayout || !surface) {syncPlayback({enabled: false, stageVisible: false}, false); return;}
+    syncPlayback({enabled: true, documentVisible: document.visibilityState !== 'hidden'}, false);
+    const observer = new IntersectionObserver(entries => {
+      const entry = entries[0];
+      const ratio = entry ? entry.intersectionRect.height / Math.max(1, Math.min(entry.boundingClientRect.height, window.innerHeight)) : 0;
+      syncPlayback({stageVisible: ratio >= .85}, false);
+    }, {threshold: [0, .1, .85, 1]});
+    observer.observe(surface);
+    const visibility = () => syncPlayback({documentVisible: document.visibilityState !== 'hidden'}, false);
+    document.addEventListener('visibilitychange', visibility);
+    return () => {
+      observer.disconnect(); document.removeEventListener('visibilitychange', visibility);
+      syncPlayback({enabled: false, stageVisible: false}, false);
+    };
+  }, [playback, staticLayout, layoutRevision, syncPlayback]);
+
+  useEffect(() => () => {cancelAnimationFrame(playbackFrame.current); playbackFrame.current = 0;}, [playback]);
+
 
   useEffect(() => {
     setContentOverflow(false);
@@ -60,32 +112,33 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
     const root = section.current, surface = stage.current;
     if (staticLayout || !root || !surface) return;
     let top = 0, span = 1, raf = 0;
-    const update = () => {
+    const update = (scrollEvent = true) => {
       raf = 0;
       const progress = Math.max(0, Math.min(1, (window.scrollY - top) / span));
-      driver.setFrame(kind === 'kit' ? progress * KIT_SCROLL_BEATS.end : storyFrameAtProgress(start + progress * (end - start)));
+      if (kind === 'kit') syncPlayback({rawClock: progress * KIT_SCROLL_INPUT_END}, scrollEvent);
+      else driver.setFrame(storyFrameAtProgress(start + progress * (end - start)));
     };
     const measure = () => {
       top = root.getBoundingClientRect().top + window.scrollY;
       span = Math.max(1, root.offsetHeight - surface.clientHeight);
       const next = {width: surface.clientWidth, height: surface.clientHeight, top, span};
       if (next.width && next.height) setGeometry(previous => previous && Object.keys(next).every(key => previous[key as keyof Geometry] === next[key as keyof Geometry]) ? previous : next);
-      update();
+      update(false);
     };
-    const schedule = () => {if (!raf) raf = requestAnimationFrame(update);};
+    const schedule = () => {if (!raf) raf = requestAnimationFrame(() => update());};
     const observer = new ResizeObserver(measure);
     observer.observe(surface);
     if (root.parentElement) observer.observe(root.parentElement);
     measure();
     window.addEventListener('scroll', schedule, {passive: true});
     return () => {observer.disconnect(); cancelAnimationFrame(raf); window.removeEventListener('scroll', schedule);};
-  }, [kind, locale, staticLayout, layoutRevision, driver, start, end]);
+  }, [kind, locale, staticLayout, layoutRevision, driver, start, end, syncPlayback]);
 
-  const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, kitLocalClock: kind === 'kit', onKitLayoutOverflow: kind === 'kit' ? handleKitOverflow : undefined, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, handleKitOverflow, driver, sceneWindow, geometry]);
+  const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, kitLocalClock: kind === 'kit', kitTimedReveal: kind === 'kit', onKitLayoutOverflow: kind === 'kit' ? handleKitOverflow : undefined, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, handleKitOverflow, driver, sceneWindow, geometry]);
   const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><h3 className="kit-static-index-title">{copy.stageHeadings[1].join(' ')}</h3><p className="kit-summary-intro">{copy.intro}</p><p className="kit-static-clarity">{copy.stageHeadings[2].join(' ')}</p><KitMarkerIndex copy={copy} showTitle={false}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
-  if (staticLayout) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} data-kit-layout={kind === 'kit' ? calm ? 'reduced' : 'flow' : undefined} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
+  if (staticLayout) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} data-kit-layout={kind === 'kit' ? calm ? 'reduced' : 'flow' : undefined} data-kit-reveal-state={kind === 'kit' ? 'complete' : undefined} data-kit-reveal-active={kind === 'kit' ? 'false' : undefined} data-kit-presentation-clock={kind === 'kit' ? 300 : undefined} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
 
-  return <section id={id} className={'scroll-journey story-scene-passage ' + kind} data-kit-layout={kind === 'kit' ? 'animated' : undefined} style={{height: `${kind === 'kit' ? KIT_SCROLL_HEIGHT_SVH : 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
+  return <section id={id} className={'scroll-journey story-scene-passage ' + kind} data-kit-layout={kind === 'kit' ? 'animated' : undefined} data-kit-scroll-clock={kind === 'kit' ? '0' : undefined} data-kit-presentation-clock={kind === 'kit' ? '0' : undefined} data-kit-reveal-state={kind === 'kit' ? 'idle' : undefined} data-kit-read-ms={kind === 'kit' ? '0' : undefined} data-kit-reveal-ms={kind === 'kit' ? '0' : undefined} data-kit-reveal-active={kind === 'kit' ? 'false' : undefined} style={{height: `${kind === 'kit' ? KIT_SCROLL_HEIGHT_SVH : 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
     <div className="stage" ref={stage}><div aria-hidden="true" className="film">{geometry && <Player component={EvaFilm} inputProps={inputProps} compositionWidth={geometry.width} compositionHeight={geometry.height} durationInFrames={DURATION} fps={30} autoPlay={false} controls={false} clickToPlay={false} spaceKeyToPlayOrPause={false} doubleClickToFullscreen={false} allowFullscreen={false} initiallyMuted style={{width: '100%', height: '100%', pointerEvents: 'none'}}/>}</div></div>
     <div className="sr-only">{narrative}</div>
   </section>;

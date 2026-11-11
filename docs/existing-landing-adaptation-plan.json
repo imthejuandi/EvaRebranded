@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Parts 1–5 previously implemented and verified. The longer starting-kit reveal and scoped biological-age refinement passed unit verification and 10 responsive English/Spanish browser cases; publication is pending.",
+  "status": "Automatic kit reveal and the signal chapter refined in visible page order. Eight full responsive cases and eight targeted final signal cases passed; publication is tracked by the Sites receipt.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -677,16 +677,34 @@
       "location": "#kit-inicial",
       "localClockEnd": 380,
       "sectionHeightSvh": 417.9591836734694,
-      "meaningReveal": [140, 300],
-      "dotFormation": [140, 170],
+      "meaningReveal": [
+        140,
+        300
+      ],
+      "dotFormation": [
+        140,
+        170
+      ],
       "fullyDottedPlateau": {
-        "clock": [170, 205],
+        "clock": [
+          170,
+          205
+        ],
         "runnerArrivalTimeSeconds": 1.2,
         "meaning": "The actual runner-arrival renderer stays at a clearly dotted state over a dedicated scroll interval."
       },
-      "dotDevelopment": [205, 270],
-      "nativeTextHandoff": [270, 300],
-      "cleanHold": [300, 380],
+      "dotDevelopment": [
+        205,
+        270
+      ],
+      "nativeTextHandoff": [
+        270,
+        300
+      ],
+      "cleanHold": [
+        300,
+        380
+      ],
       "preserved": [
         "Original count and horizontal-pan physical pace",
         "All 13 biomarker name nodes and positions",
@@ -703,7 +721,10 @@
         "components/story/biological-age-section.css",
         "lib/site-content/biological-age-copy.ts"
       ],
-      "languages": ["en", "es"],
+      "languages": [
+        "en",
+        "es"
+      ],
       "copy": "Two ruled definitions distinguish estimated biological age, a biomarker-pattern comparison with a reference population, from the longevity score, a comparison with the targets used by EVA’s method.",
       "availability": "The former new-reading-every-quarter strapline is replaced by a required-data qualifier. Availability is not promised automatically for the current 13-marker kit.",
       "design": "Original amber material, headline and animated dotted 34→29 example retained. The −5 figure is reduced to supporting illustrative arithmetic. Definitions, introduction and disclosure use readable body type with 16px phone minimums; no new card grid or generated assets.",
@@ -760,6 +781,106 @@
       },
       "publication": "Pending Sites deployment receipt"
     },
-    "nextPart": "Refine the founder-to-offer handoff, preserving the approved founder attribution, free past-lab interpretation action, secondary kit path, 13-marker scope and €99 + VAT."
+    "nextPart": "Superseded by user direction: resume at the signal chapter and proceed in visible page order before returning to later chapters."
+  },
+  "inOrderLandingReview": {
+    "direction": "Follow the visible page order. A previous implementation-complete label is not user approval of its design or copy.",
+    "current": "#una-senal — A signal to know yourself",
+    "queue": [
+      {
+        "anchor": "#una-senal",
+        "section": "A signal to know yourself / From data. To your life.",
+        "status": "Refined and locally verified in this release; publication receipt determines live state."
+      },
+      {
+        "anchor": "#una-perspectiva",
+        "section": "Your health has a story.",
+        "status": "Next"
+      },
+      {
+        "anchor": "#revision-trimestral",
+        "section": "90 days. A chance to review.",
+        "status": "Review with the preceding section"
+      },
+      {
+        "anchor": "#por-que-eva",
+        "section": "Trendlines, not snapshots.",
+        "status": "Pending ordered review"
+      },
+      {
+        "anchor": "#el-metodo",
+        "section": "Your next steps. At your pace.",
+        "status": "Pending ordered review"
+      },
+      {
+        "anchor": "#volver-a-la-vida",
+        "section": "And get back to life.",
+        "status": "Pending ordered review"
+      },
+      {
+        "anchor": "#tu-evolucion",
+        "section": "Your age tells part of the story.",
+        "status": "User approved version 26; preserve while reviewing the earlier sections"
+      }
+    ],
+    "priorState": "Version 26 changed the kit reveal and age chapter. The intervening chapters had earlier copy/offer edits but were not newly refined or approved in that release."
+  },
+  "automaticKitAndOrderedSignalRelease": {
+    "status": "Implemented and verified locally; publication receipt determines live release.",
+    "kit": {
+      "location": "#kit-inicial",
+      "behavior": "Scroll until all biomarker names are centered. Allow five seconds of active on-screen reading, then run the existing dot-to-text rendering automatically over 4.8 seconds, including a dotted hold and a clean native-text handoff. Scrolling is never blocked or moved by the transition.",
+      "preserved": "Original count/pan physical pacing, three titles,13 fixed names, existing canvas glyph style, complete reduced-motion/flow fallback.",
+      "inputClockEnd": 240,
+      "presentationClockEnd": 380,
+      "completedPresentationClock": 300,
+      "sectionHeightSvh": 300.81632653061223,
+      "readingMilliseconds": 5000,
+      "revealMilliseconds": 4800,
+      "resetBeforeInputClock": 72,
+      "lifecycle": "Reading and reveal elapsed time count only while the centered index and document are visible. Resume on return, reset when deliberately scrolling back before the index, and preserve timing through geometry rebuilds and queued unchanged scroll events. Native compositor owns only the track; heading and glyph reveal use one presentation clock."
+    },
+    "signal": {
+      "location": "#una-senal",
+      "scope": "Refine the earliest unfinished section in visible page order. Preserve the body, particle field,13→90→YOU numerals, final orb and playback controls; use concise starting-point, review and choice captions and compact timeline labels.",
+      "accessibility": "All four chapters share the same English/Spanish narrative in the animated, loading, reduced-motion and screen-reader versions.",
+      "numericStory": [
+        "13 biomarkers or previous lab results",
+        "Around 90 days: a chance to compare compatible results with guidance",
+        "Your choice of the next focus from available panels"
+      ],
+      "preserved": "Original 10-second body → 13 → 90 → YOU → orb animation, masks, material clock and canvas.",
+      "reviewDock": "Hide the existing review dock while the animated signal is in view so all four controls remain visible; restore it after leaving."
+    },
+    "verification": {
+      "status": "Passed",
+      "fullBrowserCases": 8,
+      "finalSignalBrowserCases": 8,
+      "errors": [],
+      "cases": [
+        "EN1440×1000",
+        "EN1366×650",
+        "ES1280×720",
+        "EN390×780",
+        "ES375×812",
+        "EN320×568 flow fallback",
+        "EN390×844 reduced motion",
+        "ES390×844 reduced motion"
+      ],
+      "checks": [
+        "Build",
+        "TypeScript",
+        "English route audit",
+        "9,123 kit painter/compositor samples and timed-track parity",
+        "Pure active-time controller: automatic completion, pauses, reverse hysteresis, geometry persistence and queued-scroll reset guard",
+        "Story-section order and physical opening/pan pacing",
+        "Signal playback and arrival; 1,221-frame continuous field regression",
+        "Stationary scroll position during automatic dot development; same 13 marker-name nodes and positions",
+        "Signal controls, caption layout, complete paired-language transcripts and reduced motion",
+        "Final review-dock hide/restore and explicit 90-day copy"
+      ],
+      "publication": "Pending Sites deployment receipt"
+    },
+    "nextPart": "#una-perspectiva and its quarterly rhythm; do not skip to the founder or offer."
   }
 }

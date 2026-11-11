@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {KIT_SCROLL_BEATS, KIT_SCROLL_SPAN_SVH, KIT_SCROLL_HEIGHT_SVH, kitScrollState, kitCompositorKeyframes} from '../lib/kit-scroll-motion.ts';
+import {KIT_SCROLL_BEATS, KIT_SCROLL_INPUT_END, KIT_SCROLL_SPAN_SVH, KIT_SCROLL_HEIGHT_SVH, kitScrollState, kitCompositorKeyframes} from '../lib/kit-scroll-motion.ts';
 import {createKitScrollPainter} from '../lib/kit-scroll-painter.ts';
 import {installKitScrollCompositor} from '../lib/kit-scroll-compositor.ts';
 import {storyScrollFrame} from '../lib/story-scroll-driver.ts';
@@ -10,9 +10,9 @@ assert.deepEqual(KIT_SCENE_WINDOW, [555, 715]);
 assert.deepEqual(LIFE_SCENE_WINDOW, [715, 900]);
 close(KIT_SCROLL_HEIGHT_SVH, 100 + KIT_SCROLL_SPAN_SVH, 'Only the local kit section is extended');
 const originalDistance = frames => (STORY_SCROLL_HEIGHT_SVH - 100) * (storyProgressAtFrame(555 + frames) - storyProgressAtFrame(555));
-close(KIT_SCROLL_SPAN_SVH * 35 / KIT_SCROLL_BEATS.end, originalDistance(35), 'Original count physical distance');
-close(KIT_SCROLL_SPAN_SVH * 45 / KIT_SCROLL_BEATS.end, originalDistance(80) - originalDistance(35), 'Original pan physical distance');
-close(KIT_SCROLL_SPAN_SVH * 80 / KIT_SCROLL_BEATS.end, originalDistance(160) - originalDistance(80), 'Original final reading allowance');
+close(KIT_SCROLL_SPAN_SVH * 35 / KIT_SCROLL_INPUT_END, originalDistance(35), 'Original count physical distance');
+close(KIT_SCROLL_SPAN_SVH * 45 / KIT_SCROLL_INPUT_END, originalDistance(80) - originalDistance(35), 'Original pan physical distance');
+close(KIT_SCROLL_SPAN_SVH * 80 / KIT_SCROLL_INPUT_END, originalDistance(160) - originalDistance(80), 'Original physical scroll density');
 for (let k = 0; k <= 80; k += .125) {
   close(kitScrollState(k, 390, 366).trackX, storyScrollFrame(555 + k, 390, 844, 366).insightX, `Original pan pose at ${k}`);
 }
@@ -29,13 +29,11 @@ assert.equal(kitScrollState(-100, 390, 366).clock, 0);
 assert.equal(kitScrollState(Number.NaN, 390, 366).clock, 0);
 assert.equal(kitScrollState(999, 390, 366).clock, 380);
 
-// A visibly dotted plateau is a real scroll interval, not a delayed animation.
+// The rendering clock retains its approved dot plateau; timed playback controls progression.
 for (const clock of [170, 175, 190, 200, 205]) close(kitScrollState(clock, 390, 366).arrival * 3.5, 1.2, `Fully dotted runner-time hold at ${clock}`);
 for (const [clock, seconds] of [[140, 0], [155, .6], [170, 1.2], [205, 1.2], [237.5, 2.175], [270, 3.15], [285, 3.325], [300, 3.5], [380, 3.5]]) close(kitScrollState(clock, 390, 366).arrival * 3.5, seconds, `Mapped runner arrival time at ${clock}`);
 assert.equal(KIT_SCROLL_BEATS.end - KIT_SCROLL_BEATS.contextEnd, 80, 'Fully resolved reading hold retains its original physical duration');
-const plateauDistance = KIT_SCROLL_SPAN_SVH * (KIT_SCROLL_BEATS.dotHoldEnd - KIT_SCROLL_BEATS.dotFormationEnd) / KIT_SCROLL_BEATS.end;
-assert(plateauDistance >= 25, `Pure-dot hold must last at least a quarter viewport of scrolling: ${plateauDistance}`);
-close(KIT_SCROLL_SPAN_SVH * (KIT_SCROLL_BEATS.contextEnd - KIT_SCROLL_BEATS.namesEnd) / KIT_SCROLL_BEATS.end, originalDistance(160), 'Longer reveal spans the original full160-frame physical distance');
+assert.equal(KIT_SCROLL_INPUT_END, 240, 'Physical scrolling remains shorter than the independent rendering clock');
 let previousArrival = 0;
 for (let clock = 0; clock <= KIT_SCROLL_BEATS.end; clock += .125) {
   const arrival = kitScrollState(clock, 390, 366).arrival;
@@ -81,6 +79,12 @@ for (const width of [390, 430, 1440]) {
     }
     parityCases++;
   }
+}
+
+// Timed mode keeps native track pacing, with JS alone owning timed titles and meanings.
+for (const width of [390, 1440]) {
+  const overflow = width - (width <= 700 ? 24 : 48), frames = kitCompositorKeyframes(width, overflow, KIT_SCROLL_INPUT_END);
+  for (let raw = 0; raw <= KIT_SCROLL_INPUT_END; raw += .125) close(sample(frames.track, raw / KIT_SCROLL_INPUT_END, frame => transformNumbers(frame)[0]), kitScrollState(raw, width, overflow).trackX, `Timed native track input at ${raw}/${width}`);
 }
 
 const element = () => ({dataset: {}, style: {translate: 'legacy', scale: 'legacy', visibility: 'legacy', willChange: 'auto'},
@@ -160,6 +164,12 @@ try {
   assert.equal(dotCompositor.owned.size, 4, 'Canvas arrival owns subtitle appearance; compositor owns only track and titles');
   assert(meanings.every(el => !dotCompositor.owned.has(el)), 'No competing native subtitle opacity animation');
   dotCompositor.dispose();
+  created = [];
+  const timedCompositor = installKitScrollCompositor(root, {...geometry, timedReveal: true, meaningArrival: true});
+  assert.equal(timedCompositor.owned.size, 1, 'Timed mode gives only the track to the scroll compositor');
+  assert(timedCompositor.owned.has(track));
+  assert(titles.every(title => !timedCompositor.owned.has(title)), 'Titles use the same presentation clock as the automatic dot reveal');
+  timedCompositor.dispose();
   const beforeFailure = JSON.stringify(animated.map(item => item.style));
   created = []; failureAt = 5;
   assert.equal(installKitScrollCompositor(root, geometry), null);

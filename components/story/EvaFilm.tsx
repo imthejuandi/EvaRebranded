@@ -23,7 +23,7 @@ import './story-scene-passage.css';
 export const DURATION = 981;
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
 const range = (f: number, a: number, b: number, x: number, y: number) => interpolate(f, [a, b], [x, y], clamp);
-export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean', externalTasso = false, sceneMode = 'all', scrollWindow, scrollGeometry, kitLocalClock = false, onKitLayoutOverflow }: {
+export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es', onSignalsReady, signalsImmediate = false, arrivalEnabled = false, onArrivalUnavailable, scrollDriver, tassoVariant = 'clean', externalTasso = false, sceneMode = 'all', scrollWindow, scrollGeometry, kitLocalClock = false, kitTimedReveal = false, onKitLayoutOverflow }: {
     ambientRunner?: boolean;
     onRunnerBlocked?: () => void;
     language?: SignalLanguage;
@@ -38,6 +38,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
     scrollWindow?: readonly [number, number];
     scrollGeometry?: {top: number; span: number};
     kitLocalClock?: boolean;
+    kitTimedReveal?: boolean;
     onKitLayoutOverflow?: () => void;
 } = {}) {
     const __site = useSiteLanguage();
@@ -81,7 +82,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         const localTop = scrollGeometry?.top ?? (journey ? journey.getBoundingClientRect().top + window.scrollY : 0);
         const meaningArrival = localKit ? installKitMeaningArrival(root.current, runnerArrivalState) : null;
         const compositor = journey ? localKit
-          ? installKitScrollCompositor(root.current, {width: w, overflow, top: localTop, span: localSpan, meaningArrival: !!meaningArrival})
+          ? installKitScrollCompositor(root.current, {timedReveal: kitTimedReveal, width: w, overflow, top: localTop, span: localSpan, meaningArrival: !!meaningArrival})
           : installStoryScrollCompositor(root.current, journey, { width: w, height: h, overflow, top: localTop - fullSpan * startProgress, span: fullSpan }) : null;
         const paint = localKit ? createKitScrollPainter(root.current, compositor?.owned, meaningArrival) : createStoryScrollPainter(root.current, compositor?.owned);
         nativePainter.current = paint;
@@ -95,7 +96,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
         setRunnerActive(heroActive);
         const stop = nativeScroll.subscribe(update);
         return () => { stop(); compositor?.dispose(); meaningArrival?.dispose(); nativePainter.current = null; };
-    }, [nativeScroll, localKit, w, h, overflow, startProgress, endProgress, scrollGeometry?.top, scrollGeometry?.span]);
+    }, [nativeScroll, localKit, kitTimedReveal, w, h, overflow, startProgress, endProgress, scrollGeometry?.top, scrollGeometry?.span]);
     // Reapply the current pose after a coarse React state change or responsive resize.
     useLayoutEffect(() => { if (nativeScroll)
         nativePainter.current?.(nativeScroll.current, w, h, overflow); });
