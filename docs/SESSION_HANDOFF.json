@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
-  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V32_PUBLICATION_WITH_BROWSER_LIMIT",
-  "immediate_instruction": "Version 32 is published. #el-metodo refinement is complete with passing TypeScript/build/source/SSR/English/built-artifact checks. Shared browser startup failed, so verify its actual phone/desktop layout, paging focus, replay, OS reduced motion and manual calm when browser access is restored. The next content section is #volver-a-la-vida; preserve the accepted biological-age chapter.",
+  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V33_PUBLICATION",
+  "immediate_instruction": "Version 33 is published with both requested trend refinements and seven passing trend browser cases. Preserve the shared dashboard design and mode-specific interpretation. The next content section remains #volver-a-la-vida. The previous v32 MethodJourney browser QA limitation is separate and remains accurately recorded.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -33,26 +33,72 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 31,
-      "source_commit": "f337732427a5db6d43cc29c5ef4f83c1b098368b",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_88eac84af3b08191b4cba015db95a897",
-      "deployment_id": "appgdep_6af48140b49c8191a77c3163337005f5",
+      "version_number": 32,
+      "source_commit": "361b4149589a364293e04a894f7d683641e5fea7",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c0cd8fa0c0848191b58574b8d87ec1ff",
+      "deployment_id": "appgdep_6af484d4f4848191b45ee5534d322724",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=31#por-que-eva",
-      "native_updated_at": "2026-11-11T14:53:01.168797+00:00",
-      "behavior": "Trendlines chapter replaces the generic HomeUnderstanding essay with the same fictional Alex readings in a single analog history instrument. Scroll entry reveals prior readings over 500 ms; the 2.1 latest point/readout remain fixed. Native replay buttons compare one reading with history. Blood-draw notes and the temporary-versus-persistent question remain explicit.",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=32#el-metodo",
+      "native_updated_at": "2026-11-11T15:08:17.361419+00:00",
+      "behavior": "Method chapter connects free interpretation of previous reports and the optional 13-marker kit to understanding, compatible comparisons and a guided next choice. First-panel actions preserve existing account-flow intent and the €99 + VAT kit price. Around 90 days is an optional review opportunity. Accepted artwork is retained with explicit kit/symbolic labels; automatic quarterly wording and the projected future tail are removed. Phone explanation appears before artwork in DOM and visual order. Paging focuses the new heading; tab-arrow/Home/End focus remains on tabs.",
+      "source_files": [
+        "components/story/MethodJourney.tsx",
+        "components/story/MethodGraphs.tsx",
+        "app/method-journey.css",
+        "lib/landing-content.ts",
+        "lib/site-content/locales/public.en.json",
+        "scripts/check-method.mjs"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-method-journey.tar.gz",
+        "local_gzip_sha256": "b18c6075d3e66ba28e2c31581fc4a21841ac3c35587f1493f807042c494d2307",
+        "local_gzip_size_bytes": 163049270,
+        "saved_tar_content_hash": "sha256:5d76a78ef2cabebfacf59f03b26713912af1702ec3762d2ecc6f9d579af357ec",
+        "saved_tar_size_bytes": 171868160,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "static_checks_passed_browser_unverified",
+        "record": "docs/method-refinement-qa.json",
+        "checks": {
+          "typescript": "passed",
+          "production_build": "passed (113 routes)",
+          "method_source_and_SSR": "passed (15 graph playback-state renders, ES/EN copy, free upload intent, kit price, symbolic graph labels, finite/calm/reduced-motion rules)",
+          "english_public_routes": "passed (1178 catalog messages)",
+          "built_artifacts": "passed (ES and EN cases below)",
+          "diff_whitespace": "passed"
+        },
+        "browser": {
+          "status": "unverified",
+          "blocker": "Shared browser startup failed: the gaas-browser node_repl sandbox cannot be disabled",
+          "screenshots": false,
+          "interaction_tests": false
+        },
+        "live_verification": "Native succeeded publication receipt verifies deployment. No live browser interaction suite was run."
+      }
+    },
+    "latest_verified_ui_release": {
+      "version_number": 33,
+      "source_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_99f63ea3b5148191b0dd9092f1a57fa4",
+      "deployment_id": "appgdep_6af4b4c357308191a4d5e4c632caea47",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=33#por-que-eva",
+      "native_updated_at": "2026-11-11T18:32:52.357875+00:00",
+      "behavior": "Trendlines now reuses the earlier actual Alex dashboard material, frosted amber/lavender glass, grain, white dotted readout and external pearl controls. One reading and Show history select different explanations and next questions. Canonical values, notes, latest point, panel dimensions, chart geometry and 500 ms reveal remain stable. Manual selections announce the selected interpretation; automatic calm/reduced resolution clears stale announcements.",
       "source_files": [
         "components/story/TrendStorySection.tsx",
         "components/story/trend-story-section.css",
         "lib/site-content/trend-story-copy.ts",
-        "components/site/RestoredContent.tsx",
-        "components/story/HealthEditorial.tsx"
+        "docs/existing-landing-adaptation-plan.json"
       ],
       "archive": {
-        "path": "/workspace/eva-publication/eva-trend-story.tar.gz",
-        "content_hash": "sha256:bd7f81dae5d693e75de23899c7576cebb9cc84da83c4b1cb093c671505400006",
-        "size_bytes": 171857920
+        "path": "/workspace/eva-publication/eva-trend-dashboard.tar.gz",
+        "content_hash": "sha256:25fe2854a3f362c9f1c51aad5b75b6c3f3aba84ecd2ad43c803fe5cee7516606",
+        "size_bytes": 171868160,
+        "file_count": 787
       },
       "qa": {
         "status": "passed",
@@ -107,76 +153,32 @@
         "browser_errors": [],
         "checks": [
           "TypeScript",
-          "Production static build (113 routes)",
-          "English public-route audit",
-          "Canonical readings and self-reported context",
-          "Actual point/path geometry and fixed latest nodes in both modes",
-          "Pointer, Space, Enter replay and 44px targets",
-          "Transitions no longer than 500 ms",
+          "Production build (113 routes)",
+          "English public-route audit (1178 messages)",
+          "Seven actual headless Chromium viewport cases in EN/ES",
+          "Exact active interpretation and question in each mode; inactive copy hidden from sight and assistive technology",
+          "Glass gradients, blur, shadow, grain and white dotted-number styling match the earlier #alex-story dashboard",
+          "Panel dimensions, chart and latest nodes stay fixed through both mode selections",
+          "Native pointer, Space and Enter controls with manual-only polite announcements",
           "OS reduced motion and independent footer calm",
-          "Desktop and phone layout without clipping or overlap",
-          "Localized science anchor navigation"
+          "Canonical readings, actual plotted geometry, unchanged context, no invented dates or risk bands",
+          "Localized science anchor navigation",
+          "No content clipping or overlap"
         ],
-        "visual_review": "Actual desktop 1440×900 and phone 390×780 instrument screenshots reviewed. The completed solid trace reaches the latest point after correcting normalized SVG dash scaling. Directional reveal retained via clip-path.",
-        "live_qa": "Native succeeded deployment receipt verifies publication. Local fresh-build browser tests passed; no separate postpublication browser suite was run.",
-        "physical_device_limit": "Viewports are emulated; no physical-phone performance claim."
+        "visual_review": "Actual 1440px desktop screenshots in both modes and 390px phone screenshot reviewed. Shared dashboard glass and stable two-view narrative confirmed.",
+        "live_verification": "Native succeeded publication receipt verifies deployment; no redundant postpublication browser suite was run.",
+        "scope_limit": "These seven browser cases verify the trend refinement. The previous v32 MethodJourney browser QA limitation remains recorded in its separate receipt and docs/method-refinement-qa.json.",
+        "physical_device_limit": "Viewports were emulated; no physical-phone frame-rate claim."
       }
     },
-    "latest_verified_ui_release": {
-      "version_number": 32,
-      "source_commit": "361b4149589a364293e04a894f7d683641e5fea7",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c0cd8fa0c0848191b58574b8d87ec1ff",
-      "deployment_id": "appgdep_6af484d4f4848191b45ee5534d322724",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=32#el-metodo",
-      "native_updated_at": "2026-11-11T15:08:17.361419+00:00",
-      "behavior": "Method chapter connects free interpretation of previous reports and the optional 13-marker kit to understanding, compatible comparisons and a guided next choice. First-panel actions preserve existing account-flow intent and the €99 + VAT kit price. Around 90 days is an optional review opportunity. Accepted artwork is retained with explicit kit/symbolic labels; automatic quarterly wording and the projected future tail are removed. Phone explanation appears before artwork in DOM and visual order. Paging focuses the new heading; tab-arrow/Home/End focus remains on tabs.",
-      "source_files": [
-        "components/story/MethodJourney.tsx",
-        "components/story/MethodGraphs.tsx",
-        "app/method-journey.css",
-        "lib/landing-content.ts",
-        "lib/site-content/locales/public.en.json",
-        "scripts/check-method.mjs"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-method-journey.tar.gz",
-        "local_gzip_sha256": "b18c6075d3e66ba28e2c31581fc4a21841ac3c35587f1493f807042c494d2307",
-        "local_gzip_size_bytes": 163049270,
-        "saved_tar_content_hash": "sha256:5d76a78ef2cabebfacf59f03b26713912af1702ec3762d2ecc6f9d579af357ec",
-        "saved_tar_size_bytes": 171868160,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "static_checks_passed_browser_unverified",
-        "record": "docs/method-refinement-qa.json",
-        "checks": {
-          "typescript": "passed",
-          "production_build": "passed (113 routes)",
-          "method_source_and_SSR": "passed (15 graph playback-state renders, ES/EN copy, free upload intent, kit price, symbolic graph labels, finite/calm/reduced-motion rules)",
-          "english_public_routes": "passed (1178 catalog messages)",
-          "built_artifacts": "passed (ES and EN cases below)",
-          "diff_whitespace": "passed"
-        },
-        "browser": {
-          "status": "unverified",
-          "blocker": "Shared browser startup failed: the gaas-browser node_repl sandbox cannot be disabled",
-          "screenshots": false,
-          "interaction_tests": false
-        },
-        "live_verification": "Native succeeded publication receipt verifies deployment. No live browser interaction suite was run."
-      }
-    },
-    "latest_verified_ui_release_note": "Version 32 deployed UI source is 361b4149589a364293e04a894f7d683641e5fea7. A later documentation-only commit records its receipt and QA limitation; it does not change the deployed UI.",
+    "latest_verified_ui_release_note": "The deployed UI source is the v33 commit above. A subsequent documentation-only commit updates AGENTS.md and this handoff; do not confuse its newer Git HEAD with an additional UI deployment.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "Documentation-only commit after deployed source 361b4149589a364293e04a894f7d683641e5fea7",
+      "relation": "Documentation-only followup to deployed source d8ceac544d62510ff47c0dc7e35e11879da05003",
       "files": [
         "AGENTS.md",
-        "docs/SESSION_HANDOFF.json",
-        "docs/method-refinement-qa.json"
+        "docs/SESSION_HANDOFF.json"
       ],
       "lookup_command": "git log -1 --format=%H -- docs/SESSION_HANDOFF.json",
       "ui_redeployment_required": false
@@ -189,7 +191,17 @@
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
       "behavior": "Explain the prevention value of interpreting past lab reports; preserve free previous-lab interpretation as the primary hero entry."
-    }
+    },
+    "release_history": [
+      {
+        "version_number": 31,
+        "source_commit": "f337732427a5db6d43cc29c5ef4f83c1b098368b",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_88eac84af3b08191b4cba015db95a897",
+        "deployment_id": "appgdep_6af48140b49c8191a77c3163337005f5",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site"
+      }
+    ]
   },
   "standing_user_direction": {
     "objective": "Refine the actual current landing, one section at a time, so its message is useful, compelling and logically sequenced for both audiences.",
@@ -292,6 +304,46 @@
       "lib/kit-meaning-arrival.ts"
     ],
     "results": "The existing results mockup now comes before the signal/editorial passages. Preserve its explanation-depth controls, fictional Alex case, consistent evidence and keyboard behavior.",
+    "trend_history_refinement": {
+      "source_commit": "d8ceac544d62510ff47c0dc7e35e11879da05003",
+      "section": "por-que-eva",
+      "requested_changes": [
+        "Match the actual earlier Alex dashboard instrument, not a new lookalike.",
+        "Change the interpretation and next question when switching between one reading and the full history."
+      ],
+      "shared_visual_contract": "The instrument reuses guided-instrument and bio-glass. Its fixed latest value uses guided-value and the same white coarse-dot DotNumber readout. The external pearl controls reuse bio-views above the glass. Preserve the established radius, forest glass, shared materials and readable type rather than re-creating a parallel dashboard style.",
+      "controls": {
+        "ids": [
+          "latest",
+          "history"
+        ],
+        "english": [
+          "One reading",
+          "Show history"
+        ],
+        "spanish": [
+          "Una lectura",
+          "Ver historial"
+        ],
+        "behavior": "The selected mode changes the visible chart evidence, interpretation label, explanatory paragraph and next question together. It does not change the measured value, latest-point position, scale, units, draw-day notes or fictional case."
+      },
+      "fixed_layout": "Both interpretation blocks share one reserved grid area. Toggling does not move the instrument, latest readout or following content. Prior points, trace and their reading labels reveal or hide while the latest 2.1 mg/L reading stays fixed.",
+      "accessibility": "Only the selected prose block is exposed; inactive prose is aria-hidden. Manual mode changes announce the selected interpretation and question through a polite status region. The automatic history entrance does not make that manual announcement. Keep the existing keyboard controls and reduced-motion complete view.",
+      "source_files": [
+        "components/story/TrendStorySection.tsx",
+        "components/story/trend-story-section.css",
+        "lib/site-content/trend-story-copy.ts"
+      ],
+      "copy_structure": "Mode-specific copy lives under interpretations.latest and interpretations.history, each with label, explanation and question. Do not restore a single unchanging interpretation beneath both modes.",
+      "qa_scope": {
+        "report": "/workspace/eva-in-place-qa/trend-story-report.json",
+        "passed": true,
+        "local_cases": 7,
+        "errors": [],
+        "coverage": "Desktop and phone, English and Spanish, reduced motion, shared glass/readout styling, both interpretations, fixed geometry, manual and automatic behavior, reverse/reentry and section navigation.",
+        "method_limitation_preserved": "These focused Trendlines browser checks do not retroactively verify version 32 MethodJourney. Its browser startup failure and unverified interaction/layout status remain recorded in docs/method-refinement-qa.json."
+      }
+    },
     "explanation_depth_contract": {
       "source": "lib/site-content/result-explanation-copy.ts",
       "internal_ids": [
@@ -343,6 +395,13 @@
       "preserve": "Keep repeat confirmation adjacent to the prevention interpretation, source links visible, and the single-reading limitation intact. Do not restore the former blanket 0–1 EVA-optimal interpretation in this proof chapter."
     },
     "history": "A change in results does not by itself establish its cause, persistence or the right treatment. Compare compatible units, tests and context.",
+    "trend_mode_interpretations": {
+      "source": "lib/site-content/trend-story-copy.ts",
+      "one_reading": "Explain that hs-CRP can signal inflammation but does not identify its cause; the reported workout may influence the value. With only one reading, do not claim a demonstrated change from the person's prior level. The next question is how it compares with earlier readings.",
+      "show_history": "Explain that Alex's latest value is higher than the three earlier values. This demonstrates a rise in the fictional sequence, not its cause or persistence. The next question is whether the rise is temporary or persists.",
+      "unchanged_evidence": "Both modes keep the same latest 2.1 mg/L value, canonical 0.8/0.9/0.8/2.1 history, self-reported hard workout in the previous 24 hours, no recent illness reported, fictional disclosure and cause limitation.",
+      "clinical_and_qa_distinction": "The interpretation changes because the visible temporal evidence changes, not because the lab value, lab range or clinical finding has changed. Passing the seven local UI cases verifies the implemented copy and behavior; it does not establish a real diagnosis, workout causation, persistent elevation or customer health outcome."
+    },
     "current_alex_case": {
       "fictional": true,
       "marker": "hs-CRP",
@@ -425,7 +484,7 @@
       "component": "TrendStorySection replacing HomeUnderstanding",
       "id": "por-que-eva",
       "purpose": "One reading versus the same reading with Alex's prior history",
-      "status": "Published in version 31; preserve."
+      "status": "Published in version 33 with shared actual dashboard styling and mode-specific interpretations; preserve."
     },
     {
       "component": "MethodJourney",
@@ -467,7 +526,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md and this handoff, then inspect git status, actual source, hosting manifest and native Site state.",
-    "The deployed baseline is version 32, source 361b4149589a364293e04a894f7d683641e5fea7. A following documentation commit alone does not require republishing.",
+    "The deployed baseline is version 33, source d8ceac544d62510ff47c0dc7e35e11879da05003. A following documentation-only commit does not require republishing.",
     "Preserve uncommitted work. Use the Site source repository, not historical GitHub.",
     "When browser access works, first verify #el-metodo at desktop and 320/375/390px, all four steps, tab keys, paging heading focus, replay, OS reduced motion and footer calm. Do not present static checks as browser QA.",
     "Continue content refinement at #volver-a-la-vida unless the user steers elsewhere. Preserve the accepted #tu-evolucion chapter, then continue lifestyle/founder/offer/footer and assess the full landing journey.",
@@ -532,7 +591,7 @@
     "publication_archive_example": "tar -czf /workspace/eva-publication/eva-trend-story.tar.gz .openai/hosting.json dist/client (use a fresh correctly named archive for future changes; immutable until saving succeeds).",
     "orchestration": "Use direct exec_command calls inside functions.exec. If the outer call yields a cell ID, collect it until it returns a unified session_id, then poll that command with write_stdin. Avoid yielding before initiating the command or leaving unawaited tool promises.",
     "dependency_location": "/workspace/eva-playback-review/node_modules",
-    "source_open_helper_note": "Old /workspace/eva-source-refresh.mjs was absent in this environment. Source was recovered using a hidden-stdin credential wrapper and ordinary authenticated Git; no credentials persisted. Tracked scripts/sync-site-source.mjs was used for publication push.",
+    "source_open_helper_note": "The clean-checkout refresh helper now fetches enough history (--deepen 50) before fast-forwarding. A depth-one fetch of a newer remote commit can hide ancestry and report unrelated histories; deepen before merging, never reset or allow unrelated histories to force it.",
     "method_focused_check": "node scripts/check-method.mjs",
     "method_qa_record": "docs/method-refinement-qa.json",
     "browser_environment_limit": "mcp__cua_repl.js first browser call failed: the gaas-browser node_repl sandbox cannot be disabled. No preview/test server was started and no alternative browser path was used. Actual browser checks are unverified."
@@ -564,5 +623,5 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Version 32 is published. Verify #el-metodo browser behavior when browser access is restored, then continue at #volver-a-la-vida. Routine edits, checks, commits, pushes and review-site publication remain authorized."
+  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json first. Version 33 is published. Preserve accepted dashboard styling and the two evidence-specific interpretations. Continue at #volver-a-la-vida, retaining the separate MethodJourney browser QA follow-up. Routine edits, relevant checks, commits, pushes and review-Site publication remain authorized."
 }

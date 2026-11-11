@@ -1,6 +1,6 @@
 # EVA landing refinement
 
-Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 32 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#volver-a-la-vida`. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
+Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 33 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#volver-a-la-vida`. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
 
 ## Project identity
 
@@ -38,6 +38,8 @@ Preserve the latest scroll-driven kit stages and 500 ms full-span dot-to-text re
 Preserve the earlier placement of the existing results mockup, its explanation-depth controls and fictional Alex case. The three displayed levels are Beginner, Intermediate and Advanced (internal IDs: simple, balanced, advanced). Alex's fictional hs-CRP history is 0.8, 0.9, 0.8, 2.1 mg/L, with self-reported hard exercise within 24 hours and no recent illness reported. These facts do not change with reading level. The expanded sample dashboard has a separate hs-CRP history of 2.8, 2.5, 2.7, 2.1; do not merge the datasets.
 
 The range-proof chapter uses the same 2.1 mg/L result against an illustrative laboratory reference below 5 mg/L and a prevention threshold of at least 2 mg/L on repeat testing. This is not a universal optimal interval or a diagnosis. Preserve the adjacent repeat-confirmation condition and sources in `docs/range-interpretation-evidence.json`.
+
+Preserve both accepted Trendlines refinements: reuse the actual earlier Alex glass through `guided-instrument`, `bio-glass` and `guided-value`, with the white dotted readout and external pearl `bio-views` controls; and change the interpretation plus next question between One reading and Show history. Keep the latest value, history, notes and layout fixed. Only manual changes make the polite interpretation announcement. The focused Trendlines browser checks passed seven local cases; they do not resolve the separate version 32 method chapter's unverified browser QA.
 
 Keep signal, health-history and suggested-review copy consistent across English, Spanish, animated, static and reduced-motion forms.
 
