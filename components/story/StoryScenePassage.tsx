@@ -7,7 +7,7 @@ import {createStoryScrollDriver} from '@/lib/story-scroll-driver';
 import {KIT_SCENE_WINDOW, LIFE_SCENE_WINDOW, STORY_SCROLL_HEIGHT_SVH, storyFrameAtProgress, storyProgressAtFrame} from '@/lib/story-scroll-timing';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
 import {KIT_SCROLL_INPUT_END, KIT_SCROLL_HEIGHT_SVH} from '@/lib/kit-scroll-motion';
-import {createKitRevealPlayback, type KitRevealInput} from '@/lib/kit-reveal-playback';
+import {createKitRevealPlayback, KIT_REVEAL_DURATION_MS, type KitRevealInput} from '@/lib/kit-reveal-playback';
 import {EvaFilm, DURATION} from './EvaFilm';
 import {KitMarkerIndex} from './KitMarkerIndex';
 import './story-scene-passage.css';
@@ -39,7 +39,9 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
       const values = {
         kitScrollClock: state.rawClock.toFixed(3), kitPresentationClock: state.presentationClock.toFixed(3),
         kitRevealState: state.phase, kitRevealPausedFrom: state.pausedFrom,
-        kitReadMs: state.readMs.toFixed(1), kitRevealMs: state.revealMs.toFixed(1),
+        kitTransitionProgress: state.transitionProgress.toFixed(4), kitTransitionTarget: String(state.transitionTarget),
+        kitTransitionDirection: state.transitionDirection, kitTransitionMs: state.transitionMs.toFixed(1),
+        kitTransitionDurationMs: String(KIT_REVEAL_DURATION_MS), kitTransitionInput: state.inputSource,
         kitRevealActive: String(state.active),
       };
       for (const [key, value] of Object.entries(values)) if (element.dataset[key] !== value) element.dataset[key] = value;
@@ -55,8 +57,8 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
     };
     playbackFrame.current = requestAnimationFrame(tick);
   }, [playback]);
-  const syncPlayback = useCallback((input: Partial<KitRevealInput>, allowReset = true) => {
-    playback?.update(input, performance.now(), allowReset);
+  const syncPlayback = useCallback((input: Partial<KitRevealInput>, scrollEvent = true) => {
+    playback?.update(input, performance.now(), scrollEvent);
     wakePlayback();
   }, [playback, wakePlayback]);
 
@@ -138,7 +140,7 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
   const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><h3 className="kit-static-index-title">{copy.stageHeadings[1].join(' ')}</h3><p className="kit-summary-intro">{copy.intro}</p><p className="kit-static-clarity">{copy.stageHeadings[2].join(' ')}</p><KitMarkerIndex copy={copy} showTitle={false}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
   if (staticLayout) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} data-kit-layout={kind === 'kit' ? calm ? 'reduced' : 'flow' : undefined} data-kit-reveal-state={kind === 'kit' ? 'complete' : undefined} data-kit-reveal-active={kind === 'kit' ? 'false' : undefined} data-kit-presentation-clock={kind === 'kit' ? 300 : undefined} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
 
-  return <section id={id} className={'scroll-journey story-scene-passage ' + kind} data-kit-layout={kind === 'kit' ? 'animated' : undefined} data-kit-scroll-clock={kind === 'kit' ? '0' : undefined} data-kit-presentation-clock={kind === 'kit' ? '0' : undefined} data-kit-reveal-state={kind === 'kit' ? 'idle' : undefined} data-kit-read-ms={kind === 'kit' ? '0' : undefined} data-kit-reveal-ms={kind === 'kit' ? '0' : undefined} data-kit-reveal-active={kind === 'kit' ? 'false' : undefined} style={{height: `${kind === 'kit' ? KIT_SCROLL_HEIGHT_SVH : 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
+  return <section id={id} className={'scroll-journey story-scene-passage ' + kind} data-kit-layout={kind === 'kit' ? 'animated' : undefined} data-kit-scroll-clock={kind === 'kit' ? '0' : undefined} data-kit-presentation-clock={kind === 'kit' ? '0' : undefined} data-kit-reveal-state={kind === 'kit' ? 'idle' : undefined} data-kit-transition-progress={kind === 'kit' ? '0' : undefined} data-kit-transition-target={kind === 'kit' ? '0' : undefined} data-kit-transition-direction={kind === 'kit' ? 'none' : undefined} data-kit-transition-ms={kind === 'kit' ? '0' : undefined} data-kit-transition-duration-ms={kind === 'kit' ? KIT_REVEAL_DURATION_MS : undefined} data-kit-transition-input={kind === 'kit' ? 'init' : undefined} data-kit-reveal-active={kind === 'kit' ? 'false' : undefined} style={{height: `${kind === 'kit' ? KIT_SCROLL_HEIGHT_SVH : 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
     <div className="stage" ref={stage}><div aria-hidden="true" className="film">{geometry && <Player component={EvaFilm} inputProps={inputProps} compositionWidth={geometry.width} compositionHeight={geometry.height} durationInFrames={DURATION} fps={30} autoPlay={false} controls={false} clickToPlay={false} spaceKeyToPlayOrPause={false} doubleClickToFullscreen={false} allowFullscreen={false} initiallyMuted style={{width: '100%', height: '100%', pointerEvents: 'none'}}/>}</div></div>
     <div className="sr-only">{narrative}</div>
   </section>;

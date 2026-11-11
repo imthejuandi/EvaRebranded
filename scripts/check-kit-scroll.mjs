@@ -22,14 +22,17 @@ close(kitScrollState(220, 390, 366).context, .5, 'Plain-language meanings reveal
 close(kitScrollState(300, 390, 366).context, 1, 'Meanings complete before the final reading hold');
 assert.deepEqual(kitScrollState(0, 390, 366).titles.map(t => t.opacity), [1, 0, 0]);
 assert.deepEqual(kitScrollState(100, 390, 366).titles.map(t => t.opacity), [0, 1, 0]);
-assert.deepEqual(kitScrollState(180, 390, 366).titles.map(t => t.opacity), [0, 0, 1]);
-for (const k of [67.5, 150]) close(kitScrollState(k, 390, 366).titles.reduce((sum, title) => sum + title.opacity, 0), 1, `Title crossfade conserves visible weight at ${k}`);
+assert.deepEqual(kitScrollState(300, 390, 366).titles.map(t => t.opacity), [0, 0, 1]);
+assert.deepEqual(kitScrollState(220, 390, 366).titles.map(t => t.opacity), [0, .5, .5]);
+assert.equal(kitScrollState(219.999, 390, 366).stage, 2);
+assert.equal(kitScrollState(220, 390, 366).stage, 3);
+for (const k of [67.5, 220]) close(kitScrollState(k, 390, 366).titles.reduce((sum, title) => sum + title.opacity, 0), 1, `Title crossfade conserves visible weight at ${k}`);
 close(kitScrollState(380, 390, 366).poseFrame, 715, 'Legacy scene still ends at original frame');
 assert.equal(kitScrollState(-100, 390, 366).clock, 0);
 assert.equal(kitScrollState(Number.NaN, 390, 366).clock, 0);
 assert.equal(kitScrollState(999, 390, 366).clock, 380);
 
-// The rendering clock retains its approved dot plateau; timed playback controls progression.
+// The rendering clock retains its approved dot plateau during the scroll-triggered handoff.
 for (const clock of [170, 175, 190, 200, 205]) close(kitScrollState(clock, 390, 366).arrival * 3.5, 1.2, `Fully dotted runner-time hold at ${clock}`);
 for (const [clock, seconds] of [[140, 0], [155, .6], [170, 1.2], [205, 1.2], [237.5, 2.175], [270, 3.15], [285, 3.325], [300, 3.5], [380, 3.5]]) close(kitScrollState(clock, 390, 366).arrival * 3.5, seconds, `Mapped runner arrival time at ${clock}`);
 assert.equal(KIT_SCROLL_BEATS.end - KIT_SCROLL_BEATS.contextEnd, 80, 'Fully resolved reading hold retains its original physical duration');
@@ -81,7 +84,7 @@ for (const width of [390, 430, 1440]) {
   }
 }
 
-// Timed mode keeps native track pacing, with JS alone owning timed titles and meanings.
+// The handoff keeps native track pacing, with JS alone owning titles and meanings.
 for (const width of [390, 1440]) {
   const overflow = width - (width <= 700 ? 24 : 48), frames = kitCompositorKeyframes(width, overflow, KIT_SCROLL_INPUT_END);
   for (let raw = 0; raw <= KIT_SCROLL_INPUT_END; raw += .125) close(sample(frames.track, raw / KIT_SCROLL_INPUT_END, frame => transformNumbers(frame)[0]), kitScrollState(raw, width, overflow).trackX, `Timed native track input at ${raw}/${width}`);
@@ -168,7 +171,7 @@ try {
   const timedCompositor = installKitScrollCompositor(root, {...geometry, timedReveal: true, meaningArrival: true});
   assert.equal(timedCompositor.owned.size, 1, 'Timed mode gives only the track to the scroll compositor');
   assert(timedCompositor.owned.has(track));
-  assert(titles.every(title => !timedCompositor.owned.has(title)), 'Titles use the same presentation clock as the automatic dot reveal');
+  assert(titles.every(title => !timedCompositor.owned.has(title)), 'Titles use the same presentation clock as the scroll-triggered dot reveal');
   timedCompositor.dispose();
   const beforeFailure = JSON.stringify(animated.map(item => item.style));
   created = []; failureAt = 5;

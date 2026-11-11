@@ -6,14 +6,14 @@ export const KIT_SCROLL_BEATS = {
   titleTwoStart: 55,
   panEnd: 80,
   namesEnd: 140,
-  titleThreeEnd: 160,
+  titleThreeEnd: 300,
   dotFormationEnd: 170,
   dotHoldEnd: 205,
   dotDevelopmentEnd: 270,
   contextEnd: 300,
   end: 380,
 } as const;
-// Scroll distance is independent of the timed presentation clock.
+// Scroll distance is independent of the half-second presentation handoff.
 export const KIT_SCROLL_INPUT_END = 240;
 const originalSpan = KIT_SCENE_WINDOW[1] - KIT_SCENE_WINDOW[0];
 const originalScrollSpan = (STORY_SCROLL_HEIGHT_SVH - 100) * (storyProgressAtFrame(KIT_SCENE_WINDOW[1]) - storyProgressAtFrame(KIT_SCENE_WINDOW[0]));
@@ -49,7 +49,7 @@ export function kitScrollState(clock: number, width: number, overflow: number) {
       {opacity: titleTwo - titleThree, y: titleTravel * (1 - titleTwo) - titleTravel * titleThree},
       {opacity: titleThree, y: titleTravel * (1 - titleThree)},
     ],
-    stage: k < 67.5 ? 1 : k < 150 ? 2 : 3,
+    stage: k < 67.5 ? 1 : k < 220 ? 2 : 3,
     phase: k < 35 ? 'count' : k < 80 ? 'pan' : k < 140 ? 'names' : k < KIT_SCROLL_BEATS.contextEnd ? 'reveal' : 'context',
   };
 }

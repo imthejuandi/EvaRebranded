@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "The faster kit transition is implemented and verified. Earlier ordered signal refinement remains approved; the next content chapter stays Your health has a story. Publication is tracked by the Sites receipt.",
+  "status": "Scroll-controlled kit stages and the half-second reveal are implemented and locally verified. There is no reading timer. Publication is tracked by the Sites receipt.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -653,7 +653,7 @@
     "order": "Tasso → full starting-kit sequence → explanation preview → results/dashboard. Chapter destinations and story-position reporting follow this order.",
     "selector": "Custom54px forest trigger with SVGchevron and selected-state lamp; floating paper/glass menu with three described options. No native select is rendered.",
     "reveal": "Actual runner arrival timing drives sampled subtitle glyph dots, growing masks, developed letter fragments and a clean native-text handoff. One display canvas, cached source/mask buffers and deterministic points; no layout or pixel sampling during scroll. Native text fallback and reduced-motion flow retain all information.",
-    "fixedEvidence": "All13 biomarker name nodes/positions remain unchanged while their descriptions form beneath them. No blood-test result or account preference is modified.",
+    "fixedEvidence": "All 13 biomarker name nodes/positions remain unchanged while their descriptions form beneath them. No blood-test result or account preference is modified.",
     "verification": {
       "browserCases": 10,
       "errors": [],
@@ -885,7 +885,7 @@
     "nextPart": "#una-perspectiva and its quarterly rhythm; do not skip to the founder or offer."
   },
   "fastKitRevealRelease": {
-    "status": "Implemented and verified locally; publication receipt determines the live version.",
+    "status": "Timer proposal superseded by the user before publication. Renderer optimizations are retained in scrollTriggeredKitRevealRelease.",
     "location": "#kit-inicial, transition from What we measure to Medical terms. Made clear.",
     "userFeedback": "Stage2 to3 took too long to start and the reveal felt laggy and too long.",
     "timing": {
@@ -937,6 +937,70 @@
         }
       ],
       "measurementScope": "Observed in the test browser; no successful pre-change baseline was available."
+    },
+    "publication": "Pending Sites receipt."
+  },
+  "scrollTriggeredKitRevealRelease": {
+    "status": "Implemented and verified locally; publication receipt determines live state.",
+    "location": "#kit-inicial, stage2 to3",
+    "direction": "The user replaced timed autoplay with scroll-controlled stages and a half-second scroll-triggered reveal.",
+    "behavior": {
+      "names": "Stage2 remains unchanged while the reader pauses.",
+      "forward": "Actual scrolling across local input140 targets the complete explanations.",
+      "backward": "Scrolling below140 reverses from the current visual pose.",
+      "fullTransitionMs": 500,
+      "interruptedMotion": "Continue from the current progress; duration follows remaining distance.",
+      "heading": "Title transition shares the full reveal interval.",
+      "restoration": "Deep restored positions show the matching stage; geometry updates do not retarget an in-flight reveal."
+    },
+    "preserved": [
+      "Optimized batched dot renderer and phone DPR cap",
+      "All 13 biomarker names and positions",
+      "Count and horizontal pan pacing",
+      "Complete reduced-motion and flow content",
+      "Other approved page sections"
+    ],
+    "verification": {
+      "status": "Passed",
+      "browserCases": 4,
+      "errors": [],
+      "checks": [
+        "Indefinite names hold without autoplay",
+        "Actual scroll across 140 triggers forward and reverse 500ms full-span motion",
+        "Interrupted legs preserve current progress and proportional duration",
+        "Title blend and step counter match the same reveal",
+        "Fixed 13 names, cache reuse and no per-frame React rerenders",
+        "DPR2 phone with temporary canvas capped at 1.5",
+        "Geometry-only continuity and initial deep restoration",
+        "Reduced motion with complete content",
+        "TypeScript, production build, controller lifecycle checks, 9,123 painter/compositor samples and story-section order"
+      ],
+      "measurements": [
+        {
+          "width": 1366,
+          "locale": "en",
+          "forwardMs": 542.4,
+          "reverseMs": 531,
+          "rafP95Ms": 16.8,
+          "paintP95Ms": 5.5
+        },
+        {
+          "width": 390,
+          "locale": "en",
+          "forwardMs": 544.2,
+          "reverseMs": 548.6,
+          "rafP95Ms": 16.7,
+          "paintP95Ms": 5.4
+        },
+        {
+          "width": 375,
+          "locale": "es",
+          "forwardMs": 534.1,
+          "reverseMs": 551.6,
+          "rafP95Ms": 16.7,
+          "paintP95Ms": 3.7
+        }
+      ]
     },
     "publication": "Pending Sites receipt."
   }
