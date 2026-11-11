@@ -1178,5 +1178,20 @@
     "rendering": "Animated, screen-reader narrative and calm layout consume one locale copy source. Supporting sentences wrap naturally.",
     "verification": "TypeScript, production build, English audit, story-section timing and generated ES/EN narrative/order passed. Independent source review completed. Browser startup failed with the existing sandbox error; actual layout and playback remain unverified.",
     "next_section": "#lo-que-te-mueve; preserve the approved #tu-evolucion chapter before it."
+  },
+  "lifestyleRefinement": {
+    "anchor": "#lo-que-te-mueve",
+    "status": "Implemented; native release receipt determines publication.",
+    "purpose": "Develop the emotional reason for care through ordinary movement, conversation and shared time, after the brief return-to-life transition.",
+    "copy_source": "lib/site-content/lifestyle-copy.ts",
+    "preserved": [
+      "Existing three-line title and italic hierarchy",
+      "Coastal SolarMotion scene and captions",
+      "Pause/resume/replay and calm handling",
+      "Two-column desktop and stacked phone layout",
+      "Approved biological-age chapter before this section"
+    ],
+    "copy_direction": "Concrete everyday examples, complete localized paragraphs with natural wrapping, no claims that testing produces these experiences or health outcomes.",
+    "next_section": "#nuestra-historia — founder story"
   }
 }
