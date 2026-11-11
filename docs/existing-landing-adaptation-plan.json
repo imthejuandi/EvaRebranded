@@ -1,6 +1,6 @@
 {
   "title": "Adapt the existing EVA landing page in place",
-  "status": "Automatic kit reveal and the signal chapter refined in visible page order. Eight full responsive cases and eight targeted final signal cases passed; publication is tracked by the Sites receipt.",
+  "status": "The faster kit transition is implemented and verified. Earlier ordered signal refinement remains approved; the next content chapter stays Your health has a story. Publication is tracked by the Sites receipt.",
   "governingDirection": "Evolve the existing landing, part by part. Preserve its runner, typography, photographs, Tasso film, dashboard/results mockup, halftone treatment, scroll choreography, and lifestyle imagery. Do not create another replacement landing, new audience tabs, new assets, or a new visual system.",
   "confirmedOffer": {
     "kit": "13 biomarkers",
@@ -838,7 +838,8 @@
       "readingMilliseconds": 5000,
       "revealMilliseconds": 4800,
       "resetBeforeInputClock": 72,
-      "lifecycle": "Reading and reveal elapsed time count only while the centered index and document are visible. Resume on return, reset when deliberately scrolling back before the index, and preserve timing through geometry rebuilds and queued unchanged scroll events. Native compositor owns only the track; heading and glyph reveal use one presentation clock."
+      "lifecycle": "Reading and reveal elapsed time count only while the centered index and document are visible. Resume on return, reset when deliberately scrolling back before the index, and preserve timing through geometry rebuilds and queued unchanged scroll events. Native compositor owns only the track; heading and glyph reveal use one presentation clock.",
+      "timingSupersededBy": "fastKitRevealRelease"
     },
     "signal": {
       "location": "#una-senal",
@@ -882,5 +883,61 @@
       "publication": "Pending Sites deployment receipt"
     },
     "nextPart": "#una-perspectiva and its quarterly rhythm; do not skip to the founder or offer."
+  },
+  "fastKitRevealRelease": {
+    "status": "Implemented and verified locally; publication receipt determines the live version.",
+    "location": "#kit-inicial, transition from What we measure to Medical terms. Made clear.",
+    "userFeedback": "Stage2 to3 took too long to start and the reveal felt laggy and too long.",
+    "timing": {
+      "previousReadingMs": 5000,
+      "readingMs": 1200,
+      "previousRevealMs": 4800,
+      "revealMs": 1200,
+      "totalVisibleMs": 2400
+    },
+    "rendering": "Precompute invariant per-dot math and share development values. Use at most 63 dot fills plus one mask fill per frame, preserving continuous progress, dot positions and radii; opacity is grouped into 64 levels with maximum error below 0.8%. Cap the temporary phone canvas at DPR 1.5; final native text stays at full display resolution.",
+    "scope": "Only kit transition timing and rendering. All 13 names, titles, section order, signal chapter and other approved content are retained.",
+    "verification": {
+      "status": "Passed",
+      "controller": "Updated autonomous timing, pause/resume, reset, layout persistence and replay contracts passed.",
+      "checks": [
+        "TypeScript",
+        "Production build",
+        "Four browser cases: EN1366×650, EN390×780 at DPR2, ES375×812, EN390×844 reduced motion",
+        "Fixed 13 marker-name DOM nodes and positions; same headings and dot phases",
+        "No per-frame React rerenders or mask-cache rebuilds",
+        "Paint batches bounded at 63 dot fills + 1 mask; actual phone DPR 1.5 cap",
+        "Pause and reset/replay; complete reduced-motion content"
+      ],
+      "errors": [],
+      "measurements": [
+        {
+          "width": 1366,
+          "locale": "en",
+          "completedMs": 2435.3,
+          "revealRafP95Ms": 16.8,
+          "paintP95Ms": 5,
+          "maxPaintMs": 6.3
+        },
+        {
+          "width": 390,
+          "locale": "en",
+          "completedMs": 2439.2,
+          "revealRafP95Ms": 16.7,
+          "paintP95Ms": 7.1,
+          "maxPaintMs": 10
+        },
+        {
+          "width": 375,
+          "locale": "es",
+          "completedMs": 2441.6,
+          "revealRafP95Ms": 16.7,
+          "paintP95Ms": 3.5,
+          "maxPaintMs": 4.2
+        }
+      ],
+      "measurementScope": "Observed in the test browser; no successful pre-change baseline was available."
+    },
+    "publication": "Pending Sites receipt."
   }
 }

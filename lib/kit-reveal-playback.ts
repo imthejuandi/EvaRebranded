@@ -1,7 +1,7 @@
 import {KIT_SCROLL_BEATS, KIT_SCROLL_INPUT_END} from './kit-scroll-motion.ts';
 
-export const KIT_REVEAL_READING_MS = 5000;
-export const KIT_REVEAL_DURATION_MS = 4800;
+export const KIT_REVEAL_READING_MS = 1200;
+export const KIT_REVEAL_DURATION_MS = 1200;
 export const KIT_REVEAL_RESET_CLOCK = 72;
 export type KitRevealPhase = 'idle' | 'reading' | 'revealing' | 'complete' | 'paused';
 export type KitRevealInput = {rawClock: number; stageVisible: boolean; documentVisible: boolean; enabled: boolean};
