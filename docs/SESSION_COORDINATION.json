@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 36,
-    "deployed_ui_commit": "c842b5c052b3d392265a82d1f10ab091355a4219",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9de5830ee4948191b7f999a79035c1bf",
-    "deployment_id": "appgdep_6af4cab08cf08191a2aea68b2d4f7b2c",
+    "live_version": 37,
+    "deployed_ui_commit": "b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77798631b5d48191898d67c2d6ea9d52",
+    "deployment_id": "appgdep_6af4ce75255c81919a1b1a5912eb46d7",
     "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=36#por-que-eva"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=37#nuestra-historia"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -62,32 +62,27 @@
       "origin": "Primary continuation chat, version 36, explicitly approved by user",
       "status": "Published: moved age/score before method, kept life passages adjacent",
       "qa": "EN/ES generated anchor order and visible-copy parity against version 35 passed; TypeScript/build/English/story-section checks passed. Browser unverified."
+    },
+    {
+      "section": "Founder, closing offer, footer and full-page content coherence",
+      "source_commit": "b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
+      "origin": "Primary continuation chat, version 37",
+      "status": "All remaining planned chapter content completed and published",
+      "qa": "TypeScript/build/English/method/story checks, EN/ES generated artifacts and founder/offer/footer SSR/pure-flow policy passed. Browser unverified. See docs/closing-journey-qa.json."
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Finishing founder, free-first closing offer and footer; complete landing narrative/content review. Preserve version36order and all accepted media/motion.",
-      "next_section": "#nuestra-historia",
-      "pending_verification": "Method, return-to-life and lifestyle browser checks remain pending the recorded shared browser startup blocker.",
-      "section": "#nuestra-historia → #empezar → footer",
-      "files": [
-        "components/story/FounderStory.tsx",
-        "components/story/HealthEditorial.tsx",
-        "components/story/BusinessOffer.tsx",
-        "components/story/BusinessFooter.tsx",
-        "lib/site-content/closing-copy.ts",
-        "app/landing-closing.css",
-        "components/site/SiteDocument.tsx",
-        "lib/site-content/health-story-copy.ts",
-        "lib/site-content/biological-age-copy.ts",
-        "components/story/MethodJourney.tsx",
-        "lib/site-content/locales/public.en.json"
-      ]
+      "status": "Version 37 published; all planned content and whole-page narrative review complete. No app files reserved.",
+      "next_section": null,
+      "pending_verification": "Complete actual desktop/phone layout, focus, media and interactive-flow QA after shared browser startup recovers.",
+      "section": null,
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
-  "next_content_section": "#nuestra-historia",
+  "next_content_section": null,
   "preserve": [
     "The v32 MethodJourney improvements",
     "The v33 shared dashboard styling and per-view interpretation",
@@ -95,7 +90,8 @@
     "Current runner, Tasso footage, 500ms kit reveal, confirmed13-marker offer and free interpretation entry",
     "The version 34 return-to-life shared EN/ES narrative and accepted original image/motion",
     "The version 35 concrete lifestyle narrative and accepted coastal media/title/controls",
-    "Version 36 user-approved order: Trendlines → age/score → method → return-to-life → lifestyle → founder"
+    "Version 36 user-approved order: Trendlines → age/score → method → return-to-life → lifestyle → founder",
+    "Version 37 founder quote verbatim, free-first closing, optional 13-marker €99 + VAT kit, accessible footer and unnumbered editorial kickers"
   ],
   "coordination_workflow": [
     "Read AGENTS.md, docs/SESSION_HANDOFF.json and this note after refreshing current main; preserve dirty work before attempting a refresh.",

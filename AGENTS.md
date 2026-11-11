@@ -1,6 +1,6 @@
 # EVA landing refinement
 
-Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 36 is published. Check the receipt against `git status`, current native Site state and actual source. The next content section is `#nuestra-historia`; preserve all accepted earlier chapters. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
+Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json) before changing this project. It records the deployed UI receipt, pending work, confirmed offer, accepted design and next section. Version 37 is published. Check the receipt against `git status`, current native Site state and actual source. All planned landing content chapters and the whole-page narrative/content review are complete. Follow user feedback or complete the pending browser QA when access recovers; preserve all accepted chapters. Browser QA for the refined `#el-metodo` remains incomplete because shared browser startup failed; see `docs/method-refinement-qa.json`. The following handoff commit changes documentation only.
 
 ## Cross-session coordination
 
@@ -49,7 +49,7 @@ Keep signal, health-history and suggested-review copy consistent across English,
 
 Preserve the user-approved version 36 narrative order in `HealthEditorial`: Trendlines → biological age/EVA score → MethodJourney → return-to-life → lifestyle → founder. The age component moved before MethodJourney; its approved content and visuals remain unchanged.
 
-The handoff identifies the current return-to-life release and next section. Its animated, screen-reader and calm forms share `lib/site-content/life-passage-copy.ts`. The lifestyle narrative uses `lib/site-content/lifestyle-copy.ts` in both normal and calm modes. Verify the method and life passages in the browser when access is restored, then continue at `#nuestra-historia` unless the user steers elsewhere. Do not restart discovery or redo approved earlier sections.
+The planned section-by-section content refinement is complete in version 37. The closing narrative lives in `lib/site-content/closing-copy.ts`: preserve the exact founder quotation and attribution, free previous-report interpretation first, optional 13-marker €99 + VAT kit second, separate future-panel details and explicit Spanish preview metadata. Editorial kickers are unnumbered; real process steps/readings/timeline months remain. Life/lifestyle copies remain shared across normal/calm forms. Finish actual browser layout/focus/playback/flow QA when the recorded environment blocker is resolved, or follow specific user feedback. Do not restart completed chapters.
 
 ## Checks and publication
 

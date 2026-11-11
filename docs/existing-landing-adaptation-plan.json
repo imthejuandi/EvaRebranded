@@ -785,7 +785,7 @@
   },
   "inOrderLandingReview": {
     "direction": "Follow the visible page order. A previous implementation-complete label is not user approval of its design or copy.",
-    "current": "#nuestra-historia — founder story",
+    "current": "Planned chapter/content review complete through footer; follow user feedback and finish browser QA when available.",
     "queue": [
       {
         "anchor": "#una-senal",
@@ -830,12 +830,17 @@
       {
         "anchor": "#nuestra-historia",
         "section": "Founder story",
-        "status": "Next ordered refinement"
+        "status": "Completed and published in version 37; static/SSR/pure-policy checks passed, browser QA pending."
       },
       {
         "anchor": "#empezar",
         "section": "Offer",
-        "status": "Pending ordered refinement"
+        "status": "Completed and published in version 37; static/SSR/pure-policy checks passed, browser QA pending."
+      },
+      {
+        "anchor": "#site-footer",
+        "section": "Footer",
+        "status": "Completed and published in version 37; accessible names, state markup and destinations verified; actual browser interaction pending."
       }
     ],
     "priorState": "Version 26 changed the kit reveal and age chapter. The intervening chapters had earlier copy/offer edits but were not newly refined or approved in that release."
@@ -1222,11 +1227,11 @@
       "#nuestra-historia"
     ],
     "scope": "Move the existing BiologicalAgeSection before MethodJourney in HealthEditorial. Preserve approved copy, visuals, qualifications, interactions and anchors.",
-    "numbering": "Decorative editorial prefixes removed in the closing/full-page refinement; meaningful process steps, reading labels and timeline months preserved.",
+    "numbering": "Decorative editorial prefixes removed in version 37; meaningful steps/readings/months retained.",
     "next_section": "#nuestra-historia"
   },
   "closingAndWholeLandingRefinement": {
-    "status": "Implemented and static/SSR verified; native receipt determines publication.",
+    "status": "Completed and published in version 37; native succeeded receipt in SESSION_HANDOFF.json. Browser QA pending environment recovery.",
     "scope": [
       "#nuestra-historia",
       "#empezar",
@@ -1234,20 +1239,26 @@
       "whole-landing narrative and decorative kicker consistency"
     ],
     "founder": "Preserved attributed quote, emphasis, name and role verbatim; added section heading association and dedicated shared copy.",
-    "offer": "Free previous-report interpretation first in DOM and visual hierarchy through the existing free-account/upload intent. Optional13-marker€99+VAT kit second with its existing internal signup intent. Other-panel scope and price are separate.",
+    "offer": "Free previous-report interpretation first in DOM and visual hierarchy through the existing free-account/upload intent. Optional 13-marker €99 + VAT kit second with its existing internal signup intent. Other-panel scope and price are separate.",
     "footer": "Localized public/support/legal/language links retained; private Spanish app preview labelled and hrefLang corrected; design/archive links grouped;44px targets/focus declared; exposed motion switch has explicit localized accessible name.",
     "numbering": "Removed only decorative ordinal prefixes from health/age/method/founder/offer kickers; process steps, readings, timeline months and biomarker counts remain intact.",
-    "narrative_conclusion": "Approved version36order remains coherent. Earlier clinical/commercial qualifications and all accepted media/motion are preserved.",
+    "narrative_conclusion": "Approved version 36order remains coherent. Earlier clinical/commercial qualifications and all accepted media/motion are preserved.",
     "verification": [
       "TypeScript",
-      "Production build113routes",
-      "English public-route audit1179messages",
+      "Production build 113 routes",
+      "English public-route audit 1179 messages",
       "Existing method source/SSR and story-section timing checks",
-      "EN/ES generated HTML and founder quote comparison against version36",
+      "EN/ES generated HTML and founder quote comparison against version 36",
       "EN/ES founder/offer/footer SSR with both calm states",
       "Pure account intent policy resolves free route to upload",
       "Whole-landing links, anchors, order and clinical/offer consistency source audit"
     ],
     "browser_limit": "Shared browser startup sandbox error unresolved. Static/SSR and declared CSS rules do not establish computed layout, actual focus, motion or physical-device behavior."
+  },
+  "completion": {
+    "version": 37,
+    "scope": "All planned landing sections plus whole-page narrative/content coherence",
+    "verification_record": "docs/closing-journey-qa.json",
+    "browser_verification": "Pending recorded environment blocker; no computed-layout or physical-device claim."
   }
 }

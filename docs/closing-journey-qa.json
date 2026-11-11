@@ -1,0 +1,168 @@
+{
+  "source_commit": "b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
+  "status": "static_SSR_and_pure_policy_checks_passed_browser_unverified",
+  "scope": "Founder, closing offer, footer and complete-landing narrative/content review",
+  "checks": {
+    "typescript": "passed",
+    "production_build": "passed (113 routes)",
+    "english_public_routes": "passed (1179 catalog messages, 7 public routes)",
+    "existing_method_contracts": "passed",
+    "existing_story_sections": "passed",
+    "whole_landing_generated_artifacts": "EN/ES order, unique anchors, preserved approved chapter text vs version 36, exact founder quote, free/kit intent, footer links/language and accessible motion switch passed",
+    "SSR_and_flow_policy": "EN/ES founder/offer/footer plus calm false/true states passed; real pure policy functions preserve free upload return intent",
+    "source_and_design_review": "Independent copy, narrative, React/accessibility and CSS reviews completed; declared 44px targets and focus styles, no computed-layout claim",
+    "diff_whitespace": "passed"
+  },
+  "generated_artifacts": {
+    "scope": "Closing chapters and whole-landing content coherence",
+    "cases": [
+      {
+        "locale": "en",
+        "whole_page_order": [
+          "kit-inicial",
+          "biomarcadores",
+          "una-senal",
+          "una-perspectiva",
+          "por-que-eva",
+          "tu-evolucion",
+          "el-metodo",
+          "volver-a-la-vida",
+          "lo-que-te-mueve",
+          "nuestra-historia",
+          "empezar",
+          "site-footer"
+        ],
+        "approved_copy_preserved": true,
+        "founder_quote_verbatim": true,
+        "free_first_intent": true,
+        "kit13_price VAT_and_existing_intent": true,
+        "footer_routes_and_language": true,
+        "named_motion_switch": true,
+        "decorative_ordinals_removed": true
+      },
+      {
+        "locale": "es",
+        "whole_page_order": [
+          "kit-inicial",
+          "biomarcadores",
+          "una-senal",
+          "una-perspectiva",
+          "por-que-eva",
+          "tu-evolucion",
+          "el-metodo",
+          "volver-a-la-vida",
+          "lo-que-te-mueve",
+          "nuestra-historia",
+          "empezar",
+          "site-footer"
+        ],
+        "approved_copy_preserved": true,
+        "founder_quote_verbatim": true,
+        "free_first_intent": true,
+        "kit13_price VAT_and_existing_intent": true,
+        "footer_routes_and_language": true,
+        "named_motion_switch": true,
+        "decorative_ordinals_removed": true
+      }
+    ],
+    "browser": {
+      "status": "unverified",
+      "blocker": "Shared browser startup remains blocked by the recorded sandbox error. No new browser run, screenshots or physical-device test."
+    }
+  },
+  "SSR_and_policy": {
+    "passed": true,
+    "scope": "Founder, offer and footer SSR and pure flow policy",
+    "baseline": "HEAD (version 36 source plus handoff)",
+    "cases": [
+      {
+        "locale": "es",
+        "founderQuoteAndAttributionExact": true,
+        "offerFreeFirst": true,
+        "freeIntentResolvesUpload": true,
+        "kitScopePriceAndIntent": true,
+        "footerLocalizedPublicAndSpanishPrivate": true,
+        "footerMotion": [
+          {
+            "calm": false,
+            "checkedMarkup": true,
+            "localizedSwitchName": true,
+            "labelInputAssociation": true
+          },
+          {
+            "calm": true,
+            "checkedMarkup": true,
+            "localizedSwitchName": true,
+            "labelInputAssociation": true
+          }
+        ]
+      },
+      {
+        "locale": "en",
+        "founderQuoteAndAttributionExact": true,
+        "offerFreeFirst": true,
+        "freeIntentResolvesUpload": true,
+        "kitScopePriceAndIntent": true,
+        "footerLocalizedPublicAndSpanishPrivate": true,
+        "footerMotion": [
+          {
+            "calm": false,
+            "checkedMarkup": true,
+            "localizedSwitchName": true,
+            "labelInputAssociation": true
+          },
+          {
+            "calm": true,
+            "checkedMarkup": true,
+            "localizedSwitchName": true,
+            "labelInputAssociation": true
+          }
+        ]
+      }
+    ],
+    "browserVerified": false,
+    "cssSource": {
+      "declaredTargetsAtLeast44px": true,
+      "declaredReadableBody": true,
+      "visibleFocusRules": true,
+      "switchHitArea44px": true,
+      "computedBrowserLayout": false
+    }
+  },
+  "browser": {
+    "status": "unverified",
+    "blocker": "Shared browser startup remains blocked by the recorded sandbox error. No new browser run, screenshots or physical-device test."
+  },
+  "whole_page_review": {
+    "approved_order": [
+      "results and history",
+      "biological age and EVA score",
+      "method and next steps",
+      "return to life",
+      "lifestyle",
+      "founder",
+      "free-first entry choice",
+      "footer"
+    ],
+    "resolved": [
+      "Closing offer now matches the hero/free-report priority",
+      "Kit13/€99+VAT is secondary with no recurring or inclusive-panel promise",
+      "Founder quote and attribution preserved verbatim",
+      "Private Spanish destination correctly identified in footer",
+      "Motion switch explicitly named for assistive technology",
+      "Legacy editorial ordinals removed without changing real process steps/readings/months"
+    ],
+    "preserved": [
+      "Approved imagery and motion",
+      "Fictional Alex readings and self-reported notes",
+      "Repeat-confirmed prevention threshold qualifications",
+      "Age/score definitions and required-data availability",
+      "Version 36 narrative order",
+      "Existing privacy, legal, language and contact destinations"
+    ],
+    "remaining": [
+      "Actual desktop/phone layout, focus, playback and full interactive flow checks require browser recovery."
+    ]
+  },
+  "scope_limit": "These checks do not verify browser geometry, actual click/focus/playback, complete form submission, real health-data processing or physical-device performance. No live data or account state was mutated."
+}

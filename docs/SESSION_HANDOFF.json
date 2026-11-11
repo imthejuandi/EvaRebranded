@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
-  "handoff_status": "COMPLETE_AFTER_SUCCEEDED_V36_PUBLICATION_WITH_BROWSER_LIMIT",
-  "immediate_instruction": "Version 36 is published with the user-approved narrative order: Trendlines, age/score, method, return-to-life, lifestyle, founder. Preserve the approved age content and all earlier refinements. Static checks verify the EN/ES anchor order and identical visible copy versus version 35. Browser verification remains blocked by the recorded environment issue. Next content section is #nuestra-historia.",
+  "handoff_status": "PLANNED_CONTENT_REFINEMENT_COMPLETE_V37_BROWSER_QA_PENDING",
+  "immediate_instruction": "Version 37 is published. All planned landing content chapters, founder, free-first closing offer and footer are refined, and the whole-page narrative/content review is complete. Preserve accepted version 36order and version 37closing. Respond to user feedback or complete outstanding desktop/phone browser QA when the shared browser startup issue is resolved. Do not restart completed chapter work or treat static/SSR checks as browser verification.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -33,52 +33,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 35,
-      "source_commit": "4d4b25556356ff929903435293ab5fa2b697e76e",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f0ce2997bd6881919894f2a995cb16aa",
-      "deployment_id": "appgdep_6af4c8aa892481918bbb7eb08942f214",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-11T19:57:42.504352+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=35#lo-que-te-mueve",
-      "behavior": "Lifestyle chapter develops everyday movement and connection through a run for pleasure, a longer walk to keep talking, and sharing a meal and stories. Complete localized paragraphs wrap naturally. Accepted title, captions, coastal scene, controls, layout and preceding biological-age chapter are preserved.",
-      "source_files": [
-        "components/story/LifestylePassage.tsx",
-        "lib/site-content/lifestyle-copy.ts",
-        "docs/existing-landing-adaptation-plan.json",
-        "docs/SESSION_COORDINATION.json"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-lifestyle.tar.gz",
-        "local_gzip_sha256": "d526c988571464af173fb6d583a83b4f65358e402e303eb39304ff25e7e84f29",
-        "local_gzip_size_bytes": 163049986,
-        "saved_tar_content_hash": "sha256:709ce84c00fe5b510ab54a1fabcbe89833a7be0ed3c0037b95704149b0e80a13",
-        "saved_tar_size_bytes": 171868160,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "static_and_SSR_checks_passed_browser_unverified",
-        "record": "docs/lifestyle-refinement-qa.json",
-        "checks": {
-          "typescript": "passed",
-          "production_build": "passed (113 routes)",
-          "english_public_routes": "passed (1178 catalog messages)",
-          "generated_html": "passed (EN/ES copy, title, paragraphs, heading association, pause target, descriptive lazy poster, age/lifestyle/founder order)",
-          "SSR_normal_calm": "passed (EN/ES identical narrative, exact accepted title/captions, poster/srcset/alt; calm omits video and pause control)",
-          "preservation": "Verified CSS, SolarMotion, GlowMotion, coastal assets, biological-age, method and dashboard files unchanged",
-          "source_review": "Independent copy and React/accessibility review completed; no new state, effect or animation clock",
-          "diff_whitespace": "passed"
-        },
-        "browser": {
-          "status": "unverified",
-          "blocker": "Shared browser startup remains blocked by the previously observed gaas-browser node_repl sandbox error; no recovery evidence or new browser run.",
-          "screenshots": false,
-          "interaction_tests": false
-        },
-        "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 36,
       "source_commit": "c842b5c052b3d392265a82d1f10ab091355a4219",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9de5830ee4948191b7f999a79035c1bf",
@@ -120,17 +74,71 @@
         "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI is version 36 commit c842b5c052b3d392265a82d1f10ab091355a4219. A following documentation-only commit records the receipt and revised narrative order.",
+    "latest_verified_ui_release": {
+      "version_number": 37,
+      "source_commit": "b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_77798631b5d48191898d67c2d6ea9d52",
+      "deployment_id": "appgdep_6af4ce75255c81919a1b1a5912eb46d7",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-11T20:22:28.232704+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=37#nuestra-historia",
+      "behavior": "Completed remaining founder/offer/footer chapters and whole-page narrative/content review. Founder quote and attribution remain verbatim in a named semantic section. Free previous-report interpretation leads the closing offer through the established free signup/upload flow; optional 13-marker €99 + VAT kit remains secondary with separate other-panel scope/pricing. Footer preserves destinations, explicitly identifies the Spanish private preview, adds declared 44px targets/focus, and names the exposed motion switch. Decorative editorial ordinal prefixes removed; real steps/readings/months unchanged. Approved version 36order and earlier content/media/motion preserved.",
+      "source_files": [
+        "components/story/FounderStory.tsx",
+        "components/story/BusinessOffer.tsx",
+        "components/story/BusinessFooter.tsx",
+        "components/story/HealthEditorial.tsx",
+        "components/story/MethodJourney.tsx",
+        "components/site/SiteDocument.tsx",
+        "app/landing-closing.css",
+        "lib/site-content/closing-copy.ts",
+        "lib/site-content/health-story-copy.ts",
+        "lib/site-content/biological-age-copy.ts",
+        "lib/site-content/locales/public.en.json",
+        "docs/SESSION_COORDINATION.json",
+        "docs/existing-landing-adaptation-plan.json"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-closing-journey.tar.gz",
+        "local_gzip_sha256": "f5d73cf397fc55ce404a3002264ea6640bb8d9047119097c98fd6770086d97af",
+        "local_gzip_size_bytes": 163052551,
+        "saved_tar_content_hash": "sha256:680396040aa3354582f9e158ad093c22e630f2d987c54d92e0dc5310b60d3767",
+        "saved_tar_size_bytes": 171878400,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "static_SSR_and_pure_policy_checks_passed_browser_unverified",
+        "record": "docs/closing-journey-qa.json",
+        "checks": {
+          "typescript": "passed",
+          "production_build": "passed (113 routes)",
+          "english_public_routes": "passed (1179 catalog messages, 7 public routes)",
+          "existing_method_contracts": "passed",
+          "existing_story_sections": "passed",
+          "whole_landing_generated_artifacts": "EN/ES order, unique anchors, preserved approved chapter text vs version 36, exact founder quote, free/kit intent, footer links/language and accessible motion switch passed",
+          "SSR_and_flow_policy": "EN/ES founder/offer/footer plus calm false/true states passed; real pure policy functions preserve free upload return intent",
+          "source_and_design_review": "Independent copy, narrative, React/accessibility and CSS reviews completed; declared 44px targets and focus styles, no computed-layout claim",
+          "diff_whitespace": "passed"
+        },
+        "browser": {
+          "status": "unverified",
+          "blocker": "Shared browser startup remains blocked by the recorded sandbox error. No new browser run, screenshots or physical-device test."
+        },
+        "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
+      }
+    },
+    "latest_verified_ui_release_note": "Deployed UI source is version 37 commit b65cb56dc9fac526db62316f8d24b49d1e7eb9f8. A following documentation-only commit records completion and QA limits; it is not another UI deployment.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "Documentation-only followup to deployed source c842b5c052b3d392265a82d1f10ab091355a4219",
+      "relation": "Documentation-only followup to deployed source b65cb56dc9fac526db62316f8d24b49d1e7eb9f8",
       "files": [
         "AGENTS.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
         "docs/existing-landing-adaptation-plan.json",
-        "docs/editorial-order-qa.json"
+        "docs/closing-journey-qa.json"
       ],
       "lookup_command": "git log -1 --format=%H -- docs/SESSION_HANDOFF.json",
       "ui_redeployment_required": false
@@ -174,6 +182,14 @@
         "source_commit": "2bbbb81e60f7385dcba3cb4c25059be91b99f0c6",
         "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_9d8cc374e70c81919b07d14564545651",
         "deployment_id": "appgdep_6af4c6c75f188191ad1bc2c19929527c",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site"
+      },
+      {
+        "version_number": 35,
+        "source_commit": "4d4b25556356ff929903435293ab5fa2b697e76e",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f0ce2997bd6881919894f2a995cb16aa",
+        "deployment_id": "appgdep_6af4c8aa892481918bbb7eb08942f214",
         "status": "succeeded",
         "url": "https://eva-content-review.jdlagop.chatgpt.site"
       }
@@ -358,8 +374,9 @@
       ],
       "reason": "Finish interpretation and summaries before practical next steps; then keep the two life passages together.",
       "preserve": "Keep the approved age/score content, qualifications and assets; do not restore the earlier method → return-to-life → age → lifestyle order.",
-      "numbering": "Legacy kicker numbering remains a whole-page consistency task; no partial renumbering was made."
-    }
+      "numbering": "Version 37 removed decorative ordinal prefixes from health, age, method, founder and offer labels. Actual process steps, readings and timeline months remain."
+    },
+    "closing_priority": "Preserve the free account/upload interpretation action first in closing DOM/visual hierarchy. Optional kit remains13markers€99+VAT using the existing internal plan=quarterly intent; that parameter is not a recurring-price claim."
   },
   "approved_clinical_and_example_boundaries": {
     "general": "Educational interpretation is not a diagnosis, a promise of prevention, a guaranteed health improvement, or a replacement for professional assessment.",
@@ -502,28 +519,31 @@
       "status": "Published in version 35; static and normal/calm SSR passed. Browser wrapping/playback unverified."
     },
     {
-      "component": "Founder story",
+      "component": "FounderStory",
       "id": "nuestra-historia",
-      "purpose": "Existing founder voice",
-      "status": "Next content section to refine."
+      "purpose": "Why EVA exists, through its preserved attributed founder quotation",
+      "status": "Completed and published in version 37; exact original EN/ES quote/attribution retained."
     },
     {
       "component": "BusinessOffer",
       "id": "empezar",
-      "purpose": "Offer and existing-report alternative"
+      "purpose": "Free previous-report interpretation primary; optional 13-marker €99 + VAT kit secondary; other-panel details separate",
+      "status": "Completed and published in version 37; generated markup and pure account-flow policy verified."
     },
     {
       "component": "BusinessFooter",
-      "purpose": "Company, support, legal and language links"
+      "purpose": "Support/public/legal/language navigation, Spanish preview disclosure and accessible calm control",
+      "id": "site-footer",
+      "status": "Completed and published in version 37; SSR states/names/routes verified; actual browser geometry/interaction pending."
     }
   ],
   "next_session_start": [
-    "Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json; inspect source and native Site state. The continuation chat has acknowledged the combined version 33 baseline; update current work status before any future concurrent edits.",
-    "The deployed baseline is version 36, source c842b5c052b3d392265a82d1f10ab091355a4219. A following documentation-only commit does not require republishing.",
-    "Preserve uncommitted work. Use the Site source repository, not historical GitHub.",
-    "When browser access works, verify pending method/life/lifestyle layouts at desktop and 320/375/390px, method focus/replay, life forward/reverse scroll, coastal pause/resume/replay, OS reduced motion and footer calm. Static/SSR checks do not establish browser behavior.",
-    "Continue at #nuestra-historia unless the user steers elsewhere, then refine offer/footer and assess the full landing journey. Preserve the approved biological-age chapter and all accepted earlier refinements.",
-    "Routine bounded edits, relevant checks, commits, source pushes and existing review-Site publication remain authorized. Do not repeat discovery or routine confirmation."
+    "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect git status and current native Site state. Preserve dirty work.",
+    "The deployed baseline is version 37, source b65cb56dc9fac526db62316f8d24b49d1e7eb9f8. A following documentation-only commit does not call for republishing.",
+    "All planned landing chapters and the whole-page narrative/content review are complete. Follow user feedback; do not automatically restart the founder, offer or earlier approved chapters.",
+    "When shared browser access works, finish desktop/320/375/390px layout, anchors, keyboard focus, free-account/upload intent, kit CTA, method replay, life/coastal playback, OS reduced motion and manual footer calm. Review actual screenshots.",
+    "Keep the version 36order and version 37free-first closing, all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful reading/process/timeline numbers.",
+    "Routine relevant checks, edits, commits, pushes and existing review-site publication remain authorized. Final production cutover, paid media, purchases and external messages remain outside this authorization."
   ],
   "engineering_workflow": {
     "runtime": "Node 24; Vinext/React static export. This new environment had no checkout/dependencies; current source was cloned from the existing Site remote and npm ci completed from the unchanged lockfile.",
@@ -616,7 +636,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA landing refinement in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 36 is published: preserve Trendlines → age/score → method → return-to-life → lifestyle → founder. Continue #nuestra-historia. Routine edits, checks, commits, pushes and existing review-site publication remain authorized.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 37 is published; planned landing content refinement is complete. Follow user feedback or complete pending browser QA when available. Preserve version 36order and version 37free-first closing. Routine review-site edits/checks/commits/pushes/publication remain authorized.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -629,7 +649,13 @@
     "date": "2026-11-11",
     "user_direction": "Pull the latest other-chat Site change into this session for a full switch.",
     "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
-    "live_version": 36,
-    "status": "Version 36 user-approved narrative reorder published. Next founder story."
+    "live_version": 37,
+    "status": "Requested remaining chapters and whole-page content review completed and published. No implementation in progress; browser QA pending environment recovery."
+  },
+  "content_refinement_completion": {
+    "published_version": 37,
+    "status": "All planned chapter/content refinement complete",
+    "full_review_record": "docs/closing-journey-qa.json",
+    "remaining": "Browser layout/focus/playback and complete interactive-flow verification remain pending under the recorded startup blocker. Follow specific user feedback rather than inventing further sections."
   }
 }
