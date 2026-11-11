@@ -18,6 +18,7 @@ import { storyMotion } from '@/lib/story-motion';
 import {TassoFilmProcess} from './TassoFilmProcess';
 import {storyProgressAtFrame} from '@/lib/story-scroll-timing';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
+import {lifePassageCopy} from '@/lib/site-content/life-passage-copy';
 import {KitMarkerIndex} from './KitMarkerIndex';
 import './story-scene-passage.css';
 export const DURATION = 981;
@@ -43,6 +44,7 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
 } = {}) {
     const __site = useSiteLanguage();
     const kit = kitInsightCopy[__site.locale];
+    const life = lifePassageCopy[__site.locale];
     const f = useCurrentFrame();
     const { width: w, height: h } = useVideoConfig();
     const environment = useRemotionEnvironment();
@@ -129,8 +131,8 @@ export function EvaFilm({ ambientRunner = true, onRunnerBlocked, language = 'es'
   </AbsoluteFill>}
   {(sceneMode === 'all' || sceneMode === 'life') && <AbsoluteFill data-layer={sceneMode === 'life' ? 'life-passage' : 'return-to-life'} style={{ background: '#0b1010', overflow: 'hidden', translate: `0 ${sceneMode === 'life' ? 0 : motion.lifeY * h}px`, visibility: sceneMode === 'life' || Math.abs(motion.lifeY) < 1 ? 'visible' : 'hidden', willChange: Math.abs(motion.lifeY) < 1 ? 'translate' : 'auto' }}>
    <Img data-motion="return-image" data-motion-preload="return" src={staticFile("art/stretch.jpg")} loading="eager" decoding="async" style={{ position: 'absolute', height: '100%', width: mobile ? '100%' : '60%', left: mobile ? '0' : '22%', objectFit: 'cover', maskImage: 'radial-gradient(ellipse,black 15%,transparent 74%)', scale: range(f, 710, 840, 1.18, 1) }}/>
-   <div data-motion="return-title" style={{ position: 'absolute', left: pad, top: mobile ? '27%' : '26%', fontSize: mobile ? w * .18 : w * .115, letterSpacing: '-.07em', lineHeight: .97, translate: `0 ${range(f, 735, 800, 60, 0)}px` }}>{__site.t("Y volver")}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{__site.t("a la vida.")}</span></div>
-   <p style={{ position: 'absolute', right: pad, bottom: mobile ? 135 : 110, fontSize: mobile ? 18 : 23, lineHeight: 1.3, maxWidth: mobile ? 230 : 310 }}>{__site.t("Cuidarte tambi\u00E9n es hacer")}<br />{__site.t("espacio para lo que disfrutas.")}</p>
+   <div data-motion="return-title" style={{ position: 'absolute', left: pad, top: mobile ? '27%' : '26%', fontSize: mobile ? w * .18 : w * .115, letterSpacing: '-.07em', lineHeight: .97, translate: `0 ${range(f, 735, 800, 60, 0)}px` }}>{life.heading[0]}<br /><span style={{ fontFamily: 'Georgia,serif', fontStyle: 'italic' }}>{life.heading[1]}</span></div>
+   <p style={{ position: 'absolute', right: pad, bottom: mobile ? 135 : 110, fontSize: mobile ? 18 : 23, lineHeight: 1.3, maxWidth: mobile ? 230 : 310 }}>{life.support.join(' ')}</p>
   </AbsoluteFill>}
  </AbsoluteFill>;
 }

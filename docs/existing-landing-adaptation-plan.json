@@ -1157,5 +1157,26 @@
     },
     "nextPart": "#el-metodo — Your next steps. At your pace.",
     "latestRefinement": "User requested the same design as the actual earlier dashboard and mode-specific interpretation. Implemented and verified; publication receipt determines the live version."
+  },
+  "lifePassageRefinement": {
+    "anchor": "#volver-a-la-vida",
+    "status": "Implemented with passing static checks; native release receipt determines published state.",
+    "purpose": "Bridge guided choice into everyday life while retaining the brief visual breathing space.",
+    "copy": {
+      "en": "Context for your next step. Space for what you enjoy.",
+      "es": "Contexto para tu próximo paso. Espacio para lo que disfrutas."
+    },
+    "shared_source": "lib/site-content/life-passage-copy.ts",
+    "preserved": [
+      "Existing title",
+      "stretch.jpg photograph and mask",
+      "Original image scale/title translation",
+      "LIFE_SCENE_WINDOW [715, 900]",
+      "Scroll driver/compositor",
+      "Approved method, dashboard and biological-age chapters"
+    ],
+    "rendering": "Animated, screen-reader narrative and calm layout consume one locale copy source. Supporting sentences wrap naturally.",
+    "verification": "TypeScript, production build, English audit, story-section timing and generated ES/EN narrative/order passed. Independent source review completed. Browser startup failed with the existing sandbox error; actual layout and playback remain unverified.",
+    "next_section": "#lo-que-te-mueve; preserve the approved #tu-evolucion chapter before it."
   }
 }

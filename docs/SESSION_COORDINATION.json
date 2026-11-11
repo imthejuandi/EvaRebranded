@@ -46,9 +46,15 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "User requested full switch into this chat. Latest shared main pulled and acknowledged. No implementation in progress or app files reserved.",
+      "status": "Refining #volver-a-la-vida: shared bilingual narrative, natural support wrapping; accepted image, timing and layout preserved.",
       "next_section": "#volver-a-la-vida",
-      "pending_verification": "Version 32 MethodJourney browser verification remains pending."
+      "pending_verification": "Version 32 MethodJourney browser verification remains pending.",
+      "section": "#volver-a-la-vida",
+      "files": [
+        "components/story/StoryScenePassage.tsx",
+        "components/story/EvaFilm.tsx",
+        "lib/site-content/life-passage-copy.ts"
+      ]
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },

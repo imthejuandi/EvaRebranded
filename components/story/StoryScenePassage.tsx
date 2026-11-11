@@ -6,6 +6,7 @@ import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {createStoryScrollDriver} from '@/lib/story-scroll-driver';
 import {KIT_SCENE_WINDOW, LIFE_SCENE_WINDOW, STORY_SCROLL_HEIGHT_SVH, storyFrameAtProgress, storyProgressAtFrame} from '@/lib/story-scroll-timing';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
+import {lifePassageCopy} from '@/lib/site-content/life-passage-copy';
 import {KIT_SCROLL_INPUT_END, KIT_SCROLL_HEIGHT_SVH} from '@/lib/kit-scroll-motion';
 import {createKitRevealPlayback, KIT_REVEAL_DURATION_MS, type KitRevealInput} from '@/lib/kit-reveal-playback';
 import {EvaFilm, DURATION} from './EvaFilm';
@@ -16,8 +17,9 @@ type Geometry = {width: number; height: number; top: number; span: number};
 
 /** The original authored scene, placed in document flow with its own scroll window. */
 export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; calm?: boolean}) {
-  const {locale, t} = useSiteLanguage();
+  const {locale} = useSiteLanguage();
   const copy = kitInsightCopy[locale];
+  const life = lifePassageCopy[locale];
   const sceneWindow = kind === 'kit' ? KIT_SCENE_WINDOW : LIFE_SCENE_WINDOW;
   const start = storyProgressAtFrame(sceneWindow[0]), end = storyProgressAtFrame(sceneWindow[1]);
   // Only this passage uses the longer kit clock; the original film/life clock stays intact.
@@ -137,7 +139,7 @@ export function StoryScenePassage({kind, calm = false}: {kind: 'kit' | 'life'; c
   }, [kind, locale, staticLayout, layoutRevision, driver, start, end, syncPlayback]);
 
   const inputProps = useMemo(() => ({sceneMode: kind === 'kit' ? 'insight' as const : 'life' as const, kitLocalClock: kind === 'kit', kitTimedReveal: kind === 'kit', onKitLayoutOverflow: kind === 'kit' ? handleKitOverflow : undefined, scrollDriver: driver, scrollWindow: sceneWindow, scrollGeometry: geometry ?? undefined, ambientRunner: false}), [kind, handleKitOverflow, driver, sceneWindow, geometry]);
-  const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><h3 className="kit-static-index-title">{copy.stageHeadings[1].join(' ')}</h3><p className="kit-summary-intro">{copy.intro}</p><p className="kit-static-clarity">{copy.stageHeadings[2].join(' ')}</p><KitMarkerIndex copy={copy} showTitle={false}/></> : <><h2 id={id + '-title'}>{t('Y volver')} <em>{t('a la vida.')}</em></h2><p>{t('Cuidarte también es hacer')} {t('espacio para lo que disfrutas.')}</p></>;
+  const narrative = kind === 'kit' ? <><p className="kit-eyebrow">{copy.eyebrow}</p><h2 id={id + '-title'}>{copy.heading[0]}<br/><em>{copy.heading[1]}</em></h2><p className="kit-summary-count"><strong>13</strong><span>{copy.countLabel.join(' ')}</span></p><h3 className="kit-static-index-title">{copy.stageHeadings[1].join(' ')}</h3><p className="kit-summary-intro">{copy.intro}</p><p className="kit-static-clarity">{copy.stageHeadings[2].join(' ')}</p><KitMarkerIndex copy={copy} showTitle={false}/></> : <><h2 id={id + '-title'}>{life.heading[0]} <em>{life.heading[1]}</em></h2><p>{life.support.join(' ')}</p></>;
   if (staticLayout) return <section id={id} className={'story-scene-summary ' + (kind === 'kit' ? 'kit-scene-summary' : 'life-scene-summary')} data-kit-layout={kind === 'kit' ? calm ? 'reduced' : 'flow' : undefined} data-kit-reveal-state={kind === 'kit' ? 'complete' : undefined} data-kit-reveal-active={kind === 'kit' ? 'false' : undefined} data-kit-presentation-clock={kind === 'kit' ? 300 : undefined} aria-labelledby={id + '-title'}>{kind === 'life' && <img src="/art/stretch.jpg" alt="" loading="lazy"/>}<div>{narrative}</div></section>;
 
   return <section id={id} className={'scroll-journey story-scene-passage ' + kind} data-kit-layout={kind === 'kit' ? 'animated' : undefined} data-kit-scroll-clock={kind === 'kit' ? '0' : undefined} data-kit-presentation-clock={kind === 'kit' ? '0' : undefined} data-kit-reveal-state={kind === 'kit' ? 'idle' : undefined} data-kit-transition-progress={kind === 'kit' ? '0' : undefined} data-kit-transition-target={kind === 'kit' ? '0' : undefined} data-kit-transition-direction={kind === 'kit' ? 'none' : undefined} data-kit-transition-ms={kind === 'kit' ? '0' : undefined} data-kit-transition-duration-ms={kind === 'kit' ? KIT_REVEAL_DURATION_MS : undefined} data-kit-transition-input={kind === 'kit' ? 'init' : undefined} data-kit-reveal-active={kind === 'kit' ? 'false' : undefined} style={{height: `${kind === 'kit' ? KIT_SCROLL_HEIGHT_SVH : 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * (end - start)}svh`}} ref={section} aria-labelledby={id + '-title'}>
