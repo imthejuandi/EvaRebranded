@@ -1,0 +1,75 @@
+{
+  "cases": [
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "defaultGeometry": {
+        "cardHeight": 427.1875,
+        "cardWidth": 343,
+        "value": {
+          "x": 178.9375,
+          "y": 30.59375,
+          "w": 139.0625,
+          "h": 52
+        },
+        "plot": {
+          "x": 25,
+          "y": 96.1875,
+          "w": 293,
+          "h": 140
+        },
+        "point": {
+          "x": 287.125,
+          "y": 141.859375,
+          "w": 9,
+          "h": 9
+        }
+      },
+      "section": {
+        "x": 0,
+        "y": 24.359375,
+        "w": 375,
+        "h": 810.625
+      },
+      "lead": {
+        "text": "Repetir análisis comparables ayuda a conocer tu nivel habitual. Como el ejercicio y las enfermedades pueden alterar los biomarcadores, leerlos junto con tu historial y contexto ayuda a seguir cambios. La frecuencia depende del marcador y de tu salud.",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "height": 168
+      },
+      "pageOverflow": false,
+      "historyGeometry": {
+        "cardHeight": 427.1875,
+        "cardWidth": 343,
+        "value": {
+          "x": 178.9375,
+          "y": 30.59375,
+          "w": 139.0625,
+          "h": 52
+        },
+        "plot": {
+          "x": 25,
+          "y": 96.1875,
+          "w": 293,
+          "h": 140
+        },
+        "point": {
+          "x": 287.125,
+          "y": 141.859375,
+          "w": 9,
+          "h": 9
+        }
+      },
+      "questionGap": 42,
+      "announcement": "Con su historial. El historial muestra una subida cuya causa y persistencia siguen sin confirmar. ¿Es temporal o persiste?",
+      "method": {
+        "href": "/es/science#science-comparison-title",
+        "height": 44
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

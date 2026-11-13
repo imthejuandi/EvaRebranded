@@ -1,0 +1,162 @@
+[
+  {
+    "section": "guided",
+    "key": null,
+    "alpha": null,
+    "selector": ".guided-prose-stack>p[data-active=true]",
+    "samples": 1810,
+    "minimum": 5.021,
+    "p5": 5.508,
+    "median": 6.255,
+    "worst": [
+      5.021358432300238,
+      313,
+      383,
+      [
+        112,
+        107,
+        129
+      ]
+    ]
+  },
+  {
+    "section": "guided",
+    "key": null,
+    "alpha": null,
+    "selector": ".guided-evidence-details>summary>span",
+    "samples": 288,
+    "minimum": 4.849,
+    "p5": 5.121,
+    "median": 5.506,
+    "worst": [
+      4.8489794713199545,
+      90,
+      472,
+      [
+        135,
+        107,
+        82
+      ]
+    ]
+  },
+  {
+    "section": "guided",
+    "key": null,
+    "alpha": null,
+    "selector": ".guided-marker h3",
+    "samples": 144,
+    "minimum": 8.847,
+    "p5": 9.551,
+    "median": 11.006,
+    "worst": [
+      8.847418554623925,
+      43,
+      198,
+      [
+        73,
+        72,
+        82
+      ]
+    ]
+  },
+  {
+    "section": "guided",
+    "key": null,
+    "alpha": null,
+    "selector": ".guided-case-label",
+    "samples": 139,
+    "minimum": 8.851,
+    "p5": 9.353,
+    "median": 10.948,
+    "worst": [
+      8.85144531519902,
+      42,
+      235,
+      [
+        74,
+        72,
+        79
+      ]
+    ]
+  },
+  {
+    "section": "trend",
+    "key": null,
+    "alpha": null,
+    "selector": ".trend-interpretation[data-active=true] h3",
+    "samples": 595,
+    "minimum": 5.054,
+    "p5": 5.303,
+    "median": 5.631,
+    "worst": [
+      5.053704954854248,
+      51,
+      701,
+      [
+        128,
+        105,
+        89
+      ]
+    ]
+  },
+  {
+    "section": "trend",
+    "key": null,
+    "alpha": null,
+    "selector": ".trend-context-details>summary>span",
+    "samples": 124,
+    "minimum": 5.004,
+    "p5": 5.161,
+    "median": 5.373,
+    "worst": [
+      5.003955826348061,
+      99,
+      748,
+      [
+        131,
+        105,
+        87
+      ]
+    ]
+  },
+  {
+    "section": "trend",
+    "key": null,
+    "alpha": null,
+    "selector": ".trend-instrument-head h3",
+    "samples": 144,
+    "minimum": 8.567,
+    "p5": 9.488,
+    "median": 10.757,
+    "worst": [
+      8.567385325680913,
+      43,
+      388,
+      [
+        74,
+        74,
+        87
+      ]
+    ]
+  },
+  {
+    "section": "trend",
+    "key": null,
+    "alpha": null,
+    "selector": ".trend-example-label",
+    "samples": 54,
+    "minimum": 7.913,
+    "p5": 8.114,
+    "median": 9.574,
+    "worst": [
+      7.912903363272055,
+      46,
+      423,
+      [
+        72,
+        68,
+        80
+      ]
+    ]
+  }
+]

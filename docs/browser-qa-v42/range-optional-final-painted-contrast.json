@@ -1,0 +1,242 @@
+[
+  {
+    "section": "range",
+    "key": "es-320",
+    "alpha": null,
+    "selector": ".range-proof-axis",
+    "samples": 51,
+    "minimum": 4.523,
+    "p5": 4.815,
+    "median": 5.753,
+    "worst": [
+      4.522565923143291,
+      286,
+      197,
+      [
+        107,
+        97,
+        118
+      ]
+    ]
+  },
+  {
+    "section": "range",
+    "key": "es-320",
+    "alpha": null,
+    "selector": ".range-proof-prevention .range-proof-reading-label>span",
+    "samples": 279,
+    "minimum": 5.63,
+    "p5": 5.959,
+    "median": 6.498,
+    "worst": [
+      5.62974155073872,
+      127,
+      349,
+      [
+        102,
+        85,
+        75
+      ]
+    ]
+  },
+  {
+    "section": "range",
+    "key": "es-320",
+    "alpha": null,
+    "selector": ".range-proof-reading[data-range-reading=lab] h4",
+    "samples": 278,
+    "minimum": 6.54,
+    "p5": 6.896,
+    "median": 7.482,
+    "worst": [
+      6.540229820504826,
+      238,
+      286,
+      [
+        97,
+        90,
+        100
+      ]
+    ]
+  },
+  {
+    "section": "range",
+    "key": "es-320",
+    "alpha": null,
+    "selector": ".range-proof-prevention h4",
+    "samples": 352,
+    "minimum": 6.836,
+    "p5": 7.608,
+    "median": 8.499,
+    "worst": [
+      6.836111294790778,
+      33,
+      405,
+      [
+        101,
+        87,
+        75
+      ]
+    ]
+  },
+  {
+    "section": "optional-simple",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .result-prose-stack>p[data-active=true]",
+    "samples": 1408,
+    "minimum": 5.322,
+    "p5": 5.673,
+    "median": 6.397,
+    "worst": [
+      5.322481352341656,
+      47,
+      236,
+      [
+        124,
+        101,
+        93
+      ]
+    ]
+  },
+  {
+    "section": "optional-simple",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .result-explanation-reassurance",
+    "samples": 97,
+    "minimum": 4.764,
+    "p5": 4.979,
+    "median": 5.599,
+    "worst": [
+      4.763662912288897,
+      46,
+      274,
+      [
+        134,
+        108,
+        97
+      ]
+    ]
+  },
+  {
+    "section": "optional-simple",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .bio-main-heading h3",
+    "samples": 165,
+    "minimum": 7.027,
+    "p5": 7.964,
+    "median": 10.339,
+    "worst": [
+      7.027413979913288,
+      47,
+      22,
+      [
+        89,
+        86,
+        99
+      ]
+    ]
+  },
+  {
+    "section": "optional-simple",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .bio-main-heading p",
+    "samples": 69,
+    "minimum": 5.66,
+    "p5": 5.862,
+    "median": 7.793,
+    "worst": [
+      5.659648152014788,
+      46,
+      51,
+      [
+        81,
+        81,
+        89
+      ]
+    ]
+  },
+  {
+    "section": "optional-advanced",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .result-prose-stack>p[data-active=true]",
+    "samples": 2967,
+    "minimum": 4.64,
+    "p5": 5.454,
+    "median": 6.42,
+    "worst": [
+      4.64045767632894,
+      322,
+      331,
+      [
+        119,
+        112,
+        134
+      ]
+    ]
+  },
+  {
+    "section": "optional-advanced",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .result-explanation-reassurance",
+    "samples": 96,
+    "minimum": 4.845,
+    "p5": 4.994,
+    "median": 5.63,
+    "worst": [
+      4.845161270855113,
+      46,
+      396,
+      [
+        133,
+        107,
+        93
+      ]
+    ]
+  },
+  {
+    "section": "optional-advanced",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .bio-main-heading h3",
+    "samples": 165,
+    "minimum": 6.995,
+    "p5": 7.947,
+    "median": 10.268,
+    "worst": [
+      6.99450999807411,
+      47,
+      22,
+      [
+        90,
+        86,
+        100
+      ]
+    ]
+  },
+  {
+    "section": "optional-advanced",
+    "key": "es-375",
+    "alpha": null,
+    "selector": ".sample-dashboard .bio-main-heading p",
+    "samples": 69,
+    "minimum": 5.643,
+    "p5": 5.844,
+    "median": 7.855,
+    "worst": [
+      5.643182826322807,
+      46,
+      51,
+      [
+        82,
+        81,
+        89
+      ]
+    ]
+  }
+]

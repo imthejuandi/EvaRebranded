@@ -1,0 +1,62 @@
+[
+  {
+    "path": "docs/browser-qa-v42/es-320-range-final.png",
+    "sha256": "28d50a544ff6e41de1dc19f8df47e6541b9f1f2c1befdea2104f046959fd0696"
+  },
+  {
+    "path": "docs/browser-qa-v42/es-375-guided-final.png",
+    "sha256": "ea26255d3c8a651de71721c72e618b0067e7f24065646ad73431656d7912584a"
+  },
+  {
+    "path": "docs/browser-qa-v42/es-375-optional-final.png",
+    "sha256": "50aa129cd1f0049df12a101ae551a82265400c80f3a8f0b5c5d7b309dfa9495a"
+  },
+  {
+    "path": "docs/browser-qa-v42/es-375-trend-final.png",
+    "sha256": "48af89808792179996ae3d0c7230603e6055debae3c138252cceca7c72ab5e04"
+  },
+  {
+    "path": "docs/browser-qa-v42/guided-trend-final-painted-contrast.json",
+    "sha256": "a81dbb4c9db9201910d3fa72a0f2e16d1ec7b8c1e866488b8c3e3273c764e621"
+  },
+  {
+    "path": "docs/browser-qa-v42/guided-trend-layout-fonts.json",
+    "sha256": "8292e37fb3fcc15602031417aed45fcfed3219fddac11d666e38843d0b9dbf74"
+  },
+  {
+    "path": "docs/browser-qa-v42/impeccable-type-layout-detector.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "docs/browser-qa-v42/live-report.json",
+    "sha256": "24454448856f531bde2f2595ff52b29ec88f29aad1102dda770b968bf654169e"
+  },
+  {
+    "path": "docs/browser-qa-v42/live42-en-1366-guided.png",
+    "sha256": "1acb66d9962ecca44b4d7554568609167e36669d27c169854aac8d38e3c26f96"
+  },
+  {
+    "path": "docs/browser-qa-v42/live42-es-375-trend-history.png",
+    "sha256": "52297a65cb44c24175d8ad1078cfab7fbbfe809eef3cf9b50bcac77e930b98be"
+  },
+  {
+    "path": "docs/browser-qa-v42/live42-es-375-trend-latest.png",
+    "sha256": "48af89808792179996ae3d0c7230603e6055debae3c138252cceca7c72ab5e04"
+  },
+  {
+    "path": "docs/browser-qa-v42/range-optional-final-geometry.json",
+    "sha256": "603b40e0c61ab847954359b70e37681a853ff2301171f9c61f0f20e17fbec2a2"
+  },
+  {
+    "path": "docs/browser-qa-v42/range-optional-final-painted-contrast.json",
+    "sha256": "d58910d804fbc84a554749ae79276b19c5d26a037aeada71957d828b72d15286"
+  },
+  {
+    "path": "docs/browser-qa-v42/range-optional-layout-controls.json",
+    "sha256": "8e94e01766fe06e6ef7f9f48638a581106ec3f9865ccc33b30d44198dda0f9ec"
+  },
+  {
+    "path": "docs/browser-qa-v42/trend-final-manual.json",
+    "sha256": "f007bb5dbc0d00d2250dfc8dc86e89317eb2e56e089856e03dbd268b4e2b1d6a"
+  }
+]

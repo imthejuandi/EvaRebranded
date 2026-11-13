@@ -1,0 +1,247 @@
+{
+  "label": "published-v42",
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "uiCommit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
+  "cases": [
+    {
+      "l": "en",
+      "w": 1366,
+      "h": 650,
+      "motion": "no-preference",
+      "roles": [
+        {
+          "s": "#range-proof-title",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "44px",
+          "weight": "600",
+          "lineHeight": "47.52px"
+        },
+        {
+          "s": "#markers-title",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "44px",
+          "weight": "600",
+          "lineHeight": "47.52px"
+        },
+        {
+          "s": "#markers-title em",
+          "family": "Georgia, serif",
+          "size": "44px",
+          "weight": "400",
+          "lineHeight": "47.52px"
+        },
+        {
+          "s": ".guided-prose-stack>p[data-active=true]",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "lineHeight": "24px"
+        },
+        {
+          "s": ".guided-marker h3",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "20px",
+          "weight": "600",
+          "lineHeight": "24px"
+        },
+        {
+          "s": "#por-que-eva-title",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "44px",
+          "weight": "600",
+          "lineHeight": "47.52px"
+        },
+        {
+          "s": ".trend-story-heading>p",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "lineHeight": "24px"
+        },
+        {
+          "s": ".trend-instrument-head h3",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "20px",
+          "weight": "600",
+          "lineHeight": "24px"
+        }
+      ],
+      "fonts": [
+        {
+          "s": ".guided-marker h3",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk SemiBold",
+              "postScriptName": "HankenGrotesk-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 6
+            }
+          ]
+        },
+        {
+          "s": ".guided-prose-stack>p[data-active=true]",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk",
+              "postScriptName": "HankenGrotesk-Regular",
+              "isCustomFont": true,
+              "glyphCount": 188
+            }
+          ]
+        }
+      ],
+      "guidedGeometry": {
+        "width": 769.171875,
+        "height": 299.796875,
+        "value": {
+          "x": 620.171875,
+          "y": 25,
+          "width": 120,
+          "height": 84.796875
+        }
+      },
+      "guidedDisclosure": true,
+      "trendGeometry": {
+        "width": 825.34375,
+        "height": 418.59375,
+        "value": {
+          "x": 652.53125,
+          "y": 25,
+          "width": 143.8125,
+          "height": 58
+        }
+      },
+      "manualHistory": true,
+      "trendDisclosure": true,
+      "rangeProof": true,
+      "optionalConsole": {
+        "family": "\"EVA Hanken\", Arial, sans-serif",
+        "size": "16px",
+        "lineHeight": "24px"
+      },
+      "documentOverflow": false,
+      "passed": true
+    },
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "motion": "reduce",
+      "roles": [
+        {
+          "s": "#range-proof-title",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "34px",
+          "weight": "600",
+          "lineHeight": "36.72px"
+        },
+        {
+          "s": "#markers-title",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "34px",
+          "weight": "600",
+          "lineHeight": "36.72px"
+        },
+        {
+          "s": "#markers-title em",
+          "family": "Georgia, serif",
+          "size": "34px",
+          "weight": "400",
+          "lineHeight": "36.72px"
+        },
+        {
+          "s": ".guided-prose-stack>p[data-active=true]",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "lineHeight": "24px"
+        },
+        {
+          "s": ".guided-marker h3",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "18px",
+          "weight": "600",
+          "lineHeight": "21.6px"
+        },
+        {
+          "s": "#por-que-eva-title",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "34px",
+          "weight": "600",
+          "lineHeight": "36.72px"
+        },
+        {
+          "s": ".trend-story-heading>p",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "lineHeight": "24px"
+        },
+        {
+          "s": ".trend-instrument-head h3",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "size": "18px",
+          "weight": "600",
+          "lineHeight": "21.6px"
+        }
+      ],
+      "fonts": [
+        {
+          "s": ".guided-marker h3",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk SemiBold",
+              "postScriptName": "HankenGrotesk-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 6
+            }
+          ]
+        },
+        {
+          "s": ".guided-prose-stack>p[data-active=true]",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk",
+              "postScriptName": "HankenGrotesk-Regular",
+              "isCustomFont": true,
+              "glyphCount": 176
+            }
+          ]
+        }
+      ],
+      "guidedGeometry": {
+        "width": 343,
+        "height": 360.578125,
+        "value": {
+          "x": 198,
+          "y": 25,
+          "width": 120,
+          "height": 80.796875
+        }
+      },
+      "guidedDisclosure": true,
+      "trendGeometry": {
+        "width": 343,
+        "height": 427.1875,
+        "value": {
+          "x": 178.9375,
+          "y": 30.59375,
+          "width": 139.0625,
+          "height": 52
+        }
+      },
+      "manualHistory": true,
+      "trendDisclosure": true,
+      "rangeProof": true,
+      "optionalConsole": {
+        "family": "\"EVA Hanken\", Arial, sans-serif",
+        "size": "16px",
+        "lineHeight": "24px"
+      },
+      "documentOverflow": false,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

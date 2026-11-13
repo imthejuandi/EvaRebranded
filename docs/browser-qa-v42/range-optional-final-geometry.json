@@ -1,0 +1,52 @@
+{
+  "origin": "http://127.0.0.1:4175",
+  "cases": [
+    {
+      "l": "es",
+      "w": 320,
+      "h": 568,
+      "name": "range",
+      "section": 772.59375,
+      "card": 432.359375,
+      "before": "linear-gradient(rgba(23, 27, 24, 0.15), rgba(23, 27, 24, 0.75)), radial-gradient(at 22% 110%, rgb(236, 208, 162) 0px, rgb(211, 145, 112) 16%, rgba(0, 0, 0, 0) 58%), radial-gradient(at 94% 69%, rgb(173, 164, 209) 0px, rgb(137, 116, 159) 26%, rgba(0, 0, 0, 0) 63%), radial-gradient(at 45% 15%, rgb(36, 46, 50) 0px, rgb(59, 54, 75) 43%, rgb(157, 136, 150) 85%)",
+      "shadow": "rgba(255, 253, 246, 0.7) 0px 0px 3px 2px inset, rgba(248, 246, 240, 0.45) 0px 0px 24px 6px inset, rgba(98, 88, 103, 0.125) 0px 4px 10px 0px",
+      "afterShadow": "rgba(255, 253, 246, 0.7) 0px 0px 4px 3px inset, rgba(248, 246, 240, 0.35) 0px 0px 24px 6px inset",
+      "condition": "≥2 mg/L en mediciones repetidas"
+    },
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "name": "optional-simple",
+      "height": 809.15625,
+      "consoleHeight": 643.96875,
+      "cardHeight": 348.1875,
+      "padding": "8px 12px",
+      "gap": "8px",
+      "captionMargin": "8px",
+      "before": "linear-gradient(rgba(23, 27, 24, 0.15), rgba(23, 27, 24, 0.5)), radial-gradient(at 26% 107%, rgb(236, 208, 162) 0px, rgb(211, 145, 112) 15%, rgba(0, 0, 0, 0) 55%), radial-gradient(at 92% 75%, rgb(173, 164, 209) 0px, rgb(137, 116, 159) 26%, rgba(0, 0, 0, 0) 64%), radial-gradient(at 47% 15%, rgb(36, 46, 50) 0px, rgb(59, 54, 75) 43%, rgb(157, 136, 150) 85%)",
+      "shadow": "rgba(255, 253, 246, 0.7) 0px 0px 3px 2px inset, rgba(248, 246, 240, 0.45) 0px 0px 24px 6px inset, rgba(98, 88, 103, 0.125) 0px 4px 10px 0px",
+      "afterShadow": "rgba(255, 253, 246, 0.7) 0px 0px 4px 3px inset, rgba(248, 246, 240, 0.35) 0px 0px 24px 6px inset",
+      "currentHeight": 809.15625,
+      "currentCardHeight": 348.1875
+    },
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "name": "optional-advanced",
+      "height": 809.15625,
+      "consoleHeight": 643.96875,
+      "cardHeight": 348.1875,
+      "padding": "8px 12px",
+      "gap": "8px",
+      "captionMargin": "8px",
+      "before": "linear-gradient(rgba(23, 27, 24, 0.15), rgba(23, 27, 24, 0.5)), radial-gradient(at 26% 107%, rgb(236, 208, 162) 0px, rgb(211, 145, 112) 15%, rgba(0, 0, 0, 0) 55%), radial-gradient(at 92% 75%, rgb(173, 164, 209) 0px, rgb(137, 116, 159) 26%, rgba(0, 0, 0, 0) 64%), radial-gradient(at 47% 15%, rgb(36, 46, 50) 0px, rgb(59, 54, 75) 43%, rgb(157, 136, 150) 85%)",
+      "shadow": "rgba(255, 253, 246, 0.7) 0px 0px 3px 2px inset, rgba(248, 246, 240, 0.45) 0px 0px 24px 6px inset, rgba(98, 88, 103, 0.125) 0px 4px 10px 0px",
+      "afterShadow": "rgba(255, 253, 246, 0.7) 0px 0px 4px 3px inset, rgba(248, 246, 240, 0.35) 0px 0px 24px 6px inset",
+      "currentHeight": 929.15625,
+      "currentCardHeight": 468.1875
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "published_version": 42,
+  "deployed_ui_commit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
+  "native_deployment": {
+    "version_number": 42,
+    "source_commit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_a7ad463cdf64819184a95bf9eda74899",
+    "deployment_id": "appgdep_6af78679553c8191971313e2f91d3cbe",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-13T21:52:05.597759+00:00",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=42#biomarcadores",
+    "behavior": "Impeccable typeset/layout/polish pass on Range, Guided, Trend and optional sample dashboard. Real installed Hanken 400/600, coherent type/spacing, quieter marker controls, fictional metadata below marker headings, mobile evidence-before-CTA focus order and readable branded glass. Version 40 conciseness and version 41 manual One reading behavior/copy preserved.",
+    "source_files": [
+      "components/story/proof-system.css",
+      "components/story/GuidedResultStory.tsx",
+      "components/story/guided-result-story.css",
+      "components/story/TrendStorySection.tsx",
+      "components/story/trend-story-section.css",
+      "components/story/RangeProofSection.tsx",
+      "components/story/range-proof-section.css",
+      "components/story/BiomarkerGallery.tsx",
+      "components/story/sample-dashboard-compact.css",
+      "components/story/explanation-setting.css",
+      "components/site/SiteDocument.tsx"
+    ],
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-proof-typography-v42.tar.gz",
+      "local_gzip_sha256": "52b95295f1c909a8eb4682e8a756ad28ad8b2499d239b85bd13d9f1169288699",
+      "local_gzip_size_bytes": 163041714,
+      "saved_tar_content_hash": "sha256:5a526e280758fa957824a5020f6b192aa66d4e194ccab2194ec8fff362c3cd24",
+      "saved_tar_size_bytes": 171755520,
+      "file_count": 787
+    },
+    "qa": {
+      "status": "passed_actual_browser",
+      "record": "docs/impeccable-typography-qa.json",
+      "evidence_directory": "docs/browser-qa-v42",
+      "guided_trend_layout_cases": 6,
+      "range_optional_layout_cases": 4,
+      "live_functional_cases": 2,
+      "page_errors": []
+    }
+  },
+  "user_direction": "Run Impeccable to improve the font, spacing and visual weight of the recently modified landing examples.",
+  "skill": {
+    "name": "Impeccable",
+    "skill_version": "4.9.0",
+    "engine_version": "0.1.23",
+    "source_commit": "c4cd1924c389f68d37c687d9c2bbf13f12547c41",
+    "skill_url": "https://github.com/pbakaus/impeccable/blob/c4cd1924c389f68d37c687d9c2bbf13f12547c41/.agents/skills/impeccable/SKILL.md",
+    "local_tooling": "Official public skill and minimal runner kept outside application source in /workspace/eva-design-tools/impeccable. Engine download checked against official SHA256. No application dependencies or project hooks installed.",
+    "playbooks": [
+      "typeset",
+      "layout",
+      "polish",
+      "craft-floor"
+    ],
+    "context": "Executed once; SCOPED_EXISTING_ALLOWED. The existing implementation and .impeccable.md remain authoritative without PRODUCT.md/DESIGN.md initialization.",
+    "detector": {
+      "command": "impeccable detect --json --scope type,layout over the11 changed UI files",
+      "exit_code": 0,
+      "findings": 0,
+      "report": "docs/browser-qa-v42/impeccable-type-layout-detector.json",
+      "scope_limit": "Source type/layout checks only. Painted contrast and rendered geometry were checked independently in Chromium."
+    }
+  },
+  "independent_assessment": [
+    "Separate typography and layout reviews preceded the detector. Actual CDP rendered-font inspection found fallback sans in the modified evidence chapters, while the existing hero used Hanken.",
+    "Preserve the brand material, media and dotted readouts; create hierarchy with actual font weights, spacing, marker headings and quieter secondary controls."
+  ],
+  "implementation": [
+    "Shared proof-system.css uses installed EVA Hanken regular 400/semibold 600 and existing Georgia italic 400, with font-synthesis:none. No new font assets or dependencies.",
+    "44px desktop/34px phone chapter headings,16px/24px body,12px metadata and8/16/24px spacing. Selected controls use600; prose stays400.",
+    "Removed decorative duplicate kickers; retained meaningful fictional/example labels below marker headings.",
+    "Guided/Range mobile DOM focus order now places supporting evidence before the free interpretation CTA; desktop named grids retain the established visual composition.",
+    "Optional marker controls are quiet flat labels with a selected underline, leaving the report as the primary glass surface.",
+    "Narrowed broad inner glows and strengthened existing dark veils to keep text legible while retaining original hue stops/rims/noise/radii.",
+    "No changes to copy libraries, biomarker facts, chart data, media, business offer, preview-flow handlers or manual Trend state logic."
+  ],
+  "static_checks": {
+    "typescript": "passed",
+    "production_build": "passed,113 routes",
+    "english_audit": "passed,1180 messages",
+    "story_section_contracts": "passed",
+    "git_diff_check": "passed",
+    "react_review": "Read-only Vercel React best-practices review of the five changed TSX components passed; no hooks/state,performance,accessibility or TypeScript regression found."
+  },
+  "browser_checks": {
+    "guided_trend": {
+      "report": "docs/browser-qa-v42/guided-trend-layout-fonts.json",
+      "cases": 6,
+      "passed": true,
+      "matrix": [
+        "EN 1366x650",
+        "ES 375x812",
+        "EN 820x1180",
+        "ES 320x568",
+        "ES 375blocked-font fallback",
+        "EN2x reflow"
+      ],
+      "verified": [
+        "Actual Hanken Regular 400 and SemiBold 600 via CDP, with existing serif italic accent",
+        "All three explanation levels and both Trend modes retain fixed evidence and value/plot geometry",
+        "Keyboard picker→evidence→CTA order, visible focus and no horizontal overflow",
+        "Natural reflow when fonts fail or viewport/text grows"
+      ]
+    },
+    "range_optional": {
+      "report": "docs/browser-qa-v42/range-optional-layout-controls.json",
+      "cases": 4,
+      "passed": true,
+      "phase": "Initial functional/type geometry; final painted material and phone outer spacing separately checked below.",
+      "verified": [
+        "EN 1366,ES 375,EN 820,ES 320 layouts",
+        "Fixed 2.1,lab <5 and ≥2 on repeat condition and adjacent diagnostic qualification",
+        "Native source links retain44px targets and no outgoing reference glyphs",
+        "Five optional markers,three views and Advanced explanation",
+        "Quiet selected-control state and readable type"
+      ]
+    },
+    "final_geometry": {
+      "reports": [
+        "docs/browser-qa-v42/trend-final-manual.json",
+        "docs/browser-qa-v42/range-optional-final-geometry.json"
+      ],
+      "es375": {
+        "guided_chapter_px": 737.78,
+        "guided_glass_px": 360.58,
+        "trend_chapter_px": 810.625,
+        "trend_glass_px": 427.1875,
+        "optional_default_px": 809.15625,
+        "optional_advanced_px": 929.15625,
+        "optional_advanced_glass_px": 468.1875
+      },
+      "es320": {
+        "range_glass_px": 432.359375
+      },
+      "notes": "Defaults fit the tested375x812viewport. Advanced/expanded details and short/zoomed views scroll naturally without clipped text or hard chapter-height caps."
+    },
+    "manual_trend": "Final source confirms persistent One reading after waiting/scrolling, manual500 ms history reveal, fixed latest value/point/plot, manual announcements and preserved context/method. No Trend logic changed in42.",
+    "published_smoke": {
+      "status": "passed",
+      "report": "docs/browser-qa-v42/live-report.json",
+      "cases": [
+        "EN 1366x650 normal",
+        "ES 375x812 OS reduced"
+      ],
+      "page_errors": [],
+      "verified": [
+        "Actual custom Hanken Regular 400/SemiBold 600 via CDP",
+        "Chapter headings44/34and body16/24",
+        "No horizontal overflow",
+        "One reading persists after waiting and scrolling; manual history retains2.1 and card/value geometry",
+        "Guided/context/method/source native disclosures",
+        "Range thresholds and repeat qualification; five optional markers,three views and range table"
+      ]
+    }
+  },
+  "painted_contrast": {
+    "method": "Sample actual background pixels beneath glyph positions using a paired Chromium capture with text temporarily hidden and geometry unchanged; compute relative luminance against the authored foreground. Final measurements use source CSS with no experimental overrides.",
+    "before": "Broad branded inner glows washed out some small/body text (sample minima2.57–4.17). This was fixed through the existing glass material.",
+    "minimum_sampled_ratios": {
+      "guided_advanced_body": 5.021,
+      "guided_summary": 4.849,
+      "trend_question": 5.054,
+      "trend_summary": 5.004,
+      "range_320_axis": 4.523,
+      "range_repeat_condition": 5.63,
+      "optional_beginner_body": 5.322,
+      "optional_advanced_body": 4.64,
+      "optional_reassurance": 4.764
+    },
+    "reports": [
+      "docs/browser-qa-v42/guided-trend-final-painted-contrast.json",
+      "docs/browser-qa-v42/range-optional-final-painted-contrast.json"
+    ],
+    "limit": "Scoped rendered samples, not formal whole-site WCAG certification."
+  },
+  "evidence_manifest": "docs/browser-qa-v42/manifest.json",
+  "limits": [
+    "Chromium viewport emulation, not physical-device performance.",
+    "The review query labels the review; it does not pin a release. Native receipts identify version 42.",
+    "Only review Site and source repositories changed. evahealth.es,DNS,production backend,real accounts,uploads and purchases remain untouched."
+  ],
+  "preceding_refinements": [
+    "docs/dashboard-conciseness-qa.json",
+    "docs/trend-manual-qa.json"
+  ]
+}
