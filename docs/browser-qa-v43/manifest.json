@@ -1,0 +1,30 @@
+[
+  {
+    "path": "docs/browser-qa-v43/detector.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "docs/browser-qa-v43/live43-en1366-latest.png",
+    "sha256": "aca176a24a1f79b12b3ee57719a68d96c6c239d4803f558aab56491ef35ebe02"
+  },
+  {
+    "path": "docs/browser-qa-v43/live43-es375-latest.png",
+    "sha256": "94d433adc3c7f811ad6113b67cf826a2e5bbba49d1c160265e3411876df48066"
+  },
+  {
+    "path": "docs/browser-qa-v43/live43-report.json",
+    "sha256": "9525b0ba5842c2e17aad6db74a9c6c0a66e5bfe94f465bd12f5c45807d5aad7c"
+  },
+  {
+    "path": "docs/browser-qa-v43/local43-en1366-latest.png",
+    "sha256": "aca176a24a1f79b12b3ee57719a68d96c6c239d4803f558aab56491ef35ebe02"
+  },
+  {
+    "path": "docs/browser-qa-v43/local43-es375-latest.png",
+    "sha256": "94d433adc3c7f811ad6113b67cf826a2e5bbba49d1c160265e3411876df48066"
+  },
+  {
+    "path": "docs/browser-qa-v43/local43-report.json",
+    "sha256": "3e2921a4afa5174ed63da3040e0550cbaea9c8756e992ad0a7b5786c21acb652"
+  }
+]

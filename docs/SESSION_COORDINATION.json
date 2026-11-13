@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 42,
-    "deployed_ui_commit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_a7ad463cdf64819184a95bf9eda74899",
-    "deployment_id": "appgdep_6af78679553c8191971313e2f91d3cbe",
-    "main_head_before_coordination": "90175f7a07d27d5594eb9345b24a5637030e0e93",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=42#biomarcadores"
+    "live_version": 43,
+    "deployed_ui_commit": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5e649f1f414881919eda52ac6e799f43",
+    "deployment_id": "appgdep_6af78bf9a6a88191a9966ee67fa75f6f",
+    "main_head_before_coordination": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=43#por-que-eva"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -101,20 +101,22 @@
       "source_commit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
       "status": "Version 42 published and actual-browser verified; original media/data/copy/manual controls preserved",
       "qa": "docs/impeccable-typography-qa.json"
+    },
+    {
+      "section": "Trendlines lead inline emphasis",
+      "source_commit": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
+      "status": "Version43 published and browser-verified; exact words and layout preserved",
+      "qa": "docs/trend-emphasis-qa.json"
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Refining only the Trend lead emphasis with Impeccable typeset guidance; keeping copy and interactions unchanged.",
+      "status": "Trend inline emphasis complete; version43 published and browser-verified. No UI files reserved.",
       "next_section": null,
-      "pending_verification": "Build and scoped rendered typography/wrapping check before review publication.",
+      "pending_verification": null,
       "section": "Trendlines educational lead inline emphasis",
-      "files": [
-        "components/story/TrendStorySection.tsx",
-        "components/story/trend-story-section.css",
-        "lib/site-content/trend-story-copy.ts"
-      ]
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
@@ -157,6 +159,12 @@
       "polish",
       "craft-floor"
     ],
-    "mechanical_scan": "Completed once after visual refinement, scope type,layout over11 changed UI files; exit0 and zero findings."
+    "mechanical_scan": "Completed once after visual refinement, scope type,layout over11 changed UI files; exit0 and zero findings.",
+    "latest_scoped_pass": {
+      "version": 43,
+      "playbook": "typeset/polish",
+      "scan": "One final type scan across three changed UI/copy files; exit0,zero findings.",
+      "record": "docs/trend-emphasis-qa.json"
+    }
   }
 }

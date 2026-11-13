@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "published_version": 43,
+  "deployed_ui_commit": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
+  "native_deployment": {
+    "version_number": 43,
+    "source_commit": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5e649f1f414881919eda52ac6e799f43",
+    "deployment_id": "appgdep_6af78bf9a6a88191a9966ee67fa75f6f",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-13T22:15:33.285141+00:00",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=43#por-que-eva",
+    "behavior": "Three short concepts in the Trend educational paragraph now use semantic strong emphasis at installed Hanken 600. English and Spanish wording, 16/24 body, layout, data and manual One reading behavior are preserved.",
+    "source_files": [
+      "components/story/TrendStorySection.tsx",
+      "components/story/trend-story-section.css",
+      "lib/site-content/trend-story-copy.ts"
+    ],
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-trend-emphasis-v43.tar.gz",
+      "local_gzip_sha256": "9c7d8a74b1e64b9452db80c21f1a1e8efe5c583977d05c03cdb8d5b21aa2dd5f",
+      "local_gzip_size_bytes": 163042318,
+      "saved_tar_content_hash": "sha256:54d91b27b634a5132e3ab23f5b14a2f8c8fd110416b7e47e0351401987731c6c",
+      "saved_tar_size_bytes": 171755520,
+      "file_count": 787
+    },
+    "qa": {
+      "status": "passed_actual_browser",
+      "record": "docs/trend-emphasis-qa.json",
+      "evidence_directory": "docs/browser-qa-v43",
+      "local_functional_cases": 5,
+      "live_functional_cases": 2,
+      "page_errors": []
+    }
+  },
+  "user_direction": "Use Impeccable to give key words in the Trendlines explanation more emphasis so the paragraph scans easily.",
+  "impeccable": {
+    "skill_version": "4.9.0",
+    "engine_version": "0.1.23",
+    "workflow": "Existing session context reused; independent typeset assessment, craft-floor, narrow typeset/polish refinement and one final manual type scan.",
+    "provenance": "docs/impeccable-typography-qa.json",
+    "scan_report": "docs/browser-qa-v43/detector.json",
+    "scope": "Three changed UI/copy files; type only",
+    "exit_code": 0,
+    "findings": 0
+  },
+  "implementation": {
+    "english": [
+      "your baseline",
+      "history and context",
+      "track changes"
+    ],
+    "spanish": [
+      "tu nivel habitual",
+      "historial y contexto",
+      "seguir cambios"
+    ],
+    "style": "Semantic strong elements, installed Hanken 600, inherited colour, natural wrapping; regular body remains 400 at 16px/24px.",
+    "wording": "Exact concatenated English/Spanish lead text equals version42/commit51c200e; testing-frequency qualification unchanged.",
+    "behavior": "No state, motion, chart, data, glass or control changes."
+  },
+  "checks": {
+    "typescript": "passed",
+    "production_build": "passed",
+    "english_audit": "passed,1180 messages",
+    "copy_parity": "passed against 51c200e",
+    "git_diff_check": "passed",
+    "local_browser": {
+      "status": "passed",
+      "cases": 5,
+      "matrix": [
+        "EN1366x650",
+        "ES375x812",
+        "ES320x568",
+        "ES375x812OSreduce",
+        "2xreflow"
+      ],
+      "report": "docs/browser-qa-v43/local43-report.json",
+      "verified": [
+        "Exactly three inline strong phrases render actual Hanken SemiBold600; regular body400/16/24",
+        "Unchanged complete DOM lead text in EN/ES",
+        "No document overflow/page errors",
+        "ES375chapter810.625px; ES320glass443.98px",
+        "Persistent One reading default and manual history retain fixed2.1/value/card/plot"
+      ]
+    },
+    "published_browser": {
+      "status": "passed",
+      "cases": 2,
+      "report": "docs/browser-qa-v43/live43-report.json",
+      "verified": "EN desktop and ES phone: real Hanken600 emphasis/body400, exact unchanged wording, no overflow/page errors, persistent latest/manual history and fixed2.1 geometry. Phone chapter remains810.625px."
+    }
+  },
+  "limits": [
+    "Chromium emulated viewports, not physical-device performance.",
+    "Scoped typography refinement; earlier broader checks remain in their versioned evidence records.",
+    "Only review Site and source repositories changed. evahealth.es and production services stay unchanged."
+  ],
+  "evidence_directory": "docs/browser-qa-v43",
+  "evidence_manifest": "docs/browser-qa-v43/manifest.json"
+}

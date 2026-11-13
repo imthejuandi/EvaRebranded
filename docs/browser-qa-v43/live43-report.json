@@ -1,0 +1,257 @@
+{
+  "label": "live43",
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "baselineCommit": "51c200e",
+  "cases": [
+    {
+      "name": "en1366",
+      "l": "en",
+      "w": 1366,
+      "h": 650,
+      "plaintext": "Repeated, comparable blood tests help establish your baseline. Exercise and illness can affect biomarkers, so interpreting them alongside your history and context helps track changes. How often to test depends on the marker and your health.",
+      "lead": {
+        "family": "\"EVA Hanken\", Arial, sans-serif",
+        "weight": "400",
+        "size": "16px",
+        "lineHeight": "24px",
+        "height": 120,
+        "width": 383.1875
+      },
+      "strong": [
+        {
+          "text": "your baseline",
+          "weight": "600",
+          "size": "16px",
+          "lineHeight": "24px",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "display": "inline",
+          "whiteSpace": "normal"
+        },
+        {
+          "text": "history and context",
+          "weight": "600",
+          "size": "16px",
+          "lineHeight": "24px",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "display": "inline",
+          "whiteSpace": "normal"
+        },
+        {
+          "text": "track changes",
+          "weight": "600",
+          "size": "16px",
+          "lineHeight": "24px",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "display": "inline",
+          "whiteSpace": "normal"
+        }
+      ],
+      "renderedFonts": [
+        {
+          "selector": ".trend-story-heading>p",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk SemiBold",
+              "postScriptName": "HankenGrotesk-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 45
+            },
+            {
+              "familyName": "Hanken Grotesk",
+              "postScriptName": "HankenGrotesk-Regular",
+              "isCustomFont": true,
+              "glyphCount": 190
+            }
+          ]
+        },
+        {
+          "selector": ".trend-story-heading>p strong",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk SemiBold",
+              "postScriptName": "HankenGrotesk-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 13
+            }
+          ]
+        }
+      ],
+      "section": {
+        "width": 1366,
+        "height": 467.59375
+      },
+      "defaultGeometry": {
+        "width": 825.34375,
+        "height": 418.59375,
+        "value": {
+          "x": 652.53125,
+          "y": 25,
+          "width": 143.8125,
+          "height": 58
+        },
+        "point": {
+          "x": 722.78125,
+          "y": 143.84375,
+          "width": 9,
+          "height": 9
+        },
+        "plot": {
+          "x": 29,
+          "y": 91,
+          "width": 767.34375,
+          "height": 160
+        }
+      },
+      "overflow": false,
+      "historyGeometry": {
+        "width": 825.34375,
+        "height": 418.59375,
+        "value": {
+          "x": 652.53125,
+          "y": 25,
+          "width": 143.8125,
+          "height": 58
+        },
+        "point": {
+          "x": 722.78125,
+          "y": 143.84375,
+          "width": 9,
+          "height": 9
+        },
+        "plot": {
+          "x": 29,
+          "y": 91,
+          "width": 767.34375,
+          "height": 160
+        }
+      },
+      "passed": true
+    },
+    {
+      "name": "es375",
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "plaintext": "Repetir análisis comparables ayuda a conocer tu nivel habitual. Como el ejercicio y las enfermedades pueden alterar los biomarcadores, leerlos junto con tu historial y contexto ayuda a seguir cambios. La frecuencia depende del marcador y de tu salud.",
+      "lead": {
+        "family": "\"EVA Hanken\", Arial, sans-serif",
+        "weight": "400",
+        "size": "16px",
+        "lineHeight": "24px",
+        "height": 168,
+        "width": 327
+      },
+      "strong": [
+        {
+          "text": "tu nivel habitual",
+          "weight": "600",
+          "size": "16px",
+          "lineHeight": "24px",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "display": "inline",
+          "whiteSpace": "normal"
+        },
+        {
+          "text": "historial y contexto",
+          "weight": "600",
+          "size": "16px",
+          "lineHeight": "24px",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "display": "inline",
+          "whiteSpace": "normal"
+        },
+        {
+          "text": "seguir cambios",
+          "weight": "600",
+          "size": "16px",
+          "lineHeight": "24px",
+          "family": "\"EVA Hanken\", Arial, sans-serif",
+          "display": "inline",
+          "whiteSpace": "normal"
+        }
+      ],
+      "renderedFonts": [
+        {
+          "selector": ".trend-story-heading>p",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk SemiBold",
+              "postScriptName": "HankenGrotesk-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 50
+            },
+            {
+              "familyName": "Hanken Grotesk",
+              "postScriptName": "HankenGrotesk-Regular",
+              "isCustomFont": true,
+              "glyphCount": 194
+            }
+          ]
+        },
+        {
+          "selector": ".trend-story-heading>p strong",
+          "fonts": [
+            {
+              "familyName": "Hanken Grotesk SemiBold",
+              "postScriptName": "HankenGrotesk-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 17
+            }
+          ]
+        }
+      ],
+      "section": {
+        "width": 375,
+        "height": 810.625
+      },
+      "defaultGeometry": {
+        "width": 343,
+        "height": 427.1875,
+        "value": {
+          "x": 178.9375,
+          "y": 30.59375,
+          "width": 139.0625,
+          "height": 52
+        },
+        "point": {
+          "x": 287.125,
+          "y": 141.859375,
+          "width": 9,
+          "height": 9
+        },
+        "plot": {
+          "x": 25,
+          "y": 96.1875,
+          "width": 293,
+          "height": 140
+        }
+      },
+      "overflow": false,
+      "historyGeometry": {
+        "width": 343,
+        "height": 427.1875,
+        "value": {
+          "x": 178.9375,
+          "y": 30.59375,
+          "width": 139.0625,
+          "height": 52
+        },
+        "point": {
+          "x": 287.125,
+          "y": 141.859375,
+          "width": 9,
+          "height": 9
+        },
+        "plot": {
+          "x": 25,
+          "y": 96.1875,
+          "width": 293,
+          "height": 140
+        }
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

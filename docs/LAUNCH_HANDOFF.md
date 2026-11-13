@@ -4,9 +4,9 @@ Updated 13 November 2026. GitHub `imthejuandi/EvaRebranded`, branch `main`, is t
 
 ## Approved baseline
 
-The current landing is **review version 42**, deployed UI commit `90175f7a07d27d5594eb9345b24a5637030e0e93`. Its scoped Impeccable pass improves font consistency, spacing, visual hierarchy and glass text contrast in the four modified evidence examples. Checks are recorded in [typography/layout QA](impeccable-typography-qa.json), [dashboard conciseness QA](dashboard-conciseness-qa.json) and [manual Trend QA](trend-manual-qa.json). The synchronization joins the existing GitHub import history with the review-source history and preserves earlier accepted work.
+The current landing is **review version 43**, deployed UI commit `7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9`. It preserves the scoped Impeccable pass that improves font consistency, spacing, visual hierarchy and glass text contrast in the four modified evidence examples. The latest change adds three short emphasis phrases to the Trend lead, preserving its exact wording and sizing. Checks are recorded in [Trend emphasis QA](trend-emphasis-qa.json), [typography/layout QA](impeccable-typography-qa.json), [dashboard conciseness QA](dashboard-conciseness-qa.json) and [manual Trend QA](trend-manual-qa.json). The synchronization joins the existing GitHub import history with the review-source history and preserves earlier accepted work.
 
-Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=42) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=42). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
+Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=43) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=43). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
 
 Preserve the runner, analog dots, typography, Tasso footage, dashboard examples, lifestyle imagery and narrative order. Free interpretation of previous reports leads; the optional starting kit contains 13 biomarkers at **€99 + VAT**. The internal `quarterly` preview intent does not advertise an automatic recurring offer.
 

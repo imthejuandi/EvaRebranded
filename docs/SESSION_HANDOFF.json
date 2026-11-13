@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-13",
-  "handoff_status": "IMPECCABLE_TYPOGRAPHY_LAYOUT_COMPLETE_V42",
-  "immediate_instruction": "Version 42 is published and browser-verified. Preserve the scoped Impeccable typography/layout pass on Range, Guided, Trend and the optional sample dashboard: installed EVA Hanken 400/600, coherent type/spacing, quiet controls and readable branded glass. Read docs/impeccable-typography-qa.json. Preserve version 40 concise examples/reference-label cleanup and version 41 persistent manual One reading default/context education. No automatic history entrance. GitHub main is canonical; evahealth.es and production services remain unchanged. Follow new specific feedback.",
+  "handoff_status": "TREND_INLINE_EMPHASIS_COMPLETE_V43",
+  "immediate_instruction": "Version 43 is published and browser-verified. Read docs/trend-emphasis-qa.json. The Trend lead now emphasizes three short concepts with semantic strong elements in Hanken 600: baseline, history/context and tracking changes. Exact EN/ES wording and 16px/24px regular body are preserved. Keep version 42 typography/glass improvements, version 40 conciseness/reference cleanup and version 41 manual One reading default/context education. GitHub main is canonical; evahealth.es and production services remain unchanged.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 42 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
+    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 43 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,39 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 41,
-      "source_commit": "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_db0f23b84dd0819187d23edf8028be05",
-      "deployment_id": "appgdep_6af77a300f908191bf8672ec1b8c050c",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-13T20:59:41.371775+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=41#por-que-eva",
-      "behavior": "Trend starts persistently in One reading in SSR, normal and reduced-motion views. History reveals only through manual selection. New concise EN/ES education explains comparable repeat tests, baseline, biomarker context/history and individualized testing frequency. Supporting notes/method remain in native details. All version 40 conciseness/reference-link changes preserved.",
-      "source_files": [
-        "components/story/TrendStorySection.tsx",
-        "components/story/trend-story-section.css",
-        "lib/site-content/trend-story-copy.ts"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-trend-manual-v41.tar.gz",
-        "local_gzip_sha256": "acf270567912f8eaf0b5468d3acb2c9ec01b18a5ccef3807f1ade6099301542b",
-        "local_gzip_size_bytes": 163038972,
-        "saved_tar_content_hash": "sha256:7c033f97484937219255aaf852763fa223d717a2bfb288982bf57d81c31bd9dc",
-        "saved_tar_size_bytes": 171745280,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/trend-manual-qa.json",
-        "evidence_directory": "docs/browser-qa-v41",
-        "local_functional_cases": 4,
-        "final_build_functional_cases": 2,
-        "live_functional_cases": 2,
-        "page_errors": []
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 42,
       "source_commit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_a7ad463cdf64819184a95bf9eda74899",
@@ -109,21 +76,52 @@
         "page_errors": []
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI is version 42commit90175f7a07d27d5594eb9345b24a5637030e0e93. A following QA/documentation-only commit does not change that live UI.",
+    "latest_verified_ui_release": {
+      "version_number": 43,
+      "source_commit": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5e649f1f414881919eda52ac6e799f43",
+      "deployment_id": "appgdep_6af78bf9a6a88191a9966ee67fa75f6f",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-13T22:15:33.285141+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=43#por-que-eva",
+      "behavior": "Three short concepts in the Trend educational paragraph now use semantic strong emphasis at installed Hanken 600. English and Spanish wording, 16/24 body, layout, data and manual One reading behavior are preserved.",
+      "source_files": [
+        "components/story/TrendStorySection.tsx",
+        "components/story/trend-story-section.css",
+        "lib/site-content/trend-story-copy.ts"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-trend-emphasis-v43.tar.gz",
+        "local_gzip_sha256": "9c7d8a74b1e64b9452db80c21f1a1e8efe5c583977d05c03cdb8d5b21aa2dd5f",
+        "local_gzip_size_bytes": 163042318,
+        "saved_tar_content_hash": "sha256:54d91b27b634a5132e3ab23f5b14a2f8c8fd110416b7e47e0351401987731c6c",
+        "saved_tar_size_bytes": 171755520,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/trend-emphasis-qa.json",
+        "evidence_directory": "docs/browser-qa-v43",
+        "local_functional_cases": 5,
+        "live_functional_cases": 2,
+        "page_errors": []
+      }
+    },
+    "latest_verified_ui_release_note": "Deployed UI is version 43 commit 7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9. A following QA/documentation-only commit does not change the live UI.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 42source90175f7a07d27d5594eb9345b24a5637030e0e93",
+      "relation": "QA/docs followup to version 43 source 7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
         "README.md",
-        ".impeccable.md",
         "docs/LAUNCH_HANDOFF.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/impeccable-typography-qa.json",
-        "docs/browser-qa-v42"
+        "docs/trend-emphasis-qa.json",
+        "docs/browser-qa-v43"
       ]
     },
     "earlier_verified_ui_release": {
@@ -363,6 +361,39 @@
           "record": "docs/dashboard-conciseness-qa.json",
           "evidence_directory": "docs/browser-qa-v40"
         }
+      },
+      {
+        "version_number": 41,
+        "source_commit": "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_db0f23b84dd0819187d23edf8028be05",
+        "deployment_id": "appgdep_6af77a300f908191bf8672ec1b8c050c",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-13T20:59:41.371775+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=41#por-que-eva",
+        "behavior": "Trend starts persistently in One reading in SSR, normal and reduced-motion views. History reveals only through manual selection. New concise EN/ES education explains comparable repeat tests, baseline, biomarker context/history and individualized testing frequency. Supporting notes/method remain in native details. All version 40 conciseness/reference-link changes preserved.",
+        "source_files": [
+          "components/story/TrendStorySection.tsx",
+          "components/story/trend-story-section.css",
+          "lib/site-content/trend-story-copy.ts"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-trend-manual-v41.tar.gz",
+          "local_gzip_sha256": "acf270567912f8eaf0b5468d3acb2c9ec01b18a5ccef3807f1ade6099301542b",
+          "local_gzip_size_bytes": 163038972,
+          "saved_tar_content_hash": "sha256:7c033f97484937219255aaf852763fa223d717a2bfb288982bf57d81c31bd9dc",
+          "saved_tar_size_bytes": 171745280,
+          "file_count": 787
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/trend-manual-qa.json",
+          "evidence_directory": "docs/browser-qa-v41",
+          "local_functional_cases": 4,
+          "final_build_functional_cases": 2,
+          "live_functional_cases": 2,
+          "page_errors": []
+        }
       }
     ]
   },
@@ -554,6 +585,21 @@
       "material": "Keep established glass hue stops/rims/noise/radii/dots, with narrower inner glows and darker existing veils for sampled readable text.",
       "interaction": "Keep quiet optional marker tabs, meaningful fictional labels below marker headings, and mobile evidence-before-CTA focus order.",
       "record": "docs/impeccable-typography-qa.json"
+    },
+    "trend_lead_emphasis_v43": {
+      "english": [
+        "your baseline",
+        "history and context",
+        "track changes"
+      ],
+      "spanish": [
+        "tu nivel habitual",
+        "historial y contexto",
+        "seguir cambios"
+      ],
+      "style": "Semantic strong elements, installed Hanken 600, inherited colour, natural wrapping; regular body remains 400 at 16px/24px.",
+      "wording": "Preserve exact lead wording and individualized frequency qualification.",
+      "record": "docs/trend-emphasis-qa.json"
     }
   },
   "approved_clinical_and_example_boundaries": {
@@ -732,7 +778,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "The deployed baseline is version 42, source 90175f7a07d27d5594eb9345b24a5637030e0e93. Read docs/impeccable-typography-qa.json alongside version 40/41 records. A following QA/docs commit does not require UI republication.",
+    "The deployed baseline is version43 source7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9. Read docs/trend-emphasis-qa.json alongside the earlier version40–42 records. A following documentation commit does not require UI republication.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -810,7 +856,7 @@
       "EVA_REVIEW_VERSION=38 node scripts/browser-qa/core-landing.cjs"
     ],
     "final_browser_instructions": "Read scripts/browser-qa/README.md. The review query is not a deployment pin: verify current native Site version first. Reports/screenshots are written outside the repo, final version 38 evidence is tracked in docs/browser-qa-v38. Wait for computed CSS readiness and fonts before measuring. Close every owned browser. Flow tests block all mutating network requests and stop before upload/checkout confirmation.",
-    "current_scoped_qa": "docs/impeccable-typography-qa.json and docs/browser-qa-v42; local full-type/fallback/reflow matrix plus actual published ENdesktop/ESphone checks. Prior full-page version 38 evidence remains historical."
+    "current_scoped_qa": "docs/trend-emphasis-qa.json and docs/browser-qa-v43: five local type/wrapping/control cases plus two actual published cases. Version42 typography/glass and prior full-page version38 evidence retain their historical scope."
   },
   "permissions_and_security": {
     "writable_roots": [
@@ -839,7 +885,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 42 is published; Impeccable typography/layout/polish on the four modified evidence examples passed local and published browser checks. Read docs/impeccable-typography-qa.json. Earlier content/narrative and full browser review remain complete; follow specific user feedback. Routine review-site edits/checks/commits/pushes/publication remain authorized. evahealth.es cutover stays on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 43 is published and browser-verified; the latest change adds three short Hanken600 emphasis spans to the Trend lead in both languages without changing wording, sizing or behavior. Read docs/trend-emphasis-qa.json. Preserve the earlier design/content/motion and follow specific user feedback. Routine review-site edits/checks/commits/pushes/publication remain authorized. evahealth.es cutover stays on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -852,8 +898,8 @@
     "date": "2026-11-13",
     "user_direction": "Pull the latest other-chat Site change into this session for a full switch.",
     "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
-    "live_version": 42,
-    "status": "Scoped Impeccable refinement complete, published and actual-browser verified. No UI files reserved; follow user feedback."
+    "live_version": 43,
+    "status": "Trend inline emphasis complete, published and actual-browser verified. No UI files reserved; follow user feedback."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -862,8 +908,8 @@
     "qa_record": "docs/final-browser-qa.json",
     "remaining_review_items": [],
     "latest_scoped_refinement": {
-      "version": 42,
-      "record": "docs/impeccable-typography-qa.json",
+      "version": 43,
+      "record": "docs/trend-emphasis-qa.json",
       "status": "published and actual-browser verified"
     }
   },
@@ -887,5 +933,5 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "90175f7a07d27d5594eb9345b24a5637030e0e93"
+  "github_current_ui_source": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9"
 }

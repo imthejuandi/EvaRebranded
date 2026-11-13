@@ -2,11 +2,11 @@
 
 The working source for EVA’s rebranded website lives in [imthejuandi/EvaRebranded](https://github.com/imthejuandi/EvaRebranded), on `main`. It includes the bilingual landing, approved media, application preview, design history, integration references and browser QA evidence.
 
-The current landing baseline is **review version 42**, UI commit `90175f7a07d27d5594eb9345b24a5637030e0e93`. Its scoped Impeccable pass refines typography, spacing and visual weight in the modified dashboard examples. Later documentation commits preserve that interface. [Original consolidation verification](docs/github-workspace-verification.json) records the earlier fresh-checkout checks.
+The current landing baseline is **review version 43**, UI commit `7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9`. It preserves version 42’s Impeccable typography/spacing and adds three short emphasis phrases to the Trend explanation. Later documentation commits preserve that interface. [Original consolidation verification](docs/github-workspace-verification.json) records the earlier fresh-checkout checks.
 
-- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=42) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=42).
+- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=43) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=43).
 - Continue the remaining work: [Launch handoff](docs/LAUNCH_HANDOFF.md).
-- Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [current typography/layout QA](docs/impeccable-typography-qa.json).
+- Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [current Trend emphasis QA](docs/trend-emphasis-qa.json).
 
 **Production cutover is on hold.** This source synchronization does not connect the rebrand to `evahealth.es`, change DNS or activate production services. Application screens use browser-local fictional data. Commercial, legal and integration details remain before launch.
 
@@ -35,7 +35,7 @@ node scripts/check-method.mjs
 
 The build exports 113 routes to `dist/client`. Run `python3 scripts/serve-review.py` and open `http://127.0.0.1:4175/en` or `/es` to inspect that output.
 
-[Browser QA instructions](scripts/browser-qa/README.md) accompany the evidence for [version 38’s complete landing/preview-flow checks](docs/final-browser-qa.json), [version 39’s format checks](docs/format-spacing-qa.json), [version 40’s dashboard cuts](docs/dashboard-conciseness-qa.json), [version 41’s manual Trend explanation](docs/trend-manual-qa.json) and [version 42’s Impeccable type/layout pass](docs/impeccable-typography-qa.json). Older `check:content`, `check:delivery` and import-era expectations include superseded copy; consult the handoff and relevant section checks before using them as release gates.
+[Browser QA instructions](scripts/browser-qa/README.md) accompany the evidence for [version 38’s complete landing/preview-flow checks](docs/final-browser-qa.json), [version 39’s format checks](docs/format-spacing-qa.json), [version 40’s dashboard cuts](docs/dashboard-conciseness-qa.json), [version 41’s manual Trend explanation](docs/trend-manual-qa.json) and [version 42’s Impeccable type/layout pass](docs/impeccable-typography-qa.json) and [version 43’s Trend emphasis](docs/trend-emphasis-qa.json). Older `check:content`, `check:delivery` and import-era expectations include superseded copy; consult the handoff and relevant section checks before using them as release gates.
 
 ## Source and publishing
 
