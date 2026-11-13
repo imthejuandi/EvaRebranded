@@ -22,6 +22,7 @@ import '@/components/pages/pricing/pricing.css';
 import '@/app/site-language.css';
 import '@/app/content-parity.css';
 import '@/app/landing-closing.css';
+import '@/components/story/proof-system.css';
 import {ReviewDock} from './ReviewHub';
 import type {ReactNode} from 'react';
 import {SiteLanguageProvider} from './SiteLanguage';

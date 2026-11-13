@@ -49,18 +49,14 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
   },[calm,locale]);
 
   return <section ref={root} className="range-proof" id="otra-lectura" aria-labelledby="range-proof-title" data-range-proof data-range-entry-state="complete" data-range-entry-duration-ms="500">
-    <div className="section-kicker"><span>{c.kicker}</span></div>
     <div className="range-proof-layout">
       <div className="range-proof-story">
         <h2 id="range-proof-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2>
-        <div className="range-proof-actions">
-          <a className="range-proof-primary" href={href(uploadHref)} data-range-upload><span><strong>{c.primary}</strong><small>{c.primarySubtitle}</small></span><Arrow/></a>
-        </div>
       </div>
       <div className="range-proof-evidence">
         <div className="range-proof-instrument bio-glass">
           <header className="range-proof-readout">
-            <div><p className="range-proof-example">{c.exampleLabel}</p><h3>hs-CRP</h3><p className="range-proof-marker-name">{c.markerLabel}</p></div>
+            <div><h3>hs-CRP</h3><p className="range-proof-marker-name">{c.markerLabel}</p><p className="range-proof-example">{c.exampleLabel}</p></div>
             <p className="range-proof-value" data-range-value="2.1"><span className="sr-only">{number} mg/L</span><span aria-hidden="true"><DotNumber value={number} density="coarse" calm active={false}/><small>mg/L</small></span></p>
           </header>
           <div className="range-proof-plot" data-range-axis-min="0" data-range-axis-max="5" aria-hidden="true">
@@ -85,7 +81,7 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
         </div>
         <p className="range-proof-context">{c.qualifier}</p>
         <details className="range-proof-details">
-          <summary>{c.detailsLabel}</summary>
+          <summary><span>{c.detailsLabel}</span><Arrow direction="down"/></summary>
           <div className="range-proof-detail-body">
             <p className="range-proof-lead">{c.lead}</p>
             <p><strong>{c.lab.label}. </strong>{c.lab.detail}</p>
@@ -95,6 +91,9 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
             <a className="range-proof-method" href={href(businessLinks.science)} data-range-method>{c.methodLink}<Arrow/></a>
           </div>
         </details>
+      </div>
+      <div className="range-proof-actions">
+        <a className="range-proof-primary" href={href(uploadHref)} data-range-upload><span><strong>{c.primary}</strong><small>{c.primarySubtitle}</small></span><Arrow/></a>
       </div>
     </div>
   </section>;

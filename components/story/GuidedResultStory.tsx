@@ -36,13 +36,12 @@ export function GuidedResultStory({calm=false, uploadHref}: {calm?:boolean; uplo
         <h3>{labels.label}</h3>
         <ExplanationSetting level={level} onLevel={choose} showHint={false}/>
       </section>
-      <a className="text-link guided-start" href={uploadHref}><span>{t('Interpreta tus análisis previos')}<br/><small>{t('Empieza gratis')}</small></span><Arrow/></a>
     </div>
     <div className="guided-story-result">
       <div className="guided-instrument bio-glass">
         <span className="guided-light" aria-hidden="true"/>
         <div className="guided-evidence">
-          <div className="guided-marker"><p className="guided-case-label">{c.eyebrow}</p><h3>hs-CRP</h3></div>
+          <div className="guided-marker"><h3>hs-CRP</h3><p className="guided-case-label">{c.eyebrow}</p></div>
           <p className="guided-value" data-value="2.1"><span className="sr-only">{number(2.1)} mg/L</span><span aria-hidden="true"><DotNumber value={number(2.1)} density="coarse" calm={calm||!entered}/><small>mg/L</small></span></p>
         </div>
         <div className="guided-prose-stack">{explanationLevels.map(depth=><p key={depth} data-active={depth===level} aria-hidden={depth!==level}>{c.paragraphs[depth]}</p>)}</div>
@@ -58,5 +57,6 @@ export function GuidedResultStory({calm=false, uploadHref}: {calm?:boolean; uplo
       </div>
       <p className="guided-disclosure">{c.disclosure}</p>
     </div>
+    <a className="text-link guided-start" href={uploadHref}><span>{t('Interpreta tus análisis previos')}<br/><small>{t('Empieza gratis')}</small></span><Arrow/></a>
   </div>;
 }

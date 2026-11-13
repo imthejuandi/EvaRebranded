@@ -35,13 +35,12 @@ export function BiomarkerGallery({ calm = false }: {
     const points = numbers.map((v, i) => ({ x: 32 + i * 145.3, y: 166 - (v - low) / (high - low || 1) * 106 })), point = points[reading];
     const max = Math.max(item.standard[1], item.eva[1], Number(value)) * 1.1;
     return <section id="biomarcadores" className={'biomarker-lab' + (calm ? ' bio-calm' : '')} aria-labelledby="markers-title" data-biomarker-view={view}>
-  <div className="section-kicker"><span>{__site.t("TUS RESULTADOS, EXPLICADOS")}</span><span>{__site.t("UNA LECTURA CON CONTEXTO")}</span></div>
   <div className="bio-layout">
    <GuidedResultStory calm={calm} uploadHref={__site.href(uploadHref)}/>
    <details className="sample-dashboard"><summary><span><strong>{storyCopy.explore}</strong><small>{storyCopy.exploreDetail}</small></span><Arrow direction="down"/></summary>
    <div className="bio-console" aria-label={__site.t("Demostraci\u00F3n de la interfaz de biomarcadores EVA")}>
     <div className="bio-marker-controls" role="group" aria-label={__site.t("Selecciona un biomarcador")}>
-     {specimens.map((marker, i) => <button key={marker.name} type="button" data-biomarker-tile={marker.name} className={'bio-marker-button bio-glass bio-tone-' + i} aria-pressed={selected === i} aria-label={__site.t(marker.name)} onClick={() => setSelected(i)}>{__site.t(shortNames[i])}</button>)}
+     {specimens.map((marker, i) => <button key={marker.name} type="button" data-biomarker-tile={marker.name} className="bio-marker-button" aria-pressed={selected === i} aria-label={__site.t(marker.name)} onClick={() => setSelected(i)}>{__site.t(shortNames[i])}</button>)}
     </div>
     <div className="bio-console-controls">
      <div className="bio-views" role="group" aria-label={__site.t("Vista del biomarcador")}>{views.map(v => <button key={v} type="button" aria-pressed={view === v} onClick={() => setView(v)}>{__site.t(v)}</button>)}</div>
