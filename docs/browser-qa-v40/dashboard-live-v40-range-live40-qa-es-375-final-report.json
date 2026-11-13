@@ -1,0 +1,179 @@
+{
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "cases": [
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "failures": [],
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": -0.046875,
+          "width": 375,
+          "height": 809.15625,
+          "top": -0.046875,
+          "right": 375,
+          "bottom": 809.109375,
+          "left": 0
+        },
+        "card": {
+          "x": 16,
+          "y": 168.828125,
+          "width": 343,
+          "height": 421.71875,
+          "top": 168.828125,
+          "right": 359,
+          "bottom": 590.546875,
+          "left": 16
+        },
+        "heading": {
+          "x": 24,
+          "y": 76.953125,
+          "width": 320.34375,
+          "height": 75.875,
+          "top": 76.953125,
+          "right": 344.34375,
+          "bottom": 152.828125,
+          "left": 24
+        },
+        "condition": {
+          "text": "≥2 mg/L en mediciones repetidas",
+          "box": {
+            "x": 141.234375,
+            "y": 476.984375,
+            "width": 195.765625,
+            "height": 44.78125,
+            "top": 476.984375,
+            "right": 337,
+            "bottom": 521.765625,
+            "left": 141.234375
+          },
+          "display": "block"
+        },
+        "qualifier": {
+          "text": "Los límites varían entre laboratorios. Una lectura no diagnostica enfermedad cardiovascular.",
+          "box": {
+            "x": 24,
+            "y": 600.546875,
+            "width": 327,
+            "height": 67.171875,
+            "top": 600.546875,
+            "right": 351,
+            "bottom": 667.71875,
+            "left": 24
+          }
+        },
+        "summary": {
+          "x": 24,
+          "y": 671.71875,
+          "width": 327,
+          "height": 44,
+          "top": 671.71875,
+          "right": 351,
+          "bottom": 715.71875,
+          "left": 24
+        },
+        "free": {
+          "x": 24,
+          "y": 732.71875,
+          "width": 327,
+          "height": 52.390625,
+          "top": 732.71875,
+          "right": 351,
+          "bottom": 785.109375,
+          "left": 24
+        },
+        "detailOpen": false,
+        "visibleText": "UNA MIRADA A LA PREVENCIÓN\n«Normal»\nno lo cuenta todo.\nInterpreta tus análisis previos\nEmpieza gratis\n\nRESULTADO ILUSTRATIVO\n\nhs-CRP\n\nhs-CRP · Señal de inflamación\n\n2,1 mg/L\nmg/L\n\nIntervalo del laboratorio\nMirada preventiva\n0\n1\n2\n3\n4\n5\n\nIntervalo del laboratorio\n<5 mg/L\n\nDentro del intervalo ilustrativo.\n\nMirada preventiva\n≥2 mg/L en mediciones repetidas\n\nRevisar el riesgo cardiovascular si se confirma.\n\nLos límites varían entre laboratorios. Una lectura no diagnostica enfermedad cardiovascular.\n\nFuentes y contexto",
+        "entry": "complete",
+        "documentOverflow": 0,
+        "bodySizes": [
+          {
+            "class": "",
+            "size": 16
+          },
+          {
+            "class": "",
+            "size": 16
+          },
+          {
+            "class": "",
+            "size": 16
+          },
+          {
+            "class": "range-proof-context",
+            "size": 16
+          }
+        ],
+        "metaSizes": [
+          {
+            "class": "",
+            "size": 12
+          },
+          {
+            "class": "range-proof-example",
+            "size": 12
+          },
+          {
+            "class": "range-proof-marker-name",
+            "size": 12
+          },
+          {
+            "class": "",
+            "size": 12
+          },
+          {
+            "class": "",
+            "size": 12
+          },
+          {
+            "class": "",
+            "size": 12
+          },
+          {
+            "class": "range-proof-axis",
+            "size": 12
+          },
+          {
+            "class": "range-proof-reading-label",
+            "size": 12
+          },
+          {
+            "class": "range-proof-reading-label",
+            "size": 12
+          }
+        ],
+        "clipped": []
+      },
+      "open": {
+        "open": true,
+        "summaryFocused": true,
+        "text": "Fuentes y contexto\n\nUn intervalo de laboratorio y un umbral preventivo responden a preguntas distintas.\n\nIntervalo del laboratorio. Compara el resultado con el grupo de referencia del laboratorio. Los límites pueden variar entre laboratorios.\n\nMirada preventiva. La prevención considera el riesgo futuro junto con tu contexto de salud.\n\nUna enfermedad, una lesión u otra inflamación pueden elevar la hs-CRP. Una sola lectura no permite diagnosticar una enfermedad cardiovascular.\n\nLA EVIDENCIA\n\nReferencia del laboratorio: CDC\nUmbral de prevención: ACC\nEntiende la diferencia",
+        "sources": [
+          {
+            "text": "Referencia del laboratorio: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank",
+            "rel": "noreferrer",
+            "height": 44
+          },
+          {
+            "text": "Umbral de prevención: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank",
+            "rel": "noreferrer",
+            "height": 44
+          }
+        ],
+        "scrollWidth": 327,
+        "clientWidth": 327
+      },
+      "entryFinal": "complete",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "viewportEmulation": true,
+  "passed": true
+}

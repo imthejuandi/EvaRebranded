@@ -1,0 +1,28 @@
+{
+  "case": "es375x812 normal",
+  "errors": [],
+  "transitionMs": "500",
+  "traceTransition": "0.5s, 0.5s",
+  "modes": [
+    {
+      "mode": "latest",
+      "announcement": "Con una lectura. Una lectura muestra el valor, pero no si ha cambiado. ¿Qué muestran las lecturas anteriores?"
+    },
+    {
+      "mode": "history",
+      "announcement": "Con su historial. El historial muestra una subida cuya causa y persistencia siguen sin confirmar. ¿Es temporal o persiste?"
+    }
+  ],
+  "pointValues": [
+    "0.8",
+    "0.9",
+    "0.8",
+    "2.1"
+  ],
+  "levels": [
+    "simple",
+    "balanced",
+    "advanced"
+  ],
+  "passed": true
+}

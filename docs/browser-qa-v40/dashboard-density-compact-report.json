@@ -1,0 +1,344 @@
+{
+  "origin": "http://127.0.0.1:4175",
+  "cases": [
+    {
+      "locale": "es",
+      "width": 375,
+      "height": 812,
+      "default": {
+        "chapter": {
+          "x": 0,
+          "y": -2510.34375,
+          "width": 375,
+          "height": 810.21875,
+          "scrollWidth": 375,
+          "clientWidth": 375
+        },
+        "guided": {
+          "x": 16,
+          "y": -2421.34375,
+          "width": 343,
+          "height": 630.03125,
+          "scrollWidth": 343,
+          "clientWidth": 343
+        },
+        "guidedCard": {
+          "x": 16,
+          "y": -2258.90625,
+          "width": 343,
+          "height": 340.59375,
+          "scrollWidth": 361,
+          "clientWidth": 341
+        },
+        "trend": {
+          "x": 0,
+          "y": 1188,
+          "width": 375,
+          "height": 812.484375,
+          "scrollWidth": 375,
+          "clientWidth": 375
+        },
+        "trendCard": {
+          "x": 16,
+          "y": 1424.828125,
+          "width": 343,
+          "height": 481.875,
+          "scrollWidth": 361,
+          "clientWidth": 341
+        },
+        "pageClipped": false,
+        "cardsFitViewport": true
+      },
+      "levels": [
+        {
+          "depth": "simple",
+          "height": 340.59375,
+          "text": "El marcador de inflamación de Alex subió. El ejercicio intenso puede elevarlo temporalmente, pero no demuestra la causa. Hacen falta más mediciones para saber si la subida persiste."
+        },
+        {
+          "depth": "balanced",
+          "height": 340.59375,
+          "text": "La hs-CRP de Alex pasó de 0,8 a 2,1 mg/L. El ejercicio reciente podría influir, pero la causa y la persistencia siguen sin confirmar. Comparar mediciones repetidas en condiciones similares puede aclarar el patrón."
+        },
+        {
+          "depth": "advanced",
+          "height": 340.59375,
+          "text": "La hs-CRP es un marcador inespecífico de inflamación. La subida de Alex de 0,8 a 2,1 mg/L sigue al ejercicio intenso declarado. La causa y la persistencia no están confirmadas; también importan la variación biológica y analítica."
+        }
+      ],
+      "evidenceHeight": 657.578125,
+      "openEvidence": {
+        "notes": [
+          "Ejercicio intenso · últimas 24 horas",
+          "Sin enfermedad reciente declarada"
+        ],
+        "values": [
+          "0,8",
+          "0,9",
+          "0,8",
+          "2,1"
+        ],
+        "followUp": "Un profesional puede valorar si conviene repetir la medición tras la recuperación."
+      },
+      "trendModes": [
+        {
+          "mode": "latest",
+          "height": 481.875,
+          "text": "Una lectura muestra el valor, pero no si ha cambiado.¿Qué muestran las lecturas anteriores?"
+        },
+        {
+          "mode": "history",
+          "height": 481.875,
+          "text": "El historial muestra una subida cuya causa y persistencia siguen sin confirmar.¿Es temporal o persiste?"
+        }
+      ],
+      "trendContext": "Datos de la extracciónDeclarados por AlexEjercicio intenso · últimas 24 horasSin enfermedad reciente declaradaEl contexto orienta la interpretación. No demuestra la causa.",
+      "expanded": {
+        "console": {
+          "x": 16,
+          "y": 434.875,
+          "width": 343,
+          "height": 633.46875,
+          "scrollWidth": 343,
+          "clientWidth": 343
+        },
+        "chapter": {
+          "x": 16,
+          "y": 375.6875,
+          "width": 343,
+          "height": 768.65625,
+          "scrollWidth": 343,
+          "clientWidth": 343
+        }
+      },
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 568,
+      "default": {
+        "chapter": {
+          "x": 0,
+          "y": -699.984375,
+          "width": 320,
+          "height": 935.96875,
+          "scrollWidth": 320,
+          "clientWidth": 320
+        },
+        "guided": {
+          "x": 16,
+          "y": -610.984375,
+          "width": 288,
+          "height": 755.78125,
+          "scrollWidth": 288,
+          "clientWidth": 288
+        },
+        "guidedCard": {
+          "x": 16,
+          "y": -385.578125,
+          "width": 288,
+          "height": 403.375,
+          "scrollWidth": 306,
+          "clientWidth": 286
+        },
+        "trend": {
+          "x": 0,
+          "y": 3214.515625,
+          "width": 320,
+          "height": 835.390625,
+          "scrollWidth": 320,
+          "clientWidth": 320
+        },
+        "trendCard": {
+          "x": 13,
+          "y": 3448.25,
+          "width": 294,
+          "height": 481.875,
+          "scrollWidth": 312,
+          "clientWidth": 292
+        },
+        "pageClipped": false,
+        "cardsFitViewport": true
+      },
+      "levels": [
+        {
+          "depth": "simple",
+          "height": 403.375,
+          "text": "El marcador de inflamación de Alex subió. El ejercicio intenso puede elevarlo temporalmente, pero no demuestra la causa. Hacen falta más mediciones para saber si la subida persiste."
+        },
+        {
+          "depth": "balanced",
+          "height": 403.375,
+          "text": "La hs-CRP de Alex pasó de 0,8 a 2,1 mg/L. El ejercicio reciente podría influir, pero la causa y la persistencia siguen sin confirmar. Comparar mediciones repetidas en condiciones similares puede aclarar el patrón."
+        },
+        {
+          "depth": "advanced",
+          "height": 403.375,
+          "text": "La hs-CRP es un marcador inespecífico de inflamación. La subida de Alex de 0,8 a 2,1 mg/L sigue al ejercicio intenso declarado. La causa y la persistencia no están confirmadas; también importan la variación biológica y analítica."
+        }
+      ],
+      "evidenceHeight": 792.359375,
+      "openEvidence": {
+        "notes": [
+          "Ejercicio intenso · últimas 24 horas",
+          "Sin enfermedad reciente declarada"
+        ],
+        "values": [
+          "0,8",
+          "0,9",
+          "0,8",
+          "2,1"
+        ],
+        "followUp": "Un profesional puede valorar si conviene repetir la medición tras la recuperación."
+      },
+      "trendModes": [
+        {
+          "mode": "latest",
+          "height": 481.875,
+          "text": "Una lectura muestra el valor, pero no si ha cambiado.¿Qué muestran las lecturas anteriores?"
+        },
+        {
+          "mode": "history",
+          "height": 481.875,
+          "text": "El historial muestra una subida cuya causa y persistencia siguen sin confirmar.¿Es temporal o persiste?"
+        }
+      ],
+      "trendContext": "Datos de la extracciónDeclarados por AlexEjercicio intenso · últimas 24 horasSin enfermedad reciente declaradaEl contexto orienta la interpretación. No demuestra la causa.",
+      "expanded": {
+        "console": {
+          "x": 16,
+          "y": 312.984375,
+          "width": 288,
+          "height": 665.03125,
+          "scrollWidth": 288,
+          "clientWidth": 288
+        },
+        "chapter": {
+          "x": 16,
+          "y": 253.796875,
+          "width": 288,
+          "height": 815.21875,
+          "scrollWidth": 288,
+          "clientWidth": 288
+        }
+      },
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 683,
+      "height": 325,
+      "reflowScale": 2,
+      "default": {
+        "chapter": {
+          "x": 0,
+          "y": 1094.5625,
+          "width": 683,
+          "height": 745.71875,
+          "scrollWidth": 683,
+          "clientWidth": 683
+        },
+        "guided": {
+          "x": 16,
+          "y": 1167.0625,
+          "width": 651,
+          "height": 582.03125,
+          "scrollWidth": 651,
+          "clientWidth": 651
+        },
+        "guidedCard": {
+          "x": 16,
+          "y": 1329.5,
+          "width": 651,
+          "height": 292.59375,
+          "scrollWidth": 669,
+          "clientWidth": 649
+        },
+        "trend": {
+          "x": 0,
+          "y": 4656.21875,
+          "width": 683,
+          "height": 768.234375,
+          "scrollWidth": 683,
+          "clientWidth": 683
+        },
+        "trendCard": {
+          "x": 16,
+          "y": 4893.046875,
+          "width": 651,
+          "height": 437.625,
+          "scrollWidth": 669,
+          "clientWidth": 649
+        },
+        "pageClipped": false,
+        "cardsFitViewport": false
+      },
+      "levels": [
+        {
+          "depth": "simple",
+          "height": 292.59375,
+          "text": "Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists."
+        },
+        {
+          "depth": "balanced",
+          "height": 292.59375,
+          "text": "Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern."
+        },
+        {
+          "depth": "advanced",
+          "height": 292.59375,
+          "text": "hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern."
+        }
+      ],
+      "evidenceHeight": 585.578125,
+      "openEvidence": {
+        "notes": [
+          "Hard workout · previous 24 hours",
+          "No recent illness reported"
+        ],
+        "values": [
+          "0.8",
+          "0.9",
+          "0.8",
+          "2.1"
+        ],
+        "followUp": "A clinician can assess whether another measurement after recovery would help."
+      },
+      "trendModes": [
+        {
+          "mode": "latest",
+          "height": 437.625,
+          "text": "One reading shows the value, but not whether it has changed.What do earlier readings show?"
+        },
+        {
+          "mode": "history",
+          "height": 437.625,
+          "text": "History reveals a rise whose cause and persistence remain uncertain.Is it temporary or persistent?"
+        }
+      ],
+      "trendContext": "Blood-draw notesSelf-reportedHard workout · previous 24 hoursNo recent illness reportedContext informs the interpretation. It does not prove the cause.",
+      "expanded": {
+        "console": {
+          "x": 16,
+          "y": 191.28125,
+          "width": 651,
+          "height": 563.90625,
+          "scrollWidth": 651,
+          "clientWidth": 651
+        },
+        "chapter": {
+          "x": 16,
+          "y": 132.09375,
+          "width": 651,
+          "height": 671.09375,
+          "scrollWidth": 651,
+          "clientWidth": 651
+        }
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

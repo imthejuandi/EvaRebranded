@@ -1,0 +1,121 @@
+{
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "tag": "compact-live40",
+  "cases": [
+    {
+      "l": "en",
+      "w": 1366,
+      "h": 650,
+      "markerSizes": [
+        {
+          "width": 224,
+          "height": 44
+        },
+        {
+          "width": 224,
+          "height": 44
+        },
+        {
+          "width": 224,
+          "height": 44
+        },
+        {
+          "width": 224,
+          "height": 44
+        },
+        {
+          "width": 224,
+          "height": 44
+        }
+      ],
+      "height": 606.765625,
+      "consoleHeight": 493.703125,
+      "defaultFitsViewport": true,
+      "prose": {
+        "fontSize": "16px",
+        "lineHeight": "23.2px"
+      },
+      "boundedReadingArea": {
+        "height": 284.703125,
+        "scroll": 303,
+        "client": 283
+      },
+      "reducedHoverTransform": "none",
+      "documentWidth": {
+        "viewport": 1366,
+        "scroll": 1366
+      },
+      "readingSequence": [
+        "2.8",
+        "2.5",
+        "2.7",
+        "2.1"
+      ],
+      "tableWidth": {
+        "client": 1160,
+        "scroll": 1160
+      },
+      "clipped": [],
+      "passed": true
+    },
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "markerSizes": [
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        }
+      ],
+      "height": 768.65625,
+      "consoleHeight": 633.46875,
+      "defaultFitsViewport": true,
+      "prose": {
+        "fontSize": "16px",
+        "lineHeight": "23.2px"
+      },
+      "boundedReadingArea": {
+        "height": 340.46875,
+        "scroll": 358,
+        "client": 338
+      },
+      "reducedHoverTransform": "none",
+      "documentWidth": {
+        "viewport": 375,
+        "scroll": 375
+      },
+      "readingSequence": [
+        "2.8",
+        "2.5",
+        "2.7",
+        "2.1"
+      ],
+      "tableWidth": {
+        "client": 319,
+        "scroll": 340
+      },
+      "clipped": [],
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Optional console controls, readable text and actual layout; viewport emulation",
+  "passed": true
+}

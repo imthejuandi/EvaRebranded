@@ -3,7 +3,7 @@
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-11",
   "handoff_status": "CONTENT_FORMAT_AND_REVIEW_SITE_QA_COMPLETE_V39",
-  "immediate_instruction": "The user requested consolidating the approved version39 rebranded website in GitHub imthejuandi/EvaRebranded, main, with remaining details in docs/LAUNCH_HANDOFF.md. Keep evahealth.es and production services unchanged until a later explicit launch request. Version39 remains the published review UI; later GitHub/documentation commits do not change its deployment. Preserve all accepted work and follow specific user feedback.",
+  "immediate_instruction": "Version40 dashboard conciseness and reference-glyph cleanup is published and verified. User then requested Trend to start in One reading with manual history reveal and brief baseline/context/frequency education. This next refinement is in progress; preserve all other40 changes and production hold.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -36,55 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 38,
-      "source_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ea8fff43641c8191aaf10a9b7db5ae6e",
-      "deployment_id": "appgdep_6af4d82a07988191a965a7cdb74141c4",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-11T21:03:54.679321+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=38",
-      "behavior": "Completed actual review-site browser QA and fixed its findings. Review shortcut now lives in document flow and no longer covers copy or footer controls. Existing first-kit signup, onboarding and checkout display 13 biomarkers and €99 + VAT without an automatic recurring claim; free interpretation is the first onboarding choice. Internal intent IDs, auth handlers and preview request/state transitions are preserved.",
-      "source_files": [
-        "app/landing-closing.css",
-        "components/preview/AccessPage.tsx",
-        "components/preview/OnboardingPage.tsx",
-        "components/preview/CheckoutPage.tsx",
-        "lib/site-content/locales/public.en.json",
-        "docs/SESSION_COORDINATION.json",
-        "docs/existing-landing-adaptation-plan.json"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-final-browser-fixes.tar.gz",
-        "local_gzip_sha256": "2d32e8d9d165e57e0d3ac0f190a3b0c86cf6c6dcc65d1d0035d2e0f870fb1634",
-        "local_gzip_size_bytes": 163052650,
-        "saved_tar_content_hash": "sha256:b9d734c8e09bf033e1da08f4b448894a2393a28b40a7e73d4a12407180a2849e",
-        "saved_tar_size_bytes": 171878400,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/final-browser-qa.json",
-        "evidence_directory": "docs/browser-qa-v38",
-        "scenario_count": 18,
-        "layout_cases": 7,
-        "section_cases": 3,
-        "footer_raw_pointer_cases": 2,
-        "signup_flow_cases": 4,
-        "core_landing_cases": 2,
-        "page_errors": [],
-        "mutating_network_requests": [],
-        "static_checks": [
-          "TypeScript",
-          "Production build 113 routes",
-          "English public-route audit 1181 messages",
-          "git diff --check"
-        ],
-        "screenshots_reviewed": true,
-        "scope": "Actual Chromium browser on published version 38, EN/ES desktop and emulated phone layouts, interactions and local preview flows. Physical-device speed and real production accounts/health uploads/purchases are outside this verification."
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 39,
       "source_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_81296be5eaac8191b29f8d4902c6fc98",
@@ -120,8 +71,53 @@
         "scope": "Focused format, responsive layout and interaction verification for the three changed CSS files. Prior complete content/flow QA remains separately recorded for version 38."
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI is version 39 commit 991dd5310f6e1efc1819e76d37db40016adb3cdb. Later evidence/documentation-only commits do not change deployed UI.",
-    "pending_release": null,
+    "latest_verified_ui_release": {
+      "version_number": 40,
+      "source_commit": "fc884532aa98bda920e91e3829592baad1ec5a51",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d409e8fb35e081918b3810ef351ec071",
+      "deployment_id": "appgdep_6af7767287a88191886491717ccc4d3b",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-13T20:43:43.406749+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=40#biomarcadores",
+      "behavior": "Medical/wellness marketing-directed dashboard cuts, preserved glass/dots/data, native details for supporting context, removed redundant explanation banner and duplicate sample cards. Removed outgoing reference-link glyphs per user clarification.",
+      "source_files": [
+        "components/story/RangeProofSection.tsx",
+        "components/story/GuidedResultStory.tsx",
+        "components/story/TrendStorySection.tsx",
+        "components/story/BiomarkerGallery.tsx",
+        "components/story/ExplanationSetting.tsx",
+        "components/story/ScrollStory.tsx",
+        "components/story/range-proof-section.css",
+        "components/story/guided-result-story.css",
+        "components/story/trend-story-section.css",
+        "components/story/sample-dashboard-compact.css",
+        "lib/site-content/alex-story-copy.ts",
+        "lib/site-content/range-proof-copy.ts",
+        "lib/site-content/trend-story-copy.ts",
+        "lib/site-content/result-explanation-copy.ts",
+        "lib/site-content/locales/public.en.json"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-concise-dashboards-v40.tar.gz",
+        "local_gzip_sha256": "d00f6f09b62ec113f50ae3e6cf253abf150b42c06b768cc22e4a8ae69596caaf",
+        "local_gzip_size_bytes": 163042867,
+        "saved_tar_content_hash": "sha256:e7d65e48ce9af19bd947a9420d1ee596a2ad255c0643b3c808388d4bab0a7043",
+        "saved_tar_size_bytes": 171745280,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/dashboard-conciseness-qa.json",
+        "evidence_directory": "docs/browser-qa-v40"
+      }
+    },
+    "latest_verified_ui_release_note": "Deployed UI is version40 source fc884532aa98bda920e91e3829592baad1ec5a51. Subsequent Trendmanual-default refinement is in progress.",
+    "pending_release": {
+      "section": "por-que-eva",
+      "behavior": "Persistent One reading default plus concise baseline/context education, user requested after40 publication.",
+      "status": "Focused browser, default-persistence, normal/reduced-motion, clinical-copy and viewport checks passed; ready for publication."
+    },
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
       "relation": "Evidence/docs followup to deployed source 991dd5310f6e1efc1819e76d37db40016adb3cdb",
@@ -244,6 +240,55 @@
             "blocker": "Shared browser startup remains blocked by the recorded sandbox error. No new browser run, screenshots or physical-device test."
           },
           "live_verification": "Native succeeded publication receipt verifies deployment. No postpublication browser suite was run."
+        }
+      },
+      {
+        "version_number": 38,
+        "source_commit": "9f43e90a244750365537ee3a70246846f24bcfc8",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ea8fff43641c8191aaf10a9b7db5ae6e",
+        "deployment_id": "appgdep_6af4d82a07988191a965a7cdb74141c4",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-11T21:03:54.679321+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=38",
+        "behavior": "Completed actual review-site browser QA and fixed its findings. Review shortcut now lives in document flow and no longer covers copy or footer controls. Existing first-kit signup, onboarding and checkout display 13 biomarkers and €99 + VAT without an automatic recurring claim; free interpretation is the first onboarding choice. Internal intent IDs, auth handlers and preview request/state transitions are preserved.",
+        "source_files": [
+          "app/landing-closing.css",
+          "components/preview/AccessPage.tsx",
+          "components/preview/OnboardingPage.tsx",
+          "components/preview/CheckoutPage.tsx",
+          "lib/site-content/locales/public.en.json",
+          "docs/SESSION_COORDINATION.json",
+          "docs/existing-landing-adaptation-plan.json"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-final-browser-fixes.tar.gz",
+          "local_gzip_sha256": "2d32e8d9d165e57e0d3ac0f190a3b0c86cf6c6dcc65d1d0035d2e0f870fb1634",
+          "local_gzip_size_bytes": 163052650,
+          "saved_tar_content_hash": "sha256:b9d734c8e09bf033e1da08f4b448894a2393a28b40a7e73d4a12407180a2849e",
+          "saved_tar_size_bytes": 171878400,
+          "file_count": 787
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/final-browser-qa.json",
+          "evidence_directory": "docs/browser-qa-v38",
+          "scenario_count": 18,
+          "layout_cases": 7,
+          "section_cases": 3,
+          "footer_raw_pointer_cases": 2,
+          "signup_flow_cases": 4,
+          "core_landing_cases": 2,
+          "page_errors": [],
+          "mutating_network_requests": [],
+          "static_checks": [
+            "TypeScript",
+            "Production build 113 routes",
+            "English public-route audit 1181 messages",
+            "git diff --check"
+          ],
+          "screenshots_reviewed": true,
+          "scope": "Actual Chromium browser on published version 38, EN/ES desktop and emulated phone layouts, interactions and local preview flows. Physical-device speed and real production accounts/health uploads/purchases are outside this verification."
         }
       }
     ]

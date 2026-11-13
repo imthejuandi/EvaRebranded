@@ -3,7 +3,7 @@ export const trendStoryCopy = {
   en: {
     kicker: 'WHAT HISTORY REVEALS',
     heading: ['Trendlines,', 'not snapshots.'],
-    lead: 'One reading gives you a value. Four readings reveal a change.',
+    lead: 'Repeated, comparable blood tests help establish your baseline. Exercise and illness can affect biomarkers, so interpreting them alongside your history and context helps track changes. How often to test depends on the marker and your health.',
     latestLabel: 'Latest result',
     historyLabel: 'Four readings',
     readingLabel: 'Reading',
@@ -28,7 +28,7 @@ export const trendStoryCopy = {
   es: {
     kicker: 'LO QUE REVELA EL HISTORIAL',
     heading: ['Trayectorias,', 'no fotos.'],
-    lead: 'Una lectura te da una cifra. Cuatro permiten ver un cambio.',
+    lead: 'Repetir análisis comparables ayuda a conocer tu nivel habitual. Como el ejercicio y las enfermedades pueden alterar los biomarcadores, leerlos junto con tu historial y contexto ayuda a seguir cambios. La frecuencia depende del marcador y de tu salud.',
     latestLabel: 'Último resultado',
     historyLabel: 'Cuatro lecturas',
     readingLabel: 'Lectura',

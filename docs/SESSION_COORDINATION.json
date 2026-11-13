@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 39,
-    "deployed_ui_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_81296be5eaac8191b29f8d4902c6fc98",
-    "deployment_id": "appgdep_6af4e0a4a0b88191a5811cd604b1ab4d",
+    "live_version": 40,
+    "deployed_ui_commit": "fc884532aa98bda920e91e3829592baad1ec5a51",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d409e8fb35e081918b3810ef351ec071",
+    "deployment_id": "appgdep_6af7767287a88191886491717ccc4d3b",
     "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=39#el-metodo"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=40#biomarcadores"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -88,24 +88,13 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Implementing user-directed dashboard conciseness under medical/wellness marketing review; emoji audit found no active Unicode emoji and a focused user clarification is pending.",
+      "status": "Version40 published; subsequent Trend manual-default and baseline/context explanation implemented and browser-verified. Preparing next publication.",
       "next_section": null,
-      "pending_verification": "Meaningful default-state viewport-fit, interaction, clinical-copy and emoji checks before publication.",
-      "section": "Range proof, explanation demo, trend demo and optional sample console",
+      "pending_verification": "Native next-version publication and postpublication smoke check.",
+      "section": "por-que-eva",
       "files": [
-        "components/story/RangeProofSection.tsx",
-        "components/story/range-proof-section.css",
-        "components/story/GuidedResultStory.tsx",
-        "components/story/ExplanationSetting.tsx",
-        "components/story/guided-result-story.css",
         "components/story/TrendStorySection.tsx",
         "components/story/trend-story-section.css",
-        "components/story/BiomarkerGallery.tsx",
-        "components/story/sample-dashboard-compact.css",
-        "components/story/ScrollStory.tsx",
-        "lib/site-content/alex-story-copy.ts",
-        "lib/site-content/result-explanation-copy.ts",
-        "lib/site-content/range-proof-copy.ts",
         "lib/site-content/trend-story-copy.ts"
       ]
     },

@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "published_version": 40,
+  "deployed_ui_commit": "fc884532aa98bda920e91e3829592baad1ec5a51",
+  "native_deployment": {
+    "version_number": 40,
+    "source_commit": "fc884532aa98bda920e91e3829592baad1ec5a51",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d409e8fb35e081918b3810ef351ec071",
+    "deployment_id": "appgdep_6af7767287a88191886491717ccc4d3b",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-13T20:43:43.406749+00:00",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=40#biomarcadores",
+    "behavior": "Medical/wellness marketing-directed dashboard cuts, preserved glass/dots/data, native details for supporting context, removed redundant explanation banner and duplicate sample cards. Removed outgoing reference-link glyphs per user clarification.",
+    "source_files": [
+      "components/story/RangeProofSection.tsx",
+      "components/story/GuidedResultStory.tsx",
+      "components/story/TrendStorySection.tsx",
+      "components/story/BiomarkerGallery.tsx",
+      "components/story/ExplanationSetting.tsx",
+      "components/story/ScrollStory.tsx",
+      "components/story/range-proof-section.css",
+      "components/story/guided-result-story.css",
+      "components/story/trend-story-section.css",
+      "components/story/sample-dashboard-compact.css",
+      "lib/site-content/alex-story-copy.ts",
+      "lib/site-content/range-proof-copy.ts",
+      "lib/site-content/trend-story-copy.ts",
+      "lib/site-content/result-explanation-copy.ts",
+      "lib/site-content/locales/public.en.json"
+    ],
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-concise-dashboards-v40.tar.gz",
+      "local_gzip_sha256": "d00f6f09b62ec113f50ae3e6cf253abf150b42c06b768cc22e4a8ae69596caaf",
+      "local_gzip_size_bytes": 163042867,
+      "saved_tar_content_hash": "sha256:e7d65e48ce9af19bd947a9420d1ee596a2ad255c0643b3c808388d4bab0a7043",
+      "saved_tar_size_bytes": 171745280,
+      "file_count": 787
+    },
+    "qa": {
+      "status": "passed_actual_browser",
+      "record": "docs/dashboard-conciseness-qa.json",
+      "evidence_directory": "docs/browser-qa-v40"
+    }
+  },
+  "direction": "User requested emoji-symbol removal and shorter dashboard demonstrations, directed by an agent acting as a medical/wellness business marketing expert. User clarified emojis meant outgoing reference-link glyphs beside CDC and similar links.",
+  "marketing_decisions": [
+    "One proof per example: reference versus prevention; explanation depth; history versus a snapshot.",
+    "Remove duplicate setup/banner, repeated labels, signup/settings instructions and duplicate result cards.",
+    "Keep one selected marker/view in optional console.",
+    "Keep key thresholds, qualification and fiction labels visible; supporting notes/sources in native accessible details.",
+    "Keep approved glass, dots, typography families and existing motion."
+  ],
+  "emoji_result": "Removed the outgoing-link glyph from active UI and translated labels, preserving link text/hrefs and functional SVG controls. All113 built HTML routes are glyph-free; live EN/ES Science pages and range sources verified.",
+  "measurements_es_375x812": {
+    "range_section": 809.16,
+    "range_card": 421.72,
+    "guided_chapter": 810.22,
+    "guided_card": 341.2,
+    "trend_section": 812.48,
+    "trend_card": 482.1,
+    "optional_opened": 768.66,
+    "baseline_optional_opened": 1615,
+    "viewport_tolerance_px": 1
+  },
+  "clinical_invariants": [
+    "Fixed2.1mg/L illustrative result",
+    "Alexhistory0.8,0.9,0.8,2.1; separate optional history2.8,2.5,2.7,2.1",
+    "Self-reported hard workout within24h and no recent illness available across levels",
+    "No proven cause, persistence, diagnosis or guaranteed improvement",
+    "Lab limits vary; prevention threshold>=2onrepeat testing visible",
+    "Fictional/medical-assessment and non-kit-marker qualifications retained"
+  ],
+  "checks": [
+    "TypeScript passed",
+    "Production build113routes passed",
+    "English audit1180messages passed",
+    "Story/scroll section contracts passed",
+    "Independent React/accessibility and clinical-meaning review passed",
+    "Keyboard level/mode/disclosure/source controls passed",
+    "Normal500ms transitions and fixed reading geometry passed",
+    "OS/manual calm and2xreflow-equivalent layout passed",
+    "No page errors or document overflow in tested browser cases"
+  ],
+  "browser_reports": [
+    {
+      "path": "docs/browser-qa-v40/dashboard-live-v40-compact-report.json",
+      "phase": "live guided/trend",
+      "passed": true,
+      "cases": 2,
+      "sha256": "8a02e3b3938879c25c815e29120c0ff2d5309ebd2de1c98d754de6280d5b0ba5"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-live-v40-range-live40-qa-es-375-final-report.json",
+      "phase": "live range",
+      "passed": true,
+      "cases": 1,
+      "sha256": "24ba75f32a9c524c74fb46547eb43f044830f1dd06b20e86b8dd15ee41720cf2"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-live-v40-reference-links-report.json",
+      "phase": "live public science links",
+      "passed": true,
+      "cases": 2,
+      "sha256": "a17f779ba1008df93ca974b613650dc3408952c5deebcfa61f4feea48af8aaa7"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-density-compact-live40-optional-report.json",
+      "phase": "live optional console",
+      "passed": true,
+      "cases": 2,
+      "sha256": "4638fd7902d72397f51fc348e4d24038026606c0acd1543a6c0156dd84f7bed9"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-density-compact-report.json",
+      "phase": "final local small-phone/reflow",
+      "passed": true,
+      "cases": 3,
+      "sha256": "e136666bb811e768f79ef8e602a26161a5a597781b94f85fe2f7040169be5f2d"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-density-normal-compact-report.json",
+      "phase": "final local normal motion",
+      "passed": true,
+      "cases": 0,
+      "sha256": "555a521611cfeb0e92e938059f3e3357a178ed405a09d074dfeb56b12bb83bb1"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-density-compact-readablebody-optional-report.json",
+      "phase": "final local readable console",
+      "passed": true,
+      "cases": 1,
+      "sha256": "d962556d265f64e6609d28d55080c07c587f5a4899f350911294dccbe77717eb"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-density-optional-motion-report.json",
+      "phase": "local OS/manual calm",
+      "passed": true,
+      "cases": 0,
+      "sha256": "102feded395af2f64f865eac127268e480811db37103c346bd5697710c2a3aa1"
+    },
+    {
+      "path": "docs/browser-qa-v40/dashboard-density-baseline-report.json",
+      "phase": "version39 baseline",
+      "passed": true,
+      "cases": 4,
+      "sha256": "6c97ddc821bf9782d06c98bd958c7930efc875d41910dace7cc39986717ab886"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/browser-qa-v40/range-live40-es-375-section.png",
+      "sha256": "907b6b8cee12d0ed955248a5d987986112be75fda27cd90d41603493cd06f573",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v40/compact-es-375x812-guided.png",
+      "sha256": "01646597ca3fca67a952a358234c061e26848bb8866d6bad83500528abddf06d",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v40/compact-es-375x812-trend.png",
+      "sha256": "cdf8b3e5d3fdcaf757946d49dab7231f716f39624e76933c9b62fd7769ec9ef7",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v40/compact-live40-es-375-optional.png",
+      "sha256": "245411a97e92595c21a6b65e30df41a1c395fd09fca9d7c76a4310723f7381d3",
+      "reviewed": true
+    }
+  ],
+  "limits": [
+    "Viewport emulation, not physical-device performance.",
+    "Standard1366x650desktop and375x812phone defaults fit within1pxfractional tolerance. On320x568and2xreflow, readable sections may scroll naturally; cards fit568px at320. No clipping/overflow-height cap was used.",
+    "Details and advanced/expanded selections grow naturally.",
+    "Only fictional local preview data; no real accounts, health uploads, purchases, backend activation or evahealth.es cutover."
+  ],
+  "followup": "A subsequent user request changes Trend to persistent One reading plus baseline/context education; its implementation and QA are recorded separately for the next release."
+}

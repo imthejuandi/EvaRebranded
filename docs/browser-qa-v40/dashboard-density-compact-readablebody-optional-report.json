@@ -1,0 +1,65 @@
+{
+  "origin": "http://127.0.0.1:4175",
+  "tag": "compact-readablebody",
+  "cases": [
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "markerSizes": [
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        },
+        {
+          "width": 101,
+          "height": 44
+        }
+      ],
+      "height": 768.65625,
+      "consoleHeight": 633.46875,
+      "defaultFitsViewport": true,
+      "prose": {
+        "fontSize": "16px",
+        "lineHeight": "23.2px"
+      },
+      "boundedReadingArea": {
+        "height": 340.46875,
+        "scroll": 358,
+        "client": 338
+      },
+      "reducedHoverTransform": "none",
+      "documentWidth": {
+        "viewport": 375,
+        "scroll": 375
+      },
+      "readingSequence": [
+        "2.8",
+        "2.5",
+        "2.7",
+        "2.1"
+      ],
+      "tableWidth": {
+        "client": 319,
+        "scroll": 340
+      },
+      "clipped": [],
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "Optional console controls, readable text and actual layout; viewport emulation",
+  "passed": true
+}

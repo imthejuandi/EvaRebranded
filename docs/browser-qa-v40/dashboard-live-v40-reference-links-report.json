@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "locale": "en",
+      "status": 200,
+      "outgoingGlyphAbsent": true
+    },
+    {
+      "locale": "es",
+      "status": 200,
+      "outgoingGlyphAbsent": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
