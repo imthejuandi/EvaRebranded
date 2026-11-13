@@ -141,7 +141,7 @@
     },
     {
       "path": "docs/browser-qa-v40/dashboard-density-baseline-report.json",
-      "phase": "version39 baseline",
+      "phase": "version 39 baseline",
       "passed": true,
       "cases": 4,
       "sha256": "6c97ddc821bf9782d06c98bd958c7930efc875d41910dace7cc39986717ab886"

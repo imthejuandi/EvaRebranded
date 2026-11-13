@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Maintain the combined EVA baseline and record the user-requested full switch to the current continuation chat.",
-  "prepared_date": "2026-11-11",
+  "prepared_date": "2026-11-13",
   "delivery_status": "The continuation chat fetched current main, read this shared repository note and verified the native version 33 succeeded receipt. This records repository acknowledgment, not a direct message to the prior chat.",
   "recipient": "The other EVA session that refined MethodJourney, and any session continuing this landing.",
   "acknowledgment_status": "acknowledged_by_continuation_session",
@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 40,
-    "deployed_ui_commit": "fc884532aa98bda920e91e3829592baad1ec5a51",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d409e8fb35e081918b3810ef351ec071",
-    "deployment_id": "appgdep_6af7767287a88191886491717ccc4d3b",
+    "live_version": 41,
+    "deployed_ui_commit": "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_db0f23b84dd0819187d23edf8028be05",
+    "deployment_id": "appgdep_6af77a300f908191bf8672ec1b8c050c",
     "main_head_before_coordination": "54813454ec298e752f20cc88e3688d63da20d8de",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=40#biomarcadores"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=41#por-que-eva"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -83,20 +83,28 @@
       "origin": "Primary continuation chat, user-approved .impeccable.md review findings",
       "status": "Version 39 published and verified",
       "qa": "10 local layout cases,7 tablet guards plus picker checks,3 live layout cases and3 live section/media/keyboard/calm cases passed. See docs/format-spacing-qa.json."
+    },
+    {
+      "section": "Dashboard conciseness/reference symbols and Trend manual baseline education",
+      "source_commits": [
+        "fc884532aa98bda920e91e3829592baad1ec5a51",
+        "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164"
+      ],
+      "status": "Versions40 and41 published and actual-browser verified",
+      "qa": [
+        "docs/dashboard-conciseness-qa.json",
+        "docs/trend-manual-qa.json"
+      ]
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version40 published; subsequent Trend manual-default and baseline/context explanation implemented and browser-verified. Preparing next publication.",
+      "status": "Version 41 published and verified. Concise dashboard examples, clean reference links, manual One reading default and baseline/context education complete. No app files reserved.",
       "next_section": null,
-      "pending_verification": "Native next-version publication and postpublication smoke check.",
-      "section": "por-que-eva",
-      "files": [
-        "components/story/TrendStorySection.tsx",
-        "components/story/trend-story-section.css",
-        "lib/site-content/trend-story-copy.ts"
-      ]
+      "pending_verification": null,
+      "section": null,
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },

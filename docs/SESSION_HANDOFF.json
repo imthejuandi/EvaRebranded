@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
-  "prepared_date": "2026-11-11",
-  "handoff_status": "CONTENT_FORMAT_AND_REVIEW_SITE_QA_COMPLETE_V39",
-  "immediate_instruction": "Version40 dashboard conciseness and reference-glyph cleanup is published and verified. User then requested Trend to start in One reading with manual history reveal and brief baseline/context/frequency education. This next refinement is in progress; preserve all other40 changes and production hold.",
+  "prepared_date": "2026-11-13",
+  "handoff_status": "CONCISE_DASHBOARDS_AND_MANUAL_TREND_COMPLETE_V41",
+  "immediate_instruction": "Version 41 is published and browser-verified. Preserve version 40 concise dashboard examples and removal of outgoing reference glyphs, plus version 41 persistent One reading default and concise baseline/context/history education. History switches only on manual selection, including reduced motion. Supporting context/sources are in native details. Read docs/dashboard-conciseness-qa.json and docs/trend-manual-qa.json. GitHub main is canonical; keep evahealth.es and production services unchanged. Follow new specific feedback without restoring duplicate banners, oversized default examples or automatic history reveal.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Consolidated rebrand workspace at the user’s request on 11 November 2026. Contains the approved version39 source/assets, history, QA and launch handoff. The local origin remote retains the separate review Site publication role; github is the GitHub remote. Production cutover to evahealth.es remains on hold.",
+    "github_status": "Consolidated rebrand workspace at the user’s request on 11 November 2026. Contains the approved version 39 source/assets, history, QA and launch handoff. The local origin remote retains the separate review Site publication role; github is the GitHub remote. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,42 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 39,
-      "source_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_81296be5eaac8191b29f8d4902c6fc98",
-      "deployment_id": "appgdep_6af4e0a4a0b88191a5811cd604b1ab4d",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-11T21:40:05.785556+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=39#el-metodo",
-      "behavior": "Implemented the four user-approved format/spacing findings: Method paging follows its copy, guided-results stacks at 701–1050px, phone offer bottom padding is72px, and founder quote wrapping is balanced. Approved text, typography families, imagery, motion and entry flows are preserved.",
-      "source_files": [
-        "app/method-journey.css",
-        "components/story/guided-result-story.css",
-        "app/landing-closing.css",
-        "docs/SESSION_COORDINATION.json"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-format-spacing-v39.tar.gz",
-        "local_gzip_sha256": "97e4dab612a9da70e35b8eb066fd5b35dd6c1c3308d8856fa4860c88ed8f99ed",
-        "local_gzip_size_bytes": 163053222,
-        "saved_tar_content_hash": "sha256:acbdd40d0a70de0b3376739097f185ff42cf9dcf1bd499ad9d8a95aea2c620fe",
-        "saved_tar_size_bytes": 171878400,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/format-spacing-qa.json",
-        "evidence_directory": "docs/browser-qa-v39",
-        "local_layout_cases": 10,
-        "local_tablet_cases": 7,
-        "live_layout_cases": 3,
-        "live_section_cases": 3,
-        "page_errors": [],
-        "scope": "Focused format, responsive layout and interaction verification for the three changed CSS files. Prior complete content/flow QA remains separately recorded for version 38."
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 40,
       "source_commit": "fc884532aa98bda920e91e3829592baad1ec5a51",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d409e8fb35e081918b3810ef351ec071",
@@ -112,23 +76,54 @@
         "evidence_directory": "docs/browser-qa-v40"
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI is version40 source fc884532aa98bda920e91e3829592baad1ec5a51. Subsequent Trendmanual-default refinement is in progress.",
-    "pending_release": {
-      "section": "por-que-eva",
-      "behavior": "Persistent One reading default plus concise baseline/context education, user requested after40 publication.",
-      "status": "Focused browser, default-persistence, normal/reduced-motion, clinical-copy and viewport checks passed; ready for publication."
+    "latest_verified_ui_release": {
+      "version_number": 41,
+      "source_commit": "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_db0f23b84dd0819187d23edf8028be05",
+      "deployment_id": "appgdep_6af77a300f908191bf8672ec1b8c050c",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-13T20:59:41.371775+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=41#por-que-eva",
+      "behavior": "Trend starts persistently in One reading in SSR, normal and reduced-motion views. History reveals only through manual selection. New concise EN/ES education explains comparable repeat tests, baseline, biomarker context/history and individualized testing frequency. Supporting notes/method remain in native details. All version 40 conciseness/reference-link changes preserved.",
+      "source_files": [
+        "components/story/TrendStorySection.tsx",
+        "components/story/trend-story-section.css",
+        "lib/site-content/trend-story-copy.ts"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-trend-manual-v41.tar.gz",
+        "local_gzip_sha256": "acf270567912f8eaf0b5468d3acb2c9ec01b18a5ccef3807f1ade6099301542b",
+        "local_gzip_size_bytes": 163038972,
+        "saved_tar_content_hash": "sha256:7c033f97484937219255aaf852763fa223d717a2bfb288982bf57d81c31bd9dc",
+        "saved_tar_size_bytes": 171745280,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/trend-manual-qa.json",
+        "evidence_directory": "docs/browser-qa-v41",
+        "local_functional_cases": 4,
+        "final_build_functional_cases": 2,
+        "live_functional_cases": 2,
+        "page_errors": []
+      }
     },
+    "latest_verified_ui_release_note": "Deployed UI is version 41 commit c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164. Later documentation-only commits do not change the live UI.",
+    "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "Evidence/docs followup to deployed source 991dd5310f6e1efc1819e76d37db40016adb3cdb",
+      "relation": "QA/docs followup to version 41 source c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164",
+      "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
+        "README.md",
+        "docs/LAUNCH_HANDOFF.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/format-spacing-qa.json",
-        "docs/browser-qa-v39"
-      ],
-      "ui_redeployment_required": false
+        "docs/trend-manual-qa.json",
+        "docs/browser-qa-v41"
+      ]
     },
     "earlier_verified_ui_release": {
       "version_number": 30,
@@ -289,6 +284,42 @@
           ],
           "screenshots_reviewed": true,
           "scope": "Actual Chromium browser on published version 38, EN/ES desktop and emulated phone layouts, interactions and local preview flows. Physical-device speed and real production accounts/health uploads/purchases are outside this verification."
+        }
+      },
+      {
+        "version_number": 39,
+        "source_commit": "991dd5310f6e1efc1819e76d37db40016adb3cdb",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_81296be5eaac8191b29f8d4902c6fc98",
+        "deployment_id": "appgdep_6af4e0a4a0b88191a5811cd604b1ab4d",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-11T21:40:05.785556+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=39#el-metodo",
+        "behavior": "Implemented the four user-approved format/spacing findings: Method paging follows its copy, guided-results stacks at 701–1050px, phone offer bottom padding is72px, and founder quote wrapping is balanced. Approved text, typography families, imagery, motion and entry flows are preserved.",
+        "source_files": [
+          "app/method-journey.css",
+          "components/story/guided-result-story.css",
+          "app/landing-closing.css",
+          "docs/SESSION_COORDINATION.json"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-format-spacing-v39.tar.gz",
+          "local_gzip_sha256": "97e4dab612a9da70e35b8eb066fd5b35dd6c1c3308d8856fa4860c88ed8f99ed",
+          "local_gzip_size_bytes": 163053222,
+          "saved_tar_content_hash": "sha256:acbdd40d0a70de0b3376739097f185ff42cf9dcf1bd499ad9d8a95aea2c620fe",
+          "saved_tar_size_bytes": 171878400,
+          "file_count": 787
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/format-spacing-qa.json",
+          "evidence_directory": "docs/browser-qa-v39",
+          "local_layout_cases": 10,
+          "local_tablet_cases": 7,
+          "live_layout_cases": 3,
+          "live_section_cases": 3,
+          "page_errors": [],
+          "scope": "Focused format, responsive layout and interaction verification for the three changed CSS files. Prior complete content/flow QA remains separately recorded for version 38."
         }
       }
     ]
@@ -798,6 +829,7 @@
     "production_cutover": "On hold; no evahealth.es, DNS, production hosting or backend changes.",
     "checked_out_source_verified": "2a1b542516938cb6735e21a27948cd5aa83e3c2c",
     "verification_record": "docs/github-workspace-verification.json",
-    "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version39 evidence baseline."
-  }
+    "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
+  },
+  "github_current_ui_source": "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164"
 }

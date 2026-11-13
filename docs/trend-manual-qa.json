@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "published_version": 41,
+  "deployed_ui_commit": "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164",
+  "native_deployment": {
+    "version_number": 41,
+    "source_commit": "c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_db0f23b84dd0819187d23edf8028be05",
+    "deployment_id": "appgdep_6af77a300f908191bf8672ec1b8c050c",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-13T20:59:41.371775+00:00",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=41#por-que-eva",
+    "behavior": "Trend starts persistently in One reading in SSR, normal and reduced-motion views. History reveals only through manual selection. New concise EN/ES education explains comparable repeat tests, baseline, biomarker context/history and individualized testing frequency. Supporting notes/method remain in native details. All version 40 conciseness/reference-link changes preserved.",
+    "source_files": [
+      "components/story/TrendStorySection.tsx",
+      "components/story/trend-story-section.css",
+      "lib/site-content/trend-story-copy.ts"
+    ],
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-trend-manual-v41.tar.gz",
+      "local_gzip_sha256": "acf270567912f8eaf0b5468d3acb2c9ec01b18a5ccef3807f1ade6099301542b",
+      "local_gzip_size_bytes": 163038972,
+      "saved_tar_content_hash": "sha256:7c033f97484937219255aaf852763fa223d717a2bfb288982bf57d81c31bd9dc",
+      "saved_tar_size_bytes": 171745280,
+      "file_count": 787
+    },
+    "qa": {
+      "status": "passed_actual_browser",
+      "record": "docs/trend-manual-qa.json",
+      "evidence_directory": "docs/browser-qa-v41",
+      "local_functional_cases": 4,
+      "final_build_functional_cases": 2,
+      "live_functional_cases": 2,
+      "page_errors": []
+    }
+  },
+  "user_direction": [
+    "Start Trendlines in One reading so visitors reveal history themselves.",
+    "Briefly explain why comparable repeated blood tests establish a personal baseline and why interpretation uses context and history to track change."
+  ],
+  "implementation": [
+    "SSR and state initialize latest; removed automatic intersection-based history reveal.",
+    "Scrolling, waiting, resizing and motion preferences do not choose a mode; manual history choice is preserved through calm-mode changes.",
+    "Retained fixed2.1 readout/latest point and canonical0.8,0.9,0.8,2.1 history, manual polite announcements and500ms transition.",
+    "One educational paragraph replaces repeated context/mode prose; Alex notes, causal qualification and method remain in More context. Fiction label remains visible.",
+    "Frequency depends on marker and health; no universal testing cadence, proven cause or guaranteed health improvement is claimed."
+  ],
+  "verification": [
+    "TypeScript passed",
+    "Production build113routes passed",
+    "English audit1180messages passed",
+    "Default latest persists after2.15seconds, offscreen return andresize in EN/ES and normal/reduced states",
+    "Manual Show history reveals3prior points, changes question/announcement and keeps latest position/value fixed",
+    "Switchback and actual footer calm preserve appropriate chosen mode",
+    "CSS500ms transition has intermediate progress; OSreduce switches immediately",
+    "Native context details retain24hour exercise/no-illness notes and44px method link",
+    "Final ES375x812 chapter810.64px; glass384.5px; lead16px/23.2px; no document overflow",
+    "Actual live desktop and phone smoke passed; no page errors"
+  ],
+  "browser_reports": [
+    {
+      "path": "docs/browser-qa-v41/trend-manual-functional-report.json",
+      "phase": "four-case local functional matrix",
+      "passed": true,
+      "cases": 4,
+      "sha256": "5958943582a9d2591bb0c24c872130667770b889def8d1ffedd2501e2ad174a6"
+    },
+    {
+      "path": "docs/browser-qa-v41/trend-manual-final-report.json",
+      "phase": "final matching build normal/reduced subset",
+      "passed": true,
+      "cases": 2,
+      "sha256": "41ad779e9e82880ce56e5b27992f6118d57a3dea83bd4abb1c5793e4973601e4"
+    },
+    {
+      "path": "docs/browser-qa-v41/trend-manual41-report.json",
+      "phase": "final phone geometry",
+      "passed": true,
+      "cases": 1,
+      "sha256": "5761eb31f5dc24c180293a142ae5c2e2666734a498a6058a35c1819439ec94f4"
+    },
+    {
+      "path": "docs/browser-qa-v41/trend-manual-live41-report.json",
+      "phase": "actual published EN desktop and ES phone",
+      "passed": true,
+      "cases": 2,
+      "sha256": "95dd1ef39bcf24add606f189fa39d3b484bcb855338953fba5b402a22faa444e"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/browser-qa-v41/trend-manual-live41-en-1366-latest.png",
+      "sha256": "333d3a357af0d8a26265a55366b08a69a20097c8d0c038d7d954836f014e52e6",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v41/trend-manual-live41-es-375-latest.png",
+      "sha256": "ce4fd44487dc8ad67dfae481ea47fe0c3027aae85882ccae3984375534227f75",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v41/trend-manual-live41-es-375-history.png",
+      "sha256": "ae95bf70fbb341f5de6ce4daeb67ad749fd74dfb25b4172dda5f5f31f51a6951",
+      "reviewed": true
+    },
+    {
+      "path": "docs/browser-qa-v41/trend41-es-375x812-latest-viewport.png",
+      "sha256": "e882c8b85625ba5d47edf96ccb7f37ea9b9dea75dcd748804ae475f86a97aacc",
+      "reviewed": true
+    }
+  ],
+  "limits": [
+    "Viewport emulation, not physical-device performance. Short320x568 and zoom/reflow views may scroll naturally; text is never clipped to force viewport fit.",
+    "Only review Site and source repositories changed. No evahealth.es, DNS, production backend, accounts, health uploads or purchases."
+  ],
+  "preceding_refinement": "docs/dashboard-conciseness-qa.json records version 40 cuts and reference-symbol removal."
+}

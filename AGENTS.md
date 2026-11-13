@@ -1,6 +1,6 @@
 # EVA landing refinement
 
-Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json), [docs/format-spacing-qa.json](docs/format-spacing-qa.json) and [docs/final-browser-qa.json](docs/final-browser-qa.json) before changing this project. Version 39 is published: the four user-approved Impeccable format/spacing findings are implemented. Fresh focused desktop/tablet/phone browser checks passed. Preserve Method controls grouped with their copy, guided-results tablet stacking at 701–1050px,72px phone offer bottom padding and balanced founder quote wrapping. The earlier complete 18-scenario content/flow QA belongs to version 38 and is preserved separately. Later evidence/docs commits do not change deployed UI.
+Read [docs/SESSION_HANDOFF.json](docs/SESSION_HANDOFF.json), [docs/dashboard-conciseness-qa.json](docs/dashboard-conciseness-qa.json) and [docs/trend-manual-qa.json](docs/trend-manual-qa.json) before changing this project. Version 41 is published and browser-verified. Preserve the medical/wellness marketing-directed concise dashboard examples, native context/source disclosures and reference labels without outgoing glyphs. Trend must start in One reading and switch only on manual choice in normal and reduced-motion views. Keep the concise comparable-repeat-testing/baseline/context education and individualized frequency qualification. Preserve glass/dots/media and earlier accepted work. GitHub main is canonical; evahealth.es cutover remains on hold. Later documentation commits do not change deployed UI.
 
 ## Cross-session coordination
 
@@ -44,7 +44,7 @@ Preserve the earlier placement of the existing results mockup, its explanation-d
 
 The range-proof chapter uses the same 2.1 mg/L result against an illustrative laboratory reference below 5 mg/L and a prevention threshold of at least 2 mg/L on repeat testing. This is not a universal optimal interval or a diagnosis. Preserve the adjacent repeat-confirmation condition and sources in `docs/range-interpretation-evidence.json`.
 
-Preserve both accepted Trendlines refinements: reuse the actual earlier Alex glass through `guided-instrument`, `bio-glass` and `guided-value`, with the white dotted readout and external pearl `bio-views` controls; and change the interpretation plus next question between One reading and Show history. Keep the latest value, history, notes and layout fixed. Only manual changes make the polite interpretation announcement. Version 38 actual browser QA also verifies the method, media and full preview entry flows.
+Preserve both accepted Trendlines refinements: reuse the actual earlier Alex glass through `guided-instrument`, `bio-glass` and `guided-value`, with the white dotted readout and external pearl `bio-views` controls; and change the interpretation plus next question between One reading and Show history. Keep the latest value, history and notes fixed; version 41 displays supporting notes on demand in native details. Only manual changes make the polite interpretation announcement; do not restore the superseded automatic history entrance. Version 38 actual browser QA also verifies the method, media and full preview entry flows.
 
 Keep signal, health-history and suggested-review copy consistent across English, Spanish, animated, static and reduced-motion forms.
 

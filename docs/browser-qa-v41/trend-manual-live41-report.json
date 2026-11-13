@@ -1,0 +1,123 @@
+{
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "tag": "trend-manual-live41",
+  "cases": [
+    {
+      "l": "en",
+      "w": 1366,
+      "h": 650,
+      "ssrDefault": "latest",
+      "noAutomaticChanges": {
+        "after2150ms": true,
+        "afterOffscreenReturn": true,
+        "afterResize": true,
+        "noAutomaticAnnouncement": true
+      },
+      "defaultPriorOpacity": [
+        0,
+        0,
+        0
+      ],
+      "defaultSurvivesManualCalm": true,
+      "traceDuration": "0.5s, 0.5s",
+      "duringOpacity": 0.576142,
+      "transitionElapsedMs": 517,
+      "visualTransitionElapsedMs": 533,
+      "priorOpacity": [
+        1,
+        1,
+        1
+      ],
+      "fixedLatestPoint": {
+        "before": {
+          "x": 701.921875,
+          "y": 57.34375,
+          "width": 771.34375,
+          "height": 160,
+          "value": "2.1"
+        },
+        "after": {
+          "x": 701.921875,
+          "y": 57.34375,
+          "width": 771.34375,
+          "height": 160,
+          "value": "2.1"
+        }
+      },
+      "questions": [
+        "What do earlier readings show?",
+        "Is it temporary or persistent?"
+      ],
+      "manualAnnouncement": "With history. History reveals a rise whose cause and persistence remain uncertain. Is it temporary or persistent?",
+      "chosenHistorySurvivesManualCalm": true,
+      "detailsPreserved": true,
+      "layout": {
+        "height": 764.09375,
+        "viewport": 650,
+        "documentWidth": 1366,
+        "viewportWidth": 1366
+      },
+      "passed": true
+    },
+    {
+      "l": "es",
+      "w": 375,
+      "h": 812,
+      "ssrDefault": "latest",
+      "noAutomaticChanges": {
+        "after2150ms": true,
+        "afterOffscreenReturn": true,
+        "afterResize": true,
+        "noAutomaticAnnouncement": true
+      },
+      "defaultPriorOpacity": [
+        0,
+        0,
+        0
+      ],
+      "defaultSurvivesManualCalm": true,
+      "traceDuration": "0.5s, 0.5s",
+      "duringOpacity": 0.513406,
+      "transitionElapsedMs": 528,
+      "visualTransitionElapsedMs": 531,
+      "priorOpacity": [
+        1,
+        1,
+        1
+      ],
+      "fixedLatestPoint": {
+        "before": {
+          "x": 270.265625,
+          "y": 50.171875,
+          "width": 297,
+          "height": 140,
+          "value": "2.1"
+        },
+        "after": {
+          "x": 270.265625,
+          "y": 50.171875,
+          "width": 297,
+          "height": 140,
+          "value": "2.1"
+        }
+      },
+      "questions": [
+        "¿Qué muestran las lecturas anteriores?",
+        "¿Es temporal o persiste?"
+      ],
+      "manualAnnouncement": "Con su historial. El historial muestra una subida cuya causa y persistencia siguen sin confirmar. ¿Es temporal o persiste?",
+      "chosenHistorySurvivesManualCalm": true,
+      "detailsPreserved": true,
+      "layout": {
+        "height": 1053.234375,
+        "viewport": 812,
+        "documentWidth": 375,
+        "viewportWidth": 375
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "source": "Published version41; emulated viewports and real Chromium input",
+  "passed": true
+}

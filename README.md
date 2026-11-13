@@ -2,11 +2,11 @@
 
 The working source for EVA’s rebranded website lives in [imthejuandi/EvaRebranded](https://github.com/imthejuandi/EvaRebranded), on `main`. It includes the bilingual landing, approved media, application preview, design history, integration references and browser QA evidence.
 
-The approved landing baseline is **review version 39**, UI commit `991dd5310f6e1efc1819e76d37db40016adb3cdb`. Later documentation and GitHub synchronization commits preserve that interface. [Fresh-checkout verification](docs/github-workspace-verification.json) records the consolidated source checks.
+The approved landing baseline is **review version 41**, UI commit `c74e65c7aabf6f13e554cb4cdaeb3bcf49bb3164`. Later documentation and GitHub synchronization commits preserve that interface. [Original consolidation verification](docs/github-workspace-verification.json) records the earlier fresh-checkout checks. Current dashboard and Trend checks are in the linked QA records.
 
-- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=39) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=39).
+- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=41) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=41).
 - Continue the remaining work: [Launch handoff](docs/LAUNCH_HANDOFF.md).
-- Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [version 39 QA](docs/format-spacing-qa.json).
+- Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [current Trend QA](docs/trend-manual-qa.json).
 
 **Production cutover is on hold.** This source synchronization does not connect the rebrand to `evahealth.es`, change DNS or activate production services. Application screens use browser-local fictional data. Commercial, legal and integration details remain before launch.
 
@@ -35,7 +35,7 @@ node scripts/check-method.mjs
 
 The build exports 113 routes to `dist/client`. Run `python3 scripts/serve-review.py` and open `http://127.0.0.1:4175/en` or `/es` to inspect that output.
 
-[Browser QA instructions](scripts/browser-qa/README.md) accompany the evidence for [version 38’s complete landing/preview-flow checks](docs/final-browser-qa.json) and [version 39’s focused format checks](docs/format-spacing-qa.json). Older `check:content`, `check:delivery` and import-era expectations include superseded copy; consult the handoff and relevant section checks before using them as release gates.
+[Browser QA instructions](scripts/browser-qa/README.md) accompany the evidence for [version 38’s complete landing/preview-flow checks](docs/final-browser-qa.json), [version 39’s format checks](docs/format-spacing-qa.json), [version 40’s dashboard cuts](docs/dashboard-conciseness-qa.json) and [version 41’s manual Trend explanation](docs/trend-manual-qa.json). Older `check:content`, `check:delivery` and import-era expectations include superseded copy; consult the handoff and relevant section checks before using them as release gates.
 
 ## Source and publishing
 
