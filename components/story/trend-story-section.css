@@ -4,6 +4,7 @@
 .trend-story-heading h2{font-size:var(--proof-title-size);line-height:var(--proof-title-leading);letter-spacing:-.025em;font-weight:var(--proof-heading-weight);margin:0;max-width:12ch;text-wrap:balance}
 .trend-story-heading h2 em{font-family:Georgia,serif;font-style:italic;font-weight:400;line-height:inherit}
 .trend-story-heading>p{font-size:var(--proof-body-size);font-weight:400;line-height:var(--proof-body-leading);letter-spacing:normal;max-width:68ch;margin:var(--proof-space-related) 0 0;color:#50584d}
+.trend-story-heading>p strong{font-weight:600}
 .trend-instrument.guided-instrument{grid-area:instrument;align-self:start;min-width:0;--bio-glass-radius:44px;border-radius:var(--bio-glass-radius);padding:24px 28px 16px;margin:0}
 .trend-instrument-head{display:flex;align-items:center;justify-content:space-between;gap:var(--proof-space-group)}
 .trend-example-label{font-size:var(--proof-meta-size);line-height:1.4;font-weight:400;letter-spacing:normal;max-width:40ch;margin:var(--proof-space-tight) 0 0;color:#fffdf6e6}

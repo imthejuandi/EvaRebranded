@@ -53,7 +53,7 @@ export function TrendStorySection({calm=false}: {calm?:boolean}) {
   };
   const historyVisible=mode==='history';
   return <section className="trend-story" id="por-que-eva" aria-labelledby="por-que-eva-title" data-trend-story data-trend-mode={mode} data-trend-motion-ready={motionReady} data-trend-calm={calm} data-trend-reveal-state={phase} data-trend-transition-ms={TRANSITION_MS}>
-    <header className="trend-story-heading"><h2 id="por-que-eva-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2><p>{c.lead}</p></header>
+    <header className="trend-story-heading"><h2 id="por-que-eva-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2><p>{c.lead.map(part=>part.emphasis?<strong key={part.text}>{part.text}</strong>:part.text)}</p></header>
     <div className="trend-view-controls bio-views" role="group" aria-label={c.historyLabel}>
       <button type="button" aria-pressed={!historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('latest')} data-trend-control="latest">{c.controls.latest}</button>
       <button type="button" aria-pressed={historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('history')} data-trend-control="history">{c.controls.history}</button>
