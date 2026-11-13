@@ -75,14 +75,14 @@ export function TrendStorySection({calm=false}: {calm?:boolean}) {
   const historyVisible=mode==='history';
   return <section className="trend-story" id="por-que-eva" aria-labelledby="por-que-eva-title" data-trend-story data-trend-mode={mode} data-trend-motion-ready={motionReady} data-trend-calm={calm} data-trend-reveal-state={phase} data-trend-transition-ms={TRANSITION_MS}>
     <div className="section-kicker"><span>{c.kicker}</span><span>{alex.eyebrow}</span></div>
-    <header className="trend-story-heading"><h2 id="por-que-eva-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2><p>{c.lead}</p></header>
+    <header className="trend-story-heading"><h2 id="por-que-eva-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2></header>
     <div className="trend-view-controls bio-views" role="group" aria-label={c.historyLabel}>
       <button type="button" aria-pressed={!historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('latest')} data-trend-control="latest">{c.controls.latest}</button>
       <button type="button" aria-pressed={historyVisible} aria-controls="trend-story-chart" onClick={()=>choose('history')} data-trend-control="history">{c.controls.history}</button>
     </div>
     <div className="trend-instrument guided-instrument bio-glass">
       <div className="trend-instrument-head">
-        <div><p className="trend-instrument-kicker">{historyVisible?c.historyLabel:c.latestLabel}</p><h3>hs-CRP</h3><p className="trend-current-reading">{c.latestLabel} · {c.readingLabel} 04</p></div>
+        <h3>hs-CRP</h3>
         <p className="trend-latest-value guided-value" data-trend-latest-value="2.1"><span className="sr-only">{number(latest.value)} mg/L</span><span aria-hidden="true"><DotNumber value={number(latest.value)} density="coarse" calm active={false}/><small>mg/L</small></span></p>
       </div>
       <div className="trend-evidence-grid">
@@ -98,26 +98,28 @@ export function TrendStorySection({calm=false}: {calm?:boolean}) {
             <span className="trend-latest-point" style={{left:`${latest.x/800*100}%`,top:`${latest.y/260*100}%`}} data-trend-latest-point data-trend-point-value={latest.value} aria-hidden="true"/>
           </div>
           <ol className="trend-reading-labels" aria-label={c.historyLabel}>
-            {points.map((point,index)=><li key={index} style={{left:`${point.x/800*100}%`}} data-trend-reading={index+1} data-history-reading={index<3} aria-hidden={index<3&&!historyVisible}><span>{c.readingLabel} {String(index+1).padStart(2,'0')}</span><strong>{number(point.value)}</strong></li>)}
+            {points.map((point,index)=><li key={index} style={{left:`${point.x/800*100}%`}} data-trend-reading={index+1} data-history-reading={index<3} aria-hidden={index<3&&!historyVisible}><span className="sr-only">{c.readingLabel} {String(index+1).padStart(2,'0')}: </span><strong>{number(point.value)}</strong></li>)}
           </ol>
-          <p className="trend-units">hs-CRP · mg/L</p>
         </div>
-        <aside className="trend-context" aria-labelledby="trend-context-title" data-trend-context>
-          <p id="trend-context-title">{alex.contextTitle}<span>{alex.contextSource}</span></p>
-          <ul>{alex.contextNotes.map(note=><li key={note}>{note}</li>)}</ul>
-          <p className="trend-context-limit" data-trend-limit>{alex.limit}</p>
-        </aside>
+
       </div>
+      <p className="trend-context-summary" data-trend-context>{c.contextSummary}</p>
       <div className="trend-insight" id="trend-story-interpretation">
         {modes.map(view=>{
           const interpretation=c.interpretations[view];
           return <div key={view} className="trend-interpretation" data-trend-interpretation={view} data-active={view===mode} aria-hidden={view!==mode}>
-            <p className="trend-interpretation-label">{interpretation.label}</p>
             <p className="trend-interpretation-copy">{interpretation.explanation}</p>
             <h3 className="trend-interpretation-question">{interpretation.question}</h3>
           </div>;
         })}
       </div>
+      <details className="trend-context-details"><summary><span>{c.detailsLabel}</span><Arrow direction="down"/></summary>
+        <aside className="trend-context" aria-labelledby="trend-context-title">
+          <p id="trend-context-title">{alex.contextTitle}<span>{alex.contextSource}</span></p>
+          <ul>{alex.contextNotes.map(note=><li key={note}>{note}</li>)}</ul>
+          <p className="trend-context-limit" data-trend-limit>{alex.limit}</p>
+        </aside>
+      </details>
       <span className="sr-only" role="status" aria-live="polite" aria-atomic="true" data-trend-announcement>{announcement}</span>
     </div>
     <div className="trend-story-foot"><p data-trend-disclosure>{c.disclosure}</p><a href={href(`${businessLinks.science}#science-comparison-title`)} data-trend-method>{c.methodLink}<Arrow/></a></div>

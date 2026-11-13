@@ -10,7 +10,7 @@ type Placement = {left: number; top: number; width: number; maxHeight: number; c
 const MENU_HEIGHT = 182;
 
 /** One signup preference, previewed through a contemporary, keyboard-accessible picker. */
-export function ExplanationSetting({level, onLevel}: {level: ExplanationLevel; onLevel: (level: ExplanationLevel) => void}) {
+export function ExplanationSetting({level, onLevel, showHint=true}: {level: ExplanationLevel; onLevel: (level: ExplanationLevel) => void; showHint?:boolean}) {
   const {locale} = useSiteLanguage(), c = resultExplanationCopy[locale], id = useId();
   const trigger = useRef<HTMLButtonElement>(null), menu = useRef<HTMLDivElement>(null);
   const options = useRef<Array<HTMLButtonElement | null>>([]);
@@ -121,7 +121,7 @@ export function ExplanationSetting({level, onLevel}: {level: ExplanationLevel; o
   };
 
   return <div className="explanation-setting">
-    <button ref={trigger} type="button" className="explanation-setting-trigger" aria-label={`${c.settingLabel}: ${c.levels[level]}`} aria-haspopup="listbox" aria-expanded={open} aria-controls={id + '-menu'} aria-describedby={id + '-hint'} onClick={() => open ? close(true) : openMenu()} onKeyDown={event => {
+    <button ref={trigger} type="button" className="explanation-setting-trigger" aria-label={`${c.settingLabel}: ${c.levels[level]}`} aria-haspopup="listbox" aria-expanded={open} aria-controls={id + '-menu'} aria-describedby={showHint ? id + '-hint' : undefined} onClick={() => open ? close(true) : openMenu()} onKeyDown={event => {
       if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {event.preventDefault(); openMenu();}
       if (event.key === 'Home' || event.key === 'End') {event.preventDefault(); openMenu(event.key === 'Home' ? 0 : explanationLevels.length - 1);}
     }}>
@@ -129,7 +129,7 @@ export function ExplanationSetting({level, onLevel}: {level: ExplanationLevel; o
       <span className="explanation-setting-current">{c.levels[level]}</span>
       <svg className="explanation-setting-chevron" width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
     </button>
-    <p id={id + '-hint'}>{c.settingHint}</p>
+    {showHint && <p id={id + '-hint'}>{c.settingHint}</p>}
     {open && placement && createPortal(<div ref={menu} id={id + '-menu'} role="listbox" aria-label={c.settingLabel} className="explanation-setting-menu" data-calm={placement.calm} style={{left: placement.left, top: placement.top, width: placement.width, maxHeight: placement.maxHeight}} onKeyDown={menuKey}>
       {explanationLevels.map((depth, index) => <button ref={element => {options.current[index] = element;}} type="button" role="option" aria-selected={level === depth} tabIndex={-1} key={depth} className="explanation-setting-option" data-active={index === activeIndex} onPointerEnter={event => {if (event.pointerType !== 'touch') setActiveIndex(index);}} onClick={() => choose(index)}>
         <span><strong>{c.levels[depth]}</strong><small>{c.benefits[depth]}</small></span>

@@ -31,12 +31,10 @@ export function GuidedResultStory({calm=false, uploadHref}: {calm?:boolean; uplo
   const choose=(next:ExplanationLevel)=>{if(next===level)return;setLevel(next);setAnnouncement(`${labels.levels[next]}. ${c.paragraphs[next]} ${c.limit}`);};
   return <div ref={root} id="alex-story" className="guided-result-story" data-depth={level} data-entered={entered} data-motion-ready={motionReady} data-calm={calm} onFocusCapture={()=>setEntered(true)}>
     <div className="guided-story-intro">
-      <header className="guided-feature-heading"><h2 id="markers-title">{labels.headline[0]}<br/><em>{labels.headline[1]}</em></h2>
-      <p className="guided-feature-intro">{labels.intro}</p></header>
-      <section className="guided-preference" aria-label={labels.settingEyebrow}>
-        <p className="guided-preference-eyebrow"><span aria-hidden="true"/>{labels.settingEyebrow}</p>
-        <h3>{labels.settingInvitation}</h3>
-        <ExplanationSetting level={level} onLevel={choose}/>
+      <header className="guided-feature-heading"><h2 id="markers-title">{labels.headline[0]}<br/><em>{labels.headline[1]}</em></h2></header>
+      <section className="guided-preference" id="kit-explanation-preview" aria-label={labels.label}>
+        <h3>{labels.label}</h3>
+        <ExplanationSetting level={level} onLevel={choose} showHint={false}/>
       </section>
       <a className="text-link guided-start" href={uploadHref}><span>{t('Interpreta tus análisis previos')}<br/><small>{t('Empieza gratis')}</small></span><Arrow/></a>
     </div>
@@ -44,15 +42,18 @@ export function GuidedResultStory({calm=false, uploadHref}: {calm?:boolean; uplo
       <div className="guided-instrument bio-glass">
         <span className="guided-light" aria-hidden="true"/>
         <div className="guided-evidence">
-          <div className="guided-marker"><p className="guided-case-label">{c.eyebrow}</p><h3>hs-CRP</h3><p>{c.evidence}</p></div>
+          <div className="guided-marker"><p className="guided-case-label">{c.eyebrow}</p><h3>hs-CRP</h3></div>
           <p className="guided-value" data-value="2.1"><span className="sr-only">{number(2.1)} mg/L</span><span aria-hidden="true"><DotNumber value={number(2.1)} density="coarse" calm={calm||!entered}/><small>mg/L</small></span></p>
         </div>
         <div className="guided-prose-stack">{explanationLevels.map(depth=><p key={depth} data-active={depth===level} aria-hidden={depth!==level}>{c.paragraphs[depth]}</p>)}</div>
-        <div className="guided-report-context">
+        <details className="guided-evidence-details">
+          <summary><span>{c.detailsLabel}</span><Arrow direction="down"/></summary>
+          <div className="guided-report-context">
           <div className="guided-context"><p><span>{c.contextTitle}</span><small>{c.contextSource}</small></p><ul>{c.contextNotes.map(note=><li key={note}>{note}</li>)}</ul></div>
           <div className="guided-history"><p>{c.history}<span>mg/L</span></p><svg viewBox="0 0 480 70" role="img" aria-label={c.historyLabel} preserveAspectRatio="none"><path d={historyPath} pathLength="1"/>{historyPoints.map((point,index)=><circle key={index} cx={point.x} cy={point.y} r={index===3?4:3}/>)}</svg><div className="guided-history-values">{readings.map((value,index)=><span key={index}><span className="sr-only">{number(value)}</span><span aria-hidden="true"><DotNumber value={number(value)} density="coarse" calm active={false}/></span></span>)}</div></div>
-        </div>
-        <p className="guided-causal-limit">{c.limit}</p>
+          </div>
+          <p className="guided-follow-up">{c.followUp}</p>
+        </details>
         <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">{announcement}</span>
       </div>
       <p className="guided-disclosure">{c.disclosure}</p>

@@ -1,4 +1,4 @@
-/** Fictional teaching case. Context is self-reported and stays visible at every level. */
+/** Fictional teaching case. Context is self-reported and remains the same at every explanation level. */
 export const alexStoryReadings = [0.8, 0.9, 0.8, 2.1] as const;
 export const alexStoryCopy = {
   en: {
@@ -12,17 +12,19 @@ export const alexStoryCopy = {
     contextNotes: ['Hard workout · previous 24 hours', 'No recent illness reported'],
     purposes: {simple: 'Plain language', balanced: 'How it works', advanced: 'Clinical detail'},
     paragraphs: {
-      simple: 'Alex’s inflammation marker is higher than last time. A hard workout the day before can temporarily raise it. That may help explain the change, but doesn’t prove the cause. Discuss a repeat test after recovery with a clinician to see whether the rise lasts.',
-      balanced: 'Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. The liver makes this protein in response to inflammation. Alex logged strenuous exercise within 24 hours and no recent illness. The workout could contribute, but cannot be confirmed as the cause. Comparing a repeat measurement after recovery with a clinician can help distinguish a temporary rise from a persistent pattern.',
-      advanced: 'hs-CRP measures C-reactive protein, a hepatic acute-phase protein. Alex’s 0.8 → 2.1 mg/L change follows reported strenuous exercise within 24 hours, without reported illness. Exercise may contribute; causality is unproven. Biological and assay variation also matter. Review comparable repeat measurements with a clinician when clinically stable before assessing baseline inflammation or cardiovascular risk.',
+      simple: 'Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.',
+      balanced: 'Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern.',
+      advanced: 'hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern.',
     },
     history: 'His results over time',
     historyLabel: 'Fictional hs-CRP readings: 0.8, 0.9, 0.8 and 2.1 milligrams per litre. The latest draw follows a self-reported hard workout. This timing does not establish the cause of the rise.',
     limit: 'Context informs the interpretation. It does not prove the cause.',
     closing: 'The same result. The same context. At your level.',
-    disclosure: 'Alex, his history and his blood-draw notes are fictional. The latest value is from EVA’s public examples. This illustrates how context can inform an explanation; it is not a personal medical assessment.',
+    disclosure: 'Fictional example. Not a medical assessment.',
+    detailsLabel: 'View history and blood-draw notes',
+    followUp: 'A clinician can assess whether another measurement after recovery would help.',
     explore: 'Explore sample dashboard',
-    exploreDetail: 'More markers, charts and reference ranges',
+    exploreDetail: 'Markers, history and ranges',
   },
   es: {
     eyebrow: 'ALEX · UN EJEMPLO FICTICIO',
@@ -35,16 +37,18 @@ export const alexStoryCopy = {
     contextNotes: ['Ejercicio intenso · últimas 24 horas', 'Sin enfermedad reciente declarada'],
     purposes: {simple: 'Lenguaje claro', balanced: 'Cómo funciona', advanced: 'Detalle clínico'},
     paragraphs: {
-      simple: 'El marcador de inflamación de Alex subió. El ejercicio intenso del día anterior puede elevarlo temporalmente. Ese dato ayuda a entender el cambio, pero no demuestra la causa. Comentar con un profesional sanitario si conviene repetir la prueba tras recuperarse puede ayudar a saber si la subida persiste.',
-      balanced: 'La hs-CRP de Alex pasó de 0,8 a 2,1 mg/L. El hígado produce esta proteína ante la inflamación. Alex registró ejercicio intenso en las últimas 24 horas y ninguna enfermedad reciente. El entrenamiento podría influir, pero no confirma la causa. Revisar con un profesional otra medición tras recuperarse ayuda a valorar si el cambio es transitorio o persistente.',
-      advanced: 'La hs-CRP mide proteína C reactiva, una proteína hepática de fase aguda. El cambio de 0,8 a 2,1 mg/L sigue al ejercicio intenso declarado en las últimas 24 horas, sin enfermedad declarada. Es una posible influencia, no una causa confirmada. La variación biológica y analítica también importa. Conviene revisar mediciones comparables en condiciones clínicamente estables con un profesional antes de valorar inflamación basal o riesgo cardiovascular.',
+      simple: 'El marcador de inflamación de Alex subió. El ejercicio intenso puede elevarlo temporalmente, pero no demuestra la causa. Hacen falta más mediciones para saber si la subida persiste.',
+      balanced: 'La hs-CRP de Alex pasó de 0,8 a 2,1 mg/L. El ejercicio reciente podría influir, pero la causa y la persistencia siguen sin confirmar. Comparar mediciones repetidas en condiciones similares puede aclarar el patrón.',
+      advanced: 'La hs-CRP es un marcador inespecífico de inflamación. La subida de Alex de 0,8 a 2,1 mg/L sigue al ejercicio intenso declarado. La causa y la persistencia no están confirmadas; también importan la variación biológica y analítica.',
     },
     history: 'Sus resultados en el tiempo',
     historyLabel: 'Lecturas ficticias de hs-CRP: 0,8, 0,9, 0,8 y 2,1 miligramos por litro. Alex declaró ejercicio intenso antes de la última extracción. La coincidencia no demuestra la causa de la subida.',
     limit: 'El contexto orienta la interpretación. No demuestra la causa.',
     closing: 'El mismo resultado. El mismo contexto. A tu nivel.',
-    disclosure: 'Alex, su historial y los datos de la extracción son ficticios. El último valor procede de los ejemplos públicos de EVA. Así puede ayudar el contexto a explicar un resultado; no es una valoración médica personal.',
+    disclosure: 'Ejemplo ficticio. No es una valoración médica.',
+    detailsLabel: 'Ver historial y datos de la extracción',
+    followUp: 'Un profesional puede valorar si conviene repetir la medición tras la recuperación.',
     explore: 'Explora el panel de ejemplo',
-    exploreDetail: 'Más marcadores, gráficas e intervalos de referencia',
+    exploreDetail: 'Marcadores, historial e intervalos',
   },
 } as const;

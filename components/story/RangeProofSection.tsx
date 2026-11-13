@@ -49,14 +49,12 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
   },[calm,locale]);
 
   return <section ref={root} className="range-proof" id="otra-lectura" aria-labelledby="range-proof-title" data-range-proof data-range-entry-state="complete" data-range-entry-duration-ms="500">
-    <div className="section-kicker"><span>{c.kicker}</span><span>{c.unchangedLabel}</span></div>
+    <div className="section-kicker"><span>{c.kicker}</span></div>
     <div className="range-proof-layout">
       <div className="range-proof-story">
         <h2 id="range-proof-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2>
-        <p className="range-proof-lead">{c.lead}</p>
         <div className="range-proof-actions">
           <a className="range-proof-primary" href={href(uploadHref)} data-range-upload><span><strong>{c.primary}</strong><small>{c.primarySubtitle}</small></span><Arrow/></a>
-          <a className="range-proof-secondary" href={href(businessLinks.signup+'?plan=quarterly')} data-range-kit><span>{c.secondary}</span><small>{c.secondaryDetail}</small><Arrow/></a>
         </div>
       </div>
       <div className="range-proof-evidence">
@@ -77,17 +75,26 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
           <div className="range-proof-readings">
             <div className="range-proof-reading" data-range-reading="lab">
               <p className="range-proof-reading-label">{c.lab.label}<span>{c.lab.threshold}</span></p>
-              <h4>{c.lab.interpretation}</h4><p className="range-proof-reading-detail">{c.lab.detail}</p>
+              <h4>{c.lab.interpretation}</h4>
             </div>
             <div ref={prevention} className="range-proof-reading range-proof-prevention" data-range-reading="prevention">
               <p className="range-proof-reading-label">{c.prevention.label}<span>{c.prevention.threshold}</span></p>
-              <h4>{c.prevention.interpretation}</h4><p className="range-proof-reading-detail">{c.prevention.detail}</p>
+              <h4>{c.prevention.interpretation}</h4>
             </div>
           </div>
         </div>
-        <p className="range-proof-context">{c.context}</p>
-        <div className="range-proof-sources"><p>{c.sourceLabel}</p>{c.sources.map(source=><a key={source.href} href={source.href} target="_blank" rel="noreferrer" data-range-source>{source.label}<span aria-hidden="true">↗</span></a>)}</div>
-        <a className="range-proof-method" href={href(businessLinks.science)} data-range-method>{c.methodLink}<Arrow/></a>
+        <p className="range-proof-context">{c.qualifier}</p>
+        <details className="range-proof-details">
+          <summary>{c.detailsLabel}</summary>
+          <div className="range-proof-detail-body">
+            <p className="range-proof-lead">{c.lead}</p>
+            <p><strong>{c.lab.label}. </strong>{c.lab.detail}</p>
+            <p><strong>{c.prevention.label}. </strong>{c.prevention.detail}</p>
+            <p>{c.context}</p>
+            <div className="range-proof-sources"><p>{c.sourceLabel}</p>{c.sources.map(source=><a key={source.href} href={source.href} target="_blank" rel="noreferrer" data-range-source>{source.label}</a>)}</div>
+            <a className="range-proof-method" href={href(businessLinks.science)} data-range-method>{c.methodLink}<Arrow/></a>
+          </div>
+        </details>
       </div>
     </div>
   </section>;

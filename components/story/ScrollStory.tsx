@@ -24,7 +24,6 @@ import {TassoFilmTranscript} from './TassoFilmTranscript';
 import { createStoryScrollDriver } from '@/lib/story-scroll-driver';
 import {OPENING_END_FRAME, OPENING_SCROLL_HEIGHT_SVH, openingFrameAtProgress, openingProgressAtFrame} from '@/lib/story-scroll-timing';
 import {StoryScenePassage} from './StoryScenePassage';
-import {KitExplanationPreview} from './KitExplanationPreview';
 import {RangeProofSection} from './RangeProofSection';
 const ResultsContent = memo(BiomarkerGallery), EditorialContent = memo(HealthEditorial), OfferContent = memo(BusinessOffer), SignalContent = memo(SignalPassage);
 function readStoryPosition() {
@@ -152,7 +151,6 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
  {calm && <TassoFilmSummary/>}
  <StoryScenePassage kind="kit" calm={calm}/>
  <RangeProofSection calm={calm}/>
- <KitExplanationPreview/>
  <ResultsContent calm={calm}/>
  <SignalContent calm={calm}/>
  <EditorialContent calm={calm}/>

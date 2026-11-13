@@ -1,0 +1,69 @@
+/* The optional console shares the report glass, with one selected reading at a time. */
+.sample-dashboard .bio-console{display:flex;flex-direction:column;gap:12px;width:100%;max-width:none;padding:20px;border-radius:32px}
+.sample-dashboard .bio-marker-controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.sample-dashboard .bio-marker-button{--bio-glass-radius:22px;min-width:0;min-height:44px;padding:10px 14px;border-radius:var(--bio-glass-radius);font-size:14px;line-height:1.25;text-align:center;transition:outline-color 180ms,transform 180ms}
+.sample-dashboard .bio-marker-button[aria-pressed=true]{outline:2px solid #405445;outline-offset:2px}
+.sample-dashboard .bio-marker-button:hover{transform:translateY(-1px)}
+.sample-dashboard .bio-marker-button:focus-visible{outline:2px solid #405445;outline-offset:4px}
+.sample-dashboard .bio-console-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px}
+.sample-dashboard .bio-views{flex:1;max-width:420px;gap:8px;margin:0}
+.sample-dashboard .bio-views button{min-height:44px;padding:8px 12px;font-size:14px}
+.sample-dashboard .bio-setting-toolbar{flex:none;padding:0}
+.sample-dashboard .explanation-setting{width:220px;margin:0}
+.sample-dashboard .explanation-setting-trigger{min-height:44px;padding:9px 14px}
+.sample-dashboard .explanation-setting-current{font-size:15px}
+.sample-dashboard .bio-main{--bio-glass-radius:28px;grid-area:auto;min-height:0;padding:20px 24px 8px;border-radius:var(--bio-glass-radius)}
+.sample-dashboard .bio-main-heading h3{font-size:20px}
+.sample-dashboard .bio-main-heading p{max-width:none;margin:4px 0 0;font-size:11px}
+.biomarker-lab .sample-dashboard .bio-main .bio-main-body{height:auto;min-height:0;animation:none}
+.sample-dashboard .bio-chart{height:190px}
+.sample-dashboard .bio-chart svg{height:175px}
+.sample-dashboard .bio-chart-value{top:8px}
+.sample-dashboard .bio-range-view{padding:16px 0 12px}
+.sample-dashboard .bio-range-value{margin:0;font-size:32px}
+.sample-dashboard .bio-range-row{margin-top:18px}
+.sample-dashboard .bio-range-row>div{margin-top:12px}
+.sample-dashboard .bio-range-row>p{font-size:12px}
+.sample-dashboard .result-explanation{padding:14px 0 6px}
+.sample-dashboard .result-explanation-value{margin-bottom:12px}
+.sample-dashboard .result-explanation-value>span{font-size:44px}
+.sample-dashboard .result-prose-stack{max-width:76ch}
+.sample-dashboard .result-prose-stack>p{font-size:16px;line-height:1.45}
+.sample-dashboard .result-prose-stack>p[data-active=false]{display:none}
+.sample-dashboard .result-explanation-reassurance{padding-top:10px;margin-top:12px}
+.sample-dashboard .bio-period{margin-top:6px;font-size:12px}
+.sample-dashboard .bio-period button{width:44px;min-height:44px;flex:none}
+.sample-dashboard .bio-range-disclosure{min-width:0;border-top:1px solid #323a2f30}
+.sample-dashboard .bio-range-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;padding:8px 4px;cursor:pointer;list-style:none;font-size:13px;line-height:1.4}
+.sample-dashboard .bio-range-disclosure>summary::-webkit-details-marker{display:none}
+.sample-dashboard .bio-range-disclosure>summary>svg{flex:none;transition:rotate 180ms}
+.sample-dashboard .bio-range-disclosure[open]>summary>svg{rotate:180deg}
+.sample-dashboard .bio-range-index{margin:0;border:0;padding:8px 0 0}
+.sample-dashboard .bio-range-index caption{padding-bottom:12px}
+.sample-dashboard .bio-range-index th,.sample-dashboard .bio-range-index td{padding:10px 6px}
+.sample-dashboard .bio-report-caption{max-width:none;gap:24px;margin-top:14px}
+.sample-dashboard .bio-report-caption .illustration-note{font-size:11px;line-height:1.45}
+@media(max-width:700px){
+ .sample-dashboard .bio-console{gap:10px;padding:12px;border-radius:26px}
+ .sample-dashboard .bio-marker-controls{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .sample-dashboard .bio-marker-button{font-size:12px;padding:9px 5px}
+ .sample-dashboard .bio-console-controls{flex-wrap:wrap;gap:10px}
+ .sample-dashboard .bio-views{flex-basis:100%;max-width:none;gap:7px}
+ .sample-dashboard .bio-views button{font-size:13px;padding-inline:8px}
+ .sample-dashboard .bio-setting-toolbar{width:100%;justify-content:flex-end}
+ .sample-dashboard .explanation-setting{width:100%}
+ .sample-dashboard .bio-main{--bio-glass-radius:22px;padding:16px 16px 6px}
+ .sample-dashboard .bio-main-heading h3{font-size:18px}
+ .sample-dashboard .bio-main-heading>span{font-size:10px}
+ .sample-dashboard .bio-main-heading p{font-size:10px}
+ .sample-dashboard .bio-chart{height:175px}
+ .sample-dashboard .bio-chart svg{height:155px}
+ .sample-dashboard .bio-chart-value>span{font-size:29px}
+ .sample-dashboard .bio-range-row>p{font-size:11px;gap:6px}
+ .sample-dashboard .result-explanation-value>span{font-size:40px}
+ .sample-dashboard .bio-period{font-size:11px;gap:8px}
+ .sample-dashboard .bio-report-caption{margin-top:12px;padding-inline:4px}
+ .sample-dashboard .bio-report-caption .illustration-note{font-size:10px;line-height:1.4;margin-top:7px}
+}
+.bio-calm .sample-dashboard .bio-marker-button,.bio-calm .sample-dashboard .bio-marker-button:hover,.bio-calm .sample-dashboard .bio-range-disclosure>summary>svg{transition:none;transform:none}
+@media(prefers-reduced-motion:reduce){.sample-dashboard .bio-marker-button,.sample-dashboard .bio-marker-button:hover,.sample-dashboard .bio-range-disclosure>summary>svg{transition:none;transform:none}}
