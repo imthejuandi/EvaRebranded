@@ -1,25 +1,19 @@
 @font-face{font-family:'EVA Hanken';src:url('/fonts/hanken-grotesk-regular.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
 @font-face{font-family:'EVA Hanken';src:url('/fonts/hanken-grotesk-semibold.woff') format('woff');font-style:normal;font-weight:600;font-display:swap}
 /* One headline, an open image corridor, and a grouped invitation. */
-.stage,.poster,.calm-hero{--hero-intro-size:clamp(50.4px,7.47vw,129.6px);--hero-intro-top:calc(clamp(108px,19svh,204px) - 24px);--hero-intro-height:calc(var(--hero-intro-size)*1.08);--hero-salud-width:clamp(220px,29vw,520px);--hero-salud-top:calc(100svh - 109px - var(--hero-salud-width)*.4);--hero-runner-top:9svh;--hero-runner-width:31vw;--hero-runner-height:82svh;--hero-support-top:calc(100svh - 216px);--hero-action-top:calc(100svh - 148px)}
+.stage,.poster,.calm-hero{--hero-intro-size:clamp(50.4px,7.47vw,129.6px);--hero-intro-top:calc(clamp(108px,19svh,204px) - 24px);--hero-intro-height:calc(var(--hero-intro-size)*1.08);--hero-salud-width:clamp(220px,29vw,520px);--hero-salud-top:calc(100svh - 109px - var(--hero-salud-width)*.4);--hero-runner-top:9svh;--hero-runner-width:31vw;--hero-runner-height:82svh;--hero-support-top:calc(100svh - 236px);--hero-action-top:calc(100svh - 168px)}
 .hero-intro{font-family:'EVA Hanken',Arial,sans-serif;font-weight:400;line-height:1.08;letter-spacing:-.045em;white-space:nowrap;font-kerning:normal}
 .hero-support{font-family:'EVA Hanken',Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;color:#c8ccc3;width:240px}
 .poster .hero-static-support,.calm-hero .hero-static-support{position:absolute;left:var(--gutter);top:var(--hero-support-top);font-size:16px;line-height:1.5}
 .hero-kit-slot{position:absolute;left:var(--gutter);top:var(--hero-action-top);z-index:2;will-change:opacity,transform}
-.hero-start{display:grid;grid-template-columns:12.5rem minmax(0,1fr);align-items:center;gap:1.25rem;width:28rem;max-width:calc(100vw - var(--gutter)*2);font-family:'EVA Hanken',Arial,sans-serif}
-.hero-kit-cta{font-family:'EVA Hanken',Arial,sans-serif;display:grid;grid-template-columns:minmax(0,1fr) .75rem;align-items:center;gap:.625rem;width:12.5rem;max-width:calc(100vw - var(--gutter)*2);min-height:2.75rem;padding:.3125rem .75rem;border:1px solid transparent;border-radius:0;background:#f3f0e8;color:#171b18;transition:background-color .16s,transform .16s cubic-bezier(.23,1,.32,1)}
-.hero-kit-copy{display:block;min-width:0}
-.hero-kit-title{display:block;font-size:.875rem;font-weight:600;line-height:1.15;letter-spacing:-.015em}
-.hero-kit-details{display:flex;align-items:baseline;justify-content:space-between;gap:.375rem;margin-top:.125rem;font-size:.6875rem;font-weight:400;line-height:1.2;color:#4b5147}
-.hero-kit-price{font-size:inherit;white-space:nowrap;font-variant-numeric:tabular-nums}
-.hero-kit-cta>svg{font-size:.75rem;transition:transform .16s cubic-bezier(.23,1,.32,1)}
-@media(hover:hover) and (pointer:fine){.hero-kit-cta:hover{background:#fffdf6}.hero-kit-cta:hover>svg{transform:translateX(2px)}}
+.hero-start{display:grid;grid-template-columns:12.5rem minmax(0,1fr);align-items:center;column-gap:1.25rem;row-gap:.5rem;width:28rem;max-width:calc(100vw - var(--gutter)*2);font-family:'EVA Hanken',Arial,sans-serif}
+.hero-kit-cta{display:flex;align-items:center;justify-content:center;min-height:2.75rem;padding:.625rem .75rem;border:1px solid transparent;background:#f3f0e8;color:#171b18;font-size:.875rem;font-weight:600;line-height:1.3;transition:background-color .16s,transform .16s cubic-bezier(.23,1,.32,1)}
+.hero-kit-secondary{display:flex;align-items:center;min-height:2.75rem;font-size:.875rem;line-height:1.3;color:#f3f0e8;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#899087}
+.hero-start .hero-start-terms{grid-column:1 / -1;color:#c8ccc3;font-size:.875rem;line-height:1.3;text-wrap:pretty}
+.hero-start-terms span:last-child{font-variant-numeric:tabular-nums}
+@media(hover:hover) and (pointer:fine){.hero-kit-cta:hover{background:#fffdf6}.hero-kit-secondary:hover{text-decoration-color:currentColor}}
 .hero-kit-cta:active:not(:focus-visible){transform:scale(.98)}
-.hero-kit-cta:focus-visible{outline:2px solid var(--amber);outline-offset:5px}
-.hero-kit-secondary{display:flex;flex-direction:column;justify-content:center;gap:.25rem;min-height:2.75rem;font-size:.875rem;line-height:1.2;color:#f3f0e8}
-.hero-kit-secondary>span{text-decoration:underline;text-underline-offset:4px;text-decoration-color:#899087}
-.hero-kit-secondary>small{font-size:.6875rem;line-height:1.3;color:#c8ccc3}
-.hero-kit-secondary:hover>span{text-decoration-color:currentColor}
+.hero-kit-cta:focus-visible,.hero-kit-secondary:focus-visible{outline:2px solid var(--amber);outline-offset:5px}
 .calm-hero .hero-start{position:absolute;left:var(--gutter);top:var(--hero-action-top);bottom:auto}
 .calm-hero{overflow:hidden}
 .poster .hero-static-title,.calm-hero .hero-static-title{position:static;width:auto;margin:0}
@@ -31,12 +25,12 @@
  .hero-kit-slot,.calm-hero .hero-start{left:var(--gutter);right:var(--gutter);top:calc(var(--hero-action-top) - 8px);bottom:auto}
  .hero-start{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.875rem;width:100%}
  .hero-kit-cta{width:100%}
- .hero-kit-secondary{font-size:.8125rem}
+ .hero-kit-secondary{font-size:.875rem}
+ .opening-runner .stage-note{top:calc(var(--hero-action-top) - 64px);bottom:auto;left:var(--gutter);right:auto}
  .hero-static-support{display:none}
 }
-@media(prefers-reduced-motion:reduce){.hero-kit-cta,.hero-kit-cta>svg{transition:none}.hero-kit-cta:active,.hero-kit-cta:hover>svg{transform:none}}
-@media(max-width:380px){.hero-kit-title{font-size:.75rem}}
-@media(forced-colors:active){.hero-kit-cta{background:ButtonFace;color:ButtonText;border-color:ButtonText}.hero-kit-details{color:ButtonText}}
+@media(prefers-reduced-motion:reduce){.hero-kit-cta{transition:none}.hero-kit-cta:active{transform:none}}
+@media(forced-colors:active){.hero-kit-cta{background:ButtonFace;color:ButtonText;border-color:ButtonText}.hero-start-terms{color:CanvasText}}
 
 /* Keep the internal review badge clear of the phone chapter controls. */
 @media(max-width:700px){body:has(.hero-entrance[data-story-chapter="1"]) .content-review-dock{visibility:hidden;pointer-events:none}}

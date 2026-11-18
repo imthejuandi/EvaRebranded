@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
-const version=process.env.EVA_REVIEW_VERSION||'51',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
+const version=process.env.EVA_REVIEW_VERSION||'52',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
 const cases=[{locale:'en',width:1440,height:900},{locale:'es',width:375,height:812}];
 const report={version:Number(version),scope:'Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend',cases:[],pageErrors:[],viewportEmulation:true,physicalDevice:false};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -8,23 +8,39 @@ async function settle(page){await page.evaluate(()=>document.fonts.ready);await 
 async function target(loc){const r=await loc.boundingBox();assert(r&&r.width>=43.5&&r.height>=43.5,JSON.stringify({message:'44px target',rect:r}));return r;}
 async function clock(page,loc,raw){await loc.evaluate((e,raw)=>{const h=e.querySelector('.stage').clientHeight;scrollTo({top:e.getBoundingClientRect().top+scrollY+(e.offsetHeight-h)*raw/240,behavior:'instant'});},raw);await page.waitForFunction(({raw})=>Math.abs(Number(document.querySelector('#kit-inicial').dataset.kitScrollClock)-raw)<2,{raw},{timeout:10000});}
 async function test(name,page,result,fn){process.stdout.write(name+'\n');try{const x=await fn();result.checks.push({name,passed:true,...x});}catch(e){result.checks.push({name,passed:false,error:e.stack});try{await page.screenshot({path:`${out}/core-v${version}-${result.locale}-${result.width}-${name}-failure.png`});}catch{}process.stdout.write('FAIL '+e.message+'\n');}}
-(async()=>{const browser=await chromium.launch({headless:true,executablePath:'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage'],...(/^https:/.test(base)?{proxy:{server:process.env.HTTPS_PROXY||process.env.HTTP_PROXY}}:{})});try{for(const c of cases){const page=await browser.newPage({viewport:{width:c.width,height:c.height}});const result={...c,checks:[]};report.cases.push(result);page.setDefaultTimeout(20000);page.on('pageerror',e=>report.pageErrors.push({...c,message:e.message}));try{assert.equal((await page.goto(`${base}/${c.locale}?review=${version}`,{waitUntil:'domcontentloaded',timeout:45000})).status(),200);await page.locator('[data-discover-problem]').waitFor({state:'visible'});await settle(page);await page.locator('[data-discover-problem]').focus();await page.waitForFunction(()=>document.querySelector('.hero-entrance')?.dataset.heroEntrance==='skip');await settle(page);
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage'],...(/^https:/.test(base)?{proxy:{server:process.env.HTTPS_PROXY||process.env.HTTP_PROXY}}:{})});try{for(const c of cases){const page=await browser.newPage({viewport:{width:c.width,height:c.height}});const result={...c,checks:[]};report.cases.push(result);page.setDefaultTimeout(20000);page.on('pageerror',e=>report.pageErrors.push({...c,message:e.message}));try{assert.equal((await page.goto(`${base}/${c.locale}?review=${version}`,{waitUntil:'domcontentloaded',timeout:45000})).status(),200);await page.locator('.hero-kit-cta').waitFor({state:'visible'});await settle(page);await page.locator('.hero-kit-cta').focus();await page.waitForFunction(()=>document.querySelector('.hero-entrance')?.dataset.heroEntrance==='skip');await settle(page);
 await test('opening',page,result,async()=>{
- const discover=page.locator('[data-discover-problem]');
+ const heroFree=page.locator('.hero-kit-cta'),heroKit=page.locator('.hero-kit-secondary');
  const chapter=page.locator('[data-problem-chapter]');
- const referenceSource=chapter.locator('[data-report-reference-source]');
- const contextSource=chapter.locator('[data-report-context-source]');
- const free=chapter.locator('.hero-kit-cta'),kit=chapter.locator('.hero-kit-secondary');
- assert.equal(await discover.getAttribute('href'),'#entender-tus-analisis');
- await discover.click();await target(free);await target(kit);
- assert.equal(await referenceSource.getAttribute('href'),'https://cms.ifcc.org/media/476752/ifcc-c-ridl_global-study-part-1.pdf');
- assert.match(await contextSource.getAttribute('href'), /^https:\/\/medlineplus\.gov\//);
- assert.match(await chapter.innerText(), /95\s?%/);
- assert.match(await chapter.innerText(), /healthy reference group|grupo de personas sanas/i);
- const href=new URL(await free.getAttribute('href'),base);
- assert.equal(href.searchParams.get('plan'),'free');assert.equal(href.searchParams.get('redirect'),'/es/upload');
- assert((await kit.innerText()).includes('13'));assert.equal(new URL(await kit.getAttribute('href'),base).searchParams.get('plan'),'quarterly');
- return {discoveryLink:true,referenceMethodSource:true,personalContextSource:true,healthyReferenceGroup:true,freePrimary:true,kit13Secondary:true};
+ const chapterFree=chapter.locator('[data-statement-free]');
+ await target(heroFree);await target(heroKit);
+ for(const action of [heroFree,heroKit]){
+  assert((await action.innerText()).trim().split(/\s+/).length<=4,'Hero action has a short label');
+  assert.equal(await action.locator('small,p,span').count(),0,'Hero terms stay outside the action');
+  assert(await action.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('[data-problem-chapter]')) & Node.DOCUMENT_POSITION_FOLLOWING)));
+ }
+ const freeHref=new URL(await heroFree.getAttribute('href'),base);
+ assert.equal(freeHref.pathname,`/${c.locale}/signup`);
+ assert.equal(freeHref.searchParams.get('plan'),'free');assert.equal(freeHref.searchParams.get('redirect'),'/es/upload');
+ assert.equal(new URL(await heroKit.getAttribute('href'),base).searchParams.get('plan'),'quarterly');
+ const terms=await page.locator('.hero-start-terms').innerText();
+ assert.match(terms,/13\s+(?:biomarkers|biomarcadores)/i);
+ assert.match(terms,/5 free report uploads per account|5 informes gratis por cuenta/i);
+ const explore=page.locator('.masthead .join');
+ assert.equal(await explore.getAttribute('href'),'#entender-tus-analisis');
+ await explore.click();await target(chapterFree);
+ assert.equal(await chapter.locator('a').count(),1,'The statement chapter has one free action');
+ assert.equal(await chapterFree.getAttribute('href'),await heroFree.getAttribute('href'));
+ assert.equal((await chapterFree.innerText()).trim(),c.locale==='en'?'Start for free':'Empieza gratis');
+ assert.match(await chapter.locator('[data-report-specimen]').innerText(),/fictional example|ejemplo ficticio/i);
+ assert.match(await chapter.locator('[data-report-specimen]').innerText(),/Alex/);
+ assert.equal(await chapter.locator('[data-value="2.1"]').count(),1);
+ const prior=await chapter.locator('.report-prior-readings').innerText();
+ assert.deepEqual((prior.match(/\d+[.,]\d+/g)||[]).map(value=>Number(value.replace(',','.'))),[.8,.9,.8]);
+ assert.match(await chapter.locator('[data-report-meaning]').innerText(),/inflammation marker|marcador de inflamación/i);
+ assert.doesNotMatch(await chapter.innerText(),/\b95\s?%/);
+ assert(await chapter.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('#recogida-en-casa')) & Node.DOCUMENT_POSITION_FOLLOWING)));
+ return {heroActionsRestored:true,shortLabels:true,termsOutsideActions:true,fictionalReadings:[.8,.9,.8,2.1],singleStatementFreeAction:true};
 });
 await test('tasso',page,result,async()=>{await page.locator('.chapter-nav button').nth(1).click();const section=page.locator('#recogida-en-casa [data-tasso-video-process]');await page.waitForFunction(()=>{const v=document.querySelector('#recogida-en-casa video');return v&&v.readyState>=2&&!v.paused},{},{timeout:25000});const actions=section.locator('.tasso-video-actions button'),middle=actions.nth(1);assert.equal(await section.locator('video').evaluate(v=>v.playbackRate),1);await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);const steps=section.locator('.tasso-video-steps button');await steps.nth(0).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='1');await actions.nth(2).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='2');await actions.nth(0).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='1');await steps.nth(2).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='3');await page.waitForFunction(()=>!document.querySelector('#recogida-en-casa video').paused);const before=await section.locator('video').evaluate(v=>v.currentTime);await wait(700);const after=await section.locator('video').evaluate(v=>v.currentTime);assert(after>before+.1,'Native film time advances');await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);await middle.focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>!document.querySelector('#recogida-en-casa video').paused);await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);await section.screenshot({path:`${out}/core-v${version}-tasso-${c.locale}.png`});return {nativeRate:1,previousNextAndDirectSteps:true,pausePlayKeyboard:true};});
 await test('kit',page,result,async()=>{const kit=page.locator('#kit-inicial');assert.equal(await kit.getAttribute('data-kit-transition-duration-ms'),'500');await clock(page,kit,100);assert.equal(await kit.locator('.stage .kit-marker-name').count(),13);const nodes=await kit.locator('.stage .kit-marker-name').allTextContents();const start=Date.now();await clock(page,kit,145);await page.waitForFunction(()=>{const d=document.querySelector('#kit-inicial').dataset;return d.kitRevealState==='complete'&&Number(d.kitPresentationClock)>299},{},{timeout:4000});const elapsed=Date.now()-start;assert(elapsed<1700,'500ms reveal plus browser scheduling tolerance');assert.deepEqual(await kit.locator('.stage .kit-marker-name').allTextContents(),nodes);const meanings=await kit.locator('.stage [data-kit-meaning]').evaluateAll(es=>es.map(e=>Number(getComputedStyle(e).opacity)));assert.equal(meanings.length,13);assert(meanings.every(x=>x>.98));await clock(page,kit,100);await page.waitForFunction(()=>Number(document.querySelector('#kit-inicial').dataset.kitPresentationClock)<141,{},{timeout:2500});assert.deepEqual(await kit.locator('.stage .kit-marker-name').allTextContents(),nodes);return {actualMarkers:13,forwardRevealElapsedMs:elapsed,reverse:true,sameMarkerNames:true};});

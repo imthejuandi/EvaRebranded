@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'51';
+const VERSION=process.env.EVA_REVIEW_VERSION||'52';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -20,7 +20,7 @@ function approvedKitCopy(where,content){
  assert(!legacyKit.test(content),where+': obsolete starter scope or price');
  assert(/\b13\s+(?:biomarcadores|biomarkers)\b/i.test(content),where+': missing 13-marker scope');
  assert(/(?:99\s*€|€\s*99)\s*\+\s*(?:IVA|VAT)/i.test(content),where+': missing price or VAT');
- assert(/suscri|subscri/i.test(content),where+': missing subscription');
+ assert(/suscr[ií]|subscri/i.test(content),where+': missing subscription');
  assert(/por trimestre|per quarter/i.test(content),where+': missing quarterly price');
  assert(/cancela cuando quieras|cancel anytime/i.test(content),where+': missing cancellation terms');
 }
@@ -34,27 +34,33 @@ async function home(page,locale){
  const response=await page.goto(uri(locale),{waitUntil:'domcontentloaded'});assert.equal(response.status(),200);
  await page.locator('.calm-hero').waitFor({state:'visible'});await page.locator('[data-offer-upload]').waitFor({state:'visible'});await page.evaluate(()=>document.fonts.ready);
  const problem=page.locator('[data-problem-chapter]');
- const discover=page.locator('[data-discover-problem]');
- assert.equal(await discover.getAttribute('href'), '#entender-tus-analisis');
  const runner=page.locator('.calm-hero');
- assert.equal(await runner.locator('a[href*="/signup"]').count(), 0);
- assert.doesNotMatch(await text(runner), /start free|empieza gratis/i);
- assert.equal(await page.locator('.masthead .join').getAttribute('href'), '#entender-tus-analisis');
- const referenceSource=problem.locator('[data-report-reference-source]');
- const contextSource=problem.locator('[data-report-context-source]');
- assert.equal(await referenceSource.getAttribute('href'), 'https://cms.ifcc.org/media/476752/ifcc-c-ridl_global-study-part-1.pdf');
- const contextPath=locale==='en' ? '/lab-tests/how-to-understand-your-lab-results/' : '/spanish/pruebas-de-laboratorio/como-entender-sus-resultados-de-pruebas-de-laboratorio/';
- assert.equal(await contextSource.getAttribute('href'), 'https://medlineplus.gov'+contextPath);
- assert.match(await text(problem), /95\s?%/);
- assert.match(await text(problem), /healthy reference group|grupo de personas sanas/i);
- for (const source of [referenceSource, contextSource]) {
-  assert(await source.evaluate(link=>Boolean(link.compareDocumentPosition(document.querySelector('[data-problem-choices]')) & Node.DOCUMENT_POSITION_FOLLOWING)));
- }
- assert(await problem.evaluate(section=>Boolean(section.compareDocumentPosition(document.querySelector('#recogida-en-casa')) & Node.DOCUMENT_POSITION_FOLLOWING)));
+ assert.equal(await runner.locator('a[href*="/signup"]').count(),2);
+ assert.equal(await page.locator('.masthead .join').getAttribute('href'),'#entender-tus-analisis');
+ const statementFree=problem.locator('[data-statement-free]');
+ assert.equal(await problem.locator('a').count(),1,'Statement chapter keeps a single free action');
+ assert.equal(await text(statementFree),locale==='en'?'Start for free':'Empieza gratis');
+ expectQuery(await statementFree.getAttribute('href'),locale,'free');
+ assert.match(await text(problem.locator('[data-report-specimen]')),/fictional example|ejemplo ficticio/i);
+ assert.match(await text(problem.locator('[data-report-specimen]')),/Alex/);
+ assert.equal(await problem.locator('[data-value="2.1"]').count(),1);
+ const prior=await text(problem.locator('.report-prior-readings'));
+ assert.deepEqual((prior.match(/\d+[.,]\d+/g)||[]).map(value=>Number(value.replace(',','.'))),[.8,.9,.8]);
+ assert.doesNotMatch(await text(problem),/\b95\s?%/);
+ assert(await runner.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('[data-problem-chapter]')) & Node.DOCUMENT_POSITION_FOLLOWING)));
+ assert(await problem.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('#recogida-en-casa')) & Node.DOCUMENT_POSITION_FOLLOWING)));
  for(const selector of ['.hero-kit-cta','[data-range-upload]','[data-method-upload]','[data-offer-upload]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'free');
  for(const selector of ['.hero-kit-secondary','[data-method-kit]','[data-offer-kit-action]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'quarterly');
- for(const selector of ['.hero-kit-secondary','[data-method-kit]'])approvedKitCopy(selector,await text(page.locator(selector)));
- for(const selector of ['.hero-kit-cta','[data-range-upload]','.guided-start','[data-method-upload]']){
+ for(const selector of ['.hero-kit-cta','.hero-kit-secondary']){
+  const action=page.locator(selector);
+  assert((await text(action)).split(/\s+/).length<=4,selector+' short label');
+  assert.equal(await action.locator('small,p,span').count(),0,selector+' terms outside button');
+ }
+ const kitAction=page.locator('.hero-kit-secondary');
+ const kitDescription=await kitAction.evaluate(el=>document.getElementById(el.getAttribute('aria-describedby'))?.textContent||'');
+ approvedKitCopy('hero kit action and adjacent terms',(await text(kitAction))+' '+kitDescription);
+ approvedKitCopy('method kit',await text(page.locator('[data-method-kit]')));
+ for(const selector of ['.hero-start-terms','.report-free-allowance','[data-range-upload]','.guided-start','[data-method-upload]']){
   assert.match(await text(page.locator(selector)),/5 free report uploads per account|5 informes gratis por cuenta/i,selector+' free uploads');
  }
  assert.match(await text(page.locator('[data-offer-free]')),freeTotal);
@@ -171,16 +177,20 @@ async function revisitAccount(page,result){
    const poster = staticPage.locator('.poster .hero-runner-static');
    assert.equal(await poster.evaluate(image => getComputedStyle(image).opacity), '1');
    assert.doesNotMatch(await text(staticPage.locator('.poster .hero-support')), /start free|empieza gratis/i);
-   await staticPage.locator('[data-discover-problem]').click({timeout: 5000});
-   assert.equal(new URL(staticPage.url()).hash, '#entender-tus-analisis');
+   await staticPage.locator('.hero-kit-cta').click({timeout:5000});
+   await staticPage.waitForURL(url=>url.pathname===`/${locale}/signup`);
+   expectQuery(staticPage.url(),locale,'free');
    await staticPage.goBack();
-   await staticPage.locator('.masthead .join').click({timeout: 5000});
-   assert.equal(new URL(staticPage.url()).hash, '#entender-tus-analisis');
+   await staticPage.locator('.masthead .join').click({timeout:5000});
+   assert.equal(new URL(staticPage.url()).hash,'#entender-tus-analisis');
+   await staticPage.locator('[data-statement-free]').click({timeout:5000});
+   await staticPage.waitForURL(url=>url.pathname===`/${locale}/signup`);
+   expectQuery(staticPage.url(),locale,'free');
   } finally {
    await staticPage.close();
   }
  }
- report.nativeDiscoveryWithoutJavascript = true;
+ report.nativeHeroAndStatementWithoutJavascript = true;
  const retired=await browser.newContext({viewport:{width:390,height:844}});
  try{
   const page=await retired.newPage();

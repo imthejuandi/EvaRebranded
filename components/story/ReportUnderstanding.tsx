@@ -1,58 +1,61 @@
 'use client';
 
-import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {useEffect, useRef} from 'react';
-import {reportStudyUrl, reportUnderstanding} from '@/lib/site-content/report-understanding';
-import {Arrow} from './Arrow';
-import {HeroKitCta} from './HeroKitCta';
+import {useSiteLanguage} from '@/components/site/SiteLanguage';
+import {businessLinks} from '@/lib/landing-content';
+import {flowHref} from '@/lib/preview/policy';
+import {alexStoryReadings} from '@/lib/site-content/alex-story-copy';
+import {reportUnderstanding} from '@/lib/site-content/report-understanding';
+import {uploadAllowance} from '@/lib/site-content/upload-allowance';
 import './report-understanding.css';
 
 export const reportChapterId = 'entender-tus-analisis';
 
-export function DiscoverProblem() {
-  const {locale} = useSiteLanguage();
-  return <a href={`#${reportChapterId}`} className="report-discovery-link" data-discover-problem>
-    {reportUnderstanding[locale].discover}<Arrow direction="down"/>
-  </a>;
-}
-
 export function ReportUnderstanding({calm}: {calm: boolean}) {
-  const {locale} = useSiteLanguage();
+  const {locale, href} = useSiteLanguage();
   const copy = reportUnderstanding[locale];
   const section = useRef<HTMLElement>(null);
+  const previousReadings = alexStoryReadings.slice(0, -1);
+  const currentReading = alexStoryReadings[alexStoryReadings.length - 1];
+  const formatReading = (value: number) => locale === 'es' ? value.toFixed(1).replace('.', ',') : value.toFixed(1);
+  const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
+
   useEffect(() => {
     const chapter = section.current;
-    if (!chapter || calm || chapter.dataset.ruleEntered || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const proofMark = chapter?.querySelector('.report-proof-mark');
+    if (!chapter || !proofMark || calm || chapter.dataset.proofEntered || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const observer = new IntersectionObserver(([entry]) => {
       if (!entry.isIntersecting) return;
-      chapter.dataset.ruleEntered = 'true';
+      chapter.dataset.proofEntered = 'true';
       observer.disconnect();
-    });
-    observer.observe(chapter);
+    }, {threshold: .5});
+    observer.observe(proofMark);
     return () => observer.disconnect();
   }, [calm]);
 
   return <section ref={section} id={reportChapterId} className="report-understanding" data-problem-chapter data-calm={calm}
     aria-labelledby="report-understanding-title" tabIndex={-1}>
-    <div className="report-spread">
+    <div className="report-proof">
       <h2 id="report-understanding-title">{copy.heading[0]} <em>{copy.heading[1]}</em></h2>
-      <div className="report-study">
-        <p className="report-finding">
-          {copy.finding[0]} <strong>{copy.finding[1]}</strong> {copy.finding[2]}
-        </p>
-        <div className="report-reference-strip" aria-hidden="true">
-          <div className="report-reference-dots"/>
-          <div className="report-reference-bounds"><span>{copy.interval}</span></div>
+      <figure className="report-translation">
+        <div className="report-specimen" data-report-specimen>
+          <p className="report-example-label">{copy.example}</p>
+          <div className="report-assay-line">
+            <span className="report-assay">hs-CRP</span>
+            <span className="report-assay-leader" aria-hidden="true"/>
+            <p className="report-assay-value" data-value="2.1"><span>{formatReading(currentReading)}</span> <small>mg/L</small></p>
+          </div>
+          <p className="report-prior-readings"><span>{copy.previous}</span> <span>{previousReadings.map(formatReading).join(' · ')} mg/L</span></p>
         </div>
-        <a className="report-study-source" href={reportStudyUrl} aria-label={copy.source} data-report-reference-source>IFCC · PDF</a>
-      </div>
-      <div className="report-context">
-        <p className="report-study-context">{copy.context}</p>
-        <a className="report-study-source" href={copy.contextUrl} aria-label={copy.contextSource} data-report-context-source>NIH MedlinePlus</a>
-      </div>
-      <div className="report-next">
-        <p className="report-bridge">{copy.bridge}</p>
-        <div data-problem-choices><HeroKitCta/></div>
+        <span className="report-proof-mark" aria-hidden="true"><span className="report-proof-mark-stem"/><span className="report-proof-mark-arm"/><span className="report-proof-mark-dot"/></span>
+        <figcaption className="report-human-reading" data-report-meaning>{copy.reading}</figcaption>
+      </figure>
+      <div className="report-resolution">
+        <p className="report-explanation">{copy.explanation}</p>
+        <div className="report-action-group" data-problem-choices>
+          <a className="report-free-action" data-problem-free data-statement-free href={href(uploadHref)} aria-describedby="report-free-allowance">{copy.action}</a>
+          <p id="report-free-allowance" className="report-free-allowance">{uploadAllowance[locale].freeShort}</p>
+        </div>
       </div>
     </div>
   </section>;
