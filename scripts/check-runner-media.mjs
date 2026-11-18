@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {existsSync,readFileSync} from 'node:fs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {runInNewContext} from 'node:vm';
@@ -49,16 +49,19 @@ function replay(writeStyle){
  }
  return {writes,poses};
 }
-// The old renderer unconditionally assigned these 35 settled style values.
+// Each signal updates the group, path, label and one opacity per status character.
 const before=replay((element,property,value)=>{element.style[property]=value});
 const after=replay(setRunnerStyle);
 assert.deepEqual(after.poses,before.poses,'All 120 decoded tracking poses stay identical');
-assert.equal(before.writes.style,4200);assert.equal(after.writes.style,0);
+const stylesPerPose=signal.runnerSignals.reduce((sum,key)=>sum+3+[...signal.runnerSignalCopy.es[key].status].length,0);
+assert.equal(before.writes.style,stylesPerPose*120);assert.equal(after.writes.style,0);
 assert.equal(before.writes.geometry,1080);assert.equal(after.writes.geometry,1080);
 assert.equal(before.writes.dataset,120);assert.equal(after.writes.dataset,120);
 
 const vendor=path.resolve('node_modules/@remotion/compositor-darwin-arm64');
-const probe=file=>JSON.parse(execFileSync(path.join(vendor,'ffprobe'),['-v','error','-select_streams','v:0','-show_entries','stream=codec_name,width,height,r_frame_rate,nb_frames,duration:format=size:packet=pts_time,duration_time','-of','json',path.join('public',file)],{encoding:'utf8',env:{...process.env,DYLD_LIBRARY_PATH:vendor}}));
+const bundledProbe=path.join(vendor,'ffprobe');
+const probeCommand=process.platform==='darwin'&&existsSync(bundledProbe)?bundledProbe:'ffprobe';
+const probe=file=>JSON.parse(execFileSync(probeCommand,['-v','error','-select_streams','v:0','-show_entries','stream=codec_name,width,height,r_frame_rate,nb_frames,duration:format=size:packet=pts_time,duration_time','-of','json',path.join('public',file)],{encoding:'utf8',env:{...process.env,DYLD_LIBRARY_PATH:vendor}}));
 const original=probe(glowRunner.video),mobile=probe(glowRunner.mobileVideo);
 const a=original.streams[0],b=mobile.streams[0];
 assert.deepEqual([a.width,a.height],[864,1080]);assert.deepEqual([b.width,b.height],[576,720]);

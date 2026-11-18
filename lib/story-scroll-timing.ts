@@ -1,3 +1,6 @@
+// The landing intro has its own presentation clock. The runner footage plays at native speed.
+export const HERO_ENTRANCE_RATE = 1.5;
+
 const END = 980;
 const PRODUCT_START = 280;
 const PRODUCT_END = 465;

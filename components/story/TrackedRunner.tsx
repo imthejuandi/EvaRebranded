@@ -5,6 +5,7 @@ import {RunnerArrival,RUNNER_ARRIVAL_END,RUNNER_ARRIVAL_LABEL_OFFSET,type Runner
 import {useCurrentFrame,useRemotionEnvironment,useVideoConfig} from 'remotion';
 import {GlowMotion} from './GlowMotion';
 import {glowRunner} from '@/lib/design';
+import {HERO_ENTRANCE_RATE} from '@/lib/story-scroll-timing';
 import {setRunnerStyle} from '@/lib/runner-media';
 import {runnerPoint,runnerSignals,runnerSignalCopy,signalStart,signalProgress,signalsSettledAt,type SignalLanguage} from '@/lib/runner-signals';
 
@@ -106,7 +107,7 @@ export function TrackedRunner({width,height,viewportWidth,viewportHeight,top,sal
    if(!active||announced.current||document.hidden)return;
    watchdog=window.setInterval(()=>{
     if(announced.current){clearInterval(watchdog);stopFallback();return}
-    // Normal loading is not a decoder stall. ScrollStory bounds startup at 12s;
+    // Normal loading is not a decoder stall. ScrollStory bounds the initial wait;
     // this shorter watchdog only applies after playback has delivered a frame.
     if(decoded&&!video.paused&&performance.now()-lastDecodedAt>1000)fallback();
    },250);
@@ -121,7 +122,8 @@ export function TrackedRunner({width,height,viewportWidth,viewportHeight,top,sal
    if(previous!==null){
     const delta=time>=previous?time-previous:(Number.isFinite(video.duration)?video.duration-previous+time:0);
     // Cap the reveal clock; later loops preserve every signal without resets.
-    elapsed.current=Math.min(arrivalConfig.current.enabled?13:5,elapsed.current+Math.max(0,delta));
+    const rate = arrivalConfig.current.enabled ? HERO_ENTRANCE_RATE : 1;
+    elapsed.current=Math.min(arrivalConfig.current.enabled?13:5,elapsed.current+Math.max(0,delta)*rate);
    }
    lastTime.current=time;
    if(arrivalConfig.current.enabled&&arrival.current){

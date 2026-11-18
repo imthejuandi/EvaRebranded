@@ -3,6 +3,7 @@ import {readFileSync} from 'node:fs';
 import {createRequire} from 'node:module';
 import {runInNewContext} from 'node:vm';
 import ts from 'typescript';
+import {HERO_ENTRANCE_RATE} from '../lib/story-scroll-timing.ts';
 
 const file=path=>new URL(path,import.meta.url);
 const read=path=>readFileSync(file(path),'utf8');
@@ -21,8 +22,8 @@ const {runnerPoint,signalStart,signalProgress,signalsSettledAt}=importTypeScript
 const tracks=JSON.parse(read('../lib/runner-tracking.json'));
 const close=(actual,expected,message)=>assert(Math.abs(actual-expected)<1e-8,`${message}: ${actual} versus ${expected}`);
 
-assert.equal(RUNNER_ARRIVAL_END,5.5,'The direct arrival hands off after 5.5 seconds');
-assert.equal(RUNNER_ARRIVAL_PHOTO_READY,3.5,'The clean photograph is ready at 3.5 seconds');
+assert.equal(RUNNER_ARRIVAL_END,5.5,'The authored handoff cue stays at 5.5');
+assert.equal(RUNNER_ARRIVAL_PHOTO_READY,3.5,'The authored photo cue stays at 3.5');
 assert.equal(RUNNER_ARRIVAL_LABEL_OFFSET,2,'The existing label choreography starts on its delayed clock');
 const stages=[['arrival',.08,1],['develop',1.65,3.4],['clean',3.15,3.5]];
 for(const [key,start,end] of stages){
@@ -58,6 +59,8 @@ const firstSignal=RUNNER_ARRIVAL_LABEL_OFFSET+signalStart.head/24;
 const settled=RUNNER_ARRIVAL_LABEL_OFFSET+signalsSettledAt;
 close(firstSignal,RUNNER_ARRIVAL_PHOTO_READY,'The first head marker begins only when the photo is ready');
 close(settled,5.625,'The complete label sequence settles just after the direct handoff');
+close(RUNNER_ARRIVAL_PHOTO_READY/HERO_ENTRANCE_RATE,7/3,'The live runner photograph is ready after 2⅓ seconds of playback');
+close(settled/HERO_ENTRANCE_RATE,3.75,'The live headline and CTA are cued after 3.75 seconds of playback');
 assert(settled>RUNNER_ARRIVAL_END);
 for(const key of ['head','stomach','knee']){
  const age=(RUNNER_ARRIVAL_PHOTO_READY-RUNNER_ARRIVAL_LABEL_OFFSET)*24-signalStart[key];
@@ -116,4 +119,4 @@ assert(/arrivalEnabled\s*&&\s*!timed\s*&&\s*!arrivalDone/.test(trackedText),'Com
 assert(/onComplete=\{\(\)\s*=>\s*setArrivalDone\(true\)\}/.test(trackedText),'Canvas completion removes the arrival layer');
 assert(/disposed\s*=\s*true/.test(arrivalText)&&/engine\.current\s*=\s*null/.test(arrivalText)&&/buffer\.width\s*=\s*1/.test(arrivalText)&&/buffer\.height\s*=\s*1/.test(arrivalText),'Effect cleanup invalidates the painter and releases its canvas buffers');
 
-console.log('Runner arrival passed: direct silhouette timing, no dispersed cloud, transparent/black background stays empty, monotonic stages, photo ready at 3.5s, labels settled at 5.625s, cover-crop agreement with real tracking, single-media/static lifecycle guards. Browser rendering and mobile performance require separate verification.');
+console.log('Runner arrival passed: direct silhouette timing, no dispersed cloud, transparent/black background stays empty, monotonic stages, landing photo ready at 2⅓s, labels settled at 3.75s of playback, cover-crop agreement with real tracking, single-media/static lifecycle guards. Browser rendering and mobile performance require separate verification.');
