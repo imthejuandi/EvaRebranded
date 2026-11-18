@@ -1,0 +1,289 @@
+{
+  "version": 53,
+  "origin": "https://eva-content-review.jdlagop.chatgpt.site",
+  "cases": [
+    {
+      "locale": "en",
+      "plan": "free",
+      "passed": true,
+      "publicLinks": [
+        {
+          "href": "/en/how-it-works",
+          "status": 200
+        },
+        {
+          "href": "/en/science",
+          "status": 200
+        },
+        {
+          "href": "/en/pricing",
+          "status": 200
+        },
+        {
+          "href": "/en/about",
+          "status": 200
+        },
+        {
+          "href": "/en/blog",
+          "status": 200
+        },
+        {
+          "href": "/en/contact",
+          "status": 200
+        },
+        {
+          "href": "/en/legal/privacy",
+          "status": 200
+        },
+        {
+          "href": "/en/legal/terms",
+          "status": 200
+        },
+        {
+          "href": "/en/legal/cookies",
+          "status": 200
+        }
+      ],
+      "switchKeyboardFocus": true,
+      "switchNameAndState": true,
+      "languageSwitchClicked": {
+        "from": "en",
+        "to": "es",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site/es?review=53#empezar"
+      },
+      "entryTarget": {
+        "x": 48,
+        "y": 420.46875,
+        "width": 490,
+        "height": 59.1875
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=free&redirect=%2Fes%2Fupload",
+      "preselectedChoice": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción.",
+      "onboardingChoices": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción. Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+      "onboardingApprovedKitCopy": true,
+      "currentEntryChoices": true,
+      "completedAt": "upload",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v53-free-en-upload.png",
+      "previewState": {
+        "hasAccountId": true,
+        "used": 0,
+        "reports": 0,
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    },
+    {
+      "locale": "en",
+      "plan": "quarterly",
+      "passed": true,
+      "entryTarget": {
+        "x": 902,
+        "y": 424.25,
+        "width": 490,
+        "height": 50.796875
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/en/signup?plan=quarterly",
+      "signupIntentText": "Quarterly subscription 13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime. You can upload unlimited reports while your subscription is active.",
+      "signupApprovedKitCopy": true,
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=quarterly&redirect=%2Fes%2Fdashboard",
+      "preselectedChoice": "Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+      "onboardingChoices": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción. Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+      "onboardingApprovedKitCopy": true,
+      "currentEntryChoices": true,
+      "checkoutApprovedKitCopy": true,
+      "completedAt": "checkout, before confirmation",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v53-quarterly-en-checkout.png",
+      "checkoutSummary": "SUSCRIPCIÓN TRIMESTRAL Tu kit de 13 biomarcadores en casa. 99€ + IVA por trimestre Cancela cuando quieras. Recogida de muestra en casa con Tasso+. Análisis de 13 biomarcadores en laboratorio. Resultados explicados junto a los valores, unidades e intervalos del laboratorio. Tu primera medición establece un punto de partida. Comparar las siguientes en condiciones similares te ayuda a ver qué ha cambiado. Puedes subir informes sin límite mientras tu suscripción esté activa. La frecuencia de las pruebas depende de tu situación. Puedes comentarla con tu profesional sanitario.",
+      "previewState": {
+        "hasAccountId": true,
+        "used": 0,
+        "reports": 0,
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    },
+    {
+      "locale": "en",
+      "plan": "full_panel",
+      "passed": true,
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/en/signup?plan=full",
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=full_panel&redirect=%2Fes%2Fdashboard",
+      "preselectedChoice": "Panel en laboratorio 499 €, pago único. Con el panel de laboratorio puedes subir informes sin límite durante un año desde la compra.",
+      "onboardingChoices": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción. Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa. Panel en laboratorio 499 €, pago único. Con el panel de laboratorio puedes subir informes sin límite durante un año desde la compra.",
+      "onboardingApprovedKitCopy": true,
+      "currentEntryChoices": true,
+      "completedAt": "checkout, before confirmation",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v53-full_panel-en-checkout.png",
+      "checkoutSummary": "PANEL EN LABORATORIO Una visita al laboratorio. 499€ Pago único · sin renovación automática. Extracción en un laboratorio asociado. Con el panel de laboratorio puedes subir informes sin límite durante un año desde la compra. Alcance del panel pendiente de confirmación. Informe con valores, unidades y fecha. La composición del panel, las funciones y las condiciones comerciales finales están pendientes de confirmación.",
+      "previewState": {
+        "hasAccountId": true,
+        "used": 0,
+        "reports": 0,
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    },
+    {
+      "locale": "es",
+      "plan": "free",
+      "passed": true,
+      "publicLinks": [
+        {
+          "href": "/es/how-it-works",
+          "status": 200
+        },
+        {
+          "href": "/es/science",
+          "status": 200
+        },
+        {
+          "href": "/es/pricing",
+          "status": 200
+        },
+        {
+          "href": "/es/about",
+          "status": 200
+        },
+        {
+          "href": "/es/blog",
+          "status": 200
+        },
+        {
+          "href": "/es/contact",
+          "status": 200
+        },
+        {
+          "href": "/es/legal/privacy",
+          "status": 200
+        },
+        {
+          "href": "/es/legal/terms",
+          "status": 200
+        },
+        {
+          "href": "/es/legal/cookies",
+          "status": 200
+        }
+      ],
+      "switchKeyboardFocus": true,
+      "switchNameAndState": true,
+      "languageSwitchClicked": {
+        "from": "es",
+        "to": "en",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=53#empezar"
+      },
+      "entryTarget": {
+        "x": 24,
+        "y": 584.671875,
+        "width": 327,
+        "height": 56
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=free&redirect=%2Fes%2Fupload",
+      "preselectedChoice": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción.",
+      "onboardingChoices": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción. Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+      "onboardingApprovedKitCopy": true,
+      "currentEntryChoices": true,
+      "completedAt": "upload",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v53-free-es-upload.png",
+      "previewState": {
+        "hasAccountId": true,
+        "used": 0,
+        "reports": 0,
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      },
+      "returningAccountRetained": true
+    },
+    {
+      "locale": "es",
+      "plan": "quarterly",
+      "passed": true,
+      "entryTarget": {
+        "x": 24,
+        "y": 177.453125,
+        "width": 327,
+        "height": 50.796875
+      },
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/signup?plan=quarterly",
+      "signupIntentText": "Suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+      "signupApprovedKitCopy": true,
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=quarterly&redirect=%2Fes%2Fdashboard",
+      "preselectedChoice": "Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+      "onboardingChoices": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción. Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+      "onboardingApprovedKitCopy": true,
+      "currentEntryChoices": true,
+      "checkoutApprovedKitCopy": true,
+      "completedAt": "checkout, before confirmation",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v53-quarterly-es-checkout.png",
+      "checkoutSummary": "SUSCRIPCIÓN TRIMESTRAL Tu kit de 13 biomarcadores en casa. 99€ + IVA por trimestre Cancela cuando quieras. Recogida de muestra en casa con Tasso+. Análisis de 13 biomarcadores en laboratorio. Resultados explicados junto a los valores, unidades e intervalos del laboratorio. Tu primera medición establece un punto de partida. Comparar las siguientes en condiciones similares te ayuda a ver qué ha cambiado. Puedes subir informes sin límite mientras tu suscripción esté activa. La frecuencia de las pruebas depende de tu situación. Puedes comentarla con tu profesional sanitario.",
+      "previewState": {
+        "hasAccountId": true,
+        "used": 0,
+        "reports": 0,
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    },
+    {
+      "locale": "es",
+      "plan": "full_panel",
+      "passed": true,
+      "previewNotice": true,
+      "signupUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/signup?plan=full",
+      "onboardingUrl": "https://eva-content-review.jdlagop.chatgpt.site/es/onboarding?plan=full_panel&redirect=%2Fes%2Fdashboard",
+      "preselectedChoice": "Panel en laboratorio 499 €, pago único. Con el panel de laboratorio puedes subir informes sin límite durante un año desde la compra.",
+      "onboardingChoices": "Una analítica que ya tengo Puedes subir hasta 5 informes en total con tu cuenta gratuita. Sin suscripción. Kit en casa · suscripción trimestral Kit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras. Puedes subir informes sin límite mientras tu suscripción esté activa. Panel en laboratorio 499 €, pago único. Con el panel de laboratorio puedes subir informes sin límite durante un año desde la compra.",
+      "onboardingApprovedKitCopy": true,
+      "currentEntryChoices": true,
+      "completedAt": "checkout, before confirmation",
+      "screenshot": "/workspace/eva-in-place-qa/entry-v53-full_panel-es-checkout.png",
+      "checkoutSummary": "PANEL EN LABORATORIO Una visita al laboratorio. 499€ Pago único · sin renovación automática. Extracción en un laboratorio asociado. Con el panel de laboratorio puedes subir informes sin límite durante un año desde la compra. Alcance del panel pendiente de confirmación. Informe con valores, unidades y fecha. La composición del panel, las funciones y las condiciones comerciales finales están pendientes de confirmación.",
+      "previewState": {
+        "hasAccountId": true,
+        "used": 0,
+        "reports": 0,
+        "session": true,
+        "onboarded": true,
+        "plan": "free",
+        "healthConsent": true,
+        "marketing": false,
+        "literacy": "advanced"
+      }
+    }
+  ],
+  "findings": [],
+  "errors": [],
+  "networkWrites": [],
+  "browserVerified": true,
+  "nativeHeroAndStatementWithoutJavascript": true,
+  "retiredAnnualUnavailable": true,
+  "passed": true,
+  "status": "passed"
+}

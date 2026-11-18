@@ -1,0 +1,46 @@
+[
+  {
+    "path": "docs/browser-qa-v54/README.md",
+    "sha256": "2f4efd045865bc0e015249e5beddd0a47fd10200441d5347c047763f54e98d6e"
+  },
+  {
+    "path": "docs/browser-qa-v54/core-browser-v53-report.json",
+    "sha256": "67bee0077586addb9422ed63f83a1bbc3e5fa43686d171a897757c3343e24604"
+  },
+  {
+    "path": "docs/browser-qa-v54/en-1366-motion-statement.png",
+    "sha256": "c9f00e9f6ed56aff4420461009df5586e173c6d43ab14d7a028acd217961430c"
+  },
+  {
+    "path": "docs/browser-qa-v54/en-320-calm-statement.png",
+    "sha256": "e62f8659bbe9fcf56ce919071e9c5b643c247cffec695c1b239e20fccffb9a7e"
+  },
+  {
+    "path": "docs/browser-qa-v54/entry-flow-report-v53.json",
+    "sha256": "0b4c64d4505188c303415c259d77367557562923e9c9200fbedd0af7221da3c0"
+  },
+  {
+    "path": "docs/browser-qa-v54/es-1366-motion-statement.png",
+    "sha256": "e9e598af26380e8fe7f7d15ee6e073ed8eeacd3cda861b15ef6d3461c090b9a7"
+  },
+  {
+    "path": "docs/browser-qa-v54/es-390-motion-statement.png",
+    "sha256": "193c1225e02ad830f179c6a22d412dd6425186e99d75f250bcc0bf3a4cb5444b"
+  },
+  {
+    "path": "docs/browser-qa-v54/impeccable-detect-v54.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "docs/browser-qa-v54/impeccable-review-v54.json",
+    "sha256": "fb60a0ed115f095ff522b060c9fc0b15377430ed3e48912aff5f894253b2de3d"
+  },
+  {
+    "path": "docs/browser-qa-v54/statement-v53-matrix.json",
+    "sha256": "8f52d462186d828765cb220625a24f98d610556ee5a7fe2383ff53567452de56"
+  },
+  {
+    "path": "docs/browser-qa-v54/statement-v54-final.json",
+    "sha256": "6ce363abe68402c733fba63b51f28fe9d7b2b4d707bc9946f0bc4f65b91bfca8"
+  }
+]

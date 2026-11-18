@@ -1,145 +1,211 @@
 {
   "status": "passed",
-  "published_version": 51,
-  "deployed_ui_commit": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
-  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f93f6a20eb1c8191af9fd17d4c24aace",
-  "deployment_id": "appgdep_6afe00ec83248191af14abe40552b7ef",
-  "scope": "The existing opening problem chapter after the runner and before the first signup choices and home-collection explanation, in English and Spanish.",
-  "rerun": "Research, bilingual copy, creative direction, implementation and independent Impeccable review repeated with the current model at the user’s request.",
+  "published_version": 54,
+  "deployed_ui_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
+  "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
+  "native_updated_at": "2026-11-18T22:25:59.318140+00:00",
+  "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=54#entender-tus-analisis",
+  "scope": "The bilingual healthy-question statement after the runner, concise restored runner entry actions and native source/free-entry links. Final 54 is a three-line CSS successor adjusting only the Spanish desktop title.",
   "copy": {
     "en": {
-      "heading": "What does “normal” mean for your health?",
-      "finding": "Many lab reference ranges cover the middle 95% of results in a healthy reference group.",
-      "context": "Your health history and earlier results also help explain what a result means for you.",
-      "bridge": "EVA explains your blood markers in plain language and helps you follow how they change.",
-      "reference_source": "https://cms.ifcc.org/media/476752/ifcc-c-ridl_global-study-part-1.pdf",
-      "context_source": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/"
+      "heading": "What does “healthy” really mean?",
+      "framing": "Among adults in England who rated their health as good or very good:",
+      "statistics": [
+        {
+          "value": "10%",
+          "text": "had prediabetes."
+        },
+        {
+          "value": "46%",
+          "text": "of those with type 2 diabetes were undiagnosed."
+        }
+      ],
+      "bridge": "Understand what your body’s data means—and follow how it changes.",
+      "action": "Start for free"
     },
     "es": {
-      "heading": "¿Qué significa «normal» para tu salud?",
-      "finding": "Muchos rangos de referencia abarcan el 95 % central de los resultados de un grupo de personas sanas.",
-      "context": "Tu historial de salud y tus resultados anteriores también ayudan a entender qué significa un resultado para ti.",
-      "bridge": "EVA te explica tus marcadores en un lenguaje claro y te ayuda a seguir cómo cambian.",
-      "reference_source": "https://cms.ifcc.org/media/476752/ifcc-c-ridl_global-study-part-1.pdf",
-      "context_source": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/como-entender-sus-resultados-de-pruebas-de-laboratorio/"
+      "heading": "¿Qué significa estar «sano» de verdad?",
+      "framing": "Entre los adultos de Inglaterra que valoraron su salud como buena o muy buena:",
+      "statistics": [
+        {
+          "value": "10%",
+          "text": "tenían prediabetes."
+        },
+        {
+          "value": "46%",
+          "text": "de quienes tenían diabetes tipo 2 no estaban diagnosticados."
+        }
+      ],
+      "bridge": "Entiende qué significan los datos de tu cuerpo y sigue su evolución.",
+      "action": "Empieza gratis"
     }
   },
   "source_review": {
     "selected": {
-      "definition": "Many conventional two-sided laboratory reference intervals contain the central 95% of results from a selected healthy reference population.",
-      "claim_type": "Statistical definition, with no survey denominator or estimate of disease prevalence.",
-      "primary_source": {
-        "citation": "Ichihara et al., Clinica Chimica Acta 467 (2017), 70–82, for the IFCC Committee on Reference Intervals and Decision Limits",
-        "url": "https://cms.ifcc.org/media/476752/ifcc-c-ridl_global-study-part-1.pdf",
-        "doi": "10.1016/j.cca.2016.09.016"
+      "citation": "Office for National Statistics, Risk factors for prediabetes and undiagnosed type 2 diabetes in England: 2013 to 2019, published 19 February 2024",
+      "study_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland/2013to2019",
+      "data_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland",
+      "design": "National Health Survey for England 2013–2019; multistage stratified probability household sampling and survey weights. Adults 16+ in private households. Overall analytic n=26,751.",
+      "prediabetes": {
+        "display_percent": 10,
+        "age_adjusted_percent": 10.3224946285118,
+        "table_cell": "Table 4, F108",
+        "denominator": "All adults who rated their health good or very good",
+        "unweighted_subgroup_n_rounded": 20350,
+        "confidence_interval_95_percent": [
+          9.78684,
+          10.88393
+        ]
       },
-      "corroborating_review": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4783089/",
-      "clinical_decision_limits": "https://doi.org/10.1080/10408363.2018.1482256",
-      "context_source_en": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
-      "context_source_es": "https://medlineplus.gov/spanish/pruebas-de-laboratorio/como-entender-sus-resultados-de-pruebas-de-laboratorio/",
-      "limits": "Keep ‘many’, ‘results’ and ‘healthy reference group’ visible. Clinical decision limits can be based on outcomes. The 95% definition gives no estimate of missed disease, hidden deficiencies, EVA accuracy or personal health."
+      "undiagnosed_type_2_diabetes": {
+        "display_percent": 46,
+        "age_adjusted_percent": 45.9342187018826,
+        "table_cell": "Table 3, F99",
+        "denominator": "Adults with type 2 diabetes who rated their health good or very good",
+        "unweighted_subgroup_n_rounded": 1060,
+        "confidence_interval_95_percent": [
+          40.9671742650794,
+          50.9833800271172
+        ]
+      },
+      "limits": [
+        "Historical England estimates, not current Spanish prevalence.",
+        "The 46% denominator requires both type 2 diabetes and good/very-good self-rated health. The two percentage denominators differ.",
+        "These findings concern self-rated health, not a previously normal full blood panel or a rate of missed disease in routine checkups.",
+        "The source study uses HbA1c; this does not add HbA1c to the 13-marker kit or claim that EVA diagnoses diabetes."
+      ]
     },
-    "alternatives": [
-      {
-        "question_en": "You can see your results. Can you make sense of them?",
-        "question_es": "Ya puedes ver tus resultados. ¿Puedes entenderlos?",
-        "fact": "886 of 1,817 US adults did not recognize an elevated HbA1c in a simulated result table, 48.76%.",
-        "url": "https://www.jmir.org/2014/8/e187/",
-        "limits": "January 2013 online experiment, ages 40–70, about half with diabetes. Values and reference ranges were shown without high/low flags.",
-        "decision": "Accurate but narrower than EVA’s personal meaning and context proposition. The task’s methodological qualifications dominated the former mobile opening."
-      },
-      {
-        "question_en": "Your results are back. What should you ask next?",
-        "question_es": "Ya tienes tus resultados. ¿Qué deberías preguntar ahora?",
-        "fact": "305 of 1,412 British Columbia respondents who first received results online were unsure whether clinician follow-up was needed, 21.6%.",
-        "url": "https://www.jmir.org/2015/8/e191/",
-        "limits": "Self-reported answers in November 2013, published 2015.",
-        "decision": "Useful for next-step education but less direct for introducing personal interpretation and access."
-      },
-      {
-        "fact": "NIH MedlinePlus explains that results are combined with health history and other clinical context.",
-        "url": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
-        "decision": "Used as supporting context alongside the selected reference-range definition."
-      },
-      {
-        "fact": "A 2026 systematic review included 39 studies and found recurring interpretation difficulties.",
-        "url": "https://www.jmir.org/2026/1/e88259/",
-        "limits": "No pooled prevalence figure for a headline.",
-        "decision": "Background corroboration of a need for explanation and context."
-      },
-      {
-        "candidate": "80% of annual checkups hide deficiencies",
-        "decision": "The sources reviewed provide no supported rate with defined deficiencies, denominator and independent comparator. Excluded."
-      }
-    ],
-    "rationale": "The normal-range question introduces the familiar reference interval, then personal context and history. This directly supports the value of understanding results. The old percentage described recognizing an already elevated example value and required longer study-method qualifications."
+    "decision": "The user selected the 10% good-health prediabetes finding and added the related 46% undiagnosed type 2 diabetes finding, title and bridge. The concise shared population framing preserves the intended health-belief question while keeping the 46% disease-specific denominator adjacent to its number."
   },
-  "copy_concepts": [
-    {
-      "en": "What does “normal” mean for your health?",
-      "es": "¿Qué significa «normal» para tu salud?",
-      "decision": "Selected with the qualified reference-range definition and personal-context explanation."
-    },
-    {
-      "en": "You can see your results. Can you make sense of them?",
-      "es": "Ya puedes ver tus resultados. ¿Puedes entenderlos?",
-      "decision": "Alternative backed by the narrower simulated HbA1c task."
-    },
-    {
-      "en": "Your results are back. What should you ask next?",
-      "es": "Ya tienes tus resultados. ¿Qué deberías preguntar ahora?",
-      "decision": "Alternative backed by the Canadian follow-up uncertainty survey."
-    }
-  ],
   "specialist_reviews": {
-    "medical_evidence": "Independently verified IFCC methods and review sources, NIH patient guidance, source contexts and alternative prevalence claims.",
-    "bilingual_marketing_copy": "Selected a direct question inclusive of first-time testers, one qualified factual explanation, personal context and an explicit plain-language EVA benefit.",
-    "ux_ui": "Impeccable 4.9.0 Layout and Clarify applied to EVA’s existing Hanken, analog dots, ink and warm-paper composition. The direct question leads, the inline middle-95% phrase explains the healthy reference group, a neutral dotted reference-interval strip illustrates the definition, and an 18px Hanken 600 EVA bridge leads into the free and kit choices.",
-    "implementation": "A separate UX and motion specialist implemented the creative concept within the existing chapter and reused the approved free and kit entry component.",
-    "independent_typography": "Impeccable Typeset and Layout review of actual native version 51. All 16 English/Spanish profiles passed at 320, 390, 768 and 1,366 CSS pixels in normal and reduced-motion modes, with 44px source and action targets, readable installed Hanken 400/600, visible focus and correct evidence-before-choice reading order. Both languages also passed actual 200% browser zoom, keyboard source/choice navigation, emulated Pixel 5 touch and JavaScript-disabled discovery/enrollment navigation."
+    "bilingual_marketing_copy": "A health/wellness marketing copy specialist supplied concise EN/ES shared framing, separate percentage descriptions, source labels and the approved bridge; root owns final wording.",
+    "ux_ui": "The user-requested gpt-6.2-astra design agent applied Impeccable within EVA’s incumbent Hanken/Georgia, ink/warm-paper/amber world: editorial question, ruled evidence rows, two static percentage figures with proportional 100-dot impressions, visible sources, data bridge and one compact free action. No arrows, cards, leaf artwork or count-up delay.",
+    "independent_typography": "An independent Impeccable reviewer checked source and actual native review renders. The wider version 53 matrix passed 10/10; final 54 passed 4/4 fresh representative cases after the localized Spanish desktop optical adjustment. The 46% denominator, England/date context, installed fonts, readable body/source type, touch targets, focus and horizontal geometry were checked.",
+    "creative_followup": "The creative reviewer identified Spanish desktop title orphaning on 53. A three-line locale-scoped desktop font-size adjustment reduced the final Spanish desktop chapter to 747.65625px and kept its heading in three lines; root personally reviewed the final render."
   },
   "verification": {
-    "source": "TypeScript, production build, English/public-route audit, bilingual parity, story sections and runner startup checks passed.",
     "status": "passed",
-    "live_responsive": "16 of 16 English/Spanish width and motion profiles passed. At 390 CSS pixels the chapter measured about 837 px in English and 824 px in Spanish. At 320 px it measured about 858 px and 882 px respectively, with ordinary vertical scrolling.",
-    "live_keyboard_zoom": "English and Spanish both passed actual 200% Chromium browser zoom. The viewport changed from 1280 CSS pixels at DPR 1 to 640 CSS pixels at DPR 2. IFCC source, localized NIH source, free-report and kit actions remained keyboard reachable without horizontal overflow.",
-    "live_fallback": "With JavaScript disabled, the static runner loaded visibly and native discovery, free-report and kit links navigated correctly in Spanish 320px and English desktop.",
-    "live_touch": "English and Spanish discovery taps and native touch drags passed in emulated Pixel 5 at 390×844 CSS pixels and DPR 2.",
-    "live_regression": "All 14 bilingual core landing cases passed, covering opening, native Tasso playback and controls, kit, range, Alex explanation depth, signal and trend. All six signup/plan entry flows passed with no errors, findings or mutating requests.",
-    "live_http": "Both locale pages returned HTTP 200 with the new heading, IFCC and NIH citations, and evidence → signup choices → home-collection order.",
-    "runner_timing": "The runner implementation was unchanged in this release. Its deterministic startup check passed. The accepted 2.5-second choreography is inherited from the earlier verified runner releases; this rerun did not take a new runtime timing measurement.",
-    "creative_review": "The creative director reviewed live English desktop at 1440px and Spanish phone at 390px and requested no corrections."
+    "source": "TypeScript, story-section and runner-startup checks, English/public-route audit (1,205 messages) and bilingual parity (32 pages) passed for the statement source. A fresh final 54 production build exported 113 routes.",
+    "impeccable": "Final 54 source detector returned zero findings.",
+    "version53_matrix": "All 10 English/Spanish profiles passed at 320, 390, 768 and 1366 CSS px plus 683px/DPR2 effective 200% reflow. The English 320px calm hero readiness finding was fixed in the harness by waiting for the poster layout; no application source change was required for that finding.",
+    "version53_regression": "All 14 core landing cases and six entry flows passed, including JavaScript-disabled native hero and statement links. No page errors, findings or mutating requests.",
+    "fresh_version54": "All four final native 54 profiles passed: EN 1366 normal, ES 1366 normal, ES 390 normal and EN 320 reduced motion. There were no profile failures or page errors.",
+    "reuse_basis": "The only source difference from 53 to 54 is three Spanish desktop heading CSS lines. Copy, DOM, links, actions and handlers are unchanged. The full version 53 flow suites and wider matrix are reused for unchanged behavior; they were not rerun in full on 54.",
+    "measurements": {
+      "es_desktop1366_chapter_px": 747.65625,
+      "en_desktop1366_chapter_px": 716.265625,
+      "es_phone390_chapter_px": 870.625,
+      "en_phone320_reduced_chapter_px": 859.359375
+    },
+    "zoom_limit": "The current run used 683 CSS px at DPR2 as effective 200% reflow. It did not perform actual browser-chrome zoom.",
+    "device_limit": "Viewport emulation with system Chromium, not physical-device performance testing.",
+    "runner_timing": "Accepted 2.5-second choreography and native-speed footage are preserved. Deterministic startup checks passed; this release did not take a fresh playback-relative timing measurement.",
+    "clinical_preservation": "The current methodology figures and all existing marker/fictional-example qualifications are preserved."
   },
-  "preview_limit": "The managed preview startup timed out before candidate rendering. Pre-publication validation used source, type and build checks. Final rendered verification used the actual native review deployment.",
+  "preview_limit": "Managed preview startup timed out after vinext reported localhost 4173. Source/type/build checks preceded native review publication; rendered verification used the existing public review Site. No replacement preview infrastructure was started.",
+  "native_deployment": {
+    "version_number": 54,
+    "source_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
+    "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
+    "native_updated_at": "2026-11-18T22:25:59.318140+00:00",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=54#entender-tus-analisis",
+    "behavior": "A bilingual healthy-question statement introduces the 10% prediabetes and 46% undiagnosed type 2 diabetes findings with visible England/good-or-very-good self-rated health, distinct adjacent denominators, ONS links, proportional dot impressions, the approved data-interpretation bridge and one free action. Concise free-first and kit actions are available in the runner. The final Spanish desktop heading has a localized optical size.",
+    "source_files": [
+      "components/story/report-understanding.css"
+    ],
+    "combined_statement_source_files": [
+      "components/story/ReportUnderstanding.tsx",
+      "components/story/report-understanding.css",
+      "lib/site-content/report-understanding.ts",
+      "scripts/browser-qa/core-landing.cjs",
+      "scripts/browser-qa/entry-flows.cjs"
+    ],
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-healthy-statement-v54.tar.gz",
+      "local_gzip_sha256": "2d6398fa3968190c5983a3ea23ef3b13f54dccb20d838253cf21cf67a33b44e8",
+      "local_gzip_size_bytes": 163052021,
+      "saved_tar_content_hash": "sha256:a40678866ec23eadc1730a4a8913aa7eb4d702c6b21ae8517001276f67010124",
+      "saved_tar_size_bytes": 171816960,
+      "file_count": 790
+    },
+    "qa": {
+      "status": "passed_actual_browser_with_scoped_prior_version_regression_reuse",
+      "record": "docs/problem-opening-qa.json",
+      "evidence_directory": "docs/browser-qa-v54",
+      "fresh_version54_cases": 4,
+      "version53_responsive_cases": 10,
+      "version53_core_cases": 14,
+      "version53_entry_flows": 6,
+      "page_errors": []
+    }
+  },
   "evidence": {
-    "workspace": "/workspace/eva-in-place-qa/rerun-v51",
-    "research": [
-      "evidence.md",
-      "copy.md",
-      "creative.md",
-      "impeccable-baseline-review.md"
+    "directory": "docs/browser-qa-v54",
+    "manifest": "docs/browser-qa-v54/manifest.json",
+    "readme": "docs/browser-qa-v54/README.md",
+    "final54": "docs/browser-qa-v54/statement-v54-final.json",
+    "detector54": "docs/browser-qa-v54/impeccable-detect-v54.json",
+    "matrix53": "docs/browser-qa-v54/statement-v53-matrix.json",
+    "core53": "docs/browser-qa-v54/core-browser-v53-report.json",
+    "entry53": "docs/browser-qa-v54/entry-flow-report-v53.json",
+    "screenshots": [
+      "docs/browser-qa-v54/en-1366-motion-statement.png",
+      "docs/browser-qa-v54/es-1366-motion-statement.png",
+      "docs/browser-qa-v54/es-390-motion-statement.png",
+      "docs/browser-qa-v54/en-320-calm-statement.png"
     ],
-    "baseline": [
-      "impeccable-baseline.json",
-      "impeccable-baseline-review.md"
-    ],
-    "live": [
-      "impeccable-final.json",
-      "creative-live-review.md",
-      "live-zoom200.json",
-      "live-fallback.json",
-      "live-touch.json"
-    ],
-    "regression_reports": [
-      "/workspace/eva-in-place-qa/core-browser-v51-report.json",
-      "/workspace/eva-in-place-qa/entry-flow-report-v51.json"
-    ]
+    "independent_signoff54": "docs/browser-qa-v54/impeccable-review-v54.json"
   },
-  "prior_review": {
-    "version": 50,
-    "deployed_ui_commit": "f98b45778f135c097e8ec3fb469555172ef585d3",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3523ecd9d2348191ae76ba4d97e30a01",
-    "deployment_id": "appgdep_6afdf128c13481919737eddd129c7ac3",
-    "historical_qa": "https://github.com/imthejuandi/EvaRebranded/blob/e502104897aff14071c93cf440048cb39069bb33/docs/problem-opening-qa.json"
-  }
+  "prior_reviews": [
+    {
+      "version": 51,
+      "deployed_ui_commit": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f93f6a20eb1c8191af9fd17d4c24aace",
+      "deployment_id": "appgdep_6afe00ec83248191af14abe40552b7ef",
+      "historical_qa": "https://github.com/imthejuandi/EvaRebranded/blob/727b7fc969acfa4cf51a6c02ce2ed87db4373887/docs/problem-opening-qa.json"
+    },
+    {
+      "version_number": 53,
+      "source_commit": "727b7fc969acfa4cf51a6c02ce2ed87db4373887",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_289020cc29fc819185b51df7c39466cc",
+      "deployment_id": "appgdep_6afe24c3a3f081919a994bd099929d41",
+      "status": "succeeded",
+      "native_updated_at": "2026-11-18T22:21:04.559519+00:00",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=53#entender-tus-analisis",
+      "behavior": "A bilingual healthy-question editorial statement pairs the 10% prediabetes finding with the 46% undiagnosed type 2 diabetes finding under visible England/good-or-very-good self-rated health context. ONS source links and the approved data-interpretation bridge lead to one free action. Concise free/kit choices are restored to the runner.",
+      "source_files": [
+        "components/story/ReportUnderstanding.tsx",
+        "components/story/report-understanding.css",
+        "lib/site-content/report-understanding.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs",
+        "docs/SESSION_HANDOFF.json"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-healthy-statement-v53.tar.gz",
+        "local_gzip_sha256": "598ed877030c3206ac4cd590d7ba155593b9ed5f3e7737309c0eb44ceba9edff",
+        "local_gzip_size_bytes": 163054659,
+        "saved_tar_content_hash": "sha256:b5df1fa745798db0d2e0a6fe3606c7f2ae53f605c038a9dcd1ab687d87d955a0",
+        "saved_tar_size_bytes": 171816960,
+        "file_count": 790
+      },
+      "qa": {
+        "status": "passed_core14_entry6_and_ten_profile_matrix_before_scoped_css_successor",
+        "record": "docs/problem-opening-qa.json",
+        "note": "Version 54 changes only the Spanish desktop heading CSS; final 54 rendered subset is recorded separately."
+      }
+    }
+  ],
+  "saved_never_deployed_version52": {
+    "version_number": 52,
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c00a8566ed648191a1b2e05f6db18bfb",
+    "source_commit": "695971ff04c9ec40618df041b8e36a25baf44b92",
+    "deployment_id": null
+  },
+  "publication_boundaries": "Existing public review Site only. evahealth.es, DNS, production hosting and real backend services remain on hold."
 }

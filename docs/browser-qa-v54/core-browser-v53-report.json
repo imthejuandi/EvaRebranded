@@ -1,0 +1,148 @@
+{
+  "version": 53,
+  "scope": "Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend",
+  "cases": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "checks": [
+        {
+          "name": "opening",
+          "passed": true,
+          "heroActionsRestored": true,
+          "shortLabels": true,
+          "termsOutsideActions": true,
+          "healthQuestion": true,
+          "twoSourcedNationalStatistics": true,
+          "diabetesSubgroupQualified": true,
+          "approvedBridge": true,
+          "singleStatementFreeAction": true
+        },
+        {
+          "name": "tasso",
+          "passed": true,
+          "nativeRate": 1,
+          "previousNextAndDirectSteps": true,
+          "pausePlayKeyboard": true
+        },
+        {
+          "name": "kit",
+          "passed": true,
+          "actualMarkers": 13,
+          "forwardRevealElapsedMs": 543,
+          "reverse": true,
+          "sameMarkerNames": true
+        },
+        {
+          "name": "range",
+          "passed": true,
+          "same2_1Value": true,
+          "repeatQualificationVisible": true,
+          "sources": 2
+        },
+        {
+          "name": "explanation",
+          "passed": true,
+          "keyboardLevels": [
+            "advanced",
+            "balanced",
+            "simple"
+          ],
+          "fixedValueHistoryContext": true
+        },
+        {
+          "name": "signal",
+          "passed": true,
+          "fourChapters": true,
+          "pauseResumeKeyboard": true
+        },
+        {
+          "name": "trend",
+          "passed": true,
+          "distinctQuestions": [
+            "What do earlier readings show?",
+            "Is it temporary or persistent?"
+          ],
+          "fixedLatestAndContext": true,
+          "canonicalReadings": true,
+          "manualAnnouncement": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 375,
+      "height": 812,
+      "checks": [
+        {
+          "name": "opening",
+          "passed": true,
+          "heroActionsRestored": true,
+          "shortLabels": true,
+          "termsOutsideActions": true,
+          "healthQuestion": true,
+          "twoSourcedNationalStatistics": true,
+          "diabetesSubgroupQualified": true,
+          "approvedBridge": true,
+          "singleStatementFreeAction": true
+        },
+        {
+          "name": "tasso",
+          "passed": true,
+          "nativeRate": 1,
+          "previousNextAndDirectSteps": true,
+          "pausePlayKeyboard": true
+        },
+        {
+          "name": "kit",
+          "passed": true,
+          "actualMarkers": 13,
+          "forwardRevealElapsedMs": 540,
+          "reverse": true,
+          "sameMarkerNames": true
+        },
+        {
+          "name": "range",
+          "passed": true,
+          "same2_1Value": true,
+          "repeatQualificationVisible": true,
+          "sources": 2
+        },
+        {
+          "name": "explanation",
+          "passed": true,
+          "keyboardLevels": [
+            "advanced",
+            "balanced",
+            "simple"
+          ],
+          "fixedValueHistoryContext": true
+        },
+        {
+          "name": "signal",
+          "passed": true,
+          "fourChapters": true,
+          "pauseResumeKeyboard": true
+        },
+        {
+          "name": "trend",
+          "passed": true,
+          "distinctQuestions": [
+            "¿Qué muestran las lecturas anteriores?",
+            "¿Es temporal o persiste?"
+          ],
+          "fixedLatestAndContext": true,
+          "canonicalReadings": true,
+          "manualAnnouncement": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "viewportEmulation": true,
+  "physicalDevice": false,
+  "passed": true
+}

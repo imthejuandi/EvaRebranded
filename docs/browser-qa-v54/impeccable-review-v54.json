@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "live_version": 54,
+  "source_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+  "reviewer": "Independent Impeccable typography and spacing reviewer",
+  "skill": {
+    "version": "4.9.0",
+    "playbooks": [
+      "typeset",
+      "layout",
+      "polish"
+    ],
+    "context": "Scoped existing EVA implementation permitted; incumbent Hanken400/600, Georgia italic, ink/paper/amber used.",
+    "final_detector_exit_code": 0,
+    "final_detector_findings": 0,
+    "detector_file": "/workspace/eva-in-place-qa/statement-v54/impeccable-detect.json"
+  },
+  "actual_native54": {
+    "profiles": 4,
+    "passed": true,
+    "page_errors": 0,
+    "cases": [
+      "en-1366-motion",
+      "es-1366-motion",
+      "es-390-motion",
+      "en-320-calm"
+    ]
+  },
+  "retained_native53": {
+    "profiles": 10,
+    "passed": true,
+    "record": "/workspace/eva-in-place-qa/statement-v53/independent-review.json",
+    "scope": "EN/ES320,390,768,1366 with normal/reduced selected plus2effective200%reflow profiles. The54 change only adjusts Spanish heading above1001px."
+  },
+  "visual_assessment": {
+    "reading_order": "Title then shared England/good-health context, paired statistics with adjacent full denominator descriptions, dated sources, bridge and one free action.",
+    "desktop_spanish_correction": "Original53 five-line title was too tall. Final54 uses localized98.352px at1366 and three lines; chapter747.656px and bridge/action remain within900px viewport.",
+    "actual_capture": "/workspace/eva-in-place-qa/statement-v54/es-1366-motion-statement.png",
+    "optical_preview_only": "/workspace/eva-in-place-qa/statement-v53/es-1366-localized-size-preview.png",
+    "body": "18px desktop,16px narrower layouts; population context21–28px, metadata14px.",
+    "spacing": "Clear two-column poster on desktop, natural one-column flow on phones, percentages and denominator remain grouped.",
+    "contrast": {
+      "ink_on_paper": 13.31,
+      "muted_on_paper": 6.4,
+      "marked_amber_dots_on_paper": 4.5
+    },
+    "focus_and_targets": "Two named44px source links and48px free action; logical keyboard sequence and2px focus outline.",
+    "accessibility": "SemanticH2/list;100-dot decorative proportion art aria-hidden; source/year and46% subgroup visible; no scripted chapter animation; no horizontal overflow or clipped text."
+  },
+  "resolved_harness_issue": "Initial53EN320 reduced-motion hit-test ran beforeReact applied calm state. Rerunning all reduced profiles after explicitly awaiting .calm-hero passed. Final54EN320 strict-readiness case also passed.",
+  "limits": [
+    "Viewport emulation, not physical-device performance.",
+    "200% reflow tested through effective683CSSpx/DPR2 emulation, not browser chrome zoom.",
+    "No-JavaScript entry cases handled by root’s separate tracked entry-flow runner."
+  ],
+  "browser_cleanup": "All owned Chromium processes closed by finally blocks; final runner exited0.",
+  "blocking_findings": []
+}
