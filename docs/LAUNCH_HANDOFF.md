@@ -4,9 +4,9 @@ Updated 18 November 2026. GitHub `imthejuandi/EvaRebranded`, branch `main`, is t
 
 ## Approved baseline
 
-The current landing is **review version 44**, deployed UI commit `71571c8bb1092e8f7d6099d3dc0385b6314899a8`. The landing runner entrance and the reveal of its headline and entry links run at 1.5×. The footage plays at native speed. [Runner timing checks](runner-entrance-speed-qa.json) record the measured differences. Version 43 introduced the [Trend emphasis](trend-emphasis-qa.json) on top of the [typography and spacing pass](impeccable-typography-qa.json).
+The current landing is **review version 45**, deployed UI commit `60c42b72101a1a10a3530835c4f99263b6da1fa1`. The opening uses a 2.05× entrance clock. The free entry link becomes usable about three seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed. [Runner timing checks](runner-three-second-entrance-qa.json) compare this release with [version 44](runner-entrance-speed-qa.json). Version 43 introduced the [Trend emphasis](trend-emphasis-qa.json) on top of the [typography and spacing pass](impeccable-typography-qa.json).
 
-Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=44) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=44). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
+Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=45) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=45). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
 
 Preserve the runner, analog dots, typography, Tasso footage, dashboard examples, lifestyle imagery and narrative order. Free interpretation of previous reports leads; the optional starting kit contains 13 biomarkers at **€99 + VAT**. The internal `quarterly` preview intent does not advertise an automatic recurring offer.
 

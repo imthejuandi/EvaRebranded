@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 44,
-    "deployed_ui_commit": "71571c8bb1092e8f7d6099d3dc0385b6314899a8",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c4f42260d7c08191a851f2b577bd9234",
-    "deployment_id": "appgdep_6afdd871a8388191b4741b1a90416a73",
-    "main_head_before_coordination": "71571c8bb1092e8f7d6099d3dc0385b6314899a8",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=44"
+    "live_version": 45,
+    "deployed_ui_commit": "60c42b72101a1a10a3530835c4f99263b6da1fa1",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5b223eb5d9648191bc3e730f8c199cb0",
+    "deployment_id": "appgdep_6afdd9cfbf5081919676c892a969e152",
+    "main_head_before_coordination": "60c42b72101a1a10a3530835c4f99263b6da1fa1",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=45"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -113,12 +113,18 @@
       "source_commit": "71571c8bb1092e8f7d6099d3dc0385b6314899a8",
       "status": "Review version 44 published and verified on the English desktop and Spanish phone-size landing.",
       "qa": "docs/runner-entrance-speed-qa.json"
+    },
+    {
+      "section": "Landing runner entrance timing",
+      "source_commit": "60c42b72101a1a10a3530835c4f99263b6da1fa1",
+      "status": "Review version 45 published and verified on the English desktop and Spanish phone-size landing.",
+      "qa": "docs/runner-three-second-entrance-qa.json"
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Runner entrance timing complete. Review version 44 published and verified.",
+      "status": "Runner entrance timing complete. Review version 45 published and verified.",
       "next_section": null,
       "pending_verification": null,
       "section": "Landing runner entrance timing",

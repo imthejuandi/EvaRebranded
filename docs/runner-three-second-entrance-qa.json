@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "published_version": 45,
+  "deployed_ui_commit": "60c42b72101a1a10a3530835c4f99263b6da1fa1",
+  "scope": "The opening uses a 2.05× entrance clock. The free entry link becomes usable about three seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed.",
+  "authored_seconds_of_playback": {
+    "clean_runner_photograph": {
+      "previous": 2.333,
+      "current": 1.707
+    },
+    "headline_and_entry_links_begin": {
+      "previous": 3.75,
+      "current": 2.744
+    },
+    "startup_fail_open_limit_seconds_after_mount": 5.854
+  },
+  "live_comparison": {
+    "measure": "Median time for the free entry link to reach 90% opacity and accept a center hit test in Chromium, with ordinary motion. The playback-relative timer starts at the first decoded canvas frame.",
+    "profiles": {
+      "en_desktop": {
+        "v44": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 5.241,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 4.1,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 3.75
+        },
+        "v45": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 4.524,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 3.0,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 2.75
+        }
+      },
+      "es_emulated_phone": {
+        "v44": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 5.339,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 4.083,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 3.733
+        },
+        "v45": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 4.207,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 3.016,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 2.733
+        }
+      }
+    }
+  },
+  "live_behavior": {
+    "reduced_motion": {
+      "en_desktop": {
+        "static_poster": true,
+        "entrance": "skip",
+        "navigation_to_usable_free_link_seconds": 1.524
+      },
+      "es_emulated_phone": {
+        "static_poster": true,
+        "entrance": "skip",
+        "navigation_to_usable_free_link_seconds": 0.568
+      }
+    },
+    "keyboard_skip_en": "Free link reached /en/signup?plan=free&redirect=%2Fes%2Fupload.",
+    "scroll_skip_es": "Kit link reached /es/signup?plan=quarterly.",
+    "runner_controls_en": "Pause stopped footage advancement. Resume restored 1× video playback."
+  },
+  "checks": [
+    "TypeScript",
+    "Static production build",
+    "Runner timing regression checks"
+  ],
+  "scope_of_evidence": "Fresh desktop and emulated phone sessions on the review deployment. Page-load times include network and browser startup. Physical-device and population timings remain unmeasured."
+}
