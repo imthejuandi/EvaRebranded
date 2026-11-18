@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 50,
-    "deployed_ui_commit": "f98b45778f135c097e8ec3fb469555172ef585d3",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3523ecd9d2348191ae76ba4d97e30a01",
-    "deployment_id": "appgdep_6afdf128c13481919737eddd129c7ac3",
-    "main_head_before_coordination": "f98b45778f135c097e8ec3fb469555172ef585d3",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=50#entender-tus-analisis"
+    "live_version": 51,
+    "deployed_ui_commit": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f93f6a20eb1c8191af9fd17d4c24aace",
+    "deployment_id": "appgdep_6afe00ec83248191af14abe40552b7ef",
+    "main_head_before_coordination": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=51#entender-tus-analisis"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -149,15 +149,21 @@
       "source_commit": "f98b45778f135c097e8ec3fb469555172ef585d3",
       "status": "Version 50 published and browser-verified.",
       "qa": "docs/problem-opening-qa.json"
+    },
+    {
+      "section": "Opening normal-range question, reference-interval illustration and first enrollment links",
+      "source_commit": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
+      "status": "Version 51 published and browser-verified.",
+      "qa": "docs/problem-opening-qa.json"
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version 50 published and browser-verified.",
+      "status": "Version 51 published and browser-verified.",
       "next_section": null,
       "pending_verification": null,
-      "section": "Opening runner, report-reading question and first enrollment links",
+      "section": "Opening normal-range question and personal-context explanation",
       "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."

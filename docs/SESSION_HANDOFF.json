@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-18",
-  "handoff_status": "EARLY_PROBLEM_SECTION_VERIFIED_V50",
-  "immediate_instruction": "Review version 50 is published. The runner now leads to a question about reading blood results. A linked study illustrates the difficulty before visitors choose how to start. Read docs/problem-opening-qa.json. Continue three-specialist design review and retain the existing methodology figures until training finishes.",
+  "handoff_status": "NORMAL_RANGE_CONTEXT_VERIFIED_V51",
+  "immediate_instruction": "Review version 51 is published. The runner leads to a question about what a normal result means for health. A qualified explanation of reference ranges and personal context introduces EVA’s clear biomarker interpretation before the first signup choices. Read docs/problem-opening-qa.json. Continue the three-specialist review workflow and retain the existing methodology figures until training finishes.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 50 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
+    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 51 source, assets, history, QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,37 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 49,
-      "source_commit": "0f02d6a4a6832cd8bcd00550a85e78a23453097b",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ada9da284e708191a887f30556b77430",
-      "deployment_id": "appgdep_6afde8711eb08191a89d349a70f5b079",
-      "native_updated_at": "2026-11-18T18:03:42.750334+00:00",
-      "behavior": "Visitors can use a PDF or photo of a previous blood test report. The closing free-report link and the free signup form reference the visible explanation in each language.",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=49#empezar",
-      "source_files": [
-        "AGENTS.md",
-        "components/preview/AccessPage.tsx",
-        "components/story/BusinessOffer.tsx",
-        "lib/site-content/closing-copy.ts",
-        "lib/site-content/upload-allowance.ts",
-        "scripts/browser-qa/entry-flows.cjs"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-report-format-v49.tar.gz",
-        "local_gzip_sha256": "01b229ff626664a760637223be0c147622d453a62fd8f894823304abd7f600b5",
-        "local_gzip_size_bytes": 163049177,
-        "saved_tar_content_hash": "sha256:4d5852e1dd0c33728a2b03d40a0fc0187b81f9d52f2a2b2b45cf981b7992f83b",
-        "file_count": 790,
-        "saved_tar_size_bytes": 171776000
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/report-format-qa.json"
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 50,
       "source_commit": "f98b45778f135c097e8ec3fb469555172ef585d3",
       "status": "succeeded",
@@ -102,11 +71,41 @@
         "record": "docs/problem-opening-qa.json"
       }
     },
-    "latest_verified_ui_release_note": "Review version 50 serves UI commit f98b45778f135c097e8ec3fb469555172ef585d3. The subsequent handoff commit records the published release.",
+    "latest_verified_ui_release": {
+      "version_number": 51,
+      "source_commit": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "source_files": [
+        "components/story/ReportUnderstanding.tsx",
+        "components/story/report-understanding.css",
+        "lib/site-content/report-understanding.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-reference-opening-v51.tar.gz",
+        "local_gzip_sha256": "acd6596437985d68bd1738fc05a16178f638aba4f3c5346f889ba59227b566e8",
+        "local_gzip_size_bytes": 163053415,
+        "saved_tar_content_hash": "sha256:cc907d5cb9b33e58f61738dbbfc53b98e478cf889cb69d347a60d79dc40c0af0",
+        "saved_tar_size_bytes": 171796480,
+        "file_count": 790
+      },
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f93f6a20eb1c8191af9fd17d4c24aace",
+      "deployment_id": "appgdep_6afe00ec83248191af14abe40552b7ef",
+      "native_updated_at": "2026-11-18T19:48:11.074092+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=51#entender-tus-analisis",
+      "behavior": "The runner leads to a question about what a normal result means for health. A qualified explanation of reference ranges and personal context introduces EVA’s clear biomarker interpretation before the first signup choices.",
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/problem-opening-qa.json"
+      }
+    },
+    "latest_verified_ui_release_note": "Review version 51 serves UI commit 9f2f16ac5ec134ccb6ea3773c7834ac01775d924. The subsequent handoff commit records the published release.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 50 source f98b45778f135c097e8ec3fb469555172ef585d3",
+      "relation": "QA/docs followup to version 51 source 9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
@@ -653,6 +652,37 @@
           "status": "passed_actual_browser",
           "record": "docs/upload-allowance-qa.json"
         }
+      },
+      {
+        "version_number": 49,
+        "source_commit": "0f02d6a4a6832cd8bcd00550a85e78a23453097b",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ada9da284e708191a887f30556b77430",
+        "deployment_id": "appgdep_6afde8711eb08191a89d349a70f5b079",
+        "native_updated_at": "2026-11-18T18:03:42.750334+00:00",
+        "behavior": "Visitors can use a PDF or photo of a previous blood test report. The closing free-report link and the free signup form reference the visible explanation in each language.",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=49#empezar",
+        "source_files": [
+          "AGENTS.md",
+          "components/preview/AccessPage.tsx",
+          "components/story/BusinessOffer.tsx",
+          "lib/site-content/closing-copy.ts",
+          "lib/site-content/upload-allowance.ts",
+          "scripts/browser-qa/entry-flows.cjs"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-report-format-v49.tar.gz",
+          "local_gzip_sha256": "01b229ff626664a760637223be0c147622d453a62fd8f894823304abd7f600b5",
+          "local_gzip_size_bytes": 163049177,
+          "saved_tar_content_hash": "sha256:4d5852e1dd0c33728a2b03d40a0fc0187b81f9d52f2a2b2b45cf981b7992f83b",
+          "file_count": 790,
+          "saved_tar_size_bytes": 171776000
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/report-format-qa.json"
+        }
       }
     ]
   },
@@ -747,7 +777,7 @@
   "approved_design_and_motion": {
     "direction": "Evolve the existing Site. Keep the accepted runner, luminous/dot style, warm-paper/ink typography, actual results mockups, Tasso footage and lifestyle imagery.",
     "rejected_direction": "A generic replacement landing at /en/review/landing-proposal, a new visual system, new audience tabs, unsolicited stock-style cards or new assets to replace accepted work.",
-    "hero": "Preserve the 2.48× runner entrance, native-speed footage, feathering and analog headline. The hero and masthead discovery links lead into the report-reading chapter. Its bridge introduces free interpretation first, with the optional kit second.",
+    "hero": "Preserve the 2.48× runner entrance, native-speed footage, feathering and analog headline. Hero and masthead discovery links lead to the normal-range question. The qualified middle-95% reference-range fact and personal-context explanation precede free report interpretation first and the optional quarterly kit second. Reuse the neutral interval strip, Hanken 400/600, warm paper and visible IFCC/NIH sources.",
     "tasso": "Preserve the approved three-step film, accurate device proportions, virtually painless/no needles to handle copy and native-speed video controls. Do not restore pasted-screen overlays or regenerate footage merely for novelty.",
     "kit_explanation": "Preserve the current count/pan/names/meanings/readout sequence. Scrolling selects the education stages; the latest dot-to-text presentation transition is 500 ms for a complete forward or reverse span. Keep batched dot rendering and the existing compositor/clock ownership.",
     "kit_motion_contract_since_v28": {
@@ -958,14 +988,15 @@
   "current_page_order": [
     {
       "component": "ScrollStory / EvaFilm opening",
-      "purpose": "Runner and discovery link to the report-reading question",
+      "purpose": "Runner and discovery link to the normal-range question",
       "browser_qa": "docs/problem-opening-qa.json"
     },
     {
       "component": "ReportUnderstanding",
       "id": "entender-tus-analisis",
-      "purpose": "A first-person question, a sourced U.S. lab-report study and the free and home-kit choices",
-      "browser_qa": "docs/problem-opening-qa.json"
+      "purpose": "Question about what normal means for health, qualified reference-range fact, personal context and clear EVA explanation before enrollment",
+      "browser_qa": "docs/problem-opening-qa.json",
+      "status": "Published and actual-browser verified on version 51."
     },
     {
       "component": "TassoHomeVideo / TassoFilmSummary",
@@ -1067,7 +1098,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "The review baseline is version 50, UI commit f98b45778f135c097e8ec3fb469555172ef585d3. Read docs/problem-opening-qa.json for the new opening and docs/report-format-qa.json for the earlier signup guidance.",
+    "The review baseline is version 51, UI commit 9f2f16ac5ec134ccb6ea3773c7834ac01775d924. Read docs/problem-opening-qa.json for the revised opening and docs/report-format-qa.json for the earlier signup guidance.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -1145,7 +1176,7 @@
       "EVA_REVIEW_VERSION=38 node scripts/browser-qa/core-landing.cjs"
     ],
     "final_browser_instructions": "Read scripts/browser-qa/README.md. The review query is not a deployment pin: verify current native Site version first. Reports/screenshots are written outside the repo, final version 38 evidence is tracked in docs/browser-qa-v38. Wait for computed CSS readiness and fonts before measuring. Close every owned browser. Flow tests block all mutating network requests and stop before upload/checkout confirmation.",
-    "current_scoped_qa": "docs/problem-opening-qa.json records the bilingual opening, its statistical basis and the published normal, reduced-motion and fallback checks."
+    "current_scoped_qa": "docs/problem-opening-qa.json records the revised bilingual opening, IFCC reference-range definition, NIH context evidence and current-model live design, source, keyboard, motion and entry checks."
   },
   "permissions_and_security": {
     "writable_roots": [
@@ -1174,7 +1205,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 50 is published. The runner now leads to a question about reading blood results. A linked study illustrates the difficulty before visitors choose how to start. Follow the three-specialist audit workflow. Production cutover stays on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 51 is published. The runner leads to a question about what a normal result means for health. A qualified explanation of reference ranges and personal context introduces EVA’s clear biomarker interpretation before the first signup choices. Routine edits, checks, commits, pushes and review-site publication remain authorized. Use the three-specialist review for each audit action. Keep the accepted 2.5-second runner entrance and current methodology figures. Production cutover to evahealth.es remains on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -1185,10 +1216,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-18",
-    "user_direction": "Introduce the report-reading problem before the kit and offer choices. Use a sourced statistic with the study task and denominator visible in both languages.",
-    "synchronized_main_commit": "f98b45778f135c097e8ec3fb469555172ef585d3",
-    "live_version": 50,
-    "status": "The new opening is published and browser-verified."
+    "user_direction": "Rerun the previous research, copy, creative and implementation task with the current model. Explain the problem before first signup choices and how EVA works using reputable evidence and concise, distinctive design.",
+    "synchronized_main_commit": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
+    "live_version": 51,
+    "status": "The revised normal-range opening is published and browser-verified."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -1197,8 +1228,8 @@
     "qa_record": "docs/final-browser-qa.json",
     "remaining_review_items": [],
     "latest_scoped_refinement": {
-      "version": 43,
-      "record": "docs/trend-emphasis-qa.json",
+      "version": 51,
+      "record": "docs/problem-opening-qa.json",
       "status": "published and actual-browser verified"
     }
   },
@@ -1222,5 +1253,5 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "f98b45778f135c097e8ec3fb469555172ef585d3"
+  "github_current_ui_source": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924"
 }
