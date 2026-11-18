@@ -747,6 +747,7 @@
     }
   },
   "approved_clinical_and_example_boundaries": {
+    "methodology_validation_review": "The owner requested that the existing biological-age validation and Spanish recalibration figures on both methodology pages stay as published while model training finishes. The clinical team will update the figures after training. The differences between the summary and full methodology are still open.",
     "general": "Educational interpretation is not a diagnosis, a promise of prevention, a guaranteed health improvement, or a replacement for professional assessment.",
     "device": "Use virtually painless and no needles to handle rather than an absolute pain or no-lancet guarantee. Supplied device instructions remain authoritative.",
     "turnaround": "If using the approved two-working-day wording, retain from laboratory receipt; do not imply doorstep-to-results in two days.",
