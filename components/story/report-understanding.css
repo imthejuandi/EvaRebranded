@@ -1,90 +1,126 @@
 .report-understanding {
+  --report-paper: #f3f0e8;
   --report-ink: #202820;
   --report-muted: #50594e;
-  --report-mark: #9a5115;
-  background: #f3f0e8;
+  --report-rule: #b9b9a9;
+  background: var(--report-paper);
   color: var(--report-ink);
-  padding: clamp(56px, 6vw, 88px) var(--gutter);
+  padding: clamp(56px, 6.5vw, 104px) var(--gutter);
   font-family: 'EVA Hanken', Arial, sans-serif;
 }
-.report-proof {max-width: 1160px; margin-inline: auto}
-.report-proof h2 {
-  margin: 0 0 40px;
-  font-size: clamp(40px, 3.8vw, 52px);
-  line-height: 1.08;
-  letter-spacing: -.03em;
+.report-poster {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: clamp(40px, 6vw, 96px);
+  max-width: 1320px;
+  margin-inline: auto;
+  align-items: start;
+}
+.report-poster h2 {
+  margin: 0;
+  font-size: clamp(80px, 8.8vw, 136px);
+  line-height: .96;
+  letter-spacing: -.04em;
   font-weight: 400;
   text-wrap: balance;
 }
-.report-proof h2 em {font-family: Georgia, serif; font-weight: 400}
-.report-translation {position: relative; margin: 0}
-.report-specimen {max-width: 560px}
-.report-example-label {margin: 0 0 12px; font-size: 13px; line-height: 18px; color: var(--report-muted)}
-.report-assay-line {display: flex; align-items: baseline; gap: 16px}
-.report-assay {font-size: 26px; line-height: 1.2; letter-spacing: -.02em}
-.report-assay-leader {flex: 1; max-width: 240px; border-bottom: 1px dotted #8a907f; transform: translateY(-5px)}
-.report-assay-value {margin: 0; white-space: nowrap; font-variant-numeric: tabular-nums; letter-spacing: -.035em; line-height: 1}
-.report-assay-value > span {font-size: clamp(48px, 4.6vw, 64px)}
-.report-assay-value small {font-size: 16px; line-height: 1.5; letter-spacing: 0}
-.report-prior-readings {display: flex; flex-wrap: wrap; column-gap: 12px; row-gap: 2px; margin: 16px 0 0; font-size: 14px; line-height: 20px; color: var(--report-muted)}
-.report-prior-readings > span:last-child {font-variant-numeric: tabular-nums; white-space: nowrap}
-.report-proof-mark {position: relative; display: block; height: 44px; width: 64px; margin: 16px 0 8px 11%; color: var(--report-mark)}
-.report-proof-mark-stem, .report-proof-mark-arm, .report-proof-mark-dot {position: absolute; display: block; background: currentColor}
-.report-proof-mark-stem {left: 0; top: 0; width: 2px; height: 32px; transform-origin: top}
-.report-proof-mark-arm {left: 0; top: 30px; width: 60px; height: 2px; transform-origin: left}
-.report-proof-mark-dot {left: 57px; top: 28px; width: 6px; height: 6px; border-radius: 50%}
-.report-human-reading {
-  margin-left: 14%;
-  max-width: 900px;
+.report-poster h2 em {
+  display: block;
   font-family: Georgia, serif;
-  font-style: italic;
-  font-size: clamp(46px, 5.2vw, 76px);
   font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -.035em;
-  text-wrap: balance;
+  letter-spacing: -.04em;
+  line-height: 1.04;
 }
-.report-resolution {margin: 24px 0 0 14%; max-width: 52ch}
-.report-explanation {margin: 0; font-size: 18px; line-height: 26px; text-wrap: pretty}
-.report-action-group {margin-top: 28px}
-.report-free-action {display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px; background: var(--report-ink); color: #f3f0e8; font-size: 15px; line-height: 20px; font-weight: 600; border: 1px solid transparent; transition: background-color 160ms}
+.report-lead, .report-source-context, .report-explanation, .report-finding {margin: 0}
+.report-lead {font-size: clamp(21px, 1.9vw, 28px); line-height: 1.21; max-width: 34ch; text-wrap: pretty}
+.report-findings {list-style: none; padding: 0; margin: 24px 0 0}
+.report-findings li {
+  border-top: 1px solid var(--report-rule);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-block: 20px 16px;
+}
+.report-finding {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(124px, 39%) minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+.report-value {font-size: clamp(72px, 6.5vw, 100px); line-height: .92; letter-spacing: -.04em; white-space: nowrap}
+.report-value > span {display: inline-block; vertical-align: top; margin: .1em 0 0 .04em; font-size: .47em; line-height: 1; letter-spacing: 0}
+.report-description {padding-top: 4px; font-size: 18px; line-height: 1.28; text-wrap: pretty}
+.report-description a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-width: 44px;
+  min-height: 44px;
+  color: var(--report-muted);
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+.report-description a:hover {color: var(--report-ink); text-decoration-thickness: 2px}
+.report-impression {width: clamp(44px, 4.8vw, 72px); height: auto; flex: none; fill: #b8b7a8}
+.report-marked-dot {fill: #a45b20}
+.report-source-context, .report-free-allowance {font-size: 14px; line-height: 1.4; color: var(--report-muted)}
+.report-source-context {border-top: 1px solid var(--report-rule); padding-top: 12px}
+.report-close {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 32px;
+  border-top: 1px solid var(--report-ink);
+  margin-top: clamp(40px, 5vw, 80px);
+  padding-top: 24px;
+}
+.report-explanation {max-width: 34ch; font-size: clamp(24px, 2.45vw, 36px); line-height: 1.14; letter-spacing: -.024em; text-wrap: pretty}
+.report-free-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  background: var(--report-ink);
+  color: var(--report-paper);
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
 .report-free-action:hover {background: #394433}
-.report-free-allowance {margin: 8px 0 0; color: var(--report-muted); font-size: 13px; line-height: 18px}
-.report-understanding a:focus-visible {outline: 2px solid var(--report-ink); outline-offset: 5px}
-.report-understanding ::selection {background: var(--report-ink); color: #f3f0e8}
+.report-free-allowance {margin: 8px 0 0}
+.report-understanding a:focus-visible {outline: 2px solid var(--report-ink); outline-offset: 4px}
+.report-understanding ::selection {background: var(--report-ink); color: var(--report-paper)}
 .collection-after-problem {position: relative}
 .collection-after-problem .tasso-video-process {position: relative; inset: auto; min-height: 640px; height: 100svh}
 .hero-entrance .opening-runner {height: 100svh}
-@media (prefers-reduced-motion: no-preference) {
-  .report-understanding[data-proof-entered="true"][data-calm="false"] .report-proof-mark-stem {animation: report-proof-stem 160ms cubic-bezier(.16,1,.3,1)}
-  .report-understanding[data-proof-entered="true"][data-calm="false"] .report-proof-mark-arm {animation: report-proof-arm 260ms 160ms cubic-bezier(.16,1,.3,1) backwards}
-  .report-understanding[data-proof-entered="true"][data-calm="false"] .report-proof-mark-dot {animation: report-proof-dot 120ms 400ms cubic-bezier(.16,1,.3,1) backwards}
+@media (max-width: 1000px) {
+  .report-poster {grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); column-gap: 32px}
+  .report-poster h2 {font-size: clamp(62px, 8.4vw, 84px)}
+  .report-finding {grid-template-columns: minmax(88px, 34%) minmax(0, 1fr); gap: 12px}
+  .report-value {font-size: 68px}
+  .report-description {font-size: 16px}
+  .report-impression {width: 40px}
 }
-@keyframes report-proof-stem {from {transform: scaleY(0)} to {transform: scaleY(1)}}
-@keyframes report-proof-arm {from {transform: scaleX(0)} to {transform: scaleX(1)}}
-@keyframes report-proof-dot {from {transform: scale(.4); opacity: .4} to {transform: scale(1); opacity: 1}}
-@media (max-width: 700px) {
-  .report-understanding {padding-block: 48px}
-  .report-proof h2 {font-size: 34px; margin-bottom: 32px; max-width: 19ch}
-  .report-specimen {max-width: 100%}
-  .report-assay-line {gap: 12px}
-  .report-assay {font-size: 23px}
-  .report-assay-value > span {font-size: 48px}
-  .report-prior-readings {margin-top: 12px}
-  .report-proof-mark {height: 36px; margin: 16px 0 8px}
-  .report-proof-mark-stem {height: 24px}
-  .report-proof-mark-arm {top: 22px; width: 32px}
-  .report-proof-mark-dot {top: 20px; left: 29px}
-  .report-human-reading {margin-left: 16px; font-size: clamp(31px, 8.5vw, 40px); line-height: 1.1; letter-spacing: -.03em}
-  .report-resolution {margin: 24px 0 0 16px}
-  .report-explanation {font-size: 17px; line-height: 25px}
-  .report-action-group {margin-top: 24px}
+@media (max-width: 720px) {
+  .report-understanding {padding-block: 44px 48px}
+  .report-poster {display: block}
+  .report-poster h2 {font-size: clamp(50px, 13.8vw, 80px); max-width: 12ch; text-wrap: initial}
+  .report-evidence {margin-top: 32px}
+  .report-lead {font-size: 21px}
+  .report-findings {margin-top: 20px}
+  .report-findings li {gap: 12px; padding-block: 16px 8px}
+  .report-finding {grid-template-columns: minmax(78px, 30%) minmax(0, 1fr)}
+  .report-value {font-size: clamp(58px, 16vw, 78px)}
+  .report-impression {width: clamp(32px, 9vw, 52px); align-self: flex-start; margin-top: 5px}
+  .report-close {display: block; margin-top: 32px; padding-top: 20px}
+  .report-action-group {margin-top: 20px}
   .collection-after-problem .tasso-video-process {min-height: 620px}
 }
-@media (prefers-reduced-motion: reduce) {
-  .report-free-action {transition: none}
-}
 @media (forced-colors: active) {
-  .report-proof-mark {color: CanvasText}
+  .report-impression {display: none}
   .report-free-action {border-color: ButtonText}
 }

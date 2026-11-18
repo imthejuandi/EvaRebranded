@@ -3,7 +3,7 @@
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-18",
   "handoff_status": "NORMAL_RANGE_CONTEXT_VERIFIED_V51",
-  "immediate_instruction": "Review version 51 is published. The runner leads to a question about what a normal result means for health. A qualified explanation of reference ranges and personal context introduces EVA’s clear biomarker interpretation before the first signup choices. Read docs/problem-opening-qa.json. Continue the three-specialist review workflow and retain the existing methodology figures until training finishes.",
+  "immediate_instruction": "Version 51 remains live and version 52 is saved but was never deployed. The user selected “What does ‘healthy’ really mean?”, the ONS England 10% prediabetes finding and the 46% undiagnosed type 2 diabetes finding among adults rating their health good or very good, source links, and the bridge “Understand what your body’s data means—and follow how it changes.” The current draft implements this as an Astra-designed editorial statement spread. Keep the different percentage denominators visible and the 46% type 2 diabetes qualification adjacent. Final rendered verification and publication are pending; routine checks, commits, pushes and existing review-site publication remain authorized. Preserve restored concise hero actions and one free action in the chapter.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -102,7 +102,77 @@
       }
     },
     "latest_verified_ui_release_note": "Review version 51 serves UI commit 9f2f16ac5ec134ccb6ea3773c7834ac01775d924. The subsequent handoff commit records the published release.",
-    "pending_release": null,
+    "pending_release": {
+      "status": "user_selected_statement_implemented_awaiting_final_verification_and_publication",
+      "draft_heading_en": "What does “healthy” really mean?",
+      "draft_heading_es": "¿Qué significa estar «sano» de verdad?",
+      "current_live_version": 51,
+      "saved_unpublished_version": {
+        "version_number": 52,
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c00a8566ed648191a1b2e05f6db18bfb",
+        "source_commit": "695971ff04c9ec40618df041b8e36a25baf44b92",
+        "deployment_id": null
+      },
+      "draft_scope": "A focused warm-paper editorial opening after the runner: the selected healthy question, visible England/good-or-very-good self-rated health frame, static 10% and 46% findings with distinct adjacent denominators and native ONS links, proportional dot impressions, approved data-interpretation bridge and one free action. Preserve restored concise free-first and kit subscription actions in the runner and the accepted remaining landing.",
+      "copy_owner": "Primary agent, advised by a bilingual health and wellness marketing copy specialist",
+      "design_owner": "User-requested gpt-6.2-astra agent applying Impeccable within EVA’s existing Hanken, Georgia italic, ink, warm-paper and amber/dot language",
+      "research": "/workspace/eva-in-place-qa/statement-v52/statistics-a.md and statistics-b.md",
+      "verification": "Earlier draft type/build results remain historical. Final source checks, independent Impeccable review, rendered English/Spanish verification and native publication receipts are pending for the selected statistic statement. Managed preview again timed out; no replacement preview server was started.",
+      "evidence_geography": "Spain preferred; EU and UK evidence accepted after the user broadened the search.",
+      "research_spain_eu": [
+        "/workspace/eva-in-place-qa/statement-v52/statistics-spain-eu-a.md",
+        "/workspace/eva-in-place-qa/statement-v52/statistics-spain-eu-b.md"
+      ],
+      "additional_research": [
+        "/workspace/eva-in-place-qa/statement-v52/statistics-uk-eu-more-a.md",
+        "/workspace/eva-in-place-qa/statement-v52/statistics-uk-eu-more-b.md",
+        "/workspace/eva-in-place-qa/statement-v52/ons-self-reported-health-independent-audit.md",
+        "/workspace/eva-in-place-qa/statement-v52/hidden-disease-national-b.md"
+      ],
+      "latest_evidence_requirement": "National population sampling/coverage and appropriate weighting are required for countrywide claims. Regional/city cohorts and selected volunteer/occupational samples cannot supply countrywide percentages. Selected findings explicitly concern good/very good self-rated health, with population, historical dates and conditional denominators preserved.",
+      "selected_copy": {
+        "en": {
+          "heading": "What does “healthy” really mean?",
+          "framing": "Among adults in England who rated their health as good or very good:",
+          "statistics": [
+            {
+              "value": "10%",
+              "text": "had prediabetes."
+            },
+            {
+              "value": "46%",
+              "text": "of those with type 2 diabetes were undiagnosed."
+            }
+          ],
+          "bridge": "Understand what your body’s data means—and follow how it changes.",
+          "action": "Start for free"
+        },
+        "es": {
+          "heading": "¿Qué significa estar «sano» de verdad?",
+          "framing": "Entre los adultos de Inglaterra que valoraron su salud como buena o muy buena:",
+          "statistics": [
+            {
+              "value": "10%",
+              "text": "tenían prediabetes."
+            },
+            {
+              "value": "46%",
+              "text": "de quienes tenían diabetes tipo 2 no estaban diagnosticados."
+            }
+          ],
+          "bridge": "Entiende qué significan los datos de tu cuerpo y sigue su evolución.",
+          "action": "Empieza gratis"
+        }
+      },
+      "selected_evidence": {
+        "study": "ONS England, Health Survey for England 2013–2019, national probability household sample and weighting, overall analytic n=26,751; released 2024.",
+        "prediabetes": "Table 4 F108: 10.322% of all adults rating health good/very good had prediabetes, rounded to 10%.",
+        "undiagnosed_type_2_diabetes": "Table 3 F99: 45.934% of adults with type 2 diabetes who rated health good/very good were undiagnosed, rounded to 46%; subgroup approximately 1,060 unweighted, not the full 26,751.",
+        "study_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland/2013to2019",
+        "data_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland",
+        "qualification": "Historical England findings, not current Spanish prevalence. The46% denominator includes both type 2 diabetes and good/very good self-rated health; it is not 46% of all adults or all adults with diabetes. The two statistics do not establish that routine normal bloodwork hid disease or that EVA’s kit diagnoses diabetes."
+      }
+    },
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
       "relation": "QA/docs followup to version 51 source 9f2f16ac5ec134ccb6ea3773c7834ac01775d924",

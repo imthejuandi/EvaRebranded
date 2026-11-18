@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'52';
+const VERSION=process.env.EVA_REVIEW_VERSION||'53';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -38,15 +38,27 @@ async function home(page,locale){
  assert.equal(await runner.locator('a[href*="/signup"]').count(),2);
  assert.equal(await page.locator('.masthead .join').getAttribute('href'),'#entender-tus-analisis');
  const statementFree=problem.locator('[data-statement-free]');
- assert.equal(await problem.locator('a').count(),1,'Statement chapter keeps a single free action');
+ assert.equal(await problem.locator('a[href*="/signup"]').count(),1,'Statement chapter keeps a single signup action');
  assert.equal(await text(statementFree),locale==='en'?'Start for free':'Empieza gratis');
  expectQuery(await statementFree.getAttribute('href'),locale,'free');
- assert.match(await text(problem.locator('[data-report-specimen]')),/fictional example|ejemplo ficticio/i);
- assert.match(await text(problem.locator('[data-report-specimen]')),/Alex/);
- assert.equal(await problem.locator('[data-value="2.1"]').count(),1);
- const prior=await text(problem.locator('.report-prior-readings'));
- assert.deepEqual((prior.match(/\d+[.,]\d+/g)||[]).map(value=>Number(value.replace(',','.'))),[.8,.9,.8]);
- assert.doesNotMatch(await text(problem),/\b95\s?%/);
+ assert.equal(await text(problem.locator('h2')),locale==='en'?'What does “healthy” really mean?':'¿Qué significa estar «sano» de verdad?');
+ const chapterText=await text(problem);
+ assert.match(await text(problem.locator('.report-lead')),locale==='en'?/adults in England who rated their health as good or very good/i:/adultos de Inglaterra que valoraron su salud como buena o muy buena/i);
+ const facts=problem.locator('[data-statement-fact]');
+ assert.equal(await facts.count(),2,'Two sourced statistics');
+ assert.match(await text(facts.nth(0)),/10\s*%/);assert.match(await text(facts.nth(0)),/prediabetes/i);
+ assert.match(await text(facts.nth(1)),/46\s*%/);
+ assert.match(await text(facts.nth(1)),locale==='en'?/of those with type 2 diabetes were undiagnosed/i:/de quienes tenían diabetes tipo 2 no estaban diagnosticados/i,'46% remains qualified to its diabetes subgroup');
+ assert.match(await text(problem.locator('.report-source-context')),/2013\s*[–-]\s*2019/);
+ assert.equal(await problem.locator('[data-statement-source]').count(),2);
+ for(const source of await problem.locator('[data-statement-source]').all()){
+  const sourceUrl=new URL(await source.getAttribute('href'));
+  assert.equal(sourceUrl.hostname,'www.ons.gov.uk');
+  assert.match(sourceUrl.pathname,/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/);
+ }
+ assert.equal(await text(problem.locator('.report-explanation')),locale==='en'?'Understand what your body’s data means—and follow how it changes.':'Entiende qué significan los datos de tu cuerpo y sigue su evolución.');
+ assert.equal(await problem.locator('[data-report-specimen], [data-value]').count(),0);
+ assert.doesNotMatch(chapterText,/\b95\s?%|hs-CRP|\bAlex\b/);
  assert(await runner.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('[data-problem-chapter]')) & Node.DOCUMENT_POSITION_FOLLOWING)));
  assert(await problem.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('#recogida-en-casa')) & Node.DOCUMENT_POSITION_FOLLOWING)));
  for(const selector of ['.hero-kit-cta','[data-range-upload]','[data-method-upload]','[data-offer-upload]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'free');
@@ -174,6 +186,13 @@ async function revisitAccount(page,result){
   const staticPage = await browser.newPage({javaScriptEnabled: false, viewport: {width: 390, height: 844}});
   try {
    await staticPage.goto(`${ORIGIN}/${locale}?review=${VERSION}`);
+   const statement=staticPage.locator('[data-problem-chapter]');
+   const facts=statement.locator('[data-statement-fact]');
+   assert.equal(await facts.count(),2,'Evidence is server-rendered without JavaScript');
+   for(const fact of await facts.all())assert(await fact.isVisible(),'Evidence is readable without JavaScript');
+   assert.match(await text(statement.locator('.report-lead')),locale==='en'?/adults in England who rated their health as good or very good/i:/adultos de Inglaterra que valoraron su salud como buena o muy buena/i);
+   assert.match(await text(facts.nth(1)),locale==='en'?/of those with type 2 diabetes were undiagnosed/i:/de quienes tenían diabetes tipo 2 no estaban diagnosticados/i,'Diabetes denominator survives without JavaScript');
+   assert.equal(await statement.locator('[data-statement-source]').count(),2);
    const poster = staticPage.locator('.poster .hero-runner-static');
    assert.equal(await poster.evaluate(image => getComputedStyle(image).opacity), '1');
    assert.doesNotMatch(await text(staticPage.locator('.poster .hero-support')), /start free|empieza gratis/i);
