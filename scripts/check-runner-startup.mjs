@@ -82,9 +82,12 @@ function coldStart(source=playbackSource){
 coldStart();
 {
  const f=fixture();f.play();f.decode(0);
- for(let i=1;i<=60;i++){f.advance(100);f.decode((i/10)%5)}
+ for(let i=1;i<=60;i++){
+  f.advance(100);f.decode((i/10)%5);
+  const expectedElapsed=Math.min(13,i/10*HERO_ENTRANCE_RATE);
+  assert(Math.abs(f.elapsed.current-expectedElapsed)<1e-8,'The entrance clock advances through a native loop and stops at its cap');
+ }
  assert.equal(f.skips(),0,'Advancing frames across the 5-second media loop do not trigger fallback');
- assert(Math.abs(f.elapsed.current-6*HERO_ENTRANCE_RATE)<1e-8,'The entrance clock advances through a native loop');
  assert.equal(f.draws.at(-1).time,1,'Tracking stays aligned to the original five-second video loop');
  assert.equal(f.arrivalDraws.length,61,'The same callback paints every decoded arrival frame');f.dispose();
 }
