@@ -5,7 +5,7 @@ export const reportUnderstanding = {
     exploreLabel: 'Explora cómo EVA te ayuda a entender tu salud',
     heroLead: ['Los datos de tu cuerpo,', 'explicados con claridad.'],
     heading: ['¿Qué significa estar «sano»', 'de verdad?'],
-    lead: 'Entre los adultos de Inglaterra que valoraron su salud como buena o muy buena:',
+    lead: 'Entre los adultos que valoraron su salud como buena o muy buena:',
     statistics: [
       {
         value: '10%',
@@ -32,7 +32,7 @@ export const reportUnderstanding = {
     exploreLabel: 'Explore how EVA helps you understand your health',
     heroLead: ['Your body’s data,', 'in plain language.'],
     heading: ['What does “healthy”', 'really mean?'],
-    lead: 'Among adults in England who rated their health as good or very good:',
+    lead: 'Among adults who rated their health as good or very good:',
     statistics: [
       {
         value: '10%',

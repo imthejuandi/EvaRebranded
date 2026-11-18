@@ -36,7 +36,7 @@ await test('opening',page,result,async()=>{
  assert.equal(heading,c.locale==='en'?'What does “healthy” really mean?':'¿Qué significa estar «sano» de verdad?');
  const chapterText=await chapter.innerText();
  const framing=(await chapter.locator('.report-lead').innerText()).replace(/\s+/g,' ').trim();
- assert.match(framing,c.locale==='en'?/adults in England who rated their health as good or very good/i:/adultos de Inglaterra que valoraron su salud como buena o muy buena/i);
+ assert.match(framing,c.locale==='en'?/adults who rated their health as good or very good/i:/adultos que valoraron su salud como buena o muy buena/i);
  const facts=chapter.locator('[data-statement-fact]');
  assert.equal(await facts.count(),2,'Two evidence statements');
  const firstFact=(await facts.nth(0).innerText()).replace(/\s+/g,' ').trim();

@@ -43,7 +43,7 @@ async function home(page,locale){
  expectQuery(await statementFree.getAttribute('href'),locale,'free');
  assert.equal(await text(problem.locator('h2')),locale==='en'?'What does “healthy” really mean?':'¿Qué significa estar «sano» de verdad?');
  const chapterText=await text(problem);
- assert.match(await text(problem.locator('.report-lead')),locale==='en'?/adults in England who rated their health as good or very good/i:/adultos de Inglaterra que valoraron su salud como buena o muy buena/i);
+ assert.match(await text(problem.locator('.report-lead')),locale==='en'?/adults who rated their health as good or very good/i:/adultos que valoraron su salud como buena o muy buena/i);
  const facts=problem.locator('[data-statement-fact]');
  assert.equal(await facts.count(),2,'Two sourced statistics');
  assert.match(await text(facts.nth(0)),/10\s*%/);assert.match(await text(facts.nth(0)),/prediabetes/i);
@@ -190,7 +190,7 @@ async function revisitAccount(page,result){
    const facts=statement.locator('[data-statement-fact]');
    assert.equal(await facts.count(),2,'Evidence is server-rendered without JavaScript');
    for(const fact of await facts.all())assert(await fact.isVisible(),'Evidence is readable without JavaScript');
-   assert.match(await text(statement.locator('.report-lead')),locale==='en'?/adults in England who rated their health as good or very good/i:/adultos de Inglaterra que valoraron su salud como buena o muy buena/i);
+   assert.match(await text(statement.locator('.report-lead')),locale==='en'?/adults who rated their health as good or very good/i:/adultos que valoraron su salud como buena o muy buena/i);
    assert.match(await text(facts.nth(1)),locale==='en'?/of those with type 2 diabetes were undiagnosed/i:/de quienes tenían diabetes tipo 2 no estaban diagnosticados/i,'Diabetes denominator survives without JavaScript');
    assert.equal(await statement.locator('[data-statement-source]').count(),2);
    const poster = staticPage.locator('.poster .hero-runner-static');
