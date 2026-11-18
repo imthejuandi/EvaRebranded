@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 54,
-    "deployed_ui_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
-    "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
+    "live_version": 55,
+    "deployed_ui_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e9b22909540481919d27a2fcae6be849",
+    "deployment_id": "appgdep_6afe28fd27248191908ea70ec1924adb",
     "main_head_before_coordination": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=54#entender-tus-analisis"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=55#entender-tus-analisis"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -169,7 +169,7 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version 54 published and verified with precise 53/54 regression-reuse scope.",
+      "status": "Version55 published and verified; main lead refers simply to adults, with geography in source citation.",
       "next_section": null,
       "pending_verification": null,
       "section": "Healthy-question editorial statement and concise runner entry actions",

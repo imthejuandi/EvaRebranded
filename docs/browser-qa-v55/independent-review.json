@@ -1,0 +1,980 @@
+{
+  "version": "55",
+  "base": "https://eva-content-review.jdlagop.chatgpt.site",
+  "scope": "Scoped native55 review after removing geographic phrase from main lead only; source citation retains England and data dates. Prior54 type/layout and53 matrix retained.",
+  "viewportEmulation": true,
+  "physicalDevice": false,
+  "zoomMethod": "200% effective reflow: 1366/2 CSS width with DPR2; not physical browser chrome zoom",
+  "profiles": [
+    {
+      "id": "en-1366-motion",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "failures": [],
+      "errors": [],
+      "status": 200,
+      "hero": {
+        "docWidth": 1366,
+        "links": [
+          {
+            "text": "Start for free",
+            "x": 48,
+            "y": 732,
+            "width": 200,
+            "height": 44,
+            "right": 248,
+            "bottom": 776,
+            "fontSize": "14px",
+            "lineHeight": "18.2px",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "hit": true
+          },
+          {
+            "text": "Subscribe to the kit",
+            "x": 268,
+            "y": 732,
+            "width": 228,
+            "height": 44,
+            "right": 496,
+            "bottom": 776,
+            "fontSize": "14px",
+            "lineHeight": "18.2px",
+            "href": "/en/signup?plan=quarterly",
+            "hit": true
+          }
+        ],
+        "terms": {
+          "text": "5 free report uploads per account · 13 biomarkers · €99 + VAT per quarter. Cancel anytime.",
+          "x": 48,
+          "y": 784,
+          "width": 448,
+          "height": 36.375,
+          "right": 496,
+          "bottom": 820.375,
+          "fontSize": "14px",
+          "lineHeight": "18.2px",
+          "href": null
+        },
+        "pause": {
+          "text": "Pause image",
+          "x": 1259.625,
+          "y": 815,
+          "width": 58.375,
+          "height": 44,
+          "right": 1318,
+          "bottom": 859,
+          "fontSize": "10px",
+          "lineHeight": "15px",
+          "href": null
+        },
+        "nav": {
+          "text": "01\nLive\n02\nDiscover\n03\nUnderstand\n04\nContinue",
+          "x": 48,
+          "y": 826,
+          "width": 440,
+          "height": 46,
+          "right": 488,
+          "bottom": 872,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "href": null
+        }
+      },
+      "chapter": {
+        "docWidth": 1366,
+        "region": {
+          "text": "What does “healthy”\nreally mean?\n\nAmong adults who rated their health as good or very good:\n\n10%\nhad prediabetes.\nStudy\n\n46%\nof those with type 2 diabetes were undiagnosed.\nData\n\nHealth Survey for England · 2013–2019\n\nUnderstand what your body’s data means—and follow how it changes.\n\nStart for free\n\n5 free report uploads per account",
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 716.265625,
+          "right": 1366,
+          "bottom": 716.265625,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "normal"
+        },
+        "heading": {
+          "text": "What does “healthy”\nreally mean?",
+          "x": 48,
+          "y": 88.78125,
+          "width": 594.015625,
+          "height": 355.78125,
+          "right": 642.015625,
+          "bottom": 444.5625,
+          "fontSize": "120.208px",
+          "lineHeight": "115.4px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "-4.80832px"
+        },
+        "lead": {
+          "text": "Among adults who rated their health as good or very good:",
+          "x": 723.96875,
+          "y": 88.78125,
+          "width": 493.84375,
+          "height": 62.78125,
+          "right": 1217.8125,
+          "bottom": 151.5625,
+          "fontSize": "25.954px",
+          "lineHeight": "31.4043px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "normal"
+        },
+        "facts": [
+          {
+            "text": "10%\nhad prediabetes.\nStudy",
+            "x": 723.96875,
+            "y": 175.5625,
+            "width": 594.03125,
+            "height": 118.6875,
+            "right": 1318,
+            "bottom": 294.25,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "46%\nof those with type 2 diabetes were undiagnosed.\nData",
+            "x": 723.96875,
+            "y": 294.25,
+            "width": 594.03125,
+            "height": 131.0625,
+            "right": 1318,
+            "bottom": 425.3125,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          }
+        ],
+        "descriptions": [
+          {
+            "text": "had prediabetes.\nStudy",
+            "x": 939.828125,
+            "y": 196.5625,
+            "width": 296.609375,
+            "height": 71.03125,
+            "right": 1236.4375,
+            "bottom": 267.59375,
+            "fontSize": "18px",
+            "lineHeight": "23.04px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "of those with type 2 diabetes were undiagnosed.\nData",
+            "x": 939.828125,
+            "y": 315.25,
+            "width": 296.609375,
+            "height": 94.0625,
+            "right": 1236.4375,
+            "bottom": 409.3125,
+            "fontSize": "18px",
+            "lineHeight": "23.04px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          }
+        ],
+        "bridge": {
+          "text": "Understand what your body’s data means—and follow how it changes.",
+          "x": 48,
+          "y": 551.203125,
+          "width": 636.9375,
+          "height": 76.28125,
+          "right": 684.9375,
+          "bottom": 627.484375,
+          "fontSize": "33.467px",
+          "lineHeight": "38.1524px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "-0.803208px"
+        },
+        "sourceContext": {
+          "text": "Health Survey for England · 2013–2019",
+          "x": 723.96875,
+          "y": 425.3125,
+          "width": 594.03125,
+          "height": 32.59375,
+          "right": 1318,
+          "bottom": 457.90625,
+          "fontSize": "14px",
+          "lineHeight": "19.6px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(80, 89, 78)",
+          "letterSpacing": "normal"
+        },
+        "allowance": {
+          "text": "5 free report uploads per account",
+          "x": 1105.328125,
+          "y": 607.546875,
+          "width": 212.671875,
+          "height": 19.59375,
+          "right": 1318,
+          "bottom": 627.140625,
+          "fontSize": "14px",
+          "lineHeight": "19.6px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(80, 89, 78)",
+          "letterSpacing": "normal"
+        },
+        "links": [
+          {
+            "text": "Study",
+            "x": 939.828125,
+            "y": 223.59375,
+            "width": 44,
+            "height": 44,
+            "right": 983.828125,
+            "bottom": 267.59375,
+            "fontSize": "14px",
+            "lineHeight": "17.92px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(80, 89, 78)",
+            "letterSpacing": "normal",
+            "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+            "name": "Read the ONS prediabetes study, England, 2013–2019"
+          },
+          {
+            "text": "Data",
+            "x": 939.828125,
+            "y": 365.3125,
+            "width": 44,
+            "height": 44,
+            "right": 983.828125,
+            "bottom": 409.3125,
+            "fontSize": "14px",
+            "lineHeight": "17.92px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(80, 89, 78)",
+            "letterSpacing": "normal",
+            "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
+            "name": "Read the ONS data on undiagnosed type 2 diabetes, England, 2013–2019"
+          },
+          {
+            "text": "Start for free",
+            "x": 1105.328125,
+            "y": 551.546875,
+            "width": 136.1875,
+            "height": 48,
+            "right": 1241.515625,
+            "bottom": 599.546875,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "600",
+            "color": "rgb(243, 240, 232)",
+            "letterSpacing": "normal",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "name": null
+          }
+        ],
+        "clipped": [],
+        "art": [
+          {
+            "hidden": "true",
+            "dots": 100,
+            "marked": 10
+          },
+          {
+            "hidden": "true",
+            "dots": 100,
+            "marked": 46
+          }
+        ],
+        "animations": [],
+        "beforeTasso": true
+      },
+      "focus": [
+        {
+          "text": "Study",
+          "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        },
+        {
+          "text": "Data",
+          "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        },
+        {
+          "text": "Start for free",
+          "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "es-1366-motion",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "failures": [],
+      "errors": [],
+      "status": 200,
+      "hero": {
+        "docWidth": 1366,
+        "links": [
+          {
+            "text": "Empieza gratis",
+            "x": 48,
+            "y": 732,
+            "width": 200,
+            "height": 44,
+            "right": 248,
+            "bottom": 776,
+            "fontSize": "14px",
+            "lineHeight": "18.2px",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "hit": true
+          },
+          {
+            "text": "Suscríbete al kit",
+            "x": 268,
+            "y": 732,
+            "width": 228,
+            "height": 44,
+            "right": 496,
+            "bottom": 776,
+            "fontSize": "14px",
+            "lineHeight": "18.2px",
+            "href": "/es/signup?plan=quarterly",
+            "hit": true
+          }
+        ],
+        "terms": {
+          "text": "5 informes gratis por cuenta · 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.",
+          "x": 48,
+          "y": 784,
+          "width": 448,
+          "height": 36.375,
+          "right": 496,
+          "bottom": 820.375,
+          "fontSize": "14px",
+          "lineHeight": "18.2px",
+          "href": null
+        },
+        "pause": {
+          "text": "Pausar imagen",
+          "x": 1250.734375,
+          "y": 815,
+          "width": 67.265625,
+          "height": 44,
+          "right": 1318,
+          "bottom": 859,
+          "fontSize": "10px",
+          "lineHeight": "15px",
+          "href": null
+        },
+        "nav": {
+          "text": "01\nVivir\n02\nConocer\n03\nEntender\n04\nSeguir",
+          "x": 48,
+          "y": 826,
+          "width": 440,
+          "height": 46,
+          "right": 488,
+          "bottom": 872,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "href": null
+        }
+      },
+      "chapter": {
+        "docWidth": 1366,
+        "region": {
+          "text": "¿Qué significa estar «sano»\nde verdad?\n\nEntre los adultos que valoraron su salud como buena o muy buena:\n\n10%\ntenían prediabetes.\nEstudio\n\n46%\nde quienes tenían diabetes tipo 2 no estaban diagnosticados.\nDatos\n\nHealth Survey for England · 2013–2019\n\nEntiende qué significan los datos de tu cuerpo y sigue su evolución.\n\nEmpieza gratis\n\n5 informes gratis por cuenta",
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 716.265625,
+          "right": 1366,
+          "bottom": 716.265625,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "normal"
+        },
+        "heading": {
+          "text": "¿Qué significa estar «sano»\nde verdad?",
+          "x": 48,
+          "y": 88.78125,
+          "width": 594.015625,
+          "height": 291.125,
+          "right": 642.015625,
+          "bottom": 379.90625,
+          "fontSize": "98.352px",
+          "lineHeight": "94.4179px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "-3.93408px"
+        },
+        "lead": {
+          "text": "Entre los adultos que valoraron su salud como buena o muy buena:",
+          "x": 723.96875,
+          "y": 88.78125,
+          "width": 493.84375,
+          "height": 62.78125,
+          "right": 1217.8125,
+          "bottom": 151.5625,
+          "fontSize": "25.954px",
+          "lineHeight": "31.4043px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "normal"
+        },
+        "facts": [
+          {
+            "text": "10%\ntenían prediabetes.\nEstudio",
+            "x": 723.96875,
+            "y": 175.5625,
+            "width": 594.03125,
+            "height": 118.6875,
+            "right": 1318,
+            "bottom": 294.25,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "46%\nde quienes tenían diabetes tipo 2 no estaban diagnosticados.\nDatos",
+            "x": 723.96875,
+            "y": 294.25,
+            "width": 594.03125,
+            "height": 131.0625,
+            "right": 1318,
+            "bottom": 425.3125,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          }
+        ],
+        "descriptions": [
+          {
+            "text": "tenían prediabetes.\nEstudio",
+            "x": 939.828125,
+            "y": 196.5625,
+            "width": 296.609375,
+            "height": 71.03125,
+            "right": 1236.4375,
+            "bottom": 267.59375,
+            "fontSize": "18px",
+            "lineHeight": "23.04px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "de quienes tenían diabetes tipo 2 no estaban diagnosticados.\nDatos",
+            "x": 939.828125,
+            "y": 315.25,
+            "width": 296.609375,
+            "height": 94.0625,
+            "right": 1236.4375,
+            "bottom": 409.3125,
+            "fontSize": "18px",
+            "lineHeight": "23.04px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          }
+        ],
+        "bridge": {
+          "text": "Entiende qué significan los datos de tu cuerpo y sigue su evolución.",
+          "x": 48,
+          "y": 551.203125,
+          "width": 636.9375,
+          "height": 76.28125,
+          "right": 684.9375,
+          "bottom": 627.484375,
+          "fontSize": "33.467px",
+          "lineHeight": "38.1524px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "-0.803208px"
+        },
+        "sourceContext": {
+          "text": "Health Survey for England · 2013–2019",
+          "x": 723.96875,
+          "y": 425.3125,
+          "width": 594.03125,
+          "height": 32.59375,
+          "right": 1318,
+          "bottom": 457.90625,
+          "fontSize": "14px",
+          "lineHeight": "19.6px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(80, 89, 78)",
+          "letterSpacing": "normal"
+        },
+        "allowance": {
+          "text": "5 informes gratis por cuenta",
+          "x": 1141.609375,
+          "y": 607.546875,
+          "width": 176.390625,
+          "height": 19.59375,
+          "right": 1318,
+          "bottom": 627.140625,
+          "fontSize": "14px",
+          "lineHeight": "19.6px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(80, 89, 78)",
+          "letterSpacing": "normal"
+        },
+        "links": [
+          {
+            "text": "Estudio",
+            "x": 939.828125,
+            "y": 223.59375,
+            "width": 46.734375,
+            "height": 44,
+            "right": 986.5625,
+            "bottom": 267.59375,
+            "fontSize": "14px",
+            "lineHeight": "17.92px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(80, 89, 78)",
+            "letterSpacing": "normal",
+            "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+            "name": "Leer el estudio de la ONS sobre prediabetes, Inglaterra, 2013–2019"
+          },
+          {
+            "text": "Datos",
+            "x": 939.828125,
+            "y": 365.3125,
+            "width": 44,
+            "height": 44,
+            "right": 983.828125,
+            "bottom": 409.3125,
+            "fontSize": "14px",
+            "lineHeight": "17.92px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(80, 89, 78)",
+            "letterSpacing": "normal",
+            "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
+            "name": "Consultar los datos de la ONS sobre diabetes tipo 2 sin diagnosticar, Inglaterra, 2013–2019"
+          },
+          {
+            "text": "Empieza gratis",
+            "x": 1141.609375,
+            "y": 551.546875,
+            "width": 147.53125,
+            "height": 48,
+            "right": 1289.140625,
+            "bottom": 599.546875,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "600",
+            "color": "rgb(243, 240, 232)",
+            "letterSpacing": "normal",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "name": null
+          }
+        ],
+        "clipped": [],
+        "art": [
+          {
+            "hidden": "true",
+            "dots": 100,
+            "marked": 10
+          },
+          {
+            "hidden": "true",
+            "dots": 100,
+            "marked": 46
+          }
+        ],
+        "animations": [],
+        "beforeTasso": true
+      },
+      "focus": [
+        {
+          "text": "Estudio",
+          "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        },
+        {
+          "text": "Datos",
+          "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        },
+        {
+          "text": "Empieza gratis",
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "es-390-motion",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "failures": [],
+      "errors": [],
+      "status": 200,
+      "hero": {
+        "docWidth": 390,
+        "links": [
+          {
+            "text": "Empieza gratis",
+            "x": 24,
+            "y": 661,
+            "width": 164,
+            "height": 44,
+            "right": 188,
+            "bottom": 705,
+            "fontSize": "14px",
+            "lineHeight": "18.2px",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "hit": true
+          },
+          {
+            "text": "Suscríbete al kit",
+            "x": 202,
+            "y": 661,
+            "width": 164,
+            "height": 44,
+            "right": 366,
+            "bottom": 705,
+            "fontSize": "14px",
+            "lineHeight": "18.2px",
+            "href": "/es/signup?plan=quarterly",
+            "hit": true
+          }
+        ],
+        "terms": {
+          "text": "5 informes gratis por cuenta · 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.",
+          "x": 24,
+          "y": 719,
+          "width": 342,
+          "height": 36.375,
+          "right": 366,
+          "bottom": 755.375,
+          "fontSize": "14px",
+          "lineHeight": "18.2px",
+          "href": null
+        },
+        "pause": {
+          "text": "Pausar imagen",
+          "x": 24,
+          "y": 605,
+          "width": 60.546875,
+          "height": 44,
+          "right": 84.546875,
+          "bottom": 649,
+          "fontSize": "9px",
+          "lineHeight": "13.5px",
+          "href": null
+        },
+        "nav": {
+          "text": "01\nVivir\n02\nConocer\n03\nEntender\n04\nSeguir",
+          "x": 24,
+          "y": 776.5,
+          "width": 342,
+          "height": 44.5,
+          "right": 366,
+          "bottom": 821,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "href": null
+        }
+      },
+      "chapter": {
+        "docWidth": 390,
+        "region": {
+          "text": "¿Qué significa estar «sano»\nde verdad?\n\nEntre los adultos que valoraron su salud como buena o muy buena:\n\n10%\ntenían prediabetes.\nEstudio\n\n46%\nde quienes tenían diabetes tipo 2 no estaban diagnosticados.\nDatos\n\nHealth Survey for England · 2013–2019\n\nEntiende qué significan los datos de tu cuerpo y sigue su evolución.\n\nEmpieza gratis\n\n5 informes gratis por cuenta",
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 845.21875,
+          "right": 390,
+          "bottom": 845.21875,
+          "fontSize": "16px",
+          "lineHeight": "24px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "normal"
+        },
+        "heading": {
+          "text": "¿Qué significa estar «sano»\nde verdad?",
+          "x": 24,
+          "y": 44,
+          "width": 342,
+          "height": 159.265625,
+          "right": 366,
+          "bottom": 203.265625,
+          "fontSize": "53.82px",
+          "lineHeight": "51.6672px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "-2.1528px"
+        },
+        "lead": {
+          "text": "Entre los adultos que valoraron su salud como buena o muy buena:",
+          "x": 24,
+          "y": 235.265625,
+          "width": 342,
+          "height": 50.8125,
+          "right": 366,
+          "bottom": 286.078125,
+          "fontSize": "21px",
+          "lineHeight": "25.41px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "normal"
+        },
+        "facts": [
+          {
+            "text": "10%\ntenían prediabetes.\nEstudio",
+            "x": 24,
+            "y": 306.078125,
+            "width": 342,
+            "height": 93.46875,
+            "right": 366,
+            "bottom": 399.546875,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "46%\nde quienes tenían diabetes tipo 2 no estaban diagnosticados.\nDatos",
+            "x": 24,
+            "y": 399.546875,
+            "width": 342,
+            "height": 134.40625,
+            "right": 366,
+            "bottom": 533.953125,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          }
+        ],
+        "descriptions": [
+          {
+            "text": "tenían prediabetes.\nEstudio",
+            "x": 124.46875,
+            "y": 323.078125,
+            "width": 194.4375,
+            "height": 68.46875,
+            "right": 318.90625,
+            "bottom": 391.546875,
+            "fontSize": "16px",
+            "lineHeight": "20.48px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          },
+          {
+            "text": "de quienes tenían diabetes tipo 2 no estaban diagnosticados.\nDatos",
+            "x": 124.46875,
+            "y": 416.546875,
+            "width": 194.4375,
+            "height": 109.40625,
+            "right": 318.90625,
+            "bottom": 525.953125,
+            "fontSize": "16px",
+            "lineHeight": "20.48px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(32, 40, 32)",
+            "letterSpacing": "normal"
+          }
+        ],
+        "bridge": {
+          "text": "Entiende qué significan los datos de tu cuerpo y sigue su evolución.",
+          "x": 24,
+          "y": 619.546875,
+          "width": 342,
+          "height": 82.078125,
+          "right": 366,
+          "bottom": 701.625,
+          "fontSize": "24px",
+          "lineHeight": "27.36px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(32, 40, 32)",
+          "letterSpacing": "-0.576px"
+        },
+        "sourceContext": {
+          "text": "Health Survey for England · 2013–2019",
+          "x": 24,
+          "y": 533.953125,
+          "width": 342,
+          "height": 32.59375,
+          "right": 366,
+          "bottom": 566.546875,
+          "fontSize": "14px",
+          "lineHeight": "19.6px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(80, 89, 78)",
+          "letterSpacing": "normal"
+        },
+        "allowance": {
+          "text": "5 informes gratis por cuenta",
+          "x": 24,
+          "y": 777.625,
+          "width": 342,
+          "height": 19.59375,
+          "right": 366,
+          "bottom": 797.21875,
+          "fontSize": "14px",
+          "lineHeight": "19.6px",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "fontWeight": "400",
+          "color": "rgb(80, 89, 78)",
+          "letterSpacing": "normal"
+        },
+        "links": [
+          {
+            "text": "Estudio",
+            "x": 124.46875,
+            "y": 347.546875,
+            "width": 46.734375,
+            "height": 44,
+            "right": 171.203125,
+            "bottom": 391.546875,
+            "fontSize": "14px",
+            "lineHeight": "17.92px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(80, 89, 78)",
+            "letterSpacing": "normal",
+            "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+            "name": "Leer el estudio de la ONS sobre prediabetes, Inglaterra, 2013–2019"
+          },
+          {
+            "text": "Datos",
+            "x": 124.46875,
+            "y": 481.953125,
+            "width": 44,
+            "height": 44,
+            "right": 168.46875,
+            "bottom": 525.953125,
+            "fontSize": "14px",
+            "lineHeight": "17.92px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "400",
+            "color": "rgb(80, 89, 78)",
+            "letterSpacing": "normal",
+            "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
+            "name": "Consultar los datos de la ONS sobre diabetes tipo 2 sin diagnosticar, Inglaterra, 2013–2019"
+          },
+          {
+            "text": "Empieza gratis",
+            "x": 24,
+            "y": 721.625,
+            "width": 147.53125,
+            "height": 48,
+            "right": 171.53125,
+            "bottom": 769.625,
+            "fontSize": "16px",
+            "lineHeight": "24px",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "fontWeight": "600",
+            "color": "rgb(243, 240, 232)",
+            "letterSpacing": "normal",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "name": null
+          }
+        ],
+        "clipped": [],
+        "art": [
+          {
+            "hidden": "true",
+            "dots": 100,
+            "marked": 10
+          },
+          {
+            "hidden": "true",
+            "dots": 100,
+            "marked": 46
+          }
+        ],
+        "animations": [],
+        "beforeTasso": true
+      },
+      "focus": [
+        {
+          "text": "Estudio",
+          "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        },
+        {
+          "text": "Datos",
+          "href": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        },
+        {
+          "text": "Empieza gratis",
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+          "outlineWidth": "2px",
+          "outlineStyle": "solid"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

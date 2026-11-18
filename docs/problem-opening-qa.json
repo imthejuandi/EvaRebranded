@@ -1,16 +1,16 @@
 {
   "status": "passed",
-  "published_version": 54,
-  "deployed_ui_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
-  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
-  "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
-  "native_updated_at": "2026-11-18T22:25:59.318140+00:00",
-  "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=54#entender-tus-analisis",
-  "scope": "The bilingual healthy-question statement after the runner, concise restored runner entry actions and native source/free-entry links. Final 54 is a three-line CSS successor adjusting only the Spanish desktop title.",
+  "published_version": 55,
+  "deployed_ui_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
+  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e9b22909540481919d27a2fcae6be849",
+  "deployment_id": "appgdep_6afe28fd27248191908ea70ec1924adb",
+  "native_updated_at": "2026-11-18T22:39:06.229006+00:00",
+  "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=55#entender-tus-analisis",
+  "scope": "Version55 changes only the EN/ES shared lead to refer to adults. Country/date remain in the official study citation. All other statement content, layout and behavior are preserved.",
   "copy": {
     "en": {
       "heading": "What does “healthy” really mean?",
-      "framing": "Among adults in England who rated their health as good or very good:",
+      "framing": "Among adults who rated their health as good or very good:",
       "statistics": [
         {
           "value": "10%",
@@ -26,7 +26,7 @@
     },
     "es": {
       "heading": "¿Qué significa estar «sano» de verdad?",
-      "framing": "Entre los adultos de Inglaterra que valoraron su salud como buena o muy buena:",
+      "framing": "Entre los adultos que valoraron su salud como buena o muy buena:",
       "statistics": [
         {
           "value": "10%",
@@ -44,8 +44,8 @@
   "source_review": {
     "selected": {
       "citation": "Office for National Statistics, Risk factors for prediabetes and undiagnosed type 2 diabetes in England: 2013 to 2019, published 19 February 2024",
-      "study_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland/2013to2019",
-      "data_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland",
+      "study_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+      "data_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
       "design": "National Health Survey for England 2013–2019; multistage stratified probability household sampling and survey weights. Adults 16+ in private households. Overall analytic n=26,751.",
       "prediabetes": {
         "display_percent": 10,
@@ -86,36 +86,27 @@
   },
   "verification": {
     "status": "passed",
-    "source": "TypeScript, story-section and runner-startup checks, English/public-route audit (1,205 messages) and bilingual parity (32 pages) passed for the statement source. A fresh final 54 production build exported 113 routes.",
-    "impeccable": "Final 54 source detector returned zero findings.",
-    "version53_matrix": "All 10 English/Spanish profiles passed at 320, 390, 768 and 1366 CSS px plus 683px/DPR2 effective 200% reflow. The English 320px calm hero readiness finding was fixed in the harness by waiting for the poster layout; no application source change was required for that finding.",
-    "version53_regression": "All 14 core landing cases and six entry flows passed, including JavaScript-disabled native hero and statement links. No page errors, findings or mutating requests.",
-    "fresh_version54": "All four final native 54 profiles passed: EN 1366 normal, ES 1366 normal, ES 390 normal and EN 320 reduced motion. There were no profile failures or page errors.",
-    "reuse_basis": "The only source difference from 53 to 54 is three Spanish desktop heading CSS lines. Copy, DOM, links, actions and handlers are unchanged. The full version 53 flow suites and wider matrix are reused for unchanged behavior; they were not rerun in full on 54.",
-    "measurements": {
-      "es_desktop1366_chapter_px": 747.65625,
-      "en_desktop1366_chapter_px": 716.265625,
-      "es_phone390_chapter_px": 870.625,
-      "en_phone320_reduced_chapter_px": 859.359375
-    },
-    "zoom_limit": "The current run used 683 CSS px at DPR2 as effective 200% reflow. It did not perform actual browser-chrome zoom.",
-    "device_limit": "Viewport emulation with system Chromium, not physical-device performance testing.",
-    "runner_timing": "Accepted 2.5-second choreography and native-speed footage are preserved. Deterministic startup checks passed; this release did not take a fresh playback-relative timing measurement.",
-    "clinical_preservation": "The current methodology figures and all existing marker/fictional-example qualifications are preserved."
+    "source": "TypeScript and fresh113-route production build passed; existing browser assertions updated for the shortened lead.",
+    "impeccable": "Copy specialist and Astra UX/Layout signoff; final independent detector0findings.",
+    "fresh_version55": "Three actual native55 rendered profiles EN1366, ES1366, ES390 passed lead text, provenance, links, qualified percentages, geometry and focus; zero page errors.",
+    "reused_scope": "Version54 responsive review and version53 full entry/core tests cover unchanged layout and interactions. They were not rerun for the copy-only change.",
+    "limits": "Viewport emulation, not physical-device performance; no real signup, upload or payment actions."
   },
   "preview_limit": "Managed preview startup timed out after vinext reported localhost 4173. Source/type/build checks preceded native review publication; rendered verification used the existing public review Site. No replacement preview infrastructure was started.",
   "native_deployment": {
-    "version_number": 54,
-    "source_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+    "version_number": 55,
+    "source_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
     "status": "succeeded",
     "url": "https://eva-content-review.jdlagop.chatgpt.site",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
-    "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
-    "native_updated_at": "2026-11-18T22:25:59.318140+00:00",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=54#entender-tus-analisis",
-    "behavior": "A bilingual healthy-question statement introduces the 10% prediabetes and 46% undiagnosed type 2 diabetes findings with visible England/good-or-very-good self-rated health, distinct adjacent denominators, ONS links, proportional dot impressions, the approved data-interpretation bridge and one free action. Concise free-first and kit actions are available in the runner. The final Spanish desktop heading has a localized optical size.",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e9b22909540481919d27a2fcae6be849",
+    "deployment_id": "appgdep_6afe28fd27248191908ea70ec1924adb",
+    "native_updated_at": "2026-11-18T22:39:06.229006+00:00",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=55#entender-tus-analisis",
+    "behavior": "The main bilingual evidence lead refers simply to adults; the official Health Survey for England citation retains country and dates. The title, statistics, qualified type 2 diabetes denominator, bridge, source links and layout are preserved.",
     "source_files": [
-      "components/story/report-understanding.css"
+      "lib/site-content/report-understanding.ts",
+      "scripts/browser-qa/core-landing.cjs",
+      "scripts/browser-qa/entry-flows.cjs"
     ],
     "combined_statement_source_files": [
       "components/story/ReportUnderstanding.tsx",
@@ -125,40 +116,26 @@
       "scripts/browser-qa/entry-flows.cjs"
     ],
     "archive": {
-      "local_path": "/workspace/eva-publication/eva-healthy-statement-v54.tar.gz",
-      "local_gzip_sha256": "2d6398fa3968190c5983a3ea23ef3b13f54dccb20d838253cf21cf67a33b44e8",
-      "local_gzip_size_bytes": 163052021,
-      "saved_tar_content_hash": "sha256:a40678866ec23eadc1730a4a8913aa7eb4d702c6b21ae8517001276f67010124",
+      "local_path": "/workspace/eva-publication/eva-adults-lead-v55.tar.gz",
+      "local_gzip_sha256": "d73b7961e112d24b8f08f0abfbf5fd5df30e339780a18c6acc8c83fbfe1890bf",
+      "local_gzip_size_bytes": 163058205,
+      "saved_tar_content_hash": "sha256:86f1b97b1aefabd1ab7c721ae38bfb3de9618c912e3f284e2d5955dd8e737c67",
       "saved_tar_size_bytes": 171816960,
       "file_count": 790
     },
     "qa": {
       "status": "passed_actual_browser_with_scoped_prior_version_regression_reuse",
       "record": "docs/problem-opening-qa.json",
-      "evidence_directory": "docs/browser-qa-v54",
-      "fresh_version54_cases": 4,
-      "version53_responsive_cases": 10,
-      "version53_core_cases": 14,
-      "version53_entry_flows": 6,
-      "page_errors": []
+      "evidence_directory": "docs/browser-qa-v55",
+      "fresh_version55_cases": 3,
+      "page_errors": [],
+      "scope": "Fresh EN1366, ES1366 and ES390 lead/layout/source/focus checks; unchanged54/53 regression evidence retained without rerunning full flows."
     }
   },
   "evidence": {
-    "directory": "docs/browser-qa-v54",
-    "manifest": "docs/browser-qa-v54/manifest.json",
-    "readme": "docs/browser-qa-v54/README.md",
-    "final54": "docs/browser-qa-v54/statement-v54-final.json",
-    "detector54": "docs/browser-qa-v54/impeccable-detect-v54.json",
-    "matrix53": "docs/browser-qa-v54/statement-v53-matrix.json",
-    "core53": "docs/browser-qa-v54/core-browser-v53-report.json",
-    "entry53": "docs/browser-qa-v54/entry-flow-report-v53.json",
-    "screenshots": [
-      "docs/browser-qa-v54/en-1366-motion-statement.png",
-      "docs/browser-qa-v54/es-1366-motion-statement.png",
-      "docs/browser-qa-v54/es-390-motion-statement.png",
-      "docs/browser-qa-v54/en-320-calm-statement.png"
-    ],
-    "independent_signoff54": "docs/browser-qa-v54/impeccable-review-v54.json"
+    "current": "docs/browser-qa-v55",
+    "prior": "docs/browser-qa-v54",
+    "manifest": "docs/browser-qa-v55/manifest.json"
   },
   "prior_reviews": [
     {
@@ -199,6 +176,13 @@
         "record": "docs/problem-opening-qa.json",
         "note": "Version 54 changes only the Spanish desktop heading CSS; final 54 rendered subset is recorded separately."
       }
+    },
+    {
+      "version_number": 54,
+      "source_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
+      "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
+      "historical_qa": "https://github.com/imthejuandi/EvaRebranded/blob/111e1a1da3a360272af66dc09c53ae42b7e43f46/docs/problem-opening-qa.json"
     }
   ],
   "saved_never_deployed_version52": {
@@ -207,5 +191,24 @@
     "source_commit": "695971ff04c9ec40618df041b8e36a25baf44b92",
     "deployment_id": null
   },
-  "publication_boundaries": "Existing public review Site only. evahealth.es, DNS, production hosting and real backend services remain on hold."
+  "publication_boundaries": "Existing public review Site only. evahealth.es, DNS, production hosting and real backend services remain on hold.",
+  "prior_release_verification": {
+    "status": "passed",
+    "source": "TypeScript, story-section and runner-startup checks, English/public-route audit (1,205 messages) and bilingual parity (32 pages) passed for the statement source. A fresh final 54 production build exported 113 routes.",
+    "impeccable": "Final 54 source detector returned zero findings.",
+    "version53_matrix": "All 10 English/Spanish profiles passed at 320, 390, 768 and 1366 CSS px plus 683px/DPR2 effective 200% reflow. The English 320px calm hero readiness finding was fixed in the harness by waiting for the poster layout; no application source change was required for that finding.",
+    "version53_regression": "All 14 core landing cases and six entry flows passed, including JavaScript-disabled native hero and statement links. No page errors, findings or mutating requests.",
+    "fresh_version54": "All four final native 54 profiles passed: EN 1366 normal, ES 1366 normal, ES 390 normal and EN 320 reduced motion. There were no profile failures or page errors.",
+    "reuse_basis": "The only source difference from 53 to 54 is three Spanish desktop heading CSS lines. Copy, DOM, links, actions and handlers are unchanged. The full version 53 flow suites and wider matrix are reused for unchanged behavior; they were not rerun in full on 54.",
+    "measurements": {
+      "es_desktop1366_chapter_px": 747.65625,
+      "en_desktop1366_chapter_px": 716.265625,
+      "es_phone390_chapter_px": 870.625,
+      "en_phone320_reduced_chapter_px": 859.359375
+    },
+    "zoom_limit": "The current run used 683 CSS px at DPR2 as effective 200% reflow. It did not perform actual browser-chrome zoom.",
+    "device_limit": "Viewport emulation with system Chromium, not physical-device performance testing.",
+    "runner_timing": "Accepted 2.5-second choreography and native-speed footage are preserved. Deterministic startup checks passed; this release did not take a fresh playback-relative timing measurement.",
+    "clinical_preservation": "The current methodology figures and all existing marker/fictional-example qualifications are preserved."
+  }
 }

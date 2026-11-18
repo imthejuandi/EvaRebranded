@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "live_version": 55,
+  "source_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
+  "scope": "Remove geographic phrase from EN/ESmain lead only; retain official England/date citation, sources and qualified46% denominator.",
+  "profiles": 3,
+  "all_passed": true,
+  "page_errors": 0,
+  "findings": [],
+  "impeccable_detector": {
+    "exit_code": 0,
+    "findings": 0
+  },
+  "visual_review": "Shortened lead retains full self-rated-health framing. Sources remain visibly named Health Survey for England2013–2019, with44pxsource links. Figure descriptions remain adjacent and full-size. No overflow/clipping or changed hierarchy; ENdesktop,ESdesktop andESphone all pass.",
+  "actual_capture": "/workspace/eva-in-place-qa/statement-v55/es-390-motion-statement.png",
+  "browser_cleanup": "All owned Chromium closed in finally; runner exited0.",
+  "limits": "Scoped viewport-emulated checks; broader unchanged UI uses retained54and53 evidence."
+}

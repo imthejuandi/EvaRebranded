@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-18",
-  "handoff_status": "HEALTHY_STATEMENT_VERIFIED_V54",
-  "immediate_instruction": "Version 54 is published and verified. The opening asks “What does ‘healthy’ really mean?”, presents the selected ONS England 10% prediabetes and 46% undiagnosed type 2 diabetes findings under visible good/very-good self-rated health framing, links the sources and uses the approved bridge. Keep the 46% type 2 diabetes denominator readable and adjacent. Preserve concise free-first/kit actions in the runner, one statement free action, accepted 2.5-second runner entrance and current methodology figures. Final 54 actual-rendered subset and reused version 53 regression scope are documented precisely in docs/problem-opening-qa.json. Version 52 was saved but never deployed. Production cutover to evahealth.es remains on hold.",
+  "handoff_status": "HEALTHY_STATEMENT_VERIFIED_V55",
+  "immediate_instruction": "Version 55 is published and verified. The main evidence lead says adults, with England retained only in the official study citation and evidence links. Preserve the healthy-question title, both qualified statistics, approved bridge, single free action, concise runner choices and 2.5-second runner entrance. Both selected figures come from the English national survey; do not label them pooled England/Germany estimates. Production cutover to evahealth.es remains on hold.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace. UI version 54 source is synchronized with both GitHub main and the separate Site publication repository. The following documentation-only commit records QA and receipts without changing the deployed UI. Production cutover to evahealth.es remains on hold.",
+    "github_status": "Canonical consolidated rebrand workspace. UI version 55 source is synchronized with both GitHub main and the separate Site publication repository. The following documentation-only commit records QA and receipts without changing the deployed UI. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,36 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 51,
-      "source_commit": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "source_files": [
-        "components/story/ReportUnderstanding.tsx",
-        "components/story/report-understanding.css",
-        "lib/site-content/report-understanding.ts",
-        "scripts/browser-qa/core-landing.cjs",
-        "scripts/browser-qa/entry-flows.cjs"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-reference-opening-v51.tar.gz",
-        "local_gzip_sha256": "acd6596437985d68bd1738fc05a16178f638aba4f3c5346f889ba59227b566e8",
-        "local_gzip_size_bytes": 163053415,
-        "saved_tar_content_hash": "sha256:cc907d5cb9b33e58f61738dbbfc53b98e478cf889cb69d347a60d79dc40c0af0",
-        "saved_tar_size_bytes": 171796480,
-        "file_count": 790
-      },
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_f93f6a20eb1c8191af9fd17d4c24aace",
-      "deployment_id": "appgdep_6afe00ec83248191af14abe40552b7ef",
-      "native_updated_at": "2026-11-18T19:48:11.074092+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=51#entender-tus-analisis",
-      "behavior": "The runner leads to a question about what a normal result means for health. A qualified explanation of reference ranges and personal context introduces EVA’s clear biomarker interpretation before the first signup choices.",
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/problem-opening-qa.json"
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 54,
       "source_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
       "status": "succeeded",
@@ -104,11 +74,50 @@
         "page_errors": []
       }
     },
-    "latest_verified_ui_release_note": "Review version 54 serves UI commit 36ec5ff28d13f9ec428eee1e8975cd0352f2857d. Final 54 actual rendered verification passed; unchanged flow/wider-matrix evidence comes from 53 as qualified in docs/problem-opening-qa.json. A subsequent documentation-only commit records these receipts and does not redeploy the UI.",
+    "latest_verified_ui_release": {
+      "version_number": 55,
+      "source_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e9b22909540481919d27a2fcae6be849",
+      "deployment_id": "appgdep_6afe28fd27248191908ea70ec1924adb",
+      "native_updated_at": "2026-11-18T22:39:06.229006+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=55#entender-tus-analisis",
+      "behavior": "The main bilingual evidence lead refers simply to adults; the official Health Survey for England citation retains country and dates. The title, statistics, qualified type 2 diabetes denominator, bridge, source links and layout are preserved.",
+      "source_files": [
+        "lib/site-content/report-understanding.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs"
+      ],
+      "combined_statement_source_files": [
+        "components/story/ReportUnderstanding.tsx",
+        "components/story/report-understanding.css",
+        "lib/site-content/report-understanding.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-adults-lead-v55.tar.gz",
+        "local_gzip_sha256": "d73b7961e112d24b8f08f0abfbf5fd5df30e339780a18c6acc8c83fbfe1890bf",
+        "local_gzip_size_bytes": 163058205,
+        "saved_tar_content_hash": "sha256:86f1b97b1aefabd1ab7c721ae38bfb3de9618c912e3f284e2d5955dd8e737c67",
+        "saved_tar_size_bytes": 171816960,
+        "file_count": 790
+      },
+      "qa": {
+        "status": "passed_actual_browser_with_scoped_prior_version_regression_reuse",
+        "record": "docs/problem-opening-qa.json",
+        "evidence_directory": "docs/browser-qa-v55",
+        "fresh_version55_cases": 3,
+        "page_errors": [],
+        "scope": "Fresh EN1366, ES1366 and ES390 lead/layout/source/focus checks; unchanged54/53 regression evidence retained without rerunning full flows."
+      }
+    },
+    "latest_verified_ui_release_note": "Review version 55 serves UI commit 8f2a33593fe638ad1a51c27e90c8b7068237ef7f; the later documentation-only commit records QA and receipts.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 54 source 36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+      "relation": "QA/docs followup to version 55 source 8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
@@ -116,7 +125,7 @@
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
         "docs/problem-opening-qa.json",
-        "docs/browser-qa-v54"
+        "docs/browser-qa-v55"
       ]
     },
     "earlier_verified_ui_release": {
@@ -784,20 +793,61 @@
           "record": "docs/problem-opening-qa.json",
           "note": "Version 54 changes only the Spanish desktop heading CSS; final 54 rendered subset is recorded separately."
         }
+      },
+      {
+        "version_number": 54,
+        "source_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
+        "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
+        "native_updated_at": "2026-11-18T22:25:59.318140+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=54#entender-tus-analisis",
+        "behavior": "A bilingual healthy-question statement introduces the 10% prediabetes and 46% undiagnosed type 2 diabetes findings with visible England/good-or-very-good self-rated health, distinct adjacent denominators, ONS links, proportional dot impressions, the approved data-interpretation bridge and one free action. Concise free-first and kit actions are available in the runner. The final Spanish desktop heading has a localized optical size.",
+        "source_files": [
+          "components/story/report-understanding.css"
+        ],
+        "combined_statement_source_files": [
+          "components/story/ReportUnderstanding.tsx",
+          "components/story/report-understanding.css",
+          "lib/site-content/report-understanding.ts",
+          "scripts/browser-qa/core-landing.cjs",
+          "scripts/browser-qa/entry-flows.cjs"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-healthy-statement-v54.tar.gz",
+          "local_gzip_sha256": "2d6398fa3968190c5983a3ea23ef3b13f54dccb20d838253cf21cf67a33b44e8",
+          "local_gzip_size_bytes": 163052021,
+          "saved_tar_content_hash": "sha256:a40678866ec23eadc1730a4a8913aa7eb4d702c6b21ae8517001276f67010124",
+          "saved_tar_size_bytes": 171816960,
+          "file_count": 790
+        },
+        "qa": {
+          "status": "passed_actual_browser_with_scoped_prior_version_regression_reuse",
+          "record": "docs/problem-opening-qa.json",
+          "evidence_directory": "docs/browser-qa-v54",
+          "fresh_version54_cases": 4,
+          "version53_responsive_cases": 10,
+          "version53_core_cases": 14,
+          "version53_entry_flows": 6,
+          "page_errors": []
+        }
       }
     ],
     "latest_published_ui_release": {
-      "version_number": 54,
-      "source_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+      "version_number": 55,
+      "source_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_08dd0cc3697481918305215f185b4d05",
-      "deployment_id": "appgdep_6afe25ea5d6c81918818a527e5ecdc03",
-      "native_updated_at": "2026-11-18T22:25:59.318140+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=54#entender-tus-analisis",
-      "behavior": "A bilingual healthy-question statement introduces the 10% prediabetes and 46% undiagnosed type 2 diabetes findings with visible England/good-or-very-good self-rated health, distinct adjacent denominators, ONS links, proportional dot impressions, the approved data-interpretation bridge and one free action. Concise free-first and kit actions are available in the runner. The final Spanish desktop heading has a localized optical size.",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e9b22909540481919d27a2fcae6be849",
+      "deployment_id": "appgdep_6afe28fd27248191908ea70ec1924adb",
+      "native_updated_at": "2026-11-18T22:39:06.229006+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=55#entender-tus-analisis",
+      "behavior": "The main bilingual evidence lead refers simply to adults; the official Health Survey for England citation retains country and dates. The title, statistics, qualified type 2 diabetes denominator, bridge, source links and layout are preserved.",
       "source_files": [
-        "components/story/report-understanding.css"
+        "lib/site-content/report-understanding.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs"
       ],
       "combined_statement_source_files": [
         "components/story/ReportUnderstanding.tsx",
@@ -807,22 +857,20 @@
         "scripts/browser-qa/entry-flows.cjs"
       ],
       "archive": {
-        "local_path": "/workspace/eva-publication/eva-healthy-statement-v54.tar.gz",
-        "local_gzip_sha256": "2d6398fa3968190c5983a3ea23ef3b13f54dccb20d838253cf21cf67a33b44e8",
-        "local_gzip_size_bytes": 163052021,
-        "saved_tar_content_hash": "sha256:a40678866ec23eadc1730a4a8913aa7eb4d702c6b21ae8517001276f67010124",
+        "local_path": "/workspace/eva-publication/eva-adults-lead-v55.tar.gz",
+        "local_gzip_sha256": "d73b7961e112d24b8f08f0abfbf5fd5df30e339780a18c6acc8c83fbfe1890bf",
+        "local_gzip_size_bytes": 163058205,
+        "saved_tar_content_hash": "sha256:86f1b97b1aefabd1ab7c721ae38bfb3de9618c912e3f284e2d5955dd8e737c67",
         "saved_tar_size_bytes": 171816960,
         "file_count": 790
       },
       "qa": {
         "status": "passed_actual_browser_with_scoped_prior_version_regression_reuse",
         "record": "docs/problem-opening-qa.json",
-        "evidence_directory": "docs/browser-qa-v54",
-        "fresh_version54_cases": 4,
-        "version53_responsive_cases": 10,
-        "version53_core_cases": 14,
-        "version53_entry_flows": 6,
-        "page_errors": []
+        "evidence_directory": "docs/browser-qa-v55",
+        "fresh_version55_cases": 3,
+        "page_errors": [],
+        "scope": "Fresh EN1366, ES1366 and ES390 lead/layout/source/focus checks; unchanged54/53 regression evidence retained without rerunning full flows."
       }
     },
     "saved_unpublished_versions": [
@@ -1246,7 +1294,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "The review baseline is version 54, UI commit 36ec5ff28d13f9ec428eee1e8975cd0352f2857d. Read docs/problem-opening-qa.json for the healthy-question statement, exact England data denominators and precise 53/54 QA scope.",
+    "The review baseline is version 55, UI commit 8f2a33593fe638ad1a51c27e90c8b7068237ef7f. Read docs/problem-opening-qa.json for the healthy-question statement, exact England data denominators and precise 53/54/55 QA scope.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -1353,7 +1401,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 54 is published. The opening healthy-question statement uses England good/very-good self-rated health, 10% prediabetes and 46% undiagnosed type 2 diabetes with its adjacent conditional denominator, ONS links and the approved data-interpretation bridge. The runner has concise free-first and kit choices; the statement has one free action. Routine edits, checks, commits, pushes and review-site publication remain authorized. Use the three-specialist review for each audit action. Keep accepted 2.5-second runner entrance and current methodology figures. Production cutover to evahealth.es remains on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 55 is published. The opening healthy-question statement uses a lead referring to adults with good/very-good self-rated health, with England in the official source citation, 10% prediabetes and 46% undiagnosed type 2 diabetes with its adjacent conditional denominator, ONS links and the approved data-interpretation bridge. The runner has concise free-first and kit choices; the statement has one free action. Routine edits, checks, commits, pushes and review-site publication remain authorized. Use the three-specialist review for each audit action. Keep accepted 2.5-second runner entrance and current methodology figures. Production cutover to evahealth.es remains on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -1364,10 +1412,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-18",
-    "user_direction": "Implement the selected 10% and 46% findings, title, bridge and sources as a focused statement piece using the Astra design specialist and required copy/Impeccable roles.",
-    "synchronized_main_commit": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
-    "live_version": 54,
-    "status": "Healthy-question opening published and verified. Final 54 rendered subset passes; unchanged version 53 flow and wider-matrix evidence retained with explicit scope."
+    "user_direction": "Refer simply to adults in the main statement lead; retain accurate study provenance in its citation.",
+    "synchronized_main_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
+    "live_version": 55,
+    "status": "Version55 published and verified in three targeted bilingual rendered profiles; unchanged wider regression evidence retained."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -1401,14 +1449,14 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "36ec5ff28d13f9ec428eee1e8975cd0352f2857d",
+  "github_current_ui_source": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
   "statement_opening_selection": {
     "copy_owner": "Primary agent, advised by a bilingual health and wellness marketing copy specialist",
     "design_owner": "User-requested gpt-6.2-astra agent applying Impeccable within EVA’s existing Hanken, Georgia italic, ink, warm-paper and amber/dot language",
     "selected_copy": {
       "en": {
         "heading": "What does “healthy” really mean?",
-        "framing": "Among adults in England who rated their health as good or very good:",
+        "framing": "Among adults who rated their health as good or very good:",
         "statistics": [
           {
             "value": "10%",
@@ -1424,7 +1472,7 @@
       },
       "es": {
         "heading": "¿Qué significa estar «sano» de verdad?",
-        "framing": "Entre los adultos de Inglaterra que valoraron su salud como buena o muy buena:",
+        "framing": "Entre los adultos que valoraron su salud como buena o muy buena:",
         "statistics": [
           {
             "value": "10%",
@@ -1443,8 +1491,8 @@
       "study": "ONS England, Health Survey for England 2013–2019, national probability household sample and weighting, overall analytic n=26,751; released 2024.",
       "prediabetes": "Table 4 F108: 10.322% of all adults rating health good/very good had prediabetes, rounded to 10%.",
       "undiagnosed_type_2_diabetes": "Table 3 F99: 45.934% of adults with type 2 diabetes who rated health good/very good were undiagnosed, rounded to 46%; subgroup approximately 1,060 unweighted, not the full 26,751.",
-      "study_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland/2013to2019",
-      "data_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype 2 diabetesinengland",
+      "study_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland/2013to2019",
+      "data_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/datasets/riskfactorsforprediabetesandundiagnosedtype2diabetesinengland",
       "qualification": "Historical England findings, not current Spanish prevalence. The 46% denominator includes both type 2 diabetes and good/very good self-rated health; it is not 46% of all adults or all adults with diabetes. The two statistics do not establish that routine normal bloodwork hid disease or that EVA’s kit diagnoses diabetes."
     },
     "latest_evidence_requirement": "National population sampling/coverage and appropriate weighting are required for countrywide claims. Regional/city cohorts and selected volunteer/occupational samples cannot supply countrywide percentages. Selected findings explicitly concern good/very good self-rated health, with population, historical dates and conditional denominators preserved.",

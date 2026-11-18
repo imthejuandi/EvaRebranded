@@ -1,0 +1,30 @@
+{
+  "release": 55,
+  "scope": "Three fresh rendered profiles for the bilingual lead-only change; prior version54/53 behavior evidence remains applicable to unchanged flows.",
+  "files": [
+    {
+      "path": "en-1366-motion-statement.png",
+      "sha256": "b19c4d146d7fde0a06648de4b1fd9dcd0690da2bc54cb2a002cbbce970a3aa6b"
+    },
+    {
+      "path": "es-1366-motion-statement.png",
+      "sha256": "eea87a4855f6490e273f39a24c784531a601cb0baf150a596fc9c71a72f3c8fe"
+    },
+    {
+      "path": "es-390-motion-statement.png",
+      "sha256": "5e7e13de02f2fd2f1696e5513f85c2417abdb68dd6bf7dd0ee78ade3d3325c89"
+    },
+    {
+      "path": "impeccable-detect.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "impeccable-review.json",
+      "sha256": "b22f9e13c970cc3d0ee5f54d5e71641ba7c5b17f5f8200594a3bd5411c5616a6"
+    },
+    {
+      "path": "independent-review.json",
+      "sha256": "f714f07878ae3c3c78680e279899a415507bfb7aa6f1b8492f3176a2f6b422b8"
+    }
+  ]
+}
