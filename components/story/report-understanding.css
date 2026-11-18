@@ -97,6 +97,9 @@
 .collection-after-problem {position: relative}
 .collection-after-problem .tasso-video-process {position: relative; inset: auto; min-height: 640px; height: 100svh}
 .hero-entrance .opening-runner {height: 100svh}
+@media (min-width: 1001px) {
+  .report-understanding:lang(es) .report-poster h2 {font-size: clamp(72px, 7.2vw, 112px)}
+}
 @media (max-width: 1000px) {
   .report-poster {grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); column-gap: 32px}
   .report-poster h2 {font-size: clamp(62px, 8.4vw, 84px)}
