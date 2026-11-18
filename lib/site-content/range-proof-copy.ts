@@ -1,3 +1,4 @@
+import {uploadAllowance} from '@/lib/site-content/upload-allowance';
 /** A single illustrative result, read against a lab interval and a prevention threshold. */
 export const rangeProofCopy = {
   en: {
@@ -28,7 +29,7 @@ export const rangeProofCopy = {
       {label: 'Prevention threshold: ACC', href: 'https://tools.acc.org/LDL/'},
     ],
     primary: 'Interpret your past labs',
-    primarySubtitle: 'Start for free',
+    primarySubtitle: uploadAllowance.en.freeShort,
     methodLink: 'Understand the difference',
   },
   es: {
@@ -59,7 +60,7 @@ export const rangeProofCopy = {
       {label: 'Umbral de prevención: ACC', href: 'https://tools.acc.org/LDL/'},
     ],
     primary: 'Interpreta tus análisis previos',
-    primarySubtitle: 'Empieza gratis',
+    primarySubtitle: uploadAllowance.es.freeShort,
     methodLink: 'Entiende la diferencia',
   },
 } as const;

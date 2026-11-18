@@ -1,4 +1,5 @@
 'use client';
+import {uploadAllowance} from '@/lib/site-content/upload-allowance';
 import {starterSubscription} from '@/lib/site-content/starter-subscription';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { businessLinks } from '@/lib/landing-content';
@@ -10,8 +11,8 @@ export function HeroKitCta() {
     const kit = starterSubscription[__site.locale];
     const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
     return <div className="hero-start" role="group" aria-label={__site.t("Elige cómo empezar con EVA")}>
-      <a className="hero-kit-cta" href={__site.href(uploadHref)} title={__site.t("Empieza gratis con tus analíticas anteriores")}>
-        <span className="hero-kit-copy"><strong className="hero-kit-title">{__site.t("Interpreta tus análisis previos")}</strong><span className="hero-kit-details">{__site.t("Empieza gratis")}</span></span>
+      <a className="hero-kit-cta" href={__site.href(uploadHref)} title={uploadAllowance[__site.locale].free}>
+        <span className="hero-kit-copy"><strong className="hero-kit-title">{__site.t("Interpreta tus análisis previos")}</strong><span className="hero-kit-details">{uploadAllowance[__site.locale].freeShort}</span></span>
         <Arrow />
       </a>
       <a className="hero-kit-secondary" href={__site.href(businessLinks.signup + '?plan=quarterly')}>

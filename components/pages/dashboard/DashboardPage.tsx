@@ -6,6 +6,7 @@ import {AppPageHeader, AsyncState, SourceTag, StatusIndicator} from '@/component
 import {ActionLink} from '@/components/site/Primitives';
 import {DotNumber} from '@/components/story/DotNumber';
 import {canReadReport,reportForKit,reportReadiness} from '@/lib/preview/policy';
+import {subscriptionDetails} from '@/lib/preview/subscription';
 import {dateLabel, numberLabel} from '@/lib/preview/fixtures';
 import type {PreviewState, Report} from '@/lib/preview/model';
 import {dashboardMarkerForReport, dashboardMarkerHistory, selectDashboardReading, selectExecutiveStory, selectMarkerInterpretation, zoneLabels, type DashboardMarker} from './dashboard-reading';
@@ -135,7 +136,8 @@ export function selectDashboardKitStatus(state: PreviewState) {
 function KitSummary({state}: {state: PreviewState}) {
   const free = state.plan === 'free', full = state.plan === 'full_panel';
   const {hasKit, current, label} = selectDashboardKitStatus(state);
-  return <section className="dashboard-kit" aria-labelledby="dashboard-kit-title"><div className="dashboard-section-heading"><div><p className="dashboard-mini-label">{copy.plan[state.plan]}</p><h2 id="dashboard-kit-title">{free ? copy.kit.freeTitle : full ? copy.kit.fullTitle : copy.kit.title}</h2></div><span className={`dashboard-plan-state is-${state.subscriptionStatus}`}>{free ? copy.plan.free : copy.subscription[state.subscriptionStatus]}</span></div><p className="dashboard-kit-copy">{free ? copy.kit.freeCopy : copy.kit.activeCopy}</p>
+  const {statusLabel}=subscriptionDetails(state);
+  return <section className="dashboard-kit" aria-labelledby="dashboard-kit-title"><div className="dashboard-section-heading"><div><p className="dashboard-mini-label">{copy.plan[state.plan]}</p><h2 id="dashboard-kit-title">{free ? copy.kit.freeTitle : full ? copy.kit.fullTitle : copy.kit.title}</h2></div><span className={`dashboard-plan-state is-${state.subscriptionStatus}`}>{free ? copy.plan.free : full ? 'Pago único' : statusLabel ?? copy.subscription[state.subscriptionStatus]}</span></div><p className="dashboard-kit-copy">{free ? copy.kit.freeCopy : copy.kit.activeCopy}</p>
     {!free && !full && <>{hasKit && <ol className="dashboard-kit-progress" aria-label={copy.kit.label}>{copy.kit.steps.map((label,index)=><li key={label} aria-current={index===current?'step':undefined} data-complete={index<current}><i aria-hidden="true"/><span>{label}</span></li>)}</ol>}<p className="dashboard-kit-status">{label}</p></>}
     <a href={free?'/es/pricing':'/es/book'}>{free?copy.plans:full?copy.kit.fullView:copy.kit.view}<Arrow/></a>
   </section>;

@@ -46,8 +46,14 @@ for (const [locale,count,price,cadence,cancel] of [
   const text=visible(await read(route));
   assert(text.includes(count),route+' starter biomarker count');
   assert(text.includes(price),route+' starter price with tax qualifier');
+  const freeUploads = locale === 'en' ? /5 (?:free report uploads per account|reports in total with a free account)/i : /5 informes (?:gratis por cuenta|en total con tu cuenta gratuita)/i;
+  const subscribedUploads = locale === 'en' ? /unlimited reports while your subscription is active/i : /informes sin límite mientras tu suscripción esté activa/i;
+  assert(freeUploads.test(text), route+' five report uploads per free account');
+  assert(subscribedUploads.test(text), route+' unlimited uploads during an active subscription');
  }
  const pricing=visible(await read('/'+locale+'/pricing'));
+ const labUploads = locale === 'en' ? /unlimited report uploads for one year from purchase/i : /subir informes sin límite durante un año desde la compra/i;
+ assert(labUploads.test(pricing), locale+' one year of uploads included with the lab panel');
  assert(!/\b15 (?:biomarkers|biomarcadores)\b/i.test(pricing),locale+' obsolete starter count');
  assert(!/€396|396\s*€/.test(pricing),locale+' obsolete annual price');
  const terms=visible(await read('/'+locale+'/legal/terms'));
@@ -59,6 +65,6 @@ for (const [locale,count,price,cadence,cancel] of [
  const method=visible(await read('/'+locale+'/how-it-works'));
  assert(method.includes(count),locale+' method starter biomarker count');
 }
-const report={sourceVariants:sources.length,sourcePassages:passages,interactiveStates:states,bilingualDocuments:docs.length,restoredNarrativeChecks:narrative.length,entryRoutes:6,starterOfferLocalesChecked:2,decisions:'Confirmed starter subscription terms verified alongside the archived source. Other decisions remain open.',productionConnections:'No real signup, email, payments, or device connection enabled'};
+const report={sourceVariants:sources.length,sourcePassages:passages,interactiveStates:states,bilingualDocuments:docs.length,restoredNarrativeChecks:narrative.length,entryRoutes:6,starterOfferLocalesChecked:2,uploadAllowanceLocalesChecked:2,decisions:'The starter subscription and all three report-upload allowances are verified alongside the archived source.',productionConnections:'No real signup, email, payments, or device connection enabled'};
 await fs.mkdir('docs',{recursive:true});await fs.writeFile('docs/content-parity-verification.json',JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({passed:true,...report},null,2));

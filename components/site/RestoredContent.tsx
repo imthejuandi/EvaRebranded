@@ -4,6 +4,7 @@ import type {ReactNode} from 'react';
 import {useSiteLanguage} from './SiteLanguage';
 import {TrendStorySection} from '@/components/story/TrendStorySection';
 import {starterSubscription} from '@/lib/site-content/starter-subscription';
+import {uploadAllowance} from '@/lib/site-content/upload-allowance';
 
 function useWords() {
   const {locale, href} = useSiteLanguage();
@@ -57,14 +58,17 @@ export function FounderStory() {
 export function OfferUnderstanding() {
  const {locale,w,href}=useWords();
  const kit=starterSubscription[locale];
+ const uploads=uploadAllowance[locale];
  return <Chapter id="el-alcance-de-eva" kicker={w('EL SERVICIO, CON SUS DETALLES','THE SERVICE, WITH THE DETAILS')} title={w('Tres puertas. Una lectura más clara.','Three doors. A clearer reading.')}>
-  <div className="restored-three restored-plan-details"><article><span>€0</span><h3>{w('Las analíticas que ya tienes.','The blood tests you already have.')}</h3><p>{w('Resultados de cualquier proveedor, sin suscripción y sin tarjeta. La propuesta original incluye reinterpretación frente a los rangos de EVA. Necesitas una cuenta y consentimiento para tus datos de salud.','Results from any provider, without a subscription or credit card. The original offer includes reinterpretation against EVA’s ranges. An account and consent for your health data are required.')}</p><p>{w('La disponibilidad de edad biológica depende de los datos y del alcance del plan; el original no es consistente sobre la opción gratuita.','Biological-age availability depends on the data and plan scope; the original is inconsistent about the free option.')}</p></article><article>
+  <div className="restored-three restored-plan-details"><article>
+   <span>€0</span><h3>{w('Las analíticas que ya tienes.','The blood tests you already have.')}</h3>
+   <p>{uploads.free} {w('Compara resultados de cualquier laboratorio con los rangos de EVA. Para empezar, crea una cuenta y da tu consentimiento para el tratamiento de tus datos de salud. No necesitas tarjeta.','Compare results from any lab with EVA’s ranges. To get started, create an account and consent to the processing of your health data. No card required.')}</p><p>{w('La disponibilidad de edad biológica depende de los datos y del alcance del plan; el original no es consistente sobre la opción gratuita.','Biological-age availability depends on the data and plan scope; the original is inconsistent about the free option.')}</p></article><article>
    <span>{kit.price} <small>{kit.frequency}</small></span>
    <h3>{w('Tu suscripción trimestral.','Your quarterly subscription.')}</h3>
-   <p>{w('Recoge tu muestra en casa con Tasso+. El kit incluye el análisis de 13 biomarcadores en el laboratorio y el envío de ida y vuelta.','Collect your sample at home with Tasso+. The kit includes laboratory testing of 13 biomarkers and shipping both ways.')}</p>
+   <p>{w('Recoge tu muestra en casa con Tasso+. El kit incluye el análisis de 13 biomarcadores en el laboratorio y el envío de ida y vuelta.','Collect your sample at home with Tasso+. The kit includes laboratory testing of 13 biomarkers and shipping both ways.')} {uploads.subscribed}</p>
    <p>{w('La primera muestra establece tu punto de partida. Las siguientes te permiten comparar resultados a lo largo del tiempo. Puedes cancelar en cualquier momento para evitar el siguiente cobro.','Your first sample establishes your baseline. Later samples let you compare results over time. You can cancel at any time to stop the next charge.')}</p>
    <a className="restored-link" href="#pricing-markers-heading">{w('Ver los 13 biomarcadores','See all 13 biomarkers')}</a>
-  </article><article><span>€499</span><h3>{w('Una perspectiva más amplia.','A broader perspective.')}</h3><p>{w('Una extracción tradicional en un laboratorio asociado y un informe EVA. La página original de precios describe 40+ biomarcadores; el catálogo de ciencia habla de 165+. No son recuentos intercambiables.','A conventional blood draw at a partner laboratory and an EVA report. Original pricing describes 40+ biomarkers; the science catalogue describes 165+. These counts are not interchangeable.')}</p><p>{w('El alcance exacto del panel se confirma antes de reservar. Puedes consultar después las opciones de seguimiento.','The exact panel scope is confirmed before booking. You can ask about follow-up options afterwards.')}</p></article></div>
+  </article><article><span>€499</span><h3>{w('Panel en laboratorio.','Laboratory panel.')}</h3><p>{w('Una extracción tradicional en un laboratorio asociado y un informe EVA. La página original de precios describe 40+ biomarcadores; el catálogo de ciencia habla de 165+. No son recuentos intercambiables.','A conventional blood draw at a partner laboratory and an EVA report. Original pricing describes 40+ biomarkers; the science catalogue describes 165+. These counts are not interchangeable.')}</p><p>{w('El alcance del panel se confirma antes de reservar. Es un pago único, sin suscripción.','The panel scope is confirmed before booking. You pay once, with no subscription.')} {uploads.labYear}</p></article></div>
   <div className="restored-essay">
    <h3>{w('De la muestra al informe.','From sample to report.')}</h3>
    <div>

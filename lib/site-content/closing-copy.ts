@@ -1,3 +1,4 @@
+import {uploadAllowance} from '@/lib/site-content/upload-allowance';
 import {starterSubscription} from '@/lib/site-content/starter-subscription';
 
 export const closingCopy = {
@@ -18,7 +19,7 @@ export const closingCopy = {
       lead: 'Con una analítica previa o con un kit por suscripción.',
       free: {
         heading: 'Interpreta tus analíticas gratis.',
-        body: 'Sube tu informe anterior y consulta tus resultados con contexto.',
+        body: `${uploadAllowance.es.free} Consulta tus resultados en contexto.`,
         action: 'Interpretar mis analíticas gratis',
         note: 'Con tu cuenta y consentimiento. Sin tarjeta ni suscripción.',
       },
@@ -29,6 +30,7 @@ export const closingCopy = {
           'Recogida en casa con Tasso+.',
           'Tus resultados, explicados junto a los intervalos del laboratorio.',
           starterSubscription.es.rationale,
+          uploadAllowance.es.subscribed,
         ],
         action: starterSubscription.es.kitAction,
       },
@@ -62,7 +64,7 @@ export const closingCopy = {
       lead: 'With a previous lab report or a home kit subscription.',
       free: {
         heading: 'Interpret your lab results for free.',
-        body: 'Upload your previous report and explore your results in context.',
+        body: `${uploadAllowance.en.free} Explore your results in context.`,
         action: 'Interpret my lab results for free',
         note: 'With your account and consent. No card or subscription required.',
       },
@@ -73,6 +75,7 @@ export const closingCopy = {
           'Collect at home with Tasso+.',
           'Your results, explained with laboratory reference ranges.',
           starterSubscription.en.rationale,
+          uploadAllowance.en.subscribed,
         ],
         action: starterSubscription.en.kitAction,
       },

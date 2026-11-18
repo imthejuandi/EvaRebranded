@@ -1,5 +1,6 @@
 'use client';
 
+import {uploadAllowance} from '@/lib/site-content/upload-allowance';
 import {useEffect, useRef, useState} from 'react';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {alexStoryCopy, alexStoryReadings} from '@/lib/site-content/alex-story-copy';
@@ -57,6 +58,6 @@ export function GuidedResultStory({calm=false, uploadHref}: {calm?:boolean; uplo
       </div>
       <p className="guided-disclosure">{c.disclosure}</p>
     </div>
-    <a className="text-link guided-start" href={uploadHref}><span>{t('Interpreta tus análisis previos')}<br/><small>{t('Empieza gratis')}</small></span><Arrow/></a>
+    <a className="text-link guided-start" href={uploadHref}><span>{t('Interpreta tus análisis previos')}<br/><small>{uploadAllowance[locale].freeShort}</small></span><Arrow/></a>
   </div>;
 }

@@ -3,6 +3,8 @@ import {OfferUnderstanding} from '@/components/site/RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useState } from 'react';
 import {starterSubscription} from '@/lib/site-content/starter-subscription';
+import {uploadAllowance} from '@/lib/site-content/upload-allowance';
+import type {SiteLocale} from '@/lib/site-language';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
 import {sampleMarkers} from '@/lib/preview/fixtures';
 import { EditorialReveal } from '@/components/engagement/EditorialReveal';
@@ -10,15 +12,17 @@ import ServiceCalendar, { type PlanId } from './ServiceCalendar';
 import ServiceContents from './ServiceContents';
 import { RhythmTheatre } from './RhythmTheatre';
 type FAQCategory = 'pricing' | 'testing' | 'results' | 'data';
-export const pricingCopy = { es: {
+function pricingCopyFor(locale: SiteLocale) {
+    const uploads = uploadAllowance[locale];
+    return {
         eyebrow: 'PRECIOS / TRES FORMAS DE EMPEZAR',
         title: ['Elige cómo', 'quieres empezar.'],
         intro: 'Con resultados que ya tienes o con una nueva recogida de muestra. Compara qué incluye cada opción.',
         selectLabel: 'Elige una forma de empezar',
         plans: [
-            { id: 'free' as PlanId, label: 'Tus resultados', name: 'Tus resultados', price: '0', cadence: 'sin suscripción', summary: 'Reúne un informe que ya tienes y explora sus resultados.', includes: ['Un documento con tus resultados.', 'Valores, unidades y fecha en un mismo lugar.', 'Recorrido de ejemplo disponible en esta vista previa.'], action: 'Subir una analítica', href: '/es/upload', foot: 'Gratis. Sin tarjeta de crédito.', art: 'TU PUNTO DE PARTIDA', artDetail: 'La lectura que ya tienes.' },
-            { id: 'quarterly' as PlanId, label: 'Kit en casa', name: 'Suscripción al kit en casa', price: starterSubscription.es.price, cadence: 'por trimestre', summary: 'Tu primera analítica establece tu punto de partida. Las siguientes te ayudan a ver qué ha cambiado.', includes: ['13 biomarcadores y recogida en casa con Tasso+.', 'Kit y envío en ambas direcciones incluidos.', 'Informe y comparación de resultados.'], action: 'Elegir la suscripción', href: '/es/signup?plan=quarterly', foot: starterSubscription.es.cancelAnytime, art: 'TU KIT INICIAL', artDetail: '13 biomarcadores.' },
-            { id: 'full' as PlanId, label: 'En laboratorio', name: 'Panel en laboratorio', price: '499', cadence: 'pago único', summary: 'Una extracción en laboratorio para el panel que hayas elegido.', includes: ['Extracción clínica en laboratorio asociado.', 'Interpretación e informe EVA completos.', 'Opción de añadir seguimiento trimestral después.'], action: 'Explorar esta opción', href: '/es/signup?plan=full', foot: 'Confirma el alcance del panel antes de reservar.', art: 'AMPLÍA LA PERSPECTIVA', artDetail: 'Una extracción en laboratorio.' },
+            { id: 'free' as PlanId, label: 'Tus resultados', name: 'Tus resultados', price: '0', cadence: 'sin suscripción', summary: uploads.free, includes: ['Consulta tus informes originales.', 'Valores, unidades y fecha en un mismo lugar.', 'Recorrido de ejemplo disponible en esta vista previa.'], action: 'Subir una analítica', href: '/es/upload', foot: 'Gratis. Sin tarjeta de crédito.', art: 'TU PUNTO DE PARTIDA', artDetail: 'La lectura que ya tienes.' },
+            { id: 'quarterly' as PlanId, label: 'Kit en casa', name: 'Suscripción al kit en casa', price: starterSubscription.es.price, cadence: 'por trimestre', summary: 'Tu primera analítica establece tu punto de partida. Las siguientes te ayudan a ver qué ha cambiado.', includes: ['13 biomarcadores y recogida en casa con Tasso+.', 'Kit y envío en ambas direcciones incluidos.', 'Informe y comparación de resultados.', uploads.subscribed], action: 'Elegir la suscripción', href: '/es/signup?plan=quarterly', foot: starterSubscription.es.cancelAnytime, art: 'TU KIT INICIAL', artDetail: '13 biomarcadores.' },
+            { id: 'full' as PlanId, label: 'En laboratorio', name: 'Panel en laboratorio', price: '499', cadence: 'pago único', summary: 'Una extracción en laboratorio para el panel que hayas elegido.', includes: ['Extracción clínica en laboratorio asociado.', 'Interpretación e informe EVA completos.', 'Opción de añadir seguimiento trimestral después.', uploads.labYear], action: 'Elegir el panel de laboratorio', href: '/es/signup?plan=full', foot: 'Confirma el alcance del panel antes de reservar.', art: 'AMPLÍA LA PERSPECTIVA', artDetail: 'Una extracción en laboratorio.' },
         ],
         rhythm: { title: 'Conocer. Comparar. Continuar.', description: 'Una lectura sitúa tu punto de partida. Las siguientes ayudan a observar tu evolución.', labels: ['Primera lectura', 'A los 3 meses', 'A los 6 meses', 'A los 9 meses'], previous: 'Lectura anterior', next: 'Siguiente lectura', unit: 'biomarcadores por lectura', control: 'Explora las cuatro lecturas de un año' },
         comparison: {
@@ -27,6 +31,7 @@ export const pricingCopy = { es: {
             groups: [
                 { title: 'Pruebas', rows: [
                         { label: 'Valores y unidades del informe', cells: [true, true, true] },
+                        { label: 'Informes que puedes subir', cells: [uploads.freeShort, 'Sin límite con la suscripción activa', 'Sin límite durante un año desde la compra'] },
                         { label: 'Kit para recogida en casa', cells: [false, true, false] },
                         { label: 'Extracción en laboratorio asociado', cells: [false, false, true] },
                         { label: 'Biomarcadores analizados', cells: ['Los de tu informe', String(kitInsightCopy.es.markers.length), 'Según panel'] },
@@ -79,11 +84,15 @@ export const pricingCopy = { es: {
                 { category: 'results', question: '¿Cuál es la diferencia entre el panel base y uno especializado?', answer: 'El kit inicial mide 13 biomarcadores. Los paneles especializados exploran otras preguntas, como la función tiroidea o los niveles hormonales. Su disponibilidad y precio se consultan por separado.' },
                 { category: 'data', question: '¿Cómo puedo consultar o eliminar mis datos?', answer: 'En tu perfil puedes consultar las opciones de exportación y solicitar la eliminación de datos. La Política de Privacidad explica el procedimiento y quién participa en el tratamiento.' },
                 { category: 'data', question: '¿Dónde se guardan mis datos?', answer: 'La Política de Privacidad describe almacenamiento en infraestructura de Supabase dentro de la Unión Europea, cifrado en reposo y en tránsito. También explica que determinados tratamientos con IA pueden implicar transferencias fuera del EEE con las garantías indicadas en esa política.' },
-                { category: 'data', question: '¿Puedo subir mis analíticas sin suscripción?', answer: 'Sí. Puedes subir una analítica sin suscripción. Necesitas una cuenta y el consentimiento para tratar tus datos de salud. En esta vista previa puedes explorar un informe de ejemplo.' },
+                { category: 'data', question: '¿Cuántos informes puedo subir?', answer: [uploads.free, uploads.subscribed, uploads.labYear].join(' ') },
             ] },
         closing: { eyebrow: 'TU SIGUIENTE PASO', title: 'Un primer paso que encaje contigo.', copy: 'Con una analítica que ya tienes o con tu primera lectura de EVA.', primary: 'Elegir EVA Trimestral', secondary: 'Subir una analítica', note: 'Vista previa del recorrido. No se realizan cargos ni reservas.' },
         ui: { choose: 'Ver este plan', comparison: 'Comparar las tres opciones', euro: 'euros', complete: 'Análisis completo', sampleReport: 'Ver ejemplo de informe', rangeNote: 'Ver condiciones del panel', markerGroup: 'Biomarcadores del panel trimestral', selectedQuarter: 'Lectura seleccionada', visualLabel: 'Ritmo de análisis según el plan seleccionado', previous: 'Anterior', next: 'Siguiente', reference: 'Lectura ilustrativa', inPlan: '13 biomarcadores', single: 'Una lectura', uploaded: 'Tus resultados' },
-    } };
+    };
+}
+
+export const pricingCopy = {es: pricingCopyFor('es'), en: pricingCopyFor('en')};
+
 // These June fixture values also appear in the linked fictional report.
 const reportKeys = ['hscrp', 'triglycerides', 'hdl', 'ldl', 'alt', 'creatinine'];
 const reportRows = sampleMarkers.filter(marker => reportKeys.includes(marker.key));
@@ -93,7 +102,7 @@ function Arrow({ back = false }: {
 }) { const __site = useSiteLanguage(); return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" style={back ? { transform: 'rotate(180deg)' } : undefined}><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" strokeWidth="1.3"/></svg>; }
 export default function PricingPage() {
     const __site = useSiteLanguage();
-    const c = pricingCopy.es;
+    const c = pricingCopy[__site.locale];
     const subscription = starterSubscription[__site.locale];
     const [plan, setPlan] = useState<PlanId>('quarterly'), [quarter, setQuarter] = useState(0), [faqCategory, setFaqCategory] = useState<FAQCategory>('pricing'), [marker, setMarker] = useState(0);
     const current = c.plans.find(item => item.id === plan)!;

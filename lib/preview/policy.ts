@@ -1,3 +1,5 @@
+import {FREE_REPORT_UPLOAD_LIMIT} from '../site-content/upload-allowance.ts';
+import {hasCurrentSubscription, hasLabUploadAccess} from './subscription.ts';
 import type {MemberPlan,PreviewState,Report,ServerZone,MarkerStatus,Profile} from './model';
 
 /** Shared preview policy. These helpers are not production authorization. */
@@ -17,8 +19,11 @@ export function reportReadiness(report:Pick<Report,'status'|'contextComplete'|'m
   return 'ready';
 }
 export function canReadReport(report:Pick<Report,'status'|'contextComplete'|'markerKeys'>|undefined,healthConsent=true){return reportReadiness(report,healthConsent)==='ready';}
-/** Fixtures model paid access only while active. No grace period is invented. */
-export function hasPaidAccess(state:Pick<PreviewState,'plan'|'subscriptionStatus'>){return (state.plan==='quarterly'||state.plan==='annual'||state.plan==='full_panel')&&state.subscriptionStatus==='active';}
+type AccessState = Pick<PreviewState, 'plan' | 'subscriptionStatus' | 'subscriptionPeriodEnd' | 'hasPurchasedLabPanel' | 'labUploadAccessUntil'>;
+export function hasPaidAccess(state: AccessState, now = Date.now()) {
+  return hasCurrentSubscription(state, now) || state.hasPurchasedLabPanel === true ||
+    (state.plan === 'full_panel' && state.subscriptionStatus === 'active');
+}
 /** Values and source remain intact. Derived values stay unavailable until recomputed. */
 export function invalidateReportEstimates(report:Report):Report {
   return {...report,version:(report.version??1)+1,biologicalAge:null,longevityScore:null,status:report.contextComplete?'processing':'pending_context',reading:report.reading?{...report.reading,status:'stale'}:undefined};
@@ -79,7 +84,7 @@ export function reportForKit(state:Pick<PreviewState,'kitReportId'|'reports'>):R
 
 
 /** Audited original /api/lab-results/extract limits; metadata-only in this preview. */
-export const UPLOAD_LIMITS={files:10,perFileBytes:15*1024*1024,totalBytes:40*1024*1024,freeLifetime:5} as const;
+export const UPLOAD_LIMITS={files:10,perFileBytes:15*1024*1024,totalBytes:40*1024*1024,freeLifetime:FREE_REPORT_UPLOAD_LIMIT} as const;
 export const UPLOAD_ACCEPT='.pdf,.png,.jpg,.jpeg,.webp,.heic,.heif,application/pdf,image/png,image/jpeg,image/jpg,image/webp,image/heic,image/heif';
 export type UploadMetadata={name:string;size:number;type:string};
 export type UploadValidationError='empty'|'count'|'type'|'file_size'|'total_size'|'empty_file';
@@ -98,13 +103,35 @@ export function validateUploadMetadata(files:readonly UploadMetadata[]):UploadVa
  }
  return total>UPLOAD_LIMITS.totalBytes?'total_size':null;
 }
-/** Original counter is cumulative, so deleting a report does not restore a free upload. */
-export function uploadQuota(state:Pick<PreviewState,'totalUploadsUsed'|'reports'|'plan'|'subscriptionStatus'>){
- const used=Math.max(0,Math.trunc(state.totalUploadsUsed??state.reports.filter(r=>r.source==='upload').length));
- const remaining=Math.max(0,UPLOAD_LIMITS.freeLifetime-used);
- return {used,remaining,atLimit:!hasPaidAccess(state)&&remaining===0};
+type UploadState = AccessState & Pick<PreviewState, 'freeUploadsUsed' | 'totalUploadsUsed' | 'reports'>;
+function uploadCounts(state: UploadState) {
+  // Older previews tracked all confirmed uploads together. Preserve that history
+  // when its billing source is unknown. The seeded March report is a sample.
+  const imported = state.reports.filter(report => report.source === 'upload' && report.id !== 'demo-marzo').length;
+  const total = Math.max(imported, Number.isSafeInteger(state.totalUploadsUsed) ? state.totalUploadsUsed! : 0);
+  const free = Number.isSafeInteger(state.freeUploadsUsed) && state.freeUploadsUsed! >= 0 ? state.freeUploadsUsed! : total;
+  return {total: Math.max(total, free), free};
 }
-export function recordConfirmedUpload(state:PreviewState):PreviewState{return {...state,totalUploadsUsed:uploadQuota(state).used+1};}
+
+function uploadCoverage(state: UploadState, now: number) {
+  if (hasCurrentSubscription(state, now)) return 'subscription';
+  if (hasLabUploadAccess(state, now)) return 'lab';
+  return 'free';
+}
+
+export function uploadQuota(state: UploadState, now = Date.now()) {
+  const used = uploadCounts(state).free;
+  const remaining = Math.max(0, UPLOAD_LIMITS.freeLifetime - used);
+  const coverage = uploadCoverage(state, now);
+  return {used, remaining, coverage, unlimited: coverage !== 'free', atLimit: coverage === 'free' && remaining === 0};
+}
+
+export function recordConfirmedUpload(state: PreviewState, now = Date.now()): PreviewState {
+  const {free, total} = uploadCounts(state);
+  const unlimited = uploadCoverage(state, now) !== 'free';
+  if (!unlimited && free >= UPLOAD_LIMITS.freeLifetime) return state;
+  return {...state, totalUploadsUsed: total + 1, freeUploadsUsed: unlimited ? free : free + 1};
+}
 
 export const ID_DOCUMENT_TYPES=['DNI','NIF','CIF','NIE','PASAPORTE','CENSO','OTROS','ID','DNI_TUTOR','NIF_TUTOR','NIE_TUTOR'] as const;
 export const PATIENT_DOCUMENT_TYPES=['DNI','NIE','PASAPORTE','OTROS'] as const;
