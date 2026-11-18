@@ -4,9 +4,9 @@ Updated 18 November 2026. GitHub `imthejuandi/EvaRebranded`, branch `main`, is t
 
 ## Approved baseline
 
-The current review is **version 47**, deployed UI commit `846661eed358bc272aa4e6613e0ab05b53a9d595`. The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context. [Quarterly kit QA](quarterly-home-kit-qa.json) records the published checks. [Version 46 runner timing](runner-2-5-second-entrance-qa.json) records the measured entrance.
+The current review is **version 48**, deployed UI commit `6a11d6f196a75c2c025176fd5d9c6c3c5cac711a`. A free account includes five report uploads in total. Reports are unlimited while the home-kit subscription is active or for one year from purchase of the separate €499 clinical panel. The clinical panel is a one-time purchase and requires no subscription. [Upload allowance QA](upload-allowance-qa.json) records the published checks. [Quarterly kit QA](quarterly-home-kit-qa.json) records the provisional offer.
 
-Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=47) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=47). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
+Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=48) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=48). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
 
 Preserve the runner, analog dots, typography, Tasso footage, dashboard examples, lifestyle imagery and narrative order. Free interpretation of previous reports leads. The optional home kit is a **quarterly subscription for 13 biomarkers, cancel anytime**. Its provisional review price is **€99 + VAT per quarter**, pending final pricing. The separate €499 laboratory service has its own terms.
 
@@ -24,7 +24,7 @@ The dashboard integration directory is an inactive reference from an earlier bac
 
 1. **Keep commercial facts consistent.** Carry the quarterly fee, cancellation and the named 13-marker panel from the public offer to payment and receipt. Check any restored historical content against the current terms before putting it in a customer journey.
 2. **Verify purchase and cancellation.** Confirm final pricing, the VAT-inclusive payable amount, delivery and fulfillment terms, any separate future-panel prices, and how cancellation takes effect in the real service. Exercise quarterly billing and cancellation with test payments before taking orders.
-3. **Set the free-upload policy.** Historical notes describe unlimited uploads; the current preview models five lifetime uploads. Confirm one policy before connecting production enforcement and public wording.
+3. **Verify upload limits in production.** Enforce five free uploads per account in total. Check the home subscription and one-year clinical-panel window independently when granting unlimited uploads. Verify the fifth free upload, the next attempt, active/expired access and overlapping entitlements using server-side account, purchase, billing and usage records.
 4. **Finalize legal and contact content.** Review privacy, cookies, service terms, consents and operational/contact details against the actual service and vendors.
 5. **Integrate the real application.** Reuse existing production authentication and backend through explicit adapters. Verify report ownership, signed uploads, processing jobs, entitlements, consents, checkout, fulfillment, account operations and AI streaming. Replace each mock path when its real integration passes.
 6. **Choose the deployment architecture.** The static export supports review. Production authentication, secrets and server endpoints need an appropriate runtime and configuration. Connect those after integration, preserving EN/ES routing and existing data.

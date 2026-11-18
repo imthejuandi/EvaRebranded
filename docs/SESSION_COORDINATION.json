@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 47,
-    "deployed_ui_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3862fb1030b8819183a434a9951ac915",
-    "deployment_id": "appgdep_6afde2314aec8191a7169965818eaae0",
-    "main_head_before_coordination": "846661eed358bc272aa4e6613e0ab05b53a9d595",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing?review=47"
+    "live_version": 48,
+    "deployed_ui_commit": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_000f01f49a808191a277a1a938426982",
+    "deployment_id": "appgdep_6afde59bce68819184a44fb55b216416",
+    "main_head_before_coordination": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing?review=48"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -131,15 +131,21 @@
       "source_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
       "status": "Review version 47 published and verified.",
       "qa": "docs/quarterly-home-kit-qa.json"
+    },
+    {
+      "section": "Free and subscriber report-upload allowance",
+      "source_commit": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
+      "status": "Version 48 published and browser-verified.",
+      "qa": "docs/upload-allowance-qa.json"
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Quarterly kit offer complete. Review version 47 published and verified.",
+      "status": "Version 48 upload allowance published and verified.",
       "next_section": null,
       "pending_verification": null,
-      "section": "Quarterly home-kit offer across bilingual marketing and the kit entry flow",
+      "section": "Free and subscriber report uploads",
       "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."

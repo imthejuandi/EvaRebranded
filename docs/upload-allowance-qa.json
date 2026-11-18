@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "published_version": 48,
+  "deployed_ui_commit": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
+  "allowance": "A free account includes five report uploads in total. Reports are unlimited while the home-kit subscription is active or for one year from purchase of the separate €499 clinical panel. The clinical panel is a one-time purchase and requires no subscription.",
+  "published_browser_verification": {
+    "status": "passed",
+    "responsive_public_checks": [
+      {
+        "locale": "en",
+        "width_css_px": 1366
+      },
+      {
+        "locale": "es",
+        "width_css_px": 390
+      },
+      {
+        "locale": "en",
+        "width_css_px": 320
+      },
+      {
+        "locale": "es",
+        "width_css_px": 1366
+      }
+    ],
+    "member_cases": [
+      "free-new",
+      "free-last",
+      "free-spent",
+      "subscriber",
+      "subscriber-paused",
+      "subscriber-past-due",
+      "subscriber-cancelled",
+      "one-off-spent",
+      "lab-year-active",
+      "lab-year-ended",
+      "lab-year-ended-limit",
+      "lab-and-current-quarter",
+      "lab-outlasts-quarter",
+      "paid-quarter-outlasts-lab",
+      "both-terms-ended",
+      "one-off-last",
+      "cancelled-paid-through",
+      "cancelled-ended",
+      "active-but-ended",
+      "paid-saves-then-downgrades",
+      "legacy-active",
+      "legacy-cancelled",
+      "legacy-absent-counter"
+    ],
+    "entry_checks": [
+      {
+        "locale": "en",
+        "path": "free",
+        "completed_at": "upload"
+      },
+      {
+        "locale": "en",
+        "path": "quarterly",
+        "completed_at": "checkout, before confirmation"
+      },
+      {
+        "locale": "en",
+        "path": "full",
+        "completed_at": "lab checkout, before confirmation"
+      },
+      {
+        "locale": "es",
+        "path": "free",
+        "completed_at": "upload"
+      },
+      {
+        "locale": "es",
+        "path": "quarterly",
+        "completed_at": "checkout, before confirmation"
+      },
+      {
+        "locale": "es",
+        "path": "full",
+        "completed_at": "lab checkout, before confirmation"
+      }
+    ],
+    "concurrent_free_limit": "Two tabs tried to use the same fifth slot. One confirmation succeeded. Both tabs showed five used after synchronizing.",
+    "errors": [],
+    "network_writes": [],
+    "mode": "Published review site, Chromium and fictional browser-local fixture records."
+  },
+  "checks": [
+    "TypeScript",
+    "Static production build",
+    "16 preview policy tests passed natively",
+    "110 assertions in the wider suite passed with runtime Vinext next/navigation mapping and JSON handling in temporary harness copies for two legacy dashboard test files",
+    "23 local member cases, four responsive bilingual public profiles, six enrollment paths and a two-tab test of the final free upload"
+  ],
+  "release_scope": "The review uses fictional reports and browser-local entitlements. Production account ownership, subscription status, one-time purchase dates, durable usage counts and upload processing need separate integrated verification."
+}
