@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-18",
-  "handoff_status": "UPLOAD_ALLOWANCE_ALIGNED_V48",
-  "immediate_instruction": "Review version 48 is published. A free account includes five report uploads in total. Reports are unlimited while the home-kit subscription is active or for one year from purchase of the separate €499 clinical panel. The clinical panel is a one-time purchase and requires no subscription. See docs/upload-allowance-qa.json. The previous methodology review remains deferred until model training finishes.",
+  "handoff_status": "FREE_REPORT_FORMAT_VERIFIED_V49",
+  "immediate_instruction": "Version 49 is published. Visitors can use a PDF or photo of a previous blood test report. The closing free-report link and the free signup form reference the visible explanation in each language. Apply the three-specialist review to each subsequent audit action. See docs/report-format-qa.json.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 48 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
+    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 49 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,67 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 47,
-      "source_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "status": "succeeded",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3862fb1030b8819183a434a9951ac915",
-      "deployment_id": "appgdep_6afde2314aec8191a7169965818eaae0",
-      "native_updated_at": "2026-11-18T17:37:01.177424+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing?review=47",
-      "behavior": "The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context.",
-      "source_files": [
-        "app/(english)/en/pricing/page.tsx",
-        "app/(spanish)/es/pricing/page.tsx",
-        "app/landing-closing.css",
-        "app/method-journey.css",
-        "components/pages/book/BookPage.tsx",
-        "components/pages/book/book.css",
-        "components/pages/dashboard/DashboardPage.tsx",
-        "components/pages/method/MethodPage.tsx",
-        "components/pages/method/method.css",
-        "components/pages/pricing/PricingPage.tsx",
-        "components/pages/pricing/RhythmTheatre.tsx",
-        "components/pages/pricing/ServiceCalendar.tsx",
-        "components/pages/pricing/ServiceContents.tsx",
-        "components/pages/pricing/pricing.css",
-        "components/pages/profile/ProfilePage.tsx",
-        "components/pages/profile/profile.css",
-        "components/preview/AccessPage.tsx",
-        "components/preview/CheckoutPage.tsx",
-        "components/preview/OnboardingPage.tsx",
-        "components/site/ContactPage.tsx",
-        "components/site/DocumentPage.tsx",
-        "components/site/RestoredContent.tsx",
-        "components/site/ReviewHub.tsx",
-        "components/site/SiteShell.tsx",
-        "components/story/BusinessOffer.tsx",
-        "components/story/HeroKitCta.tsx",
-        "components/story/MethodJourney.tsx",
-        "docs/content-parity-verification.json",
-        "lib/preview/utility-policy.test.mjs",
-        "lib/site-content/closing-copy.ts",
-        "lib/site-content/documents-bilingual.json",
-        "lib/site-content/locales/public.en.json",
-        "lib/site-content/range-proof-copy.ts",
-        "lib/site-content/starter-subscription.ts",
-        "scripts/browser-qa/entry-flows.cjs",
-        "scripts/check-parity.mjs"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-quarterly-home-kit-v47.tar.gz",
-        "local_gzip_sha256": "bce9e45f10715b1a9f689de539918aa41c4c0502ed23dc1afd468935e4291fb0",
-        "local_gzip_size_bytes": 163045508,
-        "saved_tar_content_hash": "sha256:8d2472ae47e8a4cc36cd294fd91b7ba96ee5f4c2040a9852eb91d0cf3d4b1b06",
-        "saved_tar_size_bytes": 171765760,
-        "file_count": 789
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/quarterly-home-kit-qa.json"
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 48,
       "source_commit": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
       "status": "succeeded",
@@ -147,20 +86,51 @@
         "record": "docs/upload-allowance-qa.json"
       }
     },
-    "latest_verified_ui_release_note": "Review version 48 serves UI commit 6a11d6f196a75c2c025176fd5d9c6c3c5cac711a. The subsequent handoff commit records the published release.",
+    "latest_verified_ui_release": {
+      "version_number": 49,
+      "source_commit": "0f02d6a4a6832cd8bcd00550a85e78a23453097b",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ada9da284e708191a887f30556b77430",
+      "deployment_id": "appgdep_6afde8711eb08191a89d349a70f5b079",
+      "native_updated_at": "2026-11-18T18:03:42.750334+00:00",
+      "behavior": "Visitors can use a PDF or photo of a previous blood test report. The closing free-report link and the free signup form reference the visible explanation in each language.",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=49#empezar",
+      "source_files": [
+        "AGENTS.md",
+        "components/preview/AccessPage.tsx",
+        "components/story/BusinessOffer.tsx",
+        "lib/site-content/closing-copy.ts",
+        "lib/site-content/upload-allowance.ts",
+        "scripts/browser-qa/entry-flows.cjs"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-report-format-v49.tar.gz",
+        "local_gzip_sha256": "01b229ff626664a760637223be0c147622d453a62fd8f894823304abd7f600b5",
+        "local_gzip_size_bytes": 163049177,
+        "saved_tar_content_hash": "sha256:4d5852e1dd0c33728a2b03d40a0fc0187b81f9d52f2a2b2b45cf981b7992f83b",
+        "file_count": 790,
+        "saved_tar_size_bytes": 171776000
+      },
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/report-format-qa.json"
+      }
+    },
+    "latest_verified_ui_release_note": "Review version 49 serves UI commit 0f02d6a4a6832cd8bcd00550a85e78a23453097b. The subsequent handoff commit records the published release.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 48 source 6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
+      "relation": "QA/docs followup to version 49 source 0f02d6a4a6832cd8bcd00550a85e78a23453097b",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
         "README.md",
         "docs/LAUNCH_HANDOFF.md",
-        "docs/backend-connection.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/upload-allowance-qa.json"
+        "docs/report-format-qa.json",
+        "scripts/browser-qa/entry-flows.cjs"
       ]
     },
     "earlier_verified_ui_release": {
@@ -587,6 +557,67 @@
           "status": "passed_actual_browser",
           "record": "docs/runner-2-5-second-entrance-qa.json"
         }
+      },
+      {
+        "version_number": 47,
+        "source_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "status": "succeeded",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3862fb1030b8819183a434a9951ac915",
+        "deployment_id": "appgdep_6afde2314aec8191a7169965818eaae0",
+        "native_updated_at": "2026-11-18T17:37:01.177424+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing?review=47",
+        "behavior": "The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context.",
+        "source_files": [
+          "app/(english)/en/pricing/page.tsx",
+          "app/(spanish)/es/pricing/page.tsx",
+          "app/landing-closing.css",
+          "app/method-journey.css",
+          "components/pages/book/BookPage.tsx",
+          "components/pages/book/book.css",
+          "components/pages/dashboard/DashboardPage.tsx",
+          "components/pages/method/MethodPage.tsx",
+          "components/pages/method/method.css",
+          "components/pages/pricing/PricingPage.tsx",
+          "components/pages/pricing/RhythmTheatre.tsx",
+          "components/pages/pricing/ServiceCalendar.tsx",
+          "components/pages/pricing/ServiceContents.tsx",
+          "components/pages/pricing/pricing.css",
+          "components/pages/profile/ProfilePage.tsx",
+          "components/pages/profile/profile.css",
+          "components/preview/AccessPage.tsx",
+          "components/preview/CheckoutPage.tsx",
+          "components/preview/OnboardingPage.tsx",
+          "components/site/ContactPage.tsx",
+          "components/site/DocumentPage.tsx",
+          "components/site/RestoredContent.tsx",
+          "components/site/ReviewHub.tsx",
+          "components/site/SiteShell.tsx",
+          "components/story/BusinessOffer.tsx",
+          "components/story/HeroKitCta.tsx",
+          "components/story/MethodJourney.tsx",
+          "docs/content-parity-verification.json",
+          "lib/preview/utility-policy.test.mjs",
+          "lib/site-content/closing-copy.ts",
+          "lib/site-content/documents-bilingual.json",
+          "lib/site-content/locales/public.en.json",
+          "lib/site-content/range-proof-copy.ts",
+          "lib/site-content/starter-subscription.ts",
+          "scripts/browser-qa/entry-flows.cjs",
+          "scripts/check-parity.mjs"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-quarterly-home-kit-v47.tar.gz",
+          "local_gzip_sha256": "bce9e45f10715b1a9f689de539918aa41c4c0502ed23dc1afd468935e4291fb0",
+          "local_gzip_size_bytes": 163045508,
+          "saved_tar_content_hash": "sha256:8d2472ae47e8a4cc36cd294fd91b7ba96ee5f4c2040a9852eb91d0cf3d4b1b06",
+          "saved_tar_size_bytes": 171765760,
+          "file_count": 789
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/quarterly-home-kit-qa.json"
+        }
       }
     ]
   },
@@ -594,7 +625,7 @@
     "objective": "Refine the actual current landing, one section at a time, so its message is useful, compelling and logically sequenced for both audiences.",
     "authorized_routine_work": [
       "Read the current source and evidence",
-      "Use the established project manager, longevity-education copy expert and designer roles when useful",
+      "Use the three audit review roles with the owner’s point-by-point direction.",
       "Implement the next bounded refinement in the existing components",
       "Run relevant checks and browser QA",
       "Commit and push the exact reviewed source",
@@ -616,7 +647,12 @@
       "Do not turn the historical generic proposal into the active design direction.",
       "Ask a focused question only when a genuinely missing decision materially blocks work, changes the offer or exceeds the established scope."
     ],
-    "runtime_approval_distinction": "Standing user authorization is not a filesystem, network or native-tool approval bypass. Required platform reviews still apply. A handoff cannot disable permission prompts or carry credentials and process handles into a new session."
+    "runtime_approval_distinction": "Standing user authorization is not a filesystem, network or native-tool approval bypass. Required platform reviews still apply. A handoff cannot disable permission prompts or carry credentials and process handles into a new session.",
+    "audit_review_roles": [
+      "A bilingual marketing copy specialist selects concise wording.",
+      "A UX/UI specialist chooses a relevant design skill and places the change within the existing EVA design.",
+      "An independent reviewer uses Impeccable to verify rendered typography and spacing in both languages."
+    ]
   },
   "approved_business": {
     "starting_kit": {
@@ -984,7 +1020,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "The review baseline is version 48, UI commit 6a11d6f196a75c2c025176fd5d9c6c3c5cac711a. See docs/upload-allowance-qa.json for the allowance and docs/quarterly-home-kit-qa.json for the approved plan scope.",
+    "The review baseline is version 49, UI commit 0f02d6a4a6832cd8bcd00550a85e78a23453097b. See docs/report-format-qa.json and docs/upload-allowance-qa.json.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -1091,7 +1127,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 48 is published with the report upload allowance. Methodology figures remain deferred until model training finishes. Routine review-site edits, checks, commits and publication remain authorized. Production cutover stays on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 49 is published with PDF and photo guidance before free signup. Use the three specialist roles for each audit change. Methodology figures remain deferred until model training finishes. Routine review-site edits, checks, commits and publication remain authorized. Production cutover stays on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -1102,10 +1138,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-18",
-    "user_direction": "Align public and preview upload access with five free uploads per account in total and two independent sources of unlimited uploads: an active subscription or the year following purchase of the separate €499 clinical panel.",
-    "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
-    "live_version": 48,
-    "status": "Report-upload allowance published and browser-verified."
+    "user_direction": "Add bilingual PDF/photo guidance to the free signup path and use three distinct specialists for each audit change.",
+    "synchronized_main_commit": "0f02d6a4a6832cd8bcd00550a85e78a23453097b",
+    "live_version": 49,
+    "status": "Free report format guidance published and browser-verified."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -1139,5 +1175,5 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a"
+  "github_current_ui_source": "0f02d6a4a6832cd8bcd00550a85e78a23453097b"
 }

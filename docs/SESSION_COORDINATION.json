@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 48,
-    "deployed_ui_commit": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_000f01f49a808191a277a1a938426982",
-    "deployment_id": "appgdep_6afde59bce68819184a44fb55b216416",
-    "main_head_before_coordination": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing?review=48"
+    "live_version": 49,
+    "deployed_ui_commit": "0f02d6a4a6832cd8bcd00550a85e78a23453097b",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ada9da284e708191a887f30556b77430",
+    "deployment_id": "appgdep_6afde8711eb08191a89d349a70f5b079",
+    "main_head_before_coordination": "0f02d6a4a6832cd8bcd00550a85e78a23453097b",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=49#empezar"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -137,15 +137,21 @@
       "source_commit": "6a11d6f196a75c2c025176fd5d9c6c3c5cac711a",
       "status": "Version 48 published and browser-verified.",
       "qa": "docs/upload-allowance-qa.json"
+    },
+    {
+      "section": "Free report format guidance",
+      "source_commit": "0f02d6a4a6832cd8bcd00550a85e78a23453097b",
+      "status": "Version 49 published and browser-verified.",
+      "qa": "docs/report-format-qa.json"
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version 48 upload allowance published and verified.",
+      "status": "Version 49 published and browser-verified.",
       "next_section": null,
       "pending_verification": null,
-      "section": "Free and subscriber report uploads",
+      "section": "Bilingual PDF/photo guidance and three-specialist review",
       "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."

@@ -2,9 +2,9 @@
 
 The working source for EVA’s rebranded website lives in [imthejuandi/EvaRebranded](https://github.com/imthejuandi/EvaRebranded), on `main`. It includes the bilingual landing, approved media, application preview, design history, integration references and browser QA evidence.
 
-The current review is **version 48**, UI commit `6a11d6f196a75c2c025176fd5d9c6c3c5cac711a`. A free account includes five report uploads in total. Reports are unlimited while the home-kit subscription is active or for one year from purchase of the separate €499 clinical panel. The clinical panel is a one-time purchase and requires no subscription. [Upload allowance QA](docs/upload-allowance-qa.json) · [Quarterly home kit](docs/quarterly-home-kit-qa.json) · [Runner timing](docs/runner-2-5-second-entrance-qa.json). [Original consolidation verification](docs/github-workspace-verification.json) records the earlier fresh-checkout checks.
+The current review is **version 49**, UI commit `0f02d6a4a6832cd8bcd00550a85e78a23453097b`. [Free report format and three-specialist review](docs/report-format-qa.json). A free account includes five report uploads in total. Reports are unlimited while the home-kit subscription is active or for one year from purchase of the separate €499 clinical panel. The clinical panel is a one-time purchase and requires no subscription. [Upload allowance QA](docs/upload-allowance-qa.json) · [Quarterly home kit](docs/quarterly-home-kit-qa.json) · [Runner timing](docs/runner-2-5-second-entrance-qa.json). [Original consolidation verification](docs/github-workspace-verification.json) records the earlier fresh-checkout checks.
 
-- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=48) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=48).
+- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=49) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=49).
 - Continue the remaining work: [Launch handoff](docs/LAUNCH_HANDOFF.md).
 - Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [upload allowance QA](docs/upload-allowance-qa.json).
 
