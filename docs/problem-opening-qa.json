@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "published_version": 50,
+  "deployed_ui_commit": "f98b45778f135c097e8ec3fb469555172ef585d3",
+  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3523ecd9d2348191ae76ba4d97e30a01",
+  "deployment_id": "appgdep_6afdf128c13481919737eddd129c7ac3",
+  "scope": "Landing between the runner and home collection, English and Spanish.",
+  "copy": {
+    "en": {
+      "masthead": "Explore",
+      "masthead_accessible_name": "Explore why blood test results can be hard to read",
+      "discovery": "Discover why",
+      "heading": "I have my results. What do these numbers mean?",
+      "finding": "In a U.S. study, 49% of participants missed a blood sugar marker above the range shown on a sample lab report.",
+      "context": "886 of 1,817 adults. The table listed the ranges without flagging high or low values. The marker was HbA1c.",
+      "source_accessible_name": "Read the study in JMIR, 2014",
+      "bridge": "EVA explains what each marker measures and what your result may mean for you.",
+      "hero_support": "Your blood test results, in plain language."
+    },
+    "es": {
+      "masthead": "Explora",
+      "masthead_accessible_name": "Explora por qué puede costar entender una analítica",
+      "discovery": "Descubre por qué",
+      "heading": "Ya tengo mi analítica. ¿Qué significan estos números?",
+      "finding": "En un estudio de EE. UU., el 49 % de los participantes no identificó un marcador de glucosa por encima del rango indicado en una analítica de ejemplo.",
+      "context": "886 de 1.817 adultos. La tabla mostraba los rangos sin marcar los valores altos o bajos. El marcador era la HbA1c.",
+      "source_accessible_name": "Leer el estudio en JMIR, 2014",
+      "bridge": "EVA te explica qué mide cada marcador y qué puede indicar tu resultado.",
+      "hero_support": "Tu analítica, explicada con claridad."
+    }
+  },
+  "source_review": {
+    "selected": {
+      "study": "Zikmund-Fisher et al., Journal of Medical Internet Research, 2014;16(8):e187",
+      "doi": "10.2196/jmir.3241",
+      "url": "https://www.jmir.org/2014/8/e187/",
+      "design": "US online opt-in panel, ages 40–70, January 2013. Participants viewed a fictional result table with values, units and reference ranges, without high/low flags.",
+      "numerator_identified_high_HbA1c": 931,
+      "denominator": 1817,
+      "not_identified_high": 886,
+      "not_identified_percent": 48.76,
+      "limits": "A simulated single-marker, US study. It does not establish the rate for all blood tests, people in Spain, or EVA customers.",
+      "eligible_for_claim": "Hypothetical task concerning one blood sugar marker (HbA1c). Participants saw 7.1% or 8.4%, each above the printed reference range. About half of questionnaire respondents reported diabetes (971 of 1,812)."
+    },
+    "alternatives": [
+      {
+        "study": "2025 JAMIA Open portal-barriers survey, Table 2",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11932648/",
+        "finding": "63 of 258 respondents selected difficulty interpreting lab values. The article reports 24.5%.",
+        "limits": "US convenience sample. This was a self-reported barrier. The selected study directly tested whether participants identified an above-range result."
+      },
+      {
+        "study": "2015 Canadian laboratory-results survey, Table 6",
+        "url": "https://www.jmir.org/2015/8/e191/",
+        "finding": "305 of 1,412 (21.6%) who first received their own laboratory results online were unclear whether to follow up with their clinician.",
+        "limits": "Observational British Columbia survey of self-reported next steps. It measures a different question from identifying a result above its range."
+      },
+      {
+        "candidate": "80% of annual checkups miss deficiencies",
+        "decision": "No verified denominator, defined deficiencies or independent comparator. Excluded.",
+        "review_scope": "Common claims about general health checks and illness outcomes do not establish this missing-deficiencies rate.",
+        "url": "https://www.cochrane.org/evidence/CD009009_general-health-checks-reducing-illness-and-mortality"
+      },
+      {
+        "candidate": "Meaning of a reference interval",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4783089/",
+        "finding": "Many lab reference intervals use the central 95% of a reference population. Around 1 in 20 reference-population values fall outside by definition.",
+        "decision": "Explains how an interval is set. Provides no estimate of missed disease.",
+        "decision_threshold_reference": "https://doi.org/10.1080/10408363.2018.1482256"
+      },
+      {
+        "candidate": "Fructosamine time window",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516260/",
+        "finding": "The 2023 AACC/ADA laboratory guideline describes a 15–30-day glucose window.",
+        "decision": "A product-relevant marker example for later education. The finding measures a time window rather than understanding of a lab report."
+      },
+      {
+        "candidate": "UK transplant decision-making pilot",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5809992/",
+        "finding": "Across nine scenarios, 13 of 20 participants underestimated the action needed at least once and 14 of 20 overestimated it at least once.",
+        "decision": "Small specialist cohort and a different question from reading a general lab report."
+      }
+    ],
+    "rationale": "The first-person question gives visitors a familiar task. The statistic measures how adults performed on a sample report. The source, denominator, marker and absence of high/low flags sit beside the finding. The bridge explains EVA’s role without claiming it improved the study result."
+  },
+  "specialist_reviews": {
+    "medical_evidence": "Checked the primary task, original denominator, alternative published findings and limits before choosing the statistic.",
+    "bilingual_marketing_copy": "Chose a visitor’s first-person question, qualified the result as a U.S. study and linked the explanation to what EVA can do with an existing report.",
+    "ux_ui": "Impeccable 4.9.0 Layout and Clarify, using the project’s .impeccable.md and rendered v49 reference. Placed the denominator and source beside the static dotted figure on warm paper and kept the order question → study → explanation → choice on small screens.",
+    "independent_typography": "Applied Impeccable to rendered English and Spanish views at 320, 390 and 1,366 CSS pixels. Checked text weight, wraps and spacing in both motion settings, at actual 200% Chrome zoom and with emulated Pixel 5 touch input."
+  },
+  "verification": {
+    "status": "passed",
+    "source": "TypeScript, production build, English route and language parity checks, all 14 core landing scenarios and all six English/Spanish preview entry scenarios passed on the release candidate.",
+    "local_motion": "From the first decoded runner frame, Discover became usable in 2.517 seconds on desktop and 2.483 seconds on mobile with native 1× footage. Measured in a separate low-contention run.",
+    "local_fallback": "The first JavaScript-disabled pass exposed a hidden poster and blocked discovery link. The repaired native anchor, visible poster, reachable study section and both enrollment destinations passed in English and Spanish.",
+    "live_supplemental": "All eight hero/masthead language and motion checks passed. Both languages passed true 200% Chrome zoom, touch navigation, and JavaScript-disabled native anchor, visible poster and enrollment checks.",
+    "live_responsive": "12 of 12 profiles passed at 320, 390 and 1,366 CSS pixels in English and Spanish, in normal and reduced-motion modes. Verified source and denominator, accessible reading order, one spoken percentage, keyboard focus, correct free/kit destinations and a static study statistic.",
+    "live_motion": "On one normal visit per device, the interval from first decoded runner frame to a clickable discovery link was 2.583 s on English desktop and 2.517 s on Spanish mobile. The footage played at 1×. Reduced-motion mode showed the static poster and active link.",
+    "live_regression": "All 14 bilingual core landing cases and six enrollment cases passed. Each language covered the opening, native Tasso playback with step navigation and pausing, kit, range, the Alex explanation-depth example, signal and trend. Both locale pages returned HTTP 200 and the expected title, source and section order. No JavaScript errors or mutating requests were observed in the enrollment journeys.",
+    "live_retest": "In the Spanish desktop reduced-motion profile, the initial probe read a node replaced during hydration. Rechecking the mounted page showed a visible 178.75 × 44 px discovery link."
+  },
+  "evidence": {
+    "workspace": "/workspace/eva-in-place-qa/evidence-opening-v50",
+    "baseline": "baseline-v49.json",
+    "local": [
+      "local.json",
+      "local-zoom200.json",
+      "local-touch.json",
+      "final-local-hero.json",
+      "final-local-fallback.json",
+      "local-v50-repeat-desktop.json",
+      "local-v50-repeat-mobile.json"
+    ],
+    "live": [
+      "live.json",
+      "live-hero.json",
+      "live-zoom200.json",
+      "live-touch.json",
+      "live-fallback.json",
+      "live-v50-timing-desktop.json",
+      "live-v50-timing-mobile.json",
+      "live-v50-timing-desktop-reduced.json",
+      "live-v50-timing-mobile-reduced.json",
+      "replay.json"
+    ]
+  }
+}
