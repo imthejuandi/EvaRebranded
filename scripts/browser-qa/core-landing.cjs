@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
-const version=process.env.EVA_REVIEW_VERSION||'50',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
+const version=process.env.EVA_REVIEW_VERSION||'51',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
 const cases=[{locale:'en',width:1440,height:900},{locale:'es',width:375,height:812}];
 const report={version:Number(version),scope:'Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend',cases:[],pageErrors:[],viewportEmulation:true,physicalDevice:false};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -12,15 +12,19 @@ async function test(name,page,result,fn){process.stdout.write(name+'\n');try{con
 await test('opening',page,result,async()=>{
  const discover=page.locator('[data-discover-problem]');
  const chapter=page.locator('[data-problem-chapter]');
- const explainer=chapter.getByRole('link',{name:/JMIR|medical internet research/i});
+ const referenceSource=chapter.locator('[data-report-reference-source]');
+ const contextSource=chapter.locator('[data-report-context-source]');
  const free=chapter.locator('.hero-kit-cta'),kit=chapter.locator('.hero-kit-secondary');
  assert.equal(await discover.getAttribute('href'),'#entender-tus-analisis');
  await discover.click();await target(free);await target(kit);
- assert.equal(await explainer.getAttribute('href'),'https://www.jmir.org/2014/8/e187/');
+ assert.equal(await referenceSource.getAttribute('href'),'https://cms.ifcc.org/media/476752/ifcc-c-ridl_global-study-part-1.pdf');
+ assert.match(await contextSource.getAttribute('href'), /^https:\/\/medlineplus\.gov\//);
+ assert.match(await chapter.innerText(), /95\s?%/);
+ assert.match(await chapter.innerText(), /healthy reference group|grupo de personas sanas/i);
  const href=new URL(await free.getAttribute('href'),base);
  assert.equal(href.searchParams.get('plan'),'free');assert.equal(href.searchParams.get('redirect'),'/es/upload');
  assert((await kit.innerText()).includes('13'));assert.equal(new URL(await kit.getAttribute('href'),base).searchParams.get('plan'),'quarterly');
- return {discoveryLink:true,primaryStudy:true,freePrimary:true,kit13Secondary:true};
+ return {discoveryLink:true,referenceMethodSource:true,personalContextSource:true,healthyReferenceGroup:true,freePrimary:true,kit13Secondary:true};
 });
 await test('tasso',page,result,async()=>{await page.locator('.chapter-nav button').nth(1).click();const section=page.locator('#recogida-en-casa [data-tasso-video-process]');await page.waitForFunction(()=>{const v=document.querySelector('#recogida-en-casa video');return v&&v.readyState>=2&&!v.paused},{},{timeout:25000});const actions=section.locator('.tasso-video-actions button'),middle=actions.nth(1);assert.equal(await section.locator('video').evaluate(v=>v.playbackRate),1);await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);const steps=section.locator('.tasso-video-steps button');await steps.nth(0).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='1');await actions.nth(2).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='2');await actions.nth(0).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='1');await steps.nth(2).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='3');await page.waitForFunction(()=>!document.querySelector('#recogida-en-casa video').paused);const before=await section.locator('video').evaluate(v=>v.currentTime);await wait(700);const after=await section.locator('video').evaluate(v=>v.currentTime);assert(after>before+.1,'Native film time advances');await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);await middle.focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>!document.querySelector('#recogida-en-casa video').paused);await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);await section.screenshot({path:`${out}/core-v${version}-tasso-${c.locale}.png`});return {nativeRate:1,previousNextAndDirectSteps:true,pausePlayKeyboard:true};});
 await test('kit',page,result,async()=>{const kit=page.locator('#kit-inicial');assert.equal(await kit.getAttribute('data-kit-transition-duration-ms'),'500');await clock(page,kit,100);assert.equal(await kit.locator('.stage .kit-marker-name').count(),13);const nodes=await kit.locator('.stage .kit-marker-name').allTextContents();const start=Date.now();await clock(page,kit,145);await page.waitForFunction(()=>{const d=document.querySelector('#kit-inicial').dataset;return d.kitRevealState==='complete'&&Number(d.kitPresentationClock)>299},{},{timeout:4000});const elapsed=Date.now()-start;assert(elapsed<1700,'500ms reveal plus browser scheduling tolerance');assert.deepEqual(await kit.locator('.stage .kit-marker-name').allTextContents(),nodes);const meanings=await kit.locator('.stage [data-kit-meaning]').evaluateAll(es=>es.map(e=>Number(getComputedStyle(e).opacity)));assert.equal(meanings.length,13);assert(meanings.every(x=>x>.98));await clock(page,kit,100);await page.waitForFunction(()=>Number(document.querySelector('#kit-inicial').dataset.kitPresentationClock)<141,{},{timeout:2500});assert.deepEqual(await kit.locator('.stage .kit-marker-name').allTextContents(),nodes);return {actualMarkers:13,forwardRevealElapsedMs:elapsed,reverse:true,sameMarkerNames:true};});

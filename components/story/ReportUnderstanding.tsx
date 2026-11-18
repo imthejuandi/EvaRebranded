@@ -4,7 +4,6 @@ import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {useEffect, useRef} from 'react';
 import {reportStudyUrl, reportUnderstanding} from '@/lib/site-content/report-understanding';
 import {Arrow} from './Arrow';
-import {DotNumber} from './DotNumber';
 import {HeroKitCta} from './HeroKitCta';
 import './report-understanding.css';
 
@@ -39,15 +38,17 @@ export function ReportUnderstanding({calm}: {calm: boolean}) {
       <h2 id="report-understanding-title">{copy.heading[0]} <em>{copy.heading[1]}</em></h2>
       <div className="report-study">
         <p className="report-finding">
-          <span className="report-study-intro">{copy.studyIntro}</span>{' '}
-          <span className="report-stat">{copy.article && <span className="report-article">{copy.article}</span>}
-            <span aria-hidden="true" className="report-dotted-stat"><DotNumber value="49" calm active={false}/><span>%</span></span>
-            <span className="sr-only">{copy.percent}</span>
-          </span>{' '}
-          <span className="report-study-text">{copy.finding}</span>
+          {copy.finding[0]} <strong>{copy.finding[1]}</strong> {copy.finding[2]}
         </p>
+        <div className="report-reference-strip" aria-hidden="true">
+          <div className="report-reference-dots"/>
+          <div className="report-reference-bounds"><span>{copy.interval}</span></div>
+        </div>
+        <a className="report-study-source" href={reportStudyUrl} aria-label={copy.source} data-report-reference-source>IFCC · PDF</a>
+      </div>
+      <div className="report-context">
         <p className="report-study-context">{copy.context}</p>
-        <a className="report-study-source" href={reportStudyUrl} aria-label={copy.source}>JMIR, 2014</a>
+        <a className="report-study-source" href={copy.contextUrl} aria-label={copy.contextSource} data-report-context-source>NIH MedlinePlus</a>
       </div>
       <div className="report-next">
         <p className="report-bridge">{copy.bridge}</p>
