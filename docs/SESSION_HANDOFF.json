@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-18",
-  "handoff_status": "RUNNER_ENTRANCE_SPEED_COMPLETE_V46",
-  "immediate_instruction": "Review version 46 is published. The opening uses a 2.48× entrance clock. The free entry link becomes usable about 2.5 seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed. See docs/runner-2-5-second-entrance-qa.json for the live comparison.",
+  "handoff_status": "QUARTERLY_HOME_KIT_ALIGNED_V47",
+  "immediate_instruction": "Review version 47 is published. The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context. See docs/quarterly-home-kit-qa.json and the version 46 hero checks in docs/runner-2-5-second-entrance-qa.json.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 46 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
+    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 47 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,32 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 45,
-      "source_commit": "60c42b72101a1a10a3530835c4f99263b6da1fa1",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5b223eb5d9648191bc3e730f8c199cb0",
-      "deployment_id": "appgdep_6afdd9cfbf5081919676c892a969e152",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-18T17:01:17.542636+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=45",
-      "behavior": "The opening uses a 2.05× entrance clock. The free entry link becomes usable about three seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed.",
-      "source_files": [
-        "lib/story-scroll-timing.ts"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-three-second-entrance-v45.tar.gz",
-        "local_gzip_sha256": "4a9a2b7fa6e44c351078f14abd283d9733ab3b8a9dc835b72774a280338c369d",
-        "local_gzip_size_bytes": 163041305,
-        "saved_tar_content_hash": "sha256:0601c30b6eb2e5008ebdb95aa13751b219fe9236344c5207b7b373936cc9db8e",
-        "saved_tar_size_bytes": 171755520,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/runner-three-second-entrance-qa.json"
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 46,
       "source_commit": "3726d7e0097667272b8ec7e79cc1a0955d00c619",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ba7da048363081918cd40a2952701b13",
@@ -87,11 +61,72 @@
         "record": "docs/runner-2-5-second-entrance-qa.json"
       }
     },
-    "latest_verified_ui_release_note": "Review version 46 serves UI commit 3726d7e0097667272b8ec7e79cc1a0955d00c619. The subsequent handoff commit records the published release.",
+    "latest_verified_ui_release": {
+      "version_number": 47,
+      "source_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "status": "succeeded",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3862fb1030b8819183a434a9951ac915",
+      "deployment_id": "appgdep_6afde2314aec8191a7169965818eaae0",
+      "native_updated_at": "2026-11-18T17:37:01.177424+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing?review=47",
+      "behavior": "The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context.",
+      "source_files": [
+        "app/(english)/en/pricing/page.tsx",
+        "app/(spanish)/es/pricing/page.tsx",
+        "app/landing-closing.css",
+        "app/method-journey.css",
+        "components/pages/book/BookPage.tsx",
+        "components/pages/book/book.css",
+        "components/pages/dashboard/DashboardPage.tsx",
+        "components/pages/method/MethodPage.tsx",
+        "components/pages/method/method.css",
+        "components/pages/pricing/PricingPage.tsx",
+        "components/pages/pricing/RhythmTheatre.tsx",
+        "components/pages/pricing/ServiceCalendar.tsx",
+        "components/pages/pricing/ServiceContents.tsx",
+        "components/pages/pricing/pricing.css",
+        "components/pages/profile/ProfilePage.tsx",
+        "components/pages/profile/profile.css",
+        "components/preview/AccessPage.tsx",
+        "components/preview/CheckoutPage.tsx",
+        "components/preview/OnboardingPage.tsx",
+        "components/site/ContactPage.tsx",
+        "components/site/DocumentPage.tsx",
+        "components/site/RestoredContent.tsx",
+        "components/site/ReviewHub.tsx",
+        "components/site/SiteShell.tsx",
+        "components/story/BusinessOffer.tsx",
+        "components/story/HeroKitCta.tsx",
+        "components/story/MethodJourney.tsx",
+        "docs/content-parity-verification.json",
+        "lib/preview/utility-policy.test.mjs",
+        "lib/site-content/closing-copy.ts",
+        "lib/site-content/documents-bilingual.json",
+        "lib/site-content/locales/public.en.json",
+        "lib/site-content/range-proof-copy.ts",
+        "lib/site-content/starter-subscription.ts",
+        "scripts/browser-qa/entry-flows.cjs",
+        "scripts/check-parity.mjs"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-quarterly-home-kit-v47.tar.gz",
+        "local_gzip_sha256": "bce9e45f10715b1a9f689de539918aa41c4c0502ed23dc1afd468935e4291fb0",
+        "local_gzip_size_bytes": 163045508,
+        "saved_tar_content_hash": "sha256:8d2472ae47e8a4cc36cd294fd91b7ba96ee5f4c2040a9852eb91d0cf3d4b1b06",
+        "saved_tar_size_bytes": 171765760,
+        "file_count": 789
+      },
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/quarterly-home-kit-qa.json"
+      }
+    },
+    "latest_verified_ui_release_note": "Review version 47 serves UI commit 846661eed358bc272aa4e6613e0ab05b53a9d595. The subsequent handoff commit records the published release.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 46 source 3726d7e0097667272b8ec7e79cc1a0955d00c619",
+      "relation": "QA/docs followup to version 47 source 846661eed358bc272aa4e6613e0ab05b53a9d595",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
@@ -99,7 +134,7 @@
         "docs/LAUNCH_HANDOFF.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/runner-2-5-second-entrance-qa.json"
+        "docs/quarterly-home-kit-qa.json"
       ]
     },
     "earlier_verified_ui_release": {
@@ -474,6 +509,32 @@
           "status": "passed_actual_browser",
           "record": "docs/runner-entrance-speed-qa.json"
         }
+      },
+      {
+        "version_number": 45,
+        "source_commit": "60c42b72101a1a10a3530835c4f99263b6da1fa1",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5b223eb5d9648191bc3e730f8c199cb0",
+        "deployment_id": "appgdep_6afdd9cfbf5081919676c892a969e152",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-18T17:01:17.542636+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=45",
+        "behavior": "The opening uses a 2.05× entrance clock. The free entry link becomes usable about three seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed.",
+        "source_files": [
+          "lib/story-scroll-timing.ts"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-three-second-entrance-v45.tar.gz",
+          "local_gzip_sha256": "4a9a2b7fa6e44c351078f14abd283d9733ab3b8a9dc835b72774a280338c369d",
+          "local_gzip_size_bytes": 163041305,
+          "saved_tar_content_hash": "sha256:0601c30b6eb2e5008ebdb95aa13751b219fe9236344c5207b7b373936cc9db8e",
+          "saved_tar_size_bytes": 171755520,
+          "file_count": 787
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/runner-three-second-entrance-qa.json"
+        }
       }
     ]
   },
@@ -491,7 +552,7 @@
     "communication": "Give concise progress updates and concrete review links. Continue authorized work rather than stopping at a plan or asking whether to proceed after each routine step.",
     "no_repeat_confirmation_for": [
       "The exact13-marker list",
-      "The €99 plus VAT starting-kit price",
+      "The home-kit subscription at €99 plus VAT each quarter, cancel anytime",
       "The two approved audiences",
       "Preserving the existing landing design instead of rebuilding it",
       "Ordinary edit, check, commit, push and review-site publication already within this task"
@@ -507,8 +568,8 @@
   "approved_business": {
     "starting_kit": {
       "marker_count": 13,
-      "price_display": "€99 + VAT",
-      "price_context": "At-home kit",
+      "price_display": "€99 + VAT per quarter",
+      "price_context": "Quarterly home-kit subscription",
       "vat_rate": null,
       "consumer_payable_total": null,
       "markers": [
@@ -525,7 +586,10 @@
         "ALT",
         "GGT",
         "Fructosamine"
-      ]
+      ],
+      "price_status": "Provisional review price pending final pricing",
+      "billing_interval": "quarterly",
+      "cancellation": "Cancel anytime"
     },
     "audiences": [
       {
@@ -537,16 +601,16 @@
         "need": "Gain more meaning from previous/current results, compare compatible history and choose what to measure next with guidance."
       }
     ],
-    "entry_priority": "Current approved hero starts free with previous lab reports. Ordering the13-marker kit is the secondary entry, with €99 + VAT visible.",
-    "quarterly_position": "Around 90 days is a suggested opportunity to review, not an automatic requirement to repeat the same panel for everyone.",
-    "ownership": "The customer chooses a next available panel with EVA's guidance. Future panel scope and prices are separate; do not imply every switch is included at €99.",
+    "entry_priority": "Free interpretation of existing lab reports is the primary entry. The home-kit subscription is the paid entry at €99 + VAT per quarter for 13 biomarkers, cancel anytime.",
+    "quarterly_position": "Each quarterly subscription kit measures the 13 named markers. A first result is a starting point and later comparable results build a personal baseline or show change. Clinical testing frequency depends on the marker and individual circumstances.",
+    "ownership": "The home subscription covers the named 13-marker panel. Any other future panel or standalone laboratory service has its own scope, price and terms.",
     "do_not_reintroduce": [
       "15-marker starting-kit claims",
       "60 guaranteed marker results per year",
       "ApoB, HbA1c, insulin, vitamin D or ferritin as starting-kit inclusions",
       "An invented VAT rate, gross total, annual discount or inclusive specialist-panel entitlement"
     ],
-    "remaining_commercial_facts": "The VAT-inclusive payable total, future-panel catalogue/pricing, exact recurring billing and unresolved operational terms must be confirmed before a real purchase flow relies on them. These do not block ordinary review-page copy refinement."
+    "remaining_commercial_facts": "Confirm final pricing and the amount including tax. Verify real checkout, cancellation processing, fulfillment, and separate future-panel prices before launch."
   },
   "approved_design_and_motion": {
     "direction": "Evolve the existing Site. Keep the accepted runner, luminous/dot style, warm-paper/ink typography, actual results mockups, Tasso footage and lifestyle imagery.",
@@ -658,7 +722,7 @@
       "preserve": "Keep the approved age/score content, qualifications and assets; do not restore the earlier method → return-to-life → age → lifestyle order.",
       "numbering": "Version 37 removed decorative ordinal prefixes from health, age, method, founder and offer labels. Actual process steps, readings and timeline months remain."
     },
-    "closing_priority": "Preserve the free account/upload interpretation action first in closing DOM/visual hierarchy. Optional kit remains13markers€99+VAT using the existing internal plan=quarterly intent; that parameter is not a recurring-price claim.",
+    "closing_priority": "Free account/report interpretation comes first. The optional home kit is a cancel-anytime subscription for 13 biomarkers at €99 + VAT per quarter.",
     "evidence_typography_v42": {
       "font": "Installed EVA Hanken regular 400/semibold 600, existing Georgia italic 400; no new font assets.",
       "roles": "44px desktop/34px phone headings;16px/24px body;12px metadata;8/16/24 spacing.",
@@ -858,7 +922,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "The review baseline is version 46, UI commit 3726d7e0097667272b8ec7e79cc1a0955d00c619. Read docs/runner-2-5-second-entrance-qa.json for the scoped runner checks.",
+    "The review baseline is version 47, UI commit 846661eed358bc272aa4e6613e0ab05b53a9d595. Read docs/quarterly-home-kit-qa.json for the pricing update and docs/runner-2-5-second-entrance-qa.json for the runner.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -936,7 +1000,7 @@
       "EVA_REVIEW_VERSION=38 node scripts/browser-qa/core-landing.cjs"
     ],
     "final_browser_instructions": "Read scripts/browser-qa/README.md. The review query is not a deployment pin: verify current native Site version first. Reports/screenshots are written outside the repo, final version 38 evidence is tracked in docs/browser-qa-v38. Wait for computed CSS readiness and fonts before measuring. Close every owned browser. Flow tests block all mutating network requests and stop before upload/checkout confirmation.",
-    "current_scoped_qa": "docs/runner-2-5-second-entrance-qa.json compares the opening timing in published versions 45 and 46. Earlier QA records retain their historical scope."
+    "current_scoped_qa": "docs/quarterly-home-kit-qa.json records the verified quarterly offer, bilingual entry links and tested preview outcomes. The timing evidence for the existing runner is in docs/runner-2-5-second-entrance-qa.json."
   },
   "permissions_and_security": {
     "writable_roots": [
@@ -965,7 +1029,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 46 is published with the 2.5-second runner entrance. Routine review-site edits, checks, commits and publication remain authorized. Production cutover stays on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 47 is published with the bilingual quarterly kit offer. Routine review-site edits, checks, commits and publication remain authorized. Production cutover stays on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -976,10 +1040,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-18",
-    "user_direction": "Bring the time from the runner starting to the first usable link to about 2.5 seconds.",
+    "user_direction": "Present the 13-marker home kit as a cancel-anytime quarterly subscription at €99 plus VAT, including the role of baseline and comparable repeat tests.",
     "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
-    "live_version": 46,
-    "status": "Runner entrance timing published and browser-verified. No UI files reserved."
+    "live_version": 47,
+    "status": "Quarterly kit copy published and browser-verified. No UI files reserved."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -1013,5 +1077,5 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "3726d7e0097667272b8ec7e79cc1a0955d00c619"
+  "github_current_ui_source": "846661eed358bc272aa4e6613e0ab05b53a9d595"
 }

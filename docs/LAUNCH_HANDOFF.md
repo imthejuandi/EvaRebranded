@@ -4,11 +4,11 @@ Updated 18 November 2026. GitHub `imthejuandi/EvaRebranded`, branch `main`, is t
 
 ## Approved baseline
 
-The current landing is **review version 46**, deployed UI commit `3726d7e0097667272b8ec7e79cc1a0955d00c619`. The opening uses a 2.48× entrance clock. The free entry link becomes usable about 2.5 seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed. [Runner timing checks](runner-2-5-second-entrance-qa.json) compare this release with [version 45](runner-three-second-entrance-qa.json). Version 43 introduced the [Trend emphasis](trend-emphasis-qa.json) on top of the [typography and spacing pass](impeccable-typography-qa.json).
+The current review is **version 47**, deployed UI commit `846661eed358bc272aa4e6613e0ab05b53a9d595`. The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context. [Quarterly kit QA](quarterly-home-kit-qa.json) records the published checks. [Version 46 runner timing](runner-2-5-second-entrance-qa.json) records the measured entrance.
 
-Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=46) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=46). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
+Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=47) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=47). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
 
-Preserve the runner, analog dots, typography, Tasso footage, dashboard examples, lifestyle imagery and narrative order. Free interpretation of previous reports leads; the optional starting kit contains 13 biomarkers at **€99 + VAT**. The internal `quarterly` preview intent does not advertise an automatic recurring offer.
+Preserve the runner, analog dots, typography, Tasso footage, dashboard examples, lifestyle imagery and narrative order. Free interpretation of previous reports leads. The optional home kit is a **quarterly subscription for 13 biomarkers, cancel anytime**. Its provisional review price is **€99 + VAT per quarter**, pending final pricing. The separate €499 laboratory service has its own terms.
 
 Version 39 groups Method controls with their copy, stacks guided results at 701–1050px, uses 72px phone offer bottom padding and balances the founder quotation. Version 40 further condenses dashboard examples and removes outgoing reference symbols. Version 41 starts Trend in One reading, reveals history only on request, and explains comparable repeat tests, baseline and context with an individualized cadence. Version 42 shares the installed Hanken 400/600 type roles and spacing across these examples, quiets secondary marker controls, and improves text contrast while preserving the established glass/dots. Approved media and application flow handlers are preserved.
 
@@ -22,8 +22,8 @@ The dashboard integration directory is an inactive reference from an earlier bac
 
 ## Remaining details before launch
 
-1. **Reconcile wider commercial pages.** The landing and first-kit entry flow use 13 biomarkers and €99 + VAT. `/pricing`, `PricingPage.tsx`, `ServiceCalendar.tsx` and restored pricing material retain legacy 15-marker, quarterly, annual and €499 examples. Review them together before presenting them as current offers.
-2. **Complete purchase terms.** Confirm the VAT-inclusive payable amount, delivery/fulfillment terms, available future panels and their separate scope/prices, and any recurring arrangement. Do not infer them from preview plan IDs or old mock prices.
+1. **Keep commercial facts consistent.** Carry the quarterly fee, cancellation and the named 13-marker panel from the public offer to payment and receipt. Check any restored historical content against the current terms before putting it in a customer journey.
+2. **Verify purchase and cancellation.** Confirm final pricing, the VAT-inclusive payable amount, delivery and fulfillment terms, any separate future-panel prices, and how cancellation takes effect in the real service. Exercise quarterly billing and cancellation with test payments before taking orders.
 3. **Set the free-upload policy.** Historical notes describe unlimited uploads; the current preview models five lifetime uploads. Confirm one policy before connecting production enforcement and public wording.
 4. **Finalize legal and contact content.** Review privacy, cookies, service terms, consents and operational/contact details against the actual service and vendors.
 5. **Integrate the real application.** Reuse existing production authentication and backend through explicit adapters. Verify report ownership, signed uploads, processing jobs, entitlements, consents, checkout, fulfillment, account operations and AI streaming. Replace each mock path when its real integration passes.

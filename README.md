@@ -2,11 +2,11 @@
 
 The working source for EVA’s rebranded website lives in [imthejuandi/EvaRebranded](https://github.com/imthejuandi/EvaRebranded), on `main`. It includes the bilingual landing, approved media, application preview, design history, integration references and browser QA evidence.
 
-The current landing baseline is **review version 46**, UI commit `3726d7e0097667272b8ec7e79cc1a0955d00c619`. The opening uses a 2.48× entrance clock. The free entry link becomes usable about 2.5 seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed. [Runner timing checks](docs/runner-2-5-second-entrance-qa.json) record the comparison with version 45. [Original consolidation verification](docs/github-workspace-verification.json) records the earlier fresh-checkout checks.
+The current review is **version 47**, UI commit `846661eed358bc272aa4e6613e0ab05b53a9d595`. The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context. [Quarterly kit QA](docs/quarterly-home-kit-qa.json) records the bilingual checks. [Version 46 runner timing](docs/runner-2-5-second-entrance-qa.json) records the 2.5-second entrance. [Original consolidation verification](docs/github-workspace-verification.json) records the earlier fresh-checkout checks.
 
-- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=46) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=46).
+- Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=47) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=47).
 - Continue the remaining work: [Launch handoff](docs/LAUNCH_HANDOFF.md).
-- Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [runner timing QA](docs/runner-2-5-second-entrance-qa.json).
+- Project rules and evidence: [AGENTS.md](AGENTS.md), [session handoff](docs/SESSION_HANDOFF.json) and [quarterly kit QA](docs/quarterly-home-kit-qa.json).
 
 **Production cutover is on hold.** This source synchronization does not connect the rebrand to `evahealth.es`, change DNS or activate production services. Application screens use browser-local fictional data. Commercial, legal and integration details remain before launch.
 

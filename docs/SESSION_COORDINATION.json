@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 46,
-    "deployed_ui_commit": "3726d7e0097667272b8ec7e79cc1a0955d00c619",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_ba7da048363081918cd40a2952701b13",
-    "deployment_id": "appgdep_6afddbf97300819186b82409d671a521",
-    "main_head_before_coordination": "3726d7e0097667272b8ec7e79cc1a0955d00c619",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=46"
+    "live_version": 47,
+    "deployed_ui_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_3862fb1030b8819183a434a9951ac915",
+    "deployment_id": "appgdep_6afde2314aec8191a7169965818eaae0",
+    "main_head_before_coordination": "846661eed358bc272aa4e6613e0ab05b53a9d595",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing?review=47"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -125,15 +125,21 @@
       "source_commit": "3726d7e0097667272b8ec7e79cc1a0955d00c619",
       "status": "Review version 46 published and verified on the English desktop and Spanish phone-size landing.",
       "qa": "docs/runner-2-5-second-entrance-qa.json"
+    },
+    {
+      "section": "Quarterly home-kit offer across bilingual marketing and the kit entry flow",
+      "source_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
+      "status": "Review version 47 published and verified.",
+      "qa": "docs/quarterly-home-kit-qa.json"
     }
   ],
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Runner entrance timing complete. Review version 46 published and verified.",
+      "status": "Quarterly kit offer complete. Review version 47 published and verified.",
       "next_section": null,
       "pending_verification": null,
-      "section": "Landing runner entrance timing",
+      "section": "Quarterly home-kit offer across bilingual marketing and the kit entry flow",
       "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
@@ -148,7 +154,7 @@
     "The version 35 concrete lifestyle narrative and accepted coastal media/title/controls",
     "Version 36 user-approved order: Trendlines → age/score → method → return-to-life → lifestyle → founder",
     "Version 37 founder quote verbatim, free-first closing, optional 13-marker €99 + VAT kit, accessible footer and unnumbered editorial kickers",
-    "Version 38 normal-flow review shortcut and13-marker €99 + VAT first-kit signup/onboarding/checkout with no automatic recurring claim"
+    "Version 38 review shortcut in normal document flow. Version 47 kit signup, onboarding and checkout present a cancel-anytime quarterly subscription for 13 biomarkers at €99 + VAT per quarter."
   ],
   "coordination_workflow": [
     "Read AGENTS.md, docs/SESSION_HANDOFF.json and this note after refreshing current main; preserve dirty work before attempting a refresh.",

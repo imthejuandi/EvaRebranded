@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "published_version": 47,
+  "deployed_ui_commit": "846661eed358bc272aa4e6613e0ab05b53a9d595",
+  "scope": "The home kit is a cancel-anytime quarterly subscription covering 13 named biomarkers. The review price is €99 + VAT per quarter, pending final pricing. The first reading provides a starting point, and comparable later readings help put changes in context.",
+  "routes": {
+    "english": "https://eva-content-review.jdlagop.chatgpt.site/en/pricing",
+    "spanish": "https://eva-content-review.jdlagop.chatgpt.site/es/pricing"
+  },
+  "checks": [
+    "TypeScript",
+    "Static production build (113 routes)",
+    "Eight unit tests",
+    "Bilingual pricing and member-flow checks on the local build"
+  ],
+  "published_browser_verification": {
+    "status": "passed",
+    "pricing_cases": [
+      {
+        "language": "en",
+        "device": "desktop",
+        "displayed_price": "€99 + VAT per quarter",
+        "listed_biomarkers": 13,
+        "free_offer": "€0 no subscription",
+        "separate_lab_offer": "€499 one-off payment"
+      },
+      {
+        "language": "es",
+        "device": "mobile",
+        "displayed_price": "99 € + IVA por trimestre",
+        "listed_biomarkers": 13,
+        "free_offer": "0 € sin suscripción",
+        "separate_lab_offer": "499 € pago único"
+      },
+      {
+        "language": "es",
+        "device": "desktop",
+        "displayed_price": "99 € + IVA por trimestre",
+        "listed_biomarkers": 13,
+        "free_offer": "0 € sin suscripción",
+        "separate_lab_offer": "499 € pago único"
+      },
+      {
+        "language": "en",
+        "device": "mobile",
+        "displayed_price": "€99 + VAT per quarter",
+        "listed_biomarkers": 13,
+        "free_offer": "€0 no subscription",
+        "separate_lab_offer": "€499 one-off payment"
+      }
+    ],
+    "responsive_checks": {
+      "count": 6,
+      "conditions": "English and Spanish landing and pricing at 320, 390 and 1366 CSS pixels."
+    },
+    "public_surfaces": [
+      "/en",
+      "/en/how-it-works",
+      "/en/legal/terms",
+      "/es",
+      "/es/how-it-works",
+      "/es/legal/terms"
+    ],
+    "entry_checks": [
+      {
+        "language": "en",
+        "plan": "free",
+        "stopped_at": "upload"
+      },
+      {
+        "language": "en",
+        "plan": "quarterly",
+        "stopped_at": "checkout, before confirmation"
+      },
+      {
+        "language": "es",
+        "plan": "free",
+        "stopped_at": "upload"
+      },
+      {
+        "language": "es",
+        "plan": "quarterly",
+        "stopped_at": "checkout, before confirmation"
+      }
+    ],
+    "page_errors": [],
+    "network_writes_during_entry_checks": [],
+    "test_mode": "Chromium; browser-local fictional account and plan state. Paid flows stopped before confirmation.",
+    "initial_attempts": "In the initial verification, two pricing profiles timed out during loading or interaction and one Spanish free-path attempt stopped at the example-report action. Successful verification on reattempt is recorded separately from those initial observations."
+  },
+  "release_scope": "The home kit renews quarterly and can be cancelled anytime. €99 + VAT per quarter is provisional. The final price, amount including tax, actual payment handling, cancellation fulfillment and laboratory operations still require production verification. The separate free report and laboratory services keep their own scope."
+}
