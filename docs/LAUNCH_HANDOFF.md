@@ -1,12 +1,12 @@
 # EVA rebrand launch handoff
 
-Updated 13 November 2026. GitHub `imthejuandi/EvaRebranded`, branch `main`, is the consolidated workspace for finishing the rebranded website. The user requested this preparation and explicitly postponed publication to `evahealth.es`.
+Updated 18 November 2026. GitHub `imthejuandi/EvaRebranded`, branch `main`, is the consolidated workspace for finishing the rebranded website. The user requested this preparation and explicitly postponed publication to `evahealth.es`.
 
 ## Approved baseline
 
-The current landing is **review version 43**, deployed UI commit `7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9`. It preserves the scoped Impeccable pass that improves font consistency, spacing, visual hierarchy and glass text contrast in the four modified evidence examples. The latest change adds three short emphasis phrases to the Trend lead, preserving its exact wording and sizing. Checks are recorded in [Trend emphasis QA](trend-emphasis-qa.json), [typography/layout QA](impeccable-typography-qa.json), [dashboard conciseness QA](dashboard-conciseness-qa.json) and [manual Trend QA](trend-manual-qa.json). The synchronization joins the existing GitHub import history with the review-source history and preserves earlier accepted work.
+The current landing is **review version 44**, deployed UI commit `71571c8bb1092e8f7d6099d3dc0385b6314899a8`. The landing runner entrance and the reveal of its headline and entry links run at 1.5×. The footage plays at native speed. [Runner timing checks](runner-entrance-speed-qa.json) record the measured differences. Version 43 introduced the [Trend emphasis](trend-emphasis-qa.json) on top of the [typography and spacing pass](impeccable-typography-qa.json).
 
-Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=43) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=43). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
+Review: [English](https://eva-content-review.jdlagop.chatgpt.site/en?review=44) · [Español](https://eva-content-review.jdlagop.chatgpt.site/es?review=44). The query is a review label; native receipts in [SESSION_HANDOFF.json](SESSION_HANDOFF.json) identify the actual deployment.
 
 Preserve the runner, analog dots, typography, Tasso footage, dashboard examples, lifestyle imagery and narrative order. Free interpretation of previous reports leads; the optional starting kit contains 13 biomarkers at **€99 + VAT**. The internal `quarterly` preview intent does not advertise an automatic recurring offer.
 

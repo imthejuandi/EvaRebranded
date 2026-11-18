@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
-  "prepared_date": "2026-11-13",
-  "handoff_status": "TREND_INLINE_EMPHASIS_COMPLETE_V43",
-  "immediate_instruction": "Version 43 is published and browser-verified. Read docs/trend-emphasis-qa.json. The Trend lead now emphasizes three short concepts with semantic strong elements in Hanken 600: baseline, history/context and tracking changes. Exact EN/ES wording and 16px/24px regular body are preserved. Keep version 42 typography/glass improvements, version 40 conciseness/reference cleanup and version 41 manual One reading default/context education. GitHub main is canonical; evahealth.es and production services remain unchanged.",
+  "prepared_date": "2026-11-18",
+  "handoff_status": "RUNNER_ENTRANCE_SPEED_COMPLETE_V44",
+  "immediate_instruction": "Review version 44 is published. The landing runner entrance and the reveal of its headline and entry links run at 1.5×. The footage plays at native speed. See docs/runner-entrance-speed-qa.json for the live comparison.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 43 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
+    "github_status": "Canonical consolidated rebrand workspace at user request. Current review UI 44 source/assets/history/QA and launch handoff are synchronized with the separate Site publication repository. Production cutover to evahealth.es remains on hold.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,47 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 42,
-      "source_commit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_a7ad463cdf64819184a95bf9eda74899",
-      "deployment_id": "appgdep_6af78679553c8191971313e2f91d3cbe",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-13T21:52:05.597759+00:00",
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=42#biomarcadores",
-      "behavior": "Impeccable typeset/layout/polish pass on Range, Guided, Trend and optional sample dashboard. Real installed Hanken 400/600, coherent type/spacing, quieter marker controls, fictional metadata below marker headings, mobile evidence-before-CTA focus order and readable branded glass. Version 40 conciseness and version 41 manual One reading behavior/copy preserved.",
-      "source_files": [
-        "components/story/proof-system.css",
-        "components/story/GuidedResultStory.tsx",
-        "components/story/guided-result-story.css",
-        "components/story/TrendStorySection.tsx",
-        "components/story/trend-story-section.css",
-        "components/story/RangeProofSection.tsx",
-        "components/story/range-proof-section.css",
-        "components/story/BiomarkerGallery.tsx",
-        "components/story/sample-dashboard-compact.css",
-        "components/story/explanation-setting.css",
-        "components/site/SiteDocument.tsx"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-proof-typography-v42.tar.gz",
-        "local_gzip_sha256": "52b95295f1c909a8eb4682e8a756ad28ad8b2499d239b85bd13d9f1169288699",
-        "local_gzip_size_bytes": 163041714,
-        "saved_tar_content_hash": "sha256:5a526e280758fa957824a5020f6b192aa66d4e194ccab2194ec8fff362c3cd24",
-        "saved_tar_size_bytes": 171755520,
-        "file_count": 787
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/impeccable-typography-qa.json",
-        "evidence_directory": "docs/browser-qa-v42",
-        "guided_trend_layout_cases": 6,
-        "range_optional_layout_cases": 4,
-        "live_functional_cases": 2,
-        "page_errors": []
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 43,
       "source_commit": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5e649f1f414881919eda52ac6e799f43",
@@ -108,11 +67,40 @@
         "page_errors": []
       }
     },
-    "latest_verified_ui_release_note": "Deployed UI is version 43 commit 7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9. A following QA/documentation-only commit does not change the live UI.",
+    "latest_verified_ui_release": {
+      "version_number": 44,
+      "source_commit": "71571c8bb1092e8f7d6099d3dc0385b6314899a8",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_c4f42260d7c08191a851f2b577bd9234",
+      "deployment_id": "appgdep_6afdd871a8388191b4741b1a90416a73",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-18T16:55:27.324059+00:00",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=44",
+      "behavior": "The landing runner entrance and the reveal of its headline and entry links run at 1.5×. The footage plays at native speed.",
+      "source_files": [
+        "app/hero-entrance.css",
+        "components/story/ScrollStory.tsx",
+        "components/story/TrackedRunner.tsx",
+        "lib/story-scroll-timing.ts"
+      ],
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-runner-entrance-v44.tar.gz",
+        "local_gzip_sha256": "2b52b7f47a9734e2e9f65697c68204c0fd4aaca8fb9cbb2cc5d262489b7116d6",
+        "local_gzip_size_bytes": 163040952,
+        "saved_tar_content_hash": "sha256:54efa1a86ee8dccf04f70b8191f8100ae2a659161e86cb4757794185849273d0",
+        "saved_tar_size_bytes": 171755520,
+        "file_count": 787
+      },
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/runner-entrance-speed-qa.json"
+      }
+    },
+    "latest_verified_ui_release_note": "Review version 44 serves UI commit 71571c8bb1092e8f7d6099d3dc0385b6314899a8. The subsequent handoff commit records the published release.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 43 source 7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9",
+      "relation": "QA/docs followup to version 44 source 71571c8bb1092e8f7d6099d3dc0385b6314899a8",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
@@ -120,8 +108,7 @@
         "docs/LAUNCH_HANDOFF.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/trend-emphasis-qa.json",
-        "docs/browser-qa-v43"
+        "docs/runner-entrance-speed-qa.json"
       ]
     },
     "earlier_verified_ui_release": {
@@ -394,6 +381,47 @@
           "live_functional_cases": 2,
           "page_errors": []
         }
+      },
+      {
+        "version_number": 42,
+        "source_commit": "90175f7a07d27d5594eb9345b24a5637030e0e93",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_a7ad463cdf64819184a95bf9eda74899",
+        "deployment_id": "appgdep_6af78679553c8191971313e2f91d3cbe",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-13T21:52:05.597759+00:00",
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=42#biomarcadores",
+        "behavior": "Impeccable typeset/layout/polish pass on Range, Guided, Trend and optional sample dashboard. Real installed Hanken 400/600, coherent type/spacing, quieter marker controls, fictional metadata below marker headings, mobile evidence-before-CTA focus order and readable branded glass. Version 40 conciseness and version 41 manual One reading behavior/copy preserved.",
+        "source_files": [
+          "components/story/proof-system.css",
+          "components/story/GuidedResultStory.tsx",
+          "components/story/guided-result-story.css",
+          "components/story/TrendStorySection.tsx",
+          "components/story/trend-story-section.css",
+          "components/story/RangeProofSection.tsx",
+          "components/story/range-proof-section.css",
+          "components/story/BiomarkerGallery.tsx",
+          "components/story/sample-dashboard-compact.css",
+          "components/story/explanation-setting.css",
+          "components/site/SiteDocument.tsx"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-proof-typography-v42.tar.gz",
+          "local_gzip_sha256": "52b95295f1c909a8eb4682e8a756ad28ad8b2499d239b85bd13d9f1169288699",
+          "local_gzip_size_bytes": 163041714,
+          "saved_tar_content_hash": "sha256:5a526e280758fa957824a5020f6b192aa66d4e194ccab2194ec8fff362c3cd24",
+          "saved_tar_size_bytes": 171755520,
+          "file_count": 787
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/impeccable-typography-qa.json",
+          "evidence_directory": "docs/browser-qa-v42",
+          "guided_trend_layout_cases": 6,
+          "range_optional_layout_cases": 4,
+          "live_functional_cases": 2,
+          "page_errors": []
+        }
       }
     ]
   },
@@ -471,7 +499,7 @@
   "approved_design_and_motion": {
     "direction": "Evolve the existing Site. Keep the accepted runner, luminous/dot style, warm-paper/ink typography, actual results mockups, Tasso footage and lifestyle imagery.",
     "rejected_direction": "A generic replacement landing at /en/review/landing-proposal, a new visual system, new audience tabs, unsolicited stock-style cards or new assets to replace accepted work.",
-    "hero": "Preserve the runner entrance, feathering, analog headline and existing support/CTA placement. Free previous-lab interpretation is now primary.",
+    "hero": "Preserve the 1.5× runner entrance and native-speed footage, feathering, analog headline and existing support/CTA placement. Free previous-lab interpretation is now primary.",
     "tasso": "Preserve the approved three-step film, accurate device proportions, virtually painless/no needles to handle copy and native-speed video controls. Do not restore pasted-screen overlays or regenerate footage merely for novelty.",
     "kit_explanation": "Preserve the current count/pan/names/meanings/readout sequence. Scrolling selects the education stages; the latest dot-to-text presentation transition is 500 ms for a complete forward or reverse span. Keep batched dot rendering and the existing compositor/clock ownership.",
     "kit_motion_contract_since_v28": {
@@ -778,7 +806,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "The deployed baseline is version43 source7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9. Read docs/trend-emphasis-qa.json alongside the earlier version40–42 records. A following documentation commit does not require UI republication.",
+    "The review baseline is version 44, UI commit 71571c8bb1092e8f7d6099d3dc0385b6314899a8. Read docs/runner-entrance-speed-qa.json for the scoped runner checks.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -856,7 +884,7 @@
       "EVA_REVIEW_VERSION=38 node scripts/browser-qa/core-landing.cjs"
     ],
     "final_browser_instructions": "Read scripts/browser-qa/README.md. The review query is not a deployment pin: verify current native Site version first. Reports/screenshots are written outside the repo, final version 38 evidence is tracked in docs/browser-qa-v38. Wait for computed CSS readiness and fonts before measuring. Close every owned browser. Flow tests block all mutating network requests and stop before upload/checkout confirmation.",
-    "current_scoped_qa": "docs/trend-emphasis-qa.json and docs/browser-qa-v43: five local type/wrapping/control cases plus two actual published cases. Version42 typography/glass and prior full-page version38 evidence retain their historical scope."
+    "current_scoped_qa": "docs/runner-entrance-speed-qa.json compares the opening timing in published versions 43 and 44. Earlier QA records retain their historical scope."
   },
   "permissions_and_security": {
     "writable_roots": [
@@ -885,7 +913,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 43 is published and browser-verified; the latest change adds three short Hanken600 emphasis spans to the Trend lead in both languages without changing wording, sizing or behavior. Read docs/trend-emphasis-qa.json. Preserve the earlier design/content/motion and follow specific user feedback. Routine review-site edits/checks/commits/pushes/publication remain authorized. evahealth.es cutover stays on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json and docs/SESSION_COORDINATION.json. Version 44 is published with the 1.5× runner entrance. Routine review-site edits, checks, commits and publication remain authorized. Production cutover stays on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -895,11 +923,11 @@
   },
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-    "date": "2026-11-13",
-    "user_direction": "Pull the latest other-chat Site change into this session for a full switch.",
+    "date": "2026-11-18",
+    "user_direction": "Speed up the landing runner entrance so visitors can start viewing the website sooner.",
     "synchronized_main_commit": "dfd0d9725647989976cef0954e0c234bb7bc7334",
-    "live_version": 43,
-    "status": "Trend inline emphasis complete, published and actual-browser verified. No UI files reserved; follow user feedback."
+    "live_version": 44,
+    "status": "Runner entrance timing published and browser-verified. No UI files reserved."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -933,5 +961,5 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "7ff3e9b890cdaab69d0a440af9ec2b8f4a6a8ce9"
+  "github_current_ui_source": "71571c8bb1092e8f7d6099d3dc0385b6314899a8"
 }
