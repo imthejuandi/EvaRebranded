@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "published_version": 46,
+  "deployed_ui_commit": "3726d7e0097667272b8ec7e79cc1a0955d00c619",
+  "scope": "The opening uses a 2.48× entrance clock. The free entry link becomes usable about 2.5 seconds after the first decoded runner frame in the tested browsers. The footage plays at native speed.",
+  "authored_seconds_of_playback": {
+    "clean_runner_photograph": {
+      "previous": 1.707,
+      "current": 1.411
+    },
+    "headline_and_entry_links_begin": {
+      "previous": 2.744,
+      "current": 2.268
+    },
+    "startup_fail_open_limit_seconds_after_mount": 4.839
+  },
+  "live_comparison": {
+    "measure": "Median time for the free entry link to reach 90% opacity and accept a center hit test in Chromium, with ordinary motion. The playback-relative timer starts at the first decoded canvas frame.",
+    "profiles": {
+      "en_desktop": {
+        "v45": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 4.524,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 3.0,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 2.75
+        },
+        "v46": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 3.817,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 2.549,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 2.283
+        }
+      },
+      "es_emulated_phone": {
+        "v45": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 4.207,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 3.016,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 2.733
+        },
+        "v46": {
+          "visits": 3,
+          "from_navigation_to_usable_free_link_s": 3.639,
+          "from_first_decoded_canvas_frame_to_usable_free_link_s": 2.533,
+          "from_first_decoded_canvas_frame_to_full_runner_handoff_s": 2.3
+        }
+      }
+    },
+    "additional_observation": "One additional post-deployment visit timed out before the hero could be identified and was excluded from the matched timings. Subsequent diagnostic and measured visits rendered the expected release."
+  },
+  "live_behavior": {
+    "reduced_motion": {
+      "en_desktop": {
+        "static_poster": true,
+        "entrance": "skip",
+        "navigation_to_usable_free_link_seconds": 0.77
+      },
+      "es_emulated_phone": {
+        "static_poster": true,
+        "entrance": "skip",
+        "navigation_to_usable_free_link_seconds": 1.081
+      }
+    },
+    "keyboard_skip_en": "Free link reached /en/signup?plan=free&redirect=%2Fes%2Fupload.",
+    "scroll_skip_es": "Kit link reached /es/signup?plan=quarterly.",
+    "runner_controls_en": "Pause stopped footage advancement. Resume restored 1× video playback."
+  },
+  "checks": [
+    "TypeScript",
+    "Static production build",
+    "Runner arrival, startup and media checks",
+    "Kit scroll, kit reveal and story section checks"
+  ],
+  "scope_of_evidence": "Fresh desktop and emulated phone sessions on the review deployment. Page-load times include network and browser startup. Physical-device and population timings remain unmeasured."
+}
