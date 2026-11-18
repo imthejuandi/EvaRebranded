@@ -76,17 +76,17 @@ function coldStart(source=playbackSource){
  assert.equal(f.skips(),0,'Cold loading for 3.5 seconds must not be treated as a decoded-video stall');
  f.play();f.advance(400);f.decode(0);f.advance(100);f.decode(.1);
  assert.equal(f.skips(),0,'The real reveal survives a delayed first decoded frame');
- assert.equal(f.arrivalDraws.length,2);assert.equal(f.arrivalDraws[0],0);assert(Math.abs(f.elapsed.current-.15)<1e-8);
+ assert.equal(f.arrivalDraws.length,2);assert.equal(f.arrivalDraws[0],0);assert(Math.abs(f.elapsed.current-.1*HERO_ENTRANCE_RATE)<1e-8);
  f.dispose();assert.equal(f.pending(),0);
 }
 coldStart();
 {
  const f=fixture();f.play();f.decode(0);
- for(let i=1;i<=80;i++){f.advance(100);f.decode((i/10)%5)}
+ for(let i=1;i<=60;i++){f.advance(100);f.decode((i/10)%5)}
  assert.equal(f.skips(),0,'Advancing frames across the 5-second media loop do not trigger fallback');
- assert(Math.abs(f.elapsed.current-12)<1e-8,'The 1.5× entrance clock advances through a native loop');
- assert.equal(f.draws.at(-1).time,3,'Tracking stays aligned to the original five-second video loop');
- assert.equal(f.arrivalDraws.length,81,'The same callback paints every decoded arrival frame');f.dispose();
+ assert(Math.abs(f.elapsed.current-6*HERO_ENTRANCE_RATE)<1e-8,'The entrance clock advances through a native loop');
+ assert.equal(f.draws.at(-1).time,1,'Tracking stays aligned to the original five-second video loop');
+ assert.equal(f.arrivalDraws.length,61,'The same callback paints every decoded arrival frame');f.dispose();
 }
 {
  const f=fixture();f.play();f.decode(0);f.advance(100);f.decode(.1);
@@ -98,14 +98,14 @@ coldStart();
  assert.equal(f.frames(),0,'Pausing removes the decoded callback');f.advance(4500);
  assert.equal(f.skips(),0,'An intentional user pause is not a decoder failure');
  f.play();f.advance(400);assert.equal(f.skips(),0,'Resume grants time for the next decoded frame');f.decode(.2);
- assert(Math.abs(f.elapsed.current-.3)<1e-8,'User pause does not advance reveal time');f.dispose();
+ assert(Math.abs(f.elapsed.current-.2*HERO_ENTRANCE_RATE)<1e-8,'User pause does not advance reveal time');f.dispose();
 }
 {
  const f=fixture();f.play();f.decode(0);f.advance(100);f.decode(.1);f.hidden(true);
  assert.equal(f.pending(),0,'A hidden document stops watchdog and decoded callbacks');f.advance(4500);
  assert.equal(f.skips(),0);f.hidden(false);f.advance(400);f.decode(2);
  assert.equal(f.skips(),0,'Visibility restoration does not inherit a stale stall deadline');
- assert(Math.abs(f.elapsed.current-.15)<1e-8,'Hidden media time is rebased rather than consuming the reveal');f.dispose();
+ assert(Math.abs(f.elapsed.current-.1*HERO_ENTRANCE_RATE)<1e-8,'Hidden media time is rebased rather than consuming the reveal');f.dispose();
 }
 {
  const f=fixture({active:false});f.play();f.advance(4500);
@@ -125,8 +125,8 @@ coldStart();
  const entrance={current:{dataset:{heroEntrance:'pending'},contains:()=>false}};
  const dispose=compile(entranceSource,{...f.context,matchMedia:()=>({matches:false}),location:{hash:''},entrance,
   setEntry:fn=>{entrance.current.dataset.heroEntrance=fn(entrance.current.dataset.heroEntrance)},skipEntry:()=>{skips++;entrance.current.dataset.heroEntrance='skip'},clearTimeout:f.win.clearTimeout})();
- f.advance(7999);assert.equal(skips,0,'The bounded startup grace remains available');
- f.advance(1);assert.equal(skips,1,'A never-starting entrance still becomes usable at 8 seconds');
+ f.advance(12000 / HERO_ENTRANCE_RATE - 1);assert.equal(skips,0,'The bounded startup grace remains available');
+ f.advance(1);assert.equal(skips,1,'A never-starting entrance still becomes usable at its configured deadline');
  dispose();f.dispose();assert.equal(f.pending(),0);assert.equal(f.win.listenerCount,0);
 }
 
@@ -145,4 +145,4 @@ coldStart();
  }
 }
 
-console.log('Runner startup passed: actual production effects survive 3.5s cold load, advance through a media loop, detect real stalls, respect pause/resume/inactivity/visibility, clean up callbacks, retain 8s startup fail-open and immediate media/autoplay failure paths. This is a deterministic lifecycle test, not browser decode or rendering QA.');
+console.log('Runner startup passed: actual production effects survive 3.5s cold load, advance through a media loop, detect real stalls, respect pause/resume/inactivity/visibility, clean up callbacks, retain the bounded startup fallback and immediate media/autoplay failure paths. This is a deterministic lifecycle test, not browser decode or rendering QA.');

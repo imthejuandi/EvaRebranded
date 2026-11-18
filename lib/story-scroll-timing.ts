@@ -1,5 +1,6 @@
 // The landing intro has its own presentation clock. The runner footage plays at native speed.
-export const HERO_ENTRANCE_RATE = 1.5;
+// At this rate the primary link finishes its entrance in about three seconds of playback.
+export const HERO_ENTRANCE_RATE = 2.05;
 
 const END = 980;
 const PRODUCT_START = 280;

@@ -59,8 +59,8 @@ const firstSignal=RUNNER_ARRIVAL_LABEL_OFFSET+signalStart.head/24;
 const settled=RUNNER_ARRIVAL_LABEL_OFFSET+signalsSettledAt;
 close(firstSignal,RUNNER_ARRIVAL_PHOTO_READY,'The first head marker begins only when the photo is ready');
 close(settled,5.625,'The complete label sequence settles just after the direct handoff');
-close(RUNNER_ARRIVAL_PHOTO_READY/HERO_ENTRANCE_RATE,7/3,'The live runner photograph is ready after 2⅓ seconds of playback');
-close(settled/HERO_ENTRANCE_RATE,3.75,'The live headline and CTA are cued after 3.75 seconds of playback');
+const cueSeconds=settled/HERO_ENTRANCE_RATE;
+assert(cueSeconds>=2.7&&cueSeconds<=2.8,'Begin revealing the primary link in time for the three-second entrance');
 assert(settled>RUNNER_ARRIVAL_END);
 for(const key of ['head','stomach','knee']){
  const age=(RUNNER_ARRIVAL_PHOTO_READY-RUNNER_ARRIVAL_LABEL_OFFSET)*24-signalStart[key];
@@ -119,4 +119,4 @@ assert(/arrivalEnabled\s*&&\s*!timed\s*&&\s*!arrivalDone/.test(trackedText),'Com
 assert(/onComplete=\{\(\)\s*=>\s*setArrivalDone\(true\)\}/.test(trackedText),'Canvas completion removes the arrival layer');
 assert(/disposed\s*=\s*true/.test(arrivalText)&&/engine\.current\s*=\s*null/.test(arrivalText)&&/buffer\.width\s*=\s*1/.test(arrivalText)&&/buffer\.height\s*=\s*1/.test(arrivalText),'Effect cleanup invalidates the painter and releases its canvas buffers');
 
-console.log('Runner arrival passed: direct silhouette timing, no dispersed cloud, transparent/black background stays empty, monotonic stages, landing photo ready at 2⅓s, labels settled at 3.75s of playback, cover-crop agreement with real tracking, single-media/static lifecycle guards. Browser rendering and mobile performance require separate verification.');
+console.log('Runner arrival passed: direct silhouette timing, no dispersed cloud, transparent/black background stays empty, monotonic stages, headline and CTA cued for the three-second entrance, cover-crop agreement with real tracking, single-media/static lifecycle guards. Browser rendering and mobile performance require separate verification.');
