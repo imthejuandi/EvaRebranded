@@ -26,6 +26,8 @@ This standing task authorization does **not** disable runtime network, filesyste
 
 The current approved hero makes **free interpretation of previous lab reports primary** and the **13-marker quarterly kit at €99 + VAT per quarter secondary**. Preserve free-plan and upload return intent through the preview account flow. Do not restore the older kit-first hero.
 
+For each current and future audit action, consult the owner on the proposed change and use three distinct agents. A bilingual health and wellness marketing copy specialist selects concise wording. A UX/UI specialist names and applies a relevant design skill and places the change within the established EVA landing style. An independent reviewer uses Impeccable to check rendered type and spacing in English and Spanish on mobile and desktop. Address their findings before publishing the approved change.
+
 ## Business and copy facts
 
 The starting kit contains exactly: Albumin, ALP, hs-CRP, Creatinine, Urea BUN, Uric acid, Total cholesterol, LDL Cholesterol, HDL-Cholesterol, Triglycerides, ALT, GGT and Fructosamine.

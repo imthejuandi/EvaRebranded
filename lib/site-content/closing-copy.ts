@@ -19,7 +19,7 @@ export const closingCopy = {
       lead: 'Con una analítica previa o con un kit por suscripción.',
       free: {
         heading: 'Interpreta tus analíticas gratis.',
-        body: `${uploadAllowance.es.free} Consulta tus resultados en contexto.`,
+        body: `${uploadAllowance.es.free} ${uploadAllowance.es.format}`,
         action: 'Interpretar mis analíticas gratis',
         note: 'Con tu cuenta y consentimiento. Sin tarjeta ni suscripción.',
       },
@@ -64,7 +64,7 @@ export const closingCopy = {
       lead: 'With a previous lab report or a home kit subscription.',
       free: {
         heading: 'Interpret your lab results for free.',
-        body: `${uploadAllowance.en.free} Explore your results in context.`,
+        body: `${uploadAllowance.en.free} ${uploadAllowance.en.format}`,
         action: 'Interpret my lab results for free',
         note: 'With your account and consent. No card or subscription required.',
       },

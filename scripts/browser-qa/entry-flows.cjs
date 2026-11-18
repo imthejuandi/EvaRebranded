@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'48';
+const VERSION=process.env.EVA_REVIEW_VERSION||'49';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -25,6 +25,7 @@ function approvedKitCopy(where,content){
  assert(/cancela cuando quieras|cancel anytime/i.test(content),where+': missing cancellation terms');
 }
 
+const reportFormat = {en: /PDF or photo of a previous blood test report/i, es: /analítica de sangre que ya tengas, en PDF o en foto/i};
 const freeTotal=/up to 5 reports in total|hasta 5 informes en total/i;
 const labYear=/unlimited report uploads for one year from purchase|informes sin límite durante un año desde la compra/i;
 const activeUploads=/unlimited reports while your subscription is active|informes sin límite mientras tu suscripción esté activa/i;
@@ -39,6 +40,9 @@ async function home(page,locale){
   assert.match(await text(page.locator(selector)),/5 free report uploads per account|5 informes gratis por cuenta/i,selector+' free uploads');
  }
  assert.match(await text(page.locator('[data-offer-free]')),freeTotal);
+ const details = page.locator('#free-report-details');
+ assert.match(await text(details), reportFormat[locale]);
+ assert.equal(await page.locator('[data-offer-upload]').getAttribute('aria-describedby'), 'free-report-details');
  const offer=page.locator('[data-offer-kit]');
  assert.match(await text(offer),activeUploads);
  approvedKitCopy('closing offer',(await text(offer))+' '+await offer.locator('[data-offer-price]').getAttribute('aria-label'));
@@ -69,6 +73,9 @@ async function signup(page,locale,plan,result){
  await page.locator('input[name=email]').waitFor({state:'visible'});const submit=page.getByRole('button',{name:locale==='en'?'Create an example account':'Crear cuenta de ejemplo',exact:true});await submit.waitFor({state:'visible'});await page.waitForFunction(()=>{const b=document.querySelector('.eva-access-form form button.eva-button:not(.eva-button-secondary)');return b&&!b.disabled;});
  const notice=await text(page.locator('.eva-access-demo'));assert(/No accounts are created|No se crean cuentas/.test(notice));result.previewNotice=true;result.signupUrl=page.url();
  if(plan==='free'){
+  await page.locator('#free-report-format').waitFor({state:'visible'});
+  assert.match(await text(page.locator('#free-report-format')), reportFormat[locale]);
+  assert.equal(await page.locator('form').getAttribute('aria-describedby'), 'free-report-format');
   const disclosure=await text(page.locator('[data-free-allowance]'));
   assert.match(disclosure,freeTotal);assert.match(disclosure,activeUploads);
  }else if(plan==='full_panel'){
@@ -77,6 +84,9 @@ async function signup(page,locale,plan,result){
  }else{
   await page.waitForFunction(()=>document.querySelector('.eva-access-intent')?.textContent.includes('13'));
   assert.match(await text(page.locator('.eva-access-intent')),activeUploads);
+ }
+ if (plan !== 'free') {
+  assert.equal(await page.locator('#free-report-format').count(), 0);
  }
  if(plan==='quarterly'){const intent=page.locator('.eva-access-intent');await intent.waitFor();const content=await text(intent);const screenshot=await shot(page,`${plan}-${locale}-signup`);recordLegacy('signup',content,locale,screenshot);approvedKitCopy('signup',content);result.signupIntentText=content;result.signupApprovedKitCopy=Number(VERSION)>=38;}
  await page.locator('input[name=email]').fill(`eva-qa-${locale}-${plan}@example.invalid`);await page.locator('input[name=password]').fill('Fictional-QA-Only-2026!');await page.locator('input[name=confirm]').fill('Fictional-QA-Only-2026!');

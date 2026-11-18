@@ -20,8 +20,8 @@ export function BusinessOffer() {
       <p>{c.lead}</p>
       <div className="offer-report-entry" data-offer-free>
         <h3>{c.free.heading}</h3>
-        <p className="offer-free-body">{c.free.body}</p>
-        <a className="primary" href={href(uploadHref)} data-offer-upload>{c.free.action}<Arrow/></a>
+        <p id="free-report-details" className="offer-free-body">{c.free.body}</p>
+        <a className="primary" href={href(uploadHref)} aria-describedby="free-report-details" data-offer-upload>{c.free.action}<Arrow/></a>
         <p className="offer-account-note">{c.free.note}</p>
       </div>
     </div>
