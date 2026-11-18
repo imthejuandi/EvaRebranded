@@ -159,6 +159,23 @@ async function revisitAccount(page,result){
 (async()=>{let browser;try{
  fs.mkdirSync(OUT,{recursive:true});const loopback=['localhost','127.0.0.1','[::1]'].includes(new URL(ORIGIN).hostname);const proxy=!loopback&&(process.env.HTTPS_PROXY||process.env.HTTP_PROXY);
  browser=await chromium.launch({headless:true,executablePath:'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage'],...(proxy?{proxy:{server:proxy}}:{})});
+ for (const locale of ['en', 'es']) {
+  const staticPage = await browser.newPage({javaScriptEnabled: false, viewport: {width: 390, height: 844}});
+  try {
+   await staticPage.goto(`${ORIGIN}/${locale}?review=${VERSION}`);
+   const poster = staticPage.locator('.poster .hero-runner-static');
+   assert.equal(await poster.evaluate(image => getComputedStyle(image).opacity), '1');
+   assert.doesNotMatch(await text(staticPage.locator('.poster .hero-support')), /start free|empieza gratis/i);
+   await staticPage.locator('[data-discover-problem]').click({timeout: 5000});
+   assert.equal(new URL(staticPage.url()).hash, '#entender-tus-analisis');
+   await staticPage.goBack();
+   await staticPage.locator('.masthead .join').click({timeout: 5000});
+   assert.equal(new URL(staticPage.url()).hash, '#entender-tus-analisis');
+  } finally {
+   await staticPage.close();
+  }
+ }
+ report.nativeDiscoveryWithoutJavascript = true;
  const retired=await browser.newContext({viewport:{width:390,height:844}});
  try{
   const page=await retired.newPage();
