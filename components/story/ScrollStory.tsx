@@ -2,9 +2,8 @@
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { EvaWordmark } from '@/components/story/EvaWordmark';
 import { AnalogType } from './AnalogType';
-import { HeroKitCta } from './HeroKitCta';
+import {DiscoverProblem, ReportUnderstanding, reportChapterId} from './ReportUnderstanding';
 import { HeroIntro } from './HeroIntro';
-import { Arrow } from './Arrow';
 import { Player, type PlayerRef } from '@remotion/player';
 import { type CSSProperties, memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { EvaFilm, DURATION } from './EvaFilm';
@@ -14,7 +13,7 @@ import { BusinessOffer } from './BusinessOffer';
 import { BusinessNavigation } from './BusinessNavigation';
 import {LanguageSwitch} from '@/components/site/SiteLanguage';
 import { BusinessFooter } from './BusinessFooter';
-import { businessLinks } from '@/lib/landing-content';
+import {reportUnderstanding} from '@/lib/site-content/report-understanding';
 import { glowRunner } from '@/lib/design';
 import { SignalPassage } from './SignalPassage';
 import { storyMotion } from '@/lib/story-motion';
@@ -22,13 +21,13 @@ import {TassoHomeVideo} from './TassoHomeVideo';
 import {TassoFilmSummary} from './TassoFilmProcess';
 import {TassoFilmTranscript} from './TassoFilmTranscript';
 import { createStoryScrollDriver } from '@/lib/story-scroll-driver';
-import {HERO_ENTRANCE_RATE, OPENING_END_FRAME, OPENING_SCROLL_HEIGHT_SVH, openingFrameAtProgress, openingProgressAtFrame} from '@/lib/story-scroll-timing';
+import {HERO_ENTRANCE_RATE, RUNNER_EXIT_FRAME, runnerExitFrameAtProgress} from '@/lib/story-scroll-timing';
 import {StoryScenePassage} from './StoryScenePassage';
 import {RangeProofSection} from './RangeProofSection';
 const heroEntranceStyle = {'--hero-entrance-rate': HERO_ENTRANCE_RATE} as CSSProperties;
 const ResultsContent = memo(BiomarkerGallery), EditorialContent = memo(HealthEditorial), OfferContent = memo(BusinessOffer), SignalContent = memo(SignalPassage);
 function readStoryPosition() {
-    const candidates = ['volver-a-la-vida', 'una-perspectiva', 'una-senal', 'biomarcadores', 'kit-inicial'];
+    const candidates = ['volver-a-la-vida', 'una-perspectiva', 'una-senal', 'biomarcadores', 'kit-inicial', 'recogida-en-casa', reportChapterId];
     const active = candidates.map(id => document.getElementById(id)).find(element => element && element.getBoundingClientRect().top <= window.innerHeight * .5);
     const root = active ?? document.querySelector('.hero-entrance > .scroll-journey');
     const film = root?.querySelector<HTMLElement>('[data-rendered-frame], [data-body-signal-frame]');
@@ -37,10 +36,12 @@ function readStoryPosition() {
 
 export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 'labelled'} = {}) {
     const __site = useSiteLanguage();
+    const problemCopy = reportUnderstanding[__site.locale];
     const section = useRef<HTMLElement>(null), stage = useRef<HTMLDivElement>(null), player = useRef<PlayerRef>(null), heroCta = useRef<HTMLDivElement>(null);
     const [size, setSize] = useState<{
         width: number;
         height: number;
+        top: number;
     } | null>(null);
     const [frame, setFrame] = useState(0);
     const [openingVisible, setOpeningVisible] = useState(true);
@@ -52,7 +53,7 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
     const reveal = useCallback(() => setEntry(current => current === 'skip' ? 'skip' : 'reveal'), []);
     const skipEntry = useCallback(() => { if (entrance.current)
         entrance.current.dataset.heroEntrance = 'skip'; setEntry('skip'); }, []);
-    const filmProps = useMemo(() => ({ language: __site.locale, scrollDriver, tassoVariant, externalTasso: true, sceneMode: 'opening' as const, scrollWindow: [0, OPENING_END_FRAME] as const, ambientRunner: !runnerPaused, onRunnerBlocked: () => { setRunnerPaused(true); skipEntry(); }, onSignalsReady: reveal, signalsImmediate: entry === 'skip', arrivalEnabled: entry !== 'skip', onArrivalUnavailable: skipEntry }), [__site.locale, scrollDriver, tassoVariant, runnerPaused, reveal, skipEntry, entry === 'skip']);
+    const filmProps = useMemo(() => ({ language: __site.locale, scrollDriver, tassoVariant, externalTasso: true, sceneMode: 'opening' as const, scrollWindow: [0, RUNNER_EXIT_FRAME] as const, scrollGeometry: size ? {top: size.top, span: size.height} : undefined, ambientRunner: !runnerPaused, onRunnerBlocked: () => { setRunnerPaused(true); skipEntry(); }, onSignalsReady: reveal, signalsImmediate: entry === 'skip', arrivalEnabled: entry !== 'skip', onArrivalUnavailable: skipEntry }), [__site.locale, scrollDriver, tassoVariant, size, runnerPaused, reveal, skipEntry, entry === 'skip']);
     useEffect(() => {
         const restored = () => { if (window.scrollY > 24 || location.hash)
             skipEntry(); };
@@ -73,21 +74,28 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
     }, [skipEntry]);
     useEffect(() => { const mq = matchMedia('(prefers-reduced-motion: reduce)'); setCalm(mq.matches); const change = () => setCalm(mq.matches); mq.addEventListener('change', change); return () => mq.removeEventListener('change', change); }, []);
     useEffect(() => { if (calm || !stage.current)
-        return; const el = stage.current; const measure = () => { const width = Math.round(el.clientWidth), height = Math.round(el.clientHeight); if (width && height)
-        setSize(previous => previous?.width === width && previous.height === height ? previous : { width, height }); }; const ro = new ResizeObserver(measure); ro.observe(el); measure(); return () => ro.disconnect(); }, [calm]);
+        return;
+        const el = stage.current;
+        const measure = () => {
+            const width = Math.round(el.clientWidth), height = Math.round(el.clientHeight);
+            const top = section.current ? section.current.getBoundingClientRect().top + window.scrollY : 0;
+            if (width && height) setSize(previous => previous?.width === width && previous.height === height && previous.top === top ? previous : {width, height, top});
+        };
+        const observer = new ResizeObserver(measure);
+        observer.observe(el);
+        measure();
+        return () => observer.disconnect();
+    }, [calm]);
     useEffect(() => {
         if (calm || !size || !section.current || !stage.current)
             return;
-        let raf = 0, last = -1, lastChrome = '', journeyTop = 0, journeySpan = 1;
-        const measure = () => { if (!section.current || !stage.current)
-            return; journeyTop = section.current.getBoundingClientRect().top + window.scrollY; journeySpan = Math.max(1, section.current.offsetHeight - stage.current.clientHeight); };
-        measure();
+        let raf = 0, last = -1, lastChrome = '';
         const update = () => {
             raf = 0;
             if (document.visibilityState !== 'visible' || !section.current || !stage.current)
                 return;
-            const p = Math.max(0, Math.min(1, (window.scrollY - journeyTop) / journeySpan));
-            const f = openingFrameAtProgress(p);
+            const p = Math.max(0, Math.min(1, (window.scrollY - size.top) / size.height));
+            const f = runnerExitFrameAtProgress(p);
             if (f !== last) {
                 scrollDriver.setFrame(f);
                 const slot = heroCta.current;
@@ -125,15 +133,13 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
         observer.observe(root);
         return () => observer.disconnect();
     }, [calm]);
-    const jump = (f: number) => { if (!section.current || !stage.current)
-        return; window.scrollTo({ top: section.current.offsetTop + (section.current.offsetHeight - stage.current.clientHeight) * openingProgressAtFrame(f), behavior: 'instant' }); };
     const motion = storyMotion(frame, true), height = size?.height ?? 900;
     const mobile = (size?.width ?? 1440) <= 700;
     const headerLight = motion.lightAt(50 / height), navLight = motion.lightAt(1 - (mobile ? 45 : 50) / height), noteLight = motion.lightAt(1 - ((mobile ? 75 : 41) + (frame < 200 ? 22 : 5)) / height);
-    const chapter = frame < 230 ? 0 : 1;
+    const chapter = 0;
     const navigateChapter = (index: number) => {
-        if (index < 2 && !calm) jump(index === 0 ? 0 : 325);
-        else document.querySelector(index === 0 ? '.calm-hero' : index === 1 ? '[data-tasso-summary]' : index === 2 ? '#kit-inicial' : '#biomarcadores')?.scrollIntoView({behavior: 'instant', block: 'start'});
+        const destinations = [calm ? '.calm-hero' : '.opening-runner', '#recogida-en-casa', '#kit-inicial', '#biomarcadores'];
+        document.querySelector(destinations[index])?.scrollIntoView({behavior: 'instant', block: 'start'});
     };
     useEffect(() => { const ctx = (document as Document & {
         modelContext?: {
@@ -147,9 +153,12 @@ export function ScrollStory({tassoVariant = 'clean'}: {tassoVariant?: 'clean' | 
             chapter: number;
         }) => { if (!Number.isInteger(input.chapter) || input.chapter < 1 || input.chapter > 4)
             throw new Error('Chapter must be an integer from 1 to 4.'); navigateChapter(input.chapter - 1); await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))); return {chapter: input.chapter, ...readStoryPosition()}; } }); return () => lifecycle.abort(); }, [calm]);
-    return <main ref={entrance} className="hero-entrance" style={heroEntranceStyle} data-story-chapter={openingVisible ? chapter + 1 : 0} data-tasso-home-active={!calm && openingVisible && chapter === 1} data-hero-entrance={calm ? 'skip' : entry} onFocusCapture={skipEntry}><noscript><style>{__site.t('.hero-entrance [data-hero-reveal]{opacity:1!important;transform:none!important;animation:none!important;pointer-events:auto!important}.hero-entrance [data-hero-reveal] *{pointer-events:auto!important}')}</style></noscript><a className="skip" href={__site.href("#empezar")}>{__site.t("Ver planes y empezar")}</a><header data-hero-reveal="navigation" className={'masthead ' + (headerLight && !calm ? 'ink' : '')}><EvaWordmark /><div className="header-actions"><LanguageSwitch/><a className="join" href={__site.href(businessLinks.signup)} aria-label={__site.t("Empieza con EVA")}>{__site.t("Empieza ")}</a><BusinessNavigation /></div></header>
- {__site.t(!calm ? <section className="scroll-journey" style={{height: `${OPENING_SCROLL_HEIGHT_SVH}svh`}} ref={section} aria-label={__site.t("La experiencia EVA")}><div className="stage" ref={stage}><div aria-hidden="true" className="film">{__site.t(size ? <Player ref={player} component={EvaFilm} inputProps={filmProps} compositionWidth={size.width} compositionHeight={size.height} durationInFrames={DURATION} fps={30} autoPlay={false} loop={false} controls={false} clickToPlay={false} doubleClickToFullscreen={false} spaceKeyToPlayOrPause={false} allowFullscreen={false} moveToBeginningWhenEnded={false} initiallyMuted browserMediaControlsBehavior={{ mode: 'prevent-media-session' }} style={{ width: '100%', height: '100%', pointerEvents: 'none' }}/> : <div className="poster"><img className="hero-runner-static" src={glowRunner.poster} alt={__site.t("")} fetchPriority="high" decoding="async"/><div data-hero-reveal="headline" className="poster-title hero-static-title"><HeroIntro width={640} height={256} style={{ position: 'absolute', left: 'var(--gutter)', top: 'var(--hero-intro-top)', width: 'calc(var(--hero-intro-size)*4.6)', height: 'var(--hero-intro-height)', fontSize: 'var(--hero-intro-size)' }}/><AnalogType text={__site.t("salud.")} width={640} height={256} style={{ position: 'absolute', right: 'var(--gutter)', top: 'var(--hero-salud-top)', width: 'var(--hero-salud-width)', height: 'auto', aspectRatio: '5 / 2' }}/></div><p data-hero-reveal="support" className="hero-support hero-static-support">{__site.t("Empieza gratis con tus")}<br />{__site.t("analíticas anteriores.")}</p></div>)}</div><TassoHomeVideo driver={scrollDriver} variant={tassoVariant} visible={openingVisible}/><div className="hero-kit-slot" ref={heroCta}><div data-hero-reveal="action"><HeroKitCta /></div></div><nav data-hero-reveal="controls" aria-label={__site.t("Cap\u00EDtulos de la experiencia")} className={'chapter-nav ' + (navLight ? 'ink' : '')}>{__site.t(['Vivir', 'Conocer', 'Entender', 'Seguir'].map((n, i) => <button key={n} onClick={() => navigateChapter(i)} aria-current={chapter === i ? 'step' : undefined}><small>{__site.t("0")}{__site.t(i + 1)}</small><span>{__site.t(n)}</span><i style={{ scale: `${chapter === i ? 1 : .12} 1` }}/></button>))}</nav><div data-hero-reveal="controls" className={'stage-note ' + (noteLight ? 'ink' : '')}>{__site.t(frame < 200 && <button className="runner-pause" aria-pressed={runnerPaused} onClick={() => setRunnerPaused(!runnerPaused)}>{__site.t(runnerPaused ? 'Reanudar imagen' : 'Pausar imagen')}</button>)}<span className="scroll-cue">{__site.t(frame < 30 ? 'DESLIZA PARA DESCUBRIR' : 'TU VIDA · A TU RITMO')} <Arrow direction="down"/></span></div></div><div className="sr-only"><h1>{__site.t("Conoce tu salud.")}</h1><TassoFilmTranscript/><p>{__site.t("Los indicadores del corredor presentan LDL, fructosamina y hs-CRP: colesterol «malo», glucosa e inflamación. Son ejemplos de los marcadores incluidos en el kit.")}</p><p>{__site.t("Recogida de muestra en casa y análisis en laboratorio. 13 biomarcadores para entender tus resultados y orientar tu siguiente paso.")}</p></div></section> : <section className="calm-hero"><img className="hero-runner-static" src={glowRunner.poster} alt={__site.t("Figura corriendo, reinterpretada en luz \u00E1mbar y azul")}/><h1 className="hero-static-title" aria-label={__site.t("Conoce tu salud.")}><HeroIntro width={640} height={256} style={{ position: 'absolute', left: 'var(--gutter)', top: 'var(--hero-intro-top)', width: 'calc(var(--hero-intro-size)*4.6)', height: 'var(--hero-intro-height)', fontSize: 'var(--hero-intro-size)' }}/><AnalogType text={__site.t("salud.")} width={640} height={256} style={{ position: 'absolute', right: 'var(--gutter)', top: 'var(--hero-salud-top)', width: 'var(--hero-salud-width)', height: 'auto', aspectRatio: '5 / 2' }}/></h1><p className="hero-support hero-static-support">{__site.t("Empieza gratis con tus")}<br />{__site.t("analíticas anteriores.")}</p><HeroKitCta /></section>)}
- {calm && <TassoFilmSummary/>}
+    return <main ref={entrance} className="hero-entrance" style={heroEntranceStyle} data-story-chapter={openingVisible ? chapter + 1 : 0}  data-hero-entrance={calm ? 'skip' : entry} onFocusCapture={skipEntry}><noscript><style>{__site.t('.hero-entrance [data-hero-reveal]{opacity:1!important;transform:none!important;animation:none!important;pointer-events:auto!important}.hero-entrance [data-hero-reveal] *{pointer-events:auto!important}')}</style></noscript><a className="skip" href={`#${reportChapterId}`}>{problemCopy.discover}</a><header data-hero-reveal="navigation" className={'masthead ' + (headerLight && !calm ? 'ink' : '')}><EvaWordmark /><div className="header-actions"><LanguageSwitch/><a className="join" href={`#${reportChapterId}`} aria-label={problemCopy.exploreLabel}>{problemCopy.explore}</a><BusinessNavigation /></div></header>
+ {__site.t(!calm ? <section className="scroll-journey opening-runner" ref={section} aria-label={__site.t("La experiencia EVA")}><div className="stage" ref={stage}><div aria-hidden="true" className="film">{__site.t(size ? <Player ref={player} component={EvaFilm} inputProps={filmProps} compositionWidth={size.width} compositionHeight={size.height} durationInFrames={DURATION} fps={30} autoPlay={false} loop={false} controls={false} clickToPlay={false} doubleClickToFullscreen={false} spaceKeyToPlayOrPause={false} allowFullscreen={false} moveToBeginningWhenEnded={false} initiallyMuted browserMediaControlsBehavior={{ mode: 'prevent-media-session' }} style={{ width: '100%', height: '100%', pointerEvents: 'none' }}/> : <div className="poster"><img className="hero-runner-static" src={glowRunner.poster} alt={__site.t("")} fetchPriority="high" decoding="async"/><div data-hero-reveal="headline" className="poster-title hero-static-title"><HeroIntro width={640} height={256} style={{ position: 'absolute', left: 'var(--gutter)', top: 'var(--hero-intro-top)', width: 'calc(var(--hero-intro-size)*4.6)', height: 'var(--hero-intro-height)', fontSize: 'var(--hero-intro-size)' }}/><AnalogType text={__site.t("salud.")} width={640} height={256} style={{ position: 'absolute', right: 'var(--gutter)', top: 'var(--hero-salud-top)', width: 'var(--hero-salud-width)', height: 'auto', aspectRatio: '5 / 2' }}/></div><p data-hero-reveal="support" className="hero-support hero-static-support">{problemCopy.heroLead[0]}<br />{problemCopy.heroLead[1]}</p></div>)}</div><div className="hero-kit-slot" ref={heroCta}><div data-hero-reveal="action"><DiscoverProblem /></div></div><nav data-hero-reveal="controls" aria-label={__site.t("Cap\u00EDtulos de la experiencia")} className={'chapter-nav ' + (navLight ? 'ink' : '')}>{__site.t(['Vivir', 'Conocer', 'Entender', 'Seguir'].map((n, i) => <button key={n} onClick={() => navigateChapter(i)} aria-current={chapter === i ? 'step' : undefined}><small>{__site.t("0")}{__site.t(i + 1)}</small><span>{__site.t(n)}</span><i style={{ scale: `${chapter === i ? 1 : .12} 1` }}/></button>))}</nav><div data-hero-reveal="controls" className={'stage-note ' + (noteLight ? 'ink' : '')}>{__site.t(frame < 200 && <button className="runner-pause" aria-pressed={runnerPaused} onClick={() => setRunnerPaused(!runnerPaused)}>{__site.t(runnerPaused ? 'Reanudar imagen' : 'Pausar imagen')}</button>)}</div></div><div className="sr-only"><h1>{__site.t("Conoce tu salud.")}</h1><p>{__site.t("Los indicadores del corredor presentan LDL, fructosamina y hs-CRP: colesterol «malo», glucosa e inflamación. Son ejemplos de los marcadores incluidos en el kit.")}</p><p>{__site.t("Recogida de muestra en casa y análisis en laboratorio. 13 biomarcadores para entender tus resultados y orientar tu siguiente paso.")}</p></div></section> : <section className="calm-hero"><img className="hero-runner-static" src={glowRunner.poster} alt={__site.t("Figura corriendo, reinterpretada en luz \u00E1mbar y azul")}/><h1 className="hero-static-title" aria-label={__site.t("Conoce tu salud.")}><HeroIntro width={640} height={256} style={{ position: 'absolute', left: 'var(--gutter)', top: 'var(--hero-intro-top)', width: 'calc(var(--hero-intro-size)*4.6)', height: 'var(--hero-intro-height)', fontSize: 'var(--hero-intro-size)' }}/><AnalogType text={__site.t("salud.")} width={640} height={256} style={{ position: 'absolute', right: 'var(--gutter)', top: 'var(--hero-salud-top)', width: 'var(--hero-salud-width)', height: 'auto', aspectRatio: '5 / 2' }}/></h1><p className="hero-support hero-static-support">{problemCopy.heroLead[0]}<br />{problemCopy.heroLead[1]}</p><DiscoverProblem /></section>)}
+ <ReportUnderstanding calm={calm}/>
+ <div id="recogida-en-casa" className="collection-after-problem">
+   {calm ? <TassoFilmSummary/> : <><TassoHomeVideo variant={tassoVariant}/><div className="sr-only"><TassoFilmTranscript/></div></>}
+ </div>
  <StoryScenePassage kind="kit" calm={calm}/>
  <RangeProofSection calm={calm}/>
  <ResultsContent calm={calm}/>

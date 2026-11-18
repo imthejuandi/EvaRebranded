@@ -68,7 +68,7 @@ export function TassoVideoProcess({active = true, variant = 'clean', edition = '
     sync();
     const observer = new IntersectionObserver(([entry]) => {
       // Even the final visible strip must keep moving during the page transition.
-      visibleRef.current = entry.isIntersecting && entry.intersectionRatio > 0;
+      visibleRef.current = entry.isIntersecting;
       sync();
     }, {threshold: [0]});
     if (media.parentElement) observer.observe(media.parentElement);

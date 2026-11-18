@@ -1,5 +1,5 @@
 // The landing intro has its own presentation clock. The runner footage plays at native speed.
-// At this rate the primary link becomes usable after about 2.5 seconds of playback.
+// At this rate the discovery link becomes usable after about 2.5 seconds of playback.
 export const HERO_ENTRANCE_RATE = 2.48;
 
 const END = 980;
@@ -30,11 +30,9 @@ export function storyProgressAtFrame(frame: number): number {
   return position / WEIGHTED_END;
 }
 
-/** Retain authored scroll distances while placing scenes around the results. */
-export const OPENING_END_FRAME = PRODUCT_END;
-export const OPENING_PROGRESS = storyProgressAtFrame(OPENING_END_FRAME);
-export const OPENING_SCROLL_HEIGHT_SVH = 100 + (STORY_SCROLL_HEIGHT_SVH - 100) * OPENING_PROGRESS;
+// As the one-screen runner scrolls out, play only its authored exit frames.
+export const RUNNER_EXIT_FRAME = 200;
+export const runnerExitFrameAtProgress = (progress: number) => clamp(progress, 1) * RUNNER_EXIT_FRAME;
+
 export const KIT_SCENE_WINDOW = [555, 715] as const;
 export const LIFE_SCENE_WINDOW = [715, 900] as const;
-export const openingFrameAtProgress = (progress: number) => storyFrameAtProgress(clamp(progress, 1) * OPENING_PROGRESS);
-export const openingProgressAtFrame = (frame: number) => Math.min(1, storyProgressAtFrame(frame) / OPENING_PROGRESS);

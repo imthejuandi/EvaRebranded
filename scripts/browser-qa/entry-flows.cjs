@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'49';
+const VERSION=process.env.EVA_REVIEW_VERSION||'50';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -33,6 +33,19 @@ const activeUploads=/unlimited reports while your subscription is active|informe
 async function home(page,locale){
  const response=await page.goto(uri(locale),{waitUntil:'domcontentloaded'});assert.equal(response.status(),200);
  await page.locator('.calm-hero').waitFor({state:'visible'});await page.locator('[data-offer-upload]').waitFor({state:'visible'});await page.evaluate(()=>document.fonts.ready);
+ const problem=page.locator('[data-problem-chapter]');
+ const discover=page.locator('[data-discover-problem]');
+ assert.equal(await discover.getAttribute('href'), '#entender-tus-analisis');
+ const runner=page.locator('.calm-hero');
+ assert.equal(await runner.locator('a[href*="/signup"]').count(), 0);
+ assert.doesNotMatch(await text(runner), /start free|empieza gratis/i);
+ assert.equal(await page.locator('.masthead .join').getAttribute('href'), '#entender-tus-analisis');
+ const study=problem.locator('a[href="https://www.jmir.org/2014/8/e187/"]');
+ assert.equal(await study.count(), 1);
+ assert.match(await text(problem), /886/);
+ assert.match(await text(problem), /1[.,\s]?817/);
+ assert(await study.evaluate(link=>Boolean(link.compareDocumentPosition(document.querySelector('[data-problem-choices]')) & Node.DOCUMENT_POSITION_FOLLOWING)));
+ assert(await problem.evaluate(section=>Boolean(section.compareDocumentPosition(document.querySelector('#recogida-en-casa')) & Node.DOCUMENT_POSITION_FOLLOWING)));
  for(const selector of ['.hero-kit-cta','[data-range-upload]','[data-method-upload]','[data-offer-upload]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'free');
  for(const selector of ['.hero-kit-secondary','[data-method-kit]','[data-offer-kit-action]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'quarterly');
  for(const selector of ['.hero-kit-secondary','[data-method-kit]'])approvedKitCopy(selector,await text(page.locator(selector)));
