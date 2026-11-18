@@ -132,6 +132,7 @@
 .method-final-image figcaption { font-size: 12px; padding-top: 15px; color: var(--method-muted); }
 .method-final-copy > p { font-size: 17px; color: var(--method-muted); margin: 28px 0; max-width: 430px; }
 .method-final-copy > .eva-text-link { display: flex; width: fit-content; margin-top: 14px; }
+.method-kit-terms { display: block; margin-top: 4px; font-size: 13px; line-height: 1.5; color: var(--method-muted); }
 .method-specialty-link { margin-top: 24px; }
 #method-journey-heading, #method-report-heading { scroll-margin-top: 105px; }
 @media (min-width: 1000px) and (min-height: 820px) and (prefers-reduced-motion: no-preference) {

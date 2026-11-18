@@ -1,4 +1,5 @@
 'use client';
+import {starterSubscription} from '@/lib/site-content/starter-subscription';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
 import { businessLinks, methodSteps } from '@/lib/landing-content';
@@ -100,7 +101,7 @@ export function MethodJourney({ calm = false }: {
         <div className="method-chapter-body"><h3 ref={node => { headings.current[index] = node; }} tabIndex={-1}>{__site.t(step.title)}</h3><p>{__site.t(step.copy)}</p>
           {index === 0 && <div className="method-entry-actions">
             <a href={__site.href(uploadHref)} data-method-upload>{__site.t("Interpretar mis analíticas gratis")}<JourneyArrow/></a>
-            <a href={__site.href(businessLinks.signup + '?plan=quarterly')} data-method-kit>{__site.t("Kit de 13 biomarcadores · 99 € + IVA")}<JourneyArrow/></a>
+            <a href={__site.href(businessLinks.signup + '?plan=quarterly')} data-method-kit><span>{starterSubscription[__site.locale].kitAction}<small>{starterSubscription[__site.locale].summary} {starterSubscription[__site.locale].cancelAnytime}</small></span><JourneyArrow/></a>
           </div>}
         </div>
       <figure className={`method-figure method-figure-${index}`}>

@@ -1,4 +1,5 @@
-/** Existing founder testimony and the two approved entry routes, with no recurring-panel promise. */
+import {starterSubscription} from '@/lib/site-content/starter-subscription';
+
 export const closingCopy = {
   es: {
     founder: {
@@ -14,23 +15,22 @@ export const closingCopy = {
     offer: {
       kicker: 'ELIGE CÓMO EMPEZAR',
       heading: ['Empieza', 'con EVA.'],
-      lead: 'Con una analítica previa o con tu primer kit.',
+      lead: 'Con una analítica previa o con un kit por suscripción.',
       free: {
         heading: 'Interpreta tus analíticas gratis.',
         body: 'Sube tu informe anterior y consulta tus resultados con contexto.',
         action: 'Interpretar mis analíticas gratis',
-        note: 'Con tu cuenta y consentimiento. Sin tarjeta de crédito.',
+        note: 'Con tu cuenta y consentimiento. Sin tarjeta ni suscripción.',
       },
       kit: {
-        heading: 'O empieza con tu primer kit.',
-        summary: ['Tu primer kit en casa.', '13 biomarcadores, explicados.'],
+        heading: 'O suscríbete al kit en casa.',
+        summary: '13 biomarcadores en cada kit.',
         bullets: [
           'Recogida en casa con Tasso+.',
-          'Análisis de 13 biomarcadores en laboratorio.',
           'Tus resultados, explicados junto a los intervalos del laboratorio.',
-          'Un punto de partida para comparar resultados compatibles con el tiempo.',
+          starterSubscription.es.rationale,
         ],
-        action: 'Pide tu primer kit',
+        action: starterSubscription.es.kitAction,
       },
       details: {
         kicker: 'ANTES DE ELEGIR',
@@ -59,23 +59,22 @@ export const closingCopy = {
     offer: {
       kicker: 'CHOOSE HOW TO START',
       heading: ['Start', 'with EVA.'],
-      lead: 'With previous lab results or your first kit.',
+      lead: 'With a previous lab report or a home kit subscription.',
       free: {
         heading: 'Interpret your lab results for free.',
         body: 'Upload your previous report and explore your results in context.',
         action: 'Interpret my lab results for free',
-        note: 'With your account and consent. No credit card required.',
+        note: 'With your account and consent. No card or subscription required.',
       },
       kit: {
-        heading: 'Or start with your first kit.',
-        summary: ['Your first at-home kit.', '13 biomarkers, explained.'],
+        heading: 'Or subscribe to the home kit.',
+        summary: '13 biomarkers in every kit.',
         bullets: [
           'Collect at home with Tasso+.',
-          'Laboratory testing of 13 biomarkers.',
           'Your results, explained with laboratory reference ranges.',
-          'A starting point for comparing compatible results over time.',
+          starterSubscription.en.rationale,
         ],
-        action: 'Order your first kit',
+        action: starterSubscription.en.kitAction,
       },
       details: {
         kicker: 'BEFORE YOU CHOOSE',

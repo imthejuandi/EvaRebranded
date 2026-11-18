@@ -32,13 +32,33 @@ for(const locale of ['es','en'])for(const[key,document]of Object.entries(documen
  assert.equal((html.match(/<h1\b/g)||[]).length,1,key+' one document heading');
  docs.push(`/${locale}/${key}`);
 }
-const narrative=[['science','A mirror. A map.'],['science','Klemera-Doubal'],['science','0 to 100'],['science','HOMA-IR'],['about','palliative care'],['about','The real product is understanding'],['how-it-works','Critical low'],['how-it-works','26 nodes'],['pricing','€396 per year'],['contact','Careers'],['blog','evidence-based health education']];
+const narrative=[['science','A mirror. A map.'],['science','Klemera-Doubal'],['science','0 to 100'],['science','HOMA-IR'],['about','palliative care'],['about','The real product is understanding'],['how-it-works','Critical low'],['how-it-works','26 nodes'],['contact','Careers'],['blog','evidence-based health education']];
 for(const[route,expected]of narrative){const text=visible(await read('/en/'+route));assert(text.toLowerCase().includes(expected.toLowerCase()),route+' missing restored content '+expected);}
 for(const route of ['signup','login','forgot-password','reset-password','callback','upload']){
  const html=await read('/en/'+route),text=visible(html);assert(html.includes('lang="en"'));assert(!/Bienvenido|Contraseña|TU ESPACIO|No se crean/.test(text),route+' Spanish entry copy');assert(text.includes('No accounts are created'),route+' explicit simulated entry');
 }
 const signup=await read('/en/signup');assert.equal((signup.match(/type="checkbox"/g)||[]).length,4);assert.equal((signup.match(/type="checkbox"[^>]*required/g)||[]).length,3);
-const landing=await read('/en');assert(landing.includes('€99 / quarter'));assert(!landing.includes('€99 per kit'));
-const report={sourceVariants:sources.length,sourcePassages:passages,interactiveStates:states,bilingualDocuments:docs.length,restoredNarrativeChecks:narrative.length,entryRoutes:6,decisions:'Retained as open; no new clinical or commercial facts invented',productionConnections:'No real signup, email, payments, or device connection enabled'};
+for (const [locale,count,price,cadence,cancel] of [
+ ['en','13 biomarkers','€99 + VAT','per quarter','cancel at any time'],
+ ['es','13 biomarcadores','99 € + IVA','por trimestre','cancelar en cualquier momento'],
+]) {
+ for (const route of ['/'+locale,'/'+locale+'/pricing']) {
+  const text=visible(await read(route));
+  assert(text.includes(count),route+' starter biomarker count');
+  assert(text.includes(price),route+' starter price with tax qualifier');
+ }
+ const pricing=visible(await read('/'+locale+'/pricing'));
+ assert(!/\b15 (?:biomarkers|biomarcadores)\b/i.test(pricing),locale+' obsolete starter count');
+ assert(!/€396|396\s*€/.test(pricing),locale+' obsolete annual price');
+ const terms=visible(await read('/'+locale+'/legal/terms'));
+ for (const text of [pricing,terms]) {
+  assert(text.includes(price+' '+cadence),locale+' quarterly subscription price');
+  assert(text.toLowerCase().includes(cancel),locale+' cancellation at any time');
+ }
+ assert(terms.includes(count),locale+' terms starter biomarker count');
+ const method=visible(await read('/'+locale+'/how-it-works'));
+ assert(method.includes(count),locale+' method starter biomarker count');
+}
+const report={sourceVariants:sources.length,sourcePassages:passages,interactiveStates:states,bilingualDocuments:docs.length,restoredNarrativeChecks:narrative.length,entryRoutes:6,starterOfferLocalesChecked:2,decisions:'Confirmed starter subscription terms verified alongside the archived source. Other decisions remain open.',productionConnections:'No real signup, email, payments, or device connection enabled'};
 await fs.mkdir('docs',{recursive:true});await fs.writeFile('docs/content-parity-verification.json',JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({passed:true,...report},null,2));

@@ -20,7 +20,7 @@ export {dashboardMarkerForReport, dashboardMarkerHistory, selectDashboardReading
 export const dashboardCopy = {es: {
   eyebrow: 'MI EVA / RESUMEN', greeting: (name: string) => `Hola, ${name}.`,
   intro: 'Tus resultados más recientes, en un mismo lugar.', upload: 'Añadir resultados', loading: 'Preparando tu espacio de ejemplo…',
-  plan: {free: 'Cuenta gratuita', quarterly: 'EVA Trimestral', annual: 'EVA Anual', full_panel: 'Panel Completo'},
+  plan: {free: 'Cuenta gratuita', quarterly: 'EVA Trimestral', annual: 'Plan anterior de ejemplo', full_panel: 'Panel Completo'},
   subscription: {active: 'Plan activo', paused: 'Plan en pausa', cancelled: 'Plan cancelado', past_due: 'Revisa el pago de tu plan'},
   current: 'TU LECTURA ACTUAL', sample: 'Informe de ejemplo', source: {kit: 'Muestra del kit', upload: 'Analítica subida'},
   reportLink: 'Abrir el informe', methodology: 'Cómo se calculan',

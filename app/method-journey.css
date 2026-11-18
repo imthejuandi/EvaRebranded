@@ -54,6 +54,7 @@
 .method-entry-actions > a:first-child { color: var(--ink); border-bottom-color: currentColor; font-size: 14px; }
 .method-entry-actions > a:hover { color: #965c36; }
 .method-entry-actions > a:focus-visible { outline: 2px solid #6a4b34; outline-offset: 5px; }
+.method-entry-actions small { display: block; font-size: 12px; line-height: 1.45; }
 .method-entry-actions svg { width: 18px; height: 18px; flex-shrink: 0; }
 .method-paging { grid-area: paging; display: flex; justify-content: space-between; gap: 20px; min-width: 0; margin-top: 34px; border-top: 1px solid #0b101033; border-bottom: 1px solid #0b101033; }
 .method-paging button { display: flex; align-items: center; gap: 13px; min-height: 64px; font-size: 13px; }

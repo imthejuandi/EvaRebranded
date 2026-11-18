@@ -29,8 +29,6 @@ export const rangeProofCopy = {
     ],
     primary: 'Interpret your past labs',
     primarySubtitle: 'Start for free',
-    secondary: 'Or order your first kit',
-    secondaryDetail: '13 biomarkers · €99 + VAT',
     methodLink: 'Understand the difference',
   },
   es: {
@@ -62,8 +60,6 @@ export const rangeProofCopy = {
     ],
     primary: 'Interpreta tus análisis previos',
     primarySubtitle: 'Empieza gratis',
-    secondary: 'O pide tu primer kit',
-    secondaryDetail: '13 biomarcadores · 99 € + IVA',
     methodLink: 'Entiende la diferencia',
   },
 } as const;

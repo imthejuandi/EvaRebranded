@@ -2,8 +2,8 @@
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
-const ORIGIN='https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'37';
+const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
+const VERSION=process.env.EVA_REVIEW_VERSION||'47';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -14,15 +14,26 @@ const text=async locator=>(await locator.innerText()).replace(/\s+/g,' ').trim()
 const uri=(locale,hash='empezar')=>`${ORIGIN}/${locale}?review=${VERSION}#${hash}`;
 const expectQuery=(url,locale,plan)=>{const u=new URL(url,ORIGIN);assert.equal(u.pathname,`/${locale}/signup`);assert.equal(u.searchParams.get('plan'),plan);if(plan==='free')assert.equal(u.searchParams.get('redirect'),'/es/upload');};
 async function target(locator){await locator.scrollIntoViewIfNeeded();await locator.evaluate(async()=>{await document.fonts.ready;await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));});const box=await locator.boundingBox();assert(box&&box.width>=44&&box.height>=44);const hit=await locator.evaluate(el=>{const r=el.getBoundingClientRect(),node=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return node===el||el.contains(node);});assert(hit,'CTA center is obscured');return box;}
-const legacyKit=/\b15\s+(?:biomarcadores|biomarkers)|99\s*€\s*por trimestre|€\s*99 per quarter|por trimestre|per quarter|renovación trimestral|quarterly renewal|cada trimestre|every quarter|EVA Quarterly|EVA Trimestral/i;
-function recordLegacy(where,content,locale,screenshot){if(legacyKit.test(content))report.findings.push({type:'legacy_first_kit_copy',where,locale,text:content,screenshot});}
-function approvedKitCopy(where,content){if(Number(VERSION)<38)return;assert(!legacyKit.test(content),where+': legacy first-kit claim');assert(/\b13\s+(?:biomarcadores|biomarkers)\b/i.test(content),where+': missing13-marker scope');assert(/(?:99\s*€|€\s*99)\s*\+\s*(?:IVA|VAT)/i.test(content),where+': missing99plusVAT');}
+const legacyKit=/\b15\s+(?:biomarcadores|biomarkers)|(?:396\s*€|€\s*396)/i;
+function recordLegacy(where,content,locale,screenshot){if(legacyKit.test(content))report.findings.push({type:'legacy_starter_terms',where,locale,text:content,screenshot});}
+function approvedKitCopy(where,content){
+ assert(!legacyKit.test(content),where+': obsolete starter scope or price');
+ assert(/\b13\s+(?:biomarcadores|biomarkers)\b/i.test(content),where+': missing 13-marker scope');
+ assert(/(?:99\s*€|€\s*99)\s*\+\s*(?:IVA|VAT)/i.test(content),where+': missing price or VAT');
+ assert(/suscri|subscri/i.test(content),where+': missing subscription');
+ assert(/por trimestre|per quarter/i.test(content),where+': missing quarterly price');
+ assert(/cancela cuando quieras|cancel anytime/i.test(content),where+': missing cancellation terms');
+}
 
 async function home(page,locale){
  const response=await page.goto(uri(locale),{waitUntil:'domcontentloaded'});assert.equal(response.status(),200);
  await page.locator('.calm-hero').waitFor({state:'visible'});await page.locator('[data-offer-upload]').waitFor({state:'visible'});await page.evaluate(()=>document.fonts.ready);
  for(const selector of ['.hero-kit-cta','[data-range-upload]','[data-method-upload]','[data-offer-upload]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'free');
- for(const selector of ['.hero-kit-secondary','[data-range-kit]','[data-method-kit]','[data-offer-kit-action]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'quarterly');
+ for(const selector of ['.hero-kit-secondary','[data-method-kit]','[data-offer-kit-action]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'quarterly');
+ for(const selector of ['.hero-kit-secondary','[data-method-kit]'])approvedKitCopy(selector,await text(page.locator(selector)));
+ const offer=page.locator('[data-offer-kit]');
+ approvedKitCopy('closing offer',(await text(offer))+' '+await offer.locator('[data-offer-price]').getAttribute('aria-label'));
+ assert.equal(await page.locator('[data-range-kit]').count(),0,'Range proof keeps its single free-report action');
 }
 async function publicAndFooter(page,locale,result){
  const footer=page.locator('#site-footer');await footer.scrollIntoViewIfNeeded();
@@ -54,19 +65,33 @@ async function onboarding(page,locale,plan,result){
  await page.getByRole('heading',{name:'Haz espacio para tus resultados.',exact:true}).waitFor();await page.locator('.onboarding-actions button.eva-button').click();await page.getByRole('heading',{name:'Cuéntanos un poco de ti.',exact:true}).waitFor();
  await page.getByLabel('Nombre',{exact:true}).fill('QA');await page.getByLabel('Apellido',{exact:true}).fill('Fictional');await page.getByLabel('Fecha de nacimiento',{exact:true}).fill('1990-01-01');await page.locator('.onboarding-fields select').selectOption('other');
  await page.locator('.onboarding-actions button.eva-button').click();await page.getByRole('heading',{name:'Elige cómo leerlo.',exact:true}).waitFor();await page.getByRole('radio',{name:/Quiero profundizar/}).check();await page.locator('.onboarding-actions button.eva-button').click();await page.getByRole('heading',{name:'Elige tu primer paso.',exact:true}).waitFor();
- const selected=page.locator('input[name=path]:checked');await selected.waitFor({state:'attached'});const choice=await selected.evaluate(el=>el.closest('label').innerText);assert(plan==='free'?/analítica que ya tengo/.test(choice):/kit/.test(choice));result.preselectedChoice=choice.replace(/\s+/g,' ').trim();
- const allChoices=await text(page.locator('.onboarding-choices'));const screenshot=await shot(page,`${plan}-${locale}-onboarding-choices`);recordLegacy('onboarding choices',allChoices,locale,screenshot);approvedKitCopy('onboarding choices',allChoices);result.onboardingChoices=allChoices;if(Number(VERSION)>=38){const choices=await page.locator('.onboarding-choices label').allTextContents();assert(/analítica que ya tengo/.test(choices[0]));assert(choices.filter(s=>/opción de archivo/.test(s)).every(s=>/No es una oferta actual/.test(s)));result.onboardingApprovedKitCopy=true;result.archivalOptionsQualified=true;}
+ const selected=page.locator('input[name=path]:checked');await selected.waitFor({state:'attached'});const choice=await selected.evaluate(el=>el.closest('label').innerText);assert(plan==='free'?/analítica que ya tengo/.test(choice):/kit/i.test(choice));result.preselectedChoice=choice.replace(/\s+/g,' ').trim();
+ const allChoices=await text(page.locator('.onboarding-choices'));const screenshot=await shot(page,`${plan}-${locale}-onboarding-choices`);recordLegacy('onboarding choices',allChoices,locale,screenshot);approvedKitCopy('onboarding choices',allChoices);result.onboardingChoices=allChoices;if(Number(VERSION)>=38){const choices=await page.locator('.onboarding-choices label').allTextContents();assert(/analítica que ya tengo/.test(choices[0]));assert.equal(choices.length,2,'Direct free and quarterly intents expose only the two current entry choices');assert(/sin suscripción/i.test(choices[0]));result.onboardingApprovedKitCopy=true;result.currentEntryChoices=true;}
  await page.locator('.onboarding-actions button.eva-button').click();if(plan==='free'){
   await page.waitForURL(u=>u.pathname==='/es/upload');await page.getByRole('heading',{name:'Añade tus resultados.',exact:true}).waitFor();assert(await page.getByRole('button',{name:'Usar informe de ejemplo',exact:true}).isVisible());result.completedAt='upload';result.screenshot=await shot(page,`${plan}-${locale}-upload`);
  }else{
-  await page.waitForURL(u=>u.pathname==='/es/checkout/resume');assert.equal(new URL(page.url()).searchParams.get('plan'),'quarterly');await page.locator('.checkout-summary').waitFor();const summary=await text(page.locator('.checkout-summary'));const screenshot=await shot(page,`${plan}-${locale}-checkout`);recordLegacy('checkout before confirmation',summary,locale,screenshot);approvedKitCopy('checkout before confirmation',summary);if(Number(VERSION)>=38){const full=await text(page.locator('.page-checkout'));assert(!/renovación trimestral|quarterly renewal|por trimestre|per quarter|cada trimestre|every quarter/i.test(full));result.checkoutApprovedKitCopy=true;}result.completedAt='checkout, before confirmation';result.screenshot=screenshot;result.checkoutSummary=summary;
+  await page.waitForURL(u=>u.pathname==='/es/checkout/resume');assert.equal(new URL(page.url()).searchParams.get('plan'),'quarterly');await page.locator('.checkout-summary').waitFor();const summary=await text(page.locator('.checkout-summary'));const screenshot=await shot(page,`${plan}-${locale}-checkout`);recordLegacy('checkout before confirmation',summary,locale,screenshot);approvedKitCopy('checkout before confirmation',summary);if(Number(VERSION)>=38){const full=await text(page.locator('.page-checkout'));approvedKitCopy('checkout',full);result.checkoutApprovedKitCopy=true;}result.completedAt='checkout, before confirmation';result.screenshot=screenshot;result.checkoutSummary=summary;
  }
  result.previewState=await page.evaluate(key=>{const s=JSON.parse(localStorage.getItem(key));return {session:s.session,onboarded:s.onboarded,plan:s.plan,healthConsent:s.profile.healthConsent,marketing:s.profile.notifications.marketing,literacy:s.profile.literacy};},STORE);
  assert.equal(result.previewState.session,true);assert.equal(result.previewState.onboarded,true);assert.equal(result.previewState.plan,'free');assert.equal(result.previewState.healthConsent,true);assert.equal(result.previewState.marketing,false);assert.equal(result.previewState.literacy,'advanced');
 }
 (async()=>{let browser;try{
- fs.mkdirSync(OUT,{recursive:true});const proxy=process.env.HTTPS_PROXY||process.env.HTTP_PROXY;
+ fs.mkdirSync(OUT,{recursive:true});const loopback=['localhost','127.0.0.1','[::1]'].includes(new URL(ORIGIN).hostname);const proxy=!loopback&&(process.env.HTTPS_PROXY||process.env.HTTP_PROXY);
  browser=await chromium.launch({headless:true,executablePath:'/usr/bin/chromium',args:['--no-sandbox','--disable-dev-shm-usage'],...(proxy?{proxy:{server:proxy}}:{})});
+ const retired=await browser.newContext({viewport:{width:390,height:844}});
+ try{
+  const page=await retired.newPage();
+  for(const locale of ['en','es']){
+   await page.goto(`${ORIGIN}/${locale}/signup?plan=annual`,{waitUntil:'domcontentloaded'});
+   const unavailable=page.locator('.eva-form-error[role=alert]');
+   await unavailable.waitFor();assert.match(await text(unavailable),/unavailable|no está disponible/i);
+   assert.equal(await page.locator('.eva-access-intent').count(),0);
+  }
+  await page.goto(`${ORIGIN}/es/checkout/resume?intent=annual`,{waitUntil:'domcontentloaded'});
+  await page.getByText(/La opción anual ya no está disponible/i).waitFor();
+  assert.equal(await page.locator('.checkout-confirm').count(),0);
+  report.retiredAnnualUnavailable=true;
+ }finally{await retired.close();}
  for(const locale of ['en','es'])for(const plan of ['free','quarterly']){
   console.log('Checking',VERSION,locale,plan);const context=await browser.newContext({viewport:locale==='en'?{width:1440,height:900}:{width:375,height:812},reducedMotion:'reduce'});const page=await context.newPage();page.setDefaultTimeout(20000);page.setDefaultNavigationTimeout(45000);const result={locale,plan,passed:false};report.cases.push(result);
   page.on('pageerror',error=>report.errors.push({locale,plan,message:error.message}));

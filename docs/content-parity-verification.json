@@ -3,8 +3,9 @@
   "sourcePassages": 391,
   "interactiveStates": 109,
   "bilingualDocuments": 10,
-  "restoredNarrativeChecks": 11,
+  "restoredNarrativeChecks": 10,
   "entryRoutes": 6,
-  "decisions": "Retained as open; no new clinical or commercial facts invented",
+  "starterOfferLocalesChecked": 2,
+  "decisions": "Confirmed starter subscription terms verified alongside the archived source. Other decisions remain open.",
   "productionConnections": "No real signup, email, payments, or device connection enabled"
 }

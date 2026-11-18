@@ -17,6 +17,7 @@
 .full-offer .offer-account-note{font-size:16px;line-height:1.55;color:#50584d;margin-top:17px;max-width:42ch}
 .full-offer .offer-kit-heading{margin-bottom:30px}
 .full-offer .offer>.offer-kit-action{min-height:48px;margin-top:22px;padding-block:13px;font-size:17px;line-height:1.4}
+.full-offer .offer>.offer-cancel-note{margin:4px 0 0;font-size:16px;line-height:1.45;color:#50584d}
 .full-offer .offer>.offer-kit-action svg{width:21px;height:21px;flex-shrink:0}
 .full-offer .offer-panel-details{align-items:center}
 .full-offer .offer-panel-details>div:first-child{max-width:620px;min-width:0}

@@ -41,6 +41,9 @@ export function RhythmTheatre({ plan }: {
         return () => { cancelled = true; dispose(); };
     }, []);
     const single = plan !== 'quarterly';
+    const quarterlyNote = __site.locale === 'en'
+        ? 'Four quarterly collections with example dates.'
+        : 'Cuatro recogidas trimestrales con fechas de ejemplo.';
     const title = single ? (plan === 'free' ? 'Lo que ya sabes, en un solo lugar.' : 'Una lectura con más perspectiva.') : chapters[chapter].title;
     return <section ref={root} className="rhythm-theatre" data-plan={plan} aria-label={__site.t("El ritmo de tus lecturas")} data-progress="0">
   <div className="rhythm-theatre-stage">
@@ -52,7 +55,7 @@ export function RhythmTheatre({ plan }: {
         setChapter(i);
         return;
     } const top = node.getBoundingClientRect().top + scrollY - 88; window.scrollTo({ top: top + (node.offsetHeight - innerHeight + 88) * ((i + .25) / 4), behavior: 'smooth' }); }}><span>{__site.t(single ? '01' : item.month)}</span>{__site.t(single ? 'Tu lectura' : i === 0 ? 'Punto de partida' : `A los ${Number(item.month)} meses`)}</button>))}</div>
-   <p className="rhythm-theatre-note">{__site.t(single ? 'Recorrido ilustrativo.' : 'Cuatro muestras, separadas por tres meses. Fechas ilustrativas.')}<span>{__site.t("Desliza para recorrer ")}<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5" fill="none" stroke="currentColor"/></svg></span></p>
+   <p className="rhythm-theatre-note">{__site.t(single ? 'Recorrido ilustrativo.' : quarterlyNote)}<span>{__site.t("Desliza para recorrer ")}<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13m-5-5 5 5 5-5" fill="none" stroke="currentColor"/></svg></span></p>
   </div>
  </section>;
 }

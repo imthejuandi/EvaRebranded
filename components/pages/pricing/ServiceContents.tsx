@@ -1,18 +1,20 @@
 'use client';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useState } from 'react';
+import { kitInsightCopy } from '@/lib/site-content/kit-insight-copy';
 import type { PlanId } from './ServiceCalendar';
-const details = [
-    { label: 'En casa', title: 'Un espacio en tu día.', body: 'La recogida de muestra se realiza siguiendo las instrucciones del dispositivo. El kit incluye el envío de vuelta.' },
-    { label: 'En el laboratorio', title: 'Una muestra, su análisis.', body: 'El laboratorio analiza la muestra. El panel y las condiciones se confirman antes de contratar.' },
-    { label: 'En tu informe', title: 'Los detalles que importan.', body: 'Valor, unidad, fecha y una explicación: información que puedes volver a consultar en tu cuenta.' },
-] as const;
 /** Conceptual service still life. The photograph is not the commercial kit. */
 export default function ServiceContents({ plan }: {
     plan: PlanId;
 }) {
     const __site = useSiteLanguage();
     const [detail, setDetail] = useState(0);
+    const markerCount = kitInsightCopy[__site.locale].markers.length;
+    const details = [
+        { label: 'En casa', title: 'Un espacio en tu día.', body: 'La recogida de muestra se realiza siguiendo las instrucciones del dispositivo. El kit incluye el envío de vuelta.' },
+        { label: 'En el laboratorio', title: 'Una muestra, su análisis.', body: __site.locale === 'es' ? `El laboratorio analiza los ${markerCount} biomarcadores del kit inicial.` : `The lab measures the ${markerCount} biomarkers in your starting kit.` },
+        { label: 'En tu informe', title: 'Los detalles que importan.', body: 'Valor, unidad, fecha y una explicación: información que puedes volver a consultar en tu cuenta.' },
+    ] as const;
     return <div className={`service-contents service-contents--${plan}`} data-testid="service-contents">
     <div className="service-contents-scene">
       <img className="service-still" src="/art/editorial/pricing-service-still-1200.webp" srcSet="/art/editorial/pricing-service-still-640.webp 640w, /art/editorial/pricing-service-still-1200.webp 1024w" sizes="(max-width: 820px) 100vw, 62vw" width="1024" height="688" alt={__site.t("Composici\u00F3n editorial de un sobre de recogida, papel y vidrio sobre piedra iluminada por el sol.")} fetchPriority="high" decoding="async"/>

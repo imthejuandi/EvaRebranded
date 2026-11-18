@@ -167,8 +167,6 @@
 .page-book .book-extra-order .eva-button{background:#334432;color:#fffdf7}
 .page-book .book-specialty-list p,.page-book .book-specialty-quote,.page-book .book-closing>p,.page-book .book-choice-description{color:#535e50}
 .page-book .book-section-heading>p{font-size:13px;color:#535e50}
-.page-book .book-annual-note{font-size:12px;line-height:1.6;color:#535e50;max-width:48ch;margin-top:16px}
-.page-book .book-annual-choice{font-size:12px;line-height:1.5;text-decoration:underline;text-underline-offset:4px;min-height:44px;display:flex;align-items:center}
 /* The colored receipt holds the selected cycle's evidence and one timestamp action. */
 .page-book .book-cycle-evidence{margin:28px 0;border:1px solid #fff9;border-radius:24px;padding:28px;background:linear-gradient(118deg,#f4e2d5e8,#e9e3ead9 62%,#dfe4edde);box-shadow:inset 0 1px 2px #fff9,0 12px 25px #44334605;color:#343239;min-width:0}
 .page-book .book-cycle-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}

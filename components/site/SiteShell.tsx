@@ -1,5 +1,6 @@
 'use client';
 
+import {starterSubscription} from '@/lib/site-content/starter-subscription';
 import {useState, type ReactNode} from 'react';
 import {usePathname} from 'next/navigation';
 import {ArrowUpRight} from 'lucide-react';
@@ -21,7 +22,7 @@ export function SiteShell({children}: {children: ReactNode}) {
       <div className="eva-header-actions">
         <LanguageSwitch className="site-language-switch"/>
         <a href={href("/es/login")} hrefLang={locale}>{t('Mi EVA')}</a>
-        <a className="eva-header-kit" href={href("/es/signup?plan=quarterly")} hrefLang={locale}>{t('Pide tu kit')}<ArrowUpRight size={16} strokeWidth={1.4} aria-hidden="true"/></a>
+        <a className="eva-header-kit" href={href("/es/signup?plan=quarterly")} hrefLang={locale}>{starterSubscription[locale].kitAction}<ArrowUpRight size={16} strokeWidth={1.4} aria-hidden="true"/></a>
         <button aria-expanded={open} aria-controls="inner-menu" onClick={() => setOpen(!open)} className="eva-mobile-menu">{t(open ? 'Cerrar' : 'Menú')}</button>
       </div>
     </header>

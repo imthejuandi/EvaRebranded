@@ -1,4 +1,5 @@
 'use client';
+import {starterSubscription} from '@/lib/site-content/starter-subscription';
 import {MethodInterpretation} from '@/components/site/RestoredContent';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useState } from 'react';
@@ -33,7 +34,7 @@ export const methodCopy = { es: {
             { label: 'Cuarta muestra', title: 'Tu historial sigue abierto.', body: 'Los cambios no siguen una dirección obligatoria. Conserva cada informe y consulta tus dudas con un profesional de salud.' },
         ],
         finalTitle: 'Tus resultados también pueden ser el comienzo.',
-        finalBody: 'Explora cómo reunir un informe que ya tienes. O elige un plan para empezar con una nueva recogida de muestra.',
+        finalBody: 'Explora un informe que ya tienes o empieza tu historial con el kit en casa.',
         imageAlt: 'Una pausa después de nadar, entre luz cálida y sombras azules',
     } };
 const copy = methodCopy.es;
@@ -73,6 +74,7 @@ function CompareOverTime() {
 }
 export default function MethodPage() {
     const __site = useSiteLanguage();
+    const kit = starterSubscription[__site.locale];
     return <div className="page-method">
     <section className="eva-inner method-intro" aria-labelledby="method-heading">
       <div className="method-intro-copy"><p className="method-page-label">{__site.t(copy.eyebrow)}</p><h1 id="method-heading">{__site.t(copy.title)}</h1><p className="method-intro-description">{__site.t(copy.intro)}</p><div className="method-intro-actions"><a href={__site.href("#method-journey-heading")} className="eva-button">{__site.t("Ver el recorrido")}<ArrowDown size={17} aria-hidden="true"/></a><a href={__site.href("/es/pricing")} className="eva-text-link">{__site.t("Ver planes")}<ArrowUpRight size={17} aria-hidden="true"/></a></div></div>
@@ -85,7 +87,8 @@ export default function MethodPage() {
     <MethodInterpretation />
     <section className="eva-inner method-final" aria-labelledby="method-final-heading">
       <figure className="method-final-image"><img src="/art/editorial/after-swim-1200.webp" srcSet="/art/editorial/after-swim-600.webp 600w, /art/editorial/after-swim-1200.webp 1200w" sizes="(max-width: 760px) calc(100vw - 40px), 48vw" alt={__site.t(copy.imageAlt)} loading="lazy" decoding="async" width="1200" height="1607"/><figcaption>{__site.t("La vida sigue. T\u00FA tambi\u00E9n.")}</figcaption></figure>
-      <div className="method-final-copy"><h2 id="method-final-heading">{__site.t(copy.finalTitle)}</h2><p>{__site.t(copy.finalBody)}</p><ActionLink href={__site.href("/es/upload")}>{__site.t("Explorar con un informe")}</ActionLink><a className="eva-text-link" href={__site.href("/es/pricing")}>{__site.t("Prefiero empezar con un kit")}<ArrowUpRight size={17} aria-hidden="true"/></a><a className="method-specialty-link" href={__site.href("/es/pricing#pricing-specialty-heading")}>{__site.t("Explorar perfiles especializados")}<ArrowUpRight size={15} aria-hidden="true"/></a></div>
+      <div className="method-final-copy"><h2 id="method-final-heading">{__site.t(copy.finalTitle)}</h2><p>{__site.t(copy.finalBody)}</p><ActionLink href={__site.href("/es/upload")}>{__site.t("Explorar con un informe")}</ActionLink><a className="eva-text-link" href={__site.href("/es/pricing")}>{__site.t("Explorar la suscripción al kit")}<ArrowUpRight size={17} aria-hidden="true"/></a>
+        <small className="method-kit-terms">{kit.summary} {kit.cancelAnytime}</small><a className="method-specialty-link" href={__site.href("/es/pricing#pricing-specialty-heading")}>{__site.t("Explorar perfiles especializados")}<ArrowUpRight size={15} aria-hidden="true"/></a></div>
     </section>
   </div>;
 }
