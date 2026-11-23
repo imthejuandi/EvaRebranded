@@ -1,6 +1,6 @@
 'use client';
 
-import {useEffect,useRef,type CSSProperties} from 'react';
+import {useEffect,useRef} from 'react';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {businessLinks} from '@/lib/landing-content';
 import {flowHref} from '@/lib/preview/policy';
@@ -16,16 +16,9 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
   const uploadHref=flowHref(businessLinks.signup,{plan:'free',returnTo:businessLinks.upload,reportId:null,invalidPlan:false});
   const sample=rangeProofExample;
   const number=new Intl.NumberFormat(locale,{minimumFractionDigits:1,maximumFractionDigits:1}).format(sample.value);
-  const percent=(value:number)=>(value-sample.axisMin)/(sample.axisMax-sample.axisMin)*100;
-  const graphicStyle={
-    '--range-reading-position':`${percent(sample.value)}%`,
-    '--range-lab-end':`${percent(sample.labUpper)}%`,
-    '--range-prevention-start':`${percent(sample.preventionLower)}%`,
-    '--range-overlap-width':`${percent(sample.labUpper)-percent(sample.preventionLower)}%`,
-  } as CSSProperties;
   const chartDescription=locale==='es'
-    ? `El mismo ejemplo de hs-CRP de ${number} mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. La zona compartida entre 2 y 5 muestra que ambas interpretaciones pueden ser ciertas; no representa una probabilidad de enfermedad.`
-    : `The same ${number} mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The shared area between 2 and 5 shows that both interpretations can apply; it is not a disease probability.`;
+    ? `El mismo ejemplo de hs-CRP de ${number} mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.`
+    : `The same ${number} mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The cutoff at 5 is this laboratory reference limit and the cutoff at 2 prompts review if persistent. These comparisons do not show an optimal target or diagnose disease.`;
 
   useEffect(()=>{
     const element=root.current, trigger=prevention.current;
@@ -45,8 +38,6 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
       observer.disconnect();
       if(preference.matches||document.hidden){finish();return;}
       element.dataset.rangeEntryState='playing';
-      const band=element.querySelector<HTMLElement>('[data-range-prevention-band]');
-      if(band)animations.push(band.animate([{opacity:.2,transform:'translateY(6px)'},{opacity:1,transform:'translateY(0)'}],{duration:500,easing:'cubic-bezier(.22,1,.36,1)'}));
       animations.push(trigger.animate([{transform:'translateY(10px)'},{transform:'translateY(0)'}],{duration:500,easing:'cubic-bezier(.22,1,.36,1)'}));
       void Promise.all(animations.map(animation=>animation.finished)).then(()=>{if(!finished){finished=true;element.dataset.rangeEntryState='complete';}}).catch(()=>{});
     },{threshold:.2});
@@ -71,22 +62,18 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
             <div><h3>hs-CRP</h3><p className="range-proof-marker-name">{c.markerLabel}</p><p className="range-proof-example">{c.exampleLabel}</p></div>
             <p className="range-proof-value" data-range-value={sample.value}><span className="sr-only">{number} mg/L</span><span aria-hidden="true"><DotNumber value={number} density="coarse" calm active={false}/><small>mg/L</small></span></p>
           </header>
-          <figure className="range-proof-plot" style={graphicStyle} aria-describedby="range-proof-graphic-description" data-range-axis-min={sample.axisMin} data-range-axis-max={sample.axisMax} data-range-marker>
+          <figure className="range-proof-plot" aria-describedby="range-proof-graphic-description" data-range-graphic="comparisons" data-range-marker>
             <p className="sr-only" id="range-proof-graphic-description">{chartDescription}</p>
-            <div className="range-proof-window">
-              <div className="range-proof-overlap" data-range-overlap aria-hidden="true"/>
-              <div className="range-proof-readings">
-                <div className="range-proof-reading" data-range-reading="lab">
-                  <p className="range-proof-reading-label">{c.lab.label}<span>{c.lab.threshold}</span></p>
-                  <div className="range-proof-lane range-proof-lab-lane" aria-hidden="true"><span data-range-lab-band/><i className="range-proof-lab-boundary"/><i className="range-proof-fixed-point"/></div>
-                </div>
-                <div ref={prevention} className="range-proof-reading range-proof-prevention" data-range-reading="prevention">
-                  <p className="range-proof-reading-label">{c.prevention.label}<span>{c.prevention.threshold}</span></p>
-                  <div className="range-proof-lane range-proof-prevention-lane" aria-hidden="true"><span data-range-prevention-band/><i className="range-proof-threshold"/><i className="range-proof-fixed-point"/></div>
-                </div>
+            <div className="range-proof-comparisons">
+              <div className="range-proof-comparison" data-range-reading="lab" role="group" aria-label={c.lab.label}>
+                <p className="range-proof-comparison-value" data-range-reference-value={sample.labUpper}>{number} {'<'} {sample.labUpper} <small>{sample.unit}</small></p>
+                <p className="range-proof-comparison-meaning">{c.lab.interpretation}</p>
+              </div>
+              <div ref={prevention} className="range-proof-comparison" data-range-reading="prevention" role="group" aria-label={c.prevention.label}>
+                <p className="range-proof-comparison-value" data-range-review-value={sample.preventionLower}>{number} {'>'} {sample.preventionLower} <small>{sample.unit}</small><span className="range-proof-condition">{c.prevention.condition}</span></p>
+                <p className="range-proof-comparison-meaning">{c.prevention.interpretation}</p>
               </div>
             </div>
-            <div className="range-proof-axis" aria-hidden="true">{Array.from({length:sample.axisMax-sample.axisMin+1},(_,i)=>sample.axisMin+i).map(tick=><span key={tick}>{tick}</span>)}</div>
             <figcaption className="range-proof-takeaway"><strong>{c.takeawayLead}</strong>{' '}{c.takeaway}</figcaption>
           </figure>
         </div>

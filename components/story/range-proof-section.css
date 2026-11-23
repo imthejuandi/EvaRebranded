@@ -25,26 +25,15 @@
 .range-proof-value small{font-size:12px;line-height:1.4;letter-spacing:.025em;margin-right:6px}
 .range-proof-caption{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;max-width:34ch;margin:var(--proof-space-related) 0 0}
 .range-proof-plot{margin:var(--proof-space-related) 0 0}
-.range-proof-window{position:relative;isolation:isolate}
-.range-proof-overlap{position:absolute;left:var(--range-prevention-start);width:var(--range-overlap-width);top:24px;bottom:0;border-inline:1px solid #f3ce9659;background:#edc59512;pointer-events:none}
+.range-proof-comparisons{display:grid;gap:var(--proof-space-related)}
+.range-proof-comparison{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:baseline;gap:var(--proof-space-related)}
+.range-proof-comparison+.range-proof-comparison{border-top:1px solid #fffdf63f;padding-top:var(--proof-space-related)}
+.range-proof-comparison-value{font-size:20px;line-height:28px;font-weight:var(--proof-heading-weight);color:#f6f0e3;margin:0;font-variant-numeric:tabular-nums;white-space:nowrap}
+.range-proof-comparison-value small{font-size:14px;line-height:20px;font-weight:400}
+.range-proof-condition{display:block;font-size:var(--proof-body-size);line-height:var(--proof-body-leading);font-weight:400;white-space:normal}
+.range-proof-comparison-meaning{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#f6f0e3;margin:0}
 .range-proof-takeaway{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#f6f0e3;margin-top:12px;padding-top:12px;border-top:1px solid #fffdf63f}
 .range-proof-takeaway strong{font-weight:var(--proof-heading-weight)}
-.range-proof-readings{position:relative;display:grid;gap:var(--proof-space-related);z-index:1}
-.range-proof-reading{min-width:0}
-.range-proof-reading-label{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px var(--proof-space-related);font-size:14px;line-height:1.3;font-weight:var(--proof-heading-weight);color:#ece7e0;margin:0}
-.range-proof-reading-label>span{font-size:var(--proof-body-size);line-height:1.4;font-weight:400;color:#f6f0e3}
-.range-proof-lane{height:24px;position:relative;margin:4px 0}
-.range-proof-lane::before{content:'';position:absolute;top:8px;left:0;right:0;height:8px;border-radius:6px;background:#fffdf61f}
-.range-proof-lane>span{position:absolute;top:8px;height:8px;border-radius:6px}
-.range-proof-lab-lane>span{left:0;width:var(--range-lab-end);background:#cfc4e0c7}
-.range-proof-prevention-lane>span{left:var(--range-prevention-start);width:calc(100% - var(--range-prevention-start));background:#e4bd8b80;transform-origin:left center}
-.range-proof-fixed-point{position:absolute;left:var(--range-reading-position);top:12px;width:5px;height:5px;transform:translate(-50%,-50%);border-radius:50%;background:#fffdf6;box-shadow:0 0 0 3px #fffdf61a}
-.range-proof-fixed-point::before{content:'';position:absolute;left:2px;top:-7px;width:1px;height:19px;background:#fffdf6}
-.range-proof-threshold{position:absolute;left:var(--range-prevention-start);top:3px;height:18px;width:2px;background:#f3ce96}
-.range-proof-lab-boundary{position:absolute;left:var(--range-lab-end);top:3px;height:18px;width:1px;background:#e1d8ec}
-.range-proof-axis{display:flex;justify-content:space-between;font-size:12px;line-height:1.4;color:#e6e2db;margin-top:var(--proof-space-tight);font-variant-numeric:tabular-nums}
-.range-proof-prevention .range-proof-reading-label{color:#f4d8b1}
-.range-proof-prevention .range-proof-reading-label>span{color:#ffe1b6}
 .range-proof-context{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;margin:12px 10px 0;max-width:66ch}
 .range-proof-details{margin:8px 10px 0;border-bottom:1px solid #171b1838}
 .range-proof-details>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:var(--proof-space-related);font-size:var(--proof-body-size);line-height:var(--proof-body-leading);padding:10px 0;list-style:none}
@@ -79,7 +68,9 @@
  .range-proof-marker-name{font-size:12px;line-height:1.4;max-width:20ch;margin-top:4px}
  .range-proof-value .dot-number{height:48px;max-width:108px}
  .range-proof-plot{margin-top:var(--proof-space-tight)}
- .range-proof-readings{gap:var(--proof-space-tight)}
+ .range-proof-comparisons{gap:12px}
+ .range-proof-comparison{grid-template-columns:1fr;gap:4px}
+ .range-proof-comparison+.range-proof-comparison{padding-top:12px}
  .range-proof-context{margin:10px 8px 0}
  .range-proof-details{margin:4px 8px 0}
  .range-proof-primary{min-height:44px;padding:5px 0}
