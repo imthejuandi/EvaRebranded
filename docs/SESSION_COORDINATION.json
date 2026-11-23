@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Maintain the combined EVA baseline and record the user-requested full switch to the current continuation chat.",
-  "prepared_date": "2026-11-18",
+  "prepared_date": "2026-11-23",
   "delivery_status": "The continuation chat fetched current main, read this shared repository note and verified the native version 33 succeeded receipt. This records repository acknowledgment, not a direct message to the prior chat.",
   "recipient": "The other EVA session that refined MethodJourney, and any session continuing this landing.",
   "acknowledgment_status": "acknowledged_by_continuation_session",
@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 55,
-    "deployed_ui_commit": "8f2a33593fe638ad1a51c27e90c8b7068237ef7f",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e9b22909540481919d27a2fcae6be849",
-    "deployment_id": "appgdep_6afe28fd27248191908ea70ec1924adb",
+    "live_version": 57,
+    "deployed_ui_commit": "151275b0465f1421e37519b87bb19e41af411110",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d266d230a92c81919149ddd3d7cb6dc3",
+    "deployment_id": "appgdep_6b047863beb081919f617942231b698b",
     "main_head_before_coordination": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=55#entender-tus-analisis"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=57"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -169,10 +169,10 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version55 published and verified; main lead refers simply to adults, with geography in source citation.",
+      "status": "Version 57 opening CTA refinement published and verified.",
       "next_section": null,
       "pending_verification": null,
-      "section": "Healthy-question editorial statement and concise runner entry actions",
+      "section": "Know your health opening CTA copy, hierarchy and spacing",
       "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."

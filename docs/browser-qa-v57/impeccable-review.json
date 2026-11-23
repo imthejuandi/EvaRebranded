@@ -1,0 +1,65 @@
+{
+  "status": "passed_with_explicit_no_js_styling_boundary",
+  "native_version": 57,
+  "ui_source_commit": "151275b0465f1421e37519b87bb19e41af411110",
+  "scope": "Independent Impeccable type/layout review of the two composite opening CTA anchors; no broader landing redesign or backend validation.",
+  "final_source_detector": {
+    "exit_code": 0,
+    "findings": 0,
+    "report": "/workspace/eva-in-place-qa/hero-cta-v57/impeccable-detect.json"
+  },
+  "fresh_native57_rendered": {
+    "passed": 3,
+    "page_errors": [],
+    "profiles": [
+      "en-1366-motion",
+      "es-390-motion",
+      "es-320-motion"
+    ],
+    "report": "/workspace/eva-in-place-qa/hero-cta-v57/independent-review.json"
+  },
+  "retained_native56_geometry": {
+    "passed": 12,
+    "scope": "English/Spanish at320,390,768 and1366 CSSpx in normal/calm modes, two700px short-height spots and two683px/DPR2 effective200% reflow profiles. The single-price successor preserves layout coordinates and routes.",
+    "report": "/workspace/eva-in-place-qa/hero-cta-v56/independent-review.json"
+  },
+  "no_javascript": {
+    "passed_native_links_and_raw_ssr": 2,
+    "one_price_per_anchor_group": true,
+    "natural_label_detail_spacing": true,
+    "full_css_visual_parity_claimed": false,
+    "limit": "The exported page does not establish hero stylesheet readiness when application JavaScript is disabled. These checks establish raw server-rendered text and native link navigation, not visual CSS parity."
+  },
+  "typography": {
+    "faces": "Installed EVA Hanken400/600, no new faces or weights",
+    "labels": "15px/20px,600",
+    "details": "14px/20px,400",
+    "source_contrast_ratios": {
+      "primary_label": 15.29,
+      "primary_detail": 8.1,
+      "secondary_label": 16.83,
+      "secondary_detail": 11.75
+    }
+  },
+  "rendered_findings": [
+    "Filledprimary and outlinedsecondary remain distinct at a glance.",
+    "Every required supporting detail is inside its own native anchor; no outside terms paragraph or hero five-upload line remains.",
+    "Composite accessible names include each label and its detail; free andquarterly hrefintent is preserved.",
+    "Both anchors have equal height within each tested pair, with readable detail wrapping at320px.",
+    "No horizontal document overflow, content clipping, hiddenclickcenter, keyboardfocus defect, health-lettering collision or pause/navigation collision in tested profiles.",
+    "Actual health-lettering positions match the shared heroLayout calculation.",
+    "Existing healthy-question10%/46% statement content remains present."
+  ],
+  "limits": [
+    "Viewport emulation, not physical-device performance.",
+    "Effective200%reflow, not browser-chrome zoom.",
+    "Mutating network requests blocked; no real account creation, upload or purchase.",
+    "No-JS scope covers raw server-rendered content and native navigation. Hero stylesheet delivery without application JavaScript is an existing platform limitation; no stylesheet infrastructure was changed."
+  ],
+  "all_owned_browsers_closed": true,
+  "source_sha256": {
+    "components/story/HeroKitCta.tsx": "102712bfdaddc6376f5477ceffa6213c2fa9930b4626c2b6d104dadcc4406d8f",
+    "app/hero-kit.css": "18c36c081e2d23e6eff40a9d13eeb23ace623cd76d93f9d280d3b60d8ccc8092",
+    "lib/hero-layout.ts": "ca8095e7fa5bb90ffcef3d9f616d277c1a9d033d5b4793fff7433db8262c927e"
+  }
+}
