@@ -69,14 +69,15 @@
  .range-proof-story h2{max-width:16ch}
  .range-proof-actions{max-width:none}
  .range-proof-evidence{margin-inline:-8px}
- .range-proof-instrument{--bio-glass-radius:32px;padding:18px 21px}
+ .range-proof-instrument{--bio-glass-radius:32px;padding:16px 21px}
  .range-proof-readout{grid-template-columns:minmax(0,1fr) 108px;gap:var(--proof-space-related)}
- .range-proof-example{letter-spacing:.025em;margin-bottom:6px}
+ .range-proof-example{letter-spacing:.025em;margin-bottom:0}
  .range-proof-readout h3{font-size:18px}
  .range-proof-marker-name{font-size:12px;line-height:1.4;max-width:20ch;margin-top:4px}
- .range-proof-value .dot-number{height:54px;max-width:108px}
- .range-proof-readings{gap:12px}
- .range-proof-reading+.range-proof-reading{padding-top:12px}
+ .range-proof-value .dot-number{height:48px;max-width:108px}
+ .range-proof-plot{margin-top:var(--proof-space-tight)}
+ .range-proof-readings{gap:var(--proof-space-tight)}
+ .range-proof-reading+.range-proof-reading{padding-top:var(--proof-space-tight)}
  .range-proof-context{margin:10px 8px 0}
  .range-proof-details{margin:4px 8px 0}
  .range-proof-primary{min-height:44px;padding:5px 0}
