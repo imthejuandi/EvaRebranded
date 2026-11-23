@@ -1,0 +1,205 @@
+{
+  "status": "passed",
+  "native_version": 60,
+  "ui_source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
+  "native_saved_version": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
+  "native_deployment": "appgdep_6b0489c5a75881918288332c88363711",
+  "native_updated_at": "2026-11-23T18:45:36.665461+00:00",
+  "scope": "Independent Impeccable review of the thinner opening hero CTA row; no app source edits by reviewer.",
+  "fresh_rendered_profiles": [
+    {
+      "id": "en-1366-motion",
+      "viewport": [
+        1366,
+        900
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        184,
+        224
+      ],
+      "paid_detail": "13 markers · €99 + VAT",
+      "paid_detail_height_css_px": 16
+    },
+    {
+      "id": "es-390-motion",
+      "viewport": [
+        390,
+        844
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        139.15625,
+        194.828125
+      ],
+      "paid_detail": "13 marcadores · 99 € + IVA",
+      "paid_detail_height_css_px": 16
+    },
+    {
+      "id": "es-320-motion",
+      "viewport": [
+        320,
+        844
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        106,
+        174
+      ],
+      "paid_detail": "13 marcadores · 99 € + IVA",
+      "paid_detail_height_css_px": 16
+    },
+    {
+      "id": "es-768-motion",
+      "viewport": [
+        768,
+        1024
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        174.71875,
+        241.28125
+      ],
+      "paid_detail": "13 marcadores · 99 € + IVA",
+      "paid_detail_height_css_px": 16
+    },
+    {
+      "id": "en-320-motion",
+      "viewport": [
+        320,
+        844
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        106,
+        174
+      ],
+      "paid_detail": "13 markers · €99 + VAT",
+      "paid_detail_height_css_px": 16
+    },
+    {
+      "id": "es-350-motion",
+      "viewport": [
+        350,
+        844
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        136,
+        174
+      ],
+      "paid_detail": "13 marcadores · 99 € + IVA",
+      "paid_detail_height_css_px": 16
+    },
+    {
+      "id": "es-360-motion",
+      "viewport": [
+        360,
+        844
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        123.984375,
+        180
+      ],
+      "paid_detail": "13 marcadores · 99 € + IVA",
+      "paid_detail_height_css_px": 16
+    },
+    {
+      "id": "es-320-calm",
+      "viewport": [
+        320,
+        844
+      ],
+      "passed": true,
+      "row_height_css_px": 44,
+      "button_heights_css_px": [
+        44,
+        44
+      ],
+      "button_widths_css_px": [
+        106,
+        174
+      ],
+      "paid_detail": "13 marcadores · 99 € + IVA",
+      "paid_detail_height_css_px": 16
+    }
+  ],
+  "final_source_detector": {
+    "exit_code": 0,
+    "findings": 0,
+    "report": "/workspace/eva-in-place-qa/hero-cta-v60/impeccable-detect.json"
+  },
+  "typography": {
+    "label": "14px/18px EVA Hanken 600",
+    "metadata": "13px/16px EVA Hanken 400; scoped secondary metadata role for the user-requested compact controls",
+    "installed_weights": [
+      400,
+      600
+    ]
+  },
+  "findings": [
+    "All eight fresh profiles pass. All sixteen native anchors and all eight row footprints measure 44 CSS px.",
+    "Both actions remain side by side with matching tops and heights; all labels and full marker-plus-VAT details remain on one line without clipping, shrinking, or truncation.",
+    "Subscription and quarterly cadence are explicit in the paid label. Complete 13-marker and €99 + VAT information remains visible in the paid detail.",
+    "The 320px Spanish normal and calm captures retain separation from health lettering, pause control, and chapter navigation. The new row is 20px shorter than version59 phone controls.",
+    "Native routes, composite accessible names, keyboard order and visible focus, font readiness, document width, and click target checks pass.",
+    "Manual visual inspection of the actual version60 Spanish320 capture confirms compact controls, readable hierarchy, and preserved landing design. Root independently inspected actual EN1366 and ES320."
+  ],
+  "scope_limits": [
+    "Browser viewport emulation; no physical-device performance claim.",
+    "Focused eight-profile hero review; no new full-site flow or real upload, account, payment, or purchase was performed.",
+    "No-JavaScript was not rerun for version60. Prior version57 raw-SSR and native-link evidence applies only to unchanged route mechanics; no full visual CSS parity without JavaScript is claimed.",
+    "Historical broader matrices are retained as historical evidence and are not relabeled as version60."
+  ],
+  "all_owned_browsers_closed": true,
+  "network_writes": [],
+  "page_errors": [],
+  "rendered_report": "/workspace/eva-in-place-qa/hero-cta-v60/independent-review.json",
+  "key_screenshots": [
+    "/workspace/eva-in-place-qa/hero-cta-v60/es-320-motion-hero.png",
+    "/workspace/eva-in-place-qa/hero-cta-v60/es-320-calm-hero.png",
+    "/workspace/eva-in-place-qa/hero-cta-v60/en-1366-motion-hero.png",
+    "/workspace/eva-in-place-qa/hero-cta-v60/es-768-motion-hero.png"
+  ],
+  "source_sha256": {
+    "components/story/HeroKitCta.tsx": "723a52cb2349771d3da1e6bb24f88de695123aecd127e67a951a4358ed8bab54",
+    "app/hero-kit.css": "b109ce274dfc26588147812990a1c2eefc2352134d4e8269e7e00496baa117e9",
+    "lib/hero-layout.ts": "12f6db691eeead72cd55615e1ac04fea3d9c2b0ebb9a57a957d7e273ef3f96f0"
+  }
+}

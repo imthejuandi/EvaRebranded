@@ -1,0 +1,16 @@
+{
+  "version_number": 59,
+  "source_commit": "1c4b48f48a04f9d0c8a4e47010c3950a64e8d83f",
+  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4685fd923c3c819184e54757c842b14a",
+  "deployment_id": "appgdep_6b0487eee9b88191a8348d4ae660c158",
+  "status": "succeeded",
+  "url": "https://eva-content-review.jdlagop.chatgpt.site",
+  "native_updated_at": "2026-11-23T18:37:45.826158+00:00",
+  "archive_storage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_000000001860822fa2c0434b259b583a",
+    "content_hash": "sha256:3ba40f8abbe1b247b51e93bc8cc8c83b1189402d001f8bbb72f7eacfc5310782",
+    "size_bytes": 171816960,
+    "file_count": 790
+  }
+}

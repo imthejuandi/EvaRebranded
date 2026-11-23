@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-23",
-  "handoff_status": "COMPACT_HERO_CTA_VERIFIED_V58",
-  "immediate_instruction": "Version 58 is published and verified. The user rejected the oversized opening tiles; keep the compact 48px two-line actions. The free action explains previous-lab upload and the kit action shows 13 markers plus the quarterly price. Do not restore tall price/cancellation stacks, an external terms row or the hero five-upload count. Cancellation and upload policies remain unchanged elsewhere. Preserve the accepted statement, source citation, qualified 46% denominator, runner subject and 2.5-second entrance. Read docs/hero-cta-qa.json. Production cutover remains on hold.",
+  "handoff_status": "SLIM_SIDE_BY_SIDE_HERO_CTA_VERIFIED_V60",
+  "immediate_instruction": "Version 60 is published and verified. Keep both opening actions side by side in one 44px row. The free action explains lab upload; the kit label states quarterly subscription, with13 markers and the VAT price on one metadata line. Preserve normal price spacing,14px labels and 13px metadata. Do not restore tall cards, split price lines, an external terms row or the hero five-upload count. Preserve all existing commercial policies, statement evidence, runner and 2.5-second entrance. Read docs/hero-cta-qa.json. Production cutover remains on hold.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace. UI version 58 source 0c4e5df107162080ed813d4c9c9d5f8245752e15 is synchronized to GitHub and the Site source repository; later QA/docs commits record evidence without changing the native UI.",
+    "github_status": "Canonical consolidated rebrand workspace. UI version 60 source 6a4d1a9d82a59634687a18076349f0f823690afb is synchronized to GitHub and the Site source repository; later QA/docs commits record evidence without changing the native UI.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,94 +36,74 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 57,
-      "source_commit": "151275b0465f1421e37519b87bb19e41af411110",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d266d230a92c81919149ddd3d7cb6dc3",
-      "deployment_id": "appgdep_6b047863beb081919f617942231b698b",
+      "version_number": 59,
+      "source_commit": "1c4b48f48a04f9d0c8a4e47010c3950a64e8d83f",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4685fd923c3c819184e54757c842b14a",
+      "deployment_id": "appgdep_6b0487eee9b88191a8348d4ae660c158",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T17:31:25.108445+00:00",
+      "native_updated_at": "2026-11-23T18:37:45.826158+00:00",
       "archive_storage": {
         "archive_format": "tar",
-        "sediment_file_id": "file_000000008e78822fa1a37748322d63af",
-        "content_hash": "sha256:00cf281f9216a9eb77f9a84d37d475ca48e73c2aa2a8537682ffd42ea7222e57",
+        "sediment_file_id": "file_000000001860822fa2c0434b259b583a",
+        "content_hash": "sha256:3ba40f8abbe1b247b51e93bc8cc8c83b1189402d001f8bbb72f7eacfc5310782",
         "size_bytes": 171816960,
         "file_count": 790
       },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=57",
-      "behavior": "Both opening actions contain their own label and explanatory details. The separate combined terms line and hero five-upload count are removed. The free upload and quarterly subscription destinations are preserved. One price string is readable with or without application JavaScript.",
-      "source_files": [
-        "components/story/HeroKitCta.tsx",
-        "app/hero-kit.css",
-        "lib/hero-layout.ts",
-        "scripts/browser-qa/core-landing.cjs",
-        "scripts/browser-qa/entry-flows.cjs"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-hero-cta-v57.tar.gz",
-        "local_gzip_sha256": "2c333428ddb8821834aae0dd4f7a8dce1584b4629ab928ab2686ff4ab11eef4e",
-        "local_gzip_size_bytes": 163053559,
-        "saved_tar_content_hash": "sha256:00cf281f9216a9eb77f9a84d37d475ca48e73c2aa2a8537682ffd42ea7222e57",
-        "saved_tar_size_bytes": 171816960,
-        "file_count": 790
-      },
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=59",
+      "behavior": "Keeps the compact opening actions side by side at every breakpoint. Desktop/tablet row 48px; phones 64px with split kit metadata. Superseded by the thinner one-line-metadata version 60.",
       "qa": {
-        "status": "passed_actual_browser_with_scoped_prior_version_regression_reuse",
-        "record": "docs/hero-cta-qa.json",
-        "evidence_directory": "docs/browser-qa-v57",
-        "fresh_version57_rendered_cases": 3,
-        "version56_rendered_cases": 12,
-        "version56_entry_flows": 6,
-        "version57_nojs_content_navigation_cases": 2,
+        "status": "passed_actual_browser",
+        "evidence_directory": "docs/browser-qa-v59",
+        "fresh_profiles": 4,
         "page_errors": []
       }
     },
     "latest_verified_ui_release": {
-      "version_number": 58,
-      "source_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_b278bb22a6a88191a379a4a6ba846067",
-      "deployment_id": "appgdep_6b0480952d508191b7530551c74f9f5d",
+      "version_number": 60,
+      "source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
+      "deployment_id": "appgdep_6b0489c5a75881918288332c88363711",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T18:06:24.119204+00:00",
+      "native_updated_at": "2026-11-23T18:45:36.665461+00:00",
       "archive_storage": {
         "archive_format": "tar",
-        "sediment_file_id": "file_000000006890822fabd97a8e8ba9baaf",
-        "content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+        "sediment_file_id": "file_0000000007b0822fb4e92fa82946994d",
+        "content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
         "size_bytes": 171816960,
         "file_count": 790
       },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=58",
-      "behavior": "Restores compact 48px two-line opening actions instead of tall equal-height tiles. Upload, marker-count and quarterly-price details remain inside each action. The original support and health-lettering positions are restored, with a narrow tablet spacing exception.",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=60",
+      "behavior": "Two slim side-by-side 44px actions. Quarterly subscription is explicit in the kit label; marker count and VAT price share one metadata line. Phone labels and details stay readable at 320px without shrinking the 14px/13px font roles.",
       "source_files": [
         "components/story/HeroKitCta.tsx",
         "app/hero-kit.css",
-        "lib/hero-layout.ts",
         "scripts/browser-qa/core-landing.cjs",
         "scripts/browser-qa/entry-flows.cjs"
       ],
       "archive": {
-        "local_path": "/workspace/eva-publication/eva-compact-cta-v58.tar.gz",
-        "local_gzip_sha256": "c7af0eab72a6a10a3a1d1da6e3c3db4f06c5150873fae7e335df3a392ae3dcde",
-        "local_gzip_size_bytes": 163055218,
-        "saved_tar_content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+        "local_path": "/workspace/eva-publication/eva-slim-cta-v60.tar.gz",
+        "local_gzip_sha256": "778b15bbe27c7a5172ad26711550f356e58682b5640f65336957beae25f1f587",
+        "local_gzip_size_bytes": 163053467,
+        "saved_tar_content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
         "saved_tar_size_bytes": 171816960,
         "file_count": 790
       },
       "qa": {
         "status": "passed_actual_browser",
         "record": "docs/hero-cta-qa.json",
-        "evidence_directory": "docs/browser-qa-v58",
-        "fresh_version58_cases": 4,
-        "actual_button_height_px": 48,
+        "evidence_directory": "docs/browser-qa-v60",
+        "fresh_profiles": 8,
+        "actual_button_height_px": 44,
         "page_errors": []
       }
     },
-    "latest_verified_ui_release_note": "Native58 serves UI commit 0c4e5df107162080ed813d4c9c9d5f8245752e15; the later QA/documentation commit does not redeploy the UI.",
+    "latest_verified_ui_release_note": "Native60 serves UI commit 6a4d1a9d82a59634687a18076349f0f823690afb; the later QA/documentation commit does not redeploy the UI.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version58 source 0c4e5df107162080ed813d4c9c9d5f8245752e15",
+      "relation": "QA/docs followup to version 60 source 6a4d1a9d82a59634687a18076349f0f823690afb",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
@@ -131,7 +111,8 @@
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
         "docs/hero-cta-qa.json",
-        "docs/browser-qa-v58"
+        "docs/browser-qa-v59",
+        "docs/browser-qa-v60"
       ]
     },
     "earlier_verified_ui_release": {
@@ -936,46 +917,110 @@
           "version57_nojs_content_navigation_cases": 2,
           "page_errors": []
         }
+      },
+      {
+        "version_number": 58,
+        "source_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_b278bb22a6a88191a379a4a6ba846067",
+        "deployment_id": "appgdep_6b0480952d508191b7530551c74f9f5d",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-23T18:06:24.119204+00:00",
+        "archive_storage": {
+          "archive_format": "tar",
+          "sediment_file_id": "file_000000006890822fabd97a8e8ba9baaf",
+          "content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+          "size_bytes": 171816960,
+          "file_count": 790
+        },
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=58",
+        "behavior": "Restores compact 48px two-line opening actions instead of tall equal-height tiles. Upload, marker-count and quarterly-price details remain inside each action. The original support and health-lettering positions are restored, with a narrow tablet spacing exception.",
+        "source_files": [
+          "components/story/HeroKitCta.tsx",
+          "app/hero-kit.css",
+          "lib/hero-layout.ts",
+          "scripts/browser-qa/core-landing.cjs",
+          "scripts/browser-qa/entry-flows.cjs"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-compact-cta-v58.tar.gz",
+          "local_gzip_sha256": "c7af0eab72a6a10a3a1d1da6e3c3db4f06c5150873fae7e335df3a392ae3dcde",
+          "local_gzip_size_bytes": 163055218,
+          "saved_tar_content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+          "saved_tar_size_bytes": 171816960,
+          "file_count": 790
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/hero-cta-qa.json",
+          "evidence_directory": "docs/browser-qa-v58",
+          "fresh_version58_cases": 4,
+          "actual_button_height_px": 48,
+          "page_errors": []
+        }
+      },
+      {
+        "version_number": 59,
+        "source_commit": "1c4b48f48a04f9d0c8a4e47010c3950a64e8d83f",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4685fd923c3c819184e54757c842b14a",
+        "deployment_id": "appgdep_6b0487eee9b88191a8348d4ae660c158",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-23T18:37:45.826158+00:00",
+        "archive_storage": {
+          "archive_format": "tar",
+          "sediment_file_id": "file_000000001860822fa2c0434b259b583a",
+          "content_hash": "sha256:3ba40f8abbe1b247b51e93bc8cc8c83b1189402d001f8bbb72f7eacfc5310782",
+          "size_bytes": 171816960,
+          "file_count": 790
+        },
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=59",
+        "behavior": "Keeps the compact opening actions side by side at every breakpoint. Desktop/tablet row 48px; phones 64px with split kit metadata. Superseded by the thinner one-line-metadata version 60.",
+        "qa": {
+          "status": "passed_actual_browser",
+          "evidence_directory": "docs/browser-qa-v59",
+          "fresh_profiles": 4,
+          "page_errors": []
+        }
       }
     ],
     "latest_published_ui_release": {
-      "version_number": 58,
-      "source_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_b278bb22a6a88191a379a4a6ba846067",
-      "deployment_id": "appgdep_6b0480952d508191b7530551c74f9f5d",
+      "version_number": 60,
+      "source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
+      "deployment_id": "appgdep_6b0489c5a75881918288332c88363711",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T18:06:24.119204+00:00",
+      "native_updated_at": "2026-11-23T18:45:36.665461+00:00",
       "archive_storage": {
         "archive_format": "tar",
-        "sediment_file_id": "file_000000006890822fabd97a8e8ba9baaf",
-        "content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+        "sediment_file_id": "file_0000000007b0822fb4e92fa82946994d",
+        "content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
         "size_bytes": 171816960,
         "file_count": 790
       },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=58",
-      "behavior": "Restores compact 48px two-line opening actions instead of tall equal-height tiles. Upload, marker-count and quarterly-price details remain inside each action. The original support and health-lettering positions are restored, with a narrow tablet spacing exception.",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=60",
+      "behavior": "Two slim side-by-side 44px actions. Quarterly subscription is explicit in the kit label; marker count and VAT price share one metadata line. Phone labels and details stay readable at 320px without shrinking the 14px/13px font roles.",
       "source_files": [
         "components/story/HeroKitCta.tsx",
         "app/hero-kit.css",
-        "lib/hero-layout.ts",
         "scripts/browser-qa/core-landing.cjs",
         "scripts/browser-qa/entry-flows.cjs"
       ],
       "archive": {
-        "local_path": "/workspace/eva-publication/eva-compact-cta-v58.tar.gz",
-        "local_gzip_sha256": "c7af0eab72a6a10a3a1d1da6e3c3db4f06c5150873fae7e335df3a392ae3dcde",
-        "local_gzip_size_bytes": 163055218,
-        "saved_tar_content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+        "local_path": "/workspace/eva-publication/eva-slim-cta-v60.tar.gz",
+        "local_gzip_sha256": "778b15bbe27c7a5172ad26711550f356e58682b5640f65336957beae25f1f587",
+        "local_gzip_size_bytes": 163053467,
+        "saved_tar_content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
         "saved_tar_size_bytes": 171816960,
         "file_count": 790
       },
       "qa": {
         "status": "passed_actual_browser",
         "record": "docs/hero-cta-qa.json",
-        "evidence_directory": "docs/browser-qa-v58",
-        "fresh_version58_cases": 4,
-        "actual_button_height_px": 48,
+        "evidence_directory": "docs/browser-qa-v60",
+        "fresh_profiles": 8,
+        "actual_button_height_px": 44,
         "page_errors": []
       }
     },
@@ -1079,7 +1124,7 @@
   "approved_design_and_motion": {
     "direction": "Evolve the existing Site. Keep the accepted runner, luminous/dot style, warm-paper/ink typography, actual results mockups, Tasso footage and lifestyle imagery.",
     "rejected_direction": "A generic replacement landing at /en/review/landing-proposal, a new visual system, new audience tabs, unsolicited stock-style cards or new assets to replace accepted work.",
-    "hero": "Keep the original runner subject/footage and 2.5-second entrance. Opening actions are compact 48px controls with short label/metadata lines, not tall tiles. Desktop widths are 200px/250px; phone rows stack. Original support and health positions are restored except the narrow tablet spacing adjustment. Preserve the accepted healthy-question statement and its full qualified 46% denominator and sources.",
+    "hero": "Keep the runner subject/footage and 2.5-second entrance. Both opening actions share one slim44px row, with 14px labels and 13px metadata. Desktop widths 184px/224px; responsive phone widths preserve single-line scope/VAT metadata. The kit label explicitly states quarterly subscription. Preserve accepted statement/source context and full qualified 46% denominator.",
     "tasso": "Preserve the approved three-step film, accurate device proportions, virtually painless/no needles to handle copy and native-speed video controls. Do not restore pasted-screen overlays or regenerate footage merely for novelty.",
     "kit_explanation": "Preserve the current count/pan/names/meanings/readout sequence. Scrolling selects the education stages; the latest dot-to-text presentation transition is 500 ms for a complete forward or reverse span. Keep batched dot rendering and the existing compositor/clock ownership.",
     "kit_motion_contract_since_v28": {
@@ -1400,7 +1445,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "Current baseline is version 58, UI commit 0c4e5df107162080ed813d4c9c9d5f8245752e15. Read docs/hero-cta-qa.json for compact action dimensions and docs/problem-opening-qa.json for unchanged statement evidence.",
+    "Current baseline is version 60, UI commit 6a4d1a9d82a59634687a18076349f0f823690afb. Read docs/hero-cta-qa.json for slim horizontal action dimensions and docs/problem-opening-qa.json for unchanged statement evidence.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -1507,7 +1552,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Version 58 is published. Keep opening buttons compact at 48px high; the user rejected tall card-sized actions. Preserve concise inside-button upload/quarterly-kit details, accepted statement, exact offer/policies, 2.5-second runner and methodology figures. Routine relevant edits/checks/commits/pushes/review-site publication remain authorized with three specialist roles. Production cutover remains on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Version 60 is published. Keep both opening buttons side by side in a 44px row, with explicit quarterly-subscription label and 13 markers plus VAT price on one metadata line. Preserve accepted statement, offer/policies,2.5-second runner and methodology figures. Routine relevant edits/checks/commits/pushes/review-site publication remain authorized with three specialist roles. Production cutover remains on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -1518,10 +1563,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-23",
-    "user_direction": "Restore the previous compact button size while retaining concise upload and kit details inside.",
-    "synchronized_main_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
-    "live_version": 58,
-    "status": "Compact opening actions published and verified in four fresh rendered profiles."
+    "user_direction": "Make both side-by-side buttons thinner; keep 13 markers and 99 + VAT on the same line.",
+    "synchronized_main_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
+    "live_version": 60,
+    "status": "Slim horizontal opening actions published and verified in 8 fresh native rendered profiles."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -1555,7 +1600,7 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
+  "github_current_ui_source": "6a4d1a9d82a59634687a18076349f0f823690afb",
   "statement_opening_selection": {
     "copy_owner": "Primary agent, advised by a bilingual health and wellness marketing copy specialist",
     "design_owner": "User-requested gpt-6.2-astra agent applying Impeccable within EVA’s existing Hanken, Georgia italic, ink, warm-paper and amber/dot language",
@@ -1610,25 +1655,25 @@
       "en": {
         "free": [
           "Start for free",
-          "Upload previous labs"
+          "Upload labs"
         ],
         "kit": [
-          "Subscribe to the kit",
-          "13 markers · €99 + VAT / quarter"
+          "Subscribe quarterly",
+          "13 markers · €99 + VAT"
         ]
       },
       "es": {
         "free": [
           "Empieza gratis",
-          "Sube tus analíticas"
+          "Sube analíticas"
         ],
         "kit": [
-          "Suscribirme al kit",
-          "13 marcadores · 99 € + IVA / trimestre"
+          "Suscripción trimestral",
+          "13 marcadores · 99 € + IVA"
         ]
       }
     },
     "qa": "docs/hero-cta-qa.json",
-    "user_instruction": "Return the opening buttons to their previous compact size; the large tile/card scale was rejected."
+    "user_instruction": "Make both side-by-side buttons thinner; keep 13 markers and 99 + VAT on the same line."
   }
 }

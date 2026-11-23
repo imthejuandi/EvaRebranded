@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "native_version": 59,
+  "ui_source_commit": "1c4b48f48a04f9d0c8a4e47010c3950a64e8d83f",
+  "scope": "Independent Impeccable review of the requested side-by-side compact CTA row at phone, tablet and desktop widths. Four fresh native59 rendered profiles; temporary live58 CSS previews are separate feasibility evidence.",
+  "fresh_rendered_profiles": [
+    {
+      "id": "en-1366-motion",
+      "passed": true,
+      "row_footprint_css_px": 48,
+      "buttons": [
+        {
+          "width_css_px": 200,
+          "height_css_px": 48,
+          "x": 48,
+          "y": 732,
+          "label_lines": 1,
+          "metadata_lines": 1,
+          "price_lines": null
+        },
+        {
+          "width_css_px": 250,
+          "height_css_px": 48,
+          "x": 264,
+          "y": 732,
+          "label_lines": 1,
+          "metadata_lines": 1,
+          "price_lines": 1
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "id": "es-390-motion",
+      "passed": true,
+      "row_footprint_css_px": 64,
+      "buttons": [
+        {
+          "width_css_px": 138.59375,
+          "height_css_px": 64,
+          "x": 24,
+          "y": 661,
+          "label_lines": 1,
+          "metadata_lines": 1,
+          "price_lines": null
+        },
+        {
+          "width_css_px": 191.390625,
+          "height_css_px": 64,
+          "x": 174.59375,
+          "y": 661,
+          "label_lines": 1,
+          "metadata_lines": 2,
+          "price_lines": 1
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "id": "es-320-motion",
+      "passed": true,
+      "row_footprint_css_px": 64,
+      "buttons": [
+        {
+          "width_css_px": 116.15625,
+          "height_css_px": 64,
+          "x": 24,
+          "y": 661,
+          "label_lines": 1,
+          "metadata_lines": 2,
+          "price_lines": null
+        },
+        {
+          "width_css_px": 147.84375,
+          "height_css_px": 64,
+          "x": 148.15625,
+          "y": 661,
+          "label_lines": 1,
+          "metadata_lines": 2,
+          "price_lines": 1
+        }
+      ],
+      "page_errors": []
+    },
+    {
+      "id": "es-768-motion",
+      "passed": true,
+      "row_footprint_css_px": 48,
+      "buttons": [
+        {
+          "width_css_px": 178.609375,
+          "height_css_px": 48,
+          "x": 48,
+          "y": 856,
+          "label_lines": 1,
+          "metadata_lines": 1,
+          "price_lines": null
+        },
+        {
+          "width_css_px": 246.640625,
+          "height_css_px": 48,
+          "x": 234.609375,
+          "y": 856,
+          "label_lines": 1,
+          "metadata_lines": 1,
+          "price_lines": 1
+        }
+      ],
+      "page_errors": []
+    }
+  ],
+  "final_source_detector": {
+    "exit_code": 0,
+    "findings": 0,
+    "report": "/workspace/eva-in-place-qa/hero-cta-v59/impeccable-detect.json"
+  },
+  "typography": {
+    "label": "14px/18px Hanken600",
+    "metadata": "13px/16px Hanken400, scoped secondary metadata role",
+    "smaller_font_used": false
+  },
+  "findings": [
+    "Both native anchors share one equal-height row in every tested profile.",
+    "Phones use a64px total row, saving44px against the prior108px stacked footprint; desktop and tablet rows remain48px.",
+    "Labels stay on one line. Phone metadata uses at most two lines, and each complete quarterly price remains on one line.",
+    "English Subscribe to kit and both selected free subtitles remain clear in composite accessible names.",
+    "No clipping, truncation, horizontal overflow, obscured click center, health-lettering collision, navigation collision or pause-control collision in tested profiles.",
+    "Protected tablet width preserves approximately16px between the CTA row and the health lettering.",
+    "Keyboard focus and the free/quarterly signup intents remain correct.",
+    "All descriptive content stays inside its own anchor; no separate terms row or duplicate price is introduced.",
+    "Accepted statement content and runner composition remain unchanged."
+  ],
+  "feasibility_evidence": {
+    "phone_previews": "/workspace/eva-in-place-qa/hero-cta-v59/row-refined-feasibility.json",
+    "tablet_protection_preview": "/workspace/eva-in-place-qa/hero-cta-v59/row-feasibility.json",
+    "boundary": "These are temporary view-only DOM/CSS previews on native58, not publication proof. Native59 evidence is recorded separately above."
+  },
+  "scope_limits": [
+    "Viewport emulation, not physical-device performance.",
+    "Exactly four fresh native59 profiles; no full landing/flow rerun or expanded matrix.",
+    "No real account creation, upload, purchase or mutating network requests.",
+    "No-JS behavior was not rerun for59. Previous57 raw-content/native-link evidence is retained only for unchanged route behavior; visual CSS parity without application JavaScript is not claimed."
+  ],
+  "all_owned_browsers_closed": true,
+  "network_writes": [],
+  "report": "/workspace/eva-in-place-qa/hero-cta-v59/independent-review.json",
+  "source_sha256": {
+    "components/story/HeroKitCta.tsx": "d9faa158155fbaa766cf8b0f28c87890cecab8ad4148fbc7a3ae09b573404db0",
+    "app/hero-kit.css": "86f0ae3b5b11d8b4cf9898a1fc67a6366fa3be7d7b26cc710c5f8eb1a24f1798",
+    "lib/hero-layout.ts": "12f6db691eeead72cd55615e1ac04fea3d9c2b0ebb9a57a957d7e273ef3f96f0"
+  }
+}

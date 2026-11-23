@@ -1,92 +1,92 @@
 {
   "status": "passed",
-  "published_version": 58,
-  "deployed_ui_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
+  "published_version": 60,
+  "deployed_ui_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
   "native_deployment": {
-    "version_number": 58,
-    "source_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_b278bb22a6a88191a379a4a6ba846067",
-    "deployment_id": "appgdep_6b0480952d508191b7530551c74f9f5d",
+    "version_number": 60,
+    "source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
+    "deployment_id": "appgdep_6b0489c5a75881918288332c88363711",
     "status": "succeeded",
     "url": "https://eva-content-review.jdlagop.chatgpt.site",
-    "native_updated_at": "2026-11-23T18:06:24.119204+00:00",
+    "native_updated_at": "2026-11-23T18:45:36.665461+00:00",
     "archive_storage": {
       "archive_format": "tar",
-      "sediment_file_id": "file_000000006890822fabd97a8e8ba9baaf",
-      "content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+      "sediment_file_id": "file_0000000007b0822fb4e92fa82946994d",
+      "content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
       "size_bytes": 171816960,
       "file_count": 790
     },
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=58",
-    "behavior": "Restores compact 48px two-line opening actions instead of tall equal-height tiles. Upload, marker-count and quarterly-price details remain inside each action. The original support and health-lettering positions are restored, with a narrow tablet spacing exception.",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=60",
+    "behavior": "Two slim side-by-side 44px actions. Quarterly subscription is explicit in the kit label; marker count and VAT price share one metadata line. Phone labels and details stay readable at 320px without shrinking the 14px/13px font roles.",
     "source_files": [
       "components/story/HeroKitCta.tsx",
       "app/hero-kit.css",
-      "lib/hero-layout.ts",
       "scripts/browser-qa/core-landing.cjs",
       "scripts/browser-qa/entry-flows.cjs"
     ],
     "archive": {
-      "local_path": "/workspace/eva-publication/eva-compact-cta-v58.tar.gz",
-      "local_gzip_sha256": "c7af0eab72a6a10a3a1d1da6e3c3db4f06c5150873fae7e335df3a392ae3dcde",
-      "local_gzip_size_bytes": 163055218,
-      "saved_tar_content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
+      "local_path": "/workspace/eva-publication/eva-slim-cta-v60.tar.gz",
+      "local_gzip_sha256": "778b15bbe27c7a5172ad26711550f356e58682b5640f65336957beae25f1f587",
+      "local_gzip_size_bytes": 163053467,
+      "saved_tar_content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
       "saved_tar_size_bytes": 171816960,
       "file_count": 790
     },
     "qa": {
       "status": "passed_actual_browser",
       "record": "docs/hero-cta-qa.json",
-      "evidence_directory": "docs/browser-qa-v58",
-      "fresh_version58_cases": 4,
-      "actual_button_height_px": 48,
+      "evidence_directory": "docs/browser-qa-v60",
+      "fresh_profiles": 8,
+      "actual_button_height_px": 44,
       "page_errors": []
     }
   },
-  "user_direction": "Return the opening buttons to their previous compact size; the large tile/card scale was rejected.",
+  "user_direction": "Make both side-by-side buttons thinner; keep 13 markers and 99 + VAT on the same line.",
   "copy": {
     "en": {
       "free": [
         "Start for free",
-        "Upload previous labs"
+        "Upload labs"
       ],
       "kit": [
-        "Subscribe to the kit",
-        "13 markers · €99 + VAT / quarter"
+        "Subscribe quarterly",
+        "13 markers · €99 + VAT"
       ]
     },
     "es": {
       "free": [
         "Empieza gratis",
-        "Sube tus analíticas"
+        "Sube analíticas"
       ],
       "kit": [
-        "Suscribirme al kit",
-        "13 marcadores · 99 € + IVA / trimestre"
+        "Suscripción trimestral",
+        "13 marcadores · 99 € + IVA"
       ]
     }
   },
   "implementation": [
-    "Both anchors measure 48px high in all four tested profiles. Labels use Hanken 600 at 14px/18px and secondary metadata uses Hanken 400 at 13px/16px.",
-    "Desktop actions are 200px and 250px wide; phones use two compact full-width rows. The 701–800px tablet range uses two 250px rows.",
-    "No separate terms row or five-upload count in the hero. Upload and quarterly subscription routes are preserved.",
-    "The cancel-anytime policy remains unchanged and visible in pricing/signup and other relevant offer copy; its repeated hero line is removed to keep this control compact.",
-    "Original v55 support and health-lettering coordinates are restored, except the documented narrow tablet spacing adjustment. Runner subject, footage and 2.5-second entrance are unchanged."
+    "Both native anchors share a 44px row at every tested width. Hanken 600 labels remain 14px/18px; Hanken 400 metadata remains 13px/16px.",
+    "Desktop button widths are 184px/224px. Phone columns preserve enough width for full-spaced marker-count/VAT metadata. Below 351px the CTA rail alone uses 16px gutters, 174px kit width and 5px inline padding.",
+    "Quarterly subscription is explicit in the visible label. Both marker count and full VAT price share one metadata line; no duplicate or hidden price.",
+    "Free upload and quarterly subscription destinations are unchanged. No separate terms row or five-upload count in the hero. Cancellation and upload policies remain unchanged elsewhere.",
+    "Original runner composition, health lettering and 2.5-second entrance are unchanged."
   ],
   "specialists": [
-    "Wellness copy specialist condensed the requested metadata without changing the offer.",
-    "Impeccable Layout/Typeset design specialist directed the compact controls and signed off actual desktop/phone captures.",
-    "Independent Impeccable reviewer checked final source and actual four-profile geometry; final detector returned zero findings."
+    "Bilingual wellness copy specialist selected the concise free-upload and explicit quarterly-subscription labels.",
+    "UX/UI specialist applied Impeccable Layout/Typeset and measured the installed font before specifying the narrow-phone grid.",
+    "Independent Impeccable reviewer checked source and actual native 60 type, spacing, row geometry, keyboard focus and destinations."
   ],
   "verification": {
-    "static": "TypeScript, fresh 113-route build, English 1,205-message audit, 32-variant parity, runner startup and story-section checks passed.",
-    "fresh": "Four actual native58 profiles: EN1366, ES390, ES320 and ES768. Both buttons measured 48px high in every case; metadata remained one line with no clipping or control/health-lettering collisions. Keyboard focus and destinations passed.",
-    "reuse": "Earlier route/business-policy checks remain historical evidence for unchanged destinations. Earlier large-button geometry is not presented as current-size proof.",
+    "static": "TypeScript, fresh 113-route build, English 1,205-message audit, 32-variant parity, runner startup and story-section checks passed. Tracked core/entry scripts were updated and syntax-checked.",
+    "fresh": "8 actual native 60 rendered profiles passed; see docs/browser-qa-v60/independent-review.json. All labels and metadata stayed on one line within a 44px row, with no clipping, overflow, collisions or page errors.",
+    "source_detector": "0 findings",
+    "reuse": "Prior evidence remains historical for unchanged navigation/business policy. Full landing/entry suites were not rerun for 60.",
     "limits": [
       "Viewport emulation, not physical-device performance.",
-      "No real account creation, upload or payment.",
-      "Earlier no-JavaScript checks establish raw content/native navigation only; no new full visual no-JavaScript claim."
+      "No real account creation, uploads, purchase or mutating network requests.",
+      "No new no-JavaScript visual-parity claim."
     ]
   },
-  "previous_review": "https://github.com/imthejuandi/EvaRebranded/blob/9fd4a1f5e825e48389fe1f46a4d47de5145ef24e/docs/hero-cta-qa.json"
+  "previous_review": "docs/browser-qa-v59/README.md"
 }
