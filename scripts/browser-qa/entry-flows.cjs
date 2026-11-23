@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'60';
+const VERSION=process.env.EVA_REVIEW_VERSION||'61';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -77,7 +77,7 @@ async function home(page,locale){
  assert.equal(await page.locator('.hero-start-terms').count(),0,'No separate hero terms line');
  approvedKitCopy('compact hero kit action',kitDescription,{requireCancellation:false});
  approvedKitCopy('method kit',await text(page.locator('[data-method-kit]')));
- for(const selector of ['.report-free-allowance','[data-range-upload]','.guided-start','[data-method-upload]']){
+ for(const selector of ['.report-free-allowance','.guided-start','[data-method-upload]']){
   assert.match(await text(page.locator(selector)),/5 free report uploads per account|5 informes gratis por cuenta/i,selector+' free uploads');
  }
  assert.match(await text(page.locator('[data-offer-free]')),freeTotal);

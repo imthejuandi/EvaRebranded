@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
-const version=process.env.EVA_REVIEW_VERSION||'60',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
+const version=process.env.EVA_REVIEW_VERSION||'61',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
 const cases=[{locale:'en',width:1440,height:900},{locale:'es',width:375,height:812}];
 const report={version:Number(version),scope:'Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend',cases:[],pageErrors:[],viewportEmulation:true,physicalDevice:false};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));

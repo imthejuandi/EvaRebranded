@@ -169,11 +169,15 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version 60 slim horizontal opening actions published and verified.",
+      "status": "Refining the range-proof chapter after the owner requested less text and clearer visual hierarchy; current live baseline remains60.",
       "next_section": null,
-      "pending_verification": null,
-      "section": "Slim opening actions; single-line marker count and VAT price",
-      "files": []
+      "pending_verification": "Draft/review loop, bilingual layout and clinical-context gates, then relevant checks and native review-site QA.",
+      "section": "#otra-lectura — There’s more to normal",
+      "files": [
+        "lib/site-content/range-proof-copy.ts",
+        "components/story/RangeProofSection.tsx",
+        "components/story/range-proof-section.css"
+      ]
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },

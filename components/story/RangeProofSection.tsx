@@ -52,6 +52,7 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
     <div className="range-proof-layout">
       <div className="range-proof-story">
         <h2 id="range-proof-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2>
+        <p className="range-proof-caption">{c.unchangedLabel}</p>
       </div>
       <div className="range-proof-evidence">
         <div className="range-proof-instrument bio-glass">
@@ -59,24 +60,20 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
             <div><h3>hs-CRP</h3><p className="range-proof-marker-name">{c.markerLabel}</p><p className="range-proof-example">{c.exampleLabel}</p></div>
             <p className="range-proof-value" data-range-value="2.1"><span className="sr-only">{number} mg/L</span><span aria-hidden="true"><DotNumber value={number} density="coarse" calm active={false}/><small>mg/L</small></span></p>
           </header>
-          <div className="range-proof-plot" data-range-axis-min="0" data-range-axis-max="5" aria-hidden="true">
-            <div className="range-proof-lane-labels"><span>{c.lab.label}</span><span>{c.prevention.label}</span></div>
-            <div className="range-proof-lanes">
-              <div className="range-proof-lane range-proof-lab-lane"><span data-range-lab-band/></div>
-              <div className="range-proof-lane range-proof-prevention-lane"><span data-range-prevention-band/><i className="range-proof-threshold"/></div>
-              <span className="range-proof-fixed-marker" data-range-marker/>
-              <div className="range-proof-axis">{[0,1,2,3,4,5].map(tick=><span key={tick}>{tick}</span>)}</div>
+          <div className="range-proof-plot" data-range-axis-min="0" data-range-axis-max="5" data-range-marker>
+            <div className="range-proof-readings">
+              <div className="range-proof-reading" data-range-reading="lab">
+                <p className="range-proof-reading-label">{c.lab.label}<span>{c.lab.threshold}</span></p>
+                <div className="range-proof-lane range-proof-lab-lane" aria-hidden="true"><span data-range-lab-band/><i className="range-proof-fixed-point"/></div>
+                <h4>{c.lab.interpretation}</h4>
+              </div>
+              <div ref={prevention} className="range-proof-reading range-proof-prevention" data-range-reading="prevention">
+                <p className="range-proof-reading-label">{c.prevention.label}<span>{c.prevention.threshold}</span></p>
+                <div className="range-proof-lane range-proof-prevention-lane" aria-hidden="true"><span data-range-prevention-band/><i className="range-proof-threshold"/><i className="range-proof-fixed-point"/></div>
+                <h4>{c.prevention.interpretation}</h4>
+              </div>
             </div>
-          </div>
-          <div className="range-proof-readings">
-            <div className="range-proof-reading" data-range-reading="lab">
-              <p className="range-proof-reading-label">{c.lab.label}<span>{c.lab.threshold}</span></p>
-              <h4>{c.lab.interpretation}</h4>
-            </div>
-            <div ref={prevention} className="range-proof-reading range-proof-prevention" data-range-reading="prevention">
-              <p className="range-proof-reading-label">{c.prevention.label}<span>{c.prevention.threshold}</span></p>
-              <h4>{c.prevention.interpretation}</h4>
-            </div>
+            <div className="range-proof-axis" aria-hidden="true">{[0,1,2,3,4,5].map(tick=><span key={tick}>{tick}</span>)}</div>
           </div>
         </div>
         <p className="range-proof-context">{c.qualifier}</p>
@@ -84,8 +81,8 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
           <summary><span>{c.detailsLabel}</span><Arrow direction="down"/></summary>
           <div className="range-proof-detail-body">
             <p className="range-proof-lead">{c.lead}</p>
-            <p><strong>{c.lab.label}. </strong>{c.lab.detail}</p>
-            <p><strong>{c.prevention.label}. </strong>{c.prevention.detail}</p>
+            <p>{c.lab.detail}</p>
+            <p>{c.prevention.detail}</p>
             <p>{c.context}</p>
             <div className="range-proof-sources"><p>{c.sourceLabel}</p>{c.sources.map(source=><a key={source.href} href={source.href} target="_blank" rel="noreferrer" data-range-source>{source.label}</a>)}</div>
             <a className="range-proof-method" href={href(businessLinks.science)} data-range-method>{c.methodLink}<Arrow/></a>
