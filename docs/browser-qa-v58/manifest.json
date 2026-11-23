@@ -1,0 +1,37 @@
+{
+  "version": 58,
+  "files": [
+    {
+      "path": "en-1366-motion-hero.png",
+      "sha256": "e8dce03310bf6138ad2d9d4045e1ec60556eb7c622b8fd82b184c1cd31329129"
+    },
+    {
+      "path": "es-320-motion-hero.png",
+      "sha256": "16cc25675f78f5df6b9c0e343d9385a0fc29df34fef52c389b1dd1e3054dcc04"
+    },
+    {
+      "path": "es-390-motion-hero.png",
+      "sha256": "b44c96014e9690725ddba62a26a8d4a00ab7ba335d276158606d291afd59a701"
+    },
+    {
+      "path": "es-768-motion-hero.png",
+      "sha256": "da688e384ab8f0135e3362c116fe0c28a56ee79bcb5fb34eeeeafa2aaf883547"
+    },
+    {
+      "path": "impeccable-detect.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "impeccable-review.json",
+      "sha256": "64942cb61b3eed48ec227baad42cb129747a092a9042cb711c97044a56d11627"
+    },
+    {
+      "path": "independent-review.json",
+      "sha256": "1f25df3c5821540cb25f5d3c2d1cab3857f8b393aab52b84fdfd843b627c2b27"
+    },
+    {
+      "path": "native-receipt.json",
+      "sha256": "fce38a81f12d3cb7fc16807c390e9146d0c40d74889dcc89e5549b21b942a9c9"
+    }
+  ]
+}

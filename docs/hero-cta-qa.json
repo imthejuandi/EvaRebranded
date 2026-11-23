@@ -1,24 +1,24 @@
 {
   "status": "passed",
-  "published_version": 57,
-  "deployed_ui_commit": "151275b0465f1421e37519b87bb19e41af411110",
+  "published_version": 58,
+  "deployed_ui_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
   "native_deployment": {
-    "version_number": 57,
-    "source_commit": "151275b0465f1421e37519b87bb19e41af411110",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_d266d230a92c81919149ddd3d7cb6dc3",
-    "deployment_id": "appgdep_6b047863beb081919f617942231b698b",
+    "version_number": 58,
+    "source_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_b278bb22a6a88191a379a4a6ba846067",
+    "deployment_id": "appgdep_6b0480952d508191b7530551c74f9f5d",
     "status": "succeeded",
     "url": "https://eva-content-review.jdlagop.chatgpt.site",
-    "native_updated_at": "2026-11-23T17:31:25.108445+00:00",
+    "native_updated_at": "2026-11-23T18:06:24.119204+00:00",
     "archive_storage": {
       "archive_format": "tar",
-      "sediment_file_id": "file_000000008e78822fa1a37748322d63af",
-      "content_hash": "sha256:00cf281f9216a9eb77f9a84d37d475ca48e73c2aa2a8537682ffd42ea7222e57",
+      "sediment_file_id": "file_000000006890822fabd97a8e8ba9baaf",
+      "content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
       "size_bytes": 171816960,
       "file_count": 790
     },
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=57",
-    "behavior": "Both opening actions contain their own label and explanatory details. The separate combined terms line and hero five-upload count are removed. The free upload and quarterly subscription destinations are preserved. One price string is readable with or without application JavaScript.",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=58",
+    "behavior": "Restores compact 48px two-line opening actions instead of tall equal-height tiles. Upload, marker-count and quarterly-price details remain inside each action. The original support and health-lettering positions are restored, with a narrow tablet spacing exception.",
     "source_files": [
       "components/story/HeroKitCta.tsx",
       "app/hero-kit.css",
@@ -27,73 +27,66 @@
       "scripts/browser-qa/entry-flows.cjs"
     ],
     "archive": {
-      "local_path": "/workspace/eva-publication/eva-hero-cta-v57.tar.gz",
-      "local_gzip_sha256": "2c333428ddb8821834aae0dd4f7a8dce1584b4629ab928ab2686ff4ab11eef4e",
-      "local_gzip_size_bytes": 163053559,
-      "saved_tar_content_hash": "sha256:00cf281f9216a9eb77f9a84d37d475ca48e73c2aa2a8537682ffd42ea7222e57",
+      "local_path": "/workspace/eva-publication/eva-compact-cta-v58.tar.gz",
+      "local_gzip_sha256": "c7af0eab72a6a10a3a1d1da6e3c3db4f06c5150873fae7e335df3a392ae3dcde",
+      "local_gzip_size_bytes": 163055218,
+      "saved_tar_content_hash": "sha256:db2b3a6c797a8f650bce1755c153cf1da1532f47124f55ecc7859efccc0bee03",
       "saved_tar_size_bytes": 171816960,
       "file_count": 790
     },
     "qa": {
-      "status": "passed_actual_browser_with_scoped_prior_version_regression_reuse",
+      "status": "passed_actual_browser",
       "record": "docs/hero-cta-qa.json",
-      "evidence_directory": "docs/browser-qa-v57",
-      "fresh_version57_rendered_cases": 3,
-      "version56_rendered_cases": 12,
-      "version56_entry_flows": 6,
-      "version57_nojs_content_navigation_cases": 2,
+      "evidence_directory": "docs/browser-qa-v58",
+      "fresh_version58_cases": 4,
+      "actual_button_height_px": 48,
       "page_errors": []
     }
   },
-  "scope": "Know your health runner entry actions only. The accepted statement chapter and other landing sections are preserved.",
+  "user_direction": "Return the opening buttons to their previous compact size; the large tile/card scale was rejected.",
   "copy": {
     "en": {
       "free": [
         "Start for free",
-        "Upload your previous labs"
+        "Upload previous labs"
       ],
       "kit": [
         "Subscribe to the kit",
-        "13 biomarkers",
-        "€99 + VAT / quarter",
-        "Cancel anytime."
+        "13 markers · €99 + VAT / quarter"
       ]
     },
     "es": {
       "free": [
         "Empieza gratis",
-        "Sube tus analíticas anteriores"
+        "Sube tus analíticas"
       ],
       "kit": [
         "Suscribirme al kit",
-        "13 biomarcadores",
-        "99 € + IVA / trimestre",
-        "Cancela cuando quieras."
+        "13 marcadores · 99 € + IVA / trimestre"
       ]
     }
   },
-  "specialists": {
-    "copy": "Bilingual wellness conversion copy specialist reviewed the final user-selected labels and inside-button details.",
-    "design": "UX/UI specialist applied Impeccable Layout, Typeset and Polish to the incumbent EVA system, then reviewed actual desktop/phone captures.",
-    "independent": "Separate Impeccable reviewer checked final source and actual native 57 rendered cases, with zero detector findings."
-  },
   "implementation": [
-    "Native anchors retain free signup plus upload return intent and quarterly signup plan.",
-    "Labels use Hanken 600 at 15px; details use Hanken 400 at 14px. Filled primary and outlined secondary stretch to matching heights.",
-    "No outside terms row or five-upload count in the hero. Five free uploads per account remain unchanged in policy and other sections.",
-    "Button support and mobile health-lettering coordinates are synchronized between CSS and heroLayout; runner subject geometry, native-speed footage and2.5-second entrance are unchanged.",
-    "One source-backed slash-quarter price is used at all widths; explicit text spaces preserve natural composite link names."
+    "Both anchors measure 48px high in all four tested profiles. Labels use Hanken 600 at 14px/18px and secondary metadata uses Hanken 400 at 13px/16px.",
+    "Desktop actions are 200px and 250px wide; phones use two compact full-width rows. The 701–800px tablet range uses two 250px rows.",
+    "No separate terms row or five-upload count in the hero. Upload and quarterly subscription routes are preserved.",
+    "The cancel-anytime policy remains unchanged and visible in pricing/signup and other relevant offer copy; its repeated hero line is removed to keep this control compact.",
+    "Original v55 support and health-lettering coordinates are restored, except the documented narrow tablet spacing adjustment. Runner subject, footage and 2.5-second entrance are unchanged."
+  ],
+  "specialists": [
+    "Wellness copy specialist condensed the requested metadata without changing the offer.",
+    "Impeccable Layout/Typeset design specialist directed the compact controls and signed off actual desktop/phone captures.",
+    "Independent Impeccable reviewer checked final source and actual four-profile geometry; final detector returned zero findings."
   ],
   "verification": {
-    "static": "TypeScript, fresh 113-route build, English 1,205-message audit, parity across 32 variants, runner lifecycle and story-section checks passed.",
-    "fresh57": "Three actual native 57 rendered profiles EN 1366px, ES 390px, ES 320px passed, plus two raw SSR/native no-JavaScript route/content checks.",
-    "reused56": "Twelve actual normal/calm runner profiles including320/390/768/1366, two short-height spots and two effective200%reflow cases; six isolated entry flows passed.57 changes only price display/semantic spacing, with layout and destinations preserved.",
-    "harness_fix": "Entry-flow assertions now wait for computed hero CSS readiness before reading nested text. The initial pre-CSS read was a harness issue, not a missing product price/marker value.",
-    "bounds": [
+    "static": "TypeScript, fresh 113-route build, English 1,205-message audit, 32-variant parity, runner startup and story-section checks passed.",
+    "fresh": "Four actual native58 profiles: EN1366, ES390, ES320 and ES768. Both buttons measured 48px high in every case; metadata remained one line with no clipping or control/health-lettering collisions. Keyboard focus and destinations passed.",
+    "reuse": "Earlier route/business-policy checks remain historical evidence for unchanged destinations. Earlier large-button geometry is not presented as current-size proof.",
+    "limits": [
       "Viewport emulation, not physical-device performance.",
-      "No-JavaScript checks establish natural raw content and native navigation only; hero stylesheet delivery without application JavaScript is not established.",
-      "No actual account creation, upload, payment or mutating network request was performed."
+      "No real account creation, upload or payment.",
+      "Earlier no-JavaScript checks establish raw content/native navigation only; no new full visual no-JavaScript claim."
     ]
   },
-  "production_cutover": "evahealth.es remains on hold."
+  "previous_review": "https://github.com/imthejuandi/EvaRebranded/blob/9fd4a1f5e825e48389fe1f46a4d47de5145ef24e/docs/hero-cta-qa.json"
 }

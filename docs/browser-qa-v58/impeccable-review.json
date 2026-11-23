@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "native_version": 58,
+  "ui_source_commit": "0c4e5df107162080ed813d4c9c9d5f8245752e15",
+  "scope": "Independent Impeccable review of user-requested compact two-line native CTA anchors. Four fresh rendered profiles only; prior large-tile geometry is historical reference, not proof of the new layout.",
+  "fresh_profiles": [
+    {
+      "id": "en-1366-motion",
+      "passed": true,
+      "button_heights_css_px": [
+        48,
+        48
+      ],
+      "button_widths_css_px": [
+        200,
+        250
+      ],
+      "metadata_height_css_px": [
+        16,
+        16
+      ],
+      "page_errors": []
+    },
+    {
+      "id": "es-390-motion",
+      "passed": true,
+      "button_heights_css_px": [
+        48,
+        48
+      ],
+      "button_widths_css_px": [
+        342,
+        342
+      ],
+      "metadata_height_css_px": [
+        16,
+        16
+      ],
+      "page_errors": []
+    },
+    {
+      "id": "es-320-motion",
+      "passed": true,
+      "button_heights_css_px": [
+        48,
+        48
+      ],
+      "button_widths_css_px": [
+        272,
+        272
+      ],
+      "metadata_height_css_px": [
+        16,
+        16
+      ],
+      "page_errors": []
+    },
+    {
+      "id": "es-768-motion",
+      "passed": true,
+      "button_heights_css_px": [
+        48,
+        48
+      ],
+      "button_widths_css_px": [
+        250,
+        250
+      ],
+      "metadata_height_css_px": [
+        16,
+        16
+      ],
+      "page_errors": []
+    }
+  ],
+  "final_source_detector": {
+    "exit_code": 0,
+    "findings": 0,
+    "report": "/workspace/eva-in-place-qa/hero-cta-v58/impeccable-detect.json"
+  },
+  "typography": {
+    "label": "14px/18px semibold600 Hanken",
+    "metadata": "13px/16px regular400 Hanken; secondary metadata role scoped to explicit compact-control brief",
+    "all_metadata_single_line": true,
+    "source_contrast_primary_label": 15.29,
+    "source_contrast_primary_metadata": 8.1,
+    "source_contrast_secondary_label": 16.83,
+    "source_contrast_secondary_metadata": 11.75
+  },
+  "findings": [
+    "All eight anchors measured 48px tall, replacing106–146px phone tiles and122px desktop tiles.",
+    "Desktop native controls measure200px primary/250px secondary; phone controls use full-width stacked48px anchors; tablet uses250px stacked anchors.",
+    "The selected bilingual labels/subtitles and13-marker quarterly €99 + VAT price are visible without clipping, truncation or extra metadata lines.",
+    "No separate terms row, five-upload hero caption or tall cancellation stack remains.",
+    "Composite accessible names and visible keyboard focus are intact.",
+    "Both native signup intents remain correct, including the free-report upload return path.",
+    "No document overflow, obscured click targets, health-lettering overlap or pause/navigation overlap in tested profiles.",
+    "Actual health-lettering bounds match shared heroLayout positions; runner image/face remain clear in captures.",
+    "The accepted 10%/46% statement remains present and unchanged."
+  ],
+  "retained_evidence": {
+    "route_and_raw_ssr": "Version 57 native href/SSR behavior remains unchanged; no-JS was not rerun in version 58. Prior 57 evidence is explicitly limited to raw content/native navigation, without visual CSS parity.",
+    "historical_wide_geometry": "Version 56 twelve-profile matrix is retained for history only; new compact version 58 layout is established by the four fresh cases."
+  },
+  "limits": [
+    "Viewport emulation, not physical-device performance.",
+    "No browser-chrome zoom or full landing/flow rerun in version 58.",
+    "No real account creation, upload, purchase or mutating network request.",
+    "No-JS stylesheet delivery remains a previously recorded platform boundary."
+  ],
+  "network_writes": [],
+  "all_owned_browsers_closed": true,
+  "report": "/workspace/eva-in-place-qa/hero-cta-v58/independent-review.json",
+  "source_sha256": {
+    "components/story/HeroKitCta.tsx": "2f40a128d391f13b2b4c036befeb3b33828d68f9b20effb084b36cdbb265d533",
+    "app/hero-kit.css": "436143861843f5cec1923875252c26aa843bf1fb9bd0c50a9eaf07b3e8152e98",
+    "lib/hero-layout.ts": "06384137c119c617e2232b392fe909788d03234de058d018a05661fc9ff0672e"
+  }
+}
