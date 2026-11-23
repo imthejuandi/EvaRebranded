@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
-const version=process.env.EVA_REVIEW_VERSION||'56',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
+const version=process.env.EVA_REVIEW_VERSION||'58',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
 const cases=[{locale:'en',width:1440,height:900},{locale:'es',width:375,height:812}];
 const report={version:Number(version),scope:'Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend',cases:[],pageErrors:[],viewportEmulation:true,physicalDevice:false};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -27,11 +27,10 @@ await test('opening',page,result,async()=>{
  assert.equal(new URL(await heroKit.getAttribute('href'),base).searchParams.get('plan'),'quarterly');
  const terms=await heroKit.innerText();
  assert.equal(await page.locator('.hero-start-terms').count(),0,'No separate hero terms line');
- assert.match(await heroFree.innerText(),c.locale==='en'?/Upload your previous labs/:/Sube tus analíticas anteriores/);
- assert.match(terms,/13\s+(?:biomarkers|biomarcadores)/i);
+ assert.match(await heroFree.innerText(),c.locale==='en'?/Upload previous labs/:/Sube tus analíticas/);
+ assert.match(terms,/13\s+(?:biomarkers|biomarcadores|markers|marcadores)/i);
  assert.match(terms,/(99\s*€|€\s*99)\s*\+\s*(IVA|VAT)/i);
  assert.match(terms,/per quarter|por trimestre|\/\s*(quarter|trimestre)/i);
- assert.match(terms,/Cancel anytime|Cancela cuando quieras/i);
  const explore=page.locator('.masthead .join');
  assert.equal(await explore.getAttribute('href'),'#entender-tus-analisis');
  await explore.click();await target(chapterFree);

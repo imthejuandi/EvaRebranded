@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'56';
+const VERSION=process.env.EVA_REVIEW_VERSION||'58';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -16,13 +16,13 @@ const expectQuery=(url,locale,plan)=>{const u=new URL(url,ORIGIN);assert.equal(u
 async function target(locator){await locator.scrollIntoViewIfNeeded();await locator.evaluate(async()=>{await document.fonts.ready;await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));});const box=await locator.boundingBox();assert(box&&box.width>=44&&box.height>=44);const hit=await locator.evaluate(el=>{const r=el.getBoundingClientRect(),node=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return node===el||el.contains(node);});assert(hit,'CTA center is obscured');return box;}
 const legacyKit=/\b15\s+(?:biomarcadores|biomarkers)|(?:396\s*€|€\s*396)/i;
 function recordLegacy(where,content,locale,screenshot){if(legacyKit.test(content))report.findings.push({type:'legacy_starter_terms',where,locale,text:content,screenshot});}
-function approvedKitCopy(where,content){
+function approvedKitCopy(where,content,{requireCancellation=true}={}){
  assert(!legacyKit.test(content),where+': obsolete starter scope or price');
- assert(/\b13\s+(?:biomarcadores|biomarkers)\b/i.test(content),where+': missing 13-marker scope');
+ assert(/\b13\s+(?:biomarcadores|biomarkers|marcadores|markers)\b/i.test(content),where+': missing 13-marker scope');
  assert(/(?:99\s*€|€\s*99)\s*\+\s*(?:IVA|VAT)/i.test(content),where+': missing price or VAT');
  assert(/suscr[ií]|subscri/i.test(content),where+': missing subscription');
  assert(/por trimestre|per quarter|\/\s*(quarter|trimestre)/i.test(content),where+': missing quarterly price');
- assert(/cancela cuando quieras|cancel anytime/i.test(content),where+': missing cancellation terms');
+ if(requireCancellation)assert(/cancela cuando quieras|cancel anytime/i.test(content),where+': missing cancellation terms');
 }
 
 const reportFormat = {en: /PDF or photo of a previous blood test report/i, es: /analítica de sangre que ya tengas, en PDF o en foto/i};
@@ -73,9 +73,9 @@ async function home(page,locale){
  assert.equal(await text(page.locator('.hero-kit-cta .hero-action-label')),locale==='en'?'Start for free':'Empieza gratis');
  assert.equal(await text(kitAction.locator('.hero-action-label')),locale==='en'?'Subscribe to the kit':'Suscribirme al kit');
  const freeDescription=await text(page.locator('.hero-kit-cta'));
- assert.match(freeDescription,locale==='en'?/Upload your previous labs/:/Sube tus analíticas anteriores/);
+ assert.match(freeDescription,locale==='en'?/Upload previous labs/:/Sube tus analíticas/);
  assert.equal(await page.locator('.hero-start-terms').count(),0,'No separate hero terms line');
- approvedKitCopy('hero kit action and adjacent terms',(await text(kitAction))+' '+kitDescription);
+ approvedKitCopy('compact hero kit action',kitDescription,{requireCancellation:false});
  approvedKitCopy('method kit',await text(page.locator('[data-method-kit]')));
  for(const selector of ['.report-free-allowance','[data-range-upload]','.guided-start','[data-method-upload]']){
   assert.match(await text(page.locator(selector)),/5 free report uploads per account|5 informes gratis por cuenta/i,selector+' free uploads');

@@ -6,7 +6,7 @@ export function heroLayout(width:number,height:number){
  const introHeight=introSize*1.08;
  const saludWidth=mobile?width*.6:Math.max(220,Math.min(width*.29,520));
  const saludHeight=saludWidth*.4;
- const saludTop=height-(mobile?(width<=350?231:211):109)-saludHeight;
+ const saludTop=height-(mobile?191:109)-saludHeight;
  // Keep the media centered in both axes. Compact phones need a smaller frame
  // so the source image's head (about 12% from its top) stays below the title.
  const runnerHeight=mobile?Math.max(height*.48,Math.min(height*.72,(height*.5-introTop-introHeight-16)/.38)):height*.82;
@@ -14,7 +14,7 @@ export function heroLayout(width:number,height:number){
   // Preserve the runner's existing composition; only the natural headline shrinks.
   introSize:introSize*.9,introTop:introTop-(mobile?12:24),introHeight:introHeight*.9,introWidth:introSize*4.6*.9,
   saludWidth,saludHeight,saludTop,
-  supportTop:height-272,
+  supportTop:height-(width>700&&width<=800?244:236),
   runnerHeight,runnerWidth:mobile?Math.min(width*.9,runnerHeight*1450/1800):width*.31,
   runnerTop:(height-runnerHeight)/2,
  };
