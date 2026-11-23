@@ -1,10 +1,10 @@
 'use client';
 
-import {useEffect,useRef} from 'react';
+import {useEffect,useRef,type CSSProperties} from 'react';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {businessLinks} from '@/lib/landing-content';
 import {flowHref} from '@/lib/preview/policy';
-import {rangeProofCopy} from '@/lib/site-content/range-proof-copy';
+import {rangeProofCopy,rangeProofExample} from '@/lib/site-content/range-proof-copy';
 import {Arrow} from './Arrow';
 import {DotNumber} from './DotNumber';
 import './range-proof-section.css';
@@ -14,7 +14,18 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
   const {locale,href}=useSiteLanguage(), c=rangeProofCopy[locale];
   const root=useRef<HTMLElement>(null), prevention=useRef<HTMLDivElement>(null);
   const uploadHref=flowHref(businessLinks.signup,{plan:'free',returnTo:businessLinks.upload,reportId:null,invalidPlan:false});
-  const number=locale==='es'?'2,1':'2.1';
+  const sample=rangeProofExample;
+  const number=new Intl.NumberFormat(locale,{minimumFractionDigits:1,maximumFractionDigits:1}).format(sample.value);
+  const percent=(value:number)=>(value-sample.axisMin)/(sample.axisMax-sample.axisMin)*100;
+  const graphicStyle={
+    '--range-reading-position':`${percent(sample.value)}%`,
+    '--range-lab-end':`${percent(sample.labUpper)}%`,
+    '--range-prevention-start':`${percent(sample.preventionLower)}%`,
+    '--range-overlap-width':`${percent(sample.labUpper)-percent(sample.preventionLower)}%`,
+  } as CSSProperties;
+  const chartDescription=locale==='es'
+    ? `El mismo ejemplo de hs-CRP de ${number} mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. La zona compartida entre 2 y 5 muestra que ambas interpretaciones pueden ser ciertas; no representa una probabilidad de enfermedad.`
+    : `The same ${number} mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The shared area between 2 and 5 shows that both interpretations can apply; it is not a disease probability.`;
 
   useEffect(()=>{
     const element=root.current, trigger=prevention.current;
@@ -58,23 +69,26 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
         <div className="range-proof-instrument bio-glass">
           <header className="range-proof-readout">
             <div><h3>hs-CRP</h3><p className="range-proof-marker-name">{c.markerLabel}</p><p className="range-proof-example">{c.exampleLabel}</p></div>
-            <p className="range-proof-value" data-range-value="2.1"><span className="sr-only">{number} mg/L</span><span aria-hidden="true"><DotNumber value={number} density="coarse" calm active={false}/><small>mg/L</small></span></p>
+            <p className="range-proof-value" data-range-value={sample.value}><span className="sr-only">{number} mg/L</span><span aria-hidden="true"><DotNumber value={number} density="coarse" calm active={false}/><small>mg/L</small></span></p>
           </header>
-          <div className="range-proof-plot" data-range-axis-min="0" data-range-axis-max="5" data-range-marker>
-            <div className="range-proof-readings">
-              <div className="range-proof-reading" data-range-reading="lab">
-                <p className="range-proof-reading-label">{c.lab.label}<span>{c.lab.threshold}</span></p>
-                <div className="range-proof-lane range-proof-lab-lane" aria-hidden="true"><span data-range-lab-band/><i className="range-proof-fixed-point"/></div>
-                <h4>{c.lab.interpretation}</h4>
-              </div>
-              <div ref={prevention} className="range-proof-reading range-proof-prevention" data-range-reading="prevention">
-                <p className="range-proof-reading-label">{c.prevention.label}<span>{c.prevention.threshold}</span></p>
-                <div className="range-proof-lane range-proof-prevention-lane" aria-hidden="true"><span data-range-prevention-band/><i className="range-proof-threshold"/><i className="range-proof-fixed-point"/></div>
-                <h4>{c.prevention.interpretation}</h4>
+          <figure className="range-proof-plot" style={graphicStyle} aria-describedby="range-proof-graphic-description" data-range-axis-min={sample.axisMin} data-range-axis-max={sample.axisMax} data-range-marker>
+            <p className="sr-only" id="range-proof-graphic-description">{chartDescription}</p>
+            <div className="range-proof-window">
+              <div className="range-proof-overlap" data-range-overlap aria-hidden="true"/>
+              <div className="range-proof-readings">
+                <div className="range-proof-reading" data-range-reading="lab">
+                  <p className="range-proof-reading-label">{c.lab.label}<span>{c.lab.threshold}</span></p>
+                  <div className="range-proof-lane range-proof-lab-lane" aria-hidden="true"><span data-range-lab-band/><i className="range-proof-lab-boundary"/><i className="range-proof-fixed-point"/></div>
+                </div>
+                <div ref={prevention} className="range-proof-reading range-proof-prevention" data-range-reading="prevention">
+                  <p className="range-proof-reading-label">{c.prevention.label}<span>{c.prevention.threshold}</span></p>
+                  <div className="range-proof-lane range-proof-prevention-lane" aria-hidden="true"><span data-range-prevention-band/><i className="range-proof-threshold"/><i className="range-proof-fixed-point"/></div>
+                </div>
               </div>
             </div>
-            <div className="range-proof-axis" aria-hidden="true">{[0,1,2,3,4,5].map(tick=><span key={tick}>{tick}</span>)}</div>
-          </div>
+            <div className="range-proof-axis" aria-hidden="true">{Array.from({length:sample.axisMax-sample.axisMin+1},(_,i)=>sample.axisMin+i).map(tick=><span key={tick}>{tick}</span>)}</div>
+            <figcaption className="range-proof-takeaway"><strong>{c.takeawayLead}</strong>{' '}{c.takeaway}</figcaption>
+          </figure>
         </div>
         <p className="range-proof-context">{c.qualifier}</p>
         <details className="range-proof-details">

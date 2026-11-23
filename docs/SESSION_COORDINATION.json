@@ -169,11 +169,15 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Version 62 concise range-proof chapter published and independently verified.",
+      "status": "Defining a CMO-reviewed graphical comparison of laboratory reference and evidence-based prevention thresholds; live baseline62.",
       "next_section": null,
-      "pending_verification": null,
-      "section": "#otra-lectura — There’s more to normal",
-      "files": []
+      "pending_verification": "CMO evidence selection, copy/design/independent review loop, then build and actual native-site checks.",
+      "section": "#otra-lectura — shared-scale risk-context graphic",
+      "files": [
+        "components/story/RangeProofSection.tsx",
+        "components/story/range-proof-section.css",
+        "lib/site-content/range-proof-copy.ts"
+      ]
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
