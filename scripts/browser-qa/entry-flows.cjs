@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'53';
+const VERSION=process.env.EVA_REVIEW_VERSION||'56';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -21,7 +21,7 @@ function approvedKitCopy(where,content){
  assert(/\b13\s+(?:biomarcadores|biomarkers)\b/i.test(content),where+': missing 13-marker scope');
  assert(/(?:99\s*€|€\s*99)\s*\+\s*(?:IVA|VAT)/i.test(content),where+': missing price or VAT');
  assert(/suscr[ií]|subscri/i.test(content),where+': missing subscription');
- assert(/por trimestre|per quarter/i.test(content),where+': missing quarterly price');
+ assert(/por trimestre|per quarter|\/\s*(quarter|trimestre)/i.test(content),where+': missing quarterly price');
  assert(/cancela cuando quieras|cancel anytime/i.test(content),where+': missing cancellation terms');
 }
 
@@ -65,14 +65,19 @@ async function home(page,locale){
  for(const selector of ['.hero-kit-secondary','[data-method-kit]','[data-offer-kit-action]'])expectQuery(await page.locator(selector).getAttribute('href'),locale,'quarterly');
  for(const selector of ['.hero-kit-cta','.hero-kit-secondary']){
   const action=page.locator(selector);
-  assert((await text(action)).split(/\s+/).length<=4,selector+' short label');
-  assert.equal(await action.locator('small,p,span').count(),0,selector+' terms outside button');
+  assert((await text(action.locator('.hero-action-label'))).split(/\s+/).length<=4,selector+' short label');
+  assert(await action.locator('.hero-action-detail').count()>0,selector+' supporting detail inside button');
  }
  const kitAction=page.locator('.hero-kit-secondary');
- const kitDescription=await kitAction.evaluate(el=>document.getElementById(el.getAttribute('aria-describedby'))?.textContent||'');
+ const kitDescription=await text(kitAction);
+ assert.equal(await text(page.locator('.hero-kit-cta .hero-action-label')),locale==='en'?'Start for free':'Empieza gratis');
+ assert.equal(await text(kitAction.locator('.hero-action-label')),locale==='en'?'Subscribe to the kit':'Suscribirme al kit');
+ const freeDescription=await text(page.locator('.hero-kit-cta'));
+ assert.match(freeDescription,locale==='en'?/Upload your previous labs/:/Sube tus analíticas anteriores/);
+ assert.equal(await page.locator('.hero-start-terms').count(),0,'No separate hero terms line');
  approvedKitCopy('hero kit action and adjacent terms',(await text(kitAction))+' '+kitDescription);
  approvedKitCopy('method kit',await text(page.locator('[data-method-kit]')));
- for(const selector of ['.hero-start-terms','.report-free-allowance','[data-range-upload]','.guided-start','[data-method-upload]']){
+ for(const selector of ['.report-free-allowance','[data-range-upload]','.guided-start','[data-method-upload]']){
   assert.match(await text(page.locator(selector)),/5 free report uploads per account|5 informes gratis por cuenta/i,selector+' free uploads');
  }
  assert.match(await text(page.locator('[data-offer-free]')),freeTotal);

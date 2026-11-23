@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
-const version=process.env.EVA_REVIEW_VERSION||'53',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
+const version=process.env.EVA_REVIEW_VERSION||'56',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
 const cases=[{locale:'en',width:1440,height:900},{locale:'es',width:375,height:812}];
 const report={version:Number(version),scope:'Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend',cases:[],pageErrors:[],viewportEmulation:true,physicalDevice:false};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -14,18 +14,24 @@ await test('opening',page,result,async()=>{
  const chapter=page.locator('[data-problem-chapter]');
  const chapterFree=chapter.locator('[data-statement-free]');
  await target(heroFree);await target(heroKit);
+ assert.equal((await heroFree.locator('.hero-action-label').innerText()).replace(/\s+/g,' ').trim(),c.locale==='en'?'Start for free':'Empieza gratis');
+ assert.equal((await heroKit.locator('.hero-action-label').innerText()).replace(/\s+/g,' ').trim(),c.locale==='en'?'Subscribe to the kit':'Suscribirme al kit');
  for(const action of [heroFree,heroKit]){
-  assert((await action.innerText()).trim().split(/\s+/).length<=4,'Hero action has a short label');
-  assert.equal(await action.locator('small,p,span').count(),0,'Hero terms stay outside the action');
+  assert((await action.locator('.hero-action-label').innerText()).trim().split(/\s+/).length<=4,'Hero action has a short label');
+  assert(await action.locator('.hero-action-detail').count()>0,'Hero action contains its supporting detail');
   assert(await action.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('[data-problem-chapter]')) & Node.DOCUMENT_POSITION_FOLLOWING)));
  }
  const freeHref=new URL(await heroFree.getAttribute('href'),base);
  assert.equal(freeHref.pathname,`/${c.locale}/signup`);
  assert.equal(freeHref.searchParams.get('plan'),'free');assert.equal(freeHref.searchParams.get('redirect'),'/es/upload');
  assert.equal(new URL(await heroKit.getAttribute('href'),base).searchParams.get('plan'),'quarterly');
- const terms=await page.locator('.hero-start-terms').innerText();
+ const terms=await heroKit.innerText();
+ assert.equal(await page.locator('.hero-start-terms').count(),0,'No separate hero terms line');
+ assert.match(await heroFree.innerText(),c.locale==='en'?/Upload your previous labs/:/Sube tus analíticas anteriores/);
  assert.match(terms,/13\s+(?:biomarkers|biomarcadores)/i);
- assert.match(terms,/5 free report uploads per account|5 informes gratis por cuenta/i);
+ assert.match(terms,/(99\s*€|€\s*99)\s*\+\s*(IVA|VAT)/i);
+ assert.match(terms,/per quarter|por trimestre|\/\s*(quarter|trimestre)/i);
+ assert.match(terms,/Cancel anytime|Cancela cuando quieras/i);
  const explore=page.locator('.masthead .join');
  assert.equal(await explore.getAttribute('href'),'#entender-tus-analisis');
  await explore.click();await target(chapterFree);
@@ -56,7 +62,7 @@ await test('opening',page,result,async()=>{
  assert.equal(await chapter.locator('[data-report-specimen], [data-value]').count(),0);
  assert.doesNotMatch(chapterText,/\b95\s?%|hs-CRP|\bAlex\b/);
  assert(await chapter.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('#recogida-en-casa')) & Node.DOCUMENT_POSITION_FOLLOWING)));
- return {heroActionsRestored:true,shortLabels:true,termsOutsideActions:true,healthQuestion:true,twoSourcedNationalStatistics:true,diabetesSubgroupQualified:true,approvedBridge:true,singleStatementFreeAction:true};
+ return {heroActionsRestored:true,shortLabels:true,detailsInsideActions:true,healthQuestion:true,twoSourcedNationalStatistics:true,diabetesSubgroupQualified:true,approvedBridge:true,singleStatementFreeAction:true};
 });
 await test('tasso',page,result,async()=>{await page.locator('.chapter-nav button').nth(1).click();const section=page.locator('#recogida-en-casa [data-tasso-video-process]');await page.waitForFunction(()=>{const v=document.querySelector('#recogida-en-casa video');return v&&v.readyState>=2&&!v.paused},{},{timeout:25000});const actions=section.locator('.tasso-video-actions button'),middle=actions.nth(1);assert.equal(await section.locator('video').evaluate(v=>v.playbackRate),1);await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);const steps=section.locator('.tasso-video-steps button');await steps.nth(0).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='1');await actions.nth(2).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='2');await actions.nth(0).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='1');await steps.nth(2).click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa [data-tasso-video-process]').dataset.step==='3');await page.waitForFunction(()=>!document.querySelector('#recogida-en-casa video').paused);const before=await section.locator('video').evaluate(v=>v.currentTime);await wait(700);const after=await section.locator('video').evaluate(v=>v.currentTime);assert(after>before+.1,'Native film time advances');await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);await middle.focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>!document.querySelector('#recogida-en-casa video').paused);await middle.click();await page.waitForFunction(()=>document.querySelector('#recogida-en-casa video').paused);await section.screenshot({path:`${out}/core-v${version}-tasso-${c.locale}.png`});return {nativeRate:1,previousNextAndDirectSteps:true,pausePlayKeyboard:true};});
 await test('kit',page,result,async()=>{const kit=page.locator('#kit-inicial');assert.equal(await kit.getAttribute('data-kit-transition-duration-ms'),'500');await clock(page,kit,100);assert.equal(await kit.locator('.stage .kit-marker-name').count(),13);const nodes=await kit.locator('.stage .kit-marker-name').allTextContents();const start=Date.now();await clock(page,kit,145);await page.waitForFunction(()=>{const d=document.querySelector('#kit-inicial').dataset;return d.kitRevealState==='complete'&&Number(d.kitPresentationClock)>299},{},{timeout:4000});const elapsed=Date.now()-start;assert(elapsed<1700,'500ms reveal plus browser scheduling tolerance');assert.deepEqual(await kit.locator('.stage .kit-marker-name').allTextContents(),nodes);const meanings=await kit.locator('.stage [data-kit-meaning]').evaluateAll(es=>es.map(e=>Number(getComputedStyle(e).opacity)));assert.equal(meanings.length,13);assert(meanings.every(x=>x>.98));await clock(page,kit,100);await page.waitForFunction(()=>Number(document.querySelector('#kit-inicial').dataset.kitPresentationClock)<141,{},{timeout:2500});assert.deepEqual(await kit.locator('.stage .kit-marker-name').allTextContents(),nodes);return {actualMarkers:13,forwardRevealElapsedMs:elapsed,reverse:true,sameMarkerNames:true};});
