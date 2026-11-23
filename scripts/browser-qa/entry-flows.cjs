@@ -32,7 +32,7 @@ const activeUploads=/unlimited reports while your subscription is active|informe
 
 async function home(page,locale){
  const response=await page.goto(uri(locale),{waitUntil:'domcontentloaded'});assert.equal(response.status(),200);
- await page.locator('.calm-hero').waitFor({state:'visible'});await page.locator('[data-offer-upload]').waitFor({state:'visible'});await page.evaluate(()=>document.fonts.ready);
+ await page.locator('.calm-hero').waitFor({state:'visible'});await page.locator('[data-offer-upload]').waitFor({state:'visible'});await page.waitForFunction(()=>{const label=document.querySelector('.hero-action-label');return label&&getComputedStyle(label).display==='block'&&getComputedStyle(document.querySelector('.hero-start')).fontFamily.includes('EVA Hanken');});await page.evaluate(()=>document.fonts.ready);
  const problem=page.locator('[data-problem-chapter]');
  const runner=page.locator('.calm-hero');
  assert.equal(await runner.locator('a[href*="/signup"]').count(),2);

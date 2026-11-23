@@ -12,15 +12,14 @@ export function HeroKitCta() {
     const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
     return <div className="hero-start" role="group" aria-label={__site.t("Elige cómo empezar con EVA")}>
       <a className="hero-kit-cta" href={__site.href(uploadHref)}>
-        <span className="hero-action-label">{__site.t('Empieza gratis')}</span>
+        <span className="hero-action-label">{__site.t('Empieza gratis')}</span>{' '}
         <span className="hero-action-detail">{uploadLabel}</span>
       </a>
       <a className="hero-kit-secondary" href={__site.href(businessLinks.signup + '?plan=quarterly')}>
-        <span className="hero-action-label">{kit.kitAction}</span>
+        <span className="hero-action-label">{kit.kitAction}</span>{' '}
         <span className="hero-action-detail hero-kit-detail">
-          <span>{kit.scope}</span>
-          <span className="hero-price-full">{kit.price} {kit.frequency}</span>
-          <span className="hero-price-compact">{kit.price} / {quarterLabel}</span>
+          <span>{kit.scope}</span>{' '}
+          <span>{kit.price} / {quarterLabel}</span>{' '}
           <span>{kit.cancelAnytime}</span>
         </span>
       </a>

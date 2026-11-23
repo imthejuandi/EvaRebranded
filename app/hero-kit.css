@@ -15,7 +15,6 @@
 .hero-kit-cta .hero-action-detail{color:#414a3f}
 .hero-kit-secondary .hero-action-detail{color:#c8ccc3}
 .hero-kit-detail>span{display:block;font-variant-numeric:tabular-nums}
-.hero-kit-detail>.hero-price-compact{display:none}
 @media(hover:hover) and (pointer:fine){.hero-kit-cta:hover{background:#fffdf6}.hero-kit-secondary:hover{background:#f3f0e80d;border-color:#f3f0e8}}
 .hero-kit-cta:active{background:#e5e1d7}
 .hero-kit-secondary:active{background:#f3f0e81a}
@@ -35,7 +34,6 @@
  .opening-runner .stage-note{top:calc(var(--hero-action-top) - 64px);bottom:auto;left:var(--gutter);right:auto}
  .hero-static-support{display:none}
 }
-@media(max-width:385px){.hero-kit-detail>.hero-price-full{display:none}.hero-kit-detail>.hero-price-compact{display:block}}
 @media(max-width:350px){.stage,.poster,.calm-hero{--hero-salud-top:calc(100svh - 231px - 24vw);--hero-action-top:calc(100svh - 215px)}}
 @media(prefers-reduced-motion:reduce){.hero-kit-cta,.hero-kit-secondary{transition:none}}
 @media(forced-colors:active){.hero-kit-cta,.hero-kit-secondary{background:ButtonFace;color:ButtonText;border-color:ButtonText}.hero-start .hero-action-detail{color:ButtonText}}
