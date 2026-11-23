@@ -1,0 +1,30 @@
+{
+  "basis": "Frozen CMO medical-spec.json; values and inequalities are case facts, not a CSS snapshot.",
+  "value": 3.2,
+  "unit": "mg/L",
+  "axis_min": 0,
+  "axis_max": 6,
+  "lab": {
+    "operator": "<",
+    "boundary": 5,
+    "fraction": 0.8333333333333334
+  },
+  "prevention": {
+    "operator": ">",
+    "boundary": 2,
+    "fraction": 0.3333333333333333,
+    "persistence_required": true
+  },
+  "sample_fraction": 0.5333333333333333,
+  "overlap": {
+    "lower": 2,
+    "upper": 5,
+    "left_fraction": 0.3333333333333333,
+    "width_fraction": 0.5
+  },
+  "expected_relations": {
+    "inside_this_lab_reference": true,
+    "above_persistent_review_boundary": true
+  },
+  "meaning": "Reference-in-range can overlap a conditional risk modifier; not a universal optimal/safe band, diagnosis, probability or disease prediction."
+}

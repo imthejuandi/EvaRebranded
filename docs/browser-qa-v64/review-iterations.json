@@ -1,0 +1,61 @@
+{
+  "baseline_native_version": 63,
+  "primary_user_finding": {
+    "source": "Actual user feedback relayed by the parent agent",
+    "finding": "The shaded area above 2 looked normal/optimal, so the 63 graphic did not communicate its intended meaning.",
+    "effect": "Prior editorial semantic acceptance is withdrawn; technical layout and medical correctness alone were insufficient."
+  },
+  "prior_method_failure": "The earlier model test was primed by the medical explanation and tested label recall more than the goal/action inferred from visual form.",
+  "iterations": [
+    {
+      "id": 1,
+      "candidate": "Native 63 filled risk/overlap graphic",
+      "result": "USER_REJECTED",
+      "findings": [
+        "Selected-looking 2–5 window and warm fill can imply a destination.",
+        "Within this interval has an ambiguous nearest referent, reinforcing the selected zone.",
+        "Clinical disclaimers did not fix the visual message."
+      ],
+      "revision_prompt": "Remove risk fill/shared wash and selected-interval framing. Use one neutral number line with explicit distinct cutoff annotations; make above 2 an action trigger, not a desirable band."
+    },
+    {
+      "id": 2,
+      "candidate": "Planned neutral number line with conditional review cutoff 2, laboratory-reference end 5, one 3.2 sample and CMO-approved action-first takeaway.",
+      "result": "PREFLIGHT_SEMANTIC_FAILURE",
+      "review_requirement": "Cold visual read before medical rationale; no automatic acceptance of the proposed fix.",
+      "findings": [
+        "Fresh no-history A readers recalled the facts after text, but the ruler could still suggest an acceptable2–5franja.",
+        "The ambiguous interval referent remained; factual recall did not waive the immediate visual-semantic failure."
+      ],
+      "revision_prompt": "Remove the entire axis/ruler/interval shape; show two direct comparisons with explicit plain-language meanings and a conditional next step."
+    },
+    {
+      "id": 3,
+      "candidate": "ConceptBdirect3.2<5 and3.2>2 if persistent comparisons; no axis/ruler/band/window.",
+      "result": "COLD_EDITORIAL_READ_PASS",
+      "findings": [
+        "Fresh no-history EN/ES image readers distinguish the laboratory limit from the conditional review trigger without an explicit2–5optimal interval.",
+        "One EN reader still felt below2might be preferable, while stating that no normal/optimal target was explicitly recommended.",
+        "Clinical timing, applicability and who-reviews questions remain for context/clinical discussion; no fixed repeat interval is invented."
+      ],
+      "raw_records": [
+        "cold-reader-b-en.json",
+        "cold-reader-b-es.json"
+      ]
+    },
+    {
+      "id": 4,
+      "candidate": "Actual native64Bsource",
+      "result": "EDITORIAL_AND_BROWSER_CHECKS_PASS",
+      "findings": [
+        "All eight native profiles pass direct math, medical conditions, no-interval imagery, typography, keyboard/details/source/free-upload and reduced-motion checks.",
+        "Independent actual ES320 and EN1366 inspection confirms two separate comparisons with no spatial target zone.",
+        "User acceptance of64 and majority human comprehension remain unproven; the actual version63 user finding stays primary and preserved."
+      ]
+    }
+  ],
+  "final_native_version": 64,
+  "final_ui_source_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+  "final_status": "passed_editorial_and_browser_checks",
+  "owner_acceptance": "pending_user_review_of64"
+}

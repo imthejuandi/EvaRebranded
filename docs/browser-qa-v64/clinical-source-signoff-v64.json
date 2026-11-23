@@ -1,0 +1,62 @@
+{
+  "status": "approved",
+  "version_candidate": 64,
+  "representation": "Concept B: two explicit comparisons; no ruler, axis, filled band or shaded interval",
+  "review_role": "Chief Medical Officer agent; clinical evidence/source review, not human clinician approval",
+  "scope": "Read-only clinical review of the final comparison-based source. The prior neutral number-line preflight was superseded after image-only readers still inferred a desirable interval. Rendered legibility and comprehension remain with the independent judge.",
+  "source_sha256": {
+    "components/story/RangeProofSection.tsx": "b8ade3e451c14391123ebb216a2b35d7a77eadb7b39480a66375e5406ee85632",
+    "lib/site-content/range-proof-copy.ts": "baeec436d246e1163c38ea089fb0f3ded63b4d03488ebb5fde2e729c56309f8e",
+    "components/story/range-proof-section.css": "ea116f1676892e26b457e0d2da18853427aa223df6f3f333c12aa605ff7c2f8d"
+  },
+  "clinical_facts": {
+    "independent_example": "hs-CRP 3.2 mg/L, labelled Example/Ejemplo, independent of Alex’s unchanged 2.1 mg/L case.",
+    "lab_comparison": "3.2 < 5 mg/L: below this illustrative adult assay reference limit. It is not proof of optimal health; laboratory limits vary.",
+    "review_comparison": "3.2 > 2 mg/L, if persistent: above the European ESC/EAS 2025 risk-review modifier. Persistence is a condition of interpretation, not an assumed property of this single example.",
+    "action": "Repeat when well; if still elevated, review overall cardiovascular risk. This is educational next-step wording, without a fixed repeat interval, diagnosis or treatment direction."
+  },
+  "source_design_check": {
+    "no_implied_interval": "Approved at source level: no continuous ruler, risk zone, overlap window, safe band or optimal band is drawn.",
+    "same_sample": "Approved: both rows explicitly compare the same 3.2 mg/L example with different clinically sourced cutoffs.",
+    "persistence": "Approved: the >2 comparison has an adjacent if persistent/si persiste condition, and the action explains confirming persistence when well.",
+    "reference_scope": "Approved: the first verdict says below this lab’s reference limit rather than universally healthy or optimal.",
+    "context": "Visible laboratory-variation and no-diagnosis notes remain. Native details explain health history, other risk factors, acute inflammatory causes and clinical stability.",
+    "no_extra_paragraph": "No additional clinical paragraph is required for this scoped educational example.",
+    "accessible_description": "Approved: the description distinguishes the laboratory limit from conditional review and explicitly excludes an optimal target or diagnosis."
+  },
+  "wording_checked": {
+    "en": "Above 2 mg/L? Repeat when well. If still raised, review overall heart risk.",
+    "es": "¿Más de 2 mg/L? Repite cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global."
+  },
+  "required_factual_fixes": [],
+  "continuing_restrictions": [
+    "Do not restore a desirable/safe/optimal band above or below 2.",
+    "Do not say this sample will cause or inevitably lead to disease.",
+    "Do not turn the review modifier into an individualized disease forecast, automatic treatment or universal repeat interval.",
+    "Keep Alex’s separate data unchanged."
+  ],
+  "sources": [
+    {
+      "title": "CDC/Roche hs-CRP laboratory manual 2021–2023",
+      "url": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+      "location": "Section 13, PDF page 18: documented adult reference <5 mg/L."
+    },
+    {
+      "title": "2025 ESC/EAS dyslipidaemia focused update",
+      "url": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+      "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP: persistently elevated hs-CRP >2 mg/L."
+    },
+    {
+      "title": "ERFC/Lancet prospective meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+      "location": "160,309 participants from 54 prospective studies support association with later cardiovascular events, not personalized prediction."
+    }
+  ],
+  "historical_graph_parameters": "The 0–6 domain and percentage positions in the original medical specification were presentation parameters for a superseded graph. They are not medical requirements and are not displayed by the current comparison-based candidate.",
+  "medical_spec": "/workspace/eva-in-place-qa/range-graphic-cmo/cmo-medical-spec.json",
+  "historical_signoffs": [
+    "clinical-source-signoff.json preserves the earlier 63 source review.",
+    "clinical-source-signoff-v64-numberline-preflight.json preserves the superseded ruler preflight review."
+  ],
+  "final_accessibility_refresh": "Refreshed the component fingerprint after role=\"group\" was added to the two existing aria-labelled comparison containers. Visible copy, clinical values, conditional logic, source links and CSS are unchanged. Clinical approval stands."
+}

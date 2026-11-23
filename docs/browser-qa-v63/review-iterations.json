@@ -1,0 +1,64 @@
+{
+  "scope": "Only the range graphic and explanation",
+  "method": "Real independent critique and revision loop, not a manufactured user-study score",
+  "baseline_native_version": 62,
+  "baseline_critique": [
+    "Current two rails are tidy but make the visitor infer why a laboratory reference and a prevention threshold answer different questions.",
+    "The2.1point nearly overlaps the2cutoff, making the distinction difficult to see on narrow phones.",
+    "Within range and review in health context name outcomes without fully explaining the added prevention question.",
+    "Preserve successful62readability, type, disclosure and free-upload behavior; the next iteration must improve teaching rather than merely redecorate bars."
+  ],
+  "iterations": [
+    {
+      "id": 1,
+      "candidate": "One overlap-window graphic with a distinct3.2hs-CRP example, Lab reference/Within range, Long-term heart health/>2ifpersistent/Review in health context, and Within range.Still worth reviewing caption.",
+      "judge_result": "revise_small_clarity_gap",
+      "initial_critique": "Explicit overlap caption is stronger. A broad Long-term heart health label may make the lower cutoff look like a universal healthy/optimal target; a named risk-review label could make its role clearer. Coordinate one shared takeaway to avoid repeated verdicts.",
+      "revision_prompt": "Use the CMO's exact risk-modifier scope. Name the prevention question clearly, retain persistence/repeat-when-well/context, and make the overlap mean reference-in-range plus conditional risk review rather than unhealthy or universally non-optimal.",
+      "findings": [
+        "Independent novice-editor passes four of five questions. The missing item is what hs-CRP measures; retain the existing Inflammation signal caption.",
+        "The overlap is understood as reference-in-range plus conditional risk review, not a second measurement, probability, universal optimum or inevitable disease.",
+        "Heart risk review names the extra question more explicitly than Long-term heart health alone."
+      ]
+    },
+    {
+      "id": 2,
+      "candidate": "Named Heart risk review plus one shared overlap takeaway: Within this lab range, yet relevant to future heart risk if persistent. Inflammation signal retained; repeat-when-well/lab-variation/no-diagnosis remains visible.",
+      "judge_result": "copy_comprehension_pass_render_pending",
+      "findings": [
+        "Independent novice-editor now passes all five visible-only questions.",
+        "The explicit takeaway and shared point make the overlap understandable without two repeated verdicts.",
+        "Final future/futuro wording and optional overall-risk scope sent to CMO for confirmation; actual graphic hierarchy and geometry remain to be judged."
+      ],
+      "revision_prompt": "Implement the agreed overlap window in the existing EVA world, preserving exact numeric semantics and static meaning; judge actual desktop/phone render before adding further copy variants."
+    },
+    {
+      "id": 3,
+      "candidate": "Exact built-source overlap preview with a rounded four-edge highlight frame.",
+      "judge_result": "revise_visual_grouping",
+      "findings": [
+        "The3.2value and distinct2/5boundaries teach the intended relationship.",
+        "The rounded overlap frame reads like an extra nested card behind a label, weakening the interval meaning."
+      ],
+      "revision_prompt": "Keep the same mathematical window but remove top/bottom borders and radius; use quiet vertical boundary rules and a low-opacity wash. Add semantic600 emphasis to the first takeaway clause without adding words."
+    },
+    {
+      "id": 4,
+      "candidate": "Frozen quiet interval highlight, explicit future-risk takeaway with first-clause600 emphasis, unchanged CMO facts and sources.",
+      "judge_result": "native63_all_gates_passed",
+      "findings": [
+        "Independent finalES320 visual review confirms clearer overlap teaching and readable16px/24px takeaway.",
+        "Final source detector returned zero findings. Numeric values/operators/units and the combined takeaway match the frozen medical contract.",
+        "CMO approved optional fuller history/risk context because persistence/repeat/no-diagnosis qualifications are visible.",
+        "Temporary built-SSR preview is not publication proof; actual native63 verification remains pending.",
+        "Actual native63 passed all eight profiles and the frozen CMO geometry/source contract.",
+        "Independent novice-editor inspected actual English desktop and Spanish320images and upheld all five comprehension answers.",
+        "Words61EN/70ES versus52/57baseline are recorded as added teaching, not described as a text reduction.",
+        "Source hashes match both the exact deployed UI commit and refreshed clinical-agent signoff. No errors/writes; all owned browsers closed."
+      ]
+    }
+  ],
+  "final_native_version": 63,
+  "final_ui_source_commit": "fae7fd4be2024b5d3de76404a062630d16b298c7",
+  "final_status": "passed"
+}

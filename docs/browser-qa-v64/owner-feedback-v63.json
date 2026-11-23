@@ -1,0 +1,6 @@
+{
+  "native_version": 63,
+  "source": "Verbatim user feedback in the active EVA refinement conversation",
+  "text": "If the \"normal\" range in heart risk review is above 2 then why is the shaded range above it? Its confusing as it looks like that is th eoptimal range so be more clear bout it, review it until you have a clear image and text that most people would understand",
+  "status": "Overrides the earlier agent semantic pass; prompted removal of target-like interval graphics."
+}

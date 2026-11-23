@@ -1,0 +1,559 @@
+{
+  "status": "functional_checks_passed_owner_comprehension_issue_open",
+  "published_version": 63,
+  "deployed_ui_commit": "fae7fd4be2024b5d3de76404a062630d16b298c7",
+  "native_deployment": {
+    "version_number": 63,
+    "source_commit": "fae7fd4be2024b5d3de76404a062630d16b298c7",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4c934a478ff48191aaaf02245551ff22",
+    "deployment_id": "appgdep_6b04b4933544819191853a6eceba6bd2",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-23T21:48:13.966987+00:00",
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000022e0822f8525448efdb2a9c7",
+      "content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+      "size_bytes": 171827200,
+      "file_count": 790
+    },
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=63#otra-lectura",
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-range-graphic-v63.tar.gz",
+      "local_gzip_sha256": "e856410c46163815916fd078ae263b5b7ef8db284bd5c8d04c09cd2d136b59b8",
+      "local_gzip_size_bytes": 163054432,
+      "saved_tar_content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+      "saved_tar_size_bytes": 171827200,
+      "file_count": 790
+    },
+    "behavior": "Adds a CMO-agent-reviewed independent 3.2 mg/L hs-CRP example on one 0–6 scale. A visible 2–5 overlap connects the illustrative lab reference <5 with the ESC/EAS persistent risk modifier >2, using one future-risk takeaway and visible repeat-when-well/lab-variation/no-diagnosis qualifications. Alex’s 2.1 example elsewhere is unchanged.",
+    "source_files": [
+      "components/story/RangeProofSection.tsx",
+      "components/story/range-proof-section.css",
+      "lib/site-content/range-proof-copy.ts",
+      "scripts/browser-qa/core-landing.cjs",
+      "scripts/browser-qa/entry-flows.cjs",
+      "docs/SESSION_COORDINATION.json"
+    ],
+    "qa": {
+      "status": "passed_actual_browser",
+      "record": "docs/browser-qa-v63/range-graphic-qa.json",
+      "evidence_directory": "docs/browser-qa-v63",
+      "fresh_profiles": 8,
+      "baseline_version": 62,
+      "baseline_profiles": 8,
+      "page_errors": []
+    }
+  },
+  "user_direction": "Improve the comparison graphic and use a CMO-reviewed example showing that a result inside a laboratory reference can still be relevant to long-term cardiovascular risk.",
+  "scope": "Only #otra-lectura. Alex and other data examples, hero actions, business policies, runner and methodology figures are unchanged.",
+  "visible_copy": {
+    "en": {
+      "heading": [
+        "There’s more",
+        "to “normal.”"
+      ],
+      "markerLabel": "Inflammation signal",
+      "exampleLabel": "Example",
+      "unchangedLabel": "Same result. More context.",
+      "takeawayLead": "Within this lab range,",
+      "takeaway": "yet relevant to future heart risk if persistent.",
+      "qualifier": "Repeat when well. Lab limits vary. Not a diagnosis.",
+      "primary": "Interpret your labs",
+      "primarySubtitle": "Upload for free",
+      "lab": {
+        "label": "Lab reference",
+        "threshold": "<5 mg/L"
+      },
+      "prevention": {
+        "label": "Heart risk review",
+        "threshold": ">2 mg/L if persistent"
+      },
+      "takeaway_combined": "Within this lab range, yet relevant to future heart risk if persistent."
+    },
+    "es": {
+      "heading": [
+        "«Normal»",
+        "no lo cuenta todo."
+      ],
+      "markerLabel": "Señal de inflamación",
+      "exampleLabel": "Ejemplo",
+      "unchangedLabel": "El mismo resultado. Más contexto.",
+      "takeawayLead": "Dentro de este intervalo,",
+      "takeaway": "pero relevante para el riesgo cardiovascular futuro si persiste.",
+      "qualifier": "Repetir cuando estés bien. Los límites varían entre laboratorios. No es un diagnóstico.",
+      "primary": "Interpreta tus analíticas",
+      "primarySubtitle": "Súbelas gratis",
+      "lab": {
+        "label": "Referencia del laboratorio",
+        "threshold": "<5 mg/L"
+      },
+      "prevention": {
+        "label": "Revisión del riesgo cardiovascular",
+        "threshold": ">2 mg/L si persiste"
+      },
+      "takeaway_combined": "Dentro de este intervalo, pero relevante para el riesgo cardiovascular futuro si persiste."
+    }
+  },
+  "worked_example": {
+    "status": "current_from_version 63",
+    "biomarker": "hs-CRP",
+    "value": 3.2,
+    "unit": "mg/L",
+    "illustrative": true,
+    "dataset_boundary": "Independent teaching example, not an observed patient case and not Alex. Alex’s 2.1 mg/L result, history and context remain unchanged.",
+    "labReference": {
+      "display": "<5 mg/L",
+      "operator": "<",
+      "upper_boundary": 5,
+      "meaning": "Within this documented adult assay reference; laboratories may use different limits. This is not proof of optimal health.",
+      "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+      "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3."
+    },
+    "prevention": {
+      "display": ">2 mg/L if persistent",
+      "operator": ">",
+      "lower_boundary": 2,
+      "persistence_required": true,
+      "meaning": "An ESC/EAS 2025 cardiovascular risk modifier considered with overall health history and risk factors, not a universal optimum, diagnosis or treatment target.",
+      "source": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+      "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box."
+    },
+    "prospectiveEvidence": {
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+      "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease in 54 prospective studies.",
+      "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
+    },
+    "graphic": {
+      "axis_min": 0,
+      "axis_max": 6,
+      "lab_boundary_percent": 83.33333333333333,
+      "risk_boundary_percent": 33.333333333333336,
+      "sample_position_percent": 53.333333333333336,
+      "overlap": {
+        "lower": 2,
+        "upper": 5,
+        "meaning": "Inside this illustrative lab reference and above the conditional persistent-risk modifier. No universal unhealthy or safe zone is implied."
+      }
+    },
+    "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
+    "review": "CMO agent source/copy evidence review; not human clinician approval.",
+    "record": "docs/range-graphic-qa.json",
+    "source_packet": "docs/browser-qa-v63/cmo-medical-spec.json"
+  },
+  "medical_contract": {
+    "basis": "Frozen CMO medical-spec.json; values and inequalities are case facts, not a CSS snapshot.",
+    "value": 3.2,
+    "unit": "mg/L",
+    "axis_min": 0,
+    "axis_max": 6,
+    "lab": {
+      "operator": "<",
+      "boundary": 5,
+      "fraction": 0.8333333333333334
+    },
+    "prevention": {
+      "operator": ">",
+      "boundary": 2,
+      "fraction": 0.3333333333333333,
+      "persistence_required": true
+    },
+    "sample_fraction": 0.5333333333333333,
+    "overlap": {
+      "lower": 2,
+      "upper": 5,
+      "left_fraction": 0.3333333333333333,
+      "width_fraction": 0.5
+    },
+    "expected_relations": {
+      "inside_this_lab_reference": true,
+      "above_persistent_review_boundary": true
+    },
+    "meaning": "Reference-in-range can overlap a conditional risk modifier; not a universal optimal/safe band, diagnosis, probability or disease prediction."
+  },
+  "implementation": [
+    "One independent 3.2 mg/L example, two labelled reference questions and one coherent 0–6 mg/L graphic.",
+    "The lab band ends at 5 and the risk-review band begins above 2; a restrained overlap window between 2 and 5 demonstrates how the statements coexist. Both measurement points share 53.333% of the scale; risk and laboratory boundaries sit at 33.333% and 83.333%.",
+    "One takeaway explains future-risk relevance if persistent. Its strong lead and regular remainder are one unchanged sentence, not two claims.",
+    "Repeat when well, laboratory variation and no diagnosis remain visible. Fuller history/risk-factor/confounder context and three evidence links are in native details.",
+    "No universal optimal/safe region, personal risk percentage, probability curve, inevitable disease, CRP causation, automatic treatment or fixed universal repeat interval.",
+    "Existing EVA glass, dotted number, Hanken 400/600 and Georgia style are preserved, with complete static/reduced-motion meaning and the existing 500ms entry."
+  ],
+  "review_roles": [
+    "Chief Medical Officer agent reviewing primary evidence and exact implemented clinical wording",
+    "Bilingual wellness/medical marketing copy editor",
+    "UX/UI design agent applying Impeccable Layout, Typeset and Polish",
+    "Independent clinical/graphic/Impeccable judge with explicit reject/revise gates",
+    "Independent simulated novice editor checking the closed view"
+  ],
+  "skills": {
+    "name": "Impeccable",
+    "skill": "/workspace/eva-design-tools/impeccable/SKILL.md",
+    "playbooks": [
+      "Layout",
+      "Typeset",
+      "Polish",
+      "Craft floor"
+    ],
+    "authority": "Existing EVA implementation and .impeccable.md; no replacement visual world.",
+    "scan": "Final source detector returned zero findings."
+  },
+  "review_loop": {
+    "rubric": "docs/browser-qa-v63/judge-rubric.json",
+    "iterations": "docs/browser-qa-v63/review-iterations.json",
+    "clinical_signoff": "docs/browser-qa-v63/clinical-source-signoff.json",
+    "independent_signoff": "docs/browser-qa-v63/impeccable-review.json",
+    "method": "Agent evidence/editorial review plus actual-site browser checks; not human medical approval or a human usability study.",
+    "current_owner_status": "Reopened after the owner read the amber region as an optimal band; the agent heuristic pass is not owner acceptance."
+  },
+  "measurement_record": "docs/browser-qa-v63/actual-comparison-v63.json",
+  "measurements": [
+    {
+      "id": "en-1366",
+      "words": {
+        "before": 52,
+        "after": 61,
+        "change": 9,
+        "change_percent": 17.307692307692307
+      },
+      "explanatory_prose": {
+        "before": 17,
+        "after": 25,
+        "change": 8,
+        "change_percent": 47.05882352941176
+      },
+      "glass_height_px": {
+        "before": 367.375,
+        "after": 351.375,
+        "change": -16,
+        "change_percent": -4.355222864920041
+      },
+      "section_height_px": {
+        "before": 552.375,
+        "after": 536.375,
+        "change": -16,
+        "change_percent": -2.896582937316135
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333253330133205,
+          0.5333253330133205
+        ],
+        "threshold": 0.3333253330133205,
+        "labEnd": 0.8333133325333013,
+        "overlapLeft": 0.3333253330133205,
+        "overlapWidth": 0.4999879995199808,
+        "labBandWidth": 0.8333133325333013,
+        "preventionBandStart": 0.3333253330133205
+      }
+    },
+    {
+      "id": "es-1366",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 367.375,
+        "after": 351.375,
+        "change": -16,
+        "change_percent": -4.355222864920041
+      },
+      "section_height_px": {
+        "before": 552.375,
+        "after": 560.375,
+        "change": 8,
+        "change_percent": 1.4482914686580675
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333253330133205,
+          0.5333253330133205
+        ],
+        "threshold": 0.3333253330133205,
+        "labEnd": 0.8333133325333013,
+        "overlapLeft": 0.3333253330133205,
+        "overlapWidth": 0.4999879995199808,
+        "labBandWidth": 0.8333133325333013,
+        "preventionBandStart": 0.3333253330133205
+      }
+    },
+    {
+      "id": "en-390",
+      "words": {
+        "before": 52,
+        "after": 61,
+        "change": 9,
+        "change_percent": 17.307692307692307
+      },
+      "explanatory_prose": {
+        "before": 17,
+        "after": 25,
+        "change": 8,
+        "change_percent": 47.05882352941176
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 325.375,
+        "change": -6.1875,
+        "change_percent": -1.8661639962299716
+      },
+      "section_height_px": {
+        "before": 663.796875,
+        "after": 681.609375,
+        "change": 17.8125,
+        "change_percent": 2.6834263117011514
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    },
+    {
+      "id": "es-390",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 371.5625,
+        "change": 40,
+        "change_percent": 12.064090480678605
+      },
+      "section_height_px": {
+        "before": 687.796875,
+        "after": 727.796875,
+        "change": 40,
+        "change_percent": 5.8156705059178995
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    },
+    {
+      "id": "es-320",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 371.5625,
+        "change": 40,
+        "change_percent": 12.064090480678605
+      },
+      "section_height_px": {
+        "before": 687.796875,
+        "after": 751.796875,
+        "change": 64,
+        "change_percent": 9.305072809468639
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333251953125,
+          0.5333251953125
+        ],
+        "threshold": 0.33331298828125,
+        "labEnd": 0.83331298828125,
+        "overlapLeft": 0.33331298828125,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.83331298828125,
+        "preventionBandStart": 0.33331298828125
+      }
+    },
+    {
+      "id": "es-768",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 377.5625,
+        "after": 385.5625,
+        "change": 8,
+        "change_percent": 2.118854494289025
+      },
+      "section_height_px": {
+        "before": 586.5625,
+        "after": 594.5625,
+        "change": 8,
+        "change_percent": 1.3638785295684603
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333241531258607,
+          0.5333241531258607
+        ],
+        "threshold": 0.3333333333333333,
+        "labEnd": 0.8333333333333334,
+        "overlapLeft": 0.3333333333333333,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333333333333334,
+        "preventionBandStart": 0.3333333333333333
+      }
+    },
+    {
+      "id": "en-390-calm",
+      "words": {
+        "before": 52,
+        "after": 61,
+        "change": 9,
+        "change_percent": 17.307692307692307
+      },
+      "explanatory_prose": {
+        "before": 17,
+        "after": 25,
+        "change": 8,
+        "change_percent": 47.05882352941176
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 325.375,
+        "change": -6.1875,
+        "change_percent": -1.8661639962299716
+      },
+      "section_height_px": {
+        "before": 663.796875,
+        "after": 681.609375,
+        "change": 17.8125,
+        "change_percent": 2.6834263117011514
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    },
+    {
+      "id": "es-390-calm",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 371.5625,
+        "change": 40,
+        "change_percent": 12.064090480678605
+      },
+      "section_height_px": {
+        "before": 687.796875,
+        "after": 727.796875,
+        "change": 40,
+        "change_percent": 5.8156705059178995
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    }
+  ],
+  "verification": {
+    "static": "TypeScript, fresh 113-route build, English 1,205-message audit, 32-variant parity, story-order checks and tracked browser-script syntax checks passed.",
+    "fresh": "Eight actual native 63 profiles passed, compared with eight actual native 62 baseline profiles. Exact visible words, prose and geometry changes remain in the comparison record.",
+    "coverage": [
+      "One independent example, coherent overlap and exact scale/point/boundary positions",
+      "Strict European >2persistent qualifier and actual assay reference <5",
+      "Painted headings, readable localized type, overflow and accessible figure description",
+      "Keyboard details/focus, three sources, localized science link and free signup/upload intent",
+      "Complete reduced-motion content and no changes to Alex/accepted surrounding sections"
+    ],
+    "limits": [
+      "Viewport emulation, not physical-device performance.",
+      "Agent evidence/comprehension review, not human clinician approval or human user research.",
+      "No full landing/entry suite or new no-JavaScript visual-parity rerun.",
+      "No real accounts, health uploads, purchases or mutating network requests.",
+      "Temporary exact-source SSR previews are design feasibility evidence, not native 63 publication proof."
+    ]
+  },
+  "previous_refinement": "docs/range-conciseness-qa.json",
+  "owner_review": {
+    "status": "owner_comprehension_issue_open",
+    "native_version": 63,
+    "reported_issue": "The owner reports that the amber/shaded region above 2 can be read as an optimal range.",
+    "scope": "Native 63 publication, CMO source review and eight-profile functional/browser results remain real. This visual interpretation has not been accepted by the owner.",
+    "next_step": "Root is refining the visual semantics for a forthcoming 64 review. No64 publication or acceptance is claimed here."
+  },
+  "historical_record_note": "Archived63 record after owner semantic rejection; the root range-graphic-qa.json now describes the current release."
+}

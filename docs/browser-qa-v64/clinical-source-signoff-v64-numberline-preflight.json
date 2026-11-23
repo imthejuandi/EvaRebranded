@@ -1,0 +1,55 @@
+{
+  "status": "approved",
+  "version_candidate": 64,
+  "review_role": "Chief Medical Officer agent; clinical evidence/source review, not human clinician approval",
+  "scope": "Read-only clinical review of the neutral number-line candidate after user confusion about the filled risk/overlap zone. This approval does not replace rendered UX or novice-comprehension verification.",
+  "source_sha256": {
+    "components/story/RangeProofSection.tsx": "fd621a25b4509ae13e3241cc25d9a4e9e45f6188e79b1a5824cc69d6b020a3ff",
+    "lib/site-content/range-proof-copy.ts": "94363deace780cc544712a24b9b6466b35b6c22d7b1ac6ef94906fc59d15cd1b",
+    "components/story/range-proof-section.css": "9c675bd269d42618a856994ffd356733cb975865d04f62cff4b6c648a39a9ae2"
+  },
+  "clinical_facts": {
+    "independent_example": "hs-CRP3.2mg/L, explicitly labelled Example/Ejemplo, independent of Alex’s unchanged2.1case.",
+    "scale": "0–6mg/L concentration scale; no risk probability or disease forecast.",
+    "lab_reference": "Illustrative documented adult assay reference<5mg/L, with laboratory variation visible.",
+    "risk_review": "Strict>2mg/L if persistent, matching ESC/EAS2025 European risk-modifier wording.",
+    "action": "Repeat when well; if still elevated, review overall cardiovascular risk. This is educational next-step wording, not a fixed repeat interval, diagnosis or treatment direction."
+  },
+  "source_design_check": {
+    "neutral_baseline_and_ticks": "Approved: one sample pin plus separate review and laboratory cutoffs. The prior filled risk band and overlap window are removed.",
+    "risk_modifier_not_optimum": "Approved: the review cutoff is labelled When to review/Cuándo revisarlo. Accessible text explicitly distinguishes it from a normal range or optimal target.",
+    "lab_meaning": "Approved: the lab cutoff is separately identified as this example reference limit; the sample is within that reference.",
+    "context": "Visible persistence, repeat-when-well, lab-variation and no-diagnosis copy remain. Fuller overall-risk/history/acute-inflammatory-cause context is available in native details.",
+    "no_extra_paragraph": "No additional visible clinical paragraph is required for this scoped educational example."
+  },
+  "wording_checked": {
+    "en": "Above 2 mg/L? Repeat when well. If still raised, review overall heart risk.",
+    "es": "¿Más de 2 mg/L? Repite cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global."
+  },
+  "required_factual_fixes": [],
+  "continuing_restrictions": [
+    "Do not introduce a desirable/safe/optimal shaded zone above or below2.",
+    "Do not imply this sample will lead to disease or that hs-CRP itself is causal.",
+    "Do not prescribe a universal repeat interval, target, medication or treatment from this example.",
+    "Do not change Alex’s separate result/history."
+  ],
+  "sources": [
+    {
+      "title": "CDC/Roche hs-CRP laboratory manual2021–2023",
+      "url": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+      "location": "Section13, PDFpage18; documented adult reference<5mg/L."
+    },
+    {
+      "title": "2025ESC/EAS dyslipidaemia focused update",
+      "url": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+      "location": "Box1, risk modifiers beyond SCORE2/SCORE2-OP; persistently elevated hs-CRP>2mg/L."
+    },
+    {
+      "title": "ERFC/Lancet prospective meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+      "location": "160309participants/54prospective studies support association with later cardiovascular events; not personalized prediction."
+    }
+  ],
+  "medical_spec": "/workspace/eva-in-place-qa/range-graphic-cmo/cmo-medical-spec.json",
+  "historical_signoff": "clinical-source-signoff.json retains the previous candidate’s review; this new file approves the revised64source without overwriting prior evidence."
+}

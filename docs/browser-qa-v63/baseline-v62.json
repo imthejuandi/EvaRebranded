@@ -1,0 +1,2603 @@
+{
+  "nativeVersion": 62,
+  "mode": "baseline",
+  "scope": "Only range-proof section",
+  "heuristicNotHumanTest": true,
+  "profiles": [
+    {
+      "id": "en-1366",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "There’s more to “normal.” One result. Two questions. hs-CRP Inflammation signal Example mg/L Lab range <5 mg/L Within range. Cardiovascular risk ≥2 mg/L on repeat testing Review in your health context. 0 1 2 3 4 5 Lab limits vary. Not a diagnosis. Sources and context Interpret your labs Upload for free",
+        "wordCount": 52,
+        "x": 0,
+        "y": -0.390625,
+        "width": 1366,
+        "height": 552.375,
+        "right": 1366,
+        "bottom": 551.984375,
+        "documentWidth": 1366,
+        "heading": {
+          "text": "There’s more\nto “normal.”",
+          "x": 48,
+          "y": 165.375,
+          "width": 295.671875,
+          "height": 96.03125,
+          "right": 343.671875,
+          "bottom": 261.40625,
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "47.52px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nInflammation signal\n\nEXAMPLE\n\n2.1 mg/L\nmg/L\n\nLab range\n<5 mg/L\n\nWithin range.\n\nCardiovascular risk\n≥2 mg/L on repeat testing\n\nReview in your health context.\n0\n1\n2\n3\n4\n5",
+          "x": 608.984375,
+          "y": 47.609375,
+          "width": 709.015625,
+          "height": 367.375,
+          "right": 1318,
+          "bottom": 414.984375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Lab limits vary. Not a diagnosis.",
+          "x": 618.984375,
+          "y": 426.984375,
+          "width": 591.359375,
+          "height": 24,
+          "right": 1210.34375,
+          "bottom": 450.984375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "One result. Two questions.",
+          "x": 48,
+          "y": 277.40625,
+          "width": 304.640625,
+          "height": 24,
+          "right": 352.640625,
+          "bottom": 301.40625,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Lab range\n<5 mg/L\n\nWithin range.",
+            "x": 637.984375,
+            "y": 177.40625,
+            "width": 651.015625,
+            "height": 78.390625,
+            "right": 1289,
+            "bottom": 255.796875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Cardiovascular risk\n≥2 mg/L on repeat testing\n\nReview in your health context.",
+            "x": 637.984375,
+            "y": 271.796875,
+            "width": 651.015625,
+            "height": 95.390625,
+            "right": 1289,
+            "bottom": 367.1875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Sources and context",
+            "x": 618.984375,
+            "y": 458.984375,
+            "width": 689.015625,
+            "height": 44,
+            "right": 1308,
+            "bottom": 502.984375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpret your labs\nUpload for free",
+            "x": 48,
+            "y": 325.40625,
+            "width": 340,
+            "height": 60.796875,
+            "right": 388,
+            "bottom": 386.203125,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 707,
+            "scrollWidth": 727
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "complete",
+        "markerOwner": {
+          "x": 637.984375,
+          "y": 177.40625,
+          "width": 651.015625,
+          "height": 214.578125,
+          "right": 1289,
+          "bottom": 391.984375
+        },
+        "lanes": [
+          {
+            "x": 637.984375,
+            "y": 203.796875,
+            "width": 651.015625,
+            "height": 24,
+            "right": 1289,
+            "bottom": 227.796875
+          },
+          {
+            "x": 637.984375,
+            "y": 315.1875,
+            "width": 651.015625,
+            "height": 24,
+            "right": 1289,
+            "bottom": 339.1875
+          }
+        ],
+        "points": [
+          {
+            "x": 908.90625,
+            "y": 213.296875,
+            "width": 5,
+            "height": 5,
+            "right": 913.90625,
+            "bottom": 218.296875
+          },
+          {
+            "x": 908.90625,
+            "y": 324.6875,
+            "width": 5,
+            "height": 5,
+            "right": 913.90625,
+            "bottom": 329.6875
+          }
+        ],
+        "threshold": {
+          "x": 898.390625,
+          "y": 318.1875,
+          "width": 2,
+          "height": 18,
+          "right": 900.390625,
+          "bottom": 336.1875
+        },
+        "prose": "One result. Two questions. Within range. Review in your health context. Lab limits vary. Not a diagnosis.",
+        "proseWordCount": 17
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.4199927997119885,
+          0.4199927997119885
+        ],
+        "threshold": 0.4
+      },
+      "freeHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Sources and context A lab range and a risk threshold answer different questions. A reference interval compares your result with the laboratory’s reference group. Limits may differ between laboratories. A repeated hs-CRP result ≥2 mg/L can inform cardiovascular risk assessment alongside your wider health context. It is not a universal target or treatment threshold. Illness, injury or other inflammation can raise hs-CRP. One reading cannot diagnose cardiovascular disease. THE EVIDENCE Lab reference: CDC Prevention threshold: ACC Understand the difference",
+        "sources": [
+          {
+            "text": "Lab reference: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Prevention threshold: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/en/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 340,
+        "heightPx": 60.796875
+      },
+      "passed": true
+    },
+    {
+      "id": "es-1366",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "«Normal» no lo cuenta todo. Un resultado. Dos preguntas. hs-CRP Señal de inflamación Ejemplo mg/L Laboratorio <5 mg/L Dentro del intervalo. Riesgo cardiovascular ≥2 mg/L en mediciones repetidas Valorar con tu contexto de salud. 0 1 2 3 4 5 Los límites varían entre laboratorios. No es un diagnóstico. Fuentes y contexto Interpreta tus analíticas Súbelas gratis",
+        "wordCount": 57,
+        "x": 0,
+        "y": -0.390625,
+        "width": 1366,
+        "height": 552.375,
+        "right": 1366,
+        "bottom": 551.984375,
+        "documentWidth": 1366,
+        "heading": {
+          "text": "«Normal»\nno lo cuenta todo.",
+          "x": 48,
+          "y": 141.125,
+          "width": 295.671875,
+          "height": 144.546875,
+          "right": 343.671875,
+          "bottom": 285.671875,
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "47.52px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n2,1 mg/L\nmg/L\n\nLaboratorio\n<5 mg/L\n\nDentro del intervalo.\n\nRiesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.\n0\n1\n2\n3\n4\n5",
+          "x": 608.984375,
+          "y": 47.609375,
+          "width": 709.015625,
+          "height": 367.375,
+          "right": 1318,
+          "bottom": 414.984375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+          "x": 618.984375,
+          "y": 426.984375,
+          "width": 591.359375,
+          "height": 24,
+          "right": 1210.34375,
+          "bottom": 450.984375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "Un resultado. Dos preguntas.",
+          "x": 48,
+          "y": 301.671875,
+          "width": 304.640625,
+          "height": 24,
+          "right": 352.640625,
+          "bottom": 325.671875,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Laboratorio\n<5 mg/L\n\nDentro del intervalo.",
+            "x": 637.984375,
+            "y": 177.40625,
+            "width": 651.015625,
+            "height": 78.390625,
+            "right": 1289,
+            "bottom": 255.796875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Riesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.",
+            "x": 637.984375,
+            "y": 272.01751708984375,
+            "width": 651.015625,
+            "height": 95.390625,
+            "right": 1289,
+            "bottom": 367.40814208984375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Fuentes y contexto",
+            "x": 618.984375,
+            "y": 458.984375,
+            "width": 689.015625,
+            "height": 44,
+            "right": 1308,
+            "bottom": 502.984375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "x": 48,
+            "y": 349.671875,
+            "width": 340,
+            "height": 60.796875,
+            "right": 388,
+            "bottom": 410.46875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 707,
+            "scrollWidth": 727
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "playing",
+        "markerOwner": {
+          "x": 637.984375,
+          "y": 177.40625,
+          "width": 651.015625,
+          "height": 214.578125,
+          "right": 1289,
+          "bottom": 391.984375
+        },
+        "lanes": [
+          {
+            "x": 637.984375,
+            "y": 203.796875,
+            "width": 651.015625,
+            "height": 24,
+            "right": 1289,
+            "bottom": 227.796875
+          },
+          {
+            "x": 637.984375,
+            "y": 315.40814208984375,
+            "width": 651.015625,
+            "height": 24,
+            "right": 1289,
+            "bottom": 339.40814208984375
+          }
+        ],
+        "points": [
+          {
+            "x": 908.90625,
+            "y": 213.296875,
+            "width": 5,
+            "height": 5,
+            "right": 913.90625,
+            "bottom": 218.296875
+          },
+          {
+            "x": 908.90625,
+            "y": 324.90814208984375,
+            "width": 5,
+            "height": 5,
+            "right": 913.90625,
+            "bottom": 329.90814208984375
+          }
+        ],
+        "threshold": {
+          "x": 898.390625,
+          "y": 318.40814208984375,
+          "width": 2,
+          "height": 18,
+          "right": 900.390625,
+          "bottom": 336.40814208984375
+        },
+        "prose": "Un resultado. Dos preguntas. Dentro del intervalo. Valorar con tu contexto de salud. Los límites varían entre laboratorios. No es un diagnóstico.",
+        "proseWordCount": 22
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.4199927997119885,
+          0.4199927997119885
+        ],
+        "threshold": 0.4
+      },
+      "freeHref": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Fuentes y contexto Un intervalo de laboratorio y un umbral de riesgo responden a preguntas distintas. El intervalo de referencia compara tu resultado con el grupo de referencia del laboratorio. Los límites pueden variar entre laboratorios. Una hs-CRP ≥2 mg/L en mediciones repetidas puede contribuir a valorar el riesgo cardiovascular junto con tu contexto de salud. No es un objetivo universal ni un umbral de tratamiento. Una enfermedad, una lesión u otra inflamación pueden elevar la hs-CRP. Una sola lectura no permite diagnosticar una enfermedad cardiovascular. LA EVIDENCIA Referencia del laboratorio: CDC Umbral de prevención: ACC Entiende la diferencia",
+        "sources": [
+          {
+            "text": "Referencia del laboratorio: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Umbral de prevención: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/es/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 340,
+        "heightPx": 60.796875
+      },
+      "passed": true
+    },
+    {
+      "id": "en-390",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "There’s more to “normal.” One result. Two questions. hs-CRP Inflammation signal Example mg/L Lab range <5 mg/L Within range. Cardiovascular risk ≥2 mg/L on repeat testing Review in your health context. 0 1 2 3 4 5 Lab limits vary. Not a diagnosis. Sources and context Interpret your labs Upload for free",
+        "wordCount": 52,
+        "x": 0,
+        "y": 0.09375,
+        "width": 390,
+        "height": 663.796875,
+        "right": 390,
+        "bottom": 663.890625,
+        "documentWidth": 390,
+        "heading": {
+          "text": "There’s more\nto “normal.”",
+          "x": 24,
+          "y": 24.09375,
+          "width": 304.625,
+          "height": 74.4375,
+          "right": 328.625,
+          "bottom": 98.53125,
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nInflammation signal\n\nEXAMPLE\n\n2.1 mg/L\nmg/L\n\nLab range\n<5 mg/L\n\nWithin range.\n\nCardiovascular risk\n≥2 mg/L on repeat testing\n\nReview in your health context.\n0\n1\n2\n3\n4\n5",
+          "x": 16,
+          "y": 154.53125,
+          "width": 358,
+          "height": 331.5625,
+          "right": 374,
+          "bottom": 486.09375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Lab limits vary. Not a diagnosis.",
+          "x": 24,
+          "y": 496.09375,
+          "width": 342,
+          "height": 24,
+          "right": 366,
+          "bottom": 520.09375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "One result. Two questions.",
+          "x": 24,
+          "y": 114.53125,
+          "width": 304.640625,
+          "height": 24,
+          "right": 328.640625,
+          "bottom": 138.53125,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Lab range\n<5 mg/L\n\nWithin range.",
+            "x": 38,
+            "y": 248.328125,
+            "width": 314,
+            "height": 78.390625,
+            "right": 352,
+            "bottom": 326.71875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Cardiovascular risk\n≥2 mg/L on repeat testing\n\nReview in your health context.",
+            "x": 38,
+            "y": 334.71875,
+            "width": 314,
+            "height": 109.578125,
+            "right": 352,
+            "bottom": 444.296875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Sources and context",
+            "x": 24,
+            "y": 524.09375,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 568.09375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpret your labs\nUpload for free",
+            "x": 24,
+            "y": 585.09375,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 639.890625,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "complete",
+        "markerOwner": {
+          "x": 38,
+          "y": 248.328125,
+          "width": 314,
+          "height": 220.765625,
+          "right": 352,
+          "bottom": 469.09375
+        },
+        "lanes": [
+          {
+            "x": 38,
+            "y": 274.71875,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 298.71875
+          },
+          {
+            "x": 38,
+            "y": 392.296875,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 416.296875
+          }
+        ],
+        "points": [
+          {
+            "x": 167.375,
+            "y": 284.21875,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 289.21875
+          },
+          {
+            "x": 167.375,
+            "y": 401.796875,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 406.796875
+          }
+        ],
+        "threshold": {
+          "x": 163.59375,
+          "y": 395.296875,
+          "width": 2,
+          "height": 18,
+          "right": 165.59375,
+          "bottom": 413.296875
+        },
+        "prose": "One result. Two questions. Within range. Review in your health context. Lab limits vary. Not a diagnosis.",
+        "proseWordCount": 17
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.419984076433121,
+          0.419984076433121
+        ],
+        "threshold": 0.3999800955414013
+      },
+      "freeHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Sources and context A lab range and a risk threshold answer different questions. A reference interval compares your result with the laboratory’s reference group. Limits may differ between laboratories. A repeated hs-CRP result ≥2 mg/L can inform cardiovascular risk assessment alongside your wider health context. It is not a universal target or treatment threshold. Illness, injury or other inflammation can raise hs-CRP. One reading cannot diagnose cardiovascular disease. THE EVIDENCE Lab reference: CDC Prevention threshold: ACC Understand the difference",
+        "sources": [
+          {
+            "text": "Lab reference: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Prevention threshold: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/en/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 342,
+        "heightPx": 54.796875
+      },
+      "passed": true
+    },
+    {
+      "id": "es-390",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "«Normal» no lo cuenta todo. Un resultado. Dos preguntas. hs-CRP Señal de inflamación Ejemplo mg/L Laboratorio <5 mg/L Dentro del intervalo. Riesgo cardiovascular ≥2 mg/L en mediciones repetidas Valorar con tu contexto de salud. 0 1 2 3 4 5 Los límites varían entre laboratorios. No es un diagnóstico. Fuentes y contexto Interpreta tus analíticas Súbelas gratis",
+        "wordCount": 57,
+        "x": 0,
+        "y": 0.09375,
+        "width": 390,
+        "height": 687.796875,
+        "right": 390,
+        "bottom": 687.890625,
+        "documentWidth": 390,
+        "heading": {
+          "text": "«Normal»\nno lo cuenta todo.",
+          "x": 24,
+          "y": 24.09375,
+          "width": 304.625,
+          "height": 74.4375,
+          "right": 328.625,
+          "bottom": 98.53125,
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n2,1 mg/L\nmg/L\n\nLaboratorio\n<5 mg/L\n\nDentro del intervalo.\n\nRiesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.\n0\n1\n2\n3\n4\n5",
+          "x": 16,
+          "y": 154.53125,
+          "width": 358,
+          "height": 331.5625,
+          "right": 374,
+          "bottom": 486.09375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+          "x": 24,
+          "y": 496.09375,
+          "width": 342,
+          "height": 48,
+          "right": 366,
+          "bottom": 544.09375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "Un resultado. Dos preguntas.",
+          "x": 24,
+          "y": 114.53125,
+          "width": 304.640625,
+          "height": 24,
+          "right": 328.640625,
+          "bottom": 138.53125,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Laboratorio\n<5 mg/L\n\nDentro del intervalo.",
+            "x": 38,
+            "y": 248.328125,
+            "width": 314,
+            "height": 78.390625,
+            "right": 352,
+            "bottom": 326.71875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Riesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.",
+            "x": 38,
+            "y": 334.71875,
+            "width": 314,
+            "height": 109.578125,
+            "right": 352,
+            "bottom": 444.296875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Fuentes y contexto",
+            "x": 24,
+            "y": 548.09375,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 592.09375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "x": 24,
+            "y": 609.09375,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 663.890625,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "complete",
+        "markerOwner": {
+          "x": 38,
+          "y": 248.328125,
+          "width": 314,
+          "height": 220.765625,
+          "right": 352,
+          "bottom": 469.09375
+        },
+        "lanes": [
+          {
+            "x": 38,
+            "y": 274.71875,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 298.71875
+          },
+          {
+            "x": 38,
+            "y": 392.296875,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 416.296875
+          }
+        ],
+        "points": [
+          {
+            "x": 167.375,
+            "y": 284.21875,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 289.21875
+          },
+          {
+            "x": 167.375,
+            "y": 401.796875,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 406.796875
+          }
+        ],
+        "threshold": {
+          "x": 163.59375,
+          "y": 395.296875,
+          "width": 2,
+          "height": 18,
+          "right": 165.59375,
+          "bottom": 413.296875
+        },
+        "prose": "Un resultado. Dos preguntas. Dentro del intervalo. Valorar con tu contexto de salud. Los límites varían entre laboratorios. No es un diagnóstico.",
+        "proseWordCount": 22
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.419984076433121,
+          0.419984076433121
+        ],
+        "threshold": 0.3999800955414013
+      },
+      "freeHref": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Fuentes y contexto Un intervalo de laboratorio y un umbral de riesgo responden a preguntas distintas. El intervalo de referencia compara tu resultado con el grupo de referencia del laboratorio. Los límites pueden variar entre laboratorios. Una hs-CRP ≥2 mg/L en mediciones repetidas puede contribuir a valorar el riesgo cardiovascular junto con tu contexto de salud. No es un objetivo universal ni un umbral de tratamiento. Una enfermedad, una lesión u otra inflamación pueden elevar la hs-CRP. Una sola lectura no permite diagnosticar una enfermedad cardiovascular. LA EVIDENCIA Referencia del laboratorio: CDC Umbral de prevención: ACC Entiende la diferencia",
+        "sources": [
+          {
+            "text": "Referencia del laboratorio: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Umbral de prevención: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/es/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 342,
+        "heightPx": 54.796875
+      },
+      "passed": true
+    },
+    {
+      "id": "es-320",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "«Normal» no lo cuenta todo. Un resultado. Dos preguntas. hs-CRP Señal de inflamación Ejemplo mg/L Laboratorio <5 mg/L Dentro del intervalo. Riesgo cardiovascular ≥2 mg/L en mediciones repetidas Valorar con tu contexto de salud. 0 1 2 3 4 5 Los límites varían entre laboratorios. No es un diagnóstico. Fuentes y contexto Interpreta tus analíticas Súbelas gratis",
+        "wordCount": 57,
+        "x": 0,
+        "y": -0.296875,
+        "width": 320,
+        "height": 687.796875,
+        "right": 320,
+        "bottom": 687.5,
+        "documentWidth": 320,
+        "heading": {
+          "text": "«Normal»\nno lo cuenta todo.",
+          "x": 21,
+          "y": 23.703125,
+          "width": 278,
+          "height": 74.4375,
+          "right": 299,
+          "bottom": 98.140625,
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n2,1 mg/L\nmg/L\n\nLaboratorio\n<5 mg/L\n\nDentro del intervalo.\n\nRiesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.\n0\n1\n2\n3\n4\n5",
+          "x": 13,
+          "y": 154.140625,
+          "width": 294,
+          "height": 331.5625,
+          "right": 307,
+          "bottom": 485.703125,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+          "x": 21,
+          "y": 495.703125,
+          "width": 278,
+          "height": 48,
+          "right": 299,
+          "bottom": 543.703125,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "Un resultado. Dos preguntas.",
+          "x": 21,
+          "y": 114.140625,
+          "width": 278,
+          "height": 24,
+          "right": 299,
+          "bottom": 138.140625,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Laboratorio\n<5 mg/L\n\nDentro del intervalo.",
+            "x": 32,
+            "y": 247.9375,
+            "width": 256,
+            "height": 78.390625,
+            "right": 288,
+            "bottom": 326.328125,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Riesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.",
+            "x": 32,
+            "y": 334.328125,
+            "width": 256,
+            "height": 109.578125,
+            "right": 288,
+            "bottom": 443.90625,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Fuentes y contexto",
+            "x": 21,
+            "y": 547.703125,
+            "width": 278,
+            "height": 44,
+            "right": 299,
+            "bottom": 591.703125,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "x": 21,
+            "y": 608.703125,
+            "width": 278,
+            "height": 54.796875,
+            "right": 299,
+            "bottom": 663.5,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "width": 278,
+            "scrollWidth": 286
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 292,
+            "scrollWidth": 312
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "complete",
+        "markerOwner": {
+          "x": 32,
+          "y": 247.9375,
+          "width": 256,
+          "height": 220.765625,
+          "right": 288,
+          "bottom": 468.703125
+        },
+        "lanes": [
+          {
+            "x": 32,
+            "y": 274.328125,
+            "width": 256,
+            "height": 24,
+            "right": 288,
+            "bottom": 298.328125
+          },
+          {
+            "x": 32,
+            "y": 391.90625,
+            "width": 256,
+            "height": 24,
+            "right": 288,
+            "bottom": 415.90625
+          }
+        ],
+        "points": [
+          {
+            "x": 137.015625,
+            "y": 283.828125,
+            "width": 5,
+            "height": 5,
+            "right": 142.015625,
+            "bottom": 288.828125
+          },
+          {
+            "x": 137.015625,
+            "y": 401.40625,
+            "width": 5,
+            "height": 5,
+            "right": 142.015625,
+            "bottom": 406.40625
+          }
+        ],
+        "threshold": {
+          "x": 134.390625,
+          "y": 394.90625,
+          "width": 2,
+          "height": 18,
+          "right": 136.390625,
+          "bottom": 412.90625
+        },
+        "prose": "Un resultado. Dos preguntas. Dentro del intervalo. Valorar con tu contexto de salud. Los límites varían entre laboratorios. No es un diagnóstico.",
+        "proseWordCount": 22
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.41998291015625,
+          0.41998291015625
+        ],
+        "threshold": 0.39996337890625
+      },
+      "freeHref": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Fuentes y contexto Un intervalo de laboratorio y un umbral de riesgo responden a preguntas distintas. El intervalo de referencia compara tu resultado con el grupo de referencia del laboratorio. Los límites pueden variar entre laboratorios. Una hs-CRP ≥2 mg/L en mediciones repetidas puede contribuir a valorar el riesgo cardiovascular junto con tu contexto de salud. No es un objetivo universal ni un umbral de tratamiento. Una enfermedad, una lesión u otra inflamación pueden elevar la hs-CRP. Una sola lectura no permite diagnosticar una enfermedad cardiovascular. LA EVIDENCIA Referencia del laboratorio: CDC Umbral de prevención: ACC Entiende la diferencia",
+        "sources": [
+          {
+            "text": "Referencia del laboratorio: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Umbral de prevención: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/es/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 278,
+        "heightPx": 54.796875
+      },
+      "passed": true
+    },
+    {
+      "id": "es-768",
+      "locale": "es",
+      "width": 768,
+      "height": 1024,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "«Normal» no lo cuenta todo. Un resultado. Dos preguntas. hs-CRP Señal de inflamación Ejemplo mg/L Laboratorio <5 mg/L Dentro del intervalo. Riesgo cardiovascular ≥2 mg/L en mediciones repetidas Valorar con tu contexto de salud. 0 1 2 3 4 5 Los límites varían entre laboratorios. No es un diagnóstico. Fuentes y contexto Interpreta tus analíticas Súbelas gratis",
+        "wordCount": 57,
+        "x": 0,
+        "y": 0.21875,
+        "width": 768,
+        "height": 586.5625,
+        "right": 768,
+        "bottom": 586.78125,
+        "documentWidth": 768,
+        "heading": {
+          "text": "«Normal»\nno lo cuenta todo.",
+          "x": 48,
+          "y": 156.828125,
+          "width": 257.59375,
+          "height": 144.546875,
+          "right": 305.59375,
+          "bottom": 301.375,
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "47.52px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n2,1 mg/L\nmg/L\n\nLaboratorio\n<5 mg/L\n\nDentro del intervalo.\n\nRiesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.\n0\n1\n2\n3\n4\n5",
+          "x": 333.59375,
+          "y": 48.21875,
+          "width": 386.40625,
+          "height": 377.5625,
+          "right": 720,
+          "bottom": 425.78125,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+          "x": 343.59375,
+          "y": 437.78125,
+          "width": 366.40625,
+          "height": 48,
+          "right": 710,
+          "bottom": 485.78125,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "Un resultado. Dos preguntas.",
+          "x": 48,
+          "y": 317.375,
+          "width": 257.59375,
+          "height": 24,
+          "right": 305.59375,
+          "bottom": 341.375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Laboratorio\n<5 mg/L\n\nDentro del intervalo.",
+            "x": 356.59375,
+            "y": 166.015625,
+            "width": 340.40625,
+            "height": 78.390625,
+            "right": 697,
+            "bottom": 244.40625,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Riesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.",
+            "x": 356.59375,
+            "y": 260.40625,
+            "width": 340.40625,
+            "height": 117.578125,
+            "right": 697,
+            "bottom": 377.984375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Fuentes y contexto",
+            "x": 343.59375,
+            "y": 493.78125,
+            "width": 366.40625,
+            "height": 44,
+            "right": 710,
+            "bottom": 537.78125,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "x": 48,
+            "y": 369.375,
+            "width": 257.59375,
+            "height": 60.796875,
+            "right": 305.59375,
+            "bottom": 430.171875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 384,
+            "scrollWidth": 404
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "complete",
+        "markerOwner": {
+          "x": 356.59375,
+          "y": 166.015625,
+          "width": 340.40625,
+          "height": 236.765625,
+          "right": 697,
+          "bottom": 402.78125
+        },
+        "lanes": [
+          {
+            "x": 356.59375,
+            "y": 192.40625,
+            "width": 340.40625,
+            "height": 24,
+            "right": 697,
+            "bottom": 216.40625
+          },
+          {
+            "x": 356.59375,
+            "y": 325.984375,
+            "width": 340.40625,
+            "height": 24,
+            "right": 697,
+            "bottom": 349.984375
+          }
+        ],
+        "points": [
+          {
+            "x": 497.0625,
+            "y": 201.90625,
+            "width": 5,
+            "height": 5,
+            "right": 502.0625,
+            "bottom": 206.90625
+          },
+          {
+            "x": 497.0625,
+            "y": 335.484375,
+            "width": 5,
+            "height": 5,
+            "right": 502.0625,
+            "bottom": 340.484375
+          }
+        ],
+        "threshold": {
+          "x": 492.75,
+          "y": 328.984375,
+          "width": 2,
+          "height": 18,
+          "right": 494.75,
+          "bottom": 346.984375
+        },
+        "prose": "Un resultado. Dos preguntas. Dentro del intervalo. Valorar con tu contexto de salud. Los límites varían entre laboratorios. No es un diagnóstico.",
+        "proseWordCount": 22
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.4199944918755164,
+          0.4199944918755164
+        ],
+        "threshold": 0.3999816395850546
+      },
+      "freeHref": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Fuentes y contexto Un intervalo de laboratorio y un umbral de riesgo responden a preguntas distintas. El intervalo de referencia compara tu resultado con el grupo de referencia del laboratorio. Los límites pueden variar entre laboratorios. Una hs-CRP ≥2 mg/L en mediciones repetidas puede contribuir a valorar el riesgo cardiovascular junto con tu contexto de salud. No es un objetivo universal ni un umbral de tratamiento. Una enfermedad, una lesión u otra inflamación pueden elevar la hs-CRP. Una sola lectura no permite diagnosticar una enfermedad cardiovascular. LA EVIDENCIA Referencia del laboratorio: CDC Umbral de prevención: ACC Entiende la diferencia",
+        "sources": [
+          {
+            "text": "Referencia del laboratorio: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Umbral de prevención: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/es/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 257.59375,
+        "heightPx": 60.796875
+      },
+      "passed": true
+    },
+    {
+      "id": "en-390-calm",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "There’s more to “normal.” One result. Two questions. hs-CRP Inflammation signal Example mg/L Lab range <5 mg/L Within range. Cardiovascular risk ≥2 mg/L on repeat testing Review in your health context. 0 1 2 3 4 5 Lab limits vary. Not a diagnosis. Sources and context Interpret your labs Upload for free",
+        "wordCount": 52,
+        "x": 0,
+        "y": -0.125,
+        "width": 390,
+        "height": 663.796875,
+        "right": 390,
+        "bottom": 663.671875,
+        "documentWidth": 390,
+        "heading": {
+          "text": "There’s more\nto “normal.”",
+          "x": 24,
+          "y": 23.875,
+          "width": 304.625,
+          "height": 74.4375,
+          "right": 328.625,
+          "bottom": 98.3125,
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nInflammation signal\n\nEXAMPLE\n\n2.1 mg/L\nmg/L\n\nLab range\n<5 mg/L\n\nWithin range.\n\nCardiovascular risk\n≥2 mg/L on repeat testing\n\nReview in your health context.\n0\n1\n2\n3\n4\n5",
+          "x": 16,
+          "y": 154.3125,
+          "width": 358,
+          "height": 331.5625,
+          "right": 374,
+          "bottom": 485.875,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Lab limits vary. Not a diagnosis.",
+          "x": 24,
+          "y": 495.875,
+          "width": 342,
+          "height": 24,
+          "right": 366,
+          "bottom": 519.875,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "One result. Two questions.",
+          "x": 24,
+          "y": 114.3125,
+          "width": 304.640625,
+          "height": 24,
+          "right": 328.640625,
+          "bottom": 138.3125,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Lab range\n<5 mg/L\n\nWithin range.",
+            "x": 38,
+            "y": 248.109375,
+            "width": 314,
+            "height": 78.390625,
+            "right": 352,
+            "bottom": 326.5,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Cardiovascular risk\n≥2 mg/L on repeat testing\n\nReview in your health context.",
+            "x": 38,
+            "y": 334.5,
+            "width": 314,
+            "height": 109.578125,
+            "right": 352,
+            "bottom": 444.078125,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Sources and context",
+            "x": 24,
+            "y": 523.875,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 567.875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpret your labs\nUpload for free",
+            "x": 24,
+            "y": 584.875,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 639.671875,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "complete",
+        "markerOwner": {
+          "x": 38,
+          "y": 248.109375,
+          "width": 314,
+          "height": 220.765625,
+          "right": 352,
+          "bottom": 468.875
+        },
+        "lanes": [
+          {
+            "x": 38,
+            "y": 274.5,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 298.5
+          },
+          {
+            "x": 38,
+            "y": 392.078125,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 416.078125
+          }
+        ],
+        "points": [
+          {
+            "x": 167.375,
+            "y": 284,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 289
+          },
+          {
+            "x": 167.375,
+            "y": 401.578125,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 406.578125
+          }
+        ],
+        "threshold": {
+          "x": 163.59375,
+          "y": 395.078125,
+          "width": 2,
+          "height": 18,
+          "right": 165.59375,
+          "bottom": 413.078125
+        },
+        "prose": "One result. Two questions. Within range. Review in your health context. Lab limits vary. Not a diagnosis.",
+        "proseWordCount": 17
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.419984076433121,
+          0.419984076433121
+        ],
+        "threshold": 0.3999800955414013
+      },
+      "freeHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Sources and context A lab range and a risk threshold answer different questions. A reference interval compares your result with the laboratory’s reference group. Limits may differ between laboratories. A repeated hs-CRP result ≥2 mg/L can inform cardiovascular risk assessment alongside your wider health context. It is not a universal target or treatment threshold. Illness, injury or other inflammation can raise hs-CRP. One reading cannot diagnose cardiovascular disease. THE EVIDENCE Lab reference: CDC Prevention threshold: ACC Understand the difference",
+        "sources": [
+          {
+            "text": "Lab reference: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Prevention threshold: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/en/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 342,
+        "heightPx": 54.796875
+      },
+      "passed": true
+    },
+    {
+      "id": "es-390-calm",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "failures": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "closed": {
+        "text": "«Normal» no lo cuenta todo. Un resultado. Dos preguntas. hs-CRP Señal de inflamación Ejemplo mg/L Laboratorio <5 mg/L Dentro del intervalo. Riesgo cardiovascular ≥2 mg/L en mediciones repetidas Valorar con tu contexto de salud. 0 1 2 3 4 5 Los límites varían entre laboratorios. No es un diagnóstico. Fuentes y contexto Interpreta tus analíticas Súbelas gratis",
+        "wordCount": 57,
+        "x": 0,
+        "y": 0.234375,
+        "width": 390,
+        "height": 687.796875,
+        "right": 390,
+        "bottom": 688.03125,
+        "documentWidth": 390,
+        "heading": {
+          "text": "«Normal»\nno lo cuenta todo.",
+          "x": 24,
+          "y": 24.234375,
+          "width": 304.625,
+          "height": 74.4375,
+          "right": 328.625,
+          "bottom": 98.671875,
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "headingVisible": true,
+        "headingAncestors": [
+          {
+            "tag": "H2",
+            "className": "",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-story",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "grid",
+            "clipPath": "none"
+          },
+          {
+            "tag": "SECTION",
+            "className": "range-proof",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "instrument": {
+          "text": "hs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n2,1 mg/L\nmg/L\n\nLaboratorio\n<5 mg/L\n\nDentro del intervalo.\n\nRiesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.\n0\n1\n2\n3\n4\n5",
+          "x": 16,
+          "y": 154.671875,
+          "width": 358,
+          "height": 331.5625,
+          "right": 374,
+          "bottom": 486.234375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(255, 253, 246)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "context": {
+          "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+          "x": 24,
+          "y": 496.234375,
+          "width": 342,
+          "height": 48,
+          "right": 366,
+          "bottom": 544.234375,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "lead": {
+          "text": "Un resultado. Dos preguntas.",
+          "x": 24,
+          "y": 114.671875,
+          "width": 304.640625,
+          "height": 24,
+          "right": 328.640625,
+          "bottom": 138.671875,
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "opacity": "1",
+          "visibility": "visible",
+          "display": "block",
+          "clipPath": "none"
+        },
+        "readings": [
+          {
+            "text": "Laboratorio\n<5 mg/L\n\nDentro del intervalo.",
+            "x": 38,
+            "y": 248.46875,
+            "width": 314,
+            "height": 78.390625,
+            "right": 352,
+            "bottom": 326.859375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          },
+          {
+            "text": "Riesgo cardiovascular\n≥2 mg/L en mediciones repetidas\n\nValorar con tu contexto de salud.",
+            "x": 38,
+            "y": 334.859375,
+            "width": 314,
+            "height": 109.578125,
+            "right": 352,
+            "bottom": 444.4375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(255, 253, 246)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "block",
+            "clipPath": "none"
+          }
+        ],
+        "value": "2.1",
+        "axis": [
+          "0",
+          "5"
+        ],
+        "controls": [
+          {
+            "text": "Fuentes y contexto",
+            "x": 24,
+            "y": 548.234375,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 592.234375,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "SUMMARY",
+            "href": null
+          },
+          {
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "x": 24,
+            "y": 609.234375,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 664.03125,
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontFamily": "\"EVA Hanken\", Arial, sans-serif",
+            "lineHeight": "24px",
+            "color": "rgb(11, 16, 16)",
+            "opacity": "1",
+            "visibility": "visible",
+            "display": "flex",
+            "clipPath": "none",
+            "tag": "A",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+          }
+        ],
+        "overflow": [
+          {
+            "tag": "DIV",
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "tag": "DIV",
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "tag": "SPAN",
+            "className": "sr-only",
+            "width": 1,
+            "scrollWidth": 62
+          }
+        ],
+        "entryState": "complete",
+        "markerOwner": {
+          "x": 38,
+          "y": 248.46875,
+          "width": 314,
+          "height": 220.765625,
+          "right": 352,
+          "bottom": 469.234375
+        },
+        "lanes": [
+          {
+            "x": 38,
+            "y": 274.859375,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 298.859375
+          },
+          {
+            "x": 38,
+            "y": 392.4375,
+            "width": 314,
+            "height": 24,
+            "right": 352,
+            "bottom": 416.4375
+          }
+        ],
+        "points": [
+          {
+            "x": 167.375,
+            "y": 284.359375,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 289.359375
+          },
+          {
+            "x": 167.375,
+            "y": 401.9375,
+            "width": 5,
+            "height": 5,
+            "right": 172.375,
+            "bottom": 406.9375
+          }
+        ],
+        "threshold": {
+          "x": 163.59375,
+          "y": 395.4375,
+          "width": 2,
+          "height": 18,
+          "right": 165.59375,
+          "bottom": 413.4375
+        },
+        "prose": "Un resultado. Dos preguntas. Dentro del intervalo. Valorar con tu contexto de salud. Los límites varían entre laboratorios. No es un diagnóstico.",
+        "proseWordCount": 22
+      },
+      "intentionalOverflowExclusions": "Glass pseudo-element glow extends20px, evidence rail bleeds8px within viewport, sr-only span intentionallyclips. Descendant text/content checked separately.",
+      "plotFractions": {
+        "points": [
+          0.419984076433121,
+          0.419984076433121
+        ],
+        "threshold": 0.3999800955414013
+      },
+      "freeHref": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "open": {
+        "text": "Fuentes y contexto Un intervalo de laboratorio y un umbral de riesgo responden a preguntas distintas. El intervalo de referencia compara tu resultado con el grupo de referencia del laboratorio. Los límites pueden variar entre laboratorios. Una hs-CRP ≥2 mg/L en mediciones repetidas puede contribuir a valorar el riesgo cardiovascular junto con tu contexto de salud. No es un objetivo universal ni un umbral de tratamiento. Una enfermedad, una lesión u otra inflamación pueden elevar la hs-CRP. Una sola lectura no permite diagnosticar una enfermedad cardiovascular. LA EVIDENCIA Referencia del laboratorio: CDC Umbral de prevención: ACC Entiende la diferencia",
+        "sources": [
+          {
+            "text": "Referencia del laboratorio: CDC",
+            "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "target": "_blank"
+          },
+          {
+            "text": "Umbral de prevención: ACC",
+            "href": "https://tools.acc.org/LDL/",
+            "target": "_blank"
+          }
+        ],
+        "science": "/es/science"
+      },
+      "actionFocus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px",
+        "hit": true,
+        "widthPx": 342,
+        "heightPx": 54.796875
+      },
+      "passed": true
+    }
+  ],
+  "networkWrites": [],
+  "allOwnedBrowsersClosed": true,
+  "passed": true
+}

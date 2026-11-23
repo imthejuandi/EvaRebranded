@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-23",
-  "handoff_status": "CONCISE_RANGE_PROOF_VERIFIED_V62",
-  "immediate_instruction": "Version 62 is published and verified. Preserve the concise “There’s more to normal” comparison: one 2.1 mg/L example, two broad semantic rails and the one-result/two-questions bridge below the heading. Retain the illustrative lab <5 mg/L reference, lab variation, ≥2 mg/L on repeat testing beside the cardiovascular-risk interpretation, health context, no-diagnosis qualification and source access. Keep approved 44px horizontal opening actions, exact commercial policies, healthy statement, 2.5-second runner and methodology figures. Read docs/range-conciseness-qa.json. Production cutover remains on hold.",
+  "handoff_status": "EXPLICIT_COMPARISONS_VERIFIED_V64_OWNER_REVIEW_PENDING",
+  "immediate_instruction": "Native 64 is published and independently reviewed after the owner rejected 63’s shaded range. Current proof uses two explicit comparisons of the independent hs-CRP 3.2 mg/L example: 3.2 < 5 below this lab reference, and 3.2 > 2 if persistent above the review threshold. No axis, ruler, band, fill, overlap window or current point/domain coordinates remain. Preserve the repeat-when-well/if-still-raised overall-risk action, lab variation, no diagnosis and sources. Actual owner acceptance of 64 is not established by agent review. Alex 2.1, 44px hero actions, business policies, healthy statement, 2.5-second runner and methodology figures are unchanged. Read docs/range-graphic-qa.json. Production cutover remains on hold.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace. UI version 62 source 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac is synchronized to GitHub and the Site source repository; later QA/docs commits record evidence without changing the native UI.",
+    "github_status": "Canonical consolidated rebrand workspace. UI version 64 source 6fa98668afea2d912e6e5e8d38102afa18bacba5 is synchronized to GitHub and the Site source repository; later QA/docs commits record evidence without changing the native UI.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,46 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 60,
-      "source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
-      "deployment_id": "appgdep_6b0489c5a75881918288332c88363711",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T18:45:36.665461+00:00",
-      "archive_storage": {
-        "archive_format": "tar",
-        "sediment_file_id": "file_0000000007b0822fb4e92fa82946994d",
-        "content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
-        "size_bytes": 171816960,
-        "file_count": 790
-      },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=60",
-      "behavior": "Two slim side-by-side 44px actions. Quarterly subscription is explicit in the kit label; marker count and VAT price share one metadata line. Phone labels and details stay readable at 320px without shrinking the 14px/13px font roles.",
-      "source_files": [
-        "components/story/HeroKitCta.tsx",
-        "app/hero-kit.css",
-        "scripts/browser-qa/core-landing.cjs",
-        "scripts/browser-qa/entry-flows.cjs"
-      ],
-      "archive": {
-        "local_path": "/workspace/eva-publication/eva-slim-cta-v60.tar.gz",
-        "local_gzip_sha256": "778b15bbe27c7a5172ad26711550f356e58682b5640f65336957beae25f1f587",
-        "local_gzip_size_bytes": 163053467,
-        "saved_tar_content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
-        "saved_tar_size_bytes": 171816960,
-        "file_count": 790
-      },
-      "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/hero-cta-qa.json",
-        "evidence_directory": "docs/browser-qa-v60",
-        "fresh_profiles": 8,
-        "actual_button_height_px": 44,
-        "page_errors": []
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 62,
       "source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
@@ -117,21 +77,65 @@
         "page_errors": []
       }
     },
-    "latest_verified_ui_release_note": "Native 62 serves UI commit 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac; the later QA/documentation commit does not redeploy the UI.",
+    "latest_verified_ui_release": {
+      "version_number": 64,
+      "source_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e3fa99d0b9e881919ccaa51a6dedef96",
+      "deployment_id": "appgdep_6b04bbbfc4608191b2d0322a08ec05d2",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-23T22:18:49.727913+00:00",
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000029d4822fb6feeda7189a6e40",
+        "content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+        "size_bytes": 171827200,
+        "file_count": 790
+      },
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=64#otra-lectura",
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-range-comparisons-v64.tar.gz",
+        "local_gzip_sha256": "83b4b0e664f40ab6350884cc777f940c4173d2e53b17515dadaea9344adf101b",
+        "local_gzip_size_bytes": 163055723,
+        "saved_tar_content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+        "saved_tar_size_bytes": 171827200,
+        "file_count": 790
+      },
+      "behavior": "Replaces the owner-rejected interval graphic with two open comparisons of one independent 3.2 mg/L sample against 5 and 2. No axis, ruler, filled/shaded zone or overlap window remains. The persistent >2 review condition and repeat-when-well/action wording remain explicit.",
+      "source_files": [
+        "components/story/RangeProofSection.tsx",
+        "components/story/range-proof-section.css",
+        "lib/site-content/range-proof-copy.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs",
+        "docs/SESSION_COORDINATION.json"
+      ],
+      "qa": {
+        "status": "passed_actual_browser_and_independent_cold_image_review",
+        "record": "docs/range-graphic-qa.json",
+        "evidence_directory": "docs/browser-qa-v64",
+        "fresh_profiles": 8,
+        "baseline_version": 63,
+        "baseline_status": "Reused actual 63 eight-profile evidence; not a fresh64 recapture.",
+        "owner_acceptance": "Not established by agent review alone.",
+        "page_errors": []
+      }
+    },
+    "latest_verified_ui_release_note": "Native 64 serves UI commit 6fa98668afea2d912e6e5e8d38102afa18bacba5. The prior 63 medical/functional results remain recorded, but its owner semantic rejection overrides the model pass. Current 64 has independent cold-image and actual-browser review; owner acceptance is not asserted.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 62 source 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+      "relation": "QA/docs followup to version 64 source 6fa98668afea2d912e6e5e8d38102afa18bacba5",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
         "docs/LAUNCH_HANDOFF.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/range-conciseness-qa.json",
+        "docs/range-graphic-qa.json",
         "docs/range-interpretation-evidence.json",
-        "docs/browser-qa-v61",
-        "docs/browser-qa-v62"
+        "docs/browser-qa-v63",
+        "docs/browser-qa-v64"
       ]
     },
     "earlier_verified_ui_release": {
@@ -980,7 +984,7 @@
       },
       {
         "version_number": 59,
-        "source_commit": "1c4b48f48a04f9d0c8a4e47010c3950a64e8d83f",
+        "source_commit": "1c4b48f48a04f9d0c8a4e47010c3950a 64e8d83f",
         "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4685fd923c3c819184e54757c842b14a",
         "deployment_id": "appgdep_6b0487eee9b88191a8348d4ae660c158",
         "status": "succeeded",
@@ -1078,33 +1082,125 @@
           },
           "limitation": "English 390px glass was only about 3% shorter than native 60; the 10% target was not met."
         }
+      },
+      {
+        "version_number": 62,
+        "source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
+        "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-23T21:10:22.660543+00:00",
+        "archive_storage": {
+          "archive_format": "tar",
+          "sediment_file_id": "file_000000005890822fa22706c2cf6655e1",
+          "content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+          "size_bytes": 171816960,
+          "file_count": 790
+        },
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura",
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-normal-range-v62.tar.gz",
+          "local_gzip_sha256": "54d2d8625a429a2da478c3f58fac36c7e4a9bbef43a929647f1b1aac45c1b4e3",
+          "local_gzip_size_bytes": 163053160,
+          "saved_tar_content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+          "saved_tar_size_bytes": 171816960,
+          "file_count": 790
+        },
+        "behavior": "Simplifies the normal-range chapter into one illustrative 2.1 mg/L readout and two broad labelled rails. The lab reference and repeated-testing cardiovascular-risk threshold retain their context and source access; the one-result/two-questions bridge sits below the headline.",
+        "source_files": [
+          "components/story/RangeProofSection.tsx",
+          "components/story/range-proof-section.css",
+          "lib/site-content/range-proof-copy.ts",
+          "scripts/browser-qa/core-landing.cjs",
+          "scripts/browser-qa/entry-flows.cjs",
+          "docs/SESSION_COORDINATION.json"
+        ],
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/range-conciseness-qa.json",
+          "evidence_directory": "docs/browser-qa-v62",
+          "fresh_profiles": 8,
+          "baseline_version": 60,
+          "page_errors": []
+        }
+      },
+      {
+        "version_number": 63,
+        "source_commit": "fae7fd4be2024b5d3de76404a062630d16b298c7",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4c934a478ff48191aaaf02245551ff22",
+        "deployment_id": "appgdep_6b04b4933544819191853a6eceba6bd2",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-23T21:48:13.966987+00:00",
+        "archive_storage": {
+          "archive_format": "tar",
+          "sediment_file_id": "file_0000000022e0822f8525448efdb2a9c7",
+          "content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+          "size_bytes": 171827200,
+          "file_count": 790
+        },
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=63#otra-lectura",
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-range-graphic-v63.tar.gz",
+          "local_gzip_sha256": "e856410c46163815916fd078ae263b5b7ef8db284bd5c8d04c09cd2d136b59b8",
+          "local_gzip_size_bytes": 163054432,
+          "saved_tar_content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+          "saved_tar_size_bytes": 171827200,
+          "file_count": 790
+        },
+        "behavior": "Adds a CMO-agent-reviewed independent 3.2 mg/L hs-CRP example on one 0–6 scale. A visible 2–5 overlap connects the illustrative lab reference <5 with the ESC/EAS persistent risk modifier >2, using one future-risk takeaway and visible repeat-when-well/lab-variation/no-diagnosis qualifications. Alex’s 2.1 example elsewhere is unchanged.",
+        "source_files": [
+          "components/story/RangeProofSection.tsx",
+          "components/story/range-proof-section.css",
+          "lib/site-content/range-proof-copy.ts",
+          "scripts/browser-qa/core-landing.cjs",
+          "scripts/browser-qa/entry-flows.cjs",
+          "docs/SESSION_COORDINATION.json"
+        ],
+        "qa": {
+          "status": "passed_functional_browser_owner_comprehension_open",
+          "record": "docs/browser-qa-v63/range-graphic-qa.json",
+          "evidence_directory": "docs/browser-qa-v63",
+          "fresh_profiles": 8,
+          "baseline_version": 62,
+          "baseline_profiles": 8,
+          "page_errors": [],
+          "owner_review": {
+            "status": "owner_comprehension_issue_open",
+            "native_version": 63,
+            "reported_issue": "The owner reports that the amber/shaded region above 2 can be read as an optimal range.",
+            "scope": "Native 63 publication, CMO source review and eight-profile functional/browser results remain real. This visual interpretation has not been accepted by the owner.",
+            "next_step": "Root is refining the visual semantics for a forthcoming 64 review. No 64 publication or acceptance is claimed here."
+          }
+        }
       }
     ],
     "latest_published_ui_release": {
-      "version_number": 62,
-      "source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
-      "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
+      "version_number": 64,
+      "source_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e3fa99d0b9e881919ccaa51a6dedef96",
+      "deployment_id": "appgdep_6b04bbbfc4608191b2d0322a08ec05d2",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T21:10:22.660543+00:00",
+      "native_updated_at": "2026-11-23T22:18:49.727913+00:00",
       "archive_storage": {
         "archive_format": "tar",
-        "sediment_file_id": "file_000000005890822fa22706c2cf6655e1",
-        "content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
-        "size_bytes": 171816960,
+        "sediment_file_id": "file_0000000029d4822fb6feeda7189a6e40",
+        "content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+        "size_bytes": 171827200,
         "file_count": 790
       },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=64#otra-lectura",
       "archive": {
-        "local_path": "/workspace/eva-publication/eva-normal-range-v62.tar.gz",
-        "local_gzip_sha256": "54d2d8625a429a2da478c3f58fac36c7e4a9bbef43a929647f1b1aac45c1b4e3",
-        "local_gzip_size_bytes": 163053160,
-        "saved_tar_content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
-        "saved_tar_size_bytes": 171816960,
+        "local_path": "/workspace/eva-publication/eva-range-comparisons-v64.tar.gz",
+        "local_gzip_sha256": "83b4b0e664f40ab6350884cc777f940c4173d2e53b17515dadaea9344adf101b",
+        "local_gzip_size_bytes": 163055723,
+        "saved_tar_content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+        "saved_tar_size_bytes": 171827200,
         "file_count": 790
       },
-      "behavior": "Simplifies the normal-range chapter into one illustrative 2.1 mg/L readout and two broad labelled rails. The lab reference and repeated-testing cardiovascular-risk threshold retain their context and source access; the one-result/two-questions bridge sits below the headline.",
+      "behavior": "Replaces the owner-rejected interval graphic with two open comparisons of one independent 3.2 mg/L sample against 5 and 2. No axis, ruler, filled/shaded zone or overlap window remains. The persistent >2 review condition and repeat-when-well/action wording remain explicit.",
       "source_files": [
         "components/story/RangeProofSection.tsx",
         "components/story/range-proof-section.css",
@@ -1114,11 +1210,13 @@
         "docs/SESSION_COORDINATION.json"
       ],
       "qa": {
-        "status": "passed_actual_browser",
-        "record": "docs/range-conciseness-qa.json",
-        "evidence_directory": "docs/browser-qa-v62",
+        "status": "passed_actual_browser_and_independent_cold_image_review",
+        "record": "docs/range-graphic-qa.json",
+        "evidence_directory": "docs/browser-qa-v64",
         "fresh_profiles": 8,
-        "baseline_version": 60,
+        "baseline_version": 63,
+        "baseline_status": "Reused actual 63 eight-profile evidence; not a fresh64 recapture.",
+        "owner_acceptance": "Not established by agent review alone.",
         "page_errors": []
       }
     },
@@ -1131,40 +1229,53 @@
       }
     ],
     "previous_published_ui_release": {
-      "version_number": 61,
-      "source_commit": "b89e9045e103c4e8f9ae8b73774b11e656d82aae",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5008b884de948191843f9dbdd82cffea",
-      "deployment_id": "appgdep_6b04aa4ba9d88191a4d6e4146c7a9bb2",
+      "version_number": 63,
+      "source_commit": "fae7fd4be2024b5d3de76404a062630d16b298c7",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4c934a478ff48191aaaf02245551ff22",
+      "deployment_id": "appgdep_6b04b4933544819191853a6eceba6bd2",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T21:04:21.492192+00:00",
+      "native_updated_at": "2026-11-23T21:48:13.966987+00:00",
       "archive_storage": {
         "archive_format": "tar",
-        "sediment_file_id": "file_0000000089cc822fb2776ddd2a1fdf81",
-        "content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
-        "size_bytes": 171816960,
+        "sediment_file_id": "file_0000000022e0822f8525448efdb2a9c7",
+        "content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+        "size_bytes": 171827200,
         "file_count": 790
       },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=61#otra-lectura",
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=63#otra-lectura",
       "archive": {
-        "local_path": "/workspace/eva-publication/eva-normal-range-v61.tar.gz",
-        "local_gzip_sha256": "64729127abc6e00a42d7a4f35cff433fbce370c4270f567518393c8232e3e623",
-        "local_gzip_size_bytes": 163056826,
-        "saved_tar_content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
-        "saved_tar_size_bytes": 171816960,
+        "local_path": "/workspace/eva-publication/eva-range-graphic-v63.tar.gz",
+        "local_gzip_sha256": "e856410c46163815916fd078ae263b5b7ef8db284bd5c8d04c09cd2d136b59b8",
+        "local_gzip_size_bytes": 163054432,
+        "saved_tar_content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+        "saved_tar_size_bytes": 171827200,
         "file_count": 790
       },
-      "behavior": "Intermediate published broad-rail refinement. Eight functional browser profiles passed, but the English 390px glass-height reduction missed the agreed 10% density gate; version 62 addresses this with phone-only spacing.",
+      "behavior": "Adds a CMO-agent-reviewed independent 3.2 mg/L hs-CRP example on one 0–6 scale. A visible 2–5 overlap connects the illustrative lab reference <5 with the ESC/EAS persistent risk modifier >2, using one future-risk takeaway and visible repeat-when-well/lab-variation/no-diagnosis qualifications. Alex’s 2.1 example elsewhere is unchanged.",
+      "source_files": [
+        "components/story/RangeProofSection.tsx",
+        "components/story/range-proof-section.css",
+        "lib/site-content/range-proof-copy.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs",
+        "docs/SESSION_COORDINATION.json"
+      ],
       "qa": {
-        "status": "passed_functional_browser_density_gate_not_met",
-        "record": "docs/browser-qa-v61/README.md",
-        "evidence_directory": "docs/browser-qa-v61",
+        "status": "passed_functional_browser_owner_comprehension_open",
+        "record": "docs/browser-qa-v63/range-graphic-qa.json",
+        "evidence_directory": "docs/browser-qa-v63",
         "fresh_profiles": 8,
-        "word_counts": {
-          "en": 52,
-          "es": 57
-        },
-        "limitation": "English 390px glass was only about 3% shorter than native 60; the 10% target was not met."
+        "baseline_version": 62,
+        "baseline_profiles": 8,
+        "page_errors": [],
+        "owner_review": {
+          "status": "owner_comprehension_issue_open",
+          "native_version": 63,
+          "reported_issue": "The owner reports that the amber/shaded region above 2 can be read as an optimal range.",
+          "scope": "Native 63 publication, CMO source review and eight-profile functional/browser results remain real. This visual interpretation has not been accepted by the owner.",
+          "next_step": "Root is refining the visual semantics for a forthcoming 64 review. No 64 publication or acceptance is claimed here."
+        }
       }
     }
   },
@@ -1259,7 +1370,7 @@
   "approved_design_and_motion": {
     "direction": "Evolve the existing Site. Keep the accepted runner, luminous/dot style, warm-paper/ink typography, actual results mockups, Tasso footage and lifestyle imagery.",
     "rejected_direction": "A generic replacement landing at /en/review/landing-proposal, a new visual system, new audience tabs, unsolicited stock-style cards or new assets to replace accepted work.",
-    "hero": "Keep the runner subject/footage and 2.5-second entrance. Both opening actions share one slim44px row, with 14px labels and 13px metadata. Desktop widths 184px/224px; responsive phone widths preserve single-line scope/VAT metadata. The kit label explicitly states quarterly subscription. Preserve accepted statement/source context and full qualified 46% denominator.",
+    "hero": "Keep the runner subject/footage and 2.5-second entrance. Both opening actions share one slim 44px row, with 14px labels and 13px metadata. Desktop widths 184px/224px; responsive phone widths preserve single-line scope/VAT metadata. The kit label explicitly states quarterly subscription. Preserve accepted statement/source context and full qualified 46% denominator.",
     "tasso": "Preserve the approved three-step film, accurate device proportions, virtually painless/no needles to handle copy and native-speed video controls. Do not restore pasted-screen overlays or regenerate footage merely for novelty.",
     "kit_explanation": "Preserve the current count/pan/names/meanings/readout sequence. Scrolling selects the education stages; the latest dot-to-text presentation transition is 500 ms for a complete forward or reverse span. Keep batched dot rendering and the existing compositor/clock ownership.",
     "kit_motion_contract_since_v28": {
@@ -1389,33 +1500,47 @@
       "wording": "Preserve exact lead wording and individualized frequency qualification.",
       "record": "docs/trend-emphasis-qa.json"
     },
-    "range_proof_v62": "One established glass instrument with a fixed illustrative 2.1 mg/L readout. The bridge sits below the heading on paper. Each labelled reading has its own full-width rail, threshold and short verdict; a shared 42% measurement position is used in both rails, with the risk threshold at 40% and one shared 0–5 axis. Preserve 14px labels, 16px facts/verdicts, native source details and the existing 500ms entry. Do not restore duplicated label/readout blocks or the rejected narrow graph."
+    "range_proof_v62": "Historical through version 62; superseded only for this chapter by range_proof_v63. One established glass instrument with a fixed illustrative 2.1 mg/L readout. The bridge sits below the heading on paper. Each labelled reading has its own full-width rail, threshold and short verdict; a shared 42% measurement position is used in both rails, with the risk threshold at 40% and one shared 0–5 axis. Preserve 14px labels, 16px facts/verdicts, native source details and the existing 500ms entry. Do not restore duplicated label/readout blocks or the rejected narrow graph.",
+    "range_proof_v63": "Historical; do not apply to current 64. One independent 3.2 mg/L dotted readout and two semantic bands on one 0–6 scale. The 2–5 overlap connects an illustrative lab reference <5 with strict >2 if persistent risk review. Both points sit at 53.333%, with boundaries 33.333%/83.333%. One future-risk takeaway has a semibold lead and regular remainder. Keep 14px labels, 16px facts, the existing glass/materials, complete reduced-motion meaning and 500ms entry. No probabilities, safe/optimal zone or new assets.",
+    "range_proof_v64": "Two open mathematical comparisons, no ruler/axis/interval/fill/window. One independent 3.2 example is below 5 and above 2 if persistent, with a clear confirm-and-review action. The same established glass/dots/Hanken/Georgia remain; complete static and reduced-motion meaning and500ms review-row entrance are preserved. Root rejected the 63 filled graph and A neutral ruler after image-only confusion; do not restore either to meet a cosmetic preference."
   },
   "approved_clinical_and_example_boundaries": {
     "methodology_validation_review": "The owner requested that the existing biological-age validation and Spanish recalibration figures on both methodology pages stay as published while model training finishes. The clinical team will update the figures after training. The differences between the summary and full methodology are still open.",
     "general": "Educational interpretation is not a diagnosis, a promise of prevention, a guaranteed health improvement, or a replacement for professional assessment.",
     "device": "Use virtually painless and no needles to handle rather than an absolute pain or no-lancet guarantee. Supplied device instructions remain authoritative.",
     "turnaround": "If using the approved two-working-day wording, retain from laboratory receipt; do not imply doorstep-to-results in two days.",
-    "lab_vs_prevention": "The range-proof example rereads the same fixed hs-CRP measurement 2.1 mg/L from different reference perspectives. EVA does not change the laboratory measurement. Its illustrative laboratory reference is <5 mg/L, with laboratory variation explicit. The prevention threshold is >=2 mg/L on repeat testing, not a universal optimal interval or a diagnosis.",
+    "lab_vs_prevention": "Current 64 uses the same independent labelled hs-CRP 3.2 mg/L example in two direct comparisons: below the documented adult lab reference 5 mg/L, and above the strict ESC/EAS 2025 risk-review cutoff 2 mg/L if persistent. Confirm when clinically stable and review overall risk/history/other causes if still raised. It is not a diagnosis, universal target, treatment instruction or fixed repeat schedule. No axis or shaded interval is part of the current representation.",
     "range_interpretation_evidence": {
       "record": "docs/range-interpretation-evidence.json",
+      "current_example": "currentWorkedExample",
       "copy": "lib/site-content/range-proof-copy.ts",
+      "medical_spec": "docs/browser-qa-v64/clinical-source-signoff-v64.json",
+      "clinical_source_review": "docs/browser-qa-v64/clinical-source-signoff-v64.json",
       "laboratory_reference": {
         "display": "<5 mg/L",
-        "qualification": "Within this illustrative reference interval. Laboratories may use different limits.",
-        "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
-        "source_location": "Adult serum reference range on PDF pages 8 and 10."
+        "operator": "<",
+        "upper_boundary": 5,
+        "meaning": "Within this documented adult assay reference; laboratories may use different limits. This is not proof of optimal health.",
+        "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+        "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3."
       },
       "prevention_threshold": {
-        "display": "≥2 mg/L on repeat testing",
-        "qualification": "A risk-enhancing factor worth discussing if confirmed on more than one occasion, with wider cardiovascular and inflammatory context. It is not a universal optimal range, deficiency diagnosis or treatment target.",
-        "source": "https://tools.acc.org/LDL/",
-        "source_location": "2026 ACC/AHA dyslipidemia guideline Table 13, risk-enhancing factors."
+        "display": ">2 mg/L if persistent",
+        "operator": ">",
+        "lower_boundary": 2,
+        "persistence_required": true,
+        "meaning": "An ESC/EAS 2025 cardiovascular risk modifier considered with overall health history and risk factors, not a universal optimum, diagnosis or treatment target.",
+        "source": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+        "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box."
       },
-      "context_source": "https://www.heart.org/en/health-topics/cholesterol/how-to-get-your-cholesterol-tested/high-sensitivity-c-reactive-protein",
-      "reference_interval_source": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
-      "preserve": "Keep repeat confirmation adjacent to the prevention interpretation, source links visible, and the single-reading limitation intact. Do not restore the former blanket 0–1 EVA-optimal interpretation in this proof chapter.",
-      "latest_refinement": "docs/range-conciseness-qa.json"
+      "prospective_evidence": {
+        "source": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+        "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease in 54 prospective studies.",
+        "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
+      },
+      "preserve": "Keep strict >2 if persistent beside the comparison, repeat when well and overall-risk review if still raised, lab variation, no diagnosis and three source links. Do not restore a desirable/optimal/safe band above or below 2, a ruler, an interval window, individual risk percentage, automatic treatment or universal repeat interval.",
+      "latest_refinement": "docs/range-graphic-qa.json",
+      "historical_graphs": "The 2.1/≥2/0–5example was historical through 62. The 3.2/0–6filled-overlap representation was published63 but rejected by the owner. Neither presentation’s domain or point coordinates govern current 64."
     },
     "history": "A change in results does not by itself establish its cause, persistence or the right treatment. Compare compatible units, tests and context.",
     "trend_mode_interpretations": {
@@ -1467,6 +1592,70 @@
       "Reference ranges universally represent sick people",
       "One universal optimal target for everyone",
       "Unsupported starting-kit inclusions or annual entitlement"
+    ],
+    "range_proof_history": [
+      {
+        "as_of_release": 62,
+        "status": "Historical example and source framework, superseded only for the range-proof chapter by 63. Alex’s independent 2.1 case elsewhere is unchanged.",
+        "lab_vs_prevention": "The range-proof example rereads the same fixed hs-CRP measurement 2.1 mg/L from different reference perspectives. EVA does not change the laboratory measurement. Its illustrative laboratory reference is <5 mg/L, with laboratory variation explicit. The prevention threshold is >=2 mg/L on repeat testing, not a universal optimal interval or a diagnosis.",
+        "evidence": {
+          "record": "docs/range-interpretation-evidence.json",
+          "copy": "lib/site-content/range-proof-copy.ts",
+          "laboratory_reference": {
+            "display": "<5 mg/L",
+            "qualification": "Within this illustrative reference interval. Laboratories may use different limits.",
+            "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/labmethods/HSCRP-J-MET-508.pdf",
+            "source_location": "Adult serum reference range on PDF pages 8 and 10."
+          },
+          "prevention_threshold": {
+            "display": "≥2 mg/L on repeat testing",
+            "qualification": "A risk-enhancing factor worth discussing if confirmed on more than one occasion, with wider cardiovascular and inflammatory context. It is not a universal optimal range, deficiency diagnosis or treatment target.",
+            "source": "https://tools.acc.org/LDL/",
+            "source_location": "2026 ACC/AHA dyslipidemia guideline Table 13, risk-enhancing factors."
+          },
+          "context_source": "https://www.heart.org/en/health-topics/cholesterol/how-to-get-your-cholesterol-tested/high-sensitivity-c-reactive-protein",
+          "reference_interval_source": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
+          "preserve": "Keep repeat confirmation adjacent to the prevention interpretation, source links visible, and the single-reading limitation intact. Do not restore the former blanket 0–1 EVA-optimal interpretation in this proof chapter.",
+          "latest_refinement": "docs/range-conciseness-qa.json"
+        }
+      },
+      {
+        "as_of_release": 63,
+        "status": "Medical/source and functional pass preserved; actual owner rejected graphic semantics. Axis/overlap coordinates are historical presentation, not current medical requirements.",
+        "lab_vs_prevention": "The current range proof uses one independent labelled hs-CRP 3.2 mg/L example, separate from Alex. It remains inside a documented adult assay reference <5 mg/L and above the strict ESC/EAS 2025 modifier >2 mg/L if persistent. Association with future cardiovascular events is not individual prediction, diagnosis or CRP causation; clinical history, other risk factors and inflammatory causes matter.",
+        "evidence": {
+          "record": "docs/range-interpretation-evidence.json",
+          "current_example": "currentWorkedExample",
+          "copy": "lib/site-content/range-proof-copy.ts",
+          "medical_spec": "docs/browser-qa-v63/cmo-medical-spec.json",
+          "clinical_source_review": "docs/browser-qa-v63/clinical-source-signoff.json",
+          "laboratory_reference": {
+            "display": "<5 mg/L",
+            "operator": "<",
+            "upper_boundary": 5,
+            "meaning": "Within this documented adult assay reference; laboratories may use different limits. This is not proof of optimal health.",
+            "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+            "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3."
+          },
+          "prevention_threshold": {
+            "display": ">2 mg/L if persistent",
+            "operator": ">",
+            "lower_boundary": 2,
+            "persistence_required": true,
+            "meaning": "An ESC/EAS 2025 cardiovascular risk modifier considered with overall health history and risk factors, not a universal optimum, diagnosis or treatment target.",
+            "source": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+            "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box."
+          },
+          "prospective_evidence": {
+            "source": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+            "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease in 54 prospective studies.",
+            "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
+          },
+          "preserve": "Keep persistence next to the strict >2 modifier, repeat when well, laboratory variation, no-diagnosis meaning, the overlap explanation and source access. The0–6axis is a display domain, not a risk curve. No universal optimal/safe band, individual risk percentage, automatic treatment or fixed repeat interval.",
+          "historical_before_v63": "The 2.1/≥2/0–5example and its ACC source remain historical through 62 in docs/range-interpretation-evidence.json; do not apply those range-graphic coordinates to63.",
+          "latest_refinement": "docs/range-graphic-qa.json"
+        }
+      }
     ]
   },
   "current_page_order": [
@@ -1496,8 +1685,8 @@
     {
       "component": "RangeProofSection",
       "id": "otra-lectura",
-      "purpose": "Concise same-result comparison of an illustrative lab interval and qualified cardiovascular-risk threshold",
-      "browser_qa": "Version 62 focused native browser verification and iterative review in docs/range-conciseness-qa.json; prior evidence remains historical."
+      "purpose": "Two explicit comparisons of one independent 3.2 example against distinct lab and conditional review cutoffs",
+      "browser_qa": "Native 64 actual checks and fresh image-only A/B review in docs/range-graphic-qa.json;63 owner rejection overrides the earlier model semantic pass."
     },
     {
       "component": "KitExplanationPreview",
@@ -1582,7 +1771,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "Current baseline is version 62, UI commit 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac. Read docs/range-conciseness-qa.json for the simplified range proof and exact loop/browser evidence. Keep version 60’s 44px opening actions and all accepted statement/business facts.",
+    "Current native 64 UI commit is 6fa98668afea2d912e6e5e8d38102afa18bacba5. Read docs/range-graphic-qa.json and owner feedback/cold-reader artifacts. Preserve explicit comparisons and clinical condition/action, not historical 0–6/overlap/point coordinates. Alex 2.1 and hero 44px/business policies are unchanged.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -1689,7 +1878,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Version 62 is published. Preserve the concise normal-range proof and its explicit repeat/context/no-diagnosis qualifications, approved 44px horizontal hero actions, accepted statement, business policies, 2.5-second runner and methodology figures. Routine relevant edits/checks/commits/pushes/review-site publication remain authorized with three specialist roles. Production cutover remains on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Native 64 is published. The owner rejected 63’s shaded optimal-looking range; A’s neutral ruler also failed a fresh image read. B now shows 3.2 < 5 lab reference and 3.2 > 2 if persistent review comparison with repeat-when-well/action wording. No ruler, axis or interval zone remains. Preserve source facts, Alex 2.1, 44px hero actions, business policies, statement, 2.5-second runner and methodology figures. Agent review is not actual owner acceptance. Production cutover remains on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -1700,10 +1889,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-23",
-    "user_direction": "Simplify “There’s more to normal” aesthetically while keeping its meaning understandable, with agents and a repeated independent test/review loop.",
-    "synchronized_main_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
-    "live_version": 62,
-    "status": "Concise range-proof chapter published and independently verified across eight fresh native profiles."
+    "user_direction": "Resolve the actual owner’s confusion that the shaded region above 2 looked optimal, using a clear image and text rather than a disclaimer or primed model vote.",
+    "synchronized_main_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+    "live_version": 64,
+    "status": "Direct comparisons published and independently reviewed; prior owner rejection preserved and 64 owner review not yet established."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -1712,9 +1901,9 @@
     "qa_record": "docs/final-browser-qa.json",
     "remaining_review_items": [],
     "latest_scoped_refinement": {
-      "version": 62,
-      "record": "docs/range-conciseness-qa.json",
-      "status": "published and actual-browser verified; prior scoped refinements remain preserved"
+      "version": 64,
+      "record": "docs/range-graphic-qa.json",
+      "status": "published and independently reviewed; actual owner acceptance pending"
     }
   },
   "resolved_browser_verification": {
@@ -1737,7 +1926,7 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+  "github_current_ui_source": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
   "statement_opening_selection": {
     "copy_owner": "Primary agent, advised by a bilingual health and wellness marketing copy specialist",
     "design_owner": "User-requested gpt-6.2-astra agent applying Impeccable within EVA’s existing Hanken, Georgia italic, ink, warm-paper and amber/dot language",
@@ -1814,7 +2003,50 @@
     "user_instruction": "Make both side-by-side buttons thinner; keep 13 markers and 99 + VAT on the same line."
   },
   "range_proof_refinement": {
-    "version": 62,
+    "version": 64,
+    "example": {
+      "status": "current_from_version 64",
+      "biomarker": "hs-CRP",
+      "value": 3.2,
+      "unit": "mg/L",
+      "illustrative": true,
+      "dataset_boundary": "Independent teaching example, not an observed patient case and not Alex. Alex’s 2.1 mg/L result, history and context remain unchanged.",
+      "labReference": {
+        "display": "<5 mg/L",
+        "operator": "<",
+        "upper_boundary": 5,
+        "meaning": "Within this documented adult assay reference; laboratories may use different limits. This is not proof of optimal health.",
+        "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+        "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3."
+      },
+      "prevention": {
+        "display": ">2 mg/L if persistent",
+        "operator": ">",
+        "lower_boundary": 2,
+        "persistence_required": true,
+        "meaning": "An ESC/EAS 2025 cardiovascular risk modifier considered with overall health history and risk factors, not a universal optimum, diagnosis or treatment target.",
+        "source": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+        "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box."
+      },
+      "prospectiveEvidence": {
+        "source": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+        "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease in 54 prospective studies.",
+        "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
+      },
+      "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
+      "review": "CMO agent evidence/source review of the comparison-based source, not human clinician approval.",
+      "record": "docs/range-graphic-qa.json",
+      "source_packet": "docs/browser-qa-v64/clinical-source-signoff-v64.json",
+      "representation": {
+        "kind": "two_explicit_comparisons",
+        "lab": "3.2 < 5 mg/L",
+        "review": "3.2 > 2 mg/L, if persistent",
+        "axis_or_ruler": false,
+        "filled_or_shaded_interval": false,
+        "overlap_window": false,
+        "meaning": "The same sample is below this laboratory reference limit yet above a conditional risk-review cutoff; neither comparison defines an optimal goal."
+      }
+    },
     "copy": {
       "en": {
         "heading": [
@@ -1823,20 +2055,26 @@
         ],
         "markerLabel": "Inflammation signal",
         "exampleLabel": "Example",
-        "unchangedLabel": "One result. Two questions.",
+        "unchangedLabel": "Two cutoffs. One result.",
+        "takeawayLead": "Above 2 mg/L?",
+        "takeaway": "Repeat when well. If still raised, review overall heart risk.",
         "qualifier": "Lab limits vary. Not a diagnosis.",
         "primary": "Interpret your labs",
         "primarySubtitle": "Upload for free",
         "lab": {
-          "label": "Lab range",
+          "comparison": "3.2 < 5 mg/L",
+          "label": "Lab reference",
           "threshold": "<5 mg/L",
-          "interpretation": "Within range."
+          "interpretation": "Below this lab’s reference limit."
         },
         "prevention": {
-          "label": "Cardiovascular risk",
-          "threshold": "≥2 mg/L on repeat testing",
-          "interpretation": "Review in your health context."
-        }
+          "comparison": "3.2 > 2 mg/L",
+          "label": "When to review",
+          "threshold": ">2 mg/L if persistent",
+          "condition": "if persistent",
+          "interpretation": "Above the review threshold."
+        },
+        "action_combined": "Above 2 mg/L? Repeat when well. If still raised, review overall heart risk."
       },
       "es": {
         "heading": [
@@ -1845,24 +2083,192 @@
         ],
         "markerLabel": "Señal de inflamación",
         "exampleLabel": "Ejemplo",
-        "unchangedLabel": "Un resultado. Dos preguntas.",
+        "unchangedLabel": "Dos umbrales. Un resultado.",
+        "takeawayLead": "¿Más de 2 mg/L?",
+        "takeaway": "Repite cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
         "qualifier": "Los límites varían entre laboratorios. No es un diagnóstico.",
         "primary": "Interpreta tus analíticas",
         "primarySubtitle": "Súbelas gratis",
         "lab": {
-          "label": "Laboratorio",
+          "comparison": "3,2 < 5 mg/L",
+          "label": "Referencia del laboratorio",
           "threshold": "<5 mg/L",
-          "interpretation": "Dentro del intervalo."
+          "interpretation": "Por debajo del límite del laboratorio."
         },
         "prevention": {
-          "label": "Riesgo cardiovascular",
-          "threshold": "≥2 mg/L en mediciones repetidas",
-          "interpretation": "Valorar con tu contexto de salud."
-        }
+          "comparison": "3,2 > 2 mg/L",
+          "label": "Cuándo revisarlo",
+          "threshold": ">2 mg/L si persiste",
+          "condition": "si persiste",
+          "interpretation": "Supera el umbral de revisión."
+        },
+        "action_combined": "¿Más de 2 mg/L? Repite cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global."
       }
     },
-    "qa": "docs/range-conciseness-qa.json",
-    "review_loop": "docs/browser-qa-v62/review-iterations.json",
-    "user_instruction": "Simplify “There’s more to normal” aesthetically while keeping its meaning understandable, with agents and a repeated independent test/review loop."
-  }
+    "qa": "docs/range-graphic-qa.json",
+    "review_loop": "docs/browser-qa-v64/review-iterations.json",
+    "owner_review": "Current 64 not yet accepted by the owner; prior 63 rejection is preserved verbatim.",
+    "user_instruction": "Resolve the actual owner’s confusion that the shaded region above 2 looked optimal, using a clear image and text rather than a disclaimer or primed model vote."
+  },
+  "range_proof_refinement_history": [
+    {
+      "version": 62,
+      "copy": {
+        "en": {
+          "heading": [
+            "There’s more",
+            "to “normal.”"
+          ],
+          "markerLabel": "Inflammation signal",
+          "exampleLabel": "Example",
+          "unchangedLabel": "One result. Two questions.",
+          "qualifier": "Lab limits vary. Not a diagnosis.",
+          "primary": "Interpret your labs",
+          "primarySubtitle": "Upload for free",
+          "lab": {
+            "label": "Lab range",
+            "threshold": "<5 mg/L",
+            "interpretation": "Within range."
+          },
+          "prevention": {
+            "label": "Cardiovascular risk",
+            "threshold": "≥2 mg/L on repeat testing",
+            "interpretation": "Review in your health context."
+          }
+        },
+        "es": {
+          "heading": [
+            "«Normal»",
+            "no lo cuenta todo."
+          ],
+          "markerLabel": "Señal de inflamación",
+          "exampleLabel": "Ejemplo",
+          "unchangedLabel": "Un resultado. Dos preguntas.",
+          "qualifier": "Los límites varían entre laboratorios. No es un diagnóstico.",
+          "primary": "Interpreta tus analíticas",
+          "primarySubtitle": "Súbelas gratis",
+          "lab": {
+            "label": "Laboratorio",
+            "threshold": "<5 mg/L",
+            "interpretation": "Dentro del intervalo."
+          },
+          "prevention": {
+            "label": "Riesgo cardiovascular",
+            "threshold": "≥2 mg/L en mediciones repetidas",
+            "interpretation": "Valorar con tu contexto de salud."
+          }
+        }
+      },
+      "qa": "docs/range-conciseness-qa.json",
+      "review_loop": "docs/browser-qa-v62/review-iterations.json",
+      "user_instruction": "Simplify “There’s more to normal” aesthetically while keeping its meaning understandable, with agents and a repeated independent test/review loop."
+    },
+    {
+      "version": 63,
+      "example": {
+        "status": "current_from_version 63",
+        "biomarker": "hs-CRP",
+        "value": 3.2,
+        "unit": "mg/L",
+        "illustrative": true,
+        "dataset_boundary": "Independent teaching example, not an observed patient case and not Alex. Alex’s 2.1 mg/L result, history and context remain unchanged.",
+        "labReference": {
+          "display": "<5 mg/L",
+          "operator": "<",
+          "upper_boundary": 5,
+          "meaning": "Within this documented adult assay reference; laboratories may use different limits. This is not proof of optimal health.",
+          "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3."
+        },
+        "prevention": {
+          "display": ">2 mg/L if persistent",
+          "operator": ">",
+          "lower_boundary": 2,
+          "persistence_required": true,
+          "meaning": "An ESC/EAS 2025 cardiovascular risk modifier considered with overall health history and risk factors, not a universal optimum, diagnosis or treatment target.",
+          "source": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box."
+        },
+        "prospectiveEvidence": {
+          "source": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease in 54 prospective studies.",
+          "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
+        },
+        "graphic": {
+          "axis_min": 0,
+          "axis_max": 6,
+          "lab_boundary_percent": 83.33333333333333,
+          "risk_boundary_percent": 33.333333333333336,
+          "sample_position_percent": 53.333333333333336,
+          "overlap": {
+            "lower": 2,
+            "upper": 5,
+            "meaning": "Inside this illustrative lab reference and above the conditional persistent-risk modifier. No universal unhealthy or safe zone is implied."
+          }
+        },
+        "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
+        "review": "CMO agent source/copy evidence review; not human clinician approval.",
+        "record": "docs/browser-qa-v63/range-graphic-qa.json",
+        "source_packet": "docs/browser-qa-v63/cmo-medical-spec.json"
+      },
+      "copy": {
+        "en": {
+          "heading": [
+            "There’s more",
+            "to “normal.”"
+          ],
+          "markerLabel": "Inflammation signal",
+          "exampleLabel": "Example",
+          "unchangedLabel": "Same result. More context.",
+          "takeawayLead": "Within this lab range,",
+          "takeaway": "yet relevant to future heart risk if persistent.",
+          "qualifier": "Repeat when well. Lab limits vary. Not a diagnosis.",
+          "primary": "Interpret your labs",
+          "primarySubtitle": "Upload for free",
+          "lab": {
+            "label": "Lab reference",
+            "threshold": "<5 mg/L"
+          },
+          "prevention": {
+            "label": "Heart risk review",
+            "threshold": ">2 mg/L if persistent"
+          },
+          "takeaway_combined": "Within this lab range, yet relevant to future heart risk if persistent."
+        },
+        "es": {
+          "heading": [
+            "«Normal»",
+            "no lo cuenta todo."
+          ],
+          "markerLabel": "Señal de inflamación",
+          "exampleLabel": "Ejemplo",
+          "unchangedLabel": "El mismo resultado. Más contexto.",
+          "takeawayLead": "Dentro de este intervalo,",
+          "takeaway": "pero relevante para el riesgo cardiovascular futuro si persiste.",
+          "qualifier": "Repetir cuando estés bien. Los límites varían entre laboratorios. No es un diagnóstico.",
+          "primary": "Interpreta tus analíticas",
+          "primarySubtitle": "Súbelas gratis",
+          "lab": {
+            "label": "Referencia del laboratorio",
+            "threshold": "<5 mg/L"
+          },
+          "prevention": {
+            "label": "Revisión del riesgo cardiovascular",
+            "threshold": ">2 mg/L si persiste"
+          },
+          "takeaway_combined": "Dentro de este intervalo, pero relevante para el riesgo cardiovascular futuro si persiste."
+        }
+      },
+      "qa": "docs/browser-qa-v63/range-graphic-qa.json",
+      "review_loop": "docs/browser-qa-v63/review-iterations.json",
+      "user_instruction": "Improve the comparison graphic and use a CMO-reviewed example showing that a result inside a laboratory reference can still be relevant to long-term cardiovascular risk.",
+      "owner_review": {
+        "status": "owner_comprehension_issue_open",
+        "native_version": 63,
+        "reported_issue": "The owner reports that the amber/shaded region above 2 can be read as an optimal range.",
+        "scope": "Native 63 publication, CMO source review and eight-profile functional/browser results remain real. This visual interpretation has not been accepted by the owner.",
+        "next_step": "Root is refining the visual semantics for a forthcoming 64 review. No 64 publication or acceptance is claimed here."
+      }
+    }
+  ]
 }

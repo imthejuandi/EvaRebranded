@@ -1,0 +1,25 @@
+{
+  "version_number": 64,
+  "source_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e3fa99d0b9e881919ccaa51a6dedef96",
+  "deployment_id": "appgdep_6b04bbbfc4608191b2d0322a08ec05d2",
+  "status": "succeeded",
+  "url": "https://eva-content-review.jdlagop.chatgpt.site",
+  "native_updated_at": "2026-11-23T22:18:49.727913+00:00",
+  "archive_storage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_0000000029d4822fb6feeda7189a6e40",
+    "content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+    "size_bytes": 171827200,
+    "file_count": 790
+  },
+  "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=64#otra-lectura",
+  "archive": {
+    "local_path": "/workspace/eva-publication/eva-range-comparisons-v64.tar.gz",
+    "local_gzip_sha256": "83b4b0e664f40ab6350884cc777f940c4173d2e53b17515dadaea9344adf101b",
+    "local_gzip_size_bytes": 163055723,
+    "saved_tar_content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+    "saved_tar_size_bytes": 171827200,
+    "file_count": 790
+  }
+}

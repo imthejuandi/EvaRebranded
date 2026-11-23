@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 62,
-    "deployed_ui_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
-    "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
+    "live_version": 64,
+    "deployed_ui_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e3fa99d0b9e881919ccaa51a6dedef96",
+    "deployment_id": "appgdep_6b04bbbfc4608191b2d0322a08ec05d2",
     "main_head_before_coordination": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=64#otra-lectura"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -169,15 +169,12 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Defining a CMO-reviewed graphical comparison of laboratory reference and evidence-based prevention thresholds; live baseline62.",
+      "status": "Native 64 direct comparisons published and independently reviewed; original 63 owner rejection preserved.",
       "next_section": null,
-      "pending_verification": "CMO evidence selection, copy/design/independent review loop, then build and actual native-site checks.",
-      "section": "#otra-lectura — shared-scale risk-context graphic",
-      "files": [
-        "components/story/RangeProofSection.tsx",
-        "components/story/range-proof-section.css",
-        "lib/site-content/range-proof-copy.ts"
-      ]
+      "pending_verification": null,
+      "section": "#otra-lectura — explicit lab/review comparisons",
+      "files": [],
+      "owner_feedback_status": "Normal owner review of 64 is not established by agent checks; this is not a new publication-permission gate."
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
@@ -222,10 +219,10 @@
     ],
     "mechanical_scan": "Completed once after visual refinement, scope type,layout over11 changed UI files; exit0 and zero findings.",
     "latest_scoped_pass": {
-      "version": 62,
-      "playbook": "Layout, Typeset and Polish with independent prompt/review loop",
-      "scan": "Final frozen-source detector returned zero findings; eight fresh native 62 profiles passed.",
-      "record": "docs/range-conciseness-qa.json"
+      "version": 64,
+      "playbook": "CMO source review, Impeccable and fresh no-history image-only A/B review after actual owner rejection",
+      "scan": "Final detector zero findings; eight native 64 profiles passed. No claim of majority human comprehension.",
+      "record": "docs/range-graphic-qa.json"
     }
   }
 }

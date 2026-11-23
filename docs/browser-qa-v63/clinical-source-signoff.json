@@ -1,0 +1,29 @@
+{
+  "status": "approved",
+  "role": "Chief Medical Officer agent; source/copy evidence review, not human clinician approval",
+  "scope": "Read-only clinical review of the implemented independent hs-CRP3.2 teaching example; rendered visual/browser review belongs to the UX and independent judge agents.",
+  "source_sha256": {
+    "components/story/RangeProofSection.tsx": "ac5d3e4166b94a2a669bc8f7f8230685bf92c935fadc420931fecafccf01b9ac",
+    "lib/site-content/range-proof-copy.ts": "710d65f6c728a36d41bea37fd1e244c5e90a7f25547bedd41a11204b8dc58af6",
+    "components/story/range-proof-section.css": "9e910267f5a432af0809080ff6a59914986772ca681e3a0d90ddf7f3cfbb0100"
+  },
+  "checks": {
+    "independent_example": "Approved: value3.2mg/L, scale0–6, separate teaching example. Alex2.1 data are not redefined.",
+    "reference": "Approved: illustrative adult assay reference<5mg/L, sourced to CDC/Roche; visible laboratory-variation qualification.",
+    "prevention": "Approved: strict>2mg/L if persistent, consistent with European ESC/EAS2025 risk-modifier wording.",
+    "future_association": "Approved: relevant to future heart risk if persistent expresses relevance/association, not an individual forecast or CRP causation.",
+    "visible_qualifications": "Approved: Heart risk review, conditional threshold, repeat when well, laboratory variation and no-diagnosis note remain visible.",
+    "progressive_disclosure": "Acceptable: fuller overall-risk/history/other-inflammatory-cause explanation may remain in native details because the closed graphic only prompts risk review and does not diagnose, quantify personal risk or recommend treatment.",
+    "visual_meaning": "Approved at source level: overlap2–5 is shared reference/risk-review territory. Neutral below-threshold region is not labelled universally optimal or safe; chart description explicitly excludes disease probability.",
+    "sources": "Approved: CDC2021manual, ESC/EAS2025 guidance and ERFC prospective association source support the stated facts."
+  },
+  "required_fixes": [],
+  "no_additional_visible_paragraph_required": true,
+  "ongoing_limits": [
+    "Do not relabel the lower region as a universal longevity-optimal range.",
+    "Do not say this sample will lead to disease, that hs-CRP itself is causal, or that3.2predicts one person’s future.",
+    "Do not introduce automatic treatment or a fixed universal repeat interval."
+  ],
+  "medical_spec": "/workspace/eva-in-place-qa/range-graphic-cmo/cmo-medical-spec.json",
+  "final_refresh_note": "Rechecked final frozen source after cosmetic overlap-boundary styling and semantic strong emphasis on the unchanged takeaway lead. The explicit JSX space preserves the full sentence. Clinical facts, operators, sources and qualifications remain unchanged; approval stands."
+}

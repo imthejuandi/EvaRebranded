@@ -1,0 +1,308 @@
+{
+  "native_version": 64,
+  "baseline_native_version": 63,
+  "method": "Identical visible-text-node extraction; caption and CTA counted, sr-only and closed details excluded. Explanatory prose includes the new figcaption. No human usability study.",
+  "measurement_policy": "The64goal is to remove the owner-reported target-zone misunderstanding, not to meet an arbitrary word/height cut from63. All word/height increases remain visible in this record.",
+  "comparisons": [
+    {
+      "id": "en-1366",
+      "words": {
+        "before": 61,
+        "after": 60,
+        "change": -1,
+        "change_percent": -1.639344262295082
+      },
+      "explanatory_prose": {
+        "before": 25,
+        "after": 32,
+        "change": 7,
+        "change_percent": 28.000000000000004
+      },
+      "glass_height_px": {
+        "before": 351.375,
+        "after": 314.796875,
+        "change": -36.578125,
+        "change_percent": -10.409996442547136
+      },
+      "section_height_px": {
+        "before": 536.375,
+        "after": 499.796875,
+        "change": -36.578125,
+        "change_percent": -6.819505942670706
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    },
+    {
+      "id": "es-1366",
+      "words": {
+        "before": 70,
+        "after": 69,
+        "change": -1,
+        "change_percent": -1.4285714285714286
+      },
+      "explanatory_prose": {
+        "before": 31,
+        "after": 40,
+        "change": 9,
+        "change_percent": 29.03225806451613
+      },
+      "glass_height_px": {
+        "before": 351.375,
+        "after": 338.796875,
+        "change": -12.578125,
+        "change_percent": -3.57968694414799
+      },
+      "section_height_px": {
+        "before": 560.375,
+        "after": 523.796875,
+        "change": -36.578125,
+        "change_percent": -6.5274369841623905
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    },
+    {
+      "id": "en-390",
+      "words": {
+        "before": 61,
+        "after": 60,
+        "change": -1,
+        "change_percent": -1.639344262295082
+      },
+      "explanatory_prose": {
+        "before": 25,
+        "after": 32,
+        "change": 7,
+        "change_percent": 28.000000000000004
+      },
+      "glass_height_px": {
+        "before": 325.375,
+        "after": 344.796875,
+        "change": 19.421875,
+        "change_percent": 5.969074145217057
+      },
+      "section_height_px": {
+        "before": 681.609375,
+        "after": 677.03125,
+        "change": -4.578125,
+        "change_percent": -0.6716640304426564
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    },
+    {
+      "id": "es-390",
+      "words": {
+        "before": 70,
+        "after": 69,
+        "change": -1,
+        "change_percent": -1.4285714285714286
+      },
+      "explanatory_prose": {
+        "before": 31,
+        "after": 40,
+        "change": 9,
+        "change_percent": 29.03225806451613
+      },
+      "glass_height_px": {
+        "before": 371.5625,
+        "after": 368.796875,
+        "change": -2.765625,
+        "change_percent": -0.744322960470984
+      },
+      "section_height_px": {
+        "before": 727.796875,
+        "after": 725.03125,
+        "change": -2.765625,
+        "change_percent": -0.3799995706219541
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    },
+    {
+      "id": "es-320",
+      "words": {
+        "before": 70,
+        "after": 69,
+        "change": -1,
+        "change_percent": -1.4285714285714286
+      },
+      "explanatory_prose": {
+        "before": 31,
+        "after": 40,
+        "change": 9,
+        "change_percent": 29.03225806451613
+      },
+      "glass_height_px": {
+        "before": 371.5625,
+        "after": 392.796875,
+        "change": 21.234375,
+        "change_percent": 5.71488645920942
+      },
+      "section_height_px": {
+        "before": 751.796875,
+        "after": 749.03125,
+        "change": -2.765625,
+        "change_percent": -0.36786864803075964
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    },
+    {
+      "id": "es-768",
+      "words": {
+        "before": 70,
+        "after": 69,
+        "change": -1,
+        "change_percent": -1.4285714285714286
+      },
+      "explanatory_prose": {
+        "before": 31,
+        "after": 40,
+        "change": 9,
+        "change_percent": 29.03225806451613
+      },
+      "glass_height_px": {
+        "before": 385.5625,
+        "after": 374.796875,
+        "change": -10.765625,
+        "change_percent": -2.792186740152375
+      },
+      "section_height_px": {
+        "before": 594.5625,
+        "after": 583.796875,
+        "change": -10.765625,
+        "change_percent": -1.8106801219384
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    },
+    {
+      "id": "en-390-calm",
+      "words": {
+        "before": 61,
+        "after": 60,
+        "change": -1,
+        "change_percent": -1.639344262295082
+      },
+      "explanatory_prose": {
+        "before": 25,
+        "after": 32,
+        "change": 7,
+        "change_percent": 28.000000000000004
+      },
+      "glass_height_px": {
+        "before": 325.375,
+        "after": 344.796875,
+        "change": 19.421875,
+        "change_percent": 5.969074145217057
+      },
+      "section_height_px": {
+        "before": 681.609375,
+        "after": 677.03125,
+        "change": -4.578125,
+        "change_percent": -0.6716640304426564
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    },
+    {
+      "id": "es-390-calm",
+      "words": {
+        "before": 70,
+        "after": 69,
+        "change": -1,
+        "change_percent": -1.4285714285714286
+      },
+      "explanatory_prose": {
+        "before": 31,
+        "after": 40,
+        "change": 9,
+        "change_percent": 29.03225806451613
+      },
+      "glass_height_px": {
+        "before": 371.5625,
+        "after": 368.796875,
+        "change": -2.765625,
+        "change_percent": -0.744322960470984
+      },
+      "section_height_px": {
+        "before": 727.796875,
+        "after": 725.03125,
+        "change": -2.765625,
+        "change_percent": -0.3799995706219541
+      },
+      "heading_visible": true,
+      "comparison_contract": {
+        "sample": 3.2,
+        "labLimit": 5,
+        "reviewTrigger": 2,
+        "labOperator": "<",
+        "reviewOperator": ">",
+        "noAxisOrInterval": true
+      }
+    }
+  ],
+  "automated_gates": {
+    "rendered_eight_profiles": true,
+    "headings_painted": true,
+    "no_network_writes": true,
+    "owned_browsers_closed": true
+  },
+  "scope_limits": [
+    "Viewport emulation, not physical-device performance.",
+    "Only this section; no full landing/entry suite or no-JavaScript visual-parity rerun.",
+    "Medical scope follows the frozen CMO agent evidence packet, not a human clinical signoff."
+  ],
+  "automated_passed": true
+}

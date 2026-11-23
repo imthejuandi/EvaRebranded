@@ -1,0 +1,340 @@
+{
+  "native_version": 63,
+  "baseline_native_version": 62,
+  "method": "Identical visible-text-node extraction; caption and CTA counted, sr-only and closed details excluded. Explanatory prose includes the new figcaption. No human usability study.",
+  "measurement_policy": "The63goal is clearer evidence-backed graphic teaching, not an arbitrary percentage cut from62. All word/height increases remain visible in this record.",
+  "comparisons": [
+    {
+      "id": "en-1366",
+      "words": {
+        "before": 52,
+        "after": 61,
+        "change": 9,
+        "change_percent": 17.307692307692307
+      },
+      "explanatory_prose": {
+        "before": 17,
+        "after": 25,
+        "change": 8,
+        "change_percent": 47.05882352941176
+      },
+      "glass_height_px": {
+        "before": 367.375,
+        "after": 351.375,
+        "change": -16,
+        "change_percent": -4.355222864920041
+      },
+      "section_height_px": {
+        "before": 552.375,
+        "after": 536.375,
+        "change": -16,
+        "change_percent": -2.896582937316135
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333253330133205,
+          0.5333253330133205
+        ],
+        "threshold": 0.3333253330133205,
+        "labEnd": 0.8333133325333013,
+        "overlapLeft": 0.3333253330133205,
+        "overlapWidth": 0.4999879995199808,
+        "labBandWidth": 0.8333133325333013,
+        "preventionBandStart": 0.3333253330133205
+      }
+    },
+    {
+      "id": "es-1366",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 367.375,
+        "after": 351.375,
+        "change": -16,
+        "change_percent": -4.355222864920041
+      },
+      "section_height_px": {
+        "before": 552.375,
+        "after": 560.375,
+        "change": 8,
+        "change_percent": 1.4482914686580675
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333253330133205,
+          0.5333253330133205
+        ],
+        "threshold": 0.3333253330133205,
+        "labEnd": 0.8333133325333013,
+        "overlapLeft": 0.3333253330133205,
+        "overlapWidth": 0.4999879995199808,
+        "labBandWidth": 0.8333133325333013,
+        "preventionBandStart": 0.3333253330133205
+      }
+    },
+    {
+      "id": "en-390",
+      "words": {
+        "before": 52,
+        "after": 61,
+        "change": 9,
+        "change_percent": 17.307692307692307
+      },
+      "explanatory_prose": {
+        "before": 17,
+        "after": 25,
+        "change": 8,
+        "change_percent": 47.05882352941176
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 325.375,
+        "change": -6.1875,
+        "change_percent": -1.8661639962299716
+      },
+      "section_height_px": {
+        "before": 663.796875,
+        "after": 681.609375,
+        "change": 17.8125,
+        "change_percent": 2.6834263117011514
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    },
+    {
+      "id": "es-390",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 371.5625,
+        "change": 40,
+        "change_percent": 12.064090480678605
+      },
+      "section_height_px": {
+        "before": 687.796875,
+        "after": 727.796875,
+        "change": 40,
+        "change_percent": 5.8156705059178995
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    },
+    {
+      "id": "es-320",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 371.5625,
+        "change": 40,
+        "change_percent": 12.064090480678605
+      },
+      "section_height_px": {
+        "before": 687.796875,
+        "after": 751.796875,
+        "change": 64,
+        "change_percent": 9.305072809468639
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333251953125,
+          0.5333251953125
+        ],
+        "threshold": 0.33331298828125,
+        "labEnd": 0.83331298828125,
+        "overlapLeft": 0.33331298828125,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.83331298828125,
+        "preventionBandStart": 0.33331298828125
+      }
+    },
+    {
+      "id": "es-768",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 377.5625,
+        "after": 385.5625,
+        "change": 8,
+        "change_percent": 2.118854494289025
+      },
+      "section_height_px": {
+        "before": 586.5625,
+        "after": 594.5625,
+        "change": 8,
+        "change_percent": 1.3638785295684603
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5333241531258607,
+          0.5333241531258607
+        ],
+        "threshold": 0.3333333333333333,
+        "labEnd": 0.8333333333333334,
+        "overlapLeft": 0.3333333333333333,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333333333333334,
+        "preventionBandStart": 0.3333333333333333
+      }
+    },
+    {
+      "id": "en-390-calm",
+      "words": {
+        "before": 52,
+        "after": 61,
+        "change": 9,
+        "change_percent": 17.307692307692307
+      },
+      "explanatory_prose": {
+        "before": 17,
+        "after": 25,
+        "change": 8,
+        "change_percent": 47.05882352941176
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 325.375,
+        "change": -6.1875,
+        "change_percent": -1.8661639962299716
+      },
+      "section_height_px": {
+        "before": 663.796875,
+        "after": 681.609375,
+        "change": 17.8125,
+        "change_percent": 2.6834263117011514
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    },
+    {
+      "id": "es-390-calm",
+      "words": {
+        "before": 57,
+        "after": 70,
+        "change": 13,
+        "change_percent": 22.807017543859647
+      },
+      "explanatory_prose": {
+        "before": 22,
+        "after": 31,
+        "change": 9,
+        "change_percent": 40.909090909090914
+      },
+      "glass_height_px": {
+        "before": 331.5625,
+        "after": 371.5625,
+        "change": 40,
+        "change_percent": 12.064090480678605
+      },
+      "section_height_px": {
+        "before": 687.796875,
+        "after": 727.796875,
+        "change": 40,
+        "change_percent": 5.8156705059178995
+      },
+      "heading_visible": true,
+      "geometric_relationships": {
+        "points": [
+          0.5332902070063694,
+          0.5332902070063694
+        ],
+        "threshold": 0.3333001592356688,
+        "labEnd": 0.8333001592356688,
+        "overlapLeft": 0.3333001592356688,
+        "overlapWidth": 0.5,
+        "labBandWidth": 0.8333001592356688,
+        "preventionBandStart": 0.3333001592356688
+      }
+    }
+  ],
+  "automated_gates": {
+    "rendered_eight_profiles": true,
+    "headings_painted": true,
+    "no_network_writes": true,
+    "owned_browsers_closed": true
+  },
+  "scope_limits": [
+    "Viewport emulation, not physical-device performance.",
+    "Only this section; no full landing/entry suite or no-JavaScript visual-parity rerun.",
+    "Medical scope follows the frozen CMO agent evidence packet, not a human clinical signoff."
+  ],
+  "automated_passed": true
+}

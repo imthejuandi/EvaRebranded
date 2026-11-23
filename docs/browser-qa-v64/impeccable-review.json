@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "native_version": 64,
+  "ui_source_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+  "fresh_profiles_passed": 8,
+  "fresh_profiles_total": 8,
+  "acceptance_scope": "Independent editorial/medical-contract/browser checks pass. This does not establish owner acceptance of version64or comprehension by most human visitors.",
+  "primary_evidence": "The actual version63 user finding overrode the prior agent semantic pass. A neutral-ruler preflight also failed despite factual recall; B removes the interval encoding entirely.",
+  "gates": {
+    "no_target_zone_semantics": true,
+    "actionable_review_trigger": true,
+    "medical_contract": true,
+    "readable_EVA_design": true,
+    "accessible_and_stable_behavior": true
+  },
+  "semantic_verdict": "Actual ES320 and EN1366 images show two explicit statements:3.2 <5 is below this lab reference;3.2 >2 crosses a review threshold if persistent. There is no axis, ruler, filled band or selected interval to aim for. The instruction is repeat when well and, if still raised, review overall heart risk.",
+  "cold_read_evidence": "Fresh no-history EN/ES B readers distinguish5 as the laboratory limit and2 as a conditional review trigger, not an explicit optimal interval. The EN reader still felt below2 might be preferable; no universal healthy goal was stated. Timing/context questions remain clinical, not a reason to invent a personalized interval.",
+  "medical_and_behavior": "CMO final source hashes match deployed UI. Strict>2 persistence, example3.2 mg/L, illustrative<5 mg/L lab limit, lab variation, no diagnosis and all three sources remain. Named comparison groups, updated screen-reader description, semantic caption join, keyboard/details/focus, free-upload intent and reduced-motion content pass.",
+  "metrics": {
+    "visible_words": {
+      "en": {
+        "baseline63": 61,
+        "current64": 60
+      },
+      "es": {
+        "baseline63": 70,
+        "current64": 69
+      }
+    },
+    "full_before_after_record": "actual-comparison-v64.json"
+  },
+  "mechanical_scan": {
+    "findings": 0,
+    "record": "impeccable-detect.json",
+    "owner": "Primary agent; independent reviewer did not duplicate this final scan."
+  },
+  "evidence": {
+    "native": "native-receipt.json",
+    "rendered": "actual-v64.json",
+    "comparison": "actual-comparison-v64.json",
+    "source_hashes": "final-source-sha256.json",
+    "medical": "medical-contract.json",
+    "clinical_agent": "clinical-source-signoff.json",
+    "user_finding": "owner-feedback-v63.json",
+    "ruler_failures": [
+      "cold-reader-a-en.json",
+      "cold-reader-a-es.json"
+    ],
+    "B_cold_reads": [
+      "cold-reader-b-en.json",
+      "cold-reader-b-es.json"
+    ],
+    "rubric": "judge-rubric.json",
+    "loop": "review-iterations.json",
+    "harness": "graphic-review.cjs",
+    "comparison_harness": "compare-final.cjs"
+  },
+  "limits": [
+    "Agent image interpretations are editorial simulations, not human usability research or majority-comprehension statistics.",
+    "Viewport emulation, not physical-device performance; only this section, not a full landing/entry or no-JavaScript visual-parity rerun.",
+    "No real accounts, uploads, purchases or mutating requests."
+  ],
+  "page_errors": [],
+  "network_writes": [],
+  "all_owned_browsers_closed": true
+}

@@ -1,0 +1,39 @@
+{
+  "status": "reopened_after_actual_user_rejection",
+  "scope": "Only #otra-lectura, baseline63 to candidate64.",
+  "evidence_precedence": "The actual user found the filled area above 2 looked like normal/optimal territory. This overrides the prior model/editorial semantic pass. The 63 technical/clinical records remain unchanged as historical evidence; they do not prove clear visual meaning for most people.",
+  "loop_prompt": "Inspect the actual closed-view image before reading medical rationale or optional detail. Describe what the graphic means, whether any region appears desirable or optimal, and what a 3.2 result prompts. Do not merely repeat labels. Fail if the visual communicates a healthy target interval, if above 2 appears to be a desirable destination, or if the next step is unclear. Then verify the distinct laboratory-reference and conditional review cutoffs against the medical spec. A disclaimer cannot rescue a misleading graphic. Revise the smallest actual failure and retest the image; do not count model votes against the user feedback.",
+  "gates": [
+    {
+      "id": "no_target_zone_semantics",
+      "pass": "No risk fill, overlap wash or selected-looking interval communicates a desirable/normal/optimal destination. The visual itself, before a long paragraph, presents decision cutoffs rather than a healthy band. No universal target is implied below 2 either."
+    },
+    {
+      "id": "actionable_review_trigger",
+      "pass": "A cold editorial reader can explain that3.2 is an example, may be below this laboratory reference, yet calls for repeat-when-well and broader risk review if above 2 persists. It is not a goal to raise or lower automatically and not a diagnosis."
+    },
+    {
+      "id": "medical_contract",
+      "pass": "Same independent hs-CRP3.2mg/L example, illustrative adult lab reference<5 and strict European>2ifpersistent review modifier. Direct inequalities must be correct. No probability, forecast, causal claim, treatment target or universal repeat interval; no axis/domain requirement."
+    },
+    {
+      "id": "readable_EVA_design",
+      "pass": "Two explicit open comparisons and their plain meanings remain clear in the existing EVA style at phone/tablet/desktop widths. No ruler, axis, filled region or interval frame. Body16px/24px, critical labels>=14px; no clipping/collisions/page overflow."
+    },
+    {
+      "id": "accessible_and_stable_behavior",
+      "pass": "Screen-reader description agrees with the new unfilled graphic, not the obsolete shared area. Keyboard/details/focus/source links/free-upload intent and reduced-motion complete content pass; measurement and cutoff positions remain mathematically correct."
+    }
+  ],
+  "cold_read_method": "A fresh no-history agent sees only the actual candidate image and open interpretation/action questions, without the medical rationale or desired answer. This remains editorial simulation, not human research or proof of majority comprehension.",
+  "measurement_policy": "Report actual words, prose and heights versus63 with consistent extraction. No arbitrary reduction or vote-count target substitutes for the semantic gates.",
+  "baseline_policy": "Reuse the unchanged actual63 eight-profile captures and succeeded native receipt from the immediately preceding release; do not label them as freshly recaptured for64.",
+  "limits": [
+    "User acceptance of64 is not established by model review alone.",
+    "Viewport emulation is not physical-device performance.",
+    "No real accounts, uploads, purchases or mutating requests."
+  ],
+  "final_encoding": "ConceptB: direct3.2<5 and3.2>2 if persistent comparisons, no number line or interval shape.",
+  "superseded_proposal": "ConceptA neutral ruler also failed cold visual reading because it could still imply an acceptable2–5interval. No axis/position check is a final64requirement.",
+  "final_semantic_boundary": "Fresh no-history EN/ES B readers distinguish the laboratory limit from a review trigger and do not read an explicit2–5optimal interval. This is agent editorial evidence; actual owner acceptance of64 and majority human comprehension are not established."
+}

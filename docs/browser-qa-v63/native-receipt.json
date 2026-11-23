@@ -1,0 +1,25 @@
+{
+  "version_number": 63,
+  "source_commit": "fae7fd4be2024b5d3de76404a062630d16b298c7",
+  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4c934a478ff48191aaaf02245551ff22",
+  "deployment_id": "appgdep_6b04b4933544819191853a6eceba6bd2",
+  "status": "succeeded",
+  "url": "https://eva-content-review.jdlagop.chatgpt.site",
+  "native_updated_at": "2026-11-23T21:48:13.966987+00:00",
+  "archive_storage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_0000000022e0822f8525448efdb2a9c7",
+    "content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+    "size_bytes": 171827200,
+    "file_count": 790
+  },
+  "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=63#otra-lectura",
+  "archive": {
+    "local_path": "/workspace/eva-publication/eva-range-graphic-v63.tar.gz",
+    "local_gzip_sha256": "e856410c46163815916fd078ae263b5b7ef8db284bd5c8d04c09cd2d136b59b8",
+    "local_gzip_size_bytes": 163054432,
+    "saved_tar_content_hash": "sha256:106eb1a688032ca136f91543961d3e7cbb429e1e6a4f4503a7ed3abb3b5230bb",
+    "saved_tar_size_bytes": 171827200,
+    "file_count": 790
+  }
+}

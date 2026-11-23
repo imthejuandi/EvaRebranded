@@ -1,0 +1,115 @@
+{
+  "status": "medical_direction_ready",
+  "review_role": "Chief Medical Officer agent; evidence review, not human clinician signoff",
+  "verified_date": "2026-11-23",
+  "choice": {
+    "biomarker": "hs-CRP",
+    "display_name_en": "Inflammation signal",
+    "display_name_es": "Señal de inflamación",
+    "value": 3.2,
+    "unit": "mg/L",
+    "illustrative": true,
+    "reason": "This value is inside a real adult assay reference below 5 mg/L while clearly above the European persistent-risk modifier above 2 mg/L. The larger visual separation teaches the overlap better than 2.1 mg/L.",
+    "dataset_boundary": "This is an independent labelled teaching example. Do not change Alex's fictional 2.1 mg/L result, history or context elsewhere."
+  },
+  "graphic": {
+    "axis_min": 0,
+    "axis_max": 6,
+    "unit": "mg/L",
+    "lab_upper": 5,
+    "lab_upper_operator": "<",
+    "prevention_threshold": 2,
+    "prevention_operator": ">",
+    "sample_position_percent": 53.333333333333336,
+    "lab_boundary_percent": 83.33333333333334,
+    "prevention_boundary_percent": 33.33333333333333,
+    "same_value_both_perspectives": true,
+    "overlap_meaning": "Above the persistent-risk modifier yet inside this example laboratory reference. It is a reason to review context, not a diagnosis or a band of inevitable disease.",
+    "below_threshold_meaning": "Below this particular modifier threshold; not a guarantee of low overall risk or optimal longevity.",
+    "avoid": ["A risk-probability y-axis or invented future-risk curve", "Green universal optimal/safe band below 2", "Disease will occur at 3.2", "hs-CRP itself causes cardiovascular disease", "All laboratories use 5", "A single high result establishes persistent inflammation", "A universal hs-CRP treatment target or automatic drug recommendation"]
+  },
+  "medical_meaning": {
+    "lab": "Within this illustrative assay reference, not proof of optimal health.",
+    "prevention": "Persistently elevated hs-CRP above 2 mg/L is a cardiovascular risk modifier in the 2025 ESC/EAS framework, considered with overall risk and particularly around treatment-decision thresholds.",
+    "future_health": "Higher CRP is associated with later cardiovascular events in prospective evidence. This sample does not predict whether or when one person will develop disease.",
+    "repeat": "Confirm persistence when clinically stable; avoid drawing cardiovascular conclusions during acute illness or active infection and consider injury/other inflammatory causes.",
+    "interval": "No universal repeat interval should be imposed by this landing example. Clinical context determines timing.",
+    "longevity_term": "Prefer prevention threshold, risk-review threshold, or evidence-based thresholds for long-term health. No independently validated universal longevity-optimal interval is being defined here."
+  },
+  "approved_closed_copy_direction": {
+    "en": {
+      "lab_label": "Lab reference",
+      "lab_threshold": "<5 mg/L",
+      "lab_verdict": "Within range.",
+      "prevention_perspective": "Long-term heart health",
+      "prevention_threshold": ">2 mg/L if persistent",
+      "prevention_verdict": "Review in your health context.",
+      "takeaway": "Within range. Still worth a closer look.",
+      "qualifier": "Repeat when well. Lab limits vary. Not a diagnosis."
+    },
+    "es": {
+      "lab_label": "Referencia del laboratorio",
+      "lab_threshold": "<5 mg/L",
+      "lab_verdict": "Dentro del intervalo.",
+      "prevention_perspective": "Salud cardiovascular a largo plazo",
+      "prevention_threshold": ">2 mg/L si persiste",
+      "prevention_verdict": "Valorar con tu contexto de salud.",
+      "takeaway": "Dentro del intervalo. Aun así, merece otra mirada.",
+      "qualifier": "Repetir cuando estés bien. Los límites varían entre laboratorios. No es un diagnóstico."
+    },
+    "copy_note": "These medically approved directions can be shortened by the copy specialist provided persistence, wider context, laboratory variation and the no-diagnosis meaning remain clear. The long-term perspective label must not be rendered as a universal numerical optimum."
+  },
+  "sources": [
+    {
+      "role": "Actual assay reference and clinical interpretation context",
+      "title": "CDC NHANES 2021–2023 hs-CRP laboratory procedure manual, Roche Cobas 8000",
+      "url": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+      "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3.",
+      "short_quote": "Serum, adult: <5.00 mg/L",
+      "interpretation": "A documented Roche adult reference, used here illustratively. The manual also states that increases are nonspecific and require a complete medical history."
+    },
+    {
+      "role": "European risk modifier applicable to Spain",
+      "title": "2025 Focused Update of the 2019 ESC/EAS Guidelines for the management of dyslipidaemias",
+      "url": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+      "doi": "10.1093/eurheartj/ehaf190",
+      "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box.",
+      "short_quote": "Persistently elevated hs-CRP (>2 mg/L)",
+      "interpretation": "A modifier of overall cardiovascular risk, not a universal diagnosis, optimal interval or automatic treatment threshold.",
+      "verification": "Primary article indexed text, official ESC slide excerpt and the co-published primary guideline PDF were checked. Local primary PDF text retained for table verification."
+    },
+    {
+      "role": "Large prospective evidence for association with later events",
+      "title": "C-reactive protein concentration and risk of coronary heart disease, stroke, and mortality: individual participant meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+      "doi": "10.1016/S0140-6736(09)61717-7",
+      "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease from 54 prospective studies.",
+      "interpretation": "Higher CRP was associated with later coronary disease and ischaemic stroke after adjustment. Do not convert the study's relative associations into a personalized risk percentage for this sample."
+    },
+    {
+      "role": "Repeat-when-stable and confounder guidance",
+      "title": "American Heart Association hsCRP Toolkit for Professionals",
+      "url": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+      "location": "PDF page 1 practical advice, and page 2 decision-making note.",
+      "interpretation": "Measure when clinically stable, avoid acute illness/active infection, confirm elevated results and assess other causes. The US ≥2 threshold differs at the exact boundary from the European >2 wording chosen for this graphic."
+    },
+    {
+      "role": "Patient-friendly context",
+      "title": "American Heart Association: An hsCRP test can add clarity to your heart health picture",
+      "url": "https://www.heart.org/en/health-topics/cholesterol/how-to-get-your-cholesterol-tested/high-sensitivity-c-reactive-protein",
+      "interpretation": "Describes hsCRP as an inflammation marker linked with heart-attack/stroke risk, and repeated elevations prompting evaluation of other inflammatory causes and discussion of next steps."
+    },
+    {
+      "role": "Why not claim CRP causality",
+      "title": "Association between C reactive protein and coronary heart disease: Mendelian randomisation analysis",
+      "url": "https://www.bmj.com/content/342/bmj.d548",
+      "doi": "10.1136/bmj.d548",
+      "interpretation": "Genetic evidence does not support circulating CRP itself as a causal determinant of coronary heart disease. It remains useful as a risk marker in clinical context."
+    }
+  ],
+  "alternatives_considered": [
+    {"marker": "LDL cholesterol", "decision": "Not selected for this particular comparison", "reason": "LDL has strong causal atherosclerosis evidence, but its prevention/treatment goals depend on overall cardiovascular risk. A generic normal-vs-longevity-optimal graphic would conflate a lab's reporting cut-off with an individualized target. It is a good later example if risk category and treatment context are supplied explicitly."},
+    {"marker": "HbA1c or glucose", "decision": "Not selected", "reason": "Different diagnostic thresholds may help teach context, but are less directly aligned with the named starter panel; no implication should be made that HbA1c or fasting glucose is included in this kit."}
+  ],
+  "source_quote_policy": "Only short source excerpts are quoted. This is an agent evidence review, not proof that a human CMO has clinically approved the public site."
+}

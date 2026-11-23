@@ -1,0 +1,45 @@
+{
+  "status": "criteria_defined_before_UI_implementation",
+  "scope": "Only #otra-lectura graphic and its explanation; baseline62, candidate63; English and Spanish.",
+  "method": "Independent agent editorial/clinical heuristics and rendered browser tests, not human usability research.",
+  "loop_prompt": "Judge the closed-view candidate before reading optional sources. Explain the one unchanged example result, what the lab reference says, why that does not settle preventive cardiovascular risk, what the additional threshold means and which confirmation/context it needs, and what EVA helps the visitor do. Then test whether the graphic itself teaches the overlap using coherent positions and clear labels. Reject with the smallest actionable revision if any gate fails. Do not invent medical targets, probabilities or user-test results, and do not raise a score simply because another revision exists. Stop only after the final medical spec, copy, rendered graphic and behavior satisfy every gate.",
+  "gates": [
+    {
+      "id": "same_value_and_why",
+      "pass": "A novice-editor can identify one illustrative result and explain that being inside this laboratory reference can coexist with a prevention risk-review threshold. The extra question and EVA's interpretation benefit are explicit in the closed view, not inferred only from optional details."
+    },
+    {
+      "id": "medical_integrity",
+      "pass": "Values, inequalities, units and source scope follow the final CMO packet. Persistent risk-modifier thresholds are not presented as universal optimal longevity bands, diagnosis, inevitable disease, treatment targets or individual risk percentages. Repeat-when-well and wider clinical context remain clearly associated; laboratory variation and no-diagnosis qualification remain available."
+    },
+    {
+      "id": "graphic_teaching",
+      "pass": "The visual encodes the same example against the two reference questions on a coherent scale, including any overlap. Sample position and boundaries are mathematically correct. Labels and structure carry meaning without color alone; overlap does not imply an unhealthy zone. Essential teaching is visible without interaction or motion. New animation must reveal a relationship, not merely decorate static bars."
+    },
+    {
+      "id": "concise_readable_EVA_design",
+      "pass": "Preserves the existing EVA glass, dots, Hanken and Georgia language while making the comparison easier to understand. Added words each teach something; repeated labels/verdicts and text walls are removed. Body remains16px/24px, critical labels>=14px, numerical thresholds remain readable, and no clipped text, page overflow or cramped phone diagram appears. Actual word and height changes versus62 are reported honestly."
+    },
+    {
+      "id": "accessibility_behavior_and_scope",
+      "pass": "Semantic text describes the proof, keyboard and visible focus work, controls meet44px targets, sources and localized science link work, free signup/upload return intent is unchanged, and reduced-motion content is complete. Motion cannot move or change the example value or make meaning disappear. Alex and other accepted sections remain unchanged. No real account, upload, purchase or mutating request."
+    }
+  ],
+  "measurement_policy": "No fixed percentage reduction from62 is required: this request adds explanatory value rather than repeating the preceding distillation task. Report whole-view words, explanatory prose, glass height and full-section height using consistent extraction; explain any increase instead of hiding caption/CTA or redefining the baseline. Prefer a compact closed view on an844px phone viewport, but do not remove clinical meaning merely to meet a pixel target.",
+  "medical_spec_status": "Frozen CMO source packet copied to medical-spec.json. It specifies a distinct illustrative hs-CRP3.2mg/L result, CDCadultassayreference<5mg/L, ESC/EAS2025strict>2mg/Lpersistent risk modifier and a0–6mg/Lgraphic scale. Alex remains unchanged. Final assertions derive values/operators/positions from this spec.",
+  "matrix": [
+    "en1366x900",
+    "es1366x900",
+    "en390x844",
+    "es390x844",
+    "es320x844",
+    "es768x1024",
+    "en390reduced",
+    "es390reduced"
+  ],
+  "limits": [
+    "Viewport emulation, not physical-device performance",
+    "Agent/editorial comprehension test, not human user research",
+    "Only this section; no full landing/entry suite unless an observed failure justifies it"
+  ]
+}

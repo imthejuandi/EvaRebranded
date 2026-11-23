@@ -1,0 +1,21 @@
+{
+  "basis": "Unchanged CMO medical facts; final64B uses direct comparisons, not positions or intervals.",
+  "value": 3.2,
+  "unit": "mg/L",
+  "lab": {
+    "operator": "<",
+    "limit": 5
+  },
+  "review": {
+    "operator": ">",
+    "threshold": 2,
+    "persistence_required": true
+  },
+  "expected_relations": {
+    "below_example_lab_limit": true,
+    "above_conditional_review_trigger": true
+  },
+  "presentation": "Two explicit comparisons with plain-language meanings; no axis/ruler, range bands, overlap wash, desirable interval or universal target.",
+  "action": "Repeat when well; if still raised, review overall heart risk. No fixed repeat interval or treatment target.",
+  "historical_parameters": "0–6 scale and percentage positions are prior presentation choices only; preserved in historical-ruler-contract.json and prior63evidence, not requirements of64B."
+}
