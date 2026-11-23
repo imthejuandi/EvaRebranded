@@ -1,0 +1,55 @@
+{
+  "status": "criteria_defined_before_candidate_review",
+  "scope": "Only #otra-lectura / There’s more to normal; English and Spanish",
+  "method": "Independent agent heuristic and rendered browser checks, not human user research",
+  "loop_prompt": "Act as an independent reviewer. Read the actual visible section before reading optional details. Explain what result is unchanged, why a laboratory reference and cardiovascular-risk threshold can differ, and what should happen before interpreting the risk threshold. Test all gates against the candidate, cite evidence, and reject with the smallest actionable revision if any gate fails. Do not raise a score merely because another revision was made. Stop only when all gates pass and required rendered checks confirm the source.",
+  "gates": [
+    {
+      "id": "novice_clarity",
+      "pass": "A plain-language reading identifies the unchanged2.1mg/L illustrative result, its position inside the example lab reference, and risk review only if repeat testing confirms the prevention threshold."
+    },
+    {
+      "id": "meaningful_distillation",
+      "pass": "At least15% fewer total closed-view words in both languages versus native60 using identical visible-text-node extraction, and at least10% lower phone glass height. Caption/CTA remain counted. Report explanatory-prose counts separately, including any increase. No critical qualification is hidden or removed."
+    },
+    {
+      "id": "visual_hierarchy",
+      "pass": "Headline, one authoritative result/graphic, two concise meanings and a free action form a clear hierarchy. Glass/dots/EVA typography remain. No new generic cards, text wall, clipping or horizontal overflow."
+    },
+    {
+      "id": "clinical_integrity",
+      "pass": "Same measurement2.1; illustrative lab<5; lab variation; prevention>=2onrepeat testing; confirmation adjacent to risk interpretation; context/nodiagnosis qualification; sources accessible. No universal optimal interval, diagnosis or treatment target claim."
+    },
+    {
+      "id": "accessibility_and_behavior",
+      "pass": "Body16px/24px, metadata distinguishable, controls>=44px, visible focus, semantic details accessible with keyboard, correct free signup/upload intent and source/science links; reduced motion complete; exact fixed marker geometry preserved."
+    }
+  ],
+  "rendered_matrix": [
+    "en1366x900",
+    "es1366x900",
+    "en390x844",
+    "es390x844",
+    "es320x844",
+    "es768x1024",
+    "en390reduced",
+    "es390reduced"
+  ],
+  "limits": [
+    "Viewport emulation, not physical-device performance",
+    "No real account creation, health upload, purchase or mutating network requests",
+    "Agent comprehension judgment is not a human usability study"
+  ],
+  "criteria_revision": {
+    "phase": "Before final native61 measurement",
+    "authorization": "Primary agent reviewed and explicitly accepted combined density criterion after independent clinical/novice critique.",
+    "original_target": "At least25% fewer total closed-view words.",
+    "rejected_replacement": "At least25% fewer explanatory-prose words; this would penalize a useful new bridge.",
+    "rationale": "The user asked for less text, clarity and aesthetics, not a particular percentage. Removing semantic duplication and reducing phone glass height is a better combined criterion. The new bridge adds useful meaning; its words remain included in whole-view counts.",
+    "final_targets": {
+      "total_closed_view_word_reduction_each_language": ">=15%",
+      "phone_glass_height_reduction": ">=10%",
+      "explanatory_prose_counts": "Report before/after separately, without a percentage pass requirement."
+    }
+  }
+}

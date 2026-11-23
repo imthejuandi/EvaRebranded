@@ -1,0 +1,313 @@
+{
+  "status": "passed",
+  "published_version": 62,
+  "deployed_ui_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+  "native_deployment": {
+    "version_number": 62,
+    "source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
+    "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-23T21:10:22.660543+00:00",
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000005890822fa22706c2cf6655e1",
+      "content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+      "size_bytes": 171816960,
+      "file_count": 790
+    },
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura",
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-normal-range-v62.tar.gz",
+      "local_gzip_sha256": "54d2d8625a429a2da478c3f58fac36c7e4a9bbef43a929647f1b1aac45c1b4e3",
+      "local_gzip_size_bytes": 163053160,
+      "saved_tar_content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+      "saved_tar_size_bytes": 171816960,
+      "file_count": 790
+    },
+    "behavior": "Simplifies the normal-range chapter into one illustrative 2.1 mg/L readout and two broad labelled rails. The lab reference and repeated-testing cardiovascular-risk threshold retain their context and source access; the one-result/two-questions bridge sits below the headline.",
+    "source_files": [
+      "components/story/RangeProofSection.tsx",
+      "components/story/range-proof-section.css",
+      "lib/site-content/range-proof-copy.ts",
+      "scripts/browser-qa/core-landing.cjs",
+      "scripts/browser-qa/entry-flows.cjs",
+      "docs/SESSION_COORDINATION.json"
+    ],
+    "qa": {
+      "status": "passed_actual_browser",
+      "record": "docs/range-conciseness-qa.json",
+      "evidence_directory": "docs/browser-qa-v62",
+      "fresh_profiles": 8,
+      "baseline_version": 60,
+      "page_errors": []
+    }
+  },
+  "user_direction": "Simplify “There’s more to normal” aesthetically while keeping its meaning understandable, with agents and a repeated independent test/review loop.",
+  "scope": "Only #otra-lectura; opening actions, runner, other landing chapters, business policies and methodology figures remain unchanged.",
+  "visible_copy": {
+    "en": {
+      "heading": [
+        "There’s more",
+        "to “normal.”"
+      ],
+      "markerLabel": "Inflammation signal",
+      "exampleLabel": "Example",
+      "unchangedLabel": "One result. Two questions.",
+      "qualifier": "Lab limits vary. Not a diagnosis.",
+      "primary": "Interpret your labs",
+      "primarySubtitle": "Upload for free",
+      "lab": {
+        "label": "Lab range",
+        "threshold": "<5 mg/L",
+        "interpretation": "Within range."
+      },
+      "prevention": {
+        "label": "Cardiovascular risk",
+        "threshold": "≥2 mg/L on repeat testing",
+        "interpretation": "Review in your health context."
+      }
+    },
+    "es": {
+      "heading": [
+        "«Normal»",
+        "no lo cuenta todo."
+      ],
+      "markerLabel": "Señal de inflamación",
+      "exampleLabel": "Ejemplo",
+      "unchangedLabel": "Un resultado. Dos preguntas.",
+      "qualifier": "Los límites varían entre laboratorios. No es un diagnóstico.",
+      "primary": "Interpreta tus analíticas",
+      "primarySubtitle": "Súbelas gratis",
+      "lab": {
+        "label": "Laboratorio",
+        "threshold": "<5 mg/L",
+        "interpretation": "Dentro del intervalo."
+      },
+      "prevention": {
+        "label": "Riesgo cardiovascular",
+        "threshold": "≥2 mg/L en mediciones repetidas",
+        "interpretation": "Valorar con tu contexto de salud."
+      }
+    }
+  },
+  "implementation": [
+    "One unchanged illustrative 2.1 mg/L result, with a one-result/two-questions bridge below the heading.",
+    "Each labelled interpretation owns its broad rail, threshold and concise verdict. A shared 42% CSS position drives the two visible measurement points; the repeated-testing threshold remains 40% on the same 0–5 scale. The old vertical connector and duplicated labels are removed.",
+    "Hanken labels remain 14px; threshold facts use 16px/22.4px and verdicts use 16px/24px. Existing glass/dots, fonts and 500ms entry behavior are preserved.",
+    "The free action states the interpretation benefit and free upload. Its signup/upload-return route is unchanged; the five-upload allowance remains elsewhere.",
+    "Sources and deeper laboratory/risk/illness context remain available through native keyboard-accessible details. This is not a universal optimal target, a diagnosis or a treatment threshold."
+  ],
+  "skills": {
+    "name": "Impeccable",
+    "skill": "/workspace/eva-design-tools/impeccable/SKILL.md",
+    "playbooks": [
+      "Layout",
+      "Typeset",
+      "Polish",
+      "Craft floor"
+    ],
+    "context": "Scoped existing refinement; EVA’s incumbent visual system remains authoritative.",
+    "mechanical_scan": "Final frozen source returned zero findings.",
+    "availability_note": "The installed package lists Distill but lacks its reference file; the available relevant playbooks were applied."
+  },
+  "roles": [
+    "Bilingual wellness and medical marketing copy editor",
+    "UX/UI design director applying Impeccable",
+    "Independent Impeccable and clinical/context reviewer with explicit reject/revise gates",
+    "Independent simulated novice editor answering five comprehension questions"
+  ],
+  "review_loop": {
+    "record": "docs/browser-qa-v62/review-iterations.json",
+    "rubric": "docs/browser-qa-v62/judge-rubric.json",
+    "method": "Agent editorial simulation plus actual-site browser checks; not a human usability study.",
+    "initial_word_heuristic": 25,
+    "criteria_revision": "Explicitly approved before final native 61 measurement because a useful explanatory bridge adds meaning; those targets stayed unchanged for 62. The final combined target requires at least 15% fewer total closed-view words and at least 10% lower phone glass height, while all clarity, clinical and accessibility gates pass.",
+    "actual_measurements_record": "docs/browser-qa-v62/final-comparison-v62.json"
+  },
+  "verification": {
+    "static": "TypeScript, fresh 113-route build, English 1,205-message audit, 32-variant parity and story-section checks passed. Updated tracked core/entry scripts passed syntax checks; the full suites were not rerun.",
+    "fresh": "Eight actual native 62 profiles passed; five actual native 60 profiles provide comparison evidence. Exact profiles and geometry are recorded in the reports.",
+    "coverage": [
+      "Visible heading, clinical labels and qualifications",
+      "Shared42% measurement points, 40% threshold and 0–5 axis",
+      "Keyboard details, sources, localized science link and free signup/upload intent",
+      "Readable type, control targets, focus, overflow and reduced motion"
+    ],
+    "limits": [
+      "Viewport emulation, not physical-device performance.",
+      "No real accounts, health uploads, payments or network writes.",
+      "No fresh baseline60 tablet/reduced-motion geometry; see comparison flags.",
+      "No full landing/entry rerun or new no-JavaScript visual-parity claim.",
+      "Managed preview startup timed out; final verification used actual native 62."
+    ]
+  },
+  "historical_evidence": "docs/range-interpretation-evidence.json retains the original clinical evidence and prior review; latest_refinement points here.",
+  "intermediate_release": {
+    "version": 61,
+    "receipt": {
+      "version_number": 61,
+      "source_commit": "b89e9045e103c4e8f9ae8b73774b11e656d82aae",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5008b884de948191843f9dbdd82cffea",
+      "deployment_id": "appgdep_6b04aa4ba9d88191a4d6e4146c7a9bb2",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-23T21:04:21.492192+00:00",
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000089cc822fb2776ddd2a1fdf81",
+        "content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
+        "size_bytes": 171816960,
+        "file_count": 790
+      },
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=61#otra-lectura",
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-normal-range-v61.tar.gz",
+        "local_gzip_sha256": "64729127abc6e00a42d7a4f35cff433fbce370c4270f567518393c8232e3e623",
+        "local_gzip_size_bytes": 163056826,
+        "saved_tar_content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
+        "saved_tar_size_bytes": 171816960,
+        "file_count": 790
+      },
+      "behavior": "Intermediate published broad-rail refinement. Eight functional browser profiles passed, but the English 390px glass-height reduction missed the agreed 10% density gate; version 62 addresses this with phone-only spacing.",
+      "qa": {
+        "status": "passed_functional_browser_density_gate_not_met",
+        "record": "docs/browser-qa-v61/README.md",
+        "evidence_directory": "docs/browser-qa-v61",
+        "fresh_profiles": 8,
+        "word_counts": {
+          "en": 52,
+          "es": 57
+        },
+        "limitation": "English 390px glass was only about 3% shorter than native 60; the 10% target was not met."
+      }
+    },
+    "functional_profiles_passed": 8,
+    "combined_density_passed": false,
+    "report": "docs/browser-qa-v61/actual-v61.json",
+    "comparison": "docs/browser-qa-v61/actual-comparison.json",
+    "limitation": "The English 390px glass-height reduction was only about 3%, below the unchanged 10% target. The final 62 phone-spacing refinement preserves all copy, type sizes and clinical meaning."
+  },
+  "density_summary": {
+    "words": {
+      "en": {
+        "baselineWords": 66,
+        "actualWords": 52,
+        "wordReductionPercent": 21.21212121212121,
+        "baselineProseWords": 18,
+        "actualProseWords": 17
+      },
+      "es": {
+        "baselineWords": 71,
+        "actualWords": 57,
+        "wordReductionPercent": 19.718309859154928,
+        "baselineProseWords": 22,
+        "actualProseWords": 22
+      }
+    },
+    "geometry": [
+      {
+        "id": "en-1366",
+        "locale": "en",
+        "width": 1366,
+        "reduced": false,
+        "baselineId": "en-1366",
+        "baselineMode": "normal motion",
+        "exactBaselineWidth": true,
+        "baselineWords": 66,
+        "actualWords": 52,
+        "wordReductionPercent": 21.21212121212121,
+        "baselineProseWords": 18,
+        "actualProseWords": 17,
+        "baselineGlassHeight": 351.984375,
+        "actualGlassHeight": 367.375,
+        "glassHeightReductionPercent": -4.3725307408887115,
+        "baselineSectionHeight": 536.984375,
+        "actualSectionHeight": 552.375,
+        "sectionHeightReductionPercent": -2.866121570110862
+      },
+      {
+        "id": "es-1366",
+        "locale": "es",
+        "width": 1366,
+        "reduced": false,
+        "baselineId": "es-1366",
+        "baselineMode": "normal motion",
+        "exactBaselineWidth": true,
+        "baselineWords": 71,
+        "actualWords": 57,
+        "wordReductionPercent": 19.718309859154928,
+        "baselineProseWords": 22,
+        "actualProseWords": 22,
+        "baselineGlassHeight": 375.984375,
+        "actualGlassHeight": 367.375,
+        "glassHeightReductionPercent": 2.289822549141836,
+        "baselineSectionHeight": 584.984375,
+        "actualSectionHeight": 552.375,
+        "sectionHeightReductionPercent": 5.57440102566842
+      },
+      {
+        "id": "en-390",
+        "locale": "en",
+        "width": 390,
+        "reduced": false,
+        "baselineId": "en-390",
+        "baselineMode": "normal motion",
+        "exactBaselineWidth": true,
+        "baselineWords": 66,
+        "actualWords": 52,
+        "wordReductionPercent": 21.21212121212121,
+        "baselineProseWords": 18,
+        "actualProseWords": 17,
+        "baselineGlassHeight": 368.765625,
+        "actualGlassHeight": 331.5625,
+        "glassHeightReductionPercent": 10.08855556967925,
+        "baselineSectionHeight": 685,
+        "actualSectionHeight": 663.796875,
+        "sectionHeightReductionPercent": 3.0953467153284673
+      },
+      {
+        "id": "es-390",
+        "locale": "es",
+        "width": 390,
+        "reduced": false,
+        "baselineId": "es-390",
+        "baselineMode": "normal motion",
+        "exactBaselineWidth": true,
+        "baselineWords": 71,
+        "actualWords": 57,
+        "wordReductionPercent": 19.718309859154928,
+        "baselineProseWords": 22,
+        "actualProseWords": 22,
+        "baselineGlassHeight": 415.15625,
+        "actualGlassHeight": 331.5625,
+        "glassHeightReductionPercent": 20.135491155438466,
+        "baselineSectionHeight": 755.390625,
+        "actualSectionHeight": 687.796875,
+        "sectionHeightReductionPercent": 8.948184920881166
+      },
+      {
+        "id": "es-320",
+        "locale": "es",
+        "width": 320,
+        "reduced": false,
+        "baselineId": "es-320",
+        "baselineMode": "normal motion",
+        "exactBaselineWidth": true,
+        "baselineWords": 71,
+        "actualWords": 57,
+        "wordReductionPercent": 19.718309859154928,
+        "baselineProseWords": 22,
+        "actualProseWords": 22,
+        "baselineGlassHeight": 432.359375,
+        "actualGlassHeight": 331.5625,
+        "glassHeightReductionPercent": 23.313216002312892,
+        "baselineSectionHeight": 772.59375,
+        "actualSectionHeight": 687.796875,
+        "sectionHeightReductionPercent": 10.975609756097562
+      }
+    ],
+    "qualification": "The English desktop section is about 15px taller than baseline despite clearer hierarchy. This release does not claim every layout is vertically smaller. Full-view words include caption and CTA; prose counts remain separately reported."
+  }
+}

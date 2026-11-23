@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "native_version": 62,
+  "ui_source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+  "fresh_profiles_passed": 8,
+  "fresh_profiles_total": 8,
+  "gates": {
+    "novice_clarity": true,
+    "meaningful_distillation": true,
+    "visual_hierarchy": true,
+    "clinical_integrity": true,
+    "accessibility_and_behavior": true
+  },
+  "words": {
+    "en": {
+      "before": 66,
+      "after": 52,
+      "reduction_percent": 21.21,
+      "explanatory_prose_before": 18,
+      "explanatory_prose_after": 17
+    },
+    "es": {
+      "before": 71,
+      "after": 57,
+      "reduction_percent": 19.72,
+      "explanatory_prose_before": 22,
+      "explanatory_prose_after": 22
+    }
+  },
+  "phone_glass": {
+    "after_px": 331.5625,
+    "reduction_percent": {
+      "en390": 10.09,
+      "es390": 20.14,
+      "es320": 23.31
+    }
+  },
+  "visual_review": "Actual EN1366, EN390 and ES320 captures inspected. The unchanged title visibly paints. Full-width labelled rails remain clear, body stays 16px/24px and phone spacing is comfortable.",
+  "clinical_and_behavior": "Same 2.1 mg/L example, lab <5 mg/L and prevention ≥2 mg/L on repeat testing remain; health context, lab variation, no-diagnosis note and CDC/ACC sources retained. Exact 42% points / 40% threshold, keyboard details/focus, free-upload intent and reduced-motion views pass.",
+  "mechanical_scan": {
+    "findings": 0,
+    "record": "impeccable-detect-v62.json"
+  },
+  "source_verified_against_ui_commit": true,
+  "loop_result": "The initial terse copy and narrow graph were revised. Actual 61 exposed an English-phone density miss; 62 fixes it and passes the unchanged final gates. Initial 25% word target was explicitly revised before final measurement to ≥15% whole-view words plus ≥10% phone-glass reduction; the original 25% target is not claimed.",
+  "evidence": {
+    "native_receipt": "native-receipt-v62.json",
+    "rendered_report": "final-v62.json",
+    "all_before_after_metrics": "final-comparison-v62.json",
+    "source_hashes": "final-source-sha256-v62.json",
+    "rubric": "judge-rubric.json",
+    "iterations": "review-iterations.json",
+    "harness": "range-review.cjs",
+    "comparison_harness": "compare-final.cjs"
+  },
+  "limits": [
+    "Agent editorial/comprehension review, not human user research; viewport emulation, not physical-device performance.",
+    "Whole-view counts include caption and CTA. Prose and full-section heights are reported separately; desktop EN section is 2.9% taller than version 60, so glass and full-section reductions are not interchangeable.",
+    "No full landing/entry suite or no-JavaScript visual-parity rerun; no real accounts, uploads, purchases or mutating network requests."
+  ],
+  "page_errors": [],
+  "network_writes": [],
+  "all_owned_browsers_closed": true
+}

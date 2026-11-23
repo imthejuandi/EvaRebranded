@@ -170,5 +170,11 @@
       ]
     },
     "visual": "Independent customer/quality reviewer inspected actual desktop and phone screenshots. The same-value teaching example, repeat qualifier and proof-to-free-action sequence are publishable; no material density issue."
+  },
+  "latest_refinement": {
+    "version": 62,
+    "record": "docs/range-conciseness-qa.json",
+    "evidence_directory": "docs/browser-qa-v62",
+    "scope": "Copy/layout simplification preserves the worked-example clinical facts and source links. Original review and its geometry remain historical. Current layout uses shared 42% measurement points on two semantic rails, not the former vertical connector."
   }
 }

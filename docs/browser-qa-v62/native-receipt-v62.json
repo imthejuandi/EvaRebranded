@@ -1,0 +1,25 @@
+{
+  "version_number": 62,
+  "source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+  "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
+  "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
+  "status": "succeeded",
+  "url": "https://eva-content-review.jdlagop.chatgpt.site",
+  "native_updated_at": "2026-11-23T21:10:22.660543+00:00",
+  "archive_storage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_000000005890822fa22706c2cf6655e1",
+    "content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+    "size_bytes": 171816960,
+    "file_count": 790
+  },
+  "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura",
+  "archive": {
+    "local_path": "/workspace/eva-publication/eva-normal-range-v62.tar.gz",
+    "local_gzip_sha256": "54d2d8625a429a2da478c3f58fac36c7e4a9bbef43a929647f1b1aac45c1b4e3",
+    "local_gzip_size_bytes": 163053160,
+    "saved_tar_content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+    "saved_tar_size_bytes": 171816960,
+    "file_count": 790
+  }
+}

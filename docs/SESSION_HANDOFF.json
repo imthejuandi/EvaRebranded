@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-23",
-  "handoff_status": "SLIM_SIDE_BY_SIDE_HERO_CTA_VERIFIED_V60",
-  "immediate_instruction": "Version 60 is published and verified. Keep both opening actions side by side in one 44px row. The free action explains lab upload; the kit label states quarterly subscription, with13 markers and the VAT price on one metadata line. Preserve normal price spacing,14px labels and 13px metadata. Do not restore tall cards, split price lines, an external terms row or the hero five-upload count. Preserve all existing commercial policies, statement evidence, runner and 2.5-second entrance. Read docs/hero-cta-qa.json. Production cutover remains on hold.",
+  "handoff_status": "CONCISE_RANGE_PROOF_VERIFIED_V62",
+  "immediate_instruction": "Version 62 is published and verified. Preserve the concise “There’s more to normal” comparison: one 2.1 mg/L example, two broad semantic rails and the one-result/two-questions bridge below the heading. Retain the illustrative lab <5 mg/L reference, lab variation, ≥2 mg/L on repeat testing beside the cardiovascular-risk interpretation, health context, no-diagnosis qualification and source access. Keep approved 44px horizontal opening actions, exact commercial policies, healthy statement, 2.5-second runner and methodology figures. Read docs/range-conciseness-qa.json. Production cutover remains on hold.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -15,7 +15,7 @@
     "static_output": "dist/client",
     "git_origin": "https://git.chatgpt-team.site/23bcfb00-d093-4d4f-a48c-b0d30b476d46/appgprj_6ae2409926cc819180f1453af398551d.git",
     "historical_github": "https://github.com/imthejuandi/EvaRebranded",
-    "github_status": "Canonical consolidated rebrand workspace. UI version 60 source 6a4d1a9d82a59634687a18076349f0f823690afb is synchronized to GitHub and the Site source repository; later QA/docs commits record evidence without changing the native UI.",
+    "github_status": "Canonical consolidated rebrand workspace. UI version 62 source 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac is synchronized to GitHub and the Site source repository; later QA/docs commits record evidence without changing the native UI.",
     "historical_site": "https://eva-system-04.jdlagop.chatgpt.site",
     "historical_provenance_file": "docs/migration-source.json",
     "historical_file_caution": "This file describes the earlier migration. The current hosting manifest and live Site receipts govern deployment identity.",
@@ -36,30 +36,6 @@
   },
   "releases": {
     "previous_verified_ui_release": {
-      "version_number": 59,
-      "source_commit": "1c4b48f48a04f9d0c8a4e47010c3950a64e8d83f",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_4685fd923c3c819184e54757c842b14a",
-      "deployment_id": "appgdep_6b0487eee9b88191a8348d4ae660c158",
-      "status": "succeeded",
-      "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T18:37:45.826158+00:00",
-      "archive_storage": {
-        "archive_format": "tar",
-        "sediment_file_id": "file_000000001860822fa2c0434b259b583a",
-        "content_hash": "sha256:3ba40f8abbe1b247b51e93bc8cc8c83b1189402d001f8bbb72f7eacfc5310782",
-        "size_bytes": 171816960,
-        "file_count": 790
-      },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=59",
-      "behavior": "Keeps the compact opening actions side by side at every breakpoint. Desktop/tablet row 48px; phones 64px with split kit metadata. Superseded by the thinner one-line-metadata version 60.",
-      "qa": {
-        "status": "passed_actual_browser",
-        "evidence_directory": "docs/browser-qa-v59",
-        "fresh_profiles": 4,
-        "page_errors": []
-      }
-    },
-    "latest_verified_ui_release": {
       "version_number": 60,
       "source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
       "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
@@ -99,20 +75,63 @@
         "page_errors": []
       }
     },
-    "latest_verified_ui_release_note": "Native60 serves UI commit 6a4d1a9d82a59634687a18076349f0f823690afb; the later QA/documentation commit does not redeploy the UI.",
+    "latest_verified_ui_release": {
+      "version_number": 62,
+      "source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
+      "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-23T21:10:22.660543+00:00",
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_000000005890822fa22706c2cf6655e1",
+        "content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+        "size_bytes": 171816960,
+        "file_count": 790
+      },
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura",
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-normal-range-v62.tar.gz",
+        "local_gzip_sha256": "54d2d8625a429a2da478c3f58fac36c7e4a9bbef43a929647f1b1aac45c1b4e3",
+        "local_gzip_size_bytes": 163053160,
+        "saved_tar_content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
+        "saved_tar_size_bytes": 171816960,
+        "file_count": 790
+      },
+      "behavior": "Simplifies the normal-range chapter into one illustrative 2.1 mg/L readout and two broad labelled rails. The lab reference and repeated-testing cardiovascular-risk threshold retain their context and source access; the one-result/two-questions bridge sits below the headline.",
+      "source_files": [
+        "components/story/RangeProofSection.tsx",
+        "components/story/range-proof-section.css",
+        "lib/site-content/range-proof-copy.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs",
+        "docs/SESSION_COORDINATION.json"
+      ],
+      "qa": {
+        "status": "passed_actual_browser",
+        "record": "docs/range-conciseness-qa.json",
+        "evidence_directory": "docs/browser-qa-v62",
+        "fresh_profiles": 8,
+        "baseline_version": 60,
+        "page_errors": []
+      }
+    },
+    "latest_verified_ui_release_note": "Native 62 serves UI commit 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac; the later QA/documentation commit does not redeploy the UI.",
     "pending_release": null,
     "documentation_commit_rule": "A later documentation-only commit can make Git HEAD newer than the deployed UI commit. Record both separately. Do not claim that a documentation commit changed the live UI or replace the UI receipt with HEAD automatically.",
     "handoff_documentation_commit": {
-      "relation": "QA/docs followup to version 60 source 6a4d1a9d82a59634687a18076349f0f823690afb",
+      "relation": "QA/docs followup to version 62 source 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
       "ui_redeployment_required": false,
       "files": [
         "AGENTS.md",
         "docs/LAUNCH_HANDOFF.md",
         "docs/SESSION_HANDOFF.json",
         "docs/SESSION_COORDINATION.json",
-        "docs/hero-cta-qa.json",
-        "docs/browser-qa-v59",
-        "docs/browser-qa-v60"
+        "docs/range-conciseness-qa.json",
+        "docs/range-interpretation-evidence.json",
+        "docs/browser-qa-v61",
+        "docs/browser-qa-v62"
       ]
     },
     "earlier_verified_ui_release": {
@@ -982,45 +1001,124 @@
           "fresh_profiles": 4,
           "page_errors": []
         }
+      },
+      {
+        "version_number": 60,
+        "source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
+        "deployment_id": "appgdep_6b0489c5a75881918288332c88363711",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-23T18:45:36.665461+00:00",
+        "archive_storage": {
+          "archive_format": "tar",
+          "sediment_file_id": "file_0000000007b0822fb4e92fa82946994d",
+          "content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
+          "size_bytes": 171816960,
+          "file_count": 790
+        },
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=60",
+        "behavior": "Two slim side-by-side 44px actions. Quarterly subscription is explicit in the kit label; marker count and VAT price share one metadata line. Phone labels and details stay readable at 320px without shrinking the 14px/13px font roles.",
+        "source_files": [
+          "components/story/HeroKitCta.tsx",
+          "app/hero-kit.css",
+          "scripts/browser-qa/core-landing.cjs",
+          "scripts/browser-qa/entry-flows.cjs"
+        ],
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-slim-cta-v60.tar.gz",
+          "local_gzip_sha256": "778b15bbe27c7a5172ad26711550f356e58682b5640f65336957beae25f1f587",
+          "local_gzip_size_bytes": 163053467,
+          "saved_tar_content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
+          "saved_tar_size_bytes": 171816960,
+          "file_count": 790
+        },
+        "qa": {
+          "status": "passed_actual_browser",
+          "record": "docs/hero-cta-qa.json",
+          "evidence_directory": "docs/browser-qa-v60",
+          "fresh_profiles": 8,
+          "actual_button_height_px": 44,
+          "page_errors": []
+        }
+      },
+      {
+        "version_number": 61,
+        "source_commit": "b89e9045e103c4e8f9ae8b73774b11e656d82aae",
+        "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5008b884de948191843f9dbdd82cffea",
+        "deployment_id": "appgdep_6b04aa4ba9d88191a4d6e4146c7a9bb2",
+        "status": "succeeded",
+        "url": "https://eva-content-review.jdlagop.chatgpt.site",
+        "native_updated_at": "2026-11-23T21:04:21.492192+00:00",
+        "archive_storage": {
+          "archive_format": "tar",
+          "sediment_file_id": "file_0000000089cc822fb2776ddd2a1fdf81",
+          "content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
+          "size_bytes": 171816960,
+          "file_count": 790
+        },
+        "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=61#otra-lectura",
+        "archive": {
+          "local_path": "/workspace/eva-publication/eva-normal-range-v61.tar.gz",
+          "local_gzip_sha256": "64729127abc6e00a42d7a4f35cff433fbce370c4270f567518393c8232e3e623",
+          "local_gzip_size_bytes": 163056826,
+          "saved_tar_content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
+          "saved_tar_size_bytes": 171816960,
+          "file_count": 790
+        },
+        "behavior": "Intermediate published broad-rail refinement. Eight functional browser profiles passed, but the English 390px glass-height reduction missed the agreed 10% density gate; version 62 addresses this with phone-only spacing.",
+        "qa": {
+          "status": "passed_functional_browser_density_gate_not_met",
+          "record": "docs/browser-qa-v61/README.md",
+          "evidence_directory": "docs/browser-qa-v61",
+          "fresh_profiles": 8,
+          "word_counts": {
+            "en": 52,
+            "es": 57
+          },
+          "limitation": "English 390px glass was only about 3% shorter than native 60; the 10% target was not met."
+        }
       }
     ],
     "latest_published_ui_release": {
-      "version_number": 60,
-      "source_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
-      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
-      "deployment_id": "appgdep_6b0489c5a75881918288332c88363711",
+      "version_number": 62,
+      "source_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
+      "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
       "status": "succeeded",
       "url": "https://eva-content-review.jdlagop.chatgpt.site",
-      "native_updated_at": "2026-11-23T18:45:36.665461+00:00",
+      "native_updated_at": "2026-11-23T21:10:22.660543+00:00",
       "archive_storage": {
         "archive_format": "tar",
-        "sediment_file_id": "file_0000000007b0822fb4e92fa82946994d",
-        "content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
+        "sediment_file_id": "file_000000005890822fa22706c2cf6655e1",
+        "content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
         "size_bytes": 171816960,
         "file_count": 790
       },
-      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=60",
-      "behavior": "Two slim side-by-side 44px actions. Quarterly subscription is explicit in the kit label; marker count and VAT price share one metadata line. Phone labels and details stay readable at 320px without shrinking the 14px/13px font roles.",
-      "source_files": [
-        "components/story/HeroKitCta.tsx",
-        "app/hero-kit.css",
-        "scripts/browser-qa/core-landing.cjs",
-        "scripts/browser-qa/entry-flows.cjs"
-      ],
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura",
       "archive": {
-        "local_path": "/workspace/eva-publication/eva-slim-cta-v60.tar.gz",
-        "local_gzip_sha256": "778b15bbe27c7a5172ad26711550f356e58682b5640f65336957beae25f1f587",
-        "local_gzip_size_bytes": 163053467,
-        "saved_tar_content_hash": "sha256:8230a9edf7ea1599934b02ee7cd878f848275d69d9bf2f7658f28e9b9f44592f",
+        "local_path": "/workspace/eva-publication/eva-normal-range-v62.tar.gz",
+        "local_gzip_sha256": "54d2d8625a429a2da478c3f58fac36c7e4a9bbef43a929647f1b1aac45c1b4e3",
+        "local_gzip_size_bytes": 163053160,
+        "saved_tar_content_hash": "sha256:7f314739d4b1271d8467ed4d5f33391222e9ea1d6f98142469c08ec518cbf022",
         "saved_tar_size_bytes": 171816960,
         "file_count": 790
       },
+      "behavior": "Simplifies the normal-range chapter into one illustrative 2.1 mg/L readout and two broad labelled rails. The lab reference and repeated-testing cardiovascular-risk threshold retain their context and source access; the one-result/two-questions bridge sits below the headline.",
+      "source_files": [
+        "components/story/RangeProofSection.tsx",
+        "components/story/range-proof-section.css",
+        "lib/site-content/range-proof-copy.ts",
+        "scripts/browser-qa/core-landing.cjs",
+        "scripts/browser-qa/entry-flows.cjs",
+        "docs/SESSION_COORDINATION.json"
+      ],
       "qa": {
         "status": "passed_actual_browser",
-        "record": "docs/hero-cta-qa.json",
-        "evidence_directory": "docs/browser-qa-v60",
+        "record": "docs/range-conciseness-qa.json",
+        "evidence_directory": "docs/browser-qa-v62",
         "fresh_profiles": 8,
-        "actual_button_height_px": 44,
+        "baseline_version": 60,
         "page_errors": []
       }
     },
@@ -1031,7 +1129,44 @@
         "source_commit": "695971ff04c9ec40618df041b8e36a25baf44b92",
         "deployment_id": null
       }
-    ]
+    ],
+    "previous_published_ui_release": {
+      "version_number": 61,
+      "source_commit": "b89e9045e103c4e8f9ae8b73774b11e656d82aae",
+      "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5008b884de948191843f9dbdd82cffea",
+      "deployment_id": "appgdep_6b04aa4ba9d88191a4d6e4146c7a9bb2",
+      "status": "succeeded",
+      "url": "https://eva-content-review.jdlagop.chatgpt.site",
+      "native_updated_at": "2026-11-23T21:04:21.492192+00:00",
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000089cc822fb2776ddd2a1fdf81",
+        "content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
+        "size_bytes": 171816960,
+        "file_count": 790
+      },
+      "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=61#otra-lectura",
+      "archive": {
+        "local_path": "/workspace/eva-publication/eva-normal-range-v61.tar.gz",
+        "local_gzip_sha256": "64729127abc6e00a42d7a4f35cff433fbce370c4270f567518393c8232e3e623",
+        "local_gzip_size_bytes": 163056826,
+        "saved_tar_content_hash": "sha256:71ab8d51006330dbc2fbcd591f30ce9c1ce7f21c3ccba6afced16d82d4ae91f5",
+        "saved_tar_size_bytes": 171816960,
+        "file_count": 790
+      },
+      "behavior": "Intermediate published broad-rail refinement. Eight functional browser profiles passed, but the English 390px glass-height reduction missed the agreed 10% density gate; version 62 addresses this with phone-only spacing.",
+      "qa": {
+        "status": "passed_functional_browser_density_gate_not_met",
+        "record": "docs/browser-qa-v61/README.md",
+        "evidence_directory": "docs/browser-qa-v61",
+        "fresh_profiles": 8,
+        "word_counts": {
+          "en": 52,
+          "es": 57
+        },
+        "limitation": "English 390px glass was only about 3% shorter than native 60; the 10% target was not met."
+      }
+    }
   },
   "standing_user_direction": {
     "objective": "Refine the actual current landing, one section at a time, so its message is useful, compelling and logically sequenced for both audiences.",
@@ -1253,7 +1388,8 @@
       "style": "Semantic strong elements, installed Hanken 600, inherited colour, natural wrapping; regular body remains 400 at 16px/24px.",
       "wording": "Preserve exact lead wording and individualized frequency qualification.",
       "record": "docs/trend-emphasis-qa.json"
-    }
+    },
+    "range_proof_v62": "One established glass instrument with a fixed illustrative 2.1 mg/L readout. The bridge sits below the heading on paper. Each labelled reading has its own full-width rail, threshold and short verdict; a shared 42% measurement position is used in both rails, with the risk threshold at 40% and one shared 0–5 axis. Preserve 14px labels, 16px facts/verdicts, native source details and the existing 500ms entry. Do not restore duplicated label/readout blocks or the rejected narrow graph."
   },
   "approved_clinical_and_example_boundaries": {
     "methodology_validation_review": "The owner requested that the existing biological-age validation and Spanish recalibration figures on both methodology pages stay as published while model training finishes. The clinical team will update the figures after training. The differences between the summary and full methodology are still open.",
@@ -1278,7 +1414,8 @@
       },
       "context_source": "https://www.heart.org/en/health-topics/cholesterol/how-to-get-your-cholesterol-tested/high-sensitivity-c-reactive-protein",
       "reference_interval_source": "https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/",
-      "preserve": "Keep repeat confirmation adjacent to the prevention interpretation, source links visible, and the single-reading limitation intact. Do not restore the former blanket 0–1 EVA-optimal interpretation in this proof chapter."
+      "preserve": "Keep repeat confirmation adjacent to the prevention interpretation, source links visible, and the single-reading limitation intact. Do not restore the former blanket 0–1 EVA-optimal interpretation in this proof chapter.",
+      "latest_refinement": "docs/range-conciseness-qa.json"
     },
     "history": "A change in results does not by itself establish its cause, persistence or the right treatment. Compare compatible units, tests and context.",
     "trend_mode_interpretations": {
@@ -1359,8 +1496,8 @@
     {
       "component": "RangeProofSection",
       "id": "otra-lectura",
-      "purpose": "Why interpreting an existing result adds a prevention perspective",
-      "browser_qa": "Version 38 full-page flow checks plus version 40/41content/interaction and version 42 scoped typography/layout/control checks. See docs/impeccable-typography-qa.json."
+      "purpose": "Concise same-result comparison of an illustrative lab interval and qualified cardiovascular-risk threshold",
+      "browser_qa": "Version 62 focused native browser verification and iterative review in docs/range-conciseness-qa.json; prior evidence remains historical."
     },
     {
       "component": "KitExplanationPreview",
@@ -1445,7 +1582,7 @@
   ],
   "next_session_start": [
     "Read AGENTS.md, this handoff and docs/SESSION_COORDINATION.json; inspect current source/native Site state and preserve dirty work.",
-    "Current baseline is version 60, UI commit 6a4d1a9d82a59634687a18076349f0f823690afb. Read docs/hero-cta-qa.json for slim horizontal action dimensions and docs/problem-opening-qa.json for unchanged statement evidence.",
+    "Current baseline is version 62, UI commit 5675df1aaa4332b86deb34eb509b3ddd9fcc84ac. Read docs/range-conciseness-qa.json for the simplified range proof and exact loop/browser evidence. Keep version 60’s 44px opening actions and all accepted statement/business facts.",
     "All planned landing content and final actual browser QA are complete. Follow specific user feedback; do not restart completed chapters or treat older static-only QA reports as current open work.",
     "For new changes, use relevant checks from scripts/browser-qa/README.md. Installed Playwright/system Chromium works even when interactive CUA fails. Verify the actual current native Site version; the review query does not pin a release.",
     "Keep the version 36 order, version 37 free-first closing, version 38 non-overlay review shortcut and corrected first-kit entry copy. Preserve all clinical/commercial qualifications, exact founder quote, accepted media/motion and meaningful numbers.",
@@ -1552,7 +1689,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Version 60 is published. Keep both opening buttons side by side in a 44px row, with explicit quarterly-subscription label and 13 markers plus VAT price on one metadata line. Preserve accepted statement, offer/policies,2.5-second runner and methodology figures. Routine relevant edits/checks/commits/pushes/review-site publication remain authorized with three specialist roles. Production cutover remains on hold.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md and docs/SESSION_HANDOFF.json. Version 62 is published. Preserve the concise normal-range proof and its explicit repeat/context/no-diagnosis qualifications, approved 44px horizontal hero actions, accepted statement, business policies, 2.5-second runner and methodology figures. Routine relevant edits/checks/commits/pushes/review-site publication remain authorized with three specialist roles. Production cutover remains on hold.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -1563,10 +1700,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-23",
-    "user_direction": "Make both side-by-side buttons thinner; keep 13 markers and 99 + VAT on the same line.",
-    "synchronized_main_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
-    "live_version": 60,
-    "status": "Slim horizontal opening actions published and verified in 8 fresh native rendered profiles."
+    "user_direction": "Simplify “There’s more to normal” aesthetically while keeping its meaning understandable, with agents and a repeated independent test/review loop.",
+    "synchronized_main_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+    "live_version": 62,
+    "status": "Concise range-proof chapter published and independently verified across eight fresh native profiles."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -1575,9 +1712,9 @@
     "qa_record": "docs/final-browser-qa.json",
     "remaining_review_items": [],
     "latest_scoped_refinement": {
-      "version": 54,
-      "record": "docs/problem-opening-qa.json",
-      "status": "published and actual-browser verified with precise 53/54 scope"
+      "version": 62,
+      "record": "docs/range-conciseness-qa.json",
+      "status": "published and actual-browser verified; prior scoped refinements remain preserved"
     }
   },
   "resolved_browser_verification": {
@@ -1600,7 +1737,7 @@
     "verification_record": "docs/github-workspace-verification.json",
     "checks": "Fresh tracked checkout:113-route build, TypeScript, English audit and Method contracts passed. Approved runtime/assets identical to the version 39 evidence baseline."
   },
-  "github_current_ui_source": "6a4d1a9d82a59634687a18076349f0f823690afb",
+  "github_current_ui_source": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
   "statement_opening_selection": {
     "copy_owner": "Primary agent, advised by a bilingual health and wellness marketing copy specialist",
     "design_owner": "User-requested gpt-6.2-astra agent applying Impeccable within EVA’s existing Hanken, Georgia italic, ink, warm-paper and amber/dot language",
@@ -1675,5 +1812,57 @@
     },
     "qa": "docs/hero-cta-qa.json",
     "user_instruction": "Make both side-by-side buttons thinner; keep 13 markers and 99 + VAT on the same line."
+  },
+  "range_proof_refinement": {
+    "version": 62,
+    "copy": {
+      "en": {
+        "heading": [
+          "There’s more",
+          "to “normal.”"
+        ],
+        "markerLabel": "Inflammation signal",
+        "exampleLabel": "Example",
+        "unchangedLabel": "One result. Two questions.",
+        "qualifier": "Lab limits vary. Not a diagnosis.",
+        "primary": "Interpret your labs",
+        "primarySubtitle": "Upload for free",
+        "lab": {
+          "label": "Lab range",
+          "threshold": "<5 mg/L",
+          "interpretation": "Within range."
+        },
+        "prevention": {
+          "label": "Cardiovascular risk",
+          "threshold": "≥2 mg/L on repeat testing",
+          "interpretation": "Review in your health context."
+        }
+      },
+      "es": {
+        "heading": [
+          "«Normal»",
+          "no lo cuenta todo."
+        ],
+        "markerLabel": "Señal de inflamación",
+        "exampleLabel": "Ejemplo",
+        "unchangedLabel": "Un resultado. Dos preguntas.",
+        "qualifier": "Los límites varían entre laboratorios. No es un diagnóstico.",
+        "primary": "Interpreta tus analíticas",
+        "primarySubtitle": "Súbelas gratis",
+        "lab": {
+          "label": "Laboratorio",
+          "threshold": "<5 mg/L",
+          "interpretation": "Dentro del intervalo."
+        },
+        "prevention": {
+          "label": "Riesgo cardiovascular",
+          "threshold": "≥2 mg/L en mediciones repetidas",
+          "interpretation": "Valorar con tu contexto de salud."
+        }
+      }
+    },
+    "qa": "docs/range-conciseness-qa.json",
+    "review_loop": "docs/browser-qa-v62/review-iterations.json",
+    "user_instruction": "Simplify “There’s more to normal” aesthetically while keeping its meaning understandable, with agents and a repeated independent test/review loop."
   }
 }

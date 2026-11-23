@@ -19,12 +19,12 @@
   "baseline": {
     "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
     "site": "https://eva-content-review.jdlagop.chatgpt.site",
-    "live_version": 60,
-    "deployed_ui_commit": "6a4d1a9d82a59634687a18076349f0f823690afb",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_43a673dfd708819184ec5518bc8131a2",
-    "deployment_id": "appgdep_6b0489c5a75881918288332c88363711",
+    "live_version": 62,
+    "deployed_ui_commit": "5675df1aaa4332b86deb34eb509b3ddd9fcc84ac",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_8d5cc255cc148191ab4d81ea1fa8c196",
+    "deployment_id": "appgdep_6b04abb0d0988191a2e2f235cd211219",
     "main_head_before_coordination": "9f2f16ac5ec134ccb6ea3773c7834ac01775d924",
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=60"
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=62#otra-lectura"
   },
   "message_to_other_session": "Version 33 and the coordination note have been pulled into continuation chat 6af4821e-7ab0-8191-a284-1767aa9110e7 at the user’s request for a full switch. Both the version 32 MethodJourney and version 33 Trendlines refinements are preserved. This is a shared-repository acknowledgment; it is not proof the prior chat has read it.",
   "reconciled_work": [
@@ -169,15 +169,11 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Refining the range-proof chapter after the owner requested less text and clearer visual hierarchy; current live baseline remains60.",
+      "status": "Version 62 concise range-proof chapter published and independently verified.",
       "next_section": null,
-      "pending_verification": "Draft/review loop, bilingual layout and clinical-context gates, then relevant checks and native review-site QA.",
+      "pending_verification": null,
       "section": "#otra-lectura — There’s more to normal",
-      "files": [
-        "lib/site-content/range-proof-copy.ts",
-        "components/story/RangeProofSection.tsx",
-        "components/story/range-proof-section.css"
-      ]
+      "files": []
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
   },
@@ -222,10 +218,10 @@
     ],
     "mechanical_scan": "Completed once after visual refinement, scope type,layout over11 changed UI files; exit0 and zero findings.",
     "latest_scoped_pass": {
-      "version": 54,
-      "playbook": "Astra editorial concept plus independent Typeset/Layout review within existing EVA world",
-      "scan": "Final source detector returned zero findings; the ten-profile version 53 matrix and four-profile final 54 subset passed.",
-      "record": "docs/problem-opening-qa.json"
+      "version": 62,
+      "playbook": "Layout, Typeset and Polish with independent prompt/review loop",
+      "scan": "Final frozen-source detector returned zero findings; eight fresh native 62 profiles passed.",
+      "record": "docs/range-conciseness-qa.json"
     }
   }
 }
