@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'58';
+const VERSION=process.env.EVA_REVIEW_VERSION||'59';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
@@ -71,7 +71,7 @@ async function home(page,locale){
  const kitAction=page.locator('.hero-kit-secondary');
  const kitDescription=await text(kitAction);
  assert.equal(await text(page.locator('.hero-kit-cta .hero-action-label')),locale==='en'?'Start for free':'Empieza gratis');
- assert.equal(await text(kitAction.locator('.hero-action-label')),locale==='en'?'Subscribe to the kit':'Suscribirme al kit');
+ assert.equal(await text(kitAction.locator('.hero-action-label')),locale==='en'?'Subscribe to kit':'Suscribirme al kit');
  const freeDescription=await text(page.locator('.hero-kit-cta'));
  assert.match(freeDescription,locale==='en'?/Upload previous labs/:/Sube tus analíticas/);
  assert.equal(await page.locator('.hero-start-terms').count(),0,'No separate hero terms line');

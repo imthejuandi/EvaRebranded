@@ -14,7 +14,7 @@ export function heroLayout(width:number,height:number){
   // Preserve the runner's existing composition; only the natural headline shrinks.
   introSize:introSize*.9,introTop:introTop-(mobile?12:24),introHeight:introHeight*.9,introWidth:introSize*4.6*.9,
   saludWidth,saludHeight,saludTop,
-  supportTop:height-(width>700&&width<=800?244:236),
+  supportTop:height-236,
   runnerHeight,runnerWidth:mobile?Math.min(width*.9,runnerHeight*1450/1800):width*.31,
   runnerTop:(height-runnerHeight)/2,
  };

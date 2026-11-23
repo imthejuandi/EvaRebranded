@@ -9,6 +9,7 @@ export function HeroKitCta() {
     const kit = starterSubscription[__site.locale];
     const uploadLabel = __site.locale === 'es' ? 'Sube tus analíticas' : 'Upload previous labs';
     const quarterLabel = __site.locale === 'es' ? 'trimestre' : 'quarter';
+    const kitLabel = __site.locale === 'en' ? 'Subscribe to kit' : kit.kitAction;
     const scopeLabel = kit.scope.replace('biomarcadores', 'marcadores').replace('biomarkers', 'markers');
     const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
     return <div className="hero-start" role="group" aria-label={__site.t("Elige cómo empezar con EVA")}>
@@ -17,8 +18,8 @@ export function HeroKitCta() {
         <span className="hero-action-detail">{uploadLabel}</span>
       </a>
       <a className="hero-kit-secondary" href={__site.href(businessLinks.signup + '?plan=quarterly')}>
-        <span className="hero-action-label">{kit.kitAction}</span>{' '}
-        <span className="hero-action-detail hero-kit-detail">{scopeLabel} · {kit.price} / {quarterLabel}</span>
+        <span className="hero-action-label">{kitLabel}</span>{' '}
+        <span className="hero-action-detail hero-kit-detail"><span className="hero-kit-scope">{scopeLabel}</span><span className="hero-kit-separator"> · </span><span className="hero-kit-price">{kit.price} / {quarterLabel}</span></span>
       </a>
     </div>;
 }

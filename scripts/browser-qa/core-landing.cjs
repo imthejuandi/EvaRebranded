@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
-const version=process.env.EVA_REVIEW_VERSION||'58',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
+const version=process.env.EVA_REVIEW_VERSION||'59',base=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site',out='/workspace/eva-in-place-qa';
 const cases=[{locale:'en',width:1440,height:900},{locale:'es',width:375,height:812}];
 const report={version:Number(version),scope:'Actual hero, Tasso, kit reveal, range proof, explanation preference, signal and trend',cases:[],pageErrors:[],viewportEmulation:true,physicalDevice:false};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -15,7 +15,7 @@ await test('opening',page,result,async()=>{
  const chapterFree=chapter.locator('[data-statement-free]');
  await target(heroFree);await target(heroKit);
  assert.equal((await heroFree.locator('.hero-action-label').innerText()).replace(/\s+/g,' ').trim(),c.locale==='en'?'Start for free':'Empieza gratis');
- assert.equal((await heroKit.locator('.hero-action-label').innerText()).replace(/\s+/g,' ').trim(),c.locale==='en'?'Subscribe to the kit':'Suscribirme al kit');
+ assert.equal((await heroKit.locator('.hero-action-label').innerText()).replace(/\s+/g,' ').trim(),c.locale==='en'?'Subscribe to kit':'Suscribirme al kit');
  for(const action of [heroFree,heroKit]){
   assert((await action.locator('.hero-action-label').innerText()).trim().split(/\s+/).length<=4,'Hero action has a short label');
   assert(await action.locator('.hero-action-detail').count()>0,'Hero action contains its supporting detail');
