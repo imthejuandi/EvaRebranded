@@ -1,0 +1,42 @@
+{
+  "saved": {
+    "id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_949576c4d6bc81919547b3f04a1ac5c4",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "version_number": 69,
+    "source": {
+      "commit_sha": "e293ce01d47bd31e5ab24cefe4d75557952b48d8"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000026c88243a8cc4cf5e6401436",
+      "content_hash": "sha256:0fcbe68e155c88183025ef9a4dc432c1ea81d20768303acefba0707c50f0d033",
+      "size_bytes": 171929600,
+      "file_count": 790
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployed": {
+    "id": "appgdep_6b05ba1a22a0819189f3e158f0435385",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "title": "EVA Content Review",
+    "version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_949576c4d6bc81919547b3f04a1ac5c4",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae2409926cc819180f1453af398551d",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-24T16:24:11.859274+00:00"
+  },
+  "uiCommit": "e293ce01d47bd31e5ab24cefe4d75557952b48d8",
+  "audience": "public",
+  "archive": {
+    "path": "/workspace/eva-publication/eva-slim-levels-v69.tar.gz",
+    "gzipSha256": "263a80dddd42371771f1c644ae01931d2232bb984e6ff42223f7d3c1b93205eb",
+    "gzipSizeBytes": 163063836
+  },
+  "reviewUrl": "https://eva-content-review.jdlagop.chatgpt.site/en?review=69#otra-lectura"
+}

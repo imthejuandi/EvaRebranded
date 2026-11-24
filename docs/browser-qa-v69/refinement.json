@@ -1,0 +1,41 @@
+{
+  "owner_request": "Make them slimmer and more aesthetic, use savee for inspiration",
+  "design_reference": "Fresh public SAVEE still previews: Fey microcharts, Aurora editorial grouping, MWRC analog matrix; additional public previews in UX report. No source artwork used in product or archived here.",
+  "roles": {
+    "copy": "gpt-6.1-sol",
+    "UX_design": "gpt-6-astra",
+    "independent_Impeccable": "gpt-6.1-terra"
+  },
+  "implementation": {
+    "dot_rows": [
+      4,
+      2
+    ],
+    "plot_height": [
+      48,
+      28
+    ],
+    "ring_diameter": [
+      20,
+      14
+    ],
+    "core_diameter": [
+      6,
+      4
+    ],
+    "native_glass_height_delta": -40,
+    "font_sizes_unchanged": true,
+    "clinical_copy_unchanged": true,
+    "numeric_scale_unchanged": true,
+    "dashboard_source_unchanged": true
+  },
+  "review_sequence": [
+    "Public still-reference inspection and incumbent critique",
+    "Copy preserved; UX and independent Impeccable select slim dimensions",
+    "Actual candidate EN/ES desktop/mobile review",
+    "TypeScript/build/English/parity/narrative checks and zero detector findings",
+    "Source/archive-bound native 69 publication",
+    "Eight native profiles, four text/graphic contrast profiles, no-JavaScript and actual-image final reviews"
+  ],
+  "limits": "Agent visual/editorial review is not human usability research, clinician approval, physical-screen validation or owner acceptance."
+}

@@ -1,0 +1,117 @@
+{
+  "baseline": "Reused verified native68 captures, not a fresh68 recapture. Current69 measurements are fresh native.",
+  "profiles": [
+    {
+      "profile": "en-1366",
+      "previous_glass_height": 505,
+      "current_glass_height": 465,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    },
+    {
+      "profile": "es-1366",
+      "previous_glass_height": 529,
+      "current_glass_height": 489,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    },
+    {
+      "profile": "en-390",
+      "previous_glass_height": 507,
+      "current_glass_height": 467,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    },
+    {
+      "profile": "es-390",
+      "previous_glass_height": 551,
+      "current_glass_height": 511,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    },
+    {
+      "profile": "es-320",
+      "previous_glass_height": 575,
+      "current_glass_height": 535,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    },
+    {
+      "profile": "es-768",
+      "previous_glass_height": 527,
+      "current_glass_height": 487,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    },
+    {
+      "profile": "en-390-calm",
+      "previous_glass_height": 507,
+      "current_glass_height": 467,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    },
+    {
+      "profile": "es-390-calm",
+      "previous_glass_height": 551,
+      "current_glass_height": 511,
+      "height_change": -40,
+      "field_height": [
+        48,
+        28
+      ],
+      "ring_diameter": [
+        20,
+        14
+      ]
+    }
+  ]
+}

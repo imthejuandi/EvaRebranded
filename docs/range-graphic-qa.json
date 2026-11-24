@@ -1,32 +1,32 @@
 {
-  "status": "passed_native 68_dashboard_style_owner_review_pending",
-  "published_version": 68,
-  "deployed_ui_commit": "0bd8f4b975e5a165ca2d6485d3e7c88e4e06e162",
+  "status": "passed_native 69_slim_levels_owner_review_pending",
+  "published_version": 69,
+  "deployed_ui_commit": "e293ce01d47bd31e5ab24cefe4d75557952b48d8",
   "native_deployment": {
-    "version_number": 68,
-    "source_commit": "0bd8f4b975e5a165ca2d6485d3e7c88e4e06e162",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e5c7f652e38c819180e804d272434545",
-    "deployment_id": "appgdep_6b05b12a74a881918df981305ce176d1",
+    "version_number": 69,
+    "source_commit": "e293ce01d47bd31e5ab24cefe4d75557952b48d8",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_949576c4d6bc81919547b3f04a1ac5c4",
+    "deployment_id": "appgdep_6b05ba1a22a0819189f3e158f0435385",
     "status": "succeeded",
     "url": "https://eva-content-review.jdlagop.chatgpt.site",
-    "native_updated_at": "2026-11-24T15:46:06.622944+00:00",
+    "native_updated_at": "2026-11-24T16:24:11.859274+00:00",
     "archive_storage": {
       "archive_format": "tar",
-      "sediment_file_id": "file_00000000f04081f4a372403baa8760ce",
-      "content_hash": "sha256:df9ea44c69a40d9562b417b23e6c073897890ab5a17a8f8c36025dfb6a7b8540",
-      "size_bytes": 172021760,
+      "sediment_file_id": "file_0000000026c88243a8cc4cf5e6401436",
+      "content_hash": "sha256:0fcbe68e155c88183025ef9a4dc432c1ea81d20768303acefba0707c50f0d033",
+      "size_bytes": 171929600,
       "file_count": 790
     },
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=68#otra-lectura",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=69#otra-lectura",
     "archive": {
-      "local_path": "/workspace/eva-publication/eva-dashboard-levels-v68.tar.gz",
-      "local_gzip_sha256": "e0e7b05cb20c275b19d84a4fb835aee58050572ed84f1e697723d9bfb30428f6",
-      "local_gzip_size_bytes": 163070359,
-      "saved_tar_content_hash": "sha256:df9ea44c69a40d9562b417b23e6c073897890ab5a17a8f8c36025dfb6a7b8540",
-      "saved_tar_size_bytes": 172021760,
+      "local_path": "/workspace/eva-publication/eva-slim-levels-v69.tar.gz",
+      "local_gzip_sha256": "263a80dddd42371771f1c644ae01931d2232bb984e6ff42223f7d3c1b93205eb",
+      "local_gzip_size_bytes": 163063836,
+      "saved_tar_content_hash": "sha256:0fcbe68e155c88183025ef9a4dc432c1ea81d20768303acefba0707c50f0d033",
+      "saved_tar_size_bytes": 171929600,
       "file_count": 790
     },
-    "behavior": "Replaces solid range blocks with the dashboard EvidenceRange visual family:55 × 4 dotted fields, brighter/larger interval dots, fine boundaries and ring/core sample markers. Both rows use one 0–5 display scale. Lab<5 ends at 100%, lower relative-risk category <1 ends at 20%, the unchanged independent 3.2 result sits at 64% on both. Clinical labels, sources, glass, actions and actual dashboard data are preserved.",
+    "behavior": "Slims the dashboard-derived range graphics from four dot rows to two,48px plots to 28px and 20px rings to 14px with 4px cores. Public SAVEE still references informed proportion and restraint. Clinical copy, two actual intervals, common 0–5 scale,64% sample position, typography and glass remain. Each native glass panel is 40px shorter.",
     "source_files": [
       "components/story/RangeProofSection.tsx",
       "components/story/range-proof-section.css",
@@ -37,18 +37,18 @@
     "qa": {
       "status": "passed_actual_native_and_independent_medical_copy_design_image_reviews",
       "record": "docs/range-graphic-qa.json",
-      "evidence_directory": "docs/browser-qa-v68",
+      "evidence_directory": "docs/browser-qa-v69",
       "fresh_profiles": 8,
       "painted_contrast_profiles": 4,
-      "minimum_painted_text_contrast": 4.81,
+      "minimum_painted_text_contrast": 4.78,
       "owner_acceptance": "Not established by agent checks.",
       "page_errors": []
     }
   },
-  "user_direction": "I like the directions but use the levels we use inside the dashboard so it looks better",
-  "master_prompt": "docs/range-dashboard-brief.md",
+  "user_direction": "Make them slimmer and more aesthetic, use savee for inspiration",
+  "master_prompt": "docs/range-slim-brief.md",
   "worked_example": {
-    "status": "current_from_version 68",
+    "status": "current_from_version 69",
     "biomarker": "hs-CRP",
     "value": 3.2,
     "unit": "mg/L",
@@ -77,11 +77,11 @@
       "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
     },
     "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
-    "review": "Medical source and actual-image review by an agent, not human clinician approval.",
+    "review": "Clinical facts and copy are unchanged from67–68. Current69 renderer proportions and exact numeric geometry were independently verified; no new medical or human approval is claimed.",
     "record": "docs/range-graphic-qa.json",
     "source_packet": "docs/browser-qa-v68/medical-candidate.md",
     "representation": {
-      "kind": "aligned_dashboard_dot_levels",
+      "kind": "aligned_slim_dashboard_dot_levels",
       "domain": {
         "min": 0,
         "max": 5,
@@ -112,14 +112,19 @@
       "universal_optimal_target": false,
       "dot_field": {
         "columns": 55,
-        "rows": 4,
+        "rows": 2,
         "larger_brighter_inside": true,
-        "lab_inside_dots": 216,
-        "lower_inside_dots": 44,
+        "lab_inside_dots": 108,
+        "lower_inside_dots": 22,
         "strict_upper_membership": true,
         "visual_source": "components/pages/dashboard/ExecutiveReading.tsx:EvidenceRange",
         "source_data": "lib/preview/fixtures.ts hsCRP domain[0,5]",
-        "dashboard_source_or_data_changed": false
+        "dashboard_source_or_data_changed": false,
+        "total_dots_per_field": 110,
+        "plot_height_px": 28,
+        "ring_diameter_px": 14,
+        "core_diameter_px": 4,
+        "refinement": "Slim dashboard-derived ribbons informed by inspected public SAVEE still references."
       }
     },
     "lowerRelativeRiskCategory": {
@@ -131,7 +136,7 @@
       "location": "PDF page2: hsCRP ranges, relative CVD risk categories. Lower <1, average 1–3, higher >3; distinct from overall PREVENT-ASCVD risk."
     }
   },
-  "implementation": "Replaces solid range blocks with the dashboard EvidenceRange visual family:55 × 4 dotted fields, brighter/larger interval dots, fine boundaries and ring/core sample markers. Both rows use one 0–5 display scale. Lab<5 ends at 100%, lower relative-risk category <1 ends at 20%, the unchanged independent 3.2 result sits at 64% on both. Clinical labels, sources, glass, actions and actual dashboard data are preserved.",
+  "implementation": "Slims the dashboard-derived range graphics from four dot rows to two,48px plots to 28px and 20px rings to 14px with 4px cores. Public SAVEE still references informed proportion and restraint. Clinical copy, two actual intervals, common 0–5 scale,64% sample position, typography and glass remain. Each native glass panel is 40px shorter.",
   "sources": {
     "lab": "CDC documented adult assay reference",
     "lower_relative_risk": "Current official AHA professional toolkit, PDF page 2",
@@ -142,12 +147,12 @@
     "docs/browser-qa-v64/owner-feedback-v63.json",
     "docs/browser-qa-v67/owner-feedback-v66.json"
   ],
-  "review_loop": "docs/browser-qa-v68/dashboard-reuse.json",
+  "review_loop": "docs/browser-qa-v69/refinement.json",
   "independent_reviews": {
-    "copy": "docs/browser-qa-v68/copy.md",
-    "UX_design": "docs/browser-qa-v68/ux-native.md",
-    "Impeccable": "docs/browser-qa-v68/design-native.md",
-    "medical": "docs/browser-qa-v68/medical-candidate.md"
+    "copy": "docs/browser-qa-v69/copy.md",
+    "UX_and_SAVEE": "docs/browser-qa-v69/ux-native.md",
+    "Impeccable": "docs/browser-qa-v69/impeccable-native.md",
+    "unchanged_clinical_basis": "docs/browser-qa-v68/medical-candidate.md"
   },
   "verification": {
     "static": [
@@ -162,33 +167,34 @@
     "native": {
       "passed": true,
       "profiles": 8,
-      "report": "docs/browser-qa-v68/native-qa.json",
+      "report": "docs/browser-qa-v69/native-qa.json",
       "network_writes": [],
       "page_errors": [],
       "all_owned_browsers_closed": true
     },
-    "numeric_geometry": "One shared0–5 domain. Exact boundaries 1=20%, 5=100%; both ring centres 3.2=64%. Each field has 55 × 4 dots. Strict bright membership yields 216 lab and 44 lower-category dots. Actual dashboard data/source remain unchanged.",
+    "numeric_geometry": "Shared0–5 scale and exact boundaries20%/100%, aligned 3.2 sample 64%. Two 55-column dot rows per field: 108 bright lab dots, 22 lower-category dots; strict upper membership unchanged. Actual 28px field and 14px ring dimensions verified.",
     "contrast": {
       "passed": true,
       "profiles": 4,
-      "minimum": 4.81,
-      "record": "docs/browser-qa-v68/native-contrast.json"
+      "minimum": 4.78,
+      "record": "docs/browser-qa-v69/native-contrast.json"
     },
-    "no_javascript": "docs/browser-qa-v68/no-js.json",
+    "no_javascript": "docs/browser-qa-v69/no-js.json",
     "interaction_scope": "Native keyboard disclosure/focus,four source URLs and44px link targets, free signup/upload destination; no account creation/upload/purchase. Full core/entry suites not rerun because entry logic is unchanged.",
     "impeccable": "Scoped existing context and layout/typeset/craft-floor; final detector zero findings.",
     "graphic_contrast": {
       "passed": true,
-      "minimum": 3.55,
-      "record": "docs/browser-qa-v68/native-graphic-contrast.json",
+      "minimum": 4.7,
+      "record": "docs/browser-qa-v69/native-graphic-contrast.json",
       "method": "Core compositing of essential bright interval dots at measured native positions; dim outside dots provide context, not sole meaning."
-    }
+    },
+    "slimness": "docs/browser-qa-v69/slimness-comparison.json"
   },
   "measurements": [
     {
       "profile": "en-1366",
-      "section_height": 690,
-      "glass_height": 505,
+      "section_height": 650,
+      "glass_height": 465,
       "geometry": {
         "trackWidths": [
           635.015625,
@@ -212,8 +218,8 @@
     },
     {
       "profile": "es-1366",
-      "section_height": 714,
-      "glass_height": 529,
+      "section_height": 674,
+      "glass_height": 489,
       "geometry": {
         "trackWidths": [
           635.015625,
@@ -237,8 +243,8 @@
     },
     {
       "profile": "en-390",
-      "section_height": 839.234375,
-      "glass_height": 507,
+      "section_height": 799.234375,
+      "glass_height": 467,
       "geometry": {
         "trackWidths": [
           292,
@@ -262,8 +268,8 @@
     },
     {
       "profile": "es-390",
-      "section_height": 907.234375,
-      "glass_height": 551,
+      "section_height": 867.234375,
+      "glass_height": 511,
       "geometry": {
         "trackWidths": [
           292,
@@ -287,8 +293,8 @@
     },
     {
       "profile": "es-320",
-      "section_height": 931.234375,
-      "glass_height": 575,
+      "section_height": 891.234375,
+      "glass_height": 535,
       "geometry": {
         "trackWidths": [
           236,
@@ -312,8 +318,8 @@
     },
     {
       "profile": "es-768",
-      "section_height": 956.828125,
-      "glass_height": 527,
+      "section_height": 916.828125,
+      "glass_height": 487,
       "geometry": {
         "trackWidths": [
           610,
@@ -337,8 +343,8 @@
     },
     {
       "profile": "en-390-calm",
-      "section_height": 839.234375,
-      "glass_height": 507,
+      "section_height": 799.234375,
+      "glass_height": 467,
       "geometry": {
         "trackWidths": [
           292,
@@ -362,8 +368,8 @@
     },
     {
       "profile": "es-390-calm",
-      "section_height": 907.234375,
-      "glass_height": 551,
+      "section_height": 867.234375,
+      "glass_height": 511,
       "geometry": {
         "trackWidths": [
           292,
@@ -395,5 +401,6 @@
     "No real health data, accounts, purchases, backend activation, DNS or evahealth.es cutover.",
     "Review query is a label, not a version pin.",
     "Dim outside-interval dots are subtle on320; the explicit labels, boundaries, aligned markers and direct conclusions retain the comparison. Viewport emulation cannot establish physical-screen visibility."
-  ]
+  ],
+  "inspiration": "docs/browser-qa-v69/savee-references.json"
 }
