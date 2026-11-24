@@ -9,17 +9,17 @@ import {Arrow} from './Arrow';
 import {DotNumber} from './DotNumber';
 import './range-proof-section.css';
 
-/** The dashboard's EvidenceRange dot field, on the comparison's one fixed scale. */
+/** A slim dashboard-derived dot ribbon, on the comparison's one fixed scale. */
 function DashboardRangeLevel({end,value,min,max}:{end:number;value:number;min:number;max:number}) {
   const at=(number:number)=>(number-min)/(max-min)*100;
   return <div className="range-proof-track" data-range-level-end={end} aria-hidden="true">
-    <svg className="range-proof-dashboard-level" width="100%" height="48" data-range-dot-field>
-      {Array.from({length:55},(_,column)=>Array.from({length:4},(_,row)=>{
+    <svg className="range-proof-dashboard-level" width="100%" height="28" data-range-dot-field>
+      {Array.from({length:55},(_,column)=>Array.from({length:2},(_,row)=>{
         const position=column/54, inside=min+position*(max-min)<end;
-        return <circle key={`${column}-${row}`} cx={`${position*100}%`} cy={17+row*7} r={inside?1.7:.8} fill="currentColor" opacity={inside?.62:.22} data-range-dot-column={column} data-range-in-range={inside}/>;
+        return <circle key={`${column}-${row}`} cx={`${position*100}%`} cy={11+row*6} r={inside?1.45:.7} fill="currentColor" opacity={inside?.8:.28} data-range-dot-column={column} data-range-in-range={inside}/>;
       }))}
-      <line x1="0%" x2="0%" y1="8" y2="46" stroke="currentColor" strokeWidth=".7" opacity=".4"/>
-      <line x1={`${at(end)}%`} x2={`${at(end)}%`} y1="8" y2="46" stroke="currentColor" strokeWidth=".7" opacity=".4" data-range-boundary={end}/>
+      <line x1="0%" x2="0%" y1="5" y2="23" stroke="currentColor" strokeWidth=".8" opacity=".45"/>
+      <line x1={`${at(end)}%`} x2={`${at(end)}%`} y1="5" y2="23" stroke="currentColor" strokeWidth=".8" opacity=".45" data-range-boundary={end}/>
     </svg>
     <span className="range-proof-point" data-range-sample={value}/>
   </div>;

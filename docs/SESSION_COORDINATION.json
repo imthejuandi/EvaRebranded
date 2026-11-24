@@ -169,11 +169,14 @@
   "work_status": {
     "active_continuation": {
       "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
-      "status": "Native 68 dashboard dotted-level comparison published and verified.",
+      "status": "In progress: SAVEE-informed slim two-row dot ribbons and smaller ring markers.",
       "next_section": null,
-      "pending_verification": null,
-      "section": "#otra-lectura — dashboard-native dotted interval levels",
-      "files": [],
+      "pending_verification": "Independent copy/UX/Impeccable review, slim geometry, native EN/ES readability and contrast.",
+      "section": "#otra-lectura — slim dashboard level comparison",
+      "files": [
+        "components/story/RangeProofSection.tsx",
+        "components/story/range-proof-section.css"
+      ],
       "owner_feedback_status": "Owner likes67direction; native 68visual review remains pending. Agent checks do not establish owner acceptance."
     },
     "prior_session": "Its published version 33 work and coordination note are preserved. The prior chat has not been archived, stopped or directly messaged by this acknowledgment."
