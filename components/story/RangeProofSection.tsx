@@ -9,6 +9,22 @@ import {Arrow} from './Arrow';
 import {DotNumber} from './DotNumber';
 import './range-proof-section.css';
 
+/** The dashboard's EvidenceRange dot field, on the comparison's one fixed scale. */
+function DashboardRangeLevel({end,value,min,max}:{end:number;value:number;min:number;max:number}) {
+  const at=(number:number)=>(number-min)/(max-min)*100;
+  return <div className="range-proof-track" data-range-level-end={end} aria-hidden="true">
+    <svg className="range-proof-dashboard-level" width="100%" height="48" data-range-dot-field>
+      {Array.from({length:55},(_,column)=>Array.from({length:4},(_,row)=>{
+        const position=column/54, inside=min+position*(max-min)<end;
+        return <circle key={`${column}-${row}`} cx={`${position*100}%`} cy={17+row*7} r={inside?1.7:.8} fill="currentColor" opacity={inside?.62:.22} data-range-dot-column={column} data-range-in-range={inside}/>;
+      }))}
+      <line x1="0%" x2="0%" y1="8" y2="46" stroke="currentColor" strokeWidth=".7" opacity=".4"/>
+      <line x1={`${at(end)}%`} x2={`${at(end)}%`} y1="8" y2="46" stroke="currentColor" strokeWidth=".7" opacity=".4" data-range-boundary={end}/>
+    </svg>
+    <span className="range-proof-point" data-range-sample={value}/>
+  </div>;
+}
+
 /** The same measured level against two explicitly labelled, equally scaled intervals. */
 export function RangeProofSection({calm=false}: {calm?:boolean}) {
   const {locale,href}=useSiteLanguage(), c=rangeProofCopy[locale];
@@ -29,7 +45,7 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
       </div>
       <div className="range-proof-evidence">
         <div className="range-proof-instrument bio-glass">
-          <figure className="range-proof-plot" aria-describedby="range-proof-graphic-description" data-range-graphic="aligned-levels" data-range-marker style={coordinates}>
+          <figure className="range-proof-plot" aria-describedby="range-proof-graphic-description" data-range-graphic="dashboard-dot-levels" data-range-marker style={coordinates}>
             <p className="sr-only" id="range-proof-graphic-description">{chartDescription}</p>
             <header className="range-proof-readout">
               <div><h3>hs-CRP <span className="range-proof-example">{c.exampleLabel}</span></h3><p className="range-proof-marker-name">{c.markerLabel}</p></div>
@@ -38,12 +54,12 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
             <div className="range-proof-levels" data-range-axis-min={sample.axisMin} data-range-axis-max={sample.axisMax}>
               <div className="range-proof-level" data-range-reading="lab" role="group" aria-label={c.lab.label}>
                 <div className="range-proof-level-label"><h4>{c.lab.label}</h4><p className="range-proof-cutoff" data-range-reference-value={sample.labUpper}>{'<'}{sample.labUpper} <small>{sample.unit}</small></p></div>
-                <div className="range-proof-track" aria-hidden="true"><span className="range-proof-band" data-range-lab-band data-range-end={sample.labUpper}/><span className="range-proof-limit"/><span className="range-proof-point" data-range-sample={sample.value}/></div>
+                <DashboardRangeLevel end={sample.labUpper} value={sample.value} min={sample.axisMin} max={sample.axisMax}/>
                 <p className="range-proof-level-meaning">{c.lab.interpretation}</p>
               </div>
               <div className="range-proof-level" data-range-reading="lower-risk" role="group" aria-label={c.lowerRisk.label}>
                 <div className="range-proof-level-label"><h4>{c.lowerRisk.label}</h4><p className="range-proof-cutoff" data-range-lower-risk-value={sample.lowerRiskUpper}>{'<'}{sample.lowerRiskUpper} <small>{sample.unit}</small></p></div>
-                <div className="range-proof-track" aria-hidden="true"><span className="range-proof-band" data-range-lower-risk-band data-range-end={sample.lowerRiskUpper}/><span className="range-proof-limit"/><span className="range-proof-point" data-range-sample={sample.value}/></div>
+                <DashboardRangeLevel end={sample.lowerRiskUpper} value={sample.value} min={sample.axisMin} max={sample.axisMax}/>
                 <p className="range-proof-level-meaning">{c.lowerRisk.interpretation}</p>
               </div>
               <div className="range-proof-scale" aria-hidden="true">{Array.from({length:sample.axisMax-sample.axisMin+1},(_,index)=>index+sample.axisMin).filter(value=>Math.abs(value-sample.value)>=.5).map(value=><span key={value} style={{left:position(value)}}>{value}</span>)}<span className="range-proof-scale-result" style={{left:position(sample.value)}} data-range-scale-result>{number}</span></div>

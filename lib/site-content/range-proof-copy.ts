@@ -2,7 +2,7 @@
 export const rangeProofExample = {
   value: 3.2,
   axisMin: 0,
-  axisMax: 6,
+  axisMax: 5,
   lowerRiskUpper: 1,
   unit: 'mg/L',
   labUpper: 5,
