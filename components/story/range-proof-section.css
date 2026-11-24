@@ -40,10 +40,11 @@
 .range-proof-comparison h4{font-size:14px;line-height:20px;font-weight:400;color:#f1ece3;margin:0}
 .range-proof-comparison-value{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap;font-size:24px;line-height:30px;font-weight:var(--proof-heading-weight);color:#f6f0e3;margin:0;font-variant-numeric:tabular-nums;white-space:normal}
 .range-proof-comparison-value small{font-size:14px;line-height:20px;font-weight:400}
-.range-proof-condition{font-size:14px;line-height:20px;font-weight:600;color:#f3bd82;margin-left:3px}
+.range-proof-condition{font-size:14px;line-height:20px;font-weight:600;color:#fce0ba;margin-left:3px}
 .range-proof-comparison-meaning{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#f6f0e3;margin:0}
 .range-proof-takeaway{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:16px;font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#f6f0e3;margin-top:24px;padding-top:16px;border-top:1px solid #fffdf63f}
 .range-proof-takeaway strong{font-weight:var(--proof-heading-weight)}
+.range-proof-takeaway>span{text-wrap:pretty}
 .range-proof-context{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;margin:12px 10px 0;max-width:66ch}
 .range-proof-details{margin:8px 10px 0;border-bottom:1px solid #171b1838}
 .range-proof-details>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:var(--proof-space-related);font-size:var(--proof-body-size);line-height:var(--proof-body-leading);padding:10px 0;list-style:none}

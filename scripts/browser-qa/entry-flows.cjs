@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const ORIGIN=process.env.EVA_REVIEW_ORIGIN||'https://eva-content-review.jdlagop.chatgpt.site';
-const VERSION=process.env.EVA_REVIEW_VERSION||'65';
+const VERSION=process.env.EVA_REVIEW_VERSION||'66';
 assert.match(VERSION,/^\d+$/);
 const OUT='/workspace/eva-in-place-qa';
 const STORE='eva-design-preview-04';
