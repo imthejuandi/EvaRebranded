@@ -40,9 +40,6 @@
 .range-proof-scale>span{position:absolute;transform:translateX(-50%)}
 .range-proof-scale-result{font-weight:600;color:#fffdf6}
 .range-proof-category-note{font-size:14px;line-height:20px;color:#f1ece3;margin:12px 0 0}
-.range-proof-takeaway{font-size:16px;line-height:24px;color:#f6f0e3;margin-top:16px;padding-top:16px;border-top:1px solid #fffdf63f}
-.range-proof-takeaway strong{display:block;font-size:14px;line-height:20px;font-weight:600;color:#fce0ba}
-.range-proof-takeaway>span{display:block;text-wrap:pretty;margin-top:4px}
 .range-proof-context{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;margin:12px 10px 0;max-width:66ch}
 .range-proof-details{margin:8px 10px 0;border-bottom:1px solid #171b1838}
 .range-proof-details>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:var(--proof-space-related);font-size:var(--proof-body-size);line-height:var(--proof-body-leading);padding:10px 0;list-style:none}

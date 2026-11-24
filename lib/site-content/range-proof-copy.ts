@@ -1,15 +1,14 @@
 /** A separate teaching example; Alex’s result and history remain unchanged. */
 export const rangeProofExample = {
-  value: 3.2,
+  value: 2.9,
   axisMin: 0,
   axisMax: 5,
   lowerRiskUpper: 1,
   unit: 'mg/L',
-  labUpper: 5,
-  preventionLower: 2,
+  labUpper: 3,
 } as const;
 
-/** Documented assay reference and the European persistent-risk modifier. */
+/** Published lab reference and the AHA relative-risk category. */
 export const rangeProofCopy = {
   en: {
     kicker: 'A DIFFERENT QUESTION',
@@ -19,10 +18,10 @@ export const rangeProofCopy = {
     exampleLabel: 'Example',
     unchangedLabel: 'One result. Two ranges.',
     lab: {
-      label: 'This lab’s reference',
-      threshold: '<5 mg/L',
+      label: 'Lab’s reference range',
+      threshold: '<3 mg/L',
       interpretation: 'Within reference.',
-      detail: 'This example uses a documented adult hs-CRP reference below 5 mg/L. Laboratory limits may differ.',
+      detail: 'This example uses The Valley Hospital’s published hs-CRP reference below 3 mg/L. Laboratory limits may differ.',
     },
     lowerRisk: {
       label: 'Lower relative heart risk',
@@ -31,24 +30,13 @@ export const rangeProofCopy = {
       detail: 'The AHA describes relative cardiovascular-risk categories based on hs-CRP: lower below 1 mg/L, average from 1 to 3 mg/L, and higher above 3 mg/L. These categories do not determine your overall risk or set a treatment target.',
     },
     categoryNote: 'hs-CRP category, not your overall risk.',
-    reviewLabel: 'Review if persistent',
-    prevention: {
-      label: 'Heart-risk review',
-      threshold: '>2 mg/L if persistent',
-      condition: 'if persistent',
-      interpretation: 'Above the review threshold.',
-      detail: 'Persistently elevated hs-CRP >2 mg/L can add information about future cardiovascular risk. Review it alongside your health history, other risk factors and possible causes of inflammation. It is not a diagnosis or universal treatment target.',
-    },
-    takeawayLead: 'Next step',
-    takeaway: 'Repeat the test when well. If still raised, review overall heart risk.',
     qualifier: 'Lab limits vary. Not a diagnosis.',
     detailsLabel: 'Sources and context',
-    context: 'Illness, infection or injury can raise hs-CRP. Confirm persistence when clinically stable; timing depends on your clinical context.',
+    context: 'Illness, infection or injury can raise hs-CRP. A single measurement does not establish whether an elevation persists.',
     sourceLabel: 'THE EVIDENCE',
     sources: [
-      {label: 'Lab reference: CDC', href: 'https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf'},
+      {label: 'Lab reference: Valley Hospital', href: 'https://valleyhealth.testcatalog.org/show/CRPHS-1'},
       {label: 'hs-CRP categories: AHA', href: 'https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en'},
-      {label: 'Risk modifier: ESC/EAS', href: 'https://academic.oup.com/eurheartj/article/46/42/4359/8234482'},
       {label: 'Prospective evidence: ERFC', href: 'https://pubmed.ncbi.nlm.nih.gov/20031199/'},
     ],
     primary: 'Interpret your labs',
@@ -63,10 +51,10 @@ export const rangeProofCopy = {
     exampleLabel: 'Ejemplo',
     unchangedLabel: 'Un resultado. Dos rangos.',
     lab: {
-      label: 'Referencia de este laboratorio',
-      threshold: '<5 mg/L',
+      label: 'Rango de referencia del laboratorio',
+      threshold: '<3 mg/L',
       interpretation: 'Dentro de la referencia.',
-      detail: 'Este ejemplo usa una referencia documentada de hs-CRP para adultos inferior a 5 mg/L. Los límites pueden variar entre laboratorios.',
+      detail: 'Este ejemplo usa la referencia publicada de hs-CRP de The Valley Hospital, inferior a 3 mg/L. Los límites pueden variar entre laboratorios.',
     },
     lowerRisk: {
       label: 'Menor riesgo cardiovascular relativo',
@@ -75,24 +63,13 @@ export const rangeProofCopy = {
       detail: 'La AHA describe categorías de riesgo cardiovascular relativo según la hs-CRP: menor por debajo de 1 mg/L, medio de 1 a 3 mg/L y mayor por encima de 3 mg/L. Estas categorías no determinan tu riesgo global ni fijan un objetivo de tratamiento.',
     },
     categoryNote: 'Categoría según hs-CRP; no indica tu riesgo global.',
-    reviewLabel: 'Revisar si persiste',
-    prevention: {
-      label: 'Revisión del riesgo cardiovascular',
-      threshold: '>2 mg/L si persiste',
-      condition: 'si persiste',
-      interpretation: 'Supera el umbral de revisión.',
-      detail: 'Una hs-CRP persistentemente elevada >2 mg/L puede aportar información sobre el riesgo cardiovascular futuro. Debe valorarse junto con tu historial de salud, otros factores de riesgo y posibles causas de inflamación. No es un diagnóstico ni un objetivo universal de tratamiento.',
-    },
-    takeawayLead: 'Siguiente paso',
-    takeaway: 'Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.',
     qualifier: 'Los límites varían entre laboratorios. No es un diagnóstico.',
     detailsLabel: 'Fuentes y contexto',
-    context: 'Una enfermedad, una infección o una lesión pueden elevar la hs-CRP. La persistencia debe confirmarse en situación clínica estable; el momento depende del contexto clínico.',
+    context: 'Una enfermedad, una infección o una lesión pueden elevar la hs-CRP. Una medición aislada no permite saber si la elevación persiste.',
     sourceLabel: 'LA EVIDENCIA',
     sources: [
-      {label: 'Referencia del laboratorio: CDC', href: 'https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf'},
+      {label: 'Referencia del laboratorio: Valley Hospital', href: 'https://valleyhealth.testcatalog.org/show/CRPHS-1'},
       {label: 'Categorías de hs-CRP: AHA', href: 'https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en'},
-      {label: 'Modificador de riesgo: ESC/EAS', href: 'https://academic.oup.com/eurheartj/article/46/42/4359/8234482'},
       {label: 'Evidencia prospectiva: ERFC', href: 'https://pubmed.ncbi.nlm.nih.gov/20031199/'},
     ],
     primary: 'Interpreta tus analíticas',

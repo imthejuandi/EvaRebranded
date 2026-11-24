@@ -12,6 +12,7 @@ import './range-proof-section.css';
 /** A slim dashboard-derived dot ribbon, on the comparison's one fixed scale. */
 function DashboardRangeLevel({end,value,min,max}:{end:number;value:number;min:number;max:number}) {
   const at=(number:number)=>(number-min)/(max-min)*100;
+  const nearPoint=Math.abs(at(end)-at(value))<3;
   return <div className="range-proof-track" data-range-level-end={end} aria-hidden="true">
     <svg className="range-proof-dashboard-level" width="100%" height="28" data-range-dot-field>
       {Array.from({length:55},(_,column)=>Array.from({length:2},(_,row)=>{
@@ -19,7 +20,7 @@ function DashboardRangeLevel({end,value,min,max}:{end:number;value:number;min:nu
         return <circle key={`${column}-${row}`} cx={`${position*100}%`} cy={11+row*6} r={inside?1.45:.7} fill="currentColor" opacity={inside?.8:.28} data-range-dot-column={column} data-range-in-range={inside}/>;
       }))}
       <line x1="0%" x2="0%" y1="5" y2="23" stroke="currentColor" strokeWidth=".8" opacity=".45"/>
-      <line x1={`${at(end)}%`} x2={`${at(end)}%`} y1="5" y2="23" stroke="currentColor" strokeWidth=".8" opacity=".45" data-range-boundary={end}/>
+      <line x1={`${at(end)}%`} x2={`${at(end)}%`} y1={nearPoint?2:5} y2={nearPoint?26:23} stroke="currentColor" strokeWidth=".8" opacity={nearPoint?.65:.45} data-range-boundary={end}/>
     </svg>
     <span className="range-proof-point" data-range-sample={value}/>
   </div>;
@@ -34,8 +35,8 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
   const position=(value:number)=>`${(value-sample.axisMin)/(sample.axisMax-sample.axisMin)*100}%`;
   const coordinates={'--range-sample':position(sample.value),'--range-lab-end':position(sample.labUpper),'--range-lower-risk-end':position(sample.lowerRiskUpper)} as CSSProperties;
   const chartDescription=locale==='es'
-    ? `Dos bandas en la misma escala lineal de ${sample.axisMin} a ${sample.axisMax} mg/L. La referencia de este laboratorio es inferior a ${sample.labUpper}; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a ${sample.lowerRiskUpper}. El mismo ejemplo de ${number} está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de ${sample.preventionLower} si persiste es un motivo de revisión separado, no una banda óptima.`
-    : `Two bands on the same linear ${sample.axisMin} to ${sample.axisMax} mg/L scale. This laboratory reference is below ${sample.labUpper}; the lower relative cardiovascular-risk hs-CRP category is below ${sample.lowerRiskUpper}. The same ${number} example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above ${sample.preventionLower} if persistent is a separate review trigger, not an optimal band.`;
+    ? `Dos bandas en la misma escala lineal de ${sample.axisMin} a ${sample.axisMax} mg/L. El rango de referencia del laboratorio es inferior a ${sample.labUpper}; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a ${sample.lowerRiskUpper}. El mismo ejemplo de ${number} está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal.`
+    : `Two bands on the same linear ${sample.axisMin} to ${sample.axisMax} mg/L scale. The lab’s reference range is below ${sample.labUpper}; the lower relative cardiovascular-risk hs-CRP category is below ${sample.lowerRiskUpper}. The same ${number} example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target.`;
 
   return <section className="range-proof" id="otra-lectura" aria-labelledby="range-proof-title" data-range-proof data-range-entry-state="complete" data-range-entry-duration-ms="0">
     <div className="range-proof-layout">
@@ -65,7 +66,6 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
               <div className="range-proof-scale" aria-hidden="true">{Array.from({length:sample.axisMax-sample.axisMin+1},(_,index)=>index+sample.axisMin).filter(value=>Math.abs(value-sample.value)>=.5).map(value=><span key={value} style={{left:position(value)}}>{value}</span>)}<span className="range-proof-scale-result" style={{left:position(sample.value)}} data-range-scale-result>{number}</span></div>
             </div>
             <p className="range-proof-category-note">{c.categoryNote}</p>
-            <figcaption className="range-proof-takeaway"><strong data-range-review-value={sample.preventionLower}>{c.reviewLabel}{': >'}{sample.preventionLower} {sample.unit}</strong><span>{c.takeaway}</span></figcaption>
           </figure>
         </div>
         <p className="range-proof-context">{c.qualifier}</p>
@@ -75,7 +75,6 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
             <p className="range-proof-lead">{c.lead}</p>
             <p>{c.lab.detail}</p>
             <p>{c.lowerRisk.detail}</p>
-            <p>{c.prevention.detail}</p>
             <p>{c.context}</p>
             <div className="range-proof-sources"><p>{c.sourceLabel}</p>{c.sources.map(source=><a key={source.href} href={source.href} target="_blank" rel="noreferrer" data-range-source>{source.label}</a>)}</div>
             <a className="range-proof-method" href={href(businessLinks.science)} data-range-method>{c.methodLink}<Arrow/></a>
