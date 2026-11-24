@@ -1,0 +1,42 @@
+{
+  "saved": {
+    "id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5a1d4dfdab408191b02194e0a21e462a",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "version_number": 66,
+    "source": {
+      "commit_sha": "674d40055311d3f012bc6f5ec2c329726a74f14f"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000006b88246a71156c106ad95f9",
+      "content_hash": "sha256:6894fb643f017571f38e845b0914b65f25baa7c7ee4e7a55d2256dfce995f24f",
+      "size_bytes": 171827200,
+      "file_count": 790
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployed": {
+    "id": "appgdep_6b05a2da0af08191aeea2da2b1414a70",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "title": "EVA Content Review",
+    "version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5a1d4dfdab408191b02194e0a21e462a",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae2409926cc819180f1453af398551d",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-24T14:45:00.119707+00:00"
+  },
+  "uiCommit": "674d40055311d3f012bc6f5ec2c329726a74f14f",
+  "audience": "public",
+  "archive": {
+    "path": "/workspace/eva-publication/eva-range-relay-v66.tar.gz",
+    "gzipSha256": "f6a923d886f5bdcb14c89af3b07bd9a5763d071fe31a2c0171f2e97228707b99",
+    "gzipSizeBytes": 163058420
+  },
+  "reviewUrl": "https://eva-content-review.jdlagop.chatgpt.site/en?review=66#otra-lectura"
+}

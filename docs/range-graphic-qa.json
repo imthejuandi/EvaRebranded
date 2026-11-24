@@ -1,112 +1,57 @@
 {
-  "status": "passed_independent_review_owner_acceptance_pending",
-  "published_version": 64,
-  "deployed_ui_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
+  "status": "passed_native 66_independent_review_owner_acceptance_pending",
+  "published_version": 66,
+  "deployed_ui_commit": "674d40055311d3f012bc6f5ec2c329726a74f14f",
   "native_deployment": {
-    "version_number": 64,
-    "source_commit": "6fa98668afea2d912e6e5e8d38102afa18bacba5",
-    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e3fa99d0b9e881919ccaa51a6dedef96",
-    "deployment_id": "appgdep_6b04bbbfc4608191b2d0322a08ec05d2",
+    "version_number": 66,
+    "source_commit": "674d40055311d3f012bc6f5ec2c329726a74f14f",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_5a1d4dfdab408191b02194e0a21e462a",
+    "deployment_id": "appgdep_6b05a2da0af08191aeea2da2b1414a70",
     "status": "succeeded",
     "url": "https://eva-content-review.jdlagop.chatgpt.site",
-    "native_updated_at": "2026-11-23T22:18:49.727913+00:00",
+    "native_updated_at": "2026-11-24T14:45:00.119707+00:00",
     "archive_storage": {
       "archive_format": "tar",
-      "sediment_file_id": "file_0000000029d4822fb6feeda7189a6e40",
-      "content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+      "sediment_file_id": "file_0000000006b88246a71156c106ad95f9",
+      "content_hash": "sha256:6894fb643f017571f38e845b0914b65f25baa7c7ee4e7a55d2256dfce995f24f",
       "size_bytes": 171827200,
       "file_count": 790
     },
-    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=64#otra-lectura",
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=66#otra-lectura",
     "archive": {
-      "local_path": "/workspace/eva-publication/eva-range-comparisons-v64.tar.gz",
-      "local_gzip_sha256": "83b4b0e664f40ab6350884cc777f940c4173d2e53b17515dadaea9344adf101b",
-      "local_gzip_size_bytes": 163055723,
-      "saved_tar_content_hash": "sha256:8387654e2c9a194efdfc4149d27a343874738b4560b9d5be5ba7682de467dd9d",
+      "local_path": "/workspace/eva-publication/eva-range-relay-v66.tar.gz",
+      "local_gzip_sha256": "f6a923d886f5bdcb14c89af3b07bd9a5763d071fe31a2c0171f2e97228707b99",
+      "local_gzip_size_bytes": 163058420,
+      "saved_tar_content_hash": "sha256:6894fb643f017571f38e845b0914b65f25baa7c7ee4e7a55d2256dfce995f24f",
       "saved_tar_size_bytes": 171827200,
       "file_count": 790
     },
-    "behavior": "Replaces the owner-rejected interval graphic with two open comparisons of one independent 3.2 mg/L sample against 5 and 2. No axis, ruler, filled/shaded zone or overlap window remains. The persistent >2 review condition and repeat-when-well/action wording remain explicit.",
+    "behavior": "One luminous dotted 3.2 sample feeds two openly labelled comparator outputs through a non-quantitative relay. No range shading, axis, target zone or duplicate dominant sample. Visible <5 lab limit and >2 if persistent review cutoff, repeat-when-well/overall-risk instruction. Pale amber condition meets painted contrast; responsive wide/tablet/phone geometry, sources and free-upload action retained.",
     "source_files": [
       "components/story/RangeProofSection.tsx",
       "components/story/range-proof-section.css",
       "lib/site-content/range-proof-copy.ts",
       "scripts/browser-qa/core-landing.cjs",
-      "scripts/browser-qa/entry-flows.cjs",
-      "docs/SESSION_COORDINATION.json"
+      "scripts/browser-qa/entry-flows.cjs"
     ],
     "qa": {
-      "status": "passed_actual_browser_and_independent_cold_image_review",
+      "status": "passed_actual_native_browser_and_independent_design_medical_copy_image_review",
       "record": "docs/range-graphic-qa.json",
-      "evidence_directory": "docs/browser-qa-v64",
+      "evidence_directory": "docs/browser-qa-v66",
       "fresh_profiles": 8,
-      "baseline_version": 63,
-      "baseline_status": "Reused actual 63 eight-profile evidence; not a fresh64 recapture.",
-      "owner_acceptance": "Not established by agent review alone.",
+      "additional_edge_profiles": 2,
+      "painted_contrast_profiles": 5,
+      "minimum_painted_text_contrast": 4.89,
+      "owner_acceptance": "Not established by agent review.",
       "page_errors": []
     }
   },
-  "user_direction": "Resolve the actual owner’s confusion that the shaded region above 2 looked optimal, using a clear image and text rather than a disclaimer or primed model vote.",
-  "visible_copy": {
-    "en": {
-      "heading": [
-        "There’s more",
-        "to “normal.”"
-      ],
-      "markerLabel": "Inflammation signal",
-      "exampleLabel": "Example",
-      "unchangedLabel": "Two cutoffs. One result.",
-      "takeawayLead": "Above 2 mg/L?",
-      "takeaway": "Repeat when well. If still raised, review overall heart risk.",
-      "qualifier": "Lab limits vary. Not a diagnosis.",
-      "primary": "Interpret your labs",
-      "primarySubtitle": "Upload for free",
-      "lab": {
-        "comparison": "3.2 < 5 mg/L",
-        "label": "Lab reference",
-        "threshold": "<5 mg/L",
-        "interpretation": "Below this lab’s reference limit."
-      },
-      "prevention": {
-        "comparison": "3.2 > 2 mg/L",
-        "label": "When to review",
-        "threshold": ">2 mg/L if persistent",
-        "condition": "if persistent",
-        "interpretation": "Above the review threshold."
-      },
-      "action_combined": "Above 2 mg/L? Repeat when well. If still raised, review overall heart risk."
-    },
-    "es": {
-      "heading": [
-        "«Normal»",
-        "no lo cuenta todo."
-      ],
-      "markerLabel": "Señal de inflamación",
-      "exampleLabel": "Ejemplo",
-      "unchangedLabel": "Dos umbrales. Un resultado.",
-      "takeawayLead": "¿Más de 2 mg/L?",
-      "takeaway": "Repite cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
-      "qualifier": "Los límites varían entre laboratorios. No es un diagnóstico.",
-      "primary": "Interpreta tus analíticas",
-      "primarySubtitle": "Súbelas gratis",
-      "lab": {
-        "comparison": "3,2 < 5 mg/L",
-        "label": "Referencia del laboratorio",
-        "threshold": "<5 mg/L",
-        "interpretation": "Por debajo del límite del laboratorio."
-      },
-      "prevention": {
-        "comparison": "3,2 > 2 mg/L",
-        "label": "Cuándo revisarlo",
-        "threshold": ">2 mg/L si persiste",
-        "condition": "si persiste",
-        "interpretation": "Supera el umbral de revisión."
-      },
-      "action_combined": "¿Más de 2 mg/L? Repite cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global."
-    }
-  },
+  "user_direction": [
+    "Clarify that the area above 2 is a conditional cardiovascular review trigger, not an optimal or normal heart-risk range.",
+    "Preserve meaningful retrofuturistic dashboard visuals, glass and analog dotted numerals; use specialist judges and a master synthesis outside the6.2 model family."
+  ],
   "worked_example": {
-    "status": "current_from_version 64",
+    "status": "current_from_version 66",
     "biomarker": "hs-CRP",
     "value": 3.2,
     "unit": "mg/L",
@@ -137,385 +82,321 @@
     "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
     "review": "CMO agent evidence/source review of the comparison-based source, not human clinician approval.",
     "record": "docs/range-graphic-qa.json",
-    "source_packet": "docs/browser-qa-v64/clinical-source-signoff-v64.json",
+    "source_packet": "docs/browser-qa-v66/medical-continuity.json",
     "representation": {
-      "kind": "two_explicit_comparisons",
-      "lab": "3.2 < 5 mg/L",
-      "review": "3.2 > 2 mg/L, if persistent",
+      "kind": "single_input_two_output_comparator_relay",
+      "sample": "3.2 mg/L (Spanish3,2)",
+      "lab": "<5 mg/L, below the limit of this lab",
+      "review": ">2 mg/L if persistent, above the review threshold",
       "axis_or_ruler": false,
       "filled_or_shaded_interval": false,
       "overlap_window": false,
-      "meaning": "The same sample is below this laboratory reference limit yet above a conditional risk-review cutoff; neither comparison defines an optimal goal."
+      "meaning": "The same sample feeds two differently named comparison questions. The connector encodes shared input, never value distance, time or optimal target."
     }
   },
-  "medical_contract": {
-    "basis": "Unchanged CMO medical facts; final 64 B uses direct comparisons, not positions or intervals.",
-    "value": 3.2,
-    "unit": "mg/L",
-    "lab": {
-      "operator": "<",
-      "limit": 5
-    },
-    "review": {
-      "operator": ">",
-      "threshold": 2,
-      "persistence_required": true
-    },
-    "expected_relations": {
-      "below_example_lab_limit": true,
-      "above_conditional_review_trigger": true
-    },
-    "presentation": "Two explicit comparisons with plain-language meanings; no axis/ruler, range bands, overlap wash, desirable interval or universal target.",
-    "action": "Repeat when well; if still raised, review overall heart risk. No fixed repeat interval or treatment target.",
-    "historical_parameters": "0–6 scale and percentage positions are prior presentation choices only; preserved in historical-ruler-contract.json and prior 63 evidence, not requirements of 64 B."
-  },
-  "implementation": [
-    "Two explicit comparisons show the same independent 3.2 mg/L example below 5 and above 2 if persistent. There is no axis, ruler, band, fill, wash, overlap window, selected interval or continuous range to read as a destination.",
-    "The lab verdict names this laboratory’s reference limit; the review verdict names the conditional cutoff. Neither uses the ambiguous within this interval wording.",
-    "The action is explicit: repeat when well; if still raised, review overall cardiovascular risk. No fixed repeat interval, universal target, diagnosis or automatic treatment is given.",
-    "Current clinical facts and three sources are unchanged: CDC adult assay <5, ESC/EAS strict >2 if persistent and ERFC prospective association. Alex’s independent 2.1 history and all other accepted sections remain unchanged.",
-    "Existing EVA glass, dots, Hanken and Georgia remain. The accessible description agrees with comparisons; the 500ms entrance moves only the review row and never changes meaning."
+  "implementation": "One luminous dotted3.2 sample feeds two openly labelled comparator outputs through a non-quantitative relay. No range shading, axis, target zone or duplicate dominant sample. Visible <5 lab limit and >2 if persistent review cutoff, repeat-when-well/overall-risk instruction. Pale amber condition meets painted contrast; responsive wide/tablet/phone geometry, sources and free-upload action retained.",
+  "medical_contract": "docs/browser-qa-v66/medical-contract.json",
+  "master_prompt": "docs/range-retrofuturist-brief.md",
+  "review_loop": "docs/browser-qa-v66/review-iterations.json",
+  "owner_feedback_history": [
+    "docs/browser-qa-v64/owner-feedback-v63.json",
+    "docs/browser-qa-v64/review-iterations.json"
   ],
-  "owner_feedback_history": {
-    "verbatim_record": "docs/browser-qa-v64/owner-feedback-v63.json",
-    "precedence": "Actual owner rejection overrides the prior 63 model/editorial semantic pass. Successful medical/technical checks did not prove understandable visual meaning.",
-    "prior_63_record": "docs/browser-qa-v63/range-graphic-qa.json",
-    "v64_owner_acceptance": "Not established. Current acceptance is a technical/clinical/independent editorial review, not a claim about most people."
-  },
-  "cold_reader_review": {
-    "method": "Fresh fork with no history; open image-only questions before any medical rationale. Agent editorial simulation, not human research.",
-    "verbatim_records": [
-      "cold-reader-a-en.json",
-      "cold-reader-a-es.json",
-      "cold-reader-b-en.json",
-      "cold-reader-b-es.json"
-    ],
-    "candidate_a": "Neutral number-line preflight rejected after the Spanish reader still saw a potentially acceptable 2–5 interval.",
-    "candidate_b": "Direct comparisons were understood as distinct lab/review cutoffs with repeat/action meaning, rather than an explicit 2–5 target.",
-    "residual_questions": "The English B reader still inferred below 2 might be preferable and both readers asked about timing, clinical scope or who performs review. These answers are retained verbatim; the educational copy does not invent a universal repeat interval or treatment goal.",
-    "image_map": "docs/browser-qa-v64/cold-reader-image-map.json"
-  },
-  "review_loop": {
-    "rubric": "docs/browser-qa-v64/judge-rubric.json",
-    "iterations": "docs/browser-qa-v64/review-iterations.json",
-    "clinical_signoff": "docs/browser-qa-v64/clinical-source-signoff-v64.json",
-    "independent_signoff": "docs/browser-qa-v64/impeccable-review.json",
-    "scope": "Do not count model votes against actual owner feedback; inspect the image before the intended interpretation."
+  "independent_reviews": {
+    "copy": "docs/browser-qa-v65/copy.md",
+    "design": "docs/browser-qa-v65/designer.md",
+    "medical": "docs/browser-qa-v65/medical-final.md",
+    "cold_first_image": "docs/browser-qa-v65/cold-reader-first.md",
+    "cold_native_image": "docs/browser-qa-v65/cold-reader-native.md",
+    "impeccable": "docs/browser-qa-v66/v66-final-impeccable.md",
+    "master": "docs/browser-qa-v66/master-final.md"
   },
   "skills": {
-    "name": "Impeccable",
-    "skill": "/workspace/eva-design-tools/impeccable/SKILL.md",
-    "playbooks": [
-      "Layout",
-      "Typeset",
-      "Polish",
-      "Craft floor"
-    ],
-    "authority": "Existing EVA visual system; no new assets or replacement world.",
-    "scan": "Final frozen-source detector returned zero findings."
+    "impeccable": "Local4.9.0 scoped existing context, layout/typeset/polish/craft-floor. Final mechanical detector zero findings. Brief-pinned glass/radii/fonts prevail.",
+    "sites": "Existing native Site and public audience preserved; exact pushed source/build archive saved and deployed."
   },
-  "measurement_record": "docs/browser-qa-v64/actual-comparison-v64.json",
+  "verification": {
+    "native_matrix": {
+      "passed": true,
+      "profiles": 8,
+      "report": "docs/browser-qa-v66/actual-v66.json",
+      "page_errors": [],
+      "network_writes": [],
+      "all_owned_browsers_closed": true
+    },
+    "edge_motion": {
+      "passed": true,
+      "profiles": 2,
+      "report": "docs/browser-qa-v66/edge-motion.json",
+      "checks": [
+        "1051px metadata/value clearance and no horizontal overflow",
+        "500ms routing opacity only; unchanged result",
+        "Live reduced-motion change cancels animation and completes immediately",
+        "No-JavaScript SSR has all content and completed state"
+      ]
+    },
+    "contrast": {
+      "passed": true,
+      "profiles": 5,
+      "minimum": 4.89,
+      "report": "docs/browser-qa-v66/painted-contrast.json"
+    },
+    "static": [
+      "TypeScript noEmit",
+      "113-route production build",
+      "English 1205 catalogue messages",
+      "Bilingual parity32 variants",
+      "Story narrative order and existing motion/media contracts",
+      "Core/entry browser runner syntax",
+      "git diff --check"
+    ],
+    "scope": "Final native checks cover this section, disclosure/source destinations, keyboard focus and free-upload destination. Full core/entry flow suites were not rerun; unchanged flow evidence remains historically qualified."
+  },
   "measurements": [
     {
-      "id": "en-1366",
-      "words": {
-        "before": 61,
-        "after": 60,
-        "change": -1,
-        "change_percent": -1.639344262295082
-      },
-      "explanatory_prose": {
-        "before": 25,
-        "after": 32,
-        "change": 7,
-        "change_percent": 28.000000000000004
-      },
-      "glass_height_px": {
-        "before": 351.375,
-        "after": 314.796875,
-        "change": -36.578125,
-        "change_percent": -10.409996442547136
-      },
-      "section_height_px": {
-        "before": 536.375,
-        "after": 499.796875,
-        "change": -36.578125,
-        "change_percent": -6.819505942670706
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "en-1366",
+      "sectionHeight": 518,
+      "glassHeight": 333,
+      "dotValue": "3.2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 707,
+          "scrollWidth": 727
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 92
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     },
     {
-      "id": "es-1366",
-      "words": {
-        "before": 70,
-        "after": 69,
-        "change": -1,
-        "change_percent": -1.4285714285714286
-      },
-      "explanatory_prose": {
-        "before": 31,
-        "after": 40,
-        "change": 9,
-        "change_percent": 29.03225806451613
-      },
-      "glass_height_px": {
-        "before": 351.375,
-        "after": 338.796875,
-        "change": -12.578125,
-        "change_percent": -3.57968694414799
-      },
-      "section_height_px": {
-        "before": 560.375,
-        "after": 523.796875,
-        "change": -36.578125,
-        "change_percent": -6.5274369841623905
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "es-1366",
+      "sectionHeight": 542,
+      "glassHeight": 357,
+      "dotValue": "3,2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 707,
+          "scrollWidth": 727
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 110
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     },
     {
-      "id": "en-390",
-      "words": {
-        "before": 61,
-        "after": 60,
-        "change": -1,
-        "change_percent": -1.639344262295082
-      },
-      "explanatory_prose": {
-        "before": 25,
-        "after": 32,
-        "change": 7,
-        "change_percent": 28.000000000000004
-      },
-      "glass_height_px": {
-        "before": 325.375,
-        "after": 344.796875,
-        "change": 19.421875,
-        "change_percent": 5.969074145217057
-      },
-      "section_height_px": {
-        "before": 681.609375,
-        "after": 677.03125,
-        "change": -4.578125,
-        "change_percent": -0.6716640304426564
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "en-390",
+      "sectionHeight": 789.09375,
+      "glassHeight": 456.859375,
+      "dotValue": "3.2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-layout",
+          "width": 342,
+          "scrollWidth": 350
+        },
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 356,
+          "scrollWidth": 376
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 92
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     },
     {
-      "id": "es-390",
-      "words": {
-        "before": 70,
-        "after": 69,
-        "change": -1,
-        "change_percent": -1.4285714285714286
-      },
-      "explanatory_prose": {
-        "before": 31,
-        "after": 40,
-        "change": 9,
-        "change_percent": 29.03225806451613
-      },
-      "glass_height_px": {
-        "before": 371.5625,
-        "after": 368.796875,
-        "change": -2.765625,
-        "change_percent": -0.744322960470984
-      },
-      "section_height_px": {
-        "before": 727.796875,
-        "after": 725.03125,
-        "change": -2.765625,
-        "change_percent": -0.3799995706219541
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "es-390",
+      "sectionHeight": 833.234375,
+      "glassHeight": 477,
+      "dotValue": "3,2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-layout",
+          "width": 342,
+          "scrollWidth": 350
+        },
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 356,
+          "scrollWidth": 376
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 110
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     },
     {
-      "id": "es-320",
-      "words": {
-        "before": 70,
-        "after": 69,
-        "change": -1,
-        "change_percent": -1.4285714285714286
-      },
-      "explanatory_prose": {
-        "before": 31,
-        "after": 40,
-        "change": 9,
-        "change_percent": 29.03225806451613
-      },
-      "glass_height_px": {
-        "before": 371.5625,
-        "after": 392.796875,
-        "change": 21.234375,
-        "change_percent": 5.71488645920942
-      },
-      "section_height_px": {
-        "before": 751.796875,
-        "after": 749.03125,
-        "change": -2.765625,
-        "change_percent": -0.36786864803075964
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "es-320",
+      "sectionHeight": 826.234375,
+      "glassHeight": 470,
+      "dotValue": "3,2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-layout",
+          "width": 278,
+          "scrollWidth": 286
+        },
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 292,
+          "scrollWidth": 312
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 110
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     },
     {
-      "id": "es-768",
-      "words": {
-        "before": 70,
-        "after": 69,
-        "change": -1,
-        "change_percent": -1.4285714285714286
-      },
-      "explanatory_prose": {
-        "before": 31,
-        "after": 40,
-        "change": 9,
-        "change_percent": 29.03225806451613
-      },
-      "glass_height_px": {
-        "before": 385.5625,
-        "after": 374.796875,
-        "change": -10.765625,
-        "change_percent": -2.792186740152375
-      },
-      "section_height_px": {
-        "before": 594.5625,
-        "after": 583.796875,
-        "change": -10.765625,
-        "change_percent": -1.8106801219384
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "es-768",
+      "sectionHeight": 812.828125,
+      "glassHeight": 383,
+      "dotValue": "3,2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 670,
+          "scrollWidth": 690
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 110
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     },
     {
-      "id": "en-390-calm",
-      "words": {
-        "before": 61,
-        "after": 60,
-        "change": -1,
-        "change_percent": -1.639344262295082
-      },
-      "explanatory_prose": {
-        "before": 25,
-        "after": 32,
-        "change": 7,
-        "change_percent": 28.000000000000004
-      },
-      "glass_height_px": {
-        "before": 325.375,
-        "after": 344.796875,
-        "change": 19.421875,
-        "change_percent": 5.969074145217057
-      },
-      "section_height_px": {
-        "before": 681.609375,
-        "after": 677.03125,
-        "change": -4.578125,
-        "change_percent": -0.6716640304426564
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "en-390-calm",
+      "sectionHeight": 789.09375,
+      "glassHeight": 456.859375,
+      "dotValue": "3.2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-layout",
+          "width": 342,
+          "scrollWidth": 350
+        },
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 356,
+          "scrollWidth": 376
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 92
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     },
     {
-      "id": "es-390-calm",
-      "words": {
-        "before": 70,
-        "after": 69,
-        "change": -1,
-        "change_percent": -1.4285714285714286
-      },
-      "explanatory_prose": {
-        "before": 31,
-        "after": 40,
-        "change": 9,
-        "change_percent": 29.03225806451613
-      },
-      "glass_height_px": {
-        "before": 371.5625,
-        "after": 368.796875,
-        "change": -2.765625,
-        "change_percent": -0.744322960470984
-      },
-      "section_height_px": {
-        "before": 727.796875,
-        "after": 725.03125,
-        "change": -2.765625,
-        "change_percent": -0.3799995706219541
-      },
-      "heading_visible": true,
-      "comparison_contract": {
-        "sample": 3.2,
-        "labLimit": 5,
-        "reviewTrigger": 2,
-        "labOperator": "<",
-        "reviewOperator": ">",
-        "noAxisOrInterval": true
-      }
+      "profile": "es-390-calm",
+      "sectionHeight": 833.234375,
+      "glassHeight": 477,
+      "dotValue": "3,2",
+      "overflow": [
+        {
+          "tag": "DIV",
+          "className": "range-proof-layout",
+          "width": 342,
+          "scrollWidth": 350
+        },
+        {
+          "tag": "DIV",
+          "className": "range-proof-instrument bio-glass",
+          "width": 356,
+          "scrollWidth": 376
+        },
+        {
+          "tag": "P",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 110
+        },
+        {
+          "tag": "SPAN",
+          "className": "sr-only",
+          "width": 1,
+          "scrollWidth": 62
+        }
+      ]
     }
   ],
-  "verification": {
-    "static": "TypeScript, fresh 113-route build, English 1,205-message audit, 32-variant parity, story-order and tracked script-syntax checks passed.",
-    "fresh": "Eight actual 64 profiles passed the medical, semantic, layout, keyboard/details/source/free-route and reduced-motion checks. Baseline63 is the immediately preceding actual report reused, not recaptured.",
-    "limits": [
-      "Agent source/clinical review, not human clinician approval.",
-      "Cold image reads are not human usability research or proof of majority comprehension.",
-      "Owner acceptance of 64 remains unestablished until actual owner feedback.",
-      "Viewport emulation, not physical-device performance.",
-      "Only this section; full landing/entry suites and no-JavaScript visual parity were not rerun.",
-      "No real accounts, health uploads, purchases or mutating network requests."
-    ]
-  },
-  "historical_scope": "63 sources and functional results remain valid historical evidence, but its actual owner semantic rejection overrides the earlier model pass. A was a rejected temporary preflight, never a published native 64 version."
+  "limits": [
+    "Chromium viewport emulation, not physical-device performance.",
+    "Agent cold-image readings are not human usability research or proof that most people understand.",
+    "The dotted comma and fine routing remain subtle at320; plain-language comparisons and accessible description carry the same meaning.",
+    "No real accounts, health reports, checkout confirmations, DNS or evahealth.es cutover.",
+    "Query review66 labels the review and does not pin a historical deployment."
+  ]
 }

@@ -1,0 +1,9 @@
+{
+  "basis": "Medical source/visual agent review of65; component and bilingual copy are byte-identical at66. Only condition colour, footer wrapping and QA version defaults changed.",
+  "component_and_copy_unchanged_from65": true,
+  "medical_review": "docs/browser-qa-v65/medical-final.md",
+  "final_ui_commit": "674d40055311d3f012bc6f5ec2c329726a74f14f",
+  "medical_spec": "docs/browser-qa-v66/medical-spec.json",
+  "clinical_meaning": "Independent 3.2 mg/L sample below this documented lab limit5, above strict 2 review cutoff if persistent. Repeat when well; if still raised, review overall cardiovascular risk. No optimal zone, diagnosis, fixed interval, treatment target or individual prediction.",
+  "human_clinician_approval": false
+}

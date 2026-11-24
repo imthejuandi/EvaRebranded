@@ -1,0 +1,39 @@
+{
+  "prompt": "docs/range-retrofuturist-brief.md",
+  "models": {
+    "creative_instrument": "gpt-6-astra",
+    "medical_semantics": "gpt-6-astra",
+    "master": "gpt-6-astra",
+    "copy": "gpt-6.1-sol",
+    "impeccable": "gpt-6.1-terra",
+    "first_cold_image_read": "gpt-6.1-terra",
+    "native_cold_image_read": "gpt-6.1-sol"
+  },
+  "iterations": [
+    {
+      "candidate": "63",
+      "outcome": "Owner rejected shaded interval as optimal-looking. Earlier agent pass is overridden.",
+      "evidence": "docs/browser-qa-v64/owner-feedback-v63.json"
+    },
+    {
+      "candidate": "64",
+      "outcome": "Semantically clearer direct comparisons, but owner requested restoration of meaningful retrofuturistic visuals."
+    },
+    {
+      "candidate": "65 concept1",
+      "outcome": "Relay selected from three concepts. Review found misaligned joints, narrow768, duplicate lab prose and inherited table spacing in optical preview. Revised before publication.",
+      "evidence": "docs/browser-qa-v65/candidate1-review.md"
+    },
+    {
+      "candidate": "65 concept2 and native",
+      "outcome": "Separate design, medical, copy and cold-image readings accepted relay semantics/aesthetics; native eight profiles passed. Painted contrast independently failed14px amber condition at3.87. Agent approval did not override measured failure.",
+      "evidence": "docs/browser-qa-v65/painted-contrast.json"
+    },
+    {
+      "candidate": "66 native",
+      "outcome": "Paler conditional text and pretty footer wrapping. Eight native profiles, two 1051px edge profiles, live motion cancellation, no-JavaScript and five painted contrast profiles pass. Impeccable/master confirm final visual result.",
+      "evidence": "docs/browser-qa-v66/painted-contrast.json"
+    }
+  ],
+  "limits": "Agent editorial/clinical-source review and image interpretation, not human research, a majority-comprehension statistic, human clinician approval or owner acceptance."
+}

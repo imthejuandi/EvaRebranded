@@ -1,0 +1,849 @@
+{
+  "scope": "Candidate1 optical preflight: exact built SSR and current source CSS injected into live64. Not native65, motion or hydration proof.",
+  "profiles": [
+    {
+      "locale": "es",
+      "w": 320,
+      "h": 844,
+      "section": {
+        "x": 0,
+        "y": 0.421875,
+        "width": 320,
+        "height": 866.828125,
+        "right": 320,
+        "bottom": 867.25,
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos preguntas.\n\nEl mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(11, 16, 16)"
+      },
+      "glass": {
+        "x": 13,
+        "y": 154.859375,
+        "width": 294,
+        "height": 510.59375,
+        "right": 307,
+        "bottom": 665.453125,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "plot": {
+        "x": 34,
+        "y": 175.859375,
+        "width": 252,
+        "height": 468.59375,
+        "right": 286,
+        "bottom": 644.453125,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "comparisons": [
+        {
+          "x": 66,
+          "y": 275.453125,
+          "width": 220,
+          "height": 106,
+          "right": 286,
+          "bottom": 381.453125,
+          "text": "Referencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        },
+        {
+          "x": 66,
+          "y": 401.453125,
+          "width": 220,
+          "height": 106,
+          "right": 286,
+          "bottom": 507.453125,
+          "text": "Revisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        }
+      ],
+      "values": [
+        {
+          "x": 66,
+          "y": 299.453125,
+          "width": 63.484375,
+          "height": 30,
+          "right": 129.484375,
+          "bottom": 329.453125,
+          "text": "<5\nmg/L",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 66,
+          "y": 443.953125,
+          "width": 135.4375,
+          "height": 30,
+          "right": 201.4375,
+          "bottom": 473.953125,
+          "text": ">2\nmg/L\nsi persiste",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "meanings": [
+        {
+          "x": 66,
+          "y": 333.453125,
+          "width": 220,
+          "height": 48,
+          "right": 286,
+          "bottom": 381.453125,
+          "text": "Por debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 66,
+          "y": 477.953125,
+          "width": 208.34375,
+          "height": 24,
+          "right": 274.34375,
+          "bottom": 501.953125,
+          "text": "Supera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "condition": {
+        "x": 137.484375,
+        "y": 451.953125,
+        "width": 63.953125,
+        "height": 20,
+        "right": 201.4375,
+        "bottom": 471.953125,
+        "text": "si persiste",
+        "font": "14px",
+        "lineHeight": "20px",
+        "weight": "600",
+        "color": "rgb(243, 189, 130)"
+      },
+      "takeaway": {
+        "x": 34,
+        "y": 527.453125,
+        "width": 252,
+        "height": 117,
+        "right": 286,
+        "bottom": 644.453125,
+        "text": "Siguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(246, 240, 227)"
+      },
+      "forbiddenVisuals": 0,
+      "figureDescription": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.",
+      "clipped": [
+        {
+          "className": "range-proof-layout",
+          "clientWidth": 278,
+          "scrollWidth": 286
+        },
+        {
+          "className": "range-proof-instrument bio-glass",
+          "clientWidth": 292,
+          "scrollWidth": 312
+        }
+      ],
+      "passed": true,
+      "coldCaptureScope": "Direct locator screenshot of actual comparison container; excludes action takeaway and surrounding medical explanation. No image editing or wrapper mutation."
+    },
+    {
+      "locale": "en",
+      "w": 1366,
+      "h": 900,
+      "section": {
+        "x": 0,
+        "y": -0.46875,
+        "width": 1366,
+        "height": 528,
+        "right": 1366,
+        "bottom": 527.53125,
+        "text": "There’s more\nto “normal.”\n\nOne result. Two questions.\n\nThe same 3.2 mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The cutoff at 5 is this laboratory reference limit and the cutoff at 2 prompts review if persistent. These comparisons do not show an optimal target or diagnose disease.\n\nhs-CRP\n\nInflammation signal\n\nEXAMPLE\n\n3.2 mg/L\nmg/L\n\nLab reference\n\n<5\nmg/L\n\nBelow this lab’s limit.\n\nHeart-risk review\n\n>2\nmg/L\nif persistent\n\nAbove the review threshold.\n\nNext step\nRepeat the test when well. If still raised, review overall heart risk.\n\nLab limits vary. Not a diagnosis.\n\nSources and context\nInterpret your labs\nUpload for free",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(11, 16, 16)"
+      },
+      "glass": {
+        "x": 608.984375,
+        "y": 47.53125,
+        "width": 709.015625,
+        "height": 343,
+        "right": 1318,
+        "bottom": 390.53125,
+        "text": "The same 3.2 mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The cutoff at 5 is this laboratory reference limit and the cutoff at 2 prompts review if persistent. These comparisons do not show an optimal target or diagnose disease.\n\nhs-CRP\n\nInflammation signal\n\nEXAMPLE\n\n3.2 mg/L\nmg/L\n\nLab reference\n\n<5\nmg/L\n\nBelow this lab’s limit.\n\nHeart-risk review\n\n>2\nmg/L\nif persistent\n\nAbove the review threshold.\n\nNext step\nRepeat the test when well. If still raised, review overall heart risk.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "plot": {
+        "x": 637.984375,
+        "y": 72.53125,
+        "width": 651.015625,
+        "height": 295,
+        "right": 1289,
+        "bottom": 367.53125,
+        "text": "The same 3.2 mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The cutoff at 5 is this laboratory reference limit and the cutoff at 2 prompts review if persistent. These comparisons do not show an optimal target or diagnose disease.\n\nhs-CRP\n\nInflammation signal\n\nEXAMPLE\n\n3.2 mg/L\nmg/L\n\nLab reference\n\n<5\nmg/L\n\nBelow this lab’s limit.\n\nHeart-risk review\n\n>2\nmg/L\nif persistent\n\nAbove the review threshold.\n\nNext step\nRepeat the test when well. If still raised, review overall heart risk.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "comparisons": [
+        {
+          "x": 891,
+          "y": 72.53125,
+          "width": 398,
+          "height": 103,
+          "right": 1289,
+          "bottom": 175.53125,
+          "text": "Lab reference\n\n<5\nmg/L\n\nBelow this lab’s limit.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        },
+        {
+          "x": 891,
+          "y": 199.53125,
+          "width": 398,
+          "height": 103,
+          "right": 1289,
+          "bottom": 302.53125,
+          "text": "Heart-risk review\n\n>2\nmg/L\nif persistent\n\nAbove the review threshold.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        }
+      ],
+      "values": [
+        {
+          "x": 911,
+          "y": 107.03125,
+          "width": 63.484375,
+          "height": 30,
+          "right": 974.484375,
+          "bottom": 137.03125,
+          "text": "<5\nmg/L",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 911,
+          "y": 240.53125,
+          "width": 146.515625,
+          "height": 30,
+          "right": 1057.515625,
+          "bottom": 270.53125,
+          "text": ">2\nmg/L\nif persistent",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "meanings": [
+        {
+          "x": 911,
+          "y": 141.03125,
+          "width": 149.046875,
+          "height": 24,
+          "right": 1060.046875,
+          "bottom": 165.03125,
+          "text": "Below this lab’s limit.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 911,
+          "y": 274.53125,
+          "width": 199.828125,
+          "height": 24,
+          "right": 1110.828125,
+          "bottom": 298.53125,
+          "text": "Above the review threshold.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "condition": {
+        "x": 982.484375,
+        "y": 248.53125,
+        "width": 75.03125,
+        "height": 20,
+        "right": 1057.515625,
+        "bottom": 268.53125,
+        "text": "if persistent",
+        "font": "14px",
+        "lineHeight": "20px",
+        "weight": "600",
+        "color": "rgb(243, 189, 130)"
+      },
+      "takeaway": {
+        "x": 637.984375,
+        "y": 326.53125,
+        "width": 651.015625,
+        "height": 41,
+        "right": 1289,
+        "bottom": 367.53125,
+        "text": "Next step\nRepeat the test when well. If still raised, review overall heart risk.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(246, 240, 227)"
+      },
+      "forbiddenVisuals": 0,
+      "figureDescription": "The same 3.2 mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The cutoff at 5 is this laboratory reference limit and the cutoff at 2 prompts review if persistent. These comparisons do not show an optimal target or diagnose disease.",
+      "clipped": [
+        {
+          "className": "range-proof-instrument bio-glass",
+          "clientWidth": 707,
+          "scrollWidth": 727
+        }
+      ],
+      "passed": true,
+      "coldCaptureScope": "Direct locator screenshot of actual comparison container; excludes action takeaway and surrounding medical explanation. No image editing or wrapper mutation."
+    },
+    {
+      "locale": "es",
+      "w": 390,
+      "h": 844,
+      "section": {
+        "x": 0,
+        "y": 0.234375,
+        "width": 390,
+        "height": 873.234375,
+        "right": 390,
+        "bottom": 873.46875,
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos preguntas.\n\nEl mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(11, 16, 16)"
+      },
+      "glass": {
+        "x": 16,
+        "y": 154.671875,
+        "width": 358,
+        "height": 517,
+        "right": 374,
+        "bottom": 671.671875,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "plot": {
+        "x": 41,
+        "y": 175.671875,
+        "width": 308,
+        "height": 475,
+        "right": 349,
+        "bottom": 650.671875,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "comparisons": [
+        {
+          "x": 73,
+          "y": 281.671875,
+          "width": 276,
+          "height": 106,
+          "right": 349,
+          "bottom": 387.671875,
+          "text": "Referencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        },
+        {
+          "x": 73,
+          "y": 407.671875,
+          "width": 276,
+          "height": 106,
+          "right": 349,
+          "bottom": 513.671875,
+          "text": "Revisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        }
+      ],
+      "values": [
+        {
+          "x": 73,
+          "y": 305.671875,
+          "width": 63.484375,
+          "height": 30,
+          "right": 136.484375,
+          "bottom": 335.671875,
+          "text": "<5\nmg/L",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 73,
+          "y": 450.171875,
+          "width": 135.4375,
+          "height": 30,
+          "right": 208.4375,
+          "bottom": 480.171875,
+          "text": ">2\nmg/L\nsi persiste",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "meanings": [
+        {
+          "x": 73,
+          "y": 339.671875,
+          "width": 276,
+          "height": 48,
+          "right": 349,
+          "bottom": 387.671875,
+          "text": "Por debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 73,
+          "y": 484.171875,
+          "width": 208.34375,
+          "height": 24,
+          "right": 281.34375,
+          "bottom": 508.171875,
+          "text": "Supera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "condition": {
+        "x": 144.484375,
+        "y": 458.171875,
+        "width": 63.953125,
+        "height": 20,
+        "right": 208.4375,
+        "bottom": 478.171875,
+        "text": "si persiste",
+        "font": "14px",
+        "lineHeight": "20px",
+        "weight": "600",
+        "color": "rgb(243, 189, 130)"
+      },
+      "takeaway": {
+        "x": 41,
+        "y": 533.671875,
+        "width": 308,
+        "height": 117,
+        "right": 349,
+        "bottom": 650.671875,
+        "text": "Siguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(246, 240, 227)"
+      },
+      "forbiddenVisuals": 0,
+      "figureDescription": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.",
+      "clipped": [
+        {
+          "className": "range-proof-layout",
+          "clientWidth": 342,
+          "scrollWidth": 350
+        },
+        {
+          "className": "range-proof-instrument bio-glass",
+          "clientWidth": 356,
+          "scrollWidth": 376
+        }
+      ],
+      "passed": true,
+      "coldCaptureScope": "Direct locator screenshot of actual comparison container; excludes action takeaway and surrounding medical explanation. No image editing or wrapper mutation."
+    },
+    {
+      "locale": "es",
+      "w": 768,
+      "h": 1024,
+      "section": {
+        "x": 0,
+        "y": 0.1875,
+        "width": 768,
+        "height": 690,
+        "right": 768,
+        "bottom": 690.1875,
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos preguntas.\n\nEl mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(11, 16, 16)"
+      },
+      "glass": {
+        "x": 333.59375,
+        "y": 48.1875,
+        "width": 386.40625,
+        "height": 481,
+        "right": 720,
+        "bottom": 529.1875,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "plot": {
+        "x": 356.59375,
+        "y": 71.1875,
+        "width": 340.40625,
+        "height": 435,
+        "right": 697,
+        "bottom": 506.1875,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "comparisons": [
+        {
+          "x": 496.59375,
+          "y": 71.1875,
+          "width": 200.40625,
+          "height": 147,
+          "right": 697,
+          "bottom": 218.1875,
+          "text": "Referencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        },
+        {
+          "x": 496.59375,
+          "y": 242.1875,
+          "width": 200.40625,
+          "height": 147,
+          "right": 697,
+          "bottom": 389.1875,
+          "text": "Revisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        }
+      ],
+      "values": [
+        {
+          "x": 510.59375,
+          "y": 115.6875,
+          "width": 63.484375,
+          "height": 30,
+          "right": 574.078125,
+          "bottom": 145.6875,
+          "text": "<5\nmg/L",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 510.59375,
+          "y": 303.1875,
+          "width": 135.4375,
+          "height": 30,
+          "right": 646.03125,
+          "bottom": 333.1875,
+          "text": ">2\nmg/L\nsi persiste",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "meanings": [
+        {
+          "x": 510.59375,
+          "y": 149.6875,
+          "width": 186.40625,
+          "height": 48,
+          "right": 697,
+          "bottom": 197.6875,
+          "text": "Por debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 510.59375,
+          "y": 337.1875,
+          "width": 186.40625,
+          "height": 48,
+          "right": 697,
+          "bottom": 385.1875,
+          "text": "Supera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "condition": {
+        "x": 582.078125,
+        "y": 311.1875,
+        "width": 63.953125,
+        "height": 20,
+        "right": 646.03125,
+        "bottom": 331.1875,
+        "text": "si persiste",
+        "font": "14px",
+        "lineHeight": "20px",
+        "weight": "600",
+        "color": "rgb(243, 189, 130)"
+      },
+      "takeaway": {
+        "x": 356.59375,
+        "y": 413.1875,
+        "width": 340.40625,
+        "height": 93,
+        "right": 697,
+        "bottom": 506.1875,
+        "text": "Siguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(246, 240, 227)"
+      },
+      "forbiddenVisuals": 0,
+      "figureDescription": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.",
+      "clipped": [
+        {
+          "className": "range-proof-instrument bio-glass",
+          "clientWidth": 384,
+          "scrollWidth": 404
+        }
+      ],
+      "passed": true,
+      "coldCaptureScope": "Direct locator screenshot of actual comparison container; excludes action takeaway and surrounding medical explanation. No image editing or wrapper mutation."
+    },
+    {
+      "locale": "es",
+      "w": 1366,
+      "h": 900,
+      "section": {
+        "x": 0,
+        "y": 0.328125,
+        "width": 1366,
+        "height": 552,
+        "right": 1366,
+        "bottom": 552.328125,
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos preguntas.\n\nEl mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(11, 16, 16)"
+      },
+      "glass": {
+        "x": 608.984375,
+        "y": 48.328125,
+        "width": 709.015625,
+        "height": 367,
+        "right": 1318,
+        "bottom": 415.328125,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "plot": {
+        "x": 637.984375,
+        "y": 73.328125,
+        "width": 651.015625,
+        "height": 319,
+        "right": 1289,
+        "bottom": 392.328125,
+        "text": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.\n\nhs-CRP\n\nSeñal de inflamación\n\nEJEMPLO\n\n3,2 mg/L\nmg/L\n\nReferencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.\n\nRevisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.\n\nSiguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(255, 253, 246)"
+      },
+      "comparisons": [
+        {
+          "x": 891,
+          "y": 73.328125,
+          "width": 398,
+          "height": 103,
+          "right": 1289,
+          "bottom": 176.328125,
+          "text": "Referencia del laboratorio\n\n<5\nmg/L\n\nPor debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        },
+        {
+          "x": 891,
+          "y": 200.328125,
+          "width": 398,
+          "height": 103,
+          "right": 1289,
+          "bottom": 303.328125,
+          "text": "Revisión del riesgo cardiovascular\n\n>2\nmg/L\nsi persiste\n\nSupera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(255, 253, 246)"
+        }
+      ],
+      "values": [
+        {
+          "x": 911,
+          "y": 107.828125,
+          "width": 63.484375,
+          "height": 30,
+          "right": 974.484375,
+          "bottom": 137.828125,
+          "text": "<5\nmg/L",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 911,
+          "y": 241.328125,
+          "width": 135.4375,
+          "height": 30,
+          "right": 1046.4375,
+          "bottom": 271.328125,
+          "text": ">2\nmg/L\nsi persiste",
+          "font": "24px",
+          "lineHeight": "30px",
+          "weight": "600",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "meanings": [
+        {
+          "x": 911,
+          "y": 141.828125,
+          "width": 291.484375,
+          "height": 24,
+          "right": 1202.484375,
+          "bottom": 165.828125,
+          "text": "Por debajo del límite de este laboratorio.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        },
+        {
+          "x": 911,
+          "y": 275.328125,
+          "width": 208.34375,
+          "height": 24,
+          "right": 1119.34375,
+          "bottom": 299.328125,
+          "text": "Supera el umbral de revisión.",
+          "font": "16px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "color": "rgb(246, 240, 227)"
+        }
+      ],
+      "condition": {
+        "x": 982.484375,
+        "y": 249.328125,
+        "width": 63.953125,
+        "height": 20,
+        "right": 1046.4375,
+        "bottom": 269.328125,
+        "text": "si persiste",
+        "font": "14px",
+        "lineHeight": "20px",
+        "weight": "600",
+        "color": "rgb(243, 189, 130)"
+      },
+      "takeaway": {
+        "x": 637.984375,
+        "y": 327.328125,
+        "width": 651.015625,
+        "height": 65,
+        "right": 1289,
+        "bottom": 392.328125,
+        "text": "Siguiente paso\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+        "font": "16px",
+        "lineHeight": "24px",
+        "weight": "400",
+        "color": "rgb(246, 240, 227)"
+      },
+      "forbiddenVisuals": 0,
+      "figureDescription": "El mismo ejemplo de hs-CRP de 3,2 mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.",
+      "clipped": [
+        {
+          "className": "range-proof-instrument bio-glass",
+          "clientWidth": 707,
+          "scrollWidth": 727
+        }
+      ],
+      "passed": true,
+      "coldCaptureScope": "Direct locator screenshot of actual comparison container; excludes action takeaway and surrounding medical explanation. No image editing or wrapper mutation."
+    }
+  ],
+  "sourceSha256": {
+    "components/story/RangeProofSection.tsx": "85003cb84455915d3e9482a58be1dbe8ea254d95bfa07d56c6c152b7e4cf3041",
+    "components/story/range-proof-section.css": "a0e1acc4b843966044b03b91eb1e9f661bafa8ab424df5d79012096053cafd3c",
+    "lib/site-content/range-proof-copy.ts": "2487348ecf87671b4222977e5ad7cda1ec52808281c0aa860b5be0ef02cf009c"
+  },
+  "networkWrites": [],
+  "errors": [],
+  "allOwnedBrowsersClosed": true,
+  "passed": true
+}

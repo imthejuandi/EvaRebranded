@@ -1,0 +1,477 @@
+{
+  "profiles": [
+    {
+      "locale": "es",
+      "width": 320,
+      "glass": {
+        "x": 13,
+        "y": 154.859375,
+        "width": 294,
+        "height": 470,
+        "right": 307,
+        "bottom": 624.859375
+      },
+      "labels": [
+        {
+          "text": "Ejemplo",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 101.625,
+            "y": 190.640625,
+            "width": 47.375,
+            "height": 18,
+            "right": 149,
+            "bottom": 208.640625
+          }
+        },
+        {
+          "text": "Señal de inflamación",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 34,
+            "y": 215.640625,
+            "width": 142,
+            "height": 20,
+            "right": 176,
+            "bottom": 235.640625
+          }
+        },
+        {
+          "text": "Referencia de este laboratorio",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 66,
+            "y": 282.859375,
+            "width": 220,
+            "height": 20,
+            "right": 286,
+            "bottom": 302.859375
+          }
+        },
+        {
+          "text": "mg/L",
+          "color": "rgb(246, 240, 227)",
+          "size": 14,
+          "box": {
+            "x": 97.90625,
+            "y": 314.859375,
+            "width": 31.578125,
+            "height": 20,
+            "right": 129.484375,
+            "bottom": 334.859375
+          }
+        },
+        {
+          "text": "Por debajo del límite.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 66,
+            "y": 340.859375,
+            "width": 220,
+            "height": 24,
+            "right": 286,
+            "bottom": 364.859375
+          }
+        },
+        {
+          "text": "Revisión del riesgo cardiovascular",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 66,
+            "y": 384.859375,
+            "width": 220,
+            "height": 20,
+            "right": 286,
+            "bottom": 404.859375
+          }
+        },
+        {
+          "text": "mg/L",
+          "color": "rgb(246, 240, 227)",
+          "size": 14,
+          "box": {
+            "x": 97.90625,
+            "y": 416.859375,
+            "width": 31.578125,
+            "height": 20,
+            "right": 129.484375,
+            "bottom": 436.859375
+          }
+        },
+        {
+          "text": "si persiste",
+          "color": "rgb(252, 224, 186)",
+          "size": 14,
+          "box": {
+            "x": 137.484375,
+            "y": 416.859375,
+            "width": 63.953125,
+            "height": 20,
+            "right": 201.4375,
+            "bottom": 436.859375
+          }
+        },
+        {
+          "text": "Supera el umbral de revisión.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 66,
+            "y": 442.859375,
+            "width": 220,
+            "height": 24,
+            "right": 286,
+            "bottom": 466.859375
+          }
+        },
+        {
+          "text": "Siguiente paso",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 34,
+            "y": 503.859375,
+            "width": 252,
+            "height": 24,
+            "right": 286,
+            "bottom": 527.859375
+          }
+        },
+        {
+          "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 34,
+            "y": 531.859375,
+            "width": 252,
+            "height": 72,
+            "right": 286,
+            "bottom": 603.859375
+          }
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "glass": {
+        "x": 16,
+        "y": 154.671875,
+        "width": 358,
+        "height": 477,
+        "right": 374,
+        "bottom": 631.671875
+      },
+      "labels": [
+        {
+          "text": "Ejemplo",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 108.625,
+            "y": 193.953125,
+            "width": 47.375,
+            "height": 18,
+            "right": 156,
+            "bottom": 211.953125
+          }
+        },
+        {
+          "text": "Señal de inflamación",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 41,
+            "y": 218.953125,
+            "width": 180,
+            "height": 20,
+            "right": 221,
+            "bottom": 238.953125
+          }
+        },
+        {
+          "text": "Referencia de este laboratorio",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 73,
+            "y": 289.671875,
+            "width": 276,
+            "height": 20,
+            "right": 349,
+            "bottom": 309.671875
+          }
+        },
+        {
+          "text": "mg/L",
+          "color": "rgb(246, 240, 227)",
+          "size": 14,
+          "box": {
+            "x": 104.90625,
+            "y": 321.671875,
+            "width": 31.578125,
+            "height": 20,
+            "right": 136.484375,
+            "bottom": 341.671875
+          }
+        },
+        {
+          "text": "Por debajo del límite.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 73,
+            "y": 347.671875,
+            "width": 276,
+            "height": 24,
+            "right": 349,
+            "bottom": 371.671875
+          }
+        },
+        {
+          "text": "Revisión del riesgo cardiovascular",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 73,
+            "y": 391.671875,
+            "width": 276,
+            "height": 20,
+            "right": 349,
+            "bottom": 411.671875
+          }
+        },
+        {
+          "text": "mg/L",
+          "color": "rgb(246, 240, 227)",
+          "size": 14,
+          "box": {
+            "x": 104.90625,
+            "y": 423.671875,
+            "width": 31.578125,
+            "height": 20,
+            "right": 136.484375,
+            "bottom": 443.671875
+          }
+        },
+        {
+          "text": "si persiste",
+          "color": "rgb(252, 224, 186)",
+          "size": 14,
+          "box": {
+            "x": 144.484375,
+            "y": 423.671875,
+            "width": 63.953125,
+            "height": 20,
+            "right": 208.4375,
+            "bottom": 443.671875
+          }
+        },
+        {
+          "text": "Supera el umbral de revisión.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 73,
+            "y": 449.671875,
+            "width": 276,
+            "height": 24,
+            "right": 349,
+            "bottom": 473.671875
+          }
+        },
+        {
+          "text": "Siguiente paso",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 41,
+            "y": 510.671875,
+            "width": 308,
+            "height": 24,
+            "right": 349,
+            "bottom": 534.671875
+          }
+        },
+        {
+          "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 41,
+            "y": 538.671875,
+            "width": 308,
+            "height": 72,
+            "right": 349,
+            "bottom": 610.671875
+          }
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "glass": {
+        "x": 608.984375,
+        "y": -1483.46875,
+        "width": 709.015625,
+        "height": 333,
+        "right": 1318,
+        "bottom": -1150.46875
+      },
+      "labels": [
+        {
+          "text": "Example",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 712.234375,
+            "y": -1453.40625,
+            "width": 50.625,
+            "height": 18,
+            "right": 762.859375,
+            "bottom": -1435.40625
+          }
+        },
+        {
+          "text": "Inflammation signal",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 637.984375,
+            "y": -1428.40625,
+            "width": 197.015625,
+            "height": 20,
+            "right": 835,
+            "bottom": -1408.40625
+          }
+        },
+        {
+          "text": "This lab’s reference",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 911,
+            "y": -1450.46875,
+            "width": 378,
+            "height": 20,
+            "right": 1289,
+            "bottom": -1430.46875
+          }
+        },
+        {
+          "text": "mg/L",
+          "color": "rgb(246, 240, 227)",
+          "size": 14,
+          "box": {
+            "x": 942.90625,
+            "y": -1418.46875,
+            "width": 31.578125,
+            "height": 20,
+            "right": 974.484375,
+            "bottom": -1398.46875
+          }
+        },
+        {
+          "text": "Below the limit.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 911,
+            "y": -1392.46875,
+            "width": 378,
+            "height": 24,
+            "right": 1289,
+            "bottom": -1368.46875
+          }
+        },
+        {
+          "text": "Heart-risk review",
+          "color": "rgb(241, 236, 227)",
+          "size": 14,
+          "box": {
+            "x": 911,
+            "y": -1328.46875,
+            "width": 378,
+            "height": 20,
+            "right": 1289,
+            "bottom": -1308.46875
+          }
+        },
+        {
+          "text": "mg/L",
+          "color": "rgb(246, 240, 227)",
+          "size": 14,
+          "box": {
+            "x": 942.90625,
+            "y": -1296.46875,
+            "width": 31.578125,
+            "height": 20,
+            "right": 974.484375,
+            "bottom": -1276.46875
+          }
+        },
+        {
+          "text": "if persistent",
+          "color": "rgb(252, 224, 186)",
+          "size": 14,
+          "box": {
+            "x": 982.484375,
+            "y": -1296.46875,
+            "width": 75.03125,
+            "height": 20,
+            "right": 1057.515625,
+            "bottom": -1276.46875
+          }
+        },
+        {
+          "text": "Above the review threshold.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 911,
+            "y": -1270.46875,
+            "width": 378,
+            "height": 24,
+            "right": 1289,
+            "bottom": -1246.46875
+          }
+        },
+        {
+          "text": "Next step",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 637.984375,
+            "y": -1197.46875,
+            "width": 68.921875,
+            "height": 24,
+            "right": 706.90625,
+            "bottom": -1173.46875
+          }
+        },
+        {
+          "text": "Repeat the test when well. If still raised, review overall heart risk.",
+          "color": "rgb(246, 240, 227)",
+          "size": 16,
+          "box": {
+            "x": 722.90625,
+            "y": -1197.46875,
+            "width": 566.09375,
+            "height": 24,
+            "right": 1289,
+            "bottom": -1173.46875
+          }
+        }
+      ]
+    }
+  ],
+  "networkWrites": [],
+  "allOwnedBrowsersClosed": true
+}

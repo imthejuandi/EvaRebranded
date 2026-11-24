@@ -1,0 +1,204 @@
+{
+  "method": "Conservative whole text bounding-box contrast against actual native glass with text made transparent, 1051px EN/ES. Grain/reflections/rim retained. Whole-box minimum may be lower than exact glyph-pixel contrast.",
+  "passed": false,
+  "results": [
+    {
+      "locale": "en",
+      "text": "Example",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.74,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "Inflammation signal",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 7.73,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "This lab’s reference",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.48,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "mg/L",
+      "color": "rgb(246, 240, 227)",
+      "size": 14,
+      "minimumContrast": 8.31,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "Below the limit.",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.45,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "Heart-risk review",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.09,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "mg/L",
+      "color": "rgb(246, 240, 227)",
+      "size": 14,
+      "minimumContrast": 6.04,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "if persistent",
+      "color": "rgb(243, 189, 130)",
+      "size": 14,
+      "minimumContrast": 3.87,
+      "required": 4.5,
+      "passed": false
+    },
+    {
+      "locale": "en",
+      "text": "Above the review threshold.",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.15,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "Next step",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.08,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "text": "Repeat the test when well. If still raised, review overall heart risk.",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.05,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "Ejemplo",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.74,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "Señal de inflamación",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 7.73,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "Referencia de este laboratorio",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.48,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "mg/L",
+      "color": "rgb(246, 240, 227)",
+      "size": 14,
+      "minimumContrast": 8.31,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "Por debajo del límite.",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.45,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "Revisión del riesgo cardiovascular",
+      "color": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.09,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "mg/L",
+      "color": "rgb(246, 240, 227)",
+      "size": 14,
+      "minimumContrast": 6.04,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "si persiste",
+      "color": "rgb(243, 189, 130)",
+      "size": 14,
+      "minimumContrast": 3.87,
+      "required": 4.5,
+      "passed": false
+    },
+    {
+      "locale": "es",
+      "text": "Supera el umbral de revisión.",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.15,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "Siguiente paso",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.08,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+      "color": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.05,
+      "required": 4.5,
+      "passed": true
+    }
+  ]
+}

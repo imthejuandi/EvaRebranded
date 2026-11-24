@@ -1,0 +1,3 @@
+# Intermediate relay design and reviews
+
+These records distinguish optical candidates from actual native 65. Candidate 1 exposed misaligned joints, narrow tablet layout and redundant lab prose; candidate 2 repaired them. Specialist and cold-image agent reviews accepted the relationship and visual character. Native 65 passed the eight layout profiles, but subsequent painted-text contrast measured 3.87 for the conditional amber text. Final native 66 fixes that failure and the tablet footer orphan. See `docs/browser-qa-v66` and `docs/range-graphic-qa.json` for current status. This is agent editorial evidence, not human usability research or medical approval.
