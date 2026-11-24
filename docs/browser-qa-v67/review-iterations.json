@@ -1,0 +1,60 @@
+{
+  "brief": "docs/range-levels-brief.md",
+  "roles": {
+    "bilingual_wellness_copy": "gpt-6.1-sol",
+    "medical_source_and_semantics": "gpt-6-astra",
+    "impeccable_UX_type_spacing": "gpt-6.1-terra",
+    "master": "gpt-6-astra",
+    "first_image_reader": "gpt-6.1-terra",
+    "native_image_reader": "gpt-6.1-sol"
+  },
+  "iterations": [
+    {
+      "stage": "Owner rejects66",
+      "finding": "Relay compares meanings but does not visibly represent actual level ranges. Previous agent approvals do not override this.",
+      "record": "owner-feedback-v66.json"
+    },
+    {
+      "stage": "Medical/source selection",
+      "finding": "Verified current official AHA lower relative hs-CRP category <1 against documented adult assay reference <5. Universal optimal/treatment claim rejected.",
+      "record": "medical.md"
+    },
+    {
+      "stage": "First quantitative render",
+      "finding": "Two real equal-domain bands now show requested level contrast. Improve direct cursor identity and name third numeric review cutoff.",
+      "records": [
+        "design-candidate.md",
+        "copy-candidate.md",
+        "medical-candidate.md",
+        "cold-reader-candidate.md"
+      ]
+    },
+    {
+      "stage": "Final candidate",
+      "finding": "Bold3.2/3,2 at its exact axis position; nearby 3 suppressed. Separate >2 review purpose named; disclosure lead updated; small gaps trimmed without reducing meaningful bands/type.",
+      "records": [
+        "design-final-preflight.md",
+        "master-final-preflight.md"
+      ]
+    },
+    {
+      "stage": "Native verification",
+      "finding": "All8 profiles pass exact band fractions,5:1 extent ratio, shared sample coordinate, inside/outside interpretation, labels, focus, disclosures,four sources and destinations. Initial overflow heuristic flagged bounded circle/tick geometry; explicit leaf-text rectangle bounds confirm no clipping. UI was not changed to hide a test failure.",
+      "records": [
+        "native-qa-initial-overflow.json",
+        "native-qa.json"
+      ]
+    },
+    {
+      "stage": "Independent final review",
+      "finding": "Actual Impeccable/medical/master and fresh image-only reading confirm visual range relationship. Not owner acceptance or proof of majority human comprehension.",
+      "records": [
+        "design-native-final.md",
+        "medical-native-final.md",
+        "master-native-final.md",
+        "cold-native-final.md"
+      ]
+    }
+  ],
+  "limits": "Agent clinical/editorial readings are not human clinician approval, real-user research or physical-device evidence."
+}

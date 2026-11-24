@@ -1,0 +1,321 @@
+{
+  "scope": "Optical preview of exact new built SSR and source CSS on live66. Resets removed66layout declarations. Not native67 or hydration proof.",
+  "profiles": [
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "section": {
+        "x": 0,
+        "y": -0.46875,
+        "width": 1366,
+        "height": 698,
+        "right": 1366,
+        "bottom": 697.53125
+      },
+      "glass": {
+        "x": 608.984375,
+        "y": 47.53125,
+        "width": 709.015625,
+        "height": 513,
+        "right": 1318,
+        "bottom": 560.53125
+      },
+      "text": "There’s more\nto “normal.”\n\nOne result. Two ranges.\n\nTwo bands on the same linear 0 to 6 mg/L scale. This laboratory reference is below 5; the lower relative cardiovascular-risk hs-CRP category is below 1. The same 3.2 example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above 2 if persistent is a separate review trigger, not an optimal band.\n\nhs-CRP Example\n\nInflammation signal\n\n3.2 mg/L\nmg/L\n\nThis lab’s reference\n\n<5 mg/L\n\nWithin reference.\n\nLower relative heart risk\n\n<1 mg/L\n\nOutside this category.\n\n0\n1\n2\n3\n4\n5\n6\n\nhs-CRP category, not your overall risk.\n\n>2 mg/L if persistent\nRepeat the test when well. If still raised, review overall heart risk.\n\nLab limits vary. Not a diagnosis.\n\nSources and context\nInterpret your labs\nUpload for free",
+      "tracks": [
+        {
+          "box": {
+            "x": 645.984375,
+            "y": 222.53125,
+            "width": 635.015625,
+            "height": 24,
+            "right": 1281,
+            "bottom": 246.53125
+          },
+          "band": {
+            "x": 645.984375,
+            "y": 223.53125,
+            "width": 529.171875,
+            "height": 22,
+            "right": 1175.15625,
+            "bottom": 245.53125
+          },
+          "point": {
+            "x": 983.65625,
+            "y": 216.53125,
+            "width": 2,
+            "height": 36,
+            "right": 985.65625,
+            "bottom": 252.53125
+          }
+        },
+        {
+          "box": {
+            "x": 645.984375,
+            "y": 336.53125,
+            "width": 635.015625,
+            "height": 24,
+            "right": 1281,
+            "bottom": 360.53125
+          },
+          "band": {
+            "x": 645.984375,
+            "y": 337.53125,
+            "width": 105.828125,
+            "height": 22,
+            "right": 751.8125,
+            "bottom": 359.53125
+          },
+          "point": {
+            "x": 983.65625,
+            "y": 330.53125,
+            "width": 2,
+            "height": 36,
+            "right": 985.65625,
+            "bottom": 366.53125
+          }
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "section": {
+        "x": 0,
+        "y": 0.234375,
+        "width": 390,
+        "height": 907.234375,
+        "right": 390,
+        "bottom": 907.46875
+      },
+      "glass": {
+        "x": 16,
+        "y": 154.671875,
+        "width": 358,
+        "height": 551,
+        "right": 374,
+        "bottom": 705.671875
+      },
+      "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n3\n4\n5\n6\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\n>2 mg/L si persiste\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+      "tracks": [
+        {
+          "box": {
+            "x": 49,
+            "y": 301.671875,
+            "width": 292,
+            "height": 24,
+            "right": 341,
+            "bottom": 325.671875
+          },
+          "band": {
+            "x": 49,
+            "y": 302.671875,
+            "width": 243.328125,
+            "height": 22,
+            "right": 292.328125,
+            "bottom": 324.671875
+          },
+          "point": {
+            "x": 203.71875,
+            "y": 295.671875,
+            "width": 2,
+            "height": 36,
+            "right": 205.71875,
+            "bottom": 331.671875
+          }
+        },
+        {
+          "box": {
+            "x": 49,
+            "y": 415.671875,
+            "width": 292,
+            "height": 24,
+            "right": 341,
+            "bottom": 439.671875
+          },
+          "band": {
+            "x": 49,
+            "y": 416.671875,
+            "width": 48.65625,
+            "height": 22,
+            "right": 97.65625,
+            "bottom": 438.671875
+          },
+          "point": {
+            "x": 203.71875,
+            "y": 409.671875,
+            "width": 2,
+            "height": 36,
+            "right": 205.71875,
+            "bottom": 445.671875
+          }
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "section": {
+        "x": 0,
+        "y": 0.421875,
+        "width": 320,
+        "height": 931.234375,
+        "right": 320,
+        "bottom": 931.65625
+      },
+      "glass": {
+        "x": 13,
+        "y": 154.859375,
+        "width": 294,
+        "height": 575,
+        "right": 307,
+        "bottom": 729.859375
+      },
+      "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n3\n4\n5\n6\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\n>2 mg/L si persiste\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+      "tracks": [
+        {
+          "box": {
+            "x": 42,
+            "y": 313.859375,
+            "width": 236,
+            "height": 24,
+            "right": 278,
+            "bottom": 337.859375
+          },
+          "band": {
+            "x": 42,
+            "y": 314.859375,
+            "width": 196.65625,
+            "height": 22,
+            "right": 238.65625,
+            "bottom": 336.859375
+          },
+          "point": {
+            "x": 166.859375,
+            "y": 307.859375,
+            "width": 2,
+            "height": 36,
+            "right": 168.859375,
+            "bottom": 343.859375
+          }
+        },
+        {
+          "box": {
+            "x": 42,
+            "y": 439.859375,
+            "width": 236,
+            "height": 24,
+            "right": 278,
+            "bottom": 463.859375
+          },
+          "band": {
+            "x": 42,
+            "y": 440.859375,
+            "width": 39.328125,
+            "height": 22,
+            "right": 81.328125,
+            "bottom": 462.859375
+          },
+          "point": {
+            "x": 166.859375,
+            "y": 433.859375,
+            "width": 2,
+            "height": 36,
+            "right": 168.859375,
+            "bottom": 469.859375
+          }
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "height": 1024,
+      "section": {
+        "x": 0,
+        "y": 0.1875,
+        "width": 768,
+        "height": 964.828125,
+        "right": 768,
+        "bottom": 965.015625
+      },
+      "glass": {
+        "x": 48,
+        "y": 208.21875,
+        "width": 672,
+        "height": 535,
+        "right": 720,
+        "bottom": 743.21875
+      },
+      "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n3\n4\n5\n6\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\n>2 mg/L si persiste\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+      "tracks": [
+        {
+          "box": {
+            "x": 79,
+            "y": 381.21875,
+            "width": 610,
+            "height": 24,
+            "right": 689,
+            "bottom": 405.21875
+          },
+          "band": {
+            "x": 79,
+            "y": 382.21875,
+            "width": 508.328125,
+            "height": 22,
+            "right": 587.328125,
+            "bottom": 404.21875
+          },
+          "point": {
+            "x": 403.328125,
+            "y": 375.21875,
+            "width": 2,
+            "height": 36,
+            "right": 405.328125,
+            "bottom": 411.21875
+          }
+        },
+        {
+          "box": {
+            "x": 79,
+            "y": 495.21875,
+            "width": 610,
+            "height": 24,
+            "right": 689,
+            "bottom": 519.21875
+          },
+          "band": {
+            "x": 79,
+            "y": 496.21875,
+            "width": 101.65625,
+            "height": 22,
+            "right": 180.65625,
+            "bottom": 518.21875
+          },
+          "point": {
+            "x": 403.328125,
+            "y": 489.21875,
+            "width": 2,
+            "height": 36,
+            "right": 405.328125,
+            "bottom": 525.21875
+          }
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "networkWrites": [],
+  "sourceSha256": {
+    "components/story/RangeProofSection.tsx": "a1bce7fe01636fa9e3ef3b2babbc200b8efa9d83e83b7572d69b760faf65f93d",
+    "components/story/range-proof-section.css": "3fdcf0dcae07160e2bc1132dd5479d0abe1958f1a2c9b61e135d99f9ad44f4d3",
+    "lib/site-content/range-proof-copy.ts": "0f80ef5d72867273f554b0dc79eddee866f7407e9c6c3b1402422dc223086595"
+  },
+  "allOwnedBrowsersClosed": true
+}

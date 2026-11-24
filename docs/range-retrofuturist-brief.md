@@ -1,5 +1,7 @@
 # EVA: one result, two interpretations
 
+Historical brief for65–66. The owner rejected the relay. [The current level-comparison brief](range-levels-brief.md) supersedes its no-axis and no-band directions; medical qualifications and EVA material identity remain.
+
 ## Master prompt
 
 Act as a specialist on a small design team refining EVA’s existing landing section `#otra-lectura`. Deliver an exceptionally considered, memorable medical education instrument within EVA’s accepted retrofuturistic identity. The visitor should understand the example without learning how to read a complicated chart. The piece must feel like a contemporary physical instrument: luminous analog dot numerals, precise calibration, smoked glass, warm paper, a controlled amber signal and the incumbent purple/warm reflections. Distinctive craft must serve the explanation. Preserve the rest of the landing and its compact scale.

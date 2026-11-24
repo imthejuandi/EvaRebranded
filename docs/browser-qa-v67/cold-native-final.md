@@ -1,0 +1,16 @@
+# Image-only reading
+
+This is an agent interpretation of the two supplied screenshots, not human research. I inspected only the English desktop image and Spanish mobile image.
+
+- **The two filled spans:** The long pale span is “This lab’s reference” / “Referencia de este laboratorio,” labelled **<5 mg/L**. It runs visually from 0 to 5. The short pale green span is “Lower relative heart risk” / “Menor riesgo cardiovascular relativo,” labelled **<1 mg/L**. It runs visually from 0 to 1. These read as two different criteria applied to the same hs-CRP result.
+- **Example value:** **3.2 mg/L**. Both screenshots show a large dotted “3.2.” The Spanish axis labels its marker “3,2.”
+- **Where the example lies:** The same white marker appears at 3.2 in both bars. It is inside the long reference span, explicitly captioned “Within reference” / “Dentro de la referencia.” It is to the right of the green span, explicitly captioned “Outside this category” / “Fuera de esta categoría.” It is also above the separately printed >2 mg/L review threshold, but the screenshots do not establish persistence.
+- **Numbers and lengths:** The bars appear to share a horizontal 0–6 scale. The green 0–1 span is about one fifth of the pale 0–5 span, and the 3.2 marker sits a little beyond halfway along the full 0–6 track. The lengths therefore represent numeric intervals, not a percentage chance of an outcome. The printed inequalities exclude the exact cutoffs even though the drawn spans meet their boundary lines.
+- **What the green span promises:** Its label associates hs-CRP below 1 with a lower relative heart-risk category. It does not state a numerical reduction, name the comparison group, or promise freedom from heart disease. The explicit note says this is an hs-CRP category, not the person’s overall risk. The screenshots do not say that moving the result into the green span will itself improve health.
+- **Suggested action:** If the result stays above 2 mg/L, repeat the test when well; if it remains raised, review overall heart risk. The page also invites the visitor to interpret their labs by uploading them for free. The visible caution says lab limits vary and this is not a diagnosis.
+
+## What remains confusing
+
+The phrase “lower relative heart risk” leaves “relative to whom or what?” unanswered in the visible material. The reason the lab’s reference extends to 5 while a persistent value above 2 merits review is not explained beyond the two-range framing. The visible text does not specify how soon to repeat the test, what “when well” entails, or who should review overall risk. “Sources and context” is collapsed, so its contents cannot resolve those questions here.
+
+The upper bar has no separate numbered axis; sharing the lower axis is a reasonable visual reading, but it requires connecting the two rows. The green region is visually attractive and could still be read as a target even though no explicit treatment target or outcome guarantee is printed. The dotted main number and small, subdued text take more effort to read against the textured card. On mobile, the main “3.2” and axis “3,2” use different decimal separators. Despite those issues, both screenshots explicitly communicate the central result: this example is within this lab’s reference and outside the lower relative heart-risk category.

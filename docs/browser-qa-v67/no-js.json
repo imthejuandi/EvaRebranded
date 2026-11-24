@@ -1,0 +1,21 @@
+{
+  "nativeVersion": 67,
+  "locale": "es",
+  "width": 320,
+  "pageErrors": [],
+  "networkWrites": [],
+  "css": {
+    "trackHeight": "24px",
+    "stylesheets": 8,
+    "ready": "complete"
+  },
+  "value": "3.2",
+  "dot": "3,2",
+  "entry": "complete",
+  "bands": 2,
+  "scaleSample": "3,2",
+  "context": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n4\n5\n6\n3,2\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\nRevisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+  "sources": 4,
+  "passed": true,
+  "allOwnedBrowsersClosed": true
+}

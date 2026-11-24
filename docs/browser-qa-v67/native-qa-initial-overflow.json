@@ -1,0 +1,4765 @@
+{
+  "nativeVersion": 67,
+  "scope": "Actual quantitative range proof, viewport emulation. Not human research or physical-device performance.",
+  "profiles": [
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "id": "en-1366",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": -0.390625,
+          "width": 1366,
+          "height": 678,
+          "right": 1366,
+          "bottom": 677.609375
+        },
+        "glass": {
+          "x": 608.984375,
+          "y": 47.609375,
+          "width": 709.015625,
+          "height": 493,
+          "right": 1318,
+          "bottom": 540.609375
+        },
+        "text": "There’s more\nto “normal.”\n\nOne result. Two ranges.\n\nTwo bands on the same linear 0 to 6 mg/L scale. This laboratory reference is below 5; the lower relative cardiovascular-risk hs-CRP category is below 1. The same 3.2 example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above 2 if persistent is a separate review trigger, not an optimal band.\n\nhs-CRP Example\n\nInflammation signal\n\n3.2 mg/L\nmg/L\n\nThis lab’s reference\n\n<5 mg/L\n\nWithin reference.\n\nLower relative heart risk\n\n<1 mg/L\n\nOutside this category.\n\n0\n1\n2\n4\n5\n6\n3.2\n\nhs-CRP category, not your overall risk.\n\nReview if persistent: >2 mg/L\nRepeat the test when well. If still raised, review overall heart risk.\n\nLab limits vary. Not a diagnosis.\n\nSources and context\nInterpret your labs\nUpload for free",
+        "documentWidth": 1366,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3.2",
+        "dotStep": "8",
+        "scaleSample": "3.2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 637.984375,
+              "y": 180.609375,
+              "width": 573.046875,
+              "height": 20,
+              "right": 1211.03125,
+              "bottom": 200.609375,
+              "text": "This lab’s reference",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 1227.03125,
+              "y": 172.609375,
+              "width": 61.96875,
+              "height": 28,
+              "right": 1289,
+              "bottom": 200.609375,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 924.125,
+              "y": 242.609375,
+              "width": 122.125,
+              "height": 24,
+              "right": 1046.25,
+              "bottom": 266.609375,
+              "text": "Within reference.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 645.984375,
+              "y": 210.609375,
+              "width": 635.015625,
+              "height": 24,
+              "right": 1281,
+              "bottom": 234.609375
+            },
+            "band": {
+              "x": 645.984375,
+              "y": 211.609375,
+              "width": 529.171875,
+              "height": 22,
+              "right": 1175.15625,
+              "bottom": 233.609375
+            },
+            "end": 5,
+            "point": {
+              "x": 983.65625,
+              "y": 204.609375,
+              "width": 2,
+              "height": 36,
+              "right": 985.65625,
+              "bottom": 240.609375
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 1175.15625,
+              "y": 208.609375,
+              "width": 1,
+              "height": 28,
+              "right": 1176.15625,
+              "bottom": 236.609375
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 637.984375,
+              "y": 290.609375,
+              "width": 573.046875,
+              "height": 20,
+              "right": 1211.03125,
+              "bottom": 310.609375,
+              "text": "Lower relative heart risk",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 1227.03125,
+              "y": 282.609375,
+              "width": 61.96875,
+              "height": 28,
+              "right": 1289,
+              "bottom": 310.609375,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 907.125,
+              "y": 352.609375,
+              "width": 156.125,
+              "height": 24,
+              "right": 1063.25,
+              "bottom": 376.609375,
+              "text": "Outside this category.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 645.984375,
+              "y": 320.609375,
+              "width": 635.015625,
+              "height": 24,
+              "right": 1281,
+              "bottom": 344.609375
+            },
+            "band": {
+              "x": 645.984375,
+              "y": 321.609375,
+              "width": 105.828125,
+              "height": 22,
+              "right": 751.8125,
+              "bottom": 343.609375
+            },
+            "end": 1,
+            "point": {
+              "x": 983.65625,
+              "y": 314.609375,
+              "width": 2,
+              "height": 36,
+              "right": 985.65625,
+              "bottom": 350.609375
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 751.8125,
+              "y": 318.609375,
+              "width": 1,
+              "height": 28,
+              "right": 752.8125,
+              "bottom": 346.609375
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 712.234375,
+            "y": 94.640625,
+            "width": 50.625,
+            "height": 18,
+            "right": 762.859375,
+            "bottom": 112.640625,
+            "text": "Example",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 119.640625,
+            "width": 499.015625,
+            "height": 20,
+            "right": 1137,
+            "bottom": 139.640625,
+            "text": "Inflammation signal",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 180.609375,
+            "width": 573.046875,
+            "height": 20,
+            "right": 1211.03125,
+            "bottom": 200.609375,
+            "text": "This lab’s reference",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1257.421875,
+            "y": 179.609375,
+            "width": 31.578125,
+            "height": 18,
+            "right": 1289,
+            "bottom": 197.609375,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 290.609375,
+            "width": 573.046875,
+            "height": 20,
+            "right": 1211.03125,
+            "bottom": 310.609375,
+            "text": "Lower relative heart risk",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1257.421875,
+            "y": 289.609375,
+            "width": 31.578125,
+            "height": 18,
+            "right": 1289,
+            "bottom": 307.609375,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 642.0625,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 649.90625,
+            "bottom": 404.609375,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 747.890625,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 755.734375,
+            "bottom": 404.609375,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 853.734375,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 861.578125,
+            "bottom": 404.609375,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1065.40625,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 1073.25,
+            "bottom": 404.609375,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1171.234375,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 1179.078125,
+            "bottom": 404.609375,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1277.078125,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 1284.921875,
+            "bottom": 404.609375,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 975.1328125,
+            "y": 384.609375,
+            "width": 19.046875,
+            "height": 20,
+            "right": 994.1796875,
+            "bottom": 404.609375,
+            "text": "3.2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 416.609375,
+            "width": 651.015625,
+            "height": 20,
+            "right": 1289,
+            "bottom": 436.609375,
+            "text": "hs-CRP category, not your overall risk.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 469.609375,
+            "width": 651.015625,
+            "height": 20,
+            "right": 1289,
+            "bottom": 489.609375,
+            "text": "Review if persistent: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 924.125,
+            "y": 242.609375,
+            "width": 122.125,
+            "height": 24,
+            "right": 1046.25,
+            "bottom": 266.609375,
+            "text": "Within reference.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 907.125,
+            "y": 352.609375,
+            "width": 156.125,
+            "height": 24,
+            "right": 1063.25,
+            "bottom": 376.609375,
+            "text": "Outside this category.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 493.609375,
+            "width": 651.015625,
+            "height": 24,
+            "right": 1289,
+            "bottom": 517.609375,
+            "text": "Repeat the test when well. If still raised, review overall heart risk.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 618.984375,
+            "y": 552.609375,
+            "width": 591.359375,
+            "height": 24,
+            "right": 1210.34375,
+            "bottom": 576.609375,
+            "text": "Lab limits vary. Not a diagnosis.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 637.984375,
+          "y": 452.609375,
+          "width": 651.015625,
+          "height": 65,
+          "right": 1289,
+          "bottom": 517.609375,
+          "text": "Review if persistent: >2 mg/L\nRepeat the test when well. If still raised, review overall heart risk.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "hs-CRP category, not your overall risk.",
+        "review": "Review if persistent: >2 mg/L",
+        "description": "Two bands on the same linear 0 to 6 mg/L scale. This laboratory reference is below 5; the lower relative cardiovascular-risk hs-CRP category is below 1. The same 3.2 example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above 2 if persistent is a separate review trigger, not an optimal band.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 707,
+            "scrollWidth": 727
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 635,
+            "scrollWidth": 639
+          }
+        ],
+        "controls": [
+          {
+            "x": 618.984375,
+            "y": 584.609375,
+            "width": 689.015625,
+            "height": 44,
+            "right": 1308,
+            "bottom": 628.609375,
+            "text": "Sources and context",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 48,
+            "y": 388.21875,
+            "width": 340,
+            "height": 60.796875,
+            "right": 388,
+            "bottom": 449.015625,
+            "text": "Interpret your labs\nUpload for free",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          635.015625,
+          635.015625
+        ],
+        "fillFractions": [
+          0.8333210304864546,
+          0.1666543638197879
+        ],
+        "bandRatio": 5.000295290122545,
+        "sampleFractions": [
+          0.5333284121945818,
+          0.5333284121945818
+        ],
+        "sampleCenters": [
+          984.65625,
+          984.65625
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Lab reference: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "hs-CRP categories: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Risk modifier: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Prospective evidence: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Sources and context\n\nA lab reference and an hs-CRP risk category answer different questions.\n\nThis example uses a documented adult hs-CRP reference below 5 mg/L. Laboratory limits may differ.\n\nThe AHA describes relative cardiovascular-risk categories based on hs-CRP: lower below 1 mg/L, average from 1 to 3 mg/L, and higher above 3 mg/L. These categories do not determine your overall risk or set a treatment target.\n\nPersistently elevated hs-CRP >2 mg/L can add information about future cardiovascular risk. Review it alongside your health history, other risk factors and possible causes of inflammation. It is not a diagnosis or universal treatment target.\n\nIllness, infection or injury can raise hs-CRP. Confirm persistence when clinically stable; timing depends on your clinical context.\n\nTHE EVIDENCE\n\nLab reference: CDC\nhs-CRP categories: AHA\nRisk modifier: ESC/EAS\nProspective evidence: ERFC\nUnderstand the difference",
+      "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    },
+    {
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "id": "es-1366",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": -0.390625,
+          "width": 1366,
+          "height": 702,
+          "right": 1366,
+          "bottom": 701.609375
+        },
+        "glass": {
+          "x": 608.984375,
+          "y": 47.609375,
+          "width": 709.015625,
+          "height": 517,
+          "right": 1318,
+          "bottom": 564.609375
+        },
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n4\n5\n6\n3,2\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\nRevisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "documentWidth": 1366,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3,2",
+        "dotStep": "8",
+        "scaleSample": "3,2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 637.984375,
+              "y": 180.609375,
+              "width": 573.046875,
+              "height": 20,
+              "right": 1211.03125,
+              "bottom": 200.609375,
+              "text": "Referencia de este laboratorio",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 1227.03125,
+              "y": 172.609375,
+              "width": 61.96875,
+              "height": 28,
+              "right": 1289,
+              "bottom": 200.609375,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 900.9296875,
+              "y": 242.609375,
+              "width": 168.515625,
+              "height": 24,
+              "right": 1069.4453125,
+              "bottom": 266.609375,
+              "text": "Dentro de la referencia.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 645.984375,
+              "y": 210.609375,
+              "width": 635.015625,
+              "height": 24,
+              "right": 1281,
+              "bottom": 234.609375
+            },
+            "band": {
+              "x": 645.984375,
+              "y": 211.609375,
+              "width": 529.171875,
+              "height": 22,
+              "right": 1175.15625,
+              "bottom": 233.609375
+            },
+            "end": 5,
+            "point": {
+              "x": 983.65625,
+              "y": 204.609375,
+              "width": 2,
+              "height": 36,
+              "right": 985.65625,
+              "bottom": 240.609375
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 1175.15625,
+              "y": 208.609375,
+              "width": 1,
+              "height": 28,
+              "right": 1176.15625,
+              "bottom": 236.609375
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 637.984375,
+              "y": 290.609375,
+              "width": 573.046875,
+              "height": 20,
+              "right": 1211.03125,
+              "bottom": 310.609375,
+              "text": "Menor riesgo cardiovascular relativo",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 1227.03125,
+              "y": 282.609375,
+              "width": 61.96875,
+              "height": 28,
+              "right": 1289,
+              "bottom": 310.609375,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 898.8984375,
+              "y": 352.609375,
+              "width": 172.578125,
+              "height": 24,
+              "right": 1071.4765625,
+              "bottom": 376.609375,
+              "text": "Fuera de esta categoría.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 645.984375,
+              "y": 320.609375,
+              "width": 635.015625,
+              "height": 24,
+              "right": 1281,
+              "bottom": 344.609375
+            },
+            "band": {
+              "x": 645.984375,
+              "y": 321.609375,
+              "width": 105.828125,
+              "height": 22,
+              "right": 751.8125,
+              "bottom": 343.609375
+            },
+            "end": 1,
+            "point": {
+              "x": 983.65625,
+              "y": 314.609375,
+              "width": 2,
+              "height": 36,
+              "right": 985.65625,
+              "bottom": 350.609375
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 751.8125,
+              "y": 318.609375,
+              "width": 1,
+              "height": 28,
+              "right": 752.8125,
+              "bottom": 346.609375
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 712.234375,
+            "y": 94.640625,
+            "width": 47.015625,
+            "height": 18,
+            "right": 759.25,
+            "bottom": 112.640625,
+            "text": "Ejemplo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 119.640625,
+            "width": 499.015625,
+            "height": 20,
+            "right": 1137,
+            "bottom": 139.640625,
+            "text": "Señal de inflamación",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 180.609375,
+            "width": 573.046875,
+            "height": 20,
+            "right": 1211.03125,
+            "bottom": 200.609375,
+            "text": "Referencia de este laboratorio",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1257.421875,
+            "y": 179.609375,
+            "width": 31.578125,
+            "height": 18,
+            "right": 1289,
+            "bottom": 197.609375,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 290.609375,
+            "width": 573.046875,
+            "height": 20,
+            "right": 1211.03125,
+            "bottom": 310.609375,
+            "text": "Menor riesgo cardiovascular relativo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1257.421875,
+            "y": 289.609375,
+            "width": 31.578125,
+            "height": 18,
+            "right": 1289,
+            "bottom": 307.609375,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 642.0625,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 649.90625,
+            "bottom": 404.609375,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 747.890625,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 755.734375,
+            "bottom": 404.609375,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 853.734375,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 861.578125,
+            "bottom": 404.609375,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1065.40625,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 1073.25,
+            "bottom": 404.609375,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1171.234375,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 1179.078125,
+            "bottom": 404.609375,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 1277.078125,
+            "y": 384.609375,
+            "width": 7.84375,
+            "height": 20,
+            "right": 1284.921875,
+            "bottom": 404.609375,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 975.1328125,
+            "y": 384.609375,
+            "width": 19.046875,
+            "height": 20,
+            "right": 994.1796875,
+            "bottom": 404.609375,
+            "text": "3,2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 416.609375,
+            "width": 651.015625,
+            "height": 20,
+            "right": 1289,
+            "bottom": 436.609375,
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 469.609375,
+            "width": 651.015625,
+            "height": 20,
+            "right": 1289,
+            "bottom": 489.609375,
+            "text": "Revisar si persiste: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 900.9296875,
+            "y": 242.609375,
+            "width": 168.515625,
+            "height": 24,
+            "right": 1069.4453125,
+            "bottom": 266.609375,
+            "text": "Dentro de la referencia.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 898.8984375,
+            "y": 352.609375,
+            "width": 172.578125,
+            "height": 24,
+            "right": 1071.4765625,
+            "bottom": 376.609375,
+            "text": "Fuera de esta categoría.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 637.984375,
+            "y": 493.609375,
+            "width": 651.015625,
+            "height": 48,
+            "right": 1289,
+            "bottom": 541.609375,
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 618.984375,
+            "y": 576.609375,
+            "width": 591.359375,
+            "height": 24,
+            "right": 1210.34375,
+            "bottom": 600.609375,
+            "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 637.984375,
+          "y": 452.609375,
+          "width": 651.015625,
+          "height": 89,
+          "right": 1289,
+          "bottom": 541.609375,
+          "text": "Revisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "Categoría según hs-CRP; no indica tu riesgo global.",
+        "review": "Revisar si persiste: >2 mg/L",
+        "description": "Dos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 707,
+            "scrollWidth": 727
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 635,
+            "scrollWidth": 639
+          }
+        ],
+        "controls": [
+          {
+            "x": 618.984375,
+            "y": 608.609375,
+            "width": 689.015625,
+            "height": 44,
+            "right": 1308,
+            "bottom": 652.609375,
+            "text": "Fuentes y contexto",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 48,
+            "y": 424.484375,
+            "width": 340,
+            "height": 60.796875,
+            "right": 388,
+            "bottom": 485.28125,
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          635.015625,
+          635.015625
+        ],
+        "fillFractions": [
+          0.8333210304864546,
+          0.1666543638197879
+        ],
+        "bandRatio": 5.000295290122545,
+        "sampleFractions": [
+          0.5333284121945818,
+          0.5333284121945818
+        ],
+        "sampleCenters": [
+          984.65625,
+          984.65625
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Referencia del laboratorio: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "Categorías de hs-CRP: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Modificador de riesgo: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Evidencia prospectiva: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Fuentes y contexto\n\nUna referencia de laboratorio y una categoría de riesgo según la hs-CRP responden a preguntas distintas.\n\nEste ejemplo usa una referencia documentada de hs-CRP para adultos inferior a 5 mg/L. Los límites pueden variar entre laboratorios.\n\nLa AHA describe categorías de riesgo cardiovascular relativo según la hs-CRP: menor por debajo de 1 mg/L, medio de 1 a 3 mg/L y mayor por encima de 3 mg/L. Estas categorías no determinan tu riesgo global ni fijan un objetivo de tratamiento.\n\nUna hs-CRP persistentemente elevada >2 mg/L puede aportar información sobre el riesgo cardiovascular futuro. Debe valorarse junto con tu historial de salud, otros factores de riesgo y posibles causas de inflamación. No es un diagnóstico ni un objetivo universal de tratamiento.\n\nUna enfermedad, una infección o una lesión pueden elevar la hs-CRP. La persistencia debe confirmarse en situación clínica estable; el momento depende del contexto clínico.\n\nLA EVIDENCIA\n\nReferencia del laboratorio: CDC\nCategorías de hs-CRP: AHA\nModificador de riesgo: ESC/EAS\nEvidencia prospectiva: ERFC\nEntiende la diferencia",
+      "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "id": "en-390",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": 0.09375,
+          "width": 390,
+          "height": 827.234375,
+          "right": 390,
+          "bottom": 827.328125
+        },
+        "glass": {
+          "x": 16,
+          "y": 154.53125,
+          "width": 358,
+          "height": 495,
+          "right": 374,
+          "bottom": 649.53125
+        },
+        "text": "There’s more\nto “normal.”\n\nOne result. Two ranges.\n\nTwo bands on the same linear 0 to 6 mg/L scale. This laboratory reference is below 5; the lower relative cardiovascular-risk hs-CRP category is below 1. The same 3.2 example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above 2 if persistent is a separate review trigger, not an optimal band.\n\nhs-CRP Example\n\nInflammation signal\n\n3.2 mg/L\nmg/L\n\nThis lab’s reference\n\n<5 mg/L\n\nWithin reference.\n\nLower relative heart risk\n\n<1 mg/L\n\nOutside this category.\n\n0\n1\n2\n4\n5\n6\n3.2\n\nhs-CRP category, not your overall risk.\n\nReview if persistent: >2 mg/L\nRepeat the test when well. If still raised, review overall heart risk.\n\nLab limits vary. Not a diagnosis.\n\nSources and context\nInterpret your labs\nUpload for free",
+        "documentWidth": 390,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3.2",
+        "dotStep": "8",
+        "scaleSample": "3.2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 41,
+              "y": 267.53125,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 287.53125,
+              "text": "This lab’s reference",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": 259.53125,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 287.53125,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 144.203125,
+              "y": 329.53125,
+              "width": 122.125,
+              "height": 24,
+              "right": 266.328125,
+              "bottom": 353.53125,
+              "text": "Within reference.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 297.53125,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 321.53125
+            },
+            "band": {
+              "x": 49,
+              "y": 298.53125,
+              "width": 243.328125,
+              "height": 22,
+              "right": 292.328125,
+              "bottom": 320.53125
+            },
+            "end": 5,
+            "point": {
+              "x": 203.71875,
+              "y": 291.53125,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 327.53125
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 292.328125,
+              "y": 295.53125,
+              "width": 1,
+              "height": 28,
+              "right": 293.328125,
+              "bottom": 323.53125
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 41,
+              "y": 377.53125,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 397.53125,
+              "text": "Lower relative heart risk",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": 369.53125,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 397.53125,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 127.203125,
+              "y": 439.53125,
+              "width": 156.125,
+              "height": 24,
+              "right": 283.328125,
+              "bottom": 463.53125,
+              "text": "Outside this category.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 407.53125,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 431.53125
+            },
+            "band": {
+              "x": 49,
+              "y": 408.53125,
+              "width": 48.65625,
+              "height": 22,
+              "right": 97.65625,
+              "bottom": 430.53125
+            },
+            "end": 1,
+            "point": {
+              "x": 203.71875,
+              "y": 401.53125,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 437.53125
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 97.65625,
+              "y": 405.53125,
+              "width": 1,
+              "height": 28,
+              "right": 98.65625,
+              "bottom": 433.53125
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 108.625,
+            "y": 189.09375,
+            "width": 50.96875,
+            "height": 18,
+            "right": 159.59375,
+            "bottom": 207.09375,
+            "text": "Example",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 214.53125,
+            "width": 188,
+            "height": 20,
+            "right": 229,
+            "bottom": 234.53125,
+            "text": "Inflammation signal",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 267.53125,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 287.53125,
+            "text": "This lab’s reference",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": 266.53125,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 284.53125,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 377.53125,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 397.53125,
+            "text": "Lower relative heart risk",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": 376.53125,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 394.53125,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 45.078125,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 52.921875,
+            "bottom": 491.53125,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 93.734375,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 101.578125,
+            "bottom": 491.53125,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 142.40625,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 150.25,
+            "bottom": 491.53125,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 239.734375,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 247.578125,
+            "bottom": 491.53125,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 288.40625,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 296.25,
+            "bottom": 491.53125,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 337.078125,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 344.921875,
+            "bottom": 491.53125,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 195.1953125,
+            "y": 471.53125,
+            "width": 19.046875,
+            "height": 20,
+            "right": 214.2421875,
+            "bottom": 491.53125,
+            "text": "3.2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 503.53125,
+            "width": 308,
+            "height": 20,
+            "right": 349,
+            "bottom": 523.53125,
+            "text": "hs-CRP category, not your overall risk.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 556.53125,
+            "width": 308,
+            "height": 20,
+            "right": 349,
+            "bottom": 576.53125,
+            "text": "Review if persistent: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 144.203125,
+            "y": 329.53125,
+            "width": 122.125,
+            "height": 24,
+            "right": 266.328125,
+            "bottom": 353.53125,
+            "text": "Within reference.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 127.203125,
+            "y": 439.53125,
+            "width": 156.125,
+            "height": 24,
+            "right": 283.328125,
+            "bottom": 463.53125,
+            "text": "Outside this category.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 580.53125,
+            "width": 308,
+            "height": 48,
+            "right": 349,
+            "bottom": 628.53125,
+            "text": "Repeat the test when well. If still raised, review overall heart risk.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 659.53125,
+            "width": 342,
+            "height": 24,
+            "right": 366,
+            "bottom": 683.53125,
+            "text": "Lab limits vary. Not a diagnosis.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 41,
+          "y": 539.53125,
+          "width": 308,
+          "height": 89,
+          "right": 349,
+          "bottom": 628.53125,
+          "text": "Review if persistent: >2 mg/L\nRepeat the test when well. If still raised, review overall heart risk.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "hs-CRP category, not your overall risk.",
+        "review": "Review if persistent: >2 mg/L",
+        "description": "Two bands on the same linear 0 to 6 mg/L scale. This laboratory reference is below 5; the lower relative cardiovascular-risk hs-CRP category is below 1. The same 3.2 example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above 2 if persistent is a separate review trigger, not an optimal band.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 292,
+            "scrollWidth": 296
+          }
+        ],
+        "controls": [
+          {
+            "x": 24,
+            "y": 687.53125,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 731.53125,
+            "text": "Sources and context",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 748.53125,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 803.328125,
+            "text": "Interpret your labs\nUpload for free",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          0.8333154965753424,
+          0.16663099315068494
+        ],
+        "bandRatio": 5.000963391136802,
+        "sampleFractions": [
+          0.533283390410959,
+          0.533283390410959
+        ],
+        "sampleCenters": [
+          204.71875,
+          204.71875
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Lab reference: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "hs-CRP categories: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Risk modifier: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Prospective evidence: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Sources and context\n\nA lab reference and an hs-CRP risk category answer different questions.\n\nThis example uses a documented adult hs-CRP reference below 5 mg/L. Laboratory limits may differ.\n\nThe AHA describes relative cardiovascular-risk categories based on hs-CRP: lower below 1 mg/L, average from 1 to 3 mg/L, and higher above 3 mg/L. These categories do not determine your overall risk or set a treatment target.\n\nPersistently elevated hs-CRP >2 mg/L can add information about future cardiovascular risk. Review it alongside your health history, other risk factors and possible causes of inflammation. It is not a diagnosis or universal treatment target.\n\nIllness, infection or injury can raise hs-CRP. Confirm persistence when clinically stable; timing depends on your clinical context.\n\nTHE EVIDENCE\n\nLab reference: CDC\nhs-CRP categories: AHA\nRisk modifier: ESC/EAS\nProspective evidence: ERFC\nUnderstand the difference",
+      "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "id": "es-390",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": 0.09375,
+          "width": 390,
+          "height": 895.234375,
+          "right": 390,
+          "bottom": 895.328125
+        },
+        "glass": {
+          "x": 16,
+          "y": 154.53125,
+          "width": 358,
+          "height": 539,
+          "right": 374,
+          "bottom": 693.53125
+        },
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n4\n5\n6\n3,2\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\nRevisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "documentWidth": 390,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3,2",
+        "dotStep": "8",
+        "scaleSample": "3,2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 41,
+              "y": 267.53125,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 287.53125,
+              "text": "Referencia de este laboratorio",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": 259.53125,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 287.53125,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 121.0078125,
+              "y": 329.53125,
+              "width": 168.515625,
+              "height": 24,
+              "right": 289.5234375,
+              "bottom": 353.53125,
+              "text": "Dentro de la referencia.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 297.53125,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 321.53125
+            },
+            "band": {
+              "x": 49,
+              "y": 298.53125,
+              "width": 243.328125,
+              "height": 22,
+              "right": 292.328125,
+              "bottom": 320.53125
+            },
+            "end": 5,
+            "point": {
+              "x": 203.71875,
+              "y": 291.53125,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 327.53125
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 292.328125,
+              "y": 295.53125,
+              "width": 1,
+              "height": 28,
+              "right": 293.328125,
+              "bottom": 323.53125
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 41,
+              "y": 377.53125,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 397.53125,
+              "text": "Menor riesgo cardiovascular relativo",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": 369.53125,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 397.53125,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 118.9765625,
+              "y": 439.53125,
+              "width": 172.578125,
+              "height": 24,
+              "right": 291.5546875,
+              "bottom": 463.53125,
+              "text": "Fuera de esta categoría.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 407.53125,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 431.53125
+            },
+            "band": {
+              "x": 49,
+              "y": 408.53125,
+              "width": 48.65625,
+              "height": 22,
+              "right": 97.65625,
+              "bottom": 430.53125
+            },
+            "end": 1,
+            "point": {
+              "x": 203.71875,
+              "y": 401.53125,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 437.53125
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 97.65625,
+              "y": 405.53125,
+              "width": 1,
+              "height": 28,
+              "right": 98.65625,
+              "bottom": 433.53125
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 108.625,
+            "y": 189.09375,
+            "width": 47.375,
+            "height": 18,
+            "right": 156,
+            "bottom": 207.09375,
+            "text": "Ejemplo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 214.53125,
+            "width": 188,
+            "height": 20,
+            "right": 229,
+            "bottom": 234.53125,
+            "text": "Señal de inflamación",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 267.53125,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 287.53125,
+            "text": "Referencia de este laboratorio",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": 266.53125,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 284.53125,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 377.53125,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 397.53125,
+            "text": "Menor riesgo cardiovascular relativo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": 376.53125,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 394.53125,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 45.078125,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 52.921875,
+            "bottom": 491.53125,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 93.734375,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 101.578125,
+            "bottom": 491.53125,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 142.40625,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 150.25,
+            "bottom": 491.53125,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 239.734375,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 247.578125,
+            "bottom": 491.53125,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 288.40625,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 296.25,
+            "bottom": 491.53125,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 337.078125,
+            "y": 471.53125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 344.921875,
+            "bottom": 491.53125,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 195.1953125,
+            "y": 471.53125,
+            "width": 19.046875,
+            "height": 20,
+            "right": 214.2421875,
+            "bottom": 491.53125,
+            "text": "3,2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 503.53125,
+            "width": 308,
+            "height": 40,
+            "right": 349,
+            "bottom": 543.53125,
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 576.53125,
+            "width": 308,
+            "height": 20,
+            "right": 349,
+            "bottom": 596.53125,
+            "text": "Revisar si persiste: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 121.0078125,
+            "y": 329.53125,
+            "width": 168.515625,
+            "height": 24,
+            "right": 289.5234375,
+            "bottom": 353.53125,
+            "text": "Dentro de la referencia.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 118.9765625,
+            "y": 439.53125,
+            "width": 172.578125,
+            "height": 24,
+            "right": 291.5546875,
+            "bottom": 463.53125,
+            "text": "Fuera de esta categoría.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 600.53125,
+            "width": 308,
+            "height": 72,
+            "right": 349,
+            "bottom": 672.53125,
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 703.53125,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 751.53125,
+            "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 41,
+          "y": 559.53125,
+          "width": 308,
+          "height": 113,
+          "right": 349,
+          "bottom": 672.53125,
+          "text": "Revisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "Categoría según hs-CRP; no indica tu riesgo global.",
+        "review": "Revisar si persiste: >2 mg/L",
+        "description": "Dos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 292,
+            "scrollWidth": 296
+          }
+        ],
+        "controls": [
+          {
+            "x": 24,
+            "y": 755.53125,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 799.53125,
+            "text": "Fuentes y contexto",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 816.53125,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 871.328125,
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          0.8333154965753424,
+          0.16663099315068494
+        ],
+        "bandRatio": 5.000963391136802,
+        "sampleFractions": [
+          0.533283390410959,
+          0.533283390410959
+        ],
+        "sampleCenters": [
+          204.71875,
+          204.71875
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Referencia del laboratorio: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "Categorías de hs-CRP: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Modificador de riesgo: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Evidencia prospectiva: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Fuentes y contexto\n\nUna referencia de laboratorio y una categoría de riesgo según la hs-CRP responden a preguntas distintas.\n\nEste ejemplo usa una referencia documentada de hs-CRP para adultos inferior a 5 mg/L. Los límites pueden variar entre laboratorios.\n\nLa AHA describe categorías de riesgo cardiovascular relativo según la hs-CRP: menor por debajo de 1 mg/L, medio de 1 a 3 mg/L y mayor por encima de 3 mg/L. Estas categorías no determinan tu riesgo global ni fijan un objetivo de tratamiento.\n\nUna hs-CRP persistentemente elevada >2 mg/L puede aportar información sobre el riesgo cardiovascular futuro. Debe valorarse junto con tu historial de salud, otros factores de riesgo y posibles causas de inflamación. No es un diagnóstico ni un objetivo universal de tratamiento.\n\nUna enfermedad, una infección o una lesión pueden elevar la hs-CRP. La persistencia debe confirmarse en situación clínica estable; el momento depende del contexto clínico.\n\nLA EVIDENCIA\n\nReferencia del laboratorio: CDC\nCategorías de hs-CRP: AHA\nModificador de riesgo: ESC/EAS\nEvidencia prospectiva: ERFC\nEntiende la diferencia",
+      "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "id": "es-320",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": -0.296875,
+          "width": 320,
+          "height": 919.234375,
+          "right": 320,
+          "bottom": 918.9375
+        },
+        "glass": {
+          "x": 13,
+          "y": 154.140625,
+          "width": 294,
+          "height": 563,
+          "right": 307,
+          "bottom": 717.140625
+        },
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n4\n5\n6\n3,2\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\nRevisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "documentWidth": 320,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3,2",
+        "dotStep": "8",
+        "scaleSample": "3,2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 34,
+              "y": 259.140625,
+              "width": 178.03125,
+              "height": 40,
+              "right": 212.03125,
+              "bottom": 299.140625,
+              "text": "Referencia de este laboratorio",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 224.03125,
+              "y": 271.140625,
+              "width": 61.96875,
+              "height": 28,
+              "right": 286,
+              "bottom": 299.140625,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 84.1328125,
+              "y": 341.140625,
+              "width": 168.515625,
+              "height": 24,
+              "right": 252.6484375,
+              "bottom": 365.140625,
+              "text": "Dentro de la referencia.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 42,
+              "y": 309.140625,
+              "width": 236,
+              "height": 24,
+              "right": 278,
+              "bottom": 333.140625
+            },
+            "band": {
+              "x": 42,
+              "y": 310.140625,
+              "width": 196.65625,
+              "height": 22,
+              "right": 238.65625,
+              "bottom": 332.140625
+            },
+            "end": 5,
+            "point": {
+              "x": 166.859375,
+              "y": 303.140625,
+              "width": 2,
+              "height": 36,
+              "right": 168.859375,
+              "bottom": 339.140625
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 238.65625,
+              "y": 307.140625,
+              "width": 1,
+              "height": 28,
+              "right": 239.65625,
+              "bottom": 335.140625
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 34,
+              "y": 381.140625,
+              "width": 178.03125,
+              "height": 40,
+              "right": 212.03125,
+              "bottom": 421.140625,
+              "text": "Menor riesgo cardiovascular relativo",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 224.03125,
+              "y": 393.140625,
+              "width": 61.96875,
+              "height": 28,
+              "right": 286,
+              "bottom": 421.140625,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 82.1015625,
+              "y": 463.140625,
+              "width": 172.578125,
+              "height": 24,
+              "right": 254.6796875,
+              "bottom": 487.140625,
+              "text": "Fuera de esta categoría.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 42,
+              "y": 431.140625,
+              "width": 236,
+              "height": 24,
+              "right": 278,
+              "bottom": 455.140625
+            },
+            "band": {
+              "x": 42,
+              "y": 432.140625,
+              "width": 39.328125,
+              "height": 22,
+              "right": 81.328125,
+              "bottom": 454.140625
+            },
+            "end": 1,
+            "point": {
+              "x": 166.859375,
+              "y": 425.140625,
+              "width": 2,
+              "height": 36,
+              "right": 168.859375,
+              "bottom": 461.140625
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 81.328125,
+              "y": 429.140625,
+              "width": 1,
+              "height": 28,
+              "right": 82.328125,
+              "bottom": 457.140625
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 101.625,
+            "y": 188.703125,
+            "width": 47.375,
+            "height": 18,
+            "right": 149,
+            "bottom": 206.703125,
+            "text": "Ejemplo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 34,
+            "y": 214.140625,
+            "width": 142,
+            "height": 20,
+            "right": 176,
+            "bottom": 234.140625,
+            "text": "Señal de inflamación",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 34,
+            "y": 259.140625,
+            "width": 178.03125,
+            "height": 40,
+            "right": 212.03125,
+            "bottom": 299.140625,
+            "text": "Referencia de este laboratorio",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 254.421875,
+            "y": 278.140625,
+            "width": 31.578125,
+            "height": 18,
+            "right": 286,
+            "bottom": 296.140625,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 34,
+            "y": 381.140625,
+            "width": 178.03125,
+            "height": 40,
+            "right": 212.03125,
+            "bottom": 421.140625,
+            "text": "Menor riesgo cardiovascular relativo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 254.421875,
+            "y": 400.140625,
+            "width": 31.578125,
+            "height": 18,
+            "right": 286,
+            "bottom": 418.140625,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 38.078125,
+            "y": 495.140625,
+            "width": 7.84375,
+            "height": 20,
+            "right": 45.921875,
+            "bottom": 515.140625,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 77.40625,
+            "y": 495.140625,
+            "width": 7.84375,
+            "height": 20,
+            "right": 85.25,
+            "bottom": 515.140625,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 116.734375,
+            "y": 495.140625,
+            "width": 7.84375,
+            "height": 20,
+            "right": 124.578125,
+            "bottom": 515.140625,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 195.40625,
+            "y": 495.140625,
+            "width": 7.84375,
+            "height": 20,
+            "right": 203.25,
+            "bottom": 515.140625,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 234.734375,
+            "y": 495.140625,
+            "width": 7.84375,
+            "height": 20,
+            "right": 242.578125,
+            "bottom": 515.140625,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 274.078125,
+            "y": 495.140625,
+            "width": 7.84375,
+            "height": 20,
+            "right": 281.921875,
+            "bottom": 515.140625,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 158.3359375,
+            "y": 495.140625,
+            "width": 19.046875,
+            "height": 20,
+            "right": 177.3828125,
+            "bottom": 515.140625,
+            "text": "3,2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 34,
+            "y": 527.140625,
+            "width": 252,
+            "height": 40,
+            "right": 286,
+            "bottom": 567.140625,
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 34,
+            "y": 600.140625,
+            "width": 252,
+            "height": 20,
+            "right": 286,
+            "bottom": 620.140625,
+            "text": "Revisar si persiste: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 84.1328125,
+            "y": 341.140625,
+            "width": 168.515625,
+            "height": 24,
+            "right": 252.6484375,
+            "bottom": 365.140625,
+            "text": "Dentro de la referencia.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 82.1015625,
+            "y": 463.140625,
+            "width": 172.578125,
+            "height": 24,
+            "right": 254.6796875,
+            "bottom": 487.140625,
+            "text": "Fuera de esta categoría.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 34,
+            "y": 624.140625,
+            "width": 252,
+            "height": 72,
+            "right": 286,
+            "bottom": 696.140625,
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 21,
+            "y": 727.140625,
+            "width": 278,
+            "height": 48,
+            "right": 299,
+            "bottom": 775.140625,
+            "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 34,
+          "y": 583.140625,
+          "width": 252,
+          "height": 113,
+          "right": 286,
+          "bottom": 696.140625,
+          "text": "Revisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "Categoría según hs-CRP; no indica tu riesgo global.",
+        "review": "Revisar si persiste: >2 mg/L",
+        "description": "Dos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-layout",
+            "width": 278,
+            "scrollWidth": 286
+          },
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 292,
+            "scrollWidth": 312
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 236,
+            "scrollWidth": 240
+          }
+        ],
+        "controls": [
+          {
+            "x": 21,
+            "y": 779.140625,
+            "width": 278,
+            "height": 44,
+            "right": 299,
+            "bottom": 823.140625,
+            "text": "Fuentes y contexto",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 21,
+            "y": 840.140625,
+            "width": 278,
+            "height": 54.796875,
+            "right": 299,
+            "bottom": 894.9375,
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          236,
+          236
+        ],
+        "fillFractions": [
+          0.8332891949152542,
+          0.1666445974576271
+        ],
+        "bandRatio": 5.000397298371077,
+        "sampleFractions": [
+          0.533302436440678,
+          0.533302436440678
+        ],
+        "sampleCenters": [
+          167.859375,
+          167.859375
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Referencia del laboratorio: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "Categorías de hs-CRP: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Modificador de riesgo: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Evidencia prospectiva: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Fuentes y contexto\n\nUna referencia de laboratorio y una categoría de riesgo según la hs-CRP responden a preguntas distintas.\n\nEste ejemplo usa una referencia documentada de hs-CRP para adultos inferior a 5 mg/L. Los límites pueden variar entre laboratorios.\n\nLa AHA describe categorías de riesgo cardiovascular relativo según la hs-CRP: menor por debajo de 1 mg/L, medio de 1 a 3 mg/L y mayor por encima de 3 mg/L. Estas categorías no determinan tu riesgo global ni fijan un objetivo de tratamiento.\n\nUna hs-CRP persistentemente elevada >2 mg/L puede aportar información sobre el riesgo cardiovascular futuro. Debe valorarse junto con tu historial de salud, otros factores de riesgo y posibles causas de inflamación. No es un diagnóstico ni un objetivo universal de tratamiento.\n\nUna enfermedad, una infección o una lesión pueden elevar la hs-CRP. La persistencia debe confirmarse en situación clínica estable; el momento depende del contexto clínico.\n\nLA EVIDENCIA\n\nReferencia del laboratorio: CDC\nCategorías de hs-CRP: AHA\nModificador de riesgo: ESC/EAS\nEvidencia prospectiva: ERFC\nEntiende la diferencia",
+      "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "height": 1024,
+      "id": "es-768",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": 0.21875,
+          "width": 768,
+          "height": 944.828125,
+          "right": 768,
+          "bottom": 945.046875
+        },
+        "glass": {
+          "x": 48,
+          "y": 208.25,
+          "width": 672,
+          "height": 515,
+          "right": 720,
+          "bottom": 723.25
+        },
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n4\n5\n6\n3,2\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\nRevisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "documentWidth": 768,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3,2",
+        "dotStep": "8",
+        "scaleSample": "3,2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 71,
+              "y": 339.25,
+              "width": 548.03125,
+              "height": 20,
+              "right": 619.03125,
+              "bottom": 359.25,
+              "text": "Referencia de este laboratorio",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 635.03125,
+              "y": 331.25,
+              "width": 61.96875,
+              "height": 28,
+              "right": 697,
+              "bottom": 359.25,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 320.6015625,
+              "y": 401.25,
+              "width": 168.515625,
+              "height": 24,
+              "right": 489.1171875,
+              "bottom": 425.25,
+              "text": "Dentro de la referencia.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 79,
+              "y": 369.25,
+              "width": 610,
+              "height": 24,
+              "right": 689,
+              "bottom": 393.25
+            },
+            "band": {
+              "x": 79,
+              "y": 370.25,
+              "width": 508.328125,
+              "height": 22,
+              "right": 587.328125,
+              "bottom": 392.25
+            },
+            "end": 5,
+            "point": {
+              "x": 403.328125,
+              "y": 363.25,
+              "width": 2,
+              "height": 36,
+              "right": 405.328125,
+              "bottom": 399.25
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 587.328125,
+              "y": 367.25,
+              "width": 1,
+              "height": 28,
+              "right": 588.328125,
+              "bottom": 395.25
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 71,
+              "y": 449.25,
+              "width": 548.03125,
+              "height": 20,
+              "right": 619.03125,
+              "bottom": 469.25,
+              "text": "Menor riesgo cardiovascular relativo",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 635.03125,
+              "y": 441.25,
+              "width": 61.96875,
+              "height": 28,
+              "right": 697,
+              "bottom": 469.25,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 318.5703125,
+              "y": 511.25,
+              "width": 172.578125,
+              "height": 24,
+              "right": 491.1484375,
+              "bottom": 535.25,
+              "text": "Fuera de esta categoría.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 79,
+              "y": 479.25,
+              "width": 610,
+              "height": 24,
+              "right": 689,
+              "bottom": 503.25
+            },
+            "band": {
+              "x": 79,
+              "y": 480.25,
+              "width": 101.65625,
+              "height": 22,
+              "right": 180.65625,
+              "bottom": 502.25
+            },
+            "end": 1,
+            "point": {
+              "x": 403.328125,
+              "y": 473.25,
+              "width": 2,
+              "height": 36,
+              "right": 405.328125,
+              "bottom": 509.25
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 180.65625,
+              "y": 477.25,
+              "width": 1,
+              "height": 28,
+              "right": 181.65625,
+              "bottom": 505.25
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 145.25,
+            "y": 253.28125,
+            "width": 47.015625,
+            "height": 18,
+            "right": 192.265625,
+            "bottom": 271.28125,
+            "text": "Ejemplo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 71,
+            "y": 278.28125,
+            "width": 474,
+            "height": 20,
+            "right": 545,
+            "bottom": 298.28125,
+            "text": "Señal de inflamación",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 71,
+            "y": 339.25,
+            "width": 548.03125,
+            "height": 20,
+            "right": 619.03125,
+            "bottom": 359.25,
+            "text": "Referencia de este laboratorio",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 665.421875,
+            "y": 338.25,
+            "width": 31.578125,
+            "height": 18,
+            "right": 697,
+            "bottom": 356.25,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 71,
+            "y": 449.25,
+            "width": 548.03125,
+            "height": 20,
+            "right": 619.03125,
+            "bottom": 469.25,
+            "text": "Menor riesgo cardiovascular relativo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 665.421875,
+            "y": 448.25,
+            "width": 31.578125,
+            "height": 18,
+            "right": 697,
+            "bottom": 466.25,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 75.078125,
+            "y": 543.25,
+            "width": 7.84375,
+            "height": 20,
+            "right": 82.921875,
+            "bottom": 563.25,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 176.734375,
+            "y": 543.25,
+            "width": 7.84375,
+            "height": 20,
+            "right": 184.578125,
+            "bottom": 563.25,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 278.40625,
+            "y": 543.25,
+            "width": 7.84375,
+            "height": 20,
+            "right": 286.25,
+            "bottom": 563.25,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 481.734375,
+            "y": 543.25,
+            "width": 7.84375,
+            "height": 20,
+            "right": 489.578125,
+            "bottom": 563.25,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 583.40625,
+            "y": 543.25,
+            "width": 7.84375,
+            "height": 20,
+            "right": 591.25,
+            "bottom": 563.25,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 685.078125,
+            "y": 543.25,
+            "width": 7.84375,
+            "height": 20,
+            "right": 692.921875,
+            "bottom": 563.25,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 394.8046875,
+            "y": 543.25,
+            "width": 19.046875,
+            "height": 20,
+            "right": 413.8515625,
+            "bottom": 563.25,
+            "text": "3,2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 71,
+            "y": 575.25,
+            "width": 626,
+            "height": 20,
+            "right": 697,
+            "bottom": 595.25,
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 71,
+            "y": 628.25,
+            "width": 626,
+            "height": 20,
+            "right": 697,
+            "bottom": 648.25,
+            "text": "Revisar si persiste: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 320.6015625,
+            "y": 401.25,
+            "width": 168.515625,
+            "height": 24,
+            "right": 489.1171875,
+            "bottom": 425.25,
+            "text": "Dentro de la referencia.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 318.5703125,
+            "y": 511.25,
+            "width": 172.578125,
+            "height": 24,
+            "right": 491.1484375,
+            "bottom": 535.25,
+            "text": "Fuera de esta categoría.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 71,
+            "y": 652.25,
+            "width": 626,
+            "height": 48,
+            "right": 697,
+            "bottom": 700.25,
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 58,
+            "y": 735.25,
+            "width": 591.359375,
+            "height": 24,
+            "right": 649.359375,
+            "bottom": 759.25,
+            "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 71,
+          "y": 611.25,
+          "width": 626,
+          "height": 89,
+          "right": 697,
+          "bottom": 700.25,
+          "text": "Revisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "Categoría según hs-CRP; no indica tu riesgo global.",
+        "review": "Revisar si persiste: >2 mg/L",
+        "description": "Dos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 670,
+            "scrollWidth": 690
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 610,
+            "scrollWidth": 614
+          }
+        ],
+        "controls": [
+          {
+            "x": 58,
+            "y": 767.25,
+            "width": 652,
+            "height": 44,
+            "right": 710,
+            "bottom": 811.25,
+            "text": "Fuentes y contexto",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 48,
+            "y": 836.25,
+            "width": 340,
+            "height": 60.796875,
+            "right": 388,
+            "bottom": 897.046875,
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          610,
+          610
+        ],
+        "fillFractions": [
+          0.8333247950819672,
+          0.16664959016393444
+        ],
+        "bandRatio": 5.000461112818936,
+        "sampleFractions": [
+          0.5333247950819672,
+          0.5333247950819672
+        ],
+        "sampleCenters": [
+          404.328125,
+          404.328125
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Referencia del laboratorio: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "Categorías de hs-CRP: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Modificador de riesgo: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Evidencia prospectiva: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Fuentes y contexto\n\nUna referencia de laboratorio y una categoría de riesgo según la hs-CRP responden a preguntas distintas.\n\nEste ejemplo usa una referencia documentada de hs-CRP para adultos inferior a 5 mg/L. Los límites pueden variar entre laboratorios.\n\nLa AHA describe categorías de riesgo cardiovascular relativo según la hs-CRP: menor por debajo de 1 mg/L, medio de 1 a 3 mg/L y mayor por encima de 3 mg/L. Estas categorías no determinan tu riesgo global ni fijan un objetivo de tratamiento.\n\nUna hs-CRP persistentemente elevada >2 mg/L puede aportar información sobre el riesgo cardiovascular futuro. Debe valorarse junto con tu historial de salud, otros factores de riesgo y posibles causas de inflamación. No es un diagnóstico ni un objetivo universal de tratamiento.\n\nUna enfermedad, una infección o una lesión pueden elevar la hs-CRP. La persistencia debe confirmarse en situación clínica estable; el momento depende del contexto clínico.\n\nLA EVIDENCIA\n\nReferencia del laboratorio: CDC\nCategorías de hs-CRP: AHA\nModificador de riesgo: ESC/EAS\nEvidencia prospectiva: ERFC\nEntiende la diferencia",
+      "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "id": "en-390-calm",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": -268.125,
+          "width": 390,
+          "height": 827.234375,
+          "right": 390,
+          "bottom": 559.109375
+        },
+        "glass": {
+          "x": 16,
+          "y": -113.6875,
+          "width": 358,
+          "height": 495,
+          "right": 374,
+          "bottom": 381.3125
+        },
+        "text": "There’s more\nto “normal.”\n\nOne result. Two ranges.\n\nTwo bands on the same linear 0 to 6 mg/L scale. This laboratory reference is below 5; the lower relative cardiovascular-risk hs-CRP category is below 1. The same 3.2 example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above 2 if persistent is a separate review trigger, not an optimal band.\n\nhs-CRP Example\n\nInflammation signal\n\n3.2 mg/L\nmg/L\n\nThis lab’s reference\n\n<5 mg/L\n\nWithin reference.\n\nLower relative heart risk\n\n<1 mg/L\n\nOutside this category.\n\n0\n1\n2\n4\n5\n6\n3.2\n\nhs-CRP category, not your overall risk.\n\nReview if persistent: >2 mg/L\nRepeat the test when well. If still raised, review overall heart risk.\n\nLab limits vary. Not a diagnosis.\n\nSources and context\nInterpret your labs\nUpload for free",
+        "documentWidth": 390,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3.2",
+        "dotStep": "8",
+        "scaleSample": "3.2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 41,
+              "y": -0.6875,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 19.3125,
+              "text": "This lab’s reference",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": -8.6875,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 19.3125,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 144.203125,
+              "y": 61.3125,
+              "width": 122.125,
+              "height": 24,
+              "right": 266.328125,
+              "bottom": 85.3125,
+              "text": "Within reference.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 29.3125,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 53.3125
+            },
+            "band": {
+              "x": 49,
+              "y": 30.3125,
+              "width": 243.328125,
+              "height": 22,
+              "right": 292.328125,
+              "bottom": 52.3125
+            },
+            "end": 5,
+            "point": {
+              "x": 203.71875,
+              "y": 23.3125,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 59.3125
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 292.328125,
+              "y": 27.3125,
+              "width": 1,
+              "height": 28,
+              "right": 293.328125,
+              "bottom": 55.3125
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 41,
+              "y": 109.3125,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 129.3125,
+              "text": "Lower relative heart risk",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": 101.3125,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 129.3125,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 127.203125,
+              "y": 171.3125,
+              "width": 156.125,
+              "height": 24,
+              "right": 283.328125,
+              "bottom": 195.3125,
+              "text": "Outside this category.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 139.3125,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 163.3125
+            },
+            "band": {
+              "x": 49,
+              "y": 140.3125,
+              "width": 48.65625,
+              "height": 22,
+              "right": 97.65625,
+              "bottom": 162.3125
+            },
+            "end": 1,
+            "point": {
+              "x": 203.71875,
+              "y": 133.3125,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 169.3125
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 97.65625,
+              "y": 137.3125,
+              "width": 1,
+              "height": 28,
+              "right": 98.65625,
+              "bottom": 165.3125
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 108.625,
+            "y": -79.125,
+            "width": 50.96875,
+            "height": 18,
+            "right": 159.59375,
+            "bottom": -61.125,
+            "text": "Example",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": -53.6875,
+            "width": 188,
+            "height": 20,
+            "right": 229,
+            "bottom": -33.6875,
+            "text": "Inflammation signal",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": -0.6875,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 19.3125,
+            "text": "This lab’s reference",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": -1.6875,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 16.3125,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 109.3125,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 129.3125,
+            "text": "Lower relative heart risk",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": 108.3125,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 126.3125,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 45.078125,
+            "y": 203.3125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 52.921875,
+            "bottom": 223.3125,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 93.734375,
+            "y": 203.3125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 101.578125,
+            "bottom": 223.3125,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 142.40625,
+            "y": 203.3125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 150.25,
+            "bottom": 223.3125,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 239.734375,
+            "y": 203.3125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 247.578125,
+            "bottom": 223.3125,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 288.40625,
+            "y": 203.3125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 296.25,
+            "bottom": 223.3125,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 337.078125,
+            "y": 203.3125,
+            "width": 7.84375,
+            "height": 20,
+            "right": 344.921875,
+            "bottom": 223.3125,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 195.1953125,
+            "y": 203.3125,
+            "width": 19.046875,
+            "height": 20,
+            "right": 214.2421875,
+            "bottom": 223.3125,
+            "text": "3.2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 235.3125,
+            "width": 308,
+            "height": 20,
+            "right": 349,
+            "bottom": 255.3125,
+            "text": "hs-CRP category, not your overall risk.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 288.3125,
+            "width": 308,
+            "height": 20,
+            "right": 349,
+            "bottom": 308.3125,
+            "text": "Review if persistent: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 144.203125,
+            "y": 61.3125,
+            "width": 122.125,
+            "height": 24,
+            "right": 266.328125,
+            "bottom": 85.3125,
+            "text": "Within reference.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 127.203125,
+            "y": 171.3125,
+            "width": 156.125,
+            "height": 24,
+            "right": 283.328125,
+            "bottom": 195.3125,
+            "text": "Outside this category.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 312.3125,
+            "width": 308,
+            "height": 48,
+            "right": 349,
+            "bottom": 360.3125,
+            "text": "Repeat the test when well. If still raised, review overall heart risk.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 391.3125,
+            "width": 342,
+            "height": 24,
+            "right": 366,
+            "bottom": 415.3125,
+            "text": "Lab limits vary. Not a diagnosis.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 41,
+          "y": 271.3125,
+          "width": 308,
+          "height": 89,
+          "right": 349,
+          "bottom": 360.3125,
+          "text": "Review if persistent: >2 mg/L\nRepeat the test when well. If still raised, review overall heart risk.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "hs-CRP category, not your overall risk.",
+        "review": "Review if persistent: >2 mg/L",
+        "description": "Two bands on the same linear 0 to 6 mg/L scale. This laboratory reference is below 5; the lower relative cardiovascular-risk hs-CRP category is below 1. The same 3.2 example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above 2 if persistent is a separate review trigger, not an optimal band.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 292,
+            "scrollWidth": 296
+          }
+        ],
+        "controls": [
+          {
+            "x": 24,
+            "y": 419.3125,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 463.3125,
+            "text": "Sources and context",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 480.3125,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 535.109375,
+            "text": "Interpret your labs\nUpload for free",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          0.8333154965753424,
+          0.16663099315068494
+        ],
+        "bandRatio": 5.000963391136802,
+        "sampleFractions": [
+          0.533283390410959,
+          0.533283390410959
+        ],
+        "sampleCenters": [
+          204.71875,
+          204.71875
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Lab reference: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "hs-CRP categories: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Risk modifier: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Prospective evidence: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Sources and context\n\nA lab reference and an hs-CRP risk category answer different questions.\n\nThis example uses a documented adult hs-CRP reference below 5 mg/L. Laboratory limits may differ.\n\nThe AHA describes relative cardiovascular-risk categories based on hs-CRP: lower below 1 mg/L, average from 1 to 3 mg/L, and higher above 3 mg/L. These categories do not determine your overall risk or set a treatment target.\n\nPersistently elevated hs-CRP >2 mg/L can add information about future cardiovascular risk. Review it alongside your health history, other risk factors and possible causes of inflammation. It is not a diagnosis or universal treatment target.\n\nIllness, infection or injury can raise hs-CRP. Confirm persistence when clinically stable; timing depends on your clinical context.\n\nTHE EVIDENCE\n\nLab reference: CDC\nhs-CRP categories: AHA\nRisk modifier: ESC/EAS\nProspective evidence: ERFC\nUnderstand the difference",
+      "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "id": "es-390-calm",
+      "failures": [
+        "Clipped text/content"
+      ],
+      "http": 200,
+      "closed": {
+        "section": {
+          "x": 0,
+          "y": 0.234375,
+          "width": 390,
+          "height": 895.234375,
+          "right": 390,
+          "bottom": 895.46875
+        },
+        "glass": {
+          "x": 16,
+          "y": 154.671875,
+          "width": 358,
+          "height": 539,
+          "right": 374,
+          "bottom": 693.671875
+        },
+        "text": "«Normal»\nno lo cuenta todo.\n\nUn resultado. Dos rangos.\n\nDos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.\n\nhs-CRP Ejemplo\n\nSeñal de inflamación\n\n3,2 mg/L\nmg/L\n\nReferencia de este laboratorio\n\n<5 mg/L\n\nDentro de la referencia.\n\nMenor riesgo cardiovascular relativo\n\n<1 mg/L\n\nFuera de esta categoría.\n\n0\n1\n2\n4\n5\n6\n3,2\n\nCategoría según hs-CRP; no indica tu riesgo global.\n\nRevisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.\n\nLos límites varían entre laboratorios. No es un diagnóstico.\n\nFuentes y contexto\nInterpreta tus analíticas\nSúbelas gratis",
+        "documentWidth": 390,
+        "type": "aligned-levels",
+        "value": "3.2",
+        "dotValue": "3,2",
+        "dotStep": "8",
+        "scaleSample": "3,2",
+        "axis": [
+          0,
+          6
+        ],
+        "rows": [
+          {
+            "type": "lab",
+            "label": {
+              "x": 41,
+              "y": 267.671875,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 287.671875,
+              "text": "Referencia de este laboratorio",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": 259.671875,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 287.671875,
+              "text": "<5 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 121.0078125,
+              "y": 329.671875,
+              "width": 168.515625,
+              "height": 24,
+              "right": 289.5234375,
+              "bottom": 353.671875,
+              "text": "Dentro de la referencia.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 297.671875,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 321.671875
+            },
+            "band": {
+              "x": 49,
+              "y": 298.671875,
+              "width": 243.328125,
+              "height": 22,
+              "right": 292.328125,
+              "bottom": 320.671875
+            },
+            "end": 5,
+            "point": {
+              "x": 203.71875,
+              "y": 291.671875,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 327.671875
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 292.328125,
+              "y": 295.671875,
+              "width": 1,
+              "height": 28,
+              "right": 293.328125,
+              "bottom": 323.671875
+            },
+            "limitStyle": "dashed"
+          },
+          {
+            "type": "lower-risk",
+            "label": {
+              "x": 41,
+              "y": 377.671875,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 397.671875,
+              "text": "Menor riesgo cardiovascular relativo",
+              "size": 14,
+              "lineHeight": 20,
+              "weight": "400",
+              "color": "rgb(241, 236, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "cutoff": {
+              "x": 287.03125,
+              "y": 369.671875,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 397.671875,
+              "text": "<1 mg/L",
+              "size": 22,
+              "lineHeight": 28,
+              "weight": "600",
+              "color": "rgb(255, 253, 246)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "meaning": {
+              "x": 118.9765625,
+              "y": 439.671875,
+              "width": 172.578125,
+              "height": 24,
+              "right": 291.5546875,
+              "bottom": 463.671875,
+              "text": "Fuera de esta categoría.",
+              "size": 16,
+              "lineHeight": 24,
+              "weight": "400",
+              "color": "rgb(246, 240, 227)",
+              "family": "\"EVA Hanken\", Arial, sans-serif"
+            },
+            "track": {
+              "x": 49,
+              "y": 407.671875,
+              "width": 292,
+              "height": 24,
+              "right": 341,
+              "bottom": 431.671875
+            },
+            "band": {
+              "x": 49,
+              "y": 408.671875,
+              "width": 48.65625,
+              "height": 22,
+              "right": 97.65625,
+              "bottom": 430.671875
+            },
+            "end": 1,
+            "point": {
+              "x": 203.71875,
+              "y": 401.671875,
+              "width": 2,
+              "height": 36,
+              "right": 205.71875,
+              "bottom": 437.671875
+            },
+            "pointValue": 3.2,
+            "limit": {
+              "x": 97.65625,
+              "y": 405.671875,
+              "width": 1,
+              "height": 28,
+              "right": 98.65625,
+              "bottom": 433.671875
+            },
+            "limitStyle": "dashed"
+          }
+        ],
+        "labels": [
+          {
+            "x": 108.625,
+            "y": 189.234375,
+            "width": 47.375,
+            "height": 18,
+            "right": 156,
+            "bottom": 207.234375,
+            "text": "Ejemplo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 214.671875,
+            "width": 188,
+            "height": 20,
+            "right": 229,
+            "bottom": 234.671875,
+            "text": "Señal de inflamación",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 267.671875,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 287.671875,
+            "text": "Referencia de este laboratorio",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": 266.671875,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 284.671875,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 377.671875,
+            "width": 234.03125,
+            "height": 20,
+            "right": 275.03125,
+            "bottom": 397.671875,
+            "text": "Menor riesgo cardiovascular relativo",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 317.421875,
+            "y": 376.671875,
+            "width": 31.578125,
+            "height": 18,
+            "right": 349,
+            "bottom": 394.671875,
+            "text": "mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 45.078125,
+            "y": 471.671875,
+            "width": 7.84375,
+            "height": 20,
+            "right": 52.921875,
+            "bottom": 491.671875,
+            "text": "0",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 93.734375,
+            "y": 471.671875,
+            "width": 7.84375,
+            "height": 20,
+            "right": 101.578125,
+            "bottom": 491.671875,
+            "text": "1",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 142.40625,
+            "y": 471.671875,
+            "width": 7.84375,
+            "height": 20,
+            "right": 150.25,
+            "bottom": 491.671875,
+            "text": "2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 239.734375,
+            "y": 471.671875,
+            "width": 7.84375,
+            "height": 20,
+            "right": 247.578125,
+            "bottom": 491.671875,
+            "text": "4",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 288.40625,
+            "y": 471.671875,
+            "width": 7.84375,
+            "height": 20,
+            "right": 296.25,
+            "bottom": 491.671875,
+            "text": "5",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 337.078125,
+            "y": 471.671875,
+            "width": 7.84375,
+            "height": 20,
+            "right": 344.921875,
+            "bottom": 491.671875,
+            "text": "6",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 195.1953125,
+            "y": 471.671875,
+            "width": 19.046875,
+            "height": 20,
+            "right": 214.2421875,
+            "bottom": 491.671875,
+            "text": "3,2",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(255, 253, 246)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 503.671875,
+            "width": 308,
+            "height": 40,
+            "right": 349,
+            "bottom": 543.671875,
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "400",
+            "color": "rgb(241, 236, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 576.671875,
+            "width": 308,
+            "height": 20,
+            "right": 349,
+            "bottom": 596.671875,
+            "text": "Revisar si persiste: >2 mg/L",
+            "size": 14,
+            "lineHeight": 20,
+            "weight": "600",
+            "color": "rgb(252, 224, 186)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "body": [
+          {
+            "x": 121.0078125,
+            "y": 329.671875,
+            "width": 168.515625,
+            "height": 24,
+            "right": 289.5234375,
+            "bottom": 353.671875,
+            "text": "Dentro de la referencia.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 118.9765625,
+            "y": 439.671875,
+            "width": 172.578125,
+            "height": 24,
+            "right": 291.5546875,
+            "bottom": 463.671875,
+            "text": "Fuera de esta categoría.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 41,
+            "y": 600.671875,
+            "width": 308,
+            "height": 72,
+            "right": 349,
+            "bottom": 672.671875,
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(246, 240, 227)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 703.671875,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 751.671875,
+            "text": "Los límites varían entre laboratorios. No es un diagnóstico.",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(80, 89, 79)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "takeaway": {
+          "x": 41,
+          "y": 559.671875,
+          "width": 308,
+          "height": 113,
+          "right": 349,
+          "bottom": 672.671875,
+          "text": "Revisar si persiste: >2 mg/L\nRepite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+          "size": 16,
+          "lineHeight": 24,
+          "weight": "400",
+          "color": "rgb(246, 240, 227)",
+          "family": "\"EVA Hanken\", Arial, sans-serif"
+        },
+        "categoryNote": "Categoría según hs-CRP; no indica tu riesgo global.",
+        "review": "Revisar si persiste: >2 mg/L",
+        "description": "Dos bandas en la misma escala lineal de 0 a 6 mg/L. La referencia de este laboratorio es inferior a 5; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a 1. El mismo ejemplo de 3,2 está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de 2 si persiste es un motivo de revisión separado, no una banda óptima.",
+        "entry": "complete",
+        "animations": 0,
+        "overflow": [
+          {
+            "className": "range-proof-layout",
+            "width": 342,
+            "scrollWidth": 350
+          },
+          {
+            "className": "range-proof-instrument bio-glass",
+            "width": 356,
+            "scrollWidth": 376
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-point",
+            "width": 2,
+            "scrollWidth": 5
+          },
+          {
+            "className": "range-proof-scale",
+            "width": 292,
+            "scrollWidth": 296
+          }
+        ],
+        "controls": [
+          {
+            "x": 24,
+            "y": 755.671875,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 799.671875,
+            "text": "Fuentes y contexto",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 24,
+            "y": 816.671875,
+            "width": 342,
+            "height": 54.796875,
+            "right": 366,
+            "bottom": 871.46875,
+            "text": "Interpreta tus analíticas\nSúbelas gratis",
+            "size": 16,
+            "lineHeight": 24,
+            "weight": "400",
+            "color": "rgb(11, 16, 16)",
+            "family": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ]
+      },
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          0.8333154965753424,
+          0.16663099315068494
+        ],
+        "bandRatio": 5.000963391136802,
+        "sampleFractions": [
+          0.533283390410959,
+          0.533283390410959
+        ],
+        "sampleCenters": [
+          204.71875,
+          204.71875
+        ]
+      },
+      "focus": {
+        "active": true,
+        "outline": "solid",
+        "width": "2px"
+      },
+      "sources": [
+        {
+          "label": "Referencia del laboratorio: CDC",
+          "href": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+          "height": 44
+        },
+        {
+          "label": "Categorías de hs-CRP: AHA",
+          "href": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "height": 44
+        },
+        {
+          "label": "Modificador de riesgo: ESC/EAS",
+          "href": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+          "height": 44
+        },
+        {
+          "label": "Evidencia prospectiva: ERFC",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+          "height": 44
+        }
+      ],
+      "details": "Fuentes y contexto\n\nUna referencia de laboratorio y una categoría de riesgo según la hs-CRP responden a preguntas distintas.\n\nEste ejemplo usa una referencia documentada de hs-CRP para adultos inferior a 5 mg/L. Los límites pueden variar entre laboratorios.\n\nLa AHA describe categorías de riesgo cardiovascular relativo según la hs-CRP: menor por debajo de 1 mg/L, medio de 1 a 3 mg/L y mayor por encima de 3 mg/L. Estas categorías no determinan tu riesgo global ni fijan un objetivo de tratamiento.\n\nUna hs-CRP persistentemente elevada >2 mg/L puede aportar información sobre el riesgo cardiovascular futuro. Debe valorarse junto con tu historial de salud, otros factores de riesgo y posibles causas de inflamación. No es un diagnóstico ni un objetivo universal de tratamiento.\n\nUna enfermedad, una infección o una lesión pueden elevar la hs-CRP. La persistencia debe confirmarse en situación clínica estable; el momento depende del contexto clínico.\n\nLA EVIDENCIA\n\nReferencia del laboratorio: CDC\nCategorías de hs-CRP: AHA\nModificador de riesgo: ESC/EAS\nEvidencia prospectiva: ERFC\nEntiende la diferencia",
+      "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+      "passed": false
+    }
+  ],
+  "pageErrors": [],
+  "networkWrites": [],
+  "allOwnedBrowsersClosed": true,
+  "passed": false
+}

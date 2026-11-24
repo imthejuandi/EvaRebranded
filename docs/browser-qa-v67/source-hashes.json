@@ -1,0 +1,8 @@
+{
+  "uiCommit": "438fc1087bc39130b3c6145064ed02ff8a088cc3",
+  "sha256": {
+    "components/story/RangeProofSection.tsx": "955c6d9a523b4716fa1f742deec49a53e5f6d5a620676d2bc57542301673ea06",
+    "components/story/range-proof-section.css": "5c13ca61d1701fc1e56db92cac2ec515448170e5abca1d111dcb8ddf6a69f4ec",
+    "lib/site-content/range-proof-copy.ts": "8a0278b01a868b7a2f72c68e54004123d70bf4b90146cf0361ba73df6bfb2768"
+  }
+}

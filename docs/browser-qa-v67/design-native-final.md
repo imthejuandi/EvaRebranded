@@ -1,0 +1,9 @@
+# Independent Impeccable native review — v67
+
+Inspected actual native captures `actual-en-1366-section.png`, `actual-es-390-section.png`, `actual-es-320-section.png`, and `actual-es-768-section.png` in this directory.
+
+**Visual craft verdict: pass.** The real page preserves the preflight's quantitative design: the broad lab band and narrow lower-relative-risk band have visibly different extents, share one axis, and carry aligned markers over the bold 3.2 / 3,2 label. The dotted example is recognizable as the same value. The independent >2-if-persistent instruction sits below the graph rather than being encoded as a filled area. The section retains EVA's dark glass, subtle purple and warm reflections, warm paper and editorial typography. The 768 layout is spacious; 390 and 320 retain readable tracks and natural label wrapping without visible text clipping. The axis end labels and cursor dots appear completely inside the glass in these images; precise bound validation is a separate automated check.
+
+The 24px bars are more utilitarian than the prior relay, but their scale and substantial contrast make the user's requested difference in actual ranges immediately visible. The green short segment does create a positive visual emphasis, so the explicitly relative category label and nearby hs-CRP/overall-risk qualification are important. Its interpretation as a universal goal must be assessed by the medical and cold-image reviewers, not inferred from this aesthetic pass. The 320 panel is tall but its line breaks and spacing remain controlled; reducing essential type to make it shorter would weaken the result.
+
+The team reports exact native geometry and painted text contrast across four profiles with a minimum of 4.85; those measurements were not independently rerun in this image critique. The screenshots alone do not prove keyboard access, full text bounds, medical semantics, or reader comprehension.
