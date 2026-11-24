@@ -1,0 +1,30 @@
+{
+  "method": "Composited .62 warm-white core of essential interval dots against actual native glass sampled at each dot centre, excluding occluded ring. Dim outside dots are contextual background. This is core compositing, not edge antialiasing/physical-screen measurement.",
+  "profiles": [
+    {
+      "locale": "es",
+      "width": 320,
+      "minimum": 3.66,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "minimum": 3.72,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "minimum": 3.55,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "minimum": 3.69,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

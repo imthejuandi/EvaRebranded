@@ -173,13 +173,13 @@
     "visual": "Independent customer/quality reviewer inspected actual desktop and phone screenshots. The same-value teaching example, repeat qualifier and proof-to-free-action sequence are publishable; no material density issue."
   },
   "latest_refinement": {
-    "version": 67,
+    "version": 68,
     "record": "docs/range-graphic-qa.json",
-    "meaning": "Replaces the owner-rejected relay with two quantitatively aligned interval tracks on one 0–6 mg/L scale: this lab reference <5 versus the AHA lower relative hs-CRP cardiovascular-risk category <1. The same 3.2 marker is inside the broad band and outside the narrow band. Dotted readout, glass, source context and free action remain. >2 if persistent is separately named review context, not an optimal band."
+    "meaning": "Replaces solid range blocks with the dashboard EvidenceRange visual family:55 × 4 dotted fields, brighter/larger interval dots, fine boundaries and ring/core sample markers. Both rows use one 0–5 display scale. Lab<5 ends at 100%, lower relative-risk category <1 ends at 20%, the unchanged independent 3.2 result sits at 64% on both. Clinical labels, sources, glass, actions and actual dashboard data are preserved."
   },
   "workedExample_as_of_release": 62,
   "currentWorkedExample": {
-    "status": "current_from_version 67",
+    "status": "current_from_version 68",
     "biomarker": "hs-CRP",
     "value": 3.2,
     "unit": "mg/L",
@@ -210,37 +210,48 @@
     "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
     "review": "Medical source and actual-image review by an agent, not human clinician approval.",
     "record": "docs/range-graphic-qa.json",
-    "source_packet": "docs/browser-qa-v67/medical-native-final.md",
+    "source_packet": "docs/browser-qa-v68/medical-candidate.md",
     "representation": {
-      "kind": "aligned_quantitative_intervals",
+      "kind": "aligned_dashboard_dot_levels",
       "domain": {
         "min": 0,
-        "max": 6,
+        "max": 5,
         "unit": "mg/L",
-        "meaning": "Illustrative linear display extent, not clinical upper limit or exact assay zero."
+        "meaning": "One common 0–5 display domain matching the dashboard hs-CRP fixture/CapsuleRange; not EvidenceRange’s adaptive per-result domain."
       },
       "labBand": {
         "from": 0,
         "to": 5,
         "strict_upper": true,
-        "width_fraction": 0.8333333333333334
+        "width_fraction": 1
       },
       "lowerRiskBand": {
         "from": 0,
         "to": 1,
         "strict_upper": true,
-        "width_fraction": 0.16666666666666666
+        "width_fraction": 0.2
       },
       "sample": {
         "value": 3.2,
-        "position_fraction": 0.5333333333333333,
+        "position_fraction": 0.64,
         "same_position_both_tracks": true,
         "inside_lab_reference": true,
         "outside_lower_risk_category": true
       },
       "review": ">2 if persistent is a separate named footer, never another favourable fill.",
-      "cursor": "Two exactly aligned segments preserve a shared result position without drawing through label text. Shared axis directly labels3.2; nearby 3 is suppressed to prevent collision.",
-      "universal_optimal_target": false
+      "cursor": "Two aligned ring/core markers at 64%, matching the dashboard evidence instrument visual family. Bold 3.2/3,2 axis label identifies the shared sample.",
+      "universal_optimal_target": false,
+      "dot_field": {
+        "columns": 55,
+        "rows": 4,
+        "larger_brighter_inside": true,
+        "lab_inside_dots": 216,
+        "lower_inside_dots": 44,
+        "strict_upper_membership": true,
+        "visual_source": "components/pages/dashboard/ExecutiveReading.tsx:EvidenceRange",
+        "source_data": "lib/preview/fixtures.ts hsCRP domain[0,5]",
+        "dashboard_source_or_data_changed": false
+      }
     },
     "lowerRelativeRiskCategory": {
       "display": "<1 mg/L",
@@ -388,6 +399,79 @@
         "filled_or_shaded_interval": false,
         "overlap_window": false,
         "meaning": "The same sample feeds two differently named comparison questions. The connector encodes shared input, never value distance, time or optimal target."
+      }
+    },
+    {
+      "status": "current_from_version 67",
+      "biomarker": "hs-CRP",
+      "value": 3.2,
+      "unit": "mg/L",
+      "illustrative": true,
+      "dataset_boundary": "Independent teaching example, not an observed patient case and not Alex. Alex’s 2.1 mg/L result, history and context remain unchanged.",
+      "labReference": {
+        "display": "<5 mg/L",
+        "operator": "<",
+        "upper_boundary": 5,
+        "meaning": "Within this documented adult assay reference; laboratories may use different limits. This is not proof of optimal health.",
+        "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+        "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3."
+      },
+      "prevention": {
+        "display": ">2 mg/L if persistent",
+        "operator": ">",
+        "lower_boundary": 2,
+        "persistence_required": true,
+        "meaning": "An ESC/EAS 2025 cardiovascular risk modifier considered with overall health history and risk factors, not a universal optimum, diagnosis or treatment target.",
+        "source": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+        "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box."
+      },
+      "prospectiveEvidence": {
+        "source": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+        "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease in 54 prospective studies.",
+        "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
+      },
+      "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
+      "review": "Medical source and actual-image review by an agent, not human clinician approval.",
+      "record": "docs/range-graphic-qa.json",
+      "source_packet": "docs/browser-qa-v67/medical-native-final.md",
+      "representation": {
+        "kind": "aligned_quantitative_intervals",
+        "domain": {
+          "min": 0,
+          "max": 6,
+          "unit": "mg/L",
+          "meaning": "Illustrative linear display extent, not clinical upper limit or exact assay zero."
+        },
+        "labBand": {
+          "from": 0,
+          "to": 5,
+          "strict_upper": true,
+          "width_fraction": 0.8333333333333334
+        },
+        "lowerRiskBand": {
+          "from": 0,
+          "to": 1,
+          "strict_upper": true,
+          "width_fraction": 0.16666666666666666
+        },
+        "sample": {
+          "value": 3.2,
+          "position_fraction": 0.5333333333333333,
+          "same_position_both_tracks": true,
+          "inside_lab_reference": true,
+          "outside_lower_risk_category": true
+        },
+        "review": ">2 if persistent is a separate named footer, never another favourable fill.",
+        "cursor": "Two exactly aligned segments preserve a shared result position without drawing through label text. Shared axis directly labels3.2; nearby 3 is suppressed to prevent collision.",
+        "universal_optimal_target": false
+      },
+      "lowerRelativeRiskCategory": {
+        "display": "<1 mg/L",
+        "operator": "<",
+        "upper_boundary": 1,
+        "meaning": "AHA lower relative cardiovascular-risk category based on hs-CRP; not overall risk or a universal optimal/treatment target.",
+        "source": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+        "location": "PDF page2: hsCRP ranges, relative CVD risk categories. Lower <1, average 1–3, higher >3; distinct from overall PREVENT-ASCVD risk."
       }
     }
   ]

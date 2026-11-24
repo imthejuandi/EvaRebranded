@@ -1,0 +1,1058 @@
+{
+  "profiles": [
+    {
+      "locale": "es",
+      "width": 320,
+      "contrast": {
+        "glass": {
+          "x": 13,
+          "y": 154.859375,
+          "width": 294,
+          "height": 575,
+          "right": 307,
+          "bottom": 729.859375
+        },
+        "labels": [
+          {
+            "text": "Ejemplo",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 101.625,
+              "y": 189.421875,
+              "width": 47.375,
+              "height": 18,
+              "right": 149,
+              "bottom": 207.421875
+            }
+          },
+          {
+            "text": "Señal de inflamación",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 34,
+              "y": 214.859375,
+              "width": 142,
+              "height": 20,
+              "right": 176,
+              "bottom": 234.859375
+            }
+          },
+          {
+            "text": "Referencia de este laboratorio",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 34,
+              "y": 259.859375,
+              "width": 178.03125,
+              "height": 40,
+              "right": 212.03125,
+              "bottom": 299.859375
+            }
+          },
+          {
+            "text": "<5 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 224.03125,
+              "y": 271.859375,
+              "width": 61.96875,
+              "height": 28,
+              "right": 286,
+              "bottom": 299.859375
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 254.421875,
+              "y": 278.859375,
+              "width": 31.578125,
+              "height": 18,
+              "right": 286,
+              "bottom": 296.859375
+            }
+          },
+          {
+            "text": "Dentro de la referencia.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 111.0078125,
+              "y": 347.859375,
+              "width": 168.515625,
+              "height": 24,
+              "right": 279.5234375,
+              "bottom": 371.859375
+            }
+          },
+          {
+            "text": "Menor riesgo cardiovascular relativo",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 34,
+              "y": 387.859375,
+              "width": 178.03125,
+              "height": 40,
+              "right": 212.03125,
+              "bottom": 427.859375
+            }
+          },
+          {
+            "text": "<1 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 224.03125,
+              "y": 399.859375,
+              "width": 61.96875,
+              "height": 28,
+              "right": 286,
+              "bottom": 427.859375
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 254.421875,
+              "y": 406.859375,
+              "width": 31.578125,
+              "height": 18,
+              "right": 286,
+              "bottom": 424.859375
+            }
+          },
+          {
+            "text": "Fuera de esta categoría.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 108.9765625,
+              "y": 475.859375,
+              "width": 172.578125,
+              "height": 24,
+              "right": 281.5546875,
+              "bottom": 499.859375
+            }
+          },
+          {
+            "text": "0",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 38.078125,
+              "y": 507.859375,
+              "width": 7.84375,
+              "height": 20,
+              "right": 45.921875,
+              "bottom": 527.859375
+            }
+          },
+          {
+            "text": "1",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 85.265625,
+              "y": 507.859375,
+              "width": 7.84375,
+              "height": 20,
+              "right": 93.109375,
+              "bottom": 527.859375
+            }
+          },
+          {
+            "text": "2",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 132.46875,
+              "y": 507.859375,
+              "width": 7.84375,
+              "height": 20,
+              "right": 140.3125,
+              "bottom": 527.859375
+            }
+          },
+          {
+            "text": "4",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 226.875,
+              "y": 507.859375,
+              "width": 7.84375,
+              "height": 20,
+              "right": 234.71875,
+              "bottom": 527.859375
+            }
+          },
+          {
+            "text": "5",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 274.078125,
+              "y": 507.859375,
+              "width": 7.84375,
+              "height": 20,
+              "right": 281.921875,
+              "bottom": 527.859375
+            }
+          },
+          {
+            "text": "3,2",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 183.5078125,
+              "y": 507.859375,
+              "width": 19.046875,
+              "height": 20,
+              "right": 202.5546875,
+              "bottom": 527.859375
+            }
+          },
+          {
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 34,
+              "y": 539.859375,
+              "width": 252,
+              "height": 40,
+              "right": 286,
+              "bottom": 579.859375
+            }
+          },
+          {
+            "text": "Revisar si persiste: >2 mg/L",
+            "color": "rgb(252, 224, 186)",
+            "size": 14,
+            "box": {
+              "x": 34,
+              "y": 612.859375,
+              "width": 252,
+              "height": 20,
+              "right": 286,
+              "bottom": 632.859375
+            }
+          },
+          {
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 34,
+              "y": 636.859375,
+              "width": 252,
+              "height": 72,
+              "right": 286,
+              "bottom": 708.859375
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "contrast": {
+        "glass": {
+          "x": 16,
+          "y": 154,
+          "width": 358,
+          "height": 551,
+          "right": 374,
+          "bottom": 705
+        },
+        "labels": [
+          {
+            "text": "Ejemplo",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 108.625,
+              "y": 188.5625,
+              "width": 47.375,
+              "height": 18,
+              "right": 156,
+              "bottom": 206.5625
+            }
+          },
+          {
+            "text": "Señal de inflamación",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 41,
+              "y": 214,
+              "width": 188,
+              "height": 20,
+              "right": 229,
+              "bottom": 234
+            }
+          },
+          {
+            "text": "Referencia de este laboratorio",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 41,
+              "y": 267,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 287
+            }
+          },
+          {
+            "text": "<5 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 287.03125,
+              "y": 259,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 287
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 317.421875,
+              "y": 266,
+              "width": 31.578125,
+              "height": 18,
+              "right": 349,
+              "bottom": 284
+            }
+          },
+          {
+            "text": "Dentro de la referencia.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 153.8515625,
+              "y": 335,
+              "width": 168.515625,
+              "height": 24,
+              "right": 322.3671875,
+              "bottom": 359
+            }
+          },
+          {
+            "text": "Menor riesgo cardiovascular relativo",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 41,
+              "y": 383,
+              "width": 234.03125,
+              "height": 20,
+              "right": 275.03125,
+              "bottom": 403
+            }
+          },
+          {
+            "text": "<1 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 287.03125,
+              "y": 375,
+              "width": 61.96875,
+              "height": 28,
+              "right": 349,
+              "bottom": 403
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 317.421875,
+              "y": 382,
+              "width": 31.578125,
+              "height": 18,
+              "right": 349,
+              "bottom": 400
+            }
+          },
+          {
+            "text": "Fuera de esta categoría.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 151.8203125,
+              "y": 451,
+              "width": 172.578125,
+              "height": 24,
+              "right": 324.3984375,
+              "bottom": 475
+            }
+          },
+          {
+            "text": "0",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 45.078125,
+              "y": 483,
+              "width": 7.84375,
+              "height": 20,
+              "right": 52.921875,
+              "bottom": 503
+            }
+          },
+          {
+            "text": "1",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 103.46875,
+              "y": 483,
+              "width": 7.84375,
+              "height": 20,
+              "right": 111.3125,
+              "bottom": 503
+            }
+          },
+          {
+            "text": "2",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 161.875,
+              "y": 483,
+              "width": 7.84375,
+              "height": 20,
+              "right": 169.71875,
+              "bottom": 503
+            }
+          },
+          {
+            "text": "4",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 278.671875,
+              "y": 483,
+              "width": 7.84375,
+              "height": 20,
+              "right": 286.515625,
+              "bottom": 503
+            }
+          },
+          {
+            "text": "5",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 337.078125,
+              "y": 483,
+              "width": 7.84375,
+              "height": 20,
+              "right": 344.921875,
+              "bottom": 503
+            }
+          },
+          {
+            "text": "3,2",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 226.3515625,
+              "y": 483,
+              "width": 19.046875,
+              "height": 20,
+              "right": 245.3984375,
+              "bottom": 503
+            }
+          },
+          {
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 41,
+              "y": 515,
+              "width": 308,
+              "height": 40,
+              "right": 349,
+              "bottom": 555
+            }
+          },
+          {
+            "text": "Revisar si persiste: >2 mg/L",
+            "color": "rgb(252, 224, 186)",
+            "size": 14,
+            "box": {
+              "x": 41,
+              "y": 588,
+              "width": 308,
+              "height": 20,
+              "right": 349,
+              "bottom": 608
+            }
+          },
+          {
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 41,
+              "y": 612,
+              "width": 308,
+              "height": 72,
+              "right": 349,
+              "bottom": 684
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "contrast": {
+        "glass": {
+          "x": 608.984375,
+          "y": -1483.46875,
+          "width": 709.015625,
+          "height": 505,
+          "right": 1318,
+          "bottom": -978.46875
+        },
+        "labels": [
+          {
+            "text": "Example",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 712.234375,
+              "y": -1436.4375,
+              "width": 50.625,
+              "height": 18,
+              "right": 762.859375,
+              "bottom": -1418.4375
+            }
+          },
+          {
+            "text": "Inflammation signal",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 637.984375,
+              "y": -1411.4375,
+              "width": 499.015625,
+              "height": 20,
+              "right": 1137,
+              "bottom": -1391.4375
+            }
+          },
+          {
+            "text": "This lab’s reference",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 637.984375,
+              "y": -1350.46875,
+              "width": 573.046875,
+              "height": 20,
+              "right": 1211.03125,
+              "bottom": -1330.46875
+            }
+          },
+          {
+            "text": "<5 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 1227.03125,
+              "y": -1358.46875,
+              "width": 61.96875,
+              "height": 28,
+              "right": 1289,
+              "bottom": -1330.46875
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 1257.421875,
+              "y": -1351.46875,
+              "width": 31.578125,
+              "height": 18,
+              "right": 1289,
+              "bottom": -1333.46875
+            }
+          },
+          {
+            "text": "Within reference.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 993.5625,
+              "y": -1282.46875,
+              "width": 122.125,
+              "height": 24,
+              "right": 1115.6875,
+              "bottom": -1258.46875
+            }
+          },
+          {
+            "text": "Lower relative heart risk",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 637.984375,
+              "y": -1234.46875,
+              "width": 573.046875,
+              "height": 20,
+              "right": 1211.03125,
+              "bottom": -1214.46875
+            }
+          },
+          {
+            "text": "<1 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 1227.03125,
+              "y": -1242.46875,
+              "width": 61.96875,
+              "height": 28,
+              "right": 1289,
+              "bottom": -1214.46875
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 1257.421875,
+              "y": -1235.46875,
+              "width": 31.578125,
+              "height": 18,
+              "right": 1289,
+              "bottom": -1217.46875
+            }
+          },
+          {
+            "text": "Outside this category.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 976.5625,
+              "y": -1166.46875,
+              "width": 156.125,
+              "height": 24,
+              "right": 1132.6875,
+              "bottom": -1142.46875
+            }
+          },
+          {
+            "text": "0",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 642.0625,
+              "y": -1134.46875,
+              "width": 7.84375,
+              "height": 20,
+              "right": 649.90625,
+              "bottom": -1114.46875
+            }
+          },
+          {
+            "text": "1",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 769.0625,
+              "y": -1134.46875,
+              "width": 7.84375,
+              "height": 20,
+              "right": 776.90625,
+              "bottom": -1114.46875
+            }
+          },
+          {
+            "text": "2",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 896.0625,
+              "y": -1134.46875,
+              "width": 7.84375,
+              "height": 20,
+              "right": 903.90625,
+              "bottom": -1114.46875
+            }
+          },
+          {
+            "text": "4",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 1150.0625,
+              "y": -1134.46875,
+              "width": 7.84375,
+              "height": 20,
+              "right": 1157.90625,
+              "bottom": -1114.46875
+            }
+          },
+          {
+            "text": "5",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 1277.078125,
+              "y": -1134.46875,
+              "width": 7.84375,
+              "height": 20,
+              "right": 1284.921875,
+              "bottom": -1114.46875
+            }
+          },
+          {
+            "text": "3.2",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 1042.8671875,
+              "y": -1134.46875,
+              "width": 19.046875,
+              "height": 20,
+              "right": 1061.9140625,
+              "bottom": -1114.46875
+            }
+          },
+          {
+            "text": "hs-CRP category, not your overall risk.",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 637.984375,
+              "y": -1102.46875,
+              "width": 651.015625,
+              "height": 20,
+              "right": 1289,
+              "bottom": -1082.46875
+            }
+          },
+          {
+            "text": "Review if persistent: >2 mg/L",
+            "color": "rgb(252, 224, 186)",
+            "size": 14,
+            "box": {
+              "x": 637.984375,
+              "y": -1049.46875,
+              "width": 651.015625,
+              "height": 20,
+              "right": 1289,
+              "bottom": -1029.46875
+            }
+          },
+          {
+            "text": "Repeat the test when well. If still raised, review overall heart risk.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 637.984375,
+              "y": -1025.46875,
+              "width": 651.015625,
+              "height": 24,
+              "right": 1289,
+              "bottom": -1001.46875
+            }
+          }
+        ]
+      }
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "contrast": {
+        "glass": {
+          "x": 48,
+          "y": -1320.78125,
+          "width": 672,
+          "height": 527,
+          "right": 720,
+          "bottom": -793.78125
+        },
+        "labels": [
+          {
+            "text": "Ejemplo",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 145.25,
+              "y": -1275.75,
+              "width": 47.015625,
+              "height": 18,
+              "right": 192.265625,
+              "bottom": -1257.75
+            }
+          },
+          {
+            "text": "Señal de inflamación",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 71,
+              "y": -1250.75,
+              "width": 474,
+              "height": 20,
+              "right": 545,
+              "bottom": -1230.75
+            }
+          },
+          {
+            "text": "Referencia de este laboratorio",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 71,
+              "y": -1189.78125,
+              "width": 548.03125,
+              "height": 20,
+              "right": 619.03125,
+              "bottom": -1169.78125
+            }
+          },
+          {
+            "text": "<5 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 635.03125,
+              "y": -1197.78125,
+              "width": 61.96875,
+              "height": 28,
+              "right": 697,
+              "bottom": -1169.78125
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 665.421875,
+              "y": -1190.78125,
+              "width": 31.578125,
+              "height": 18,
+              "right": 697,
+              "bottom": -1172.78125
+            }
+          },
+          {
+            "text": "Dentro de la referencia.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 387.3671875,
+              "y": -1121.78125,
+              "width": 168.515625,
+              "height": 24,
+              "right": 555.8828125,
+              "bottom": -1097.78125
+            }
+          },
+          {
+            "text": "Menor riesgo cardiovascular relativo",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 71,
+              "y": -1073.78125,
+              "width": 548.03125,
+              "height": 20,
+              "right": 619.03125,
+              "bottom": -1053.78125
+            }
+          },
+          {
+            "text": "<1 mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 22,
+            "box": {
+              "x": 635.03125,
+              "y": -1081.78125,
+              "width": 61.96875,
+              "height": 28,
+              "right": 697,
+              "bottom": -1053.78125
+            }
+          },
+          {
+            "text": "mg/L",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 665.421875,
+              "y": -1074.78125,
+              "width": 31.578125,
+              "height": 18,
+              "right": 697,
+              "bottom": -1056.78125
+            }
+          },
+          {
+            "text": "Fuera de esta categoría.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 385.3359375,
+              "y": -1005.78125,
+              "width": 172.578125,
+              "height": 24,
+              "right": 557.9140625,
+              "bottom": -981.78125
+            }
+          },
+          {
+            "text": "0",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 75.078125,
+              "y": -973.78125,
+              "width": 7.84375,
+              "height": 20,
+              "right": 82.921875,
+              "bottom": -953.78125
+            }
+          },
+          {
+            "text": "1",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 197.078125,
+              "y": -973.78125,
+              "width": 7.84375,
+              "height": 20,
+              "right": 204.921875,
+              "bottom": -953.78125
+            }
+          },
+          {
+            "text": "2",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 319.078125,
+              "y": -973.78125,
+              "width": 7.84375,
+              "height": 20,
+              "right": 326.921875,
+              "bottom": -953.78125
+            }
+          },
+          {
+            "text": "4",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 563.078125,
+              "y": -973.78125,
+              "width": 7.84375,
+              "height": 20,
+              "right": 570.921875,
+              "bottom": -953.78125
+            }
+          },
+          {
+            "text": "5",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 685.078125,
+              "y": -973.78125,
+              "width": 7.84375,
+              "height": 20,
+              "right": 692.921875,
+              "bottom": -953.78125
+            }
+          },
+          {
+            "text": "3,2",
+            "color": "rgb(255, 253, 246)",
+            "size": 14,
+            "box": {
+              "x": 459.8671875,
+              "y": -973.78125,
+              "width": 19.046875,
+              "height": 20,
+              "right": 478.9140625,
+              "bottom": -953.78125
+            }
+          },
+          {
+            "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+            "color": "rgb(241, 236, 227)",
+            "size": 14,
+            "box": {
+              "x": 71,
+              "y": -941.78125,
+              "width": 626,
+              "height": 20,
+              "right": 697,
+              "bottom": -921.78125
+            }
+          },
+          {
+            "text": "Revisar si persiste: >2 mg/L",
+            "color": "rgb(252, 224, 186)",
+            "size": 14,
+            "box": {
+              "x": 71,
+              "y": -888.78125,
+              "width": 626,
+              "height": 20,
+              "right": 697,
+              "bottom": -868.78125
+            }
+          },
+          {
+            "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+            "color": "rgb(246, 240, 227)",
+            "size": 16,
+            "box": {
+              "x": 71,
+              "y": -864.78125,
+              "width": 626,
+              "height": 48,
+              "right": 697,
+              "bottom": -816.78125
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "networkWrites": [],
+  "allOwnedBrowsersClosed": true
+}

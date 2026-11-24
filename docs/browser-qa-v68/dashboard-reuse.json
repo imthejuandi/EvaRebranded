@@ -1,0 +1,27 @@
+{
+  "owner_direction": "I like the directions but use the levels we use inside the dashboard so it looks better",
+  "visual_authority": "ExecutiveReading.tsx EvidenceRange55 × 4 dot-field, fine boundaries, ring/core marker. Geometry adapted to full width, responsive dot radius and dark glass backing.",
+  "scale_authority": "Dashboard hsCRP fixture/CapsuleRange uses0–5. ExecutiveReading’s adaptive+12% helper is intentionally not reused per row, because this comparison must retain one shared scale.",
+  "clinical_provenance": "Strict<5 documented lab and<1 AHA relative-risk category unchanged. Dashboard fixture’s inclusive endpoint and internal optimal names do not transfer. Actualdashboard 2.1/history and historical landinggallery 0–3 stay separate.",
+  "changed_scope": "Landing RangeProofSection/CSS, display axisMax and QA version defaults only. No dashboard component/data files changed.",
+  "reviews": [
+    "copy.md",
+    "ux.md",
+    "design.md",
+    "medical.md",
+    "ux-candidate.md",
+    "design-candidate.md",
+    "medical-candidate.md",
+    "ux-native.md",
+    "design-native.md"
+  ],
+  "verification": {
+    "native_profiles": 8,
+    "text_contrast_profiles": 4,
+    "text_minimum": 4.81,
+    "essential_interval_dot_minimum": 3.55,
+    "no_js": true,
+    "mechanical_detector": "zero findings"
+  },
+  "owner_acceptance": "V67direction liked; V68 actual owner review not established by agent passes."
+}

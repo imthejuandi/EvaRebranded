@@ -1,0 +1,809 @@
+{
+  "phase": "preflight",
+  "method": "Conservative whole text rectangle against actual painted glass with text made transparent; grain, gradients and rim retained. Not a glyph-pixel estimate.",
+  "passed": true,
+  "profiles": 4,
+  "minimum": 4.81,
+  "results": [
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "hs-CRP Example",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 20,
+      "minimumContrast": 8.71,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Example",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.61,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Inflammation signal",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 7.41,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "This lab’s reference",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.7,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "<5 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 6.01,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.04,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Within reference.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.0,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Lower relative heart risk",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.23,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.81,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.81,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Outside this category.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.81,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.07,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.06,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.16,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.82,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.2,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "3.2",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.97,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "hs-CRP category, not your overall risk.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.62,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Review if persistent: >2 mg/L",
+      "foreground": "rgb(252, 224, 186)",
+      "size": 14,
+      "minimumContrast": 5.7,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Repeat the test when well. If still raised, review overall heart risk.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.07,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "hs-CRP Ejemplo",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 18,
+      "minimumContrast": 8.78,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Ejemplo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 9.15,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Señal de inflamación",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.25,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Referencia de este laboratorio",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 7.16,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "<5 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 6.31,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.31,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Dentro de la referencia.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.64,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Menor riesgo cardiovascular relativo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.82,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.91,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.07,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Fuera de esta categoría.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.43,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.85,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.97,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.99,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.54,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.02,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "3,2",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.74,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.04,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Revisar si persiste: >2 mg/L",
+      "foreground": "rgb(252, 224, 186)",
+      "size": 14,
+      "minimumContrast": 5.27,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.23,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "hs-CRP Ejemplo",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 18,
+      "minimumContrast": 8.68,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Ejemplo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 9.4,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Señal de inflamación",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.05,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Referencia de este laboratorio",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.91,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "<5 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 6.08,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.08,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Dentro de la referencia.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.63,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Menor riesgo cardiovascular relativo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.75,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.73,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.73,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Fuera de esta categoría.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.25,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.89,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.84,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.98,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.59,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 4.85,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "3,2",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.54,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 4.81,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Revisar si persiste: >2 mg/L",
+      "foreground": "rgb(252, 224, 186)",
+      "size": 14,
+      "minimumContrast": 5.35,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.72,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "hs-CRP Ejemplo",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 20,
+      "minimumContrast": 7.93,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Ejemplo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.73,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Señal de inflamación",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 7.28,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Referencia de este laboratorio",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.73,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "<5 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.66,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.66,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Dentro de la referencia.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.98,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Menor riesgo cardiovascular relativo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.28,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.66,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.7,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Fuera de esta categoría.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.64,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.77,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.98,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.95,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.47,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.01,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "3,2",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.92,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.24,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Revisar si persiste: >2 mg/L",
+      "foreground": "rgb(252, 224, 186)",
+      "size": 14,
+      "minimumContrast": 5.5,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Repite el análisis cuando estés bien. Si sigue elevado, valora el riesgo cardiovascular global.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.86,
+      "required": 4.5,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "saved": {
+    "id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e5c7f652e38c819180e804d272434545",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "version_number": 68,
+    "source": {
+      "commit_sha": "0bd8f4b975e5a165ca2d6485d3e7c88e4e06e162"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000f04081f4a372403baa8760ce",
+      "content_hash": "sha256:df9ea44c69a40d9562b417b23e6c073897890ab5a17a8f8c36025dfb6a7b8540",
+      "size_bytes": 172021760,
+      "file_count": 790
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployed": {
+    "id": "appgdep_6b05b12a74a881918df981305ce176d1",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "title": "EVA Content Review",
+    "version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_e5c7f652e38c819180e804d272434545",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae2409926cc819180f1453af398551d",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-24T15:46:06.622944+00:00"
+  },
+  "uiCommit": "0bd8f4b975e5a165ca2d6485d3e7c88e4e06e162",
+  "audience": "public",
+  "archive": {
+    "path": "/workspace/eva-publication/eva-dashboard-levels-v68.tar.gz",
+    "gzipSha256": "e0e7b05cb20c275b19d84a4fb835aee58050572ed84f1e697723d9bfb30428f6",
+    "gzipSizeBytes": 163070359
+  },
+  "reviewUrl": "https://eva-content-review.jdlagop.chatgpt.site/en?review=68#otra-lectura"
+}
