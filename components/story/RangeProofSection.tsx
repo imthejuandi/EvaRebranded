@@ -1,6 +1,6 @@
 'use client';
 
-import {useEffect,useRef} from 'react';
+import type {CSSProperties} from 'react';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {businessLinks} from '@/lib/landing-content';
 import {flowHref} from '@/lib/preview/policy';
@@ -9,48 +9,19 @@ import {Arrow} from './Arrow';
 import {DotNumber} from './DotNumber';
 import './range-proof-section.css';
 
-/** One sample feeds two comparison channels; the routing is not a numeric scale. */
+/** The same measured level against two explicitly labelled, equally scaled intervals. */
 export function RangeProofSection({calm=false}: {calm?:boolean}) {
   const {locale,href}=useSiteLanguage(), c=rangeProofCopy[locale];
-  const root=useRef<HTMLElement>(null), routing=useRef<HTMLDivElement>(null);
   const uploadHref=flowHref(businessLinks.signup,{plan:'free',returnTo:businessLinks.upload,reportId:null,invalidPlan:false});
   const sample=rangeProofExample;
   const number=new Intl.NumberFormat(locale,{minimumFractionDigits:1,maximumFractionDigits:1}).format(sample.value);
+  const position=(value:number)=>`${(value-sample.axisMin)/(sample.axisMax-sample.axisMin)*100}%`;
+  const coordinates={'--range-sample':position(sample.value),'--range-lab-end':position(sample.labUpper),'--range-lower-risk-end':position(sample.lowerRiskUpper)} as CSSProperties;
   const chartDescription=locale==='es'
-    ? `El mismo ejemplo de hs-CRP de ${number} mg/L está por debajo de la referencia del laboratorio de 5 y por encima del umbral de revisión de riesgo de 2 si persiste. El 5 es el límite de esta referencia del laboratorio y el 2 es un umbral de revisión si persiste. Estas comparaciones no muestran un objetivo óptimo ni diagnostican una enfermedad.`
-    : `The same ${number} mg/L hs-CRP example is below the laboratory reference of 5 and above the risk-review threshold of 2 if persistent. The cutoff at 5 is this laboratory reference limit and the cutoff at 2 prompts review if persistent. These comparisons do not show an optimal target or diagnose disease.`;
+    ? `Dos bandas en la misma escala lineal de ${sample.axisMin} a ${sample.axisMax} mg/L. La referencia de este laboratorio es inferior a ${sample.labUpper}; la categoría de menor riesgo cardiovascular relativo según hs-CRP es inferior a ${sample.lowerRiskUpper}. El mismo ejemplo de ${number} está dentro de la referencia del laboratorio y fuera de la categoría de menor riesgo. Esta categoría no indica tu riesgo global ni es un objetivo óptimo universal. Más de ${sample.preventionLower} si persiste es un motivo de revisión separado, no una banda óptima.`
+    : `Two bands on the same linear ${sample.axisMin} to ${sample.axisMax} mg/L scale. This laboratory reference is below ${sample.labUpper}; the lower relative cardiovascular-risk hs-CRP category is below ${sample.lowerRiskUpper}. The same ${number} example is inside the lab reference and outside the lower-risk category. This category does not indicate your overall risk or a universal optimal target. Above ${sample.preventionLower} if persistent is a separate review trigger, not an optimal band.`;
 
-  useEffect(()=>{
-    const element=root.current, trigger=routing.current;
-    if(!element||!trigger)return;
-    const preference=matchMedia('(prefers-reduced-motion: reduce)');
-    let finished=false;
-    const animations:Animation[]=[];
-    const finish=()=>{
-      finished=true;
-      for(const animation of animations)animation.cancel();
-      element.dataset.rangeEntryState='complete';
-    };
-    if(calm||preference.matches||!('IntersectionObserver' in window)||typeof element.animate!=='function'){finish();return;}
-    element.dataset.rangeEntryState='ready';
-    const observer=new IntersectionObserver(entries=>{
-      if(!entries.some(entry=>entry.isIntersecting)||finished)return;
-      observer.disconnect();
-      if(preference.matches||document.hidden){finish();return;}
-      element.dataset.rangeEntryState='playing';
-      animations.push(trigger.animate([{opacity:.45},{opacity:1}],{duration:500,easing:'cubic-bezier(.22,1,.36,1)'}));
-      void Promise.all(animations.map(animation=>animation.finished)).then(()=>{if(!finished){finished=true;element.dataset.rangeEntryState='complete';}}).catch(()=>{});
-    },{threshold:.2});
-    observer.observe(trigger);
-    const visibility=()=>{if(document.hidden&&element.dataset.rangeEntryState==='playing')finish();};
-    const reduced=()=>{if(preference.matches){observer.disconnect();finish();}};
-    element.addEventListener('focusin',finish);
-    document.addEventListener('visibilitychange',visibility);
-    preference.addEventListener('change',reduced);
-    return()=>{observer.disconnect();for(const animation of animations)animation.cancel();element.removeEventListener('focusin',finish);document.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',reduced);};
-  },[calm,locale]);
-
-  return <section ref={root} className="range-proof" id="otra-lectura" aria-labelledby="range-proof-title" data-range-proof data-range-entry-state="complete" data-range-entry-duration-ms="500">
+  return <section className="range-proof" id="otra-lectura" aria-labelledby="range-proof-title" data-range-proof data-range-entry-state="complete" data-range-entry-duration-ms="0">
     <div className="range-proof-layout">
       <div className="range-proof-story">
         <h2 id="range-proof-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2>
@@ -58,30 +29,27 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
       </div>
       <div className="range-proof-evidence">
         <div className="range-proof-instrument bio-glass">
-          <figure className="range-proof-plot" aria-describedby="range-proof-graphic-description" data-range-graphic="relay" data-range-marker>
+          <figure className="range-proof-plot" aria-describedby="range-proof-graphic-description" data-range-graphic="aligned-levels" data-range-marker style={coordinates}>
             <p className="sr-only" id="range-proof-graphic-description">{chartDescription}</p>
-            <div className="range-proof-relay">
-              <header className="range-proof-readout">
-                <div><h3>hs-CRP <span className="range-proof-example">{c.exampleLabel}</span></h3><p className="range-proof-marker-name">{c.markerLabel}</p></div>
-                <p className="range-proof-value" data-range-value={sample.value}><span className="sr-only">{number} mg/L</span><span aria-hidden="true"><DotNumber value={number} density="coarse" calm active={false}/><small>mg/L</small></span></p>
-              </header>
-              <div ref={routing} className="range-proof-routing" aria-hidden="true">
-                <svg className="range-proof-routing-narrow" viewBox="0 0 100 28" preserveAspectRatio="none"><path d="M82 0V14H0V28" vectorEffect="non-scaling-stroke"/></svg>
+            <header className="range-proof-readout">
+              <div><h3>hs-CRP <span className="range-proof-example">{c.exampleLabel}</span></h3><p className="range-proof-marker-name">{c.markerLabel}</p></div>
+              <p className="range-proof-value" data-range-value={sample.value}><span className="sr-only">{number} mg/L</span><span aria-hidden="true"><DotNumber value={number} density="coarse" calm={calm} active={false}/><small>mg/L</small></span></p>
+            </header>
+            <div className="range-proof-levels" data-range-axis-min={sample.axisMin} data-range-axis-max={sample.axisMax}>
+              <div className="range-proof-level" data-range-reading="lab" role="group" aria-label={c.lab.label}>
+                <div className="range-proof-level-label"><h4>{c.lab.label}</h4><p className="range-proof-cutoff" data-range-reference-value={sample.labUpper}>{'<'}{sample.labUpper} <small>{sample.unit}</small></p></div>
+                <div className="range-proof-track" aria-hidden="true"><span className="range-proof-band" data-range-lab-band data-range-end={sample.labUpper}/><span className="range-proof-limit"/><span className="range-proof-point" data-range-sample={sample.value}/></div>
+                <p className="range-proof-level-meaning">{c.lab.interpretation}</p>
               </div>
-              <div className="range-proof-comparisons">
-                <div className="range-proof-comparison" data-range-reading="lab" role="group" aria-label={c.lab.label}>
-                  <h4>{c.lab.label}</h4>
-                  <p className="range-proof-comparison-value" data-range-reference-value={sample.labUpper}>{'<'}{sample.labUpper} <small>{sample.unit}</small></p>
-                  <p className="range-proof-comparison-meaning">{c.lab.interpretation}</p>
-                </div>
-                <div className="range-proof-comparison" data-range-reading="prevention" role="group" aria-label={c.prevention.label}>
-                  <h4>{c.prevention.label}</h4>
-                  <p className="range-proof-comparison-value" data-range-review-value={sample.preventionLower}>{'>'}{sample.preventionLower} <small>{sample.unit}</small><span className="range-proof-condition">{c.prevention.condition}</span></p>
-                  <p className="range-proof-comparison-meaning">{c.prevention.interpretation}</p>
-                </div>
+              <div className="range-proof-level" data-range-reading="lower-risk" role="group" aria-label={c.lowerRisk.label}>
+                <div className="range-proof-level-label"><h4>{c.lowerRisk.label}</h4><p className="range-proof-cutoff" data-range-lower-risk-value={sample.lowerRiskUpper}>{'<'}{sample.lowerRiskUpper} <small>{sample.unit}</small></p></div>
+                <div className="range-proof-track" aria-hidden="true"><span className="range-proof-band" data-range-lower-risk-band data-range-end={sample.lowerRiskUpper}/><span className="range-proof-limit"/><span className="range-proof-point" data-range-sample={sample.value}/></div>
+                <p className="range-proof-level-meaning">{c.lowerRisk.interpretation}</p>
               </div>
+              <div className="range-proof-scale" aria-hidden="true">{Array.from({length:sample.axisMax-sample.axisMin+1},(_,index)=>index+sample.axisMin).filter(value=>Math.abs(value-sample.value)>=.5).map(value=><span key={value} style={{left:position(value)}}>{value}</span>)}<span className="range-proof-scale-result" style={{left:position(sample.value)}} data-range-scale-result>{number}</span></div>
             </div>
-            <figcaption className="range-proof-takeaway"><strong>{c.takeawayLead}</strong><span>{c.takeaway}</span></figcaption>
+            <p className="range-proof-category-note">{c.categoryNote}</p>
+            <figcaption className="range-proof-takeaway"><strong data-range-review-value={sample.preventionLower}>{c.reviewLabel}{': >'}{sample.preventionLower} {sample.unit}</strong><span>{c.takeaway}</span></figcaption>
           </figure>
         </div>
         <p className="range-proof-context">{c.qualifier}</p>
@@ -90,6 +58,7 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
           <div className="range-proof-detail-body">
             <p className="range-proof-lead">{c.lead}</p>
             <p>{c.lab.detail}</p>
+            <p>{c.lowerRisk.detail}</p>
             <p>{c.prevention.detail}</p>
             <p>{c.context}</p>
             <div className="range-proof-sources"><p>{c.sourceLabel}</p>{c.sources.map(source=><a key={source.href} href={source.href} target="_blank" rel="noreferrer" data-range-source>{source.label}</a>)}</div>

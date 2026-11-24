@@ -1,6 +1,9 @@
 /** A separate teaching example; Alex’s result and history remain unchanged. */
 export const rangeProofExample = {
   value: 3.2,
+  axisMin: 0,
+  axisMax: 6,
+  lowerRiskUpper: 1,
   unit: 'mg/L',
   labUpper: 5,
   preventionLower: 2,
@@ -11,16 +14,24 @@ export const rangeProofCopy = {
   en: {
     kicker: 'A DIFFERENT QUESTION',
     heading: ['There’s more', 'to “normal.”'],
-    lead: 'A lab reference and a prevention threshold answer different questions.',
+    lead: 'A lab reference and an hs-CRP risk category answer different questions.',
     markerLabel: 'Inflammation signal',
     exampleLabel: 'Example',
-    unchangedLabel: 'One result. Two questions.',
+    unchangedLabel: 'One result. Two ranges.',
     lab: {
       label: 'This lab’s reference',
       threshold: '<5 mg/L',
-      interpretation: 'Below the limit.',
+      interpretation: 'Within reference.',
       detail: 'This example uses a documented adult hs-CRP reference below 5 mg/L. Laboratory limits may differ.',
     },
+    lowerRisk: {
+      label: 'Lower relative heart risk',
+      threshold: '<1 mg/L',
+      interpretation: 'Outside this category.',
+      detail: 'The AHA describes relative cardiovascular-risk categories based on hs-CRP: lower below 1 mg/L, average from 1 to 3 mg/L, and higher above 3 mg/L. These categories do not determine your overall risk or set a treatment target.',
+    },
+    categoryNote: 'hs-CRP category, not your overall risk.',
+    reviewLabel: 'Review if persistent',
     prevention: {
       label: 'Heart-risk review',
       threshold: '>2 mg/L if persistent',
@@ -36,6 +47,7 @@ export const rangeProofCopy = {
     sourceLabel: 'THE EVIDENCE',
     sources: [
       {label: 'Lab reference: CDC', href: 'https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf'},
+      {label: 'hs-CRP categories: AHA', href: 'https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en'},
       {label: 'Risk modifier: ESC/EAS', href: 'https://academic.oup.com/eurheartj/article/46/42/4359/8234482'},
       {label: 'Prospective evidence: ERFC', href: 'https://pubmed.ncbi.nlm.nih.gov/20031199/'},
     ],
@@ -46,16 +58,24 @@ export const rangeProofCopy = {
   es: {
     kicker: 'UNA MIRADA A LA PREVENCIÓN',
     heading: ['«Normal»', 'no lo cuenta todo.'],
-    lead: 'Una referencia de laboratorio y un umbral preventivo responden a preguntas distintas.',
+    lead: 'Una referencia de laboratorio y una categoría de riesgo según la hs-CRP responden a preguntas distintas.',
     markerLabel: 'Señal de inflamación',
     exampleLabel: 'Ejemplo',
-    unchangedLabel: 'Un resultado. Dos preguntas.',
+    unchangedLabel: 'Un resultado. Dos rangos.',
     lab: {
       label: 'Referencia de este laboratorio',
       threshold: '<5 mg/L',
-      interpretation: 'Por debajo del límite.',
+      interpretation: 'Dentro de la referencia.',
       detail: 'Este ejemplo usa una referencia documentada de hs-CRP para adultos inferior a 5 mg/L. Los límites pueden variar entre laboratorios.',
     },
+    lowerRisk: {
+      label: 'Menor riesgo cardiovascular relativo',
+      threshold: '<1 mg/L',
+      interpretation: 'Fuera de esta categoría.',
+      detail: 'La AHA describe categorías de riesgo cardiovascular relativo según la hs-CRP: menor por debajo de 1 mg/L, medio de 1 a 3 mg/L y mayor por encima de 3 mg/L. Estas categorías no determinan tu riesgo global ni fijan un objetivo de tratamiento.',
+    },
+    categoryNote: 'Categoría según hs-CRP; no indica tu riesgo global.',
+    reviewLabel: 'Revisar si persiste',
     prevention: {
       label: 'Revisión del riesgo cardiovascular',
       threshold: '>2 mg/L si persiste',
@@ -71,6 +91,7 @@ export const rangeProofCopy = {
     sourceLabel: 'LA EVIDENCIA',
     sources: [
       {label: 'Referencia del laboratorio: CDC', href: 'https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf'},
+      {label: 'Categorías de hs-CRP: AHA', href: 'https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en'},
       {label: 'Modificador de riesgo: ESC/EAS', href: 'https://academic.oup.com/eurheartj/article/46/42/4359/8234482'},
       {label: 'Evidencia prospectiva: ERFC', href: 'https://pubmed.ncbi.nlm.nih.gov/20031199/'},
     ],
