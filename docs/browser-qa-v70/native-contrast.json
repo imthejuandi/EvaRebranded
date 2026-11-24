@@ -1,0 +1,689 @@
+{
+  "phase": "native",
+  "method": "Conservative whole text rectangle against actual painted glass with text made transparent; grain, gradients and rim retained. Not a glyph-pixel estimate.",
+  "passed": true,
+  "profiles": 4,
+  "minimum": 5.19,
+  "results": [
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Ejemplo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 9.55,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Señal de inflamación",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.0,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Rango de referencia del laboratorio",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.18,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "<3 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.86,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.86,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Dentro de la referencia.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.58,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Menor riesgo cardiovascular relativo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.51,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.56,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.63,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Fuera de esta categoría.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.63,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.92,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.09,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.37,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.48,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.84,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "2,9",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 7.39,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.44,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Ejemplo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 9.29,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Señal de inflamación",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.18,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Rango de referencia del laboratorio",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.36,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "<3 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 6.1,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.1,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Dentro de la referencia.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.61,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Menor riesgo cardiovascular relativo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.64,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.6,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.6,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Fuera de esta categoría.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.58,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.06,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.12,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.21,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.05,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.68,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "2,9",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 7.49,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.63,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Example",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.75,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Inflammation signal",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.68,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Lab’s reference range",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.41,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "<3 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 6.09,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 6.09,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Within reference.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.89,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Lower relative heart risk",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.24,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.58,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.58,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "Outside this category.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.22,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.34,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.1,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.51,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.38,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.26,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "2.9",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 7.62,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "text": "hs-CRP category, not your overall risk.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.99,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Ejemplo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 8.82,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Señal de inflamación",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.64,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Rango de referencia del laboratorio",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.52,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "<3 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.63,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.63,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Dentro de la referencia.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 5.71,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Menor riesgo cardiovascular relativo",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.19,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "<1 mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 22,
+      "minimumContrast": 5.44,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "mg/L",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 5.44,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Fuera de esta categoría.",
+      "foreground": "rgb(246, 240, 227)",
+      "size": 16,
+      "minimumContrast": 6.26,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "0",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.26,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "1",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.99,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "2",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.22,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "4",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.53,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "5",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 6.14,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "2,9",
+      "foreground": "rgb(255, 253, 246)",
+      "size": 14,
+      "minimumContrast": 7.58,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "locale": "es",
+      "width": 768,
+      "text": "Categoría según hs-CRP; no indica tu riesgo global.",
+      "foreground": "rgb(241, 236, 227)",
+      "size": 14,
+      "minimumContrast": 5.49,
+      "required": 4.5,
+      "passed": true
+    }
+  ]
+}

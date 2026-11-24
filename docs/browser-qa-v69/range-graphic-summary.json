@@ -1,0 +1,406 @@
+{
+  "status": "passed_native 69_slim_levels_owner_review_pending",
+  "published_version": 69,
+  "deployed_ui_commit": "e293ce01d47bd31e5ab24cefe4d75557952b48d8",
+  "native_deployment": {
+    "version_number": 69,
+    "source_commit": "e293ce01d47bd31e5ab24cefe4d75557952b48d8",
+    "saved_version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_949576c4d6bc81919547b3f04a1ac5c4",
+    "deployment_id": "appgdep_6b05ba1a22a0819189f3e158f0435385",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "native_updated_at": "2026-11-24T16:24:11.859274+00:00",
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000026c88243a8cc4cf5e6401436",
+      "content_hash": "sha256:0fcbe68e155c88183025ef9a4dc432c1ea81d20768303acefba0707c50f0d033",
+      "size_bytes": 171929600,
+      "file_count": 790
+    },
+    "review_url": "https://eva-content-review.jdlagop.chatgpt.site/en?review=69#otra-lectura",
+    "archive": {
+      "local_path": "/workspace/eva-publication/eva-slim-levels-v69.tar.gz",
+      "local_gzip_sha256": "263a80dddd42371771f1c644ae01931d2232bb984e6ff42223f7d3c1b93205eb",
+      "local_gzip_size_bytes": 163063836,
+      "saved_tar_content_hash": "sha256:0fcbe68e155c88183025ef9a4dc432c1ea81d20768303acefba0707c50f0d033",
+      "saved_tar_size_bytes": 171929600,
+      "file_count": 790
+    },
+    "behavior": "Slims the dashboard-derived range graphics from four dot rows to two,48px plots to 28px and 20px rings to 14px with 4px cores. Public SAVEE still references informed proportion and restraint. Clinical copy, two actual intervals, common 0–5 scale,64% sample position, typography and glass remain. Each native glass panel is 40px shorter.",
+    "source_files": [
+      "components/story/RangeProofSection.tsx",
+      "components/story/range-proof-section.css",
+      "lib/site-content/range-proof-copy.ts",
+      "scripts/browser-qa/core-landing.cjs",
+      "scripts/browser-qa/entry-flows.cjs"
+    ],
+    "qa": {
+      "status": "passed_actual_native_and_independent_medical_copy_design_image_reviews",
+      "record": "docs/range-graphic-qa.json",
+      "evidence_directory": "docs/browser-qa-v69",
+      "fresh_profiles": 8,
+      "painted_contrast_profiles": 4,
+      "minimum_painted_text_contrast": 4.78,
+      "owner_acceptance": "Not established by agent checks.",
+      "page_errors": []
+    }
+  },
+  "user_direction": "Make them slimmer and more aesthetic, use savee for inspiration",
+  "master_prompt": "docs/range-slim-brief.md",
+  "worked_example": {
+    "status": "current_from_version 69",
+    "biomarker": "hs-CRP",
+    "value": 3.2,
+    "unit": "mg/L",
+    "illustrative": true,
+    "dataset_boundary": "Independent teaching example, not an observed patient case and not Alex. Alex’s 2.1 mg/L result, history and context remain unchanged.",
+    "labReference": {
+      "display": "<5 mg/L",
+      "operator": "<",
+      "upper_boundary": 5,
+      "meaning": "Within this documented adult assay reference; laboratories may use different limits. This is not proof of optimal health.",
+      "source": "https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/labmethods/HSCRP-L-MET-508.pdf",
+      "location": "Section 13, PDF page 18 (zero-based page 17), lines 643–645 in web extraction; clinical relevance section PDF page 3."
+    },
+    "prevention": {
+      "display": ">2 mg/L if persistent",
+      "operator": ">",
+      "lower_boundary": 2,
+      "persistence_required": true,
+      "meaning": "An ESC/EAS 2025 cardiovascular risk modifier considered with overall health history and risk factors, not a universal optimum, diagnosis or treatment target.",
+      "source": "https://academic.oup.com/eurheartj/article/46/42/4359/8234482",
+      "location": "Box 1, risk modifiers beyond SCORE2/SCORE2-OP; in the co-published Atherosclerosis PDF this is PDF page 6. Official ESC slide set also reproduces the risk-modifier box."
+    },
+    "prospectiveEvidence": {
+      "source": "https://pubmed.ncbi.nlm.nih.gov/20031199/",
+      "study": "Emerging Risk Factors Collaboration, Lancet 2010; 160,309 people without prior vascular disease in 54 prospective studies.",
+      "meaning": "Association with later cardiovascular events; not an individual prediction or evidence that CRP itself is causal."
+    },
+    "context": "Repeat when clinically stable; illness, infection, injury and other inflammatory causes can affect hs-CRP. Timing depends on clinical context; no universal interval or automatic treatment is specified.",
+    "review": "Clinical facts and copy are unchanged from67–68. Current69 renderer proportions and exact numeric geometry were independently verified; no new medical or human approval is claimed.",
+    "record": "docs/range-graphic-qa.json",
+    "source_packet": "docs/browser-qa-v68/medical-candidate.md",
+    "representation": {
+      "kind": "aligned_slim_dashboard_dot_levels",
+      "domain": {
+        "min": 0,
+        "max": 5,
+        "unit": "mg/L",
+        "meaning": "One common 0–5 display domain matching the dashboard hs-CRP fixture/CapsuleRange; not EvidenceRange’s adaptive per-result domain."
+      },
+      "labBand": {
+        "from": 0,
+        "to": 5,
+        "strict_upper": true,
+        "width_fraction": 1
+      },
+      "lowerRiskBand": {
+        "from": 0,
+        "to": 1,
+        "strict_upper": true,
+        "width_fraction": 0.2
+      },
+      "sample": {
+        "value": 3.2,
+        "position_fraction": 0.64,
+        "same_position_both_tracks": true,
+        "inside_lab_reference": true,
+        "outside_lower_risk_category": true
+      },
+      "review": ">2 if persistent is a separate named footer, never another favourable fill.",
+      "cursor": "Two aligned ring/core markers at 64%, matching the dashboard evidence instrument visual family. Bold 3.2/3,2 axis label identifies the shared sample.",
+      "universal_optimal_target": false,
+      "dot_field": {
+        "columns": 55,
+        "rows": 2,
+        "larger_brighter_inside": true,
+        "lab_inside_dots": 108,
+        "lower_inside_dots": 22,
+        "strict_upper_membership": true,
+        "visual_source": "components/pages/dashboard/ExecutiveReading.tsx:EvidenceRange",
+        "source_data": "lib/preview/fixtures.ts hsCRP domain[0,5]",
+        "dashboard_source_or_data_changed": false,
+        "total_dots_per_field": 110,
+        "plot_height_px": 28,
+        "ring_diameter_px": 14,
+        "core_diameter_px": 4,
+        "refinement": "Slim dashboard-derived ribbons informed by inspected public SAVEE still references."
+      }
+    },
+    "lowerRelativeRiskCategory": {
+      "display": "<1 mg/L",
+      "operator": "<",
+      "upper_boundary": 1,
+      "meaning": "AHA lower relative cardiovascular-risk category based on hs-CRP; not overall risk or a universal optimal/treatment target.",
+      "source": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+      "location": "PDF page2: hsCRP ranges, relative CVD risk categories. Lower <1, average 1–3, higher >3; distinct from overall PREVENT-ASCVD risk."
+    }
+  },
+  "implementation": "Slims the dashboard-derived range graphics from four dot rows to two,48px plots to 28px and 20px rings to 14px with 4px cores. Public SAVEE still references informed proportion and restraint. Clinical copy, two actual intervals, common 0–5 scale,64% sample position, typography and glass remain. Each native glass panel is 40px shorter.",
+  "sources": {
+    "lab": "CDC documented adult assay reference",
+    "lower_relative_risk": "Current official AHA professional toolkit, PDF page 2",
+    "conditional_review": "ESC/EAS2025 strict>2 if persistently elevated",
+    "prospective_association": "ERFC/Lancet meta-analysis; not causality or personalized prognosis"
+  },
+  "owner_feedback_history": [
+    "docs/browser-qa-v64/owner-feedback-v63.json",
+    "docs/browser-qa-v67/owner-feedback-v66.json"
+  ],
+  "review_loop": "docs/browser-qa-v69/refinement.json",
+  "independent_reviews": {
+    "copy": "docs/browser-qa-v69/copy.md",
+    "UX_and_SAVEE": "docs/browser-qa-v69/ux-native.md",
+    "Impeccable": "docs/browser-qa-v69/impeccable-native.md",
+    "unchanged_clinical_basis": "docs/browser-qa-v68/medical-candidate.md"
+  },
+  "verification": {
+    "static": [
+      "TypeScript noEmit",
+      "Production build of 113 routes",
+      "English 1205 catalogue messages",
+      "Bilingual parity 32 variants",
+      "Narrative story order and preserved media/motion contracts",
+      "Core/entry runner syntax",
+      "git diff --check"
+    ],
+    "native": {
+      "passed": true,
+      "profiles": 8,
+      "report": "docs/browser-qa-v69/native-qa.json",
+      "network_writes": [],
+      "page_errors": [],
+      "all_owned_browsers_closed": true
+    },
+    "numeric_geometry": "Shared0–5 scale and exact boundaries20%/100%, aligned 3.2 sample 64%. Two 55-column dot rows per field: 108 bright lab dots, 22 lower-category dots; strict upper membership unchanged. Actual 28px field and 14px ring dimensions verified.",
+    "contrast": {
+      "passed": true,
+      "profiles": 4,
+      "minimum": 4.78,
+      "record": "docs/browser-qa-v69/native-contrast.json"
+    },
+    "no_javascript": "docs/browser-qa-v69/no-js.json",
+    "interaction_scope": "Native keyboard disclosure/focus,four source URLs and44px link targets, free signup/upload destination; no account creation/upload/purchase. Full core/entry suites not rerun because entry logic is unchanged.",
+    "impeccable": "Scoped existing context and layout/typeset/craft-floor; final detector zero findings.",
+    "graphic_contrast": {
+      "passed": true,
+      "minimum": 4.7,
+      "record": "docs/browser-qa-v69/native-graphic-contrast.json",
+      "method": "Core compositing of essential bright interval dots at measured native positions; dim outside dots provide context, not sole meaning."
+    },
+    "slimness": "docs/browser-qa-v69/slimness-comparison.json"
+  },
+  "measurements": [
+    {
+      "profile": "en-1366",
+      "section_height": 650,
+      "glass_height": 465,
+      "geometry": {
+        "trackWidths": [
+          635.015625,
+          635.015625
+        ],
+        "fillFractions": [
+          1,
+          0.19999998077680176
+        ],
+        "bandRatio": 5.0000004805800025,
+        "sampleFractions": [
+          0.6399940946334982,
+          0.6399940946334982
+        ],
+        "sampleCenters": [
+          1052.390625,
+          1052.390625
+        ]
+      },
+      "passed": true
+    },
+    {
+      "profile": "es-1366",
+      "section_height": 674,
+      "glass_height": 489,
+      "geometry": {
+        "trackWidths": [
+          635.015625,
+          635.015625
+        ],
+        "fillFractions": [
+          1,
+          0.19999998077680176
+        ],
+        "bandRatio": 5.0000004805800025,
+        "sampleFractions": [
+          0.6399940946334982,
+          0.6399940946334982
+        ],
+        "sampleCenters": [
+          1052.390625,
+          1052.390625
+        ]
+      },
+      "passed": true
+    },
+    {
+      "profile": "en-390",
+      "section_height": 799.234375,
+      "glass_height": 467,
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          1,
+          0.2000000052256127
+        ],
+        "bandRatio": 4.999999869359686,
+        "sampleFractions": [
+          0.6399828767123288,
+          0.6399828767123288
+        ],
+        "sampleCenters": [
+          235.875,
+          235.875
+        ]
+      },
+      "passed": true
+    },
+    {
+      "profile": "es-390",
+      "section_height": 867.234375,
+      "glass_height": 511,
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          1,
+          0.2000000052256127
+        ],
+        "bandRatio": 4.999999869359686,
+        "sampleFractions": [
+          0.6399828767123288,
+          0.6399828767123288
+        ],
+        "sampleCenters": [
+          235.875,
+          235.875
+        ]
+      },
+      "passed": true
+    },
+    {
+      "profile": "es-320",
+      "section_height": 891.234375,
+      "glass_height": 535,
+      "geometry": {
+        "trackWidths": [
+          236,
+          236
+        ],
+        "fillFractions": [
+          1,
+          0.19999998706882283
+        ],
+        "bandRatio": 5.00000032327945,
+        "sampleFractions": [
+          0.6399629237288136,
+          0.6399629237288136
+        ],
+        "sampleCenters": [
+          193.03125,
+          193.03125
+        ]
+      },
+      "passed": true
+    },
+    {
+      "profile": "es-768",
+      "section_height": 916.828125,
+      "glass_height": 487,
+      "geometry": {
+        "trackWidths": [
+          610,
+          610
+        ],
+        "fillFractions": [
+          1,
+          0.2
+        ],
+        "bandRatio": 5,
+        "sampleFractions": [
+          0.639984631147541,
+          0.639984631147541
+        ],
+        "sampleCenters": [
+          469.390625,
+          469.390625
+        ]
+      },
+      "passed": true
+    },
+    {
+      "profile": "en-390-calm",
+      "section_height": 799.234375,
+      "glass_height": 467,
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          1,
+          0.2000000052256127
+        ],
+        "bandRatio": 4.999999869359686,
+        "sampleFractions": [
+          0.6399828767123288,
+          0.6399828767123288
+        ],
+        "sampleCenters": [
+          235.875,
+          235.875
+        ]
+      },
+      "passed": true
+    },
+    {
+      "profile": "es-390-calm",
+      "section_height": 867.234375,
+      "glass_height": 511,
+      "geometry": {
+        "trackWidths": [
+          292,
+          292
+        ],
+        "fillFractions": [
+          1,
+          0.2000000052256127
+        ],
+        "bandRatio": 4.999999869359686,
+        "sampleFractions": [
+          0.6399828767123288,
+          0.6399828767123288
+        ],
+        "sampleCenters": [
+          235.875,
+          235.875
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Viewport emulation, not physical-device performance.",
+    "Agent image reading is not human usability research, clinician approval or actual owner acceptance.",
+    "The lower band represents one marker’s relative-risk category, not a universal optimal range or overall health.",
+    "Short phones scroll naturally; no clipping or font reduction forces the richer numeric comparison into one viewport.",
+    "Fine dotted comma can look period-like at 320; Spanish data, shared-axis label and accessible text are3,2.",
+    "No real health data, accounts, purchases, backend activation, DNS or evahealth.es cutover.",
+    "Review query is a label, not a version pin.",
+    "Dim outside-interval dots are subtle on320; the explicit labels, boundaries, aligned markers and direct conclusions retain the comparison. Viewport emulation cannot establish physical-screen visibility."
+  ],
+  "inspiration": "docs/browser-qa-v69/savee-references.json"
+}

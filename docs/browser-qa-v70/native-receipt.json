@@ -1,0 +1,42 @@
+{
+  "saved": {
+    "id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_fe2f66790b5c81918eb1aed75185963d",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "version_number": 70,
+    "source": {
+      "commit_sha": "58bac762100a18c440b38429dee95f4663194e2d"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000b7ec8210b6ad57c20fe287c1",
+      "content_hash": "sha256:145f2ec3b09114b5c6ebdb8fbce3e5e090749db07e35251a0054cbc410d37d4e",
+      "size_bytes": 171929600,
+      "file_count": 790
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployed": {
+    "id": "appgdep_6b05bfdff3088191a48cc31a07e41f64",
+    "project_id": "appgprj_6ae2409926cc819180f1453af398551d",
+    "title": "EVA Content Review",
+    "version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_fe2f66790b5c81918eb1aed75185963d",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://eva-content-review.jdlagop.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ae2409926cc819180f1453af398551d",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-24T16:48:52.962963+00:00"
+  },
+  "uiCommit": "58bac762100a18c440b38429dee95f4663194e2d",
+  "audience": "public",
+  "archive": {
+    "path": "/workspace/eva-publication/eva-example-range-v70.tar.gz",
+    "gzipSha256": "c3ebd136d199ec7b283f9557ec39395c87a4b0bbe3ae86e6721c2ebc92379f76",
+    "gzipSizeBytes": 163064404
+  },
+  "reviewUrl": "https://eva-content-review.jdlagop.chatgpt.site/en?review=70#otra-lectura"
+}
