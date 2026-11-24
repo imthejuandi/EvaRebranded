@@ -1,0 +1,1144 @@
+{
+  "scope": "Preview-only exact production-built HTML/CSS/JS served by Playwright local-file request fulfillment. No preview HTTP server, no remote deployment, no live Site mutation. Viewport emulation, not physical device or browser-chrome zoom.",
+  "baseCommit": "788cae34151ece3ba592d2de9f2dad8c3a4c3289",
+  "files": {
+    "components/story/RangeProofSection.tsx": "b856c7567acad340d3eb18404bbdbdea5f609f5c02c3a08d52d535e533083749",
+    "components/story/range-proof-section.css": "6ce705705c75db9003ad986b115583d575f2c908ad96ce6980a8245604a0e47d",
+    "lib/site-content/range-proof-copy.ts": "ba3b04a3fbe7d2dee3409a536ceddb36f8cb1f7612301cb6f20a36f2b6c997d8"
+  },
+  "profiles": [
+    {
+      "id": "en-1366",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": -0.390625,
+          "width": 1366,
+          "height": 569,
+          "right": 1366,
+          "bottom": 568.609375
+        },
+        "story": {
+          "x": 48,
+          "y": 125.6875,
+          "width": 492.6875,
+          "height": 232.03125,
+          "right": 540.6875,
+          "bottom": 357.71875
+        },
+        "title": {
+          "x": 48,
+          "y": 125.6875,
+          "width": 295.671875,
+          "height": 96.03125,
+          "right": 343.671875,
+          "bottom": 221.71875,
+          "text": "There’s more\nto “normal.”",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "lineHeight": "47.52px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "295.679px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 48,
+          "y": 237.71875,
+          "width": 412.15625,
+          "height": 120,
+          "right": 460.15625,
+          "bottom": 357.71875,
+          "text": "Many lab reference ranges describe typical results in selected groups of apparently healthy people. They don’t always identify levels linked to lower long-term risk. EVA explains the difference in plain language and puts your results in context with your health history.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 5,
+        "glass": {
+          "x": 608.984375,
+          "y": 47.609375,
+          "width": 709.015625,
+          "height": 384,
+          "right": 1318,
+          "bottom": 431.609375
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 1366,
+        "viewportWidth": 1366,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 48,
+          "y": 381.71875,
+          "width": 340,
+          "height": 60.796875,
+          "right": 388,
+          "bottom": 442.515625,
+          "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 635.015625,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799808075588692,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 635.015625,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799808075588692,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "es-1366",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": -0.390625,
+          "width": 1366,
+          "height": 569,
+          "right": 1366,
+          "bottom": 568.609375
+        },
+        "story": {
+          "x": 48,
+          "y": 89.4375,
+          "width": 492.6875,
+          "height": 304.546875,
+          "right": 540.6875,
+          "bottom": 393.984375
+        },
+        "title": {
+          "x": 48,
+          "y": 89.4375,
+          "width": 295.671875,
+          "height": 144.546875,
+          "right": 343.671875,
+          "bottom": 233.984375,
+          "text": "«Normal»\nno lo cuenta todo.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "lineHeight": "47.52px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "295.679px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 48,
+          "y": 249.984375,
+          "width": 412.15625,
+          "height": 144,
+          "right": 460.15625,
+          "bottom": 393.984375,
+          "text": "Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 6,
+        "glass": {
+          "x": 608.984375,
+          "y": 47.609375,
+          "width": 709.015625,
+          "height": 384,
+          "right": 1318,
+          "bottom": 431.609375
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 1366,
+        "viewportWidth": 1366,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 48,
+          "y": 417.984375,
+          "width": 340,
+          "height": 60.796875,
+          "right": 388,
+          "bottom": 478.78125,
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 635.015625,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799808075588692,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 635.015625,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799808075588692,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "en-390",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": 0.09375,
+          "width": 390,
+          "height": 814.234375,
+          "right": 390,
+          "bottom": 814.328125
+        },
+        "story": {
+          "x": 24,
+          "y": 24.09375,
+          "width": 342,
+          "height": 234.4375,
+          "right": 366,
+          "bottom": 258.53125
+        },
+        "title": {
+          "x": 24,
+          "y": 24.09375,
+          "width": 304.625,
+          "height": 74.4375,
+          "right": 328.625,
+          "bottom": 98.53125,
+          "text": "There’s more\nto “normal.”",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "304.639px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 24,
+          "y": 114.53125,
+          "width": 342,
+          "height": 144,
+          "right": 366,
+          "bottom": 258.53125,
+          "text": "Many lab reference ranges describe typical results in selected groups of apparently healthy people. They don’t always identify levels linked to lower long-term risk. EVA explains the difference in plain language and puts your results in context with your health history.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 6,
+        "glass": {
+          "x": 16,
+          "y": 274.53125,
+          "width": 358,
+          "height": 362,
+          "right": 374,
+          "bottom": 636.53125
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 24,
+          "y": 735.53125,
+          "width": 342,
+          "height": 54.796875,
+          "right": 366,
+          "bottom": 790.328125,
+          "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 292,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579997859589041,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 292,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579997859589041,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "es-390",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": 0.09375,
+          "width": 390,
+          "height": 882.234375,
+          "right": 390,
+          "bottom": 882.328125
+        },
+        "story": {
+          "x": 24,
+          "y": 24.09375,
+          "width": 342,
+          "height": 258.4375,
+          "right": 366,
+          "bottom": 282.53125
+        },
+        "title": {
+          "x": 24,
+          "y": 24.09375,
+          "width": 304.625,
+          "height": 74.4375,
+          "right": 328.625,
+          "bottom": 98.53125,
+          "text": "«Normal»\nno lo cuenta todo.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "304.639px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 24,
+          "y": 114.53125,
+          "width": 342,
+          "height": 168,
+          "right": 366,
+          "bottom": 282.53125,
+          "text": "Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 7,
+        "glass": {
+          "x": 16,
+          "y": 298.53125,
+          "width": 358,
+          "height": 382,
+          "right": 374,
+          "bottom": 680.53125
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 24,
+          "y": 803.53125,
+          "width": 342,
+          "height": 54.796875,
+          "right": 366,
+          "bottom": 858.328125,
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 292,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579997859589041,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 292,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579997859589041,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "es-320",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": -0.296875,
+          "width": 320,
+          "height": 954.234375,
+          "right": 320,
+          "bottom": 953.9375
+        },
+        "story": {
+          "x": 21,
+          "y": 23.703125,
+          "width": 278,
+          "height": 306.4375,
+          "right": 299,
+          "bottom": 330.140625
+        },
+        "title": {
+          "x": 21,
+          "y": 23.703125,
+          "width": 278,
+          "height": 74.4375,
+          "right": 299,
+          "bottom": 98.140625,
+          "text": "«Normal»\nno lo cuenta todo.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "304.639px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 21,
+          "y": 114.140625,
+          "width": 278,
+          "height": 216,
+          "right": 299,
+          "bottom": 330.140625,
+          "text": "Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 9,
+        "glass": {
+          "x": 13,
+          "y": 346.140625,
+          "width": 294,
+          "height": 406,
+          "right": 307,
+          "bottom": 752.140625
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 21,
+          "y": 875.140625,
+          "width": 278,
+          "height": 54.796875,
+          "right": 299,
+          "bottom": 929.9375,
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 236,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579978813559322,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 236,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579978813559322,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "es-768",
+      "locale": "es",
+      "width": 768,
+      "height": 1024,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": 0.21875,
+          "width": 768,
+          "height": 931.828125,
+          "right": 768,
+          "bottom": 932.046875
+        },
+        "story": {
+          "x": 48,
+          "y": 48.21875,
+          "width": 672,
+          "height": 256.03125,
+          "right": 720,
+          "bottom": 304.25
+        },
+        "title": {
+          "x": 48,
+          "y": 48.21875,
+          "width": 443.515625,
+          "height": 96.03125,
+          "right": 491.515625,
+          "bottom": 144.25,
+          "text": "«Normal»\nno lo cuenta todo.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "lineHeight": "47.52px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "443.519px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 48,
+          "y": 160.25,
+          "width": 412.15625,
+          "height": 144,
+          "right": 460.15625,
+          "bottom": 304.25,
+          "text": "Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 6,
+        "glass": {
+          "x": 48,
+          "y": 328.25,
+          "width": 672,
+          "height": 382,
+          "right": 720,
+          "bottom": 710.25
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 48,
+          "y": 823.25,
+          "width": 340,
+          "height": 60.796875,
+          "right": 388,
+          "bottom": 884.046875,
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 610,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799948770491803,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 610,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799948770491803,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "en-1051",
+      "locale": "en",
+      "width": 1051,
+      "height": 900,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": -0.359375,
+          "width": 1051,
+          "height": 569,
+          "right": 1051,
+          "bottom": 568.640625
+        },
+        "story": {
+          "x": 48,
+          "y": 113.71875,
+          "width": 370,
+          "height": 256.03125,
+          "right": 418,
+          "bottom": 369.75
+        },
+        "title": {
+          "x": 48,
+          "y": 113.71875,
+          "width": 295.671875,
+          "height": 96.03125,
+          "right": 343.671875,
+          "bottom": 209.75,
+          "text": "There’s more\nto “normal.”",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "lineHeight": "47.52px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "295.679px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 48,
+          "y": 225.75,
+          "width": 370,
+          "height": 144,
+          "right": 418,
+          "bottom": 369.75,
+          "text": "Many lab reference ranges describe typical results in selected groups of apparently healthy people. They don’t always identify levels linked to lower long-term risk. EVA explains the difference in plain language and puts your results in context with your health history.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 6,
+        "glass": {
+          "x": 470.546875,
+          "y": 47.640625,
+          "width": 532.453125,
+          "height": 384,
+          "right": 1003,
+          "bottom": 431.640625
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 1051,
+        "viewportWidth": 1051,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 48,
+          "y": 393.75,
+          "width": 340,
+          "height": 60.796875,
+          "right": 388,
+          "bottom": 454.546875,
+          "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 458.453125,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799734160389898,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 458.453125,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799734160389898,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "es-390-calm",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "calm": true,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": 0.234375,
+          "width": 390,
+          "height": 882.234375,
+          "right": 390,
+          "bottom": 882.46875
+        },
+        "story": {
+          "x": 24,
+          "y": 24.234375,
+          "width": 342,
+          "height": 258.4375,
+          "right": 366,
+          "bottom": 282.671875
+        },
+        "title": {
+          "x": 24,
+          "y": 24.234375,
+          "width": 304.625,
+          "height": 74.4375,
+          "right": 328.625,
+          "bottom": 98.671875,
+          "text": "«Normal»\nno lo cuenta todo.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "304.639px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 24,
+          "y": 114.671875,
+          "width": 342,
+          "height": 168,
+          "right": 366,
+          "bottom": 282.671875,
+          "text": "Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 7,
+        "glass": {
+          "x": 16,
+          "y": 298.671875,
+          "width": 358,
+          "height": 382,
+          "right": 374,
+          "bottom": 680.671875
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 24,
+          "y": 803.671875,
+          "width": 342,
+          "height": 54.796875,
+          "right": 366,
+          "bottom": 858.46875,
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 292,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579997859589041,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 292,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.579997859589041,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    },
+    {
+      "id": "es-683-200pct-reflow",
+      "locale": "es",
+      "width": 683,
+      "height": 900,
+      "dpr": 2,
+      "reflow": true,
+      "failures": [],
+      "metrics": {
+        "section": {
+          "x": 0,
+          "y": -0.46875,
+          "width": 683,
+          "height": 815.234375,
+          "right": 683,
+          "bottom": 814.765625
+        },
+        "story": {
+          "x": 24,
+          "y": 23.53125,
+          "width": 635,
+          "height": 235.4375,
+          "right": 659,
+          "bottom": 258.96875
+        },
+        "title": {
+          "x": 24,
+          "y": 23.53125,
+          "width": 304.625,
+          "height": 75.4375,
+          "right": 328.625,
+          "bottom": 98.96875,
+          "text": "«Normal»\nno lo cuenta todo.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "34px",
+          "fontWeight": "600",
+          "lineHeight": "36.72px",
+          "color": "rgb(11, 16, 16)",
+          "maxWidth": "304.639px",
+          "textWrap": "balance",
+          "marginTop": "0px",
+          "overflow": "visible"
+        },
+        "explanation": {
+          "x": 24,
+          "y": 114.96875,
+          "width": 412.15625,
+          "height": 144,
+          "right": 436.15625,
+          "bottom": 258.96875,
+          "text": "Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.",
+          "font": "\"EVA Hanken\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(80, 89, 79)",
+          "maxWidth": "412.161px",
+          "textWrap": "pretty",
+          "marginTop": "16px",
+          "overflow": "visible"
+        },
+        "explanationVisible": true,
+        "lineCount": 6,
+        "glass": {
+          "x": 16,
+          "y": 274.96875,
+          "width": 651,
+          "height": 362,
+          "right": 667,
+          "bottom": 636.96875
+        },
+        "bodyBackground": "rgb(243, 240, 232)",
+        "documentWidth": 683,
+        "viewportWidth": 683,
+        "detailsClosed": true,
+        "footerCount": 0,
+        "sample": "2.9",
+        "sourceUrls": [
+          "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+          "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+          "https://pubmed.ncbi.nlm.nih.gov/20031199/"
+        ],
+        "cta": {
+          "x": 24,
+          "y": 735.96875,
+          "width": 635,
+          "height": 54.796875,
+          "right": 659,
+          "bottom": 790.765625,
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload"
+        },
+        "tracks": [
+          {
+            "width": 585,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799946581196581,
+            "end": 3,
+            "cutoff": "60%",
+            "y1": "2",
+            "y2": "26",
+            "activeDots": 66,
+            "totalDots": 110
+          },
+          {
+            "width": 585,
+            "height": 28,
+            "ring": 14,
+            "sample": 0.5799946581196581,
+            "end": 1,
+            "cutoff": "20%",
+            "y1": "5",
+            "y2": "23",
+            "activeDots": 22,
+            "totalDots": 110
+          }
+        ]
+      },
+      "explanationContrast": 6.4,
+      "focus": {
+        "focused": true,
+        "outline": "solid",
+        "outlineWidth": "2px"
+      },
+      "keyboardDisclosure": true,
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "networkWrites": [],
+  "allOwnedBrowsersClosed": true,
+  "passed": true
+}

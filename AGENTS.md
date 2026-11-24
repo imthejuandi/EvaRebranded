@@ -30,6 +30,8 @@ For each current and future audit action, consult the owner on the proposed chan
 
 For every change, follow [the reusable multi-lens review protocol and feedback ledger](docs/AGENT_REVIEW_WORKFLOW.md). Carry the owner's prior corrections into each agent prompt. Cover design, marketing copy, visible explanation, English language, Spanish translation and independent Impeccable review; add CMO evidence review for health claims. Reconcile and recheck findings on the exact same final candidate. A missing explanation or inaccurate claim cannot be offset by good design. Mark unrendered proposal layout NOT VERIFIED. A proposal request authorizes preparation and review, not implementation of the proposed UI; routine previously authorized changes remain authorized. Update the ledger when new owner feedback changes a constraint.
 
+The latest explanation is rendered only on isolated branch `preview/normal-explanation-20261124`, source `39485db042574a40d2a2f814e3b1e466ab2fa7be`, at the owner’s request to see it before applying it. Read [preview QA and the new independent judgment](docs/normal-explanation-preview-qa.json). Native70 and main UI remain unchanged. Do not infer approval to publish the paragraph from a preview request.
+
 ## Business and copy facts
 
 The starting kit contains exactly: Albumin, ALP, hs-CRP, Creatinine, Urea BUN, Uric acid, Total cholesterol, LDL Cholesterol, HDL-Cholesterol, Triglycerides, ALT, GGT and Fructosamine.

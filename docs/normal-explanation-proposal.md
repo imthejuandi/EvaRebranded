@@ -1,6 +1,6 @@
 # “There’s more to normal” — visible explanation proposal
 
-Prepared 24 November 2026. **Proposal for owner review; not implemented or published.** Live native70 remains the 2.9 / lab<3 / renamed-label / removed-footer version, UI commit `58bac762100a18c440b38429dee95f4663194e2d`.
+Prepared 24 November 2026. **Rendered in an isolated preview for owner review; not applied to main or published.** Live native70 remains the 2.9 / lab<3 / renamed-label / removed-footer version, UI commit `58bac762100a18c440b38429dee95f4663194e2d`.
 
 ## Preferred English copy
 
@@ -27,7 +27,7 @@ The owner's intended point is useful: being within a lab reference is not a comp
 
 Preserve the separate illustrative2.9 mg/L sample (ES2,9), lab<3, lower category<1, one0–5 scale, sample58% on both fields, lab cutoff60%, lower cutoff20%. Preserve the removed recommendation footer, source qualifications and separate Alex/dashboard data.
 
-## Review loop and current verdict
+## Initial text-proposal review loop
 
 Six specialist agents reviewed the proposal. A first draft merely said the ranges differ; the language reviewer marked its explanatory mechanism incomplete. The lead required a revision explaining the reference population, then affected lenses reviewed the new shared candidate. The chosen pair above supersedes earlier drafts retained in the individual review logs.
 
@@ -41,4 +41,8 @@ Six specialist agents reviewed the proposal. A first draft merely said the range
 | Independent Impeccable typography/spacing | Text-density proposal PASS; actual EN/ES wrapping, bounds, contrast and focus NOT VERIFIED | [Impeccable review](normal-explanation-reviews/normal-explanation-impeccable.md) |
 | Engineering / published interaction | No UI changed; current70 evidence remains valid. New copy's rendered checks NOT VERIFIED | [Deployed baseline](range-graphic-qa.json) |
 
-After the owner reviews this proposal, implementation must verify actual EN/ES at desktop, tablet and phone widths including ES320, text scaling, reduced-motion/static forms, section bounds and unchanged source/free-entry interactions. No additional UI release was created for this proposal. Follow [the reusable review protocol and feedback ledger](AGENT_REVIEW_WORKFLOW.md) for this and future changes.
+The owner then requested a rendered preview and a new independent judge. The isolated preview is recorded in [preview QA](normal-explanation-preview-qa.json), with [desktop and phone captures](normal-explanation-preview/README.md). Nine production-built browser profiles passed; this does not claim native deployment, actual browser-chrome zoom, physical-device performance or integrated backend proof. No additional UI release was created. The new paragraph remains outside main and unpublished. Follow [the reusable review protocol and feedback ledger](AGENT_REVIEW_WORKFLOW.md) for this and future changes.
+
+## Rendered preview and new independent judgment
+
+The owner requested to see the proposal. Isolated preview source `39485db042574a40d2a2f814e3b1e466ab2fa7be` renders the exact selected pair. A new judge who did not author/design the proposal inspected all nine browser renders and recommends **ready to show**, with no critical failure or required revision. See [full independent judgment](normal-explanation-preview/independent-judge.md). Production history personalization, native publication, actual browser zoom, physical devices and assistive-technology experience remain unverified. The source distinction/general reference-interval mechanism should receive its IFCC citation in the existing disclosure if this proposal is later applied. No new visible panel is needed.

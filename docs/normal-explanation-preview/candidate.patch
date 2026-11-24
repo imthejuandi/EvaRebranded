@@ -1,0 +1,46 @@
+diff --git a/components/story/RangeProofSection.tsx b/components/story/RangeProofSection.tsx
+index 26b6618..28a7de3 100644
+--- a/components/story/RangeProofSection.tsx
++++ b/components/story/RangeProofSection.tsx
+@@ -42,7 +42,7 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
+     <div className="range-proof-layout">
+       <div className="range-proof-story">
+         <h2 id="range-proof-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2>
+-        <p className="range-proof-caption">{c.unchangedLabel}</p>
++        <p className="range-proof-caption" data-range-explanation>{c.explanation}</p>
+       </div>
+       <div className="range-proof-evidence">
+         <div className="range-proof-instrument bio-glass">
+diff --git a/components/story/range-proof-section.css b/components/story/range-proof-section.css
+index 16916af..60ce43b 100644
+--- a/components/story/range-proof-section.css
++++ b/components/story/range-proof-section.css
+@@ -24,7 +24,7 @@
+ .range-proof-value>span[aria-hidden]{display:grid;justify-items:end;gap:0}
+ .range-proof-value .dot-number{display:block;width:auto;height:64px;max-width:136px;filter:drop-shadow(0 1px 3px #fffdf618)}
+ .range-proof-value small{position:static;font-size:14px;line-height:20px;margin-right:4px}
+-.range-proof-caption{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;max-width:34ch;margin:16px 0 0}
++.range-proof-caption{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;max-width:46ch;margin:16px 0 0;text-wrap:pretty}
+ .range-proof-levels{display:grid;gap:16px;margin-top:16px}
+ .range-proof-level{min-width:0}
+ .range-proof-level-label{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:16px;align-items:end}
+diff --git a/lib/site-content/range-proof-copy.ts b/lib/site-content/range-proof-copy.ts
+index 1089754..6b2257a 100644
+--- a/lib/site-content/range-proof-copy.ts
++++ b/lib/site-content/range-proof-copy.ts
+@@ -17,6 +17,7 @@ export const rangeProofCopy = {
+     markerLabel: 'Inflammation signal',
+     exampleLabel: 'Example',
+     unchangedLabel: 'One result. Two ranges.',
++    explanation: 'Many lab reference ranges describe typical results in selected groups of apparently healthy people. They don’t always identify levels linked to lower long-term risk. EVA explains the difference in plain language and puts your results in context with your health history.',
+     lab: {
+       label: 'Lab’s reference range',
+       threshold: '<3 mg/L',
+@@ -50,6 +51,7 @@ export const rangeProofCopy = {
+     markerLabel: 'Señal de inflamación',
+     exampleLabel: 'Ejemplo',
+     unchangedLabel: 'Un resultado. Dos rangos.',
++    explanation: 'Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.',
+     lab: {
+       label: 'Rango de referencia del laboratorio',
+       threshold: '<3 mg/L',

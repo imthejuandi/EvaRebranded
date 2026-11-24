@@ -2,8 +2,8 @@
   "schema_version": 1,
   "title": "EVA current landing refinement session handoff",
   "prepared_date": "2026-11-24",
-  "handoff_status": "NATIVE70_VERIFIED_EXPLANATION_PROPOSAL_READY_FOR_OWNER_REVIEW",
-  "immediate_instruction": "Native 70 is published. At the owner’s request, the independent hs-CRP example is 2.9 mg/L; Lab’s reference range is strict <3 mg/L, sourced to The Valley Hospital’s published catalog. The AHA lower relative-risk category remains <1 mg/L. Both use one 0–5 scale: lab cutoff60%, lower cutoff20%, sample58%. The recommendation footer and obsolete >2 review directive are removed. Preserve the slim two-row dotted plots,28px height,14px rings,4px cores, existing glass and typography. The nearby lab cutoff extends above and below the marker without moving either position. Eight native EN/ES profiles, four text/graphic contrast profiles and no-JavaScript checks pass. Agent checks are not actual owner acceptance. Other chapters, dashboard data, hero, prices, runner and media remain unchanged. evahealth.es cutover stays on hold. Latest owner request is a visible explanation and durable review workflow; The medically reviewed EN/ES proposal is ready in docs/normal-explanation-proposal.md; do not implement that new paragraph before owner review. Follow docs/AGENT_REVIEW_WORKFLOW.md for every change.",
+  "handoff_status": "NATIVE70_UNCHANGED_EXPLANATION_RENDERED_PREVIEW_READY_FOR_OWNER",
+  "immediate_instruction": "Native 70 is published. At the owner’s request, the independent hs-CRP example is 2.9 mg/L; Lab’s reference range is strict <3 mg/L, sourced to The Valley Hospital’s published catalog. The AHA lower relative-risk category remains <1 mg/L. Both use one 0–5 scale: lab cutoff60%, lower cutoff20%, sample58%. The recommendation footer and obsolete >2 review directive are removed. Preserve the slim two-row dotted plots,28px height,14px rings,4px cores, existing glass and typography. The nearby lab cutoff extends above and below the marker without moving either position. Eight native EN/ES profiles, four text/graphic contrast profiles and no-JavaScript checks pass. Agent checks are not actual owner acceptance. Other chapters, dashboard data, hero, prices, runner and media remain unchanged. evahealth.es cutover stays on hold. Latest owner request is a visible explanation and durable review workflow; The owner requested a visual preview and independent judgment: exact paragraph is implemented only on preview/normal-explanation-20261124, source39485db042574a40d2a2f814e3b1e466ab2fa7be. See docs/normal-explanation-preview-qa.json and rendered screenshots. Do not apply the new paragraph to main or publish it before further owner direction. Follow docs/AGENT_REVIEW_WORKFLOW.md for every change.",
   "source_of_truth": {
     "checkout": "/workspace/eva-playback-review",
     "default_branch": "main",
@@ -1928,7 +1928,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json, docs/AGENT_REVIEW_WORKFLOW.md and docs/normal-explanation-proposal.md. Native 70 is published. At the owner’s request, the independent hs-CRP example is 2.9 mg/L; Lab’s reference range is strict <3 mg/L, sourced to The Valley Hospital’s published catalog. The AHA lower relative-risk category remains <1 mg/L. Both use one 0–5 scale: lab cutoff60%, lower cutoff20%, sample58%. The recommendation footer and obsolete >2 review directive are removed. Preserve the slim two-row dotted plots,28px height,14px rings,4px cores, existing glass and typography. The nearby lab cutoff extends above and below the marker without moving either position. Eight native EN/ES profiles, four text/graphic contrast profiles and no-JavaScript checks pass. Agent checks are not actual owner acceptance. Other chapters, dashboard data, hero, prices, runner and media remain unchanged. evahealth.es cutover stays on hold. Latest owner request is a visible explanation and durable review workflow; The medically reviewed EN/ES proposal is ready in docs/normal-explanation-proposal.md; do not implement that new paragraph before owner review. Follow docs/AGENT_REVIEW_WORKFLOW.md for every change.",
+  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json, docs/AGENT_REVIEW_WORKFLOW.md and docs/normal-explanation-preview-qa.json. Native 70 is published. At the owner’s request, the independent hs-CRP example is 2.9 mg/L; Lab’s reference range is strict <3 mg/L, sourced to The Valley Hospital’s published catalog. The AHA lower relative-risk category remains <1 mg/L. Both use one 0–5 scale: lab cutoff60%, lower cutoff20%, sample58%. The recommendation footer and obsolete >2 review directive are removed. Preserve the slim two-row dotted plots,28px height,14px rings,4px cores, existing glass and typography. The nearby lab cutoff extends above and below the marker without moving either position. Eight native EN/ES profiles, four text/graphic contrast profiles and no-JavaScript checks pass. Agent checks are not actual owner acceptance. Other chapters, dashboard data, hero, prices, runner and media remain unchanged. evahealth.es cutover stays on hold. Latest owner request is a visible explanation and durable review workflow; The owner requested a visual preview and independent judgment: exact paragraph is implemented only on preview/normal-explanation-20261124, source39485db042574a40d2a2f814e3b1e466ab2fa7be. See docs/normal-explanation-preview-qa.json and rendered screenshots. Do not apply the new paragraph to main or publish it before further owner direction. Follow docs/AGENT_REVIEW_WORKFLOW.md for every change.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -1939,10 +1939,10 @@
   "active_continuation": {
     "thread_id": "6af4821e-7ab0-8191-a284-1767aa9110e7",
     "date": "2026-11-24",
-    "user_direction": "Add visible explanation of normal versus long-term health; CMO/copy proposal and permanent multi-lens review workflow.",
+    "user_direction": "Show the explanation visually and obtain a fresh independent judgment against the saved criteria.",
     "synchronized_main_commit": "58bac762100a18c440b38429dee95f4663194e2d",
     "live_version": 70,
-    "status": "Native70 edits completed and verified; new visible-explanation proposal reviewed by six specialists and ready for owner review. No new UI copy implemented."
+    "status": "Native70 remains live; isolated explanation preview rendered in nine profiles. New independent judge: ready to show, no critical failure or required revision. Preview is not applied to main or published."
   },
   "content_refinement_completion": {
     "status": "All planned content and review-site browser QA complete",
@@ -2639,10 +2639,14 @@
     }
   ],
   "normal_explanation_proposal": {
-    "status": "ready_for_owner_review_not_implemented",
+    "status": "rendered_preview_ready_for_owner_review_not_published",
     "record": "docs/normal-explanation-proposal.md",
     "reviews": "docs/normal-explanation-reviews",
     "protocol": "docs/AGENT_REVIEW_WORKFLOW.md",
-    "rendered_qa": "NOT VERIFIED; proposal only"
+    "rendered_qa": "docs/normal-explanation-preview-qa.json",
+    "preview_branch": "preview/normal-explanation-20261124",
+    "preview_commit": "39485db042574a40d2a2f814e3b1e466ab2fa7be",
+    "independent_judge": "docs/normal-explanation-preview/independent-judge.md",
+    "judge_recommendation": "ready to show"
   }
 }

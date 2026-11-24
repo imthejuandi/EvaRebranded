@@ -1,0 +1,117 @@
+{
+  "status": "ready_for_owner_review_independent_judge_complete",
+  "date": "2026-11-24",
+  "owner_request": "Show the proposed explanation and obtain a new independent judgment against all saved criteria.",
+  "published_ui_version": 70,
+  "published_ui_commit": "58bac762100a18c440b38429dee95f4663194e2d",
+  "preview_branch": "preview/normal-explanation-20261124",
+  "preview_commit": "39485db042574a40d2a2f814e3b1e466ab2fa7be",
+  "preview_worktree": "/workspace/eva-normal-explanation-preview",
+  "preview_only": true,
+  "publication_performed": false,
+  "native_version_created": null,
+  "implementation": "Exact saved EN/ES paragraph replaces microcaption outsideglass; existing Hanken16/24normal,16px heading gap, captionmax46ch and text-wrap:pretty. All chartgeometry/copy/actions/qualifiers preserved.",
+  "evidence": "docs/normal-explanation-preview",
+  "render_method": "Preview-only exact production-built HTML/CSS/JS served by Playwright local-file request fulfillment. No preview HTTP server, no remote deployment, no live Site mutation. Viewport emulation, not physical device or browser-chrome zoom.",
+  "checks": {
+    "TypeScript": "passed",
+    "production_build": "113 routes passed",
+    "git_diff_check": "passed",
+    "impeccable_detector": "zero findings",
+    "rendered_profiles": 9,
+    "rendered_passed": true,
+    "paragraph_contrast": 6.4,
+    "page_errors": [],
+    "blocked_requests": [],
+    "network_writes": [],
+    "all_owned_browsers_closed": true
+  },
+  "independent_judge": {
+    "agent": "/root/normal_independent_judge",
+    "not_an_author_or_prior_approver": true,
+    "recommendation": "ready to show",
+    "report": "docs/normal-explanation-preview/independent-judge.md",
+    "structured_report": "docs/normal-explanation-preview/independent-judge.json",
+    "lenses": [
+      {
+        "id": "medical_truth",
+        "verdict": "PASS"
+      },
+      {
+        "id": "wellness_marketing_copy",
+        "verdict": "PASS"
+      },
+      {
+        "id": "visible_novice_explanation",
+        "verdict": "PASS"
+      },
+      {
+        "id": "english_clarity",
+        "verdict": "PASS"
+      },
+      {
+        "id": "spain_spanish_translation_parity",
+        "verdict": "PASS"
+      },
+      {
+        "id": "design_hierarchy",
+        "verdict": "PASS"
+      },
+      {
+        "id": "impeccable_type_spacing_accessibility",
+        "verdict": "PASS"
+      },
+      {
+        "id": "engineering_relevant_interaction",
+        "verdict": "NOT VERIFIED"
+      }
+    ],
+    "critical_failures": [],
+    "required_revision_before_showing": [],
+    "independence_disclosure": {
+      "authoredOrDesignedCandidate": false,
+      "readOtherReviewerReports": false,
+      "strictlyBlinded": false,
+      "disclosure": "Text-level judgments were formed and communicated before an agent-status inventory unexpectedly exposed colleagues’ completion summaries. Their reports were not opened and their verdicts were not used as evidence. Rendered judgment is this reviewer's own. This is independent agent review with partial blinding, not human research or human clinician approval."
+    }
+  },
+  "limits": [
+    "Managed interactive preview startup timed out; no replacement HTTP service or new hosting project created.",
+    "Captures are real production-built browser renders via local-file request fulfillment, not native published Site proof.",
+    "Viewport emulation, not physical-device testing. Effective200%reflow is not browser-chrome zoom.",
+    "Production health-history application and backend clinical interpretation were not verified by this static proposal.",
+    "Agent/editorial review is not human usability research, clinical signoff or actual owner acceptance."
+  ],
+  "source_hashes": {
+    "components/story/RangeProofSection.tsx": "b856c7567acad340d3eb18404bbdbdea5f609f5c02c3a08d52d535e533083749",
+    "components/story/range-proof-section.css": "6ce705705c75db9003ad986b115583d575f2c908ad96ce6980a8245604a0e47d",
+    "lib/site-content/range-proof-copy.ts": "ba3b04a3fbe7d2dee3409a536ceddb36f8cb1f7612301cb6f20a36f2b6c997d8"
+  },
+  "residual_issues": [
+    {
+      "severity": "nonblocking",
+      "issue": "ES320 requires nine body lines and a 954px section; the CTA falls below the initial 844px viewport.",
+      "resolution": "Accept normal vertical scrolling; preserve readable type."
+    },
+    {
+      "severity": "not_verified",
+      "issue": "Health-history personalization is a product capability claim, not demonstrated by this preview.",
+      "resolution": "Verify against the real flow before any release; current source has context collection/contextApplied signaling, while fictional fixtures disclose that context is not applied."
+    },
+    {
+      "severity": "not_verified",
+      "issue": "Native deployment, full production flow, actual browser zoom, real-device performance and assistive-technology experience are outside this preview.",
+      "resolution": "Do not present preview evidence as proof of these."
+    },
+    {
+      "severity": "nonblocking",
+      "issue": "Existing disclosure's three sources support the numerical example; the new general mechanism is supported by CLSI/IFCC reviewed here but not yet included in that disclosure.",
+      "resolution": "For an eventual implementation, add the IFCC reference in existing Sources and context rather than adding visible prose or another panel."
+    },
+    {
+      "severity": "medical_boundary",
+      "issue": "Valley cutoff derivation is unknown, and AHA <1 is a relative-risk category.",
+      "resolution": "Keep Many/don’t always and the visible overall-risk qualification; never label the lower band a universal optimum."
+    }
+  ]
+}

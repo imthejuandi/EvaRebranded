@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-24",
+  "reviewer": "/root/normal_independent_judge",
+  "recommendation": "ready to show",
+  "releaseApproval": false,
+  "scope": "Independent final review of an isolated rendered proposal; no UI edits, commits, deployment or publishing performed by this reviewer.",
+  "communicationGoal": "Explain why a lab-normal result and a level associated with lower long-term risk may differ, and what EVA adds.",
+  "ownerRequest": "show me how it would look like and have an independent judge judge the proposal based on the criteria specified before",
+  "artifact": {
+    "baselineNativeVersion": 70,
+    "baselineUiCommit": "58bac762100a18c440b38429dee95f4663194e2d",
+    "candidateCheckout": "/workspace/eva-normal-explanation-preview",
+    "candidateBaseCommit": "788cae34151ece3ba592d2de9f2dad8c3a4c3289",
+    "en": "Many lab reference ranges describe typical results in selected groups of apparently healthy people. They don’t always identify levels linked to lower long-term risk. EVA explains the difference in plain language and puts your results in context with your health history.",
+    "es": "Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.",
+    "sourceHashes": {
+      "components/story/RangeProofSection.tsx": "b856c7567acad340d3eb18404bbdbdea5f609f5c02c3a08d52d535e533083749",
+      "components/story/range-proof-section.css": "6ce705705c75db9003ad986b115583d575f2c908ad96ce6980a8245604a0e47d",
+      "lib/site-content/range-proof-copy.ts": "ba3b04a3fbe7d2dee3409a536ceddb36f8cb1f7612301cb6f20a36f2b6c997d8"
+    },
+    "renderReport": "render-report.json",
+    "method": "Production-built candidate served through Playwright request fulfillment from local files, synthetic .invalid origin; real app hydrated. No native publication."
+  },
+  "independence": {
+    "authoredOrDesignedCandidate": false,
+    "readOtherReviewerReports": false,
+    "strictlyBlinded": false,
+    "disclosure": "Text-level judgments were formed and communicated before an agent-status inventory unexpectedly exposed colleagues’ completion summaries. Their reports were not opened and their verdicts were not used as evidence. Rendered judgment is this reviewer's own. This is independent agent review with partial blinding, not human research or human clinician approval."
+  },
+  "lenses": [
+    {
+      "id": "medical_truth",
+      "verdict": "PASS",
+      "evidence": [
+        "CLSI EP28 describes health-associated reference values, reference-subject selection and distinct decision limits; IFCC 2018 distinguishes typical healthy-reference distributions from outcome-associated clinical decision limits.",
+        "The exact copy says Many and don’t always, does not say unhealthy-population averages, and uses linked/se asocian rather than causal or treatment promises.",
+        "Valley confirms <3.0 mg/L only; its specific derivation remains unknown. AHA confirms hs-CRP lower relative-CVD-risk category <1.0 mg/L, distinct from overall risk."
+      ],
+      "smallest_fix": "None required to show. Do not present the general paragraph as proof of Valley’s particular cutoff derivation."
+    },
+    {
+      "id": "wellness_marketing_copy",
+      "verdict": "PASS",
+      "evidence": [
+        "Three sentences establish mechanism, consequence and EVA’s interpretation benefit; there is no new CTA, fear statistic, diagnosis, universal optimum or guaranteed health improvement.",
+        "41 English words and 46 Spanish words retain the missing explanation within the existing section."
+      ],
+      "smallest_fix": "None required to show.",
+      "qualification": "The present-tense health-history product capability is NOT VERIFIED end to end by the preview; it is separately recorded below."
+    },
+    {
+      "id": "visible_novice_explanation",
+      "verdict": "PASS",
+      "evidence": [
+        "A simulated novice can now learn why typical reference results and levels associated with lower future risk need not be the same, without opening Sources and context.",
+        "The example visibly shows the same 2.9/2,9 mg/L inside the <3 lab reference but outside the <1 lower relative-risk category; the visible overall-risk disclaimer bounds its meaning.",
+        "EVA’s stated addition is plain-language interpretation with health history."
+      ],
+      "smallest_fix": "None required to show.",
+      "qualification": "Agent interpretation only; no human usability study or comprehension rate."
+    },
+    {
+      "id": "english_clarity",
+      "verdict": "PASS",
+      "evidence": [
+        "They has a clear antecedent (lab reference ranges), the sentences progress logically and linked to preserves association.",
+        "Selected groups of apparently healthy people is somewhat technical but understandable and medically useful; it is not a reason to remove the explanation."
+      ],
+      "smallest_fix": "None."
+    },
+    {
+      "id": "spain_spanish_translation_parity",
+      "verdict": "PASS",
+      "evidence": [
+        "Muchos / No siempre preserve Many / don’t always; habituales, aparentemente sanas and se asocian preserve the mechanism and claim strength.",
+        "Plain-language back-translation: Many reference ranges reflect usual results in selected groups of apparently healthy people; they do not always indicate levels associated with lower long-term risk; EVA explains the difference simply and contextualizes results with health history.",
+        "Spain-appropriate analíticas remains in the existing CTA; visible decimal 2,9, operators and units remain intact."
+      ],
+      "smallest_fix": "None. Historial de salud and pone tus resultados en contexto are understandable; alternate phrasing would be optional polishing."
+    },
+    {
+      "id": "design_hierarchy",
+      "verdict": "PASS",
+      "evidence": [
+        "The paragraph occupies the existing caption position beneath the heading and outside the glass; title → explanation → example remains the reading path.",
+        "46ch max-width creates 5 EN / 6 ES lines at 1366; natural responsive wrapping gives 6 EN / 7 ES at 390 and 9 ES at 320. The paragraph is visible while the disclosure is closed.",
+        "I viewed EN1366, ES1366, EN390, ES390, ES320, ES768, EN1051, ES390 calm and ES683 DPR2 section captures. No clipping, collisions or horizontal overflow observed.",
+        "Shared 0–5 domain, sample 58%, lab 60%, lower-risk 20%, 28px tracks, 14px rings, 4px source-defined cores, two dot rows and removed recommendation footer are preserved."
+      ],
+      "smallest_fix": "None. Keep the 46ch width and do not shrink the 16px body to compress ES320."
+    },
+    {
+      "id": "impeccable_type_spacing_accessibility",
+      "verdict": "PASS",
+      "evidence": [
+        "Applied Impeccable 4.9.0 typeset/layout criteria to incumbent EVA visual system. Context allowed scoped existing review without new visual-system setup.",
+        "Computed paragraph: EVA Hanken 400, 16px/24px, 16px heading-to-body margin, text-wrap pretty, #50594f over #f3f0e8; contrast 6.4:1.",
+        "Hierarchy preserves 44px desktop / 34px phone heading, existing italic secondary line and quiet body tone. ES320 remains 16px rather than reduced type.",
+        "Supplied browser checks show visible 2px CTA focus and Enter toggling the native disclosure; all nine profiles retain >=44px CTA height.",
+        "My independent mechanical detector on exact candidate TSX/CSS returned zero type/layout findings."
+      ],
+      "smallest_fix": "None for the requested preview.",
+      "qualification": "Actual browser-chrome zoom, real devices, screen-reader experience, missing-font fallback and fresh full-glass contrast audit were not verified. Existing glass is preserved; new paragraph contrast was verified."
+    },
+    {
+      "id": "engineering_relevant_interaction",
+      "verdict": "NOT VERIFIED",
+      "evidence": [
+        "Preview source diff is limited to caption content binding/data attribute, bilingual explanation strings, and 34ch → 46ch plus text-wrap pretty.",
+        "Production-built HTML/CSS/JS was hydrated through Playwright local-file request fulfillment at a synthetic .invalid origin; the reviewed script waits for fonts and layout.",
+        "The supplied report records nine passing profiles, no page errors, no blocked requests/network writes, working keyboard disclosure, free-plan CTA hrefs and all owned browsers closed.",
+        "This is not a native Site deployment or a full production upload/interpretation flow. Present-tense personalized history application is not established by static screenshots or preview checks."
+      ],
+      "smallest_fix": "No work is required before showing this proposal. Before any eventual release, verify the same candidate on native EN/ES and confirm the real interpretation flow supports the health-history promise; revise that sentence if it does not."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://clsi.org/shop/standards/ep28/",
+      "supports": "General reference-interval and selected-reference-subject mechanism; EP28 sample introduction also distinguishes analytes using decision limits."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30047297/",
+      "supports": "IFCC committee distinction between healthy-reference distributions and clinical decision limits associated with adverse outcomes or diagnosis."
+    },
+    {
+      "url": "https://valleyhealth.testcatalog.org/show/CRPHS-1",
+      "supports": "Published hs-CRP reference <3.0 mg/L, without a stated cutoff derivation."
+    },
+    {
+      "url": "https://professional.heart.org/en/-/media/PHD-Files/Education/hsCRP-Toolkit-for-Professionals.pdf?sc_lang=en",
+      "supports": "Page 2 hs-CRP lower relative cardiovascular-risk category <1.0 mg/L, distinct from overall 10-year risk categories."
+    }
+  ],
+  "criticalFailures": [],
+  "requiredRevisionBeforeShowing": [],
+  "residualIssues": [
+    {
+      "severity": "nonblocking",
+      "issue": "ES320 requires nine body lines and a 954px section; the CTA falls below the initial 844px viewport.",
+      "resolution": "Accept normal vertical scrolling; preserve readable type."
+    },
+    {
+      "severity": "not_verified",
+      "issue": "Health-history personalization is a product capability claim, not demonstrated by this preview.",
+      "resolution": "Verify against the real flow before any release; current source has context collection/contextApplied signaling, while fictional fixtures disclose that context is not applied."
+    },
+    {
+      "severity": "not_verified",
+      "issue": "Native deployment, full production flow, actual browser zoom, real-device performance and assistive-technology experience are outside this preview.",
+      "resolution": "Do not present preview evidence as proof of these."
+    },
+    {
+      "severity": "nonblocking",
+      "issue": "Existing disclosure's three sources support the numerical example; the new general mechanism is supported by CLSI/IFCC reviewed here but not yet included in that disclosure.",
+      "resolution": "For an eventual implementation, add the IFCC reference in existing Sources and context rather than adding visible prose or another panel."
+    },
+    {
+      "severity": "medical_boundary",
+      "issue": "Valley cutoff derivation is unknown, and AHA <1 is a relative-risk category.",
+      "resolution": "Keep Many/don’t always and the visible overall-risk qualification; never label the lower band a universal optimum."
+    }
+  ],
+  "smallestFix": "No revision required before showing the exact proposal. Retain current rendered copy, 46ch measure and 16/24 body; record the nonverified release/product items separately.",
+  "humanResearch": false,
+  "medicalClinicianApproval": false
+}

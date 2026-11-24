@@ -59,5 +59,8 @@ Use NOT APPLICABLE with a reason for genuinely unaffected fields. Use NOT VERIFI
 | “There's more to normal” had no visible explanation. | Concision went too far. “One result. Two ranges.” and a hidden source disclosure cannot carry the teaching point. Proposed explanation belongs visibly beneath the headline. |
 | Owner suggested ranges average an unhealthy population. | Explain the intended distinction accurately: many reference intervals describe a selected apparently healthy group; reference and outcome/risk limits can differ. Do not claim this specific lab cutoff has an undocumented statistical derivation. |
 | A first explanation draft only said the ranges differ. | Include enough mechanism to answer WHY they differ, then state EVA's plain-language interpretation benefit. A cautious but empty explanation still needs revision. |
+| Owner requested a rendered proposal plus a fresh judge. | Text approval is insufficient for visual claims. Nine real production-built preview renders and a judge independent of authors/designers now support showing this paragraph. Keep prototype geometry/interaction evidence separate from native/production capability proof; do not publish from a preview request. |
+
+Latest loop: the owner requested a rendered preview and a new independent judge. Preserve that distinction from publication; see [preview QA](normal-explanation-preview-qa.json).
 
 Current proposed explanation: [normal-explanation-proposal.md](normal-explanation-proposal.md). Current deployed range QA: [range-graphic-qa.json](range-graphic-qa.json). Subsequent owner corrections must update this ledger and supersede older constraints explicitly.
