@@ -24,7 +24,7 @@
 .range-proof-value>span[aria-hidden]{display:grid;justify-items:end;gap:0}
 .range-proof-value .dot-number{display:block;width:auto;height:64px;max-width:136px;filter:drop-shadow(0 1px 3px #fffdf618)}
 .range-proof-value small{position:static;font-size:14px;line-height:20px;margin-right:4px}
-.range-proof-caption{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;max-width:34ch;margin:16px 0 0}
+.range-proof-caption{font-size:var(--proof-body-size);line-height:var(--proof-body-leading);color:#50594f;max-width:46ch;margin:16px 0 0;text-wrap:pretty}
 .range-proof-levels{display:grid;gap:16px;margin-top:16px}
 .range-proof-level{min-width:0}
 .range-proof-level-label{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:16px;align-items:end}

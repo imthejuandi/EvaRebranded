@@ -17,6 +17,7 @@ export const rangeProofCopy = {
     markerLabel: 'Inflammation signal',
     exampleLabel: 'Example',
     unchangedLabel: 'One result. Two ranges.',
+    explanation: 'Many lab reference ranges describe typical results in selected groups of apparently healthy people. They don’t always identify levels linked to lower long-term risk. EVA explains the difference in plain language and puts your results in context with your health history.',
     lab: {
       label: 'Lab’s reference range',
       threshold: '<3 mg/L',
@@ -50,6 +51,7 @@ export const rangeProofCopy = {
     markerLabel: 'Señal de inflamación',
     exampleLabel: 'Ejemplo',
     unchangedLabel: 'Un resultado. Dos rangos.',
+    explanation: 'Muchos rangos de referencia reflejan resultados habituales en grupos seleccionados de personas aparentemente sanas. No siempre indican qué niveles se asocian a un menor riesgo a largo plazo. EVA explica esa diferencia en lenguaje sencillo y pone tus resultados en contexto con tu historial de salud.',
     lab: {
       label: 'Rango de referencia del laboratorio',
       threshold: '<3 mg/L',

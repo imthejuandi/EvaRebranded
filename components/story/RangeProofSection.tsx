@@ -42,7 +42,7 @@ export function RangeProofSection({calm=false}: {calm?:boolean}) {
     <div className="range-proof-layout">
       <div className="range-proof-story">
         <h2 id="range-proof-title">{c.heading[0]}<br/><em>{c.heading[1]}</em></h2>
-        <p className="range-proof-caption">{c.unchangedLabel}</p>
+        <p className="range-proof-caption" data-range-explanation>{c.explanation}</p>
       </div>
       <div className="range-proof-evidence">
         <div className="range-proof-instrument bio-glass">
