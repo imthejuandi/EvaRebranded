@@ -1,0 +1,3700 @@
+{
+  "scope": "Exact isolated production build through local file request fulfillment and native byte ranges. Read-only fictional-state checks stop at account forms. No timing/state mutation; viewport emulation, not physical-device performance.",
+  "profiles": [],
+  "fallbacks": [
+    {
+      "id": "en-320-nojs",
+      "kind": "nojs",
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "abortedMedia": [],
+      "failures": [],
+      "after": {
+        "at": 440,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start for free Upload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 22,
+              "y": 666,
+              "width": 82.40625,
+              "height": 18,
+              "right": 104.40625,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start for free",
+              "scrollWidth": 82
+            },
+            "detail": {
+              "x": 22,
+              "y": 684,
+              "width": 69.34375,
+              "height": 16,
+              "right": 91.34375,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Upload labs",
+              "scrollWidth": 69
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start with the pack €99 + VAT / quarter",
+            "href": "/en/signup?plan=quarterly",
+            "label": {
+              "x": 136,
+              "y": 666,
+              "width": 120.03125,
+              "height": 18,
+              "right": 256.03125,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start with the pack",
+              "scrollWidth": 120
+            },
+            "detail": {
+              "x": 136,
+              "y": 684,
+              "width": 113.96875,
+              "height": 16,
+              "right": 249.96875,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "€99 + VAT / quarter",
+              "scrollWidth": 114
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explains your blood test results and helps you track changes."
+          }
+        ],
+        "documentWidth": 320,
+        "viewport": 320,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17602.8125,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17631.703125,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "focus": [
+        {
+          "text": "Start for free Upload labs",
+          "focused": true
+        },
+        {
+          "text": "Start with the pack €99 + VAT / quarter",
+          "focused": true
+        }
+      ],
+      "afterBlur": {
+        "at": 501.1000000005588,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start for free Upload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 22,
+              "y": 666,
+              "width": 82.40625,
+              "height": 18,
+              "right": 104.40625,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start for free",
+              "scrollWidth": 82
+            },
+            "detail": {
+              "x": 22,
+              "y": 684,
+              "width": 69.34375,
+              "height": 16,
+              "right": 91.34375,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Upload labs",
+              "scrollWidth": 69
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start with the pack €99 + VAT / quarter",
+            "href": "/en/signup?plan=quarterly",
+            "label": {
+              "x": 136,
+              "y": 666,
+              "width": 120.03125,
+              "height": 18,
+              "right": 256.03125,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start with the pack",
+              "scrollWidth": 120
+            },
+            "detail": {
+              "x": 136,
+              "y": 684,
+              "width": 113.96875,
+              "height": 16,
+              "right": 249.96875,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "€99 + VAT / quarter",
+              "scrollWidth": 114
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explains your blood test results and helps you track changes."
+          }
+        ],
+        "documentWidth": 320,
+        "viewport": 320,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17602.8125,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17631.703125,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "destination": "https://eva-hero-pack-preview.invalid/en/signup?plan=quarterly",
+      "passed": true
+    },
+    {
+      "id": "en-390-nojs",
+      "kind": "nojs",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "abortedMedia": [],
+      "failures": [],
+      "after": {
+        "at": 221.6000000005588,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start for free Upload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 33,
+              "y": 666,
+              "width": 82.40625,
+              "height": 18,
+              "right": 115.40625,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start for free",
+              "scrollWidth": 82
+            },
+            "detail": {
+              "x": 33,
+              "y": 684,
+              "width": 69.34375,
+              "height": 16,
+              "right": 102.34375,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Upload labs",
+              "scrollWidth": 69
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start with the pack €99 + VAT / quarter",
+            "href": "/en/signup?plan=quarterly",
+            "label": {
+              "x": 180.15625,
+              "y": 666,
+              "width": 120.03125,
+              "height": 18,
+              "right": 300.1875,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start with the pack",
+              "scrollWidth": 120
+            },
+            "detail": {
+              "x": 180.15625,
+              "y": 684,
+              "width": 113.96875,
+              "height": 16,
+              "right": 294.125,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "€99 + VAT / quarter",
+              "scrollWidth": 114
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explains your blood test results and helps you track changes."
+          }
+        ],
+        "documentWidth": 390,
+        "viewport": 390,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17469.953125,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17498.84375,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "focus": [
+        {
+          "text": "Start for free Upload labs",
+          "focused": true
+        },
+        {
+          "text": "Start with the pack €99 + VAT / quarter",
+          "focused": true
+        }
+      ],
+      "afterBlur": {
+        "at": 285.20000000018626,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start for free Upload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 33,
+              "y": 666,
+              "width": 82.40625,
+              "height": 18,
+              "right": 115.40625,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start for free",
+              "scrollWidth": 82
+            },
+            "detail": {
+              "x": 33,
+              "y": 684,
+              "width": 69.34375,
+              "height": 16,
+              "right": 102.34375,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Upload labs",
+              "scrollWidth": 69
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start with the pack €99 + VAT / quarter",
+            "href": "/en/signup?plan=quarterly",
+            "label": {
+              "x": 180.15625,
+              "y": 666,
+              "width": 120.03125,
+              "height": 18,
+              "right": 300.1875,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start with the pack",
+              "scrollWidth": 120
+            },
+            "detail": {
+              "x": 180.15625,
+              "y": 684,
+              "width": 113.96875,
+              "height": 16,
+              "right": 294.125,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "€99 + VAT / quarter",
+              "scrollWidth": 114
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explains your blood test results and helps you track changes."
+          }
+        ],
+        "documentWidth": 390,
+        "viewport": 390,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17469.953125,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17498.84375,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "destination": "https://eva-hero-pack-preview.invalid/en/signup?plan=quarterly",
+      "passed": true
+    },
+    {
+      "id": "en-1366-nojs",
+      "kind": "nojs",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "abortedMedia": [],
+      "failures": [],
+      "after": {
+        "at": 298.1000000005588,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start for free Upload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 59,
+              "y": 737,
+              "width": 82.40625,
+              "height": 18,
+              "right": 141.40625,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start for free",
+              "scrollWidth": 82
+            },
+            "detail": {
+              "x": 59,
+              "y": 755,
+              "width": 69.34375,
+              "height": 16,
+              "right": 128.34375,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Upload labs",
+              "scrollWidth": 69
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start with the pack €99 + VAT / quarter",
+            "href": "/en/signup?plan=quarterly",
+            "label": {
+              "x": 259,
+              "y": 737,
+              "width": 120.03125,
+              "height": 18,
+              "right": 379.03125,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start with the pack",
+              "scrollWidth": 120
+            },
+            "detail": {
+              "x": 259,
+              "y": 755,
+              "width": 113.96875,
+              "height": 16,
+              "right": 372.96875,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "€99 + VAT / quarter",
+              "scrollWidth": 114
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explains your blood test results and helps you track changes."
+          }
+        ],
+        "documentWidth": 1366,
+        "viewport": 1366,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 48,
+            "y": 15948.5625,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 15985.59375,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "focus": [
+        {
+          "text": "Start for free Upload labs",
+          "focused": true
+        },
+        {
+          "text": "Start with the pack €99 + VAT / quarter",
+          "focused": true
+        }
+      ],
+      "afterBlur": {
+        "at": 374.70000000018626,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start for free Upload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 59,
+              "y": 737,
+              "width": 82.40625,
+              "height": 18,
+              "right": 141.40625,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start for free",
+              "scrollWidth": 82
+            },
+            "detail": {
+              "x": 59,
+              "y": 755,
+              "width": 69.34375,
+              "height": 16,
+              "right": 128.34375,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Upload labs",
+              "scrollWidth": 69
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Start with the pack €99 + VAT / quarter",
+            "href": "/en/signup?plan=quarterly",
+            "label": {
+              "x": 259,
+              "y": 737,
+              "width": 120.03125,
+              "height": 18,
+              "right": 379.03125,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Start with the pack",
+              "scrollWidth": 120
+            },
+            "detail": {
+              "x": 259,
+              "y": 755,
+              "width": 113.96875,
+              "height": 16,
+              "right": 372.96875,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "€99 + VAT / quarter",
+              "scrollWidth": 114
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explains your blood test results and helps you track changes."
+          }
+        ],
+        "documentWidth": 1366,
+        "viewport": 1366,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 48,
+            "y": 15948.5625,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 15985.59375,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "destination": "https://eva-hero-pack-preview.invalid/en/signup?plan=quarterly",
+      "passed": true
+    },
+    {
+      "id": "es-320-nojs",
+      "kind": "nojs",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "abortedMedia": [],
+      "failures": [],
+      "after": {
+        "at": 284.59999999962747,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza gratis Sube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 22,
+              "y": 666,
+              "width": 92.34375,
+              "height": 18,
+              "right": 114.34375,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza gratis",
+              "scrollWidth": 92
+            },
+            "detail": {
+              "x": 22,
+              "y": 684,
+              "width": 87.3125,
+              "height": 16,
+              "right": 109.3125,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Sube analíticas",
+              "scrollWidth": 87
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza con el pack 99 € + IVA / trimestre",
+            "href": "/es/signup?plan=quarterly",
+            "label": {
+              "x": 136,
+              "y": 666,
+              "width": 129.28125,
+              "height": 18,
+              "right": 265.28125,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza con el pack",
+              "scrollWidth": 129
+            },
+            "detail": {
+              "x": 136,
+              "y": 684,
+              "width": 123.484375,
+              "height": 16,
+              "right": 259.484375,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "99 € + IVA / trimestre",
+              "scrollWidth": 123
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explica tus analíticas y te ayuda a seguir los cambios."
+          }
+        ],
+        "documentWidth": 320,
+        "viewport": 320,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17815.53125,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17844.421875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "focus": [
+        {
+          "text": "Empieza gratis Sube analíticas",
+          "focused": true
+        },
+        {
+          "text": "Empieza con el pack 99 € + IVA / trimestre",
+          "focused": true
+        }
+      ],
+      "afterBlur": {
+        "at": 342.59999999962747,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza gratis Sube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 22,
+              "y": 666,
+              "width": 92.34375,
+              "height": 18,
+              "right": 114.34375,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza gratis",
+              "scrollWidth": 92
+            },
+            "detail": {
+              "x": 22,
+              "y": 684,
+              "width": 87.3125,
+              "height": 16,
+              "right": 109.3125,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Sube analíticas",
+              "scrollWidth": 87
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza con el pack 99 € + IVA / trimestre",
+            "href": "/es/signup?plan=quarterly",
+            "label": {
+              "x": 136,
+              "y": 666,
+              "width": 129.28125,
+              "height": 18,
+              "right": 265.28125,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza con el pack",
+              "scrollWidth": 129
+            },
+            "detail": {
+              "x": 136,
+              "y": 684,
+              "width": 123.484375,
+              "height": 16,
+              "right": 259.484375,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "99 € + IVA / trimestre",
+              "scrollWidth": 123
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explica tus analíticas y te ayuda a seguir los cambios."
+          }
+        ],
+        "documentWidth": 320,
+        "viewport": 320,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17815.53125,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17844.421875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "destination": "https://eva-hero-pack-preview.invalid/es/signup?plan=quarterly",
+      "passed": true
+    },
+    {
+      "id": "es-390-nojs",
+      "kind": "nojs",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "abortedMedia": [],
+      "failures": [],
+      "after": {
+        "at": 205.79999999981374,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza gratis Sube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 33,
+              "y": 666,
+              "width": 92.34375,
+              "height": 18,
+              "right": 125.34375,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza gratis",
+              "scrollWidth": 92
+            },
+            "detail": {
+              "x": 33,
+              "y": 684,
+              "width": 87.3125,
+              "height": 16,
+              "right": 120.3125,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Sube analíticas",
+              "scrollWidth": 87
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza con el pack 99 € + IVA / trimestre",
+            "href": "/es/signup?plan=quarterly",
+            "label": {
+              "x": 180.15625,
+              "y": 666,
+              "width": 129.28125,
+              "height": 18,
+              "right": 309.4375,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza con el pack",
+              "scrollWidth": 129
+            },
+            "detail": {
+              "x": 180.15625,
+              "y": 684,
+              "width": 123.484375,
+              "height": 16,
+              "right": 303.640625,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "99 € + IVA / trimestre",
+              "scrollWidth": 123
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explica tus analíticas y te ayuda a seguir los cambios."
+          }
+        ],
+        "documentWidth": 390,
+        "viewport": 390,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17508.390625,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17537.28125,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "focus": [
+        {
+          "text": "Empieza gratis Sube analíticas",
+          "focused": true
+        },
+        {
+          "text": "Empieza con el pack 99 € + IVA / trimestre",
+          "focused": true
+        }
+      ],
+      "afterBlur": {
+        "at": 268.40000000037253,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza gratis Sube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 33,
+              "y": 666,
+              "width": 92.34375,
+              "height": 18,
+              "right": 125.34375,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza gratis",
+              "scrollWidth": 92
+            },
+            "detail": {
+              "x": 33,
+              "y": 684,
+              "width": 87.3125,
+              "height": 16,
+              "right": 120.3125,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Sube analíticas",
+              "scrollWidth": 87
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza con el pack 99 € + IVA / trimestre",
+            "href": "/es/signup?plan=quarterly",
+            "label": {
+              "x": 180.15625,
+              "y": 666,
+              "width": 129.28125,
+              "height": 18,
+              "right": 309.4375,
+              "bottom": 684,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza con el pack",
+              "scrollWidth": 129
+            },
+            "detail": {
+              "x": 180.15625,
+              "y": 684,
+              "width": 123.484375,
+              "height": 16,
+              "right": 303.640625,
+              "bottom": 700,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "99 € + IVA / trimestre",
+              "scrollWidth": 123
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explica tus analíticas y te ayuda a seguir los cambios."
+          }
+        ],
+        "documentWidth": 390,
+        "viewport": 390,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 24,
+            "y": 17508.390625,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 17537.28125,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "destination": "https://eva-hero-pack-preview.invalid/es/signup?plan=quarterly",
+      "passed": true
+    },
+    {
+      "id": "es-1366-nojs",
+      "kind": "nojs",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "abortedMedia": [],
+      "failures": [],
+      "after": {
+        "at": 244,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza gratis Sube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 59,
+              "y": 737,
+              "width": 92.34375,
+              "height": 18,
+              "right": 151.34375,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza gratis",
+              "scrollWidth": 92
+            },
+            "detail": {
+              "x": 59,
+              "y": 755,
+              "width": 87.3125,
+              "height": 16,
+              "right": 146.3125,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Sube analíticas",
+              "scrollWidth": 87
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza con el pack 99 € + IVA / trimestre",
+            "href": "/es/signup?plan=quarterly",
+            "label": {
+              "x": 259,
+              "y": 737,
+              "width": 129.28125,
+              "height": 18,
+              "right": 388.28125,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza con el pack",
+              "scrollWidth": 129
+            },
+            "detail": {
+              "x": 259,
+              "y": 755,
+              "width": 123.484375,
+              "height": 16,
+              "right": 382.484375,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "99 € + IVA / trimestre",
+              "scrollWidth": 123
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explica tus analíticas y te ayuda a seguir los cambios."
+          }
+        ],
+        "documentWidth": 1366,
+        "viewport": 1366,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 48,
+            "y": 16155.046875,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 16192.078125,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "focus": [
+        {
+          "text": "Empieza gratis Sube analíticas",
+          "focused": true
+        },
+        {
+          "text": "Empieza con el pack 99 € + IVA / trimestre",
+          "focused": true
+        }
+      ],
+      "afterBlur": {
+        "at": 323.5,
+        "entry": "pending",
+        "scrollY": 0,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza gratis Sube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "label": {
+              "x": 59,
+              "y": 737,
+              "width": 92.34375,
+              "height": 18,
+              "right": 151.34375,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza gratis",
+              "scrollWidth": 92
+            },
+            "detail": {
+              "x": 59,
+              "y": 755,
+              "width": 87.3125,
+              "height": 16,
+              "right": 146.3125,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Sube analíticas",
+              "scrollWidth": 87
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "600",
+            "size": "14px",
+            "lineHeight": "18.0012px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "Empieza con el pack 99 € + IVA / trimestre",
+            "href": "/es/signup?plan=quarterly",
+            "label": {
+              "x": 259,
+              "y": 737,
+              "width": 129.28125,
+              "height": 18,
+              "right": 388.28125,
+              "bottom": 755,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "600",
+              "size": "14px",
+              "lineHeight": "18.0012px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "Empieza con el pack",
+              "scrollWidth": 129
+            },
+            "detail": {
+              "x": 259,
+              "y": 755,
+              "width": 123.484375,
+              "height": 16,
+              "right": 382.484375,
+              "bottom": 771,
+              "font": "\"EVA Hanken\", Arial, sans-serif",
+              "weight": "400",
+              "size": "13px",
+              "lineHeight": "16.0004px",
+              "opacity": "1",
+              "visibility": "visible",
+              "pointer": "auto",
+              "text": "99 € + IVA / trimestre",
+              "scrollWidth": 123
+            },
+            "chain": [
+              {
+                "tag": "A",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "DIV",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "SECTION",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "MAIN",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "BODY",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "tag": "HTML",
+                "opacity": "1",
+                "visibility": "visible",
+                "inert": false
+              }
+            ],
+            "hit": [
+              true,
+              true,
+              true
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "font": "\"EVA Hanken\", Arial, sans-serif",
+            "weight": "400",
+            "size": "16px",
+            "lineHeight": "24px",
+            "opacity": "1",
+            "visibility": "visible",
+            "pointer": "auto",
+            "text": "EVA explica tus analíticas y te ayuda a seguir los cambios."
+          }
+        ],
+        "documentWidth": 1366,
+        "viewport": 1366,
+        "video": [],
+        "active": {
+          "tag": "BODY",
+          "class": "",
+          "text": "main.hero-entrance[data-hero-entrance] [data-hero-reveal]{opacity:1!important;visibility:visible!imp",
+          "heroAction": false
+        },
+        "logo": [
+          {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          },
+          {
+            "x": 48,
+            "y": 16155.046875,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 16192.078125,
+            "mask": "url(\"https://eva-hero-pack-preview.invalid/art/eva-official-logo.png?rev=682fac5978cb\")",
+            "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+            "text": ""
+          }
+        ]
+      },
+      "destination": "https://eva-hero-pack-preview.invalid/es/signup?plan=quarterly",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "networkWrites": [],
+  "missingFiles": [],
+  "externalReads": [],
+  "sourceHashes": {
+    "components/story/ScrollStory.tsx": "2055a840c52f4645c1f8a3c698d962e6839e7914e3aa222e93014259a383c09f",
+    "components/story/HeroKitCta.tsx": "179cdf512fd0786ed94217c5516db8ec1afe2c35dff8e134b81a61c45111e7dd",
+    "components/story/BusinessOffer.tsx": "b3b03e611e2613c37eb256945b4300fc61def740366dda341d3f1ecb4ba3d730",
+    "components/site/SiteShell.tsx": "78926c44fabe206cf07ebca6af000dc93beb23bd646bbab36981342a99f62b6e",
+    "app/hero-entrance.css": "8f86489066bf988ea76dcc1d76edf595ef81dbffc29f64e8b09723369a1d268d",
+    "app/hero-kit.css": "7d6040bc79f25cb3516fd978bcc34b53060e1701e90a8d128311d26c0c31dbc2",
+    "app/landing-closing.css": "46b754a747ea1b9572f04a7ced5532216da144eb255666b8de81304310eca53e",
+    "lib/site-content/entry-preview-copy.ts": "6e4f8ce15785197717f772fd507379bb8e62ec3d2e9268352274f5f0a80e8ad1"
+  },
+  "runnerPreservation": {
+    "components/story/RunnerArrival.tsx": {
+      "current": "3cdceae1e5c81fbec52c751d331ae59cedb00682d6532cb29e762be7d825335a",
+      "head": "3cdceae1e5c81fbec52c751d331ae59cedb00682d6532cb29e762be7d825335a",
+      "unchanged": true
+    },
+    "components/story/TrackedRunner.tsx": {
+      "current": "c299f9d79d616c2ccb4b906a29d1bec00603d76efa94477135dfe4e77a21353a",
+      "head": "c299f9d79d616c2ccb4b906a29d1bec00603d76efa94477135dfe4e77a21353a",
+      "unchanged": true
+    },
+    "components/story/EvaFilm.tsx": {
+      "current": "85db0a0862a42edd7003528610822f4ee566d8f7162562c15923d3303fba7a6f",
+      "head": "85db0a0862a42edd7003528610822f4ee566d8f7162562c15923d3303fba7a6f",
+      "unchanged": true
+    },
+    "lib/story-scroll-timing.ts": {
+      "current": "3b1f1ef7774201cbbdc1edae5c4142068f74325de131eaed29dd68c387937034",
+      "head": "3b1f1ef7774201cbbdc1edae5c4142068f74325de131eaed29dd68c387937034",
+      "unchanged": true
+    }
+  },
+  "logoSha": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+  "allOwnedBrowsersClosed": true,
+  "passed": true,
+  "qaFocus": "nojs"
+}

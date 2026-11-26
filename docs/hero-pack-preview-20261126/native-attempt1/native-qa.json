@@ -1,0 +1,4324 @@
+{
+  "scope": "Actual owner-only private Site v3; same-Site GET/HEAD/OPTIONS only. Secret stdin bearer used solely in same-Site dispatch header. No account creation, submission, uploads, orders, bookings or checkout confirmation. Viewport emulation, not physical devices.",
+  "version": 3,
+  "uiSourceCommit": "4889f6e2877b52391e9bfe6512adcf93551375e2",
+  "profiles": [
+    {
+      "id": "en-320-motion",
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "calm": false,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 1908,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661.086669921875,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705.086669921875,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 0.992779,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666.086669921875,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684.086669921875,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684.086669921875,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700.086669921875,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661.086669921875,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705.086669921875,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 0.992779,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666.086669921875,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684.086669921875,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684.086669921875,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700.086669921875,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713.086669921875,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761.086669921875,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "en-320-calm",
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "calm": true,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 808,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "en-390-motion",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "calm": false,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 703,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661.0864868164062,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705.0864868164062,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 0.992793,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666.0864868164062,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684.0864868164062,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684.0864868164062,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700.0864868164062,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661.0864868164062,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705.0864868164062,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 0.992793,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666.0864868164062,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684.0864868164062,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684.0864868164062,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700.0864868164062,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713.0864868164062,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761.0864868164062,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "en-390-calm",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "calm": true,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 703,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "en-1366-motion",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "calm": false,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 719,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732.08642578125,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776.08642578125,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 0.9928,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737.08642578125,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755.08642578125,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755.08642578125,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771.08642578125,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732.08642578125,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776.08642578125,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 0.9928,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737.08642578125,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755.08642578125,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755.08642578125,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771.08642578125,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664.08642578125,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712.08642578125,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "en-1366-calm",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "calm": true,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 805,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "es-320-motion",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "calm": false,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 946,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661.0867919921875,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705.0867919921875,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 0.992765,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666.0867919921875,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684.0867919921875,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684.0867919921875,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700.0867919921875,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661.0867919921875,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705.0867919921875,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 0.992765,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666.0867919921875,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684.0867919921875,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684.0867919921875,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700.0867919921875,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713.0867919921875,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761.0867919921875,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "es-320-calm",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "calm": true,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 891,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "es-390-motion",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "calm": false,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 859,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661.0867309570312,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705.0867309570312,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 0.992775,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666.0867309570312,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684.0867309570312,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684.0867309570312,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700.0867309570312,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661.0867309570312,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705.0867309570312,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 0.992775,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666.0867309570312,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684.0867309570312,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684.0867309570312,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700.0867309570312,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713.0867309570312,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761.0867309570312,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "es-390-calm",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "calm": true,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 871,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "es-1366-motion",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "calm": false,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 1019,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732.0487670898438,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776.0487670898438,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 0.995935,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737.0487670898438,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755.0487670898438,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755.0487670898438,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771.0487670898438,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732.0487670898438,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776.0487670898438,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 0.995935,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737.0487670898438,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755.0487670898438,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755.0487670898438,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771.0487670898438,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664.0487670898438,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712.0487670898438,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    },
+    {
+      "id": "es-1366-calm",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "calm": true,
+      "failures": [
+        "AssertionError [ERR_ASSERTION]: text role does not fit one line\n    at shown (/workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:10:455)\n    at /workspace/eva-in-place-qa/hero-pack-review-20261126/native-qa.cjs:26:42"
+      ],
+      "status": 200,
+      "firstReadyMs": 726,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "passed": false
+    }
+  ],
+  "pageErrors": [],
+  "writes": [],
+  "externalRequests": [],
+  "logoResponses": [
+    {
+      "id": "en-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    }
+  ],
+  "allOwnedBrowsersClosed": true,
+  "nativeEarlyObserved": 6,
+  "nativeEarlyLimit": "Native arrival can complete before first CSS/font-ready observation; unobserved early states require the exact local candidate harness evidence and are not passed from this run.",
+  "passed": false
+}

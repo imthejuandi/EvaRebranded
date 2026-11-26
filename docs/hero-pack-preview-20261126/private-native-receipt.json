@@ -1,0 +1,24 @@
+{
+  "projectId": "appgprj_6b08377df82c819197b37d5c64654750",
+  "version": 3,
+  "uiCommit": "4889f6e2877b52391e9bfe6512adcf93551375e2",
+  "privateSourceCommit": "93749939bace21dbeae02f8810b52aed27740202",
+  "deployment": {
+    "id": "appgdep_6b0847ba06148191bdc3ae56528387eb",
+    "project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+    "title": "EVA — Private entry and panel preview",
+    "version_id": "appgprj_6b08377df82c819197b37d5c64654750~appgver_ac7700bb90a081919d95e4131ca57786",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://eva-entry-private-261126.jdlagop.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "release---6b083cca094881919844b93416031f13",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-26T14:52:57.709607+00:00"
+  },
+  "audience": "owner-only",
+  "archive": "/workspace/eva-publication/eva-hero-pack-v3.tar.gz",
+  "gzipSha256": "e2672bac624faf286ad70ef4c25146e96661cbbdc78fd3fa18621138a2fa37eb"
+}

@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-26",
+  "status": "private_version3_verified_ready_for_owner_review",
+  "branch": "preview/entry-clarity-20261126",
+  "ui_source_commit": "4889f6e2877b52391e9bfe6512adcf93551375e2",
+  "private_hosting_source_commit": "93749939bace21dbeae02f8810b52aed27740202",
+  "private_project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+  "version": 3,
+  "preview_url": "https://eva-entry-private-261126.jdlagop.chatgpt.site",
+  "deployment_id": "appgdep_6b0847ba06148191bdc3ae56528387eb",
+  "version_id": "appgprj_6b08377df82c819197b37d5c64654750~appgver_ac7700bb90a081919d95e4131ca57786",
+  "deployment_status": "succeeded",
+  "archive_sha256": "e2672bac624faf286ad70ef4c25146e96661cbbdc78fd3fa18621138a2fa37eb",
+  "local": {
+    "production_build": "passed",
+    "TypeScript": "passed",
+    "normal_reduced_profiles": 12,
+    "nojs_cases": 6,
+    "real_media_abort_cases": 6,
+    "post_blur_nojs_recheck": 6,
+    "passed": true,
+    "page_errors": [],
+    "writes": [],
+    "missing_files": [],
+    "browsers_closed": true
+  },
+  "independent_reviews": {
+    "copy": "PASS",
+    "design": "PASS",
+    "impeccable": "PASS",
+    "judge": "PASS_prepublication_and_native_v3",
+    "medical": "No new clinical claim; no new clinical evidence review required."
+  },
+  "source_hashes": {
+    "components/story/ScrollStory.tsx": "2055a840c52f4645c1f8a3c698d962e6839e7914e3aa222e93014259a383c09f",
+    "components/story/HeroKitCta.tsx": "179cdf512fd0786ed94217c5516db8ec1afe2c35dff8e134b81a61c45111e7dd",
+    "components/story/BusinessOffer.tsx": "b3b03e611e2613c37eb256945b4300fc61def740366dda341d3f1ecb4ba3d730",
+    "components/site/SiteShell.tsx": "78926c44fabe206cf07ebca6af000dc93beb23bd646bbab36981342a99f62b6e",
+    "app/hero-entrance.css": "8f86489066bf988ea76dcc1d76edf595ef81dbffc29f64e8b09723369a1d268d",
+    "app/hero-kit.css": "7d6040bc79f25cb3516fd978bcc34b53060e1701e90a8d128311d26c0c31dbc2",
+    "app/landing-closing.css": "46b754a747ea1b9572f04a7ced5532216da144eb255666b8de81304310eca53e",
+    "lib/site-content/entry-preview-copy.ts": "6e4f8ce15785197717f772fd507379bb8e62ec3d2e9268352274f5f0a80e8ad1"
+  },
+  "preserved": {
+    "canonical_main_commit": "cdc71e660883a41c8b7c0dc696e61cf18b78c740",
+    "public_review_version": 70,
+    "separate_explanation_commit": "39485db042574a40d2a2f814e3b1e466ab2fa7be",
+    "runner_rate": 2.48,
+    "runner_media_rate": 1,
+    "wordmark_sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+    "Alex": 2.1,
+    "separate_range_example": 2.9
+  },
+  "audience": {
+    "owner_role": true,
+    "allowed_users": 1,
+    "allowed_groups": 0,
+    "external_visitors": 0,
+    "anonymous_GET_status": 403
+  },
+  "evidence": "docs/hero-pack-preview-20261126",
+  "full_workspace_artifacts": "/workspace/eva-in-place-qa/hero-pack-review-20261126",
+  "limits": [
+    "Viewport emulation, not physical-device testing.",
+    "Agent review, not human usability research or owner acceptance.",
+    "No real health data, account creation, uploads, bookings or checkout confirmations.",
+    "A private-preview pass is not production-release approval."
+  ],
+  "native": {
+    "passed": true,
+    "profiles": 12,
+    "early_normal_states_observed": 6,
+    "page_errors": [],
+    "network_writes": [],
+    "logo_responses_verified": 48,
+    "browsers_closed": true,
+    "report": "docs/hero-pack-preview-20261126/native-qa.json",
+    "free_intent_scope": "Native href/intent check; actual free click verified in exact local production-build suite. Actual paid and later-panel clicks verified natively."
+  },
+  "React_quality_review": "Manual scoped review passed: no new data fetching or dependencies; passive scroll listener and cleanup preserved; no new per-frame React work; native links, SSR/no-JS fallback and localized accessible names retained.",
+  "browser_handoff": "open_in_codex attempted; no confirmation returned after extended wait, so provide literal private URL. Deployment and actual native browser QA succeeded."
+}

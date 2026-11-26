@@ -1,0 +1,285 @@
+{
+  "reviewer": "/root/entry_independent_judge",
+  "role": "Independent final judge; no UI/harness/Sites edits and no candidate authorship. Other agent verdicts were not used as proof.",
+  "created_utc": "2026-11-26T14:51:26.375009+00:00",
+  "overall_verdict": "PASS",
+  "recommendation": "Ready for owner review of the deployed owner-only native version3 preview. No mandatory correction remains within the bounded delayed-hero/direct-standard-pack change. No public release, main merge or owner acceptance implied.",
+  "authority": {
+    "skill": ".agents/skills/eva-preview-review/SKILL.md",
+    "ledger": ".agents/skills/eva-preview-review/references/decision-ledger.md",
+    "brief": "docs/hero-pack-review-brief.md",
+    "newest_owner_direction": "Normal hero actions hidden and outside focus until original opening completes; free retained; direct €99 + VAT quarterly standard pack; other panels later as quiet inline text. This explicitly supersedes earlier immediate-CTA and choose-panel guidance."
+  },
+  "candidate": {
+    "branch": "preview/entry-clarity-20261126",
+    "head_at_review": "4889f6e2877b52391e9bfe6512adcf93551375e2",
+    "base_commit": "10f271af71d9e55e6366e213418bbeff8a5649dd",
+    "source_commit": "4889f6e2877b52391e9bfe6512adcf93551375e2",
+    "source_files": {
+      "app/hero-entrance.css": "8f86489066bf988ea76dcc1d76edf595ef81dbffc29f64e8b09723369a1d268d",
+      "app/landing-closing.css": "46b754a747ea1b9572f04a7ced5532216da144eb255666b8de81304310eca53e",
+      "components/site/SiteShell.tsx": "78926c44fabe206cf07ebca6af000dc93beb23bd646bbab36981342a99f62b6e",
+      "components/story/BusinessOffer.tsx": "b3b03e611e2613c37eb256945b4300fc61def740366dda341d3f1ecb4ba3d730",
+      "components/story/HeroKitCta.tsx": "179cdf512fd0786ed94217c5516db8ec1afe2c35dff8e134b81a61c45111e7dd",
+      "components/story/MethodJourney.tsx": "dc476cf236851838b5232aea4bb9c74fb8080ed5f9ab25c35798caddee908cdb",
+      "components/story/ScrollStory.tsx": "2055a840c52f4645c1f8a3c698d962e6839e7914e3aa222e93014259a383c09f",
+      "lib/site-content/entry-preview-copy.ts": "6e4f8ce15785197717f772fd507379bb8e62ec3d2e9268352274f5f0a80e8ad1"
+    },
+    "source_manifest_sha256": "285402f146efcfaf9f9208ba7fd18514c06cc5918caa62d861bd6d65f4ba9643",
+    "report_source_hashes_match_current": true,
+    "render_report_sha256": "8e3599f68b85f10f2f4e10a2316557cccf437f94ed490307559ba3ad4953a20b",
+    "nojs_recheck_report_sha256": "7300c54857c3ab44346fb1314d8c75b4e404a2dc11e15914c95be4f3b5422f90",
+    "build_manifest_sha256": "b77c64ec90c2ab93e7215e4eb7e17070f4ed72d81f9789bdfb1d50094a3574a4",
+    "built_file_count": 790,
+    "logo_sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+    "private_hosting_source_commit": "93749939bace21dbeae02f8810b52aed27740202"
+  },
+  "criteria": [
+    {
+      "criterion": "1. Normal opening visibility and focus gate",
+      "verdict": "PASS",
+      "evidence": "Six normal EN/ES320/390/1366 cases remain pending/watching with both actions visibility:hidden, all hit points false and direct focus rejected. Tab skips from the header trigger to the first chapter control; Shift+Tab returns to the header. Navigation focus and Escape do not reveal actions or skip the opening.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "2. Existing completion callback and original motion",
+      "verdict": "PASS",
+      "evidence": "The actual tracked callback produces reveal/arrival-complete; normal probes never force skip. Measured first-decoded-frame→reveal intervals are 2296.8–2321.1 ms. Original runner modules and HERO_ENTRANCE_RATE remain byte-identical, video playbackRate=1, and no new reveal timer was added. Existing fail-open fallback remains distinct from normal success. Both links become focusable and hit-testable after the reveal.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "3. Reduced motion, no JavaScript and real media failure",
+      "verdict": "PASS",
+      "evidence": "Six reduced-motion main cases, six JavaScript-disabled cases and six real runner-request-abort cases pass. Fallback checks use real conditions rather than assigning entry state. The six focused no-JS rechecks additionally verify visible opacity chains, pointer:auto, three true hit points per action and successful paid navigation after focus is blurred.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "4. Paid meaning, bilingual copy and compact fit",
+      "verdict": "PASS",
+      "evidence": "Start with the pack / Empieza con el pack plus €99 + VAT / quarter / 99 € + IVA / trimestre express the requested paid meaning in two single-line roles. Accessible labels state the full pack meaning and quarterly subscription. All twelve views retain 44px controls, Hanken 600 14px label and Hanken 400 13px detail; label/detail heights are 18/16px. No third action, wrapped third line, clipped text, overlap or smaller substitute type observed.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "5. Free, direct paid intent and separate other panels",
+      "verdict": "PASS",
+      "evidence": "Actual free clicks retain plan=free and upload return intent. Actual paid clicks go directly to locale signup?plan=quarterly; destination visibly presents 13 biomarkers, €99 + VAT per quarter and cancel anytime. Tests stop at account forms. Later other-panels links are semantic underlined inline anchors (border0/padding0/no SVG/no button role) leading to existing enhanced/pricing details, where comparison remains available.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "6. Preserved product/medical truth, examples and EVA design",
+      "verdict": "PASS",
+      "evidence": "No new medical claim is introduced. ApoB remains excluded from standard and included in enhanced; unconfirmed enhanced scope/count/price/frequency/timing/availability stay qualified, and full laboratory panel remains distinct. Alex remains 2.1 with original history and a visible problem bridge. Separate range remains 2.9, strict <3 lab and <1 lower relative-risk category on the original 0–5 geometry. Existing logo PNG hash, Hanken, analog artwork and actual media are retained; affected surfaces add no AI/biological-age launch promise.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "7. Exact rendered evidence and Impeccable type/spacing",
+      "verdict": "PASS",
+      "evidence": "Independent source/diff review plus own inspection of 33 named visual surfaces across EN/ES desktop/mobile, including final representative rechecks after the fallback correction. Current source matches both completed reports. The final24-case report has no page errors, network writes, external reads or missing files; browsers closed. Scoped changed-target Impeccable detector JSON is []. Settled selector contrast is 15.29:1 unselected and16.83:1 selected, including after switching.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "Updated existing private native Site",
+      "verdict": "PASS",
+      "evidence": "Closed by native_verification_closure: succeeded version3 receipt, exact UI/hosting source identity,12 actual-native profiles PASS,6 normal early gates observed, mounted calm-state captures, paid/other-panel journeys and48 exact logo responses.",
+      "smallest_fix": null
+    },
+    {
+      "criterion": "Physical, clinical and production backend readiness",
+      "verdict": "NOT VERIFIED",
+      "evidence": "Viewport emulation and fictional forms do not verify real devices/performance, sample collection, clinical validation, extraction/Score coverage algorithms, laboratory availability, real accounts, payments or orders.",
+      "smallest_fix": null
+    }
+  ],
+  "preserved_files": {
+    "components/story/RunnerArrival.tsx": {
+      "unchanged": true,
+      "sha256": "3cdceae1e5c81fbec52c751d331ae59cedb00682d6532cb29e762be7d825335a"
+    },
+    "components/story/TrackedRunner.tsx": {
+      "unchanged": true,
+      "sha256": "c299f9d79d616c2ccb4b906a29d1bec00603d76efa94477135dfe4e77a21353a"
+    },
+    "components/story/EvaFilm.tsx": {
+      "unchanged": true,
+      "sha256": "85db0a0862a42edd7003528610822f4ee566d8f7162562c15923d3303fba7a6f"
+    },
+    "components/story/AnalogType.tsx": {
+      "unchanged": true,
+      "sha256": "a2ced4ed4022fe8eb68f1db93a304162b88354c9e94a78bab57ddb71984aeb5f"
+    },
+    "lib/story-scroll-timing.ts": {
+      "unchanged": true,
+      "sha256": "3b1f1ef7774201cbbdc1edae5c4142068f74325de131eaed29dd68c387937034"
+    },
+    "lib/site-content/alex-story-copy.ts": {
+      "unchanged": true,
+      "sha256": "273e7a6c9ba6ca48b7667afe71294dc16ee40310549369727c960822e17cf56b"
+    },
+    "components/story/RangeProofSection.tsx": {
+      "unchanged": true,
+      "sha256": "a9fab7b5e76617d2d956a4dac1c43e9dd3793f990d5db951f1faad8a972175ff"
+    },
+    "lib/site-content/range-proof-copy.ts": {
+      "unchanged": true,
+      "sha256": "ee7e0466e0291260b2d3721134cab323faffdb54ed9e7567242e01c68fe5c7a0"
+    },
+    "components/story/range-proof-section.css": {
+      "unchanged": true,
+      "sha256": "ccd4e6349e4f2ca605e6d46d5355771fa7ad59c9da5f53bcb0847653d4ad1926"
+    },
+    "lib/site-content/panel-preview-copy.ts": {
+      "unchanged": true,
+      "sha256": "fc40920c7676bb835b9bcbceca3f84ca9f4005793ac4081dbec4e61cbd2724d8"
+    }
+  },
+  "screens_inspected": {
+    "en-320-motion-after.png": "f90274124032ad5e33fc5119cdb768f238edfb6f87179d800ccd01188a0f870c",
+    "en-320-calm-after.png": "a76d462d9f3d077658033777fdfdedd31236845b8961ea22b6612eaa21b24400",
+    "en-390-motion-after.png": "9c7a3bdb638596a4714189b3a3c3efd8ff41707a246d9117f8165a7c608c91b7",
+    "en-390-calm-after.png": "a5c84dd9886c33da5a041850ba2aacfe503e256cad53a4211ba234739be2329c",
+    "en-1366-motion-after.png": "6801ff731137cc4604176a01647af01c3853c47225d3396b6daf2f793834fa8a",
+    "en-1366-calm-after.png": "58ddc2732ee9cb8f1ab1da7cfe057da9666947ee1ac4e5838889b3fbc264f9aa",
+    "es-320-motion-after.png": "051dc93379df25d68f238a9053a32666c64ef6943a115b2897dd91596319b828",
+    "es-320-calm-after.png": "ca2a0bae7ca52fc972d3aa0ffd7f395eb27bdf5d804c7b4a825d513016029aaa",
+    "es-390-motion-after.png": "a16d17c179f13366d1efbd142f3b1cbb83b273909b448634bd232bd886131acd",
+    "es-390-calm-after.png": "310724d4ad54ce8a9edacc1d16eddf6baed3fde3c951e26f6684c2363f74285e",
+    "es-1366-motion-after.png": "0b763410f79b267d1ca6a50810ea15e6d8f6c2bddb534b4cf82d3b3a29d8b209",
+    "es-1366-calm-after.png": "54fc80ee1411cef39df6bc3bac9c23c5a3dc79ad90cbc40861022493c03040de",
+    "en-1366-motion-before.png": "dc572fad9f0668c140532aae6929f90c12da76b52a0e3e2fcd5fa52e5e29fd16",
+    "en-1366-motion-nav-focused-before.png": "424d8b7076b9dd8e4a7be27066ba517ac309b0b4fb5def0d0dc324dba30b126d",
+    "en-1366-motion-other-panels.png": "b86f3b94976e59495ea8d12c9f2257c75221ee4f6200c0f8b75b8b2d78f6b1fb",
+    "en-1366-motion-paid-destination.png": "52ddb79d4f6a0714ef9f74fdc14d1f24aee18dd0e0c9b188de9b829d473cfae9",
+    "en-1366-motion-free-destination.png": "082f68f35aeaf1b56479a43c9ef87765a9982b92ad1a3cca0731c59a0b4f81c2",
+    "en-1366-motion-other-panels-destination.png": "f89016842fe20b210738fdcf7fece6610ec4ff8eb2eb9449f083433e0339de9d",
+    "en-1366-motion-alex.png": "1ae421584641e39f96636b099eeb69525aa13639d168e375d97446d193e968be",
+    "en-1366-motion-range.png": "bf5f978ef3565639b038d93ed125afd539e179fb6962ea4ad639f20962e90ea0",
+    "en-1366-nojs-fallback.png": "8edd139a3d16f82998b95b9b384e7e747f52aaa18dc52f54934d95b8ff23e10a",
+    "en-1366-media-abort-fallback.png": "2c35cba322095f7fee82092f74c9a1341c04ca3c603d991d95f227d1a5af8094",
+    "es-320-motion-before.png": "d7348e4c4267607146e8d4ab599cbe279525f3c9591b211925a9b3ee95df4740",
+    "es-320-motion-nav-focused-before.png": "d74886add4986f07c2f2a9d859d0faf3ac84a60b248d4f922339bd26fda999e1",
+    "es-320-motion-other-panels.png": "b5cc2ef236247b608982e9d4530020e8940fbd38bf6418f3812ac286653e5860",
+    "es-320-motion-paid-destination.png": "e09980a77c7d979553b8e026199cdbced3da5ec17ec07a74ed8fe0df4a38d63d",
+    "es-320-motion-free-destination.png": "b0d8cd41930ff9cb77a024e85462efa508f7e6b660489b17cec42cee17c5c784",
+    "es-320-motion-other-panels-destination.png": "a4b5861b44c49517c0c8fe783efbc93f6cc399eb65a9c771aae52e7fd93fe317",
+    "es-320-motion-alex.png": "2b7acb868973f2e0d90049dbe92da7ad5762e011a23cc5e4b75bf5ccf09e4f27",
+    "es-320-motion-range.png": "e32f3a664ba655d14a65ae25249b1923136a2450e87be2c942856acb6ab4b2ec",
+    "es-320-nojs-fallback.png": "fbc5d81474904eb2074d59de1c4adc08145f92d491412843d8e3e19dba420857",
+    "es-320-media-abort-fallback.png": "6f52e46b594cfa2228c01cbfd29ce8939a818b182e3ff60fff3efa758c2ed9c5",
+    "en-320-motion-other-panels-destination.png": "4910d501df94dd462468c3e08ddfc40f80687a64f7256179e5c3dee0f285140e"
+  },
+  "browser_evidence": {
+    "main_profiles": 12,
+    "fallback_profiles": 12,
+    "full_report_passed": true,
+    "focused_post_blur_nojs_cases": 6,
+    "focused_post_blur_passed": true,
+    "normal_decoded_to_reveal_ms_range": [
+      2296.7999999998137,
+      2321.0999999996275
+    ],
+    "page_errors": [],
+    "network_writes": [],
+    "missing_files": [],
+    "external_reads": [],
+    "all_owned_browsers_closed": true
+  },
+  "resolved_findings": [
+    {
+      "finding": "No-JS actions were visible but could not be clicked in all six initial fallback cases.",
+      "initial_verdict": "BLOCK",
+      "evidence": "independent-observed-nojs-blocker.json",
+      "cause": "The important pointer-events:none gated selector had greater specificity than the original noscript important auto override.",
+      "correction": "Explicit higher-specificity noscript and reduced-motion pointer overrides for non-immediate reveal wrappers and descendants.",
+      "recheck": "Full24 PASS and all six after-blur no-JS cases PASS.",
+      "status": "RESOLVED"
+    },
+    {
+      "finding": "Other-panels selector screenshot initially captured intermediate background/text colors during its existing transition.",
+      "initial_verdict": "NOT VERIFIED for settled contrast",
+      "correction": "Evidence runner waits for the existing transition to settle and measures selected/unselected colors after switches; no pricing UI change.",
+      "recheck": "15.29/16.83 ratios and updated settled screenshots pass.",
+      "status": "RESOLVED"
+    },
+    {
+      "finding": "One desktop no-JS image initially appeared to omit the actions in a grouped image view.",
+      "correction": "Reopened the same image individually; visible actions confirmed, with raw expected-CTA pixels and six after-blur visibility/hit rechecks.",
+      "status": "NOT REPRODUCED; no product fix required"
+    }
+  ],
+  "smallest_mandatory_fix": null,
+  "residual_issues": [],
+  "limits": [
+    "Physical/production performance and clinical/backend capability not established",
+    "Agent PASS is not owner acceptance or production approval"
+  ],
+  "isolation": {
+    "main": "cdc71e660883a41c8b7c0dc696e61cf18b78c740",
+    "normal_explanation_preview": "39485db042574a40d2a2f814e3b1e466ab2fa7be",
+    "public_review": "Unchanged by this judge; latest known native70. No Sites calls made."
+  },
+  "native_verification_closure": {
+    "reviewed_utc": "2026-11-26T14:59:38.579341+00:00",
+    "verdict": "PASS",
+    "version": 3,
+    "ui_source_commit": "4889f6e2877b52391e9bfe6512adcf93551375e2",
+    "private_hosting_source_commit": "93749939bace21dbeae02f8810b52aed27740202",
+    "project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+    "deployment_id": "appgdep_6b0847ba06148191bdc3ae56528387eb",
+    "deployment_status": "succeeded",
+    "url": "https://eva-entry-private-261126.jdlagop.chatgpt.site",
+    "profiles": 12,
+    "all_returned_200": true,
+    "all_passed": true,
+    "normal_early_hidden_states_observed": 6,
+    "normal_callback_completion_cases": 6,
+    "calm_final_state_cases": 6,
+    "calm_capture_method": "Native helper waits for visible .calm-hero action, loaded/decoded static image, fonts and two frames before final reduced-motion measurements and capture.",
+    "geometry_instrumentation_correction": {
+      "valid": true,
+      "reason": "Measurement helper records DOMRect.x; t.left was nonexistent. t.x restores the original left-content-edge bound while keeping right-content-edge, one-line height, font, hit and geometry assertions unchanged. All48 initial recorded text roles passed the intended bounds independently; corrected native rerun now completes all12 profiles. No UI source change.",
+      "evidence": "independent-native-instrumentation-review.json; native-attempt1/native-qa.json retained by lead"
+    },
+    "flow_scope": "Native paid click reaches quarterly signup with 13/99+VAT quarterly/cancel-anytime terms. Native other-panels click reaches hydrated enhanced details and settled readable selector. Native free href retains free plan and upload return intent; actual free click/form rendering is covered by the exact local24-case suite, not asserted as a native click here.",
+    "minimum_settled_selector_text_contrast": 8.449219567394701,
+    "logo_responses_verified": 48,
+    "logo_sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+    "page_errors": [],
+    "writes": [],
+    "rsc_requests": [],
+    "external_requests": [],
+    "all_owned_browsers_closed": true,
+    "source_hashes_still_match": true,
+    "own_native_visuals": {
+      "native-en-1366-motion-hero-after.png": "6801ff731137cc4604176a01647af01c3853c47225d3396b6daf2f793834fa8a",
+      "native-en-1366-calm-hero-after.png": "58ddc2732ee9cb8f1ab1da7cfe057da9666947ee1ac4e5838889b3fbc264f9aa",
+      "native-es-320-motion-hero-after.png": "91d016a0b7d20052e05b3a2e635dea20cbef7ea704e7b2c34eaa53d10cf72235",
+      "native-es-320-calm-hero-after.png": "ca2a0bae7ca52fc972d3aa0ffd7f395eb27bdf5d804c7b4a825d513016029aaa",
+      "native-en-1366-motion-paid-standard-destination.png": "52ddb79d4f6a0714ef9f74fdc14d1f24aee18dd0e0c9b188de9b829d473cfae9",
+      "native-es-320-motion-paid-standard-destination.png": "e09980a77c7d979553b8e026199cdbced3da5ec17ec07a74ed8fe0df4a38d63d",
+      "native-en-1366-motion-other-panels.png": "c91b45f560f857120882e7160fe700316e3da514762bbeb569117e4925aaad3c",
+      "native-es-320-motion-other-panels.png": "f70d9f3c6dbf6fd2a6a348af802f690ee48b3968609b027210830b00a1acb24f",
+      "native-es-320-motion-comparison-enhanced.png": "0522d9f9b5ece0367c9d04000a54add7a04027833c001c9459ff6627adf823a4"
+    },
+    "native_report_sha256": "9ee22d6b93a469a7c12e0f9f7ddfa3b586a874df038065dbcf480dd7249b348e",
+    "receipt_sha256": "04ebefd213477ee589a6bd764a5249b398ec0cde65db59845ce26643914ee342",
+    "audience_evidence": {
+      "receipt": "owner-only",
+      "lead_final_record": {
+        "owner_role": true,
+        "allowed_users": 1,
+        "allowed_groups": 0,
+        "external_visitors": 0,
+        "anonymous_GET_status": 403
+      },
+      "note": "Lead owns final native source/audience checks; this judge read saved receipt and final QA data, with no new Sites call."
+    },
+    "smallest_mandatory_fix": null,
+    "remaining_limits": [
+      "Physical-device and production network/performance",
+      "Clinical validation, sample collection and report/Score algorithms",
+      "Production backend, real accounts, payments, orders and laboratory availability",
+      "Agent review is not owner acceptance or public release approval"
+    ],
+    "supersedes": "Earlier pending native validation for this iteration is closed by this final native review. Previous native instrumentation failures are preserved as a corrected test defect, not waived product failures."
+  }
+}

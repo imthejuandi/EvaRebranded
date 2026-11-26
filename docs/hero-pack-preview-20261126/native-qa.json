@@ -1,0 +1,6485 @@
+{
+  "scope": "Actual owner-only private Site v3; same-Site GET/HEAD/OPTIONS only. Secret stdin bearer used solely in same-Site dispatch header. No account creation, submission, uploads, orders, bookings or checkout confirmation. Viewport emulation, not physical devices.",
+  "version": 3,
+  "uiSourceCommit": "4889f6e2877b52391e9bfe6512adcf93551375e2",
+  "profiles": [
+    {
+      "id": "en-320-motion",
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "calm": false,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 1044,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "original-callback-reveal",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/en/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/en/pricing?panel=enhanced#elegir-panel",
+        "text": "Explore other panels",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/en/signup",
+        "plan": "quarterly",
+        "terms": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active."
+      },
+      "otherPanelsDestination": {
+        "path": "/en/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Standard at home",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€99 + VATper quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "per quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Enhanced at home",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Price to confirmterms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "terms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Full panel in a lab",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€499one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "en-320-calm",
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "calm": true,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 924,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 104.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 91.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 256.03125,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 249.96875,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "accessible-fallback-or-reduced-motion",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/en/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/en/pricing?panel=enhanced#elegir-panel",
+        "text": "Explore other panels",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/en/signup",
+        "plan": "quarterly",
+        "terms": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active."
+      },
+      "otherPanelsDestination": {
+        "path": "/en/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Standard at home",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€99 + VATper quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "per quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Enhanced at home",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Price to confirmterms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "terms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Full panel in a lab",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€499one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "en-390-motion",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "calm": false,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 836,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "original-callback-reveal",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/en/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/en/pricing?panel=enhanced#elegir-panel",
+        "text": "Explore other panels",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/en/signup",
+        "plan": "quarterly",
+        "terms": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active."
+      },
+      "otherPanelsDestination": {
+        "path": "/en/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Standard at home",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€99 + VATper quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "per quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Enhanced at home",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Price to confirmterms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "terms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Full panel in a lab",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€499one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "en-390-calm",
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "calm": true,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 685,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 82.40625,
+                "height": 18,
+                "right": 115.40625,
+                "bottom": 684,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 69.34375,
+                "height": 16,
+                "right": 102.34375,
+                "bottom": 700,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 120.03125,
+                "height": 18,
+                "right": 300.1875,
+                "bottom": 684,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 113.96875,
+                "height": 16,
+                "right": 294.125,
+                "bottom": 700,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "accessible-fallback-or-reduced-motion",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/en/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/en/pricing?panel=enhanced#elegir-panel",
+        "text": "Explore other panels",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/en/signup",
+        "plan": "quarterly",
+        "terms": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active."
+      },
+      "otherPanelsDestination": {
+        "path": "/en/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Standard at home",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€99 + VATper quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "per quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Enhanced at home",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Price to confirmterms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "terms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Full panel in a lab",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€499one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "en-1366-motion",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "calm": false,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 873,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "original-callback-reveal",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/en/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        }
+      ],
+      "otherPanels": {
+        "href": "/en/pricing?panel=enhanced#elegir-panel",
+        "text": "Explore other panels",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/en/signup",
+        "plan": "quarterly",
+        "terms": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active."
+      },
+      "otherPanelsDestination": {
+        "path": "/en/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Standard at home",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€99 + VATper quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "per quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Enhanced at home",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Price to confirmterms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "terms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Full panel in a lab",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€499one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "en-1366-calm",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "calm": true,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 1645,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free\nUpload labs",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 82.40625,
+                "height": 18,
+                "right": 141.40625,
+                "bottom": 755,
+                "text": "Start for free",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 69.34375,
+                "height": 16,
+                "right": 128.34375,
+                "bottom": 771,
+                "text": "Upload labs",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/en/signup?plan=quarterly",
+            "text": "Start with the pack\n€99 + VAT / quarter",
+            "accessibleLabel": "Start with the €99 + VAT pack. Quarterly subscription.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 120.03125,
+                "height": 18,
+                "right": 379.03125,
+                "bottom": 755,
+                "text": "Start with the pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 113.96875,
+                "height": 16,
+                "right": 372.96875,
+                "bottom": 771,
+                "text": "€99 + VAT / quarter",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "accessible-fallback-or-reduced-motion",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/en/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        }
+      ],
+      "otherPanels": {
+        "href": "/en/pricing?panel=enhanced#elegir-panel",
+        "text": "Explore other panels",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/en/signup",
+        "plan": "quarterly",
+        "terms": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active."
+      },
+      "otherPanelsDestination": {
+        "path": "/en/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Standard at home",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€99 + VATper quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "per quarter",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Enhanced at home",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Price to confirmterms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "terms to confirm",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Full panel in a lab",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "€499one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "one-time payment",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "es-320-motion",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "calm": false,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 893,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "original-callback-reveal",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/es/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/es/pricing?panel=enhanced#elegir-panel",
+        "text": "Ver otros paneles",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/es/signup",
+        "plan": "quarterly",
+        "terms": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa."
+      },
+      "otherPanelsDestination": {
+        "path": "/es/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Estándar en casa",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "99 € + IVApor trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "por trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Ampliado en casa",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Precio por confirmarcondiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "condiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Completo en laboratorio",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "499 €pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "es-320-calm",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "calm": true,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 779,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 320,
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 22,
+            "contentRight": 116,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 22,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 114.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 22,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 109.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 136,
+            "contentRight": 298,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 136,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 265.28125,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 136,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 259.484375,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 16,
+            "y": 713,
+            "width": 288,
+            "height": 48,
+            "right": 304,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "accessible-fallback-or-reduced-motion",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/es/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/es/pricing?panel=enhanced#elegir-panel",
+        "text": "Ver otros paneles",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/es/signup",
+        "plan": "quarterly",
+        "terms": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa."
+      },
+      "otherPanelsDestination": {
+        "path": "/es/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Estándar en casa",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "99 € + IVApor trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "por trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Ampliado en casa",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Precio por confirmarcondiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "condiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Completo en laboratorio",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "499 €pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "es-390-motion",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "calm": false,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 1235,
+      "first": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "original-callback-reveal",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/es/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/es/pricing?panel=enhanced#elegir-panel",
+        "text": "Ver otros paneles",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/es/signup",
+        "plan": "quarterly",
+        "terms": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa."
+      },
+      "otherPanelsDestination": {
+        "path": "/es/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Estándar en casa",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "99 € + IVApor trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "por trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Ampliado en casa",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Precio por confirmarcondiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "condiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Completo en laboratorio",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "499 €pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "es-390-calm",
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "calm": true,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 884,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 390,
+        "buttons": [
+          {
+            "x": 24,
+            "y": 661,
+            "width": 139.15625,
+            "height": 44,
+            "right": 163.15625,
+            "bottom": 705,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 33,
+            "contentRight": 154.15625,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 33,
+                "y": 666,
+                "width": 92.34375,
+                "height": 18,
+                "right": 125.34375,
+                "bottom": 684,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 33,
+                "y": 684,
+                "width": 87.3125,
+                "height": 16,
+                "right": 120.3125,
+                "bottom": 700,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 171.15625,
+            "y": 661,
+            "width": 194.828125,
+            "height": 44,
+            "right": 365.984375,
+            "bottom": 705,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 180.15625,
+            "contentRight": 356.984375,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 180.15625,
+                "y": 666,
+                "width": 129.28125,
+                "height": 18,
+                "right": 309.4375,
+                "bottom": 684,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 180.15625,
+                "y": 684,
+                "width": 123.484375,
+                "height": 16,
+                "right": 303.640625,
+                "bottom": 700,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 24,
+            "y": 713,
+            "width": 342,
+            "height": 48,
+            "right": 366,
+            "bottom": 761,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "accessible-fallback-or-reduced-motion",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/es/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "otherPanels": {
+        "href": "/es/pricing?panel=enhanced#elegir-panel",
+        "text": "Ver otros paneles",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/es/signup",
+        "plan": "quarterly",
+        "terms": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa."
+      },
+      "otherPanelsDestination": {
+        "path": "/es/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Estándar en casa",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "99 € + IVApor trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "por trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Ampliado en casa",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Precio por confirmarcondiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "condiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Completo en laboratorio",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "499 €pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "es-1366-motion",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "calm": false,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 799,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "OBSERVED",
+      "focusAttempts": [
+        {
+          "selector": "[data-entry-free]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        },
+        {
+          "selector": "[data-entry-buy]",
+          "active": false,
+          "outline": "none",
+          "width": "3px",
+          "entry": "watching"
+        }
+      ],
+      "afterNavigationFocus": {
+        "entry": "watching",
+        "arrival": "running",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "",
+            "accessibleLabel": null,
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "hidden",
+            "opacity": 0,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              false,
+              false,
+              false
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "tabTrace": [
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "BUTTON"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        },
+        {
+          "key": "Shift+Tab",
+          "entry": "watching",
+          "action": false,
+          "tag": "A"
+        }
+      ],
+      "after": {
+        "entry": "reveal",
+        "arrival": "complete",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "original-callback-reveal",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/es/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        }
+      ],
+      "otherPanels": {
+        "href": "/es/pricing?panel=enhanced#elegir-panel",
+        "text": "Ver otros paneles",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/es/signup",
+        "plan": "quarterly",
+        "terms": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa."
+      },
+      "otherPanelsDestination": {
+        "path": "/es/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Estándar en casa",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "99 € + IVApor trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "por trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Ampliado en casa",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Precio por confirmarcondiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "condiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Completo en laboratorio",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "499 €pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "es-1366-calm",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "calm": true,
+      "failures": [],
+      "status": 200,
+      "firstReadyMs": 952,
+      "first": {
+        "entry": "pending",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "nativePreCompletion": "NOT_APPLICABLE_REDUCED_MOTION",
+      "after": {
+        "entry": "skip",
+        "documentWidth": 1366,
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Empieza gratis\nSube analíticas",
+            "accessibleLabel": null,
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 59,
+            "contentRight": 221,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 59,
+                "y": 737,
+                "width": 92.34375,
+                "height": 18,
+                "right": 151.34375,
+                "bottom": 755,
+                "text": "Empieza gratis",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 59,
+                "y": 755,
+                "width": 87.3125,
+                "height": 16,
+                "right": 146.3125,
+                "bottom": 771,
+                "text": "Sube analíticas",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "href": "/es/signup?plan=quarterly",
+            "text": "Empieza con el pack\n99 € + IVA / trimestre",
+            "accessibleLabel": "Empieza con el pack de 99 € + IVA. Suscripción trimestral.",
+            "visibility": "visible",
+            "opacity": 1,
+            "inert": false,
+            "contentLeft": 259,
+            "contentRight": 461,
+            "hit": [
+              true,
+              true,
+              true
+            ],
+            "roles": [
+              {
+                "x": 259,
+                "y": 737,
+                "width": 129.28125,
+                "height": 18,
+                "right": 388.28125,
+                "bottom": 755,
+                "text": "Empieza con el pack",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "14px",
+                "weight": "600",
+                "lineHeight": 18.0012
+              },
+              {
+                "x": 259,
+                "y": 755,
+                "width": 123.484375,
+                "height": 16,
+                "right": 382.484375,
+                "bottom": 771,
+                "text": "99 € + IVA / trimestre",
+                "font": "\"EVA Hanken\", Arial, sans-serif",
+                "size": "13px",
+                "weight": "400",
+                "lineHeight": 16.0004
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "x": 48,
+            "y": 664,
+            "width": 280,
+            "height": 48,
+            "right": 328,
+            "bottom": 712,
+            "size": "16px",
+            "lineHeight": "24px"
+          }
+        ],
+        "fonts": {
+          "regular": true,
+          "semibold": true
+        }
+      },
+      "completionMode": "accessible-fallback-or-reduced-motion",
+      "postFocus": {
+        "free": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        },
+        "paid": {
+          "active": true,
+          "outline": "solid",
+          "width": "2px"
+        }
+      },
+      "freeDestination": {
+        "path": "/es/signup",
+        "plan": "free",
+        "redirect": "/es/upload"
+      },
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        }
+      ],
+      "otherPanels": {
+        "href": "/es/pricing?panel=enhanced#elegir-panel",
+        "text": "Ver otros paneles",
+        "tag": "A",
+        "display": "inline",
+        "size": "16px",
+        "decoration": "underline",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0)",
+        "border": "0px",
+        "role": null,
+        "svg": 0
+      },
+      "paidDestination": {
+        "path": "/es/signup",
+        "plan": "quarterly",
+        "terms": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa."
+      },
+      "otherPanelsDestination": {
+        "path": "/es/pricing",
+        "panel": "enhanced",
+        "hydrated": "true",
+        "selectorContrast": [
+          {
+            "panel": "standard",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Estándar en casa",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "99 € + IVApor trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "por trimestre",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          },
+          {
+            "panel": "enhanced",
+            "selected": "true",
+            "roles": [
+              {
+                "text": "Ampliado en casa",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "Precio por confirmarcondiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 16.827651516620634
+              },
+              {
+                "text": "condiciones por confirmar",
+                "color": "rgb(243, 240, 232)",
+                "background": [
+                  11,
+                  16,
+                  16
+                ],
+                "contrast": 10.877935593844095
+              }
+            ]
+          },
+          {
+            "panel": "full",
+            "selected": "false",
+            "roles": [
+              {
+                "text": "Completo en laboratorio",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "499 €pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 15.285391808888823
+              },
+              {
+                "text": "pago único",
+                "color": "rgb(23, 27, 24)",
+                "background": [
+                  243,
+                  240,
+                  232
+                ],
+                "contrast": 8.449219567394701
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "writes": [],
+  "externalRequests": [],
+  "logoResponses": [
+    {
+      "id": "en-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "en-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-390-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    },
+    {
+      "id": "es-1366-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+    }
+  ],
+  "allOwnedBrowsersClosed": true,
+  "nativeEarlyObserved": 6,
+  "nativeEarlyLimit": "Native arrival can complete before first CSS/font-ready observation; unobserved early states require the exact local candidate harness evidence and are not passed from this run.",
+  "passed": true
+}

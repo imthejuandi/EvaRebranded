@@ -172,5 +172,6 @@
     "lib/site-content/panel-preview-copy.ts": "fc40920c7676bb835b9bcbceca3f84ca9f4005793ac4081dbec4e61cbd2724d8",
     "lib/site-content/entry-preview-copy.ts": "ba335145e67be543343cbde220402d164c0c844b0274e2d6a847491f519906cf"
   },
-  "reviewer_closure": "Fresh independent judge passed the bounded final hosted private version 2 after focused hydration-fix review and actual native evidence."
+  "reviewer_closure": "Fresh independent judge passed the bounded final hosted private version 2 after focused hydration-fix review and actual native evidence.",
+  "superseded_hero_guidance": "Historical version2 first-paint actions are superseded by the delayed original-runner completion requirement; see docs/hero-pack-preview-qa.json for verified privateversion3. Other version2 scope remains preserved."
 }
