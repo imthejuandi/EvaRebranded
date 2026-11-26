@@ -4,7 +4,7 @@ import {useEffect,useMemo,useRef,useState} from 'react';
 import {usePreview} from '@/components/preview/PreviewProvider';
 import {AppPageHeader,AsyncState,EmptyState,StatusIndicator,SourceTag} from '@/components/preview/AppPrimitives';
 import {DotNumber} from '@/components/story/DotNumber';
-import {canReadReport,hasPaidAccess,reportReadiness} from '@/lib/preview/policy';
+import {canReadReport,reportReadiness} from '@/lib/preview/policy';
 import {dateLabel,numberLabel} from '@/lib/preview/fixtures';
 import type {Marker,MarkerStatus,Report,ServerZone} from '@/lib/preview/model';
 
@@ -89,7 +89,6 @@ export default function LabsPage({reportId}:{reportId?:string}){
   const report=reportId?reports.find(item=>item.id===reportId):reports.find(item=>item.status!=='archived');
   const readable=Boolean(canReadReport(report,state.profile.healthConsent)&&state.session&&state.deletionStatus!=='completed');
   const exportAccess=useRef({readable,id:report?.id});exportAccess.current={readable,id:report?.id};
-  const paid=hasPaidAccess(state);
   const readings=useMemo(()=>readable&&report?readingsForReport(state.markers,report):[],[readable,report,state.markers]);
   const historyObservations=useMemo(()=>report?previewHistoryObservations(state,report):[],[state,report]);
   const historyModels=useMemo(()=>report?readings.map(marker=>({marker,model:biomarkerHistory(historyObservations,marker.key,report.date,report.id)})):[],[historyObservations,readings,report]);
@@ -126,7 +125,7 @@ export default function LabsPage({reportId}:{reportId?:string}){
   if(report.status==='archived')return <div className="page-labs">{header}<EmptyState title={c.missing.archivedTitle} description={c.missing.archivedBody}><a className="labs-button" href="/es/labs/manage">{c.archive}<Arrow/></a></EmptyState></div>;
   if(reportReadiness(report)==='empty')return <div className="page-labs">{header}<ReportPicker reports={reports} current={report}/><EmptyState title="Este informe aún no contiene valores." description="Puedes consultar otro informe o añadir resultados."><a className="labs-button" href="/es/upload">{c.upload}<Arrow/></a></EmptyState></div>;
   if(!readable)return <div className="page-labs">{header}<ReportPicker reports={reports} current={report}/><PendingReport report={report} reports={reports}/></div>;
-  const hasAge=paid&&finite(report.biologicalAge),hasScore=paid&&finite(report.longevityScore);
+  const hasScore=finite(report.longevityScore);
 
   return <div className="page-labs">{header}<ReportPicker reports={reports} current={report}/>
     <div className="labs-report-spread">
@@ -144,11 +143,10 @@ export default function LabsPage({reportId}:{reportId?:string}){
       <p className="labs-panel-note">{view==='range'?c.panel.rangeDescription:c.changeNote}</p>{readings.length<report.markerKeys.length&&<p className="labs-panel-note">{c.panel.markerMissing}</p>}
     </section>
 
-    <details className="labs-estimate-disclosure"><summary>Estimaciones ilustrativas <span aria-hidden="true">+</span></summary><p>Estas cifras son datos ficticios de la demostración. No representan una evaluación de tu salud.</p>
-    <section className="labs-estimates" aria-label={c.estimates.eyebrow}>{paid?<><article><p className="eva-kicker">{c.estimates.age}</p><div className="labs-estimate-number">{hasAge?<><span>{numberLabel(report.biologicalAge!)}</span><small>{c.estimates.ageUnit}</small></>:<p className="labs-estimate-missing">{c.estimates.unavailable}</p>}</div><p>{c.estimates.ageBody}</p></article><article><p className="eva-kicker">{c.estimates.score}</p><div className="labs-estimate-number">{hasScore?<><span>{numberLabel(report.longevityScore!)}</span><small>{c.estimates.scoreUnit}</small></>:<p className="labs-estimate-missing">{c.estimates.unavailable}</p>}</div><p>{c.estimates.scoreBody}</p></article><a className="labs-estimate-method" href="/es/metodologia">{c.estimates.link}<Arrow/></a></>:<div className="labs-estimates-locked"><div><h2>{c.estimates.lockedTitle}</h2><p>{c.estimates.lockedBody}</p></div><a className="labs-text-link" href="/es/pricing">{c.estimates.lockedAction}<Arrow/></a></div>}</section>
-
+    <details className="labs-estimate-disclosure"><summary>EVA Score · ejemplo <span aria-hidden="true">+</span></summary><p>Solo se muestra si la lectura aporta suficientes datos compatibles. Esta cifra es un dato ficticio de la demostración, no una evaluación de tu salud.</p>
+    <section className="labs-estimates" aria-label="EVA Score de la lectura"><article><h2>EVA Score</h2><div className="labs-estimate-number">{hasScore?<><span>{numberLabel(report.longevityScore!)}</span><small>{c.estimates.scoreUnit}</small></>:<p className="labs-estimate-missing">No hay suficientes datos compatibles para mostrar EVA Score.</p>}</div><p>{c.estimates.scoreBody}</p></article></section>
     </details>
 
-    <section className="labs-next" aria-labelledby="labs-next-heading"><div><p className="eva-kicker">{c.next.eyebrow}</p><h2 id="labs-next-heading">{c.next.title}</h2></div><div className="labs-next-actions"><article><span className="labs-next-number">01</span><h3>{c.next.contextTitle}</h3><p>{c.next.contextBody}</p><a className="labs-text-link" href={`${reportPath(report.id)}/context`}>{c.next.contextAction}<Arrow/></a></article><article><span className="labs-next-number">02</span><h3>{c.next.aiTitle}</h3><p>{c.next.aiBody}</p><a className="labs-text-link" href={paid?`/es/eva-ai?report=${encodeURIComponent(report.id)}`:'/es/pricing'}>{paid?c.next.aiAction:c.next.aiLocked}<Arrow/></a></article></div><p className="labs-education-note">{c.next.note}</p></section>
+    <section className="labs-next" aria-labelledby="labs-next-heading"><div><p className="eva-kicker">{c.next.eyebrow}</p><h2 id="labs-next-heading">{c.next.title}</h2></div><div className="labs-next-actions"><article><span className="labs-next-number">01</span><h3>{c.next.contextTitle}</h3><p>{c.next.contextBody}</p><a className="labs-text-link" href={`${reportPath(report.id)}/context`}>{c.next.contextAction}<Arrow/></a></article></div><p className="labs-education-note">{c.next.note}</p></section>
   </div>;
 }

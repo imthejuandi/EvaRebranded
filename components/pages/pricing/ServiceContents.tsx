@@ -2,6 +2,7 @@
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useState } from 'react';
 import { kitInsightCopy } from '@/lib/site-content/kit-insight-copy';
+import {panelPreviewCopy} from '@/lib/site-content/panel-preview-copy';
 import type { PlanId } from './ServiceCalendar';
 /** Conceptual service still life. The photograph is not the commercial kit. */
 export default function ServiceContents({ plan }: {
@@ -10,6 +11,7 @@ export default function ServiceContents({ plan }: {
     const __site = useSiteLanguage();
     const [detail, setDetail] = useState(0);
     const markerCount = kitInsightCopy[__site.locale].markers.length;
+    const enhanced = panelPreviewCopy[__site.locale].plans[2];
     const details = [
         { label: 'En casa', title: 'Un espacio en tu día.', body: 'La recogida de muestra se realiza siguiendo las instrucciones del dispositivo. El kit incluye el envío de vuelta.' },
         { label: 'En el laboratorio', title: 'Una muestra, su análisis.', body: __site.locale === 'es' ? `El laboratorio analiza los ${markerCount} biomarcadores del kit inicial.` : `The lab measures the ${markerCount} biomarkers in your starting kit.` },
@@ -31,7 +33,7 @@ export default function ServiceContents({ plan }: {
     </div>
     <div className="service-scene-caption" aria-live="polite">
       <span className="service-scene-index">{__site.t(plan === 'quarterly' ? `0${detail + 1}` : '01')}</span>
-      <div><h3>{__site.t(plan === 'quarterly' ? details[detail].title : plan === 'free' ? 'Lo que ya tienes, reunido.' : 'Una extracción en laboratorio.')}</h3><p>{__site.t(plan === 'quarterly' ? details[detail].body : plan === 'free' ? 'Añade una analítica y conserva sus valores junto a la fecha y el documento original.' : 'Explora el alcance del panel y las condiciones de la visita antes de reservar. Esta vista previa no crea una cita.')}</p></div>
+      <div><h3>{__site.t(plan === 'enhanced' ? enhanced.name : plan === 'quarterly' ? details[detail].title : plan === 'free' ? 'Lo que ya tienes, reunido.' : 'Una extracción en laboratorio.')}</h3><p>{__site.t(plan === 'enhanced' ? enhanced.summary + ' ' + enhanced.foot : plan === 'quarterly' ? details[detail].body : plan === 'free' ? 'Añade una analítica y conserva sus valores junto a la fecha y el documento original.' : 'Explora el alcance del panel y las condiciones de la visita antes de reservar. Esta vista previa no crea una cita.')}</p></div>
     </div>
     {__site.t(plan === 'quarterly' && <div className="service-scene-nav" role="group" aria-label={__site.t("Explora qu\u00E9 incluye el servicio")}>{__site.t(details.map((item, index) => <button key={item.label} type="button" aria-pressed={detail === index} onClick={() => setDetail(index)}><span aria-hidden="true">{__site.t("0")}{__site.t(index + 1)}</span>{__site.t(item.label)}<i aria-hidden="true"/></button>))}</div>)}
   </div>;

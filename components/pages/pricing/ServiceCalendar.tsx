@@ -2,7 +2,8 @@
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { useId, useState, type CSSProperties } from 'react';
 import { EditorialReveal } from '@/components/engagement/EditorialReveal';
-export type PlanId = 'free' | 'quarterly' | 'full';
+import type {PreviewPanelId} from '@/lib/site-content/panel-preview-copy';
+export type PlanId = PreviewPanelId;
 type Inclusion = 'markers' | 'delivery' | 'report';
 type ServiceEvent = {
     kind: 'uploaded_record' | 'home_collection' | 'laboratory_collection';
@@ -10,7 +11,7 @@ type ServiceEvent = {
     label: string;
 };
 // Relative months illustrate the quarterly subscription without setting collection dates.
-export function serviceEvents(plan: PlanId): ServiceEvent[] {
+export function serviceEvents(plan: Exclude<PlanId, 'enhanced'>): ServiceEvent[] {
     if (plan === 'free')
         return [{ kind: 'uploaded_record', month: 0, label: 'Tu informe' }];
     if (plan === 'full')
@@ -43,7 +44,7 @@ const calendarCopy = {
 } as const;
 
 export default function ServiceCalendar({ plan, quarter, onQuarterChange, markers }: {
-    plan: PlanId;
+    plan: Exclude<PlanId, 'enhanced'>;
     quarter: number;
     onQuarterChange: (quarter: number) => void;
     markers: readonly string[];

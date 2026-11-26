@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "id": "en-1366-motion-judge-enhanced-viewport",
+      "documentWidth": 1366,
+      "viewport": 1366,
+      "selected": "Enhanced at-home panel\n\nPrice to confirm\nterms to confirm\n\nIncludes ApoB. Check all included biomarkers and terms before choosing.\n\nView enhanced panel details\n\nPrice, timing and availability to be confirmed. This preview does not accept orders.\n\nAn at-home option separate from the standard panel.\nIncludes ApoB.\nOther biomarkers and total count to be confirmed.\nCompare all options",
+      "activeElement": "BODY"
+    },
+    {
+      "id": "en-1366-calm-judge-enhanced-viewport",
+      "documentWidth": 1366,
+      "viewport": 1366,
+      "selected": "Enhanced at-home panel\n\nPrice to confirm\nterms to confirm\n\nIncludes ApoB. Check all included biomarkers and terms before choosing.\n\nView enhanced panel details\n\nPrice, timing and availability to be confirmed. This preview does not accept orders.\n\nAn at-home option separate from the standard panel.\nIncludes ApoB.\nOther biomarkers and total count to be confirmed.\nCompare all options",
+      "activeElement": "BODY"
+    },
+    {
+      "id": "es-320-motion-judge-enhanced-viewport",
+      "documentWidth": 320,
+      "viewport": 320,
+      "selected": "Panel ampliado en casa\n\nPrecio por confirmar\ncondiciones por confirmar\n\nIncluye ApoB. Consulta todos sus biomarcadores y condiciones antes de elegir.\n\nVer detalles del panel ampliado\n\nPrecio, plazos y disponibilidad por confirmar. Esta vista previa no admite pedidos.\n\nUna opción en casa distinta del panel estándar.\nIncluye ApoB.\nResto de biomarcadores y número total por confirmar.\nComparar todas las opciones",
+      "activeElement": "BODY"
+    },
+    {
+      "id": "es-320-calm-judge-enhanced-viewport",
+      "documentWidth": 320,
+      "viewport": 320,
+      "selected": "Panel ampliado en casa\n\nPrecio por confirmar\ncondiciones por confirmar\n\nIncluye ApoB. Consulta todos sus biomarcadores y condiciones antes de elegir.\n\nVer detalles del panel ampliado\n\nPrecio, plazos y disponibilidad por confirmar. Esta vista previa no admite pedidos.\n\nUna opción en casa distinta del panel estándar.\nIncluye ApoB.\nResto de biomarcadores y número total por confirmar.\nComparar todas las opciones",
+      "activeElement": "BODY"
+    }
+  ],
+  "missingFiles": [],
+  "networkWrites": [],
+  "allOwnedBrowsersClosed": true
+}

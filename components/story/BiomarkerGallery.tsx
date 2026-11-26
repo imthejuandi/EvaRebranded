@@ -5,6 +5,7 @@ import { useState } from 'react';
 import {ExplanationSetting} from './ExplanationSetting';
 import {GuidedResultStory} from './GuidedResultStory';
 import {alexStoryCopy} from '@/lib/site-content/alex-story-copy';
+import {entryPreviewCopy} from '@/lib/site-content/entry-preview-copy';
 import {ResultExplanation} from './ResultExplanation';
 import {type ExplanationLevel} from '@/lib/site-content/result-explanation-copy';
 import { businessLinks, specimens } from '@/lib/landing-content';
@@ -36,6 +37,7 @@ export function BiomarkerGallery({ calm = false }: {
     const max = Math.max(item.standard[1], item.eva[1], Number(value)) * 1.1;
     return <section id="biomarcadores" className={'biomarker-lab' + (calm ? ' bio-calm' : '')} aria-labelledby="markers-title" data-biomarker-view={view}>
   <div className="bio-layout">
+   <p className="bio-problem-bridge" data-result-problem-bridge>{entryPreviewCopy[__site.locale].bridge}</p>
    <GuidedResultStory calm={calm} uploadHref={__site.href(uploadHref)}/>
    <details className="sample-dashboard"><summary><span><strong>{storyCopy.explore}</strong><small>{storyCopy.exploreDetail}</small></span><Arrow direction="down"/></summary>
    <div className="bio-console" aria-label={__site.t("Demostraci\u00F3n de la interfaz de biomarcadores EVA")}>
@@ -60,7 +62,7 @@ export function BiomarkerGallery({ calm = false }: {
      <div id="bio-range-index" className="bio-range-index"><div className="bio-table-scroll" tabIndex={0} role="region" aria-label={__site.t("Tabla de intervalos de los cinco biomarcadores")}><table><caption>{__site.t("Lectura 04 \u00B7 Valores ilustrativos")}</caption><thead><tr><th scope="col">{__site.t("Biomarcador")}</th><th scope="col">{__site.t("Valor")}</th><th scope="col">{__site.t("Referencia")}</th><th scope="col">{__site.t("EVA")}</th></tr></thead><tbody>{specimens.map(marker => <tr key={marker.name}><th scope="row">{__site.t(marker.name)}<small>{__site.t(marker.unit)}</small></th><td>{__site.t(marker.value)}</td><td>{__site.t(marker.standard.join('–'))}</td><td>{__site.t(marker.eva.join('–'))}</td></tr>)}</tbody></table></div></div>
     </details>
    </div>
-   <div className="bio-report-caption"><span className="bio-demo-label"><i />{__site.t("Informe ilustrativo · Algunos marcadores no están en el kit de 13.")}</span><p className="illustration-note">{__site.t("Datos y recorrido ilustrativos. Los intervalos mostrados no son una recomendaci\u00F3n individual; su interpretaci\u00F3n depende del contexto de cada persona.")}</p></div>
+   <div className="bio-report-caption"><span className="bio-demo-label"><i />{entryPreviewCopy[__site.locale].panelNote}</span><p className="illustration-note">{__site.t("Datos y recorrido ilustrativos. Los intervalos mostrados no son una recomendaci\u00F3n individual; su interpretaci\u00F3n depende del contexto de cada persona.")}</p></div>
    </details>
   </div>
  </section>;

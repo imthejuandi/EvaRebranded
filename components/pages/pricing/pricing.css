@@ -407,3 +407,19 @@
 }
 .page-pricing .pricing-kit-price{flex-wrap:wrap;justify-content:flex-start;column-gap:12px;row-gap:6px}
 .page-pricing .pricing-kit-price>span:first-child{font-size:clamp(34px,4.5vw,64px);letter-spacing:-.055em;line-height:1.05;white-space:nowrap}
+
+/* Keep the free route separate while retaining the three-panel selector. */
+.page-pricing #elegir-panel,.page-pricing #panel-enhanced-details{scroll-margin-top:100px}
+.page-pricing .pricing-free-entry{justify-self:start;grid-column:1/-1;margin-top:20px;font-size:14px}
+.page-pricing .pricing-unconfirmed-price>span:first-child{font-size:clamp(30px,3.2vw,46px);line-height:1.1;letter-spacing:-.04em}
+.page-pricing .pricing-comparison{min-width:860px}
+.page-pricing .pricing-comparison thead th:first-child{width:25%}
+.page-pricing .pricing-selector-price{flex-wrap:wrap}
+@media(max-width:820px){
+ .page-pricing .pricing-plan-selector button{font-size:13px;line-height:1.4;padding-inline:10px}
+ .page-pricing .pricing-plan-selector .pricing-selector-price{font-size:16px;line-height:1.4}
+ .page-pricing .pricing-selector-price small{font-size:11px;line-height:1.4}
+ .page-pricing .pricing-free-entry{margin-top:4px}
+ .page-pricing .pricing-unconfirmed-price{grid-column:1/-1;grid-row:auto;margin:20px 0 0}
+ .page-pricing .pricing-unconfirmed-price~.pricing-plan-summary{grid-column:1/-1;margin-top:16px}
+}

@@ -1,0 +1,38 @@
+{
+  "components/story/RunnerArrival.tsx": {
+    "unchanged": true,
+    "sha256": "3cdceae1e5c81fbec52c751d331ae59cedb00682d6532cb29e762be7d825335a"
+  },
+  "components/story/TrackedRunner.tsx": {
+    "unchanged": true,
+    "sha256": "c299f9d79d616c2ccb4b906a29d1bec00603d76efa94477135dfe4e77a21353a"
+  },
+  "components/story/EvaFilm.tsx": {
+    "unchanged": true,
+    "sha256": "85db0a0862a42edd7003528610822f4ee566d8f7162562c15923d3303fba7a6f"
+  },
+  "components/story/AnalogType.tsx": {
+    "unchanged": true,
+    "sha256": "a2ced4ed4022fe8eb68f1db93a304162b88354c9e94a78bab57ddb71984aeb5f"
+  },
+  "lib/story-scroll-timing.ts": {
+    "unchanged": true,
+    "sha256": "3b1f1ef7774201cbbdc1edae5c4142068f74325de131eaed29dd68c387937034"
+  },
+  "lib/site-content/alex-story-copy.ts": {
+    "unchanged": true,
+    "sha256": "273e7a6c9ba6ca48b7667afe71294dc16ee40310549369727c960822e17cf56b"
+  },
+  "components/story/RangeProofSection.tsx": {
+    "unchanged": true,
+    "sha256": "a9fab7b5e76617d2d956a4dac1c43e9dd3793f990d5db951f1faad8a972175ff"
+  },
+  "lib/site-content/range-proof-copy.ts": {
+    "unchanged": true,
+    "sha256": "ee7e0466e0291260b2d3721134cab323faffdb54ed9e7567242e01c68fe5c7a0"
+  },
+  "components/story/range-proof-section.css": {
+    "unchanged": true,
+    "sha256": "ccd4e6349e4f2ca605e6d46d5355771fa7ad59c9da5f53bcb0847653d4ad1926"
+  }
+}

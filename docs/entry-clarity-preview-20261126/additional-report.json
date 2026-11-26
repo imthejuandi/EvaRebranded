@@ -1,0 +1,93 @@
+{
+  "checks": [
+    {
+      "name": "no-js-en-1366",
+      "passed": true,
+      "entry": "pending",
+      "buttons": [
+        {
+          "text": "Start for free\nUpload labs",
+          "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+          "hit": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "text": "Choose a panel\nView options",
+          "href": "/en/pricing?panel=standard#elegir-panel",
+          "hit": [
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "no-js-es-320",
+      "passed": true,
+      "entry": "pending",
+      "buttons": [
+        {
+          "text": "Empieza gratis\nSube analíticas",
+          "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+          "hit": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "text": "Elige un panel\nVer opciones",
+          "href": "/es/pricing?panel=standard#elegir-panel",
+          "hit": [
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "name": "keyboard-entry-during-arrival",
+      "passed": true,
+      "focus": {
+        "outline": "solid",
+        "width": "2px"
+      },
+      "entry": "watching"
+    },
+    {
+      "name": "original-runner-scroll",
+      "passed": true,
+      "before": "0",
+      "after": "120"
+    },
+    {
+      "name": "kit-13-markers-original-forward-reverse",
+      "passed": true,
+      "duration": "500"
+    },
+    {
+      "name": "Alex-explanation-controls-preserved",
+      "passed": true,
+      "value": "2.1"
+    },
+    {
+      "name": "free-fixture-score-not-paywalled",
+      "passed": true,
+      "score": "82",
+      "scope": "Fictional existing derived score only; no clinical coverage algorithm tested."
+    },
+    {
+      "name": "score-insufficient-data-fallback",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "networkWrites": [],
+  "passed": true,
+  "allOwnedBrowsersClosed": true
+}

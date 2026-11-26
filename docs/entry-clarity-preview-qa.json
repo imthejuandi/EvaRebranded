@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-26",
+  "status": "local_candidate_verified_private_publication_pending",
+  "baseline_commit": "cdc71e660883a41c8b7c0dc696e61cf18b78c740",
+  "branch": "preview/entry-clarity-20261126",
+  "canonical_review_version_unchanged": 70,
+  "other_preview_commit_unchanged": "39485db042574a40d2a2f814e3b1e466ab2fa7be",
+  "private_preview_project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+  "source_files": [
+    "app/globals.css",
+    "app/hero-entrance.css",
+    "app/hero-kit.css",
+    "components/pages/labs/LabsPage.tsx",
+    "components/pages/pricing/PricingPage.tsx",
+    "components/pages/pricing/ServiceCalendar.tsx",
+    "components/pages/pricing/ServiceContents.tsx",
+    "components/pages/pricing/pricing.css",
+    "components/preview/AppShell.tsx",
+    "components/site/SiteShell.tsx",
+    "components/story/BiomarkerGallery.tsx",
+    "components/story/BusinessOffer.tsx",
+    "components/story/EvaWordmark.tsx",
+    "components/story/HealthEditorial.tsx",
+    "components/story/HeroKitCta.tsx",
+    "components/story/MethodJourney.tsx",
+    "components/story/ScrollStory.tsx",
+    "components/story/guided-result-story.css"
+  ],
+  "local_checks": {
+    "TypeScript": "passed",
+    "build_routes": 113,
+    "profiles": 12,
+    "profiles_passed": true,
+    "additional_checks": 8,
+    "additional_passed": true,
+    "kit_scroll_contracts": "passed",
+    "network_writes": [],
+    "page_errors": [],
+    "browsers_closed": true
+  },
+  "mechanical_findings": {
+    "count": 2,
+    "classification": "Two pre-existing global font fallback/lifestyle warnings; no introduced role finding. Do not claim zero.",
+    "report": "docs/entry-clarity-preview-20261126/impeccable-detect.json"
+  },
+  "evidence_directory": "docs/entry-clarity-preview-20261126",
+  "source_hashes": {
+    "components/story/ScrollStory.tsx": "43cf31368ac02db726f096c6d15aae31bdeaca1cf56c8277d276a717ce554806",
+    "components/story/HeroKitCta.tsx": "6927819be993301c86f669d6519384d840cbeb3a7f90274855ff51e4aaa89703",
+    "components/story/EvaWordmark.tsx": "09f4e87b4dfc5071039c65c38e35e98349d9046d78ba74ec48ea1851b0fdca02",
+    "app/hero-entrance.css": "70098f6a0fd4e79c2d3c3f950e9320c3af28dcfebf213e4af0a48cd7e096a57d",
+    "app/hero-kit.css": "7d6040bc79f25cb3516fd978bcc34b53060e1701e90a8d128311d26c0c31dbc2",
+    "components/pages/pricing/PricingPage.tsx": "2c7d265c89bfaf3beb74bd6466238904747b5fc4fda98e1caa00e61e2e932a64",
+    "lib/site-content/panel-preview-copy.ts": "fc40920c7676bb835b9bcbceca3f84ca9f4005793ac4081dbec4e61cbd2724d8",
+    "lib/site-content/entry-preview-copy.ts": "ba335145e67be543343cbde220402d164c0c844b0274e2d6a847491f519906cf"
+  },
+  "private_native_receipt": null,
+  "production_changes": false
+}

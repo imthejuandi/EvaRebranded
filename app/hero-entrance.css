@@ -1,10 +1,11 @@
 /* A single entrance, separate from the reversible scroll composition.
    The runner's final tracked label cues the rest; opacity/transform only. */
-.hero-entrance[data-hero-entrance="pending"] [data-hero-reveal],
-.hero-entrance[data-hero-entrance="watching"] [data-hero-reveal]{opacity:0}
-.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal],
-.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal] *{pointer-events:none!important}
-.hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal]{animation:eva-hero-arrive calc(.85s / var(--hero-entrance-rate)) cubic-bezier(.22,1,.36,1) both}
+.hero-entrance[data-hero-entrance="pending"] [data-hero-reveal]:not([data-hero-immediate]),
+.hero-entrance[data-hero-entrance="watching"] [data-hero-reveal]:not([data-hero-immediate]){opacity:0}
+.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal]:not([data-hero-immediate]),
+.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal]:not([data-hero-immediate]) *{pointer-events:none!important}
+.hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal]:not([data-hero-immediate]){animation:eva-hero-arrive calc(.85s / var(--hero-entrance-rate)) cubic-bezier(.22,1,.36,1) both}
+.hero-entrance [data-hero-immediate]{opacity:1;animation:none;pointer-events:auto}
 .hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal="action"]{animation-delay:calc(.1s / var(--hero-entrance-rate))}
 .hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal="navigation"]{animation-delay:calc(.16s / var(--hero-entrance-rate))}
 .hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal="controls"]{animation-delay:calc(.22s / var(--hero-entrance-rate))}

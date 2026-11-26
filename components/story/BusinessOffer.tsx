@@ -5,6 +5,7 @@ import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import {businessLinks} from '@/lib/landing-content';
 import {flowHref} from '@/lib/preview/policy';
 import {closingCopy} from '@/lib/site-content/closing-copy';
+import {entryPreviewCopy} from '@/lib/site-content/entry-preview-copy';
 import {Arrow} from './Arrow';
 
 export function BusinessOffer() {
@@ -21,6 +22,7 @@ export function BusinessOffer() {
       <div className="offer-report-entry" data-offer-free>
         <h3>{c.free.heading}</h3>
         <p id="free-report-details" className="offer-free-body">{c.free.body}</p>
+        <p className="offer-free-body" data-free-score-qualification>{entryPreviewCopy[locale].score}</p>
         <a className="primary" href={href(uploadHref)} aria-describedby="free-report-details" data-offer-upload>{c.free.action}<Arrow/></a>
         <p className="offer-account-note">{c.free.note}</p>
       </div>
@@ -32,7 +34,7 @@ export function BusinessOffer() {
       </div>
       <p>{c.kit.summary}</p>
       <ul>{c.kit.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>
-      <a className="text-link offer-kit-action" href={href(businessLinks.signup + '?plan=quarterly')} data-offer-kit-action>{c.kit.action}<Arrow/></a>
+      <a className="text-link offer-kit-action" href={href(businessLinks.pricing + '?panel=standard#elegir-panel')} data-offer-kit-action>{c.kit.action}<Arrow/></a>
       <p className="offer-cancel-note">{kit.cancelAnytime}</p>
     </div>
     <div className="upload-offer offer-panel-details">

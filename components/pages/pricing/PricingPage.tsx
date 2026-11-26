@@ -1,9 +1,10 @@
 'use client';
-import {OfferUnderstanding} from '@/components/site/RestoredContent';
+import {PanelOfferUnderstanding} from './PanelOfferUnderstanding';
 import {useSiteLanguage} from '@/components/site/SiteLanguage';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {starterSubscription} from '@/lib/site-content/starter-subscription';
 import {uploadAllowance} from '@/lib/site-content/upload-allowance';
+import {panelPreviewCopy, previewPanelFromQuery, previewPanelQuery} from '@/lib/site-content/panel-preview-copy';
 import type {SiteLocale} from '@/lib/site-language';
 import {kitInsightCopy} from '@/lib/site-content/kit-insight-copy';
 import {sampleMarkers} from '@/lib/preview/fixtures';
@@ -17,48 +18,22 @@ function pricingCopyFor(locale: SiteLocale) {
     return {
         eyebrow: 'PRECIOS / TRES FORMAS DE EMPEZAR',
         title: ['Elige cómo', 'quieres empezar.'],
-        intro: 'Con resultados que ya tienes o con una nueva recogida de muestra. Compara qué incluye cada opción.',
-        selectLabel: 'Elige una forma de empezar',
-        plans: [
-            { id: 'free' as PlanId, label: 'Tus resultados', name: 'Tus resultados', price: '0', cadence: 'sin suscripción', summary: uploads.free, includes: ['Consulta tus informes originales.', 'Valores, unidades y fecha en un mismo lugar.', 'Recorrido de ejemplo disponible en esta vista previa.'], action: 'Subir una analítica', href: '/es/upload', foot: 'Gratis. Sin tarjeta de crédito.', art: 'TU PUNTO DE PARTIDA', artDetail: 'La lectura que ya tienes.' },
-            { id: 'quarterly' as PlanId, label: 'Kit en casa', name: 'Suscripción al kit en casa', price: starterSubscription.es.price, cadence: 'por trimestre', summary: 'Tu primera analítica establece tu punto de partida. Las siguientes te ayudan a ver qué ha cambiado.', includes: ['13 biomarcadores y recogida en casa con Tasso+.', 'Kit y envío en ambas direcciones incluidos.', 'Informe y comparación de resultados.', uploads.subscribed], action: 'Elegir la suscripción', href: '/es/signup?plan=quarterly', foot: starterSubscription.es.cancelAnytime, art: 'TU KIT INICIAL', artDetail: '13 biomarcadores.' },
-            { id: 'full' as PlanId, label: 'En laboratorio', name: 'Panel en laboratorio', price: '499', cadence: 'pago único', summary: 'Una extracción en laboratorio para el panel que hayas elegido.', includes: ['Extracción clínica en laboratorio asociado.', 'Interpretación e informe EVA completos.', 'Opción de añadir seguimiento trimestral después.', uploads.labYear], action: 'Elegir el panel de laboratorio', href: '/es/signup?plan=full', foot: 'Confirma el alcance del panel antes de reservar.', art: 'AMPLÍA LA PERSPECTIVA', artDetail: 'Una extracción en laboratorio.' },
-        ],
+        intro: panelPreviewCopy[locale].intro,
+        selectLabel: panelPreviewCopy[locale].selectLabel,
+        plans: panelPreviewCopy[locale].plans,
         rhythm: { title: 'Conocer. Comparar. Continuar.', description: 'Una lectura sitúa tu punto de partida. Las siguientes ayudan a observar tu evolución.', labels: ['Primera lectura', 'A los 3 meses', 'A los 6 meses', 'A los 9 meses'], previous: 'Lectura anterior', next: 'Siguiente lectura', unit: 'biomarcadores por lectura', control: 'Explora las cuatro lecturas de un año' },
         comparison: {
             eyebrow: '01 / TODO, LADO A LADO', title: 'El detalle también importa.', description: 'Compara el precio, la frecuencia y lo que incluye cada opción.',
             included: 'Incluido', unavailable: 'No incluido',
-            groups: [
-                { title: 'Pruebas', rows: [
-                        { label: 'Valores y unidades del informe', cells: [true, true, true] },
-                        { label: 'Informes que puedes subir', cells: [uploads.freeShort, 'Sin límite con la suscripción activa', 'Sin límite durante un año desde la compra'] },
-                        { label: 'Kit para recogida en casa', cells: [false, true, false] },
-                        { label: 'Extracción en laboratorio asociado', cells: [false, false, true] },
-                        { label: 'Biomarcadores analizados', cells: ['Los de tu informe', String(kitInsightCopy.es.markers.length), 'Según panel'] },
-                        { label: 'Cadencia', cells: ['Cuando tú decidas', 'Cada trimestre', 'Una extracción'] },
-                    ] },
-                { title: 'Interpretación', rows: [
-                        { label: 'Edad biológica estimada', cells: ['Por confirmar', 'Por confirmar', 'Por confirmar'] },
-                        { label: 'EVA AI', cells: [false, 'Demostración', 'Demostración'] },
-                        { label: 'Lectura descriptiva del informe', cells: [true, true, true] },
-                        { label: 'Seguimiento trimestral', cells: [false, true, false] },
-                        { label: 'Datos de wearables', cells: [false, 'Importación de ejemplo', 'Importación de ejemplo'] },
-                    ] },
-                { title: 'Flexibilidad', rows: [
-                        { label: 'Cambiar a un panel especializado', cells: [false, 'Consulta condiciones', false] },
-                        { label: 'Añadir paneles especializados', cells: [false, 'Con presupuesto', 'Con presupuesto'] },
-                        { label: 'Cancelar la suscripción', cells: ['No aplica', 'En cualquier momento', 'No aplica'] },
-                        { label: 'Exportar y conservar tus datos', cells: [true, true, true] },
-                    ] },
-            ],
-            note: 'La disponibilidad de las estimaciones depende de los datos necesarios. El alcance del panel completo y las condiciones de los paneles especializados se confirman antes de contratar.',
+            groups: panelPreviewCopy[locale].groups,
+            note: panelPreviewCopy[locale].comparisonNote,
         },
-        process: { eyebrow: '02 / DE TU CASA A TUS RESULTADOS', title: 'Un proceso sencillo.', steps: [
+        process: { eyebrow: '02 / DE TU CASA A TUS RESULTADOS', title: panelPreviewCopy[locale].standardProcessTitle, steps: [
                 { number: '01', title: 'Pide tu kit', body: 'Explora EVA Trimestral y consulta la disponibilidad de envío a tu dirección.', detail: 'ENVÍO INCLUIDO' },
                 { number: '02', title: 'Recoge y devuelve', body: 'Recoge la muestra en casa siguiendo las instrucciones de Tasso+. Utiliza el sobre prepagado para enviarla al laboratorio.', detail: 'RECOGIDA EN CASA' },
                 { number: '03', title: 'Lee con contexto', body: 'Consulta los valores, las unidades y la fecha de tu informe.', detail: 'ANÁLISIS EN LABORATORIO' },
             ], timing: 'Los plazos de envío y de análisis se confirmarán antes de contratar. Esta vista previa muestra el recorrido de la muestra.', link: 'Ver el método completo' },
-        report: { title: ['Los números,', 'en su lugar.'], body: 'Tu informe reúne valores, unidades y contexto. Puedes volver a cada lectura para comparar lo que ha cambiado.', badge: 'INFORME DE EJEMPLO', labels: ['Biomarcador', 'Resultado', 'Lectura de ejemplo'], detail: 'Las lecturas se pueden comparar sin atribuir un cambio a un hábito concreto. EVA AI aporta explicaciones educativas para ayudarte a entender el informe.', action: 'Explorar un informe de ejemplo' },
+        report: { title: ['Los números,', 'en su lugar.'], body: 'Tu informe reúne valores, unidades y contexto. Puedes volver a cada lectura para comparar lo que ha cambiado.', badge: 'INFORME DE EJEMPLO', labels: ['Biomarcador', 'Resultado', 'Lectura de ejemplo'], detail: panelPreviewCopy[locale].reportDetail, action: 'Explorar un informe de ejemplo' },
         specialty: { eyebrow: '05 / CUANDO QUIERAS PROFUNDIZAR', title: 'Una pregunta más concreta.', intro: 'Explora las áreas del catálogo de ejemplo y consulta la disponibilidad, el alcance y el precio de cada panel.', action: 'Solicitar presupuesto', items: [
                 { id: 'hormonal', title: 'Hormonal', copy: 'Hormonas sexuales, cortisol y DHEA-S.' },
                 { id: 'cardiovascular', title: 'Cardiovascular', copy: 'Subfracciones lipídicas, ApoB, Lp(a) y marcadores inflamatorios.' },
@@ -68,15 +43,15 @@ function pricingCopyFor(locale: SiteLocale) {
                 { id: 'hepatic', title: 'Hepático', copy: 'ALT, AST, GGT, bilirrubina y albúmina.' },
             ] },
         terms: { eyebrow: '06 / CON LAS CONDICIONES CLARAS', title: 'Tú decides cómo seguir.', items: [
-                { title: 'Suscripción trimestral.', body: 'La suscripción se renueva cada tres meses. Puedes cancelarla en cualquier momento para detener las próximas renovaciones.', link: 'Leer las condiciones', href: '/es/legal/terms' },
+                { title: panelPreviewCopy[locale].standardSubscriptionTitle, body: 'La suscripción se renueva cada tres meses. Puedes cancelarla en cualquier momento para detener las próximas renovaciones.', link: 'Leer las condiciones', href: '/es/legal/terms' },
                 { title: 'Tus datos siguen siendo tuyos.', body: 'Puedes solicitar su exportación o eliminación. Consulta cómo se almacenan, quién los procesa y cómo ejercer tus derechos.', link: 'Cómo tratamos tus datos', href: '/es/legal/privacy' },
-                { title: 'Qué incluye la cuota', body: 'El precio incluye el análisis de los 13 biomarcadores, el kit de recogida en casa y los envíos de ida y vuelta.', link: 'Volver a comparar', href: '#comparar-planes' },
+                { title: panelPreviewCopy[locale].standardTermsTitle, body: 'El precio incluye el análisis de los 13 biomarcadores, el kit de recogida en casa y los envíos de ida y vuelta.', link: 'Volver a comparar', href: '#comparar-planes' },
             ] },
         founder: { quote: 'EVA es el servicio que hubiera querido cuando empecé mi propio camino de salud preventiva: uno que no solo te entrega datos, sino que te enseña qué significan y qué hacer con ellos.', name: 'Juan Diego Lago', role: 'Fundador y CEO', action: 'La historia de EVA' },
         faq: { eyebrow: '07 / ANTES DE EMPEZAR', title: 'Tus preguntas, con espacio.', label: 'Categorías de preguntas frecuentes', categories: [{ id: 'pricing' as FAQCategory, label: 'Precios' }, { id: 'testing' as FAQCategory, label: 'Pruebas' }, { id: 'results' as FAQCategory, label: 'Resultados' }, { id: 'data' as FAQCategory, label: 'Datos y privacidad' }], items: [
                 { category: 'pricing', question: '¿Por qué repetir la analítica?', answer: 'La primera lectura establece una referencia personal. El ejercicio reciente o una enfermedad pueden influir en algunos valores. Comparar muestras tomadas en condiciones similares ayuda a distinguir un cambio puntual de una tendencia. La frecuencia adecuada depende del marcador y de tu salud.' },
-                { category: 'pricing', question: '¿Qué incluye este plan?', answer: 'Cada trimestre recibes un kit Tasso+ para recoger la muestra en casa. Incluye el análisis de 13 biomarcadores, el envío de ida y vuelta y el informe con tus resultados.' },
-                { category: 'pricing', question: '¿Cuándo puedo cancelar?', answer: 'Puedes cancelar en cualquier momento para detener las próximas renovaciones trimestrales.' },
+                { category: 'pricing', question: panelPreviewCopy[locale].standardFaqQuestion, answer: 'Cada trimestre recibes un kit Tasso+ para recoger la muestra en casa. Incluye el análisis de 13 biomarcadores, el envío de ida y vuelta y el informe con tus resultados.' },
+                { category: 'pricing', question: panelPreviewCopy[locale].standardCancellationQuestion, answer: 'Puedes cancelar en cualquier momento para detener las próximas renovaciones trimestrales.' },
                 { category: 'testing', question: '¿Cómo funciona el kit de recogida en casa?', answer: 'El dispositivo recoge una pequeña muestra de sangre capilar desde el brazo. La información original describe una micro-lanceta y un sistema de vacío, sin jeringa ni extracción venosa. Sigue siempre las instrucciones incluidas con tu dispositivo.' },
                 { category: 'testing', question: '¿Cómo envío la muestra al laboratorio?', answer: 'Sigue las instrucciones de retorno incluidas en el kit. Allí encontrarás cómo preparar la muestra y entregarla al transportista.' },
                 { category: 'testing', question: '¿Cómo interpreto un resultado señalado?', answer: 'Consulta el informe del laboratorio y sus intervalos de referencia junto a un profesional sanitario. Las etiquetas de esta demostración son ilustrativas. EVA ofrece información educativa y no sustituye el diagnóstico ni la atención de un profesional sanitario.' },
@@ -104,36 +79,55 @@ export default function PricingPage() {
     const __site = useSiteLanguage();
     const c = pricingCopy[__site.locale];
     const subscription = starterSubscription[__site.locale];
+    const panels = panelPreviewCopy[__site.locale];
     const [plan, setPlan] = useState<PlanId>('quarterly'), [quarter, setQuarter] = useState(0), [faqCategory, setFaqCategory] = useState<FAQCategory>('pricing'), [marker, setMarker] = useState(0);
+    useEffect(() => {
+        const syncPanel = () => {
+            setPlan(previewPanelFromQuery(new URLSearchParams(window.location.search).get('panel')));
+            setQuarter(0);
+        };
+        syncPanel();
+        window.addEventListener('popstate', syncPanel);
+        return () => window.removeEventListener('popstate', syncPanel);
+    }, []);
+    const choosePanel = (nextPlan: PlanId) => {
+        setPlan(nextPlan);
+        setQuarter(0);
+        const url = new URL(window.location.href);
+        url.searchParams.set('panel', previewPanelQuery(nextPlan));
+        url.hash = 'elegir-panel';
+        window.history.replaceState(window.history.state, '', url);
+        window.dispatchEvent(new PopStateEvent('popstate'));
+    };
     const current = c.plans.find(item => item.id === plan)!;
-    const priceOf = (item: typeof current) => item.id === 'quarterly' ? subscription.price :
+    const priceOf = (item: typeof current) => item.price === null ? panels.priceToConfirm : item.id === 'quarterly' ? subscription.price :
         new Intl.NumberFormat(__site.locale, {style: 'currency', currency: 'EUR', maximumFractionDigits: 0}).format(Number(item.price));
-    const priceSummary = (item: typeof current) => item.id === 'quarterly' ? subscription.pricePerQuarter :
+    const priceSummary = (item: typeof current) => item.price === null ? panels.priceToConfirm : item.id === 'quarterly' ? subscription.pricePerQuarter :
         [priceOf(item), __site.t(item.cadence)].join(' · ');
     const kit = kitInsightCopy[__site.locale];
     const markerGroup = kit.groups.find(group => group.markers.some(index => index === marker));
     const english = __site.locale === 'en';
-    return <div className="page-pricing">
+    return <div className="page-pricing" data-selected-panel={previewPanelQuery(plan)}>
     <EditorialReveal as="section" className="pricing-hero eva-inner" aria-labelledby="pricing-title">
-      <div className="pricing-intro"><p className="eva-kicker">{__site.t("Tres formas de empezar")}</p><h1 id="pricing-title" data-editorial-reveal>{__site.t(c.title.join(' '))}</h1><p>{__site.t(c.intro)}</p></div>
-      <p className="pricing-preview-note">{__site.t("Vista previa. Puedes explorar las opciones sin realizar un pago.")}</p>
-      <div className="pricing-plan-selector" role="group" aria-label={__site.t(c.selectLabel)}>{__site.t(c.plans.map((item) => <button key={item.id} type="button" aria-pressed={plan === item.id} onClick={() => { setPlan(item.id); setQuarter(0); }}><span>{__site.t(item.label)}</span><span className="pricing-selector-price">{priceOf(item)}<small>{__site.t(item.cadence)}</small></span><span className="pricing-selector-dot" aria-hidden="true"/></button>))}</div>
+      <div className="pricing-intro"><p className="eva-kicker">{panels.eyebrow}</p><h1 id="pricing-title" data-editorial-reveal>{__site.t(c.title.join(' '))}</h1><p>{c.intro}</p><a className="pricing-line-link pricing-free-entry" href={__site.href(c.plans[0].href)}>{c.plans[0].action}<Arrow /></a></div>
+      <p className="pricing-preview-note">{panels.preview}</p>
+      <div id="elegir-panel" className="pricing-plan-selector" role="group" tabIndex={-1} aria-label={__site.t(c.selectLabel)}>{__site.t(c.plans.filter(item => item.id !== 'free').map((item) => <button key={item.id} type="button" data-panel={previewPanelQuery(item.id)} aria-pressed={plan === item.id} onClick={() => choosePanel(item.id)}><span>{__site.t(item.label)}</span><span className="pricing-selector-price">{priceOf(item)}<small>{__site.t(item.cadence)}</small></span><span className="pricing-selector-dot" aria-hidden="true"/></button>))}</div>
       <EditorialReveal className="pricing-selected-plan" replayKey={plan}>
         <div className="pricing-plan-topline"><h2>{__site.t(current.name)}</h2></div>
 
-        <p className={'pricing-selected-price' + (plan === 'quarterly' ? ' pricing-kit-price' : '')}><span>{priceOf(current)}</span><span>{__site.t(current.cadence)}</span></p>
+        <p className={'pricing-selected-price' + (plan === 'quarterly' ? ' pricing-kit-price' : plan === 'enhanced' ? ' pricing-unconfirmed-price' : '')}><span>{priceOf(current)}</span><span>{__site.t(current.cadence)}</span></p>
         <p className="pricing-plan-summary" data-editorial-reveal>{__site.t(current.summary)}</p>
         <a className="pricing-action" href={__site.href(current.href)}>{__site.t(current.action)}<Arrow /></a><p className="pricing-plan-footnote">{plan === 'quarterly' ? subscription.cancelAnytime : __site.t(current.foot)}</p>
         <ul className="pricing-inclusions" data-editorial-reveal>{__site.t(current.includes.map(text => <li key={text}>{__site.t(text)}</li>))}</ul>
-        <a className="pricing-line-link pricing-compare-link" href={__site.href("#comparar-planes")}>{__site.t(c.ui.comparison)}<Arrow /></a>
+        <a className="pricing-line-link pricing-compare-link" href={__site.href("#comparar-planes")}>{panels.comparisonAction}<Arrow /></a>
       </EditorialReveal>
       <ServiceContents plan={plan}/>
     </EditorialReveal>
 
-    <OfferUnderstanding />
-    <RhythmTheatre plan={plan}/><section className="pricing-rhythm-section eva-inner" aria-labelledby="pricing-rhythm-heading"><div className="pricing-rhythm-copy"><p className="eva-kicker">{__site.t("A TU RITMO")}</p><h2 id="pricing-rhythm-heading">{__site.t(c.rhythm.title)}</h2><p>{__site.t(c.rhythm.description)}</p></div><ServiceCalendar key={plan} plan={plan} quarter={quarter} onQuarterChange={setQuarter} markers={kit.markers}/></section>
+    <PanelOfferUnderstanding />
+    {plan !== 'enhanced' && <RhythmTheatre plan={plan}/>}<section className="pricing-rhythm-section eva-inner" aria-labelledby="pricing-rhythm-heading"><div className="pricing-rhythm-copy"><p className="eva-kicker">{__site.t("A TU RITMO")}</p><h2 id="pricing-rhythm-heading">{plan === 'enhanced' ? panels.enhancedRhythmTitle : __site.t(c.rhythm.title)}</h2><p>{plan === 'enhanced' ? panels.enhancedRhythmBody : __site.t(c.rhythm.description)}</p></div>{plan === 'enhanced' ? <div className="service-calendar"><div className="service-inclusion-lens"><h3>{panels.plans[2].name}</h3><p>{panels.plans[2].summary}</p><p className="pricing-note">{panels.plans[2].foot}</p></div></div> : <ServiceCalendar key={plan} plan={plan} quarter={quarter} onQuarterChange={setQuarter} markers={kit.markers}/>} </section>
 
-    <EditorialReveal as="section" className="pricing-section eva-inner" id="comparar-planes" aria-labelledby="pricing-comparison-heading"><div className="pricing-section-head"><p className="eva-kicker">{__site.t(c.comparison.eyebrow)}</p><div><h2 data-editorial-reveal id="pricing-comparison-heading">{__site.t(c.comparison.title)}</h2><p>{__site.t(c.comparison.description)}</p></div></div><p className="pricing-table-hint">{__site.t("Desliza la tabla para comparar las tres opciones.")}</p><div className="pricing-table-scroll" tabIndex={0} role="region" aria-label={__site.t(c.ui.comparison)}><table className="pricing-comparison"><caption className="pricing-sr-only">{__site.t(c.comparison.title)}</caption><thead><tr><th scope="col"><span className="pricing-sr-only">{__site.t("Incluye")}</span></th>{__site.t(c.plans.map((item, i) => <th scope="col" key={item.id} className={c.plans[i].id === plan ? 'pricing-featured-col' : ''}>{__site.t(item.name)}<span>{priceSummary(item)}</span></th>))}</tr></thead>{__site.t(c.comparison.groups.map(group => <tbody key={group.title}><tr className="pricing-table-group"><th colSpan={4} scope="rowgroup">{__site.t(group.title)}</th></tr>{__site.t(group.rows.map(row => <tr key={row.label}><th scope="row">{__site.t(row.label)}</th>{__site.t(row.cells.map((cell, i) => <td key={i} className={c.plans[i].id === plan ? 'pricing-featured-col' : ''}>{__site.t(typeof cell === 'boolean' ? <><span aria-hidden="true" className={cell ? 'pricing-check' : 'pricing-dash'}>{__site.t(cell ? '✓' : '—')}</span><span className="pricing-sr-only">{__site.t(cell ? c.comparison.included : c.comparison.unavailable)}</span></> : cell)}</td>))}</tr>))}</tbody>))}</table></div><p className="pricing-note">{__site.t(c.comparison.note)}</p></EditorialReveal>
+    <EditorialReveal as="section" className="pricing-section eva-inner" id="comparar-planes" aria-labelledby="pricing-comparison-heading"><div className="pricing-section-head"><p className="eva-kicker">{__site.t(c.comparison.eyebrow)}</p><div><h2 data-editorial-reveal id="pricing-comparison-heading">{__site.t(c.comparison.title)}</h2><p>{__site.t(c.comparison.description)}</p></div></div><p className="pricing-table-hint">{panels.tableHint}</p><div className="pricing-table-scroll" tabIndex={0} role="region" aria-label={panels.comparisonAction}><table className="pricing-comparison"><caption className="pricing-sr-only">{__site.t(c.comparison.title)}</caption><thead><tr><th scope="col"><span className="pricing-sr-only">{__site.t("Incluye")}</span></th>{__site.t(c.plans.map((item, i) => <th scope="col" key={item.id} className={c.plans[i].id === plan ? 'pricing-featured-col' : ''}>{__site.t(item.name)}<span>{priceSummary(item)}</span></th>))}</tr></thead>{__site.t(c.comparison.groups.map(group => <tbody key={group.title}><tr className="pricing-table-group"><th colSpan={c.plans.length + 1} scope="rowgroup">{__site.t(group.title)}</th></tr>{__site.t(group.rows.map(row => <tr key={row.label}><th scope="row">{__site.t(row.label)}</th>{__site.t(row.cells.map((cell, i) => <td key={i} className={c.plans[i].id === plan ? 'pricing-featured-col' : ''}>{__site.t(typeof cell === 'boolean' ? <><span aria-hidden="true" className={cell ? 'pricing-check' : 'pricing-dash'}>{__site.t(cell ? '✓' : '—')}</span><span className="pricing-sr-only">{__site.t(cell ? c.comparison.included : c.comparison.unavailable)}</span></> : cell)}</td>))}</tr>))}</tbody>))}</table></div><p className="pricing-note">{__site.t(c.comparison.note)}</p></EditorialReveal>
 
     <EditorialReveal as="section" className="pricing-section pricing-process eva-inner" aria-labelledby="pricing-process-heading"><div className="pricing-section-head"><p className="eva-kicker">{__site.t(c.process.eyebrow)}</p><h2 data-editorial-reveal id="pricing-process-heading">{__site.t(c.process.title)}</h2></div><ol>{__site.t(c.process.steps.map(step => <li key={step.number} data-editorial-reveal><span className="pricing-process-number">{__site.t(step.number)}</span><div><p className="eva-kicker">{__site.t(step.detail)}</p><h3>{__site.t(step.title)}</h3><p>{__site.t(step.body)}</p></div></li>))}</ol><div className="pricing-process-foot"><p className="pricing-note">{__site.t(c.process.timing)}</p><a className="pricing-line-link" href={__site.href("/es/how-it-works")}>{__site.t(c.process.link)}<Arrow /></a></div></EditorialReveal>
 
@@ -166,8 +160,8 @@ export default function PricingPage() {
 
     <EditorialReveal as="section" className="pricing-section eva-inner" aria-labelledby="pricing-markers-heading">
       <div className="pricing-section-head">
-        <p className="eva-kicker">04 / {kit.eyebrow}</p>
-        <div><h2 data-editorial-reveal id="pricing-markers-heading">{kit.title}</h2><p>{kit.intro}</p></div>
+        <p className="eva-kicker">04 / {panels.markers.eyebrow}</p>
+        <div><h2 data-editorial-reveal id="pricing-markers-heading">{panels.markers.title}</h2><p>{kit.intro} {panels.markers.note}</p></div>
       </div>
       <div className="pricing-marker-layout">
         <div className="pricing-marker-list" role="group" aria-label={__site.t('Selecciona un biomarcador')}>

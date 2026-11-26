@@ -64,3 +64,7 @@ Use NOT APPLICABLE with a reason for genuinely unaffected fields. Use NOT VERIFI
 Latest loop: the owner requested a rendered preview and a new independent judge. Preserve that distinction from publication; see [preview QA](normal-explanation-preview-qa.json).
 
 Current proposed explanation: [normal-explanation-proposal.md](normal-explanation-proposal.md). Current deployed range QA: [range-graphic-qa.json](range-graphic-qa.json). Subsequent owner corrections must update this ledger and supersede older constraints explicitly.
+
+## Entry preview feedback — 26 November 2026
+
+The owner explicitly confirmed the exact supplied eva® PNG; typed substitutes are not acceptable. First-screen usability is separate from runner arrival: keep actions usable without canceling or retiming media. Move the existing example rather than generating a replacement. HomeUnderstanding is a wrapper for accepted Trendlines, not an age promise; preserve it. The actual reduced-motion render exposed a global p-selector override; judge settled normal and calm states, not just pre-hydration metrics. Standard, enhanced and full panel meanings must stay distinct; only enhanced ApoB is newly confirmed. New private preview has its own identity and must never overwrite the public review or another proposal under review.
