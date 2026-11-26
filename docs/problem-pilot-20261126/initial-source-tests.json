@@ -1,0 +1,27 @@
+{
+  "source_commit": "58bac762100a18c440b38429dee95f4663194e2d",
+  "source_hashes": {
+    "components/story/ScrollStory.tsx": "3ef298272803db1d6df74116608f2986e546d5a1ad1c0b4684d08c09445e3425",
+    "components/story/BiomarkerGallery.tsx": "ab4bd5f1b255901a350aa1ee1b1794b8d56197f5f8686af0daaa99128d96034e",
+    "components/story/GuidedResultStory.tsx": "307dc8eab2e1fc5b550838f48d55bdae2facdafae2d597d931a92e5cf49af371",
+    "components/story/HeroKitCta.tsx": "723a52cb2349771d3da1e6bb24f88de695123aecd127e67a951a4358ed8bab54",
+    "components/story/EvaWordmark.tsx": "fa8c2f720fe10ac92c209c4e02cd6a7008c1668fe153be21d3ecc46e88a16202",
+    "app/hero-entrance.css": "2c1784e89d4ee64fec151ecda4c3b4948e451aca7d2ccf2918d2a564ef4fd16a",
+    "app/hero-kit.css": "b109ce274dfc26588147812990a1c2eefc2352134d4e8269e7e00496baa117e9",
+    "lib/site-content/alex-story-copy.ts": "273e7a6c9ba6ca48b7667afe71294dc16ee40310549369727c960822e17cf56b",
+    "lib/site-content/range-proof-copy.ts": "ee7e0466e0291260b2d3721134cab323faffdb54ed9e7567242e01c68fe5c7a0",
+    "lib/story-scroll-timing.ts": "3b1f1ef7774201cbbdc1edae5c4142068f74325de131eaed29dd68c387937034"
+  },
+  "initial_order": [
+    "hero",
+    "healthy_question",
+    "collection",
+    "kit",
+    "independent_range",
+    "Alex",
+    "dashboard"
+  ],
+  "customer_order_gate": "FAIL: Alex occurs after collection/kit, and no practical-problem paragraph precedes it.",
+  "html_baseline": "Both locale HTML byte-identical to native v70; immutable archived browser fixture separately retained.",
+  "clean_runtime_before_edit": true
+}

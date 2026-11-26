@@ -1,0 +1,130 @@
+{
+  "source": "58bac762100a18c440b38429dee95f4663194e2d",
+  "artifactSha256": "c8ce50122139a10d3c27ab0bf9fe2996f687102df02b5c7eaf56a9548496769e",
+  "phase": "baseline",
+  "profiles": [
+    {
+      "id": "en-supplement",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "tasso": {
+        "playbackRate": 1,
+        "src": "https://eva-problem-pilot.invalid/art/tasso-home-video/process-continuity-v3.mp4",
+        "time": 0.0395,
+        "previousNext": true,
+        "keyboardPause": true
+      },
+      "kit": {
+        "markers": [
+          "Total cholesterol",
+          "LDL Cholesterol",
+          "HDL-Cholesterol",
+          "Triglycerides",
+          "Albumin",
+          "ALP",
+          "ALT",
+          "GGT",
+          "Creatinine",
+          "Urea BUN",
+          "Uric acid",
+          "hs-CRP",
+          "Fructosamine"
+        ],
+        "meanings": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "duration": "500",
+        "reversed": true
+      },
+      "destinations": [
+        {
+          "path": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+          "content": "You can upload up to 5 reports in total with a free account. You can upload unlimited reports while your subscription is active.",
+          "forms": 1
+        },
+        {
+          "path": "/en/signup?plan=quarterly",
+          "content": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active.",
+          "forms": 1
+        }
+      ]
+    },
+    {
+      "id": "es-supplement",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "failures": [],
+      "tasso": {
+        "playbackRate": 1,
+        "src": "https://eva-problem-pilot.invalid/art/tasso-home-video/process-continuity-v3.mp4",
+        "time": 0.0319,
+        "previousNext": true,
+        "keyboardPause": true
+      },
+      "kit": {
+        "markers": [
+          "Colesterol total",
+          "Colesterol LDL",
+          "Colesterol HDL",
+          "Triglicéridos",
+          "Albúmina",
+          "ALP",
+          "ALT",
+          "GGT",
+          "Creatinina",
+          "Urea BUN",
+          "Ácido úrico",
+          "hs-CRP",
+          "Fructosamina"
+        ],
+        "meanings": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "duration": "500",
+        "reversed": true
+      },
+      "destinations": [
+        {
+          "path": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+          "content": "Puedes subir hasta 5 informes en total con tu cuenta gratuita. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+          "forms": 1
+        },
+        {
+          "path": "/es/signup?plan=quarterly",
+          "content": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa.",
+          "forms": 1
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "allOwnedBrowsersClosed": true
+}

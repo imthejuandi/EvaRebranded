@@ -1,0 +1,50 @@
+{
+  "baseline_commit": "58bac762100a18c440b38429dee95f4663194e2d",
+  "worktree_clean_before_staging": true,
+  "source_archive_sha256": "c3ebd136d199ec7b283f9557ec39395c87a4b0bbe3ae86e6721c2ebc92379f76",
+  "skill_installation": "Exact supplied bundles staged in a fresh isolated worktree; no existing/newer skill or ledger overwritten. No skill content changes from pilot authorized.",
+  "skills": {
+    ".agents/skills/master-workflow/SKILL.md": "00bf1e4b915267dbbc2eae22818418bbcb81cfcc4b59507a8722b70fc2b9285f",
+    ".agents/skills/eva-preview-review/SKILL.md": "c76a9ac2ef81f62e484159579170da6c8702b975bd62e0ed726de1111c0eb228",
+    ".agents/skills/master-workflow/references/routing.md": "ff08dc6fddfdbd6ada99baab04a971fc12f82fa93b5a20aa1d2d52c39799e71a",
+    ".agents/skills/eva-preview-review/references/decision-ledger.md": "7d9953183296f5a677f17e62b666b1bf443a5aee694a1e6f6231f82c9abe60fa",
+    ".agents/skills/eva-preview-review/references/orchestration.md": "5fa1a76af17f917bac8c95af8b6ebf506802fe5495842b474585860fcd801bac"
+  },
+  "baseline_artifact_files": 789,
+  "baseline_en_html_sha256": "b8e3a791010a897b1ff5e1267eb7832617c72cff10ed3a6b6d66174dae65f704",
+  "baseline_es_html_sha256": "3cf3dea1c86cc3d4eea6d0df07f9b377c23a753f0d6a059750d8328a518f604e",
+  "native_version": {
+    "version": 70,
+    "commit": "58bac762100a18c440b38429dee95f4663194e2d",
+    "version_id": "appgprj_6ae2409926cc819180f1453af398551d~appgver_fe2f66790b5c81918eb1aed75185963d",
+    "deployment_id": "appgdep_6b05bfdff3088191a48cc31a07e41f64",
+    "saved_tar_hash": "sha256:145f2ec3b09114b5c6ebdb8fbce3e5e090749db07e35251a0054cbc410d37d4e",
+    "local_gzip_hash": "c3ebd136d199ec7b283f9557ec39395c87a4b0bbe3ae86e6721c2ebc92379f76",
+    "note": "The native stored tar is separately repacked; its raw tar hash/bytes differ from local gzip decompression. Do not equate container bytes."
+  },
+  "candidate_ui_commit": "6e0769f41434e8cc574a3b5fa87332d1ecf44a73",
+  "source_revision_scope": "5 product files; exact original hero/runner/wordmark/GuidedResultStory/copy/data protected. See final-source-diff-tests.json.",
+  "candidate_TypeScript": "passed",
+  "candidate_build": "passed, npm run build",
+  "managed_preview": "UNAVAILABLE: startup timed out; candidate hosting/interactive managed URL unverified; actual artifact Chromium checks passed.",
+  "first_candidate_ui_commit": "fef06dc31f6e6618961c989f9942b4540bf17e3d",
+  "correction_rounds": 1,
+  "candidate_build_artifact_manifest": "ec001ce8f0673a0553cd62241fde38bf89a814c50a1f38205ca715ea1be4c5df",
+  "status": "PRIVATE_ARTIFACT_READY_FOR_OWNER_REVIEW",
+  "technical": "PASS exact final artifact,12core+12fallback+2supplement+2accessibility and31comparisons",
+  "reader": "AI proxy supports concrete interpretation before kit in EN/ES; no improvement claimed for general tracking awareness. Human customer validation unverified.",
+  "process": "Independent retrospective complete; one sentinel-before-matrix recommendation; skills unchanged.",
+  "publication": "No existing Site republished; no new hosted Site or production release. Git source branch only.",
+  "changed_sections": [
+    "New practical paragraph and existing compact Alex before collection/kit",
+    "Original later gallery retains dashboard and chapter anchor, with local accessible name",
+    "Narrow chapter-position helper correction restores reporting after gallery height changes"
+  ],
+  "source_hashes": {
+    "components/story/ScrollStory.tsx": "847ecab8572317e6d900f960568ef74b8ecc50db4e4fc0181d9c49ee8ef51059",
+    "components/story/BiomarkerGallery.tsx": "bcc7aa20d38f9b4c7ba5901eb45b639521678f5c1c9550513dbe4120e0245012",
+    "components/story/guided-result-story.css": "ec5768fb758b9dd0bcca0bf4e09cb01b9fe88e11fafa17d58eb14686d649e4b1",
+    "components/story/ResultsProblem.tsx": "37b597fd98460a79797e299067645d8afca30f9669e81ef305065f966d83bfaa",
+    "lib/site-content/results-problem-copy.ts": "1bdfdd698a894f4a639975384887a5d6fd2bc6e9c99f578201079214b2ab496e"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "source": "6e0769f41434e8cc574a3b5fa87332d1ecf44a73",
+  "artifactSha256": "ec001ce8f0673a0553cd62241fde38bf89a814c50a1f38205ca715ea1be4c5df",
+  "states": [
+    {
+      "locale": "en",
+      "names": [
+        "Your results. Explained your way.",
+        "Explore sample dashboard"
+      ],
+      "ids": [
+        "entender-los-resultados",
+        "biomarcadores"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "es",
+      "names": [
+        "Tus resultados. Explicados a tu manera.",
+        "Explora el panel de ejemplo"
+      ],
+      "ids": [
+        "entender-los-resultados",
+        "biomarcadores"
+      ],
+      "pass": true
+    }
+  ]
+}

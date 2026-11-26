@@ -1,0 +1,1569 @@
+{
+  "before": {
+    "source": "58bac762100a18c440b38429dee95f4663194e2d",
+    "artifact": "c8ce50122139a10d3c27ab0bf9fe2996f687102df02b5c7eaf56a9548496769e"
+  },
+  "after": {
+    "source": "6e0769f41434e8cc574a3b5fa87332d1ecf44a73",
+    "artifact": "ec001ce8f0673a0553cd62241fde38bf89a814c50a1f38205ca715ea1be4c5df"
+  },
+  "checks": [
+    {
+      "name": "baseline browser matrix complete and clean",
+      "verdict": "PASS",
+      "evidence": {
+        "profiles": 12,
+        "fallbacks": 12,
+        "failures": [],
+        "missingFiles": [],
+        "blockedRequests": [],
+        "pageErrors": [],
+        "fulfilledByteRanges": [
+          [
+            "/art/runner-athletic-loop.mp4",
+            6
+          ],
+          [
+            "/art/tasso-home-video/process-continuity-v3.mp4",
+            6
+          ],
+          [
+            "/art/runner-athletic-mobile.mp4",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "name": "candidate browser matrix complete and clean",
+      "verdict": "PASS",
+      "evidence": {
+        "profiles": 12,
+        "fallbacks": 12,
+        "failures": [],
+        "missingFiles": [],
+        "blockedRequests": [],
+        "pageErrors": [],
+        "fulfilledByteRanges": [
+          [
+            "/art/runner-athletic-loop.mp4",
+            6
+          ],
+          [
+            "/art/tasso-home-video/process-continuity-v3.mp4",
+            6
+          ],
+          [
+            "/art/runner-athletic-mobile.mp4",
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "name": "independent source manifest protects all other product files",
+      "verdict": "PASS",
+      "evidence": [
+        "components/story/BiomarkerGallery.tsx",
+        "components/story/ScrollStory.tsx",
+        "components/story/guided-result-story.css",
+        "components/story/ResultsProblem.tsx",
+        "lib/site-content/results-problem-copy.ts"
+      ]
+    },
+    {
+      "name": "en-1366-normal equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "reveal",
+        "afterHero": "reveal",
+        "beforeChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1616,
+            "reducedMotion": false
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 2516,
+            "reducedMotion": false
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5793,
+            "reducedMotion": false
+          }
+        ],
+        "afterChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2061,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": -0.140625,
+              "bottom": 899.859375,
+              "height": 900
+            },
+            "signalBounds": {
+              "top": 4316.390625,
+              "bottom": 5441.390625,
+              "height": 1125
+            }
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555.0186773657997,
+            "scrollY": 2961,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": -0.140625,
+              "bottom": 2707.203125,
+              "height": 2707.34375
+            },
+            "signalBounds": {
+              "top": 3416.390625,
+              "bottom": 4541.390625,
+              "height": 1125
+            }
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6237,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.203125,
+              "bottom": 140.390625,
+              "height": 140.1875
+            },
+            "signalBounds": {
+              "top": 140.390625,
+              "bottom": 1265.390625,
+              "height": 1125
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "en-1366-normal contiguous matched ordinary first-scroll budget reaches kit",
+      "verdict": "PASS"
+    },
+    {
+      "name": "en-1366-reduced equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "skip",
+        "afterHero": "skip",
+        "beforeChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1616,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 2577,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 4262,
+            "reducedMotion": true
+          }
+        ],
+        "afterChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2061,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": -0.140625,
+              "bottom": 960.171875,
+              "height": 960.3125
+            },
+            "signalBounds": {
+              "top": 2785.3125,
+              "bottom": 3865.34375,
+              "height": 1080.03125
+            }
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 3021,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.171875,
+              "bottom": 1116.125,
+              "height": 1115.953125
+            },
+            "signalBounds": {
+              "top": 1825.3125,
+              "bottom": 2905.34375,
+              "height": 1080.03125
+            }
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 4706,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.125,
+              "bottom": 140.3125,
+              "height": 140.1875
+            },
+            "signalBounds": {
+              "top": 140.3125,
+              "bottom": 1220.34375,
+              "height": 1080.03125
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "es-1366-normal equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "reveal",
+        "afterHero": "reveal",
+        "beforeChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1616,
+            "reducedMotion": false
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 2516,
+            "reducedMotion": false
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5793,
+            "reducedMotion": false
+          }
+        ],
+        "afterChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2051,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.390625,
+              "bottom": 900.390625,
+              "height": 900
+            },
+            "signalBounds": {
+              "top": 4316.921875,
+              "bottom": 5441.921875,
+              "height": 1125
+            }
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 2951,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.390625,
+              "bottom": 2707.734375,
+              "height": 2707.34375
+            },
+            "signalBounds": {
+              "top": 3416.921875,
+              "bottom": 4541.921875,
+              "height": 1125
+            }
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6228,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": -0.265625,
+              "bottom": 139.921875,
+              "height": 140.1875
+            },
+            "signalBounds": {
+              "top": 139.921875,
+              "bottom": 1264.921875,
+              "height": 1125
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "es-1366-normal contiguous matched ordinary first-scroll budget reaches kit",
+      "verdict": "PASS"
+    },
+    {
+      "name": "es-1366-reduced equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "skip",
+        "afterHero": "skip",
+        "beforeChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1616,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 2601,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 4286,
+            "reducedMotion": true
+          }
+        ],
+        "afterChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2051,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.390625,
+              "bottom": 985.5,
+              "height": 985.109375
+            },
+            "signalBounds": {
+              "top": 2810.640625,
+              "bottom": 3890.671875,
+              "height": 1080.03125
+            }
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 3037,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": -0.5,
+              "bottom": 1115.453125,
+              "height": 1115.953125
+            },
+            "signalBounds": {
+              "top": 1824.640625,
+              "bottom": 2904.671875,
+              "height": 1080.03125
+            }
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 4721,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.453125,
+              "bottom": 140.640625,
+              "height": 140.1875
+            },
+            "signalBounds": {
+              "top": 140.640625,
+              "bottom": 1220.671875,
+              "height": 1080.03125
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "en-390-normal equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "reveal",
+        "afterHero": "reveal",
+        "beforeChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1689,
+            "reducedMotion": false
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 2533,
+            "reducedMotion": false
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5766,
+            "reducedMotion": false
+          }
+        ],
+        "afterChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2470,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.03125,
+              "bottom": 844.03125,
+              "height": 844
+            },
+            "signalBounds": {
+              "top": 4201.328125,
+              "bottom": 5256.328125,
+              "height": 1055
+            }
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 3314,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.03125,
+              "bottom": 2538.90625,
+              "height": 2538.875
+            },
+            "signalBounds": {
+              "top": 3357.328125,
+              "bottom": 4412.328125,
+              "height": 1055
+            }
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6547,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.140625,
+              "bottom": 124.328125,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.328125,
+              "bottom": 1179.328125,
+              "height": 1055
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "en-390-normal contiguous matched ordinary first-scroll budget reaches kit",
+      "verdict": "PASS"
+    },
+    {
+      "name": "en-390-reduced equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "skip",
+        "afterHero": "skip",
+        "beforeChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1689,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 3514,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5498,
+            "reducedMotion": true
+          }
+        ],
+        "afterChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2470,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.03125,
+              "bottom": 1825.078125,
+              "height": 1825.046875
+            },
+            "signalBounds": {
+              "top": 3933.109375,
+              "bottom": 5083,
+              "height": 1149.890625
+            }
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 4295,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.078125,
+              "bottom": 1289.6875,
+              "height": 1289.609375
+            },
+            "signalBounds": {
+              "top": 2108.109375,
+              "bottom": 3258,
+              "height": 1149.890625
+            }
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6279,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": -0.078125,
+              "bottom": 124.109375,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.109375,
+              "bottom": 1274,
+              "height": 1149.890625
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "es-390-normal equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "reveal",
+        "afterHero": "reveal",
+        "beforeChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1689,
+            "reducedMotion": false
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 2533,
+            "reducedMotion": false
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5810,
+            "reducedMotion": false
+          }
+        ],
+        "afterChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2422,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.03125,
+              "bottom": 844.03125,
+              "height": 844
+            },
+            "signalBounds": {
+              "top": 4245.328125,
+              "bottom": 5300.328125,
+              "height": 1055
+            }
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 3266,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.03125,
+              "bottom": 2538.90625,
+              "height": 2538.875
+            },
+            "signalBounds": {
+              "top": 3401.328125,
+              "bottom": 4456.328125,
+              "height": 1055
+            }
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6543,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.140625,
+              "bottom": 124.328125,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.328125,
+              "bottom": 1179.328125,
+              "height": 1055
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "es-390-normal contiguous matched ordinary first-scroll budget reaches kit",
+      "verdict": "PASS"
+    },
+    {
+      "name": "es-390-reduced equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "skip",
+        "afterHero": "skip",
+        "beforeChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1689,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 3539,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5584,
+            "reducedMotion": true
+          }
+        ],
+        "afterChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2422,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.03125,
+              "bottom": 1849.875,
+              "height": 1849.84375
+            },
+            "signalBounds": {
+              "top": 4019.46875,
+              "bottom": 5169.359375,
+              "height": 1149.890625
+            }
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 4272,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": -0.125,
+              "bottom": 1307.046875,
+              "height": 1307.171875
+            },
+            "signalBounds": {
+              "top": 2169.46875,
+              "bottom": 3319.359375,
+              "height": 1149.890625
+            }
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6317,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.28125,
+              "bottom": 124.46875,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.46875,
+              "bottom": 1274.359375,
+              "height": 1149.890625
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "en-320-normal equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "reveal",
+        "afterHero": "reveal",
+        "beforeChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1703,
+            "reducedMotion": false
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 2547,
+            "reducedMotion": false
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5780,
+            "reducedMotion": false
+          }
+        ],
+        "afterChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2567,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": -0.046875,
+              "bottom": 843.953125,
+              "height": 844
+            },
+            "signalBounds": {
+              "top": 4201.25,
+              "bottom": 5256.25,
+              "height": 1055
+            }
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555.0066371681415,
+            "scrollY": 3411,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": -0.046875,
+              "bottom": 2538.828125,
+              "height": 2538.875
+            },
+            "signalBounds": {
+              "top": 3357.25,
+              "bottom": 4412.25,
+              "height": 1055
+            }
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6644,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.0625,
+              "bottom": 124.25,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.25,
+              "bottom": 1179.25,
+              "height": 1055
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "en-320-reduced equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "skip",
+        "afterHero": "skip",
+        "beforeChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1703,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 3515,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5561,
+            "reducedMotion": true
+          }
+        ],
+        "afterChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2567,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": -0.046875,
+              "bottom": 1812.0625,
+              "height": 1812.109375
+            },
+            "signalBounds": {
+              "top": 3981.53125,
+              "bottom": 5129.1875,
+              "height": 1147.65625
+            }
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 4379,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.0625,
+              "bottom": 1351.109375,
+              "height": 1351.046875
+            },
+            "signalBounds": {
+              "top": 2169.53125,
+              "bottom": 3317.1875,
+              "height": 1147.65625
+            }
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6424,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.34375,
+              "bottom": 124.53125,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.53125,
+              "bottom": 1272.1875,
+              "height": 1147.65625
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "es-320-normal equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "reveal",
+        "afterHero": "reveal",
+        "beforeChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1772,
+            "reducedMotion": false
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555.0243362831858,
+            "scrollY": 2616,
+            "reducedMotion": false
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5917,
+            "reducedMotion": false
+          }
+        ],
+        "afterChapter": [
+          {
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2625,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.140625,
+              "bottom": 844.140625,
+              "height": 844
+            },
+            "signalBounds": {
+              "top": 4269.4375,
+              "bottom": 5324.4375,
+              "height": 1055
+            }
+          },
+          {
+            "section": "kit-inicial",
+            "frame": 555,
+            "scrollY": 3469,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.140625,
+              "bottom": 2539.015625,
+              "height": 2538.875
+            },
+            "signalBounds": {
+              "top": 3425.4375,
+              "bottom": 4480.4375,
+              "height": 1055
+            }
+          },
+          {
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6770,
+            "reducedMotion": false,
+            "destinationBounds": {
+              "top": 0.25,
+              "bottom": 124.4375,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.4375,
+              "bottom": 1179.4375,
+              "height": 1055
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "es-320-reduced equivalent hero and unchanged case, range, and destinations",
+      "verdict": "PASS",
+      "evidence": {
+        "beforeHero": "skip",
+        "afterHero": "skip",
+        "beforeChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 1772,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 3690,
+            "reducedMotion": true
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 5845,
+            "reducedMotion": true
+          }
+        ],
+        "afterChapter": [
+          {
+            "chapter": 2,
+            "section": "recogida-en-casa",
+            "frame": 0,
+            "scrollY": 2625,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.140625,
+              "bottom": 1918.140625,
+              "height": 1918
+            },
+            "signalBounds": {
+              "top": 4197.15625,
+              "bottom": 5344.8125,
+              "height": 1147.65625
+            }
+          },
+          {
+            "chapter": 3,
+            "section": "kit-inicial",
+            "frame": 0,
+            "scrollY": 4543,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": 0.140625,
+              "bottom": 1392.734375,
+              "height": 1392.59375
+            },
+            "signalBounds": {
+              "top": 2279.15625,
+              "bottom": 3426.8125,
+              "height": 1147.65625
+            }
+          },
+          {
+            "chapter": 4,
+            "section": "biomarcadores",
+            "frame": 0,
+            "scrollY": 6698,
+            "reducedMotion": true,
+            "destinationBounds": {
+              "top": -0.03125,
+              "bottom": 124.15625,
+              "height": 124.1875
+            },
+            "signalBounds": {
+              "top": 124.15625,
+              "bottom": 1271.8125,
+              "height": 1147.65625
+            }
+          }
+        ],
+        "beforeOrder": [
+          "entender-tus-analisis",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "alex-story",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ],
+        "afterOrder": [
+          "entender-tus-analisis",
+          "alex-story",
+          "recogida-en-casa",
+          "kit-inicial",
+          "otra-lectura",
+          "biomarcadores",
+          "una-senal",
+          "tu-evolucion",
+          "volver-a-la-vida"
+        ]
+      }
+    },
+    {
+      "name": "en-1366-Tab equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#entender-tus-analisis"
+        }
+      }
+    },
+    {
+      "name": "en-1366-Escape equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    },
+    {
+      "name": "en-1366-focus equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "A",
+          "className": "wordmark",
+          "href": "/en"
+        }
+      }
+    },
+    {
+      "name": "en-1366-media equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    },
+    {
+      "name": "en-1366-no-js equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "pending",
+        "after": "pending",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    },
+    {
+      "name": "en-1366-hash equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    },
+    {
+      "name": "es-320-Tab equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#entender-tus-analisis"
+        }
+      }
+    },
+    {
+      "name": "es-320-Escape equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    },
+    {
+      "name": "es-320-focus equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "A",
+          "className": "wordmark",
+          "href": "/es"
+        }
+      }
+    },
+    {
+      "name": "es-320-media equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    },
+    {
+      "name": "es-320-no-js equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "pending",
+        "after": "pending",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    },
+    {
+      "name": "es-320-hash equivalent original fallback and focus outcome",
+      "verdict": "PASS",
+      "evidence": {
+        "before": "skip",
+        "after": "skip",
+        "focus": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        }
+      }
+    }
+  ],
+  "readerSequences": [
+    {
+      "id": "en-1366-normal",
+      "viewport": [
+        1366,
+        900
+      ],
+      "origin": 900,
+      "steps": 3,
+      "scrollBudget": 1404,
+      "before": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-1366-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-1366-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-1366-normal-sequence-03.png"
+      ],
+      "after": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-1366-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-1366-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-1366-normal-sequence-03.png"
+      ]
+    },
+    {
+      "id": "es-1366-normal",
+      "viewport": [
+        1366,
+        900
+      ],
+      "origin": 900,
+      "steps": 3,
+      "scrollBudget": 1404,
+      "before": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-1366-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-1366-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-1366-normal-sequence-03.png"
+      ],
+      "after": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-1366-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-1366-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-1366-normal-sequence-03.png"
+      ]
+    },
+    {
+      "id": "en-390-normal",
+      "viewport": [
+        390,
+        844
+      ],
+      "origin": 844,
+      "steps": 4,
+      "scrollBudget": 1974,
+      "before": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-390-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-390-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-390-normal-sequence-03.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-390-normal-sequence-04.png"
+      ],
+      "after": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-390-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-390-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-390-normal-sequence-03.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-390-normal-sequence-04.png"
+      ]
+    },
+    {
+      "id": "es-390-normal",
+      "viewport": [
+        390,
+        844
+      ],
+      "origin": 844,
+      "steps": 4,
+      "scrollBudget": 1974,
+      "before": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-03.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-04.png"
+      ],
+      "after": [
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-01.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-02.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-03.png",
+        "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-04.png"
+      ]
+    }
+  ]
+}

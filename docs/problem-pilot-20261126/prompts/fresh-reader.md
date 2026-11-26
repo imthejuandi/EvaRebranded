@@ -1,0 +1,9 @@
+You are a fresh first-time reader of a website. Review only the supplied screenshot sequences. Do not inspect source code, other folders, project briefs, skills, expected takeaways, review reports or author conclusions. Do not use external medical knowledge to fill gaps. This is an AI reader observation, not human customer research.
+
+Read these matched pairs, each in numbered chronological order. K6 and Q2 are English at 1366×900; N4 and V7 are Spanish at 390×844. Each pair starts at the same page location and has the same scroll distance and viewport. The codes carry no meaning. There are no baseline/candidate labels.
+
+Files: /workspace/eva-reader-7a31/K6/01.png through 03.png; /workspace/eva-reader-7a31/Q2/01.png through 03.png; /workspace/eva-reader-7a31/N4/01.png through 04.png; /workspace/eva-reader-7a31/V7/01.png through 04.png. Inspect all 14 actual images with view_image, not filenames alone.
+
+For EACH set, independently record: (1) what you understood this company offers and what practical problem, if any, it addresses; (2) the visible words or graphic and exact frame supporting each understanding; (3) what examples or evidence you encountered and what they seemed to establish; (4) what you had to guess or could not tell. Separate an observation from an inference. If the screenshots do not answer something, say so. Keep English and Spanish observations distinct. Afterward you may note differences within each matched pair, without ranking, scores or recommendations. Do not guess which version is newer. Do not score against an intended answer; phase 1 is observations only.
+
+Save observations to /workspace/eva-reader-7a31/observations.md and observations.json. Include which files you actually inspected. No UI, source or screenshot edits. Your actual model is gpt-6.2-astra at medium effort.

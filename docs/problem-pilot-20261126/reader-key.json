@@ -1,0 +1,129 @@
+{
+  "candidate_commit": "6e0769f41434e8cc574a3b5fa87332d1ecf44a73",
+  "candidate_artifact_manifest": "ec001ce8f0673a0553cd62241fde38bf89a814c50a1f38205ca715ea1be4c5df",
+  "mapping": {
+    "K6": {
+      "phase": "candidate",
+      "locale": "en",
+      "viewport": [
+        1366,
+        900
+      ],
+      "origin_y": 900,
+      "wheel_stride": 702,
+      "scroll_budget": 1404,
+      "frames": [
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-1366-normal-sequence-01.png",
+          "neutral_file": "/workspace/eva-reader-7a31/K6/01.png",
+          "sha256": "d57c45f96e95fe572a9e8283227a630fa80487269f2c4b9ef9da5f7a7bf3ce48"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-1366-normal-sequence-02.png",
+          "neutral_file": "/workspace/eva-reader-7a31/K6/02.png",
+          "sha256": "b991f445be23184d5ec8112091bc12f23e00fdb9a5ca4b6dbe56b1f0786fffbd"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/en-1366-normal-sequence-03.png",
+          "neutral_file": "/workspace/eva-reader-7a31/K6/03.png",
+          "sha256": "df18e1389492155b50ec5251748de57ffe099e050edc8dd303e48ea8198058eb"
+        }
+      ]
+    },
+    "Q2": {
+      "phase": "baseline",
+      "locale": "en",
+      "viewport": [
+        1366,
+        900
+      ],
+      "origin_y": 900,
+      "wheel_stride": 702,
+      "scroll_budget": 1404,
+      "frames": [
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-1366-normal-sequence-01.png",
+          "neutral_file": "/workspace/eva-reader-7a31/Q2/01.png",
+          "sha256": "9d32112e9647e1fc71242e71a6ceefcbb626197ee5850c25de7001db63e746e2"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-1366-normal-sequence-02.png",
+          "neutral_file": "/workspace/eva-reader-7a31/Q2/02.png",
+          "sha256": "771837ac32ffdf8832fa6f445c578178b708b21ba9638ff2d66f47910eed3c8d"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/en-1366-normal-sequence-03.png",
+          "neutral_file": "/workspace/eva-reader-7a31/Q2/03.png",
+          "sha256": "65c8fc72414e4123fd872eb8d183bd24531633de9cfbc80bb932426825612fce"
+        }
+      ]
+    },
+    "N4": {
+      "phase": "baseline",
+      "locale": "es",
+      "viewport": [
+        390,
+        844
+      ],
+      "origin_y": 844,
+      "wheel_stride": 658,
+      "scroll_budget": 1974,
+      "frames": [
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-01.png",
+          "neutral_file": "/workspace/eva-reader-7a31/N4/01.png",
+          "sha256": "e4e1d73c159310e35cc604091a4094dc48f985510452d867016905192a503c20"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-02.png",
+          "neutral_file": "/workspace/eva-reader-7a31/N4/02.png",
+          "sha256": "b8a69d3c1661e00e70c7611198cb218626ce052f9f3bcc3e04a9ac15c72aed17"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-03.png",
+          "neutral_file": "/workspace/eva-reader-7a31/N4/03.png",
+          "sha256": "3a8d4cb31d859859fb34a40e21ae507a2acd927eef335e5038a12aecbe9f6b55"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/baseline/es-390-normal-sequence-04.png",
+          "neutral_file": "/workspace/eva-reader-7a31/N4/04.png",
+          "sha256": "634c66761d45dcfe6b0df82ceb9e454e8b5e8340f168ddadba0b30358137aaa8"
+        }
+      ]
+    },
+    "V7": {
+      "phase": "candidate",
+      "locale": "es",
+      "viewport": [
+        390,
+        844
+      ],
+      "origin_y": 844,
+      "wheel_stride": 658,
+      "scroll_budget": 1974,
+      "frames": [
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-01.png",
+          "neutral_file": "/workspace/eva-reader-7a31/V7/01.png",
+          "sha256": "e4e1d73c159310e35cc604091a4094dc48f985510452d867016905192a503c20"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-02.png",
+          "neutral_file": "/workspace/eva-reader-7a31/V7/02.png",
+          "sha256": "209ed4945d4b573f6cc5443551f3da64024f5f40e936e530e4e2d23ab766701c"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-03.png",
+          "neutral_file": "/workspace/eva-reader-7a31/V7/03.png",
+          "sha256": "d9d412ed9ce9264a89148d843966eaf29523c39a3e216a271128d3bef6fe283c"
+        },
+        {
+          "source": "/workspace/eva-in-place-qa/problem-pilot-20261126/candidate/es-390-normal-sequence-04.png",
+          "neutral_file": "/workspace/eva-reader-7a31/V7/04.png",
+          "sha256": "b99336210a90842ab8ad7aba132eb56489ae5b61fc5ef1b0a8e076a03d562419"
+        }
+      ]
+    }
+  },
+  "labels_masked": "No baseline/candidate labels, source identity, brief, skills, rubric or author verdicts supplied to first reader. Neutral codes only; candidate first for English, second for Spanish."
+}

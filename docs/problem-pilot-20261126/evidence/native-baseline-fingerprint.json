@@ -1,0 +1,20 @@
+{
+  "source": "Original v70 native GET compared with pinned release archive; headers/token not retained.",
+  "rows": [
+    {
+      "locale": "en",
+      "status": 200,
+      "archived_html_sha256": "b8e3a791010a897b1ff5e1267eb7832617c72cff10ed3a6b6d66174dae65f704",
+      "served_html_sha256": "b8e3a791010a897b1ff5e1267eb7832617c72cff10ed3a6b6d66174dae65f704",
+      "html_bytes_equal": true
+    },
+    {
+      "locale": "es",
+      "status": 200,
+      "archived_html_sha256": "3cf3dea1c86cc3d4eea6d0df07f9b377c23a753f0d6a059750d8328a518f604e",
+      "served_html_sha256": "3cf3dea1c86cc3d4eea6d0df07f9b377c23a753f0d6a059750d8328a518f604e",
+      "html_bytes_equal": true
+    }
+  ],
+  "note": "Full HTML equality is verified. Individual asset payloads were not fetched by this fingerprint check."
+}

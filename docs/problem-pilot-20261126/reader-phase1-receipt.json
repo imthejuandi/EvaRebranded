@@ -1,0 +1,8 @@
+{
+  "phase1_complete_before_scoring": true,
+  "reader_fork": "none",
+  "brief_rubric_author_verdicts_withheld": true,
+  "inputs": "14 matched neutral screenshots; EN1366 and ES390; fixed original post-hero origin and equal scroll budget within each language pair",
+  "observations_md_sha256": "6400b6886d8e6256bfcf8dec9267ca10f2f037019568d5e6e32d24221b410936",
+  "observations_json_sha256": "4f9228ffdd9b4bdbf119bfc61ea75810dd517dfbe815ed56a4292c573a94b49b"
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "baseline": "58bac762100a18c440b38429dee95f4663194e2d",
+  "changed_runtime_files": [
+    "components/story/ScrollStory.tsx",
+    "components/story/BiomarkerGallery.tsx",
+    "components/story/guided-result-story.css",
+    "components/story/ResultsProblem.tsx",
+    "lib/site-content/results-problem-copy.ts"
+  ],
+  "source_hashes": {
+    "components/story/ScrollStory.tsx": "847ecab8572317e6d900f960568ef74b8ecc50db4e4fc0181d9c49ee8ef51059",
+    "components/story/BiomarkerGallery.tsx": "bcc7aa20d38f9b4c7ba5901eb45b639521678f5c1c9550513dbe4120e0245012",
+    "components/story/guided-result-story.css": "ec5768fb758b9dd0bcca0bf4e09cb01b9fe88e11fafa17d58eb14686d649e4b1",
+    "components/story/ResultsProblem.tsx": "37b597fd98460a79797e299067645d8afca30f9669e81ef305065f966d83bfaa",
+    "lib/site-content/results-problem-copy.ts": "1bdfdd698a894f4a639975384887a5d6fd2bc6e9c99f578201079214b2ab496e"
+  },
+  "protected_file_hashes": {
+    "components/story/GuidedResultStory.tsx": "307dc8eab2e1fc5b550838f48d55bdae2facdafae2d597d931a92e5cf49af371",
+    "components/story/HeroKitCta.tsx": "723a52cb2349771d3da1e6bb24f88de695123aecd127e67a951a4358ed8bab54",
+    "components/story/EvaWordmark.tsx": "fa8c2f720fe10ac92c209c4e02cd6a7008c1668fe153be21d3ecc46e88a16202",
+    "components/story/EvaFilm.tsx": "85db0a0862a42edd7003528610822f4ee566d8f7162562c15923d3303fba7a6f",
+    "components/story/TrackedRunner.tsx": "c299f9d79d616c2ccb4b906a29d1bec00603d76efa94477135dfe4e77a21353a",
+    "components/story/RunnerArrival.tsx": "3cdceae1e5c81fbec52c751d331ae59cedb00682d6532cb29e762be7d825335a",
+    "app/hero-entrance.css": "2c1784e89d4ee64fec151ecda4c3b4948e451aca7d2ccf2918d2a564ef4fd16a",
+    "app/hero-kit.css": "b109ce274dfc26588147812990a1c2eefc2352134d4e8269e7e00496baa117e9",
+    "lib/site-content/alex-story-copy.ts": "273e7a6c9ba6ca48b7667afe71294dc16ee40310549369727c960822e17cf56b",
+    "lib/site-content/range-proof-copy.ts": "ee7e0466e0291260b2d3721134cab323faffdb54ed9e7567242e01c68fe5c7a0",
+    "lib/story-scroll-timing.ts": "3b1f1ef7774201cbbdc1edae5c4142068f74325de131eaed29dd68c387937034",
+    "lib/hero-layout.ts": "12f6db691eeead72cd55615e1ac04fea3d9c2b0ebb9a57a957d7e273ef3f96f0",
+    "public/art/eva-official-logo.png": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+  },
+  "hero_implementation_byte_equal_excluding_approved_position_helper": true,
+  "approved_helper_exception": "Defer signal only while preceding short results gallery remains visible; fixes observed regression. All entrance/effects/JSX/destinations byte-identical.",
+  "all_other_tracked_runtime_files_unchanged": true
+}

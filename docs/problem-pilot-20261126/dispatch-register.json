@@ -1,0 +1,72 @@
+{
+  "integration_owner": "root",
+  "root_model_effort": "Inherited host session; exact runtime model/effort not exposed in tool metadata. No specific model is claimed.",
+  "assignments": [
+    {
+      "task": "pilot_baseline_audit",
+      "model": "gpt-6.2-sol",
+      "effort": "medium",
+      "fork": "none",
+      "prompt_file": "prompts/baseline-audit-dispatch.txt",
+      "prompt_sha256": "a8a3cbd5bad4d07a6d278112c7c9581e827277273786b64731a548964516b0fd",
+      "actual_dispatch_message": "Read-only baseline forensic assignment for an EVA workflow pilot. Inspect /workspace/eva-playback-review AGENTS.md, docs/range-graphic-qa.json, docs/browser-qa-v70 and Git history. Find exact source commit, native version_id, deployment/archive identity behind original EVA Content Review v70; distinguish deployed UI from later documentation and isolated entry-preview experiments. Determine current DOM/story order and where compact fictional Alex and practical problem copy occur relative to hero and kit in that exact source. Do not edit anything, do not call Sites/write credentials, no browser until root assigns it. Return concise cited file/line/commit evidence and uncertainties; no preferred changes. Actual model gpt-6.2-sol, medium; tools/source forensics skill only (do not claim other skills). Save report to /workspace/eva-in-place-qa/pilot-20261126-baseline-audit.md if possible. Exact user goal: baseline must remain original v70; next only below-hero practical problem before existing fictional Alex before kit if needed. Preserve hero/runner/wordmark/actions/destinations/chart truth. No production or existing-site republication, no checkout changes."
+    },
+    {
+      "task": "pilot_plan_critic",
+      "model": "gpt-6.2-astra",
+      "effort": "high",
+      "fork": "none",
+      "prompt_file": "prompts/plan-critic-dispatch.txt",
+      "prompt_sha256": "3403c6a0e8e0f8cb099f8d5ff17be190937666c59aaa788d691b1abd8ac6f4b1",
+      "actual_dispatch_message": "You are an independent plan critic for an EVA website pilot, actual model gpt-6.2-astra/high. Read-only product authority; save reports only. Do not read the supplied skill ledgers, prior preview reports, or authors' interpretations until completing Phase1 below.\n\nPHASE1 scope-regression test: read these dated records and exact baseline source, then independently record what earlier proposals are valid/invalid/protected/uncertain and why, before any execution dispatch:\n- Earlier round proposed immediately accessible hero actions and a panel chooser.\n- November26 14:20 UTC owner: “I dont want to have the buttons show until the runner finishes the starting animation, as it is now”.\n- November26 14:27 UTC owner: “actually I dont like this change, revert it back to how it was when we started talking to the codex task”.\nBaseline identity: original EVA Content Review v70, source58bac762100a18c440b38429dee95f4663194e2d, routes /en and /es at https://eva-content-review.jdlagop.chatgpt.site; native version_id appgprj_6ae2409926cc819180f1453af398551d~appgver_fe2f66790b5c81918eb1aed75185963d. Exact clean source at /workspace/eva-problem-pilot; root has verified native metadata and UI equality of main's later docs-only commits. Inspect original ScrollStory, HeroKitCta, hero-entrance.css, EvaWordmark and source identity as needed. No browser verdict is implied. Save Phase1 to docs/problem-pilot-20261126/plan-scope-observation.md before reading other inputs. Do not receive/infer root's preferred interpretation.\n\nPHASE2: after Phase1, read docs/problem-pilot-20261126/brief-draft.md and the two repo-local supplied skills master-workflow v1 + eva-preview-review v3 (including routing/orchestration/ledger). Current authorized outcome is only one practical problem before existing compact fictional Alex, ahead of kit walkthrough if baseline needs it; no new health claim/checkout/new task/public deployment or existing-Site republication. Root is sole UI integrator. Review proposed copy+belowhero order plan for consequential omissions, redundant roles, sequencing/scope risks, implied claims, and tests that cannot establish the customer outcome. Classify each material critique with smallest correction and evidence. Check whether moving entire existing results section vs only compact Alex is justified; don't redesign baseline.\n\nInfrastructure fact: sites-preview start /workspace/eva-problem-pilot timed out although Vinext reported local4173; no supported preview URL yet. Root will inspect status. Existing repo has installed Playwright Chromium and native read-only harnesses; no browser/dependency install/new HTTP server is authorized. Do not call Sites or create hosting. Flag limits honestly; source checks aren't browser checks. Return concise plan critique, whether safe to freeze/execute after changes, and one most consequential missing check. Save plan-critique.md. Do not edit source or add unsupported user-approval gates."
+    },
+    {
+      "task": "pilot_copy",
+      "model": "gpt-6.2-sol",
+      "effort": "medium",
+      "fork": "none",
+      "prompt_file": "prompts/copy.md",
+      "prompt_sha256": "0adeb4e659c5d9a5fea05a279cdbdee013ea904f415f5cec3f0f1fb43575807c",
+      "actual_dispatch_message": "Execute the exact assignment in /workspace/eva-problem-pilot/docs/problem-pilot-20261126/prompts/copy.md. Use the frozen contract and plan-response named there. Your actual model/effort is gpt-6.2-sol/medium. Copy proposal/review only; root is sole UI integrator."
+    },
+    {
+      "task": "pilot_visual",
+      "model": "gpt-6.2-astra",
+      "effort": "high",
+      "fork": "none",
+      "prompt_file": "prompts/visual.md",
+      "prompt_sha256": "4ebce105d6c452762b10ab3fa4b82691e40aab6871462f38280b6b9a5b07424f",
+      "actual_dispatch_message": "Execute the exact assignment in /workspace/eva-problem-pilot/docs/problem-pilot-20261126/prompts/visual.md. Your actual model/effort is gpt-6.2-astra/high. Read the frozen contract and accepted critique. Design advice only; no UI or copy edits. Root is sole integrator; evidence role owns final rendered Impeccable judgment."
+    },
+    {
+      "task": "pilot_evidence",
+      "model": "gpt-6.2-sol",
+      "effort": "medium",
+      "fork": "none",
+      "prompt_file": "prompts/evidence.md",
+      "prompt_sha256": "8bcbdacbee5f9615976197ba0286d0b0a5bd0b4e5fe3d6064644479a963a0572",
+      "actual_dispatch_message": "Execute the exact assignment in /workspace/eva-problem-pilot/docs/problem-pilot-20261126/prompts/evidence.md. Your actual model/effort is gpt-6.2-sol/medium. Establish baseline browser observations first, before root UI edits, then await root's final candidate build. You own QA harness/artifacts/review only; root owns source integration and all native service auth. Do not call Sites or publish."
+    },
+    {
+      "task": "reader_42",
+      "model": "gpt-6.2-astra",
+      "effort": "medium",
+      "fork": "none",
+      "skills": "None exposed deliberately to avoid priming; master/EVA workflow applied by coordinator.",
+      "prompt_file": "prompts/fresh-reader.md",
+      "actual_dispatch_message": "Perform phase 1 exactly as specified in /workspace/eva-reader-7a31/instructions.md. Inspect only its listed screenshots and save neutral observations there before any scoring or external context. Your actual model/effort is gpt-6.2-astra/medium."
+    },
+    {
+      "task": "pilot_process_review",
+      "model": "gpt-6.2-sol",
+      "effort": "medium",
+      "fork": "none",
+      "skills": [
+        "master-workflow v1",
+        "eva-preview-review v3"
+      ],
+      "prompt_file": "prompts/retrospective.md",
+      "actual_dispatch_message": "Execute the exact independent process assignment in /workspace/eva-problem-pilot/docs/problem-pilot-20261126/prompts/retrospective.md. Your actual model/effort is gpt-6.2-sol/medium. Evaluate process evidence separately from website quality, and return exactly one supported recommendation without changing the skills or source."
+    }
+  ]
+}

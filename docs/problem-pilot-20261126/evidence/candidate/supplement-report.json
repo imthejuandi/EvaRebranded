@@ -1,0 +1,196 @@
+{
+  "source": "6e0769f41434e8cc574a3b5fa87332d1ecf44a73",
+  "artifactSha256": "ec001ce8f0673a0553cd62241fde38bf89a814c50a1f38205ca715ea1be4c5df",
+  "phase": "candidate",
+  "profiles": [
+    {
+      "id": "en-supplement",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "tasso": {
+        "playbackRate": 1,
+        "src": "https://eva-problem-pilot.invalid/art/tasso-home-video/process-continuity-v3.mp4",
+        "time": 0.0362,
+        "previousNext": true,
+        "keyboardPause": true
+      },
+      "kit": {
+        "markers": [
+          "Total cholesterol",
+          "LDL Cholesterol",
+          "HDL-Cholesterol",
+          "Triglycerides",
+          "Albumin",
+          "ALP",
+          "ALT",
+          "GGT",
+          "Creatinine",
+          "Urea BUN",
+          "Uric acid",
+          "hs-CRP",
+          "Fructosamine"
+        ],
+        "meanings": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "duration": "500",
+        "reversed": true
+      },
+      "typeGeometry": {
+        "width": 555.515625,
+        "lines": [
+          {
+            "left": 83,
+            "right": 621.515625,
+            "width": 538.515625,
+            "height": 21
+          },
+          {
+            "left": 83,
+            "right": 369.734375,
+            "width": 286.734375,
+            "height": 21
+          }
+        ],
+        "height": 48,
+        "font": "\"EVA Hanken\", Arial, sans-serif",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "leading": "24px",
+        "loadedHanken": true,
+        "contrast": 16.827651516620634,
+        "paragraph": "It can be hard to make sense of a change in your lab results, even when you have the earlier numbers in front of you.",
+        "viewport": 1366,
+        "headingMargin": 16
+      },
+      "destinations": [
+        {
+          "path": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+          "content": "You can upload up to 5 reports in total with a free account. You can upload unlimited reports while your subscription is active.",
+          "forms": 1
+        },
+        {
+          "path": "/en/signup?plan=quarterly",
+          "content": "Quarterly subscription\n13 biomarkers in each kit · €99 + VAT per quarter. Cancel anytime.\nYou can upload unlimited reports while your subscription is active.",
+          "forms": 1
+        }
+      ]
+    },
+    {
+      "id": "es-supplement",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "failures": [],
+      "tasso": {
+        "playbackRate": 1,
+        "src": "https://eva-problem-pilot.invalid/art/tasso-home-video/process-continuity-v3.mp4",
+        "time": 0.0517,
+        "previousNext": true,
+        "keyboardPause": true
+      },
+      "kit": {
+        "markers": [
+          "Colesterol total",
+          "Colesterol LDL",
+          "Colesterol HDL",
+          "Triglicéridos",
+          "Albúmina",
+          "ALP",
+          "ALT",
+          "GGT",
+          "Creatinina",
+          "Urea BUN",
+          "Ácido úrico",
+          "hs-CRP",
+          "Fructosamina"
+        ],
+        "meanings": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "duration": "500",
+        "reversed": true
+      },
+      "typeGeometry": {
+        "width": 272,
+        "lines": [
+          {
+            "left": 24,
+            "right": 278.953125,
+            "width": 254.953125,
+            "height": 21
+          },
+          {
+            "left": 24,
+            "right": 272.484375,
+            "width": 248.484375,
+            "height": 21
+          },
+          {
+            "left": 24,
+            "right": 265.5625,
+            "width": 241.5625,
+            "height": 21
+          },
+          {
+            "left": 24,
+            "right": 158.6875,
+            "width": 134.6875,
+            "height": 21
+          }
+        ],
+        "height": 96,
+        "font": "\"EVA Hanken\", Arial, sans-serif",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "leading": "24px",
+        "loadedHanken": true,
+        "contrast": 16.827651516620634,
+        "paragraph": "Puede costar entender qué significa un cambio en los resultados de tus análisis, incluso si tienes las cifras anteriores delante.",
+        "viewport": 320,
+        "headingMargin": 16
+      },
+      "destinations": [
+        {
+          "path": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+          "content": "Puedes subir hasta 5 informes en total con tu cuenta gratuita. Puedes subir informes sin límite mientras tu suscripción esté activa.",
+          "forms": 1
+        },
+        {
+          "path": "/es/signup?plan=quarterly",
+          "content": "Suscripción trimestral\nKit de 13 biomarcadores · 99 € + IVA por trimestre. Cancela cuando quieras.\nPuedes subir informes sin límite mientras tu suscripción esté activa.",
+          "forms": 1
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [],
+  "allOwnedBrowsersClosed": true
+}

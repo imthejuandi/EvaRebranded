@@ -1,0 +1,4766 @@
+{
+  "phase": "baseline",
+  "artifactScope": "Production files fulfilled directly through Chromium routing; no server, hosted preview or network requests.",
+  "source": "58bac762100a18c440b38429dee95f4663194e2d",
+  "sourceManifestSha256": "3d5b40406d40d03afd820e2d714b810fb73baecec696d0d753877104522b4676",
+  "artifactSha256": "c8ce50122139a10d3c27ab0bf9fe2996f687102df02b5c7eaf56a9548496769e",
+  "artifactFiles": 789,
+  "artifactHashMethod": "SHA-256 of JSON array of sorted relative file paths and each file SHA-256.",
+  "runnerSha256": "ac8e83ed4008d18c6896ef7da27fbe77fb5e57fe75249659c70f7684c9e3927a",
+  "reportStarted": "2026-11-26T21:49:33.628Z",
+  "profiles": [
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "id": "en-1366-normal",
+      "failures": [
+        {
+          "name": "unchanged independent range",
+          "detail": {
+            "sample": "2.9",
+            "lab": "<3 mg/L",
+            "lower": "<1 mg/L",
+            "positions": [
+              "57.99999999999999%",
+              "60%",
+              "20%"
+            ],
+            "headings": [
+              "There’s moreto “normal.”",
+              "hs-CRP Example",
+              "Lab’s reference range",
+              "Lower relative heart risk"
+            ]
+          }
+        }
+      ],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "reveal",
+        "runner": "complete",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732.1077270507812,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776.1077270507812
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0.991021,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732.1077270507812,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776.1077270507812
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0.991021,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.949312210083008,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.98056221008301
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": [
+          {
+            "readyState": 4,
+            "rate": 1,
+            "time": 2.6167,
+            "src": "https://eva-problem-pilot.invalid/art/runner-athletic-loop.mp4"
+          }
+        ]
+      },
+      "heroObservations": [
+        {
+          "at": 216,
+          "entry": "pending",
+          "visibility": "visible"
+        },
+        {
+          "at": 967,
+          "entry": "watching",
+          "runner": "running",
+          "visibility": "visible",
+          "video": 0
+        },
+        {
+          "at": 3528,
+          "entry": "watching",
+          "runner": "complete",
+          "visibility": "visible",
+          "signal": "2.292",
+          "video": 2.3116
+        },
+        {
+          "at": 3551,
+          "entry": "reveal",
+          "runner": "complete",
+          "visibility": "visible",
+          "signal": "2.333",
+          "video": 2.3323
+        }
+      ],
+      "sections": {
+        "order": [
+          {
+            "id": "entender-tus-analisis",
+            "top": 900,
+            "height": 716
+          },
+          {
+            "id": "recogida-en-casa",
+            "top": 1616.265625,
+            "height": 900
+          },
+          {
+            "id": "kit-inicial",
+            "top": 2516.265625,
+            "height": 2707
+          },
+          {
+            "id": "otra-lectura",
+            "top": 5223.609375,
+            "height": 569
+          },
+          {
+            "id": "biomarcadores",
+            "top": 5792.609375,
+            "height": 473
+          },
+          {
+            "id": "alex-story",
+            "top": 5816.609375,
+            "height": 333
+          },
+          {
+            "id": "una-senal",
+            "top": 6265.390625,
+            "height": 1125
+          },
+          {
+            "id": "tu-evolucion",
+            "top": 9120.6875,
+            "height": 1174
+          },
+          {
+            "id": "volver-a-la-vida",
+            "top": 11643.109375,
+            "height": 2293
+          }
+        ],
+        "regionNames": [
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          },
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          }
+        ],
+        "bridge": null,
+        "documentWidth": 1366,
+        "clientWidth": 1366,
+        "alexCount": 1,
+        "disclosuresInitiallyOpen": [
+          [
+            "range-proof-details",
+            false
+          ],
+          [
+            "guided-evidence-details",
+            false
+          ],
+          [
+            "sample-dashboard",
+            false
+          ],
+          [
+            "bio-range-disclosure",
+            false
+          ]
+        ],
+        "alexHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "statementHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "range": {
+          "sample": "2.9",
+          "lab": "<3 mg/L",
+          "lower": "<1 mg/L",
+          "positions": [
+            "57.99999999999999%",
+            "60%",
+            "20%"
+          ],
+          "headings": [
+            "There’s moreto “normal.”",
+            "hs-CRP Example",
+            "Lab’s reference range",
+            "Lower relative heart risk"
+          ]
+        },
+        "collection": {
+          "video": true,
+          "controls": [
+            "01Collect",
+            "02Return",
+            "03Understand",
+            "Previous",
+            "Play film",
+            "Next"
+          ]
+        },
+        "kit": {
+          "id": "kit-inicial",
+          "headings": [
+            "Your data.In context.",
+            "What wemeasure.",
+            "Medical terms.Made clear.",
+            "Your data.In context."
+          ]
+        }
+      },
+      "sequence": [
+        {
+          "offset": 0,
+          "screenshot": "en-1366-normal-sequence-01.png",
+          "y": 900,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              0,
+              716,
+              true
+            ],
+            [
+              "#alex-story",
+              4917,
+              5249,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              716,
+              1616,
+              true
+            ],
+            [
+              "#kit-inicial",
+              1616,
+              4324,
+              false
+            ]
+          ]
+        },
+        {
+          "offset": 702,
+          "screenshot": "en-1366-normal-sequence-02.png",
+          "y": 1602,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -702,
+              14,
+              true
+            ],
+            [
+              "#alex-story",
+              4215,
+              4547,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              14,
+              914,
+              true
+            ],
+            [
+              "#kit-inicial",
+              914,
+              3622,
+              false
+            ]
+          ]
+        },
+        {
+          "offset": 1404,
+          "screenshot": "en-1366-normal-sequence-03.png",
+          "y": 2304,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -1404,
+              -688,
+              false
+            ],
+            [
+              "#alex-story",
+              3513,
+              3845,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -688,
+              212,
+              true
+            ],
+            [
+              "#kit-inicial",
+              212,
+              2920,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 2106,
+          "screenshot": "en-1366-normal-sequence-04.png",
+          "y": 3006,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -2106,
+              -1390,
+              false
+            ],
+            [
+              "#alex-story",
+              2811,
+              3143,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -1390,
+              -490,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -490,
+              2218,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 2808,
+          "screenshot": "en-1366-normal-sequence-05.png",
+          "y": 3708,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -2808,
+              -2092,
+              false
+            ],
+            [
+              "#alex-story",
+              2109,
+              2441,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -2092,
+              -1192,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -1192,
+              1516,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 3510,
+          "screenshot": "en-1366-normal-sequence-06.png",
+          "y": 4410,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -3510,
+              -2794,
+              false
+            ],
+            [
+              "#alex-story",
+              1407,
+              1739,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -2794,
+              -1894,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -1894,
+              814,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 4212,
+          "screenshot": "en-1366-normal-sequence-07.png",
+          "y": 5112,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -4212,
+              -3496,
+              false
+            ],
+            [
+              "#alex-story",
+              705,
+              1037,
+              true
+            ],
+            [
+              "#recogida-en-casa",
+              -3496,
+              -2596,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -2596,
+              112,
+              true
+            ]
+          ]
+        }
+      ],
+      "alexA11y": "- heading \"Your results. Explained your way.\" [level=2]:\n  - text: Your results.\n  - emphasis: Explained your way.\n- region \"Explanation level\":\n  - heading \"Explanation level\" [level=3]\n  - 'button \"Your reading setting: Beginner\"': Beginner\n- heading \"hs-CRP\" [level=3]\n- paragraph: ALEX · A FICTIONAL EXAMPLE\n- paragraph: 2.1 mg/L\n- paragraph: Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.\n- group: View history and blood-draw notes\n- status\n- paragraph: Fictional example. Not a medical assessment.\n- link \"Interpret your past labs 5 free report uploads per account\":\n  - /url: /en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "depths": [
+        {
+          "depth": "simple",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Beginner",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "balanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Intermediate",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Intermediate. Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "advanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Advanced",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Advanced. hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        }
+      ],
+      "chapterTargets": [
+        {
+          "section": "recogida-en-casa",
+          "frame": 0,
+          "scrollY": 1616,
+          "reducedMotion": false
+        },
+        {
+          "section": "kit-inicial",
+          "frame": 555,
+          "scrollY": 2516,
+          "reducedMotion": false
+        },
+        {
+          "section": "biomarcadores",
+          "frame": 0,
+          "scrollY": 5793,
+          "reducedMotion": false
+        }
+      ],
+      "galleryA11y": "- region \"Your results. Explained your way.\":\n  - heading \"Your results. Explained your way.\" [level=2]:\n    - text: Your results.\n    - emphasis: Explained your way.\n  - region \"Explanation level\":\n    - heading \"Explanation level\" [level=3]\n    - 'button \"Your reading setting: Advanced\"': Advanced\n  - heading \"hs-CRP\" [level=3]",
+      "galleryHistory": "hs-CRP. Illustrative sequence: 2.8, 2.5, 2.7, 2.1 mg/L. Reading 4 selected."
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": true,
+      "id": "en-1366-reduced",
+      "failures": [
+        {
+          "name": "unchanged independent range",
+          "detail": {
+            "sample": "2.9",
+            "lab": "<3 mg/L",
+            "lower": "<1 mg/L",
+            "positions": [
+              "57.99999999999999%",
+              "60%",
+              "20%"
+            ],
+            "headings": [
+              "There’s moreto “normal.”",
+              "hs-CRP Example",
+              "Lab’s reference range",
+              "Lower relative heart risk"
+            ]
+          }
+        }
+      ],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "skip",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": true,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "heroObservations": [
+        {
+          "at": 136,
+          "entry": "pending",
+          "visibility": "visible"
+        },
+        {
+          "at": 510,
+          "entry": "skip",
+          "visibility": null
+        }
+      ],
+      "sections": {
+        "order": [
+          {
+            "id": "entender-tus-analisis",
+            "top": 900,
+            "height": 716
+          },
+          {
+            "id": "recogida-en-casa",
+            "top": 1616.265625,
+            "height": 960
+          },
+          {
+            "id": "kit-inicial",
+            "top": 2576.578125,
+            "height": 1116
+          },
+          {
+            "id": "otra-lectura",
+            "top": 3692.53125,
+            "height": 569
+          },
+          {
+            "id": "biomarcadores",
+            "top": 4261.53125,
+            "height": 473
+          },
+          {
+            "id": "alex-story",
+            "top": 4285.53125,
+            "height": 333
+          },
+          {
+            "id": "una-senal",
+            "top": 4734.3125,
+            "height": 1080
+          },
+          {
+            "id": "tu-evolucion",
+            "top": 7544.640625,
+            "height": 1174
+          },
+          {
+            "id": "volver-a-la-vida",
+            "top": 10067.0625,
+            "height": 900
+          }
+        ],
+        "regionNames": [
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          },
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          }
+        ],
+        "bridge": null,
+        "documentWidth": 1366,
+        "clientWidth": 1366,
+        "alexCount": 1,
+        "disclosuresInitiallyOpen": [
+          [
+            "range-proof-details",
+            false
+          ],
+          [
+            "guided-evidence-details",
+            false
+          ],
+          [
+            "sample-dashboard",
+            false
+          ],
+          [
+            "bio-range-disclosure",
+            false
+          ]
+        ],
+        "alexHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "statementHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "range": {
+          "sample": "2.9",
+          "lab": "<3 mg/L",
+          "lower": "<1 mg/L",
+          "positions": [
+            "57.99999999999999%",
+            "60%",
+            "20%"
+          ],
+          "headings": [
+            "There’s moreto “normal.”",
+            "hs-CRP Example",
+            "Lab’s reference range",
+            "Lower relative heart risk"
+          ]
+        },
+        "collection": {
+          "video": false,
+          "controls": []
+        },
+        "kit": {
+          "id": "kit-inicial",
+          "headings": [
+            "Your data.In context."
+          ]
+        }
+      },
+      "alexA11y": "- heading \"Your results. Explained your way.\" [level=2]:\n  - text: Your results.\n  - emphasis: Explained your way.\n- region \"Explanation level\":\n  - heading \"Explanation level\" [level=3]\n  - 'button \"Your reading setting: Beginner\"': Beginner\n- heading \"hs-CRP\" [level=3]\n- paragraph: ALEX · A FICTIONAL EXAMPLE\n- paragraph: 2.1 mg/L\n- paragraph: Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.\n- group: View history and blood-draw notes\n- status\n- paragraph: Fictional example. Not a medical assessment.\n- link \"Interpret your past labs 5 free report uploads per account\":\n  - /url: /en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "depths": [
+        {
+          "depth": "simple",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Beginner",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "balanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Intermediate",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Intermediate. Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "advanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Advanced",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Advanced. hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        }
+      ],
+      "chapterTargets": [
+        {
+          "chapter": 2,
+          "section": "recogida-en-casa",
+          "frame": 0,
+          "scrollY": 1616,
+          "reducedMotion": true
+        },
+        {
+          "chapter": 3,
+          "section": "kit-inicial",
+          "frame": 0,
+          "scrollY": 2577,
+          "reducedMotion": true
+        },
+        {
+          "chapter": 4,
+          "section": "biomarcadores",
+          "frame": 0,
+          "scrollY": 4262,
+          "reducedMotion": true
+        }
+      ],
+      "galleryA11y": "- region \"Your results. Explained your way.\":\n  - heading \"Your results. Explained your way.\" [level=2]:\n    - text: Your results.\n    - emphasis: Explained your way.\n  - region \"Explanation level\":\n    - heading \"Explanation level\" [level=3]\n    - 'button \"Your reading setting: Advanced\"': Advanced\n  - heading \"hs-CRP\" [level=3]",
+      "galleryHistory": "hs-CRP. Illustrative sequence: 2.8, 2.5, 2.7, 2.1 mg/L. Reading 4 selected."
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "id": "en-390-normal",
+      "failures": [
+        {
+          "name": "unchanged independent range",
+          "detail": {
+            "sample": "2.9",
+            "lab": "<3 mg/L",
+            "lower": "<1 mg/L",
+            "positions": [
+              "57.99999999999999%",
+              "60%",
+              "20%"
+            ],
+            "headings": [
+              "There’s moreto “normal.”",
+              "hs-CRP Example",
+              "Lab’s reference range",
+              "Lower relative heart risk"
+            ]
+          }
+        }
+      ],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 24,
+              "y": 661,
+              "width": 139.15625,
+              "height": 44,
+              "right": 163.15625,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 171.15625,
+              "y": 661,
+              "width": 194.828125,
+              "height": 44,
+              "right": 365.984375,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 390,
+        "documentWidth": 390,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "reveal",
+        "runner": "complete",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 24,
+              "y": 661.1080322265625,
+              "width": 139.15625,
+              "height": 44,
+              "right": 163.15625,
+              "bottom": 705.1080322265625
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0.990998,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 171.15625,
+              "y": 661.1080322265625,
+              "width": 194.828125,
+              "height": 44,
+              "right": 365.984375,
+              "bottom": 705.1080322265625
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0.990998,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 390,
+        "documentWidth": 390,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 32.012306213378906,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.902931213378906
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": [
+          {
+            "readyState": 4,
+            "rate": 1,
+            "time": 2.6445,
+            "src": "https://eva-problem-pilot.invalid/art/runner-athletic-mobile.mp4"
+          }
+        ]
+      },
+      "heroObservations": [
+        {
+          "at": 155,
+          "entry": "pending",
+          "visibility": "visible"
+        },
+        {
+          "at": 605,
+          "entry": "watching",
+          "runner": "running",
+          "visibility": "visible",
+          "video": 0
+        },
+        {
+          "at": 3000,
+          "entry": "watching",
+          "runner": "complete",
+          "visibility": "visible",
+          "signal": "2.292",
+          "video": 2.3152
+        },
+        {
+          "at": 3050,
+          "entry": "reveal",
+          "runner": "complete",
+          "visibility": "visible",
+          "signal": "2.333",
+          "video": 2.3628
+        }
+      ],
+      "sections": {
+        "order": [
+          {
+            "id": "entender-tus-analisis",
+            "top": 844,
+            "height": 845
+          },
+          {
+            "id": "recogida-en-casa",
+            "top": 1689.21875,
+            "height": 844
+          },
+          {
+            "id": "kit-inicial",
+            "top": 2533.21875,
+            "height": 2539
+          },
+          {
+            "id": "otra-lectura",
+            "top": 5072.09375,
+            "height": 694
+          },
+          {
+            "id": "biomarcadores",
+            "top": 5766.328125,
+            "height": 769
+          },
+          {
+            "id": "alex-story",
+            "top": 5790.328125,
+            "height": 645
+          },
+          {
+            "id": "una-senal",
+            "top": 6535.328125,
+            "height": 1055
+          },
+          {
+            "id": "tu-evolucion",
+            "top": 10053.84375,
+            "height": 1069
+          },
+          {
+            "id": "volver-a-la-vida",
+            "top": 12570.015625,
+            "height": 2150
+          }
+        ],
+        "regionNames": [
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          },
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          }
+        ],
+        "bridge": null,
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "alexCount": 1,
+        "disclosuresInitiallyOpen": [
+          [
+            "range-proof-details",
+            false
+          ],
+          [
+            "guided-evidence-details",
+            false
+          ],
+          [
+            "sample-dashboard",
+            false
+          ],
+          [
+            "bio-range-disclosure",
+            false
+          ]
+        ],
+        "alexHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "statementHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "range": {
+          "sample": "2.9",
+          "lab": "<3 mg/L",
+          "lower": "<1 mg/L",
+          "positions": [
+            "57.99999999999999%",
+            "60%",
+            "20%"
+          ],
+          "headings": [
+            "There’s moreto “normal.”",
+            "hs-CRP Example",
+            "Lab’s reference range",
+            "Lower relative heart risk"
+          ]
+        },
+        "collection": {
+          "video": true,
+          "controls": [
+            "01Collect",
+            "02Return",
+            "03Understand",
+            "Previous",
+            "Play film",
+            "Next"
+          ]
+        },
+        "kit": {
+          "id": "kit-inicial",
+          "headings": [
+            "Your data.In context.",
+            "What wemeasure.",
+            "Medical terms.Made clear.",
+            "Your data.In context."
+          ]
+        }
+      },
+      "sequence": [
+        {
+          "offset": 0,
+          "screenshot": "en-390-normal-sequence-01.png",
+          "y": 844,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              0,
+              845,
+              true
+            ],
+            [
+              "#alex-story",
+              4946,
+              5591,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              845,
+              1689,
+              false
+            ],
+            [
+              "#kit-inicial",
+              1689,
+              4228,
+              false
+            ]
+          ]
+        },
+        {
+          "offset": 658,
+          "screenshot": "en-390-normal-sequence-02.png",
+          "y": 1502,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -658,
+              187,
+              true
+            ],
+            [
+              "#alex-story",
+              4288,
+              4933,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              187,
+              1031,
+              true
+            ],
+            [
+              "#kit-inicial",
+              1031,
+              3570,
+              false
+            ]
+          ]
+        },
+        {
+          "offset": 1316,
+          "screenshot": "en-390-normal-sequence-03.png",
+          "y": 2160,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -1316,
+              -471,
+              false
+            ],
+            [
+              "#alex-story",
+              3630,
+              4275,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -471,
+              373,
+              true
+            ],
+            [
+              "#kit-inicial",
+              373,
+              2912,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 1974,
+          "screenshot": "en-390-normal-sequence-04.png",
+          "y": 2818,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -1974,
+              -1129,
+              false
+            ],
+            [
+              "#alex-story",
+              2972,
+              3617,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -1129,
+              -285,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -285,
+              2254,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 2632,
+          "screenshot": "en-390-normal-sequence-05.png",
+          "y": 3476,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -2632,
+              -1787,
+              false
+            ],
+            [
+              "#alex-story",
+              2314,
+              2959,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -1787,
+              -943,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -943,
+              1596,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 3290,
+          "screenshot": "en-390-normal-sequence-06.png",
+          "y": 4134,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -3290,
+              -2445,
+              false
+            ],
+            [
+              "#alex-story",
+              1656,
+              2301,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -2445,
+              -1601,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -1601,
+              938,
+              true
+            ]
+          ]
+        },
+        {
+          "offset": 3948,
+          "screenshot": "en-390-normal-sequence-07.png",
+          "y": 4792,
+          "bounds": [
+            [
+              "#entender-tus-analisis",
+              -3948,
+              -3103,
+              false
+            ],
+            [
+              "#alex-story",
+              998,
+              1643,
+              false
+            ],
+            [
+              "#recogida-en-casa",
+              -3103,
+              -2259,
+              false
+            ],
+            [
+              "#kit-inicial",
+              -2259,
+              280,
+              true
+            ]
+          ]
+        }
+      ],
+      "alexA11y": "- heading \"Your results. Explained your way.\" [level=2]:\n  - text: Your results.\n  - emphasis: Explained your way.\n- region \"Explanation level\":\n  - heading \"Explanation level\" [level=3]\n  - 'button \"Your reading setting: Beginner\"': Beginner\n- heading \"hs-CRP\" [level=3]\n- paragraph: ALEX · A FICTIONAL EXAMPLE\n- paragraph: 2.1 mg/L\n- paragraph: Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.\n- group: View history and blood-draw notes\n- status\n- paragraph: Fictional example. Not a medical assessment.\n- link \"Interpret your past labs 5 free report uploads per account\":\n  - /url: /en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "depths": [
+        {
+          "depth": "simple",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Beginner",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "balanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Intermediate",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Intermediate. Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "advanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Advanced",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Advanced. hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        }
+      ],
+      "chapterTargets": [
+        {
+          "section": "recogida-en-casa",
+          "frame": 0,
+          "scrollY": 1689,
+          "reducedMotion": false
+        },
+        {
+          "section": "kit-inicial",
+          "frame": 555,
+          "scrollY": 2533,
+          "reducedMotion": false
+        },
+        {
+          "section": "biomarcadores",
+          "frame": 0,
+          "scrollY": 5766,
+          "reducedMotion": false
+        }
+      ],
+      "galleryA11y": "- region \"Your results. Explained your way.\":\n  - heading \"Your results. Explained your way.\" [level=2]:\n    - text: Your results.\n    - emphasis: Explained your way.\n  - region \"Explanation level\":\n    - heading \"Explanation level\" [level=3]\n    - 'button \"Your reading setting: Advanced\"': Advanced\n  - heading \"hs-CRP\" [level=3]",
+      "galleryHistory": "hs-CRP. Illustrative sequence: 2.8, 2.5, 2.7, 2.1 mg/L. Reading 4 selected."
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "id": "en-390-reduced",
+      "failures": [
+        {
+          "name": "unchanged independent range",
+          "detail": {
+            "sample": "2.9",
+            "lab": "<3 mg/L",
+            "lower": "<1 mg/L",
+            "positions": [
+              "57.99999999999999%",
+              "60%",
+              "20%"
+            ],
+            "headings": [
+              "There’s moreto “normal.”",
+              "hs-CRP Example",
+              "Lab’s reference range",
+              "Lower relative heart risk"
+            ]
+          }
+        }
+      ],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 24,
+              "y": 661,
+              "width": 139.15625,
+              "height": 44,
+              "right": 163.15625,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 171.15625,
+              "y": 661,
+              "width": 194.828125,
+              "height": 44,
+              "right": 365.984375,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 390,
+        "documentWidth": 390,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "skip",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 24,
+              "y": 661,
+              "width": 139.15625,
+              "height": 44,
+              "right": 163.15625,
+              "bottom": 705
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 171.15625,
+              "y": 661,
+              "width": 194.828125,
+              "height": 44,
+              "right": 365.984375,
+              "bottom": 705
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": true,
+        "scrollY": 0,
+        "viewport": 390,
+        "documentWidth": 390,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "heroObservations": [
+        {
+          "at": 110,
+          "entry": "pending",
+          "visibility": "visible"
+        },
+        {
+          "at": 480,
+          "entry": "skip",
+          "visibility": null
+        }
+      ],
+      "sections": {
+        "order": [
+          {
+            "id": "entender-tus-analisis",
+            "top": 844,
+            "height": 845
+          },
+          {
+            "id": "recogida-en-casa",
+            "top": 1689.21875,
+            "height": 1825
+          },
+          {
+            "id": "kit-inicial",
+            "top": 3514.265625,
+            "height": 1290
+          },
+          {
+            "id": "otra-lectura",
+            "top": 4803.875,
+            "height": 694
+          },
+          {
+            "id": "biomarcadores",
+            "top": 5498.109375,
+            "height": 769
+          },
+          {
+            "id": "alex-story",
+            "top": 5522.109375,
+            "height": 645
+          },
+          {
+            "id": "una-senal",
+            "top": 6267.109375,
+            "height": 1150
+          },
+          {
+            "id": "tu-evolucion",
+            "top": 9880.515625,
+            "height": 1069
+          },
+          {
+            "id": "volver-a-la-vida",
+            "top": 12396.6875,
+            "height": 844
+          }
+        ],
+        "regionNames": [
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          },
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          }
+        ],
+        "bridge": null,
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "alexCount": 1,
+        "disclosuresInitiallyOpen": [
+          [
+            "range-proof-details",
+            false
+          ],
+          [
+            "guided-evidence-details",
+            false
+          ],
+          [
+            "sample-dashboard",
+            false
+          ],
+          [
+            "bio-range-disclosure",
+            false
+          ]
+        ],
+        "alexHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "statementHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "range": {
+          "sample": "2.9",
+          "lab": "<3 mg/L",
+          "lower": "<1 mg/L",
+          "positions": [
+            "57.99999999999999%",
+            "60%",
+            "20%"
+          ],
+          "headings": [
+            "There’s moreto “normal.”",
+            "hs-CRP Example",
+            "Lab’s reference range",
+            "Lower relative heart risk"
+          ]
+        },
+        "collection": {
+          "video": false,
+          "controls": []
+        },
+        "kit": {
+          "id": "kit-inicial",
+          "headings": [
+            "Your data.In context."
+          ]
+        }
+      },
+      "alexA11y": "- heading \"Your results. Explained your way.\" [level=2]:\n  - text: Your results.\n  - emphasis: Explained your way.\n- region \"Explanation level\":\n  - heading \"Explanation level\" [level=3]\n  - 'button \"Your reading setting: Beginner\"': Beginner\n- heading \"hs-CRP\" [level=3]\n- paragraph: ALEX · A FICTIONAL EXAMPLE\n- paragraph: 2.1 mg/L\n- paragraph: Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.\n- group: View history and blood-draw notes\n- status\n- paragraph: Fictional example. Not a medical assessment.\n- link \"Interpret your past labs 5 free report uploads per account\":\n  - /url: /en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "depths": [
+        {
+          "depth": "simple",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Beginner",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "balanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Intermediate",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Intermediate. Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "advanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Advanced",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Advanced. hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        }
+      ],
+      "chapterTargets": [
+        {
+          "chapter": 2,
+          "section": "recogida-en-casa",
+          "frame": 0,
+          "scrollY": 1689,
+          "reducedMotion": true
+        },
+        {
+          "chapter": 3,
+          "section": "kit-inicial",
+          "frame": 0,
+          "scrollY": 3514,
+          "reducedMotion": true
+        },
+        {
+          "chapter": 4,
+          "section": "biomarcadores",
+          "frame": 0,
+          "scrollY": 5498,
+          "reducedMotion": true
+        }
+      ],
+      "galleryA11y": "- region \"Your results. Explained your way.\":\n  - heading \"Your results. Explained your way.\" [level=2]:\n    - text: Your results.\n    - emphasis: Explained your way.\n  - region \"Explanation level\":\n    - heading \"Explanation level\" [level=3]\n    - 'button \"Your reading setting: Advanced\"': Advanced\n  - heading \"hs-CRP\" [level=3]",
+      "galleryHistory": "hs-CRP. Illustrative sequence: 2.8, 2.5, 2.7, 2.1 mg/L. Reading 4 selected."
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "id": "en-320-normal",
+      "failures": [
+        {
+          "name": "unchanged independent range",
+          "detail": {
+            "sample": "2.9",
+            "lab": "<3 mg/L",
+            "lower": "<1 mg/L",
+            "positions": [
+              "57.99999999999999%",
+              "60%",
+              "20%"
+            ],
+            "headings": [
+              "There’s moreto “normal.”",
+              "hs-CRP Example",
+              "Lab’s reference range",
+              "Lower relative heart risk"
+            ]
+          }
+        }
+      ],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 16,
+              "y": 661,
+              "width": 106,
+              "height": 44,
+              "right": 122,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 130,
+              "y": 661,
+              "width": 174,
+              "height": 44,
+              "right": 304,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 320,
+        "documentWidth": 320,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "reveal",
+        "runner": "complete",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 16,
+              "y": 661.1080932617188,
+              "width": 106,
+              "height": 44,
+              "right": 122,
+              "bottom": 705.1080932617188
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0.990994,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 130,
+              "y": 661.1080932617188,
+              "width": 174,
+              "height": 44,
+              "right": 304,
+              "bottom": 705.1080932617188
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0.990994,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 320,
+        "documentWidth": 320,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 32.012386322021484,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.903011322021484
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": [
+          {
+            "readyState": 4,
+            "rate": 1,
+            "time": 2.6295,
+            "src": "https://eva-problem-pilot.invalid/art/runner-athletic-mobile.mp4"
+          }
+        ]
+      },
+      "heroObservations": [
+        {
+          "at": 231,
+          "entry": "pending",
+          "visibility": "visible"
+        },
+        {
+          "at": 671,
+          "entry": "watching",
+          "runner": "running",
+          "visibility": "visible",
+          "video": 0
+        },
+        {
+          "at": 3094,
+          "entry": "watching",
+          "runner": "complete",
+          "visibility": "visible",
+          "signal": "2.292",
+          "video": 2.319
+        },
+        {
+          "at": 3131,
+          "entry": "reveal",
+          "runner": "complete",
+          "visibility": "visible",
+          "signal": "2.333",
+          "video": 2.3539
+        }
+      ],
+      "sections": {
+        "order": [
+          {
+            "id": "entender-tus-analisis",
+            "top": 844,
+            "height": 859
+          },
+          {
+            "id": "recogida-en-casa",
+            "top": 1703.359375,
+            "height": 844
+          },
+          {
+            "id": "kit-inicial",
+            "top": 2547.359375,
+            "height": 2539
+          },
+          {
+            "id": "otra-lectura",
+            "top": 5086.234375,
+            "height": 694
+          },
+          {
+            "id": "biomarcadores",
+            "top": 5780.46875,
+            "height": 828
+          },
+          {
+            "id": "alex-story",
+            "top": 5804.46875,
+            "height": 704
+          },
+          {
+            "id": "una-senal",
+            "top": 6608.25,
+            "height": 1055
+          },
+          {
+            "id": "tu-evolucion",
+            "top": 10233.15625,
+            "height": 1099
+          },
+          {
+            "id": "volver-a-la-vida",
+            "top": 12734.390625,
+            "height": 2150
+          }
+        ],
+        "regionNames": [
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          },
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          }
+        ],
+        "bridge": null,
+        "documentWidth": 320,
+        "clientWidth": 320,
+        "alexCount": 1,
+        "disclosuresInitiallyOpen": [
+          [
+            "range-proof-details",
+            false
+          ],
+          [
+            "guided-evidence-details",
+            false
+          ],
+          [
+            "sample-dashboard",
+            false
+          ],
+          [
+            "bio-range-disclosure",
+            false
+          ]
+        ],
+        "alexHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "statementHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "range": {
+          "sample": "2.9",
+          "lab": "<3 mg/L",
+          "lower": "<1 mg/L",
+          "positions": [
+            "57.99999999999999%",
+            "60%",
+            "20%"
+          ],
+          "headings": [
+            "There’s moreto “normal.”",
+            "hs-CRP Example",
+            "Lab’s reference range",
+            "Lower relative heart risk"
+          ]
+        },
+        "collection": {
+          "video": true,
+          "controls": [
+            "01Collect",
+            "02Return",
+            "03Understand",
+            "Previous",
+            "Play film",
+            "Next"
+          ]
+        },
+        "kit": {
+          "id": "kit-inicial",
+          "headings": [
+            "Your data.In context.",
+            "What wemeasure.",
+            "Medical terms.Made clear.",
+            "Your data.In context."
+          ]
+        }
+      },
+      "alexA11y": "- heading \"Your results. Explained your way.\" [level=2]:\n  - text: Your results.\n  - emphasis: Explained your way.\n- region \"Explanation level\":\n  - heading \"Explanation level\" [level=3]\n  - 'button \"Your reading setting: Beginner\"': Beginner\n- heading \"hs-CRP\" [level=3]\n- paragraph: ALEX · A FICTIONAL EXAMPLE\n- paragraph: 2.1 mg/L\n- paragraph: Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.\n- group: View history and blood-draw notes\n- status\n- paragraph: Fictional example. Not a medical assessment.\n- link \"Interpret your past labs 5 free report uploads per account\":\n  - /url: /en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "depths": [
+        {
+          "depth": "simple",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Beginner",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "balanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Intermediate",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Intermediate. Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "advanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Advanced",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Advanced. hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        }
+      ],
+      "chapterTargets": [
+        {
+          "section": "recogida-en-casa",
+          "frame": 0,
+          "scrollY": 1703,
+          "reducedMotion": false
+        },
+        {
+          "section": "kit-inicial",
+          "frame": 555,
+          "scrollY": 2547,
+          "reducedMotion": false
+        },
+        {
+          "section": "biomarcadores",
+          "frame": 0,
+          "scrollY": 5780,
+          "reducedMotion": false
+        }
+      ],
+      "galleryA11y": "- region \"Your results. Explained your way.\":\n  - heading \"Your results. Explained your way.\" [level=2]:\n    - text: Your results.\n    - emphasis: Explained your way.\n  - region \"Explanation level\":\n    - heading \"Explanation level\" [level=3]\n    - 'button \"Your reading setting: Advanced\"': Advanced\n  - heading \"hs-CRP\" [level=3]",
+      "galleryHistory": "hs-CRP. Illustrative sequence: 2.8, 2.5, 2.7, 2.1 mg/L. Reading 4 selected."
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "reduced": true,
+      "id": "en-320-reduced",
+      "failures": [
+        {
+          "name": "unchanged independent range",
+          "detail": {
+            "sample": "2.9",
+            "lab": "<3 mg/L",
+            "lower": "<1 mg/L",
+            "positions": [
+              "57.99999999999999%",
+              "60%",
+              "20%"
+            ],
+            "headings": [
+              "There’s moreto “normal.”",
+              "hs-CRP Example",
+              "Lab’s reference range",
+              "Lower relative heart risk"
+            ]
+          }
+        }
+      ],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 16,
+              "y": 661,
+              "width": 106,
+              "height": 44,
+              "right": 122,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 130,
+              "y": 661,
+              "width": 174,
+              "height": 44,
+              "right": 304,
+              "bottom": 705
+            },
+            "hit": false,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 320,
+        "documentWidth": 320,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "skip",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 16,
+              "y": 661,
+              "width": 106,
+              "height": 44,
+              "right": 122,
+              "bottom": 705
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 130,
+              "y": 661,
+              "width": 174,
+              "height": 44,
+              "right": 304,
+              "bottom": 705
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": true,
+        "scrollY": 0,
+        "viewport": 320,
+        "documentWidth": 320,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 24,
+            "y": 31.796875,
+            "width": 78,
+            "height": 28.890625,
+            "right": 102,
+            "bottom": 60.6875
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "heroObservations": [
+        {
+          "at": 89,
+          "entry": "pending",
+          "visibility": "visible"
+        },
+        {
+          "at": 433,
+          "entry": "skip",
+          "visibility": null
+        }
+      ],
+      "sections": {
+        "order": [
+          {
+            "id": "entender-tus-analisis",
+            "top": 844,
+            "height": 859
+          },
+          {
+            "id": "recogida-en-casa",
+            "top": 1703.359375,
+            "height": 1812
+          },
+          {
+            "id": "kit-inicial",
+            "top": 3515.46875,
+            "height": 1351
+          },
+          {
+            "id": "otra-lectura",
+            "top": 4866.515625,
+            "height": 694
+          },
+          {
+            "id": "biomarcadores",
+            "top": 5560.75,
+            "height": 828
+          },
+          {
+            "id": "alex-story",
+            "top": 5584.75,
+            "height": 704
+          },
+          {
+            "id": "una-senal",
+            "top": 6388.53125,
+            "height": 1148
+          },
+          {
+            "id": "tu-evolucion",
+            "top": 10106.09375,
+            "height": 1099
+          },
+          {
+            "id": "volver-a-la-vida",
+            "top": 12607.328125,
+            "height": 844
+          }
+        ],
+        "regionNames": [
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          },
+          {
+            "id": "biomarcadores",
+            "name": "Your results.Explained your way.",
+            "references": [
+              "markers-title"
+            ],
+            "allTargetsLocal": true
+          }
+        ],
+        "bridge": null,
+        "documentWidth": 320,
+        "clientWidth": 320,
+        "alexCount": 1,
+        "disclosuresInitiallyOpen": [
+          [
+            "range-proof-details",
+            false
+          ],
+          [
+            "guided-evidence-details",
+            false
+          ],
+          [
+            "sample-dashboard",
+            false
+          ],
+          [
+            "bio-range-disclosure",
+            false
+          ]
+        ],
+        "alexHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "statementHref": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+        "range": {
+          "sample": "2.9",
+          "lab": "<3 mg/L",
+          "lower": "<1 mg/L",
+          "positions": [
+            "57.99999999999999%",
+            "60%",
+            "20%"
+          ],
+          "headings": [
+            "There’s moreto “normal.”",
+            "hs-CRP Example",
+            "Lab’s reference range",
+            "Lower relative heart risk"
+          ]
+        },
+        "collection": {
+          "video": false,
+          "controls": []
+        },
+        "kit": {
+          "id": "kit-inicial",
+          "headings": [
+            "Your data.In context."
+          ]
+        }
+      },
+      "alexA11y": "- heading \"Your results. Explained your way.\" [level=2]:\n  - text: Your results.\n  - emphasis: Explained your way.\n- region \"Explanation level\":\n  - heading \"Explanation level\" [level=3]\n  - 'button \"Your reading setting: Beginner\"': Beginner\n- heading \"hs-CRP\" [level=3]\n- paragraph: ALEX · A FICTIONAL EXAMPLE\n- paragraph: 2.1 mg/L\n- paragraph: Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.\n- group: View history and blood-draw notes\n- status\n- paragraph: Fictional example. Not a medical assessment.\n- link \"Interpret your past labs 5 free report uploads per account\":\n  - /url: /en/signup?plan=free&redirect=%2Fes%2Fupload",
+      "depths": [
+        {
+          "depth": "simple",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Beginner",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s inflammation marker is higher than before. A hard workout can temporarily raise it, but does not prove the cause. More than one measurement is needed to know whether the rise persists.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "balanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Intermediate",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Intermediate. Alex’s hs-CRP rose from 0.8 to 2.1 mg/L. Recent strenuous exercise may contribute, but neither the cause nor persistence is established. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        },
+        {
+          "depth": "advanced",
+          "result": "2.1",
+          "spokenResult": "2.1 mg/L",
+          "level": "Your reading setting: Advanced",
+          "history": [
+            "0.8",
+            "0.9",
+            "0.8",
+            "2.1"
+          ],
+          "noteSource": "Self-reported",
+          "notes": [
+            "Hard workout · previous 24 hours",
+            "No recent illness reported"
+          ],
+          "label": "ALEX · A FICTIONAL EXAMPLE",
+          "activeExplanation": "hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern.",
+          "disclosure": "Fictional example. Not a medical assessment.",
+          "announced": "Advanced. hs-CRP is a nonspecific marker of inflammation. Alex’s 0.8 → 2.1 mg/L rise follows self-reported strenuous exercise. Causality and persistence remain unconfirmed; biological and assay variation also affect interpretation. Comparable repeat measurements can help clarify the pattern. Context informs the interpretation. It does not prove the cause.",
+          "details": true,
+          "triggerFocused": false
+        }
+      ],
+      "chapterTargets": [
+        {
+          "chapter": 2,
+          "section": "recogida-en-casa",
+          "frame": 0,
+          "scrollY": 1703,
+          "reducedMotion": true
+        },
+        {
+          "chapter": 3,
+          "section": "kit-inicial",
+          "frame": 0,
+          "scrollY": 3515,
+          "reducedMotion": true
+        },
+        {
+          "chapter": 4,
+          "section": "biomarcadores",
+          "frame": 0,
+          "scrollY": 5561,
+          "reducedMotion": true
+        }
+      ],
+      "galleryA11y": "- region \"Your results. Explained your way.\":\n  - heading \"Your results. Explained your way.\" [level=2]:\n    - text: Your results.\n    - emphasis: Explained your way.\n  - region \"Explanation level\":\n    - heading \"Explanation level\" [level=3]\n    - 'button \"Your reading setting: Advanced\"': Advanced\n  - heading \"hs-CRP\" [level=3]",
+      "galleryHistory": "hs-CRP. Illustrative sequence: 2.8, 2.5, 2.7, 2.1 mg/L. Reading 4 selected."
+    },
+    {
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "id": "es-1366-normal",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async profile (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:332:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:437:11"
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "reduced": true,
+      "id": "es-1366-reduced",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async profile (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:332:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:437:11"
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "id": "es-390-normal",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async profile (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:332:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:437:11"
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "id": "es-390-reduced",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async profile (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:332:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:437:11"
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "id": "es-320-normal",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async profile (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:332:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:437:11"
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": true,
+      "id": "es-320-reduced",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async profile (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:332:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:437:11"
+        }
+      ]
+    }
+  ],
+  "fallbacks": [
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "kind": "Tab",
+      "id": "en-1366-Tab",
+      "failures": [],
+      "abortedMedia": [],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "skip",
+        "runner": "skipped",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "A",
+          "className": "skip",
+          "href": "#entender-tus-analisis"
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": [
+          {
+            "readyState": 4,
+            "rate": 1,
+            "time": 0.0192,
+            "src": "https://eva-problem-pilot.invalid/art/runner-athletic-loop.mp4"
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "kind": "Escape",
+      "id": "en-1366-Escape",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "page.waitForFunction: Timeout 10000ms exceeded.\n    at fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:393:18)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": [],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "kind": "focus",
+      "id": "en-1366-focus",
+      "failures": [],
+      "abortedMedia": [],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "skip",
+        "runner": "skipped",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "A",
+          "className": "wordmark",
+          "href": "/en"
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": [
+          {
+            "readyState": 4,
+            "rate": 1,
+            "time": 0.0224,
+            "src": "https://eva-problem-pilot.invalid/art/runner-athletic-loop.mp4"
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "kind": "media",
+      "id": "en-1366-media",
+      "failures": [],
+      "abortedMedia": [
+        "/art/runner-athletic-loop.mp4"
+      ],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": false,
+            "visible": false,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 0,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 0,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      },
+      "after": {
+        "entry": "skip",
+        "runner": "skipped",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": [
+          {
+            "readyState": 0,
+            "rate": 1,
+            "time": 0,
+            "src": "https://eva-problem-pilot.invalid/art/runner-athletic-loop.mp4"
+          }
+        ]
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "kind": "no-js",
+      "id": "en-1366-no-js",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "page.evaluate: Target page, context or browser has been closed\n    at settle (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:120:29)\n    at fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:395:11)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": [],
+      "before": {
+        "entry": "pending",
+        "actions": [
+          {
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "text": "Start for free Upload labs",
+            "box": {
+              "x": 48,
+              "y": 732,
+              "width": 184,
+              "height": 44,
+              "right": 232,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          },
+          {
+            "href": "/en/signup?plan=quarterly",
+            "text": "Subscribe quarterly 13 markers · €99 + VAT",
+            "box": {
+              "x": 248,
+              "y": 732,
+              "width": 224,
+              "height": 44,
+              "right": 472,
+              "bottom": 776
+            },
+            "hit": true,
+            "visible": true,
+            "chain": [
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              },
+              {
+                "opacity": 1,
+                "visibility": "visible",
+                "inert": false
+              }
+            ]
+          }
+        ],
+        "reduced": false,
+        "scrollY": 0,
+        "viewport": 1366,
+        "documentWidth": 1366,
+        "active": {
+          "tag": "BODY",
+          "className": null,
+          "href": null
+        },
+        "still": {
+          "loaded": true,
+          "opacity": 1,
+          "src": "/art/runner-athletic.jpg"
+        },
+        "logo": {
+          "box": {
+            "x": 48,
+            "y": 31.734375,
+            "width": 100,
+            "height": 37.03125,
+            "right": 148,
+            "bottom": 68.765625
+          },
+          "mask": "url(\"https://eva-problem-pilot.invalid/art/eva-official-logo.png\")",
+          "href": "/en",
+          "label": "EVA, home"
+        },
+        "video": []
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "reduced": false,
+      "kind": "hash",
+      "id": "en-1366-hash",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /usr/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --no-sandbox --disable-dev-shm-usage --user-data-dir=/tmp/playwright_chromiumdev_profile-dTBjrQ --remote-debugging-pipe --no-startup-window\n<launched> pid=15116\n[pid=15116][err] [15116:15148:1126/214933.779475:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=15116][err] [15116:15148:1126/214933.780438:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15148:1126/214933.795593:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=15116][err] [15116:15148:1126/214933.796415:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=15116][err] [15116:15148:1126/214933.796436:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=15116][err] [15116:15148:1126/214933.796442:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15148:1126/214933.796447:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15148:1126/214933.846557:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15116:1126/214933.867315:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15116:1126/214933.867463:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15148:1126/214933.875077:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15148:1126/214933.875788:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15116:1126/214933.884387:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15148:1126/214933.884473:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15148:1126/214933.890223:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=15116][err] [15116:15148:1126/214933.890271:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory\n[pid=15116][err] [15116:15116:1126/214933.890489:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15116:1126/214933.890504:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15148:1126/214933.890677:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15116:1126/214933.891230:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15116:1126/214933.891443:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.Properties.GetAll: object_path= /org/freedesktop/UPower/devices/DisplayDevice: unknown error type: \n[pid=15116][err] [15116:15116:1126/214933.891463:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15148:1126/214933.891512:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15116:1126/214933.898488:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15116:15148:1126/214933.898550:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=15116][err] [15116:15116:1126/214933.899155:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=15116][err] [15171:15171:1126/214943.757869:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x99c001eda00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels\n[pid=15116][err] [15171:15171:1126/215002.488961:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x99c027f1e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels\n[pid=15116][err] [15171:15171:1126/215014.391758:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x99c025e7600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels\n[pid=15116] <gracefully close start>\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:382:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": []
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "kind": "Tab",
+      "id": "es-320-Tab",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:382:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": []
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "kind": "Escape",
+      "id": "es-320-Escape",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:382:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": []
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "kind": "focus",
+      "id": "es-320-focus",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:382:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": []
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "kind": "media",
+      "id": "es-320-media",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:382:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": []
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "kind": "no-js",
+      "id": "es-320-no-js",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:382:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": []
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "reduced": false,
+      "kind": "hash",
+      "id": "es-320-hash",
+      "failures": [
+        {
+          "name": "runner interrupted",
+          "detail": "browser.newContext: Target page, context or browser has been closed\n    at async open (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:101:19)\n    at async fallback (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:382:27)\n    at async run (/workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:426:11)\n    at async /workspace/eva-in-place-qa/problem-pilot-20261126/render.cjs:444:9"
+        }
+      ],
+      "abortedMedia": []
+    }
+  ],
+  "missingFiles": [],
+  "blockedRequests": [],
+  "pageErrors": [],
+  "mediaRanges": {
+    "/art/runner-athletic-loop.mp4": 4,
+    "/art/tasso-home-video/process-continuity-v3.mp4": 3,
+    "/art/runner-athletic-mobile.mp4": 2
+  },
+  "allOwnedBrowsersClosed": true,
+  "browser": "156.0.8078.79",
+  "reportFinished": "2026-11-26T21:51:23.849Z"
+}

@@ -1,0 +1,123 @@
+
+> eva-rebranding@0.4.0 build
+> vinext build
+
+
+  vinext build  (Vite 8.0.13)
+
+[1/5] analyze client references...
+[2Ktransforming...✓ 351 modules transformed.
+rendering chunks...
+✓ built in 1.40s
+[2/5] analyze server references...
+[2Ktransforming...✓ 562 modules transformed.
+rendering chunks...
+✓ built in 1.33s
+[3/5] build rsc environment...
+[2Ktransforming...✓ 348 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.39s
+[4/5] build client environment...
+[2Ktransforming...✓ 2330 modules transformed.
+rendering chunks...
+computing gzip size...
+[33m[PLUGIN_TIMINGS] [0mYour build spent significant time in plugins. Here is a breakdown:
+  - vinext:middleware-server-only (41%)
+  - alias (13%)
+  - rsc:virtual-client-package (12%)
+  - vinext:css-data-url (8%)
+  - vinext:og-inline-fetch-assets (6%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+
+✓ built in 3.15s
+[5/5] build ssr environment...
+[2Ktransforming...✓ 564 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 879ms
+[0m  Pre-rendering all routes (output: 'export')...
+[vinext] Production server for prerendering running at http://127.0.0.1:45433
+Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear.
+  Prerendered 113 routes (0 skipped).
+[vinext] Production server for prerendering running at http://127.0.0.1:33249
+  Discovered 112 CDN warmup path(s).
+[0m
+  Route (app)
+  ┌ ○ /                           
+  ├ ○ /en                         
+  ├ ○ /en/about                   
+  ├ ○ /en/blog                    
+  ├ ○ /en/callback                
+  ├ ○ /en/contact                 
+  ├ ○ /en/forgot-password         
+  ├ ○ /en/how-it-works            
+  ├ ○ /en/legal/cookies           
+  ├ ○ /en/legal/privacy           
+  ├ ○ /en/legal/terms             
+  ├ ○ /en/login                   
+  ├ ○ /en/metodologia             
+  ├ ○ /en/metodologia/completa    
+  ├ ○ /en/pricing                 
+  ├ ○ /en/reset-password          
+  ├ ○ /en/review                  
+  ├ ƒ /en/review/original/:family 
+  ├ ○ /en/review/tasso-black      
+  ├ ○ /en/review/tasso-options    
+  ├ ○ /en/review/tasso-scroll     
+  ├ ○ /en/science                 
+  ├ ○ /en/signup                  
+  ├ ○ /en/upload                  
+  ├ ○ /es                         
+  ├ ○ /es/about                   
+  ├ ○ /es/admin                   
+  ├ ○ /es/beta                    
+  ├ ƒ /es/biomarker/:key          
+  ├ ○ /es/blog                    
+  ├ ○ /es/book                    
+  ├ ○ /es/callback                
+  ├ ○ /es/checkout-resume         
+  ├ ○ /es/checkout/resume         
+  ├ ○ /es/contact                 
+  ├ ○ /es/dashboard               
+  ├ ○ /es/eva-ai                  
+  ├ ○ /es/forgot-password         
+  ├ ○ /es/how-it-works            
+  ├ ○ /es/labs                    
+  ├ ○ /es/labs/demo-junio         
+  ├ ○ /es/labs/demo-junio/context 
+  ├ ○ /es/labs/demo-marzo         
+  ├ ○ /es/labs/demo-marzo/context 
+  ├ ○ /es/labs/demo-upload        
+  ├ ○ /es/labs/demo-upload/context
+  ├ ○ /es/labs/manage             
+  ├ ○ /es/legal/cookies           
+  ├ ○ /es/legal/privacy           
+  ├ ○ /es/legal/terms             
+  ├ ○ /es/login                   
+  ├ ○ /es/metodologia             
+  ├ ○ /es/metodologia/completa    
+  ├ ○ /es/onboarding              
+  ├ ○ /es/pricing                 
+  ├ ○ /es/privacy/deletion        
+  ├ ○ /es/profile                 
+  ├ ○ /es/reset-password          
+  ├ ○ /es/review                  
+  ├ ƒ /es/review/original/:family 
+  ├ ○ /es/review/tasso-black      
+  ├ ○ /es/review/tasso-options    
+  ├ ○ /es/review/tasso-scroll     
+  ├ ○ /es/science                 
+  ├ ○ /es/signup                  
+  ├ ○ /es/upload                  
+  ├ ○ /history                    
+  └ ○ /system                     
+
+  ƒ Dynamic  ○ Static
+
+  ○ Routes marked static were confirmed by speculative prerender (attempted render
+    succeeded without dynamic API usage).
+
+  Build complete. Run `vinext start` to start the production server.
+
