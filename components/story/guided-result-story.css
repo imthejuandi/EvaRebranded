@@ -1,4 +1,6 @@
 /* The brand's two real Hanken weights frame the existing analog report glass. */
+.results-problem .results-problem-lead{max-width:62ch;margin:0 0 var(--proof-space-related);font-family:'EVA Hanken',Arial,sans-serif;font-size:var(--proof-body-size);font-weight:400;line-height:var(--proof-body-leading);text-wrap:pretty}
+@media(max-width:700px){.results-problem .results-problem-lead{margin-inline:8px}}
 .biomarker-lab{padding-top:var(--proof-space-group);padding-bottom:var(--proof-space-group)}
 .biomarker-lab .bio-layout{margin-top:0}
 .guided-result-story{scroll-margin-top:24px;display:grid;grid-template-columns:minmax(250px,.7fr) minmax(0,1.35fr);grid-template-rows:auto 1fr;grid-template-areas:"intro result" "action result";column-gap:clamp(32px,4vw,56px);row-gap:var(--proof-space-group);align-items:start;min-height:0;padding:0}

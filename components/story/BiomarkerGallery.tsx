@@ -3,12 +3,10 @@ import {useSiteLanguage} from '@/components/site/SiteLanguage';
 import { Arrow } from './Arrow';
 import { useState } from 'react';
 import {ExplanationSetting} from './ExplanationSetting';
-import {GuidedResultStory} from './GuidedResultStory';
 import {alexStoryCopy} from '@/lib/site-content/alex-story-copy';
 import {ResultExplanation} from './ResultExplanation';
 import {type ExplanationLevel} from '@/lib/site-content/result-explanation-copy';
-import { businessLinks, specimens } from '@/lib/landing-content';
-import { flowHref } from '@/lib/preview/policy';
+import { specimens } from '@/lib/landing-content';
 import './sample-dashboard-compact.css';
 // Only the fourth reading comes from EVA's public examples. Earlier readings are UI demonstration data.
 const history = [['22', '25', '24', '28'], ['2.8', '2.5', '2.7', '2.1'], ['13', '12', '12.5', '11'], ['112', '104', '108', '98'], ['360', '344', '351', '320']];
@@ -30,14 +28,12 @@ export function BiomarkerGallery({ calm = false }: {
     const readingLabel = __site.locale === 'en'
         ? `Reading ${String(reading + 1).padStart(2, '0')} of 04`
         : `Lectura ${String(reading + 1).padStart(2, '0')} de 04`;
-    const uploadHref = flowHref(businessLinks.signup, {plan: 'free', returnTo: businessLinks.upload, reportId: null, invalidPlan: false});
     const item = specimens[selected], values = history[selected], value = values[reading], numbers = values.map(Number), low = Math.min(...numbers), high = Math.max(...numbers);
     const points = numbers.map((v, i) => ({ x: 32 + i * 145.3, y: 166 - (v - low) / (high - low || 1) * 106 })), point = points[reading];
     const max = Math.max(item.standard[1], item.eva[1], Number(value)) * 1.1;
-    return <section id="biomarcadores" className={'biomarker-lab' + (calm ? ' bio-calm' : '')} aria-labelledby="markers-title" data-biomarker-view={view}>
+    return <section id="biomarcadores" className={'biomarker-lab' + (calm ? ' bio-calm' : '')} aria-labelledby="sample-dashboard-title" data-biomarker-view={view}>
   <div className="bio-layout">
-   <GuidedResultStory calm={calm} uploadHref={__site.href(uploadHref)}/>
-   <details className="sample-dashboard"><summary><span><strong>{storyCopy.explore}</strong><small>{storyCopy.exploreDetail}</small></span><Arrow direction="down"/></summary>
+   <details className="sample-dashboard"><summary><span><strong id="sample-dashboard-title">{storyCopy.explore}</strong><small>{storyCopy.exploreDetail}</small></span><Arrow direction="down"/></summary>
    <div className="bio-console" aria-label={__site.t("Demostraci\u00F3n de la interfaz de biomarcadores EVA")}>
     <div className="bio-marker-controls" role="group" aria-label={__site.t("Selecciona un biomarcador")}>
      {specimens.map((marker, i) => <button key={marker.name} type="button" data-biomarker-tile={marker.name} className="bio-marker-button" aria-pressed={selected === i} aria-label={__site.t(marker.name)} onClick={() => setSelected(i)}>{__site.t(shortNames[i])}</button>)}
