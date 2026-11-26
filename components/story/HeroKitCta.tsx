@@ -15,7 +15,7 @@ export function HeroKitCta() {
         <span className="hero-action-label">{c.free}</span>{' '}
         <span className="hero-action-detail">{c.freeDetail}</span>
       </a>
-      <a className="hero-kit-secondary" href={__site.href(businessLinks.pricing + '?panel=standard#elegir-panel')} data-entry-buy>
+      <a className="hero-kit-secondary" href={__site.href(businessLinks.signup + '?plan=quarterly')} aria-label={c.buyAccessible} data-entry-buy>
         <span className="hero-action-label">{c.buy}</span>{' '}
         <span className="hero-action-detail">{c.buyDetail}</span>
       </a>

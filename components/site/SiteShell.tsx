@@ -22,7 +22,7 @@ export function SiteShell({children}: {children: ReactNode}) {
       <div className="eva-header-actions">
         <LanguageSwitch className="site-language-switch"/>
         <a href={href("/es/login")} hrefLang={locale}>{t('Mi EVA')}</a>
-        <a className="eva-header-kit" href={href("/es/pricing?panel=standard#elegir-panel")} hrefLang={locale}>{entryPreviewCopy[locale].buy}<ArrowUpRight size={16} strokeWidth={1.4} aria-hidden="true"/></a>
+        <a className="eva-header-kit" href={href("/es/signup?plan=quarterly")} hrefLang={locale} aria-label={entryPreviewCopy[locale].buyAccessible}>{entryPreviewCopy[locale].buyCompact}<ArrowUpRight size={16} strokeWidth={1.4} aria-hidden="true"/></a>
         <button aria-expanded={open} aria-controls="inner-menu" onClick={() => setOpen(!open)} className="eva-mobile-menu">{t(open ? 'Cerrar' : 'Menú')}</button>
       </div>
     </header>

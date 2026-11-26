@@ -25,6 +25,7 @@
 .full-offer .offer-panel-details p:not(.eyebrow){font-size:16px;line-height:1.6;max-width:62ch}
 .full-offer .offer-panel-details a{align-items:center;min-height:48px;padding-block:12px;font-size:17px;line-height:1.4}
 .full-offer .offer-panel-details a svg{width:21px;height:21px;flex-shrink:0}
+.full-offer .offer-panel-details .offer-other-panels-link{display:inline;min-height:0;padding:0;border:0;background:none;font-size:16px;line-height:1.6;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 .full-offer a:focus-visible,.full-founder .text-link:focus-visible{outline:2px solid #6a4b34;outline-offset:5px}
 
 .business-footer{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);column-gap:clamp(32px,5vw,70px);row-gap:40px}

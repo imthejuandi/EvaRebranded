@@ -34,12 +34,12 @@ export function BusinessOffer() {
       </div>
       <p>{c.kit.summary}</p>
       <ul>{c.kit.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>
-      <a className="text-link offer-kit-action" href={href(businessLinks.pricing + '?panel=standard#elegir-panel')} data-offer-kit-action>{c.kit.action}<Arrow/></a>
+      <a className="text-link offer-kit-action" href={href(businessLinks.signup + '?plan=quarterly')} data-offer-kit-action>{c.kit.action}<Arrow/></a>
       <p className="offer-cancel-note">{kit.cancelAnytime}</p>
     </div>
-    <div className="upload-offer offer-panel-details">
-      <div><p className="eyebrow">{c.details.kicker}</p><h3>{c.details.heading}</h3><p>{c.details.body}</p></div>
-      <div><a href={href(businessLinks.pricing)} data-offer-details>{c.details.action}<Arrow/></a></div>
-    </div>
+    <section className="upload-offer offer-panel-details" id="other-panels" aria-labelledby="other-panels-title">
+      <div><h3 id="other-panels-title">{entryPreviewCopy[locale].otherPanelsHeading}</h3><p>{c.details.body}</p></div>
+      <p><a className="offer-other-panels-link" href={href(businessLinks.pricing + '?panel=enhanced#elegir-panel')} data-offer-details>{entryPreviewCopy[locale].otherPanels}</a></p>
+    </section>
   </section>;
 }

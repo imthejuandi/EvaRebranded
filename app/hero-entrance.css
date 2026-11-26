@@ -2,6 +2,8 @@
    The runner's final tracked label cues the rest; opacity/transform only. */
 .hero-entrance[data-hero-entrance="pending"] [data-hero-reveal]:not([data-hero-immediate]),
 .hero-entrance[data-hero-entrance="watching"] [data-hero-reveal]:not([data-hero-immediate]){opacity:0}
+/* Visibility also excludes the actions from keyboard focus during the opening. */
+.hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal="action"]{visibility:hidden}
 .hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal]:not([data-hero-immediate]),
 .hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) [data-hero-reveal]:not([data-hero-immediate]) *{pointer-events:none!important}
 .hero-entrance[data-hero-entrance="reveal"] [data-hero-reveal]:not([data-hero-immediate]){animation:eva-hero-arrive calc(.85s / var(--hero-entrance-rate)) cubic-bezier(.22,1,.36,1) both}
@@ -15,10 +17,12 @@
 .hero-entrance:has(:focus-visible) [data-hero-reveal] *{pointer-events:auto!important}
 @keyframes eva-hero-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){
- .hero-entrance [data-hero-reveal]{opacity:1!important;transform:none!important;animation:none!important;pointer-events:auto!important}
+ .hero-entrance [data-hero-reveal]{opacity:1!important;visibility:visible!important;transform:none!important;animation:none!important;pointer-events:auto!important}
  .hero-entrance [data-hero-reveal] *{pointer-events:auto!important}
+ main.hero-entrance[data-hero-entrance] [data-hero-reveal]:not([data-hero-immediate]),
+ main.hero-entrance[data-hero-entrance] [data-hero-reveal]:not([data-hero-immediate]) *{pointer-events:auto!important}
 }
 
-/* Start with ink during hydration; a scroll or keyboard skip reveals native media immediately. */
+/* Start with ink during hydration; an intentional scroll skip reveals native media immediately. */
 .hero-entrance:is([data-hero-entrance="pending"],[data-hero-entrance="watching"]) .hero-runner-static{opacity:0}
 .hero-entrance[data-hero-entrance="skip"] [data-runner-arrival-layer]{display:none}
