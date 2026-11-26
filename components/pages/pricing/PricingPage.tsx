@@ -81,6 +81,7 @@ export default function PricingPage() {
     const subscription = starterSubscription[__site.locale];
     const panels = panelPreviewCopy[__site.locale];
     const [plan, setPlan] = useState<PlanId>('quarterly'), [quarter, setQuarter] = useState(0), [faqCategory, setFaqCategory] = useState<FAQCategory>('pricing'), [marker, setMarker] = useState(0);
+    const [panelReady, setPanelReady] = useState(false);
     useEffect(() => {
         const syncPanel = () => {
             setPlan(previewPanelFromQuery(new URLSearchParams(window.location.search).get('panel')));
@@ -88,6 +89,7 @@ export default function PricingPage() {
         };
         syncPanel();
         window.addEventListener('popstate', syncPanel);
+        setPanelReady(true);
         return () => window.removeEventListener('popstate', syncPanel);
     }, []);
     const choosePanel = (nextPlan: PlanId) => {
@@ -97,7 +99,7 @@ export default function PricingPage() {
         url.searchParams.set('panel', previewPanelQuery(nextPlan));
         url.hash = 'elegir-panel';
         window.history.replaceState(window.history.state, '', url);
-        window.dispatchEvent(new PopStateEvent('popstate'));
+        window.dispatchEvent(new HashChangeEvent('hashchange'));
     };
     const current = c.plans.find(item => item.id === plan)!;
     const priceOf = (item: typeof current) => item.price === null ? panels.priceToConfirm : item.id === 'quarterly' ? subscription.price :
@@ -107,11 +109,11 @@ export default function PricingPage() {
     const kit = kitInsightCopy[__site.locale];
     const markerGroup = kit.groups.find(group => group.markers.some(index => index === marker));
     const english = __site.locale === 'en';
-    return <div className="page-pricing" data-selected-panel={previewPanelQuery(plan)}>
+    return <div className="page-pricing" data-selected-panel={previewPanelQuery(plan)} data-panel-ready={panelReady}>
     <EditorialReveal as="section" className="pricing-hero eva-inner" aria-labelledby="pricing-title">
       <div className="pricing-intro"><p className="eva-kicker">{panels.eyebrow}</p><h1 id="pricing-title" data-editorial-reveal>{__site.t(c.title.join(' '))}</h1><p>{c.intro}</p><a className="pricing-line-link pricing-free-entry" href={__site.href(c.plans[0].href)}>{c.plans[0].action}<Arrow /></a></div>
       <p className="pricing-preview-note">{panels.preview}</p>
-      <div id="elegir-panel" className="pricing-plan-selector" role="group" tabIndex={-1} aria-label={__site.t(c.selectLabel)}>{__site.t(c.plans.filter(item => item.id !== 'free').map((item) => <button key={item.id} type="button" data-panel={previewPanelQuery(item.id)} aria-pressed={plan === item.id} onClick={() => choosePanel(item.id)}><span>{__site.t(item.label)}</span><span className="pricing-selector-price">{priceOf(item)}<small>{__site.t(item.cadence)}</small></span><span className="pricing-selector-dot" aria-hidden="true"/></button>))}</div>
+      <div id="elegir-panel" className="pricing-plan-selector" role="group" tabIndex={-1} aria-label={__site.t(c.selectLabel)}>{__site.t(c.plans.filter(item => item.id !== 'free').map((item) => <button key={item.id} type="button" data-panel={previewPanelQuery(item.id)} disabled={!panelReady} aria-pressed={plan === item.id} onClick={() => choosePanel(item.id)}><span>{__site.t(item.label)}</span><span className="pricing-selector-price">{priceOf(item)}<small>{__site.t(item.cadence)}</small></span><span className="pricing-selector-dot" aria-hidden="true"/></button>))}</div>
       <EditorialReveal className="pricing-selected-plan" replayKey={plan}>
         <div className="pricing-plan-topline"><h2>{__site.t(current.name)}</h2></div>
 
