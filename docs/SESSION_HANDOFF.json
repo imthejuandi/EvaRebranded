@@ -1928,7 +1928,7 @@
     "archive": "lib/site-content/original-content.json",
     "availability": "Original public domain was inaccessible through the reader during the latest review; the local complete archive was used. Historical marketing claims need evidence before reuse."
   },
-  "new_session_prompt": "Continue EVA in /workspace/eva-playback-review. Read AGENTS.md, docs/SESSION_HANDOFF.json, docs/AGENT_REVIEW_WORKFLOW.md and docs/normal-explanation-preview-qa.json. Native 70 is published. At the owner’s request, the independent hs-CRP example is 2.9 mg/L; Lab’s reference range is strict <3 mg/L, sourced to The Valley Hospital’s published catalog. The AHA lower relative-risk category remains <1 mg/L. Both use one 0–5 scale: lab cutoff60%, lower cutoff20%, sample58%. The recommendation footer and obsolete >2 review directive are removed. Preserve the slim two-row dotted plots,28px height,14px rings,4px cores, existing glass and typography. The nearby lab cutoff extends above and below the marker without moving either position. Eight native EN/ES profiles, four text/graphic contrast profiles and no-JavaScript checks pass. Agent checks are not actual owner acceptance. Other chapters, dashboard data, hero, prices, runner and media remain unchanged. evahealth.es cutover stays on hold. Latest owner request is a visible explanation and durable review workflow; The owner requested a visual preview and independent judgment: exact paragraph is implemented only on preview/normal-explanation-20261124, source39485db042574a40d2a2f814e3b1e466ab2fa7be. See docs/normal-explanation-preview-qa.json and rendered screenshots. Do not apply the new paragraph to main or publish it before further owner direction. Follow docs/AGENT_REVIEW_WORKFLOW.md for every change.",
+  "new_session_prompt": "Continue the bounded entry/panel private preview in /workspace/eva-entry-preview, branch preview/entry-clarity-20261126. Read AGENTS.md, docs/entry-clarity-preview-brief.md, docs/entry-clarity-preview-qa.json and the private release receipt. Owner-only private version 2 is verified. Preserve canonical main cdc71e6 and the separate explanation preview 39485db. Do not merge or publish to the public review or live domain without separate approval. UI c3ebcbc and hosting ea688445 are separate from later docs-only commits.",
   "coordination": {
     "note": "docs/SESSION_COORDINATION.json",
     "delivery": "Shared repository; direct messaging into the separate Codex chat is unavailable.",
@@ -2648,5 +2648,76 @@
     "preview_commit": "39485db042574a40d2a2f814e3b1e466ab2fa7be",
     "independent_judge": "docs/normal-explanation-preview/independent-judge.md",
     "judge_recommendation": "ready to show"
+  },
+  "entry_clarity_private_preview": {
+    "status": "private_version2_verified_ready_for_owner_review",
+    "date": "2026-11-26",
+    "branch": "preview/entry-clarity-20261126",
+    "worktree": "/workspace/eva-entry-preview",
+    "ui_commit": "c3ebcbc2ece50eacaccd5196529dac9990dc8fd2",
+    "private_project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+    "private_release": {
+      "projectId": "appgprj_6b08377df82c819197b37d5c64654750",
+      "version": 2,
+      "uiCommit": "c3ebcbc2ece50eacaccd5196529dac9990dc8fd2",
+      "privateSourceCommit": "ea6884453d0f55e06a5c67771fa290d673f43619",
+      "deployment": {
+        "id": "appgdep_6b083f3d5cbc819187f76f5e13996984",
+        "project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+        "title": "EVA — Private entry and panel preview",
+        "version_id": "appgprj_6b08377df82c819197b37d5c64654750~appgver_550f3cf48ee88191aca98658d17a6dd1",
+        "type": "publish",
+        "status": "succeeded",
+        "url": "https://eva-entry-private-261126.jdlagop.chatgpt.site",
+        "has_mcp": false,
+        "screenshot_asset_pointer": null,
+        "provider_deployment_id": "release---6b083cca094881919844b93416031f13",
+        "failure_message": null,
+        "env_set_revision": 0,
+        "updated_at": "2026-11-26T14:16:43.941830+00:00"
+      },
+      "audience": "owner-only",
+      "archive": "/workspace/eva-publication/eva-entry-private-v2.tar.gz",
+      "gzipSha256": "21e27742ad45df50af6693340cd883a7c66c0323ae97606f48abf3f344d608d0",
+      "gzipBytes": 163047677,
+      "previousDeployment": {
+        "projectId": "appgprj_6b08377df82c819197b37d5c64654750",
+        "version": 1,
+        "uiCommit": "3f5a5013b8db670e43c483226a6d7ba1eb2f484a",
+        "privateSourceCommit": "3cb42e3e425c22d11360c8c2388b62782ba6b885",
+        "deployment": {
+          "id": "appgdep_6b083cca094881919844b93416031f13",
+          "project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+          "title": "EVA — Private entry and panel preview",
+          "version_id": "appgprj_6b08377df82c819197b37d5c64654750~appgver_d1e12f19bd888191a0d2db215ee9396e",
+          "type": "publish",
+          "status": "succeeded",
+          "url": "https://eva-entry-private-261126.jdlagop.chatgpt.site",
+          "has_mcp": false,
+          "screenshot_asset_pointer": null,
+          "provider_deployment_id": "release---6b083cca094881919844b93416031f13",
+          "failure_message": null,
+          "env_set_revision": 0,
+          "updated_at": "2026-11-26T14:06:35.179194+00:00"
+        },
+        "audience": "owner-only",
+        "archive": "/workspace/eva-publication/eva-entry-private-v1.tar.gz",
+        "gzipSha256": "742121dd18b3995fe9f84de51422f1757a8f2da86ef2b26963f9205b7774294c",
+        "originalReview": {
+          "version": 70,
+          "url": "https://eva-content-review.jdlagop.chatgpt.site"
+        }
+      },
+      "originalReview": {
+        "version": 70,
+        "url": "https://eva-content-review.jdlagop.chatgpt.site"
+      }
+    },
+    "qa": "docs/entry-clarity-preview-qa.json",
+    "brief": "docs/entry-clarity-preview-brief.md",
+    "public_review_version_unchanged": 70,
+    "main_merge_authorized": false,
+    "current_review_publication_authorized": false,
+    "live_cutover_authorized": false
   }
 }

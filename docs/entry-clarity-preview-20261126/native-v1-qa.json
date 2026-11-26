@@ -1,0 +1,412 @@
+{
+  "scope": "Actual new owner-only private Site; service-access bearer sent only to this Site and consumed by Sites dispatch. Fictional preview checks only; viewport emulation, not physical-device or production backend validation.",
+  "version": 1,
+  "uiSourceCommit": "3cb42e3e425c22d11360c8c2388b62782ba6b885",
+  "profiles": [
+    {
+      "id": "en-1366-motion",
+      "locale": "en",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "status": 200,
+      "first": {
+        "entry": "watching",
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "text": "Start for free\nUpload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "text": "Choose a panel\nView options",
+            "href": "/en/pricing?panel=standard#elegir-panel",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "width": 1366,
+        "viewport": 1366
+      },
+      "arrival": "complete",
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        }
+      ],
+      "buyDestination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/en/pricing?panel=standard#elegir-panel",
+      "enhanced": "Enhanced at-home panel\n\nPrice to confirm\nterms to confirm\n\nIncludes ApoB. Check all included biomarkers and terms before choosing.\n\nView enhanced panel details\n\nPrice, timing and availability to be confirmed. This preview does not accept orders.\n\nAn at-home option separate from the standard panel.\nIncludes ApoB.\nOther biomarkers and total count to be confirmed.\nCompare all options",
+      "passed": true
+    },
+    {
+      "id": "es-1366-motion",
+      "locale": "es",
+      "width": 1366,
+      "height": 900,
+      "failures": [],
+      "status": 200,
+      "first": {
+        "entry": "watching",
+        "buttons": [
+          {
+            "x": 48,
+            "y": 732,
+            "width": 184,
+            "height": 44,
+            "right": 232,
+            "bottom": 776,
+            "text": "Empieza gratis\nSube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 248,
+            "y": 732,
+            "width": 224,
+            "height": 44,
+            "right": 472,
+            "bottom": 776,
+            "text": "Elige un panel\nVer opciones",
+            "href": "/es/pricing?panel=standard#elegir-panel",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "width": 1366,
+        "viewport": 1366
+      },
+      "arrival": "complete",
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 100,
+          "height": 37.03125
+        }
+      ],
+      "buyDestination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=standard#elegir-panel",
+      "enhanced": "Panel ampliado en casa\n\nPrecio por confirmar\ncondiciones por confirmar\n\nIncluye ApoB. Consulta todos sus biomarcadores y condiciones antes de elegir.\n\nVer detalles del panel ampliado\n\nPrecio, plazos y disponibilidad por confirmar. Esta vista previa no admite pedidos.\n\nUna opción en casa distinta del panel estándar.\nIncluye ApoB.\nResto de biomarcadores y número total por confirmar.\nComparar todas las opciones",
+      "passed": true
+    },
+    {
+      "id": "en-320-motion",
+      "locale": "en",
+      "width": 320,
+      "height": 844,
+      "failures": [
+        "page.waitForFunction: Timeout 30000ms exceeded.\n    at /workspace/eva-in-place-qa/entry-clarity-20261126/native-qa.cjs:8:4797"
+      ],
+      "status": 200,
+      "first": {
+        "entry": "watching",
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "text": "Start for free\nUpload labs",
+            "href": "/en/signup?plan=free&redirect=%2Fes%2Fupload",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "text": "Choose a panel\nView options",
+            "href": "/en/pricing?panel=standard#elegir-panel",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "width": 320,
+        "viewport": 320
+      },
+      "arrival": "complete",
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "buyDestination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/en/pricing?panel=standard#elegir-panel",
+      "passed": false
+    },
+    {
+      "id": "es-320-motion",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "failures": [],
+      "status": 200,
+      "first": {
+        "entry": "pending",
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "text": "Empieza gratis\nSube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "text": "Elige un panel\nVer opciones",
+            "href": "/es/pricing?panel=standard#elegir-panel",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "width": 320,
+        "viewport": 320
+      },
+      "arrival": "complete",
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "buyDestination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=standard#elegir-panel",
+      "enhanced": "Panel ampliado en casa\n\nPrecio por confirmar\ncondiciones por confirmar\n\nIncluye ApoB. Consulta todos sus biomarcadores y condiciones antes de elegir.\n\nVer detalles del panel ampliado\n\nPrecio, plazos y disponibilidad por confirmar. Esta vista previa no admite pedidos.\n\nUna opción en casa distinta del panel estándar.\nIncluye ApoB.\nResto de biomarcadores y número total por confirmar.\nComparar todas las opciones",
+      "passed": true
+    },
+    {
+      "id": "es-320-calm",
+      "locale": "es",
+      "width": 320,
+      "height": 844,
+      "calm": true,
+      "failures": [],
+      "status": 200,
+      "first": {
+        "entry": "pending",
+        "buttons": [
+          {
+            "x": 16,
+            "y": 661,
+            "width": 106,
+            "height": 44,
+            "right": 122,
+            "bottom": 705,
+            "text": "Empieza gratis\nSube analíticas",
+            "href": "/es/signup?plan=free&redirect=%2Fes%2Fupload",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          },
+          {
+            "x": 130,
+            "y": 661,
+            "width": 174,
+            "height": 44,
+            "right": 304,
+            "bottom": 705,
+            "text": "Elige un panel\nVer opciones",
+            "href": "/es/pricing?panel=standard#elegir-panel",
+            "opacity": 1,
+            "inert": false,
+            "hit": true,
+            "font": "\"EVA Hanken\", Arial, sans-serif"
+          }
+        ],
+        "width": 320,
+        "viewport": 320
+      },
+      "arrival": null,
+      "logos": [
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        },
+        {
+          "mask": "url(\"https://eva-entry-private-261126.jdlagop.chatgpt.site/art/eva-official-logo.png?rev=682fac5978cb\")",
+          "revision": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+          "text": "",
+          "width": 78,
+          "height": 28.890625
+        }
+      ],
+      "buyDestination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=standard#elegir-panel",
+      "enhanced": "Panel ampliado en casa\n\nPrecio por confirmar\ncondiciones por confirmar\n\nIncluye ApoB. Consulta todos sus biomarcadores y condiciones antes de elegir.\n\nVer detalles del panel ampliado\n\nPrecio, plazos y disponibilidad por confirmar. Esta vista previa no admite pedidos.\n\nUna opción en casa distinta del panel estándar.\nIncluye ApoB.\nResto de biomarcadores y número total por confirmar.\nComparar todas las opciones",
+      "passed": true
+    }
+  ],
+  "pageErrors": [
+    {
+      "id": "en-1366-motion",
+      "route": "/en/pricing",
+      "error": "route.fetch: Request context disposed.\nCall log:\n\u001b[2m  - → GET https://eva-entry-private-261126.jdlagop.chatgpt.site/en/pricing?panel=enhanced&_rsc\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: text/x-component\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - referer: https://eva-entry-private-261126.jdlagop.chatgpt.site/en/pricing?panel=enhanced\u001b[22m\n\u001b[2m    - rsc: 1\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?0\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"Linux\"\u001b[22m\n\u001b[2m    - OAI-Sites-Authorization: Bearer [REDACTED]\u001b[22m\n"
+    },
+    {
+      "id": "es-1366-motion",
+      "route": "/es/pricing",
+      "error": "route.fetch: Request context disposed.\nCall log:\n\u001b[2m  - → GET https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=enhanced&_rsc\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: text/x-component\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - referer: https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=enhanced\u001b[22m\n\u001b[2m    - rsc: 1\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?0\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"Linux\"\u001b[22m\n\u001b[2m    - OAI-Sites-Authorization: Bearer [REDACTED]\u001b[22m\n"
+    },
+    {
+      "id": "es-320-motion",
+      "route": "/es/pricing",
+      "error": "route.fetch: Request context disposed.\nCall log:\n\u001b[2m  - → GET https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=enhanced&_rsc\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: text/x-component\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - referer: https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=enhanced\u001b[22m\n\u001b[2m    - rsc: 1\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?0\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"Linux\"\u001b[22m\n\u001b[2m    - OAI-Sites-Authorization: Bearer [REDACTED]\u001b[22m\n"
+    },
+    {
+      "id": "es-320-calm",
+      "route": "/es/pricing",
+      "error": "route.fetch: Request context disposed.\nCall log:\n\u001b[2m  - → GET https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=enhanced&_rsc\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: text/x-component\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - referer: https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=enhanced\u001b[22m\n\u001b[2m    - rsc: 1\u001b[22m\n\u001b[2m    - sec-ch-ua: \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\"\u001b[22m\n\u001b[2m    - sec-ch-ua-mobile: ?0\u001b[22m\n\u001b[2m    - sec-ch-ua-platform: \"Linux\"\u001b[22m\n\u001b[2m    - OAI-Sites-Authorization: Bearer [REDACTED]\u001b[22m\n"
+    }
+  ],
+  "writes": [],
+  "externalRequests": [],
+  "logoResponses": [
+    {
+      "id": "en-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "en-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "es-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "es-1366-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "en-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "en-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "es-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "es-320-motion",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "es-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    },
+    {
+      "id": "es-320-calm",
+      "status": 200,
+      "sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+      "size": 73756
+    }
+  ],
+  "allOwnedBrowsersClosed": true,
+  "passed": false
+}

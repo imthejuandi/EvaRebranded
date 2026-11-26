@@ -1,0 +1,56 @@
+{
+  "original_snapshot_commit": "6d00ea75dd70db06542a043c07ad2f6c043d1bd0",
+  "original_tree": "b7f79f467d5774f7aa2d4019598d4ebf4490ff32",
+  "final_commit": "3cb42e3e425c22d11360c8c2388b62782ba6b885",
+  "identical_final_tree": true,
+  "batches": [
+    {
+      "part": 1,
+      "commit": "30a0c22a8499d6ef3471e52bcb02997c2bc20182",
+      "added_files": 12,
+      "uncompressed_bytes": 41943040
+    },
+    {
+      "part": 2,
+      "commit": "2a24da8338284ad34986f72e979b3983a2cb9fd1",
+      "added_files": 11,
+      "uncompressed_bytes": 41943038
+    },
+    {
+      "part": 3,
+      "commit": "1cc1992615088646cb82340ed04ec77717dad38b",
+      "added_files": 22,
+      "uncompressed_bytes": 41943038
+    },
+    {
+      "part": 4,
+      "commit": "a260526314d220fd4810c50db997baf4203747a4",
+      "added_files": 61,
+      "uncompressed_bytes": 41943040
+    },
+    {
+      "part": 5,
+      "commit": "244f4e24ce357c15674d210cd1dba09ef3e8278e",
+      "added_files": 99,
+      "uncompressed_bytes": 41943040
+    },
+    {
+      "part": 6,
+      "commit": "5d812ee1b9c08017ff758cb030337fa7aab76c46",
+      "added_files": 141,
+      "uncompressed_bytes": 41943038
+    },
+    {
+      "part": 7,
+      "commit": "08175d005c93de9122e28a45a38493db838238b7",
+      "added_files": 193,
+      "uncompressed_bytes": 41943028
+    },
+    {
+      "part": 8,
+      "commit": "3cb42e3e425c22d11360c8c2388b62782ba6b885",
+      "added_files": 1215,
+      "uncompressed_bytes": 28298376
+    }
+  ]
+}

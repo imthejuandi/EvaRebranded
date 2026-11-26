@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "locale": "en",
+      "width": 320,
+      "passed": true,
+      "selectionStable": true,
+      "localeQueryPreserved": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "passed": true,
+      "selectionStable": true,
+      "localeQueryPreserved": true
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "passed": true,
+      "selectionStable": true,
+      "localeQueryPreserved": true
+    },
+    {
+      "locale": "es",
+      "width": 1366,
+      "passed": true,
+      "selectionStable": true,
+      "localeQueryPreserved": true
+    }
+  ],
+  "errors": [],
+  "rscRequests": [],
+  "passed": true,
+  "allOwnedBrowsersClosed": true
+}

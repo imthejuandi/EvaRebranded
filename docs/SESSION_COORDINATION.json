@@ -229,5 +229,16 @@
       "record": "docs/range-graphic-qa.json"
     }
   },
-  "agent_review_workflow": "docs/AGENT_REVIEW_WORKFLOW.md"
+  "agent_review_workflow": "docs/AGENT_REVIEW_WORKFLOW.md",
+  "entry_clarity_private_preview": {
+    "status": "verified_private_version2_owner_review_pending",
+    "branch": "preview/entry-clarity-20261126",
+    "ui_commit": "c3ebcbc2ece50eacaccd5196529dac9990dc8fd2",
+    "hosting_source_commit": "ea6884453d0f55e06a5c67771fa290d673f43619",
+    "private_project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+    "version": 2,
+    "qa": "docs/entry-clarity-preview-qa.json",
+    "preserve_other_preview": "preview/normal-explanation-20261124 at39485db",
+    "no_merge_or_current_review_publication": true
+  }
 }

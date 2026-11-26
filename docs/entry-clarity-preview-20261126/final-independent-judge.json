@@ -1,0 +1,397 @@
+{
+  "reviewer": "/root/entry_independent_judge",
+  "role": "Fresh independent final judge; no UI authorship, UI edits, commits or Sites calls.",
+  "created_utc": "2026-11-26T13:58:06.715439+00:00",
+  "overall_verdict": "PASS",
+  "recommendation": "Ready for owner review on the deployed owner-only native v2 preview. No mandatory UI/copy/flow fix remains within the reviewed scope. No public release, merge, clinical/backend readiness or owner acceptance is implied.",
+  "scope": "Exact production-built isolated EVA entry/panel candidate; local real Chromium with byte-range media fulfillment. No merge, public release or owner acceptance implied.",
+  "candidate": {
+    "branch": "preview/entry-clarity-20261126",
+    "base_commit": "cdc71e660883a41c8b7c0dc696e61cf18b78c740",
+    "source_commit": "3f5a5013b8db670e43c483226a6d7ba1eb2f484a",
+    "source_manifest_sha256": "1bb46b7dc597bca7990d534a5a78472835f037066c99cbcb59792fb22385146f",
+    "source_files": {
+      "app/globals.css": "e6ee072bcb75e8d82c49d092c595646d9d0acdd1393bc60761e9cd18ca75b4b3",
+      "app/hero-entrance.css": "70098f6a0fd4e79c2d3c3f950e9320c3af28dcfebf213e4af0a48cd7e096a57d",
+      "app/hero-kit.css": "7d6040bc79f25cb3516fd978bcc34b53060e1701e90a8d128311d26c0c31dbc2",
+      "components/pages/labs/LabsPage.tsx": "6e18797a615e5f8da75d89b5642ca2895d38a6c922fd1a24000ee3608ae59b78",
+      "components/pages/pricing/PanelOfferUnderstanding.tsx": "a035792ee539ad3c856b48ffb5c53c4b764997f5210eccb1c02b44360bc88527",
+      "components/pages/pricing/PricingPage.tsx": "2c7d265c89bfaf3beb74bd6466238904747b5fc4fda98e1caa00e61e2e932a64",
+      "components/pages/pricing/ServiceCalendar.tsx": "fd6a3291791fd60649ff4a07affce8c33cdeedb256bbade2c01b08851b3d7a06",
+      "components/pages/pricing/ServiceContents.tsx": "f82bf0f7182498065ca7beb69c2b2d2f83a151acd41b27fb1a4a3058a3b30988",
+      "components/pages/pricing/pricing.css": "8e275f566e463b14605cf08d2b412414acb405be5155251a4231e8388e5c509e",
+      "components/preview/AppShell.tsx": "6a7092fcc48f6ef8fe6bfd4cb96aa71f4bbcaf3a48078a90e0f9a24045d176ce",
+      "components/site/SiteShell.tsx": "869303bd2d16cec38514a219d0c32eb3f04531908c65f75079f4d603e90ee0d4",
+      "components/story/BiomarkerGallery.tsx": "6d6ec9b6374eec0415d8635e707558f8cf238564c8d446b058ab8dca76583b93",
+      "components/story/BusinessOffer.tsx": "1b1459db5332c1d2fc8d9518b4f1a7ea995ad7963c4b5913d950986e1d26ca3b",
+      "components/story/EvaWordmark.tsx": "09f4e87b4dfc5071039c65c38e35e98349d9046d78ba74ec48ea1851b0fdca02",
+      "components/story/HealthEditorial.tsx": "c61ce47f7a095072c353522b7cbb036b7b34c1a4efaf8b3c65b3812e405776e4",
+      "components/story/HeroKitCta.tsx": "6927819be993301c86f669d6519384d840cbeb3a7f90274855ff51e4aaa89703",
+      "components/story/MethodJourney.tsx": "073fc258cab9411e3dff2100bd06d167d1eb1e6758da2bb17ead0eb3a7608992",
+      "components/story/ScrollStory.tsx": "43cf31368ac02db726f096c6d15aae31bdeaca1cf56c8277d276a717ce554806",
+      "components/story/guided-result-story.css": "cdbfc3645117c4ee7e006190fb02e3ef742914f3fe4694f60a94d28a81000580",
+      "lib/site-content/entry-preview-copy.ts": "ba335145e67be543343cbde220402d164c0c844b0274e2d6a847491f519906cf",
+      "lib/site-content/panel-preview-copy.ts": "fc40920c7676bb835b9bcbceca3f84ca9f4005793ac4081dbec4e61cbd2724d8"
+    },
+    "render_report_sha256": "d5a49b242b5bc1a4d805c97f4673ebe70f31ce4bef221e1fd7ab16e634e6f759",
+    "additional_report_sha256": "b2e0729195a216dc3a1bcd64e005cecc7ce5dfc0ff749f012eaf071abb990358",
+    "render_source_hashes_match_current": {
+      "components/story/ScrollStory.tsx": true,
+      "components/story/HeroKitCta.tsx": true,
+      "components/story/EvaWordmark.tsx": true,
+      "app/hero-entrance.css": true,
+      "app/hero-kit.css": true,
+      "components/pages/pricing/PricingPage.tsx": true,
+      "lib/site-content/panel-preview-copy.ts": true,
+      "lib/site-content/entry-preview-copy.ts": true
+    },
+    "build_manifest_sha256": "83661d7674f80011016e39ab8bb467264b2a43e70e44aab9e43ae9df78adaed2",
+    "built_file_count": 790,
+    "logo_sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f"
+  },
+  "review_basis": [
+    "AGENTS.md",
+    "docs/AGENT_REVIEW_WORKFLOW.md",
+    "docs/SESSION_HANDOFF.json",
+    "docs/SESSION_COORDINATION.json",
+    "latest parent delegation scope superseding older conflicting instructions",
+    "Impeccable 4.9.0 SKILL.md and typeset/layout/polish references",
+    "candidate source diff and exact built renders"
+  ],
+  "independence": "Other reviewers’ verdicts were not used as authority. Own visual/source inspection and own four-profile enhanced viewport supplement support this judgment. The subagent used the supplied bounded brief rather than a new design interview.",
+  "visuals_inspected": [
+    "en-1366-motion-first-screen.png",
+    "en-1366-motion-runner.png",
+    "en-1366-motion-alex.png",
+    "en-1366-motion-range.png",
+    "en-1366-motion-selector-viewport.png",
+    "en-1366-motion-pricing-enhanced.png",
+    "en-1366-motion-footer-viewport.png",
+    "en-1366-motion-judge-enhanced-viewport.png",
+    "en-1366-calm-first-screen.png",
+    "en-1366-calm-runner.png",
+    "en-1366-calm-alex.png",
+    "en-1366-calm-range.png",
+    "en-1366-calm-selector-viewport.png",
+    "en-1366-calm-pricing-enhanced.png",
+    "en-1366-calm-footer-viewport.png",
+    "en-1366-calm-judge-enhanced-viewport.png",
+    "es-320-motion-first-screen.png",
+    "es-320-motion-runner.png",
+    "es-320-motion-alex.png",
+    "es-320-motion-range.png",
+    "es-320-motion-selector-viewport.png",
+    "es-320-motion-pricing-enhanced.png",
+    "es-320-motion-footer-viewport.png",
+    "es-320-motion-judge-enhanced-viewport.png",
+    "es-320-calm-first-screen.png",
+    "es-320-calm-runner.png",
+    "es-320-calm-alex.png",
+    "es-320-calm-range.png",
+    "es-320-calm-selector-viewport.png",
+    "es-320-calm-pricing-enhanced.png",
+    "es-320-calm-footer-viewport.png",
+    "es-320-calm-judge-enhanced-viewport.png"
+  ],
+  "browser_evidence": {
+    "main_profiles": 12,
+    "main_all_pass": true,
+    "additional_checks": 8,
+    "additional_all_pass": true,
+    "page_errors": [],
+    "missing_files": [],
+    "network_writes": [],
+    "all_owned_browsers_closed": true
+  },
+  "preserved_files": {
+    "components/story/RunnerArrival.tsx": {
+      "unchanged": true,
+      "sha256": "3cdceae1e5c81fbec52c751d331ae59cedb00682d6532cb29e762be7d825335a"
+    },
+    "components/story/TrackedRunner.tsx": {
+      "unchanged": true,
+      "sha256": "c299f9d79d616c2ccb4b906a29d1bec00603d76efa94477135dfe4e77a21353a"
+    },
+    "components/story/EvaFilm.tsx": {
+      "unchanged": true,
+      "sha256": "85db0a0862a42edd7003528610822f4ee566d8f7162562c15923d3303fba7a6f"
+    },
+    "components/story/AnalogType.tsx": {
+      "unchanged": true,
+      "sha256": "a2ced4ed4022fe8eb68f1db93a304162b88354c9e94a78bab57ddb71984aeb5f"
+    },
+    "lib/story-scroll-timing.ts": {
+      "unchanged": true,
+      "sha256": "3b1f1ef7774201cbbdc1edae5c4142068f74325de131eaed29dd68c387937034"
+    },
+    "lib/site-content/alex-story-copy.ts": {
+      "unchanged": true,
+      "sha256": "273e7a6c9ba6ca48b7667afe71294dc16ee40310549369727c960822e17cf56b"
+    },
+    "components/story/RangeProofSection.tsx": {
+      "unchanged": true,
+      "sha256": "a9fab7b5e76617d2d956a4dac1c43e9dd3793f990d5db951f1faad8a972175ff"
+    },
+    "lib/site-content/range-proof-copy.ts": {
+      "unchanged": true,
+      "sha256": "ee7e0466e0291260b2d3721134cab323faffdb54ed9e7567242e01c68fe5c7a0"
+    },
+    "components/story/range-proof-section.css": {
+      "unchanged": true,
+      "sha256": "ccd4e6349e4f2ca605e6d46d5355771fa7ad59c9da5f53bcb0847653d4ad1926"
+    }
+  },
+  "impeccable_detector": {
+    "scope": "type,layout across changed UI targets",
+    "exit_code": 2,
+    "finding_count": 2,
+    "findings": [
+      {
+        "file": "app/globals.css",
+        "line": 9,
+        "type": "overused-font",
+        "status": "Existing unchanged body Arial fallback; accepted incumbent context, no new entry-role issue."
+      },
+      {
+        "file": "app/globals.css",
+        "line": 24,
+        "type": "overused-font",
+        "status": "Existing unchanged lifestyle Helvetica declaration; outside bounded edit and accepted incumbent identity."
+      }
+    ],
+    "interpretation": "Warnings contextualized, not a zero-findings claim. Rendered entry/body roles use installed EVA Hanken."
+  },
+  "verdicts": [
+    {
+      "lens": "Medical and product truth",
+      "verdict": "PASS",
+      "evidence": "New bridge is a comprehension problem, not an efficacy or disease claim. Alex remains fictional at 2.1 with history 0.8/0.9/0.8/2.1 and no causal inference. Separate 2.9 mg/L reference proof preserves strict <3 and lower relative-risk <1 on one 0–5 scale. Standard excludes ApoB; enhanced includes it and explicitly leaves other contents, count, price, timing, frequency and availability unconfirmed. Full lab option remains separate at €499 one time."
+    },
+    {
+      "lens": "Marketing copy and novice explanation",
+      "verdict": "PASS",
+      "evidence": "Visible hero explains what EVA does. Free upload is the primary action; the secondary opens panel choice. A short visible bridge immediately precedes Alex. The example teaches that history and context help explain a change, while neither its cause nor persistence is established."
+    },
+    {
+      "lens": "English and Spanish parity",
+      "verdict": "PASS",
+      "evidence": "EN/ES entry, bridge and panel terms retain the same action, scope and uncertainty. Spanish reads naturally for Spain. ES320 wraps without clipped labels or smaller replacement type."
+    },
+    {
+      "lens": "UX, established design and Impeccable typography/spacing",
+      "verdict": "PASS",
+      "evidence": "Own inspection of 32 exact renders: EN1366 and ES320, normal/calm entry, runner, Alex, ranges, selectors, enhanced detail and footer. Existing ink/paper/glass/dots and real imagery remain. Computed hero/bridge are EVA Hanken 400 16/24; action labels 600 14px, metadata 400 13px; actions remain 44px. No collision, viewport overflow or unreadable wrapping observed. ES320 selector is tall but readable."
+    },
+    {
+      "lens": "First available screen, hit testing and buy destination",
+      "verdict": "PASS",
+      "evidence": "All 12 profiles show both action links at the earliest CSS/font-ready snapshot while entrance remains pending, with visible/non-inert ancestor chains and three successful hit points per link. Actual buy click reaches locale pricing?panel=standard#elegir-panel with no email/password form. No-JS and keyboard-while-arrival checks pass; focus has a 2px solid outline."
+    },
+    {
+      "lens": "Original runner, scroll, kit and example preservation",
+      "verdict": "PASS",
+      "evidence": "Independent git byte comparison confirms RunnerArrival, TrackedRunner, EvaFilm, AnalogType, timing module, Alex data and range component/copy/CSS unchanged from cdc71e6. Additional browser evidence records runner frame 0→120 after scroll, original 13-marker kit forward/reverse and 500ms transition, and fixed Alex 2.1 across explanation control changes."
+    },
+    {
+      "lens": "Official asset and preview isolation",
+      "verdict": "PASS",
+      "evidence": "Logo SHA is exactly 682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f. Header/footer use the revision-qualified PNG mask with no typed EVA text in the art span. Public assets have no tracked diff. main remains cdc71e6 and the separate normal-explanation preview remains 39485db."
+    },
+    {
+      "lens": "Free Score display condition",
+      "verdict": "PASS",
+      "evidence": "Affected copy states that enough compatible report data is required. Browser-local fixture test shows an existing score for a free account and the insufficient-data fallback after removal; AI and biological-age promises are absent from affected rendered landing/pricing/report surfaces. This is a display/preview check only."
+    },
+    {
+      "lens": "Native private deployment and access audience",
+      "verdict": "NOT VERIFIED",
+      "evidence": "No native deployed preview was available to this judge. Local real-browser request fulfillment is not native deployment or owner-only access proof."
+    },
+    {
+      "lens": "Real-device performance, physical sampling, clinical and backend readiness",
+      "verdict": "NOT VERIFIED",
+      "evidence": "Viewport emulation and fixture state do not establish first-contentful-paint/network performance, physical-device behavior, sample usability, clinical validation, report extraction/coverage logic or real ordering/payment services."
+    }
+  ],
+  "smallest_mandatory_fix": null,
+  "residual_issues": [
+    {
+      "severity": "nonblocking",
+      "issue": "ES320 three-way panel selector is vertically dense, especially Price to confirm / Precio por confirmar. It remains legible without clipping or smaller type, so no additional redesign is required for this bounded preview."
+    },
+    {
+      "severity": "evidence limitation",
+      "issue": "Earliest snapshots follow CSS/font readiness; they demonstrate actions while the entrance is pending, not a measured browser first-contentful-paint or production network guarantee."
+    }
+  ],
+  "unchanged_other_refs": {
+    "main": "cdc71e660883a41c8b7c0dc696e61cf18b78c740",
+    "preview/normal-explanation-20261124": "39485db042574a40d2a2f814e3b1e466ab2fa7be"
+  },
+  "post_native_fix_review": {
+    "reviewed_utc": "2026-11-26T14:15:33.179616+00:00",
+    "verdict": "PASS",
+    "source_commit": "c3ebcbc2ece50eacaccd5196529dac9990dc8fd2",
+    "previous_reviewed_commit": "3f5a5013b8db670e43c483226a6d7ba1eb2f484a",
+    "bounded_diff": "Only PricingPage.tsx differs: 5 insertions / 3 deletions. panelReady gates the existing selector until mount synchronization is complete; data-panel-ready exposes that state; a synthetic hashchange replaces synthetic popstate. Genuine popstate synchronization remains.",
+    "source_sha256": "c78bb5eb19ebcb9d6cd104fd9a9b73e4e00748d523c5f55895168c3fbf6019a0",
+    "source_manifest_sha256": "529c740c3e81d672c409613129210cd38189fe88b1c7d18a7820184772481efc",
+    "all_other_20_reviewed_source_hashes_unchanged": true,
+    "build_manifest_sha256": "b36097fa8c426d2e0a7173ac853724d7c3d91a0b854cd9cf812b4d14ae13f71d",
+    "built_file_count": 790,
+    "review_evidence": [
+      "Exact git diff 3f5a5013..c3ebcbc2: PricingPage.tsx only",
+      "Current component and LanguageSwitch source",
+      "pricing-readiness.cjs and pricing-readiness-qa.json",
+      "Own current-built EN/ES SSR inspection: data-panel-ready=false and all three selector buttons disabled"
+    ],
+    "finding": "The readiness state and initial plan synchronization are queued in the same mount effect before controls become enabled. An early activation cannot be accepted by an unhydrated selector and then overwritten by mount synchronization. The language switch reads the current search/hash on hashchange; genuine history popstate remains subscribed. No layout, wording, fonts, media, data or clinical claim changed.",
+    "focused_browser_evidence": {
+      "profiles": 4,
+      "locales": [
+        "en",
+        "es"
+      ],
+      "widths": [
+        320,
+        1366
+      ],
+      "flow": "Enhanced → full → standard remains selected after 400ms, URL query and alternate-locale link preserve each selected panel.",
+      "passed": true,
+      "errors": [],
+      "rsc_requests": [],
+      "all_owned_browsers_closed": true,
+      "qa_sha256": "a69649406f677e6409c41514e2c4aae1d5d01fd7a89f9975eadb2e5591e7570b"
+    },
+    "smallest_mandatory_fix": null,
+    "prior_visual_judgment": "Retained for unchanged layout/copy/type/media/data; 32 layout inspections not repeated for this event/readiness-only fix.",
+    "native_v2_verdict": "NOT VERIFIED",
+    "native_v2_reason": "Native v2 publication and five-profile actual-native regression verification remain the lead’s next step. Native v1 receipts or partial checks do not establish v2 success.",
+    "remaining_limits": "Physical performance, clinical/backend readiness, extraction/coverage algorithms and real ordering/payment remain NOT VERIFIED. Owner-only policy must be checked on the final native preview."
+  },
+  "latest_reviewed_candidate": {
+    "source_commit": "c3ebcbc2ece50eacaccd5196529dac9990dc8fd2",
+    "source_manifest_sha256": "529c740c3e81d672c409613129210cd38189fe88b1c7d18a7820184772481efc",
+    "source_files": {
+      "app/globals.css": "e6ee072bcb75e8d82c49d092c595646d9d0acdd1393bc60761e9cd18ca75b4b3",
+      "app/hero-entrance.css": "70098f6a0fd4e79c2d3c3f950e9320c3af28dcfebf213e4af0a48cd7e096a57d",
+      "app/hero-kit.css": "7d6040bc79f25cb3516fd978bcc34b53060e1701e90a8d128311d26c0c31dbc2",
+      "components/pages/labs/LabsPage.tsx": "6e18797a615e5f8da75d89b5642ca2895d38a6c922fd1a24000ee3608ae59b78",
+      "components/pages/pricing/PanelOfferUnderstanding.tsx": "a035792ee539ad3c856b48ffb5c53c4b764997f5210eccb1c02b44360bc88527",
+      "components/pages/pricing/PricingPage.tsx": "c78bb5eb19ebcb9d6cd104fd9a9b73e4e00748d523c5f55895168c3fbf6019a0",
+      "components/pages/pricing/ServiceCalendar.tsx": "fd6a3291791fd60649ff4a07affce8c33cdeedb256bbade2c01b08851b3d7a06",
+      "components/pages/pricing/ServiceContents.tsx": "f82bf0f7182498065ca7beb69c2b2d2f83a151acd41b27fb1a4a3058a3b30988",
+      "components/pages/pricing/pricing.css": "8e275f566e463b14605cf08d2b412414acb405be5155251a4231e8388e5c509e",
+      "components/preview/AppShell.tsx": "6a7092fcc48f6ef8fe6bfd4cb96aa71f4bbcaf3a48078a90e0f9a24045d176ce",
+      "components/site/SiteShell.tsx": "869303bd2d16cec38514a219d0c32eb3f04531908c65f75079f4d603e90ee0d4",
+      "components/story/BiomarkerGallery.tsx": "6d6ec9b6374eec0415d8635e707558f8cf238564c8d446b058ab8dca76583b93",
+      "components/story/BusinessOffer.tsx": "1b1459db5332c1d2fc8d9518b4f1a7ea995ad7963c4b5913d950986e1d26ca3b",
+      "components/story/EvaWordmark.tsx": "09f4e87b4dfc5071039c65c38e35e98349d9046d78ba74ec48ea1851b0fdca02",
+      "components/story/HealthEditorial.tsx": "c61ce47f7a095072c353522b7cbb036b7b34c1a4efaf8b3c65b3812e405776e4",
+      "components/story/HeroKitCta.tsx": "6927819be993301c86f669d6519384d840cbeb3a7f90274855ff51e4aaa89703",
+      "components/story/MethodJourney.tsx": "073fc258cab9411e3dff2100bd06d167d1eb1e6758da2bb17ead0eb3a7608992",
+      "components/story/ScrollStory.tsx": "43cf31368ac02db726f096c6d15aae31bdeaca1cf56c8277d276a717ce554806",
+      "components/story/guided-result-story.css": "cdbfc3645117c4ee7e006190fb02e3ef742914f3fe4694f60a94d28a81000580",
+      "lib/site-content/entry-preview-copy.ts": "ba335145e67be543343cbde220402d164c0c844b0274e2d6a847491f519906cf",
+      "lib/site-content/panel-preview-copy.ts": "fc40920c7676bb835b9bcbceca3f84ca9f4005793ac4081dbec4e61cbd2724d8"
+    },
+    "build_manifest_sha256": "b36097fa8c426d2e0a7173ac853724d7c3d91a0b854cd9cf812b4d14ae13f71d",
+    "built_file_count": 790
+  },
+  "native_verification_closure": {
+    "reviewed_utc": "2026-11-26T14:22:09.404949+00:00",
+    "verdict": "PASS",
+    "scope": "Final owner-only native v2 deployment and bounded five-profile native interaction regression closure.",
+    "ui_commit": "c3ebcbc2ece50eacaccd5196529dac9990dc8fd2",
+    "private_source_commit": "ea6884453d0f55e06a5c67771fa290d673f43619",
+    "project_id": "appgprj_6b08377df82c819197b37d5c64654750",
+    "version": 2,
+    "deployment_id": "appgdep_6b083f3d5cbc819187f76f5e13996984",
+    "deployment_status": "succeeded",
+    "url": "https://eva-entry-private-261126.jdlagop.chatgpt.site",
+    "saved_version_id": "appgprj_6b08377df82c819197b37d5c64654750~appgver_550f3cf48ee88191aca98658d17a6dd1",
+    "profiles": [
+      {
+        "id": "en-1366-motion",
+        "status": 200,
+        "passed": true,
+        "first_entry_state": "watching",
+        "first_buttons_visible_and_hittable": true,
+        "buy_destination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/en/pricing?panel=standard#elegir-panel",
+        "alternate_locale_href": "/es/pricing?panel=enhanced#elegir-panel"
+      },
+      {
+        "id": "es-1366-motion",
+        "status": 200,
+        "passed": true,
+        "first_entry_state": "pending",
+        "first_buttons_visible_and_hittable": true,
+        "buy_destination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=standard#elegir-panel",
+        "alternate_locale_href": "/en/pricing?panel=enhanced#elegir-panel"
+      },
+      {
+        "id": "en-320-motion",
+        "status": 200,
+        "passed": true,
+        "first_entry_state": "watching",
+        "first_buttons_visible_and_hittable": true,
+        "buy_destination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/en/pricing?panel=standard#elegir-panel",
+        "alternate_locale_href": "/es/pricing?panel=enhanced#elegir-panel"
+      },
+      {
+        "id": "es-320-motion",
+        "status": 200,
+        "passed": true,
+        "first_entry_state": "pending",
+        "first_buttons_visible_and_hittable": true,
+        "buy_destination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=standard#elegir-panel",
+        "alternate_locale_href": "/en/pricing?panel=enhanced#elegir-panel"
+      },
+      {
+        "id": "es-320-calm",
+        "status": 200,
+        "passed": true,
+        "first_entry_state": "skip",
+        "first_buttons_visible_and_hittable": true,
+        "buy_destination": "https://eva-entry-private-261126.jdlagop.chatgpt.site/es/pricing?panel=standard#elegir-panel",
+        "alternate_locale_href": "/en/pricing?panel=enhanced#elegir-panel"
+      }
+    ],
+    "native_errors": [],
+    "writes": [],
+    "rsc_requests": [],
+    "exact_logo_http_responses": 10,
+    "logo_sha256": "682fac5978cbae0973318e139fcb6dda60925f30e762ea190cce27fe7ad9977f",
+    "all_owned_browsers_closed": true,
+    "access_evidence": {
+      "saved_receipt_audience": "owner-only",
+      "anonymous_get_status": 403,
+      "private_content_served_anonymously": false,
+      "get_site_owner_inventory": "Lead reports one owner and no external viewers from GetSite; this judge inspected the saved owner-only receipt and anonymous-denial artifact."
+    },
+    "own_native_screenshots_inspected": [
+      "native-en-1366-motion-runner.png",
+      "native-es-320-motion-runner.png",
+      "native-es-320-calm-runner.png",
+      "native-es-320-motion-selector.png"
+    ],
+    "evidence_sha256": {
+      "native-qa.json": "c9d45d478a9be8be917f7a83b7f7c385980ac0179c5e52be0de70c2f39d4ebaa",
+      "native-final-receipt.json": "2f9bee9f80eb3883d502ad974dc4ac3290fff57fcb3e23e084a1c6a204da257f",
+      "anonymous-access.json": "d33f58fdf5732ca0de0c0d9f359833a8ae4cd882b6420a84477e81c4c0cb8730"
+    },
+    "smallest_mandatory_fix": null,
+    "remaining_not_verified": [
+      "Physical device and production performance",
+      "Physical sample collection and clinical validation",
+      "Report extraction and compatible-data/Score coverage algorithms",
+      "Production backend, payment, ordering and laboratory availability"
+    ],
+    "isolation": {
+      "canonical_main": "cdc71e660883a41c8b7c0dc696e61cf18b78c740",
+      "separate_normal_preview": "39485db042574a40d2a2f814e3b1e466ab2fa7be",
+      "public_review_version": 70
+    },
+    "interpretation": "Native v2 now closes the previously NOT VERIFIED deployment/access and focused interaction fields. Prior native-v1 failure and pending-native-v2 statements are historical. No owner acceptance or production/public-release approval is inferred."
+  }
+}
