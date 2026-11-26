@@ -30,7 +30,12 @@ const heroEntranceStyle = {'--hero-entrance-rate': HERO_ENTRANCE_RATE} as CSSPro
 const ResultsContent = memo(BiomarkerGallery), EditorialContent = memo(HealthEditorial), OfferContent = memo(BusinessOffer), SignalContent = memo(SignalPassage);
 function readStoryPosition() {
     const candidates = ['volver-a-la-vida', 'una-perspectiva', 'una-senal', 'biomarcadores', 'kit-inicial', 'recogida-en-casa', reportChapterId];
-    const active = candidates.map(id => document.getElementById(id)).find(element => element && element.getBoundingClientRect().top <= window.innerHeight * .5);
+    let active = candidates.map(id => document.getElementById(id)).find(element => element && element.getBoundingClientRect().top <= window.innerHeight * .5);
+    const gallery = document.getElementById('biomarcadores');
+    const galleryBounds = gallery?.getBoundingClientRect();
+    // The collapsed gallery still owns its chapter until it has left the viewport.
+    if (active?.id === 'una-senal' && galleryBounds && galleryBounds.height < window.innerHeight * .5 && galleryBounds.bottom > 1)
+        active = gallery ?? active;
     const root = active ?? document.querySelector('.hero-entrance > .scroll-journey');
     const film = root?.querySelector<HTMLElement>('[data-rendered-frame], [data-body-signal-frame]');
     return {section: active?.id ?? 'opening', frame: Number(film?.dataset.renderedFrame ?? film?.dataset.bodySignalFrame ?? 0), scrollY: window.scrollY, reducedMotion: !!document.querySelector('.calm-hero')};
